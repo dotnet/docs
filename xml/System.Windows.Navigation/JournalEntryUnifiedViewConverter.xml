@@ -1,7 +1,9 @@
-<Type Name="JournalEntryUnifiedViewConverter" FullName="System.Windows.Navigation.JournalEntryUnifiedViewConverter">
+﻿<Type Name="JournalEntryUnifiedViewConverter" FullName="System.Windows.Navigation.JournalEntryUnifiedViewConverter">
   <TypeSignature Language="C#" Value="public sealed class JournalEntryUnifiedViewConverter : System.Windows.Data.IMultiValueConverter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit JournalEntryUnifiedViewConverter extends System.Object implements class System.Windows.Data.IMultiValueConverter" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Navigation.JournalEntryUnifiedViewConverter" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class JournalEntryUnifiedViewConverter&#xA;Implements IMultiValueConverter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class JournalEntryUnifiedViewConverter sealed : System::Windows::Data::IMultiValueConverter" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +64,8 @@
       <MemberSignature Language="C#" Value="public JournalEntryUnifiedViewConverter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Navigation.JournalEntryUnifiedViewConverter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; JournalEntryUnifiedViewConverter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -77,7 +81,12 @@
       <MemberSignature Language="C#" Value="public object Convert (object[] values, Type targetType, object parameter, System.Globalization.CultureInfo culture);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Convert(object[] values, class System.Type targetType, object parameter, class System.Globalization.CultureInfo culture) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Navigation.JournalEntryUnifiedViewConverter.Convert(System.Object[],System.Type,System.Object,System.Globalization.CultureInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Convert (values As Object(), targetType As Type, parameter As Object, culture As CultureInfo) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Convert(cli::array &lt;System::Object ^&gt; ^ values, Type ^ targetType, System::Object ^ parameter, System::Globalization::CultureInfo ^ culture);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Data.IMultiValueConverter.Convert(System.Object[],System.Type,System.Object,System.Globalization.CultureInfo)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -127,7 +136,12 @@
       <MemberSignature Language="C#" Value="public object[] ConvertBack (object value, Type[] targetTypes, object parameter, System.Globalization.CultureInfo culture);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object[] ConvertBack(object value, class System.Type[] targetTypes, object parameter, class System.Globalization.CultureInfo culture) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Navigation.JournalEntryUnifiedViewConverter.ConvertBack(System.Object,System.Type[],System.Object,System.Globalization.CultureInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ConvertBack (value As Object, targetTypes As Type(), parameter As Object, culture As CultureInfo) As Object()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Object ^&gt; ^ ConvertBack(System::Object ^ value, cli::array &lt;Type ^&gt; ^ targetTypes, System::Object ^ parameter, System::Globalization::CultureInfo ^ culture);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Data.IMultiValueConverter.ConvertBack(System.Object,System.Type[],System.Object,System.Globalization.CultureInfo)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -164,6 +178,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Navigation.JournalEntryPosition GetJournalEntryPosition (System.Windows.DependencyObject element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Navigation.JournalEntryPosition GetJournalEntryPosition(class System.Windows.DependencyObject element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Navigation.JournalEntryUnifiedViewConverter.GetJournalEntryPosition(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetJournalEntryPosition (element As DependencyObject) As JournalEntryPosition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Navigation::JournalEntryPosition GetJournalEntryPosition(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -182,10 +198,27 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="JournalEntryPosition">
+      <MemberSignature Language="C#" Value="see GetJournalEntryPosition, and SetJournalEntryPosition" />
+      <MemberSignature Language="ILAsm" Value="see GetJournalEntryPosition, and SetJournalEntryPosition" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Navigation.JournalEntryUnifiedViewConverter.JournalEntryPosition" />
+      <MemberSignature Language="VB.NET" Value="see GetJournalEntryPosition, and SetJournalEntryPosition" />
+      <MemberType>AttachedProperty</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="JournalEntryPositionProperty">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty JournalEntryPositionProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty JournalEntryPositionProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Navigation.JournalEntryUnifiedViewConverter.JournalEntryPositionProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly JournalEntryPositionProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ JournalEntryPositionProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -203,6 +236,8 @@
       <MemberSignature Language="C#" Value="public static void SetJournalEntryPosition (System.Windows.DependencyObject element, System.Windows.Navigation.JournalEntryPosition position);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetJournalEntryPosition(class System.Windows.DependencyObject element, valuetype System.Windows.Navigation.JournalEntryPosition position) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Navigation.JournalEntryUnifiedViewConverter.SetJournalEntryPosition(System.Windows.DependencyObject,System.Windows.Navigation.JournalEntryPosition)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetJournalEntryPosition (element As DependencyObject, position As JournalEntryPosition)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetJournalEntryPosition(System::Windows::DependencyObject ^ element, System::Windows::Navigation::JournalEntryPosition position);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

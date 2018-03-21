@@ -1,7 +1,9 @@
-<Type Name="ProfileElementCollection" FullName="System.ServiceModel.Activities.Tracking.Configuration.ProfileElementCollection">
+﻿<Type Name="ProfileElementCollection" FullName="System.ServiceModel.Activities.Tracking.Configuration.ProfileElementCollection">
   <TypeSignature Language="C#" Value="public sealed class ProfileElementCollection : System.ServiceModel.Activities.Tracking.Configuration.TrackingConfigurationCollection&lt;System.ServiceModel.Activities.Tracking.Configuration.ProfileElement&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ProfileElementCollection extends System.ServiceModel.Activities.Tracking.Configuration.TrackingConfigurationCollection`1&lt;class System.ServiceModel.Activities.Tracking.Configuration.ProfileElement&gt;" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.Tracking.Configuration.ProfileElementCollection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ProfileElementCollection&#xA;Inherits TrackingConfigurationCollection(Of ProfileElement)" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ProfileElementCollection sealed : System::ServiceModel::Activities::Tracking::Configuration::TrackingConfigurationCollection&lt;System::ServiceModel::Activities::Tracking::Configuration::ProfileElement ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +29,8 @@
       <MemberSignature Language="C#" Value="public override System.Configuration.ConfigurationElementCollectionType CollectionType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Configuration.ConfigurationElementCollectionType CollectionType" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Tracking.Configuration.ProfileElementCollection.CollectionType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CollectionType As ConfigurationElementCollectionType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Configuration::ConfigurationElementCollectionType CollectionType { System::Configuration::ConfigurationElementCollectionType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>

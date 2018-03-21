@@ -1,7 +1,9 @@
-<Type Name="ModelUIElement3D" FullName="System.Windows.Media.Media3D.ModelUIElement3D">
+﻿<Type Name="ModelUIElement3D" FullName="System.Windows.Media.Media3D.ModelUIElement3D">
   <TypeSignature Language="C#" Value="public sealed class ModelUIElement3D : System.Windows.UIElement3D" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ModelUIElement3D extends System.Windows.UIElement3D" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Media3D.ModelUIElement3D" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ModelUIElement3D&#xA;Inherits UIElement3D" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ModelUIElement3D sealed : System::Windows::UIElement3D" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +48,8 @@
       <MemberSignature Language="C#" Value="public ModelUIElement3D ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.ModelUIElement3D.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ModelUIElement3D();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -68,6 +72,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Media3D.Model3D Model { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Media3D.Model3D Model" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.ModelUIElement3D.Model" />
+      <MemberSignature Language="VB.NET" Value="Public Property Model As Model3D" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Media3D::Model3D ^ Model { System::Windows::Media::Media3D::Model3D ^ get(); void set(System::Windows::Media::Media3D::Model3D ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -115,6 +121,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ModelProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ModelProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Media3D.ModelUIElement3D.ModelProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ModelProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ModelProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -139,6 +147,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.ModelUIElement3D.OnCreateAutomationPeer" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnCreateAutomationPeer () As AutomationPeer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationPeer ^ OnCreateAutomationPeer();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

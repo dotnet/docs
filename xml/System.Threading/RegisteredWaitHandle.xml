@@ -1,7 +1,9 @@
-<Type Name="RegisteredWaitHandle" FullName="System.Threading.RegisteredWaitHandle">
+﻿<Type Name="RegisteredWaitHandle" FullName="System.Threading.RegisteredWaitHandle">
   <TypeSignature Language="C#" Value="public sealed class RegisteredWaitHandle : MarshalByRefObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RegisteredWaitHandle extends System.MarshalByRefObject" />
   <TypeSignature Language="DocId" Value="T:System.Threading.RegisteredWaitHandle" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RegisteredWaitHandle&#xA;Inherits MarshalByRefObject" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RegisteredWaitHandle sealed : MarshalByRefObject" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.ThreadPool</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -55,6 +57,8 @@
       <MemberSignature Language="C#" Value="public bool Unregister (System.Threading.WaitHandle waitObject);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Unregister(class System.Threading.WaitHandle waitObject) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.RegisteredWaitHandle.Unregister(System.Threading.WaitHandle)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Unregister (waitObject As WaitHandle) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Unregister(System::Threading::WaitHandle ^ waitObject);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.ThreadPool</AssemblyName>

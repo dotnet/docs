@@ -1,7 +1,9 @@
-<Type Name="COMTIIntrinsicsAttribute" FullName="System.EnterpriseServices.COMTIIntrinsicsAttribute">
+﻿<Type Name="COMTIIntrinsicsAttribute" FullName="System.EnterpriseServices.COMTIIntrinsicsAttribute">
   <TypeSignature Language="C#" Value="public sealed class COMTIIntrinsicsAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit COMTIIntrinsicsAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.COMTIIntrinsicsAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class COMTIIntrinsicsAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class COMTIIntrinsicsAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +47,8 @@
       <MemberSignature Language="C#" Value="public COMTIIntrinsicsAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.COMTIIntrinsicsAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; COMTIIntrinsicsAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -60,6 +64,8 @@
       <MemberSignature Language="C#" Value="public COMTIIntrinsicsAttribute (bool val);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool val) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.COMTIIntrinsicsAttribute.#ctor(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (val As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; COMTIIntrinsicsAttribute(bool val);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -79,6 +85,8 @@
       <MemberSignature Language="C#" Value="public bool Value { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Value" />
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.COMTIIntrinsicsAttribute.Value" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Value { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

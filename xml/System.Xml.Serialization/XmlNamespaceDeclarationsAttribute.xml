@@ -1,7 +1,9 @@
-<Type Name="XmlNamespaceDeclarationsAttribute" FullName="System.Xml.Serialization.XmlNamespaceDeclarationsAttribute">
+﻿<Type Name="XmlNamespaceDeclarationsAttribute" FullName="System.Xml.Serialization.XmlNamespaceDeclarationsAttribute">
   <TypeSignature Language="C#" Value="public class XmlNamespaceDeclarationsAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlNamespaceDeclarationsAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.XmlNamespaceDeclarationsAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public Class XmlNamespaceDeclarationsAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlNamespaceDeclarationsAttribute : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -25,7 +27,7 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.AttributeUsage(System.AttributeTargets.Property | System.AttributeTargets.Field | System.AttributeTargets.Parameter | System.AttributeTargets.ReturnValue, AllowMultiple=false)</AttributeName>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Field | System.AttributeTargets.Parameter | System.AttributeTargets.Property | System.AttributeTargets.ReturnValue, AllowMultiple=false)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -166,6 +168,8 @@ End Class
       <MemberSignature Language="C#" Value="public XmlNamespaceDeclarationsAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlNamespaceDeclarationsAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlNamespaceDeclarationsAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>

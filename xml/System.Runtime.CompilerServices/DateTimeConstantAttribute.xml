@@ -1,7 +1,9 @@
-<Type Name="DateTimeConstantAttribute" FullName="System.Runtime.CompilerServices.DateTimeConstantAttribute">
+﻿<Type Name="DateTimeConstantAttribute" FullName="System.Runtime.CompilerServices.DateTimeConstantAttribute">
   <TypeSignature Language="C#" Value="public sealed class DateTimeConstantAttribute : System.Runtime.CompilerServices.CustomConstantAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit DateTimeConstantAttribute extends System.Runtime.CompilerServices.CustomConstantAttribute" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.DateTimeConstantAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DateTimeConstantAttribute&#xA;Inherits CustomConstantAttribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DateTimeConstantAttribute sealed : System::Runtime::CompilerServices::CustomConstantAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +53,8 @@
       <MemberSignature Language="C#" Value="public DateTimeConstantAttribute (long ticks);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int64 ticks) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.DateTimeConstantAttribute.#ctor(System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (ticks As Long)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DateTimeConstantAttribute(long ticks);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -82,6 +86,8 @@
       <MemberSignature Language="C#" Value="public override object Value { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Value" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.CompilerServices.DateTimeConstantAttribute.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Value As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ Value { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

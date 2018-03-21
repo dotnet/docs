@@ -1,7 +1,9 @@
-<Type Name="LoaderOptimization" FullName="System.LoaderOptimization">
+﻿<Type Name="LoaderOptimization" FullName="System.LoaderOptimization">
   <TypeSignature Language="C#" Value="public enum LoaderOptimization" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed LoaderOptimization extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.LoaderOptimization" />
+  <TypeSignature Language="VB.NET" Value="Public Enum LoaderOptimization" />
+  <TypeSignature Language="C++ CLI" Value="public enum class LoaderOptimization" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -45,6 +47,8 @@
       <MemberSignature Language="C#" Value="DisallowBindings" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.LoaderOptimization DisallowBindings = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.LoaderOptimization.DisallowBindings" />
+      <MemberSignature Language="VB.NET" Value="DisallowBindings" />
+      <MemberSignature Language="C++ CLI" Value="DisallowBindings" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -67,6 +71,7 @@
       <ReturnValue>
         <ReturnType>System.LoaderOptimization</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Ignored by the common language runtime.</summary>
       </Docs>
@@ -75,6 +80,8 @@
       <MemberSignature Language="C#" Value="DomainMask" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.LoaderOptimization DomainMask = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.LoaderOptimization.DomainMask" />
+      <MemberSignature Language="VB.NET" Value="DomainMask" />
+      <MemberSignature Language="C++ CLI" Value="DomainMask" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -97,6 +104,7 @@
       <ReturnValue>
         <ReturnType>System.LoaderOptimization</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Do not use. This mask selects the domain-related values, screening out the unused <see cref="F:System.LoaderOptimization.DisallowBindings" /> flag.</summary>
       </Docs>
@@ -105,6 +113,8 @@
       <MemberSignature Language="C#" Value="MultiDomain" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.LoaderOptimization MultiDomain = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.LoaderOptimization.MultiDomain" />
+      <MemberSignature Language="VB.NET" Value="MultiDomain" />
+      <MemberSignature Language="C++ CLI" Value="MultiDomain" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -122,6 +132,7 @@
       <ReturnValue>
         <ReturnType>System.LoaderOptimization</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Indicates that the application will probably have many domains that use the same code, and the loader must share maximal internal resources across application domains.</summary>
       </Docs>
@@ -130,6 +141,8 @@
       <MemberSignature Language="C#" Value="MultiDomainHost" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.LoaderOptimization MultiDomainHost = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.LoaderOptimization.MultiDomainHost" />
+      <MemberSignature Language="VB.NET" Value="MultiDomainHost" />
+      <MemberSignature Language="C++ CLI" Value="MultiDomainHost" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -147,6 +160,7 @@
       <ReturnValue>
         <ReturnType>System.LoaderOptimization</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Indicates that the application will probably host unique code in multiple domains, and the loader must share resources across application domains only for globally available (strong-named) assemblies that have been added to the global assembly cache.</summary>
       </Docs>
@@ -155,6 +169,8 @@
       <MemberSignature Language="C#" Value="NotSpecified" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.LoaderOptimization NotSpecified = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.LoaderOptimization.NotSpecified" />
+      <MemberSignature Language="VB.NET" Value="NotSpecified" />
+      <MemberSignature Language="C++ CLI" Value="NotSpecified" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -172,6 +188,7 @@
       <ReturnValue>
         <ReturnType>System.LoaderOptimization</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Indicates that no optimizations for sharing internal resources are specified. If the default domain or hosting interface specified an optimization, then the loader uses that; otherwise, the loader uses <see cref="F:System.LoaderOptimization.SingleDomain" />.</summary>
       </Docs>
@@ -180,6 +197,8 @@
       <MemberSignature Language="C#" Value="SingleDomain" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.LoaderOptimization SingleDomain = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.LoaderOptimization.SingleDomain" />
+      <MemberSignature Language="VB.NET" Value="SingleDomain" />
+      <MemberSignature Language="C++ CLI" Value="SingleDomain" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -197,6 +216,7 @@
       <ReturnValue>
         <ReturnType>System.LoaderOptimization</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Indicates that the application will probably have a single domain, and loader must not share internal resources across application domains.</summary>
       </Docs>

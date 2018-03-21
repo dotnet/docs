@@ -1,7 +1,9 @@
-<Type Name="SettingsSerializeAsAttribute" FullName="System.Configuration.SettingsSerializeAsAttribute">
+﻿<Type Name="SettingsSerializeAsAttribute" FullName="System.Configuration.SettingsSerializeAsAttribute">
   <TypeSignature Language="C#" Value="public sealed class SettingsSerializeAsAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SettingsSerializeAsAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.SettingsSerializeAsAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SettingsSerializeAsAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SettingsSerializeAsAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +46,8 @@
       <MemberSignature Language="C#" Value="public SettingsSerializeAsAttribute (System.Configuration.SettingsSerializeAs serializeAs);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Configuration.SettingsSerializeAs serializeAs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.SettingsSerializeAsAttribute.#ctor(System.Configuration.SettingsSerializeAs)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (serializeAs As SettingsSerializeAs)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SettingsSerializeAsAttribute(System::Configuration::SettingsSerializeAs serializeAs);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -80,6 +84,8 @@
       <MemberSignature Language="C#" Value="public System.Configuration.SettingsSerializeAs SerializeAs { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Configuration.SettingsSerializeAs SerializeAs" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.SettingsSerializeAsAttribute.SerializeAs" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SerializeAs As SettingsSerializeAs" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::SettingsSerializeAs SerializeAs { System::Configuration::SettingsSerializeAs get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

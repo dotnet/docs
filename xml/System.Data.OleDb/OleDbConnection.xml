@@ -1,7 +1,9 @@
-<Type Name="OleDbConnection" FullName="System.Data.OleDb.OleDbConnection">
+﻿<Type Name="OleDbConnection" FullName="System.Data.OleDb.OleDbConnection">
   <TypeSignature Language="C#" Value="public sealed class OleDbConnection : System.Data.Common.DbConnection, ICloneable, IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit OleDbConnection extends System.Data.Common.DbConnection implements class System.Data.IDbConnection, class System.ICloneable, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Data.OleDb.OleDbConnection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OleDbConnection&#xA;Inherits DbConnection&#xA;Implements ICloneable, IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class OleDbConnection sealed : System::Data::Common::DbConnection, ICloneable, IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -60,10 +62,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.OleDb.OleDbConnection" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public OleDbConnection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbConnection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OleDbConnection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -103,6 +116,8 @@
       <MemberSignature Language="C#" Value="public OleDbConnection (string connectionString);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string connectionString) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbConnection.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (connectionString As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OleDbConnection(System::String ^ connectionString);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -145,6 +160,7 @@
       <MemberSignature Language="C#" Value="protected override System.Data.Common.DbTransaction BeginDbTransaction (System.Data.IsolationLevel isolationLevel);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Data.Common.DbTransaction BeginDbTransaction(valuetype System.Data.IsolationLevel isolationLevel) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbConnection.BeginDbTransaction(System.Data.IsolationLevel)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Data::Common::DbTransaction ^ BeginDbTransaction(System::Data::IsolationLevel isolationLevel);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -163,10 +179,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="BeginTransaction">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Starts a database transaction.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="BeginTransaction">
       <MemberSignature Language="C#" Value="public System.Data.OleDb.OleDbTransaction BeginTransaction ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.OleDb.OleDbTransaction BeginTransaction() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbConnection.BeginTransaction" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginTransaction () As OleDbTransaction" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::OleDb::OleDbTransaction ^ BeginTransaction();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -202,6 +229,7 @@
       <MemberSignature Language="C#" Value="public System.Data.OleDb.OleDbTransaction BeginTransaction (System.Data.IsolationLevel isolationLevel);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.OleDb.OleDbTransaction BeginTransaction(valuetype System.Data.IsolationLevel isolationLevel) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbConnection.BeginTransaction(System.Data.IsolationLevel)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::OleDb::OleDbTransaction ^ BeginTransaction(System::Data::IsolationLevel isolationLevel);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -243,7 +271,12 @@
       <MemberSignature Language="C#" Value="public override void ChangeDatabase (string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ChangeDatabase(string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbConnection.ChangeDatabase(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub ChangeDatabase (value As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ChangeDatabase(System::String ^ value);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDbConnection.ChangeDatabase(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -282,7 +315,12 @@
       <MemberSignature Language="C#" Value="public override void Close ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Close() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbConnection.Close" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Close ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Close();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDbConnection.Close</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -312,7 +350,12 @@
       <MemberSignature Language="C#" Value="public override string ConnectionString { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ConnectionString" />
       <MemberSignature Language="DocId" Value="P:System.Data.OleDb.OleDbConnection.ConnectionString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property ConnectionString As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ConnectionString { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Data.IDbConnection.ConnectionString</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -328,7 +371,7 @@
           <AttributeName>System.ComponentModel.RecommendedAsConfigurable(true)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.SettingsBindable(true)</AttributeName>
@@ -409,14 +452,19 @@
       <MemberSignature Language="C#" Value="public override int ConnectionTimeout { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ConnectionTimeout" />
       <MemberSignature Language="DocId" Value="P:System.Data.OleDb.OleDbConnection.ConnectionTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ConnectionTimeout As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int ConnectionTimeout { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Data.IDbConnection.ConnectionTimeout</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -450,6 +498,8 @@
       <MemberSignature Language="C#" Value="public System.Data.OleDb.OleDbCommand CreateCommand ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.OleDb.OleDbCommand CreateCommand() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbConnection.CreateCommand" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateCommand () As OleDbCommand" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::OleDb::OleDbCommand ^ CreateCommand();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -469,6 +519,8 @@
       <MemberSignature Language="C#" Value="protected override System.Data.Common.DbCommand CreateDbCommand ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Data.Common.DbCommand CreateDbCommand() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbConnection.CreateDbCommand" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateDbCommand () As DbCommand" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Data::Common::DbCommand ^ CreateDbCommand();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -488,14 +540,19 @@
       <MemberSignature Language="C#" Value="public override string Database { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Database" />
       <MemberSignature Language="DocId" Value="P:System.Data.OleDb.OleDbConnection.Database" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Database As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Database { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Data.IDbConnection.Database</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -529,6 +586,8 @@
       <MemberSignature Language="C#" Value="public override string DataSource { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DataSource" />
       <MemberSignature Language="DocId" Value="P:System.Data.OleDb.OleDbConnection.DataSource" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property DataSource As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DataSource { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -570,6 +629,8 @@
       <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbConnection.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -591,6 +652,8 @@
       <MemberSignature Language="C#" Value="public void EnlistDistributedTransaction (System.EnterpriseServices.ITransaction transaction);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EnlistDistributedTransaction(class System.EnterpriseServices.ITransaction transaction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbConnection.EnlistDistributedTransaction(System.EnterpriseServices.ITransaction)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnlistDistributedTransaction (transaction As ITransaction)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EnlistDistributedTransaction(System::EnterpriseServices::ITransaction ^ transaction);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -623,6 +686,7 @@
       <MemberSignature Language="C#" Value="public override void EnlistTransaction (System.Transactions.Transaction transaction);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void EnlistTransaction(class System.Transactions.Transaction transaction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbConnection.EnlistTransaction(System.Transactions.Transaction)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void EnlistTransaction(System::Transactions::Transaction ^ transaction);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -651,6 +715,8 @@
       <MemberSignature Language="C#" Value="public System.Data.DataTable GetOleDbSchemaTable (Guid schema, object[] restrictions);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.DataTable GetOleDbSchemaTable(valuetype System.Guid schema, object[] restrictions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbConnection.GetOleDbSchemaTable(System.Guid,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetOleDbSchemaTable (schema As Guid, restrictions As Object()) As DataTable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::DataTable ^ GetOleDbSchemaTable(Guid schema, cli::array &lt;System::Object ^&gt; ^ restrictions);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -697,10 +763,21 @@
  The <paramref name="schema" /> parameter contains a value of <see cref="F:System.Data.OleDb.OleDbSchemaGuid.DbInfoLiterals" /> and the <paramref name="restrictions" /> parameter contains one or more restrictions.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetSchema">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns schema information for the data source of this <see cref="T:System.Data.OleDb.OleDbConnection" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetSchema">
       <MemberSignature Language="C#" Value="public override System.Data.DataTable GetSchema ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Data.DataTable GetSchema() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbConnection.GetSchema" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetSchema () As DataTable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Data::DataTable ^ GetSchema();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -720,6 +797,8 @@
       <MemberSignature Language="C#" Value="public override System.Data.DataTable GetSchema (string collectionName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Data.DataTable GetSchema(string collectionName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbConnection.GetSchema(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetSchema (collectionName As String) As DataTable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Data::DataTable ^ GetSchema(System::String ^ collectionName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -749,6 +828,8 @@
       <MemberSignature Language="C#" Value="public override System.Data.DataTable GetSchema (string collectionName, string[] restrictionValues);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Data.DataTable GetSchema(string collectionName, string[] restrictionValues) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbConnection.GetSchema(System.String,System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetSchema (collectionName As String, restrictionValues As String()) As DataTable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Data::DataTable ^ GetSchema(System::String ^ collectionName, cli::array &lt;System::String ^&gt; ^ restrictionValues);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -784,6 +865,8 @@
       <MemberSignature Language="C#" Value="public event System.Data.OleDb.OleDbInfoMessageEventHandler InfoMessage;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Data.OleDb.OleDbInfoMessageEventHandler InfoMessage" />
       <MemberSignature Language="DocId" Value="E:System.Data.OleDb.OleDbConnection.InfoMessage" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event InfoMessage As OleDbInfoMessageEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Data::OleDb::OleDbInfoMessageEventHandler ^ InfoMessage;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -812,7 +895,12 @@
       <MemberSignature Language="C#" Value="public override void Open ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Open() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbConnection.Open" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Open ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Open();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDbConnection.Open</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -842,6 +930,8 @@
       <MemberSignature Language="C#" Value="public string Provider { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Provider" />
       <MemberSignature Language="DocId" Value="P:System.Data.OleDb.OleDbConnection.Provider" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Provider As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Provider { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -852,7 +942,7 @@
           <AttributeName>System.ComponentModel.Browsable(true)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -878,6 +968,8 @@
       <MemberSignature Language="C#" Value="public static void ReleaseObjectPool ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ReleaseObjectPool() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbConnection.ReleaseObjectPool" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub ReleaseObjectPool ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ReleaseObjectPool();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -923,6 +1015,8 @@
       <MemberSignature Language="C#" Value="public void ResetState ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ResetState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbConnection.ResetState" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ResetState ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetState();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -953,6 +1047,8 @@
       <MemberSignature Language="C#" Value="public override string ServerVersion { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ServerVersion" />
       <MemberSignature Language="DocId" Value="P:System.Data.OleDb.OleDbConnection.ServerVersion" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ServerVersion As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ServerVersion { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -989,7 +1085,12 @@
       <MemberSignature Language="C#" Value="public override System.Data.ConnectionState State { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.ConnectionState State" />
       <MemberSignature Language="DocId" Value="P:System.Data.OleDb.OleDbConnection.State" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property State As ConnectionState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Data::ConnectionState State { System::Data::ConnectionState get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Data.IDbConnection.State</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -999,7 +1100,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1029,7 +1130,12 @@
       <MemberSignature Language="C#" Value="object ICloneable.Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.ICloneable.Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbConnection.System#ICloneable#Clone" />
+      <MemberSignature Language="VB.NET" Value="Function Clone () As Object Implements ICloneable.Clone" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.ICloneable.Clone() = ICloneable::Clone;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1051,32 +1157,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetSchema">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns schema information for the data source of this <see cref="T:System.Data.OleDb.OleDbConnection" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.OleDb.OleDbConnection" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="BeginTransaction">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Starts a database transaction.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

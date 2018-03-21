@@ -1,7 +1,9 @@
-<Type Name="IOnlineStatus" FullName="System.ServiceModel.IOnlineStatus">
+﻿<Type Name="IOnlineStatus" FullName="System.ServiceModel.IOnlineStatus">
   <TypeSignature Language="C#" Value="public interface IOnlineStatus" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IOnlineStatus" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.IOnlineStatus" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IOnlineStatus" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IOnlineStatus" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +25,8 @@
       <MemberSignature Language="C#" Value="public bool IsOnline { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsOnline" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.IOnlineStatus.IsOnline" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsOnline As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsOnline { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -38,9 +42,11 @@
       </Docs>
     </Member>
     <Member MemberName="Offline">
-      <MemberSignature Language="C#" Value="public event EventHandler Offline;" />
+      <MemberSignature Language="C#" Value="event EventHandler Offline;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Offline" />
       <MemberSignature Language="DocId" Value="E:System.ServiceModel.IOnlineStatus.Offline" />
+      <MemberSignature Language="VB.NET" Value="Event Offline As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Offline;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -55,9 +61,11 @@
       </Docs>
     </Member>
     <Member MemberName="Online">
-      <MemberSignature Language="C#" Value="public event EventHandler Online;" />
+      <MemberSignature Language="C#" Value="event EventHandler Online;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Online" />
       <MemberSignature Language="DocId" Value="E:System.ServiceModel.IOnlineStatus.Online" />
+      <MemberSignature Language="VB.NET" Value="Event Online As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Online;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

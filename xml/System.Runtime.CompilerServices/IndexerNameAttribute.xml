@@ -1,7 +1,9 @@
-<Type Name="IndexerNameAttribute" FullName="System.Runtime.CompilerServices.IndexerNameAttribute">
+﻿<Type Name="IndexerNameAttribute" FullName="System.Runtime.CompilerServices.IndexerNameAttribute">
   <TypeSignature Language="C#" Value="public sealed class IndexerNameAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit IndexerNameAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.IndexerNameAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class IndexerNameAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class IndexerNameAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +53,8 @@
       <MemberSignature Language="C#" Value="public IndexerNameAttribute (string indexerName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string indexerName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.IndexerNameAttribute.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (indexerName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IndexerNameAttribute(System::String ^ indexerName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

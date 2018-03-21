@@ -1,7 +1,9 @@
-<Type Name="EllipseStylusShape" FullName="System.Windows.Ink.EllipseStylusShape">
+﻿<Type Name="EllipseStylusShape" FullName="System.Windows.Ink.EllipseStylusShape">
   <TypeSignature Language="C#" Value="public sealed class EllipseStylusShape : System.Windows.Ink.StylusShape" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EllipseStylusShape extends System.Windows.Ink.StylusShape" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Ink.EllipseStylusShape" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EllipseStylusShape&#xA;Inherits StylusShape" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EllipseStylusShape sealed : System::Windows::Ink::StylusShape" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +51,8 @@
       <MemberSignature Language="C#" Value="public EllipseStylusShape (double width, double height);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 width, float64 height) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Ink.EllipseStylusShape.#ctor(System.Double,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (width As Double, height As Double)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EllipseStylusShape(double width, double height);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -79,6 +83,8 @@
       <MemberSignature Language="C#" Value="public EllipseStylusShape (double width, double height, double rotation);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 width, float64 height, float64 rotation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Ink.EllipseStylusShape.#ctor(System.Double,System.Double,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (width As Double, height As Double, rotation As Double)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EllipseStylusShape(double width, double height, double rotation);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

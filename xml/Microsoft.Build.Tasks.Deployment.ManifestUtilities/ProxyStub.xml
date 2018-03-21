@@ -1,7 +1,9 @@
-<Type Name="ProxyStub" FullName="Microsoft.Build.Tasks.Deployment.ManifestUtilities.ProxyStub">
+﻿<Type Name="ProxyStub" FullName="Microsoft.Build.Tasks.Deployment.ManifestUtilities.ProxyStub">
   <TypeSignature Language="C#" Value="public class ProxyStub" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ProxyStub extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ProxyStub" />
+  <TypeSignature Language="VB.NET" Value="Public Class ProxyStub" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ProxyStub" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +27,8 @@
       <MemberSignature Language="C#" Value="public ProxyStub ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ProxyStub.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ProxyStub();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -41,6 +45,8 @@
       <MemberSignature Language="C#" Value="public string BaseInterface { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string BaseInterface" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ProxyStub.BaseInterface" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BaseInterface As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ BaseInterface { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -65,6 +71,8 @@
       <MemberSignature Language="C#" Value="public string IID { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string IID" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ProxyStub.IID" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IID As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ IID { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -96,6 +104,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ProxyStub.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -120,6 +130,8 @@
       <MemberSignature Language="C#" Value="public string NumMethods { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string NumMethods" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ProxyStub.NumMethods" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NumMethods As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NumMethods { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -144,6 +156,8 @@
       <MemberSignature Language="C#" Value="public string TlbId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TlbId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ProxyStub.TlbId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TlbId As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TlbId { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -168,6 +182,8 @@
       <MemberSignature Language="C#" Value="public string XmlBaseInterface { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XmlBaseInterface" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ProxyStub.XmlBaseInterface" />
+      <MemberSignature Language="VB.NET" Value="Public Property XmlBaseInterface As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlBaseInterface { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -198,6 +214,8 @@
       <MemberSignature Language="C#" Value="public string XmlIID { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XmlIID" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ProxyStub.XmlIID" />
+      <MemberSignature Language="VB.NET" Value="Public Property XmlIID As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlIID { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -228,6 +246,8 @@
       <MemberSignature Language="C#" Value="public string XmlName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XmlName" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ProxyStub.XmlName" />
+      <MemberSignature Language="VB.NET" Value="Public Property XmlName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -258,6 +278,8 @@
       <MemberSignature Language="C#" Value="public string XmlNumMethods { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XmlNumMethods" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ProxyStub.XmlNumMethods" />
+      <MemberSignature Language="VB.NET" Value="Public Property XmlNumMethods As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlNumMethods { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -288,6 +310,8 @@
       <MemberSignature Language="C#" Value="public string XmlTlbId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XmlTlbId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ProxyStub.XmlTlbId" />
+      <MemberSignature Language="VB.NET" Value="Public Property XmlTlbId As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlTlbId { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="CipherData" FullName="System.Security.Cryptography.Xml.CipherData">
+﻿<Type Name="CipherData" FullName="System.Security.Cryptography.Xml.CipherData">
   <TypeSignature Language="C#" Value="public sealed class CipherData" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CipherData extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Xml.CipherData" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CipherData" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CipherData sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Security</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,10 +42,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Xml.CipherData" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public CipherData ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.CipherData.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CipherData();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -79,6 +92,8 @@
       <MemberSignature Language="C#" Value="public CipherData (byte[] cipherValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int8[] cipherValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.CipherData.#ctor(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (cipherValue As Byte())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CipherData(cli::array &lt;System::Byte&gt; ^ cipherValue);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -122,6 +137,7 @@
       <MemberSignature Language="C#" Value="public CipherData (System.Security.Cryptography.Xml.CipherReference cipherReference);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Cryptography.Xml.CipherReference cipherReference) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.CipherData.#ctor(System.Security.Cryptography.Xml.CipherReference)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CipherData(System::Security::Cryptography::Xml::CipherReference ^ cipherReference);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -165,6 +181,8 @@
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.Xml.CipherReference CipherReference { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.Xml.CipherReference CipherReference" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.CipherData.CipherReference" />
+      <MemberSignature Language="VB.NET" Value="Public Property CipherReference As CipherReference" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::Xml::CipherReference ^ CipherReference { System::Security::Cryptography::Xml::CipherReference ^ get(); void set(System::Security::Cryptography::Xml::CipherReference ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -208,6 +226,8 @@
       <MemberSignature Language="C#" Value="public byte[] CipherValue { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] CipherValue" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.CipherData.CipherValue" />
+      <MemberSignature Language="VB.NET" Value="Public Property CipherValue As Byte()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Byte&gt; ^ CipherValue { cli::array &lt;System::Byte&gt; ^ get(); void set(cli::array &lt;System::Byte&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -251,6 +271,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.XmlElement GetXml ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlElement GetXml() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.CipherData.GetXml" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetXml () As XmlElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::XmlElement ^ GetXml();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -291,6 +313,8 @@
       <MemberSignature Language="C#" Value="public void LoadXml (System.Xml.XmlElement value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void LoadXml(class System.Xml.XmlElement value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.CipherData.LoadXml(System.Xml.XmlElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub LoadXml (value As XmlElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void LoadXml(System::Xml::XmlElement ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -321,14 +345,5 @@
         <exception cref="T:System.Security.Cryptography.CryptographicException">The <see cref="P:System.Security.Cryptography.Xml.CipherData.CipherValue" /> property and the <see cref="P:System.Security.Cryptography.Xml.CipherData.CipherReference" /> property are <see langword="null" />.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Xml.CipherData" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

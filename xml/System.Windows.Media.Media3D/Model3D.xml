@@ -1,7 +1,9 @@
-<Type Name="Model3D" FullName="System.Windows.Media.Media3D.Model3D">
+﻿<Type Name="Model3D" FullName="System.Windows.Media.Media3D.Model3D">
   <TypeSignature Language="C#" Value="public abstract class Model3D : System.Windows.Media.Animation.Animatable, IFormattable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract Model3D extends System.Windows.Media.Animation.Animatable implements class System.IFormattable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Media3D.Model3D" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class Model3D&#xA;Inherits Animatable&#xA;Implements IFormattable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Model3D abstract : System::Windows::Media::Animation::Animatable, IFormattable" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +44,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Media3D.Rect3D Bounds { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Media.Media3D.Rect3D Bounds" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Model3D.Bounds" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Bounds As Rect3D" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Media3D::Rect3D Bounds { System::Windows::Media::Media3D::Rect3D get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -60,6 +64,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Media3D.Model3D Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.Media3D.Model3D Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Model3D.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As Model3D" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Media3D::Model3D ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -88,6 +94,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Media3D.Model3D CloneCurrentValue ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.Media3D.Model3D CloneCurrentValue() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Model3D.CloneCurrentValue" />
+      <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As Model3D" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Media3D::Model3D ^ CloneCurrentValue();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -116,7 +124,12 @@
       <MemberSignature Language="C#" Value="string IFormattable.ToString (string format, IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string System.IFormattable.ToString(string format, class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Model3D.System#IFormattable#ToString(System.String,System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToString (format As String, provider As IFormatProvider) As String Implements IFormattable.ToString" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::String ^ System.IFormattable.ToString(System::String ^ format, IFormatProvider ^ provider) = IFormattable::ToString;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IFormattable.ToString(System.String,System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -144,10 +157,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a string representation of the Model3D.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ToString">
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Model3D.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -167,6 +191,8 @@
       <MemberSignature Language="C#" Value="public string ToString (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string ToString(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Model3D.ToString(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToString (provider As IFormatProvider) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToString(IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -189,6 +215,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Media3D.Transform3D Transform { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Media3D.Transform3D Transform" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Model3D.Transform" />
+      <MemberSignature Language="VB.NET" Value="Public Property Transform As Transform3D" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Media3D::Transform3D ^ Transform { System::Windows::Media::Media3D::Transform3D ^ get(); void set(System::Windows::Media::Media3D::Transform3D ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -226,6 +254,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty TransformProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty TransformProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Media3D.Model3D.TransformProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TransformProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ TransformProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -239,14 +269,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="ToString">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a string representation of the Model3D.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

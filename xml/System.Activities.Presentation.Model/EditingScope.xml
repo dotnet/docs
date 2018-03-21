@@ -1,7 +1,9 @@
-<Type Name="EditingScope" FullName="System.Activities.Presentation.Model.EditingScope">
+﻿<Type Name="EditingScope" FullName="System.Activities.Presentation.Model.EditingScope">
   <TypeSignature Language="C#" Value="public class EditingScope : System.Activities.Presentation.Model.ModelEditingScope" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EditingScope extends System.Activities.Presentation.Model.ModelEditingScope" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Model.EditingScope" />
+  <TypeSignature Language="VB.NET" Value="Public Class EditingScope&#xA;Inherits ModelEditingScope" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EditingScope : System::Activities::Presentation::Model::ModelEditingScope" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +28,8 @@
       <MemberSignature Language="C#" Value="protected override bool CanComplete ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool CanComplete() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.EditingScope.CanComplete" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CanComplete () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool CanComplete();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -46,6 +50,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;System.Activities.Presentation.Model.Change&gt; Changes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class System.Activities.Presentation.Model.Change&gt; Changes" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.EditingScope.Changes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Changes As List(Of Change)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::List&lt;System::Activities::Presentation::Model::Change ^&gt; ^ Changes { System::Collections::Generic::List&lt;System::Activities::Presentation::Model::Change ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -64,6 +70,8 @@
       <MemberSignature Language="C#" Value="public bool HasEffectiveChanges { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasEffectiveChanges" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.EditingScope.HasEffectiveChanges" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasEffectiveChanges As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasEffectiveChanges { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -83,6 +91,8 @@
       <MemberSignature Language="C#" Value="protected override void OnComplete ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnComplete() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.EditingScope.OnComplete" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnComplete ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnComplete();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -101,6 +111,8 @@
       <MemberSignature Language="C#" Value="protected override bool OnException (Exception e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool OnException(class System.Exception e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.EditingScope.OnException(System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnException (e As Exception) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool OnException(Exception ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -124,6 +136,8 @@
       <MemberSignature Language="C#" Value="protected override void OnRevert (bool finalizing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnRevert(bool finalizing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.EditingScope.OnRevert(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnRevert (finalizing As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnRevert(bool finalizing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

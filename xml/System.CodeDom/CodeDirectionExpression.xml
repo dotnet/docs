@@ -1,7 +1,9 @@
-<Type Name="CodeDirectionExpression" FullName="System.CodeDom.CodeDirectionExpression">
+﻿<Type Name="CodeDirectionExpression" FullName="System.CodeDom.CodeDirectionExpression">
   <TypeSignature Language="C#" Value="public class CodeDirectionExpression : System.CodeDom.CodeExpression" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CodeDirectionExpression extends System.CodeDom.CodeExpression" />
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeDirectionExpression" />
+  <TypeSignature Language="VB.NET" Value="Public Class CodeDirectionExpression&#xA;Inherits CodeExpression" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CodeDirectionExpression : System::CodeDom::CodeExpression" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -16,7 +18,7 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
@@ -48,10 +50,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeDirectionExpression" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public CodeDirectionExpression ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeDirectionExpression.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeDirectionExpression();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -71,6 +84,8 @@
       <MemberSignature Language="C#" Value="public CodeDirectionExpression (System.CodeDom.FieldDirection direction, System.CodeDom.CodeExpression expression);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.CodeDom.FieldDirection direction, class System.CodeDom.CodeExpression expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeDirectionExpression.#ctor(System.CodeDom.FieldDirection,System.CodeDom.CodeExpression)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (direction As FieldDirection, expression As CodeExpression)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeDirectionExpression(System::CodeDom::FieldDirection direction, System::CodeDom::CodeExpression ^ expression);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -95,6 +110,8 @@
       <MemberSignature Language="C#" Value="public System.CodeDom.FieldDirection Direction { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.CodeDom.FieldDirection Direction" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeDirectionExpression.Direction" />
+      <MemberSignature Language="VB.NET" Value="Public Property Direction As FieldDirection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::FieldDirection Direction { System::CodeDom::FieldDirection get(); void set(System::CodeDom::FieldDirection value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -117,6 +134,8 @@
       <MemberSignature Language="C#" Value="public System.CodeDom.CodeExpression Expression { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeExpression Expression" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeDirectionExpression.Expression" />
+      <MemberSignature Language="VB.NET" Value="Public Property Expression As CodeExpression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeExpression ^ Expression { System::CodeDom::CodeExpression ^ get(); void set(System::CodeDom::CodeExpression ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -135,14 +154,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeDirectionExpression" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,9 @@
-<Type Name="SrgsToken" FullName="System.Speech.Recognition.SrgsGrammar.SrgsToken">
+﻿<Type Name="SrgsToken" FullName="System.Speech.Recognition.SrgsGrammar.SrgsToken">
   <TypeSignature Language="C#" Value="public class SrgsToken : System.Speech.Recognition.SrgsGrammar.SrgsElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit SrgsToken extends System.Speech.Recognition.SrgsGrammar.SrgsElement" />
   <TypeSignature Language="DocId" Value="T:System.Speech.Recognition.SrgsGrammar.SrgsToken" />
+  <TypeSignature Language="VB.NET" Value="Public Class SrgsToken&#xA;Inherits SrgsElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SrgsToken : System::Speech::Recognition::SrgsGrammar::SrgsElement" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +37,8 @@
       <MemberSignature Language="C#" Value="public SrgsToken (string text);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SrgsGrammar.SrgsToken.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (text As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SrgsToken(System::String ^ text);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -64,6 +68,8 @@
       <MemberSignature Language="C#" Value="public string Display { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Display" />
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SrgsGrammar.SrgsToken.Display" />
+      <MemberSignature Language="VB.NET" Value="Public Property Display As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Display { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -91,6 +97,8 @@
       <MemberSignature Language="C#" Value="public string Pronunciation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Pronunciation" />
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SrgsGrammar.SrgsToken.Pronunciation" />
+      <MemberSignature Language="VB.NET" Value="Public Property Pronunciation As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Pronunciation { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -207,6 +215,8 @@ namespace SampleRecognition
       <MemberSignature Language="C#" Value="public string Text { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Text" />
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SrgsGrammar.SrgsToken.Text" />
+      <MemberSignature Language="VB.NET" Value="Public Property Text As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>

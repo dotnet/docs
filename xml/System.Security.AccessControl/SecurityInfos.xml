@@ -1,7 +1,9 @@
-<Type Name="SecurityInfos" FullName="System.Security.AccessControl.SecurityInfos">
+﻿<Type Name="SecurityInfos" FullName="System.Security.AccessControl.SecurityInfos">
   <TypeSignature Language="C#" Value="public enum SecurityInfos" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SecurityInfos extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.SecurityInfos" />
+  <TypeSignature Language="VB.NET" Value="Public Enum SecurityInfos" />
+  <TypeSignature Language="C++ CLI" Value="public enum class SecurityInfos" />
   <AssemblyInfo>
     <AssemblyName>System.Security.AccessControl</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +31,8 @@
       <MemberSignature Language="C#" Value="DiscretionaryAcl" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.SecurityInfos DiscretionaryAcl = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.SecurityInfos.DiscretionaryAcl" />
+      <MemberSignature Language="VB.NET" Value="DiscretionaryAcl" />
+      <MemberSignature Language="C++ CLI" Value="DiscretionaryAcl" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -43,6 +47,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.SecurityInfos</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Specifies the discretionary access control list (DACL).</summary>
       </Docs>
@@ -51,6 +56,8 @@
       <MemberSignature Language="C#" Value="Group" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.SecurityInfos Group = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.SecurityInfos.Group" />
+      <MemberSignature Language="VB.NET" Value="Group" />
+      <MemberSignature Language="C++ CLI" Value="Group" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -65,6 +72,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.SecurityInfos</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Specifies the primary group identifier.</summary>
       </Docs>
@@ -73,6 +81,8 @@
       <MemberSignature Language="C#" Value="Owner" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.SecurityInfos Owner = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.SecurityInfos.Owner" />
+      <MemberSignature Language="VB.NET" Value="Owner" />
+      <MemberSignature Language="C++ CLI" Value="Owner" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -87,6 +97,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.SecurityInfos</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Specifies the owner identifier.</summary>
       </Docs>
@@ -95,6 +106,8 @@
       <MemberSignature Language="C#" Value="SystemAcl" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.SecurityInfos SystemAcl = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.SecurityInfos.SystemAcl" />
+      <MemberSignature Language="VB.NET" Value="SystemAcl" />
+      <MemberSignature Language="C++ CLI" Value="SystemAcl" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -109,6 +122,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.SecurityInfos</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>Specifies the system access control list (SACL).</summary>
       </Docs>

@@ -1,7 +1,9 @@
-<Type Name="TimestampAttribute" FullName="System.ComponentModel.DataAnnotations.TimestampAttribute">
+﻿<Type Name="TimestampAttribute" FullName="System.ComponentModel.DataAnnotations.TimestampAttribute">
   <TypeSignature Language="C#" Value="public sealed class TimestampAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TimestampAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.DataAnnotations.TimestampAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TimestampAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TimestampAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -18,7 +20,7 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.AttributeUsage(System.AttributeTargets.Property | System.AttributeTargets.Field, AllowMultiple=false, Inherited=true)</AttributeName>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Field | System.AttributeTargets.Property, AllowMultiple=false, Inherited=true)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -39,6 +41,8 @@
       <MemberSignature Language="C#" Value="public TimestampAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.TimestampAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TimestampAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>

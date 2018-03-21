@@ -1,7 +1,9 @@
-<Type Name="IteratorResult" FullName="System.Xml.Xsl.Runtime.IteratorResult">
+﻿<Type Name="IteratorResult" FullName="System.Xml.Xsl.Runtime.IteratorResult">
   <TypeSignature Language="C#" Value="public enum IteratorResult" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed IteratorResult extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Xsl.Runtime.IteratorResult" />
+  <TypeSignature Language="VB.NET" Value="Public Enum IteratorResult" />
+  <TypeSignature Language="C++ CLI" Value="public enum class IteratorResult" />
   <AssemblyInfo>
     <AssemblyName>System.Data.SqlXml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +30,8 @@
       <MemberSignature Language="C#" Value="HaveCurrentNode" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Xsl.Runtime.IteratorResult HaveCurrentNode = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Xsl.Runtime.IteratorResult.HaveCurrentNode" />
+      <MemberSignature Language="VB.NET" Value="HaveCurrentNode" />
+      <MemberSignature Language="C++ CLI" Value="HaveCurrentNode" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -40,6 +44,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Xsl.Runtime.IteratorResult</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Iteration is complete; there are no more nodes.</summary>
         <forInternalUseOnly />
@@ -49,6 +54,8 @@
       <MemberSignature Language="C#" Value="NeedInputNode" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Xsl.Runtime.IteratorResult NeedInputNode = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Xsl.Runtime.IteratorResult.NeedInputNode" />
+      <MemberSignature Language="VB.NET" Value="NeedInputNode" />
+      <MemberSignature Language="C++ CLI" Value="NeedInputNode" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -61,6 +68,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Xsl.Runtime.IteratorResult</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The next node must be fetched from the contained iterator before iteration can continue.</summary>
         <forInternalUseOnly />
@@ -70,6 +78,8 @@
       <MemberSignature Language="C#" Value="NoMoreNodes" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Xsl.Runtime.IteratorResult NoMoreNodes = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Xsl.Runtime.IteratorResult.NoMoreNodes" />
+      <MemberSignature Language="VB.NET" Value="NoMoreNodes" />
+      <MemberSignature Language="C++ CLI" Value="NoMoreNodes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -82,6 +92,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Xsl.Runtime.IteratorResult</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Iteration is complete; there are no more nodes</summary>
         <forInternalUseOnly />

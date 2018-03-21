@@ -1,7 +1,9 @@
-<Type Name="VisualStyleElement+TreeView+Glyph" FullName="System.Windows.Forms.VisualStyles.VisualStyleElement+TreeView+Glyph">
+﻿<Type Name="VisualStyleElement+TreeView+Glyph" FullName="System.Windows.Forms.VisualStyles.VisualStyleElement+TreeView+Glyph">
   <TypeSignature Language="C#" Value="public static class VisualStyleElement.TreeView.Glyph" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi abstract sealed beforefieldinit VisualStyleElement/TreeView/Glyph extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.VisualStyleElement.TreeView.Glyph" />
+  <TypeSignature Language="VB.NET" Value="Public Class VisualStyleElement.TreeView.Glyph" />
+  <TypeSignature Language="C++ CLI" Value="public: ref class VisualStyleElement::TreeView::Glyph abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +38,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Forms.VisualStyles.VisualStyleElement Closed { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.VisualStyles.VisualStyleElement Closed" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.VisualStyleElement.TreeView.Glyph.Closed" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Closed As VisualStyleElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::VisualStyles::VisualStyleElement ^ Closed { System::Windows::Forms::VisualStyles::VisualStyleElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -69,6 +73,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Forms.VisualStyles.VisualStyleElement Opened { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.VisualStyles.VisualStyleElement Opened" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.VisualStyleElement.TreeView.Glyph.Opened" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Opened As VisualStyleElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::VisualStyles::VisualStyleElement ^ Opened { System::Windows::Forms::VisualStyles::VisualStyleElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

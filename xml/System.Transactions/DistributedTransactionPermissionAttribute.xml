@@ -1,7 +1,9 @@
-<Type Name="DistributedTransactionPermissionAttribute" FullName="System.Transactions.DistributedTransactionPermissionAttribute">
+﻿<Type Name="DistributedTransactionPermissionAttribute" FullName="System.Transactions.DistributedTransactionPermissionAttribute">
   <TypeSignature Language="C#" Value="public sealed class DistributedTransactionPermissionAttribute : System.Security.Permissions.CodeAccessSecurityAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DistributedTransactionPermissionAttribute extends System.Security.Permissions.CodeAccessSecurityAttribute" />
   <TypeSignature Language="DocId" Value="T:System.Transactions.DistributedTransactionPermissionAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DistributedTransactionPermissionAttribute&#xA;Inherits CodeAccessSecurityAttribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DistributedTransactionPermissionAttribute sealed : System::Security::Permissions::CodeAccessSecurityAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.Transactions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +30,8 @@
       <MemberSignature Language="C#" Value="public DistributedTransactionPermissionAttribute (System.Security.Permissions.SecurityAction action);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Permissions.SecurityAction action) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Transactions.DistributedTransactionPermissionAttribute.#ctor(System.Security.Permissions.SecurityAction)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (action As SecurityAction)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DistributedTransactionPermissionAttribute(System::Security::Permissions::SecurityAction action);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -50,6 +54,8 @@
       <MemberSignature Language="C#" Value="public override System.Security.IPermission CreatePermission ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission CreatePermission() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Transactions.DistributedTransactionPermissionAttribute.CreatePermission" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreatePermission () As IPermission" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ CreatePermission();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -73,6 +79,8 @@
       <MemberSignature Language="C#" Value="public bool Unrestricted { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Unrestricted" />
       <MemberSignature Language="DocId" Value="P:System.Transactions.DistributedTransactionPermissionAttribute.Unrestricted" />
+      <MemberSignature Language="VB.NET" Value="Public Property Unrestricted As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Unrestricted { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>

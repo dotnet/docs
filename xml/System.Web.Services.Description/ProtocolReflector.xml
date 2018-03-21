@@ -1,7 +1,9 @@
-<Type Name="ProtocolReflector" FullName="System.Web.Services.Description.ProtocolReflector">
+﻿<Type Name="ProtocolReflector" FullName="System.Web.Services.Description.ProtocolReflector">
   <TypeSignature Language="C#" Value="public abstract class ProtocolReflector" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ProtocolReflector extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.ProtocolReflector" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ProtocolReflector" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ProtocolReflector abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +34,8 @@
       <MemberSignature Language="C#" Value="protected ProtocolReflector ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.ProtocolReflector.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ProtocolReflector();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -47,6 +51,8 @@
       <MemberSignature Language="C#" Value="protected virtual void BeginClass ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void BeginClass() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.ProtocolReflector.BeginClass" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub BeginClass ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void BeginClass();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -65,6 +71,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Services.Description.Binding Binding { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Description.Binding Binding" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.ProtocolReflector.Binding" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Binding As Binding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Description::Binding ^ Binding { System::Web::Services::Description::Binding ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -83,6 +91,8 @@
       <MemberSignature Language="C#" Value="public string DefaultNamespace { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DefaultNamespace" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.ProtocolReflector.DefaultNamespace" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DefaultNamespace As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DefaultNamespace { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -101,6 +111,8 @@
       <MemberSignature Language="C#" Value="protected virtual void EndClass ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void EndClass() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.ProtocolReflector.EndClass" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub EndClass ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void EndClass();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -119,6 +131,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Services.Description.ServiceDescription GetServiceDescription (string ns);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.Services.Description.ServiceDescription GetServiceDescription(string ns) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.ProtocolReflector.GetServiceDescription(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetServiceDescription (ns As String) As ServiceDescription" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::Services::Description::ServiceDescription ^ GetServiceDescription(System::String ^ ns);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -148,6 +162,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Services.Description.MessageCollection HeaderMessages { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Description.MessageCollection HeaderMessages" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.ProtocolReflector.HeaderMessages" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HeaderMessages As MessageCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Description::MessageCollection ^ HeaderMessages { System::Web::Services::Description::MessageCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -166,6 +182,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Services.Description.Message InputMessage { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Description.Message InputMessage" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.ProtocolReflector.InputMessage" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InputMessage As Message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Description::Message ^ InputMessage { System::Web::Services::Description::Message ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -184,6 +202,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Services.Protocols.LogicalMethodInfo Method { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Protocols.LogicalMethodInfo Method" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.ProtocolReflector.Method" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Method As LogicalMethodInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Protocols::LogicalMethodInfo ^ Method { System::Web::Services::Protocols::LogicalMethodInfo ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -202,6 +222,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Services.WebMethodAttribute MethodAttribute { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.WebMethodAttribute MethodAttribute" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.ProtocolReflector.MethodAttribute" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MethodAttribute As WebMethodAttribute" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::WebMethodAttribute ^ MethodAttribute { System::Web::Services::WebMethodAttribute ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -220,6 +242,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Services.Protocols.LogicalMethodInfo[] Methods { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Protocols.LogicalMethodInfo[] Methods" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.ProtocolReflector.Methods" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Methods As LogicalMethodInfo()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Web::Services::Protocols::LogicalMethodInfo ^&gt; ^ Methods { cli::array &lt;System::Web::Services::Protocols::LogicalMethodInfo ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -245,6 +269,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Services.Description.Operation Operation { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Description.Operation Operation" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.ProtocolReflector.Operation" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Operation As Operation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Description::Operation ^ Operation { System::Web::Services::Description::Operation ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -270,6 +296,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Services.Description.OperationBinding OperationBinding { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Description.OperationBinding OperationBinding" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.ProtocolReflector.OperationBinding" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OperationBinding As OperationBinding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Description::OperationBinding ^ OperationBinding { System::Web::Services::Description::OperationBinding ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -295,6 +323,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Services.Description.Message OutputMessage { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Description.Message OutputMessage" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.ProtocolReflector.OutputMessage" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OutputMessage As Message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Description::Message ^ OutputMessage { System::Web::Services::Description::Message ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -313,6 +343,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Services.Description.Port Port { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Description.Port Port" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.ProtocolReflector.Port" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Port As Port" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Description::Port ^ Port { System::Web::Services::Description::Port ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -331,6 +363,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Services.Description.PortType PortType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Description.PortType PortType" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.ProtocolReflector.PortType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PortType As PortType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Description::PortType ^ PortType { System::Web::Services::Description::PortType ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -349,6 +383,8 @@
       <MemberSignature Language="C#" Value="public abstract string ProtocolName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ProtocolName" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.ProtocolReflector.ProtocolName" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ProtocolName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ ProtocolName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -367,6 +403,8 @@
       <MemberSignature Language="C#" Value="protected virtual void ReflectDescription ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ReflectDescription() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.ProtocolReflector.ReflectDescription" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ReflectDescription ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ReflectDescription();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -385,6 +423,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.Serialization.XmlReflectionImporter ReflectionImporter { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Serialization.XmlReflectionImporter ReflectionImporter" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.ProtocolReflector.ReflectionImporter" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReflectionImporter As XmlReflectionImporter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Serialization::XmlReflectionImporter ^ ReflectionImporter { System::Xml::Serialization::XmlReflectionImporter ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -403,6 +443,8 @@
       <MemberSignature Language="C#" Value="protected abstract bool ReflectMethod ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool ReflectMethod() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.ProtocolReflector.ReflectMethod" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Function ReflectMethod () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract bool ReflectMethod();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -429,6 +471,8 @@
       <MemberSignature Language="C#" Value="protected virtual string ReflectMethodBinding ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance string ReflectMethodBinding() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.ProtocolReflector.ReflectMethodBinding" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function ReflectMethodBinding () As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::String ^ ReflectMethodBinding();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -448,6 +492,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.Serialization.XmlSchemaExporter SchemaExporter { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Serialization.XmlSchemaExporter SchemaExporter" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.ProtocolReflector.SchemaExporter" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SchemaExporter As XmlSchemaExporter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Serialization::XmlSchemaExporter ^ SchemaExporter { System::Xml::Serialization::XmlSchemaExporter ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -466,6 +512,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.Serialization.XmlSchemas Schemas { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Serialization.XmlSchemas Schemas" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.ProtocolReflector.Schemas" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Schemas As XmlSchemas" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Serialization::XmlSchemas ^ Schemas { System::Xml::Serialization::XmlSchemas ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -484,6 +532,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Services.Description.Service Service { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Description.Service Service" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.ProtocolReflector.Service" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Service As Service" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Description::Service ^ Service { System::Web::Services::Description::Service ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -502,6 +552,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Services.Description.ServiceDescription ServiceDescription { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Description.ServiceDescription ServiceDescription" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.ProtocolReflector.ServiceDescription" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ServiceDescription As ServiceDescription" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Description::ServiceDescription ^ ServiceDescription { System::Web::Services::Description::ServiceDescription ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -520,6 +572,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Services.Description.ServiceDescriptionCollection ServiceDescriptions { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Description.ServiceDescriptionCollection ServiceDescriptions" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.ProtocolReflector.ServiceDescriptions" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ServiceDescriptions As ServiceDescriptionCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Description::ServiceDescriptionCollection ^ ServiceDescriptions { System::Web::Services::Description::ServiceDescriptionCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -545,6 +599,8 @@
       <MemberSignature Language="C#" Value="public Type ServiceType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type ServiceType" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.ProtocolReflector.ServiceType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ServiceType As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ServiceType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -570,6 +626,8 @@
       <MemberSignature Language="C#" Value="public string ServiceUrl { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ServiceUrl" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.ProtocolReflector.ServiceUrl" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ServiceUrl As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ServiceUrl { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

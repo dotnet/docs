@@ -1,7 +1,9 @@
-<Type Name="QueuedDeliveryRequirementsMode" FullName="System.ServiceModel.QueuedDeliveryRequirementsMode">
+﻿<Type Name="QueuedDeliveryRequirementsMode" FullName="System.ServiceModel.QueuedDeliveryRequirementsMode">
   <TypeSignature Language="C#" Value="public enum QueuedDeliveryRequirementsMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed QueuedDeliveryRequirementsMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.QueuedDeliveryRequirementsMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum QueuedDeliveryRequirementsMode" />
+  <TypeSignature Language="C++ CLI" Value="public enum class QueuedDeliveryRequirementsMode" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -26,6 +28,8 @@
       <MemberSignature Language="C#" Value="Allowed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.QueuedDeliveryRequirementsMode Allowed = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.QueuedDeliveryRequirementsMode.Allowed" />
+      <MemberSignature Language="VB.NET" Value="Allowed" />
+      <MemberSignature Language="C++ CLI" Value="Allowed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -35,6 +39,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.QueuedDeliveryRequirementsMode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Queued delivery is allowed.</summary>
       </Docs>
@@ -43,6 +48,8 @@
       <MemberSignature Language="C#" Value="NotAllowed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.QueuedDeliveryRequirementsMode NotAllowed = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.QueuedDeliveryRequirementsMode.NotAllowed" />
+      <MemberSignature Language="VB.NET" Value="NotAllowed" />
+      <MemberSignature Language="C++ CLI" Value="NotAllowed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -52,6 +59,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.QueuedDeliveryRequirementsMode</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Queued delivery is not allowed.</summary>
       </Docs>
@@ -60,6 +68,8 @@
       <MemberSignature Language="C#" Value="Required" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.QueuedDeliveryRequirementsMode Required = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.QueuedDeliveryRequirementsMode.Required" />
+      <MemberSignature Language="VB.NET" Value="Required" />
+      <MemberSignature Language="C++ CLI" Value="Required" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -69,6 +79,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.QueuedDeliveryRequirementsMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Queued delivery is required.</summary>
       </Docs>

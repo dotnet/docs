@@ -1,7 +1,9 @@
-<Type Name="NoNullAllowedException" FullName="System.Data.NoNullAllowedException">
+﻿<Type Name="NoNullAllowedException" FullName="System.Data.NoNullAllowedException">
   <TypeSignature Language="C#" Value="public class NoNullAllowedException : System.Data.DataException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit NoNullAllowedException extends System.Data.DataException" />
   <TypeSignature Language="DocId" Value="T:System.Data.NoNullAllowedException" />
+  <TypeSignature Language="VB.NET" Value="Public Class NoNullAllowedException&#xA;Inherits DataException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class NoNullAllowedException : System::Data::DataException" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -39,10 +41,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.NoNullAllowedException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public NoNullAllowedException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.NoNullAllowedException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NoNullAllowedException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -67,6 +81,8 @@
       <MemberSignature Language="C#" Value="public NoNullAllowedException (string s);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.NoNullAllowedException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (s As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NoNullAllowedException(System::String ^ s);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -94,6 +110,8 @@
       <MemberSignature Language="C#" Value="protected NoNullAllowedException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.NoNullAllowedException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; NoNullAllowedException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -125,6 +143,8 @@
       <MemberSignature Language="C#" Value="public NoNullAllowedException (string message, Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.NoNullAllowedException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NoNullAllowedException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -150,15 +170,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.NoNullAllowedException" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

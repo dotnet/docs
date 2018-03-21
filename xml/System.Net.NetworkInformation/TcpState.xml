@@ -1,7 +1,9 @@
-<Type Name="TcpState" FullName="System.Net.NetworkInformation.TcpState">
+﻿<Type Name="TcpState" FullName="System.Net.NetworkInformation.TcpState">
   <TypeSignature Language="C#" Value="public enum TcpState" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TcpState extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Net.NetworkInformation.TcpState" />
+  <TypeSignature Language="VB.NET" Value="Public Enum TcpState" />
+  <TypeSignature Language="C++ CLI" Value="public enum class TcpState" />
   <AssemblyInfo>
     <AssemblyName>System.Net.NetworkInformation</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -44,6 +46,8 @@
       <MemberSignature Language="C#" Value="Closed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.NetworkInformation.TcpState Closed = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.TcpState.Closed" />
+      <MemberSignature Language="VB.NET" Value="Closed" />
+      <MemberSignature Language="C++ CLI" Value="Closed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -62,6 +66,7 @@
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.TcpState</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The TCP connection is closed.</summary>
       </Docs>
@@ -70,6 +75,8 @@
       <MemberSignature Language="C#" Value="CloseWait" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.NetworkInformation.TcpState CloseWait = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.TcpState.CloseWait" />
+      <MemberSignature Language="VB.NET" Value="CloseWait" />
+      <MemberSignature Language="C++ CLI" Value="CloseWait" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -88,6 +95,7 @@
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.TcpState</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>The local endpoint of the TCP connection is waiting for a connection termination request from the local user.</summary>
       </Docs>
@@ -96,6 +104,8 @@
       <MemberSignature Language="C#" Value="Closing" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.NetworkInformation.TcpState Closing = int32(9)" />
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.TcpState.Closing" />
+      <MemberSignature Language="VB.NET" Value="Closing" />
+      <MemberSignature Language="C++ CLI" Value="Closing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -114,6 +124,7 @@
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.TcpState</ReturnType>
       </ReturnValue>
+      <MemberValue>9</MemberValue>
       <Docs>
         <summary>The local endpoint of the TCP connection is waiting for an acknowledgement of the connection termination request sent previously.</summary>
       </Docs>
@@ -122,6 +133,8 @@
       <MemberSignature Language="C#" Value="DeleteTcb" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.NetworkInformation.TcpState DeleteTcb = int32(12)" />
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.TcpState.DeleteTcb" />
+      <MemberSignature Language="VB.NET" Value="DeleteTcb" />
+      <MemberSignature Language="C++ CLI" Value="DeleteTcb" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -140,6 +153,7 @@
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.TcpState</ReturnType>
       </ReturnValue>
+      <MemberValue>12</MemberValue>
       <Docs>
         <summary>The transmission control buffer (TCB) for the TCP connection is being deleted.</summary>
       </Docs>
@@ -148,6 +162,8 @@
       <MemberSignature Language="C#" Value="Established" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.NetworkInformation.TcpState Established = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.TcpState.Established" />
+      <MemberSignature Language="VB.NET" Value="Established" />
+      <MemberSignature Language="C++ CLI" Value="Established" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -166,6 +182,7 @@
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.TcpState</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>The TCP handshake is complete. The connection has been established and data can be sent.</summary>
       </Docs>
@@ -174,6 +191,8 @@
       <MemberSignature Language="C#" Value="FinWait1" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.NetworkInformation.TcpState FinWait1 = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.TcpState.FinWait1" />
+      <MemberSignature Language="VB.NET" Value="FinWait1" />
+      <MemberSignature Language="C++ CLI" Value="FinWait1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -192,6 +211,7 @@
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.TcpState</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>The local endpoint of the TCP connection is waiting for a connection termination request from the remote endpoint or for an acknowledgement of the connection termination request sent previously.</summary>
       </Docs>
@@ -200,6 +220,8 @@
       <MemberSignature Language="C#" Value="FinWait2" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.NetworkInformation.TcpState FinWait2 = int32(7)" />
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.TcpState.FinWait2" />
+      <MemberSignature Language="VB.NET" Value="FinWait2" />
+      <MemberSignature Language="C++ CLI" Value="FinWait2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -218,6 +240,7 @@
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.TcpState</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>The local endpoint of the TCP connection is waiting for a connection termination request from the remote endpoint.</summary>
       </Docs>
@@ -226,6 +249,8 @@
       <MemberSignature Language="C#" Value="LastAck" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.NetworkInformation.TcpState LastAck = int32(10)" />
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.TcpState.LastAck" />
+      <MemberSignature Language="VB.NET" Value="LastAck" />
+      <MemberSignature Language="C++ CLI" Value="LastAck" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -244,6 +269,7 @@
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.TcpState</ReturnType>
       </ReturnValue>
+      <MemberValue>10</MemberValue>
       <Docs>
         <summary>The local endpoint of the TCP connection is waiting for the final acknowledgement of the connection termination request sent previously.</summary>
       </Docs>
@@ -252,6 +278,8 @@
       <MemberSignature Language="C#" Value="Listen" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.NetworkInformation.TcpState Listen = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.TcpState.Listen" />
+      <MemberSignature Language="VB.NET" Value="Listen" />
+      <MemberSignature Language="C++ CLI" Value="Listen" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -270,6 +298,7 @@
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.TcpState</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The local endpoint of the TCP connection is listening for a connection request from any remote endpoint.</summary>
       </Docs>
@@ -278,6 +307,8 @@
       <MemberSignature Language="C#" Value="SynReceived" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.NetworkInformation.TcpState SynReceived = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.TcpState.SynReceived" />
+      <MemberSignature Language="VB.NET" Value="SynReceived" />
+      <MemberSignature Language="C++ CLI" Value="SynReceived" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -296,6 +327,7 @@
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.TcpState</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The local endpoint of the TCP connection has sent and received a connection request and is waiting for an acknowledgment.</summary>
       </Docs>
@@ -304,6 +336,8 @@
       <MemberSignature Language="C#" Value="SynSent" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.NetworkInformation.TcpState SynSent = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.TcpState.SynSent" />
+      <MemberSignature Language="VB.NET" Value="SynSent" />
+      <MemberSignature Language="C++ CLI" Value="SynSent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -322,6 +356,7 @@
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.TcpState</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The local endpoint of the TCP connection has sent the remote endpoint a segment header with the synchronize (SYN) control bit set and is waiting for a matching connection request.</summary>
       </Docs>
@@ -330,6 +365,8 @@
       <MemberSignature Language="C#" Value="TimeWait" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.NetworkInformation.TcpState TimeWait = int32(11)" />
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.TcpState.TimeWait" />
+      <MemberSignature Language="VB.NET" Value="TimeWait" />
+      <MemberSignature Language="C++ CLI" Value="TimeWait" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -348,6 +385,7 @@
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.TcpState</ReturnType>
       </ReturnValue>
+      <MemberValue>11</MemberValue>
       <Docs>
         <summary>The local endpoint of the TCP connection is waiting for enough time to pass to ensure that the remote endpoint received the acknowledgement of its connection termination request.</summary>
       </Docs>
@@ -356,6 +394,8 @@
       <MemberSignature Language="C#" Value="Unknown" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.NetworkInformation.TcpState Unknown = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.TcpState.Unknown" />
+      <MemberSignature Language="VB.NET" Value="Unknown" />
+      <MemberSignature Language="C++ CLI" Value="Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -374,6 +414,7 @@
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.TcpState</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The TCP connection state is unknown.</summary>
       </Docs>

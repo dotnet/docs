@@ -1,7 +1,9 @@
-<Type Name="DefaultValueSourceLocation" FullName="Microsoft.Build.Framework.XamlTypes.DefaultValueSourceLocation">
+﻿<Type Name="DefaultValueSourceLocation" FullName="Microsoft.Build.Framework.XamlTypes.DefaultValueSourceLocation">
   <TypeSignature Language="C#" Value="public enum DefaultValueSourceLocation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DefaultValueSourceLocation extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.XamlTypes.DefaultValueSourceLocation" />
+  <TypeSignature Language="VB.NET" Value="Public Enum DefaultValueSourceLocation" />
+  <TypeSignature Language="C++ CLI" Value="public enum class DefaultValueSourceLocation" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -18,6 +20,8 @@
       <MemberSignature Language="C#" Value="AfterContext" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Framework.XamlTypes.DefaultValueSourceLocation AfterContext = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Framework.XamlTypes.DefaultValueSourceLocation.AfterContext" />
+      <MemberSignature Language="VB.NET" Value="AfterContext" />
+      <MemberSignature Language="C++ CLI" Value="AfterContext" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -26,6 +30,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Build.Framework.XamlTypes.DefaultValueSourceLocation</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The default value for a property is set at the bottom of the project file (usually via an import of a .targets file, where the property definition is conditional on whether the property has not already been defined.)</summary>
       </Docs>
@@ -34,6 +39,8 @@
       <MemberSignature Language="C#" Value="BeforeContext" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Framework.XamlTypes.DefaultValueSourceLocation BeforeContext = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Framework.XamlTypes.DefaultValueSourceLocation.BeforeContext" />
+      <MemberSignature Language="VB.NET" Value="BeforeContext" />
+      <MemberSignature Language="C++ CLI" Value="BeforeContext" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -42,6 +49,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Build.Framework.XamlTypes.DefaultValueSourceLocation</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The default value for a property is set at the top of the project file (usually via an import of a .props file).</summary>
       </Docs>

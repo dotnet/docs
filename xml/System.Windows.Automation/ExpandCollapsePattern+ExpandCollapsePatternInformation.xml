@@ -1,7 +1,9 @@
-<Type Name="ExpandCollapsePattern+ExpandCollapsePatternInformation" FullName="System.Windows.Automation.ExpandCollapsePattern+ExpandCollapsePatternInformation">
+﻿<Type Name="ExpandCollapsePattern+ExpandCollapsePatternInformation" FullName="System.Windows.Automation.ExpandCollapsePattern+ExpandCollapsePatternInformation">
   <TypeSignature Language="C#" Value="public struct ExpandCollapsePattern.ExpandCollapsePatternInformation" />
   <TypeSignature Language="ILAsm" Value=".class nested public sequential ansi sealed beforefieldinit ExpandCollapsePattern/ExpandCollapsePatternInformation extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.ExpandCollapsePattern.ExpandCollapsePatternInformation" />
+  <TypeSignature Language="VB.NET" Value="Public Structure ExpandCollapsePattern.ExpandCollapsePatternInformation" />
+  <TypeSignature Language="C++ CLI" Value="public: value class ExpandCollapsePattern::ExpandCollapsePatternInformation" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationClient</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +22,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Automation.ExpandCollapseState ExpandCollapseState { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Automation.ExpandCollapseState ExpandCollapseState" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.ExpandCollapsePattern.ExpandCollapsePatternInformation.ExpandCollapseState" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExpandCollapseState As ExpandCollapseState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Automation::ExpandCollapseState ExpandCollapseState { System::Windows::Automation::ExpandCollapseState get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>

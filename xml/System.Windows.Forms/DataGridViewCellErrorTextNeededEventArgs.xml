@@ -1,7 +1,9 @@
-<Type Name="DataGridViewCellErrorTextNeededEventArgs" FullName="System.Windows.Forms.DataGridViewCellErrorTextNeededEventArgs">
+﻿<Type Name="DataGridViewCellErrorTextNeededEventArgs" FullName="System.Windows.Forms.DataGridViewCellErrorTextNeededEventArgs">
   <TypeSignature Language="C#" Value="public class DataGridViewCellErrorTextNeededEventArgs : System.Windows.Forms.DataGridViewCellEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataGridViewCellErrorTextNeededEventArgs extends System.Windows.Forms.DataGridViewCellEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewCellErrorTextNeededEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class DataGridViewCellErrorTextNeededEventArgs&#xA;Inherits DataGridViewCellEventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataGridViewCellErrorTextNeededEventArgs : System::Windows::Forms::DataGridViewCellEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,6 +55,8 @@
       <MemberSignature Language="C#" Value="public string ErrorText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ErrorText" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCellErrorTextNeededEventArgs.ErrorText" />
+      <MemberSignature Language="VB.NET" Value="Public Property ErrorText As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ErrorText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="BindingElement" FullName="System.ServiceModel.Channels.BindingElement">
+﻿<Type Name="BindingElement" FullName="System.ServiceModel.Channels.BindingElement">
   <TypeSignature Language="C#" Value="public abstract class BindingElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit BindingElement extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.BindingElement" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class BindingElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BindingElement abstract" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -48,10 +50,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.BindingElement" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected BindingElement ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BindingElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; BindingElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -74,6 +88,8 @@
       <MemberSignature Language="C#" Value="protected BindingElement (System.ServiceModel.Channels.BindingElement elementToBeCloned);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Channels.BindingElement elementToBeCloned) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BindingElement.#ctor(System.ServiceModel.Channels.BindingElement)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (elementToBeCloned As BindingElement)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; BindingElement(System::ServiceModel::Channels::BindingElement ^ elementToBeCloned);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -99,6 +115,8 @@
       <MemberSignature Language="C#" Value="public virtual System.ServiceModel.Channels.IChannelFactory&lt;TChannel&gt; BuildChannelFactory&lt;TChannel&gt; (System.ServiceModel.Channels.BindingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.IChannelFactory`1&lt;!!TChannel&gt; BuildChannelFactory&lt;TChannel&gt;(class System.ServiceModel.Channels.BindingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BindingElement.BuildChannelFactory``1(System.ServiceModel.Channels.BindingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function BuildChannelFactory(Of TChannel) (context As BindingContext) As IChannelFactory(Of TChannel)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; virtual System::ServiceModel::Channels::IChannelFactory&lt;TChannel&gt; ^ BuildChannelFactory(System::ServiceModel::Channels::BindingContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -141,6 +159,8 @@
       <MemberSignature Language="C#" Value="public virtual System.ServiceModel.Channels.IChannelListener&lt;TChannel&gt; BuildChannelListener&lt;TChannel&gt; (System.ServiceModel.Channels.BindingContext context) where TChannel : class, System.ServiceModel.Channels.IChannel;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.IChannelListener`1&lt;!!TChannel&gt; BuildChannelListener&lt;class (class System.ServiceModel.Channels.IChannel) TChannel&gt;(class System.ServiceModel.Channels.BindingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BindingElement.BuildChannelListener``1(System.ServiceModel.Channels.BindingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function BuildChannelListener(Of TChannel As {Class, IChannel}) (context As BindingContext) As IChannelListener(Of TChannel)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; where TChannel : class, System::ServiceModel::Channels::IChannel virtual System::ServiceModel::Channels::IChannelListener&lt;TChannel&gt; ^ BuildChannelListener(System::ServiceModel::Channels::BindingContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -181,6 +201,8 @@
       <MemberSignature Language="C#" Value="public virtual bool CanBuildChannelFactory&lt;TChannel&gt; (System.ServiceModel.Channels.BindingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanBuildChannelFactory&lt;TChannel&gt;(class System.ServiceModel.Channels.BindingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BindingElement.CanBuildChannelFactory``1(System.ServiceModel.Channels.BindingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CanBuildChannelFactory(Of TChannel) (context As BindingContext) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; virtual bool CanBuildChannelFactory(System::ServiceModel::Channels::BindingContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -229,6 +251,8 @@
       <MemberSignature Language="C#" Value="public virtual bool CanBuildChannelListener&lt;TChannel&gt; (System.ServiceModel.Channels.BindingContext context) where TChannel : class, System.ServiceModel.Channels.IChannel;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanBuildChannelListener&lt;class (class System.ServiceModel.Channels.IChannel) TChannel&gt;(class System.ServiceModel.Channels.BindingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BindingElement.CanBuildChannelListener``1(System.ServiceModel.Channels.BindingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CanBuildChannelListener(Of TChannel As {Class, IChannel}) (context As BindingContext) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; where TChannel : class, System::ServiceModel::Channels::IChannel virtual bool CanBuildChannelListener(System::ServiceModel::Channels::BindingContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -275,6 +299,8 @@
       <MemberSignature Language="C#" Value="public abstract System.ServiceModel.Channels.BindingElement Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.BindingElement Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BindingElement.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function Clone () As BindingElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::ServiceModel::Channels::BindingElement ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -310,6 +336,8 @@
       <MemberSignature Language="C#" Value="public abstract T GetProperty&lt;T&gt; (System.ServiceModel.Channels.BindingContext context) where T : class;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !!T GetProperty&lt;class T&gt;(class System.ServiceModel.Channels.BindingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BindingElement.GetProperty``1(System.ServiceModel.Channels.BindingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetProperty(Of T As Class) (context As BindingContext) As T" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : class abstract T GetProperty(System::ServiceModel::Channels::BindingContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -358,15 +386,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.BindingElement" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

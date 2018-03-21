@@ -1,7 +1,9 @@
-<Type Name="JSConstructor" FullName="Microsoft.JScript.JSConstructor">
+﻿<Type Name="JSConstructor" FullName="Microsoft.JScript.JSConstructor">
   <TypeSignature Language="C#" Value="public sealed class JSConstructor : System.Reflection.ConstructorInfo" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit JSConstructor extends System.Reflection.ConstructorInfo" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.JSConstructor" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class JSConstructor&#xA;Inherits ConstructorInfo" />
+  <TypeSignature Language="C++ CLI" Value="public ref class JSConstructor sealed : System::Reflection::ConstructorInfo" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -21,6 +23,8 @@
       <MemberSignature Language="C#" Value="public override System.Reflection.MethodAttributes Attributes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.MethodAttributes Attributes" />
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.JSConstructor.Attributes" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Attributes As MethodAttributes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Reflection::MethodAttributes Attributes { System::Reflection::MethodAttributes get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -42,6 +46,8 @@
       <MemberSignature Language="C#" Value="public override Type DeclaringType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type DeclaringType" />
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.JSConstructor.DeclaringType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property DeclaringType As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ DeclaringType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -59,10 +65,23 @@
         <altmember cref="T:System.Reflection.ConstructorInfo" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetCustomAttributes">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an array that contains the custom attributes that are attached to this constructor.</summary>
+        <altmember cref="T:Microsoft.JScript.FunctionObject" />
+        <altmember cref="T:System.Reflection.ConstructorInfo" />
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetCustomAttributes">
       <MemberSignature Language="C#" Value="public override object[] GetCustomAttributes (bool inherit);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object[] GetCustomAttributes(bool inherit) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.JSConstructor.GetCustomAttributes(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetCustomAttributes (inherit As Boolean) As Object()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Object ^&gt; ^ GetCustomAttributes(bool inherit);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -89,6 +108,8 @@
       <MemberSignature Language="C#" Value="public override object[] GetCustomAttributes (Type t, bool inherit);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object[] GetCustomAttributes(class System.Type t, bool inherit) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.JSConstructor.GetCustomAttributes(System.Type,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetCustomAttributes (t As Type, inherit As Boolean) As Object()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Object ^&gt; ^ GetCustomAttributes(Type ^ t, bool inherit);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -117,6 +138,8 @@
       <MemberSignature Language="C#" Value="public override System.Reflection.MethodImplAttributes GetMethodImplementationFlags ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype System.Reflection.MethodImplAttributes GetMethodImplementationFlags() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.JSConstructor.GetMethodImplementationFlags" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetMethodImplementationFlags () As MethodImplAttributes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Reflection::MethodImplAttributes GetMethodImplementationFlags();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -140,6 +163,8 @@
       <MemberSignature Language="C#" Value="public override System.Reflection.ParameterInfo[] GetParameters ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Reflection.ParameterInfo[] GetParameters() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.JSConstructor.GetParameters" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetParameters () As ParameterInfo()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Reflection::ParameterInfo ^&gt; ^ GetParameters();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -158,10 +183,22 @@
         <altmember cref="T:System.Reflection.ConstructorInfo" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Invoke">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Invokes the constructor.</summary>
+        <altmember cref="T:Microsoft.JScript.FunctionObject" />
+        <altmember cref="T:System.Reflection.ConstructorInfo" />
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Invoke">
       <MemberSignature Language="C#" Value="public override object Invoke (System.Reflection.BindingFlags options, System.Reflection.Binder binder, object[] parameters, System.Globalization.CultureInfo culture);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object Invoke(valuetype System.Reflection.BindingFlags options, class System.Reflection.Binder binder, object[] parameters, class System.Globalization.CultureInfo culture) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.JSConstructor.Invoke(System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ Invoke(System::Reflection::BindingFlags options, System::Reflection::Binder ^ binder, cli::array &lt;System::Object ^&gt; ^ parameters, System::Globalization::CultureInfo ^ culture);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -198,6 +235,7 @@
       <MemberSignature Language="C#" Value="public override object Invoke (object obj, System.Reflection.BindingFlags options, System.Reflection.Binder binder, object[] parameters, System.Globalization.CultureInfo culture);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object Invoke(object obj, valuetype System.Reflection.BindingFlags options, class System.Reflection.Binder binder, object[] parameters, class System.Globalization.CultureInfo culture) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.JSConstructor.Invoke(System.Object,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ Invoke(System::Object ^ obj, System::Reflection::BindingFlags options, System::Reflection::Binder ^ binder, cli::array &lt;System::Object ^&gt; ^ parameters, System::Globalization::CultureInfo ^ culture);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -236,6 +274,7 @@
       <MemberSignature Language="C#" Value="public override bool IsDefined (Type type, bool inherit);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsDefined(class System.Type type, bool inherit) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.JSConstructor.IsDefined(System.Type,System.Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsDefined(Type ^ type, bool inherit);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -265,6 +304,8 @@
       <MemberSignature Language="C#" Value="public override System.Reflection.MemberTypes MemberType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.MemberTypes MemberType" />
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.JSConstructor.MemberType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property MemberType As MemberTypes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Reflection::MemberTypes MemberType { System::Reflection::MemberTypes get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -286,6 +327,8 @@
       <MemberSignature Language="C#" Value="public override RuntimeMethodHandle MethodHandle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.RuntimeMethodHandle MethodHandle" />
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.JSConstructor.MethodHandle" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property MethodHandle As RuntimeMethodHandle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property RuntimeMethodHandle MethodHandle { RuntimeMethodHandle get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -307,6 +350,8 @@
       <MemberSignature Language="C#" Value="public override string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.JSConstructor.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -328,6 +373,8 @@
       <MemberSignature Language="C#" Value="public override Type ReflectedType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type ReflectedType" />
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.JSConstructor.ReflectedType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ReflectedType As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ ReflectedType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -345,27 +392,5 @@
         <altmember cref="T:System.Reflection.ConstructorInfo" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetCustomAttributes">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns an array that contains the custom attributes that are attached to this constructor.</summary>
-        <altmember cref="T:Microsoft.JScript.FunctionObject" />
-        <altmember cref="T:System.Reflection.ConstructorInfo" />
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Invoke">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Invokes the constructor.</summary>
-        <altmember cref="T:Microsoft.JScript.FunctionObject" />
-        <altmember cref="T:System.Reflection.ConstructorInfo" />
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

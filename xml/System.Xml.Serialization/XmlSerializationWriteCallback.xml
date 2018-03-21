@@ -1,7 +1,9 @@
-<Type Name="XmlSerializationWriteCallback" FullName="System.Xml.Serialization.XmlSerializationWriteCallback">
+﻿<Type Name="XmlSerializationWriteCallback" FullName="System.Xml.Serialization.XmlSerializationWriteCallback">
   <TypeSignature Language="C#" Value="public delegate void XmlSerializationWriteCallback(object o);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XmlSerializationWriteCallback extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.XmlSerializationWriteCallback" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub XmlSerializationWriteCallback(o As Object)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void XmlSerializationWriteCallback(System::Object ^ o);" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>

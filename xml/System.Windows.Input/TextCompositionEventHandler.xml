@@ -1,7 +1,9 @@
-<Type Name="TextCompositionEventHandler" FullName="System.Windows.Input.TextCompositionEventHandler">
+﻿<Type Name="TextCompositionEventHandler" FullName="System.Windows.Input.TextCompositionEventHandler">
   <TypeSignature Language="C#" Value="public delegate void TextCompositionEventHandler(object sender, TextCompositionEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TextCompositionEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.TextCompositionEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub TextCompositionEventHandler(sender As Object, e As TextCompositionEventArgs)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void TextCompositionEventHandler(System::Object ^ sender, TextCompositionEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

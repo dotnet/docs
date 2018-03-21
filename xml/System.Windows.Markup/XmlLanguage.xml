@@ -1,7 +1,9 @@
-<Type Name="XmlLanguage" FullName="System.Windows.Markup.XmlLanguage">
+﻿<Type Name="XmlLanguage" FullName="System.Windows.Markup.XmlLanguage">
   <TypeSignature Language="C#" Value="public class XmlLanguage" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlLanguage extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.XmlLanguage" />
+  <TypeSignature Language="VB.NET" Value="Public Class XmlLanguage" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlLanguage" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +56,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Markup.XmlLanguage Empty { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Markup.XmlLanguage Empty" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.XmlLanguage.Empty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Empty As XmlLanguage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Markup::XmlLanguage ^ Empty { System::Windows::Markup::XmlLanguage ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -79,6 +83,8 @@
       <MemberSignature Language="C#" Value="public System.Globalization.CultureInfo GetEquivalentCulture ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Globalization.CultureInfo GetEquivalentCulture() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XmlLanguage.GetEquivalentCulture" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEquivalentCulture () As CultureInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Globalization::CultureInfo ^ GetEquivalentCulture();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -107,6 +113,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Markup.XmlLanguage GetLanguage (string ietfLanguageTag);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Markup.XmlLanguage GetLanguage(string ietfLanguageTag) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XmlLanguage.GetLanguage(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetLanguage (ietfLanguageTag As String) As XmlLanguage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Markup::XmlLanguage ^ GetLanguage(System::String ^ ietfLanguageTag);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -152,6 +160,8 @@
       <MemberSignature Language="C#" Value="public System.Globalization.CultureInfo GetSpecificCulture ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Globalization.CultureInfo GetSpecificCulture() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XmlLanguage.GetSpecificCulture" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSpecificCulture () As CultureInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Globalization::CultureInfo ^ GetSpecificCulture();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -181,6 +191,8 @@
       <MemberSignature Language="C#" Value="public string IetfLanguageTag { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string IetfLanguageTag" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.XmlLanguage.IetfLanguageTag" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IetfLanguageTag As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ IetfLanguageTag { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -208,6 +220,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XmlLanguage.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

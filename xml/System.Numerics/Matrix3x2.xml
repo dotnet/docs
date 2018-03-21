@@ -1,7 +1,9 @@
-<Type Name="Matrix3x2" FullName="System.Numerics.Matrix3x2">
+﻿<Type Name="Matrix3x2" FullName="System.Numerics.Matrix3x2">
   <TypeSignature Language="C#" Value="public struct Matrix3x2 : IEquatable&lt;System.Numerics.Matrix3x2&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit Matrix3x2 extends System.ValueType implements class System.IEquatable`1&lt;valuetype System.Numerics.Matrix3x2&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Numerics.Matrix3x2" />
+  <TypeSignature Language="VB.NET" Value="Public Structure Matrix3x2&#xA;Implements IEquatable(Of Matrix3x2)" />
+  <TypeSignature Language="C++ CLI" Value="public value class Matrix3x2 : IEquatable&lt;System::Numerics::Matrix3x2&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Numerics.Vectors</AssemblyName>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
@@ -42,6 +44,8 @@
       <MemberSignature Language="C#" Value="public Matrix3x2 (float m11, float m12, float m21, float m22, float m31, float m32);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float32 m11, float32 m12, float32 m21, float32 m22, float32 m31, float32 m32) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix3x2.#ctor(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (m11 As Single, m12 As Single, m21 As Single, m22 As Single, m31 As Single, m32 As Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Matrix3x2(float m11, float m12, float m21, float m22, float m31, float m32);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -81,6 +85,8 @@
       <MemberSignature Language="C#" Value="public static System.Numerics.Matrix3x2 Add (System.Numerics.Matrix3x2 value1, System.Numerics.Matrix3x2 value2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Matrix3x2 Add(valuetype System.Numerics.Matrix3x2 value1, valuetype System.Numerics.Matrix3x2 value2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix3x2.Add(System.Numerics.Matrix3x2,System.Numerics.Matrix3x2)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Add (value1 As Matrix3x2, value2 As Matrix3x2) As Matrix3x2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Matrix3x2 Add(System::Numerics::Matrix3x2 value1, System::Numerics::Matrix3x2 value2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -112,10 +118,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateRotation">
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a rotation matrix.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateRotation">
       <MemberSignature Language="C#" Value="public static System.Numerics.Matrix3x2 CreateRotation (float radians);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Matrix3x2 CreateRotation(float32 radians) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix3x2.CreateRotation(System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateRotation (radians As Single) As Matrix3x2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Matrix3x2 CreateRotation(float radians);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -149,6 +168,8 @@
       <MemberSignature Language="C#" Value="public static System.Numerics.Matrix3x2 CreateRotation (float radians, System.Numerics.Vector2 centerPoint);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Matrix3x2 CreateRotation(float32 radians, valuetype System.Numerics.Vector2 centerPoint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix3x2.CreateRotation(System.Single,System.Numerics.Vector2)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateRotation (radians As Single, centerPoint As Vector2) As Matrix3x2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Matrix3x2 CreateRotation(float radians, System::Numerics::Vector2 centerPoint);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -180,10 +201,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateScale">
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a scaling matrix.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateScale">
       <MemberSignature Language="C#" Value="public static System.Numerics.Matrix3x2 CreateScale (System.Numerics.Vector2 scales);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Matrix3x2 CreateScale(valuetype System.Numerics.Vector2 scales) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix3x2.CreateScale(System.Numerics.Vector2)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateScale (scales As Vector2) As Matrix3x2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Matrix3x2 CreateScale(System::Numerics::Vector2 scales);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -217,6 +251,8 @@
       <MemberSignature Language="C#" Value="public static System.Numerics.Matrix3x2 CreateScale (float scale);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Matrix3x2 CreateScale(float32 scale) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix3x2.CreateScale(System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateScale (scale As Single) As Matrix3x2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Matrix3x2 CreateScale(float scale);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -250,6 +286,8 @@
       <MemberSignature Language="C#" Value="public static System.Numerics.Matrix3x2 CreateScale (System.Numerics.Vector2 scales, System.Numerics.Vector2 centerPoint);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Matrix3x2 CreateScale(valuetype System.Numerics.Vector2 scales, valuetype System.Numerics.Vector2 centerPoint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix3x2.CreateScale(System.Numerics.Vector2,System.Numerics.Vector2)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateScale (scales As Vector2, centerPoint As Vector2) As Matrix3x2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Matrix3x2 CreateScale(System::Numerics::Vector2 scales, System::Numerics::Vector2 centerPoint);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -285,6 +323,8 @@
       <MemberSignature Language="C#" Value="public static System.Numerics.Matrix3x2 CreateScale (float scale, System.Numerics.Vector2 centerPoint);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Matrix3x2 CreateScale(float32 scale, valuetype System.Numerics.Vector2 centerPoint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix3x2.CreateScale(System.Single,System.Numerics.Vector2)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateScale (scale As Single, centerPoint As Vector2) As Matrix3x2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Matrix3x2 CreateScale(float scale, System::Numerics::Vector2 centerPoint);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -320,6 +360,8 @@
       <MemberSignature Language="C#" Value="public static System.Numerics.Matrix3x2 CreateScale (float xScale, float yScale);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Matrix3x2 CreateScale(float32 xScale, float32 yScale) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix3x2.CreateScale(System.Single,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateScale (xScale As Single, yScale As Single) As Matrix3x2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Matrix3x2 CreateScale(float xScale, float yScale);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -355,6 +397,8 @@
       <MemberSignature Language="C#" Value="public static System.Numerics.Matrix3x2 CreateScale (float xScale, float yScale, System.Numerics.Vector2 centerPoint);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Matrix3x2 CreateScale(float32 xScale, float32 yScale, valuetype System.Numerics.Vector2 centerPoint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix3x2.CreateScale(System.Single,System.Single,System.Numerics.Vector2)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateScale (xScale As Single, yScale As Single, centerPoint As Vector2) As Matrix3x2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Matrix3x2 CreateScale(float xScale, float yScale, System::Numerics::Vector2 centerPoint);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -388,10 +432,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateSkew">
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a skew matrix.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateSkew">
       <MemberSignature Language="C#" Value="public static System.Numerics.Matrix3x2 CreateSkew (float radiansX, float radiansY);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Matrix3x2 CreateSkew(float32 radiansX, float32 radiansY) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix3x2.CreateSkew(System.Single,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateSkew (radiansX As Single, radiansY As Single) As Matrix3x2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Matrix3x2 CreateSkew(float radiansX, float radiansY);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -427,6 +484,8 @@
       <MemberSignature Language="C#" Value="public static System.Numerics.Matrix3x2 CreateSkew (float radiansX, float radiansY, System.Numerics.Vector2 centerPoint);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Matrix3x2 CreateSkew(float32 radiansX, float32 radiansY, valuetype System.Numerics.Vector2 centerPoint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix3x2.CreateSkew(System.Single,System.Single,System.Numerics.Vector2)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateSkew (radiansX As Single, radiansY As Single, centerPoint As Vector2) As Matrix3x2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Matrix3x2 CreateSkew(float radiansX, float radiansY, System::Numerics::Vector2 centerPoint);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -460,10 +519,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateTranslation">
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a translation matrix.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateTranslation">
       <MemberSignature Language="C#" Value="public static System.Numerics.Matrix3x2 CreateTranslation (System.Numerics.Vector2 position);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Matrix3x2 CreateTranslation(valuetype System.Numerics.Vector2 position) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix3x2.CreateTranslation(System.Numerics.Vector2)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateTranslation (position As Vector2) As Matrix3x2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Matrix3x2 CreateTranslation(System::Numerics::Vector2 position);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -497,6 +569,8 @@
       <MemberSignature Language="C#" Value="public static System.Numerics.Matrix3x2 CreateTranslation (float xPosition, float yPosition);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Matrix3x2 CreateTranslation(float32 xPosition, float32 yPosition) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix3x2.CreateTranslation(System.Single,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateTranslation (xPosition As Single, yPosition As Single) As Matrix3x2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Matrix3x2 CreateTranslation(float xPosition, float yPosition);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -528,11 +602,27 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a value that indicates whether this instance and a specified <see cref="T:System.Numerics.Matrix3x2" /> instance or a specified object are equal.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Equals">
       <MemberSignature Language="C#" Value="public bool Equals (System.Numerics.Matrix3x2 other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(valuetype System.Numerics.Matrix3x2 other) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix3x2.Equals(System.Numerics.Matrix3x2)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (other As Matrix3x2) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Numerics::Matrix3x2 other);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
@@ -573,6 +663,8 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix3x2.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -614,6 +706,8 @@
       <MemberSignature Language="C#" Value="public float GetDeterminant ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance float32 GetDeterminant() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix3x2.GetDeterminant" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetDeterminant () As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; float GetDeterminant();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -651,6 +745,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix3x2.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -681,6 +777,8 @@
       <MemberSignature Language="C#" Value="public static System.Numerics.Matrix3x2 Identity { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Numerics.Matrix3x2 Identity" />
       <MemberSignature Language="DocId" Value="P:System.Numerics.Matrix3x2.Identity" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Identity As Matrix3x2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Numerics::Matrix3x2 Identity { System::Numerics::Matrix3x2 get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -710,6 +808,8 @@
       <MemberSignature Language="C#" Value="public static bool Invert (System.Numerics.Matrix3x2 matrix, out System.Numerics.Matrix3x2 result);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Invert(valuetype System.Numerics.Matrix3x2 matrix, [out] valuetype System.Numerics.Matrix3x2&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix3x2.Invert(System.Numerics.Matrix3x2,System.Numerics.Matrix3x2@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Invert (matrix As Matrix3x2, ByRef result As Matrix3x2) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool Invert(System::Numerics::Matrix3x2 matrix, [Runtime::InteropServices::Out] System::Numerics::Matrix3x2 % result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -746,6 +846,8 @@
       <MemberSignature Language="C#" Value="public bool IsIdentity { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsIdentity" />
       <MemberSignature Language="DocId" Value="P:System.Numerics.Matrix3x2.IsIdentity" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsIdentity As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsIdentity { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -776,6 +878,8 @@
       <MemberSignature Language="C#" Value="public static System.Numerics.Matrix3x2 Lerp (System.Numerics.Matrix3x2 matrix1, System.Numerics.Matrix3x2 matrix2, float amount);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Matrix3x2 Lerp(valuetype System.Numerics.Matrix3x2 matrix1, valuetype System.Numerics.Matrix3x2 matrix2, float32 amount) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix3x2.Lerp(System.Numerics.Matrix3x2,System.Numerics.Matrix3x2,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Lerp (matrix1 As Matrix3x2, matrix2 As Matrix3x2, amount As Single) As Matrix3x2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Matrix3x2 Lerp(System::Numerics::Matrix3x2 matrix1, System::Numerics::Matrix3x2 matrix2, float amount);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -813,6 +917,8 @@
       <MemberSignature Language="C#" Value="public float M11;" />
       <MemberSignature Language="ILAsm" Value=".field public float32 M11" />
       <MemberSignature Language="DocId" Value="F:System.Numerics.Matrix3x2.M11" />
+      <MemberSignature Language="VB.NET" Value="Public M11 As Single " />
+      <MemberSignature Language="C++ CLI" Value="public: float M11;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -841,6 +947,8 @@
       <MemberSignature Language="C#" Value="public float M12;" />
       <MemberSignature Language="ILAsm" Value=".field public float32 M12" />
       <MemberSignature Language="DocId" Value="F:System.Numerics.Matrix3x2.M12" />
+      <MemberSignature Language="VB.NET" Value="Public M12 As Single " />
+      <MemberSignature Language="C++ CLI" Value="public: float M12;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -869,6 +977,8 @@
       <MemberSignature Language="C#" Value="public float M21;" />
       <MemberSignature Language="ILAsm" Value=".field public float32 M21" />
       <MemberSignature Language="DocId" Value="F:System.Numerics.Matrix3x2.M21" />
+      <MemberSignature Language="VB.NET" Value="Public M21 As Single " />
+      <MemberSignature Language="C++ CLI" Value="public: float M21;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -897,6 +1007,8 @@
       <MemberSignature Language="C#" Value="public float M22;" />
       <MemberSignature Language="ILAsm" Value=".field public float32 M22" />
       <MemberSignature Language="DocId" Value="F:System.Numerics.Matrix3x2.M22" />
+      <MemberSignature Language="VB.NET" Value="Public M22 As Single " />
+      <MemberSignature Language="C++ CLI" Value="public: float M22;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -925,6 +1037,8 @@
       <MemberSignature Language="C#" Value="public float M31;" />
       <MemberSignature Language="ILAsm" Value=".field public float32 M31" />
       <MemberSignature Language="DocId" Value="F:System.Numerics.Matrix3x2.M31" />
+      <MemberSignature Language="VB.NET" Value="Public M31 As Single " />
+      <MemberSignature Language="C++ CLI" Value="public: float M31;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -953,6 +1067,8 @@
       <MemberSignature Language="C#" Value="public float M32;" />
       <MemberSignature Language="ILAsm" Value=".field public float32 M32" />
       <MemberSignature Language="DocId" Value="F:System.Numerics.Matrix3x2.M32" />
+      <MemberSignature Language="VB.NET" Value="Public M32 As Single " />
+      <MemberSignature Language="C++ CLI" Value="public: float M32;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -977,10 +1093,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Multiply">
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Performs a multiplication operation on a matrix.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Multiply">
       <MemberSignature Language="C#" Value="public static System.Numerics.Matrix3x2 Multiply (System.Numerics.Matrix3x2 value1, System.Numerics.Matrix3x2 value2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Matrix3x2 Multiply(valuetype System.Numerics.Matrix3x2 value1, valuetype System.Numerics.Matrix3x2 value2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix3x2.Multiply(System.Numerics.Matrix3x2,System.Numerics.Matrix3x2)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Multiply (value1 As Matrix3x2, value2 As Matrix3x2) As Matrix3x2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Matrix3x2 Multiply(System::Numerics::Matrix3x2 value1, System::Numerics::Matrix3x2 value2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1016,6 +1145,8 @@
       <MemberSignature Language="C#" Value="public static System.Numerics.Matrix3x2 Multiply (System.Numerics.Matrix3x2 value1, float value2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Matrix3x2 Multiply(valuetype System.Numerics.Matrix3x2 value1, float32 value2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix3x2.Multiply(System.Numerics.Matrix3x2,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Multiply (value1 As Matrix3x2, value2 As Single) As Matrix3x2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Matrix3x2 Multiply(System::Numerics::Matrix3x2 value1, float value2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1051,6 +1182,8 @@
       <MemberSignature Language="C#" Value="public static System.Numerics.Matrix3x2 Negate (System.Numerics.Matrix3x2 value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Matrix3x2 Negate(valuetype System.Numerics.Matrix3x2 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix3x2.Negate(System.Numerics.Matrix3x2)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Negate (value As Matrix3x2) As Matrix3x2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Matrix3x2 Negate(System::Numerics::Matrix3x2 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1084,6 +1217,8 @@
       <MemberSignature Language="C#" Value="public static System.Numerics.Matrix3x2 operator + (System.Numerics.Matrix3x2 value1, System.Numerics.Matrix3x2 value2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Matrix3x2 op_Addition(valuetype System.Numerics.Matrix3x2 value1, valuetype System.Numerics.Matrix3x2 value2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix3x2.op_Addition(System.Numerics.Matrix3x2,System.Numerics.Matrix3x2)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator + (value1 As Matrix3x2, value2 As Matrix3x2) As Matrix3x2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Matrix3x2 operator +(System::Numerics::Matrix3x2 value1, System::Numerics::Matrix3x2 value2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1126,6 +1261,8 @@
       <MemberSignature Language="C#" Value="public static bool operator == (System.Numerics.Matrix3x2 value1, System.Numerics.Matrix3x2 value2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Numerics.Matrix3x2 value1, valuetype System.Numerics.Matrix3x2 value2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix3x2.op_Equality(System.Numerics.Matrix3x2,System.Numerics.Matrix3x2)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (value1 As Matrix3x2, value2 As Matrix3x2) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Numerics::Matrix3x2 value1, System::Numerics::Matrix3x2 value2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1169,6 +1306,8 @@
       <MemberSignature Language="C#" Value="public static bool operator != (System.Numerics.Matrix3x2 value1, System.Numerics.Matrix3x2 value2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Numerics.Matrix3x2 value1, valuetype System.Numerics.Matrix3x2 value2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix3x2.op_Inequality(System.Numerics.Matrix3x2,System.Numerics.Matrix3x2)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (value1 As Matrix3x2, value2 As Matrix3x2) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Numerics::Matrix3x2 value1, System::Numerics::Matrix3x2 value2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1201,10 +1340,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="op_Multiply">
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Performs a multiplication operation on a matrix.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="op_Multiply">
       <MemberSignature Language="C#" Value="public static System.Numerics.Matrix3x2 operator * (System.Numerics.Matrix3x2 value1, System.Numerics.Matrix3x2 value2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Matrix3x2 op_Multiply(valuetype System.Numerics.Matrix3x2 value1, valuetype System.Numerics.Matrix3x2 value2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix3x2.op_Multiply(System.Numerics.Matrix3x2,System.Numerics.Matrix3x2)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator * (value1 As Matrix3x2, value2 As Matrix3x2) As Matrix3x2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Matrix3x2 operator *(System::Numerics::Matrix3x2 value1, System::Numerics::Matrix3x2 value2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1247,6 +1399,8 @@
       <MemberSignature Language="C#" Value="public static System.Numerics.Matrix3x2 operator * (System.Numerics.Matrix3x2 value1, float value2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Matrix3x2 op_Multiply(valuetype System.Numerics.Matrix3x2 value1, float32 value2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix3x2.op_Multiply(System.Numerics.Matrix3x2,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator * (value1 As Matrix3x2, value2 As Single) As Matrix3x2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Matrix3x2 operator *(System::Numerics::Matrix3x2 value1, float value2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1289,6 +1443,8 @@
       <MemberSignature Language="C#" Value="public static System.Numerics.Matrix3x2 operator - (System.Numerics.Matrix3x2 value1, System.Numerics.Matrix3x2 value2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Matrix3x2 op_Subtraction(valuetype System.Numerics.Matrix3x2 value1, valuetype System.Numerics.Matrix3x2 value2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix3x2.op_Subtraction(System.Numerics.Matrix3x2,System.Numerics.Matrix3x2)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator - (value1 As Matrix3x2, value2 As Matrix3x2) As Matrix3x2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Matrix3x2 operator -(System::Numerics::Matrix3x2 value1, System::Numerics::Matrix3x2 value2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1331,6 +1487,8 @@
       <MemberSignature Language="C#" Value="public static System.Numerics.Matrix3x2 operator - (System.Numerics.Matrix3x2 value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Matrix3x2 op_UnaryNegation(valuetype System.Numerics.Matrix3x2 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix3x2.op_UnaryNegation(System.Numerics.Matrix3x2)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator - (value As Matrix3x2) As Matrix3x2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Matrix3x2 operator -(System::Numerics::Matrix3x2 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1365,6 +1523,8 @@
       <MemberSignature Language="C#" Value="public static System.Numerics.Matrix3x2 Subtract (System.Numerics.Matrix3x2 value1, System.Numerics.Matrix3x2 value2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Matrix3x2 Subtract(valuetype System.Numerics.Matrix3x2 value1, valuetype System.Numerics.Matrix3x2 value2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix3x2.Subtract(System.Numerics.Matrix3x2,System.Numerics.Matrix3x2)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Subtract (value1 As Matrix3x2, value2 As Matrix3x2) As Matrix3x2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Matrix3x2 Subtract(System::Numerics::Matrix3x2 value1, System::Numerics::Matrix3x2 value2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1400,6 +1560,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix3x2.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1437,6 +1599,8 @@
       <MemberSignature Language="C#" Value="public System.Numerics.Vector2 Translation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Numerics.Vector2 Translation" />
       <MemberSignature Language="DocId" Value="P:System.Numerics.Matrix3x2.Translation" />
+      <MemberSignature Language="VB.NET" Value="Public Property Translation As Vector2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Numerics::Vector2 Translation { System::Numerics::Vector2 get(); void set(System::Numerics::Vector2 value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1462,82 +1626,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="op_Multiply">
-      <AssemblyInfo>
-        <AssemblyName>System.Numerics.Vectors</AssemblyName>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.1.2.0</AssemblyVersion>
-        <AssemblyVersion>4.1.3.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Performs a multiplication operation on a matrix.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="CreateSkew">
-      <AssemblyInfo>
-        <AssemblyName>System.Numerics.Vectors</AssemblyName>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.1.2.0</AssemblyVersion>
-        <AssemblyVersion>4.1.3.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a skew matrix.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="CreateRotation">
-      <AssemblyInfo>
-        <AssemblyName>System.Numerics.Vectors</AssemblyName>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.1.2.0</AssemblyVersion>
-        <AssemblyVersion>4.1.3.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a rotation matrix.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Equals">
-      <AssemblyInfo>
-        <AssemblyName>System.Numerics.Vectors</AssemblyName>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.1.2.0</AssemblyVersion>
-        <AssemblyVersion>4.1.3.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a value that indicates whether this instance and a specified <see cref="T:System.Numerics.Matrix3x2" /> instance or a specified object are equal.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="CreateScale">
-      <AssemblyInfo>
-        <AssemblyName>System.Numerics.Vectors</AssemblyName>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.1.2.0</AssemblyVersion>
-        <AssemblyVersion>4.1.3.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a scaling matrix.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="CreateTranslation">
-      <AssemblyInfo>
-        <AssemblyName>System.Numerics.Vectors</AssemblyName>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.1.2.0</AssemblyVersion>
-        <AssemblyVersion>4.1.3.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a translation matrix.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Multiply">
-      <AssemblyInfo>
-        <AssemblyName>System.Numerics.Vectors</AssemblyName>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.1.2.0</AssemblyVersion>
-        <AssemblyVersion>4.1.3.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Performs a multiplication operation on a matrix.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

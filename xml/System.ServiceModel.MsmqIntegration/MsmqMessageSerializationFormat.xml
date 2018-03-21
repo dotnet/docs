@@ -1,7 +1,9 @@
-<Type Name="MsmqMessageSerializationFormat" FullName="System.ServiceModel.MsmqIntegration.MsmqMessageSerializationFormat">
+﻿<Type Name="MsmqMessageSerializationFormat" FullName="System.ServiceModel.MsmqIntegration.MsmqMessageSerializationFormat">
   <TypeSignature Language="C#" Value="public enum MsmqMessageSerializationFormat" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MsmqMessageSerializationFormat extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.MsmqIntegration.MsmqMessageSerializationFormat" />
+  <TypeSignature Language="VB.NET" Value="Public Enum MsmqMessageSerializationFormat" />
+  <TypeSignature Language="C++ CLI" Value="public enum class MsmqMessageSerializationFormat" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -26,6 +28,8 @@
       <MemberSignature Language="C#" Value="ActiveX" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.MsmqIntegration.MsmqMessageSerializationFormat ActiveX = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.MsmqIntegration.MsmqMessageSerializationFormat.ActiveX" />
+      <MemberSignature Language="VB.NET" Value="ActiveX" />
+      <MemberSignature Language="C++ CLI" Value="ActiveX" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -35,6 +39,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.MsmqIntegration.MsmqMessageSerializationFormat</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The ActiveX formatter is used to serialize the object.</summary>
       </Docs>
@@ -43,6 +48,8 @@
       <MemberSignature Language="C#" Value="Binary" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.MsmqIntegration.MsmqMessageSerializationFormat Binary = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.MsmqIntegration.MsmqMessageSerializationFormat.Binary" />
+      <MemberSignature Language="VB.NET" Value="Binary" />
+      <MemberSignature Language="C++ CLI" Value="Binary" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -52,6 +59,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.MsmqIntegration.MsmqMessageSerializationFormat</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter" /> is used to serialize the object.</summary>
       </Docs>
@@ -60,6 +68,8 @@
       <MemberSignature Language="C#" Value="ByteArray" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.MsmqIntegration.MsmqMessageSerializationFormat ByteArray = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.MsmqIntegration.MsmqMessageSerializationFormat.ByteArray" />
+      <MemberSignature Language="VB.NET" Value="ByteArray" />
+      <MemberSignature Language="C++ CLI" Value="ByteArray" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -69,6 +79,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.MsmqIntegration.MsmqMessageSerializationFormat</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Serializes the object to an array of bytes.</summary>
       </Docs>
@@ -77,6 +88,8 @@
       <MemberSignature Language="C#" Value="Stream" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.MsmqIntegration.MsmqMessageSerializationFormat Stream = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.MsmqIntegration.MsmqMessageSerializationFormat.Stream" />
+      <MemberSignature Language="VB.NET" Value="Stream" />
+      <MemberSignature Language="C++ CLI" Value="Stream" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -86,6 +99,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.MsmqIntegration.MsmqMessageSerializationFormat</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Serializes the object to a stream.</summary>
       </Docs>
@@ -94,6 +108,8 @@
       <MemberSignature Language="C#" Value="Xml" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.MsmqIntegration.MsmqMessageSerializationFormat Xml = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.MsmqIntegration.MsmqMessageSerializationFormat.Xml" />
+      <MemberSignature Language="VB.NET" Value="Xml" />
+      <MemberSignature Language="C++ CLI" Value="Xml" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -103,6 +119,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.MsmqIntegration.MsmqMessageSerializationFormat</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>
           <see cref="T:System.Xml.Serialization.XmlSerializer" /> is used to serialize the object.</summary>

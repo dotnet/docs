@@ -1,7 +1,9 @@
-<Type Name="Grid" FullName="System.Web.UI.DataVisualization.Charting.Grid">
+﻿<Type Name="Grid" FullName="System.Web.UI.DataVisualization.Charting.Grid">
   <TypeSignature Language="C#" Value="public class Grid" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Grid extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.Grid" />
+  <TypeSignature Language="VB.NET" Value="Public Class Grid" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Grid" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +47,8 @@
       <MemberSignature Language="C#" Value="public Grid ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.Grid.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Grid();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -60,6 +64,8 @@
       <MemberSignature Language="C#" Value="public bool Enabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Enabled" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.Grid.Enabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property Enabled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Enabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -70,7 +76,7 @@
           <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.Attribute)</AttributeName>
+          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -98,6 +104,8 @@
       <MemberSignature Language="C#" Value="public double Interval { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 Interval" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.Grid.Interval" />
+      <MemberSignature Language="VB.NET" Value="Public Property Interval As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Interval { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -108,13 +116,13 @@
           <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Web.UI.DataVisualization.Charting.AxisElementIntervalValueConverter))</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.Attribute)</AttributeName>
+          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -145,6 +153,8 @@
       <MemberSignature Language="C#" Value="public double IntervalOffset { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 IntervalOffset" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.Grid.IntervalOffset" />
+      <MemberSignature Language="VB.NET" Value="Public Property IntervalOffset As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double IntervalOffset { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -158,7 +168,7 @@
           <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Web.UI.DataVisualization.Charting.AxisElementIntervalValueConverter))</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.Attribute)</AttributeName>
+          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -187,6 +197,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.DateTimeIntervalType IntervalOffsetType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.DataVisualization.Charting.DateTimeIntervalType IntervalOffsetType" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.Grid.IntervalOffsetType" />
+      <MemberSignature Language="VB.NET" Value="Public Property IntervalOffsetType As DateTimeIntervalType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::DataVisualization::Charting::DateTimeIntervalType IntervalOffsetType { System::Web::UI::DataVisualization::Charting::DateTimeIntervalType get(); void set(System::Web::UI::DataVisualization::Charting::DateTimeIntervalType value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -197,10 +209,10 @@
           <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.Attribute)</AttributeName>
+          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -227,6 +239,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.DateTimeIntervalType IntervalType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.DataVisualization.Charting.DateTimeIntervalType IntervalType" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.Grid.IntervalType" />
+      <MemberSignature Language="VB.NET" Value="Public Property IntervalType As DateTimeIntervalType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::DataVisualization::Charting::DateTimeIntervalType IntervalType { System::Web::UI::DataVisualization::Charting::DateTimeIntervalType get(); void set(System::Web::UI::DataVisualization::Charting::DateTimeIntervalType value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -237,10 +251,10 @@
           <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.Attribute)</AttributeName>
+          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -274,6 +288,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color LineColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color LineColor" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.Grid.LineColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property LineColor As Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color LineColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -293,7 +309,7 @@
           <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Drawing.ColorConverter))</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.Attribute)</AttributeName>
+          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -316,6 +332,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.ChartDashStyle LineDashStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.DataVisualization.Charting.ChartDashStyle LineDashStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.Grid.LineDashStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property LineDashStyle As ChartDashStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::DataVisualization::Charting::ChartDashStyle LineDashStyle { System::Web::UI::DataVisualization::Charting::ChartDashStyle get(); void set(System::Web::UI::DataVisualization::Charting::ChartDashStyle value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -329,7 +347,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.Attribute)</AttributeName>
+          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -352,6 +370,8 @@
       <MemberSignature Language="C#" Value="public int LineWidth { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 LineWidth" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.Grid.LineWidth" />
+      <MemberSignature Language="VB.NET" Value="Public Property LineWidth As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LineWidth { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -365,7 +385,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(1)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.Attribute)</AttributeName>
+          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

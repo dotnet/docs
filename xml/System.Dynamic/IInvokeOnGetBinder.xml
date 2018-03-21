@@ -1,7 +1,9 @@
-<Type Name="IInvokeOnGetBinder" FullName="System.Dynamic.IInvokeOnGetBinder">
+﻿<Type Name="IInvokeOnGetBinder" FullName="System.Dynamic.IInvokeOnGetBinder">
   <TypeSignature Language="C#" Value="public interface IInvokeOnGetBinder" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IInvokeOnGetBinder" />
   <TypeSignature Language="DocId" Value="T:System.Dynamic.IInvokeOnGetBinder" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IInvokeOnGetBinder" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IInvokeOnGetBinder" />
   <AssemblyInfo>
     <AssemblyName>System.Dynamic.Runtime</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -29,6 +31,8 @@
       <MemberSignature Language="C#" Value="public bool InvokeOnGet { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool InvokeOnGet" />
       <MemberSignature Language="DocId" Value="P:System.Dynamic.IInvokeOnGetBinder.InvokeOnGet" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InvokeOnGet As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool InvokeOnGet { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="XmlConvert" FullName="System.Xml.XmlConvert">
+﻿<Type Name="XmlConvert" FullName="System.Xml.XmlConvert">
   <TypeSignature Language="C#" Value="public class XmlConvert" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlConvert extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlConvert" />
+  <TypeSignature Language="VB.NET" Value="Public Class XmlConvert" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlConvert" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -71,6 +73,8 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
       <MemberSignature Language="C#" Value="public XmlConvert ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlConvert.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlConvert();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -95,6 +99,8 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
       <MemberSignature Language="C#" Value="public static string DecodeName (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string DecodeName(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlConvert.DecodeName(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DecodeName (name As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ DecodeName(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -154,6 +160,8 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
       <MemberSignature Language="C#" Value="public static string EncodeLocalName (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string EncodeLocalName(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlConvert.EncodeLocalName(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function EncodeLocalName (name As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ EncodeLocalName(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -210,6 +218,8 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
       <MemberSignature Language="C#" Value="public static string EncodeName (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string EncodeName(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlConvert.EncodeName(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function EncodeName (name As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ EncodeName(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -268,6 +278,8 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
       <MemberSignature Language="C#" Value="public static string EncodeNmToken (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string EncodeNmToken(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlConvert.EncodeNmToken(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function EncodeNmToken (name As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ EncodeNmToken(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -311,6 +323,8 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
       <MemberSignature Language="C#" Value="public static bool IsNCNameChar (char ch);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsNCNameChar(char ch) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlConvert.IsNCNameChar(System.Char)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsNCNameChar (ch As Char) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsNCNameChar(char ch);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -342,6 +356,8 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
       <MemberSignature Language="C#" Value="public static bool IsPublicIdChar (char ch);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsPublicIdChar(char ch) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlConvert.IsPublicIdChar(System.Char)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsPublicIdChar (ch As Char) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsPublicIdChar(char ch);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -374,6 +390,8 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
       <MemberSignature Language="C#" Value="public static bool IsStartNCNameChar (char ch);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsStartNCNameChar(char ch) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlConvert.IsStartNCNameChar(System.Char)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsStartNCNameChar (ch As Char) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsStartNCNameChar(char ch);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -413,6 +431,8 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
       <MemberSignature Language="C#" Value="public static bool IsWhitespaceChar (char ch);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsWhitespaceChar(char ch) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlConvert.IsWhitespaceChar(System.Char)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsWhitespaceChar (ch As Char) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsWhitespaceChar(char ch);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -452,6 +472,8 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
       <MemberSignature Language="C#" Value="public static bool IsXmlChar (char ch);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsXmlChar(char ch) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlConvert.IsXmlChar(System.Char)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsXmlChar (ch As Char) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsXmlChar(char ch);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -491,6 +513,8 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
       <MemberSignature Language="C#" Value="public static bool IsXmlSurrogatePair (char lowChar, char highChar);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsXmlSurrogatePair(char lowChar, char highChar) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlConvert.IsXmlSurrogatePair(System.Char,System.Char)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsXmlSurrogatePair (lowChar As Char, highChar As Char) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsXmlSurrogatePair(char lowChar, char highChar);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -525,6 +549,8 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
       <MemberSignature Language="C#" Value="public static bool ToBoolean (string s);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool ToBoolean(string s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlConvert.ToBoolean(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToBoolean (s As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool ToBoolean(System::String ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -570,6 +596,8 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
       <MemberSignature Language="C#" Value="public static byte ToByte (string s);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int8 ToByte(string s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlConvert.ToByte(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToByte (s As String) As Byte" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Byte ToByte(System::String ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -610,6 +638,8 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
       <MemberSignature Language="C#" Value="public static char ToChar (string s);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig char ToChar(string s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlConvert.ToChar(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToChar (s As String) As Char" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static char ToChar(System::String ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -642,10 +672,22 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
         <exception cref="T:System.FormatException">The <paramref name="s" /> parameter contains more than one character.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ToDateTime">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the <see cref="T:System.String" /> to a <see cref="T:System.DateTime" /> equivalent.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ToDateTime">
       <MemberSignature Language="C#" Value="public static DateTime ToDateTime (string s);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.DateTime ToDateTime(string s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlConvert.ToDateTime(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToDateTime (s As String) As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static DateTime ToDateTime(System::String ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -708,6 +750,8 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
       <MemberSignature Language="C#" Value="public static DateTime ToDateTime (string s, string format);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.DateTime ToDateTime(string s, string format) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlConvert.ToDateTime(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToDateTime (s As String, format As String) As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static DateTime ToDateTime(System::String ^ s, System::String ^ format);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -749,6 +793,8 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
       <MemberSignature Language="C#" Value="public static DateTime ToDateTime (string s, string[] formats);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.DateTime ToDateTime(string s, string[] formats) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlConvert.ToDateTime(System.String,System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToDateTime (s As String, formats As String()) As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static DateTime ToDateTime(System::String ^ s, cli::array &lt;System::String ^&gt; ^ formats);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -797,6 +843,8 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
       <MemberSignature Language="C#" Value="public static DateTime ToDateTime (string s, System.Xml.XmlDateTimeSerializationMode dateTimeOption);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.DateTime ToDateTime(string s, valuetype System.Xml.XmlDateTimeSerializationMode dateTimeOption) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlConvert.ToDateTime(System.String,System.Xml.XmlDateTimeSerializationMode)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToDateTime (s As String, dateTimeOption As XmlDateTimeSerializationMode) As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static DateTime ToDateTime(System::String ^ s, System::Xml::XmlDateTimeSerializationMode dateTimeOption);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -833,10 +881,24 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
           <paramref name="s" /> is an empty string or is not in a valid format.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ToDateTimeOffset">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the supplied <see cref="T:System.String" /> to a <see cref="T:System.DateTimeOffset" /> equivalent.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ToDateTimeOffset">
       <MemberSignature Language="C#" Value="public static DateTimeOffset ToDateTimeOffset (string s);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.DateTimeOffset ToDateTimeOffset(string s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlConvert.ToDateTimeOffset(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToDateTimeOffset (s As String) As DateTimeOffset" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static DateTimeOffset ToDateTimeOffset(System::String ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -906,6 +968,8 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
       <MemberSignature Language="C#" Value="public static DateTimeOffset ToDateTimeOffset (string s, string format);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.DateTimeOffset ToDateTimeOffset(string s, string format) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlConvert.ToDateTimeOffset(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToDateTimeOffset (s As String, format As String) As DateTimeOffset" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static DateTimeOffset ToDateTimeOffset(System::String ^ s, System::String ^ format);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -977,6 +1041,8 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
       <MemberSignature Language="C#" Value="public static DateTimeOffset ToDateTimeOffset (string s, string[] formats);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.DateTimeOffset ToDateTimeOffset(string s, string[] formats) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlConvert.ToDateTimeOffset(System.String,System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToDateTimeOffset (s As String, formats As String()) As DateTimeOffset" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static DateTimeOffset ToDateTimeOffset(System::String ^ s, cli::array &lt;System::String ^&gt; ^ formats);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -1044,6 +1110,8 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
       <MemberSignature Language="C#" Value="public static decimal ToDecimal (string s);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Decimal ToDecimal(string s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlConvert.ToDecimal(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToDecimal (s As String) As Decimal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Decimal ToDecimal(System::String ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -1084,6 +1152,8 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
       <MemberSignature Language="C#" Value="public static double ToDouble (string s);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 ToDouble(string s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlConvert.ToDouble(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToDouble (s As String) As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double ToDouble(System::String ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -1146,6 +1216,8 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
       <MemberSignature Language="C#" Value="public static Guid ToGuid (string s);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Guid ToGuid(string s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlConvert.ToGuid(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToGuid (s As String) As Guid" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Guid ToGuid(System::String ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -1180,6 +1252,8 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
       <MemberSignature Language="C#" Value="public static short ToInt16 (string s);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int16 ToInt16(string s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlConvert.ToInt16(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt16 (s As String) As Short" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static short ToInt16(System::String ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -1220,6 +1294,8 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
       <MemberSignature Language="C#" Value="public static int ToInt32 (string s);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 ToInt32(string s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlConvert.ToInt32(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt32 (s As String) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int ToInt32(System::String ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -1260,6 +1336,8 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
       <MemberSignature Language="C#" Value="public static long ToInt64 (string s);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int64 ToInt64(string s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlConvert.ToInt64(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt64 (s As String) As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static long ToInt64(System::String ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -1300,6 +1378,8 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
       <MemberSignature Language="C#" Value="public static sbyte ToSByte (string s);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int8 ToSByte(string s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlConvert.ToSByte(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToSByte (s As String) As SByte" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::SByte ToSByte(System::String ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -1345,6 +1425,8 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
       <MemberSignature Language="C#" Value="public static float ToSingle (string s);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float32 ToSingle(string s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlConvert.ToSingle(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToSingle (s As String) As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static float ToSingle(System::String ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -1390,10 +1472,24 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
         <altmember cref="F:System.Single.NegativeInfinity" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts strongly typed data to an equivalent <see cref="T:System.String" /> representation.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ToString">
       <MemberSignature Language="C#" Value="public static string ToString (bool value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string ToString(bool value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlConvert.ToString(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (value As Boolean) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -1428,6 +1524,8 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
       <MemberSignature Language="C#" Value="public static string ToString (byte value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string ToString(unsigned int8 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlConvert.ToString(System.Byte)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (value As Byte) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(System::Byte value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -1461,6 +1559,8 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
       <MemberSignature Language="C#" Value="public static string ToString (char value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string ToString(char value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlConvert.ToString(System.Char)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (value As Char) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(char value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -1495,6 +1595,8 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
       <MemberSignature Language="C#" Value="public static string ToString (DateTime value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string ToString(valuetype System.DateTime value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlConvert.ToString(System.DateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (value As DateTime) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(DateTime value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1540,6 +1642,8 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
       <MemberSignature Language="C#" Value="public static string ToString (DateTimeOffset value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string ToString(valuetype System.DateTimeOffset value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlConvert.ToString(System.DateTimeOffset)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (value As DateTimeOffset) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(DateTimeOffset value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -1584,6 +1688,8 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
       <MemberSignature Language="C#" Value="public static string ToString (decimal value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string ToString(valuetype System.Decimal value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlConvert.ToString(System.Decimal)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (value As Decimal) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(System::Decimal value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -1618,6 +1724,8 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
       <MemberSignature Language="C#" Value="public static string ToString (double value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string ToString(float64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlConvert.ToString(System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (value As Double) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(double value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -1670,6 +1778,8 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
       <MemberSignature Language="C#" Value="public static string ToString (Guid value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string ToString(valuetype System.Guid value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlConvert.ToString(System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (value As Guid) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(Guid value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -1704,6 +1814,8 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
       <MemberSignature Language="C#" Value="public static string ToString (short value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string ToString(int16 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlConvert.ToString(System.Int16)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (value As Short) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(short value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -1749,6 +1861,8 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
       <MemberSignature Language="C#" Value="public static string ToString (int value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string ToString(int32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlConvert.ToString(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (value As Integer) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(int value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -1783,6 +1897,8 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
       <MemberSignature Language="C#" Value="public static string ToString (long value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string ToString(int64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlConvert.ToString(System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (value As Long) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(long value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -1817,6 +1933,8 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
       <MemberSignature Language="C#" Value="public static string ToString (sbyte value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string ToString(int8 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlConvert.ToString(System.SByte)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (value As SByte) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(System::SByte value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -1856,6 +1974,8 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
       <MemberSignature Language="C#" Value="public static string ToString (float value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string ToString(float32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlConvert.ToString(System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (value As Single) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(float value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -1899,6 +2019,8 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
       <MemberSignature Language="C#" Value="public static string ToString (TimeSpan value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string ToString(valuetype System.TimeSpan value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlConvert.ToString(System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (value As TimeSpan) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(TimeSpan value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -1933,6 +2055,8 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
       <MemberSignature Language="C#" Value="public static string ToString (ushort value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string ToString(unsigned int16 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlConvert.ToString(System.UInt16)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (value As UShort) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(System::UInt16 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -1971,6 +2095,8 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
       <MemberSignature Language="C#" Value="public static string ToString (uint value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string ToString(unsigned int32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlConvert.ToString(System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (value As UInteger) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(System::UInt32 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -2010,6 +2136,8 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
       <MemberSignature Language="C#" Value="public static string ToString (ulong value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string ToString(unsigned int64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlConvert.ToString(System.UInt64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (value As ULong) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(System::UInt64 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -2049,6 +2177,8 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
       <MemberSignature Language="C#" Value="public static string ToString (DateTime value, string format);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string ToString(valuetype System.DateTime value, string format) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlConvert.ToString(System.DateTime,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (value As DateTime, format As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(DateTime value, System::String ^ format);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -2093,6 +2223,8 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
       <MemberSignature Language="C#" Value="public static string ToString (DateTime value, System.Xml.XmlDateTimeSerializationMode dateTimeOption);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string ToString(valuetype System.DateTime value, valuetype System.Xml.XmlDateTimeSerializationMode dateTimeOption) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlConvert.ToString(System.DateTime,System.Xml.XmlDateTimeSerializationMode)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (value As DateTime, dateTimeOption As XmlDateTimeSerializationMode) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(DateTime value, System::Xml::XmlDateTimeSerializationMode dateTimeOption);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -2130,6 +2262,8 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
       <MemberSignature Language="C#" Value="public static string ToString (DateTimeOffset value, string format);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string ToString(valuetype System.DateTimeOffset value, string format) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlConvert.ToString(System.DateTimeOffset,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (value As DateTimeOffset, format As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(DateTimeOffset value, System::String ^ format);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -2176,6 +2310,8 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
       <MemberSignature Language="C#" Value="public static TimeSpan ToTimeSpan (string s);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.TimeSpan ToTimeSpan(string s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlConvert.ToTimeSpan(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToTimeSpan (s As String) As TimeSpan" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static TimeSpan ToTimeSpan(System::String ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -2212,6 +2348,8 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
       <MemberSignature Language="C#" Value="public static ushort ToUInt16 (string s);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int16 ToUInt16(string s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlConvert.ToUInt16(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToUInt16 (s As String) As UShort" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt16 ToUInt16(System::String ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -2257,6 +2395,8 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
       <MemberSignature Language="C#" Value="public static uint ToUInt32 (string s);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int32 ToUInt32(string s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlConvert.ToUInt32(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToUInt32 (s As String) As UInteger" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt32 ToUInt32(System::String ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -2302,6 +2442,8 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
       <MemberSignature Language="C#" Value="public static ulong ToUInt64 (string s);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int64 ToUInt64(string s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlConvert.ToUInt64(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToUInt64 (s As String) As ULong" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt64 ToUInt64(System::String ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -2347,6 +2489,8 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
       <MemberSignature Language="C#" Value="public static string VerifyName (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string VerifyName(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlConvert.VerifyName(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function VerifyName (name As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ VerifyName(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -2412,6 +2556,8 @@ catch(Exception e)
       <MemberSignature Language="C#" Value="public static string VerifyNCName (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string VerifyNCName(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlConvert.VerifyNCName(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function VerifyNCName (name As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ VerifyNCName(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -2450,6 +2596,8 @@ catch(Exception e)
       <MemberSignature Language="C#" Value="public static string VerifyNMTOKEN (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string VerifyNMTOKEN(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlConvert.VerifyNMTOKEN(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function VerifyNMTOKEN (name As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ VerifyNMTOKEN(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -2505,6 +2653,8 @@ catch(Exception e) {
       <MemberSignature Language="C#" Value="public static string VerifyPublicId (string publicId);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string VerifyPublicId(string publicId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlConvert.VerifyPublicId(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function VerifyPublicId (publicId As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ VerifyPublicId(System::String ^ publicId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -2551,6 +2701,8 @@ catch(Exception e) {
       <MemberSignature Language="C#" Value="public static string VerifyTOKEN (string token);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string VerifyTOKEN(string token) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlConvert.VerifyTOKEN(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function VerifyTOKEN (token As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ VerifyTOKEN(System::String ^ token);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -2601,6 +2753,8 @@ catch(Exception e) {
       <MemberSignature Language="C#" Value="public static string VerifyWhitespace (string content);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string VerifyWhitespace(string content) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlConvert.VerifyWhitespace(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function VerifyWhitespace (content As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ VerifyWhitespace(System::String ^ content);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -2657,6 +2811,8 @@ catch(Exception e) {
       <MemberSignature Language="C#" Value="public static string VerifyXmlChars (string content);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string VerifyXmlChars(string content) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlConvert.VerifyXmlChars(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function VerifyXmlChars (content As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ VerifyXmlChars(System::String ^ content);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -2705,39 +2861,5 @@ catch(Exception e) {
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="ToString">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Converts strongly typed data to an equivalent <see cref="T:System.String" /> representation.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ToDateTimeOffset">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Converts the supplied <see cref="T:System.String" /> to a <see cref="T:System.DateTimeOffset" /> equivalent.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ToDateTime">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Converts the <see cref="T:System.String" /> to a <see cref="T:System.DateTime" /> equivalent.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

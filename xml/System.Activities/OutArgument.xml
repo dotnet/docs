@@ -1,7 +1,9 @@
-<Type Name="OutArgument" FullName="System.Activities.OutArgument">
+﻿<Type Name="OutArgument" FullName="System.Activities.OutArgument">
   <TypeSignature Language="C#" Value="public abstract class OutArgument : System.Activities.Argument" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit OutArgument extends System.Activities.Argument" />
   <TypeSignature Language="DocId" Value="T:System.Activities.OutArgument" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class OutArgument&#xA;Inherits Argument" />
+  <TypeSignature Language="C++ CLI" Value="public ref class OutArgument abstract : System::Activities::Argument" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,10 +17,21 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName="CreateReference">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Activities.OutArgument" /> that references the specified target argument using the specified referenced argument name.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateReference">
       <MemberSignature Language="C#" Value="public static System.Activities.OutArgument CreateReference (System.Activities.InOutArgument argumentToReference, string referencedArgumentName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Activities.OutArgument CreateReference(class System.Activities.InOutArgument argumentToReference, string referencedArgumentName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.OutArgument.CreateReference(System.Activities.InOutArgument,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateReference (argumentToReference As InOutArgument, referencedArgumentName As String) As OutArgument" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Activities::OutArgument ^ CreateReference(System::Activities::InOutArgument ^ argumentToReference, System::String ^ referencedArgumentName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -43,6 +56,8 @@
       <MemberSignature Language="C#" Value="public static System.Activities.OutArgument CreateReference (System.Activities.OutArgument argumentToReference, string referencedArgumentName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Activities.OutArgument CreateReference(class System.Activities.OutArgument argumentToReference, string referencedArgumentName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.OutArgument.CreateReference(System.Activities.OutArgument,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateReference (argumentToReference As OutArgument, referencedArgumentName As String) As OutArgument" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Activities::OutArgument ^ CreateReference(System::Activities::OutArgument ^ argumentToReference, System::String ^ referencedArgumentName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -63,14 +78,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="CreateReference">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a new <see cref="T:System.Activities.OutArgument" /> that references the specified target argument using the specified referenced argument name.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

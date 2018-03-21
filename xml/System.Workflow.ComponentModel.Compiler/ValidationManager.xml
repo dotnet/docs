@@ -1,7 +1,9 @@
-<Type Name="ValidationManager" FullName="System.Workflow.ComponentModel.Compiler.ValidationManager">
+﻿<Type Name="ValidationManager" FullName="System.Workflow.ComponentModel.Compiler.ValidationManager">
   <TypeSignature Language="C#" Value="public sealed class ValidationManager : IServiceProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ValidationManager extends System.Object implements class System.IServiceProvider" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Compiler.ValidationManager" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ValidationManager&#xA;Implements IServiceProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ValidationManager sealed : IServiceProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -61,6 +63,8 @@
       <MemberSignature Language="C#" Value="public ValidationManager (IServiceProvider serviceProvider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IServiceProvider serviceProvider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.ValidationManager.#ctor(System.IServiceProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (serviceProvider As IServiceProvider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ValidationManager(IServiceProvider ^ serviceProvider);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -86,6 +90,8 @@
       <MemberSignature Language="C#" Value="public ValidationManager (IServiceProvider serviceProvider, bool validateChildActivities);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IServiceProvider serviceProvider, bool validateChildActivities) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.ValidationManager.#ctor(System.IServiceProvider,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (serviceProvider As IServiceProvider, validateChildActivities As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ValidationManager(IServiceProvider ^ serviceProvider, bool validateChildActivities);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -114,6 +120,8 @@
       <MemberSignature Language="C#" Value="public System.ComponentModel.Design.Serialization.ContextStack Context { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.Design.Serialization.ContextStack Context" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.ValidationManager.Context" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Context As ContextStack" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::Design::Serialization::ContextStack ^ Context { System::ComponentModel::Design::Serialization::ContextStack ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -132,6 +140,8 @@
       <MemberSignature Language="C#" Value="public object GetService (Type serviceType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetService(class System.Type serviceType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.ValidationManager.GetService(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetService (serviceType As Type) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ GetService(Type ^ serviceType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -154,6 +164,7 @@
       <MemberSignature Language="C#" Value="public System.Workflow.ComponentModel.Compiler.Validator[] GetValidators (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Workflow.ComponentModel.Compiler.Validator[] GetValidators(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.ValidationManager.GetValidators(System.Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Workflow::ComponentModel::Compiler::Validator ^&gt; ^ GetValidators(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -185,6 +196,8 @@
       <MemberSignature Language="C#" Value="public bool ValidateChildActivities { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ValidateChildActivities" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.ValidationManager.ValidateChildActivities" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ValidateChildActivities As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ValidateChildActivities { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

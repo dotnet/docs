@@ -1,7 +1,9 @@
-<Type Name="SoapBinding" FullName="System.Web.Services.Discovery.SoapBinding">
+﻿<Type Name="SoapBinding" FullName="System.Web.Services.Discovery.SoapBinding">
   <TypeSignature Language="C#" Value="public sealed class SoapBinding" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SoapBinding extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Discovery.SoapBinding" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SoapBinding" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SoapBinding sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -39,6 +41,8 @@
       <MemberSignature Language="C#" Value="public SoapBinding ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.SoapBinding.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SoapBinding();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -55,6 +59,8 @@
       <MemberSignature Language="C#" Value="public string Address { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Address" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Discovery.SoapBinding.Address" />
+      <MemberSignature Language="VB.NET" Value="Public Property Address As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Address { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -88,6 +94,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.XmlQualifiedName Binding { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlQualifiedName Binding" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Discovery.SoapBinding.Binding" />
+      <MemberSignature Language="VB.NET" Value="Public Property Binding As XmlQualifiedName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlQualifiedName ^ Binding { System::Xml::XmlQualifiedName ^ get(); void set(System::Xml::XmlQualifiedName ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -122,6 +130,8 @@
       <MemberSignature Language="C#" Value="public const string Namespace;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string Namespace" />
       <MemberSignature Language="DocId" Value="F:System.Web.Services.Discovery.SoapBinding.Namespace" />
+      <MemberSignature Language="VB.NET" Value="Public Const Namespace As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ Namespace;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

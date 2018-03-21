@@ -1,7 +1,9 @@
-<Type Name="PeerReferralPolicy" FullName="System.ServiceModel.PeerResolvers.PeerReferralPolicy">
+﻿<Type Name="PeerReferralPolicy" FullName="System.ServiceModel.PeerResolvers.PeerReferralPolicy">
   <TypeSignature Language="C#" Value="public enum PeerReferralPolicy" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PeerReferralPolicy extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.PeerResolvers.PeerReferralPolicy" />
+  <TypeSignature Language="VB.NET" Value="Public Enum PeerReferralPolicy" />
+  <TypeSignature Language="C++ CLI" Value="public enum class PeerReferralPolicy" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -18,6 +20,8 @@
       <MemberSignature Language="C#" Value="DoNotShare" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.PeerResolvers.PeerReferralPolicy DoNotShare = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.PeerResolvers.PeerReferralPolicy.DoNotShare" />
+      <MemberSignature Language="VB.NET" Value="DoNotShare" />
+      <MemberSignature Language="C++ CLI" Value="DoNotShare" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -26,6 +30,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.PeerResolvers.PeerReferralPolicy</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Referrals are not shared.</summary>
       </Docs>
@@ -34,6 +39,8 @@
       <MemberSignature Language="C#" Value="Service" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.PeerResolvers.PeerReferralPolicy Service = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.PeerResolvers.PeerReferralPolicy.Service" />
+      <MemberSignature Language="VB.NET" Value="Service" />
+      <MemberSignature Language="C++ CLI" Value="Service" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -42,6 +49,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.PeerResolvers.PeerReferralPolicy</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Referral policy is determined by the resolver service.</summary>
       </Docs>
@@ -50,6 +58,8 @@
       <MemberSignature Language="C#" Value="Share" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.PeerResolvers.PeerReferralPolicy Share = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.PeerResolvers.PeerReferralPolicy.Share" />
+      <MemberSignature Language="VB.NET" Value="Share" />
+      <MemberSignature Language="C++ CLI" Value="Share" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -58,6 +68,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.PeerResolvers.PeerReferralPolicy</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Referrals are shared.</summary>
       </Docs>

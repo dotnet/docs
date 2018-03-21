@@ -1,7 +1,9 @@
-<Type Name="LayoutEventHandler" FullName="System.Windows.Forms.LayoutEventHandler">
+﻿<Type Name="LayoutEventHandler" FullName="System.Windows.Forms.LayoutEventHandler">
   <TypeSignature Language="C#" Value="public delegate void LayoutEventHandler(object sender, LayoutEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LayoutEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.LayoutEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub LayoutEventHandler(sender As Object, e As LayoutEventArgs)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void LayoutEventHandler(System::Object ^ sender, LayoutEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

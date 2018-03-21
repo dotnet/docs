@@ -1,7 +1,9 @@
-<Type Name="WindowsRuntimeMetadata" FullName="System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMetadata">
+﻿<Type Name="WindowsRuntimeMetadata" FullName="System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMetadata">
   <TypeSignature Language="C#" Value="public static class WindowsRuntimeMetadata" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit WindowsRuntimeMetadata extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMetadata" />
+  <TypeSignature Language="VB.NET" Value="Public Class WindowsRuntimeMetadata" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WindowsRuntimeMetadata abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -30,6 +32,8 @@
       <MemberSignature Language="C#" Value="public static event EventHandler&lt;System.Runtime.InteropServices.WindowsRuntime.DesignerNamespaceResolveEventArgs&gt; DesignerNamespaceResolve;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Runtime.InteropServices.WindowsRuntime.DesignerNamespaceResolveEventArgs&gt; DesignerNamespaceResolve" />
       <MemberSignature Language="DocId" Value="E:System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMetadata.DesignerNamespaceResolve" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Custom Event DesignerNamespaceResolve As EventHandler(Of DesignerNamespaceResolveEventArgs) " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static event EventHandler&lt;System::Runtime::InteropServices::WindowsRuntime::DesignerNamespaceResolveEventArgs ^&gt; ^ DesignerNamespaceResolve;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -49,6 +53,8 @@
       <MemberSignature Language="C#" Value="public static event EventHandler&lt;System.Runtime.InteropServices.WindowsRuntime.NamespaceResolveEventArgs&gt; ReflectionOnlyNamespaceResolve;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Runtime.InteropServices.WindowsRuntime.NamespaceResolveEventArgs&gt; ReflectionOnlyNamespaceResolve" />
       <MemberSignature Language="DocId" Value="E:System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMetadata.ReflectionOnlyNamespaceResolve" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Custom Event ReflectionOnlyNamespaceResolve As EventHandler(Of NamespaceResolveEventArgs) " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static event EventHandler&lt;System::Runtime::InteropServices::WindowsRuntime::NamespaceResolveEventArgs ^&gt; ^ ReflectionOnlyNamespaceResolve;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -77,10 +83,22 @@
         <altmember cref="T:System.Runtime.InteropServices.WindowsRuntime.NamespaceResolveEventArgs" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ResolveNamespace">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Locates the Windows Metadata files for a specified namespace, given a list of locations to search.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ResolveNamespace">
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;string&gt; ResolveNamespace (string namespaceName, System.Collections.Generic.IEnumerable&lt;string&gt; packageGraphFilePaths);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;string&gt; ResolveNamespace(string namespaceName, class System.Collections.Generic.IEnumerable`1&lt;string&gt; packageGraphFilePaths) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMetadata.ResolveNamespace(System.String,System.Collections.Generic.IEnumerable{System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ResolveNamespace (namespaceName As String, packageGraphFilePaths As IEnumerable(Of String)) As IEnumerable(Of String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ ResolveNamespace(System::String ^ namespaceName, System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ packageGraphFilePaths);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -117,6 +135,8 @@
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;string&gt; ResolveNamespace (string namespaceName, string windowsSdkFilePath, System.Collections.Generic.IEnumerable&lt;string&gt; packageGraphFilePaths);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;string&gt; ResolveNamespace(string namespaceName, string windowsSdkFilePath, class System.Collections.Generic.IEnumerable`1&lt;string&gt; packageGraphFilePaths) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMetadata.ResolveNamespace(System.String,System.String,System.Collections.Generic.IEnumerable{System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ResolveNamespace (namespaceName As String, windowsSdkFilePath As String, packageGraphFilePaths As IEnumerable(Of String)) As IEnumerable(Of String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ ResolveNamespace(System::String ^ namespaceName, System::String ^ windowsSdkFilePath, System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ packageGraphFilePaths);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -151,15 +171,5 @@
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
       </Docs>
     </Member>
-    <MemberGroup MemberName="ResolveNamespace">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Locates the Windows Metadata files for a specified namespace, given a list of locations to search.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

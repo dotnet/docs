@@ -1,7 +1,9 @@
-<Type Name="ResolveNameEventArgs" FullName="System.ComponentModel.Design.Serialization.ResolveNameEventArgs">
+﻿<Type Name="ResolveNameEventArgs" FullName="System.ComponentModel.Design.Serialization.ResolveNameEventArgs">
   <TypeSignature Language="C#" Value="public class ResolveNameEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ResolveNameEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Serialization.ResolveNameEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class ResolveNameEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ResolveNameEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -46,6 +48,8 @@
       <MemberSignature Language="C#" Value="public ResolveNameEventArgs (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.ResolveNameEventArgs.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ResolveNameEventArgs(System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -75,6 +79,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Serialization.ResolveNameEventArgs.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -102,6 +108,8 @@
       <MemberSignature Language="C#" Value="public object Value { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Value" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Serialization.ResolveNameEventArgs.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Property Value As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Value { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

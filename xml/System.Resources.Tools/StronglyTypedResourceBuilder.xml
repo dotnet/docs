@@ -1,7 +1,9 @@
-<Type Name="StronglyTypedResourceBuilder" FullName="System.Resources.Tools.StronglyTypedResourceBuilder">
+﻿<Type Name="StronglyTypedResourceBuilder" FullName="System.Resources.Tools.StronglyTypedResourceBuilder">
   <TypeSignature Language="C#" Value="public static class StronglyTypedResourceBuilder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit StronglyTypedResourceBuilder extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Resources.Tools.StronglyTypedResourceBuilder" />
+  <TypeSignature Language="VB.NET" Value="Public Class StronglyTypedResourceBuilder" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StronglyTypedResourceBuilder abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,10 +41,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName="Create">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Generates a class file that contains strongly typed properties that match the resources that are specified in the input parameter.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Create">
       <MemberSignature Language="C#" Value="public static System.CodeDom.CodeCompileUnit Create (System.Collections.IDictionary resourceList, string baseName, string generatedCodeNamespace, System.CodeDom.Compiler.CodeDomProvider codeProvider, bool internalClass, out string[] unmatchable);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.CodeDom.CodeCompileUnit Create(class System.Collections.IDictionary resourceList, string baseName, string generatedCodeNamespace, class System.CodeDom.Compiler.CodeDomProvider codeProvider, bool internalClass, [out] string[]&amp; unmatchable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.Tools.StronglyTypedResourceBuilder.Create(System.Collections.IDictionary,System.String,System.String,System.CodeDom.Compiler.CodeDomProvider,System.Boolean,System.String[]@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (resourceList As IDictionary, baseName As String, generatedCodeNamespace As String, codeProvider As CodeDomProvider, internalClass As Boolean, ByRef unmatchable As String()) As CodeCompileUnit" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::CodeDom::CodeCompileUnit ^ Create(System::Collections::IDictionary ^ resourceList, System::String ^ baseName, System::String ^ generatedCodeNamespace, System::CodeDom::Compiler::CodeDomProvider ^ codeProvider, bool internalClass, [Runtime::InteropServices::Out] cli::array &lt;System::String ^&gt; ^ % unmatchable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -88,6 +101,8 @@
       <MemberSignature Language="C#" Value="public static System.CodeDom.CodeCompileUnit Create (string resxFile, string baseName, string generatedCodeNamespace, System.CodeDom.Compiler.CodeDomProvider codeProvider, bool internalClass, out string[] unmatchable);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.CodeDom.CodeCompileUnit Create(string resxFile, string baseName, string generatedCodeNamespace, class System.CodeDom.Compiler.CodeDomProvider codeProvider, bool internalClass, [out] string[]&amp; unmatchable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.Tools.StronglyTypedResourceBuilder.Create(System.String,System.String,System.String,System.CodeDom.Compiler.CodeDomProvider,System.Boolean,System.String[]@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (resxFile As String, baseName As String, generatedCodeNamespace As String, codeProvider As CodeDomProvider, internalClass As Boolean, ByRef unmatchable As String()) As CodeCompileUnit" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::CodeDom::CodeCompileUnit ^ Create(System::String ^ resxFile, System::String ^ baseName, System::String ^ generatedCodeNamespace, System::CodeDom::Compiler::CodeDomProvider ^ codeProvider, bool internalClass, [Runtime::InteropServices::Out] cli::array &lt;System::String ^&gt; ^ % unmatchable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -132,6 +147,8 @@
       <MemberSignature Language="C#" Value="public static System.CodeDom.CodeCompileUnit Create (System.Collections.IDictionary resourceList, string baseName, string generatedCodeNamespace, string resourcesNamespace, System.CodeDom.Compiler.CodeDomProvider codeProvider, bool internalClass, out string[] unmatchable);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.CodeDom.CodeCompileUnit Create(class System.Collections.IDictionary resourceList, string baseName, string generatedCodeNamespace, string resourcesNamespace, class System.CodeDom.Compiler.CodeDomProvider codeProvider, bool internalClass, [out] string[]&amp; unmatchable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.Tools.StronglyTypedResourceBuilder.Create(System.Collections.IDictionary,System.String,System.String,System.String,System.CodeDom.Compiler.CodeDomProvider,System.Boolean,System.String[]@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (resourceList As IDictionary, baseName As String, generatedCodeNamespace As String, resourcesNamespace As String, codeProvider As CodeDomProvider, internalClass As Boolean, ByRef unmatchable As String()) As CodeCompileUnit" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::CodeDom::CodeCompileUnit ^ Create(System::Collections::IDictionary ^ resourceList, System::String ^ baseName, System::String ^ generatedCodeNamespace, System::String ^ resourcesNamespace, System::CodeDom::Compiler::CodeDomProvider ^ codeProvider, bool internalClass, [Runtime::InteropServices::Out] cli::array &lt;System::String ^&gt; ^ % unmatchable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -185,6 +202,8 @@ System.Resources.ResourceManager rm = new System.Resources.ResourceManager("<res
       <MemberSignature Language="C#" Value="public static System.CodeDom.CodeCompileUnit Create (string resxFile, string baseName, string generatedCodeNamespace, string resourcesNamespace, System.CodeDom.Compiler.CodeDomProvider codeProvider, bool internalClass, out string[] unmatchable);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.CodeDom.CodeCompileUnit Create(string resxFile, string baseName, string generatedCodeNamespace, string resourcesNamespace, class System.CodeDom.Compiler.CodeDomProvider codeProvider, bool internalClass, [out] string[]&amp; unmatchable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.Tools.StronglyTypedResourceBuilder.Create(System.String,System.String,System.String,System.String,System.CodeDom.Compiler.CodeDomProvider,System.Boolean,System.String[]@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (resxFile As String, baseName As String, generatedCodeNamespace As String, resourcesNamespace As String, codeProvider As CodeDomProvider, internalClass As Boolean, ByRef unmatchable As String()) As CodeCompileUnit" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::CodeDom::CodeCompileUnit ^ Create(System::String ^ resxFile, System::String ^ baseName, System::String ^ generatedCodeNamespace, System::String ^ resourcesNamespace, System::CodeDom::Compiler::CodeDomProvider ^ codeProvider, bool internalClass, [Runtime::InteropServices::Out] cli::array &lt;System::String ^&gt; ^ % unmatchable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -231,6 +250,8 @@ System.Resources.ResourceManager rm = new System.Resources.ResourceManager("<res
       <MemberSignature Language="C#" Value="public static string VerifyResourceName (string key, System.CodeDom.Compiler.CodeDomProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string VerifyResourceName(string key, class System.CodeDom.Compiler.CodeDomProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.Tools.StronglyTypedResourceBuilder.VerifyResourceName(System.String,System.CodeDom.Compiler.CodeDomProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function VerifyResourceName (key As String, provider As CodeDomProvider) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ VerifyResourceName(System::String ^ key, System::CodeDom::Compiler::CodeDomProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -267,14 +288,5 @@ System.Resources.ResourceManager rm = new System.Resources.ResourceManager("<res
           <paramref name="key" /> or <paramref name="provider" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Create">
-      <AssemblyInfo>
-        <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Generates a class file that contains strongly typed properties that match the resources that are specified in the input parameter.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

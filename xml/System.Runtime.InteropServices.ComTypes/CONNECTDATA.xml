@@ -1,7 +1,9 @@
-<Type Name="CONNECTDATA" FullName="System.Runtime.InteropServices.ComTypes.CONNECTDATA">
+﻿<Type Name="CONNECTDATA" FullName="System.Runtime.InteropServices.ComTypes.CONNECTDATA">
   <TypeSignature Language="C#" Value="public struct CONNECTDATA" />
   <TypeSignature Language="ILAsm" Value=".class public sequential sealed beforefieldinit CONNECTDATA extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComTypes.CONNECTDATA" />
+  <TypeSignature Language="VB.NET" Value="Public Structure CONNECTDATA" />
+  <TypeSignature Language="C++ CLI" Value="public value class CONNECTDATA" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +46,8 @@
       <MemberSignature Language="C#" Value="public int dwCookie;" />
       <MemberSignature Language="ILAsm" Value=".field public int32 dwCookie" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.CONNECTDATA.dwCookie" />
+      <MemberSignature Language="VB.NET" Value="Public dwCookie As Integer " />
+      <MemberSignature Language="C++ CLI" Value="public: int dwCookie;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -75,6 +79,8 @@
       <MemberSignature Language="C#" Value="public object pUnk;" />
       <MemberSignature Language="ILAsm" Value=".field public object pUnk" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.CONNECTDATA.pUnk" />
+      <MemberSignature Language="VB.NET" Value="Public pUnk As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ pUnk;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

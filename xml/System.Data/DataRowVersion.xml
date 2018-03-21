@@ -1,7 +1,9 @@
-<Type Name="DataRowVersion" FullName="System.Data.DataRowVersion">
+﻿<Type Name="DataRowVersion" FullName="System.Data.DataRowVersion">
   <TypeSignature Language="C#" Value="public enum DataRowVersion" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataRowVersion extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Data.DataRowVersion" />
+  <TypeSignature Language="VB.NET" Value="Public Enum DataRowVersion" />
+  <TypeSignature Language="C++ CLI" Value="public enum class DataRowVersion" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Common</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -62,6 +64,8 @@
       <MemberSignature Language="C#" Value="Current" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.DataRowVersion Current = int32(512)" />
       <MemberSignature Language="DocId" Value="F:System.Data.DataRowVersion.Current" />
+      <MemberSignature Language="VB.NET" Value="Current" />
+      <MemberSignature Language="C++ CLI" Value="Current" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -79,6 +83,7 @@
       <ReturnValue>
         <ReturnType>System.Data.DataRowVersion</ReturnType>
       </ReturnValue>
+      <MemberValue>512</MemberValue>
       <Docs>
         <summary>The row contains current values.</summary>
       </Docs>
@@ -87,6 +92,8 @@
       <MemberSignature Language="C#" Value="Default" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.DataRowVersion Default = int32(1536)" />
       <MemberSignature Language="DocId" Value="F:System.Data.DataRowVersion.Default" />
+      <MemberSignature Language="VB.NET" Value="Default" />
+      <MemberSignature Language="C++ CLI" Value="Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -105,6 +112,7 @@
       <ReturnValue>
         <ReturnType>System.Data.DataRowVersion</ReturnType>
       </ReturnValue>
+      <MemberValue>1536</MemberValue>
       <Docs>
         <summary>The default version of <see cref="T:System.Data.DataRowState" />. For a <see langword="DataRowState" /> value of <see langword="Added" />, <see langword="Modified" /> or <see langword="Deleted" />, the default version is <see langword="Current" />. For a <see cref="T:System.Data.DataRowState" /> value of <see langword="Detached" />, the version is <see langword="Proposed" />.</summary>
       </Docs>
@@ -113,6 +121,8 @@
       <MemberSignature Language="C#" Value="Original" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.DataRowVersion Original = int32(256)" />
       <MemberSignature Language="DocId" Value="F:System.Data.DataRowVersion.Original" />
+      <MemberSignature Language="VB.NET" Value="Original" />
+      <MemberSignature Language="C++ CLI" Value="Original" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -130,6 +140,7 @@
       <ReturnValue>
         <ReturnType>System.Data.DataRowVersion</ReturnType>
       </ReturnValue>
+      <MemberValue>256</MemberValue>
       <Docs>
         <summary>The row contains its original values.</summary>
       </Docs>
@@ -138,6 +149,8 @@
       <MemberSignature Language="C#" Value="Proposed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.DataRowVersion Proposed = int32(1024)" />
       <MemberSignature Language="DocId" Value="F:System.Data.DataRowVersion.Proposed" />
+      <MemberSignature Language="VB.NET" Value="Proposed" />
+      <MemberSignature Language="C++ CLI" Value="Proposed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -155,6 +168,7 @@
       <ReturnValue>
         <ReturnType>System.Data.DataRowVersion</ReturnType>
       </ReturnValue>
+      <MemberValue>1024</MemberValue>
       <Docs>
         <summary>The row contains a proposed value.</summary>
       </Docs>

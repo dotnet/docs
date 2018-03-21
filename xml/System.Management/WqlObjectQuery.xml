@@ -1,7 +1,9 @@
-<Type Name="WqlObjectQuery" FullName="System.Management.WqlObjectQuery">
+﻿<Type Name="WqlObjectQuery" FullName="System.Management.WqlObjectQuery">
   <TypeSignature Language="C#" Value="public class WqlObjectQuery : System.Management.ObjectQuery" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WqlObjectQuery extends System.Management.ObjectQuery" />
   <TypeSignature Language="DocId" Value="T:System.Management.WqlObjectQuery" />
+  <TypeSignature Language="VB.NET" Value="Public Class WqlObjectQuery&#xA;Inherits ObjectQuery" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WqlObjectQuery : System::Management::ObjectQuery" />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,10 +17,21 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.WqlObjectQuery" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public WqlObjectQuery ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.WqlObjectQuery.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WqlObjectQuery();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -43,6 +56,8 @@
       <MemberSignature Language="C#" Value="public WqlObjectQuery (string query);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string query) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.WqlObjectQuery.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (query As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WqlObjectQuery(System::String ^ query);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -70,6 +85,8 @@
       <MemberSignature Language="C#" Value="public override object Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.WqlObjectQuery.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Clone () As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -99,6 +116,8 @@
       <MemberSignature Language="C#" Value="public override string QueryLanguage { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string QueryLanguage" />
       <MemberSignature Language="DocId" Value="P:System.Management.WqlObjectQuery.QueryLanguage" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property QueryLanguage As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ QueryLanguage { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -125,14 +144,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Management.WqlObjectQuery" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

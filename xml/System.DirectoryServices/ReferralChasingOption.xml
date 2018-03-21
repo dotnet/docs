@@ -1,7 +1,9 @@
-<Type Name="ReferralChasingOption" FullName="System.DirectoryServices.ReferralChasingOption">
+﻿<Type Name="ReferralChasingOption" FullName="System.DirectoryServices.ReferralChasingOption">
   <TypeSignature Language="C#" Value="public enum ReferralChasingOption" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ReferralChasingOption extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ReferralChasingOption" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ReferralChasingOption" />
+  <TypeSignature Language="C++ CLI" Value="public enum class ReferralChasingOption" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +32,8 @@
       <MemberSignature Language="C#" Value="All" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ReferralChasingOption All = int32(96)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ReferralChasingOption.All" />
+      <MemberSignature Language="VB.NET" Value="All" />
+      <MemberSignature Language="C++ CLI" Value="All" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -39,6 +43,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ReferralChasingOption</ReturnType>
       </ReturnValue>
+      <MemberValue>96</MemberValue>
       <Docs>
         <summary>Chase referrals of either the subordinate or external type.</summary>
       </Docs>
@@ -47,6 +52,8 @@
       <MemberSignature Language="C#" Value="External" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ReferralChasingOption External = int32(64)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ReferralChasingOption.External" />
+      <MemberSignature Language="VB.NET" Value="External" />
+      <MemberSignature Language="C++ CLI" Value="External" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -56,6 +63,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ReferralChasingOption</ReturnType>
       </ReturnValue>
+      <MemberValue>64</MemberValue>
       <Docs>
         <summary>Chase external referrals.  If no referral chasing option is specified for a directory search, the type of referral chasing performed is  <see cref="F:System.DirectoryServices.ReferralChasingOption.External" />.</summary>
       </Docs>
@@ -64,6 +72,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ReferralChasingOption None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ReferralChasingOption.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -73,6 +83,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ReferralChasingOption</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Never chase the referred-to server. Setting this option prevents a client from contacting other servers in a referral process.</summary>
       </Docs>
@@ -81,6 +92,8 @@
       <MemberSignature Language="C#" Value="Subordinate" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ReferralChasingOption Subordinate = int32(32)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ReferralChasingOption.Subordinate" />
+      <MemberSignature Language="VB.NET" Value="Subordinate" />
+      <MemberSignature Language="C++ CLI" Value="Subordinate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -90,6 +103,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ReferralChasingOption</ReturnType>
       </ReturnValue>
+      <MemberValue>32</MemberValue>
       <Docs>
         <summary>Chase only subordinate referrals that are a subordinate naming context in a directory tree. The ADSI LDAP provider always turns off this flag for paged searches.</summary>
       </Docs>

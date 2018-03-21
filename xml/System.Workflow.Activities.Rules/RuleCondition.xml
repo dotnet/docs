@@ -1,7 +1,9 @@
-<Type Name="RuleCondition" FullName="System.Workflow.Activities.Rules.RuleCondition">
+﻿<Type Name="RuleCondition" FullName="System.Workflow.Activities.Rules.RuleCondition">
   <TypeSignature Language="C#" Value="public abstract class RuleCondition" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit RuleCondition extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.Rules.RuleCondition" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class RuleCondition" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RuleCondition abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="protected RuleCondition ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleCondition.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; RuleCondition();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -34,6 +38,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Workflow.Activities.Rules.RuleCondition Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Workflow.Activities.Rules.RuleCondition Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleCondition.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function Clone () As RuleCondition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Workflow::Activities::Rules::RuleCondition ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -53,6 +59,8 @@
       <MemberSignature Language="C#" Value="public abstract bool Evaluate (System.Workflow.Activities.Rules.RuleExecution execution);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Evaluate(class System.Workflow.Activities.Rules.RuleExecution execution) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleCondition.Evaluate(System.Workflow.Activities.Rules.RuleExecution)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function Evaluate (execution As RuleExecution) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool Evaluate(System::Workflow::Activities::Rules::RuleExecution ^ execution);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -76,6 +84,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Collections.Generic.ICollection&lt;string&gt; GetDependencies (System.Workflow.Activities.Rules.RuleValidation validation);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.ICollection`1&lt;string&gt; GetDependencies(class System.Workflow.Activities.Rules.RuleValidation validation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleCondition.GetDependencies(System.Workflow.Activities.Rules.RuleValidation)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetDependencies (validation As RuleValidation) As ICollection(Of String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Collections::Generic::ICollection&lt;System::String ^&gt; ^ GetDependencies(System::Workflow::Activities::Rules::RuleValidation ^ validation);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -98,6 +108,8 @@
       <MemberSignature Language="C#" Value="public abstract string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Rules.RuleCondition.Name" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -116,6 +128,8 @@
       <MemberSignature Language="C#" Value="public virtual void OnRuntimeInitialized ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnRuntimeInitialized() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleCondition.OnRuntimeInitialized" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub OnRuntimeInitialized ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OnRuntimeInitialized();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -134,6 +148,8 @@
       <MemberSignature Language="C#" Value="public abstract bool Validate (System.Workflow.Activities.Rules.RuleValidation validation);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Validate(class System.Workflow.Activities.Rules.RuleValidation validation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleCondition.Validate(System.Workflow.Activities.Rules.RuleValidation)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function Validate (validation As RuleValidation) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool Validate(System::Workflow::Activities::Rules::RuleValidation ^ validation);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>

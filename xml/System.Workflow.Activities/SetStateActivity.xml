@@ -1,7 +1,9 @@
-<Type Name="SetStateActivity" FullName="System.Workflow.Activities.SetStateActivity">
+﻿<Type Name="SetStateActivity" FullName="System.Workflow.Activities.SetStateActivity">
   <TypeSignature Language="C#" Value="public sealed class SetStateActivity : System.Workflow.ComponentModel.Activity" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SetStateActivity extends System.Workflow.ComponentModel.Activity" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.SetStateActivity" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SetStateActivity&#xA;Inherits Activity" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SetStateActivity sealed : System::Workflow::ComponentModel::Activity" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -58,10 +60,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.SetStateActivity" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SetStateActivity ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.SetStateActivity.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SetStateActivity();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -86,6 +99,8 @@
       <MemberSignature Language="C#" Value="public SetStateActivity (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.SetStateActivity.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SetStateActivity(System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -104,6 +119,8 @@
       <MemberSignature Language="C#" Value="protected override System.Workflow.ComponentModel.ActivityExecutionStatus Execute (System.Workflow.ComponentModel.ActivityExecutionContext executionContext);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Workflow.ComponentModel.ActivityExecutionStatus Execute(class System.Workflow.ComponentModel.ActivityExecutionContext executionContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.SetStateActivity.Execute(System.Workflow.ComponentModel.ActivityExecutionContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function Execute (executionContext As ActivityExecutionContext) As ActivityExecutionStatus" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Workflow::ComponentModel::ActivityExecutionStatus Execute(System::Workflow::ComponentModel::ActivityExecutionContext ^ executionContext);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -126,6 +143,8 @@
       <MemberSignature Language="C#" Value="public string TargetStateName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TargetStateName" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.SetStateActivity.TargetStateName" />
+      <MemberSignature Language="VB.NET" Value="Public Property TargetStateName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TargetStateName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -162,6 +181,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Workflow.ComponentModel.DependencyProperty TargetStateNameProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Workflow.ComponentModel.DependencyProperty TargetStateNameProperty" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.SetStateActivity.TargetStateNameProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TargetStateNameProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ TargetStateNameProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -182,14 +203,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.SetStateActivity" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

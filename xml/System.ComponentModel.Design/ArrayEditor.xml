@@ -1,7 +1,9 @@
-<Type Name="ArrayEditor" FullName="System.ComponentModel.Design.ArrayEditor">
+﻿<Type Name="ArrayEditor" FullName="System.ComponentModel.Design.ArrayEditor">
   <TypeSignature Language="C#" Value="public class ArrayEditor : System.ComponentModel.Design.CollectionEditor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ArrayEditor extends System.ComponentModel.Design.CollectionEditor" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.ArrayEditor" />
+  <TypeSignature Language="VB.NET" Value="Public Class ArrayEditor&#xA;Inherits CollectionEditor" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ArrayEditor : System::ComponentModel::Design::CollectionEditor" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +39,7 @@
       <MemberSignature Language="C#" Value="public ArrayEditor (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ArrayEditor.#ctor(System.Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ArrayEditor(Type ^ type);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -55,6 +58,8 @@
       <MemberSignature Language="C#" Value="protected override Type CreateCollectionItemType ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Type CreateCollectionItemType() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ArrayEditor.CreateCollectionItemType" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateCollectionItemType () As Type" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override Type ^ CreateCollectionItemType();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -81,6 +86,8 @@
       <MemberSignature Language="C#" Value="protected override object[] GetItems (object editValue);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object[] GetItems(object editValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ArrayEditor.GetItems(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetItems (editValue As Object) As Object()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override cli::array &lt;System::Object ^&gt; ^ GetItems(System::Object ^ editValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -103,6 +110,8 @@
       <MemberSignature Language="C#" Value="protected override object SetItems (object editValue, object[] value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object SetItems(object editValue, object[] value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ArrayEditor.SetItems(System.Object,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function SetItems (editValue As Object, value As Object()) As Object" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ SetItems(System::Object ^ editValue, cli::array &lt;System::Object ^&gt; ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

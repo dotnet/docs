@@ -1,7 +1,9 @@
-<Type Name="GradientStyle" FullName="System.Windows.Forms.DataVisualization.Charting.GradientStyle">
+﻿<Type Name="GradientStyle" FullName="System.Windows.Forms.DataVisualization.Charting.GradientStyle">
   <TypeSignature Language="C#" Value="public enum GradientStyle" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed GradientStyle extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.GradientStyle" />
+  <TypeSignature Language="VB.NET" Value="Public Enum GradientStyle" />
+  <TypeSignature Language="C++ CLI" Value="public enum class GradientStyle" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +27,8 @@
       <MemberSignature Language="C#" Value="Center" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.GradientStyle Center = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.GradientStyle.Center" />
+      <MemberSignature Language="VB.NET" Value="Center" />
+      <MemberSignature Language="C++ CLI" Value="Center" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -33,6 +37,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.GradientStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Gradient is applied from the center outwards.</summary>
       </Docs>
@@ -41,6 +46,8 @@
       <MemberSignature Language="C#" Value="DiagonalLeft" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.GradientStyle DiagonalLeft = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.GradientStyle.DiagonalLeft" />
+      <MemberSignature Language="VB.NET" Value="DiagonalLeft" />
+      <MemberSignature Language="C++ CLI" Value="DiagonalLeft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -49,6 +56,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.GradientStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Gradient is applied diagonally from left to right.</summary>
       </Docs>
@@ -57,6 +65,8 @@
       <MemberSignature Language="C#" Value="DiagonalRight" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.GradientStyle DiagonalRight = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.GradientStyle.DiagonalRight" />
+      <MemberSignature Language="VB.NET" Value="DiagonalRight" />
+      <MemberSignature Language="C++ CLI" Value="DiagonalRight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -65,6 +75,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.GradientStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>Gradient is applied diagonally from right to left.</summary>
       </Docs>
@@ -73,6 +84,8 @@
       <MemberSignature Language="C#" Value="HorizontalCenter" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.GradientStyle HorizontalCenter = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.GradientStyle.HorizontalCenter" />
+      <MemberSignature Language="VB.NET" Value="HorizontalCenter" />
+      <MemberSignature Language="C++ CLI" Value="HorizontalCenter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -81,6 +94,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.GradientStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>Gradient is applied horizontally from the center outwards.</summary>
       </Docs>
@@ -89,6 +103,8 @@
       <MemberSignature Language="C#" Value="LeftRight" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.GradientStyle LeftRight = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.GradientStyle.LeftRight" />
+      <MemberSignature Language="VB.NET" Value="LeftRight" />
+      <MemberSignature Language="C++ CLI" Value="LeftRight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -97,6 +113,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.GradientStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Gradient is applied from left to right.</summary>
       </Docs>
@@ -105,6 +122,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.GradientStyle None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.GradientStyle.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -113,6 +132,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.GradientStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>No gradient is applied.</summary>
       </Docs>
@@ -121,6 +141,8 @@
       <MemberSignature Language="C#" Value="TopBottom" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.GradientStyle TopBottom = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom" />
+      <MemberSignature Language="VB.NET" Value="TopBottom" />
+      <MemberSignature Language="C++ CLI" Value="TopBottom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -129,6 +151,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.GradientStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Gradient is applied from top to bottom.</summary>
       </Docs>
@@ -137,6 +160,8 @@
       <MemberSignature Language="C#" Value="VerticalCenter" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.GradientStyle VerticalCenter = int32(7)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.GradientStyle.VerticalCenter" />
+      <MemberSignature Language="VB.NET" Value="VerticalCenter" />
+      <MemberSignature Language="C++ CLI" Value="VerticalCenter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -145,6 +170,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.GradientStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>Gradient is applied vertically from the center outwards.</summary>
       </Docs>

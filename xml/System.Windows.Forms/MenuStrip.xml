@@ -1,7 +1,9 @@
-<Type Name="MenuStrip" FullName="System.Windows.Forms.MenuStrip">
+﻿<Type Name="MenuStrip" FullName="System.Windows.Forms.MenuStrip">
   <TypeSignature Language="C#" Value="public class MenuStrip : System.Windows.Forms.ToolStrip" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MenuStrip extends System.Windows.Forms.ToolStrip" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.MenuStrip" />
+  <TypeSignature Language="VB.NET" Value="Public Class MenuStrip&#xA;Inherits ToolStrip" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MenuStrip : System::Windows::Forms::ToolStrip" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -12,7 +14,7 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
@@ -56,6 +58,8 @@
       <MemberSignature Language="C#" Value="public MenuStrip ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MenuStrip.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MenuStrip();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -86,6 +90,8 @@
       <MemberSignature Language="C#" Value="public bool CanOverflow { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanOverflow" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MenuStrip.CanOverflow" />
+      <MemberSignature Language="VB.NET" Value="Public Property CanOverflow As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanOverflow { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -120,6 +126,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Forms.AccessibleObject CreateAccessibilityInstance ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Forms.AccessibleObject CreateAccessibilityInstance() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MenuStrip.CreateAccessibilityInstance" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateAccessibilityInstance () As AccessibleObject" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Forms::AccessibleObject ^ CreateAccessibilityInstance();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -148,9 +156,10 @@
       </Docs>
     </Member>
     <Member MemberName="CreateDefaultItem">
-      <MemberSignature Language="C#" Value="protected override System.Windows.Forms.ToolStripItem CreateDefaultItem (string text, System.Drawing.Image image, EventHandler onClick);" />
+      <MemberSignature Language="C#" Value="protected internal override System.Windows.Forms.ToolStripItem CreateDefaultItem (string text, System.Drawing.Image image, EventHandler onClick);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance class System.Windows.Forms.ToolStripItem CreateDefaultItem(string text, class System.Drawing.Image image, class System.EventHandler onClick) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MenuStrip.CreateDefaultItem(System.String,System.Drawing.Image,System.EventHandler)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Windows::Forms::ToolStripItem ^ CreateDefaultItem(System::String ^ text, System::Drawing::Image ^ image, EventHandler ^ onClick);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -184,6 +193,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Forms.Padding DefaultGripMargin { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.Padding DefaultGripMargin" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MenuStrip.DefaultGripMargin" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DefaultGripMargin As Padding" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Windows::Forms::Padding DefaultGripMargin { System::Windows::Forms::Padding get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -203,6 +214,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Forms.Padding DefaultPadding { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.Padding DefaultPadding" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MenuStrip.DefaultPadding" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DefaultPadding As Padding" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Windows::Forms::Padding DefaultPadding { System::Windows::Forms::Padding get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -228,6 +241,8 @@
       <MemberSignature Language="C#" Value="protected override bool DefaultShowItemToolTips { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool DefaultShowItemToolTips" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MenuStrip.DefaultShowItemToolTips" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DefaultShowItemToolTips As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool DefaultShowItemToolTips { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -254,6 +269,8 @@
       <MemberSignature Language="C#" Value="protected override System.Drawing.Size DefaultSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Size DefaultSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MenuStrip.DefaultSize" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DefaultSize As Size" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Drawing::Size DefaultSize { System::Drawing::Size get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -272,6 +289,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ToolStripGripStyle GripStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.ToolStripGripStyle GripStyle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MenuStrip.GripStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property GripStyle As ToolStripGripStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ToolStripGripStyle GripStyle { System::Windows::Forms::ToolStripGripStyle get(); void set(System::Windows::Forms::ToolStripGripStyle value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -295,6 +314,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ToolStripMenuItem MdiWindowListItem { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ToolStripMenuItem MdiWindowListItem" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MenuStrip.MdiWindowListItem" />
+      <MemberSignature Language="VB.NET" Value="Public Property MdiWindowListItem As ToolStripMenuItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ToolStripMenuItem ^ MdiWindowListItem { System::Windows::Forms::ToolStripMenuItem ^ get(); void set(System::Windows::Forms::ToolStripMenuItem ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -341,6 +362,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler MenuActivate;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler MenuActivate" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.MenuStrip.MenuActivate" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event MenuActivate As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ MenuActivate;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -377,6 +400,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler MenuDeactivate;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler MenuDeactivate" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.MenuStrip.MenuDeactivate" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event MenuDeactivate As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ MenuDeactivate;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -413,6 +438,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnMenuActivate (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnMenuActivate(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MenuStrip.OnMenuActivate(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnMenuActivate (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnMenuActivate(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -446,6 +473,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnMenuDeactivate (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnMenuDeactivate(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MenuStrip.OnMenuDeactivate(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnMenuDeactivate (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnMenuDeactivate(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -479,6 +508,8 @@
       <MemberSignature Language="C#" Value="protected override bool ProcessCmdKey (ref System.Windows.Forms.Message m, System.Windows.Forms.Keys keyData);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ProcessCmdKey(valuetype System.Windows.Forms.Message&amp; m, valuetype System.Windows.Forms.Keys keyData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MenuStrip.ProcessCmdKey(System.Windows.Forms.Message@,System.Windows.Forms.Keys)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function ProcessCmdKey (ByRef m As Message, keyData As Keys) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool ProcessCmdKey(System::Windows::Forms::Message % m, System::Windows::Forms::Keys keyData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -505,6 +536,8 @@
       <MemberSignature Language="C#" Value="public bool ShowItemToolTips { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ShowItemToolTips" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MenuStrip.ShowItemToolTips" />
+      <MemberSignature Language="VB.NET" Value="Public Property ShowItemToolTips As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowItemToolTips { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -536,6 +569,8 @@
       <MemberSignature Language="C#" Value="public bool Stretch { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Stretch" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MenuStrip.Stretch" />
+      <MemberSignature Language="VB.NET" Value="Public Property Stretch As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Stretch { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -560,6 +595,8 @@
       <MemberSignature Language="C#" Value="protected override void WndProc (ref System.Windows.Forms.Message m);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void WndProc(valuetype System.Windows.Forms.Message&amp; m) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MenuStrip.WndProc(System.Windows.Forms.Message@)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub WndProc (ByRef m As Message)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void WndProc(System::Windows::Forms::Message % m);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

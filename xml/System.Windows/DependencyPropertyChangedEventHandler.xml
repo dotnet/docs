@@ -1,7 +1,9 @@
-<Type Name="DependencyPropertyChangedEventHandler" FullName="System.Windows.DependencyPropertyChangedEventHandler">
+﻿<Type Name="DependencyPropertyChangedEventHandler" FullName="System.Windows.DependencyPropertyChangedEventHandler">
   <TypeSignature Language="C#" Value="public delegate void DependencyPropertyChangedEventHandler(object sender, DependencyPropertyChangedEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DependencyPropertyChangedEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.DependencyPropertyChangedEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub DependencyPropertyChangedEventHandler(sender As Object, e As DependencyPropertyChangedEventArgs)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void DependencyPropertyChangedEventHandler(System::Object ^ sender, DependencyPropertyChangedEventArgs e);" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -1,7 +1,9 @@
-<Type Name="ShouldSerializeResult" FullName="System.Xaml.Schema.ShouldSerializeResult">
+﻿<Type Name="ShouldSerializeResult" FullName="System.Xaml.Schema.ShouldSerializeResult">
   <TypeSignature Language="C#" Value="public enum ShouldSerializeResult" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ShouldSerializeResult extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Xaml.Schema.ShouldSerializeResult" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ShouldSerializeResult" />
+  <TypeSignature Language="C++ CLI" Value="public enum class ShouldSerializeResult" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +28,8 @@
       <MemberSignature Language="C#" Value="Default" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xaml.Schema.ShouldSerializeResult Default = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Xaml.Schema.ShouldSerializeResult.Default" />
+      <MemberSignature Language="VB.NET" Value="Default" />
+      <MemberSignature Language="C++ CLI" Value="Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -34,6 +38,7 @@
       <ReturnValue>
         <ReturnType>System.Xaml.Schema.ShouldSerializeResult</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Unknown, defer to the type of the member.</summary>
       </Docs>
@@ -42,6 +47,8 @@
       <MemberSignature Language="C#" Value="False" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xaml.Schema.ShouldSerializeResult False = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Xaml.Schema.ShouldSerializeResult.False" />
+      <MemberSignature Language="VB.NET" Value="False" />
+      <MemberSignature Language="C++ CLI" Value="False" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -50,6 +57,7 @@
       <ReturnValue>
         <ReturnType>System.Xaml.Schema.ShouldSerializeResult</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Do not serialize the result.</summary>
       </Docs>
@@ -58,6 +66,8 @@
       <MemberSignature Language="C#" Value="True" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xaml.Schema.ShouldSerializeResult True = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Xaml.Schema.ShouldSerializeResult.True" />
+      <MemberSignature Language="VB.NET" Value="True" />
+      <MemberSignature Language="C++ CLI" Value="True" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -66,6 +76,7 @@
       <ReturnValue>
         <ReturnType>System.Xaml.Schema.ShouldSerializeResult</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Serialize the result.</summary>
       </Docs>

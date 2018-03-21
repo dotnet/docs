@@ -1,7 +1,9 @@
-<Type Name="Soap12BodyBinding" FullName="System.Web.Services.Description.Soap12BodyBinding">
+﻿<Type Name="Soap12BodyBinding" FullName="System.Web.Services.Description.Soap12BodyBinding">
   <TypeSignature Language="C#" Value="public sealed class Soap12BodyBinding : System.Web.Services.Description.SoapBodyBinding" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Soap12BodyBinding extends System.Web.Services.Description.SoapBodyBinding" />
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.Soap12BodyBinding" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Soap12BodyBinding&#xA;Inherits SoapBodyBinding" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Soap12BodyBinding sealed : System::Web::Services::Description::SoapBodyBinding" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -36,6 +38,8 @@
       <MemberSignature Language="C#" Value="public Soap12BodyBinding ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.Soap12BodyBinding.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Soap12BodyBinding();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

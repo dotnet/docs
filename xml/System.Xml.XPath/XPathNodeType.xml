@@ -1,7 +1,9 @@
-<Type Name="XPathNodeType" FullName="System.Xml.XPath.XPathNodeType">
+﻿<Type Name="XPathNodeType" FullName="System.Xml.XPath.XPathNodeType">
   <TypeSignature Language="C#" Value="public enum XPathNodeType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XPathNodeType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Xml.XPath.XPathNodeType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum XPathNodeType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class XPathNodeType" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.XPath</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -31,6 +33,8 @@
       <MemberSignature Language="C#" Value="All" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.XPath.XPathNodeType All = int32(9)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.XPath.XPathNodeType.All" />
+      <MemberSignature Language="VB.NET" Value="All" />
+      <MemberSignature Language="C++ CLI" Value="All" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
@@ -52,6 +56,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.XPath.XPathNodeType</ReturnType>
       </ReturnValue>
+      <MemberValue>9</MemberValue>
       <Docs>
         <summary>Any of the <see cref="T:System.Xml.XPath.XPathNodeType" /> node types.</summary>
       </Docs>
@@ -60,6 +65,8 @@
       <MemberSignature Language="C#" Value="Attribute" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.XPath.XPathNodeType Attribute = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.XPath.XPathNodeType.Attribute" />
+      <MemberSignature Language="VB.NET" Value="Attribute" />
+      <MemberSignature Language="C++ CLI" Value="Attribute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
@@ -81,6 +88,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.XPath.XPathNodeType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>An attribute, such as <c>id='123'</c>.</summary>
       </Docs>
@@ -89,6 +97,8 @@
       <MemberSignature Language="C#" Value="Comment" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.XPath.XPathNodeType Comment = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.XPath.XPathNodeType.Comment" />
+      <MemberSignature Language="VB.NET" Value="Comment" />
+      <MemberSignature Language="C++ CLI" Value="Comment" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
@@ -110,6 +120,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.XPath.XPathNodeType</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>A comment, such as <c>&lt;!-- my comment --&gt;</c></summary>
       </Docs>
@@ -118,6 +129,8 @@
       <MemberSignature Language="C#" Value="Element" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.XPath.XPathNodeType Element = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.XPath.XPathNodeType.Element" />
+      <MemberSignature Language="VB.NET" Value="Element" />
+      <MemberSignature Language="C++ CLI" Value="Element" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
@@ -139,6 +152,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.XPath.XPathNodeType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>An element, such as <c>&lt;element&gt;</c>.</summary>
       </Docs>
@@ -147,6 +161,8 @@
       <MemberSignature Language="C#" Value="Namespace" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.XPath.XPathNodeType Namespace = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.XPath.XPathNodeType.Namespace" />
+      <MemberSignature Language="VB.NET" Value="Namespace" />
+      <MemberSignature Language="C++ CLI" Value="Namespace" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
@@ -168,6 +184,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.XPath.XPathNodeType</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>A namespace, such as <c>xmlns="namespace"</c>.</summary>
       </Docs>
@@ -176,6 +193,8 @@
       <MemberSignature Language="C#" Value="ProcessingInstruction" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.XPath.XPathNodeType ProcessingInstruction = int32(7)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.XPath.XPathNodeType.ProcessingInstruction" />
+      <MemberSignature Language="VB.NET" Value="ProcessingInstruction" />
+      <MemberSignature Language="C++ CLI" Value="ProcessingInstruction" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
@@ -197,6 +216,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.XPath.XPathNodeType</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>A processing instruction, such as <c>&lt;?pi test?&gt;</c>. This does not include XML declarations, which are not visible to the <see cref="T:System.Xml.XPath.XPathNavigator" /> class.</summary>
       </Docs>
@@ -205,6 +225,8 @@
       <MemberSignature Language="C#" Value="Root" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.XPath.XPathNodeType Root = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.XPath.XPathNodeType.Root" />
+      <MemberSignature Language="VB.NET" Value="Root" />
+      <MemberSignature Language="C++ CLI" Value="Root" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
@@ -226,6 +248,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.XPath.XPathNodeType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The root node of the XML document or node tree.</summary>
       </Docs>
@@ -234,6 +257,8 @@
       <MemberSignature Language="C#" Value="SignificantWhitespace" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.XPath.XPathNodeType SignificantWhitespace = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.XPath.XPathNodeType.SignificantWhitespace" />
+      <MemberSignature Language="VB.NET" Value="SignificantWhitespace" />
+      <MemberSignature Language="C++ CLI" Value="SignificantWhitespace" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
@@ -255,6 +280,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.XPath.XPathNodeType</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>A node with white space characters and <c>xml:space</c> set to <c>preserve</c>.</summary>
       </Docs>
@@ -263,6 +289,8 @@
       <MemberSignature Language="C#" Value="Text" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.XPath.XPathNodeType Text = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.XPath.XPathNodeType.Text" />
+      <MemberSignature Language="VB.NET" Value="Text" />
+      <MemberSignature Language="C++ CLI" Value="Text" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
@@ -284,6 +312,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.XPath.XPathNodeType</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The text content of a node. Equivalent to the Document Object Model (DOM) Text and CDATA node types. Contains at least one character.</summary>
       </Docs>
@@ -292,6 +321,8 @@
       <MemberSignature Language="C#" Value="Whitespace" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.XPath.XPathNodeType Whitespace = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.XPath.XPathNodeType.Whitespace" />
+      <MemberSignature Language="VB.NET" Value="Whitespace" />
+      <MemberSignature Language="C++ CLI" Value="Whitespace" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
@@ -313,6 +344,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.XPath.XPathNodeType</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>A node with only white space characters and no significant white space. White space characters are <c>#x20</c>, <c>#x9</c>, <c>#xD</c>, or <c>#xA</c>.</summary>
       </Docs>

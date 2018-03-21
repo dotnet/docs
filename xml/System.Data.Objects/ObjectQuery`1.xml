@@ -1,7 +1,9 @@
-<Type Name="ObjectQuery&lt;T&gt;" FullName="System.Data.Objects.ObjectQuery&lt;T&gt;">
-  <TypeSignature Language="C#" Value="public class ObjectQuery&lt;T&gt; : System.Data.Objects.ObjectQuery, System.Collections.Generic.IEnumerable&lt;T&gt;, System.ComponentModel.IListSource, System.Linq.IOrderedQueryable&lt;T&gt;, System.Linq.IQueryable&lt;T&gt;" />
+﻿<Type Name="ObjectQuery&lt;T&gt;" FullName="System.Data.Objects.ObjectQuery&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public class ObjectQuery&lt;T&gt; : System.Data.Objects.ObjectQuery, System.Collections.Generic.IEnumerable&lt;T&gt;, System.Linq.IOrderedQueryable&lt;T&gt;, System.Linq.IQueryable&lt;T&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ObjectQuery`1&lt;T&gt; extends System.Data.Objects.ObjectQuery implements class System.Collections.Generic.IEnumerable`1&lt;!T&gt;, class System.Collections.IEnumerable, class System.ComponentModel.IListSource, class System.Linq.IOrderedQueryable, class System.Linq.IOrderedQueryable`1&lt;!T&gt;, class System.Linq.IQueryable, class System.Linq.IQueryable`1&lt;!T&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Data.Objects.ObjectQuery`1" />
+  <TypeSignature Language="VB.NET" Value="Public Class ObjectQuery(Of T)&#xA;Inherits ObjectQuery&#xA;Implements IEnumerable(Of T), IOrderedQueryable(Of T), IQueryable(Of T)" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class ObjectQuery : System::Data::Objects::ObjectQuery, System::Collections::Generic::IEnumerable&lt;T&gt;, System::Linq::IOrderedQueryable&lt;T&gt;, System::Linq::IQueryable&lt;T&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,9 +17,6 @@
   <Interfaces>
     <Interface>
       <InterfaceName>System.Collections.Generic.IEnumerable&lt;T&gt;</InterfaceName>
-    </Interface>
-    <Interface>
-      <InterfaceName>System.ComponentModel.IListSource</InterfaceName>
     </Interface>
     <Interface>
       <InterfaceName>System.Linq.IOrderedQueryable&lt;T&gt;</InterfaceName>
@@ -82,6 +81,8 @@
       <MemberSignature Language="C#" Value="public ObjectQuery (string commandText, System.Data.Objects.ObjectContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string commandText, class System.Data.Objects.ObjectContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectQuery`1.#ctor(System.String,System.Data.Objects.ObjectContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (commandText As String, context As ObjectContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ObjectQuery(System::String ^ commandText, System::Data::Objects::ObjectContext ^ context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -117,6 +118,7 @@
       <MemberSignature Language="C#" Value="public ObjectQuery (string commandText, System.Data.Objects.ObjectContext context, System.Data.Objects.MergeOption mergeOption);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string commandText, class System.Data.Objects.ObjectContext context, valuetype System.Data.Objects.MergeOption mergeOption) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectQuery`1.#ctor(System.String,System.Data.Objects.ObjectContext,System.Data.Objects.MergeOption)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ObjectQuery(System::String ^ commandText, System::Data::Objects::ObjectContext ^ context, System::Data::Objects::MergeOption mergeOption);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -154,6 +156,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Objects.ObjectQuery&lt;T&gt; Distinct ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Objects.ObjectQuery`1&lt;!T&gt; Distinct() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectQuery`1.Distinct" />
+      <MemberSignature Language="VB.NET" Value="Public Function Distinct () As ObjectQuery(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Objects::ObjectQuery&lt;T&gt; ^ Distinct();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -190,6 +194,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Objects.ObjectQuery&lt;T&gt; Except (System.Data.Objects.ObjectQuery&lt;T&gt; query);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Objects.ObjectQuery`1&lt;!T&gt; Except(class System.Data.Objects.ObjectQuery`1&lt;!T&gt; query) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectQuery`1.Except(System.Data.Objects.ObjectQuery{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Function Except (query As ObjectQuery(Of T)) As ObjectQuery(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Objects::ObjectQuery&lt;T&gt; ^ Except(System::Data::Objects::ObjectQuery&lt;T&gt; ^ query);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -232,6 +238,7 @@
       <MemberSignature Language="C#" Value="public System.Data.Objects.ObjectResult&lt;T&gt; Execute (System.Data.Objects.MergeOption mergeOption);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Objects.ObjectResult`1&lt;!T&gt; Execute(valuetype System.Data.Objects.MergeOption mergeOption) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectQuery`1.Execute(System.Data.Objects.MergeOption)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Objects::ObjectResult&lt;T&gt; ^ Execute(System::Data::Objects::MergeOption mergeOption);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -269,6 +276,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Objects.ObjectQuery&lt;System.Data.Common.DbDataRecord&gt; GroupBy (string keys, string projection, params System.Data.Objects.ObjectParameter[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Objects.ObjectQuery`1&lt;class System.Data.Common.DbDataRecord&gt; GroupBy(string keys, string projection, class System.Data.Objects.ObjectParameter[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectQuery`1.GroupBy(System.String,System.String,System.Data.Objects.ObjectParameter[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function GroupBy (keys As String, projection As String, ParamArray parameters As ObjectParameter()) As ObjectQuery(Of DbDataRecord)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Objects::ObjectQuery&lt;System::Data::Common::DbDataRecord ^&gt; ^ GroupBy(System::String ^ keys, System::String ^ projection, ... cli::array &lt;System::Data::Objects::ObjectParameter ^&gt; ^ parameters);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -328,6 +337,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Objects.ObjectQuery&lt;T&gt; Include (string path);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Objects.ObjectQuery`1&lt;!T&gt; Include(string path) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectQuery`1.Include(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Include (path As String) As ObjectQuery(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Objects::ObjectQuery&lt;T&gt; ^ Include(System::String ^ path);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -376,6 +387,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Objects.ObjectQuery&lt;T&gt; Intersect (System.Data.Objects.ObjectQuery&lt;T&gt; query);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Objects.ObjectQuery`1&lt;!T&gt; Intersect(class System.Data.Objects.ObjectQuery`1&lt;!T&gt; query) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectQuery`1.Intersect(System.Data.Objects.ObjectQuery{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Function Intersect (query As ObjectQuery(Of T)) As ObjectQuery(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Objects::ObjectQuery&lt;T&gt; ^ Intersect(System::Data::Objects::ObjectQuery&lt;T&gt; ^ query);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -418,6 +431,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Data.Objects.ObjectQuery`1.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -456,6 +471,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Objects.ObjectQuery&lt;TResultType&gt; OfType&lt;TResultType&gt; ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Objects.ObjectQuery`1&lt;!!TResultType&gt; OfType&lt;TResultType&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectQuery`1.OfType``1" />
+      <MemberSignature Language="VB.NET" Value="Public Function OfType(Of TResultType) () As ObjectQuery(Of TResultType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TResultType&gt;&#xA; System::Data::Objects::ObjectQuery&lt;TResultType&gt; ^ OfType();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -489,6 +506,8 @@ The <xref:System.Data.Objects.ObjectQuery`1.OfType*> method can only be applied 
       <MemberSignature Language="C#" Value="public System.Data.Objects.ObjectQuery&lt;T&gt; OrderBy (string keys, params System.Data.Objects.ObjectParameter[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Objects.ObjectQuery`1&lt;!T&gt; OrderBy(string keys, class System.Data.Objects.ObjectParameter[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectQuery`1.OrderBy(System.String,System.Data.Objects.ObjectParameter[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function OrderBy (keys As String, ParamArray parameters As ObjectParameter()) As ObjectQuery(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Objects::ObjectQuery&lt;T&gt; ^ OrderBy(System::String ^ keys, ... cli::array &lt;System::Data::Objects::ObjectParameter ^&gt; ^ parameters);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -538,6 +557,8 @@ The <xref:System.Data.Objects.ObjectQuery`1.OfType*> method can only be applied 
       <MemberSignature Language="C#" Value="public System.Data.Objects.ObjectQuery&lt;System.Data.Common.DbDataRecord&gt; Select (string projection, params System.Data.Objects.ObjectParameter[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Objects.ObjectQuery`1&lt;class System.Data.Common.DbDataRecord&gt; Select(string projection, class System.Data.Objects.ObjectParameter[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectQuery`1.Select(System.String,System.Data.Objects.ObjectParameter[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function Select (projection As String, ParamArray parameters As ObjectParameter()) As ObjectQuery(Of DbDataRecord)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Objects::ObjectQuery&lt;System::Data::Common::DbDataRecord ^&gt; ^ Select(System::String ^ projection, ... cli::array &lt;System::Data::Objects::ObjectParameter ^&gt; ^ parameters);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -592,6 +613,8 @@ The <xref:System.Data.Objects.ObjectQuery`1.OfType*> method can only be applied 
       <MemberSignature Language="C#" Value="public System.Data.Objects.ObjectQuery&lt;TResultType&gt; SelectValue&lt;TResultType&gt; (string projection, params System.Data.Objects.ObjectParameter[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Objects.ObjectQuery`1&lt;!!TResultType&gt; SelectValue&lt;TResultType&gt;(string projection, class System.Data.Objects.ObjectParameter[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectQuery`1.SelectValue``1(System.String,System.Data.Objects.ObjectParameter[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function SelectValue(Of TResultType) (projection As String, ParamArray parameters As ObjectParameter()) As ObjectQuery(Of TResultType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TResultType&gt;&#xA; System::Data::Objects::ObjectQuery&lt;TResultType&gt; ^ SelectValue(System::String ^ projection, ... cli::array &lt;System::Data::Objects::ObjectParameter ^&gt; ^ parameters);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -650,6 +673,8 @@ The <xref:System.Data.Objects.ObjectQuery`1.OfType*> method can only be applied 
       <MemberSignature Language="C#" Value="public System.Data.Objects.ObjectQuery&lt;T&gt; Skip (string keys, string count, params System.Data.Objects.ObjectParameter[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Objects.ObjectQuery`1&lt;!T&gt; Skip(string keys, string count, class System.Data.Objects.ObjectParameter[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectQuery`1.Skip(System.String,System.String,System.Data.Objects.ObjectParameter[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function Skip (keys As String, count As String, ParamArray parameters As ObjectParameter()) As ObjectQuery(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Objects::ObjectQuery&lt;T&gt; ^ Skip(System::String ^ keys, System::String ^ count, ... cli::array &lt;System::Data::Objects::ObjectParameter ^&gt; ^ parameters);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -704,7 +729,12 @@ The <xref:System.Data.Objects.ObjectQuery`1.OfType*> method can only be applied 
       <MemberSignature Language="C#" Value="System.Collections.Generic.IEnumerator&lt;T&gt; IEnumerable&lt;T&gt;.GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.Generic.IEnumerator`1&lt;!T&gt; System.Collections.Generic.IEnumerable&lt;T&gt;.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectQuery`1.System#Collections#Generic#IEnumerable&lt;T&gt;#GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator(Of T) Implements IEnumerable(Of T).GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::Generic::IEnumerator&lt;T&gt; ^ System.Collections.Generic.IEnumerable&lt;T&gt;.GetEnumerator() = System::Collections::Generic::IEnumerable&lt;T&gt;::GetEnumerator;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -730,6 +760,8 @@ The <xref:System.Data.Objects.ObjectQuery`1.OfType*> method can only be applied 
       <MemberSignature Language="C#" Value="public System.Data.Objects.ObjectQuery&lt;T&gt; Top (string count, params System.Data.Objects.ObjectParameter[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Objects.ObjectQuery`1&lt;!T&gt; Top(string count, class System.Data.Objects.ObjectParameter[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectQuery`1.Top(System.String,System.Data.Objects.ObjectParameter[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function Top (count As String, ParamArray parameters As ObjectParameter()) As ObjectQuery(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Objects::ObjectQuery&lt;T&gt; ^ Top(System::String ^ count, ... cli::array &lt;System::Data::Objects::ObjectParameter ^&gt; ^ parameters);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -788,6 +820,8 @@ The <xref:System.Data.Objects.ObjectQuery`1.OfType*> method can only be applied 
       <MemberSignature Language="C#" Value="public System.Data.Objects.ObjectQuery&lt;T&gt; Union (System.Data.Objects.ObjectQuery&lt;T&gt; query);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Objects.ObjectQuery`1&lt;!T&gt; Union(class System.Data.Objects.ObjectQuery`1&lt;!T&gt; query) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectQuery`1.Union(System.Data.Objects.ObjectQuery{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Function Union (query As ObjectQuery(Of T)) As ObjectQuery(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Objects::ObjectQuery&lt;T&gt; ^ Union(System::Data::Objects::ObjectQuery&lt;T&gt; ^ query);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -844,6 +878,8 @@ ObjectQuery <DiscontinuedProduct>.Union(ObjectQuery<Product>)
       <MemberSignature Language="C#" Value="public System.Data.Objects.ObjectQuery&lt;T&gt; UnionAll (System.Data.Objects.ObjectQuery&lt;T&gt; query);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Objects.ObjectQuery`1&lt;!T&gt; UnionAll(class System.Data.Objects.ObjectQuery`1&lt;!T&gt; query) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectQuery`1.UnionAll(System.Data.Objects.ObjectQuery{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Function UnionAll (query As ObjectQuery(Of T)) As ObjectQuery(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Objects::ObjectQuery&lt;T&gt; ^ UnionAll(System::Data::Objects::ObjectQuery&lt;T&gt; ^ query);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -900,6 +936,8 @@ ObjectQuery <DiscontinuedProduct>.Union(ObjectQuery<Product>)
       <MemberSignature Language="C#" Value="public System.Data.Objects.ObjectQuery&lt;T&gt; Where (string predicate, params System.Data.Objects.ObjectParameter[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Objects.ObjectQuery`1&lt;!T&gt; Where(string predicate, class System.Data.Objects.ObjectParameter[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectQuery`1.Where(System.String,System.Data.Objects.ObjectParameter[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function Where (predicate As String, ParamArray parameters As ObjectParameter()) As ObjectQuery(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Objects::ObjectQuery&lt;T&gt; ^ Where(System::String ^ predicate, ... cli::array &lt;System::Data::Objects::ObjectParameter ^&gt; ^ parameters);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="PagesSection" FullName="System.Web.Configuration.PagesSection">
+﻿<Type Name="PagesSection" FullName="System.Web.Configuration.PagesSection">
   <TypeSignature Language="C#" Value="public sealed class PagesSection : System.Configuration.ConfigurationSection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PagesSection extends System.Configuration.ConfigurationSection" />
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.PagesSection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PagesSection&#xA;Inherits ConfigurationSection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PagesSection sealed : System::Configuration::ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -87,6 +89,8 @@
       <MemberSignature Language="C#" Value="public PagesSection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.PagesSection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PagesSection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -109,6 +113,8 @@
       <MemberSignature Language="C#" Value="public TimeSpan AsyncTimeout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan AsyncTimeout" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.PagesSection.AsyncTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public Property AsyncTimeout As TimeSpan" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan AsyncTimeout { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -146,6 +152,8 @@
       <MemberSignature Language="C#" Value="public bool AutoEventWireup { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AutoEventWireup" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.PagesSection.AutoEventWireup" />
+      <MemberSignature Language="VB.NET" Value="Public Property AutoEventWireup As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutoEventWireup { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -239,6 +247,8 @@ public partial class AutoEventWireupExample : System.Web.UI.Page
       <MemberSignature Language="C#" Value="public bool Buffer { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Buffer" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.PagesSection.Buffer" />
+      <MemberSignature Language="VB.NET" Value="Public Property Buffer As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Buffer { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -278,6 +288,8 @@ public partial class AutoEventWireupExample : System.Web.UI.Page
       <MemberSignature Language="C#" Value="public System.Web.UI.ClientIDMode ClientIDMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.ClientIDMode ClientIDMode" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.PagesSection.ClientIDMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property ClientIDMode As ClientIDMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::ClientIDMode ClientIDMode { System::Web::UI::ClientIDMode get(); void set(System::Web::UI::ClientIDMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -309,6 +321,8 @@ public partial class AutoEventWireupExample : System.Web.UI.Page
       <MemberSignature Language="C#" Value="public System.Web.UI.CompilationMode CompilationMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.CompilationMode CompilationMode" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.PagesSection.CompilationMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property CompilationMode As CompilationMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::CompilationMode CompilationMode { System::Web::UI::CompilationMode get(); void set(System::Web::UI::CompilationMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -348,6 +362,8 @@ public partial class AutoEventWireupExample : System.Web.UI.Page
       <MemberSignature Language="C#" Value="public Version ControlRenderingCompatibilityVersion { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Version ControlRenderingCompatibilityVersion" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.PagesSection.ControlRenderingCompatibilityVersion" />
+      <MemberSignature Language="VB.NET" Value="Public Property ControlRenderingCompatibilityVersion As Version" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Version ^ ControlRenderingCompatibilityVersion { Version ^ get(); void set(Version ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -386,6 +402,8 @@ public partial class AutoEventWireupExample : System.Web.UI.Page
       <MemberSignature Language="C#" Value="public System.Web.Configuration.TagPrefixCollection Controls { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.TagPrefixCollection Controls" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.PagesSection.Controls" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Controls As TagPrefixCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::TagPrefixCollection ^ Controls { System::Web::Configuration::TagPrefixCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -426,6 +444,8 @@ public partial class AutoEventWireupExample : System.Web.UI.Page
       <MemberSignature Language="C#" Value="protected override void DeserializeSection (System.Xml.XmlReader reader);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DeserializeSection(class System.Xml.XmlReader reader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.PagesSection.DeserializeSection(System.Xml.XmlReader)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DeserializeSection (reader As XmlReader)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void DeserializeSection(System::Xml::XmlReader ^ reader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -447,6 +467,8 @@ public partial class AutoEventWireupExample : System.Web.UI.Page
       <MemberSignature Language="C#" Value="public bool EnableEventValidation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool EnableEventValidation" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.PagesSection.EnableEventValidation" />
+      <MemberSignature Language="VB.NET" Value="Public Property EnableEventValidation As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableEventValidation { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -483,6 +505,8 @@ public partial class AutoEventWireupExample : System.Web.UI.Page
       <MemberSignature Language="C#" Value="public System.Web.Configuration.PagesEnableSessionState EnableSessionState { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.Configuration.PagesEnableSessionState EnableSessionState" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.PagesSection.EnableSessionState" />
+      <MemberSignature Language="VB.NET" Value="Public Property EnableSessionState As PagesEnableSessionState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::PagesEnableSessionState EnableSessionState { System::Web::Configuration::PagesEnableSessionState get(); void set(System::Web::Configuration::PagesEnableSessionState value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -517,6 +541,8 @@ public partial class AutoEventWireupExample : System.Web.UI.Page
       <MemberSignature Language="C#" Value="public bool EnableViewState { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool EnableViewState" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.PagesSection.EnableViewState" />
+      <MemberSignature Language="VB.NET" Value="Public Property EnableViewState As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableViewState { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -551,6 +577,8 @@ public partial class AutoEventWireupExample : System.Web.UI.Page
       <MemberSignature Language="C#" Value="public bool EnableViewStateMac { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool EnableViewStateMac" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.PagesSection.EnableViewStateMac" />
+      <MemberSignature Language="VB.NET" Value="Public Property EnableViewStateMac As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableViewStateMac { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -593,6 +621,8 @@ public partial class AutoEventWireupExample : System.Web.UI.Page
       <MemberSignature Language="C#" Value="public System.Web.Configuration.IgnoreDeviceFilterElementCollection IgnoreDeviceFilters { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.IgnoreDeviceFilterElementCollection IgnoreDeviceFilters" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.PagesSection.IgnoreDeviceFilters" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IgnoreDeviceFilters As IgnoreDeviceFilterElementCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::IgnoreDeviceFilterElementCollection ^ IgnoreDeviceFilters { System::Web::Configuration::IgnoreDeviceFilterElementCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -624,6 +654,8 @@ public partial class AutoEventWireupExample : System.Web.UI.Page
       <MemberSignature Language="C#" Value="public bool MaintainScrollPositionOnPostBack { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool MaintainScrollPositionOnPostBack" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.PagesSection.MaintainScrollPositionOnPostBack" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaintainScrollPositionOnPostBack As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MaintainScrollPositionOnPostBack { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -649,6 +681,8 @@ public partial class AutoEventWireupExample : System.Web.UI.Page
       <MemberSignature Language="C#" Value="public string MasterPageFile { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MasterPageFile" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.PagesSection.MasterPageFile" />
+      <MemberSignature Language="VB.NET" Value="Public Property MasterPageFile As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MasterPageFile { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -687,6 +721,8 @@ public partial class AutoEventWireupExample : System.Web.UI.Page
       <MemberSignature Language="C#" Value="public int MaxPageStateFieldLength { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxPageStateFieldLength" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.PagesSection.MaxPageStateFieldLength" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxPageStateFieldLength As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxPageStateFieldLength { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -725,6 +761,8 @@ public partial class AutoEventWireupExample : System.Web.UI.Page
       <MemberSignature Language="C#" Value="public System.Web.Configuration.NamespaceCollection Namespaces { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.NamespaceCollection Namespaces" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.PagesSection.Namespaces" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Namespaces As NamespaceCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::NamespaceCollection ^ Namespaces { System::Web::Configuration::NamespaceCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -765,6 +803,8 @@ public partial class AutoEventWireupExample : System.Web.UI.Page
       <MemberSignature Language="C#" Value="public string PageBaseType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PageBaseType" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.PagesSection.PageBaseType" />
+      <MemberSignature Language="VB.NET" Value="Public Property PageBaseType As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PageBaseType { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -798,6 +838,8 @@ public partial class AutoEventWireupExample : System.Web.UI.Page
       <MemberSignature Language="C#" Value="public string PageParserFilterType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PageParserFilterType" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.PagesSection.PageParserFilterType" />
+      <MemberSignature Language="VB.NET" Value="Public Property PageParserFilterType As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PageParserFilterType { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -837,6 +879,8 @@ public partial class AutoEventWireupExample : System.Web.UI.Page
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.PagesSection.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -855,6 +899,8 @@ public partial class AutoEventWireupExample : System.Web.UI.Page
       <MemberSignature Language="C#" Value="public bool RenderAllHiddenFieldsAtTopOfForm { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool RenderAllHiddenFieldsAtTopOfForm" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.PagesSection.RenderAllHiddenFieldsAtTopOfForm" />
+      <MemberSignature Language="VB.NET" Value="Public Property RenderAllHiddenFieldsAtTopOfForm As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RenderAllHiddenFieldsAtTopOfForm { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -891,6 +937,8 @@ public partial class AutoEventWireupExample : System.Web.UI.Page
       <MemberSignature Language="C#" Value="protected override void SetReadOnly ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetReadOnly() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.PagesSection.SetReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetReadOnly ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetReadOnly();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -909,6 +957,8 @@ public partial class AutoEventWireupExample : System.Web.UI.Page
       <MemberSignature Language="C#" Value="public bool SmartNavigation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SmartNavigation" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.PagesSection.SmartNavigation" />
+      <MemberSignature Language="VB.NET" Value="Public Property SmartNavigation As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SmartNavigation { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -950,6 +1000,8 @@ public partial class AutoEventWireupExample : System.Web.UI.Page
       <MemberSignature Language="C#" Value="public string StyleSheetTheme { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string StyleSheetTheme" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.PagesSection.StyleSheetTheme" />
+      <MemberSignature Language="VB.NET" Value="Public Property StyleSheetTheme As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ StyleSheetTheme { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -984,6 +1036,8 @@ public partial class AutoEventWireupExample : System.Web.UI.Page
       <MemberSignature Language="C#" Value="public System.Web.Configuration.TagMapCollection TagMapping { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.TagMapCollection TagMapping" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.PagesSection.TagMapping" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TagMapping As TagMapCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::TagMapCollection ^ TagMapping { System::Web::Configuration::TagMapCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1022,6 +1076,8 @@ public partial class AutoEventWireupExample : System.Web.UI.Page
       <MemberSignature Language="C#" Value="public string Theme { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Theme" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.PagesSection.Theme" />
+      <MemberSignature Language="VB.NET" Value="Public Property Theme As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Theme { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1056,6 +1112,8 @@ public partial class AutoEventWireupExample : System.Web.UI.Page
       <MemberSignature Language="C#" Value="public string UserControlBaseType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string UserControlBaseType" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.PagesSection.UserControlBaseType" />
+      <MemberSignature Language="VB.NET" Value="Public Property UserControlBaseType As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ UserControlBaseType { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1089,6 +1147,8 @@ public partial class AutoEventWireupExample : System.Web.UI.Page
       <MemberSignature Language="C#" Value="public bool ValidateRequest { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ValidateRequest" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.PagesSection.ValidateRequest" />
+      <MemberSignature Language="VB.NET" Value="Public Property ValidateRequest As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ValidateRequest { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1128,6 +1188,8 @@ public partial class AutoEventWireupExample : System.Web.UI.Page
       <MemberSignature Language="C#" Value="public System.Web.UI.ViewStateEncryptionMode ViewStateEncryptionMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.ViewStateEncryptionMode ViewStateEncryptionMode" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.PagesSection.ViewStateEncryptionMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property ViewStateEncryptionMode As ViewStateEncryptionMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::ViewStateEncryptionMode ViewStateEncryptionMode { System::Web::UI::ViewStateEncryptionMode get(); void set(System::Web::UI::ViewStateEncryptionMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

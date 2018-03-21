@@ -1,7 +1,9 @@
-<Type Name="WSDualHttpBinding" FullName="System.ServiceModel.WSDualHttpBinding">
+﻿<Type Name="WSDualHttpBinding" FullName="System.ServiceModel.WSDualHttpBinding">
   <TypeSignature Language="C#" Value="public class WSDualHttpBinding : System.ServiceModel.Channels.Binding, System.ServiceModel.Channels.IBindingRuntimePreferences" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WSDualHttpBinding extends System.ServiceModel.Channels.Binding implements class System.ServiceModel.Channels.IBindingRuntimePreferences" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.WSDualHttpBinding" />
+  <TypeSignature Language="VB.NET" Value="Public Class WSDualHttpBinding&#xA;Inherits Binding&#xA;Implements IBindingRuntimePreferences" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WSDualHttpBinding : System::ServiceModel::Channels::Binding, System::ServiceModel::Channels::IBindingRuntimePreferences" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,10 +51,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.WSDualHttpBinding" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public WSDualHttpBinding ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.WSDualHttpBinding.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WSDualHttpBinding();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -78,6 +91,8 @@
       <MemberSignature Language="C#" Value="public WSDualHttpBinding (System.ServiceModel.WSDualHttpSecurityMode securityMode);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.ServiceModel.WSDualHttpSecurityMode securityMode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.WSDualHttpBinding.#ctor(System.ServiceModel.WSDualHttpSecurityMode)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (securityMode As WSDualHttpSecurityMode)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WSDualHttpBinding(System::ServiceModel::WSDualHttpSecurityMode securityMode);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -111,6 +126,8 @@
       <MemberSignature Language="C#" Value="public WSDualHttpBinding (string configName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string configName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.WSDualHttpBinding.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (configName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WSDualHttpBinding(System::String ^ configName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -130,6 +147,8 @@
       <MemberSignature Language="C#" Value="public bool BypassProxyOnLocal { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool BypassProxyOnLocal" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.WSDualHttpBinding.BypassProxyOnLocal" />
+      <MemberSignature Language="VB.NET" Value="Public Property BypassProxyOnLocal As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool BypassProxyOnLocal { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -183,6 +202,8 @@
       <MemberSignature Language="C#" Value="public Uri ClientBaseAddress { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri ClientBaseAddress" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.WSDualHttpBinding.ClientBaseAddress" />
+      <MemberSignature Language="VB.NET" Value="Public Property ClientBaseAddress As Uri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ ClientBaseAddress { Uri ^ get(); void set(Uri ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -221,6 +242,8 @@
       <MemberSignature Language="C#" Value="public override System.ServiceModel.Channels.BindingElementCollection CreateBindingElements ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ServiceModel.Channels.BindingElementCollection CreateBindingElements() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.WSDualHttpBinding.CreateBindingElements" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateBindingElements () As BindingElementCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ServiceModel::Channels::BindingElementCollection ^ CreateBindingElements();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -250,6 +273,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.EnvelopeVersion EnvelopeVersion { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.EnvelopeVersion EnvelopeVersion" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.WSDualHttpBinding.EnvelopeVersion" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EnvelopeVersion As EnvelopeVersion" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::EnvelopeVersion ^ EnvelopeVersion { System::ServiceModel::EnvelopeVersion ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -278,6 +303,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.HostNameComparisonMode HostNameComparisonMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.HostNameComparisonMode HostNameComparisonMode" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.WSDualHttpBinding.HostNameComparisonMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property HostNameComparisonMode As HostNameComparisonMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::HostNameComparisonMode HostNameComparisonMode { System::ServiceModel::HostNameComparisonMode get(); void set(System::ServiceModel::HostNameComparisonMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -311,6 +338,8 @@
       <MemberSignature Language="C#" Value="public long MaxBufferPoolSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 MaxBufferPoolSize" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.WSDualHttpBinding.MaxBufferPoolSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxBufferPoolSize As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long MaxBufferPoolSize { long get(); void set(long value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -351,6 +380,8 @@
       <MemberSignature Language="C#" Value="public long MaxReceivedMessageSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 MaxReceivedMessageSize" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.WSDualHttpBinding.MaxReceivedMessageSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxReceivedMessageSize As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long MaxReceivedMessageSize { long get(); void set(long value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -392,6 +423,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.WSMessageEncoding MessageEncoding { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.WSMessageEncoding MessageEncoding" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.WSDualHttpBinding.MessageEncoding" />
+      <MemberSignature Language="VB.NET" Value="Public Property MessageEncoding As WSMessageEncoding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::WSMessageEncoding MessageEncoding { System::ServiceModel::WSMessageEncoding get(); void set(System::ServiceModel::WSMessageEncoding value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -425,6 +458,8 @@
       <MemberSignature Language="C#" Value="public Uri ProxyAddress { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri ProxyAddress" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.WSDualHttpBinding.ProxyAddress" />
+      <MemberSignature Language="VB.NET" Value="Public Property ProxyAddress As Uri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ ProxyAddress { Uri ^ get(); void set(Uri ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -463,6 +498,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.XmlDictionaryReaderQuotas ReaderQuotas { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlDictionaryReaderQuotas ReaderQuotas" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.WSDualHttpBinding.ReaderQuotas" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReaderQuotas As XmlDictionaryReaderQuotas" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlDictionaryReaderQuotas ^ ReaderQuotas { System::Xml::XmlDictionaryReaderQuotas ^ get(); void set(System::Xml::XmlDictionaryReaderQuotas ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -496,6 +533,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.ReliableSession ReliableSession { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.ReliableSession ReliableSession" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.WSDualHttpBinding.ReliableSession" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReliableSession As ReliableSession" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::ReliableSession ^ ReliableSession { System::ServiceModel::ReliableSession ^ get(); void set(System::ServiceModel::ReliableSession ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -529,6 +568,8 @@
       <MemberSignature Language="C#" Value="public override string Scheme { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Scheme" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.WSDualHttpBinding.Scheme" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Scheme As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Scheme { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -557,6 +598,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.WSDualHttpSecurity Security { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.WSDualHttpSecurity Security" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.WSDualHttpBinding.Security" />
+      <MemberSignature Language="VB.NET" Value="Public Property Security As WSDualHttpSecurity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::WSDualHttpSecurity ^ Security { System::ServiceModel::WSDualHttpSecurity ^ get(); void set(System::ServiceModel::WSDualHttpSecurity ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -590,6 +633,8 @@
       <MemberSignature Language="C#" Value="public bool ShouldSerializeReaderQuotas ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeReaderQuotas() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.WSDualHttpBinding.ShouldSerializeReaderQuotas" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeReaderQuotas () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeReaderQuotas();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -615,6 +660,8 @@
       <MemberSignature Language="C#" Value="public bool ShouldSerializeReliableSession ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeReliableSession() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.WSDualHttpBinding.ShouldSerializeReliableSession" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeReliableSession () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeReliableSession();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -640,6 +687,8 @@
       <MemberSignature Language="C#" Value="public bool ShouldSerializeSecurity ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeSecurity() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.WSDualHttpBinding.ShouldSerializeSecurity" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeSecurity () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeSecurity();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -665,6 +714,8 @@
       <MemberSignature Language="C#" Value="public bool ShouldSerializeTextEncoding ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeTextEncoding() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.WSDualHttpBinding.ShouldSerializeTextEncoding" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeTextEncoding () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeTextEncoding();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -690,7 +741,12 @@
       <MemberSignature Language="C#" Value="bool System.ServiceModel.Channels.IBindingRuntimePreferences.ReceiveSynchronously { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.ServiceModel.Channels.IBindingRuntimePreferences.ReceiveSynchronously" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.WSDualHttpBinding.System#ServiceModel#Channels#IBindingRuntimePreferences#ReceiveSynchronously" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property ReceiveSynchronously As Boolean Implements IBindingRuntimePreferences.ReceiveSynchronously" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.ServiceModel.Channels.IBindingRuntimePreferences.ReceiveSynchronously { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.ServiceModel.Channels.IBindingRuntimePreferences.ReceiveSynchronously</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -727,6 +783,8 @@
       <MemberSignature Language="C#" Value="public System.Text.Encoding TextEncoding { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Text.Encoding TextEncoding" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.WSDualHttpBinding.TextEncoding" />
+      <MemberSignature Language="VB.NET" Value="Public Property TextEncoding As Encoding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Text::Encoding ^ TextEncoding { System::Text::Encoding ^ get(); void set(System::Text::Encoding ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -760,6 +818,8 @@
       <MemberSignature Language="C#" Value="public bool TransactionFlow { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool TransactionFlow" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.WSDualHttpBinding.TransactionFlow" />
+      <MemberSignature Language="VB.NET" Value="Public Property TransactionFlow As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool TransactionFlow { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -799,6 +859,8 @@
       <MemberSignature Language="C#" Value="public bool UseDefaultWebProxy { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UseDefaultWebProxy" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.WSDualHttpBinding.UseDefaultWebProxy" />
+      <MemberSignature Language="VB.NET" Value="Public Property UseDefaultWebProxy As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseDefaultWebProxy { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -829,14 +891,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.WSDualHttpBinding" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,9 @@
-<Type Name="GCSettings" FullName="System.Runtime.GCSettings">
+﻿<Type Name="GCSettings" FullName="System.Runtime.GCSettings">
   <TypeSignature Language="C#" Value="public static class GCSettings" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit GCSettings extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.GCSettings" />
+  <TypeSignature Language="VB.NET" Value="Public Class GCSettings" />
+  <TypeSignature Language="C++ CLI" Value="public ref class GCSettings abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +41,8 @@
       <MemberSignature Language="C#" Value="public static bool IsServerGC { get; }" />
       <MemberSignature Language="ILAsm" Value=".property bool IsServerGC" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.GCSettings.IsServerGC" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsServerGC As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool IsServerGC { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -98,6 +102,8 @@
       <MemberSignature Language="C#" Value="public static System.Runtime.GCLargeObjectHeapCompactionMode LargeObjectHeapCompactionMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Runtime.GCLargeObjectHeapCompactionMode LargeObjectHeapCompactionMode" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.GCSettings.LargeObjectHeapCompactionMode" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property LargeObjectHeapCompactionMode As GCLargeObjectHeapCompactionMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Runtime::GCLargeObjectHeapCompactionMode LargeObjectHeapCompactionMode { System::Runtime::GCLargeObjectHeapCompactionMode get(); void set(System::Runtime::GCLargeObjectHeapCompactionMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -156,6 +162,8 @@
       <MemberSignature Language="C#" Value="public static System.Runtime.GCLatencyMode LatencyMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Runtime.GCLatencyMode LatencyMode" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.GCSettings.LatencyMode" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property LatencyMode As GCLatencyMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Runtime::GCLatencyMode LatencyMode { System::Runtime::GCLatencyMode get(); void set(System::Runtime::GCLatencyMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

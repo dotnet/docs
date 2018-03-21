@@ -1,7 +1,9 @@
-<Type Name="CivicAddress" FullName="System.Device.Location.CivicAddress">
+﻿<Type Name="CivicAddress" FullName="System.Device.Location.CivicAddress">
   <TypeSignature Language="C#" Value="public class CivicAddress" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CivicAddress extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Device.Location.CivicAddress" />
+  <TypeSignature Language="VB.NET" Value="Public Class CivicAddress" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CivicAddress" />
   <AssemblyInfo>
     <AssemblyName>System.Device</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,10 +41,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Device</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Device.Location.CivicAddress" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public CivicAddress ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Device.Location.CivicAddress.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CivicAddress();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>
@@ -65,6 +78,8 @@
       <MemberSignature Language="C#" Value="public CivicAddress (string addressLine1, string addressLine2, string building, string city, string countryRegion, string floorLevel, string postalCode, string stateProvince);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string addressLine1, string addressLine2, string building, string city, string countryRegion, string floorLevel, string postalCode, string stateProvince) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Device.Location.CivicAddress.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (addressLine1 As String, addressLine2 As String, building As String, city As String, countryRegion As String, floorLevel As String, postalCode As String, stateProvince As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CivicAddress(System::String ^ addressLine1, System::String ^ addressLine2, System::String ^ building, System::String ^ city, System::String ^ countryRegion, System::String ^ floorLevel, System::String ^ postalCode, System::String ^ stateProvince);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>
@@ -98,6 +113,8 @@
       <MemberSignature Language="C#" Value="public string AddressLine1 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string AddressLine1" />
       <MemberSignature Language="DocId" Value="P:System.Device.Location.CivicAddress.AddressLine1" />
+      <MemberSignature Language="VB.NET" Value="Public Property AddressLine1 As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AddressLine1 { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>
@@ -116,6 +133,8 @@
       <MemberSignature Language="C#" Value="public string AddressLine2 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string AddressLine2" />
       <MemberSignature Language="DocId" Value="P:System.Device.Location.CivicAddress.AddressLine2" />
+      <MemberSignature Language="VB.NET" Value="Public Property AddressLine2 As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AddressLine2 { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>
@@ -134,6 +153,8 @@
       <MemberSignature Language="C#" Value="public string Building { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Building" />
       <MemberSignature Language="DocId" Value="P:System.Device.Location.CivicAddress.Building" />
+      <MemberSignature Language="VB.NET" Value="Public Property Building As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Building { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>
@@ -152,6 +173,8 @@
       <MemberSignature Language="C#" Value="public string City { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string City" />
       <MemberSignature Language="DocId" Value="P:System.Device.Location.CivicAddress.City" />
+      <MemberSignature Language="VB.NET" Value="Public Property City As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ City { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>
@@ -170,6 +193,8 @@
       <MemberSignature Language="C#" Value="public string CountryRegion { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CountryRegion" />
       <MemberSignature Language="DocId" Value="P:System.Device.Location.CivicAddress.CountryRegion" />
+      <MemberSignature Language="VB.NET" Value="Public Property CountryRegion As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CountryRegion { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>
@@ -195,6 +220,8 @@
       <MemberSignature Language="C#" Value="public string FloorLevel { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string FloorLevel" />
       <MemberSignature Language="DocId" Value="P:System.Device.Location.CivicAddress.FloorLevel" />
+      <MemberSignature Language="VB.NET" Value="Public Property FloorLevel As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FloorLevel { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>
@@ -213,6 +240,8 @@
       <MemberSignature Language="C#" Value="public bool IsUnknown { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsUnknown" />
       <MemberSignature Language="DocId" Value="P:System.Device.Location.CivicAddress.IsUnknown" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsUnknown As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsUnknown { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>
@@ -242,6 +271,8 @@
       <MemberSignature Language="C#" Value="public string PostalCode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PostalCode" />
       <MemberSignature Language="DocId" Value="P:System.Device.Location.CivicAddress.PostalCode" />
+      <MemberSignature Language="VB.NET" Value="Public Property PostalCode As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PostalCode { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>
@@ -260,6 +291,8 @@
       <MemberSignature Language="C#" Value="public string StateProvince { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string StateProvince" />
       <MemberSignature Language="DocId" Value="P:System.Device.Location.CivicAddress.StateProvince" />
+      <MemberSignature Language="VB.NET" Value="Public Property StateProvince As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ StateProvince { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>
@@ -278,6 +311,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Device.Location.CivicAddress Unknown;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Device.Location.CivicAddress Unknown" />
       <MemberSignature Language="DocId" Value="F:System.Device.Location.CivicAddress.Unknown" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Unknown As CivicAddress " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Device::Location::CivicAddress ^ Unknown;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>
@@ -306,14 +341,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Device</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Device.Location.CivicAddress" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

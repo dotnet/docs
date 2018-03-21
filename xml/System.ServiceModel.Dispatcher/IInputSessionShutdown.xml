@@ -1,7 +1,9 @@
-<Type Name="IInputSessionShutdown" FullName="System.ServiceModel.Dispatcher.IInputSessionShutdown">
+﻿<Type Name="IInputSessionShutdown" FullName="System.ServiceModel.Dispatcher.IInputSessionShutdown">
   <TypeSignature Language="C#" Value="public interface IInputSessionShutdown" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IInputSessionShutdown" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Dispatcher.IInputSessionShutdown" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IInputSessionShutdown" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IInputSessionShutdown" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +25,8 @@
       <MemberSignature Language="C#" Value="public void ChannelFaulted (System.ServiceModel.IDuplexContextChannel channel);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ChannelFaulted(class System.ServiceModel.IDuplexContextChannel channel) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.IInputSessionShutdown.ChannelFaulted(System.ServiceModel.IDuplexContextChannel)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ChannelFaulted (channel As IDuplexContextChannel)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ChannelFaulted(System::ServiceModel::IDuplexContextChannel ^ channel);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -51,6 +55,8 @@
       <MemberSignature Language="C#" Value="public void DoneReceiving (System.ServiceModel.IDuplexContextChannel channel);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DoneReceiving(class System.ServiceModel.IDuplexContextChannel channel) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.IInputSessionShutdown.DoneReceiving(System.ServiceModel.IDuplexContextChannel)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DoneReceiving (channel As IDuplexContextChannel)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DoneReceiving(System::ServiceModel::IDuplexContextChannel ^ channel);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

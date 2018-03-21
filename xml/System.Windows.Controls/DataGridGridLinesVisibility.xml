@@ -1,7 +1,9 @@
-<Type Name="DataGridGridLinesVisibility" FullName="System.Windows.Controls.DataGridGridLinesVisibility">
+﻿<Type Name="DataGridGridLinesVisibility" FullName="System.Windows.Controls.DataGridGridLinesVisibility">
   <TypeSignature Language="C#" Value="public enum DataGridGridLinesVisibility" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataGridGridLinesVisibility extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.DataGridGridLinesVisibility" />
+  <TypeSignature Language="VB.NET" Value="Public Enum DataGridGridLinesVisibility" />
+  <TypeSignature Language="C++ CLI" Value="public enum class DataGridGridLinesVisibility" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +29,8 @@
       <MemberSignature Language="C#" Value="All" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.DataGridGridLinesVisibility All = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridGridLinesVisibility.All" />
+      <MemberSignature Language="VB.NET" Value="All" />
+      <MemberSignature Language="C++ CLI" Value="All" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -35,6 +39,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.DataGridGridLinesVisibility</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Both horizontal and vertical grid lines are visible.</summary>
       </Docs>
@@ -43,6 +48,8 @@
       <MemberSignature Language="C#" Value="Horizontal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.DataGridGridLinesVisibility Horizontal = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridGridLinesVisibility.Horizontal" />
+      <MemberSignature Language="VB.NET" Value="Horizontal" />
+      <MemberSignature Language="C++ CLI" Value="Horizontal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -51,6 +58,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.DataGridGridLinesVisibility</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Only horizontal grid lines are visible.</summary>
       </Docs>
@@ -59,6 +67,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.DataGridGridLinesVisibility None = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridGridLinesVisibility.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -67,6 +77,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.DataGridGridLinesVisibility</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>No grid lines are visible.</summary>
       </Docs>
@@ -75,6 +86,8 @@
       <MemberSignature Language="C#" Value="Vertical" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.DataGridGridLinesVisibility Vertical = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridGridLinesVisibility.Vertical" />
+      <MemberSignature Language="VB.NET" Value="Vertical" />
+      <MemberSignature Language="C++ CLI" Value="Vertical" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -83,6 +96,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.DataGridGridLinesVisibility</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Only vertical grid lines are visible.</summary>
       </Docs>

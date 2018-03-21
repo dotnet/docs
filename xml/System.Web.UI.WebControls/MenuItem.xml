@@ -1,7 +1,9 @@
-<Type Name="MenuItem" FullName="System.Web.UI.WebControls.MenuItem">
+﻿<Type Name="MenuItem" FullName="System.Web.UI.WebControls.MenuItem">
   <TypeSignature Language="C#" Value="public sealed class MenuItem : ICloneable, System.Web.UI.IStateManager" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MenuItem extends System.Object implements class System.ICloneable, class System.Web.UI.IStateManager" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.MenuItem" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MenuItem&#xA;Implements ICloneable, IStateManager" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MenuItem sealed : ICloneable, System::Web::UI::IStateManager" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -191,10 +193,21 @@
     <altmember cref="P:System.Web.UI.WebControls.MenuItem.Value" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.MenuItem" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public MenuItem ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MenuItem.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MenuItem();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -234,6 +247,8 @@
       <MemberSignature Language="C#" Value="public MenuItem (string text);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MenuItem.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (text As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MenuItem(System::String ^ text);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -279,6 +294,8 @@
       <MemberSignature Language="C#" Value="public MenuItem (string text, string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string text, string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MenuItem.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (text As String, value As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MenuItem(System::String ^ text, System::String ^ value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -327,6 +344,8 @@
       <MemberSignature Language="C#" Value="public MenuItem (string text, string value, string imageUrl);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string text, string value, string imageUrl) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MenuItem.#ctor(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (text As String, value As String, imageUrl As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MenuItem(System::String ^ text, System::String ^ value, System::String ^ imageUrl);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -378,6 +397,8 @@
       <MemberSignature Language="C#" Value="public MenuItem (string text, string value, string imageUrl, string navigateUrl);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string text, string value, string imageUrl, string navigateUrl) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MenuItem.#ctor(System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (text As String, value As String, imageUrl As String, navigateUrl As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MenuItem(System::String ^ text, System::String ^ value, System::String ^ imageUrl, System::String ^ navigateUrl);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -432,6 +453,8 @@
       <MemberSignature Language="C#" Value="public MenuItem (string text, string value, string imageUrl, string navigateUrl, string target);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string text, string value, string imageUrl, string navigateUrl, string target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MenuItem.#ctor(System.String,System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (text As String, value As String, imageUrl As String, navigateUrl As String, target As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MenuItem(System::String ^ text, System::String ^ value, System::String ^ imageUrl, System::String ^ navigateUrl, System::String ^ target);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -489,6 +512,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.MenuItemCollection ChildItems { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.MenuItemCollection ChildItems" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.MenuItem.ChildItems" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChildItems As MenuItemCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::MenuItemCollection ^ ChildItems { System::Web::UI::WebControls::MenuItemCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -539,6 +564,8 @@
       <MemberSignature Language="C#" Value="public bool DataBound { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool DataBound" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.MenuItem.DataBound" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataBound As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DataBound { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -552,7 +579,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -580,6 +607,8 @@
       <MemberSignature Language="C#" Value="public object DataItem { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object DataItem" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.MenuItem.DataItem" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataItem As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ DataItem { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -618,6 +647,8 @@
       <MemberSignature Language="C#" Value="public string DataPath { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DataPath" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.MenuItem.DataPath" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataPath As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DataPath { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -631,7 +662,7 @@
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -657,6 +688,8 @@
       <MemberSignature Language="C#" Value="public int Depth { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Depth" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.MenuItem.Depth" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Depth As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Depth { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -667,7 +700,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -701,6 +734,8 @@
       <MemberSignature Language="C#" Value="public bool Enabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Enabled" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.MenuItem.Enabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property Enabled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Enabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -746,6 +781,8 @@
       <MemberSignature Language="C#" Value="public string ImageUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ImageUrl" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.MenuItem.ImageUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Property ImageUrl As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ImageUrl { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -798,6 +835,8 @@
       <MemberSignature Language="C#" Value="public string NavigateUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string NavigateUrl" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.MenuItem.NavigateUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Property NavigateUrl As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NavigateUrl { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -852,6 +891,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.MenuItem Parent { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.MenuItem Parent" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.MenuItem.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As MenuItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::MenuItem ^ Parent { System::Web::UI::WebControls::MenuItem ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -862,7 +903,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -900,6 +941,8 @@
       <MemberSignature Language="C#" Value="public string PopOutImageUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PopOutImageUrl" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.MenuItem.PopOutImageUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Property PopOutImageUrl As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PopOutImageUrl { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -963,6 +1006,8 @@
       <MemberSignature Language="C#" Value="public bool Selectable { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Selectable" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.MenuItem.Selectable" />
+      <MemberSignature Language="VB.NET" Value="Public Property Selectable As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Selectable { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1016,6 +1061,8 @@
       <MemberSignature Language="C#" Value="public bool Selected { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Selected" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.MenuItem.Selected" />
+      <MemberSignature Language="VB.NET" Value="Public Property Selected As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Selected { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1131,6 +1178,8 @@
       <MemberSignature Language="C#" Value="public string SeparatorImageUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SeparatorImageUrl" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.MenuItem.SeparatorImageUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Property SeparatorImageUrl As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SeparatorImageUrl { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1187,7 +1236,12 @@
       <MemberSignature Language="C#" Value="object ICloneable.Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.ICloneable.Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MenuItem.System#ICloneable#Clone" />
+      <MemberSignature Language="VB.NET" Value="Function Clone () As Object Implements ICloneable.Clone" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.ICloneable.Clone() = ICloneable::Clone;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1214,7 +1268,12 @@
       <MemberSignature Language="C#" Value="bool System.Web.UI.IStateManager.IsTrackingViewState { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Web.UI.IStateManager.IsTrackingViewState" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.MenuItem.System#Web#UI#IStateManager#IsTrackingViewState" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsTrackingViewState As Boolean Implements IStateManager.IsTrackingViewState" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Web.UI.IStateManager.IsTrackingViewState { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.UI.IStateManager.IsTrackingViewState</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1245,7 +1304,12 @@
       <MemberSignature Language="C#" Value="void IStateManager.LoadViewState (object state);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IStateManager.LoadViewState(object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MenuItem.System#Web#UI#IStateManager#LoadViewState(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Sub LoadViewState (state As Object) Implements IStateManager.LoadViewState" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IStateManager.LoadViewState(System::Object ^ state) = System::Web::UI::IStateManager::LoadViewState;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IStateManager.LoadViewState(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1268,7 +1332,12 @@
       <MemberSignature Language="C#" Value="object IStateManager.SaveViewState ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.Web.UI.IStateManager.SaveViewState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MenuItem.System#Web#UI#IStateManager#SaveViewState" />
+      <MemberSignature Language="VB.NET" Value="Function SaveViewState () As Object Implements IStateManager.SaveViewState" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.Web.UI.IStateManager.SaveViewState() = System::Web::UI::IStateManager::SaveViewState;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IStateManager.SaveViewState</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1289,7 +1358,12 @@
       <MemberSignature Language="C#" Value="void IStateManager.TrackViewState ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IStateManager.TrackViewState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MenuItem.System#Web#UI#IStateManager#TrackViewState" />
+      <MemberSignature Language="VB.NET" Value="Sub TrackViewState () Implements IStateManager.TrackViewState" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IStateManager.TrackViewState() = System::Web::UI::IStateManager::TrackViewState;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IStateManager.TrackViewState</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1316,6 +1390,8 @@
       <MemberSignature Language="C#" Value="public string Target { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Target" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.MenuItem.Target" />
+      <MemberSignature Language="VB.NET" Value="Public Property Target As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Target { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1379,6 +1455,8 @@
       <MemberSignature Language="C#" Value="public string Text { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Text" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.MenuItem.Text" />
+      <MemberSignature Language="VB.NET" Value="Public Property Text As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1433,6 +1511,8 @@
       <MemberSignature Language="C#" Value="public string ToolTip { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ToolTip" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.MenuItem.ToolTip" />
+      <MemberSignature Language="VB.NET" Value="Public Property ToolTip As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ToolTip { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1485,6 +1565,8 @@
       <MemberSignature Language="C#" Value="public string Value { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Value" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.MenuItem.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Property Value As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Value { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1544,6 +1626,8 @@
       <MemberSignature Language="C#" Value="public string ValuePath { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ValuePath" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.MenuItem.ValuePath" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ValuePath As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ValuePath { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1554,7 +1638,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1586,14 +1670,5 @@
         <altmember cref="M:System.Web.UI.WebControls.Menu.FindItem(System.String)" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.MenuItem" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

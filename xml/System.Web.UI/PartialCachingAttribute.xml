@@ -1,7 +1,9 @@
-<Type Name="PartialCachingAttribute" FullName="System.Web.UI.PartialCachingAttribute">
+﻿<Type Name="PartialCachingAttribute" FullName="System.Web.UI.PartialCachingAttribute">
   <TypeSignature Language="C#" Value="public sealed class PartialCachingAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PartialCachingAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.PartialCachingAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PartialCachingAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PartialCachingAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -66,10 +68,21 @@
     <altmember cref="T:System.Web.UI.UserControl" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.PartialCachingAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public PartialCachingAttribute (int duration);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 duration) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.PartialCachingAttribute.#ctor(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (duration As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PartialCachingAttribute(int duration);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -98,6 +111,8 @@
       <MemberSignature Language="C#" Value="public PartialCachingAttribute (int duration, string varyByParams, string varyByControls, string varyByCustom);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 duration, string varyByParams, string varyByControls, string varyByCustom) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.PartialCachingAttribute.#ctor(System.Int32,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (duration As Integer, varyByParams As String, varyByControls As String, varyByCustom As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PartialCachingAttribute(int duration, System::String ^ varyByParams, System::String ^ varyByControls, System::String ^ varyByCustom);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -132,6 +147,8 @@
       <MemberSignature Language="C#" Value="public PartialCachingAttribute (int duration, string varyByParams, string varyByControls, string varyByCustom, bool shared);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 duration, string varyByParams, string varyByControls, string varyByCustom, bool shared) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.PartialCachingAttribute.#ctor(System.Int32,System.String,System.String,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (duration As Integer, varyByParams As String, varyByControls As String, varyByCustom As String, shared As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PartialCachingAttribute(int duration, System::String ^ varyByParams, System::String ^ varyByControls, System::String ^ varyByCustom, bool shared);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -159,6 +176,8 @@
       <MemberSignature Language="C#" Value="public PartialCachingAttribute (int duration, string varyByParams, string varyByControls, string varyByCustom, string sqlDependency, bool shared);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 duration, string varyByParams, string varyByControls, string varyByCustom, string sqlDependency, bool shared) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.PartialCachingAttribute.#ctor(System.Int32,System.String,System.String,System.String,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (duration As Integer, varyByParams As String, varyByControls As String, varyByCustom As String, sqlDependency As String, shared As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PartialCachingAttribute(int duration, System::String ^ varyByParams, System::String ^ varyByControls, System::String ^ varyByCustom, System::String ^ sqlDependency, bool shared);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -188,6 +207,8 @@
       <MemberSignature Language="C#" Value="public int Duration { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Duration" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.PartialCachingAttribute.Duration" />
+      <MemberSignature Language="VB.NET" Value="Public Property Duration As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Duration { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -216,6 +237,8 @@
       <MemberSignature Language="C#" Value="public string ProviderName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ProviderName" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.PartialCachingAttribute.ProviderName" />
+      <MemberSignature Language="VB.NET" Value="Public Property ProviderName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ProviderName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -241,6 +264,8 @@
       <MemberSignature Language="C#" Value="public bool Shared { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Shared" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.PartialCachingAttribute.Shared" />
+      <MemberSignature Language="VB.NET" Value="Public Property Shared As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Shared { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -267,6 +292,8 @@
       <MemberSignature Language="C#" Value="public string SqlDependency { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SqlDependency" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.PartialCachingAttribute.SqlDependency" />
+      <MemberSignature Language="VB.NET" Value="Public Property SqlDependency As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SqlDependency { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -293,6 +320,8 @@
       <MemberSignature Language="C#" Value="public string VaryByControls { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string VaryByControls" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.PartialCachingAttribute.VaryByControls" />
+      <MemberSignature Language="VB.NET" Value="Public Property VaryByControls As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ VaryByControls { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -321,6 +350,8 @@
       <MemberSignature Language="C#" Value="public string VaryByCustom { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string VaryByCustom" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.PartialCachingAttribute.VaryByCustom" />
+      <MemberSignature Language="VB.NET" Value="Public Property VaryByCustom As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ VaryByCustom { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -354,6 +385,8 @@
       <MemberSignature Language="C#" Value="public string VaryByParams { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string VaryByParams" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.PartialCachingAttribute.VaryByParams" />
+      <MemberSignature Language="VB.NET" Value="Public Property VaryByParams As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ VaryByParams { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -378,14 +411,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.PartialCachingAttribute" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

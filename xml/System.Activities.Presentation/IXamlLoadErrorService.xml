@@ -1,7 +1,9 @@
-<Type Name="IXamlLoadErrorService" FullName="System.Activities.Presentation.IXamlLoadErrorService">
+﻿<Type Name="IXamlLoadErrorService" FullName="System.Activities.Presentation.IXamlLoadErrorService">
   <TypeSignature Language="C#" Value="public interface IXamlLoadErrorService" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IXamlLoadErrorService" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.IXamlLoadErrorService" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IXamlLoadErrorService" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IXamlLoadErrorService" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +25,8 @@
       <MemberSignature Language="C#" Value="public void ShowXamlLoadErrors (System.Collections.Generic.IList&lt;System.Activities.Presentation.XamlLoadErrorInfo&gt; errors);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ShowXamlLoadErrors(class System.Collections.Generic.IList`1&lt;class System.Activities.Presentation.XamlLoadErrorInfo&gt; errors) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.IXamlLoadErrorService.ShowXamlLoadErrors(System.Collections.Generic.IList{System.Activities.Presentation.XamlLoadErrorInfo})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ShowXamlLoadErrors (errors As IList(Of XamlLoadErrorInfo))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ShowXamlLoadErrors(System::Collections::Generic::IList&lt;System::Activities::Presentation::XamlLoadErrorInfo ^&gt; ^ errors);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

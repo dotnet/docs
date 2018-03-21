@@ -1,7 +1,9 @@
-<Type Name="ModuleHandle" FullName="System.ModuleHandle">
+﻿<Type Name="ModuleHandle" FullName="System.ModuleHandle">
   <TypeSignature Language="C#" Value="public struct ModuleHandle" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit ModuleHandle extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.ModuleHandle" />
+  <TypeSignature Language="VB.NET" Value="Public Structure ModuleHandle" />
+  <TypeSignature Language="C++ CLI" Value="public value class ModuleHandle" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -41,6 +43,8 @@
       <MemberSignature Language="C#" Value="public static readonly ModuleHandle EmptyHandle;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.ModuleHandle EmptyHandle" />
       <MemberSignature Language="DocId" Value="F:System.ModuleHandle.EmptyHandle" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly EmptyHandle As ModuleHandle " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly ModuleHandle EmptyHandle;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -63,10 +67,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether a specified <see cref="T:System.ModuleHandle" /> structure is equal to the current <see cref="T:System.ModuleHandle" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Equals">
       <MemberSignature Language="C#" Value="public bool Equals (ModuleHandle handle);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Equals(valuetype System.ModuleHandle handle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ModuleHandle.Equals(System.ModuleHandle)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (handle As ModuleHandle) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(ModuleHandle handle);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -104,6 +120,8 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ModuleHandle.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -141,6 +159,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ModuleHandle.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -170,6 +190,8 @@
       <MemberSignature Language="C#" Value="public RuntimeFieldHandle GetRuntimeFieldHandleFromMetadataToken (int fieldToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.RuntimeFieldHandle GetRuntimeFieldHandleFromMetadataToken(int32 fieldToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ModuleHandle.GetRuntimeFieldHandleFromMetadataToken(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetRuntimeFieldHandleFromMetadataToken (fieldToken As Integer) As RuntimeFieldHandle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RuntimeFieldHandle GetRuntimeFieldHandleFromMetadataToken(int fieldToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -201,6 +223,8 @@
       <MemberSignature Language="C#" Value="public RuntimeMethodHandle GetRuntimeMethodHandleFromMetadataToken (int methodToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.RuntimeMethodHandle GetRuntimeMethodHandleFromMetadataToken(int32 methodToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ModuleHandle.GetRuntimeMethodHandleFromMetadataToken(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetRuntimeMethodHandleFromMetadataToken (methodToken As Integer) As RuntimeMethodHandle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RuntimeMethodHandle GetRuntimeMethodHandleFromMetadataToken(int methodToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -232,6 +256,8 @@
       <MemberSignature Language="C#" Value="public RuntimeTypeHandle GetRuntimeTypeHandleFromMetadataToken (int typeToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.RuntimeTypeHandle GetRuntimeTypeHandleFromMetadataToken(int32 typeToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ModuleHandle.GetRuntimeTypeHandleFromMetadataToken(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetRuntimeTypeHandleFromMetadataToken (typeToken As Integer) As RuntimeTypeHandle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RuntimeTypeHandle GetRuntimeTypeHandleFromMetadataToken(int typeToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -263,6 +289,8 @@
       <MemberSignature Language="C#" Value="public int MDStreamVersion { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MDStreamVersion" />
       <MemberSignature Language="DocId" Value="P:System.ModuleHandle.MDStreamVersion" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MDStreamVersion As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MDStreamVersion { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -299,6 +327,8 @@
       <MemberSignature Language="C#" Value="public static bool operator == (ModuleHandle left, ModuleHandle right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.ModuleHandle left, valuetype System.ModuleHandle right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ModuleHandle.op_Equality(System.ModuleHandle,System.ModuleHandle)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As ModuleHandle, right As ModuleHandle) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(ModuleHandle left, ModuleHandle right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -335,6 +365,8 @@
       <MemberSignature Language="C#" Value="public static bool operator != (ModuleHandle left, ModuleHandle right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.ModuleHandle left, valuetype System.ModuleHandle right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ModuleHandle.op_Inequality(System.ModuleHandle,System.ModuleHandle)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As ModuleHandle, right As ModuleHandle) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(ModuleHandle left, ModuleHandle right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -367,10 +399,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ResolveFieldHandle">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a runtime field handle for a field identified by a metadata token.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ResolveFieldHandle">
       <MemberSignature Language="C#" Value="public RuntimeFieldHandle ResolveFieldHandle (int fieldToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.RuntimeFieldHandle ResolveFieldHandle(int32 fieldToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ModuleHandle.ResolveFieldHandle(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ResolveFieldHandle (fieldToken As Integer) As RuntimeFieldHandle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RuntimeFieldHandle ResolveFieldHandle(int fieldToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -423,6 +467,8 @@
       <MemberSignature Language="C#" Value="public RuntimeFieldHandle ResolveFieldHandle (int fieldToken, RuntimeTypeHandle[] typeInstantiationContext, RuntimeTypeHandle[] methodInstantiationContext);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.RuntimeFieldHandle ResolveFieldHandle(int32 fieldToken, valuetype System.RuntimeTypeHandle[] typeInstantiationContext, valuetype System.RuntimeTypeHandle[] methodInstantiationContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ModuleHandle.ResolveFieldHandle(System.Int32,System.RuntimeTypeHandle[],System.RuntimeTypeHandle[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function ResolveFieldHandle (fieldToken As Integer, typeInstantiationContext As RuntimeTypeHandle(), methodInstantiationContext As RuntimeTypeHandle()) As RuntimeFieldHandle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RuntimeFieldHandle ResolveFieldHandle(int fieldToken, cli::array &lt;RuntimeTypeHandle&gt; ^ typeInstantiationContext, cli::array &lt;RuntimeTypeHandle&gt; ^ methodInstantiationContext);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -476,10 +522,22 @@
           <paramref name="fieldToken" /> is not a valid token.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ResolveMethodHandle">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a runtime method handle for a method or constructor identified by a metadata token.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ResolveMethodHandle">
       <MemberSignature Language="C#" Value="public RuntimeMethodHandle ResolveMethodHandle (int methodToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.RuntimeMethodHandle ResolveMethodHandle(int32 methodToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ModuleHandle.ResolveMethodHandle(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ResolveMethodHandle (methodToken As Integer) As RuntimeMethodHandle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RuntimeMethodHandle ResolveMethodHandle(int methodToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -532,6 +590,8 @@
       <MemberSignature Language="C#" Value="public RuntimeMethodHandle ResolveMethodHandle (int methodToken, RuntimeTypeHandle[] typeInstantiationContext, RuntimeTypeHandle[] methodInstantiationContext);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.RuntimeMethodHandle ResolveMethodHandle(int32 methodToken, valuetype System.RuntimeTypeHandle[] typeInstantiationContext, valuetype System.RuntimeTypeHandle[] methodInstantiationContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ModuleHandle.ResolveMethodHandle(System.Int32,System.RuntimeTypeHandle[],System.RuntimeTypeHandle[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function ResolveMethodHandle (methodToken As Integer, typeInstantiationContext As RuntimeTypeHandle(), methodInstantiationContext As RuntimeTypeHandle()) As RuntimeMethodHandle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RuntimeMethodHandle ResolveMethodHandle(int methodToken, cli::array &lt;RuntimeTypeHandle&gt; ^ typeInstantiationContext, cli::array &lt;RuntimeTypeHandle&gt; ^ methodInstantiationContext);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -585,10 +645,22 @@
           <paramref name="methodToken" /> is not a valid token.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ResolveTypeHandle">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a runtime type handle for a type identified by a metadata token.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ResolveTypeHandle">
       <MemberSignature Language="C#" Value="public RuntimeTypeHandle ResolveTypeHandle (int typeToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.RuntimeTypeHandle ResolveTypeHandle(int32 typeToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ModuleHandle.ResolveTypeHandle(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ResolveTypeHandle (typeToken As Integer) As RuntimeTypeHandle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RuntimeTypeHandle ResolveTypeHandle(int typeToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -641,6 +713,8 @@
       <MemberSignature Language="C#" Value="public RuntimeTypeHandle ResolveTypeHandle (int typeToken, RuntimeTypeHandle[] typeInstantiationContext, RuntimeTypeHandle[] methodInstantiationContext);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.RuntimeTypeHandle ResolveTypeHandle(int32 typeToken, valuetype System.RuntimeTypeHandle[] typeInstantiationContext, valuetype System.RuntimeTypeHandle[] methodInstantiationContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ModuleHandle.ResolveTypeHandle(System.Int32,System.RuntimeTypeHandle[],System.RuntimeTypeHandle[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function ResolveTypeHandle (typeToken As Integer, typeInstantiationContext As RuntimeTypeHandle(), methodInstantiationContext As RuntimeTypeHandle()) As RuntimeTypeHandle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RuntimeTypeHandle ResolveTypeHandle(int typeToken, cli::array &lt;RuntimeTypeHandle&gt; ^ typeInstantiationContext, cli::array &lt;RuntimeTypeHandle&gt; ^ methodInstantiationContext);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -694,45 +768,5 @@
           <paramref name="typeToken" /> is not a valid token.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="ResolveTypeHandle">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a runtime type handle for a type identified by a metadata token.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Equals">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Determines whether a specified <see cref="T:System.ModuleHandle" /> structure is equal to the current <see cref="T:System.ModuleHandle" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ResolveMethodHandle">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a runtime method handle for a method or constructor identified by a metadata token.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ResolveFieldHandle">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a runtime field handle for a field identified by a metadata token.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

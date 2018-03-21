@@ -1,7 +1,9 @@
-<Type Name="PrincipalCollection" FullName="System.DirectoryServices.AccountManagement.PrincipalCollection">
+﻿<Type Name="PrincipalCollection" FullName="System.DirectoryServices.AccountManagement.PrincipalCollection">
   <TypeSignature Language="C#" Value="public class PrincipalCollection : System.Collections.Generic.ICollection&lt;System.DirectoryServices.AccountManagement.Principal&gt;, System.Collections.Generic.IEnumerable&lt;System.DirectoryServices.AccountManagement.Principal&gt;, System.Collections.ICollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PrincipalCollection extends System.Object implements class System.Collections.Generic.ICollection`1&lt;class System.DirectoryServices.AccountManagement.Principal&gt;, class System.Collections.Generic.IEnumerable`1&lt;class System.DirectoryServices.AccountManagement.Principal&gt;, class System.Collections.ICollection, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.AccountManagement.PrincipalCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class PrincipalCollection&#xA;Implements ICollection, ICollection(Of Principal), IEnumerable(Of Principal)" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PrincipalCollection : System::Collections::Generic::ICollection&lt;System::DirectoryServices::AccountManagement::Principal ^&gt;, System::Collections::Generic::IEnumerable&lt;System::DirectoryServices::AccountManagement::Principal ^&gt;, System::Collections::ICollection" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +51,8 @@
       <MemberSignature Language="C#" Value="public void Add (System.DirectoryServices.AccountManagement.ComputerPrincipal computer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.DirectoryServices.AccountManagement.ComputerPrincipal computer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.PrincipalCollection.Add(System.DirectoryServices.AccountManagement.ComputerPrincipal)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (computer As ComputerPrincipal)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::DirectoryServices::AccountManagement::ComputerPrincipal ^ computer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -88,6 +92,8 @@
       <MemberSignature Language="C#" Value="public void Add (System.DirectoryServices.AccountManagement.GroupPrincipal group);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.DirectoryServices.AccountManagement.GroupPrincipal group) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.PrincipalCollection.Add(System.DirectoryServices.AccountManagement.GroupPrincipal)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (group As GroupPrincipal)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::DirectoryServices::AccountManagement::GroupPrincipal ^ group);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -127,7 +133,11 @@
       <MemberSignature Language="C#" Value="public void Add (System.DirectoryServices.AccountManagement.Principal principal);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Add(class System.DirectoryServices.AccountManagement.Principal principal) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.PrincipalCollection.Add(System.DirectoryServices.AccountManagement.Principal)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Add(System::DirectoryServices::AccountManagement::Principal ^ principal);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Add(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -166,6 +176,8 @@
       <MemberSignature Language="C#" Value="public void Add (System.DirectoryServices.AccountManagement.UserPrincipal user);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.DirectoryServices.AccountManagement.UserPrincipal user) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.PrincipalCollection.Add(System.DirectoryServices.AccountManagement.UserPrincipal)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (user As UserPrincipal)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::DirectoryServices::AccountManagement::UserPrincipal ^ user);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -205,6 +217,7 @@
       <MemberSignature Language="C#" Value="public void Add (System.DirectoryServices.AccountManagement.PrincipalContext context, System.DirectoryServices.AccountManagement.IdentityType identityType, string identityValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.DirectoryServices.AccountManagement.PrincipalContext context, valuetype System.DirectoryServices.AccountManagement.IdentityType identityType, string identityValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.PrincipalCollection.Add(System.DirectoryServices.AccountManagement.PrincipalContext,System.DirectoryServices.AccountManagement.IdentityType,System.String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::DirectoryServices::AccountManagement::PrincipalContext ^ context, System::DirectoryServices::AccountManagement::IdentityType identityType, System::String ^ identityValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -251,7 +264,12 @@
       <MemberSignature Language="C#" Value="public void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.PrincipalCollection.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Clear</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -305,6 +323,8 @@
       <MemberSignature Language="C#" Value="public bool Contains (System.DirectoryServices.AccountManagement.ComputerPrincipal computer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.DirectoryServices.AccountManagement.ComputerPrincipal computer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.PrincipalCollection.Contains(System.DirectoryServices.AccountManagement.ComputerPrincipal)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (computer As ComputerPrincipal) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::DirectoryServices::AccountManagement::ComputerPrincipal ^ computer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -334,6 +354,8 @@
       <MemberSignature Language="C#" Value="public bool Contains (System.DirectoryServices.AccountManagement.GroupPrincipal group);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.DirectoryServices.AccountManagement.GroupPrincipal group) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.PrincipalCollection.Contains(System.DirectoryServices.AccountManagement.GroupPrincipal)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (group As GroupPrincipal) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::DirectoryServices::AccountManagement::GroupPrincipal ^ group);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -363,7 +385,11 @@
       <MemberSignature Language="C#" Value="public bool Contains (System.DirectoryServices.AccountManagement.Principal principal);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Contains(class System.DirectoryServices.AccountManagement.Principal principal) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.PrincipalCollection.Contains(System.DirectoryServices.AccountManagement.Principal)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Contains(System::DirectoryServices::AccountManagement::Principal ^ principal);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Contains(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -392,6 +418,8 @@
       <MemberSignature Language="C#" Value="public bool Contains (System.DirectoryServices.AccountManagement.UserPrincipal user);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.DirectoryServices.AccountManagement.UserPrincipal user) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.PrincipalCollection.Contains(System.DirectoryServices.AccountManagement.UserPrincipal)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (user As UserPrincipal) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::DirectoryServices::AccountManagement::UserPrincipal ^ user);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -421,6 +449,7 @@
       <MemberSignature Language="C#" Value="public bool Contains (System.DirectoryServices.AccountManagement.PrincipalContext context, System.DirectoryServices.AccountManagement.IdentityType identityType, string identityValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.DirectoryServices.AccountManagement.PrincipalContext context, valuetype System.DirectoryServices.AccountManagement.IdentityType identityType, string identityValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.PrincipalCollection.Contains(System.DirectoryServices.AccountManagement.PrincipalContext,System.DirectoryServices.AccountManagement.IdentityType,System.String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::DirectoryServices::AccountManagement::PrincipalContext ^ context, System::DirectoryServices::AccountManagement::IdentityType identityType, System::String ^ identityValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -466,6 +495,8 @@
       <MemberSignature Language="C#" Value="public void CopyTo (System.DirectoryServices.AccountManagement.Principal[] array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.DirectoryServices.AccountManagement.Principal[] array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.PrincipalCollection.CopyTo(System.DirectoryServices.AccountManagement.Principal[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As Principal(), index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(cli::array &lt;System::DirectoryServices::AccountManagement::Principal ^&gt; ^ array, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -498,7 +529,13 @@
       <MemberSignature Language="C#" Value="public int Count { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.AccountManagement.PrincipalCollection.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.Generic.ICollection`1.Count</InterfaceMember>
+        <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -523,7 +560,12 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerator&lt;System.DirectoryServices.AccountManagement.Principal&gt; GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerator`1&lt;class System.DirectoryServices.AccountManagement.Principal&gt; GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.PrincipalCollection.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator(Of Principal)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IEnumerator&lt;System::DirectoryServices::AccountManagement::Principal ^&gt; ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -556,7 +598,12 @@
       <MemberSignature Language="C#" Value="public bool IsReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.AccountManagement.PrincipalCollection.IsReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.Generic.ICollection`1.IsReadOnly</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -576,7 +623,12 @@
       <MemberSignature Language="C#" Value="public bool IsSynchronized { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsSynchronized" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.AccountManagement.PrincipalCollection.IsSynchronized" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSynchronized As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSynchronized { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -614,6 +666,8 @@
       <MemberSignature Language="C#" Value="public bool Remove (System.DirectoryServices.AccountManagement.ComputerPrincipal computer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Remove(class System.DirectoryServices.AccountManagement.ComputerPrincipal computer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.PrincipalCollection.Remove(System.DirectoryServices.AccountManagement.ComputerPrincipal)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Remove (computer As ComputerPrincipal) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Remove(System::DirectoryServices::AccountManagement::ComputerPrincipal ^ computer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -654,6 +708,8 @@
       <MemberSignature Language="C#" Value="public bool Remove (System.DirectoryServices.AccountManagement.GroupPrincipal group);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Remove(class System.DirectoryServices.AccountManagement.GroupPrincipal group) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.PrincipalCollection.Remove(System.DirectoryServices.AccountManagement.GroupPrincipal)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Remove (group As GroupPrincipal) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Remove(System::DirectoryServices::AccountManagement::GroupPrincipal ^ group);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -694,7 +750,11 @@
       <MemberSignature Language="C#" Value="public bool Remove (System.DirectoryServices.AccountManagement.Principal principal);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Remove(class System.DirectoryServices.AccountManagement.Principal principal) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.PrincipalCollection.Remove(System.DirectoryServices.AccountManagement.Principal)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Remove(System::DirectoryServices::AccountManagement::Principal ^ principal);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Remove(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -734,6 +794,8 @@
       <MemberSignature Language="C#" Value="public bool Remove (System.DirectoryServices.AccountManagement.UserPrincipal user);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Remove(class System.DirectoryServices.AccountManagement.UserPrincipal user) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.PrincipalCollection.Remove(System.DirectoryServices.AccountManagement.UserPrincipal)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Remove (user As UserPrincipal) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Remove(System::DirectoryServices::AccountManagement::UserPrincipal ^ user);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -774,6 +836,7 @@
       <MemberSignature Language="C#" Value="public bool Remove (System.DirectoryServices.AccountManagement.PrincipalContext context, System.DirectoryServices.AccountManagement.IdentityType identityType, string identityValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Remove(class System.DirectoryServices.AccountManagement.PrincipalContext context, valuetype System.DirectoryServices.AccountManagement.IdentityType identityType, string identityValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.PrincipalCollection.Remove(System.DirectoryServices.AccountManagement.PrincipalContext,System.DirectoryServices.AccountManagement.IdentityType,System.String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Remove(System::DirectoryServices::AccountManagement::PrincipalContext ^ context, System::DirectoryServices::AccountManagement::IdentityType identityType, System::String ^ identityValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -821,7 +884,12 @@
       <MemberSignature Language="C#" Value="public object SyncRoot { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object SyncRoot" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.AccountManagement.PrincipalCollection.SyncRoot" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SyncRoot As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ SyncRoot { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -841,7 +909,11 @@
       <MemberSignature Language="C#" Value="void ICollection.CopyTo (Array array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.ICollection.CopyTo(class System.Array array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.PrincipalCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.ICollection.CopyTo(Array ^ array, int index) = System::Collections::ICollection::CopyTo;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -878,7 +950,12 @@
       <MemberSignature Language="C#" Value="int System.Collections.ICollection.Count { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 System.Collections.ICollection.Count" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.AccountManagement.PrincipalCollection.System#Collections#ICollection#Count" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property Count As Integer Implements ICollection.Count" />
+      <MemberSignature Language="C++ CLI" Value="property int System.Collections.ICollection.Count { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -903,7 +980,12 @@
       <MemberSignature Language="C#" Value="bool System.Collections.ICollection.IsSynchronized { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.ICollection.IsSynchronized" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.AccountManagement.PrincipalCollection.System#Collections#ICollection#IsSynchronized" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -935,7 +1017,12 @@
       <MemberSignature Language="C#" Value="object System.Collections.ICollection.SyncRoot { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.ICollection.SyncRoot" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.AccountManagement.PrincipalCollection.System#Collections#ICollection#SyncRoot" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -960,7 +1047,12 @@
       <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.PrincipalCollection.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator Implements IEnumerable.GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IEnumerator ^ System.Collections.IEnumerable.GetEnumerator() = System::Collections::IEnumerable::GetEnumerator;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

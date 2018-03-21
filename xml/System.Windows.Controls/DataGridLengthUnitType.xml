@@ -1,7 +1,9 @@
-<Type Name="DataGridLengthUnitType" FullName="System.Windows.Controls.DataGridLengthUnitType">
+﻿<Type Name="DataGridLengthUnitType" FullName="System.Windows.Controls.DataGridLengthUnitType">
   <TypeSignature Language="C#" Value="public enum DataGridLengthUnitType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataGridLengthUnitType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.DataGridLengthUnitType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum DataGridLengthUnitType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class DataGridLengthUnitType" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -18,6 +20,8 @@
       <MemberSignature Language="C#" Value="Auto" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.DataGridLengthUnitType Auto = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridLengthUnitType.Auto" />
+      <MemberSignature Language="VB.NET" Value="Auto" />
+      <MemberSignature Language="C++ CLI" Value="Auto" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -26,6 +30,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.DataGridLengthUnitType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The size is based on the contents of both the cells and the column header.</summary>
       </Docs>
@@ -34,6 +39,8 @@
       <MemberSignature Language="C#" Value="Pixel" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.DataGridLengthUnitType Pixel = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridLengthUnitType.Pixel" />
+      <MemberSignature Language="VB.NET" Value="Pixel" />
+      <MemberSignature Language="C++ CLI" Value="Pixel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -42,6 +49,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.DataGridLengthUnitType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The size is a fixed value expressed in pixels.</summary>
       </Docs>
@@ -50,6 +58,8 @@
       <MemberSignature Language="C#" Value="SizeToCells" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.DataGridLengthUnitType SizeToCells = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridLengthUnitType.SizeToCells" />
+      <MemberSignature Language="VB.NET" Value="SizeToCells" />
+      <MemberSignature Language="C++ CLI" Value="SizeToCells" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -58,6 +68,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.DataGridLengthUnitType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The size is based on the contents of the cells.</summary>
       </Docs>
@@ -66,6 +77,8 @@
       <MemberSignature Language="C#" Value="SizeToHeader" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.DataGridLengthUnitType SizeToHeader = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridLengthUnitType.SizeToHeader" />
+      <MemberSignature Language="VB.NET" Value="SizeToHeader" />
+      <MemberSignature Language="C++ CLI" Value="SizeToHeader" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -74,6 +87,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.DataGridLengthUnitType</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The size is based on the contents of the column header.</summary>
       </Docs>
@@ -82,6 +96,8 @@
       <MemberSignature Language="C#" Value="Star" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.DataGridLengthUnitType Star = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridLengthUnitType.Star" />
+      <MemberSignature Language="VB.NET" Value="Star" />
+      <MemberSignature Language="C++ CLI" Value="Star" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -90,6 +106,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.DataGridLengthUnitType</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The size is a weighted proportion of available space.</summary>
       </Docs>

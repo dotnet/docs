@@ -1,7 +1,9 @@
-<Type Name="ScriptingProfileServiceSection" FullName="System.Web.Configuration.ScriptingProfileServiceSection">
+﻿<Type Name="ScriptingProfileServiceSection" FullName="System.Web.Configuration.ScriptingProfileServiceSection">
   <TypeSignature Language="C#" Value="public sealed class ScriptingProfileServiceSection : System.Configuration.ConfigurationSection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ScriptingProfileServiceSection extends System.Configuration.ConfigurationSection" />
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.ScriptingProfileServiceSection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ScriptingProfileServiceSection&#xA;Inherits ConfigurationSection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ScriptingProfileServiceSection sealed : System::Configuration::ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +54,8 @@
       <MemberSignature Language="C#" Value="public ScriptingProfileServiceSection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.ScriptingProfileServiceSection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ScriptingProfileServiceSection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -67,6 +71,8 @@
       <MemberSignature Language="C#" Value="public bool Enabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Enabled" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ScriptingProfileServiceSection.Enabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property Enabled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Enabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -91,6 +97,8 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ScriptingProfileServiceSection.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -109,6 +117,8 @@
       <MemberSignature Language="C#" Value="public string[] ReadAccessProperties { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string[] ReadAccessProperties" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ScriptingProfileServiceSection.ReadAccessProperties" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReadAccessProperties As String()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ ReadAccessProperties { cli::array &lt;System::String ^&gt; ^ get(); void set(cli::array &lt;System::String ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -141,6 +151,8 @@
       <MemberSignature Language="C#" Value="public string[] WriteAccessProperties { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string[] WriteAccessProperties" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ScriptingProfileServiceSection.WriteAccessProperties" />
+      <MemberSignature Language="VB.NET" Value="Public Property WriteAccessProperties As String()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ WriteAccessProperties { cli::array &lt;System::String ^&gt; ^ get(); void set(cli::array &lt;System::String ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

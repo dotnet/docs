@@ -1,7 +1,9 @@
-<Type Name="MouseEventArgs" FullName="System.Windows.Forms.MouseEventArgs">
+﻿<Type Name="MouseEventArgs" FullName="System.Windows.Forms.MouseEventArgs">
   <TypeSignature Language="C#" Value="public class MouseEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MouseEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.MouseEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class MouseEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MouseEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -64,6 +66,8 @@
       <MemberSignature Language="C#" Value="public MouseEventArgs (System.Windows.Forms.MouseButtons button, int clicks, int x, int y, int delta);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Forms.MouseButtons button, int32 clicks, int32 x, int32 y, int32 delta) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MouseEventArgs.#ctor(System.Windows.Forms.MouseButtons,System.Int32,System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (button As MouseButtons, clicks As Integer, x As Integer, y As Integer, delta As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MouseEventArgs(System::Windows::Forms::MouseButtons button, int clicks, int x, int y, int delta);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -92,6 +96,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.MouseButtons Button { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.MouseButtons Button" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MouseEventArgs.Button" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Button As MouseButtons" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::MouseButtons Button { System::Windows::Forms::MouseButtons get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -124,6 +130,8 @@
       <MemberSignature Language="C#" Value="public int Clicks { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Clicks" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MouseEventArgs.Clicks" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Clicks As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Clicks { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -161,6 +169,8 @@
       <MemberSignature Language="C#" Value="public int Delta { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Delta" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MouseEventArgs.Delta" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Delta As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Delta { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -200,6 +210,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Point Location { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Point Location" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MouseEventArgs.Location" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Location As Point" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Point Location { System::Drawing::Point get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -231,6 +243,8 @@
       <MemberSignature Language="C#" Value="public int X { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 X" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MouseEventArgs.X" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property X As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int X { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -267,6 +281,8 @@
       <MemberSignature Language="C#" Value="public int Y { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Y" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MouseEventArgs.Y" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Y As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Y { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

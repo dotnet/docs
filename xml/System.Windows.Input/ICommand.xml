@@ -1,7 +1,9 @@
-<Type Name="ICommand" FullName="System.Windows.Input.ICommand">
+﻿<Type Name="ICommand" FullName="System.Windows.Input.ICommand">
   <TypeSignature Language="C#" Value="public interface ICommand" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ICommand" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.ICommand" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ICommand" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ICommand" />
   <AssemblyInfo>
     <AssemblyName>System.ObjectModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -70,6 +72,8 @@
       <MemberSignature Language="C#" Value="public bool CanExecute (object parameter);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanExecute(object parameter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.ICommand.CanExecute(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CanExecute (parameter As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool CanExecute(System::Object ^ parameter);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -111,9 +115,11 @@
       </Docs>
     </Member>
     <Member MemberName="CanExecuteChanged">
-      <MemberSignature Language="C#" Value="public event EventHandler CanExecuteChanged;" />
+      <MemberSignature Language="C#" Value="event EventHandler CanExecuteChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler CanExecuteChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Input.ICommand.CanExecuteChanged" />
+      <MemberSignature Language="VB.NET" Value="Event CanExecuteChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ CanExecuteChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -154,6 +160,8 @@
       <MemberSignature Language="C#" Value="public void Execute (object parameter);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Execute(object parameter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.ICommand.Execute(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Execute (parameter As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Execute(System::Object ^ parameter);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>

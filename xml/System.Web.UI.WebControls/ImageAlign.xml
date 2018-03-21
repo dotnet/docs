@@ -1,7 +1,9 @@
-<Type Name="ImageAlign" FullName="System.Web.UI.WebControls.ImageAlign">
+﻿<Type Name="ImageAlign" FullName="System.Web.UI.WebControls.ImageAlign">
   <TypeSignature Language="C#" Value="public enum ImageAlign" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ImageAlign extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ImageAlign" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ImageAlign" />
+  <TypeSignature Language="C++ CLI" Value="public enum class ImageAlign" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +29,8 @@
       <MemberSignature Language="C#" Value="AbsBottom" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.ImageAlign AbsBottom = int32(7)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ImageAlign.AbsBottom" />
+      <MemberSignature Language="VB.NET" Value="AbsBottom" />
+      <MemberSignature Language="C++ CLI" Value="AbsBottom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -35,6 +39,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.ImageAlign</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>The lower edge of the image is aligned with the lower edge of the largest element on the same line.</summary>
       </Docs>
@@ -43,6 +48,8 @@
       <MemberSignature Language="C#" Value="AbsMiddle" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.ImageAlign AbsMiddle = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ImageAlign.AbsMiddle" />
+      <MemberSignature Language="VB.NET" Value="AbsMiddle" />
+      <MemberSignature Language="C++ CLI" Value="AbsMiddle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -51,6 +58,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.ImageAlign</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>The middle of the image is aligned with the middle of the largest element on the same line.</summary>
       </Docs>
@@ -59,6 +67,8 @@
       <MemberSignature Language="C#" Value="Baseline" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.ImageAlign Baseline = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ImageAlign.Baseline" />
+      <MemberSignature Language="VB.NET" Value="Baseline" />
+      <MemberSignature Language="C++ CLI" Value="Baseline" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -67,6 +77,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.ImageAlign</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The lower edge of the image is aligned with the lower edge of the first line of text.</summary>
       </Docs>
@@ -75,6 +86,8 @@
       <MemberSignature Language="C#" Value="Bottom" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.ImageAlign Bottom = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ImageAlign.Bottom" />
+      <MemberSignature Language="VB.NET" Value="Bottom" />
+      <MemberSignature Language="C++ CLI" Value="Bottom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -83,6 +96,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.ImageAlign</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>The lower edge of the image is aligned with the lower edge of the first line of text.</summary>
       </Docs>
@@ -91,6 +105,8 @@
       <MemberSignature Language="C#" Value="Left" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.ImageAlign Left = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ImageAlign.Left" />
+      <MemberSignature Language="VB.NET" Value="Left" />
+      <MemberSignature Language="C++ CLI" Value="Left" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -99,6 +115,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.ImageAlign</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The image is aligned on the left edge of the Web page with text wrapping on the right.</summary>
       </Docs>
@@ -107,6 +124,8 @@
       <MemberSignature Language="C#" Value="Middle" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.ImageAlign Middle = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ImageAlign.Middle" />
+      <MemberSignature Language="VB.NET" Value="Middle" />
+      <MemberSignature Language="C++ CLI" Value="Middle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -115,6 +134,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.ImageAlign</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>The middle of the image is aligned with the lower edge of the first line of text.</summary>
       </Docs>
@@ -123,6 +143,8 @@
       <MemberSignature Language="C#" Value="NotSet" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.ImageAlign NotSet = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ImageAlign.NotSet" />
+      <MemberSignature Language="VB.NET" Value="NotSet" />
+      <MemberSignature Language="C++ CLI" Value="NotSet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -131,6 +153,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.ImageAlign</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The alignment is not set.</summary>
       </Docs>
@@ -139,6 +162,8 @@
       <MemberSignature Language="C#" Value="Right" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.ImageAlign Right = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ImageAlign.Right" />
+      <MemberSignature Language="VB.NET" Value="Right" />
+      <MemberSignature Language="C++ CLI" Value="Right" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -147,6 +172,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.ImageAlign</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The image is aligned on the right edge of the Web page with text wrapping on the left.</summary>
       </Docs>
@@ -155,6 +181,8 @@
       <MemberSignature Language="C#" Value="TextTop" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.ImageAlign TextTop = int32(9)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ImageAlign.TextTop" />
+      <MemberSignature Language="VB.NET" Value="TextTop" />
+      <MemberSignature Language="C++ CLI" Value="TextTop" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -163,6 +191,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.ImageAlign</ReturnType>
       </ReturnValue>
+      <MemberValue>9</MemberValue>
       <Docs>
         <summary>The upper edge of the image is aligned with the upper edge of the highest text on the same line.</summary>
       </Docs>
@@ -171,6 +200,8 @@
       <MemberSignature Language="C#" Value="Top" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.ImageAlign Top = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ImageAlign.Top" />
+      <MemberSignature Language="VB.NET" Value="Top" />
+      <MemberSignature Language="C++ CLI" Value="Top" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -179,6 +210,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.ImageAlign</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The upper edge of the image is aligned with the upper edge of the highest element on the same line.</summary>
       </Docs>

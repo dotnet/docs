@@ -1,7 +1,9 @@
-<Type Name="ManagementStatus" FullName="System.Management.ManagementStatus">
+﻿<Type Name="ManagementStatus" FullName="System.Management.ManagementStatus">
   <TypeSignature Language="C#" Value="public enum ManagementStatus" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ManagementStatus extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Management.ManagementStatus" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ManagementStatus" />
+  <TypeSignature Language="C++ CLI" Value="public enum class ManagementStatus" />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -18,6 +20,8 @@
       <MemberSignature Language="C#" Value="AccessDenied" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus AccessDenied = int32(-2147217405)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.AccessDenied" />
+      <MemberSignature Language="VB.NET" Value="AccessDenied" />
+      <MemberSignature Language="C++ CLI" Value="AccessDenied" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -26,6 +30,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217405</MemberValue>
       <Docs>
         <summary>The current user does not have permission to perform the action.</summary>
       </Docs>
@@ -34,6 +39,8 @@
       <MemberSignature Language="C#" Value="AggregatingByObject" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus AggregatingByObject = int32(-2147217315)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.AggregatingByObject" />
+      <MemberSignature Language="VB.NET" Value="AggregatingByObject" />
+      <MemberSignature Language="C++ CLI" Value="AggregatingByObject" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -42,6 +49,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217315</MemberValue>
       <Docs>
         <summary>A GROUP BY clause references a property that is an embedded object without using dot notation.</summary>
       </Docs>
@@ -50,6 +58,8 @@
       <MemberSignature Language="C#" Value="AlreadyExists" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus AlreadyExists = int32(-2147217383)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.AlreadyExists" />
+      <MemberSignature Language="VB.NET" Value="AlreadyExists" />
+      <MemberSignature Language="C++ CLI" Value="AlreadyExists" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -58,6 +68,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217383</MemberValue>
       <Docs>
         <summary>In a put operation, the wbemChangeFlagCreateOnly flag was specified, but the instance already exists.</summary>
       </Docs>
@@ -66,6 +77,8 @@
       <MemberSignature Language="C#" Value="AmendedObject" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus AmendedObject = int32(-2147217306)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.AmendedObject" />
+      <MemberSignature Language="VB.NET" Value="AmendedObject" />
+      <MemberSignature Language="C++ CLI" Value="AmendedObject" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -74,6 +87,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217306</MemberValue>
       <Docs>
         <summary>An amended object was used in a put operation without the WBEM_FLAG_USE_AMENDED_QUALIFIERS flag being specified.</summary>
       </Docs>
@@ -82,6 +96,8 @@
       <MemberSignature Language="C#" Value="BackupRestoreWinmgmtRunning" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus BackupRestoreWinmgmtRunning = int32(-2147217312)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.BackupRestoreWinmgmtRunning" />
+      <MemberSignature Language="VB.NET" Value="BackupRestoreWinmgmtRunning" />
+      <MemberSignature Language="C++ CLI" Value="BackupRestoreWinmgmtRunning" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -90,6 +106,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217312</MemberValue>
       <Docs>
         <summary>An request was made to back up or restore the repository while WinMgmt.exe was using it.</summary>
       </Docs>
@@ -98,6 +115,8 @@
       <MemberSignature Language="C#" Value="BufferTooSmall" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus BufferTooSmall = int32(-2147217348)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.BufferTooSmall" />
+      <MemberSignature Language="VB.NET" Value="BufferTooSmall" />
+      <MemberSignature Language="C++ CLI" Value="BufferTooSmall" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -106,6 +125,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217348</MemberValue>
       <Docs>
         <summary>The supplied buffer was too small to hold all the objects in the enumerator or to read a string property.</summary>
       </Docs>
@@ -114,6 +134,8 @@
       <MemberSignature Language="C#" Value="CallCanceled" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus CallCanceled = int32(-2147217358)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.CallCanceled" />
+      <MemberSignature Language="VB.NET" Value="CallCanceled" />
+      <MemberSignature Language="C++ CLI" Value="CallCanceled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -122,6 +144,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217358</MemberValue>
       <Docs>
         <summary>An asynchronous process has been canceled internally or by the user. Note that because of the timing and nature of the asynchronous operation, the operation may not have been truly canceled.</summary>
       </Docs>
@@ -130,6 +153,8 @@
       <MemberSignature Language="C#" Value="CannotBeAbstract" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus CannotBeAbstract = int32(-2147217307)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.CannotBeAbstract" />
+      <MemberSignature Language="VB.NET" Value="CannotBeAbstract" />
+      <MemberSignature Language="C++ CLI" Value="CannotBeAbstract" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -138,6 +163,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217307</MemberValue>
       <Docs>
         <summary>The class was made abstract when its superclass is not abstract.</summary>
       </Docs>
@@ -146,6 +172,8 @@
       <MemberSignature Language="C#" Value="CannotBeKey" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus CannotBeKey = int32(-2147217377)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.CannotBeKey" />
+      <MemberSignature Language="VB.NET" Value="CannotBeKey" />
+      <MemberSignature Language="C++ CLI" Value="CannotBeKey" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -154,6 +182,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217377</MemberValue>
       <Docs>
         <summary>There was an illegal attempt to specify a key qualifier on a property that cannot be a key. The keys are specified in the class definition for an object and cannot be altered on a per-instance basis.</summary>
       </Docs>
@@ -162,6 +191,8 @@
       <MemberSignature Language="C#" Value="CannotBeSingleton" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus CannotBeSingleton = int32(-2147217364)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.CannotBeSingleton" />
+      <MemberSignature Language="VB.NET" Value="CannotBeSingleton" />
+      <MemberSignature Language="C++ CLI" Value="CannotBeSingleton" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -170,6 +201,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217364</MemberValue>
       <Docs>
         <summary>An illegal attempt was made to make a class singleton, such as when the class is derived from a non-singleton class.</summary>
       </Docs>
@@ -178,6 +210,8 @@
       <MemberSignature Language="C#" Value="CannotChangeIndexInheritance" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus CannotChangeIndexInheritance = int32(-2147217328)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.CannotChangeIndexInheritance" />
+      <MemberSignature Language="VB.NET" Value="CannotChangeIndexInheritance" />
+      <MemberSignature Language="C++ CLI" Value="CannotChangeIndexInheritance" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -186,6 +220,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217328</MemberValue>
       <Docs>
         <summary>An attempt was made to change an index when instances or derived classes are already using the index.</summary>
       </Docs>
@@ -194,6 +229,8 @@
       <MemberSignature Language="C#" Value="CannotChangeKeyInheritance" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus CannotChangeKeyInheritance = int32(-2147217335)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.CannotChangeKeyInheritance" />
+      <MemberSignature Language="VB.NET" Value="CannotChangeKeyInheritance" />
+      <MemberSignature Language="C++ CLI" Value="CannotChangeKeyInheritance" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -202,6 +239,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217335</MemberValue>
       <Docs>
         <summary>An attempt was made to change a key when instances or derived classes are already using the key.</summary>
       </Docs>
@@ -210,6 +248,8 @@
       <MemberSignature Language="C#" Value="CircularReference" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus CircularReference = int32(-2147217337)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.CircularReference" />
+      <MemberSignature Language="VB.NET" Value="CircularReference" />
+      <MemberSignature Language="C++ CLI" Value="CircularReference" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -218,6 +258,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217337</MemberValue>
       <Docs>
         <summary>An attempt has been made to create a reference that is circular (for example, deriving a class from itself).</summary>
       </Docs>
@@ -226,6 +267,8 @@
       <MemberSignature Language="C#" Value="ClassHasChildren" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus ClassHasChildren = int32(-2147217371)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.ClassHasChildren" />
+      <MemberSignature Language="VB.NET" Value="ClassHasChildren" />
+      <MemberSignature Language="C++ CLI" Value="ClassHasChildren" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -234,6 +277,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217371</MemberValue>
       <Docs>
         <summary>An attempt was made to make a change that would invalidate a derived class.</summary>
       </Docs>
@@ -242,6 +286,8 @@
       <MemberSignature Language="C#" Value="ClassHasInstances" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus ClassHasInstances = int32(-2147217370)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.ClassHasInstances" />
+      <MemberSignature Language="VB.NET" Value="ClassHasInstances" />
+      <MemberSignature Language="C++ CLI" Value="ClassHasInstances" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -250,6 +296,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217370</MemberValue>
       <Docs>
         <summary>An attempt has been made to delete or modify a class that has instances.</summary>
       </Docs>
@@ -258,6 +305,8 @@
       <MemberSignature Language="C#" Value="ClientTooSlow" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus ClientTooSlow = int32(-2147217305)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.ClientTooSlow" />
+      <MemberSignature Language="VB.NET" Value="ClientTooSlow" />
+      <MemberSignature Language="C++ CLI" Value="ClientTooSlow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -266,6 +315,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217305</MemberValue>
       <Docs>
         <summary>The client was not retrieving objects quickly enough from an enumeration.</summary>
       </Docs>
@@ -274,6 +324,8 @@
       <MemberSignature Language="C#" Value="CriticalError" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus CriticalError = int32(-2147217398)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.CriticalError" />
+      <MemberSignature Language="VB.NET" Value="CriticalError" />
+      <MemberSignature Language="C++ CLI" Value="CriticalError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -282,6 +334,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217398</MemberValue>
       <Docs>
         <summary>An internal, critical, and unexpected error occurred. Report this error to Microsoft Technical Support.</summary>
       </Docs>
@@ -290,6 +343,8 @@
       <MemberSignature Language="C#" Value="Different" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus Different = int32(262147)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.Different" />
+      <MemberSignature Language="VB.NET" Value="Different" />
+      <MemberSignature Language="C++ CLI" Value="Different" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -298,6 +353,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>262147</MemberValue>
       <Docs>
         <summary>The compared items (such as objects and classes) are not identical.</summary>
       </Docs>
@@ -306,6 +362,8 @@
       <MemberSignature Language="C#" Value="DuplicateObjects" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus DuplicateObjects = int32(262152)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.DuplicateObjects" />
+      <MemberSignature Language="VB.NET" Value="DuplicateObjects" />
+      <MemberSignature Language="C++ CLI" Value="DuplicateObjects" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -314,6 +372,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>262152</MemberValue>
       <Docs>
         <summary>More than one copy of the same object was detected in the result set of an enumeration.</summary>
       </Docs>
@@ -322,6 +381,8 @@
       <MemberSignature Language="C#" Value="Failed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus Failed = int32(-2147217407)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.Failed" />
+      <MemberSignature Language="VB.NET" Value="Failed" />
+      <MemberSignature Language="C++ CLI" Value="Failed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -330,6 +391,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217407</MemberValue>
       <Docs>
         <summary>The call failed.</summary>
       </Docs>
@@ -338,6 +400,8 @@
       <MemberSignature Language="C#" Value="False" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus False = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.False" />
+      <MemberSignature Language="VB.NET" Value="False" />
+      <MemberSignature Language="C++ CLI" Value="False" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -346,6 +410,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>This value is returned when no more objects are available, the number of objects returned is less than the number requested, or at the end of an enumeration. It is also returned when the method is called with a value of 0 for the parameter.</summary>
       </Docs>
@@ -354,6 +419,8 @@
       <MemberSignature Language="C#" Value="IllegalNull" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus IllegalNull = int32(-2147217368)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.IllegalNull" />
+      <MemberSignature Language="VB.NET" Value="IllegalNull" />
+      <MemberSignature Language="C++ CLI" Value="IllegalNull" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -362,6 +429,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217368</MemberValue>
       <Docs>
         <summary>A value of null was specified for a property that may not be null, such as one that is marked by a Key, Indexed, or Not_Null qualifier.</summary>
       </Docs>
@@ -370,6 +438,8 @@
       <MemberSignature Language="C#" Value="IllegalOperation" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus IllegalOperation = int32(-2147217378)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.IllegalOperation" />
+      <MemberSignature Language="VB.NET" Value="IllegalOperation" />
+      <MemberSignature Language="C++ CLI" Value="IllegalOperation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -378,6 +448,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217378</MemberValue>
       <Docs>
         <summary>The user requested an illegal operation, such as spawning a class from an instance.</summary>
       </Docs>
@@ -386,6 +457,8 @@
       <MemberSignature Language="C#" Value="IncompleteClass" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus IncompleteClass = int32(-2147217376)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.IncompleteClass" />
+      <MemberSignature Language="VB.NET" Value="IncompleteClass" />
+      <MemberSignature Language="C++ CLI" Value="IncompleteClass" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -394,6 +467,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217376</MemberValue>
       <Docs>
         <summary>The current object is not a valid class definition. Either it is incomplete, or it has not been registered with WMI using <see cref="M:System.Management.ManagementObject.Put" />().</summary>
       </Docs>
@@ -402,6 +476,8 @@
       <MemberSignature Language="C#" Value="InitializationFailure" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus InitializationFailure = int32(-2147217388)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.InitializationFailure" />
+      <MemberSignature Language="VB.NET" Value="InitializationFailure" />
+      <MemberSignature Language="C++ CLI" Value="InitializationFailure" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -410,6 +486,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217388</MemberValue>
       <Docs>
         <summary>A component, such as a provider, failed to initialize for internal reasons.</summary>
       </Docs>
@@ -418,6 +495,8 @@
       <MemberSignature Language="C#" Value="InvalidCimType" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus InvalidCimType = int32(-2147217363)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.InvalidCimType" />
+      <MemberSignature Language="VB.NET" Value="InvalidCimType" />
+      <MemberSignature Language="C++ CLI" Value="InvalidCimType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -426,6 +505,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217363</MemberValue>
       <Docs>
         <summary>The CIM type specified is not valid.</summary>
       </Docs>
@@ -434,6 +514,8 @@
       <MemberSignature Language="C#" Value="InvalidClass" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus InvalidClass = int32(-2147217392)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.InvalidClass" />
+      <MemberSignature Language="VB.NET" Value="InvalidClass" />
+      <MemberSignature Language="C++ CLI" Value="InvalidClass" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -442,6 +524,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217392</MemberValue>
       <Docs>
         <summary>The specified class is not valid.</summary>
       </Docs>
@@ -450,6 +533,8 @@
       <MemberSignature Language="C#" Value="InvalidContext" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus InvalidContext = int32(-2147217401)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.InvalidContext" />
+      <MemberSignature Language="VB.NET" Value="InvalidContext" />
+      <MemberSignature Language="C++ CLI" Value="InvalidContext" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -458,6 +543,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217401</MemberValue>
       <Docs>
         <summary>The context object is not valid.</summary>
       </Docs>
@@ -466,6 +552,8 @@
       <MemberSignature Language="C#" Value="InvalidDuplicateParameter" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus InvalidDuplicateParameter = int32(-2147217341)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.InvalidDuplicateParameter" />
+      <MemberSignature Language="VB.NET" Value="InvalidDuplicateParameter" />
+      <MemberSignature Language="C++ CLI" Value="InvalidDuplicateParameter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -474,6 +562,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217341</MemberValue>
       <Docs>
         <summary>A duplicate parameter has been declared in a CIM method.</summary>
       </Docs>
@@ -482,6 +571,8 @@
       <MemberSignature Language="C#" Value="InvalidFlavor" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus InvalidFlavor = int32(-2147217338)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.InvalidFlavor" />
+      <MemberSignature Language="VB.NET" Value="InvalidFlavor" />
+      <MemberSignature Language="C++ CLI" Value="InvalidFlavor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -490,6 +581,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217338</MemberValue>
       <Docs>
         <summary>The specified flavor was invalid.</summary>
       </Docs>
@@ -498,6 +590,8 @@
       <MemberSignature Language="C#" Value="InvalidMethod" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus InvalidMethod = int32(-2147217362)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.InvalidMethod" />
+      <MemberSignature Language="VB.NET" Value="InvalidMethod" />
+      <MemberSignature Language="C++ CLI" Value="InvalidMethod" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -506,6 +600,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217362</MemberValue>
       <Docs>
         <summary>The requested method is not available.</summary>
       </Docs>
@@ -514,6 +609,8 @@
       <MemberSignature Language="C#" Value="InvalidMethodParameters" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus InvalidMethodParameters = int32(-2147217361)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.InvalidMethodParameters" />
+      <MemberSignature Language="VB.NET" Value="InvalidMethodParameters" />
+      <MemberSignature Language="C++ CLI" Value="InvalidMethodParameters" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -522,6 +619,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217361</MemberValue>
       <Docs>
         <summary>The parameters provided for the method are not valid.</summary>
       </Docs>
@@ -530,6 +628,8 @@
       <MemberSignature Language="C#" Value="InvalidNamespace" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus InvalidNamespace = int32(-2147217394)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.InvalidNamespace" />
+      <MemberSignature Language="VB.NET" Value="InvalidNamespace" />
+      <MemberSignature Language="C++ CLI" Value="InvalidNamespace" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -538,6 +638,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217394</MemberValue>
       <Docs>
         <summary>The specified namespace could not be found.</summary>
       </Docs>
@@ -546,6 +647,8 @@
       <MemberSignature Language="C#" Value="InvalidObject" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus InvalidObject = int32(-2147217393)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.InvalidObject" />
+      <MemberSignature Language="VB.NET" Value="InvalidObject" />
+      <MemberSignature Language="C++ CLI" Value="InvalidObject" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -554,6 +657,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217393</MemberValue>
       <Docs>
         <summary>The specified instance is not valid.</summary>
       </Docs>
@@ -562,6 +666,8 @@
       <MemberSignature Language="C#" Value="InvalidObjectPath" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus InvalidObjectPath = int32(-2147217350)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.InvalidObjectPath" />
+      <MemberSignature Language="VB.NET" Value="InvalidObjectPath" />
+      <MemberSignature Language="C++ CLI" Value="InvalidObjectPath" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -570,6 +676,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217350</MemberValue>
       <Docs>
         <summary>The specified object path was invalid.</summary>
       </Docs>
@@ -578,6 +685,8 @@
       <MemberSignature Language="C#" Value="InvalidOperation" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus InvalidOperation = int32(-2147217386)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.InvalidOperation" />
+      <MemberSignature Language="VB.NET" Value="InvalidOperation" />
+      <MemberSignature Language="C++ CLI" Value="InvalidOperation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -586,6 +695,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217386</MemberValue>
       <Docs>
         <summary>The requested operation is not valid. This error usually applies to invalid attempts to delete classes or properties.</summary>
       </Docs>
@@ -594,6 +704,8 @@
       <MemberSignature Language="C#" Value="InvalidOperator" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus InvalidOperator = int32(-2147217309)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.InvalidOperator" />
+      <MemberSignature Language="VB.NET" Value="InvalidOperator" />
+      <MemberSignature Language="C++ CLI" Value="InvalidOperator" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -602,6 +714,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217309</MemberValue>
       <Docs>
         <summary>The operator is not valid for this property type.</summary>
       </Docs>
@@ -610,6 +723,8 @@
       <MemberSignature Language="C#" Value="InvalidParameter" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus InvalidParameter = int32(-2147217400)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.InvalidParameter" />
+      <MemberSignature Language="VB.NET" Value="InvalidParameter" />
+      <MemberSignature Language="C++ CLI" Value="InvalidParameter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -618,6 +733,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217400</MemberValue>
       <Docs>
         <summary>One of the parameters to the call is not correct.</summary>
       </Docs>
@@ -626,6 +742,8 @@
       <MemberSignature Language="C#" Value="InvalidParameterID" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus InvalidParameterID = int32(-2147217353)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.InvalidParameterID" />
+      <MemberSignature Language="VB.NET" Value="InvalidParameterID" />
+      <MemberSignature Language="C++ CLI" Value="InvalidParameterID" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -634,6 +752,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217353</MemberValue>
       <Docs>
         <summary>A method parameter has an invalid ID qualifier.</summary>
       </Docs>
@@ -642,6 +761,8 @@
       <MemberSignature Language="C#" Value="InvalidProperty" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus InvalidProperty = int32(-2147217359)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.InvalidProperty" />
+      <MemberSignature Language="VB.NET" Value="InvalidProperty" />
+      <MemberSignature Language="C++ CLI" Value="InvalidProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -650,6 +771,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217359</MemberValue>
       <Docs>
         <summary>The property type is not recognized.</summary>
       </Docs>
@@ -658,6 +780,8 @@
       <MemberSignature Language="C#" Value="InvalidPropertyType" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus InvalidPropertyType = int32(-2147217366)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.InvalidPropertyType" />
+      <MemberSignature Language="VB.NET" Value="InvalidPropertyType" />
+      <MemberSignature Language="C++ CLI" Value="InvalidPropertyType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -666,6 +790,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217366</MemberValue>
       <Docs>
         <summary>The CIM type specified for a property is not valid.</summary>
       </Docs>
@@ -674,6 +799,8 @@
       <MemberSignature Language="C#" Value="InvalidProviderRegistration" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus InvalidProviderRegistration = int32(-2147217390)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.InvalidProviderRegistration" />
+      <MemberSignature Language="VB.NET" Value="InvalidProviderRegistration" />
+      <MemberSignature Language="C++ CLI" Value="InvalidProviderRegistration" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -682,6 +809,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217390</MemberValue>
       <Docs>
         <summary>A provider referenced in the schema has an incorrect or incomplete registration.</summary>
       </Docs>
@@ -690,6 +818,8 @@
       <MemberSignature Language="C#" Value="InvalidQualifier" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus InvalidQualifier = int32(-2147217342)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.InvalidQualifier" />
+      <MemberSignature Language="VB.NET" Value="InvalidQualifier" />
+      <MemberSignature Language="C++ CLI" Value="InvalidQualifier" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -698,6 +828,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217342</MemberValue>
       <Docs>
         <summary>An attempt has been made to mismatch qualifiers, such as putting [ManagementKey] on an object instead of a property.</summary>
       </Docs>
@@ -706,6 +837,8 @@
       <MemberSignature Language="C#" Value="InvalidQualifierType" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus InvalidQualifierType = int32(-2147217367)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.InvalidQualifierType" />
+      <MemberSignature Language="VB.NET" Value="InvalidQualifierType" />
+      <MemberSignature Language="C++ CLI" Value="InvalidQualifierType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -714,6 +847,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217367</MemberValue>
       <Docs>
         <summary>The value provided for a qualifier was not a legal qualifier type.</summary>
       </Docs>
@@ -722,6 +856,8 @@
       <MemberSignature Language="C#" Value="InvalidQuery" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus InvalidQuery = int32(-2147217385)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.InvalidQuery" />
+      <MemberSignature Language="VB.NET" Value="InvalidQuery" />
+      <MemberSignature Language="C++ CLI" Value="InvalidQuery" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -730,6 +866,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217385</MemberValue>
       <Docs>
         <summary>The query was not syntactically valid.</summary>
       </Docs>
@@ -738,6 +875,8 @@
       <MemberSignature Language="C#" Value="InvalidQueryType" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus InvalidQueryType = int32(-2147217384)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.InvalidQueryType" />
+      <MemberSignature Language="VB.NET" Value="InvalidQueryType" />
+      <MemberSignature Language="C++ CLI" Value="InvalidQueryType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -746,6 +885,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217384</MemberValue>
       <Docs>
         <summary>The requested query language is not supported.</summary>
       </Docs>
@@ -754,6 +894,8 @@
       <MemberSignature Language="C#" Value="InvalidStream" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus InvalidStream = int32(-2147217397)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.InvalidStream" />
+      <MemberSignature Language="VB.NET" Value="InvalidStream" />
+      <MemberSignature Language="C++ CLI" Value="InvalidStream" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -762,6 +904,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217397</MemberValue>
       <Docs>
         <summary>One or more network packets were corrupted during a remote session.</summary>
       </Docs>
@@ -770,6 +913,8 @@
       <MemberSignature Language="C#" Value="InvalidSuperclass" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus InvalidSuperclass = int32(-2147217395)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.InvalidSuperclass" />
+      <MemberSignature Language="VB.NET" Value="InvalidSuperclass" />
+      <MemberSignature Language="C++ CLI" Value="InvalidSuperclass" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -778,6 +923,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217395</MemberValue>
       <Docs>
         <summary>The specified superclass is not valid.</summary>
       </Docs>
@@ -786,6 +932,8 @@
       <MemberSignature Language="C#" Value="InvalidSyntax" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus InvalidSyntax = int32(-2147217375)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.InvalidSyntax" />
+      <MemberSignature Language="VB.NET" Value="InvalidSyntax" />
+      <MemberSignature Language="C++ CLI" Value="InvalidSyntax" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -794,6 +942,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217375</MemberValue>
       <Docs>
         <summary>Reserved for future use.</summary>
       </Docs>
@@ -802,6 +951,8 @@
       <MemberSignature Language="C#" Value="LocalCredentials" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus LocalCredentials = int32(-2147217308)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.LocalCredentials" />
+      <MemberSignature Language="VB.NET" Value="LocalCredentials" />
+      <MemberSignature Language="C++ CLI" Value="LocalCredentials" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -810,6 +961,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217308</MemberValue>
       <Docs>
         <summary>The user specified a user name, password, or authority on a local connection. The user must use an empty user name and password and rely on default security.</summary>
       </Docs>
@@ -818,6 +970,8 @@
       <MemberSignature Language="C#" Value="MarshalInvalidSignature" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus MarshalInvalidSignature = int32(-2147217343)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.MarshalInvalidSignature" />
+      <MemberSignature Language="VB.NET" Value="MarshalInvalidSignature" />
+      <MemberSignature Language="C++ CLI" Value="MarshalInvalidSignature" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -826,6 +980,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217343</MemberValue>
       <Docs>
         <summary>The packet is corrupted.</summary>
       </Docs>
@@ -834,6 +989,8 @@
       <MemberSignature Language="C#" Value="MarshalVersionMismatch" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus MarshalVersionMismatch = int32(-2147217344)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.MarshalVersionMismatch" />
+      <MemberSignature Language="VB.NET" Value="MarshalVersionMismatch" />
+      <MemberSignature Language="C++ CLI" Value="MarshalVersionMismatch" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -842,6 +999,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217344</MemberValue>
       <Docs>
         <summary>The packet has an unsupported version.</summary>
       </Docs>
@@ -850,6 +1008,8 @@
       <MemberSignature Language="C#" Value="MethodDisabled" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus MethodDisabled = int32(-2147217322)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.MethodDisabled" />
+      <MemberSignature Language="VB.NET" Value="MethodDisabled" />
+      <MemberSignature Language="C++ CLI" Value="MethodDisabled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -858,6 +1018,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217322</MemberValue>
       <Docs>
         <summary>An attempt was made to execute a method marked with [disabled].</summary>
       </Docs>
@@ -866,6 +1027,8 @@
       <MemberSignature Language="C#" Value="MethodNotImplemented" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus MethodNotImplemented = int32(-2147217323)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.MethodNotImplemented" />
+      <MemberSignature Language="VB.NET" Value="MethodNotImplemented" />
+      <MemberSignature Language="C++ CLI" Value="MethodNotImplemented" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -874,6 +1037,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217323</MemberValue>
       <Docs>
         <summary>An attempt was made to execute a method not marked with [implemented] in any relevant class.</summary>
       </Docs>
@@ -882,6 +1046,8 @@
       <MemberSignature Language="C#" Value="MissingAggregationList" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus MissingAggregationList = int32(-2147217317)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.MissingAggregationList" />
+      <MemberSignature Language="VB.NET" Value="MissingAggregationList" />
+      <MemberSignature Language="C++ CLI" Value="MissingAggregationList" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -890,6 +1056,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217317</MemberValue>
       <Docs>
         <summary>A GROUP BY clause was used. Aggregation on all properties is not supported.</summary>
       </Docs>
@@ -898,6 +1065,8 @@
       <MemberSignature Language="C#" Value="MissingGroupWithin" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus MissingGroupWithin = int32(-2147217318)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.MissingGroupWithin" />
+      <MemberSignature Language="VB.NET" Value="MissingGroupWithin" />
+      <MemberSignature Language="C++ CLI" Value="MissingGroupWithin" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -906,6 +1075,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217318</MemberValue>
       <Docs>
         <summary>A GROUP BY clause was used without the corresponding GROUP WITHIN clause.</summary>
       </Docs>
@@ -914,6 +1084,8 @@
       <MemberSignature Language="C#" Value="MissingParameterID" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus MissingParameterID = int32(-2147217354)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.MissingParameterID" />
+      <MemberSignature Language="VB.NET" Value="MissingParameterID" />
+      <MemberSignature Language="C++ CLI" Value="MissingParameterID" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -922,6 +1094,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217354</MemberValue>
       <Docs>
         <summary>A parameter was missing from the method call.</summary>
       </Docs>
@@ -930,6 +1103,8 @@
       <MemberSignature Language="C#" Value="NoError" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus NoError = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.NoError" />
+      <MemberSignature Language="VB.NET" Value="NoError" />
+      <MemberSignature Language="C++ CLI" Value="NoError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -938,6 +1113,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The operation was successful.</summary>
       </Docs>
@@ -946,6 +1122,8 @@
       <MemberSignature Language="C#" Value="NoMoreData" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus NoMoreData = int32(262149)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.NoMoreData" />
+      <MemberSignature Language="VB.NET" Value="NoMoreData" />
+      <MemberSignature Language="C++ CLI" Value="NoMoreData" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -954,6 +1132,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>262149</MemberValue>
       <Docs>
         <summary>No more data is available from the enumeration; the user should terminate the enumeration.</summary>
       </Docs>
@@ -962,6 +1141,8 @@
       <MemberSignature Language="C#" Value="NonconsecutiveParameterIDs" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus NonconsecutiveParameterIDs = int32(-2147217352)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.NonconsecutiveParameterIDs" />
+      <MemberSignature Language="VB.NET" Value="NonconsecutiveParameterIDs" />
+      <MemberSignature Language="C++ CLI" Value="NonconsecutiveParameterIDs" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -970,6 +1151,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217352</MemberValue>
       <Docs>
         <summary>One or more of the method parameters have ID qualifiers that are out of sequence.</summary>
       </Docs>
@@ -978,6 +1160,8 @@
       <MemberSignature Language="C#" Value="NondecoratedObject" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus NondecoratedObject = int32(-2147217374)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.NondecoratedObject" />
+      <MemberSignature Language="VB.NET" Value="NondecoratedObject" />
+      <MemberSignature Language="C++ CLI" Value="NondecoratedObject" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -986,6 +1170,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217374</MemberValue>
       <Docs>
         <summary>Reserved for future use.</summary>
       </Docs>
@@ -994,6 +1179,8 @@
       <MemberSignature Language="C#" Value="NotAvailable" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus NotAvailable = int32(-2147217399)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.NotAvailable" />
+      <MemberSignature Language="VB.NET" Value="NotAvailable" />
+      <MemberSignature Language="C++ CLI" Value="NotAvailable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1002,6 +1189,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217399</MemberValue>
       <Docs>
         <summary>The resource, typically a remote server, is not currently available.</summary>
       </Docs>
@@ -1010,6 +1198,8 @@
       <MemberSignature Language="C#" Value="NotEventClass" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus NotEventClass = int32(-2147217319)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.NotEventClass" />
+      <MemberSignature Language="VB.NET" Value="NotEventClass" />
+      <MemberSignature Language="C++ CLI" Value="NotEventClass" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1018,6 +1208,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217319</MemberValue>
       <Docs>
         <summary>The FROM clause of a filtering query references a class that is not an event class.</summary>
       </Docs>
@@ -1026,6 +1217,8 @@
       <MemberSignature Language="C#" Value="NotFound" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus NotFound = int32(-2147217406)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.NotFound" />
+      <MemberSignature Language="VB.NET" Value="NotFound" />
+      <MemberSignature Language="C++ CLI" Value="NotFound" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1034,6 +1227,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217406</MemberValue>
       <Docs>
         <summary>The object could not be found.</summary>
       </Docs>
@@ -1042,6 +1236,8 @@
       <MemberSignature Language="C#" Value="NotSupported" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus NotSupported = int32(-2147217396)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.NotSupported" />
+      <MemberSignature Language="VB.NET" Value="NotSupported" />
+      <MemberSignature Language="C++ CLI" Value="NotSupported" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1050,6 +1246,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217396</MemberValue>
       <Docs>
         <summary>The feature or operation is not supported.</summary>
       </Docs>
@@ -1058,6 +1255,8 @@
       <MemberSignature Language="C#" Value="OperationCanceled" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus OperationCanceled = int32(262150)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.OperationCanceled" />
+      <MemberSignature Language="VB.NET" Value="OperationCanceled" />
+      <MemberSignature Language="C++ CLI" Value="OperationCanceled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1066,6 +1265,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>262150</MemberValue>
       <Docs>
         <summary>The operation was canceled.</summary>
       </Docs>
@@ -1074,6 +1274,8 @@
       <MemberSignature Language="C#" Value="OutOfDiskSpace" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus OutOfDiskSpace = int32(-2147217349)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.OutOfDiskSpace" />
+      <MemberSignature Language="VB.NET" Value="OutOfDiskSpace" />
+      <MemberSignature Language="C++ CLI" Value="OutOfDiskSpace" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1082,6 +1284,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217349</MemberValue>
       <Docs>
         <summary>There is not enough free disk space to continue the operation.</summary>
       </Docs>
@@ -1090,6 +1293,8 @@
       <MemberSignature Language="C#" Value="OutOfMemory" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus OutOfMemory = int32(-2147217402)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.OutOfMemory" />
+      <MemberSignature Language="VB.NET" Value="OutOfMemory" />
+      <MemberSignature Language="C++ CLI" Value="OutOfMemory" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1098,6 +1303,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217402</MemberValue>
       <Docs>
         <summary>There was not enough memory for the operation.</summary>
       </Docs>
@@ -1106,6 +1312,8 @@
       <MemberSignature Language="C#" Value="OverrideNotAllowed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus OverrideNotAllowed = int32(-2147217382)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.OverrideNotAllowed" />
+      <MemberSignature Language="VB.NET" Value="OverrideNotAllowed" />
+      <MemberSignature Language="C++ CLI" Value="OverrideNotAllowed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1114,6 +1322,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217382</MemberValue>
       <Docs>
         <summary>The add operation cannot be performed on the qualifier because the owning object does not permit overrides.</summary>
       </Docs>
@@ -1122,6 +1331,8 @@
       <MemberSignature Language="C#" Value="ParameterIDOnRetval" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus ParameterIDOnRetval = int32(-2147217351)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.ParameterIDOnRetval" />
+      <MemberSignature Language="VB.NET" Value="ParameterIDOnRetval" />
+      <MemberSignature Language="C++ CLI" Value="ParameterIDOnRetval" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1130,6 +1341,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217351</MemberValue>
       <Docs>
         <summary>The return value for a method has an ID qualifier.</summary>
       </Docs>
@@ -1138,6 +1350,8 @@
       <MemberSignature Language="C#" Value="PartialResults" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus PartialResults = int32(262160)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.PartialResults" />
+      <MemberSignature Language="VB.NET" Value="PartialResults" />
+      <MemberSignature Language="C++ CLI" Value="PartialResults" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1146,6 +1360,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>262160</MemberValue>
       <Docs>
         <summary>The user did not receive all of the requested objects because of inaccessible resources (other than security violations).</summary>
       </Docs>
@@ -1154,6 +1369,8 @@
       <MemberSignature Language="C#" Value="Pending" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus Pending = int32(262151)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.Pending" />
+      <MemberSignature Language="VB.NET" Value="Pending" />
+      <MemberSignature Language="C++ CLI" Value="Pending" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1162,6 +1379,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>262151</MemberValue>
       <Docs>
         <summary>A request is still in progress; however, the results are not yet available.</summary>
       </Docs>
@@ -1170,6 +1388,8 @@
       <MemberSignature Language="C#" Value="PrivilegeNotHeld" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus PrivilegeNotHeld = int32(-2147217310)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.PrivilegeNotHeld" />
+      <MemberSignature Language="VB.NET" Value="PrivilegeNotHeld" />
+      <MemberSignature Language="C++ CLI" Value="PrivilegeNotHeld" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1178,6 +1398,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217310</MemberValue>
       <Docs>
         <summary>The operation failed because the client did not have the necessary security privilege.</summary>
       </Docs>
@@ -1186,6 +1407,8 @@
       <MemberSignature Language="C#" Value="PropagatedMethod" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus PropagatedMethod = int32(-2147217356)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.PropagatedMethod" />
+      <MemberSignature Language="VB.NET" Value="PropagatedMethod" />
+      <MemberSignature Language="C++ CLI" Value="PropagatedMethod" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1194,6 +1417,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217356</MemberValue>
       <Docs>
         <summary>An attempt was made to reuse an existing method name from a superclass, and the signatures did not match.</summary>
       </Docs>
@@ -1202,6 +1426,8 @@
       <MemberSignature Language="C#" Value="PropagatedProperty" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus PropagatedProperty = int32(-2147217380)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.PropagatedProperty" />
+      <MemberSignature Language="VB.NET" Value="PropagatedProperty" />
+      <MemberSignature Language="C++ CLI" Value="PropagatedProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1210,6 +1436,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217380</MemberValue>
       <Docs>
         <summary>The user attempted to delete a property that was not owned. The property was inherited from a parent class.</summary>
       </Docs>
@@ -1218,6 +1445,8 @@
       <MemberSignature Language="C#" Value="PropagatedQualifier" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus PropagatedQualifier = int32(-2147217381)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.PropagatedQualifier" />
+      <MemberSignature Language="VB.NET" Value="PropagatedQualifier" />
+      <MemberSignature Language="C++ CLI" Value="PropagatedQualifier" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1226,6 +1455,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217381</MemberValue>
       <Docs>
         <summary>The user attempted to delete a qualifier that was not owned. The qualifier was inherited from a parent class.</summary>
       </Docs>
@@ -1234,6 +1464,8 @@
       <MemberSignature Language="C#" Value="PropertyNotAnObject" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus PropertyNotAnObject = int32(-2147217316)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.PropertyNotAnObject" />
+      <MemberSignature Language="VB.NET" Value="PropertyNotAnObject" />
+      <MemberSignature Language="C++ CLI" Value="PropertyNotAnObject" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1242,6 +1474,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217316</MemberValue>
       <Docs>
         <summary>Dot notation was used on a property that is not an embedded object.</summary>
       </Docs>
@@ -1250,6 +1483,8 @@
       <MemberSignature Language="C#" Value="ProviderFailure" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus ProviderFailure = int32(-2147217404)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.ProviderFailure" />
+      <MemberSignature Language="VB.NET" Value="ProviderFailure" />
+      <MemberSignature Language="C++ CLI" Value="ProviderFailure" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1258,6 +1493,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217404</MemberValue>
       <Docs>
         <summary>The provider failed after initialization.</summary>
       </Docs>
@@ -1266,6 +1502,8 @@
       <MemberSignature Language="C#" Value="ProviderLoadFailure" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus ProviderLoadFailure = int32(-2147217389)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.ProviderLoadFailure" />
+      <MemberSignature Language="VB.NET" Value="ProviderLoadFailure" />
+      <MemberSignature Language="C++ CLI" Value="ProviderLoadFailure" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1274,6 +1512,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217389</MemberValue>
       <Docs>
         <summary>COM cannot locate a provider referenced in the schema.</summary>
       </Docs>
@@ -1282,6 +1521,8 @@
       <MemberSignature Language="C#" Value="ProviderNotCapable" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus ProviderNotCapable = int32(-2147217372)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.ProviderNotCapable" />
+      <MemberSignature Language="VB.NET" Value="ProviderNotCapable" />
+      <MemberSignature Language="C++ CLI" Value="ProviderNotCapable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1290,6 +1531,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217372</MemberValue>
       <Docs>
         <summary>The provider cannot perform the requested operation, such as requesting a query that is too complex, retrieving an instance, creating or updating a class, deleting a class, or enumerating a class.</summary>
       </Docs>
@@ -1298,6 +1540,8 @@
       <MemberSignature Language="C#" Value="ProviderNotFound" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus ProviderNotFound = int32(-2147217391)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.ProviderNotFound" />
+      <MemberSignature Language="VB.NET" Value="ProviderNotFound" />
+      <MemberSignature Language="C++ CLI" Value="ProviderNotFound" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1306,6 +1550,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217391</MemberValue>
       <Docs>
         <summary>A provider referenced in the schema does not have a corresponding registration.</summary>
       </Docs>
@@ -1314,6 +1559,8 @@
       <MemberSignature Language="C#" Value="QueryNotImplemented" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus QueryNotImplemented = int32(-2147217369)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.QueryNotImplemented" />
+      <MemberSignature Language="VB.NET" Value="QueryNotImplemented" />
+      <MemberSignature Language="C++ CLI" Value="QueryNotImplemented" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1322,6 +1569,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217369</MemberValue>
       <Docs>
         <summary>Reserved for future use.</summary>
       </Docs>
@@ -1330,6 +1578,8 @@
       <MemberSignature Language="C#" Value="QueueOverflow" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus QueueOverflow = int32(-2147217311)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.QueueOverflow" />
+      <MemberSignature Language="VB.NET" Value="QueueOverflow" />
+      <MemberSignature Language="C++ CLI" Value="QueueOverflow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1338,6 +1588,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217311</MemberValue>
       <Docs>
         <summary>The asynchronous delivery queue overflowed from the *event consumer* being too slow.</summary>
       </Docs>
@@ -1346,6 +1597,8 @@
       <MemberSignature Language="C#" Value="ReadOnly" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus ReadOnly = int32(-2147217373)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.ReadOnly" />
+      <MemberSignature Language="VB.NET" Value="ReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="ReadOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1354,6 +1607,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217373</MemberValue>
       <Docs>
         <summary>The property that you are attempting to modify is read-only.</summary>
       </Docs>
@@ -1362,6 +1616,8 @@
       <MemberSignature Language="C#" Value="RefresherBusy" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus RefresherBusy = int32(-2147217321)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.RefresherBusy" />
+      <MemberSignature Language="VB.NET" Value="RefresherBusy" />
+      <MemberSignature Language="C++ CLI" Value="RefresherBusy" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1370,6 +1626,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217321</MemberValue>
       <Docs>
         <summary>The refresher is busy with another operation.</summary>
       </Docs>
@@ -1378,6 +1635,8 @@
       <MemberSignature Language="C#" Value="RegistrationTooBroad" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus RegistrationTooBroad = int32(-2147213311)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.RegistrationTooBroad" />
+      <MemberSignature Language="VB.NET" Value="RegistrationTooBroad" />
+      <MemberSignature Language="C++ CLI" Value="RegistrationTooBroad" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1386,6 +1645,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147213311</MemberValue>
       <Docs>
         <summary>The provider registration overlaps with the system event domain.</summary>
       </Docs>
@@ -1394,6 +1654,8 @@
       <MemberSignature Language="C#" Value="RegistrationTooPrecise" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus RegistrationTooPrecise = int32(-2147213310)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.RegistrationTooPrecise" />
+      <MemberSignature Language="VB.NET" Value="RegistrationTooPrecise" />
+      <MemberSignature Language="C++ CLI" Value="RegistrationTooPrecise" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1402,6 +1664,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147213310</MemberValue>
       <Docs>
         <summary>A WITHIN clause was not used in this query.</summary>
       </Docs>
@@ -1410,6 +1673,8 @@
       <MemberSignature Language="C#" Value="ResetToDefault" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus ResetToDefault = int32(262146)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.ResetToDefault" />
+      <MemberSignature Language="VB.NET" Value="ResetToDefault" />
+      <MemberSignature Language="C++ CLI" Value="ResetToDefault" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1418,6 +1683,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>262146</MemberValue>
       <Docs>
         <summary>An overridden property was deleted. This value is returned to signal that the original, non-overridden value has been restored as a result of the deletion.</summary>
       </Docs>
@@ -1426,6 +1692,8 @@
       <MemberSignature Language="C#" Value="ServerTooBusy" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus ServerTooBusy = int32(-2147217339)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.ServerTooBusy" />
+      <MemberSignature Language="VB.NET" Value="ServerTooBusy" />
+      <MemberSignature Language="C++ CLI" Value="ServerTooBusy" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1434,6 +1702,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217339</MemberValue>
       <Docs>
         <summary>The delivery of an event has failed. The provider may choose to re-raise the event.</summary>
       </Docs>
@@ -1442,6 +1711,8 @@
       <MemberSignature Language="C#" Value="ShuttingDown" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus ShuttingDown = int32(-2147217357)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.ShuttingDown" />
+      <MemberSignature Language="VB.NET" Value="ShuttingDown" />
+      <MemberSignature Language="C++ CLI" Value="ShuttingDown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1450,6 +1721,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217357</MemberValue>
       <Docs>
         <summary>The user has requested an operation while WMI is in the process of closing.</summary>
       </Docs>
@@ -1458,6 +1730,8 @@
       <MemberSignature Language="C#" Value="SystemProperty" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus SystemProperty = int32(-2147217360)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.SystemProperty" />
+      <MemberSignature Language="VB.NET" Value="SystemProperty" />
+      <MemberSignature Language="C++ CLI" Value="SystemProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1466,6 +1740,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217360</MemberValue>
       <Docs>
         <summary>There was an attempt to get qualifiers on a system property.</summary>
       </Docs>
@@ -1474,6 +1749,8 @@
       <MemberSignature Language="C#" Value="Timedout" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus Timedout = int32(262148)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.Timedout" />
+      <MemberSignature Language="VB.NET" Value="Timedout" />
+      <MemberSignature Language="C++ CLI" Value="Timedout" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1482,6 +1759,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>262148</MemberValue>
       <Docs>
         <summary>A call timed out. This is not an error condition; therefore, some results may have been returned.</summary>
       </Docs>
@@ -1490,6 +1768,8 @@
       <MemberSignature Language="C#" Value="TooManyProperties" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus TooManyProperties = int32(-2147217327)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.TooManyProperties" />
+      <MemberSignature Language="VB.NET" Value="TooManyProperties" />
+      <MemberSignature Language="C++ CLI" Value="TooManyProperties" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1498,6 +1778,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217327</MemberValue>
       <Docs>
         <summary>An attempt was made to create more properties than the current version of the class supports.</summary>
       </Docs>
@@ -1506,6 +1787,8 @@
       <MemberSignature Language="C#" Value="TooMuchData" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus TooMuchData = int32(-2147217340)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.TooMuchData" />
+      <MemberSignature Language="VB.NET" Value="TooMuchData" />
+      <MemberSignature Language="C++ CLI" Value="TooMuchData" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1514,6 +1797,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217340</MemberValue>
       <Docs>
         <summary>Reserved for future use.</summary>
       </Docs>
@@ -1522,6 +1806,8 @@
       <MemberSignature Language="C#" Value="TransportFailure" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus TransportFailure = int32(-2147217387)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.TransportFailure" />
+      <MemberSignature Language="VB.NET" Value="TransportFailure" />
+      <MemberSignature Language="C++ CLI" Value="TransportFailure" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1530,6 +1816,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217387</MemberValue>
       <Docs>
         <summary>A networking error that prevents normal operation has occurred.</summary>
       </Docs>
@@ -1538,6 +1825,8 @@
       <MemberSignature Language="C#" Value="TypeMismatch" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus TypeMismatch = int32(-2147217403)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.TypeMismatch" />
+      <MemberSignature Language="VB.NET" Value="TypeMismatch" />
+      <MemberSignature Language="C++ CLI" Value="TypeMismatch" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1546,6 +1835,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217403</MemberValue>
       <Docs>
         <summary>A type mismatch occurred.</summary>
       </Docs>
@@ -1554,6 +1844,8 @@
       <MemberSignature Language="C#" Value="Unexpected" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus Unexpected = int32(-2147217379)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.Unexpected" />
+      <MemberSignature Language="VB.NET" Value="Unexpected" />
+      <MemberSignature Language="C++ CLI" Value="Unexpected" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1562,6 +1854,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217379</MemberValue>
       <Docs>
         <summary>The client made an unexpected and illegal sequence of calls.</summary>
       </Docs>
@@ -1570,6 +1863,8 @@
       <MemberSignature Language="C#" Value="UninterpretableProviderQuery" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus UninterpretableProviderQuery = int32(-2147217313)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.UninterpretableProviderQuery" />
+      <MemberSignature Language="VB.NET" Value="UninterpretableProviderQuery" />
+      <MemberSignature Language="C++ CLI" Value="UninterpretableProviderQuery" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1578,6 +1873,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217313</MemberValue>
       <Docs>
         <summary>An *event provider* registration query (**__EventProviderRegistration**) did not specify the classes for which events were provided.</summary>
       </Docs>
@@ -1586,6 +1882,8 @@
       <MemberSignature Language="C#" Value="UnknownObjectType" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus UnknownObjectType = int32(-2147217346)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.UnknownObjectType" />
+      <MemberSignature Language="VB.NET" Value="UnknownObjectType" />
+      <MemberSignature Language="C++ CLI" Value="UnknownObjectType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1594,6 +1892,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217346</MemberValue>
       <Docs>
         <summary>An object with an incorrect type or version was encountered during marshaling.</summary>
       </Docs>
@@ -1602,6 +1901,8 @@
       <MemberSignature Language="C#" Value="UnknownPacketType" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus UnknownPacketType = int32(-2147217345)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.UnknownPacketType" />
+      <MemberSignature Language="VB.NET" Value="UnknownPacketType" />
+      <MemberSignature Language="C++ CLI" Value="UnknownPacketType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1610,6 +1911,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217345</MemberValue>
       <Docs>
         <summary>A packet with an incorrect type or version was encountered during marshaling.</summary>
       </Docs>
@@ -1618,6 +1920,8 @@
       <MemberSignature Language="C#" Value="UnparsableQuery" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus UnparsableQuery = int32(-2147217320)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.UnparsableQuery" />
+      <MemberSignature Language="VB.NET" Value="UnparsableQuery" />
+      <MemberSignature Language="C++ CLI" Value="UnparsableQuery" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1626,6 +1930,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217320</MemberValue>
       <Docs>
         <summary>The filtering query is syntactically invalid.</summary>
       </Docs>
@@ -1634,6 +1939,8 @@
       <MemberSignature Language="C#" Value="UnsupportedClassUpdate" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus UnsupportedClassUpdate = int32(-2147217336)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.UnsupportedClassUpdate" />
+      <MemberSignature Language="VB.NET" Value="UnsupportedClassUpdate" />
+      <MemberSignature Language="C++ CLI" Value="UnsupportedClassUpdate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1642,6 +1949,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217336</MemberValue>
       <Docs>
         <summary>The specified class is not supported.</summary>
       </Docs>
@@ -1650,6 +1958,8 @@
       <MemberSignature Language="C#" Value="UnsupportedParameter" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus UnsupportedParameter = int32(-2147217355)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.UnsupportedParameter" />
+      <MemberSignature Language="VB.NET" Value="UnsupportedParameter" />
+      <MemberSignature Language="C++ CLI" Value="UnsupportedParameter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1658,6 +1968,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217355</MemberValue>
       <Docs>
         <summary>One or more parameter values, such as a query text, is too complex or unsupported. WMI is requested to retry the operation with simpler parameters.</summary>
       </Docs>
@@ -1666,6 +1977,8 @@
       <MemberSignature Language="C#" Value="UnsupportedPutExtension" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus UnsupportedPutExtension = int32(-2147217347)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.UnsupportedPutExtension" />
+      <MemberSignature Language="VB.NET" Value="UnsupportedPutExtension" />
+      <MemberSignature Language="C++ CLI" Value="UnsupportedPutExtension" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1674,6 +1987,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217347</MemberValue>
       <Docs>
         <summary>The provider does not support the requested put operation.</summary>
       </Docs>
@@ -1682,6 +1996,8 @@
       <MemberSignature Language="C#" Value="UpdateOverrideNotAllowed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus UpdateOverrideNotAllowed = int32(-2147217325)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.UpdateOverrideNotAllowed" />
+      <MemberSignature Language="VB.NET" Value="UpdateOverrideNotAllowed" />
+      <MemberSignature Language="C++ CLI" Value="UpdateOverrideNotAllowed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1690,6 +2006,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217325</MemberValue>
       <Docs>
         <summary>An attempt was made in a derived class to override a non-overrideable qualifier.</summary>
       </Docs>
@@ -1698,6 +2015,8 @@
       <MemberSignature Language="C#" Value="UpdatePropagatedMethod" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus UpdatePropagatedMethod = int32(-2147217324)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.UpdatePropagatedMethod" />
+      <MemberSignature Language="VB.NET" Value="UpdatePropagatedMethod" />
+      <MemberSignature Language="C++ CLI" Value="UpdatePropagatedMethod" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1706,6 +2025,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217324</MemberValue>
       <Docs>
         <summary>A method was redeclared with a conflicting signature in a derived class.</summary>
       </Docs>
@@ -1714,6 +2034,8 @@
       <MemberSignature Language="C#" Value="UpdateTypeMismatch" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus UpdateTypeMismatch = int32(-2147217326)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.UpdateTypeMismatch" />
+      <MemberSignature Language="VB.NET" Value="UpdateTypeMismatch" />
+      <MemberSignature Language="C++ CLI" Value="UpdateTypeMismatch" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1722,6 +2044,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217326</MemberValue>
       <Docs>
         <summary>A property was redefined with a conflicting type in a derived class.</summary>
       </Docs>
@@ -1730,6 +2053,8 @@
       <MemberSignature Language="C#" Value="ValueOutOfRange" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.ManagementStatus ValueOutOfRange = int32(-2147217365)" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementStatus.ValueOutOfRange" />
+      <MemberSignature Language="VB.NET" Value="ValueOutOfRange" />
+      <MemberSignature Language="C++ CLI" Value="ValueOutOfRange" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1738,6 +2063,7 @@
       <ReturnValue>
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147217365</MemberValue>
       <Docs>
         <summary>The request was made with an out-of-range value, or is incompatible with the type.</summary>
       </Docs>

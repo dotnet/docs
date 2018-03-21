@@ -1,7 +1,9 @@
-<Type Name="StorePermissionFlags" FullName="System.Security.Permissions.StorePermissionFlags">
+﻿<Type Name="StorePermissionFlags" FullName="System.Security.Permissions.StorePermissionFlags">
   <TypeSignature Language="C#" Value="public enum StorePermissionFlags" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed StorePermissionFlags extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.StorePermissionFlags" />
+  <TypeSignature Language="VB.NET" Value="Public Enum StorePermissionFlags" />
+  <TypeSignature Language="C++ CLI" Value="public enum class StorePermissionFlags" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +45,8 @@
       <MemberSignature Language="C#" Value="AddToStore" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.StorePermissionFlags AddToStore = int32(32)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.StorePermissionFlags.AddToStore" />
+      <MemberSignature Language="VB.NET" Value="AddToStore" />
+      <MemberSignature Language="C++ CLI" Value="AddToStore" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -55,6 +59,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Permissions.StorePermissionFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>32</MemberValue>
       <Docs>
         <summary>The ability to add a certificate to a store.</summary>
         <remarks>
@@ -71,6 +76,8 @@
       <MemberSignature Language="C#" Value="AllFlags" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.StorePermissionFlags AllFlags = int32(247)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.StorePermissionFlags.AllFlags" />
+      <MemberSignature Language="VB.NET" Value="AllFlags" />
+      <MemberSignature Language="C++ CLI" Value="AllFlags" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -83,6 +90,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Permissions.StorePermissionFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>247</MemberValue>
       <Docs>
         <summary>The ability to perform all certificate and store operations.</summary>
       </Docs>
@@ -91,6 +99,8 @@
       <MemberSignature Language="C#" Value="CreateStore" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.StorePermissionFlags CreateStore = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.StorePermissionFlags.CreateStore" />
+      <MemberSignature Language="VB.NET" Value="CreateStore" />
+      <MemberSignature Language="C++ CLI" Value="CreateStore" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -103,6 +113,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Permissions.StorePermissionFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The ability to create a new store.</summary>
         <remarks>
@@ -119,6 +130,8 @@
       <MemberSignature Language="C#" Value="DeleteStore" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.StorePermissionFlags DeleteStore = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.StorePermissionFlags.DeleteStore" />
+      <MemberSignature Language="VB.NET" Value="DeleteStore" />
+      <MemberSignature Language="C++ CLI" Value="DeleteStore" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -131,6 +144,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Permissions.StorePermissionFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The ability to delete a store.</summary>
         <remarks>
@@ -147,6 +161,8 @@
       <MemberSignature Language="C#" Value="EnumerateCertificates" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.StorePermissionFlags EnumerateCertificates = int32(128)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.StorePermissionFlags.EnumerateCertificates" />
+      <MemberSignature Language="VB.NET" Value="EnumerateCertificates" />
+      <MemberSignature Language="C++ CLI" Value="EnumerateCertificates" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -159,6 +175,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Permissions.StorePermissionFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>128</MemberValue>
       <Docs>
         <summary>The ability to enumerate the certificates in a store.</summary>
         <remarks>
@@ -175,6 +192,8 @@
       <MemberSignature Language="C#" Value="EnumerateStores" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.StorePermissionFlags EnumerateStores = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.StorePermissionFlags.EnumerateStores" />
+      <MemberSignature Language="VB.NET" Value="EnumerateStores" />
+      <MemberSignature Language="C++ CLI" Value="EnumerateStores" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -187,6 +206,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Permissions.StorePermissionFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The ability to enumerate the stores on a computer.</summary>
         <remarks>
@@ -203,6 +223,8 @@
       <MemberSignature Language="C#" Value="NoFlags" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.StorePermissionFlags NoFlags = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.StorePermissionFlags.NoFlags" />
+      <MemberSignature Language="VB.NET" Value="NoFlags" />
+      <MemberSignature Language="C++ CLI" Value="NoFlags" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -215,6 +237,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Permissions.StorePermissionFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Permission is not given to perform any certificate or store operations.</summary>
       </Docs>
@@ -223,6 +246,8 @@
       <MemberSignature Language="C#" Value="OpenStore" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.StorePermissionFlags OpenStore = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.StorePermissionFlags.OpenStore" />
+      <MemberSignature Language="VB.NET" Value="OpenStore" />
+      <MemberSignature Language="C++ CLI" Value="OpenStore" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -235,6 +260,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Permissions.StorePermissionFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>The ability to open a store.</summary>
         <remarks>
@@ -251,6 +277,8 @@
       <MemberSignature Language="C#" Value="RemoveFromStore" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.StorePermissionFlags RemoveFromStore = int32(64)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.StorePermissionFlags.RemoveFromStore" />
+      <MemberSignature Language="VB.NET" Value="RemoveFromStore" />
+      <MemberSignature Language="C++ CLI" Value="RemoveFromStore" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -263,6 +291,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Permissions.StorePermissionFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>64</MemberValue>
       <Docs>
         <summary>The ability to remove a certificate from a store.</summary>
         <remarks>

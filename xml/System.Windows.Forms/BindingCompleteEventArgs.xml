@@ -1,7 +1,9 @@
-<Type Name="BindingCompleteEventArgs" FullName="System.Windows.Forms.BindingCompleteEventArgs">
+﻿<Type Name="BindingCompleteEventArgs" FullName="System.Windows.Forms.BindingCompleteEventArgs">
   <TypeSignature Language="C#" Value="public class BindingCompleteEventArgs : System.ComponentModel.CancelEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BindingCompleteEventArgs extends System.ComponentModel.CancelEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.BindingCompleteEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class BindingCompleteEventArgs&#xA;Inherits CancelEventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BindingCompleteEventArgs : System::ComponentModel::CancelEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,10 +33,20 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.BindingCompleteEventArgs" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public BindingCompleteEventArgs (System.Windows.Forms.Binding binding, System.Windows.Forms.BindingCompleteState state, System.Windows.Forms.BindingCompleteContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.Binding binding, valuetype System.Windows.Forms.BindingCompleteState state, valuetype System.Windows.Forms.BindingCompleteContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingCompleteEventArgs.#ctor(System.Windows.Forms.Binding,System.Windows.Forms.BindingCompleteState,System.Windows.Forms.BindingCompleteContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BindingCompleteEventArgs(System::Windows::Forms::Binding ^ binding, System::Windows::Forms::BindingCompleteState state, System::Windows::Forms::BindingCompleteContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -64,6 +76,7 @@
       <MemberSignature Language="C#" Value="public BindingCompleteEventArgs (System.Windows.Forms.Binding binding, System.Windows.Forms.BindingCompleteState state, System.Windows.Forms.BindingCompleteContext context, string errorText);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.Binding binding, valuetype System.Windows.Forms.BindingCompleteState state, valuetype System.Windows.Forms.BindingCompleteContext context, string errorText) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingCompleteEventArgs.#ctor(System.Windows.Forms.Binding,System.Windows.Forms.BindingCompleteState,System.Windows.Forms.BindingCompleteContext,System.String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BindingCompleteEventArgs(System::Windows::Forms::Binding ^ binding, System::Windows::Forms::BindingCompleteState state, System::Windows::Forms::BindingCompleteContext context, System::String ^ errorText);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -95,6 +108,7 @@
       <MemberSignature Language="C#" Value="public BindingCompleteEventArgs (System.Windows.Forms.Binding binding, System.Windows.Forms.BindingCompleteState state, System.Windows.Forms.BindingCompleteContext context, string errorText, Exception exception);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.Binding binding, valuetype System.Windows.Forms.BindingCompleteState state, valuetype System.Windows.Forms.BindingCompleteContext context, string errorText, class System.Exception exception) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingCompleteEventArgs.#ctor(System.Windows.Forms.Binding,System.Windows.Forms.BindingCompleteState,System.Windows.Forms.BindingCompleteContext,System.String,System.Exception)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BindingCompleteEventArgs(System::Windows::Forms::Binding ^ binding, System::Windows::Forms::BindingCompleteState state, System::Windows::Forms::BindingCompleteContext context, System::String ^ errorText, Exception ^ exception);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -128,6 +142,7 @@
       <MemberSignature Language="C#" Value="public BindingCompleteEventArgs (System.Windows.Forms.Binding binding, System.Windows.Forms.BindingCompleteState state, System.Windows.Forms.BindingCompleteContext context, string errorText, Exception exception, bool cancel);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.Binding binding, valuetype System.Windows.Forms.BindingCompleteState state, valuetype System.Windows.Forms.BindingCompleteContext context, string errorText, class System.Exception exception, bool cancel) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingCompleteEventArgs.#ctor(System.Windows.Forms.Binding,System.Windows.Forms.BindingCompleteState,System.Windows.Forms.BindingCompleteContext,System.String,System.Exception,System.Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BindingCompleteEventArgs(System::Windows::Forms::Binding ^ binding, System::Windows::Forms::BindingCompleteState state, System::Windows::Forms::BindingCompleteContext context, System::String ^ errorText, Exception ^ exception, bool cancel);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -164,6 +179,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.Binding Binding { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.Binding Binding" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingCompleteEventArgs.Binding" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Binding As Binding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Binding ^ Binding { System::Windows::Forms::Binding ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -199,6 +216,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.BindingCompleteContext BindingCompleteContext { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.BindingCompleteContext BindingCompleteContext" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingCompleteEventArgs.BindingCompleteContext" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BindingCompleteContext As BindingCompleteContext" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::BindingCompleteContext BindingCompleteContext { System::Windows::Forms::BindingCompleteContext get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -227,6 +246,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.BindingCompleteState BindingCompleteState { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.BindingCompleteState BindingCompleteState" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingCompleteEventArgs.BindingCompleteState" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BindingCompleteState As BindingCompleteState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::BindingCompleteState BindingCompleteState { System::Windows::Forms::BindingCompleteState get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -262,6 +283,8 @@
       <MemberSignature Language="C#" Value="public string ErrorText { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ErrorText" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingCompleteEventArgs.ErrorText" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ErrorText As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ErrorText { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -297,6 +320,8 @@
       <MemberSignature Language="C#" Value="public Exception Exception { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Exception Exception" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingCompleteEventArgs.Exception" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Exception As Exception" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Exception ^ Exception { Exception ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -326,14 +351,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.BindingCompleteEventArgs" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

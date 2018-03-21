@@ -1,7 +1,9 @@
-<Type Name="ParameterGenerationOption" FullName="System.Data.Design.ParameterGenerationOption">
+﻿<Type Name="ParameterGenerationOption" FullName="System.Data.Design.ParameterGenerationOption">
   <TypeSignature Language="C#" Value="public enum ParameterGenerationOption" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ParameterGenerationOption extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Data.Design.ParameterGenerationOption" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ParameterGenerationOption" />
+  <TypeSignature Language="C++ CLI" Value="public enum class ParameterGenerationOption" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +27,8 @@
       <MemberSignature Language="C#" Value="ClrTypes" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Design.ParameterGenerationOption ClrTypes = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Design.ParameterGenerationOption.ClrTypes" />
+      <MemberSignature Language="VB.NET" Value="ClrTypes" />
+      <MemberSignature Language="C++ CLI" Value="ClrTypes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -33,6 +37,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Design.ParameterGenerationOption</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Parameters in the typed dataset are CLR types.</summary>
       </Docs>
@@ -41,6 +46,8 @@
       <MemberSignature Language="C#" Value="Objects" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Design.ParameterGenerationOption Objects = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Design.ParameterGenerationOption.Objects" />
+      <MemberSignature Language="VB.NET" Value="Objects" />
+      <MemberSignature Language="C++ CLI" Value="Objects" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -49,6 +56,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Design.ParameterGenerationOption</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Parameters in the typed dataset are all of <see cref="T:System.Object" />.</summary>
       </Docs>
@@ -57,6 +65,8 @@
       <MemberSignature Language="C#" Value="SqlTypes" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Design.ParameterGenerationOption SqlTypes = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Design.ParameterGenerationOption.SqlTypes" />
+      <MemberSignature Language="VB.NET" Value="SqlTypes" />
+      <MemberSignature Language="C++ CLI" Value="SqlTypes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -65,6 +75,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Design.ParameterGenerationOption</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Parameters in the typed dataset are Sql types.</summary>
       </Docs>

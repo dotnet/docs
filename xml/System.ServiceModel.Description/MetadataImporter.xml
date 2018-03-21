@@ -1,7 +1,9 @@
-<Type Name="MetadataImporter" FullName="System.ServiceModel.Description.MetadataImporter">
+﻿<Type Name="MetadataImporter" FullName="System.ServiceModel.Description.MetadataImporter">
   <TypeSignature Language="C#" Value="public abstract class MetadataImporter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit MetadataImporter extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.MetadataImporter" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class MetadataImporter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MetadataImporter abstract" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +46,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Description.MetadataConversionError&gt; Errors { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.ServiceModel.Description.MetadataConversionError&gt; Errors" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.MetadataImporter.Errors" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Errors As Collection(Of MetadataConversionError)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Description::MetadataConversionError ^&gt; ^ Errors { System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Description::MetadataConversionError ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -69,6 +73,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Description.ContractDescription&gt; ImportAllContracts ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.ObjectModel.Collection`1&lt;class System.ServiceModel.Description.ContractDescription&gt; ImportAllContracts() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.MetadataImporter.ImportAllContracts" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function ImportAllContracts () As Collection(Of ContractDescription)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Description::ContractDescription ^&gt; ^ ImportAllContracts();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -88,6 +94,8 @@
       <MemberSignature Language="C#" Value="public abstract System.ServiceModel.Description.ServiceEndpointCollection ImportAllEndpoints ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Description.ServiceEndpointCollection ImportAllEndpoints() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.MetadataImporter.ImportAllEndpoints" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function ImportAllEndpoints () As ServiceEndpointCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::ServiceModel::Description::ServiceEndpointCollection ^ ImportAllEndpoints();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -114,6 +122,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.Dictionary&lt;System.Xml.XmlQualifiedName,System.ServiceModel.Description.ContractDescription&gt; KnownContracts { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.Dictionary`2&lt;class System.Xml.XmlQualifiedName, class System.ServiceModel.Description.ContractDescription&gt; KnownContracts" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.MetadataImporter.KnownContracts" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property KnownContracts As Dictionary(Of XmlQualifiedName, ContractDescription)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::Dictionary&lt;System::Xml::XmlQualifiedName ^, System::ServiceModel::Description::ContractDescription ^&gt; ^ KnownContracts { System::Collections::Generic::Dictionary&lt;System::Xml::XmlQualifiedName ^, System::ServiceModel::Description::ContractDescription ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -139,6 +149,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.KeyedByTypeCollection&lt;System.ServiceModel.Description.IPolicyImportExtension&gt; PolicyImportExtensions { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.KeyedByTypeCollection`1&lt;class System.ServiceModel.Description.IPolicyImportExtension&gt; PolicyImportExtensions" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.MetadataImporter.PolicyImportExtensions" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PolicyImportExtensions As KeyedByTypeCollection(Of IPolicyImportExtension)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::KeyedByTypeCollection&lt;System::ServiceModel::Description::IPolicyImportExtension ^&gt; ^ PolicyImportExtensions { System::Collections::Generic::KeyedByTypeCollection&lt;System::ServiceModel::Description::IPolicyImportExtension ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -164,6 +176,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.Dictionary&lt;object,object&gt; State { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.Dictionary`2&lt;object, object&gt; State" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.MetadataImporter.State" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property State As Dictionary(Of Object, Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::Dictionary&lt;System::Object ^, System::Object ^&gt; ^ State { System::Collections::Generic::Dictionary&lt;System::Object ^, System::Object ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

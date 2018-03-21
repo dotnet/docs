@@ -1,7 +1,9 @@
-<Type Name="ModelBinderProviderOptionsAttribute" FullName="System.Web.ModelBinding.ModelBinderProviderOptionsAttribute">
+﻿<Type Name="ModelBinderProviderOptionsAttribute" FullName="System.Web.ModelBinding.ModelBinderProviderOptionsAttribute">
   <TypeSignature Language="C#" Value="public sealed class ModelBinderProviderOptionsAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ModelBinderProviderOptionsAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.ModelBinderProviderOptionsAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ModelBinderProviderOptionsAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ModelBinderProviderOptionsAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +26,8 @@
       <MemberSignature Language="C#" Value="public ModelBinderProviderOptionsAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ModelBinderProviderOptionsAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ModelBinderProviderOptionsAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -39,6 +43,8 @@
       <MemberSignature Language="C#" Value="public bool FrontOfList { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool FrontOfList" />
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelBinderProviderOptionsAttribute.FrontOfList" />
+      <MemberSignature Language="VB.NET" Value="Public Property FrontOfList As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool FrontOfList { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

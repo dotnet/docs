@@ -1,7 +1,9 @@
-<Type Name="OperationCollection" FullName="System.Web.Services.Description.OperationCollection">
+﻿<Type Name="OperationCollection" FullName="System.Web.Services.Description.OperationCollection">
   <TypeSignature Language="C#" Value="public sealed class OperationCollection : System.Web.Services.Description.ServiceDescriptionBaseCollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit OperationCollection extends System.Web.Services.Description.ServiceDescriptionBaseCollection" />
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.OperationCollection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OperationCollection&#xA;Inherits ServiceDescriptionBaseCollection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class OperationCollection sealed : System::Web::Services::Description::ServiceDescriptionBaseCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -36,6 +38,7 @@
       <MemberSignature Language="C#" Value="public int Add (System.Web.Services.Description.Operation operation);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Add(class System.Web.Services.Description.Operation operation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.OperationCollection.Add(System.Web.Services.Description.Operation)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::Web::Services::Description::Operation ^ operation);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="C#" Value="public bool Contains (System.Web.Services.Description.Operation operation);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.Web.Services.Description.Operation operation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.OperationCollection.Contains(System.Web.Services.Description.Operation)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Web::Services::Description::Operation ^ operation);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -105,6 +109,8 @@
       <MemberSignature Language="C#" Value="public void CopyTo (System.Web.Services.Description.Operation[] array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.Web.Services.Description.Operation[] array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.OperationCollection.CopyTo(System.Web.Services.Description.Operation[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As Operation(), index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Web::Services::Description::Operation ^&gt; ^ array, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -140,6 +146,7 @@
       <MemberSignature Language="C#" Value="public int IndexOf (System.Web.Services.Description.Operation operation);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.Web.Services.Description.Operation operation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.OperationCollection.IndexOf(System.Web.Services.Description.Operation)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Web::Services::Description::Operation ^ operation);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -174,6 +181,7 @@
       <MemberSignature Language="C#" Value="public void Insert (int index, System.Web.Services.Description.Operation operation);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(int32 index, class System.Web.Services.Description.Operation operation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.OperationCollection.Insert(System.Int32,System.Web.Services.Description.Operation)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::Web::Services::Description::Operation ^ operation);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -218,6 +226,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Services.Description.Operation this[int index] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Description.Operation Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.OperationCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As Operation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Description::Operation ^ default[int] { System::Web::Services::Description::Operation ^ get(int index); void set(int index, System::Web::Services::Description::Operation ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -252,6 +262,7 @@
       <MemberSignature Language="C#" Value="public void Remove (System.Web.Services.Description.Operation operation);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Web.Services.Description.Operation operation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.OperationCollection.Remove(System.Web.Services.Description.Operation)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Web::Services::Description::Operation ^ operation);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -292,6 +303,8 @@
       <MemberSignature Language="C#" Value="protected override void SetParent (object value, object parent);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetParent(object value, object parent) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.OperationCollection.SetParent(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetParent (value As Object, parent As Object)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetParent(System::Object ^ value, System::Object ^ parent);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

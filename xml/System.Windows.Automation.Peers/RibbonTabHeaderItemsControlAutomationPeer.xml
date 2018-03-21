@@ -1,7 +1,9 @@
-<Type Name="RibbonTabHeaderItemsControlAutomationPeer" FullName="System.Windows.Automation.Peers.RibbonTabHeaderItemsControlAutomationPeer">
+﻿<Type Name="RibbonTabHeaderItemsControlAutomationPeer" FullName="System.Windows.Automation.Peers.RibbonTabHeaderItemsControlAutomationPeer">
   <TypeSignature Language="C#" Value="public class RibbonTabHeaderItemsControlAutomationPeer : System.Windows.Automation.Peers.ItemsControlAutomationPeer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RibbonTabHeaderItemsControlAutomationPeer extends System.Windows.Automation.Peers.ItemsControlAutomationPeer" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.RibbonTabHeaderItemsControlAutomationPeer" />
+  <TypeSignature Language="VB.NET" Value="Public Class RibbonTabHeaderItemsControlAutomationPeer&#xA;Inherits ItemsControlAutomationPeer" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RibbonTabHeaderItemsControlAutomationPeer : System::Windows::Automation::Peers::ItemsControlAutomationPeer" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public RibbonTabHeaderItemsControlAutomationPeer (System.Windows.Controls.Ribbon.RibbonTabHeaderItemsControl owner);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Controls.Ribbon.RibbonTabHeaderItemsControl owner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonTabHeaderItemsControlAutomationPeer.#ctor(System.Windows.Controls.Ribbon.RibbonTabHeaderItemsControl)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (owner As RibbonTabHeaderItemsControl)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RibbonTabHeaderItemsControlAutomationPeer(System::Windows::Controls::Ribbon::RibbonTabHeaderItemsControl ^ owner);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -37,6 +41,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.ItemAutomationPeer CreateItemAutomationPeer (object item);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Automation.Peers.ItemAutomationPeer CreateItemAutomationPeer(object item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonTabHeaderItemsControlAutomationPeer.CreateItemAutomationPeer(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateItemAutomationPeer (item As Object) As ItemAutomationPeer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::ItemAutomationPeer ^ CreateItemAutomationPeer(System::Object ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>

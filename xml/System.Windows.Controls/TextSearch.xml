@@ -1,7 +1,9 @@
-<Type Name="TextSearch" FullName="System.Windows.Controls.TextSearch">
+﻿<Type Name="TextSearch" FullName="System.Windows.Controls.TextSearch">
   <TypeSignature Language="C#" Value="public sealed class TextSearch : System.Windows.DependencyObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TextSearch extends System.Windows.DependencyObject" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.TextSearch" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TextSearch&#xA;Inherits DependencyObject" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TextSearch sealed : System::Windows::DependencyObject" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +46,8 @@
       <MemberSignature Language="C#" Value="public static string GetText (System.Windows.DependencyObject element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetText(class System.Windows.DependencyObject element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.TextSearch.GetText(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetText (element As DependencyObject) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetText(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -78,6 +82,8 @@
       <MemberSignature Language="C#" Value="public static string GetTextPath (System.Windows.DependencyObject element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetTextPath(class System.Windows.DependencyObject element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.TextSearch.GetTextPath(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetTextPath (element As DependencyObject) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetTextPath(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -112,6 +118,8 @@
       <MemberSignature Language="C#" Value="public static void SetText (System.Windows.DependencyObject element, string text);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetText(class System.Windows.DependencyObject element, string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.TextSearch.SetText(System.Windows.DependencyObject,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetText (element As DependencyObject, text As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetText(System::Windows::DependencyObject ^ element, System::String ^ text);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -135,6 +143,8 @@
       <MemberSignature Language="C#" Value="public static void SetTextPath (System.Windows.DependencyObject element, string path);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetTextPath(class System.Windows.DependencyObject element, string path) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.TextSearch.SetTextPath(System.Windows.DependencyObject,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetTextPath (element As DependencyObject, path As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetTextPath(System::Windows::DependencyObject ^ element, System::String ^ path);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -154,10 +164,42 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Text">
+      <MemberSignature Language="C#" Value="see GetText, and SetText" />
+      <MemberSignature Language="ILAsm" Value="see GetText, and SetText" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.TextSearch.Text" />
+      <MemberSignature Language="VB.NET" Value="see GetText, and SetText" />
+      <MemberType>AttachedProperty</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextPath">
+      <MemberSignature Language="C#" Value="see GetTextPath, and SetTextPath" />
+      <MemberSignature Language="ILAsm" Value="see GetTextPath, and SetTextPath" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.TextSearch.TextPath" />
+      <MemberSignature Language="VB.NET" Value="see GetTextPath, and SetTextPath" />
+      <MemberType>AttachedProperty</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="TextPathProperty">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty TextPathProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty TextPathProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.TextSearch.TextPathProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TextPathProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ TextPathProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -175,6 +217,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty TextProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty TextProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.TextSearch.TextProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TextProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ TextProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

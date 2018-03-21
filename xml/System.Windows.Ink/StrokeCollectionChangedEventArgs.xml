@@ -1,7 +1,9 @@
-<Type Name="StrokeCollectionChangedEventArgs" FullName="System.Windows.Ink.StrokeCollectionChangedEventArgs">
+﻿<Type Name="StrokeCollectionChangedEventArgs" FullName="System.Windows.Ink.StrokeCollectionChangedEventArgs">
   <TypeSignature Language="C#" Value="public class StrokeCollectionChangedEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StrokeCollectionChangedEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Ink.StrokeCollectionChangedEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class StrokeCollectionChangedEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StrokeCollectionChangedEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +28,8 @@
       <MemberSignature Language="C#" Value="public StrokeCollectionChangedEventArgs (System.Windows.Ink.StrokeCollection added, System.Windows.Ink.StrokeCollection removed);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Ink.StrokeCollection added, class System.Windows.Ink.StrokeCollection removed) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Ink.StrokeCollectionChangedEventArgs.#ctor(System.Windows.Ink.StrokeCollection,System.Windows.Ink.StrokeCollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (added As StrokeCollection, removed As StrokeCollection)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StrokeCollectionChangedEventArgs(System::Windows::Ink::StrokeCollection ^ added, System::Windows::Ink::StrokeCollection ^ removed);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -46,6 +50,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Ink.StrokeCollection Added { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Ink.StrokeCollection Added" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Ink.StrokeCollectionChangedEventArgs.Added" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Added As StrokeCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Ink::StrokeCollection ^ Added { System::Windows::Ink::StrokeCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -64,6 +70,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Ink.StrokeCollection Removed { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Ink.StrokeCollection Removed" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Ink.StrokeCollectionChangedEventArgs.Removed" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Removed As StrokeCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Ink::StrokeCollection ^ Removed { System::Windows::Ink::StrokeCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

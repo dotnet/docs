@@ -1,7 +1,9 @@
-<Type Name="SignInResponseMessage" FullName="System.IdentityModel.Services.SignInResponseMessage">
+﻿<Type Name="SignInResponseMessage" FullName="System.IdentityModel.Services.SignInResponseMessage">
   <TypeSignature Language="C#" Value="public class SignInResponseMessage : System.IdentityModel.Services.WSFederationMessage" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SignInResponseMessage extends System.IdentityModel.Services.WSFederationMessage" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Services.SignInResponseMessage" />
+  <TypeSignature Language="VB.NET" Value="Public Class SignInResponseMessage&#xA;Inherits WSFederationMessage" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SignInResponseMessage : System::IdentityModel::Services::WSFederationMessage" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,10 +30,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Services.SignInResponseMessage" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SignInResponseMessage (Uri baseUrl, string result);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri baseUrl, string result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.SignInResponseMessage.#ctor(System.Uri,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (baseUrl As Uri, result As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SignInResponseMessage(Uri ^ baseUrl, System::String ^ result);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -54,6 +67,8 @@
       <MemberSignature Language="C#" Value="public SignInResponseMessage (Uri baseUrl, Uri resultPtr);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri baseUrl, class System.Uri resultPtr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.SignInResponseMessage.#ctor(System.Uri,System.Uri)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (baseUrl As Uri, resultPtr As Uri)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SignInResponseMessage(Uri ^ baseUrl, Uri ^ resultPtr);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -76,6 +91,8 @@
       <MemberSignature Language="C#" Value="public SignInResponseMessage (Uri baseUrl, System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse response, System.IdentityModel.Services.WSFederationSerializer federationSerializer, System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri baseUrl, class System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse response, class System.IdentityModel.Services.WSFederationSerializer federationSerializer, class System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.SignInResponseMessage.#ctor(System.Uri,System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse,System.IdentityModel.Services.WSFederationSerializer,System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (baseUrl As Uri, response As RequestSecurityTokenResponse, federationSerializer As WSFederationSerializer, context As WSTrustSerializationContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SignInResponseMessage(Uri ^ baseUrl, System::IdentityModel::Protocols::WSTrust::RequestSecurityTokenResponse ^ response, System::IdentityModel::Services::WSFederationSerializer ^ federationSerializer, System::IdentityModel::Protocols::WSTrust::WSTrustSerializationContext ^ context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -114,6 +131,8 @@
       <MemberSignature Language="C#" Value="public string Result { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Result" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.SignInResponseMessage.Result" />
+      <MemberSignature Language="VB.NET" Value="Public Property Result As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Result { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -139,6 +158,8 @@
       <MemberSignature Language="C#" Value="public string ResultPtr { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ResultPtr" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.SignInResponseMessage.ResultPtr" />
+      <MemberSignature Language="VB.NET" Value="Public Property ResultPtr As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ResultPtr { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -165,6 +186,8 @@
       <MemberSignature Language="C#" Value="protected override void Validate ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Validate() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.SignInResponseMessage.Validate" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Validate ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Validate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -196,6 +219,8 @@
       <MemberSignature Language="C#" Value="public override void Write (System.IO.TextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(class System.IO.TextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.SignInResponseMessage.Write(System.IO.TextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (writer As TextWriter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::IO::TextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -222,14 +247,5 @@
           <paramref name="writer" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.IdentityModel.Services</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Services.SignInResponseMessage" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

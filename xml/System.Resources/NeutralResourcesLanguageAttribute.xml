@@ -1,7 +1,9 @@
-<Type Name="NeutralResourcesLanguageAttribute" FullName="System.Resources.NeutralResourcesLanguageAttribute">
+﻿<Type Name="NeutralResourcesLanguageAttribute" FullName="System.Resources.NeutralResourcesLanguageAttribute">
   <TypeSignature Language="C#" Value="public sealed class NeutralResourcesLanguageAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit NeutralResourcesLanguageAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Resources.NeutralResourcesLanguageAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class NeutralResourcesLanguageAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class NeutralResourcesLanguageAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Resources.ResourceManager</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -139,10 +141,22 @@ csc Example.cs /resource:ExampleResources.resources
     <altmember cref="P:System.Resources.ResourceManager.FallbackLocation" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Resources.ResourceManager</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Resources.NeutralResourcesLanguageAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public NeutralResourcesLanguageAttribute (string cultureName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string cultureName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.NeutralResourcesLanguageAttribute.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (cultureName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NeutralResourcesLanguageAttribute(System::String ^ cultureName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Resources.ResourceManager</AssemblyName>
@@ -180,6 +194,8 @@ csc Example.cs /resource:ExampleResources.resources
       <MemberSignature Language="C#" Value="public NeutralResourcesLanguageAttribute (string cultureName, System.Resources.UltimateResourceFallbackLocation location);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string cultureName, valuetype System.Resources.UltimateResourceFallbackLocation location) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.NeutralResourcesLanguageAttribute.#ctor(System.String,System.Resources.UltimateResourceFallbackLocation)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (cultureName As String, location As UltimateResourceFallbackLocation)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NeutralResourcesLanguageAttribute(System::String ^ cultureName, System::Resources::UltimateResourceFallbackLocation location);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -224,6 +240,8 @@ csc Example.cs /resource:ExampleResources.resources
       <MemberSignature Language="C#" Value="public string CultureName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CultureName" />
       <MemberSignature Language="DocId" Value="P:System.Resources.NeutralResourcesLanguageAttribute.CultureName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CultureName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CultureName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Resources.ResourceManager</AssemblyName>
@@ -260,6 +278,8 @@ csc Example.cs /resource:ExampleResources.resources
       <MemberSignature Language="C#" Value="public System.Resources.UltimateResourceFallbackLocation Location { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Resources.UltimateResourceFallbackLocation Location" />
       <MemberSignature Language="DocId" Value="P:System.Resources.NeutralResourcesLanguageAttribute.Location" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Location As UltimateResourceFallbackLocation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Resources::UltimateResourceFallbackLocation Location { System::Resources::UltimateResourceFallbackLocation get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -285,15 +305,5 @@ csc Example.cs /resource:ExampleResources.resources
         <altmember cref="P:System.Resources.ResourceManager.FallbackLocation" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Resources.ResourceManager</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Resources.NeutralResourcesLanguageAttribute" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

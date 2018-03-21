@@ -1,7 +1,9 @@
-<Type Name="ICscHostObject" FullName="Microsoft.Build.Tasks.Hosting.ICscHostObject">
+﻿<Type Name="ICscHostObject" FullName="Microsoft.Build.Tasks.Hosting.ICscHostObject">
   <TypeSignature Language="C#" Value="public interface ICscHostObject : Microsoft.Build.Framework.ITaskHost" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ICscHostObject implements class Microsoft.Build.Framework.ITaskHost" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Hosting.ICscHostObject" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ICscHostObject&#xA;Implements ITaskHost" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ICscHostObject : Microsoft::Build::Framework::ITaskHost" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,7 +21,7 @@
       <AttributeName>System.Runtime.InteropServices.Guid("8520CC4D-64DC-4855-BE3F-4C28CCE048EE")</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -38,6 +40,8 @@
       <MemberSignature Language="C#" Value="public void BeginInitialization ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void BeginInitialization() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.BeginInitialization" />
+      <MemberSignature Language="VB.NET" Value="Public Sub BeginInitialization ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void BeginInitialization();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -56,6 +60,8 @@
       <MemberSignature Language="C#" Value="public bool Compile ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Compile() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.Compile" />
+      <MemberSignature Language="VB.NET" Value="Public Function Compile () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Compile();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -76,6 +82,8 @@
       <MemberSignature Language="C#" Value="public bool EndInitialization (out string errorMessage, out int errorCode);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool EndInitialization([out] string&amp; errorMessage, [out] int32&amp; errorCode) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.EndInitialization(System.String@,System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EndInitialization (ByRef errorMessage As String, ByRef errorCode As Integer) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool EndInitialization([Runtime::InteropServices::Out] System::String ^ % errorMessage, [Runtime::InteropServices::Out] int % errorCode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -101,6 +109,8 @@
       <MemberSignature Language="C#" Value="public bool IsDesignTime ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsDesignTime() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.IsDesignTime" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsDesignTime () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsDesignTime();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -121,6 +131,8 @@
       <MemberSignature Language="C#" Value="public bool IsUpToDate ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsUpToDate() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.IsUpToDate" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsUpToDate () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsUpToDate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -141,6 +153,8 @@
       <MemberSignature Language="C#" Value="public bool SetAdditionalLibPaths (string[] additionalLibPaths);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SetAdditionalLibPaths(string[] additionalLibPaths) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetAdditionalLibPaths(System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetAdditionalLibPaths (additionalLibPaths As String()) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetAdditionalLibPaths(cli::array &lt;System::String ^&gt; ^ additionalLibPaths);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -164,6 +178,8 @@
       <MemberSignature Language="C#" Value="public bool SetAddModules (string[] addModules);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SetAddModules(string[] addModules) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetAddModules(System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetAddModules (addModules As String()) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetAddModules(cli::array &lt;System::String ^&gt; ^ addModules);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -187,6 +203,8 @@
       <MemberSignature Language="C#" Value="public bool SetAllowUnsafeBlocks (bool allowUnsafeBlocks);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SetAllowUnsafeBlocks(bool allowUnsafeBlocks) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetAllowUnsafeBlocks(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetAllowUnsafeBlocks (allowUnsafeBlocks As Boolean) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetAllowUnsafeBlocks(bool allowUnsafeBlocks);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -211,6 +229,8 @@
       <MemberSignature Language="C#" Value="public bool SetBaseAddress (string baseAddress);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SetBaseAddress(string baseAddress) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetBaseAddress(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetBaseAddress (baseAddress As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetBaseAddress(System::String ^ baseAddress);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -234,6 +254,8 @@
       <MemberSignature Language="C#" Value="public bool SetCheckForOverflowUnderflow (bool checkForOverflowUnderflow);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SetCheckForOverflowUnderflow(bool checkForOverflowUnderflow) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetCheckForOverflowUnderflow(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetCheckForOverflowUnderflow (checkForOverflowUnderflow As Boolean) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetCheckForOverflowUnderflow(bool checkForOverflowUnderflow);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -258,6 +280,8 @@
       <MemberSignature Language="C#" Value="public bool SetCodePage (int codePage);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SetCodePage(int32 codePage) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetCodePage(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetCodePage (codePage As Integer) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetCodePage(int codePage);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -281,6 +305,8 @@
       <MemberSignature Language="C#" Value="public bool SetDebugType (string debugType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SetDebugType(string debugType) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetDebugType(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetDebugType (debugType As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetDebugType(System::String ^ debugType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -304,6 +330,8 @@
       <MemberSignature Language="C#" Value="public bool SetDefineConstants (string defineConstants);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SetDefineConstants(string defineConstants) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetDefineConstants(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetDefineConstants (defineConstants As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetDefineConstants(System::String ^ defineConstants);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -327,6 +355,8 @@
       <MemberSignature Language="C#" Value="public bool SetDelaySign (bool delaySignExplicitlySet, bool delaySign);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SetDelaySign(bool delaySignExplicitlySet, bool delaySign) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetDelaySign(System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetDelaySign (delaySignExplicitlySet As Boolean, delaySign As Boolean) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetDelaySign(bool delaySignExplicitlySet, bool delaySign);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -354,6 +384,8 @@
       <MemberSignature Language="C#" Value="public bool SetDisabledWarnings (string disabledWarnings);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SetDisabledWarnings(string disabledWarnings) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetDisabledWarnings(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetDisabledWarnings (disabledWarnings As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetDisabledWarnings(System::String ^ disabledWarnings);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -377,6 +409,8 @@
       <MemberSignature Language="C#" Value="public bool SetDocumentationFile (string documentationFile);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SetDocumentationFile(string documentationFile) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetDocumentationFile(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetDocumentationFile (documentationFile As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetDocumentationFile(System::String ^ documentationFile);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -400,6 +434,8 @@
       <MemberSignature Language="C#" Value="public bool SetEmitDebugInformation (bool emitDebugInformation);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SetEmitDebugInformation(bool emitDebugInformation) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetEmitDebugInformation(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetEmitDebugInformation (emitDebugInformation As Boolean) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetEmitDebugInformation(bool emitDebugInformation);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -424,6 +460,8 @@
       <MemberSignature Language="C#" Value="public bool SetErrorReport (string errorReport);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SetErrorReport(string errorReport) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetErrorReport(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetErrorReport (errorReport As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetErrorReport(System::String ^ errorReport);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -447,6 +485,8 @@
       <MemberSignature Language="C#" Value="public bool SetFileAlignment (int fileAlignment);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SetFileAlignment(int32 fileAlignment) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetFileAlignment(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetFileAlignment (fileAlignment As Integer) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetFileAlignment(int fileAlignment);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -470,6 +510,8 @@
       <MemberSignature Language="C#" Value="public bool SetGenerateFullPaths (bool generateFullPaths);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SetGenerateFullPaths(bool generateFullPaths) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetGenerateFullPaths(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetGenerateFullPaths (generateFullPaths As Boolean) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetGenerateFullPaths(bool generateFullPaths);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -494,6 +536,8 @@
       <MemberSignature Language="C#" Value="public bool SetKeyContainer (string keyContainer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SetKeyContainer(string keyContainer) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetKeyContainer(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetKeyContainer (keyContainer As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetKeyContainer(System::String ^ keyContainer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -517,6 +561,8 @@
       <MemberSignature Language="C#" Value="public bool SetKeyFile (string keyFile);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SetKeyFile(string keyFile) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetKeyFile(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetKeyFile (keyFile As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetKeyFile(System::String ^ keyFile);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -540,6 +586,8 @@
       <MemberSignature Language="C#" Value="public bool SetLangVersion (string langVersion);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SetLangVersion(string langVersion) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetLangVersion(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetLangVersion (langVersion As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetLangVersion(System::String ^ langVersion);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -563,6 +611,8 @@
       <MemberSignature Language="C#" Value="public bool SetLinkResources (Microsoft.Build.Framework.ITaskItem[] linkResources);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SetLinkResources(class Microsoft.Build.Framework.ITaskItem[] linkResources) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetLinkResources(Microsoft.Build.Framework.ITaskItem[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetLinkResources (linkResources As ITaskItem()) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetLinkResources(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ linkResources);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -586,6 +636,8 @@
       <MemberSignature Language="C#" Value="public bool SetMainEntryPoint (string targetType, string mainEntryPoint);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SetMainEntryPoint(string targetType, string mainEntryPoint) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetMainEntryPoint(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetMainEntryPoint (targetType As String, mainEntryPoint As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetMainEntryPoint(System::String ^ targetType, System::String ^ mainEntryPoint);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -611,6 +663,8 @@
       <MemberSignature Language="C#" Value="public bool SetModuleAssemblyName (string moduleAssemblyName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SetModuleAssemblyName(string moduleAssemblyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetModuleAssemblyName(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetModuleAssemblyName (moduleAssemblyName As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetModuleAssemblyName(System::String ^ moduleAssemblyName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -634,6 +688,8 @@
       <MemberSignature Language="C#" Value="public bool SetNoConfig (bool noConfig);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SetNoConfig(bool noConfig) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetNoConfig(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetNoConfig (noConfig As Boolean) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetNoConfig(bool noConfig);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -658,6 +714,8 @@
       <MemberSignature Language="C#" Value="public bool SetNoStandardLib (bool noStandardLib);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SetNoStandardLib(bool noStandardLib) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetNoStandardLib(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetNoStandardLib (noStandardLib As Boolean) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetNoStandardLib(bool noStandardLib);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -682,6 +740,8 @@
       <MemberSignature Language="C#" Value="public bool SetOptimize (bool optimize);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SetOptimize(bool optimize) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetOptimize(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetOptimize (optimize As Boolean) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetOptimize(bool optimize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -706,6 +766,8 @@
       <MemberSignature Language="C#" Value="public bool SetOutputAssembly (string outputAssembly);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SetOutputAssembly(string outputAssembly) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetOutputAssembly(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetOutputAssembly (outputAssembly As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetOutputAssembly(System::String ^ outputAssembly);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -729,6 +791,8 @@
       <MemberSignature Language="C#" Value="public bool SetPdbFile (string pdbFile);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SetPdbFile(string pdbFile) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetPdbFile(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetPdbFile (pdbFile As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetPdbFile(System::String ^ pdbFile);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -752,6 +816,8 @@
       <MemberSignature Language="C#" Value="public bool SetPlatform (string platform);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SetPlatform(string platform) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetPlatform(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetPlatform (platform As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetPlatform(System::String ^ platform);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -775,6 +841,8 @@
       <MemberSignature Language="C#" Value="public bool SetReferences (Microsoft.Build.Framework.ITaskItem[] references);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SetReferences(class Microsoft.Build.Framework.ITaskItem[] references) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetReferences(Microsoft.Build.Framework.ITaskItem[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetReferences (references As ITaskItem()) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetReferences(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ references);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -798,6 +866,8 @@
       <MemberSignature Language="C#" Value="public bool SetResources (Microsoft.Build.Framework.ITaskItem[] resources);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SetResources(class Microsoft.Build.Framework.ITaskItem[] resources) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetResources(Microsoft.Build.Framework.ITaskItem[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetResources (resources As ITaskItem()) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetResources(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ resources);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -821,6 +891,8 @@
       <MemberSignature Language="C#" Value="public bool SetResponseFiles (Microsoft.Build.Framework.ITaskItem[] responseFiles);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SetResponseFiles(class Microsoft.Build.Framework.ITaskItem[] responseFiles) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetResponseFiles(Microsoft.Build.Framework.ITaskItem[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetResponseFiles (responseFiles As ITaskItem()) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetResponseFiles(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ responseFiles);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -844,6 +916,8 @@
       <MemberSignature Language="C#" Value="public bool SetSources (Microsoft.Build.Framework.ITaskItem[] sources);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SetSources(class Microsoft.Build.Framework.ITaskItem[] sources) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetSources(Microsoft.Build.Framework.ITaskItem[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetSources (sources As ITaskItem()) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetSources(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ sources);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -867,6 +941,8 @@
       <MemberSignature Language="C#" Value="public bool SetTargetType (string targetType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SetTargetType(string targetType) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetTargetType(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetTargetType (targetType As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetTargetType(System::String ^ targetType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -890,6 +966,8 @@
       <MemberSignature Language="C#" Value="public bool SetTreatWarningsAsErrors (bool treatWarningsAsErrors);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SetTreatWarningsAsErrors(bool treatWarningsAsErrors) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetTreatWarningsAsErrors(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetTreatWarningsAsErrors (treatWarningsAsErrors As Boolean) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetTreatWarningsAsErrors(bool treatWarningsAsErrors);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -914,6 +992,8 @@
       <MemberSignature Language="C#" Value="public bool SetWarningLevel (int warningLevel);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SetWarningLevel(int32 warningLevel) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetWarningLevel(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetWarningLevel (warningLevel As Integer) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetWarningLevel(int warningLevel);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -937,6 +1017,8 @@
       <MemberSignature Language="C#" Value="public bool SetWarningsAsErrors (string warningsAsErrors);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SetWarningsAsErrors(string warningsAsErrors) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetWarningsAsErrors(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetWarningsAsErrors (warningsAsErrors As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetWarningsAsErrors(System::String ^ warningsAsErrors);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -960,6 +1042,8 @@
       <MemberSignature Language="C#" Value="public bool SetWarningsNotAsErrors (string warningsNotAsErrors);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SetWarningsNotAsErrors(string warningsNotAsErrors) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetWarningsNotAsErrors(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetWarningsNotAsErrors (warningsNotAsErrors As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetWarningsNotAsErrors(System::String ^ warningsNotAsErrors);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -983,6 +1067,8 @@
       <MemberSignature Language="C#" Value="public bool SetWin32Icon (string win32Icon);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SetWin32Icon(string win32Icon) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetWin32Icon(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetWin32Icon (win32Icon As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetWin32Icon(System::String ^ win32Icon);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -1006,6 +1092,8 @@
       <MemberSignature Language="C#" Value="public bool SetWin32Resource (string win32Resource);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SetWin32Resource(string win32Resource) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetWin32Resource(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetWin32Resource (win32Resource As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetWin32Resource(System::String ^ win32Resource);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

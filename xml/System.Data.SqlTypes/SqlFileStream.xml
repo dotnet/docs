@@ -1,7 +1,9 @@
-<Type Name="SqlFileStream" FullName="System.Data.SqlTypes.SqlFileStream">
+﻿<Type Name="SqlFileStream" FullName="System.Data.SqlTypes.SqlFileStream">
   <TypeSignature Language="C#" Value="public sealed class SqlFileStream : System.IO.Stream" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SqlFileStream extends System.IO.Stream" />
   <TypeSignature Language="DocId" Value="T:System.Data.SqlTypes.SqlFileStream" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SqlFileStream&#xA;Inherits Stream" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SqlFileStream sealed : System::IO::Stream" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +64,8 @@
       <MemberSignature Language="C#" Value="public SqlFileStream (string path, byte[] transactionContext, System.IO.FileAccess access);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string path, unsigned int8[] transactionContext, valuetype System.IO.FileAccess access) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlFileStream.#ctor(System.String,System.Byte[],System.IO.FileAccess)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (path As String, transactionContext As Byte(), access As FileAccess)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlFileStream(System::String ^ path, cli::array &lt;System::Byte&gt; ^ transactionContext, System::IO::FileAccess access);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -113,6 +117,8 @@
       <MemberSignature Language="C#" Value="public SqlFileStream (string path, byte[] transactionContext, System.IO.FileAccess access, System.IO.FileOptions options, long allocationSize);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string path, unsigned int8[] transactionContext, valuetype System.IO.FileAccess access, valuetype System.IO.FileOptions options, int64 allocationSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlFileStream.#ctor(System.String,System.Byte[],System.IO.FileAccess,System.IO.FileOptions,System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (path As String, transactionContext As Byte(), access As FileAccess, options As FileOptions, allocationSize As Long)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlFileStream(System::String ^ path, cli::array &lt;System::Byte&gt; ^ transactionContext, System::IO::FileAccess access, System::IO::FileOptions options, long allocationSize);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -168,6 +174,8 @@
       <MemberSignature Language="C#" Value="public override IAsyncResult BeginRead (byte[] buffer, int offset, int count, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.IAsyncResult BeginRead(unsigned int8[] buffer, int32 offset, int32 count, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlFileStream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function BeginRead (buffer As Byte(), offset As Integer, count As Integer, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override IAsyncResult ^ BeginRead(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -206,6 +214,8 @@
       <MemberSignature Language="C#" Value="public override IAsyncResult BeginWrite (byte[] buffer, int offset, int count, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.IAsyncResult BeginWrite(unsigned int8[] buffer, int32 offset, int32 count, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlFileStream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function BeginWrite (buffer As Byte(), offset As Integer, count As Integer, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override IAsyncResult ^ BeginWrite(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -244,6 +254,8 @@
       <MemberSignature Language="C#" Value="public override bool CanRead { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanRead" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlTypes.SqlFileStream.CanRead" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanRead As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanRead { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -263,6 +275,8 @@
       <MemberSignature Language="C#" Value="public override bool CanSeek { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanSeek" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlTypes.SqlFileStream.CanSeek" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanSeek As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanSeek { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -282,6 +296,8 @@
       <MemberSignature Language="C#" Value="public override bool CanTimeout { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanTimeout" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlTypes.SqlFileStream.CanTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanTimeout As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanTimeout { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -306,6 +322,8 @@
       <MemberSignature Language="C#" Value="public override bool CanWrite { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanWrite" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlTypes.SqlFileStream.CanWrite" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanWrite As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanWrite { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -325,6 +343,8 @@
       <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlFileStream.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -346,6 +366,8 @@
       <MemberSignature Language="C#" Value="public override int EndRead (IAsyncResult asyncResult);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 EndRead(class System.IAsyncResult asyncResult) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlFileStream.EndRead(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function EndRead (asyncResult As IAsyncResult) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int EndRead(IAsyncResult ^ asyncResult);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -369,6 +391,8 @@
       <MemberSignature Language="C#" Value="public override void EndWrite (IAsyncResult asyncResult);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void EndWrite(class System.IAsyncResult asyncResult) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlFileStream.EndWrite(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub EndWrite (asyncResult As IAsyncResult)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void EndWrite(IAsyncResult ^ asyncResult);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -391,6 +415,8 @@
       <MemberSignature Language="C#" Value="~SqlFileStream ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlFileStream.Finalize" />
+      <MemberSignature Language="VB.NET" Value="Finalize ()" />
+      <MemberSignature Language="C++ CLI" Value="!SqlFileStream ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -409,6 +435,8 @@
       <MemberSignature Language="C#" Value="public override void Flush ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Flush() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlFileStream.Flush" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Flush ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Flush();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -427,6 +455,8 @@
       <MemberSignature Language="C#" Value="public override long Length { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 Length" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlTypes.SqlFileStream.Length" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Length As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property long Length { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -445,6 +475,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlTypes.SqlFileStream.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -463,6 +495,8 @@
       <MemberSignature Language="C#" Value="public override long Position { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 Position" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlTypes.SqlFileStream.Position" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Position As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property long Position { long get(); void set(long value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -481,6 +515,8 @@
       <MemberSignature Language="C#" Value="public override int Read (byte[] buffer, int offset, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 Read([out] unsigned int8[] buffer, int32 offset, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlFileStream.Read(System.Byte[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Read (buffer As Byte(), offset As Integer, count As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int Read(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -515,6 +551,8 @@
       <MemberSignature Language="C#" Value="public override int ReadByte ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 ReadByte() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlFileStream.ReadByte" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ReadByte () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int ReadByte();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -542,6 +580,8 @@
       <MemberSignature Language="C#" Value="public override int ReadTimeout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ReadTimeout" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlTypes.SqlFileStream.ReadTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property ReadTimeout As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int ReadTimeout { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -565,6 +605,8 @@
       <MemberSignature Language="C#" Value="public override long Seek (long offset, System.IO.SeekOrigin origin);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int64 Seek(int64 offset, valuetype System.IO.SeekOrigin origin) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlFileStream.Seek(System.Int64,System.IO.SeekOrigin)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Seek (offset As Long, origin As SeekOrigin) As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override long Seek(long offset, System::IO::SeekOrigin origin);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -589,6 +631,8 @@
       <MemberSignature Language="C#" Value="public override void SetLength (long value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetLength(int64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlFileStream.SetLength(System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetLength (value As Long)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SetLength(long value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -618,6 +662,8 @@
       <MemberSignature Language="C#" Value="public byte[] TransactionContext { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] TransactionContext" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlTypes.SqlFileStream.TransactionContext" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TransactionContext As Byte()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Byte&gt; ^ TransactionContext { cli::array &lt;System::Byte&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -636,6 +682,8 @@
       <MemberSignature Language="C#" Value="public override void Write (byte[] buffer, int offset, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(unsigned int8[] buffer, int32 offset, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlFileStream.Write(System.Byte[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (buffer As Byte(), offset As Integer, count As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -669,6 +717,8 @@
       <MemberSignature Language="C#" Value="public override void WriteByte (byte value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteByte(unsigned int8 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlFileStream.WriteByte(System.Byte)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteByte (value As Byte)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteByte(System::Byte value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -698,6 +748,8 @@
       <MemberSignature Language="C#" Value="public override int WriteTimeout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 WriteTimeout" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlTypes.SqlFileStream.WriteTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property WriteTimeout As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int WriteTimeout { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

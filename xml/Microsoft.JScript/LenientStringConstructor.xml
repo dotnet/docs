@@ -1,7 +1,9 @@
-<Type Name="LenientStringConstructor" FullName="Microsoft.JScript.LenientStringConstructor">
+﻿<Type Name="LenientStringConstructor" FullName="Microsoft.JScript.LenientStringConstructor">
   <TypeSignature Language="C#" Value="public class LenientStringConstructor : Microsoft.JScript.StringConstructor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LenientStringConstructor extends Microsoft.JScript.StringConstructor" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.LenientStringConstructor" />
+  <TypeSignature Language="VB.NET" Value="Public Class LenientStringConstructor&#xA;Inherits StringConstructor" />
+  <TypeSignature Language="C++ CLI" Value="public ref class LenientStringConstructor : Microsoft::JScript::StringConstructor" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -22,6 +24,8 @@
       <MemberSignature Language="C#" Value="public object fromCharCode;" />
       <MemberSignature Language="ILAsm" Value=".field public object fromCharCode" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientStringConstructor.fromCharCode" />
+      <MemberSignature Language="VB.NET" Value="Public fromCharCode As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ fromCharCode;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="XamlSchemaContext" FullName="System.Xaml.XamlSchemaContext">
+﻿<Type Name="XamlSchemaContext" FullName="System.Xaml.XamlSchemaContext">
   <TypeSignature Language="C#" Value="public class XamlSchemaContext" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XamlSchemaContext extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Xaml.XamlSchemaContext" />
+  <TypeSignature Language="VB.NET" Value="Public Class XamlSchemaContext" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XamlSchemaContext" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,10 +31,21 @@
     </block>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlSchemaContext" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public XamlSchemaContext ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlSchemaContext.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlSchemaContext();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -48,6 +61,8 @@
       <MemberSignature Language="C#" Value="public XamlSchemaContext (System.Collections.Generic.IEnumerable&lt;System.Reflection.Assembly&gt; referenceAssemblies);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;class System.Reflection.Assembly&gt; referenceAssemblies) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlSchemaContext.#ctor(System.Collections.Generic.IEnumerable{System.Reflection.Assembly})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (referenceAssemblies As IEnumerable(Of Assembly))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlSchemaContext(System::Collections::Generic::IEnumerable&lt;System::Reflection::Assembly ^&gt; ^ referenceAssemblies);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -66,6 +81,8 @@
       <MemberSignature Language="C#" Value="public XamlSchemaContext (System.Xaml.XamlSchemaContextSettings settings);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xaml.XamlSchemaContextSettings settings) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlSchemaContext.#ctor(System.Xaml.XamlSchemaContextSettings)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (settings As XamlSchemaContextSettings)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlSchemaContext(System::Xaml::XamlSchemaContextSettings ^ settings);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -91,6 +108,8 @@
       <MemberSignature Language="C#" Value="public XamlSchemaContext (System.Collections.Generic.IEnumerable&lt;System.Reflection.Assembly&gt; referenceAssemblies, System.Xaml.XamlSchemaContextSettings settings);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;class System.Reflection.Assembly&gt; referenceAssemblies, class System.Xaml.XamlSchemaContextSettings settings) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlSchemaContext.#ctor(System.Collections.Generic.IEnumerable{System.Reflection.Assembly},System.Xaml.XamlSchemaContextSettings)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (referenceAssemblies As IEnumerable(Of Assembly), settings As XamlSchemaContextSettings)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlSchemaContext(System::Collections::Generic::IEnumerable&lt;System::Reflection::Assembly ^&gt; ^ referenceAssemblies, System::Xaml::XamlSchemaContextSettings ^ settings);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -111,6 +130,8 @@
       <MemberSignature Language="C#" Value="~XamlSchemaContext ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlSchemaContext.Finalize" />
+      <MemberSignature Language="VB.NET" Value="Finalize ()" />
+      <MemberSignature Language="C++ CLI" Value="!XamlSchemaContext ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -138,6 +159,8 @@
       <MemberSignature Language="C#" Value="public bool FullyQualifyAssemblyNamesInClrNamespaces { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool FullyQualifyAssemblyNamesInClrNamespaces" />
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlSchemaContext.FullyQualifyAssemblyNamesInClrNamespaces" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FullyQualifyAssemblyNamesInClrNamespaces As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool FullyQualifyAssemblyNamesInClrNamespaces { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -166,6 +189,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerable&lt;string&gt; GetAllXamlNamespaces ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;string&gt; GetAllXamlNamespaces() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlSchemaContext.GetAllXamlNamespaces" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAllXamlNamespaces () As IEnumerable(Of String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ GetAllXamlNamespaces();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -192,6 +217,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.ICollection&lt;System.Xaml.XamlType&gt; GetAllXamlTypes (string xamlNamespace);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.ICollection`1&lt;class System.Xaml.XamlType&gt; GetAllXamlTypes(string xamlNamespace) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlSchemaContext.GetAllXamlTypes(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAllXamlTypes (xamlNamespace As String) As ICollection(Of XamlType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::ICollection&lt;System::Xaml::XamlType ^&gt; ^ GetAllXamlTypes(System::String ^ xamlNamespace);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -214,6 +241,8 @@
       <MemberSignature Language="C#" Value="public virtual string GetPreferredPrefix (string xmlns);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetPreferredPrefix(string xmlns) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlSchemaContext.GetPreferredPrefix(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetPreferredPrefix (xmlns As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetPreferredPrefix(System::String ^ xmlns);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -244,9 +273,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetValueConverter&lt;TConverterBase&gt;">
-      <MemberSignature Language="C#" Value="protected System.Xaml.Schema.XamlValueConverter&lt;TConverterBase&gt; GetValueConverter&lt;TConverterBase&gt; (Type converterType, System.Xaml.XamlType targetType) where TConverterBase : class;" />
+      <MemberSignature Language="C#" Value="protected internal System.Xaml.Schema.XamlValueConverter&lt;TConverterBase&gt; GetValueConverter&lt;TConverterBase&gt; (Type converterType, System.Xaml.XamlType targetType) where TConverterBase : class;" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance class System.Xaml.Schema.XamlValueConverter`1&lt;!!TConverterBase&gt; GetValueConverter&lt;class TConverterBase&gt;(class System.Type converterType, class System.Xaml.XamlType targetType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlSchemaContext.GetValueConverter``1(System.Type,System.Xaml.XamlType)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Function GetValueConverter(Of TConverterBase As Class) (converterType As Type, targetType As XamlType) As XamlValueConverter(Of TConverterBase)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA;generic &lt;typename TConverterBase&gt;&#xA; where TConverterBase : class System::Xaml::Schema::XamlValueConverter&lt;TConverterBase&gt; ^ GetValueConverter(Type ^ converterType, System::Xaml::XamlType ^ targetType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -279,6 +310,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Xaml.XamlDirective GetXamlDirective (string xamlNamespace, string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Xaml.XamlDirective GetXamlDirective(string xamlNamespace, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlSchemaContext.GetXamlDirective(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetXamlDirective (xamlNamespace As String, name As String) As XamlDirective" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Xaml::XamlDirective ^ GetXamlDirective(System::String ^ xamlNamespace, System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -308,10 +341,20 @@
           <paramref name="xamlNamespace" /> or <paramref name="name" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetXamlType">
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a <see cref="T:System.Xaml.XamlType" /> that is based on either a CLR or XAML type identifier.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetXamlType">
       <MemberSignature Language="C#" Value="public virtual System.Xaml.XamlType GetXamlType (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Xaml.XamlType GetXamlType(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlSchemaContext.GetXamlType(System.Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Xaml::XamlType ^ GetXamlType(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -343,6 +386,7 @@
       <MemberSignature Language="C#" Value="public System.Xaml.XamlType GetXamlType (System.Xaml.Schema.XamlTypeName xamlTypeName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xaml.XamlType GetXamlType(class System.Xaml.Schema.XamlTypeName xamlTypeName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlSchemaContext.GetXamlType(System.Xaml.Schema.XamlTypeName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xaml::XamlType ^ GetXamlType(System::Xaml::Schema::XamlTypeName ^ xamlTypeName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -366,9 +410,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetXamlType">
-      <MemberSignature Language="C#" Value="protected virtual System.Xaml.XamlType GetXamlType (string xamlNamespace, string name, params System.Xaml.XamlType[] typeArguments);" />
+      <MemberSignature Language="C#" Value="protected internal virtual System.Xaml.XamlType GetXamlType (string xamlNamespace, string name, params System.Xaml.XamlType[] typeArguments);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.Xaml.XamlType GetXamlType(string xamlNamespace, string name, class System.Xaml.XamlType[] typeArguments) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlSchemaContext.GetXamlType(System.String,System.String,System.Xaml.XamlType[])" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function GetXamlType (xamlNamespace As String, name As String, ParamArray typeArguments As XamlType()) As XamlType" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::Xaml::XamlType ^ GetXamlType(System::String ^ xamlNamespace, System::String ^ name, ... cli::array &lt;System::Xaml::XamlType ^&gt; ^ typeArguments);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -398,9 +444,11 @@
       </Docs>
     </Member>
     <Member MemberName="OnAssemblyResolve">
-      <MemberSignature Language="C#" Value="protected virtual System.Reflection.Assembly OnAssemblyResolve (string assemblyName);" />
+      <MemberSignature Language="C#" Value="protected internal virtual System.Reflection.Assembly OnAssemblyResolve (string assemblyName);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.Reflection.Assembly OnAssemblyResolve(string assemblyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlSchemaContext.OnAssemblyResolve(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function OnAssemblyResolve (assemblyName As String) As Assembly" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::Reflection::Assembly ^ OnAssemblyResolve(System::String ^ assemblyName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -432,6 +480,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;System.Reflection.Assembly&gt; ReferenceAssemblies { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class System.Reflection.Assembly&gt; ReferenceAssemblies" />
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlSchemaContext.ReferenceAssemblies" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReferenceAssemblies As IList(Of Assembly)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::Reflection::Assembly ^&gt; ^ ReferenceAssemblies { System::Collections::Generic::IList&lt;System::Reflection::Assembly ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -450,6 +500,8 @@
       <MemberSignature Language="C#" Value="public bool SupportMarkupExtensionsWithDuplicateArity { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SupportMarkupExtensionsWithDuplicateArity" />
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlSchemaContext.SupportMarkupExtensionsWithDuplicateArity" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SupportMarkupExtensionsWithDuplicateArity As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SupportMarkupExtensionsWithDuplicateArity { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -480,6 +532,8 @@
       <MemberSignature Language="C#" Value="public virtual bool TryGetCompatibleXamlNamespace (string xamlNamespace, out string compatibleNamespace);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetCompatibleXamlNamespace(string xamlNamespace, [out] string&amp; compatibleNamespace) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlSchemaContext.TryGetCompatibleXamlNamespace(System.String,System.String@)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function TryGetCompatibleXamlNamespace (xamlNamespace As String, ByRef compatibleNamespace As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool TryGetCompatibleXamlNamespace(System::String ^ xamlNamespace, [Runtime::InteropServices::Out] System::String ^ % compatibleNamespace);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -516,23 +570,5 @@
           <paramref name="xamlNamespace" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Xaml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlSchemaContext" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetXamlType">
-      <AssemblyInfo>
-        <AssemblyName>System.Xaml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a <see cref="T:System.Xaml.XamlType" /> that is based on either a CLR or XAML type identifier.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,9 @@
-<Type Name="X509Store" FullName="System.Security.Cryptography.X509Certificates.X509Store">
+﻿<Type Name="X509Store" FullName="System.Security.Cryptography.X509Certificates.X509Store">
   <TypeSignature Language="C#" Value="public sealed class X509Store : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit X509Store extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.X509Certificates.X509Store" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class X509Store&#xA;Implements IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class X509Store sealed : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -66,10 +68,23 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.X509Certificates.X509Store" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public X509Store ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Store.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; X509Store();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -113,6 +128,8 @@
       <MemberSignature Language="C#" Value="public X509Store (IntPtr storeHandle);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(native int storeHandle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Store.#ctor(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (storeHandle As IntPtr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; X509Store(IntPtr storeHandle);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -157,6 +174,7 @@
       <MemberSignature Language="C#" Value="public X509Store (System.Security.Cryptography.X509Certificates.StoreLocation storeLocation);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Cryptography.X509Certificates.StoreLocation storeLocation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Store.#ctor(System.Security.Cryptography.X509Certificates.StoreLocation)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; X509Store(System::Security::Cryptography::X509Certificates::StoreLocation storeLocation);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -201,6 +219,7 @@
       <MemberSignature Language="C#" Value="public X509Store (System.Security.Cryptography.X509Certificates.StoreName storeName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Cryptography.X509Certificates.StoreName storeName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Store.#ctor(System.Security.Cryptography.X509Certificates.StoreName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; X509Store(System::Security::Cryptography::X509Certificates::StoreName storeName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -245,6 +264,8 @@
       <MemberSignature Language="C#" Value="public X509Store (string storeName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string storeName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Store.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (storeName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; X509Store(System::String ^ storeName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -289,6 +310,7 @@
       <MemberSignature Language="C#" Value="public X509Store (System.Security.Cryptography.X509Certificates.StoreName storeName, System.Security.Cryptography.X509Certificates.StoreLocation storeLocation);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Cryptography.X509Certificates.StoreName storeName, valuetype System.Security.Cryptography.X509Certificates.StoreLocation storeLocation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Store.#ctor(System.Security.Cryptography.X509Certificates.StoreName,System.Security.Cryptography.X509Certificates.StoreLocation)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; X509Store(System::Security::Cryptography::X509Certificates::StoreName storeName, System::Security::Cryptography::X509Certificates::StoreLocation storeLocation);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -339,6 +361,7 @@
       <MemberSignature Language="C#" Value="public X509Store (string storeName, System.Security.Cryptography.X509Certificates.StoreLocation storeLocation);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string storeName, valuetype System.Security.Cryptography.X509Certificates.StoreLocation storeLocation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Store.#ctor(System.String,System.Security.Cryptography.X509Certificates.StoreLocation)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; X509Store(System::String ^ storeName, System::Security::Cryptography::X509Certificates::StoreLocation storeLocation);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -389,6 +412,7 @@
       <MemberSignature Language="C#" Value="public X509Store (System.Security.Cryptography.X509Certificates.StoreName storeName, System.Security.Cryptography.X509Certificates.StoreLocation storeLocation, System.Security.Cryptography.X509Certificates.OpenFlags flags);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Cryptography.X509Certificates.StoreName storeName, valuetype System.Security.Cryptography.X509Certificates.StoreLocation storeLocation, valuetype System.Security.Cryptography.X509Certificates.OpenFlags flags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Store.#ctor(System.Security.Cryptography.X509Certificates.StoreName,System.Security.Cryptography.X509Certificates.StoreLocation,System.Security.Cryptography.X509Certificates.OpenFlags)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; X509Store(System::Security::Cryptography::X509Certificates::StoreName storeName, System::Security::Cryptography::X509Certificates::StoreLocation storeLocation, System::Security::Cryptography::X509Certificates::OpenFlags flags);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -411,6 +435,7 @@
       <MemberSignature Language="C#" Value="public X509Store (string storeName, System.Security.Cryptography.X509Certificates.StoreLocation storeLocation, System.Security.Cryptography.X509Certificates.OpenFlags flags);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string storeName, valuetype System.Security.Cryptography.X509Certificates.StoreLocation storeLocation, valuetype System.Security.Cryptography.X509Certificates.OpenFlags flags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Store.#ctor(System.String,System.Security.Cryptography.X509Certificates.StoreLocation,System.Security.Cryptography.X509Certificates.OpenFlags)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; X509Store(System::String ^ storeName, System::Security::Cryptography::X509Certificates::StoreLocation storeLocation, System::Security::Cryptography::X509Certificates::OpenFlags flags);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -433,6 +458,8 @@
       <MemberSignature Language="C#" Value="public void Add (System.Security.Cryptography.X509Certificates.X509Certificate2 certificate);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Security.Cryptography.X509Certificates.X509Certificate2 certificate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Store.Add(System.Security.Cryptography.X509Certificates.X509Certificate2)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (certificate As X509Certificate2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Security::Cryptography::X509Certificates::X509Certificate2 ^ certificate);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -485,6 +512,8 @@
       <MemberSignature Language="C#" Value="public void AddRange (System.Security.Cryptography.X509Certificates.X509Certificate2Collection certificates);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddRange(class System.Security.Cryptography.X509Certificates.X509Certificate2Collection certificates) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Store.AddRange(System.Security.Cryptography.X509Certificates.X509Certificate2Collection)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddRange (certificates As X509Certificate2Collection)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(System::Security::Cryptography::X509Certificates::X509Certificate2Collection ^ certificates);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -540,6 +569,8 @@
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.X509Certificates.X509Certificate2Collection Certificates { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.X509Certificates.X509Certificate2Collection Certificates" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.X509Certificates.X509Store.Certificates" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Certificates As X509Certificate2Collection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::X509Certificates::X509Certificate2Collection ^ Certificates { System::Security::Cryptography::X509Certificates::X509Certificate2Collection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -601,6 +632,8 @@
       <MemberSignature Language="C#" Value="public void Close ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Close() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Store.Close" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Close ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Close();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -644,7 +677,12 @@
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Store.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -682,6 +720,8 @@
       <MemberSignature Language="C#" Value="public bool IsOpen { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsOpen" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.X509Certificates.X509Store.IsOpen" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsOpen As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsOpen { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -700,6 +740,8 @@
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.X509Certificates.StoreLocation Location { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.Cryptography.X509Certificates.StoreLocation Location" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.X509Certificates.X509Store.Location" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Location As StoreLocation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::X509Certificates::StoreLocation Location { System::Security::Cryptography::X509Certificates::StoreLocation get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -760,6 +802,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.X509Certificates.X509Store.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -820,6 +864,8 @@
       <MemberSignature Language="C#" Value="public void Open (System.Security.Cryptography.X509Certificates.OpenFlags flags);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Open(valuetype System.Security.Cryptography.X509Certificates.OpenFlags flags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Store.Open(System.Security.Cryptography.X509Certificates.OpenFlags)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Open (flags As OpenFlags)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Open(System::Security::Cryptography::X509Certificates::OpenFlags flags);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -872,6 +918,8 @@
       <MemberSignature Language="C#" Value="public void Remove (System.Security.Cryptography.X509Certificates.X509Certificate2 certificate);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Security.Cryptography.X509Certificates.X509Certificate2 certificate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Store.Remove(System.Security.Cryptography.X509Certificates.X509Certificate2)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (certificate As X509Certificate2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Security::Cryptography::X509Certificates::X509Certificate2 ^ certificate);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -924,6 +972,8 @@
       <MemberSignature Language="C#" Value="public void RemoveRange (System.Security.Cryptography.X509Certificates.X509Certificate2Collection certificates);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveRange(class System.Security.Cryptography.X509Certificates.X509Certificate2Collection certificates) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Store.RemoveRange(System.Security.Cryptography.X509Certificates.X509Certificate2Collection)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveRange (certificates As X509Certificate2Collection)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveRange(System::Security::Cryptography::X509Certificates::X509Certificate2Collection ^ certificates);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -983,6 +1033,8 @@
       <MemberSignature Language="C#" Value="public IntPtr StoreHandle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance native int StoreHandle" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.X509Certificates.X509Store.StoreHandle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StoreHandle As IntPtr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property IntPtr StoreHandle { IntPtr get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1022,16 +1074,5 @@
         <permission cref="T:System.Security.Permissions.SecurityPermission">for unmanaged code. Security action: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.X509Certificates.X509Store" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,9 @@
-<Type Name="ResourcesGenerator" FullName="Microsoft.Build.Tasks.Windows.ResourcesGenerator">
+﻿<Type Name="ResourcesGenerator" FullName="Microsoft.Build.Tasks.Windows.ResourcesGenerator">
   <TypeSignature Language="C#" Value="public sealed class ResourcesGenerator : Microsoft.Build.Utilities.Task" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ResourcesGenerator extends Microsoft.Build.Utilities.Task" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Windows.ResourcesGenerator" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ResourcesGenerator&#xA;Inherits Task" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ResourcesGenerator sealed : Microsoft::Build::Utilities::Task" />
   <AssemblyInfo>
     <AssemblyName>PresentationBuildTasks</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +22,8 @@
       <MemberSignature Language="C#" Value="public ResourcesGenerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Windows.ResourcesGenerator.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ResourcesGenerator();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationBuildTasks</AssemblyName>
@@ -36,6 +40,8 @@
       <MemberSignature Language="C#" Value="public override bool Execute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Execute() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Windows.ResourcesGenerator.Execute" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Execute () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Execute();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationBuildTasks</AssemblyName>
@@ -57,6 +63,8 @@
       <MemberSignature Language="C#" Value="public string OutputPath { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string OutputPath" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Windows.ResourcesGenerator.OutputPath" />
+      <MemberSignature Language="VB.NET" Value="Public Property OutputPath As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ OutputPath { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationBuildTasks</AssemblyName>
@@ -88,6 +96,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] OutputResourcesFile { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] OutputResourcesFile" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Windows.ResourcesGenerator.OutputResourcesFile" />
+      <MemberSignature Language="VB.NET" Value="Public Property OutputResourcesFile As ITaskItem()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ OutputResourcesFile { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationBuildTasks</AssemblyName>
@@ -115,6 +125,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] ResourceFiles { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] ResourceFiles" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Windows.ResourcesGenerator.ResourceFiles" />
+      <MemberSignature Language="VB.NET" Value="Public Property ResourceFiles As ITaskItem()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ ResourceFiles { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationBuildTasks</AssemblyName>

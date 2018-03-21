@@ -1,7 +1,9 @@
-<Type Name="IOrderedDictionary" FullName="System.Collections.Specialized.IOrderedDictionary">
+﻿<Type Name="IOrderedDictionary" FullName="System.Collections.Specialized.IOrderedDictionary">
   <TypeSignature Language="C#" Value="public interface IOrderedDictionary : System.Collections.IDictionary" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IOrderedDictionary implements class System.Collections.ICollection, class System.Collections.IDictionary, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.Collections.Specialized.IOrderedDictionary" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IOrderedDictionary&#xA;Implements IDictionary" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IOrderedDictionary : System::Collections::IDictionary" />
   <AssemblyInfo>
     <AssemblyName>System.Collections.Specialized</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -63,7 +65,12 @@
       <MemberSignature Language="C#" Value="public System.Collections.IDictionaryEnumerator GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IDictionaryEnumerator GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.IOrderedDictionary.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IDictionaryEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IDictionaryEnumerator ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IDictionary.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -122,6 +129,8 @@
       <MemberSignature Language="C#" Value="public void Insert (int index, object key, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Insert(int32 index, object key, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.IOrderedDictionary.Insert(System.Int32,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, key As Object, value As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::Object ^ key, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>
@@ -191,6 +200,8 @@
       <MemberSignature Language="C#" Value="public object this[int index] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Specialized.IOrderedDictionary.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[int] { System::Object ^ get(int index); void set(int index, System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>
@@ -254,6 +265,8 @@
       <MemberSignature Language="C#" Value="public void RemoveAt (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveAt(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.IOrderedDictionary.RemoveAt(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>

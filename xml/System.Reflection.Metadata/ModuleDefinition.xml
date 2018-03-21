@@ -1,7 +1,9 @@
-<Type Name="ModuleDefinition" FullName="System.Reflection.Metadata.ModuleDefinition">
+﻿<Type Name="ModuleDefinition" FullName="System.Reflection.Metadata.ModuleDefinition">
   <TypeSignature Language="C#" Value="public struct ModuleDefinition" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit ModuleDefinition extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.ModuleDefinition" />
+  <TypeSignature Language="VB.NET" Value="Public Structure ModuleDefinition" />
+  <TypeSignature Language="C++ CLI" Value="public value class ModuleDefinition" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -21,6 +23,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Metadata.GuidHandle BaseGenerationId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.Metadata.GuidHandle BaseGenerationId" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.ModuleDefinition.BaseGenerationId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BaseGenerationId As GuidHandle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::GuidHandle BaseGenerationId { System::Reflection::Metadata::GuidHandle get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -41,6 +45,8 @@
       <MemberSignature Language="C#" Value="public int Generation { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Generation" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.ModuleDefinition.Generation" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Generation As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Generation { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -61,6 +67,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Metadata.GuidHandle GenerationId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.Metadata.GuidHandle GenerationId" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.ModuleDefinition.GenerationId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GenerationId As GuidHandle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::GuidHandle GenerationId { System::Reflection::Metadata::GuidHandle get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -81,6 +89,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Metadata.GuidHandle Mvid { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.Metadata.GuidHandle Mvid" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.ModuleDefinition.Mvid" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Mvid As GuidHandle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::GuidHandle Mvid { System::Reflection::Metadata::GuidHandle get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -101,6 +111,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Metadata.StringHandle Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.Metadata.StringHandle Name" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.ModuleDefinition.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As StringHandle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::StringHandle Name { System::Reflection::Metadata::StringHandle get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

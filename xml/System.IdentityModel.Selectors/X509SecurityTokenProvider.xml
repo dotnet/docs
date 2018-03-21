@@ -1,7 +1,9 @@
-<Type Name="X509SecurityTokenProvider" FullName="System.IdentityModel.Selectors.X509SecurityTokenProvider">
+﻿<Type Name="X509SecurityTokenProvider" FullName="System.IdentityModel.Selectors.X509SecurityTokenProvider">
   <TypeSignature Language="C#" Value="public class X509SecurityTokenProvider : System.IdentityModel.Selectors.SecurityTokenProvider, IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit X509SecurityTokenProvider extends System.IdentityModel.Selectors.SecurityTokenProvider implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Selectors.X509SecurityTokenProvider" />
+  <TypeSignature Language="VB.NET" Value="Public Class X509SecurityTokenProvider&#xA;Inherits SecurityTokenProvider&#xA;Implements IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class X509SecurityTokenProvider : System::IdentityModel::Selectors::SecurityTokenProvider, IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,10 +30,21 @@
     <altmember cref="T:System.IdentityModel.Selectors.SecurityTokenAuthenticator" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Selectors.X509SecurityTokenProvider" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public X509SecurityTokenProvider (System.Security.Cryptography.X509Certificates.X509Certificate2 certificate);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Cryptography.X509Certificates.X509Certificate2 certificate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.X509SecurityTokenProvider.#ctor(System.Security.Cryptography.X509Certificates.X509Certificate2)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (certificate As X509Certificate2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; X509SecurityTokenProvider(System::Security::Cryptography::X509Certificates::X509Certificate2 ^ certificate);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -59,6 +72,7 @@
       <MemberSignature Language="C#" Value="public X509SecurityTokenProvider (System.Security.Cryptography.X509Certificates.StoreLocation storeLocation, System.Security.Cryptography.X509Certificates.StoreName storeName, System.Security.Cryptography.X509Certificates.X509FindType findType, object findValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Cryptography.X509Certificates.StoreLocation storeLocation, valuetype System.Security.Cryptography.X509Certificates.StoreName storeName, valuetype System.Security.Cryptography.X509Certificates.X509FindType findType, object findValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.X509SecurityTokenProvider.#ctor(System.Security.Cryptography.X509Certificates.StoreLocation,System.Security.Cryptography.X509Certificates.StoreName,System.Security.Cryptography.X509Certificates.X509FindType,System.Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; X509SecurityTokenProvider(System::Security::Cryptography::X509Certificates::StoreLocation storeLocation, System::Security::Cryptography::X509Certificates::StoreName storeName, System::Security::Cryptography::X509Certificates::X509FindType findType, System::Object ^ findValue);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -97,6 +111,8 @@
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.X509Certificates.X509Certificate2 Certificate { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.X509Certificates.X509Certificate2 Certificate" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Selectors.X509SecurityTokenProvider.Certificate" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Certificate As X509Certificate2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::X509Certificates::X509Certificate2 ^ Certificate { System::Security::Cryptography::X509Certificates::X509Certificate2 ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -122,7 +138,12 @@
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.X509SecurityTokenProvider.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -140,6 +161,8 @@
       <MemberSignature Language="C#" Value="protected override System.IdentityModel.Tokens.SecurityToken GetTokenCore (TimeSpan timeout);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.IdentityModel.Tokens.SecurityToken GetTokenCore(valuetype System.TimeSpan timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.X509SecurityTokenProvider.GetTokenCore(System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetTokenCore (timeout As TimeSpan) As SecurityToken" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::IdentityModel::Tokens::SecurityToken ^ GetTokenCore(TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -167,14 +190,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Selectors.X509SecurityTokenProvider" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,9 @@
-<Type Name="ScriptReferenceEventArgs" FullName="System.Web.UI.ScriptReferenceEventArgs">
+﻿<Type Name="ScriptReferenceEventArgs" FullName="System.Web.UI.ScriptReferenceEventArgs">
   <TypeSignature Language="C#" Value="public class ScriptReferenceEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ScriptReferenceEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ScriptReferenceEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class ScriptReferenceEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ScriptReferenceEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +36,8 @@
       <MemberSignature Language="C#" Value="public ScriptReferenceEventArgs (System.Web.UI.ScriptReference script);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.ScriptReference script) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptReferenceEventArgs.#ctor(System.Web.UI.ScriptReference)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (script As ScriptReference)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ScriptReferenceEventArgs(System::Web::UI::ScriptReference ^ script);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -54,6 +58,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.ScriptReference Script { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.ScriptReference Script" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptReferenceEventArgs.Script" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Script As ScriptReference" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::ScriptReference ^ Script { System::Web::UI::ScriptReference ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

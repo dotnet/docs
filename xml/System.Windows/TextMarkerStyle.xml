@@ -1,7 +1,9 @@
-<Type Name="TextMarkerStyle" FullName="System.Windows.TextMarkerStyle">
+﻿<Type Name="TextMarkerStyle" FullName="System.Windows.TextMarkerStyle">
   <TypeSignature Language="C#" Value="public enum TextMarkerStyle" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TextMarkerStyle extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.TextMarkerStyle" />
+  <TypeSignature Language="VB.NET" Value="Public Enum TextMarkerStyle" />
+  <TypeSignature Language="C++ CLI" Value="public enum class TextMarkerStyle" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +36,8 @@
       <MemberSignature Language="C#" Value="Box" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.TextMarkerStyle Box = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.TextMarkerStyle.Box" />
+      <MemberSignature Language="VB.NET" Value="Box" />
+      <MemberSignature Language="C++ CLI" Value="Box" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -42,6 +46,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.TextMarkerStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>A solid square box is displayed.</summary>
       </Docs>
@@ -50,6 +55,8 @@
       <MemberSignature Language="C#" Value="Circle" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.TextMarkerStyle Circle = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.TextMarkerStyle.Circle" />
+      <MemberSignature Language="VB.NET" Value="Circle" />
+      <MemberSignature Language="C++ CLI" Value="Circle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -58,6 +65,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.TextMarkerStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>A hollow disc circle is displayed.</summary>
       </Docs>
@@ -66,6 +74,8 @@
       <MemberSignature Language="C#" Value="Decimal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.TextMarkerStyle Decimal = int32(9)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.TextMarkerStyle.Decimal" />
+      <MemberSignature Language="VB.NET" Value="Decimal" />
+      <MemberSignature Language="C++ CLI" Value="Decimal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -74,6 +84,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.TextMarkerStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>9</MemberValue>
       <Docs>
         <summary>A decimal is displayed, starting with the number one, for example, 1, 2, and 3. The <see cref="T:System.Windows.TextMarkerStyle" /> is automatically incremented for each item added to the list.</summary>
       </Docs>
@@ -82,6 +93,8 @@
       <MemberSignature Language="C#" Value="Disc" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.TextMarkerStyle Disc = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.TextMarkerStyle.Disc" />
+      <MemberSignature Language="VB.NET" Value="Disc" />
+      <MemberSignature Language="C++ CLI" Value="Disc" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -90,6 +103,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.TextMarkerStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>A solid disc circle is displayed.</summary>
       </Docs>
@@ -98,6 +112,8 @@
       <MemberSignature Language="C#" Value="LowerLatin" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.TextMarkerStyle LowerLatin = int32(7)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.TextMarkerStyle.LowerLatin" />
+      <MemberSignature Language="VB.NET" Value="LowerLatin" />
+      <MemberSignature Language="C++ CLI" Value="LowerLatin" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -106,6 +122,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.TextMarkerStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>A lowercase [!INCLUDE[TLA#tla_ascii](~/includes/tlasharptla-ascii-md.md)] character is displayed, starting with the letter a, for example, a, b, and c. The <see cref="T:System.Windows.TextMarkerStyle" /> is automatically incremented for each item added to the list.</summary>
       </Docs>
@@ -114,6 +131,8 @@
       <MemberSignature Language="C#" Value="LowerRoman" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.TextMarkerStyle LowerRoman = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.TextMarkerStyle.LowerRoman" />
+      <MemberSignature Language="VB.NET" Value="LowerRoman" />
+      <MemberSignature Language="C++ CLI" Value="LowerRoman" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -122,6 +141,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.TextMarkerStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>A lowercase Roman numeral is displayed, starting with the numeral i, for example, i, ii, iii, and iv. The <see cref="T:System.Windows.TextMarkerStyle" /> is automatically incremented for each item added to the list.</summary>
       </Docs>
@@ -130,6 +150,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.TextMarkerStyle None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.TextMarkerStyle.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -138,6 +160,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.TextMarkerStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>No marker is displayed.</summary>
       </Docs>
@@ -146,6 +169,8 @@
       <MemberSignature Language="C#" Value="Square" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.TextMarkerStyle Square = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.TextMarkerStyle.Square" />
+      <MemberSignature Language="VB.NET" Value="Square" />
+      <MemberSignature Language="C++ CLI" Value="Square" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -154,6 +179,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.TextMarkerStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>A hollow square shape is displayed.</summary>
       </Docs>
@@ -162,6 +188,8 @@
       <MemberSignature Language="C#" Value="UpperLatin" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.TextMarkerStyle UpperLatin = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.TextMarkerStyle.UpperLatin" />
+      <MemberSignature Language="VB.NET" Value="UpperLatin" />
+      <MemberSignature Language="C++ CLI" Value="UpperLatin" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -170,6 +198,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.TextMarkerStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>An uppercase [!INCLUDE[TLA2#tla_ascii](~/includes/tla2sharptla-ascii-md.md)] character is displayed, starting with the letter A, for example, A, B, and C. The <see cref="T:System.Windows.TextMarkerStyle" /> is automatically incremented for each item added to the list.</summary>
       </Docs>
@@ -178,6 +207,8 @@
       <MemberSignature Language="C#" Value="UpperRoman" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.TextMarkerStyle UpperRoman = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.TextMarkerStyle.UpperRoman" />
+      <MemberSignature Language="VB.NET" Value="UpperRoman" />
+      <MemberSignature Language="C++ CLI" Value="UpperRoman" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -186,6 +217,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.TextMarkerStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>An uppercase Roman numeral is displayed, starting with the numeral I, for example, I, II, III, and IV. The <see cref="T:System.Windows.TextMarkerStyle" /> is automatically incremented for each item added to the list.</summary>
       </Docs>

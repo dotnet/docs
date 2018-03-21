@@ -1,7 +1,9 @@
-<Type Name="DataViewSettingCollection" FullName="System.Data.DataViewSettingCollection">
+﻿<Type Name="DataViewSettingCollection" FullName="System.Data.DataViewSettingCollection">
   <TypeSignature Language="C#" Value="public class DataViewSettingCollection : System.Collections.ICollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataViewSettingCollection extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.Data.DataViewSettingCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class DataViewSettingCollection&#xA;Implements ICollection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataViewSettingCollection : System::Collections::ICollection" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -41,11 +43,26 @@
     <threadsafe>This type is safe for multithreaded read operations. You must synchronize any write operations.</threadsafe>
   </Docs>
   <Members>
+    <MemberGroup MemberName="CopyTo">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Copies the collection objects to a one-dimensional <see cref="T:System.Array" /> instance starting at the specified index.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CopyTo">
       <MemberSignature Language="C#" Value="public void CopyTo (Array ar, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.Array ar, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataViewSettingCollection.CopyTo(System.Array,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (ar As Array, index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(Array ^ ar, int index);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -77,6 +94,8 @@
       <MemberSignature Language="C#" Value="public void CopyTo (System.Data.DataViewSetting[] ar, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.Data.DataViewSetting[] ar, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataViewSettingCollection.CopyTo(System.Data.DataViewSetting[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (ar As DataViewSetting(), index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Data::DataViewSetting ^&gt; ^ ar, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -109,7 +128,12 @@
       <MemberSignature Language="C#" Value="public virtual int Count { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
       <MemberSignature Language="DocId" Value="P:System.Data.DataViewSettingCollection.Count" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Count { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -148,7 +172,12 @@
       <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataViewSettingCollection.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -176,6 +205,8 @@
       <MemberSignature Language="C#" Value="public bool IsReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Data.DataViewSettingCollection.IsReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -208,7 +239,12 @@
       <MemberSignature Language="C#" Value="public bool IsSynchronized { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsSynchronized" />
       <MemberSignature Language="DocId" Value="P:System.Data.DataViewSettingCollection.IsSynchronized" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSynchronized As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSynchronized { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -245,10 +281,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Data.DataViewSetting" /> of the specified <see cref="T:System.Data.DataTable" /> from the collection.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Item">
       <MemberSignature Language="C#" Value="public virtual System.Data.DataViewSetting this[System.Data.DataTable table] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.DataViewSetting Item(class System.Data.DataTable)" />
       <MemberSignature Language="DocId" Value="P:System.Data.DataViewSettingCollection.Item(System.Data.DataTable)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Overridable Property Item(table As DataTable) As DataViewSetting" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Data::DataViewSetting ^ default[System::Data::DataTable ^] { System::Data::DataViewSetting ^ get(System::Data::DataTable ^ table); void set(System::Data::DataTable ^ table, System::Data::DataViewSetting ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -280,6 +328,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Data.DataViewSetting this[int index] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.DataViewSetting Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Data.DataViewSettingCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Overridable Property Item(index As Integer) As DataViewSetting" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Data::DataViewSetting ^ default[int] { System::Data::DataViewSetting ^ get(int index); void set(int index, System::Data::DataViewSetting ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -311,6 +361,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Data.DataViewSetting this[string tableName] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.DataViewSetting Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.Data.DataViewSettingCollection.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Overridable ReadOnly Property Item(tableName As String) As DataViewSetting" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Data::DataViewSetting ^ default[System::String ^] { System::Data::DataViewSetting ^ get(System::String ^ tableName); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -342,7 +394,12 @@
       <MemberSignature Language="C#" Value="public object SyncRoot { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object SyncRoot" />
       <MemberSignature Language="DocId" Value="P:System.Data.DataViewSettingCollection.SyncRoot" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SyncRoot As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ SyncRoot { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -379,25 +436,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="CopyTo">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Copies the collection objects to a one-dimensional <see cref="T:System.Array" /> instance starting at the specified index.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Item">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets the <see cref="T:System.Data.DataViewSetting" /> of the specified <see cref="T:System.Data.DataTable" /> from the collection.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

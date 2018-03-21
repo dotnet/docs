@@ -1,7 +1,9 @@
-<Type Name="CodeIndexerExpression" FullName="System.CodeDom.CodeIndexerExpression">
+﻿<Type Name="CodeIndexerExpression" FullName="System.CodeDom.CodeIndexerExpression">
   <TypeSignature Language="C#" Value="public class CodeIndexerExpression : System.CodeDom.CodeExpression" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CodeIndexerExpression extends System.CodeDom.CodeExpression" />
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeIndexerExpression" />
+  <TypeSignature Language="VB.NET" Value="Public Class CodeIndexerExpression&#xA;Inherits CodeExpression" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CodeIndexerExpression : System::CodeDom::CodeExpression" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -16,7 +18,7 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
@@ -43,10 +45,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeIndexerExpression" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public CodeIndexerExpression ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeIndexerExpression.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeIndexerExpression();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -66,6 +79,8 @@
       <MemberSignature Language="C#" Value="public CodeIndexerExpression (System.CodeDom.CodeExpression targetObject, params System.CodeDom.CodeExpression[] indices);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.CodeDom.CodeExpression targetObject, class System.CodeDom.CodeExpression[] indices) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeIndexerExpression.#ctor(System.CodeDom.CodeExpression,System.CodeDom.CodeExpression[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (targetObject As CodeExpression, ParamArray indices As CodeExpression())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeIndexerExpression(System::CodeDom::CodeExpression ^ targetObject, ... cli::array &lt;System::CodeDom::CodeExpression ^&gt; ^ indices);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -97,6 +112,8 @@
       <MemberSignature Language="C#" Value="public System.CodeDom.CodeExpressionCollection Indices { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeExpressionCollection Indices" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeIndexerExpression.Indices" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Indices As CodeExpressionCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeExpressionCollection ^ Indices { System::CodeDom::CodeExpressionCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -126,6 +143,8 @@
       <MemberSignature Language="C#" Value="public System.CodeDom.CodeExpression TargetObject { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeExpression TargetObject" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeIndexerExpression.TargetObject" />
+      <MemberSignature Language="VB.NET" Value="Public Property TargetObject As CodeExpression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeExpression ^ TargetObject { System::CodeDom::CodeExpression ^ get(); void set(System::CodeDom::CodeExpression ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -151,14 +170,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeIndexerExpression" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

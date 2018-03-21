@@ -1,7 +1,9 @@
-<Type Name="AssemblyReferenceType" FullName="Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReferenceType">
+﻿<Type Name="AssemblyReferenceType" FullName="Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReferenceType">
   <TypeSignature Language="C#" Value="public enum AssemblyReferenceType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AssemblyReferenceType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReferenceType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum AssemblyReferenceType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class AssemblyReferenceType" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -18,6 +20,8 @@
       <MemberSignature Language="C#" Value="ClickOnceManifest" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReferenceType ClickOnceManifest = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReferenceType.ClickOnceManifest" />
+      <MemberSignature Language="VB.NET" Value="ClickOnceManifest" />
+      <MemberSignature Language="C++ CLI" Value="ClickOnceManifest" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -26,6 +30,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReferenceType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Specifies a ClickOnce manifest.</summary>
       </Docs>
@@ -34,6 +39,8 @@
       <MemberSignature Language="C#" Value="ManagedAssembly" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReferenceType ManagedAssembly = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReferenceType.ManagedAssembly" />
+      <MemberSignature Language="VB.NET" Value="ManagedAssembly" />
+      <MemberSignature Language="C++ CLI" Value="ManagedAssembly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -42,6 +49,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReferenceType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Specifies a .NET Framework assembly.</summary>
       </Docs>
@@ -50,6 +58,8 @@
       <MemberSignature Language="C#" Value="NativeAssembly" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReferenceType NativeAssembly = int32(3)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReferenceType.NativeAssembly" />
+      <MemberSignature Language="VB.NET" Value="NativeAssembly" />
+      <MemberSignature Language="C++ CLI" Value="NativeAssembly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -58,6 +68,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReferenceType</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Specifies a Win32 native assembly.</summary>
       </Docs>
@@ -66,6 +77,8 @@
       <MemberSignature Language="C#" Value="Unspecified" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReferenceType Unspecified = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReferenceType.Unspecified" />
+      <MemberSignature Language="VB.NET" Value="Unspecified" />
+      <MemberSignature Language="C++ CLI" Value="Unspecified" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -74,6 +87,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReferenceType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Assembly type is unspecified and will be determined by the <see cref="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest.UpdateFileInfo" /> method.</summary>
       </Docs>

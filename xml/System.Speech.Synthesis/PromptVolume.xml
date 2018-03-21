@@ -1,7 +1,9 @@
-<Type Name="PromptVolume" FullName="System.Speech.Synthesis.PromptVolume">
+﻿<Type Name="PromptVolume" FullName="System.Speech.Synthesis.PromptVolume">
   <TypeSignature Language="C#" Value="public enum PromptVolume" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PromptVolume extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Speech.Synthesis.PromptVolume" />
+  <TypeSignature Language="VB.NET" Value="Public Enum PromptVolume" />
+  <TypeSignature Language="C++ CLI" Value="public enum class PromptVolume" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +29,8 @@
       <MemberSignature Language="C#" Value="Default" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Synthesis.PromptVolume Default = int32(7)" />
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.PromptVolume.Default" />
+      <MemberSignature Language="VB.NET" Value="Default" />
+      <MemberSignature Language="C++ CLI" Value="Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -35,6 +39,7 @@
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.PromptVolume</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>Indicates the engine-specific default volume level.</summary>
       </Docs>
@@ -43,6 +48,8 @@
       <MemberSignature Language="C#" Value="ExtraLoud" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Synthesis.PromptVolume ExtraLoud = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.PromptVolume.ExtraLoud" />
+      <MemberSignature Language="VB.NET" Value="ExtraLoud" />
+      <MemberSignature Language="C++ CLI" Value="ExtraLoud" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -51,6 +58,7 @@
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.PromptVolume</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>Indicates an extra loud volume level.</summary>
       </Docs>
@@ -59,6 +67,8 @@
       <MemberSignature Language="C#" Value="ExtraSoft" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Synthesis.PromptVolume ExtraSoft = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.PromptVolume.ExtraSoft" />
+      <MemberSignature Language="VB.NET" Value="ExtraSoft" />
+      <MemberSignature Language="C++ CLI" Value="ExtraSoft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -67,6 +77,7 @@
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.PromptVolume</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Indicates an extra soft volume level.</summary>
       </Docs>
@@ -75,6 +86,8 @@
       <MemberSignature Language="C#" Value="Loud" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Synthesis.PromptVolume Loud = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.PromptVolume.Loud" />
+      <MemberSignature Language="VB.NET" Value="Loud" />
+      <MemberSignature Language="C++ CLI" Value="Loud" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -83,6 +96,7 @@
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.PromptVolume</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>Indicates a loud volume level.</summary>
       </Docs>
@@ -91,6 +105,8 @@
       <MemberSignature Language="C#" Value="Medium" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Synthesis.PromptVolume Medium = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.PromptVolume.Medium" />
+      <MemberSignature Language="VB.NET" Value="Medium" />
+      <MemberSignature Language="C++ CLI" Value="Medium" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -99,6 +115,7 @@
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.PromptVolume</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Indicates a medium volume level.</summary>
       </Docs>
@@ -107,6 +124,8 @@
       <MemberSignature Language="C#" Value="NotSet" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Synthesis.PromptVolume NotSet = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.PromptVolume.NotSet" />
+      <MemberSignature Language="VB.NET" Value="NotSet" />
+      <MemberSignature Language="C++ CLI" Value="NotSet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -115,6 +134,7 @@
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.PromptVolume</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Indicates that the volume level is not set.</summary>
       </Docs>
@@ -123,6 +143,8 @@
       <MemberSignature Language="C#" Value="Silent" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Synthesis.PromptVolume Silent = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.PromptVolume.Silent" />
+      <MemberSignature Language="VB.NET" Value="Silent" />
+      <MemberSignature Language="C++ CLI" Value="Silent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -131,6 +153,7 @@
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.PromptVolume</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Indicates a muted volume level.</summary>
       </Docs>
@@ -139,6 +162,8 @@
       <MemberSignature Language="C#" Value="Soft" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Synthesis.PromptVolume Soft = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.PromptVolume.Soft" />
+      <MemberSignature Language="VB.NET" Value="Soft" />
+      <MemberSignature Language="C++ CLI" Value="Soft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -147,6 +172,7 @@
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.PromptVolume</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Indicates a soft volume level.</summary>
       </Docs>

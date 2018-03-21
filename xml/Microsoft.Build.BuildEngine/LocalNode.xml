@@ -1,7 +1,9 @@
-<Type Name="LocalNode" FullName="Microsoft.Build.BuildEngine.LocalNode">
+﻿<Type Name="LocalNode" FullName="Microsoft.Build.BuildEngine.LocalNode">
   <TypeSignature Language="C#" Value="public class LocalNode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi LocalNode extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.BuildEngine.LocalNode" />
+  <TypeSignature Language="VB.NET" Value="Public Class LocalNode" />
+  <TypeSignature Language="C++ CLI" Value="public ref class LocalNode" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Engine</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public static void StartLocalNodeServer (int nodeNumber);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void StartLocalNodeServer(int32 nodeNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.LocalNode.StartLocalNodeServer(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub StartLocalNodeServer (nodeNumber As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void StartLocalNodeServer(int nodeNumber);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>

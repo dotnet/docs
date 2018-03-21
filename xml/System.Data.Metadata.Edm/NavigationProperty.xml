@@ -1,7 +1,9 @@
-<Type Name="NavigationProperty" FullName="System.Data.Metadata.Edm.NavigationProperty">
+﻿<Type Name="NavigationProperty" FullName="System.Data.Metadata.Edm.NavigationProperty">
   <TypeSignature Language="C#" Value="public sealed class NavigationProperty : System.Data.Metadata.Edm.EdmMember" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit NavigationProperty extends System.Data.Metadata.Edm.EdmMember" />
   <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.NavigationProperty" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class NavigationProperty&#xA;Inherits EdmMember" />
+  <TypeSignature Language="C++ CLI" Value="public ref class NavigationProperty sealed : System::Data::Metadata::Edm::EdmMember" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +28,8 @@
       <MemberSignature Language="C#" Value="public override System.Data.Metadata.Edm.BuiltInTypeKind BuiltInTypeKind { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.Metadata.Edm.BuiltInTypeKind BuiltInTypeKind" />
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.NavigationProperty.BuiltInTypeKind" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property BuiltInTypeKind As BuiltInTypeKind" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Data::Metadata::Edm::BuiltInTypeKind BuiltInTypeKind { System::Data::Metadata::Edm::BuiltInTypeKind get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -44,6 +48,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Metadata.Edm.RelationshipEndMember FromEndMember { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Metadata.Edm.RelationshipEndMember FromEndMember" />
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.NavigationProperty.FromEndMember" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FromEndMember As RelationshipEndMember" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Metadata::Edm::RelationshipEndMember ^ FromEndMember { System::Data::Metadata::Edm::RelationshipEndMember ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -62,6 +68,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;System.Data.Metadata.Edm.EdmProperty&gt; GetDependentProperties ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class System.Data.Metadata.Edm.EdmProperty&gt; GetDependentProperties() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.NavigationProperty.GetDependentProperties" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetDependentProperties () As IEnumerable(Of EdmProperty)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::Data::Metadata::Edm::EdmProperty ^&gt; ^ GetDependentProperties();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -90,6 +98,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Metadata.Edm.RelationshipType RelationshipType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Metadata.Edm.RelationshipType RelationshipType" />
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.NavigationProperty.RelationshipType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RelationshipType As RelationshipType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Metadata::Edm::RelationshipType ^ RelationshipType { System::Data::Metadata::Edm::RelationshipType ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -108,6 +118,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Metadata.Edm.RelationshipEndMember ToEndMember { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Metadata.Edm.RelationshipEndMember ToEndMember" />
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.NavigationProperty.ToEndMember" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ToEndMember As RelationshipEndMember" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Metadata::Edm::RelationshipEndMember ^ ToEndMember { System::Data::Metadata::Edm::RelationshipEndMember ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

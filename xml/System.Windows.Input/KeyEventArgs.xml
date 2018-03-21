@@ -1,7 +1,9 @@
-<Type Name="KeyEventArgs" FullName="System.Windows.Input.KeyEventArgs">
+﻿<Type Name="KeyEventArgs" FullName="System.Windows.Input.KeyEventArgs">
   <TypeSignature Language="C#" Value="public class KeyEventArgs : System.Windows.Input.KeyboardEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit KeyEventArgs extends System.Windows.Input.KeyboardEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.KeyEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class KeyEventArgs&#xA;Inherits KeyboardEventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class KeyEventArgs : System::Windows::Input::KeyboardEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -59,6 +61,7 @@
       <MemberSignature Language="C#" Value="public KeyEventArgs (System.Windows.Input.KeyboardDevice keyboard, System.Windows.PresentationSource inputSource, int timestamp, System.Windows.Input.Key key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Input.KeyboardDevice keyboard, class System.Windows.PresentationSource inputSource, int32 timestamp, valuetype System.Windows.Input.Key key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.KeyEventArgs.#ctor(System.Windows.Input.KeyboardDevice,System.Windows.PresentationSource,System.Int32,System.Windows.Input.Key)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; KeyEventArgs(System::Windows::Input::KeyboardDevice ^ keyboard, System::Windows::PresentationSource ^ inputSource, int timestamp, System::Windows::Input::Key key);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -91,6 +94,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Input.Key DeadCharProcessedKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Input.Key DeadCharProcessedKey" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.KeyEventArgs.DeadCharProcessedKey" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DeadCharProcessedKey As Key" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::Key DeadCharProcessedKey { System::Windows::Input::Key get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -116,6 +121,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Input.Key ImeProcessedKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Input.Key ImeProcessedKey" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.KeyEventArgs.ImeProcessedKey" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ImeProcessedKey As Key" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::Key ImeProcessedKey { System::Windows::Input::Key get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -137,6 +144,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.PresentationSource InputSource { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.PresentationSource InputSource" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.KeyEventArgs.InputSource" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InputSource As PresentationSource" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::PresentationSource ^ InputSource { System::Windows::PresentationSource ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -164,6 +173,8 @@
       <MemberSignature Language="C#" Value="protected override void InvokeEventHandler (Delegate genericHandler, object genericTarget);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InvokeEventHandler(class System.Delegate genericHandler, object genericTarget) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.KeyEventArgs.InvokeEventHandler(System.Delegate,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InvokeEventHandler (genericHandler As Delegate, genericTarget As Object)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InvokeEventHandler(Delegate ^ genericHandler, System::Object ^ genericTarget);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -194,6 +205,8 @@
       <MemberSignature Language="C#" Value="public bool IsDown { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsDown" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.KeyEventArgs.IsDown" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsDown As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDown { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -231,6 +244,8 @@
       <MemberSignature Language="C#" Value="public bool IsRepeat { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsRepeat" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.KeyEventArgs.IsRepeat" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsRepeat As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsRepeat { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -263,6 +278,8 @@
       <MemberSignature Language="C#" Value="public bool IsToggled { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsToggled" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.KeyEventArgs.IsToggled" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsToggled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsToggled { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -300,6 +317,8 @@
       <MemberSignature Language="C#" Value="public bool IsUp { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsUp" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.KeyEventArgs.IsUp" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsUp As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsUp { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -337,6 +356,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Input.Key Key { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Input.Key Key" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.KeyEventArgs.Key" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Key As Key" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::Key Key { System::Windows::Input::Key get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -368,6 +389,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Input.KeyStates KeyStates { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Input.KeyStates KeyStates" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.KeyEventArgs.KeyStates" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property KeyStates As KeyStates" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::KeyStates KeyStates { System::Windows::Input::KeyStates get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -404,6 +427,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Input.Key SystemKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Input.Key SystemKey" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.KeyEventArgs.SystemKey" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SystemKey As Key" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::Key SystemKey { System::Windows::Input::Key get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

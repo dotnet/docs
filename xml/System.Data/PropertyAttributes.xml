@@ -1,7 +1,9 @@
-<Type Name="PropertyAttributes" FullName="System.Data.PropertyAttributes">
+﻿<Type Name="PropertyAttributes" FullName="System.Data.PropertyAttributes">
   <TypeSignature Language="C#" Value="public enum PropertyAttributes" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PropertyAttributes extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Data.PropertyAttributes" />
+  <TypeSignature Language="VB.NET" Value="Public Enum PropertyAttributes" />
+  <TypeSignature Language="C++ CLI" Value="public enum class PropertyAttributes" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -30,6 +32,8 @@
       <MemberSignature Language="C#" Value="NotSupported" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.PropertyAttributes NotSupported = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Data.PropertyAttributes.NotSupported" />
+      <MemberSignature Language="VB.NET" Value="NotSupported" />
+      <MemberSignature Language="C++ CLI" Value="NotSupported" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -39,6 +43,7 @@
       <ReturnValue>
         <ReturnType>System.Data.PropertyAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The property is not supported by the provider.</summary>
       </Docs>
@@ -47,6 +52,8 @@
       <MemberSignature Language="C#" Value="Optional" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.PropertyAttributes Optional = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Data.PropertyAttributes.Optional" />
+      <MemberSignature Language="VB.NET" Value="Optional" />
+      <MemberSignature Language="C++ CLI" Value="Optional" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -56,6 +63,7 @@
       <ReturnValue>
         <ReturnType>System.Data.PropertyAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The user does not need to specify a value for this property before the data source is initialized.</summary>
       </Docs>
@@ -64,6 +72,8 @@
       <MemberSignature Language="C#" Value="Read" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.PropertyAttributes Read = int32(512)" />
       <MemberSignature Language="DocId" Value="F:System.Data.PropertyAttributes.Read" />
+      <MemberSignature Language="VB.NET" Value="Read" />
+      <MemberSignature Language="C++ CLI" Value="Read" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -73,6 +83,7 @@
       <ReturnValue>
         <ReturnType>System.Data.PropertyAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>512</MemberValue>
       <Docs>
         <summary>The user can read the property.</summary>
       </Docs>
@@ -81,6 +92,8 @@
       <MemberSignature Language="C#" Value="Required" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.PropertyAttributes Required = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Data.PropertyAttributes.Required" />
+      <MemberSignature Language="VB.NET" Value="Required" />
+      <MemberSignature Language="C++ CLI" Value="Required" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -90,6 +103,7 @@
       <ReturnValue>
         <ReturnType>System.Data.PropertyAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The user must specify a value for this property before the data source is initialized.</summary>
       </Docs>
@@ -98,6 +112,8 @@
       <MemberSignature Language="C#" Value="Write" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.PropertyAttributes Write = int32(1024)" />
       <MemberSignature Language="DocId" Value="F:System.Data.PropertyAttributes.Write" />
+      <MemberSignature Language="VB.NET" Value="Write" />
+      <MemberSignature Language="C++ CLI" Value="Write" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -107,6 +123,7 @@
       <ReturnValue>
         <ReturnType>System.Data.PropertyAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>1024</MemberValue>
       <Docs>
         <summary>The user can write to the property.</summary>
       </Docs>

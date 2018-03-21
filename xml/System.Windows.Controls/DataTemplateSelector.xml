@@ -1,7 +1,9 @@
-<Type Name="DataTemplateSelector" FullName="System.Windows.Controls.DataTemplateSelector">
+﻿<Type Name="DataTemplateSelector" FullName="System.Windows.Controls.DataTemplateSelector">
   <TypeSignature Language="C#" Value="public class DataTemplateSelector" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataTemplateSelector extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.DataTemplateSelector" />
+  <TypeSignature Language="VB.NET" Value="Public Class DataTemplateSelector" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataTemplateSelector" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +52,8 @@
       <MemberSignature Language="C#" Value="public DataTemplateSelector ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataTemplateSelector.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataTemplateSelector();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -65,6 +69,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Windows.DataTemplate SelectTemplate (object item, System.Windows.DependencyObject container);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.DataTemplate SelectTemplate(object item, class System.Windows.DependencyObject container) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataTemplateSelector.SelectTemplate(System.Object,System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function SelectTemplate (item As Object, container As DependencyObject) As DataTemplate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Windows::DataTemplate ^ SelectTemplate(System::Object ^ item, System::Windows::DependencyObject ^ container);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

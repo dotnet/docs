@@ -1,7 +1,9 @@
-<Type Name="HttpCacheRevalidation" FullName="System.Web.HttpCacheRevalidation">
+﻿<Type Name="HttpCacheRevalidation" FullName="System.Web.HttpCacheRevalidation">
   <TypeSignature Language="C#" Value="public enum HttpCacheRevalidation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HttpCacheRevalidation extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.HttpCacheRevalidation" />
+  <TypeSignature Language="VB.NET" Value="Public Enum HttpCacheRevalidation" />
+  <TypeSignature Language="C++ CLI" Value="public enum class HttpCacheRevalidation" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +29,8 @@
       <MemberSignature Language="C#" Value="AllCaches" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.HttpCacheRevalidation AllCaches = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.HttpCacheRevalidation.AllCaches" />
+      <MemberSignature Language="VB.NET" Value="AllCaches" />
+      <MemberSignature Language="C++ CLI" Value="AllCaches" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -35,6 +39,7 @@
       <ReturnValue>
         <ReturnType>System.Web.HttpCacheRevalidation</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Sets the HTTP header to <see langword="Cache-Control: must-revalidate" />.</summary>
       </Docs>
@@ -43,6 +48,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.HttpCacheRevalidation None = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Web.HttpCacheRevalidation.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -51,6 +58,7 @@
       <ReturnValue>
         <ReturnType>System.Web.HttpCacheRevalidation</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>If this value is set, no cache-revalidation directive is sent. The default value.</summary>
       </Docs>
@@ -59,6 +67,8 @@
       <MemberSignature Language="C#" Value="ProxyCaches" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.HttpCacheRevalidation ProxyCaches = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.HttpCacheRevalidation.ProxyCaches" />
+      <MemberSignature Language="VB.NET" Value="ProxyCaches" />
+      <MemberSignature Language="C++ CLI" Value="ProxyCaches" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -67,6 +77,7 @@
       <ReturnValue>
         <ReturnType>System.Web.HttpCacheRevalidation</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Sets the HTTP header to <see langword="Cache-Control: proxy-revalidate" />.</summary>
       </Docs>

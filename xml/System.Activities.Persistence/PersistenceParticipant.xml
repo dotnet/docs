@@ -1,7 +1,9 @@
-<Type Name="PersistenceParticipant" FullName="System.Activities.Persistence.PersistenceParticipant">
+﻿<Type Name="PersistenceParticipant" FullName="System.Activities.Persistence.PersistenceParticipant">
   <TypeSignature Language="C#" Value="public abstract class PersistenceParticipant" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit PersistenceParticipant extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Persistence.PersistenceParticipant" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class PersistenceParticipant" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PersistenceParticipant abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,6 +55,8 @@
       <MemberSignature Language="C#" Value="protected PersistenceParticipant ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Persistence.PersistenceParticipant.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; PersistenceParticipant();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -77,7 +81,12 @@
       <MemberSignature Language="C#" Value="protected virtual void CollectValues (out System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName,object&gt; readWriteValues, out System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName,object&gt; writeOnlyValues);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void CollectValues([out] class System.Collections.Generic.IDictionary`2&lt;class System.Xml.Linq.XName, object&gt;&amp; readWriteValues, [out] class System.Collections.Generic.IDictionary`2&lt;class System.Xml.Linq.XName, object&gt;&amp; writeOnlyValues) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Persistence.PersistenceParticipant.CollectValues(System.Collections.Generic.IDictionary{System.Xml.Linq.XName,System.Object}@,System.Collections.Generic.IDictionary{System.Xml.Linq.XName,System.Object}@)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub CollectValues (ByRef readWriteValues As IDictionary(Of XName, Object), ByRef writeOnlyValues As IDictionary(Of XName, Object))" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void CollectValues([Runtime::InteropServices::Out] System::Collections::Generic::IDictionary&lt;System::Xml::Linq::XName ^, System::Object ^&gt; ^ % readWriteValues, [Runtime::InteropServices::Out] System::Collections::Generic::IDictionary&lt;System::Xml::Linq::XName ^, System::Object ^&gt; ^ % writeOnlyValues);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.IPersistencePipelineModule.CollectValues(System.Collections.Generic.IDictionary{System.Xml.Linq.XName,System.Object}@,System.Collections.Generic.IDictionary{System.Xml.Linq.XName,System.Object}@)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -117,7 +126,12 @@
       <MemberSignature Language="C#" Value="protected virtual System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName,object&gt; MapValues (System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName,object&gt; readWriteValues, System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName,object&gt; writeOnlyValues);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Collections.Generic.IDictionary`2&lt;class System.Xml.Linq.XName, object&gt; MapValues(class System.Collections.Generic.IDictionary`2&lt;class System.Xml.Linq.XName, object&gt; readWriteValues, class System.Collections.Generic.IDictionary`2&lt;class System.Xml.Linq.XName, object&gt; writeOnlyValues) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Persistence.PersistenceParticipant.MapValues(System.Collections.Generic.IDictionary{System.Xml.Linq.XName,System.Object},System.Collections.Generic.IDictionary{System.Xml.Linq.XName,System.Object})" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function MapValues (readWriteValues As IDictionary(Of XName, Object), writeOnlyValues As IDictionary(Of XName, Object)) As IDictionary(Of XName, Object)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Collections::Generic::IDictionary&lt;System::Xml::Linq::XName ^, System::Object ^&gt; ^ MapValues(System::Collections::Generic::IDictionary&lt;System::Xml::Linq::XName ^, System::Object ^&gt; ^ readWriteValues, System::Collections::Generic::IDictionary&lt;System::Xml::Linq::XName ^, System::Object ^&gt; ^ writeOnlyValues);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.IPersistencePipelineModule.MapValues(System.Collections.Generic.IDictionary{System.Xml.Linq.XName,System.Object},System.Collections.Generic.IDictionary{System.Xml.Linq.XName,System.Object})</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -155,7 +169,12 @@
       <MemberSignature Language="C#" Value="protected virtual void PublishValues (System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName,object&gt; readWriteValues);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void PublishValues(class System.Collections.Generic.IDictionary`2&lt;class System.Xml.Linq.XName, object&gt; readWriteValues) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Persistence.PersistenceParticipant.PublishValues(System.Collections.Generic.IDictionary{System.Xml.Linq.XName,System.Object})" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub PublishValues (readWriteValues As IDictionary(Of XName, Object))" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void PublishValues(System::Collections::Generic::IDictionary&lt;System::Xml::Linq::XName ^, System::Object ^&gt; ^ readWriteValues);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.IPersistencePipelineModule.PublishValues(System.Collections.Generic.IDictionary{System.Xml.Linq.XName,System.Object})</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -1,7 +1,9 @@
-<Type Name="ImageFileMachine" FullName="System.Reflection.ImageFileMachine">
+﻿<Type Name="ImageFileMachine" FullName="System.Reflection.ImageFileMachine">
   <TypeSignature Language="C#" Value="public enum ImageFileMachine" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed ImageFileMachine extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.ImageFileMachine" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ImageFileMachine" />
+  <TypeSignature Language="C++ CLI" Value="public enum class ImageFileMachine" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -42,6 +44,8 @@
       <MemberSignature Language="C#" Value="AMD64" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.ImageFileMachine AMD64 = int32(34404)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.ImageFileMachine.AMD64" />
+      <MemberSignature Language="VB.NET" Value="AMD64" />
+      <MemberSignature Language="C++ CLI" Value="AMD64" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -59,6 +63,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.ImageFileMachine</ReturnType>
       </ReturnValue>
+      <MemberValue>34404</MemberValue>
       <Docs>
         <summary>Targets a 64-bit AMD processor.</summary>
       </Docs>
@@ -67,6 +72,8 @@
       <MemberSignature Language="C#" Value="ARM" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.ImageFileMachine ARM = int32(452)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.ImageFileMachine.ARM" />
+      <MemberSignature Language="VB.NET" Value="ARM" />
+      <MemberSignature Language="C++ CLI" Value="ARM" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -84,6 +91,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.ImageFileMachine</ReturnType>
       </ReturnValue>
+      <MemberValue>452</MemberValue>
       <Docs>
         <summary>Targets an ARM processor.</summary>
       </Docs>
@@ -92,6 +100,8 @@
       <MemberSignature Language="C#" Value="I386" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.ImageFileMachine I386 = int32(332)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.ImageFileMachine.I386" />
+      <MemberSignature Language="VB.NET" Value="I386" />
+      <MemberSignature Language="C++ CLI" Value="I386" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -109,6 +119,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.ImageFileMachine</ReturnType>
       </ReturnValue>
+      <MemberValue>332</MemberValue>
       <Docs>
         <summary>Targets a 32-bit Intel processor.</summary>
       </Docs>
@@ -117,6 +128,8 @@
       <MemberSignature Language="C#" Value="IA64" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.ImageFileMachine IA64 = int32(512)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.ImageFileMachine.IA64" />
+      <MemberSignature Language="VB.NET" Value="IA64" />
+      <MemberSignature Language="C++ CLI" Value="IA64" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -134,6 +147,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.ImageFileMachine</ReturnType>
       </ReturnValue>
+      <MemberValue>512</MemberValue>
       <Docs>
         <summary>Targets a 64-bit Intel processor.</summary>
       </Docs>

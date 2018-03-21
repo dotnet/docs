@@ -1,7 +1,9 @@
-<Type Name="ContractArgumentValidatorAttribute" FullName="System.Diagnostics.Contracts.ContractArgumentValidatorAttribute">
+﻿<Type Name="ContractArgumentValidatorAttribute" FullName="System.Diagnostics.Contracts.ContractArgumentValidatorAttribute">
   <TypeSignature Language="C#" Value="public sealed class ContractArgumentValidatorAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ContractArgumentValidatorAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Contracts.ContractArgumentValidatorAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ContractArgumentValidatorAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ContractArgumentValidatorAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -70,6 +72,8 @@ Contract.Requires<ArgumentOutOfRangeException>(position < data.Length);
       <MemberSignature Language="C#" Value="public ContractArgumentValidatorAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Contracts.ContractArgumentValidatorAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ContractArgumentValidatorAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Contracts</AssemblyName>

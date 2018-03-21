@@ -1,7 +1,9 @@
-<Type Name="XmlDsigExcC14NTransform" FullName="System.Security.Cryptography.Xml.XmlDsigExcC14NTransform">
+﻿<Type Name="XmlDsigExcC14NTransform" FullName="System.Security.Cryptography.Xml.XmlDsigExcC14NTransform">
   <TypeSignature Language="C#" Value="public class XmlDsigExcC14NTransform : System.Security.Cryptography.Xml.Transform" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlDsigExcC14NTransform extends System.Security.Cryptography.Xml.Transform" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Xml.XmlDsigExcC14NTransform" />
+  <TypeSignature Language="VB.NET" Value="Public Class XmlDsigExcC14NTransform&#xA;Inherits Transform" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlDsigExcC14NTransform : System::Security::Cryptography::Xml::Transform" />
   <AssemblyInfo>
     <AssemblyName>System.Security</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,10 +49,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Xml.XmlDsigExcC14NTransform" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public XmlDsigExcC14NTransform ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.XmlDsigExcC14NTransform.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlDsigExcC14NTransform();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -70,6 +83,8 @@
       <MemberSignature Language="C#" Value="public XmlDsigExcC14NTransform (bool includeComments);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool includeComments) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.XmlDsigExcC14NTransform.#ctor(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (includeComments As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlDsigExcC14NTransform(bool includeComments);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -93,6 +108,8 @@
       <MemberSignature Language="C#" Value="public XmlDsigExcC14NTransform (string inclusiveNamespacesPrefixList);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string inclusiveNamespacesPrefixList) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.XmlDsigExcC14NTransform.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (inclusiveNamespacesPrefixList As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlDsigExcC14NTransform(System::String ^ inclusiveNamespacesPrefixList);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -122,6 +139,8 @@
       <MemberSignature Language="C#" Value="public XmlDsigExcC14NTransform (bool includeComments, string inclusiveNamespacesPrefixList);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool includeComments, string inclusiveNamespacesPrefixList) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.XmlDsigExcC14NTransform.#ctor(System.Boolean,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (includeComments As Boolean, inclusiveNamespacesPrefixList As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlDsigExcC14NTransform(bool includeComments, System::String ^ inclusiveNamespacesPrefixList);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -154,6 +173,8 @@
       <MemberSignature Language="C#" Value="public override byte[] GetDigestedOutput (System.Security.Cryptography.HashAlgorithm hash);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance unsigned int8[] GetDigestedOutput(class System.Security.Cryptography.HashAlgorithm hash) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.XmlDsigExcC14NTransform.GetDigestedOutput(System.Security.Cryptography.HashAlgorithm)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDigestedOutput (hash As HashAlgorithm) As Byte()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Byte&gt; ^ GetDigestedOutput(System::Security::Cryptography::HashAlgorithm ^ hash);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -180,6 +201,8 @@
       <MemberSignature Language="C#" Value="protected override System.Xml.XmlNodeList GetInnerXml ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Xml.XmlNodeList GetInnerXml() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.XmlDsigExcC14NTransform.GetInnerXml" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetInnerXml () As XmlNodeList" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Xml::XmlNodeList ^ GetInnerXml();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -199,10 +222,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetOutput">
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the output of the current <see cref="T:System.Security.Cryptography.Xml.XmlDsigExcC14NTransform" /> object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetOutput">
       <MemberSignature Language="C#" Value="public override object GetOutput ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetOutput() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.XmlDsigExcC14NTransform.GetOutput" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetOutput () As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetOutput();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -226,6 +260,7 @@
       <MemberSignature Language="C#" Value="public override object GetOutput (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetOutput(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.XmlDsigExcC14NTransform.GetOutput(System.Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetOutput(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -266,6 +301,8 @@
       <MemberSignature Language="C#" Value="public string InclusiveNamespacesPrefixList { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string InclusiveNamespacesPrefixList" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.XmlDsigExcC14NTransform.InclusiveNamespacesPrefixList" />
+      <MemberSignature Language="VB.NET" Value="Public Property InclusiveNamespacesPrefixList As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ InclusiveNamespacesPrefixList { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -304,6 +341,8 @@
       <MemberSignature Language="C#" Value="public override Type[] InputTypes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type[] InputTypes" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.XmlDsigExcC14NTransform.InputTypes" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property InputTypes As Type()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property cli::array &lt;Type ^&gt; ^ InputTypes { cli::array &lt;Type ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -335,6 +374,8 @@
       <MemberSignature Language="C#" Value="public override void LoadInnerXml (System.Xml.XmlNodeList nodeList);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void LoadInnerXml(class System.Xml.XmlNodeList nodeList) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.XmlDsigExcC14NTransform.LoadInnerXml(System.Xml.XmlNodeList)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub LoadInnerXml (nodeList As XmlNodeList)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void LoadInnerXml(System::Xml::XmlNodeList ^ nodeList);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -367,6 +408,8 @@
       <MemberSignature Language="C#" Value="public override void LoadInput (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void LoadInput(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.XmlDsigExcC14NTransform.LoadInput(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub LoadInput (obj As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void LoadInput(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -408,6 +451,8 @@
       <MemberSignature Language="C#" Value="public override Type[] OutputTypes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type[] OutputTypes" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.XmlDsigExcC14NTransform.OutputTypes" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property OutputTypes As Type()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property cli::array &lt;Type ^&gt; ^ OutputTypes { cli::array &lt;Type ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -433,23 +478,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetOutput">
-      <AssemblyInfo>
-        <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns the output of the current <see cref="T:System.Security.Cryptography.Xml.XmlDsigExcC14NTransform" /> object.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Xml.XmlDsigExcC14NTransform" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

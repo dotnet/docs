@@ -1,7 +1,9 @@
-<Type Name="OperationFault" FullName="System.Web.Services.Description.OperationFault">
+﻿<Type Name="OperationFault" FullName="System.Web.Services.Description.OperationFault">
   <TypeSignature Language="C#" Value="public sealed class OperationFault : System.Web.Services.Description.OperationMessage" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit OperationFault extends System.Web.Services.Description.OperationMessage" />
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.OperationFault" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OperationFault&#xA;Inherits OperationMessage" />
+  <TypeSignature Language="C++ CLI" Value="public ref class OperationFault sealed : System::Web::Services::Description::OperationMessage" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -45,6 +47,8 @@
       <MemberSignature Language="C#" Value="public OperationFault ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.OperationFault.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OperationFault();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -61,6 +65,8 @@
       <MemberSignature Language="C#" Value="public override System.Web.Services.Description.ServiceDescriptionFormatExtensionCollection Extensions { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Description.ServiceDescriptionFormatExtensionCollection Extensions" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.OperationFault.Extensions" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Extensions As ServiceDescriptionFormatExtensionCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::Services::Description::ServiceDescriptionFormatExtensionCollection ^ Extensions { System::Web::Services::Description::ServiceDescriptionFormatExtensionCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

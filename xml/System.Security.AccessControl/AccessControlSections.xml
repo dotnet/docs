@@ -1,7 +1,9 @@
-<Type Name="AccessControlSections" FullName="System.Security.AccessControl.AccessControlSections">
+﻿<Type Name="AccessControlSections" FullName="System.Security.AccessControl.AccessControlSections">
   <TypeSignature Language="C#" Value="public enum AccessControlSections" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AccessControlSections extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.AccessControlSections" />
+  <TypeSignature Language="VB.NET" Value="Public Enum AccessControlSections" />
+  <TypeSignature Language="C++ CLI" Value="public enum class AccessControlSections" />
   <AssemblyInfo>
     <AssemblyName>System.Security.AccessControl</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +31,8 @@
       <MemberSignature Language="C#" Value="Access" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.AccessControlSections Access = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.AccessControlSections.Access" />
+      <MemberSignature Language="VB.NET" Value="Access" />
+      <MemberSignature Language="C++ CLI" Value="Access" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -43,6 +47,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.AccessControlSections</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The discretionary access control list (DACL).</summary>
       </Docs>
@@ -51,6 +56,8 @@
       <MemberSignature Language="C#" Value="All" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.AccessControlSections All = int32(15)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.AccessControlSections.All" />
+      <MemberSignature Language="VB.NET" Value="All" />
+      <MemberSignature Language="C++ CLI" Value="All" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -65,6 +72,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.AccessControlSections</ReturnType>
       </ReturnValue>
+      <MemberValue>15</MemberValue>
       <Docs>
         <summary>The entire security descriptor.</summary>
       </Docs>
@@ -73,6 +81,8 @@
       <MemberSignature Language="C#" Value="Audit" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.AccessControlSections Audit = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.AccessControlSections.Audit" />
+      <MemberSignature Language="VB.NET" Value="Audit" />
+      <MemberSignature Language="C++ CLI" Value="Audit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -87,6 +97,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.AccessControlSections</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The system access control list (SACL).</summary>
       </Docs>
@@ -95,6 +106,8 @@
       <MemberSignature Language="C#" Value="Group" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.AccessControlSections Group = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.AccessControlSections.Group" />
+      <MemberSignature Language="VB.NET" Value="Group" />
+      <MemberSignature Language="C++ CLI" Value="Group" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -109,6 +122,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.AccessControlSections</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>The primary group.</summary>
       </Docs>
@@ -117,6 +131,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.AccessControlSections None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.AccessControlSections.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -131,6 +147,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.AccessControlSections</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>No sections.</summary>
       </Docs>
@@ -139,6 +156,8 @@
       <MemberSignature Language="C#" Value="Owner" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.AccessControlSections Owner = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.AccessControlSections.Owner" />
+      <MemberSignature Language="VB.NET" Value="Owner" />
+      <MemberSignature Language="C++ CLI" Value="Owner" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -153,6 +172,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.AccessControlSections</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The owner.</summary>
       </Docs>

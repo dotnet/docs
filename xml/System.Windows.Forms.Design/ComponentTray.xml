@@ -1,7 +1,9 @@
-<Type Name="ComponentTray" FullName="System.Windows.Forms.Design.ComponentTray">
+﻿<Type Name="ComponentTray" FullName="System.Windows.Forms.Design.ComponentTray">
   <TypeSignature Language="C#" Value="public class ComponentTray : System.Windows.Forms.ScrollableControl, System.ComponentModel.IExtenderProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ComponentTray extends System.Windows.Forms.ScrollableControl implements class System.ComponentModel.IExtenderProvider" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.ComponentTray" />
+  <TypeSignature Language="VB.NET" Value="Public Class ComponentTray&#xA;Inherits ScrollableControl&#xA;Implements IExtenderProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ComponentTray : System::Windows::Forms::ScrollableControl, System::ComponentModel::IExtenderProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +50,8 @@
       <MemberSignature Language="C#" Value="public ComponentTray (System.ComponentModel.Design.IDesigner mainDesigner, IServiceProvider serviceProvider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ComponentModel.Design.IDesigner mainDesigner, class System.IServiceProvider serviceProvider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentTray.#ctor(System.ComponentModel.Design.IDesigner,System.IServiceProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (mainDesigner As IDesigner, serviceProvider As IServiceProvider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ComponentTray(System::ComponentModel::Design::IDesigner ^ mainDesigner, IServiceProvider ^ serviceProvider);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -75,6 +79,8 @@
       <MemberSignature Language="C#" Value="public virtual void AddComponent (System.ComponentModel.IComponent component);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddComponent(class System.ComponentModel.IComponent component) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentTray.AddComponent(System.ComponentModel.IComponent)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub AddComponent (component As IComponent)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddComponent(System::ComponentModel::IComponent ^ component);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -97,6 +103,8 @@
       <MemberSignature Language="C#" Value="public bool AutoArrange { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AutoArrange" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.ComponentTray.AutoArrange" />
+      <MemberSignature Language="VB.NET" Value="Public Property AutoArrange As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutoArrange { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -116,6 +124,8 @@
       <MemberSignature Language="C#" Value="protected virtual bool CanCreateComponentFromTool (System.Drawing.Design.ToolboxItem tool);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool CanCreateComponentFromTool(class System.Drawing.Design.ToolboxItem tool) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentTray.CanCreateComponentFromTool(System.Drawing.Design.ToolboxItem)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function CanCreateComponentFromTool (tool As ToolboxItem) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool CanCreateComponentFromTool(System::Drawing::Design::ToolboxItem ^ tool);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -139,6 +149,8 @@
       <MemberSignature Language="C#" Value="protected virtual bool CanDisplayComponent (System.ComponentModel.IComponent component);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool CanDisplayComponent(class System.ComponentModel.IComponent component) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentTray.CanDisplayComponent(System.ComponentModel.IComponent)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function CanDisplayComponent (component As IComponent) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool CanDisplayComponent(System::ComponentModel::IComponent ^ component);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -169,6 +181,8 @@
       <MemberSignature Language="C#" Value="public int ComponentCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ComponentCount" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.ComponentTray.ComponentCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ComponentCount As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ComponentCount { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -187,6 +201,8 @@
       <MemberSignature Language="C#" Value="public void CreateComponentFromTool (System.Drawing.Design.ToolboxItem tool);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CreateComponentFromTool(class System.Drawing.Design.ToolboxItem tool) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentTray.CreateComponentFromTool(System.Drawing.Design.ToolboxItem)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CreateComponentFromTool (tool As ToolboxItem)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CreateComponentFromTool(System::Drawing::Design::ToolboxItem ^ tool);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -215,6 +231,8 @@
       <MemberSignature Language="C#" Value="protected void DisplayError (Exception e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void DisplayError(class System.Exception e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentTray.DisplayError(System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub DisplayError (e As Exception)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void DisplayError(Exception ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -236,6 +254,8 @@
       <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentTray.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -273,6 +293,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Point GetLocation (System.ComponentModel.IComponent receiver);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Drawing.Point GetLocation(class System.ComponentModel.IComponent receiver) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentTray.GetLocation(System.ComponentModel.IComponent)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetLocation (receiver As IComponent) As Point" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::Point GetLocation(System::ComponentModel::IComponent ^ receiver);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -286,7 +308,7 @@
           <AttributeName>System.ComponentModel.Category("Layout")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.DesignOnly(true)</AttributeName>
@@ -319,6 +341,8 @@
       <MemberSignature Language="C#" Value="public System.ComponentModel.IComponent GetNextComponent (System.ComponentModel.IComponent component, bool forward);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ComponentModel.IComponent GetNextComponent(class System.ComponentModel.IComponent component, bool forward) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentTray.GetNextComponent(System.ComponentModel.IComponent,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetNextComponent (component As IComponent, forward As Boolean) As IComponent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::IComponent ^ GetNextComponent(System::ComponentModel::IComponent ^ component, bool forward);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -344,6 +368,8 @@
       <MemberSignature Language="C#" Value="protected override object GetService (Type serviceType);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object GetService(class System.Type serviceType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentTray.GetService(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetService (serviceType As Type) As Object" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetService(Type ^ serviceType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -366,6 +392,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Point GetTrayLocation (System.ComponentModel.IComponent receiver);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Drawing.Point GetTrayLocation(class System.ComponentModel.IComponent receiver) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentTray.GetTrayLocation(System.ComponentModel.IComponent)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetTrayLocation (receiver As IComponent) As Point" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::Point GetTrayLocation(System::ComponentModel::IComponent ^ receiver);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -412,6 +440,8 @@
       <MemberSignature Language="C#" Value="public bool IsTrayComponent (System.ComponentModel.IComponent comp);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsTrayComponent(class System.ComponentModel.IComponent comp) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentTray.IsTrayComponent(System.ComponentModel.IComponent)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsTrayComponent (comp As IComponent) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsTrayComponent(System::ComponentModel::IComponent ^ comp);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -435,6 +465,8 @@
       <MemberSignature Language="C#" Value="protected override void OnDragDrop (System.Windows.Forms.DragEventArgs de);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnDragDrop(class System.Windows.Forms.DragEventArgs de) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentTray.OnDragDrop(System.Windows.Forms.DragEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnDragDrop (de As DragEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnDragDrop(System::Windows::Forms::DragEventArgs ^ de);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -456,6 +488,8 @@
       <MemberSignature Language="C#" Value="protected override void OnDragEnter (System.Windows.Forms.DragEventArgs de);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnDragEnter(class System.Windows.Forms.DragEventArgs de) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentTray.OnDragEnter(System.Windows.Forms.DragEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnDragEnter (de As DragEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnDragEnter(System::Windows::Forms::DragEventArgs ^ de);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -477,6 +511,8 @@
       <MemberSignature Language="C#" Value="protected override void OnDragLeave (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnDragLeave(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentTray.OnDragLeave(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnDragLeave (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnDragLeave(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -498,6 +534,8 @@
       <MemberSignature Language="C#" Value="protected override void OnDragOver (System.Windows.Forms.DragEventArgs de);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnDragOver(class System.Windows.Forms.DragEventArgs de) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentTray.OnDragOver(System.Windows.Forms.DragEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnDragOver (de As DragEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnDragOver(System::Windows::Forms::DragEventArgs ^ de);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -519,6 +557,8 @@
       <MemberSignature Language="C#" Value="protected override void OnGiveFeedback (System.Windows.Forms.GiveFeedbackEventArgs gfevent);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnGiveFeedback(class System.Windows.Forms.GiveFeedbackEventArgs gfevent) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentTray.OnGiveFeedback(System.Windows.Forms.GiveFeedbackEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnGiveFeedback (gfevent As GiveFeedbackEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnGiveFeedback(System::Windows::Forms::GiveFeedbackEventArgs ^ gfevent);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -543,6 +583,8 @@
       <MemberSignature Language="C#" Value="protected override void OnLayout (System.Windows.Forms.LayoutEventArgs levent);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnLayout(class System.Windows.Forms.LayoutEventArgs levent) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentTray.OnLayout(System.Windows.Forms.LayoutEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnLayout (levent As LayoutEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnLayout(System::Windows::Forms::LayoutEventArgs ^ levent);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -564,6 +606,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnLostCapture ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnLostCapture() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentTray.OnLostCapture" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnLostCapture ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnLostCapture();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -582,6 +626,8 @@
       <MemberSignature Language="C#" Value="protected override void OnMouseDoubleClick (System.Windows.Forms.MouseEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseDoubleClick(class System.Windows.Forms.MouseEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentTray.OnMouseDoubleClick(System.Windows.Forms.MouseEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseDoubleClick (e As MouseEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseDoubleClick(System::Windows::Forms::MouseEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -603,6 +649,8 @@
       <MemberSignature Language="C#" Value="protected override void OnMouseDown (System.Windows.Forms.MouseEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseDown(class System.Windows.Forms.MouseEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentTray.OnMouseDown(System.Windows.Forms.MouseEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseDown (e As MouseEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseDown(System::Windows::Forms::MouseEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -627,6 +675,8 @@
       <MemberSignature Language="C#" Value="protected override void OnMouseMove (System.Windows.Forms.MouseEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseMove(class System.Windows.Forms.MouseEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentTray.OnMouseMove(System.Windows.Forms.MouseEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseMove (e As MouseEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseMove(System::Windows::Forms::MouseEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -651,6 +701,8 @@
       <MemberSignature Language="C#" Value="protected override void OnMouseUp (System.Windows.Forms.MouseEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseUp(class System.Windows.Forms.MouseEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentTray.OnMouseUp(System.Windows.Forms.MouseEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseUp (e As MouseEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseUp(System::Windows::Forms::MouseEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -675,6 +727,8 @@
       <MemberSignature Language="C#" Value="protected override void OnPaint (System.Windows.Forms.PaintEventArgs pe);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnPaint(class System.Windows.Forms.PaintEventArgs pe) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentTray.OnPaint(System.Windows.Forms.PaintEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPaint (pe As PaintEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPaint(System::Windows::Forms::PaintEventArgs ^ pe);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -696,6 +750,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnSetCursor ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnSetCursor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentTray.OnSetCursor" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSetCursor ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSetCursor();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -717,6 +773,8 @@
       <MemberSignature Language="C#" Value="public virtual void RemoveComponent (System.ComponentModel.IComponent component);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveComponent(class System.ComponentModel.IComponent component) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentTray.RemoveComponent(System.ComponentModel.IComponent)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub RemoveComponent (component As IComponent)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveComponent(System::ComponentModel::IComponent ^ component);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -739,6 +797,8 @@
       <MemberSignature Language="C#" Value="public void SetLocation (System.ComponentModel.IComponent receiver, System.Drawing.Point location);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetLocation(class System.ComponentModel.IComponent receiver, valuetype System.Drawing.Point location) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentTray.SetLocation(System.ComponentModel.IComponent,System.Drawing.Point)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetLocation (receiver As IComponent, location As Point)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetLocation(System::ComponentModel::IComponent ^ receiver, System::Drawing::Point location);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -762,6 +822,8 @@
       <MemberSignature Language="C#" Value="public void SetTrayLocation (System.ComponentModel.IComponent receiver, System.Drawing.Point location);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetTrayLocation(class System.ComponentModel.IComponent receiver, valuetype System.Drawing.Point location) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentTray.SetTrayLocation(System.ComponentModel.IComponent,System.Drawing.Point)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetTrayLocation (receiver As IComponent, location As Point)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetTrayLocation(System::ComponentModel::IComponent ^ receiver, System::Drawing::Point location);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -795,6 +857,8 @@
       <MemberSignature Language="C#" Value="public bool ShowLargeIcons { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ShowLargeIcons" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.ComponentTray.ShowLargeIcons" />
+      <MemberSignature Language="VB.NET" Value="Public Property ShowLargeIcons As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowLargeIcons { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -814,6 +878,8 @@
       <MemberSignature Language="C#" Value="bool IExtenderProvider.CanExtend (object component);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.ComponentModel.IExtenderProvider.CanExtend(object component) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentTray.System#ComponentModel#IExtenderProvider#CanExtend(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Function CanExtend (component As Object) As Boolean Implements IExtenderProvider.CanExtend" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.ComponentModel.IExtenderProvider.CanExtend(System::Object ^ component) = System::ComponentModel::IExtenderProvider::CanExtend;" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -844,6 +910,8 @@
       <MemberSignature Language="C#" Value="protected override void WndProc (ref System.Windows.Forms.Message m);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void WndProc(valuetype System.Windows.Forms.Message&amp; m) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentTray.WndProc(System.Windows.Forms.Message@)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub WndProc (ByRef m As Message)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void WndProc(System::Windows::Forms::Message % m);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

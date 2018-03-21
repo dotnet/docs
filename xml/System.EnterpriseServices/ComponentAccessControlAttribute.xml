@@ -1,7 +1,9 @@
-<Type Name="ComponentAccessControlAttribute" FullName="System.EnterpriseServices.ComponentAccessControlAttribute">
+﻿<Type Name="ComponentAccessControlAttribute" FullName="System.EnterpriseServices.ComponentAccessControlAttribute">
   <TypeSignature Language="C#" Value="public sealed class ComponentAccessControlAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ComponentAccessControlAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.ComponentAccessControlAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ComponentAccessControlAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ComponentAccessControlAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +38,8 @@
       <MemberSignature Language="C#" Value="public ComponentAccessControlAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ComponentAccessControlAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ComponentAccessControlAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -51,6 +55,8 @@
       <MemberSignature Language="C#" Value="public ComponentAccessControlAttribute (bool val);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool val) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ComponentAccessControlAttribute.#ctor(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (val As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ComponentAccessControlAttribute(bool val);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -70,6 +76,8 @@
       <MemberSignature Language="C#" Value="public bool Value { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Value" />
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ComponentAccessControlAttribute.Value" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Value { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

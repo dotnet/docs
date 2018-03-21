@@ -1,7 +1,9 @@
-<Type Name="SizeChangedEventHandler" FullName="System.Windows.SizeChangedEventHandler">
+﻿<Type Name="SizeChangedEventHandler" FullName="System.Windows.SizeChangedEventHandler">
   <TypeSignature Language="C#" Value="public delegate void SizeChangedEventHandler(object sender, SizeChangedEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SizeChangedEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.SizeChangedEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub SizeChangedEventHandler(sender As Object, e As SizeChangedEventArgs)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void SizeChangedEventHandler(System::Object ^ sender, SizeChangedEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

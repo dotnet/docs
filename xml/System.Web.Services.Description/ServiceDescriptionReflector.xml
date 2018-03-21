@@ -1,7 +1,9 @@
-<Type Name="ServiceDescriptionReflector" FullName="System.Web.Services.Description.ServiceDescriptionReflector">
+﻿<Type Name="ServiceDescriptionReflector" FullName="System.Web.Services.Description.ServiceDescriptionReflector">
   <TypeSignature Language="C#" Value="public class ServiceDescriptionReflector" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ServiceDescriptionReflector extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.ServiceDescriptionReflector" />
+  <TypeSignature Language="VB.NET" Value="Public Class ServiceDescriptionReflector" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ServiceDescriptionReflector" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public ServiceDescriptionReflector ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.ServiceDescriptionReflector.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ServiceDescriptionReflector();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -34,6 +38,7 @@
       <MemberSignature Language="C#" Value="public void Reflect (Type type, string url);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Reflect(class System.Type type, string url) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.ServiceDescriptionReflector.Reflect(System.Type,System.String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Reflect(Type ^ type, System::String ^ url);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -66,6 +71,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.Serialization.XmlSchemas Schemas { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Serialization.XmlSchemas Schemas" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.ServiceDescriptionReflector.Schemas" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Schemas As XmlSchemas" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Serialization::XmlSchemas ^ Schemas { System::Xml::Serialization::XmlSchemas ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -93,6 +100,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Services.Description.ServiceDescriptionCollection ServiceDescriptions { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Description.ServiceDescriptionCollection ServiceDescriptions" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.ServiceDescriptionReflector.ServiceDescriptions" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ServiceDescriptions As ServiceDescriptionCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Description::ServiceDescriptionCollection ^ ServiceDescriptions { System::Web::Services::Description::ServiceDescriptionCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

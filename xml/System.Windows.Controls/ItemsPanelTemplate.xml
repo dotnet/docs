@@ -1,7 +1,9 @@
-<Type Name="ItemsPanelTemplate" FullName="System.Windows.Controls.ItemsPanelTemplate">
+﻿<Type Name="ItemsPanelTemplate" FullName="System.Windows.Controls.ItemsPanelTemplate">
   <TypeSignature Language="C#" Value="public class ItemsPanelTemplate : System.Windows.FrameworkTemplate" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ItemsPanelTemplate extends System.Windows.FrameworkTemplate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.ItemsPanelTemplate" />
+  <TypeSignature Language="VB.NET" Value="Public Class ItemsPanelTemplate&#xA;Inherits FrameworkTemplate" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ItemsPanelTemplate : System::Windows::FrameworkTemplate" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,10 +43,21 @@ Alternatively, you can do the following to achieve the same results. In this cas
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes an instance of the <see cref="T:System.Windows.Controls.ItemsPanelTemplate" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ItemsPanelTemplate ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ItemsPanelTemplate.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ItemsPanelTemplate();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -60,6 +73,8 @@ Alternatively, you can do the following to achieve the same results. In this cas
       <MemberSignature Language="C#" Value="public ItemsPanelTemplate (System.Windows.FrameworkElementFactory root);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.FrameworkElementFactory root) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ItemsPanelTemplate.#ctor(System.Windows.FrameworkElementFactory)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (root As FrameworkElementFactory)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ItemsPanelTemplate(System::Windows::FrameworkElementFactory ^ root);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -78,6 +93,8 @@ Alternatively, you can do the following to achieve the same results. In this cas
       <MemberSignature Language="C#" Value="protected override void ValidateTemplatedParent (System.Windows.FrameworkElement templatedParent);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void ValidateTemplatedParent(class System.Windows.FrameworkElement templatedParent) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ItemsPanelTemplate.ValidateTemplatedParent(System.Windows.FrameworkElement)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub ValidateTemplatedParent (templatedParent As FrameworkElement)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ValidateTemplatedParent(System::Windows::FrameworkElement ^ templatedParent);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -110,14 +127,5 @@ Alternatively, you can do the following to achieve the same results. In this cas
           <paramref name="templatedParent" /> is not an <see cref="T:System.Windows.Controls.ItemsPresenter" />.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes an instance of the <see cref="T:System.Windows.Controls.ItemsPanelTemplate" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

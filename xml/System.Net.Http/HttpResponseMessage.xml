@@ -1,7 +1,9 @@
-<Type Name="HttpResponseMessage" FullName="System.Net.Http.HttpResponseMessage">
+﻿<Type Name="HttpResponseMessage" FullName="System.Net.Http.HttpResponseMessage">
   <TypeSignature Language="C#" Value="public class HttpResponseMessage : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HttpResponseMessage extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Net.Http.HttpResponseMessage" />
+  <TypeSignature Language="VB.NET" Value="Public Class HttpResponseMessage&#xA;Implements IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HttpResponseMessage : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Http</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +58,8 @@
       <MemberSignature Language="C#" Value="public HttpResponseMessage ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.HttpResponseMessage.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpResponseMessage();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -78,6 +82,8 @@
       <MemberSignature Language="C#" Value="public HttpResponseMessage (System.Net.HttpStatusCode statusCode);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Net.HttpStatusCode statusCode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.HttpResponseMessage.#ctor(System.Net.HttpStatusCode)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (statusCode As HttpStatusCode)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpResponseMessage(System::Net::HttpStatusCode statusCode);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -103,6 +109,8 @@
       <MemberSignature Language="C#" Value="public System.Net.Http.HttpContent Content { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Http.HttpContent Content" />
       <MemberSignature Language="DocId" Value="P:System.Net.Http.HttpResponseMessage.Content" />
+      <MemberSignature Language="VB.NET" Value="Public Property Content As HttpContent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Http::HttpContent ^ Content { System::Net::Http::HttpContent ^ get(); void set(System::Net::Http::HttpContent ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -131,11 +139,28 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the unmanaged resources used by the <see cref="T:System.Net.Http.HttpResponseMessage" /> and optionally disposes of the managed resources.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Dispose">
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.HttpResponseMessage.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -160,6 +185,8 @@
       <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.HttpResponseMessage.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -196,6 +223,8 @@
       <MemberSignature Language="C#" Value="public System.Net.Http.HttpResponseMessage EnsureSuccessStatusCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Net.Http.HttpResponseMessage EnsureSuccessStatusCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode" />
+      <MemberSignature Language="VB.NET" Value="Public Function EnsureSuccessStatusCode () As HttpResponseMessage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Net::Http::HttpResponseMessage ^ EnsureSuccessStatusCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -231,6 +260,8 @@
       <MemberSignature Language="C#" Value="public System.Net.Http.Headers.HttpResponseHeaders Headers { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Http.Headers.HttpResponseHeaders Headers" />
       <MemberSignature Language="DocId" Value="P:System.Net.Http.HttpResponseMessage.Headers" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Headers As HttpResponseHeaders" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Http::Headers::HttpResponseHeaders ^ Headers { System::Net::Http::Headers::HttpResponseHeaders ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -256,6 +287,8 @@
       <MemberSignature Language="C#" Value="public bool IsSuccessStatusCode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsSuccessStatusCode" />
       <MemberSignature Language="DocId" Value="P:System.Net.Http.HttpResponseMessage.IsSuccessStatusCode" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSuccessStatusCode As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSuccessStatusCode { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -281,6 +314,8 @@
       <MemberSignature Language="C#" Value="public string ReasonPhrase { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ReasonPhrase" />
       <MemberSignature Language="DocId" Value="P:System.Net.Http.HttpResponseMessage.ReasonPhrase" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReasonPhrase As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ReasonPhrase { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -306,6 +341,8 @@
       <MemberSignature Language="C#" Value="public System.Net.Http.HttpRequestMessage RequestMessage { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Http.HttpRequestMessage RequestMessage" />
       <MemberSignature Language="DocId" Value="P:System.Net.Http.HttpResponseMessage.RequestMessage" />
+      <MemberSignature Language="VB.NET" Value="Public Property RequestMessage As HttpRequestMessage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Http::HttpRequestMessage ^ RequestMessage { System::Net::Http::HttpRequestMessage ^ get(); void set(System::Net::Http::HttpRequestMessage ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -338,6 +375,8 @@
       <MemberSignature Language="C#" Value="public System.Net.HttpStatusCode StatusCode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Net.HttpStatusCode StatusCode" />
       <MemberSignature Language="DocId" Value="P:System.Net.Http.HttpResponseMessage.StatusCode" />
+      <MemberSignature Language="VB.NET" Value="Public Property StatusCode As HttpStatusCode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::HttpStatusCode StatusCode { System::Net::HttpStatusCode get(); void set(System::Net::HttpStatusCode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -363,6 +402,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.HttpResponseMessage.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -389,6 +430,8 @@
       <MemberSignature Language="C#" Value="public Version Version { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Version Version" />
       <MemberSignature Language="DocId" Value="P:System.Net.Http.HttpResponseMessage.Version" />
+      <MemberSignature Language="VB.NET" Value="Public Property Version As Version" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Version ^ Version { Version ^ get(); void set(Version ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -410,17 +453,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Dispose">
-      <AssemblyInfo>
-        <AssemblyName>System.Net.Http</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Releases the unmanaged resources used by the <see cref="T:System.Net.Http.HttpResponseMessage" /> and optionally disposes of the managed resources.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

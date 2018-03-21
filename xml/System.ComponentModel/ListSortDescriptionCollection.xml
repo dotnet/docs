@@ -1,7 +1,9 @@
-<Type Name="ListSortDescriptionCollection" FullName="System.ComponentModel.ListSortDescriptionCollection">
+﻿<Type Name="ListSortDescriptionCollection" FullName="System.ComponentModel.ListSortDescriptionCollection">
   <TypeSignature Language="C#" Value="public class ListSortDescriptionCollection : System.Collections.IList" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ListSortDescriptionCollection extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Collections.IList" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.ListSortDescriptionCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class ListSortDescriptionCollection&#xA;Implements IList" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ListSortDescriptionCollection : System::Collections::IList" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -37,10 +39,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.ListSortDescriptionCollection" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ListSortDescriptionCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ListSortDescriptionCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ListSortDescriptionCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -72,6 +86,8 @@
       <MemberSignature Language="C#" Value="public ListSortDescriptionCollection (System.ComponentModel.ListSortDescription[] sorts);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ComponentModel.ListSortDescription[] sorts) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ListSortDescriptionCollection.#ctor(System.ComponentModel.ListSortDescription[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (sorts As ListSortDescription())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ListSortDescriptionCollection(cli::array &lt;System::ComponentModel::ListSortDescription ^&gt; ^ sorts);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -108,7 +124,12 @@
       <MemberSignature Language="C#" Value="public bool Contains (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Contains(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ListSortDescriptionCollection.Contains(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (value As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Contains(System::Object ^ value);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.Contains(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -140,7 +161,11 @@
       <MemberSignature Language="C#" Value="public void CopyTo (Array array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.Array array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ListSortDescriptionCollection.CopyTo(System.Array,System.Int32)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(Array ^ array, int index);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -172,7 +197,12 @@
       <MemberSignature Language="C#" Value="public int Count { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.ListSortDescriptionCollection.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -199,7 +229,12 @@
       <MemberSignature Language="C#" Value="public int IndexOf (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 IndexOf(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ListSortDescriptionCollection.IndexOf(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As Object) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int IndexOf(System::Object ^ value);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.IndexOf(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -230,6 +265,8 @@
       <MemberSignature Language="C#" Value="public System.ComponentModel.ListSortDescription this[int index] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.ListSortDescription Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.ListSortDescriptionCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As ListSortDescription" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::ListSortDescription ^ default[int] { System::ComponentModel::ListSortDescription ^ get(int index); void set(int index, System::ComponentModel::ListSortDescription ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -269,7 +306,12 @@
       <MemberSignature Language="C#" Value="bool System.Collections.ICollection.IsSynchronized { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.ICollection.IsSynchronized" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.ListSortDescriptionCollection.System#Collections#ICollection#IsSynchronized" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -304,7 +346,12 @@
       <MemberSignature Language="C#" Value="object System.Collections.ICollection.SyncRoot { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.ICollection.SyncRoot" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.ListSortDescriptionCollection.System#Collections#ICollection#SyncRoot" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -340,7 +387,12 @@
       <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ListSortDescriptionCollection.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator Implements IEnumerable.GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IEnumerator ^ System.Collections.IEnumerable.GetEnumerator() = System::Collections::IEnumerable::GetEnumerator;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -368,7 +420,12 @@
       <MemberSignature Language="C#" Value="int IList.Add (object value);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.IList.Add(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ListSortDescriptionCollection.System#Collections#IList#Add(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Function Add (value As Object) As Integer Implements IList.Add" />
+      <MemberSignature Language="C++ CLI" Value=" virtual int System.Collections.IList.Add(System::Object ^ value) = System::Collections::IList::Add;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.Add(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -407,7 +464,12 @@
       <MemberSignature Language="C#" Value="void IList.Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ListSortDescriptionCollection.System#Collections#IList#Clear" />
+      <MemberSignature Language="VB.NET" Value="Sub Clear () Implements IList.Clear" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.IList.Clear() = System::Collections::IList::Clear;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.Clear</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -442,7 +504,12 @@
       <MemberSignature Language="C#" Value="void IList.Insert (int index, object value);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.Insert(int32 index, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ListSortDescriptionCollection.System#Collections#IList#Insert(System.Int32,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Sub Insert (index As Integer, value As Object) Implements IList.Insert" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.IList.Insert(int index, System::Object ^ value) = System::Collections::IList::Insert;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.Insert(System.Int32,System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -482,7 +549,12 @@
       <MemberSignature Language="C#" Value="bool System.Collections.IList.IsFixedSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.IList.IsFixedSize" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.ListSortDescriptionCollection.System#Collections#IList#IsFixedSize" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsFixedSize As Boolean Implements IList.IsFixedSize" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsFixedSize { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.IList.IsFixedSize</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -517,7 +589,12 @@
       <MemberSignature Language="C#" Value="bool System.Collections.IList.IsReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.IList.IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.ListSortDescriptionCollection.System#Collections#IList#IsReadOnly" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements IList.IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.IList.IsReadOnly</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -552,7 +629,12 @@
       <MemberSignature Language="C#" Value="object System.Collections.IList.Item[int index] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.IList.Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.ListSortDescriptionCollection.System#Collections#IList#Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value=" Property Item(index As Integer) As Object Implements IList.Item" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IList.Item[int] { System::Object ^ get(int index); void set(int index, System::Object ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.IList.Item(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -583,7 +665,12 @@
       <MemberSignature Language="C#" Value="void IList.Remove (object value);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.Remove(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ListSortDescriptionCollection.System#Collections#IList#Remove(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Sub Remove (value As Object) Implements IList.Remove" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.IList.Remove(System::Object ^ value) = System::Collections::IList::Remove;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.Remove(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -621,7 +708,12 @@
       <MemberSignature Language="C#" Value="void IList.RemoveAt (int index);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.RemoveAt(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ListSortDescriptionCollection.System#Collections#IList#RemoveAt(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Sub RemoveAt (index As Integer) Implements IList.RemoveAt" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.IList.RemoveAt(int index) = System::Collections::IList::RemoveAt;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.RemoveAt(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -655,15 +747,5 @@
         <exception cref="T:System.InvalidOperationException">In all cases.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.ListSortDescriptionCollection" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

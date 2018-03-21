@@ -1,7 +1,9 @@
-<Type Name="Appearance" FullName="System.Windows.Forms.Appearance">
+﻿<Type Name="Appearance" FullName="System.Windows.Forms.Appearance">
   <TypeSignature Language="C#" Value="public enum Appearance" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed Appearance extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Appearance" />
+  <TypeSignature Language="VB.NET" Value="Public Enum Appearance" />
+  <TypeSignature Language="C++ CLI" Value="public enum class Appearance" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +32,8 @@
       <MemberSignature Language="C#" Value="Button" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Appearance Button = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Appearance.Button" />
+      <MemberSignature Language="VB.NET" Value="Button" />
+      <MemberSignature Language="C++ CLI" Value="Button" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -38,6 +42,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Appearance</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The appearance of a Windows button.</summary>
       </Docs>
@@ -46,6 +51,8 @@
       <MemberSignature Language="C#" Value="Normal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Appearance Normal = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Appearance.Normal" />
+      <MemberSignature Language="VB.NET" Value="Normal" />
+      <MemberSignature Language="C++ CLI" Value="Normal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -54,6 +61,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Appearance</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The default appearance defined by the control class.</summary>
       </Docs>

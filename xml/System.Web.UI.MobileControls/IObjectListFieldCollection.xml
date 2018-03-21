@@ -1,7 +1,9 @@
-<Type Name="IObjectListFieldCollection" FullName="System.Web.UI.MobileControls.IObjectListFieldCollection">
+﻿<Type Name="IObjectListFieldCollection" FullName="System.Web.UI.MobileControls.IObjectListFieldCollection">
   <TypeSignature Language="C#" Value="public interface IObjectListFieldCollection : System.Collections.ICollection" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IObjectListFieldCollection implements class System.Collections.ICollection, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.IObjectListFieldCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IObjectListFieldCollection&#xA;Implements ICollection" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IObjectListFieldCollection : System::Collections::ICollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +38,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.MobileControls.ObjectListField[] GetAll ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.UI.MobileControls.ObjectListField[] GetAll() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.IObjectListFieldCollection.GetAll" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAll () As ObjectListField()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Web::UI::MobileControls::ObjectListField ^&gt; ^ GetAll();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -51,10 +55,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="IndexOf">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the index of a field. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="IndexOf">
       <MemberSignature Language="C#" Value="public int IndexOf (string fieldIDOrTitle);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 IndexOf(string fieldIDOrTitle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.IObjectListFieldCollection.IndexOf(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOf (fieldIDOrTitle As String) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::String ^ fieldIDOrTitle);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -88,6 +103,8 @@
       <MemberSignature Language="C#" Value="public int IndexOf (System.Web.UI.MobileControls.ObjectListField field);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 IndexOf(class System.Web.UI.MobileControls.ObjectListField field) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.IObjectListFieldCollection.IndexOf(System.Web.UI.MobileControls.ObjectListField)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOf (field As ObjectListField) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Web::UI::MobileControls::ObjectListField ^ field);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -117,6 +134,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.MobileControls.ObjectListField this[int index] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.MobileControls.ObjectListField Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.IObjectListFieldCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As ObjectListField" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::MobileControls::ObjectListField ^ default[int] { System::Web::UI::MobileControls::ObjectListField ^ get(int index); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -135,14 +154,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="IndexOf">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns the index of a field. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

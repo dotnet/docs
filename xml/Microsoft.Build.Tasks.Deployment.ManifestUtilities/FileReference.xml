@@ -1,7 +1,9 @@
-<Type Name="FileReference" FullName="Microsoft.Build.Tasks.Deployment.ManifestUtilities.FileReference">
+﻿<Type Name="FileReference" FullName="Microsoft.Build.Tasks.Deployment.ManifestUtilities.FileReference">
   <TypeSignature Language="C#" Value="public sealed class FileReference : Microsoft.Build.Tasks.Deployment.ManifestUtilities.BaseReference" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit FileReference extends Microsoft.Build.Tasks.Deployment.ManifestUtilities.BaseReference" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.FileReference" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FileReference&#xA;Inherits BaseReference" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FileReference sealed : Microsoft::Build::Tasks::Deployment::ManifestUtilities::BaseReference" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,10 +22,21 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.FileReference" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public FileReference ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.FileReference.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FileReference();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -39,6 +52,8 @@
       <MemberSignature Language="C#" Value="public FileReference (string path);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string path) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.FileReference.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (path As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FileReference(System::String ^ path);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -57,6 +72,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Tasks.Deployment.ManifestUtilities.ComClass[] ComClasses { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Tasks.Deployment.ManifestUtilities.ComClass[] ComClasses" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.FileReference.ComClasses" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ComClasses As ComClass()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Tasks::Deployment::ManifestUtilities::ComClass ^&gt; ^ ComClasses { cli::array &lt;Microsoft::Build::Tasks::Deployment::ManifestUtilities::ComClass ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -80,6 +97,8 @@
       <MemberSignature Language="C#" Value="public bool IsDataFile { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsDataFile" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.FileReference.IsDataFile" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsDataFile As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDataFile { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -103,6 +122,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Tasks.Deployment.ManifestUtilities.ProxyStub[] ProxyStubs { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Tasks.Deployment.ManifestUtilities.ProxyStub[] ProxyStubs" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.FileReference.ProxyStubs" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProxyStubs As ProxyStub()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Tasks::Deployment::ManifestUtilities::ProxyStub ^&gt; ^ ProxyStubs { cli::array &lt;Microsoft::Build::Tasks::Deployment::ManifestUtilities::ProxyStub ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -123,9 +144,11 @@
       </Docs>
     </Member>
     <Member MemberName="SortName">
-      <MemberSignature Language="C#" Value="protected override string SortName { get; }" />
+      <MemberSignature Language="C#" Value="protected internal override string SortName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SortName" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.FileReference.SortName" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property SortName As String" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property System::String ^ SortName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -144,6 +167,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Tasks.Deployment.ManifestUtilities.TypeLib[] TypeLibs { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Tasks.Deployment.ManifestUtilities.TypeLib[] TypeLibs" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.FileReference.TypeLibs" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TypeLibs As TypeLib()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Tasks::Deployment::ManifestUtilities::TypeLib ^&gt; ^ TypeLibs { cli::array &lt;Microsoft::Build::Tasks::Deployment::ManifestUtilities::TypeLib ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -167,6 +192,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Tasks.Deployment.ManifestUtilities.ComClass[] XmlComClasses { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Tasks.Deployment.ManifestUtilities.ComClass[] XmlComClasses" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.FileReference.XmlComClasses" />
+      <MemberSignature Language="VB.NET" Value="Public Property XmlComClasses As ComClass()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Tasks::Deployment::ManifestUtilities::ComClass ^&gt; ^ XmlComClasses { cli::array &lt;Microsoft::Build::Tasks::Deployment::ManifestUtilities::ComClass ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Tasks::Deployment::ManifestUtilities::ComClass ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -196,6 +223,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Tasks.Deployment.ManifestUtilities.ProxyStub[] XmlProxyStubs { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Tasks.Deployment.ManifestUtilities.ProxyStub[] XmlProxyStubs" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.FileReference.XmlProxyStubs" />
+      <MemberSignature Language="VB.NET" Value="Public Property XmlProxyStubs As ProxyStub()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Tasks::Deployment::ManifestUtilities::ProxyStub ^&gt; ^ XmlProxyStubs { cli::array &lt;Microsoft::Build::Tasks::Deployment::ManifestUtilities::ProxyStub ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Tasks::Deployment::ManifestUtilities::ProxyStub ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -225,6 +254,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Tasks.Deployment.ManifestUtilities.TypeLib[] XmlTypeLibs { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Tasks.Deployment.ManifestUtilities.TypeLib[] XmlTypeLibs" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.FileReference.XmlTypeLibs" />
+      <MemberSignature Language="VB.NET" Value="Public Property XmlTypeLibs As TypeLib()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Tasks::Deployment::ManifestUtilities::TypeLib ^&gt; ^ XmlTypeLibs { cli::array &lt;Microsoft::Build::Tasks::Deployment::ManifestUtilities::TypeLib ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Tasks::Deployment::ManifestUtilities::TypeLib ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -254,6 +285,8 @@
       <MemberSignature Language="C#" Value="public string XmlWriteableType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XmlWriteableType" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.FileReference.XmlWriteableType" />
+      <MemberSignature Language="VB.NET" Value="Public Property XmlWriteableType As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlWriteableType { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -279,14 +312,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.FileReference" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

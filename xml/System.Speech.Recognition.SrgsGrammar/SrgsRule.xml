@@ -1,7 +1,9 @@
-<Type Name="SrgsRule" FullName="System.Speech.Recognition.SrgsGrammar.SrgsRule">
+﻿<Type Name="SrgsRule" FullName="System.Speech.Recognition.SrgsGrammar.SrgsRule">
   <TypeSignature Language="C#" Value="public class SrgsRule" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit SrgsRule extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Speech.Recognition.SrgsGrammar.SrgsRule" />
+  <TypeSignature Language="VB.NET" Value="Public Class SrgsRule" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SrgsRule" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,10 +42,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsRule" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SrgsRule (string id);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SrgsGrammar.SrgsRule.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (id As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SrgsRule(System::String ^ id);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -122,6 +135,8 @@ public void WorldSoccerWinners ()
       <MemberSignature Language="C#" Value="public SrgsRule (string id, params System.Speech.Recognition.SrgsGrammar.SrgsElement[] elements);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, class System.Speech.Recognition.SrgsGrammar.SrgsElement[] elements) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SrgsGrammar.SrgsRule.#ctor(System.String,System.Speech.Recognition.SrgsGrammar.SrgsElement[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (id As String, ParamArray elements As SrgsElement())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SrgsRule(System::String ^ id, ... cli::array &lt;System::Speech::Recognition::SrgsGrammar::SrgsElement ^&gt; ^ elements);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -239,6 +254,8 @@ public void WorldSoccerWinners ()
       <MemberSignature Language="C#" Value="public void Add (System.Speech.Recognition.SrgsGrammar.SrgsElement element);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Speech.Recognition.SrgsGrammar.SrgsElement element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SrgsGrammar.SrgsRule.Add(System.Speech.Recognition.SrgsGrammar.SrgsElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (element As SrgsElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Speech::Recognition::SrgsGrammar::SrgsElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -303,6 +320,8 @@ document.Root = winnerRule;
       <MemberSignature Language="C#" Value="public string BaseClass { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string BaseClass" />
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SrgsGrammar.SrgsRule.BaseClass" />
+      <MemberSignature Language="VB.NET" Value="Public Property BaseClass As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ BaseClass { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -321,6 +340,8 @@ document.Root = winnerRule;
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.Speech.Recognition.SrgsGrammar.SrgsElement&gt; Elements { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.Speech.Recognition.SrgsGrammar.SrgsElement&gt; Elements" />
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SrgsGrammar.SrgsRule.Elements" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Elements As Collection(Of SrgsElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::Speech::Recognition::SrgsGrammar::SrgsElement ^&gt; ^ Elements { System::Collections::ObjectModel::Collection&lt;System::Speech::Recognition::SrgsGrammar::SrgsElement ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -346,6 +367,8 @@ document.Root = winnerRule;
       <MemberSignature Language="C#" Value="public string Id { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Id" />
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SrgsGrammar.SrgsRule.Id" />
+      <MemberSignature Language="VB.NET" Value="Public Property Id As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Id { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -380,6 +403,8 @@ document.Root = winnerRule;
       <MemberSignature Language="C#" Value="public string OnError { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string OnError" />
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SrgsGrammar.SrgsRule.OnError" />
+      <MemberSignature Language="VB.NET" Value="Public Property OnError As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ OnError { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -398,6 +423,8 @@ document.Root = winnerRule;
       <MemberSignature Language="C#" Value="public string OnInit { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string OnInit" />
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SrgsGrammar.SrgsRule.OnInit" />
+      <MemberSignature Language="VB.NET" Value="Public Property OnInit As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ OnInit { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -416,6 +443,8 @@ document.Root = winnerRule;
       <MemberSignature Language="C#" Value="public string OnParse { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string OnParse" />
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SrgsGrammar.SrgsRule.OnParse" />
+      <MemberSignature Language="VB.NET" Value="Public Property OnParse As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ OnParse { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -434,6 +463,8 @@ document.Root = winnerRule;
       <MemberSignature Language="C#" Value="public string OnRecognition { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string OnRecognition" />
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SrgsGrammar.SrgsRule.OnRecognition" />
+      <MemberSignature Language="VB.NET" Value="Public Property OnRecognition As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ OnRecognition { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -452,6 +483,8 @@ document.Root = winnerRule;
       <MemberSignature Language="C#" Value="public System.Speech.Recognition.SrgsGrammar.SrgsRuleScope Scope { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Speech.Recognition.SrgsGrammar.SrgsRuleScope Scope" />
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SrgsGrammar.SrgsRule.Scope" />
+      <MemberSignature Language="VB.NET" Value="Public Property Scope As SrgsRuleScope" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Speech::Recognition::SrgsGrammar::SrgsRuleScope Scope { System::Speech::Recognition::SrgsGrammar::SrgsRuleScope get(); void set(System::Speech::Recognition::SrgsGrammar::SrgsRuleScope value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -543,6 +576,8 @@ document.Root = winnerRule;
       <MemberSignature Language="C#" Value="public string Script { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Script" />
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SrgsGrammar.SrgsRule.Script" />
+      <MemberSignature Language="VB.NET" Value="Public Property Script As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Script { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -557,14 +592,5 @@ document.Root = winnerRule;
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsRule" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

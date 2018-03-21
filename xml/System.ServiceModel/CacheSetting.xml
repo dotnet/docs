@@ -1,7 +1,9 @@
-<Type Name="CacheSetting" FullName="System.ServiceModel.CacheSetting">
+﻿<Type Name="CacheSetting" FullName="System.ServiceModel.CacheSetting">
   <TypeSignature Language="C#" Value="public enum CacheSetting" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CacheSetting extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.CacheSetting" />
+  <TypeSignature Language="VB.NET" Value="Public Enum CacheSetting" />
+  <TypeSignature Language="C++ CLI" Value="public enum class CacheSetting" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -18,6 +20,8 @@
       <MemberSignature Language="C#" Value="AlwaysOff" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.CacheSetting AlwaysOff = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.CacheSetting.AlwaysOff" />
+      <MemberSignature Language="VB.NET" Value="AlwaysOff" />
+      <MemberSignature Language="C++ CLI" Value="AlwaysOff" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -26,6 +30,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.CacheSetting</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The setting is always off.</summary>
       </Docs>
@@ -34,6 +39,8 @@
       <MemberSignature Language="C#" Value="AlwaysOn" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.CacheSetting AlwaysOn = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.CacheSetting.AlwaysOn" />
+      <MemberSignature Language="VB.NET" Value="AlwaysOn" />
+      <MemberSignature Language="C++ CLI" Value="AlwaysOn" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -42,6 +49,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.CacheSetting</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The setting is always on.</summary>
       </Docs>
@@ -50,6 +58,8 @@
       <MemberSignature Language="C#" Value="Default" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.CacheSetting Default = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.CacheSetting.Default" />
+      <MemberSignature Language="VB.NET" Value="Default" />
+      <MemberSignature Language="C++ CLI" Value="Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -58,6 +68,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.CacheSetting</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Default setting.</summary>
       </Docs>

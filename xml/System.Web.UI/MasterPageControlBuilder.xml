@@ -1,7 +1,9 @@
-<Type Name="MasterPageControlBuilder" FullName="System.Web.UI.MasterPageControlBuilder">
+﻿<Type Name="MasterPageControlBuilder" FullName="System.Web.UI.MasterPageControlBuilder">
   <TypeSignature Language="C#" Value="public class MasterPageControlBuilder : System.Web.UI.UserControlControlBuilder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MasterPageControlBuilder extends System.Web.UI.UserControlControlBuilder" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MasterPageControlBuilder" />
+  <TypeSignature Language="VB.NET" Value="Public Class MasterPageControlBuilder&#xA;Inherits UserControlControlBuilder" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MasterPageControlBuilder : System::Web::UI::UserControlControlBuilder" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +31,8 @@
       <MemberSignature Language="C#" Value="public MasterPageControlBuilder ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MasterPageControlBuilder.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MasterPageControlBuilder();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

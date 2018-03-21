@@ -1,7 +1,9 @@
-<Type Name="ITransformProvider" FullName="System.Windows.Automation.Provider.ITransformProvider">
+﻿<Type Name="ITransformProvider" FullName="System.Windows.Automation.Provider.ITransformProvider">
   <TypeSignature Language="C#" Value="public interface ITransformProvider" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITransformProvider" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Provider.ITransformProvider" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ITransformProvider" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ITransformProvider" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationProvider</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,7 +17,7 @@
       <AttributeName>System.Runtime.InteropServices.Guid("6829ddc4-4f91-4ffa-b86f-bd3e2987cb4c")</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -37,6 +39,8 @@
       <MemberSignature Language="C#" Value="public bool CanMove { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanMove" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Provider.ITransformProvider.CanMove" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanMove As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanMove { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -66,6 +70,8 @@
       <MemberSignature Language="C#" Value="public bool CanResize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanResize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Provider.ITransformProvider.CanResize" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanResize As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanResize { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -95,6 +101,8 @@
       <MemberSignature Language="C#" Value="public bool CanRotate { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanRotate" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Provider.ITransformProvider.CanRotate" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanRotate As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanRotate { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -124,6 +132,8 @@
       <MemberSignature Language="C#" Value="public void Move (double x, double y);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Move(float64 x, float64 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.ITransformProvider.Move(System.Double,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Move (x As Double, y As Double)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Move(double x, double y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -163,6 +173,8 @@
       <MemberSignature Language="C#" Value="public void Resize (double width, double height);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Resize(float64 width, float64 height) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.ITransformProvider.Resize(System.Double,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Resize (width As Double, height As Double)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Resize(double width, double height);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -204,6 +216,8 @@
       <MemberSignature Language="C#" Value="public void Rotate (double degrees);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Rotate(float64 degrees) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.ITransformProvider.Rotate(System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Rotate (degrees As Double)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Rotate(double degrees);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>

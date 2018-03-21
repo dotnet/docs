@@ -1,7 +1,9 @@
-<Type Name="ResolveResponseInfo" FullName="System.ServiceModel.PeerResolvers.ResolveResponseInfo">
+﻿<Type Name="ResolveResponseInfo" FullName="System.ServiceModel.PeerResolvers.ResolveResponseInfo">
   <TypeSignature Language="C#" Value="public class ResolveResponseInfo" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ResolveResponseInfo extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.PeerResolvers.ResolveResponseInfo" />
+  <TypeSignature Language="VB.NET" Value="Public Class ResolveResponseInfo" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ResolveResponseInfo" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,10 +31,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.PeerResolvers.ResolveResponseInfo" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ResolveResponseInfo ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.PeerResolvers.ResolveResponseInfo.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ResolveResponseInfo();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -48,6 +61,8 @@
       <MemberSignature Language="C#" Value="public ResolveResponseInfo (System.ServiceModel.PeerNodeAddress[] addresses);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.PeerNodeAddress[] addresses) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.PeerResolvers.ResolveResponseInfo.#ctor(System.ServiceModel.PeerNodeAddress[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (addresses As PeerNodeAddress())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ResolveResponseInfo(cli::array &lt;System::ServiceModel::PeerNodeAddress ^&gt; ^ addresses);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -66,6 +81,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;System.ServiceModel.PeerNodeAddress&gt; Addresses { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class System.ServiceModel.PeerNodeAddress&gt; Addresses" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.PeerResolvers.ResolveResponseInfo.Addresses" />
+      <MemberSignature Language="VB.NET" Value="Public Property Addresses As IList(Of PeerNodeAddress)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::ServiceModel::PeerNodeAddress ^&gt; ^ Addresses { System::Collections::Generic::IList&lt;System::ServiceModel::PeerNodeAddress ^&gt; ^ get(); void set(System::Collections::Generic::IList&lt;System::ServiceModel::PeerNodeAddress ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -84,6 +101,8 @@
       <MemberSignature Language="C#" Value="public bool HasBody ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool HasBody() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.PeerResolvers.ResolveResponseInfo.HasBody" />
+      <MemberSignature Language="VB.NET" Value="Public Function HasBody () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool HasBody();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -99,14 +118,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.PeerResolvers.ResolveResponseInfo" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,9 @@
-<Type Name="SamlSecurityTokenHandler" FullName="System.IdentityModel.Tokens.SamlSecurityTokenHandler">
+﻿<Type Name="SamlSecurityTokenHandler" FullName="System.IdentityModel.Tokens.SamlSecurityTokenHandler">
   <TypeSignature Language="C#" Value="public class SamlSecurityTokenHandler : System.IdentityModel.Tokens.SecurityTokenHandler" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SamlSecurityTokenHandler extends System.IdentityModel.Tokens.SecurityTokenHandler" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.SamlSecurityTokenHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Class SamlSecurityTokenHandler&#xA;Inherits SecurityTokenHandler" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SamlSecurityTokenHandler : System::IdentityModel::Tokens::SecurityTokenHandler" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,10 +29,21 @@
     <altmember cref="T:System.IdentityModel.Tokens.SamlSecurityToken" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SamlSecurityTokenHandler" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SamlSecurityTokenHandler ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenHandler.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SamlSecurityTokenHandler();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -53,6 +66,7 @@
       <MemberSignature Language="C#" Value="public SamlSecurityTokenHandler (System.IdentityModel.Tokens.SamlSecurityTokenRequirement samlSecurityTokenRequirement);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Tokens.SamlSecurityTokenRequirement samlSecurityTokenRequirement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenHandler.#ctor(System.IdentityModel.Tokens.SamlSecurityTokenRequirement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SamlSecurityTokenHandler(System::IdentityModel::Tokens::SamlSecurityTokenRequirement ^ samlSecurityTokenRequirement);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -73,6 +87,8 @@
       <MemberSignature Language="C#" Value="protected virtual void AddDelegateToAttributes (System.Security.Claims.ClaimsIdentity subject, System.Collections.Generic.ICollection&lt;System.IdentityModel.Tokens.SamlAttribute&gt; attributes, System.IdentityModel.Tokens.SecurityTokenDescriptor tokenDescriptor);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void AddDelegateToAttributes(class System.Security.Claims.ClaimsIdentity subject, class System.Collections.Generic.ICollection`1&lt;class System.IdentityModel.Tokens.SamlAttribute&gt; attributes, class System.IdentityModel.Tokens.SecurityTokenDescriptor tokenDescriptor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenHandler.AddDelegateToAttributes(System.Security.Claims.ClaimsIdentity,System.Collections.Generic.ICollection{System.IdentityModel.Tokens.SamlAttribute},System.IdentityModel.Tokens.SecurityTokenDescriptor)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub AddDelegateToAttributes (subject As ClaimsIdentity, attributes As ICollection(Of SamlAttribute), tokenDescriptor As SecurityTokenDescriptor)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void AddDelegateToAttributes(System::Security::Claims::ClaimsIdentity ^ subject, System::Collections::Generic::ICollection&lt;System::IdentityModel::Tokens::SamlAttribute ^&gt; ^ attributes, System::IdentityModel::Tokens::SecurityTokenDescriptor ^ tokenDescriptor);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -104,6 +120,8 @@
       <MemberSignature Language="C#" Value="public const string Assertion;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string Assertion" />
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SamlSecurityTokenHandler.Assertion" />
+      <MemberSignature Language="VB.NET" Value="Public Const Assertion As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ Assertion;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -121,6 +139,8 @@
       <MemberSignature Language="C#" Value="public const string BearerConfirmationMethod;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string BearerConfirmationMethod" />
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SamlSecurityTokenHandler.BearerConfirmationMethod" />
+      <MemberSignature Language="VB.NET" Value="Public Const BearerConfirmationMethod As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ BearerConfirmationMethod;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -138,6 +158,8 @@
       <MemberSignature Language="C#" Value="public override bool CanReadToken (System.Xml.XmlReader reader);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanReadToken(class System.Xml.XmlReader reader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenHandler.CanReadToken(System.Xml.XmlReader)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CanReadToken (reader As XmlReader) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool CanReadToken(System::Xml::XmlReader ^ reader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -161,6 +183,8 @@
       <MemberSignature Language="C#" Value="public override bool CanValidateToken { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanValidateToken" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlSecurityTokenHandler.CanValidateToken" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanValidateToken As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanValidateToken { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -187,6 +211,8 @@
       <MemberSignature Language="C#" Value="public override bool CanWriteToken { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanWriteToken" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlSecurityTokenHandler.CanWriteToken" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanWriteToken As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanWriteToken { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -213,6 +239,8 @@
       <MemberSignature Language="C#" Value="public System.IdentityModel.Selectors.X509CertificateValidator CertificateValidator { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Selectors.X509CertificateValidator CertificateValidator" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlSecurityTokenHandler.CertificateValidator" />
+      <MemberSignature Language="VB.NET" Value="Public Property CertificateValidator As X509CertificateValidator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Selectors::X509CertificateValidator ^ CertificateValidator { System::IdentityModel::Selectors::X509CertificateValidator ^ get(); void set(System::IdentityModel::Selectors::X509CertificateValidator ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -231,6 +259,8 @@
       <MemberSignature Language="C#" Value="protected virtual System.Collections.Generic.ICollection&lt;System.IdentityModel.Tokens.SamlAttribute&gt; CollectAttributeValues (System.Collections.Generic.ICollection&lt;System.IdentityModel.Tokens.SamlAttribute&gt; attributes);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Collections.Generic.ICollection`1&lt;class System.IdentityModel.Tokens.SamlAttribute&gt; CollectAttributeValues(class System.Collections.Generic.ICollection`1&lt;class System.IdentityModel.Tokens.SamlAttribute&gt; attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenHandler.CollectAttributeValues(System.Collections.Generic.ICollection{System.IdentityModel.Tokens.SamlAttribute})" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function CollectAttributeValues (attributes As ICollection(Of SamlAttribute)) As ICollection(Of SamlAttribute)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Collections::Generic::ICollection&lt;System::IdentityModel::Tokens::SamlAttribute ^&gt; ^ CollectAttributeValues(System::Collections::Generic::ICollection&lt;System::IdentityModel::Tokens::SamlAttribute ^&gt; ^ attributes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -253,6 +283,8 @@
       <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Tokens.SamlAdvice CreateAdvice (System.IdentityModel.Tokens.SecurityTokenDescriptor tokenDescriptor);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Tokens.SamlAdvice CreateAdvice(class System.IdentityModel.Tokens.SecurityTokenDescriptor tokenDescriptor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenHandler.CreateAdvice(System.IdentityModel.Tokens.SecurityTokenDescriptor)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateAdvice (tokenDescriptor As SecurityTokenDescriptor) As SamlAdvice" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::IdentityModel::Tokens::SamlAdvice ^ CreateAdvice(System::IdentityModel::Tokens::SecurityTokenDescriptor ^ tokenDescriptor);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -282,6 +314,8 @@
       <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Tokens.SamlAssertion CreateAssertion (string issuer, System.IdentityModel.Tokens.SamlConditions conditions, System.IdentityModel.Tokens.SamlAdvice advice, System.Collections.Generic.IEnumerable&lt;System.IdentityModel.Tokens.SamlStatement&gt; statements);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Tokens.SamlAssertion CreateAssertion(string issuer, class System.IdentityModel.Tokens.SamlConditions conditions, class System.IdentityModel.Tokens.SamlAdvice advice, class System.Collections.Generic.IEnumerable`1&lt;class System.IdentityModel.Tokens.SamlStatement&gt; statements) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenHandler.CreateAssertion(System.String,System.IdentityModel.Tokens.SamlConditions,System.IdentityModel.Tokens.SamlAdvice,System.Collections.Generic.IEnumerable{System.IdentityModel.Tokens.SamlStatement})" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateAssertion (issuer As String, conditions As SamlConditions, advice As SamlAdvice, statements As IEnumerable(Of SamlStatement)) As SamlAssertion" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::IdentityModel::Tokens::SamlAssertion ^ CreateAssertion(System::String ^ issuer, System::IdentityModel::Tokens::SamlConditions ^ conditions, System::IdentityModel::Tokens::SamlAdvice ^ advice, System::Collections::Generic::IEnumerable&lt;System::IdentityModel::Tokens::SamlStatement ^&gt; ^ statements);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -317,6 +351,7 @@
       <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Tokens.SamlAttribute CreateAttribute (System.Security.Claims.Claim claim, System.IdentityModel.Tokens.SecurityTokenDescriptor tokenDescriptor);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Tokens.SamlAttribute CreateAttribute(class System.Security.Claims.Claim claim, class System.IdentityModel.Tokens.SecurityTokenDescriptor tokenDescriptor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenHandler.CreateAttribute(System.Security.Claims.Claim,System.IdentityModel.Tokens.SecurityTokenDescriptor)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::IdentityModel::Tokens::SamlAttribute ^ CreateAttribute(System::Security::Claims::Claim ^ claim, System::IdentityModel::Tokens::SecurityTokenDescriptor ^ tokenDescriptor);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -343,6 +378,7 @@
       <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Tokens.SamlAttributeStatement CreateAttributeStatement (System.IdentityModel.Tokens.SamlSubject samlSubject, System.Security.Claims.ClaimsIdentity subject, System.IdentityModel.Tokens.SecurityTokenDescriptor tokenDescriptor);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Tokens.SamlAttributeStatement CreateAttributeStatement(class System.IdentityModel.Tokens.SamlSubject samlSubject, class System.Security.Claims.ClaimsIdentity subject, class System.IdentityModel.Tokens.SecurityTokenDescriptor tokenDescriptor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenHandler.CreateAttributeStatement(System.IdentityModel.Tokens.SamlSubject,System.Security.Claims.ClaimsIdentity,System.IdentityModel.Tokens.SecurityTokenDescriptor)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::IdentityModel::Tokens::SamlAttributeStatement ^ CreateAttributeStatement(System::IdentityModel::Tokens::SamlSubject ^ samlSubject, System::Security::Claims::ClaimsIdentity ^ subject, System::IdentityModel::Tokens::SecurityTokenDescriptor ^ tokenDescriptor);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -376,6 +412,7 @@
       <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Tokens.SamlAuthenticationStatement CreateAuthenticationStatement (System.IdentityModel.Tokens.SamlSubject samlSubject, System.Security.Claims.AuthenticationInformation authInfo, System.IdentityModel.Tokens.SecurityTokenDescriptor tokenDescriptor);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Tokens.SamlAuthenticationStatement CreateAuthenticationStatement(class System.IdentityModel.Tokens.SamlSubject samlSubject, class System.Security.Claims.AuthenticationInformation authInfo, class System.IdentityModel.Tokens.SecurityTokenDescriptor tokenDescriptor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenHandler.CreateAuthenticationStatement(System.IdentityModel.Tokens.SamlSubject,System.Security.Claims.AuthenticationInformation,System.IdentityModel.Tokens.SecurityTokenDescriptor)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::IdentityModel::Tokens::SamlAuthenticationStatement ^ CreateAuthenticationStatement(System::IdentityModel::Tokens::SamlSubject ^ samlSubject, System::Security::Claims::AuthenticationInformation ^ authInfo, System::IdentityModel::Tokens::SecurityTokenDescriptor ^ tokenDescriptor);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -408,6 +445,7 @@
       <MemberSignature Language="C#" Value="protected virtual System.Security.Claims.ClaimsIdentity CreateClaims (System.IdentityModel.Tokens.SamlSecurityToken samlSecurityToken);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Security.Claims.ClaimsIdentity CreateClaims(class System.IdentityModel.Tokens.SamlSecurityToken samlSecurityToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenHandler.CreateClaims(System.IdentityModel.Tokens.SamlSecurityToken)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Security::Claims::ClaimsIdentity ^ CreateClaims(System::IdentityModel::Tokens::SamlSecurityToken ^ samlSecurityToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -435,6 +473,8 @@
       <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Tokens.SamlConditions CreateConditions (System.IdentityModel.Protocols.WSTrust.Lifetime tokenLifetime, string relyingPartyAddress, System.IdentityModel.Tokens.SecurityTokenDescriptor tokenDescriptor);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Tokens.SamlConditions CreateConditions(class System.IdentityModel.Protocols.WSTrust.Lifetime tokenLifetime, string relyingPartyAddress, class System.IdentityModel.Tokens.SecurityTokenDescriptor tokenDescriptor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenHandler.CreateConditions(System.IdentityModel.Protocols.WSTrust.Lifetime,System.String,System.IdentityModel.Tokens.SecurityTokenDescriptor)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateConditions (tokenLifetime As Lifetime, relyingPartyAddress As String, tokenDescriptor As SecurityTokenDescriptor) As SamlConditions" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::IdentityModel::Tokens::SamlConditions ^ CreateConditions(System::IdentityModel::Protocols::WSTrust::Lifetime ^ tokenLifetime, System::String ^ relyingPartyAddress, System::IdentityModel::Tokens::SecurityTokenDescriptor ^ tokenDescriptor);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -470,6 +510,8 @@
       <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Tokens.SamlSubject CreateSamlSubject (System.IdentityModel.Tokens.SecurityTokenDescriptor tokenDescriptor);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Tokens.SamlSubject CreateSamlSubject(class System.IdentityModel.Tokens.SecurityTokenDescriptor tokenDescriptor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenHandler.CreateSamlSubject(System.IdentityModel.Tokens.SecurityTokenDescriptor)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateSamlSubject (tokenDescriptor As SecurityTokenDescriptor) As SamlSubject" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::IdentityModel::Tokens::SamlSubject ^ CreateSamlSubject(System::IdentityModel::Tokens::SecurityTokenDescriptor ^ tokenDescriptor);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -494,6 +536,8 @@
       <MemberSignature Language="C#" Value="public override System.IdentityModel.Tokens.SecurityKeyIdentifierClause CreateSecurityTokenReference (System.IdentityModel.Tokens.SecurityToken token, bool attached);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.IdentityModel.Tokens.SecurityKeyIdentifierClause CreateSecurityTokenReference(class System.IdentityModel.Tokens.SecurityToken token, bool attached) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenHandler.CreateSecurityTokenReference(System.IdentityModel.Tokens.SecurityToken,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateSecurityTokenReference (token As SecurityToken, attached As Boolean) As SecurityKeyIdentifierClause" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ CreateSecurityTokenReference(System::IdentityModel::Tokens::SecurityToken ^ token, bool attached);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -520,6 +564,8 @@
       <MemberSignature Language="C#" Value="protected virtual System.Collections.Generic.IEnumerable&lt;System.IdentityModel.Tokens.SamlStatement&gt; CreateStatements (System.IdentityModel.Tokens.SecurityTokenDescriptor tokenDescriptor);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class System.IdentityModel.Tokens.SamlStatement&gt; CreateStatements(class System.IdentityModel.Tokens.SecurityTokenDescriptor tokenDescriptor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenHandler.CreateStatements(System.IdentityModel.Tokens.SecurityTokenDescriptor)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateStatements (tokenDescriptor As SecurityTokenDescriptor) As IEnumerable(Of SamlStatement)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Collections::Generic::IEnumerable&lt;System::IdentityModel::Tokens::SamlStatement ^&gt; ^ CreateStatements(System::IdentityModel::Tokens::SecurityTokenDescriptor ^ tokenDescriptor);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -551,6 +597,8 @@
       <MemberSignature Language="C#" Value="public override System.IdentityModel.Tokens.SecurityToken CreateToken (System.IdentityModel.Tokens.SecurityTokenDescriptor tokenDescriptor);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.IdentityModel.Tokens.SecurityToken CreateToken(class System.IdentityModel.Tokens.SecurityTokenDescriptor tokenDescriptor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenHandler.CreateToken(System.IdentityModel.Tokens.SecurityTokenDescriptor)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateToken (tokenDescriptor As SecurityTokenDescriptor) As SecurityToken" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::IdentityModel::Tokens::SecurityToken ^ CreateToken(System::IdentityModel::Tokens::SecurityTokenDescriptor ^ tokenDescriptor);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -575,6 +623,8 @@
       <MemberSignature Language="C#" Value="protected virtual System.Security.Principal.WindowsIdentity CreateWindowsIdentity (string upn);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Security.Principal.WindowsIdentity CreateWindowsIdentity(string upn) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenHandler.CreateWindowsIdentity(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateWindowsIdentity (upn As String) As WindowsIdentity" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Security::Principal::WindowsIdentity ^ CreateWindowsIdentity(System::String ^ upn);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -599,6 +649,8 @@
       <MemberSignature Language="C#" Value="protected virtual string CreateXmlStringFromAttributes (System.Collections.Generic.IEnumerable&lt;System.IdentityModel.Tokens.SamlAttribute&gt; attributes);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance string CreateXmlStringFromAttributes(class System.Collections.Generic.IEnumerable`1&lt;class System.IdentityModel.Tokens.SamlAttribute&gt; attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenHandler.CreateXmlStringFromAttributes(System.Collections.Generic.IEnumerable{System.IdentityModel.Tokens.SamlAttribute})" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateXmlStringFromAttributes (attributes As IEnumerable(Of SamlAttribute)) As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::String ^ CreateXmlStringFromAttributes(System::Collections::Generic::IEnumerable&lt;System::IdentityModel::Tokens::SamlAttribute ^&gt; ^ attributes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -628,6 +680,8 @@
       <MemberSignature Language="C#" Value="protected virtual string DenormalizeAuthenticationType (string normalizedAuthenticationType);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance string DenormalizeAuthenticationType(string normalizedAuthenticationType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenHandler.DenormalizeAuthenticationType(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function DenormalizeAuthenticationType (normalizedAuthenticationType As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::String ^ DenormalizeAuthenticationType(System::String ^ normalizedAuthenticationType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -657,6 +711,8 @@
       <MemberSignature Language="C#" Value="protected override void DetectReplayedToken (System.IdentityModel.Tokens.SecurityToken token);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DetectReplayedToken(class System.IdentityModel.Tokens.SecurityToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenHandler.DetectReplayedToken(System.IdentityModel.Tokens.SecurityToken)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DetectReplayedToken (token As SecurityToken)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void DetectReplayedToken(System::IdentityModel::Tokens::SecurityToken ^ token);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -696,6 +752,7 @@
       <MemberSignature Language="C#" Value="protected virtual string FindUpn (System.Security.Claims.ClaimsIdentity claimsIdentity);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance string FindUpn(class System.Security.Claims.ClaimsIdentity claimsIdentity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenHandler.FindUpn(System.Security.Claims.ClaimsIdentity)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::String ^ FindUpn(System::Security::Claims::ClaimsIdentity ^ claimsIdentity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -718,6 +775,8 @@
       <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Tokens.EncryptingCredentials GetEncryptingCredentials (System.IdentityModel.Tokens.SecurityTokenDescriptor tokenDescriptor);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Tokens.EncryptingCredentials GetEncryptingCredentials(class System.IdentityModel.Tokens.SecurityTokenDescriptor tokenDescriptor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenHandler.GetEncryptingCredentials(System.IdentityModel.Tokens.SecurityTokenDescriptor)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetEncryptingCredentials (tokenDescriptor As SecurityTokenDescriptor) As EncryptingCredentials" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::IdentityModel::Tokens::EncryptingCredentials ^ GetEncryptingCredentials(System::IdentityModel::Tokens::SecurityTokenDescriptor ^ tokenDescriptor);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -750,6 +809,8 @@
       <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Tokens.SigningCredentials GetSigningCredentials (System.IdentityModel.Tokens.SecurityTokenDescriptor tokenDescriptor);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Tokens.SigningCredentials GetSigningCredentials(class System.IdentityModel.Tokens.SecurityTokenDescriptor tokenDescriptor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenHandler.GetSigningCredentials(System.IdentityModel.Tokens.SecurityTokenDescriptor)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetSigningCredentials (tokenDescriptor As SecurityTokenDescriptor) As SigningCredentials" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::IdentityModel::Tokens::SigningCredentials ^ GetSigningCredentials(System::IdentityModel::Tokens::SecurityTokenDescriptor ^ tokenDescriptor);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -783,6 +844,8 @@
       <MemberSignature Language="C#" Value="protected virtual DateTime GetTokenReplayCacheEntryExpirationTime (System.IdentityModel.Tokens.SamlSecurityToken token);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance valuetype System.DateTime GetTokenReplayCacheEntryExpirationTime(class System.IdentityModel.Tokens.SamlSecurityToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenHandler.GetTokenReplayCacheEntryExpirationTime(System.IdentityModel.Tokens.SamlSecurityToken)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetTokenReplayCacheEntryExpirationTime (token As SamlSecurityToken) As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual DateTime GetTokenReplayCacheEntryExpirationTime(System::IdentityModel::Tokens::SamlSecurityToken ^ token);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -818,6 +881,8 @@
       <MemberSignature Language="C#" Value="public override string[] GetTokenTypeIdentifiers ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string[] GetTokenTypeIdentifiers() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenHandler.GetTokenTypeIdentifiers" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetTokenTypeIdentifiers () As String()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::String ^&gt; ^ GetTokenTypeIdentifiers();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -837,6 +902,8 @@
       <MemberSignature Language="C#" Value="public System.IdentityModel.Selectors.SecurityTokenSerializer KeyInfoSerializer { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Selectors.SecurityTokenSerializer KeyInfoSerializer" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlSecurityTokenHandler.KeyInfoSerializer" />
+      <MemberSignature Language="VB.NET" Value="Public Property KeyInfoSerializer As SecurityTokenSerializer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Selectors::SecurityTokenSerializer ^ KeyInfoSerializer { System::IdentityModel::Selectors::SecurityTokenSerializer ^ get(); void set(System::IdentityModel::Selectors::SecurityTokenSerializer ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -863,6 +930,8 @@
       <MemberSignature Language="C#" Value="public override void LoadCustomConfiguration (System.Xml.XmlNodeList customConfigElements);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void LoadCustomConfiguration(class System.Xml.XmlNodeList customConfigElements) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenHandler.LoadCustomConfiguration(System.Xml.XmlNodeList)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub LoadCustomConfiguration (customConfigElements As XmlNodeList)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void LoadCustomConfiguration(System::Xml::XmlNodeList ^ customConfigElements);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -887,6 +956,8 @@
       <MemberSignature Language="C#" Value="public const string Namespace;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string Namespace" />
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SamlSecurityTokenHandler.Namespace" />
+      <MemberSignature Language="VB.NET" Value="Public Const Namespace As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ Namespace;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -904,6 +975,8 @@
       <MemberSignature Language="C#" Value="protected virtual string NormalizeAuthenticationType (string saml11AuthenticationMethod);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance string NormalizeAuthenticationType(string saml11AuthenticationMethod) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenHandler.NormalizeAuthenticationType(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function NormalizeAuthenticationType (saml11AuthenticationMethod As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::String ^ NormalizeAuthenticationType(System::String ^ saml11AuthenticationMethod);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -933,6 +1006,8 @@
       <MemberSignature Language="C#" Value="protected virtual void ProcessAttributeStatement (System.IdentityModel.Tokens.SamlAttributeStatement samlStatement, System.Security.Claims.ClaimsIdentity subject, string issuer);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ProcessAttributeStatement(class System.IdentityModel.Tokens.SamlAttributeStatement samlStatement, class System.Security.Claims.ClaimsIdentity subject, string issuer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenHandler.ProcessAttributeStatement(System.IdentityModel.Tokens.SamlAttributeStatement,System.Security.Claims.ClaimsIdentity,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ProcessAttributeStatement (samlStatement As SamlAttributeStatement, subject As ClaimsIdentity, issuer As String)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ProcessAttributeStatement(System::IdentityModel::Tokens::SamlAttributeStatement ^ samlStatement, System::Security::Claims::ClaimsIdentity ^ subject, System::String ^ issuer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -971,6 +1046,8 @@
       <MemberSignature Language="C#" Value="protected virtual void ProcessAuthenticationStatement (System.IdentityModel.Tokens.SamlAuthenticationStatement samlStatement, System.Security.Claims.ClaimsIdentity subject, string issuer);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ProcessAuthenticationStatement(class System.IdentityModel.Tokens.SamlAuthenticationStatement samlStatement, class System.Security.Claims.ClaimsIdentity subject, string issuer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenHandler.ProcessAuthenticationStatement(System.IdentityModel.Tokens.SamlAuthenticationStatement,System.Security.Claims.ClaimsIdentity,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ProcessAuthenticationStatement (samlStatement As SamlAuthenticationStatement, subject As ClaimsIdentity, issuer As String)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ProcessAuthenticationStatement(System::IdentityModel::Tokens::SamlAuthenticationStatement ^ samlStatement, System::Security::Claims::ClaimsIdentity ^ subject, System::String ^ issuer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -1002,6 +1079,8 @@
       <MemberSignature Language="C#" Value="protected virtual void ProcessAuthorizationDecisionStatement (System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement samlStatement, System.Security.Claims.ClaimsIdentity subject, string issuer);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ProcessAuthorizationDecisionStatement(class System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement samlStatement, class System.Security.Claims.ClaimsIdentity subject, string issuer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenHandler.ProcessAuthorizationDecisionStatement(System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement,System.Security.Claims.ClaimsIdentity,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ProcessAuthorizationDecisionStatement (samlStatement As SamlAuthorizationDecisionStatement, subject As ClaimsIdentity, issuer As String)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ProcessAuthorizationDecisionStatement(System::IdentityModel::Tokens::SamlAuthorizationDecisionStatement ^ samlStatement, System::Security::Claims::ClaimsIdentity ^ subject, System::String ^ issuer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -1034,6 +1113,7 @@
       <MemberSignature Language="C#" Value="protected virtual void ProcessSamlSubject (System.IdentityModel.Tokens.SamlSubject samlSubject, System.Security.Claims.ClaimsIdentity subject, string issuer);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ProcessSamlSubject(class System.IdentityModel.Tokens.SamlSubject samlSubject, class System.Security.Claims.ClaimsIdentity subject, string issuer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenHandler.ProcessSamlSubject(System.IdentityModel.Tokens.SamlSubject,System.Security.Claims.ClaimsIdentity,System.String)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ProcessSamlSubject(System::IdentityModel::Tokens::SamlSubject ^ samlSubject, System::Security::Claims::ClaimsIdentity ^ subject, System::String ^ issuer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -1061,6 +1141,8 @@
       <MemberSignature Language="C#" Value="protected virtual void ProcessStatement (System.Collections.Generic.IList&lt;System.IdentityModel.Tokens.SamlStatement&gt; statements, System.Security.Claims.ClaimsIdentity subject, string issuer);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ProcessStatement(class System.Collections.Generic.IList`1&lt;class System.IdentityModel.Tokens.SamlStatement&gt; statements, class System.Security.Claims.ClaimsIdentity subject, string issuer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenHandler.ProcessStatement(System.Collections.Generic.IList{System.IdentityModel.Tokens.SamlStatement},System.Security.Claims.ClaimsIdentity,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ProcessStatement (statements As IList(Of SamlStatement), subject As ClaimsIdentity, issuer As String)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ProcessStatement(System::Collections::Generic::IList&lt;System::IdentityModel::Tokens::SamlStatement ^&gt; ^ statements, System::Security::Claims::ClaimsIdentity ^ subject, System::String ^ issuer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -1088,6 +1170,8 @@
       <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Tokens.SamlAction ReadAction (System.Xml.XmlReader reader);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Tokens.SamlAction ReadAction(class System.Xml.XmlReader reader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenHandler.ReadAction(System.Xml.XmlReader)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function ReadAction (reader As XmlReader) As SamlAction" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::IdentityModel::Tokens::SamlAction ^ ReadAction(System::Xml::XmlReader ^ reader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -1112,6 +1196,8 @@
       <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Tokens.SamlAdvice ReadAdvice (System.Xml.XmlReader reader);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Tokens.SamlAdvice ReadAdvice(class System.Xml.XmlReader reader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenHandler.ReadAdvice(System.Xml.XmlReader)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function ReadAdvice (reader As XmlReader) As SamlAdvice" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::IdentityModel::Tokens::SamlAdvice ^ ReadAdvice(System::Xml::XmlReader ^ reader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -1143,6 +1229,8 @@
       <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Tokens.SamlAssertion ReadAssertion (System.Xml.XmlReader reader);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Tokens.SamlAssertion ReadAssertion(class System.Xml.XmlReader reader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenHandler.ReadAssertion(System.Xml.XmlReader)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function ReadAssertion (reader As XmlReader) As SamlAssertion" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::IdentityModel::Tokens::SamlAssertion ^ ReadAssertion(System::Xml::XmlReader ^ reader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -1167,6 +1255,8 @@
       <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Tokens.SamlAttribute ReadAttribute (System.Xml.XmlReader reader);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Tokens.SamlAttribute ReadAttribute(class System.Xml.XmlReader reader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenHandler.ReadAttribute(System.Xml.XmlReader)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function ReadAttribute (reader As XmlReader) As SamlAttribute" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::IdentityModel::Tokens::SamlAttribute ^ ReadAttribute(System::Xml::XmlReader ^ reader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -1198,6 +1288,8 @@
       <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Tokens.SamlAttributeStatement ReadAttributeStatement (System.Xml.XmlReader reader);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Tokens.SamlAttributeStatement ReadAttributeStatement(class System.Xml.XmlReader reader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenHandler.ReadAttributeStatement(System.Xml.XmlReader)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function ReadAttributeStatement (reader As XmlReader) As SamlAttributeStatement" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::IdentityModel::Tokens::SamlAttributeStatement ^ ReadAttributeStatement(System::Xml::XmlReader ^ reader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -1222,6 +1314,8 @@
       <MemberSignature Language="C#" Value="protected virtual string ReadAttributeValue (System.Xml.XmlReader reader, System.IdentityModel.Tokens.SamlAttribute attribute);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance string ReadAttributeValue(class System.Xml.XmlReader reader, class System.IdentityModel.Tokens.SamlAttribute attribute) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenHandler.ReadAttributeValue(System.Xml.XmlReader,System.IdentityModel.Tokens.SamlAttribute)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function ReadAttributeValue (reader As XmlReader, attribute As SamlAttribute) As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::String ^ ReadAttributeValue(System::Xml::XmlReader ^ reader, System::IdentityModel::Tokens::SamlAttribute ^ attribute);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -1248,6 +1342,8 @@
       <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Tokens.SamlAudienceRestrictionCondition ReadAudienceRestrictionCondition (System.Xml.XmlReader reader);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Tokens.SamlAudienceRestrictionCondition ReadAudienceRestrictionCondition(class System.Xml.XmlReader reader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenHandler.ReadAudienceRestrictionCondition(System.Xml.XmlReader)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function ReadAudienceRestrictionCondition (reader As XmlReader) As SamlAudienceRestrictionCondition" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::IdentityModel::Tokens::SamlAudienceRestrictionCondition ^ ReadAudienceRestrictionCondition(System::Xml::XmlReader ^ reader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -1272,6 +1368,8 @@
       <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Tokens.SamlAuthenticationStatement ReadAuthenticationStatement (System.Xml.XmlReader reader);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Tokens.SamlAuthenticationStatement ReadAuthenticationStatement(class System.Xml.XmlReader reader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenHandler.ReadAuthenticationStatement(System.Xml.XmlReader)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function ReadAuthenticationStatement (reader As XmlReader) As SamlAuthenticationStatement" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::IdentityModel::Tokens::SamlAuthenticationStatement ^ ReadAuthenticationStatement(System::Xml::XmlReader ^ reader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -1296,6 +1394,8 @@
       <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Tokens.SamlAuthorityBinding ReadAuthorityBinding (System.Xml.XmlReader reader);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Tokens.SamlAuthorityBinding ReadAuthorityBinding(class System.Xml.XmlReader reader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenHandler.ReadAuthorityBinding(System.Xml.XmlReader)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function ReadAuthorityBinding (reader As XmlReader) As SamlAuthorityBinding" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::IdentityModel::Tokens::SamlAuthorityBinding ^ ReadAuthorityBinding(System::Xml::XmlReader ^ reader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -1322,6 +1422,8 @@
       <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement ReadAuthorizationDecisionStatement (System.Xml.XmlReader reader);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement ReadAuthorizationDecisionStatement(class System.Xml.XmlReader reader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenHandler.ReadAuthorizationDecisionStatement(System.Xml.XmlReader)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function ReadAuthorizationDecisionStatement (reader As XmlReader) As SamlAuthorizationDecisionStatement" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::IdentityModel::Tokens::SamlAuthorizationDecisionStatement ^ ReadAuthorizationDecisionStatement(System::Xml::XmlReader ^ reader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -1346,6 +1448,8 @@
       <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Tokens.SamlCondition ReadCondition (System.Xml.XmlReader reader);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Tokens.SamlCondition ReadCondition(class System.Xml.XmlReader reader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenHandler.ReadCondition(System.Xml.XmlReader)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function ReadCondition (reader As XmlReader) As SamlCondition" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::IdentityModel::Tokens::SamlCondition ^ ReadCondition(System::Xml::XmlReader ^ reader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -1372,6 +1476,8 @@
       <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Tokens.SamlConditions ReadConditions (System.Xml.XmlReader reader);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Tokens.SamlConditions ReadConditions(class System.Xml.XmlReader reader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenHandler.ReadConditions(System.Xml.XmlReader)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function ReadConditions (reader As XmlReader) As SamlConditions" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::IdentityModel::Tokens::SamlConditions ^ ReadConditions(System::Xml::XmlReader ^ reader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -1405,6 +1511,8 @@
       <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Tokens.SamlDoNotCacheCondition ReadDoNotCacheCondition (System.Xml.XmlReader reader);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Tokens.SamlDoNotCacheCondition ReadDoNotCacheCondition(class System.Xml.XmlReader reader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenHandler.ReadDoNotCacheCondition(System.Xml.XmlReader)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function ReadDoNotCacheCondition (reader As XmlReader) As SamlDoNotCacheCondition" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::IdentityModel::Tokens::SamlDoNotCacheCondition ^ ReadDoNotCacheCondition(System::Xml::XmlReader ^ reader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -1431,6 +1539,8 @@
       <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Tokens.SamlEvidence ReadEvidence (System.Xml.XmlReader reader);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Tokens.SamlEvidence ReadEvidence(class System.Xml.XmlReader reader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenHandler.ReadEvidence(System.Xml.XmlReader)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function ReadEvidence (reader As XmlReader) As SamlEvidence" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::IdentityModel::Tokens::SamlEvidence ^ ReadEvidence(System::Xml::XmlReader ^ reader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -1455,6 +1565,8 @@
       <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Tokens.SecurityKeyIdentifier ReadSigningKeyInfo (System.Xml.XmlReader reader, System.IdentityModel.Tokens.SamlAssertion assertion);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Tokens.SecurityKeyIdentifier ReadSigningKeyInfo(class System.Xml.XmlReader reader, class System.IdentityModel.Tokens.SamlAssertion assertion) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenHandler.ReadSigningKeyInfo(System.Xml.XmlReader,System.IdentityModel.Tokens.SamlAssertion)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function ReadSigningKeyInfo (reader As XmlReader, assertion As SamlAssertion) As SecurityKeyIdentifier" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::IdentityModel::Tokens::SecurityKeyIdentifier ^ ReadSigningKeyInfo(System::Xml::XmlReader ^ reader, System::IdentityModel::Tokens::SamlAssertion ^ assertion);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -1481,6 +1593,8 @@
       <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Tokens.SamlStatement ReadStatement (System.Xml.XmlReader reader);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Tokens.SamlStatement ReadStatement(class System.Xml.XmlReader reader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenHandler.ReadStatement(System.Xml.XmlReader)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function ReadStatement (reader As XmlReader) As SamlStatement" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::IdentityModel::Tokens::SamlStatement ^ ReadStatement(System::Xml::XmlReader ^ reader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -1512,6 +1626,8 @@
       <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Tokens.SamlSubject ReadSubject (System.Xml.XmlReader reader);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Tokens.SamlSubject ReadSubject(class System.Xml.XmlReader reader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenHandler.ReadSubject(System.Xml.XmlReader)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function ReadSubject (reader As XmlReader) As SamlSubject" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::IdentityModel::Tokens::SamlSubject ^ ReadSubject(System::Xml::XmlReader ^ reader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -1543,6 +1659,8 @@
       <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Tokens.SecurityKeyIdentifier ReadSubjectKeyInfo (System.Xml.XmlReader reader);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Tokens.SecurityKeyIdentifier ReadSubjectKeyInfo(class System.Xml.XmlReader reader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenHandler.ReadSubjectKeyInfo(System.Xml.XmlReader)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function ReadSubjectKeyInfo (reader As XmlReader) As SecurityKeyIdentifier" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::IdentityModel::Tokens::SecurityKeyIdentifier ^ ReadSubjectKeyInfo(System::Xml::XmlReader ^ reader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -1567,6 +1685,8 @@
       <MemberSignature Language="C#" Value="public override System.IdentityModel.Tokens.SecurityToken ReadToken (System.Xml.XmlReader reader);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.IdentityModel.Tokens.SecurityToken ReadToken(class System.Xml.XmlReader reader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenHandler.ReadToken(System.Xml.XmlReader)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ReadToken (reader As XmlReader) As SecurityToken" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::IdentityModel::Tokens::SecurityToken ^ ReadToken(System::Xml::XmlReader ^ reader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -1598,6 +1718,8 @@
       <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Tokens.SecurityToken ResolveIssuerToken (System.IdentityModel.Tokens.SamlAssertion assertion, System.IdentityModel.Selectors.SecurityTokenResolver issuerResolver);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Tokens.SecurityToken ResolveIssuerToken(class System.IdentityModel.Tokens.SamlAssertion assertion, class System.IdentityModel.Selectors.SecurityTokenResolver issuerResolver) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenHandler.ResolveIssuerToken(System.IdentityModel.Tokens.SamlAssertion,System.IdentityModel.Selectors.SecurityTokenResolver)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function ResolveIssuerToken (assertion As SamlAssertion, issuerResolver As SecurityTokenResolver) As SecurityToken" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::IdentityModel::Tokens::SecurityToken ^ ResolveIssuerToken(System::IdentityModel::Tokens::SamlAssertion ^ assertion, System::IdentityModel::Selectors::SecurityTokenResolver ^ issuerResolver);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -1625,6 +1747,8 @@
       <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Tokens.SecurityKey ResolveSubjectKeyIdentifier (System.IdentityModel.Tokens.SecurityKeyIdentifier subjectKeyIdentifier);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Tokens.SecurityKey ResolveSubjectKeyIdentifier(class System.IdentityModel.Tokens.SecurityKeyIdentifier subjectKeyIdentifier) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenHandler.ResolveSubjectKeyIdentifier(System.IdentityModel.Tokens.SecurityKeyIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function ResolveSubjectKeyIdentifier (subjectKeyIdentifier As SecurityKeyIdentifier) As SecurityKey" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::IdentityModel::Tokens::SecurityKey ^ ResolveSubjectKeyIdentifier(System::IdentityModel::Tokens::SecurityKeyIdentifier ^ subjectKeyIdentifier);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -1647,6 +1771,8 @@
       <MemberSignature Language="C#" Value="public System.IdentityModel.Tokens.SamlSecurityTokenRequirement SamlSecurityTokenRequirement { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Tokens.SamlSecurityTokenRequirement SamlSecurityTokenRequirement" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlSecurityTokenHandler.SamlSecurityTokenRequirement" />
+      <MemberSignature Language="VB.NET" Value="Public Property SamlSecurityTokenRequirement As SamlSecurityTokenRequirement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Tokens::SamlSecurityTokenRequirement ^ SamlSecurityTokenRequirement { System::IdentityModel::Tokens::SamlSecurityTokenRequirement ^ get(); void set(System::IdentityModel::Tokens::SamlSecurityTokenRequirement ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -1666,6 +1792,8 @@
       <MemberSignature Language="C#" Value="protected virtual void SetDelegateFromAttribute (System.IdentityModel.Tokens.SamlAttribute attribute, System.Security.Claims.ClaimsIdentity subject, string issuer);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void SetDelegateFromAttribute(class System.IdentityModel.Tokens.SamlAttribute attribute, class System.Security.Claims.ClaimsIdentity subject, string issuer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenHandler.SetDelegateFromAttribute(System.IdentityModel.Tokens.SamlAttribute,System.Security.Claims.ClaimsIdentity,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub SetDelegateFromAttribute (attribute As SamlAttribute, subject As ClaimsIdentity, issuer As String)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void SetDelegateFromAttribute(System::IdentityModel::Tokens::SamlAttribute ^ attribute, System::Security::Claims::ClaimsIdentity ^ subject, System::String ^ issuer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -1692,6 +1820,8 @@
       <MemberSignature Language="C#" Value="public override Type TokenType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type TokenType" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlSecurityTokenHandler.TokenType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property TokenType As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ TokenType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -1710,6 +1840,8 @@
       <MemberSignature Language="C#" Value="protected virtual bool TryResolveIssuerToken (System.IdentityModel.Tokens.SamlAssertion assertion, System.IdentityModel.Selectors.SecurityTokenResolver issuerResolver, out System.IdentityModel.Tokens.SecurityToken token);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool TryResolveIssuerToken(class System.IdentityModel.Tokens.SamlAssertion assertion, class System.IdentityModel.Selectors.SecurityTokenResolver issuerResolver, [out] class System.IdentityModel.Tokens.SecurityToken&amp; token) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenHandler.TryResolveIssuerToken(System.IdentityModel.Tokens.SamlAssertion,System.IdentityModel.Selectors.SecurityTokenResolver,System.IdentityModel.Tokens.SecurityToken@)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function TryResolveIssuerToken (assertion As SamlAssertion, issuerResolver As SecurityTokenResolver, ByRef token As SecurityToken) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool TryResolveIssuerToken(System::IdentityModel::Tokens::SamlAssertion ^ assertion, System::IdentityModel::Selectors::SecurityTokenResolver ^ issuerResolver, [Runtime::InteropServices::Out] System::IdentityModel::Tokens::SecurityToken ^ % token);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -1737,6 +1869,8 @@
       <MemberSignature Language="C#" Value="public const string UnspecifiedAuthenticationMethod;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string UnspecifiedAuthenticationMethod" />
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SamlSecurityTokenHandler.UnspecifiedAuthenticationMethod" />
+      <MemberSignature Language="VB.NET" Value="Public Const UnspecifiedAuthenticationMethod As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ UnspecifiedAuthenticationMethod;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -1754,6 +1888,8 @@
       <MemberSignature Language="C#" Value="protected virtual void ValidateConditions (System.IdentityModel.Tokens.SamlConditions conditions, bool enforceAudienceRestriction);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ValidateConditions(class System.IdentityModel.Tokens.SamlConditions conditions, bool enforceAudienceRestriction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenHandler.ValidateConditions(System.IdentityModel.Tokens.SamlConditions,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ValidateConditions (conditions As SamlConditions, enforceAudienceRestriction As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ValidateConditions(System::IdentityModel::Tokens::SamlConditions ^ conditions, bool enforceAudienceRestriction);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -1785,6 +1921,8 @@
       <MemberSignature Language="C#" Value="public override System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Security.Claims.ClaimsIdentity&gt; ValidateToken (System.IdentityModel.Tokens.SecurityToken token);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Security.Claims.ClaimsIdentity&gt; ValidateToken(class System.IdentityModel.Tokens.SecurityToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenHandler.ValidateToken(System.IdentityModel.Tokens.SecurityToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ValidateToken (token As SecurityToken) As ReadOnlyCollection(Of ClaimsIdentity)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Security::Claims::ClaimsIdentity ^&gt; ^ ValidateToken(System::IdentityModel::Tokens::SecurityToken ^ token);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -1814,6 +1952,8 @@
       <MemberSignature Language="C#" Value="protected virtual void WriteAction (System.Xml.XmlWriter writer, System.IdentityModel.Tokens.SamlAction action);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteAction(class System.Xml.XmlWriter writer, class System.IdentityModel.Tokens.SamlAction action) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenHandler.WriteAction(System.Xml.XmlWriter,System.IdentityModel.Tokens.SamlAction)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub WriteAction (writer As XmlWriter, action As SamlAction)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void WriteAction(System::Xml::XmlWriter ^ writer, System::IdentityModel::Tokens::SamlAction ^ action);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -1843,6 +1983,8 @@
       <MemberSignature Language="C#" Value="protected virtual void WriteAdvice (System.Xml.XmlWriter writer, System.IdentityModel.Tokens.SamlAdvice advice);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteAdvice(class System.Xml.XmlWriter writer, class System.IdentityModel.Tokens.SamlAdvice advice) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenHandler.WriteAdvice(System.Xml.XmlWriter,System.IdentityModel.Tokens.SamlAdvice)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub WriteAdvice (writer As XmlWriter, advice As SamlAdvice)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void WriteAdvice(System::Xml::XmlWriter ^ writer, System::IdentityModel::Tokens::SamlAdvice ^ advice);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -1872,6 +2014,8 @@
       <MemberSignature Language="C#" Value="protected virtual void WriteAssertion (System.Xml.XmlWriter writer, System.IdentityModel.Tokens.SamlAssertion assertion);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteAssertion(class System.Xml.XmlWriter writer, class System.IdentityModel.Tokens.SamlAssertion assertion) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenHandler.WriteAssertion(System.Xml.XmlWriter,System.IdentityModel.Tokens.SamlAssertion)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub WriteAssertion (writer As XmlWriter, assertion As SamlAssertion)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void WriteAssertion(System::Xml::XmlWriter ^ writer, System::IdentityModel::Tokens::SamlAssertion ^ assertion);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -1911,6 +2055,8 @@
       <MemberSignature Language="C#" Value="protected virtual void WriteAttribute (System.Xml.XmlWriter writer, System.IdentityModel.Tokens.SamlAttribute attribute);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteAttribute(class System.Xml.XmlWriter writer, class System.IdentityModel.Tokens.SamlAttribute attribute) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenHandler.WriteAttribute(System.Xml.XmlWriter,System.IdentityModel.Tokens.SamlAttribute)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub WriteAttribute (writer As XmlWriter, attribute As SamlAttribute)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void WriteAttribute(System::Xml::XmlWriter ^ writer, System::IdentityModel::Tokens::SamlAttribute ^ attribute);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -1940,6 +2086,8 @@
       <MemberSignature Language="C#" Value="protected virtual void WriteAttributeStatement (System.Xml.XmlWriter writer, System.IdentityModel.Tokens.SamlAttributeStatement statement);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteAttributeStatement(class System.Xml.XmlWriter writer, class System.IdentityModel.Tokens.SamlAttributeStatement statement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenHandler.WriteAttributeStatement(System.Xml.XmlWriter,System.IdentityModel.Tokens.SamlAttributeStatement)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub WriteAttributeStatement (writer As XmlWriter, statement As SamlAttributeStatement)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void WriteAttributeStatement(System::Xml::XmlWriter ^ writer, System::IdentityModel::Tokens::SamlAttributeStatement ^ statement);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -1969,6 +2117,8 @@
       <MemberSignature Language="C#" Value="protected virtual void WriteAttributeValue (System.Xml.XmlWriter writer, string value, System.IdentityModel.Tokens.SamlAttribute attribute);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteAttributeValue(class System.Xml.XmlWriter writer, string value, class System.IdentityModel.Tokens.SamlAttribute attribute) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenHandler.WriteAttributeValue(System.Xml.XmlWriter,System.String,System.IdentityModel.Tokens.SamlAttribute)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub WriteAttributeValue (writer As XmlWriter, value As String, attribute As SamlAttribute)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void WriteAttributeValue(System::Xml::XmlWriter ^ writer, System::String ^ value, System::IdentityModel::Tokens::SamlAttribute ^ attribute);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -2003,6 +2153,8 @@
       <MemberSignature Language="C#" Value="protected virtual void WriteAudienceRestrictionCondition (System.Xml.XmlWriter writer, System.IdentityModel.Tokens.SamlAudienceRestrictionCondition condition);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteAudienceRestrictionCondition(class System.Xml.XmlWriter writer, class System.IdentityModel.Tokens.SamlAudienceRestrictionCondition condition) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenHandler.WriteAudienceRestrictionCondition(System.Xml.XmlWriter,System.IdentityModel.Tokens.SamlAudienceRestrictionCondition)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub WriteAudienceRestrictionCondition (writer As XmlWriter, condition As SamlAudienceRestrictionCondition)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void WriteAudienceRestrictionCondition(System::Xml::XmlWriter ^ writer, System::IdentityModel::Tokens::SamlAudienceRestrictionCondition ^ condition);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -2033,6 +2185,8 @@
       <MemberSignature Language="C#" Value="protected virtual void WriteAuthenticationStatement (System.Xml.XmlWriter writer, System.IdentityModel.Tokens.SamlAuthenticationStatement statement);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteAuthenticationStatement(class System.Xml.XmlWriter writer, class System.IdentityModel.Tokens.SamlAuthenticationStatement statement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenHandler.WriteAuthenticationStatement(System.Xml.XmlWriter,System.IdentityModel.Tokens.SamlAuthenticationStatement)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub WriteAuthenticationStatement (writer As XmlWriter, statement As SamlAuthenticationStatement)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void WriteAuthenticationStatement(System::Xml::XmlWriter ^ writer, System::IdentityModel::Tokens::SamlAuthenticationStatement ^ statement);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -2062,6 +2216,8 @@
       <MemberSignature Language="C#" Value="protected virtual void WriteAuthorityBinding (System.Xml.XmlWriter writer, System.IdentityModel.Tokens.SamlAuthorityBinding authorityBinding);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteAuthorityBinding(class System.Xml.XmlWriter writer, class System.IdentityModel.Tokens.SamlAuthorityBinding authorityBinding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenHandler.WriteAuthorityBinding(System.Xml.XmlWriter,System.IdentityModel.Tokens.SamlAuthorityBinding)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub WriteAuthorityBinding (writer As XmlWriter, authorityBinding As SamlAuthorityBinding)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void WriteAuthorityBinding(System::Xml::XmlWriter ^ writer, System::IdentityModel::Tokens::SamlAuthorityBinding ^ authorityBinding);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -2091,6 +2247,8 @@
       <MemberSignature Language="C#" Value="protected virtual void WriteAuthorizationDecisionStatement (System.Xml.XmlWriter writer, System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement statement);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteAuthorizationDecisionStatement(class System.Xml.XmlWriter writer, class System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement statement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenHandler.WriteAuthorizationDecisionStatement(System.Xml.XmlWriter,System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub WriteAuthorizationDecisionStatement (writer As XmlWriter, statement As SamlAuthorizationDecisionStatement)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void WriteAuthorizationDecisionStatement(System::Xml::XmlWriter ^ writer, System::IdentityModel::Tokens::SamlAuthorizationDecisionStatement ^ statement);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -2120,6 +2278,8 @@
       <MemberSignature Language="C#" Value="protected virtual void WriteCondition (System.Xml.XmlWriter writer, System.IdentityModel.Tokens.SamlCondition condition);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteCondition(class System.Xml.XmlWriter writer, class System.IdentityModel.Tokens.SamlCondition condition) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenHandler.WriteCondition(System.Xml.XmlWriter,System.IdentityModel.Tokens.SamlCondition)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub WriteCondition (writer As XmlWriter, condition As SamlCondition)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void WriteCondition(System::Xml::XmlWriter ^ writer, System::IdentityModel::Tokens::SamlCondition ^ condition);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -2158,6 +2318,8 @@
       <MemberSignature Language="C#" Value="protected virtual void WriteConditions (System.Xml.XmlWriter writer, System.IdentityModel.Tokens.SamlConditions conditions);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteConditions(class System.Xml.XmlWriter writer, class System.IdentityModel.Tokens.SamlConditions conditions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenHandler.WriteConditions(System.Xml.XmlWriter,System.IdentityModel.Tokens.SamlConditions)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub WriteConditions (writer As XmlWriter, conditions As SamlConditions)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void WriteConditions(System::Xml::XmlWriter ^ writer, System::IdentityModel::Tokens::SamlConditions ^ conditions);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -2187,6 +2349,8 @@
       <MemberSignature Language="C#" Value="protected virtual void WriteDoNotCacheCondition (System.Xml.XmlWriter writer, System.IdentityModel.Tokens.SamlDoNotCacheCondition condition);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteDoNotCacheCondition(class System.Xml.XmlWriter writer, class System.IdentityModel.Tokens.SamlDoNotCacheCondition condition) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenHandler.WriteDoNotCacheCondition(System.Xml.XmlWriter,System.IdentityModel.Tokens.SamlDoNotCacheCondition)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub WriteDoNotCacheCondition (writer As XmlWriter, condition As SamlDoNotCacheCondition)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void WriteDoNotCacheCondition(System::Xml::XmlWriter ^ writer, System::IdentityModel::Tokens::SamlDoNotCacheCondition ^ condition);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -2216,6 +2380,8 @@
       <MemberSignature Language="C#" Value="protected virtual void WriteEvidence (System.Xml.XmlWriter writer, System.IdentityModel.Tokens.SamlEvidence evidence);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteEvidence(class System.Xml.XmlWriter writer, class System.IdentityModel.Tokens.SamlEvidence evidence) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenHandler.WriteEvidence(System.Xml.XmlWriter,System.IdentityModel.Tokens.SamlEvidence)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub WriteEvidence (writer As XmlWriter, evidence As SamlEvidence)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void WriteEvidence(System::Xml::XmlWriter ^ writer, System::IdentityModel::Tokens::SamlEvidence ^ evidence);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -2245,6 +2411,8 @@
       <MemberSignature Language="C#" Value="protected virtual void WriteSigningKeyInfo (System.Xml.XmlWriter writer, System.IdentityModel.Tokens.SecurityKeyIdentifier signingKeyIdentifier);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteSigningKeyInfo(class System.Xml.XmlWriter writer, class System.IdentityModel.Tokens.SecurityKeyIdentifier signingKeyIdentifier) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenHandler.WriteSigningKeyInfo(System.Xml.XmlWriter,System.IdentityModel.Tokens.SecurityKeyIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub WriteSigningKeyInfo (writer As XmlWriter, signingKeyIdentifier As SecurityKeyIdentifier)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void WriteSigningKeyInfo(System::Xml::XmlWriter ^ writer, System::IdentityModel::Tokens::SecurityKeyIdentifier ^ signingKeyIdentifier);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -2275,6 +2443,8 @@
       <MemberSignature Language="C#" Value="protected virtual void WriteStatement (System.Xml.XmlWriter writer, System.IdentityModel.Tokens.SamlStatement statement);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteStatement(class System.Xml.XmlWriter writer, class System.IdentityModel.Tokens.SamlStatement statement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenHandler.WriteStatement(System.Xml.XmlWriter,System.IdentityModel.Tokens.SamlStatement)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub WriteStatement (writer As XmlWriter, statement As SamlStatement)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void WriteStatement(System::Xml::XmlWriter ^ writer, System::IdentityModel::Tokens::SamlStatement ^ statement);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -2311,6 +2481,8 @@
       <MemberSignature Language="C#" Value="protected virtual void WriteSubject (System.Xml.XmlWriter writer, System.IdentityModel.Tokens.SamlSubject subject);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteSubject(class System.Xml.XmlWriter writer, class System.IdentityModel.Tokens.SamlSubject subject) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenHandler.WriteSubject(System.Xml.XmlWriter,System.IdentityModel.Tokens.SamlSubject)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub WriteSubject (writer As XmlWriter, subject As SamlSubject)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void WriteSubject(System::Xml::XmlWriter ^ writer, System::IdentityModel::Tokens::SamlSubject ^ subject);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -2340,6 +2512,8 @@
       <MemberSignature Language="C#" Value="protected virtual void WriteSubjectKeyInfo (System.Xml.XmlWriter writer, System.IdentityModel.Tokens.SecurityKeyIdentifier subjectSki);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteSubjectKeyInfo(class System.Xml.XmlWriter writer, class System.IdentityModel.Tokens.SecurityKeyIdentifier subjectSki) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenHandler.WriteSubjectKeyInfo(System.Xml.XmlWriter,System.IdentityModel.Tokens.SecurityKeyIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub WriteSubjectKeyInfo (writer As XmlWriter, subjectSki As SecurityKeyIdentifier)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void WriteSubjectKeyInfo(System::Xml::XmlWriter ^ writer, System::IdentityModel::Tokens::SecurityKeyIdentifier ^ subjectSki);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -2369,6 +2543,8 @@
       <MemberSignature Language="C#" Value="public override void WriteToken (System.Xml.XmlWriter writer, System.IdentityModel.Tokens.SecurityToken token);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteToken(class System.Xml.XmlWriter writer, class System.IdentityModel.Tokens.SecurityToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenHandler.WriteToken(System.Xml.XmlWriter,System.IdentityModel.Tokens.SecurityToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteToken (writer As XmlWriter, token As SecurityToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteToken(System::Xml::XmlWriter ^ writer, System::IdentityModel::Tokens::SecurityToken ^ token);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -2396,14 +2572,5 @@
           <paramref name="token" /> is not a <see cref="T:System.IdentityModel.Tokens.SamlSecurityToken" /> object.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SamlSecurityTokenHandler" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

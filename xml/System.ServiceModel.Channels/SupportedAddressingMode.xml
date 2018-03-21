@@ -1,7 +1,9 @@
-<Type Name="SupportedAddressingMode" FullName="System.ServiceModel.Channels.SupportedAddressingMode">
+﻿<Type Name="SupportedAddressingMode" FullName="System.ServiceModel.Channels.SupportedAddressingMode">
   <TypeSignature Language="C#" Value="public enum SupportedAddressingMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SupportedAddressingMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.SupportedAddressingMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum SupportedAddressingMode" />
+  <TypeSignature Language="C++ CLI" Value="public enum class SupportedAddressingMode" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -36,6 +38,8 @@
       <MemberSignature Language="C#" Value="Anonymous" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Channels.SupportedAddressingMode Anonymous = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.SupportedAddressingMode.Anonymous" />
+      <MemberSignature Language="VB.NET" Value="Anonymous" />
+      <MemberSignature Language="C++ CLI" Value="Anonymous" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -45,6 +49,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.SupportedAddressingMode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The server only supports anonymous addresses and clients must provide an anonymous response address.</summary>
       </Docs>
@@ -53,6 +58,8 @@
       <MemberSignature Language="C#" Value="Mixed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Channels.SupportedAddressingMode Mixed = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.SupportedAddressingMode.Mixed" />
+      <MemberSignature Language="VB.NET" Value="Mixed" />
+      <MemberSignature Language="C++ CLI" Value="Mixed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -62,6 +69,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.SupportedAddressingMode</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The server supports both anonymous and non-anonymous addresses and clients may choose to use either or both.</summary>
       </Docs>
@@ -70,6 +78,8 @@
       <MemberSignature Language="C#" Value="NonAnonymous" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Channels.SupportedAddressingMode NonAnonymous = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.SupportedAddressingMode.NonAnonymous" />
+      <MemberSignature Language="VB.NET" Value="NonAnonymous" />
+      <MemberSignature Language="C++ CLI" Value="NonAnonymous" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -79,6 +89,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.SupportedAddressingMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The server only supports non-anonymous addresses and clients must provide a non-anonymous response address.</summary>
       </Docs>

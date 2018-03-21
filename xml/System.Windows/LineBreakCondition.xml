@@ -1,7 +1,9 @@
-<Type Name="LineBreakCondition" FullName="System.Windows.LineBreakCondition">
+﻿<Type Name="LineBreakCondition" FullName="System.Windows.LineBreakCondition">
   <TypeSignature Language="C#" Value="public enum LineBreakCondition" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LineBreakCondition extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.LineBreakCondition" />
+  <TypeSignature Language="VB.NET" Value="Public Enum LineBreakCondition" />
+  <TypeSignature Language="C++ CLI" Value="public enum class LineBreakCondition" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +35,8 @@
       <MemberSignature Language="C#" Value="BreakAlways" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.LineBreakCondition BreakAlways = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.LineBreakCondition.BreakAlways" />
+      <MemberSignature Language="VB.NET" Value="BreakAlways" />
+      <MemberSignature Language="C++ CLI" Value="BreakAlways" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -41,6 +45,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.LineBreakCondition</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Break is always allowed.</summary>
       </Docs>
@@ -49,6 +54,8 @@
       <MemberSignature Language="C#" Value="BreakDesired" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.LineBreakCondition BreakDesired = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.LineBreakCondition.BreakDesired" />
+      <MemberSignature Language="VB.NET" Value="BreakDesired" />
+      <MemberSignature Language="C++ CLI" Value="BreakDesired" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -57,6 +64,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.LineBreakCondition</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Break if not prohibited by another object.</summary>
       </Docs>
@@ -65,6 +73,8 @@
       <MemberSignature Language="C#" Value="BreakPossible" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.LineBreakCondition BreakPossible = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.LineBreakCondition.BreakPossible" />
+      <MemberSignature Language="VB.NET" Value="BreakPossible" />
+      <MemberSignature Language="C++ CLI" Value="BreakPossible" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -73,6 +83,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.LineBreakCondition</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Break if allowed by another object.</summary>
       </Docs>
@@ -81,6 +92,8 @@
       <MemberSignature Language="C#" Value="BreakRestrained" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.LineBreakCondition BreakRestrained = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.LineBreakCondition.BreakRestrained" />
+      <MemberSignature Language="VB.NET" Value="BreakRestrained" />
+      <MemberSignature Language="C++ CLI" Value="BreakRestrained" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -89,6 +102,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.LineBreakCondition</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Break always prohibited unless the other object is set to <see cref="F:System.Windows.LineBreakCondition.BreakAlways" />.</summary>
       </Docs>

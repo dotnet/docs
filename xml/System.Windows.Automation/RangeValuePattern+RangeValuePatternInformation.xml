@@ -1,7 +1,9 @@
-<Type Name="RangeValuePattern+RangeValuePatternInformation" FullName="System.Windows.Automation.RangeValuePattern+RangeValuePatternInformation">
+﻿<Type Name="RangeValuePattern+RangeValuePatternInformation" FullName="System.Windows.Automation.RangeValuePattern+RangeValuePatternInformation">
   <TypeSignature Language="C#" Value="public struct RangeValuePattern.RangeValuePatternInformation" />
   <TypeSignature Language="ILAsm" Value=".class nested public sequential ansi sealed beforefieldinit RangeValuePattern/RangeValuePatternInformation extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.RangeValuePattern.RangeValuePatternInformation" />
+  <TypeSignature Language="VB.NET" Value="Public Structure RangeValuePattern.RangeValuePatternInformation" />
+  <TypeSignature Language="C++ CLI" Value="public: value class RangeValuePattern::RangeValuePatternInformation" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationClient</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +22,8 @@
       <MemberSignature Language="C#" Value="public bool IsReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.RangeValuePattern.RangeValuePatternInformation.IsReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -58,6 +62,8 @@
       <MemberSignature Language="C#" Value="public double LargeChange { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 LargeChange" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.RangeValuePattern.RangeValuePatternInformation.LargeChange" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LargeChange As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double LargeChange { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -91,6 +97,8 @@
       <MemberSignature Language="C#" Value="public double Maximum { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 Maximum" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.RangeValuePattern.RangeValuePatternInformation.Maximum" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Maximum As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Maximum { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -124,6 +132,8 @@
       <MemberSignature Language="C#" Value="public double Minimum { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 Minimum" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.RangeValuePattern.RangeValuePatternInformation.Minimum" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Minimum As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Minimum { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -157,6 +167,8 @@
       <MemberSignature Language="C#" Value="public double SmallChange { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 SmallChange" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.RangeValuePattern.RangeValuePatternInformation.SmallChange" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SmallChange As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double SmallChange { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -190,6 +202,8 @@
       <MemberSignature Language="C#" Value="public double Value { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 Value" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.RangeValuePattern.RangeValuePatternInformation.Value" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Value { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="Wrapping" FullName="System.Web.UI.MobileControls.Wrapping">
+﻿<Type Name="Wrapping" FullName="System.Web.UI.MobileControls.Wrapping">
   <TypeSignature Language="C#" Value="public enum Wrapping" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed Wrapping extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.Wrapping" />
+  <TypeSignature Language="VB.NET" Value="Public Enum Wrapping" />
+  <TypeSignature Language="C++ CLI" Value="public enum class Wrapping" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +32,8 @@
       <MemberSignature Language="C#" Value="NotSet" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.MobileControls.Wrapping NotSet = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Wrapping.NotSet" />
+      <MemberSignature Language="VB.NET" Value="NotSet" />
+      <MemberSignature Language="C++ CLI" Value="NotSet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -38,6 +42,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.MobileControls.Wrapping</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Default value. If the value is <see cref="F:System.Web.UI.MobileControls.Wrapping.NotSet" />, then whether a control wraps or not is inherited from the control's style, or, if the style is not defined, from the control's parent control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
       </Docs>
@@ -46,6 +51,8 @@
       <MemberSignature Language="C#" Value="NoWrap" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.MobileControls.Wrapping NoWrap = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Wrapping.NoWrap" />
+      <MemberSignature Language="VB.NET" Value="NoWrap" />
+      <MemberSignature Language="C++ CLI" Value="NoWrap" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -54,6 +61,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.MobileControls.Wrapping</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Text is not wrapped. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
       </Docs>
@@ -62,6 +70,8 @@
       <MemberSignature Language="C#" Value="Wrap" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.MobileControls.Wrapping Wrap = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Wrapping.Wrap" />
+      <MemberSignature Language="VB.NET" Value="Wrap" />
+      <MemberSignature Language="C++ CLI" Value="Wrap" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -70,6 +80,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.MobileControls.Wrapping</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Text is wrapped at the margins of a screen or a container. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
       </Docs>

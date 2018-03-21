@@ -1,7 +1,9 @@
-<Type Name="Orientation" FullName="System.Web.UI.WebControls.Orientation">
+﻿<Type Name="Orientation" FullName="System.Web.UI.WebControls.Orientation">
   <TypeSignature Language="C#" Value="public enum Orientation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed Orientation extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.Orientation" />
+  <TypeSignature Language="VB.NET" Value="Public Enum Orientation" />
+  <TypeSignature Language="C++ CLI" Value="public enum class Orientation" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +30,8 @@
       <MemberSignature Language="C#" Value="Horizontal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.Orientation Horizontal = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.Orientation.Horizontal" />
+      <MemberSignature Language="VB.NET" Value="Horizontal" />
+      <MemberSignature Language="C++ CLI" Value="Horizontal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -36,6 +40,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.Orientation</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Lays out the elements of the control in a horizontal manner. Most controls are side-by-side, with very little stacking of controls.</summary>
       </Docs>
@@ -44,6 +49,8 @@
       <MemberSignature Language="C#" Value="Vertical" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.Orientation Vertical = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.Orientation.Vertical" />
+      <MemberSignature Language="VB.NET" Value="Vertical" />
+      <MemberSignature Language="C++ CLI" Value="Vertical" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -52,6 +59,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.Orientation</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Lays out the elements of the control in a vertical manner. Most controls are stacked, with few controls side-by-side.</summary>
       </Docs>

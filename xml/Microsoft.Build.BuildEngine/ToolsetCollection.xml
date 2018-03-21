@@ -1,7 +1,9 @@
-<Type Name="ToolsetCollection" FullName="Microsoft.Build.BuildEngine.ToolsetCollection">
+﻿<Type Name="ToolsetCollection" FullName="Microsoft.Build.BuildEngine.ToolsetCollection">
   <TypeSignature Language="C#" Value="public class ToolsetCollection : System.Collections.Generic.ICollection&lt;Microsoft.Build.BuildEngine.Toolset&gt;, System.Collections.Generic.IEnumerable&lt;Microsoft.Build.BuildEngine.Toolset&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ToolsetCollection extends System.Object implements class System.Collections.Generic.ICollection`1&lt;class Microsoft.Build.BuildEngine.Toolset&gt;, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Build.BuildEngine.Toolset&gt;, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.BuildEngine.ToolsetCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class ToolsetCollection&#xA;Implements ICollection(Of Toolset), IEnumerable(Of Toolset)" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ToolsetCollection : System::Collections::Generic::ICollection&lt;Microsoft::Build::BuildEngine::Toolset ^&gt;, System::Collections::Generic::IEnumerable&lt;Microsoft::Build::BuildEngine::Toolset ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Engine</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,7 +35,12 @@
       <MemberSignature Language="C#" Value="public void Add (Microsoft.Build.BuildEngine.Toolset item);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Add(class Microsoft.Build.BuildEngine.Toolset item) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.ToolsetCollection.Add(Microsoft.Build.BuildEngine.Toolset)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (item As Toolset)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Add(Microsoft::Build::BuildEngine::Toolset ^ item);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Add(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -61,7 +68,12 @@
       <MemberSignature Language="C#" Value="public void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.ToolsetCollection.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Clear</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -75,11 +87,25 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Contains">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets whether the collection contains the referenced <see cref="T:Microsoft.Build.BuildEngine.Toolset" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Contains">
       <MemberSignature Language="C#" Value="public bool Contains (Microsoft.Build.BuildEngine.Toolset item);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Contains(class Microsoft.Build.BuildEngine.Toolset item) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.ToolsetCollection.Contains(Microsoft.Build.BuildEngine.Toolset)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (item As Toolset) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Contains(Microsoft::Build::BuildEngine::Toolset ^ item);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Contains(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -102,6 +128,8 @@
       <MemberSignature Language="C#" Value="public bool Contains (string toolsVersion);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(string toolsVersion) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.ToolsetCollection.Contains(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (toolsVersion As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::String ^ toolsVersion);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -125,6 +153,8 @@
       <MemberSignature Language="C#" Value="public void CopyTo (Microsoft.Build.BuildEngine.Toolset[] array, int arrayIndex);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class Microsoft.Build.BuildEngine.Toolset[] array, int32 arrayIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.ToolsetCollection.CopyTo(Microsoft.Build.BuildEngine.Toolset[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As Toolset(), arrayIndex As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(cli::array &lt;Microsoft::Build::BuildEngine::Toolset ^&gt; ^ array, int arrayIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -148,7 +178,12 @@
       <MemberSignature Language="C#" Value="public int Count { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.ToolsetCollection.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.Generic.ICollection`1.Count</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -173,7 +208,12 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerator&lt;Microsoft.Build.BuildEngine.Toolset&gt; GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerator`1&lt;class Microsoft.Build.BuildEngine.Toolset&gt; GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.ToolsetCollection.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator(Of Toolset)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IEnumerator&lt;Microsoft::Build::BuildEngine::Toolset ^&gt; ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -199,7 +239,12 @@
       <MemberSignature Language="C#" Value="public bool IsReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.ToolsetCollection.IsReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.Generic.ICollection`1.IsReadOnly</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -224,6 +269,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.BuildEngine.Toolset this[string toolsVersion] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.BuildEngine.Toolset Item(string)" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.ToolsetCollection.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(toolsVersion As String) As Toolset" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::BuildEngine::Toolset ^ default[System::String ^] { Microsoft::Build::BuildEngine::Toolset ^ get(System::String ^ toolsVersion); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -246,7 +293,12 @@
       <MemberSignature Language="C#" Value="public bool Remove (Microsoft.Build.BuildEngine.Toolset item);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Remove(class Microsoft.Build.BuildEngine.Toolset item) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.ToolsetCollection.Remove(Microsoft.Build.BuildEngine.Toolset)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Remove (item As Toolset) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Remove(Microsoft::Build::BuildEngine::Toolset ^ item);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Remove(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -268,7 +320,12 @@
       <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.ToolsetCollection.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator Implements IEnumerable.GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IEnumerator ^ System.Collections.IEnumerable.GetEnumerator() = System::Collections::IEnumerable::GetEnumerator;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -294,6 +351,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;string&gt; ToolsVersions { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;string&gt; ToolsVersions" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.ToolsetCollection.ToolsVersions" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ToolsVersions As IEnumerable(Of String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ ToolsVersions { System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -308,14 +367,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Contains">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets whether the collection contains the referenced <see cref="T:Microsoft.Build.BuildEngine.Toolset" />.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

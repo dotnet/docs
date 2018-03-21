@@ -1,7 +1,9 @@
-<Type Name="ChunkedCookieHandler" FullName="System.IdentityModel.Services.ChunkedCookieHandler">
+﻿<Type Name="ChunkedCookieHandler" FullName="System.IdentityModel.Services.ChunkedCookieHandler">
   <TypeSignature Language="C#" Value="public sealed class ChunkedCookieHandler : System.IdentityModel.Services.CookieHandler" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ChunkedCookieHandler extends System.IdentityModel.Services.CookieHandler" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Services.ChunkedCookieHandler" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ChunkedCookieHandler&#xA;Inherits CookieHandler" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ChunkedCookieHandler sealed : System::IdentityModel::Services::CookieHandler" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,10 +26,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Services.ChunkedCookieHandler" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ChunkedCookieHandler ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.ChunkedCookieHandler.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ChunkedCookieHandler();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -50,6 +63,8 @@
       <MemberSignature Language="C#" Value="public ChunkedCookieHandler (int chunkSize);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 chunkSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.ChunkedCookieHandler.#ctor(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (chunkSize As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ChunkedCookieHandler(int chunkSize);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -77,6 +92,8 @@
       <MemberSignature Language="C#" Value="public int ChunkSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ChunkSize" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.ChunkedCookieHandler.ChunkSize" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChunkSize As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ChunkSize { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -95,6 +112,8 @@
       <MemberSignature Language="C#" Value="public const int DefaultChunkSize = 2000;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal int32 DefaultChunkSize = (2000)" />
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Services.ChunkedCookieHandler.DefaultChunkSize" />
+      <MemberSignature Language="VB.NET" Value="Public Const DefaultChunkSize As Integer  = 2000" />
+      <MemberSignature Language="C++ CLI" Value="public: int DefaultChunkSize = 2000;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -113,6 +132,8 @@
       <MemberSignature Language="C#" Value="protected override void DeleteCore (string name, string path, string domain, System.Web.HttpContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DeleteCore(string name, string path, string domain, class System.Web.HttpContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.ChunkedCookieHandler.DeleteCore(System.String,System.String,System.String,System.Web.HttpContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DeleteCore (name As String, path As String, domain As String, context As HttpContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void DeleteCore(System::String ^ name, System::String ^ path, System::String ^ domain, System::Web::HttpContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -140,6 +161,8 @@
       <MemberSignature Language="C#" Value="public const int MinimumChunkSize = 1000;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal int32 MinimumChunkSize = (1000)" />
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Services.ChunkedCookieHandler.MinimumChunkSize" />
+      <MemberSignature Language="VB.NET" Value="Public Const MinimumChunkSize As Integer  = 1000" />
+      <MemberSignature Language="C++ CLI" Value="public: int MinimumChunkSize = 1000;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -158,6 +181,8 @@
       <MemberSignature Language="C#" Value="protected override byte[] ReadCore (string name, System.Web.HttpContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance unsigned int8[] ReadCore(string name, class System.Web.HttpContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.ChunkedCookieHandler.ReadCore(System.String,System.Web.HttpContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function ReadCore (name As String, context As HttpContext) As Byte()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override cli::array &lt;System::Byte&gt; ^ ReadCore(System::String ^ name, System::Web::HttpContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -182,6 +207,8 @@
       <MemberSignature Language="C#" Value="protected override void WriteCore (byte[] value, string name, string path, string domain, DateTime expirationTime, bool secure, bool httpOnly, System.Web.HttpContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void WriteCore(unsigned int8[] value, string name, string path, string domain, valuetype System.DateTime expirationTime, bool secure, bool httpOnly, class System.Web.HttpContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.ChunkedCookieHandler.WriteCore(System.Byte[],System.String,System.String,System.String,System.DateTime,System.Boolean,System.Boolean,System.Web.HttpContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub WriteCore (value As Byte(), name As String, path As String, domain As String, expirationTime As DateTime, secure As Boolean, httpOnly As Boolean, context As HttpContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void WriteCore(cli::array &lt;System::Byte&gt; ^ value, System::String ^ name, System::String ^ path, System::String ^ domain, DateTime expirationTime, bool secure, bool httpOnly, System::Web::HttpContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -213,14 +240,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.IdentityModel.Services</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Services.ChunkedCookieHandler" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

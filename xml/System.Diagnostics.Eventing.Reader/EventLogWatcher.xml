@@ -1,7 +1,9 @@
-<Type Name="EventLogWatcher" FullName="System.Diagnostics.Eventing.Reader.EventLogWatcher">
+﻿<Type Name="EventLogWatcher" FullName="System.Diagnostics.Eventing.Reader.EventLogWatcher">
   <TypeSignature Language="C#" Value="public class EventLogWatcher : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EventLogWatcher extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Eventing.Reader.EventLogWatcher" />
+  <TypeSignature Language="VB.NET" Value="Public Class EventLogWatcher&#xA;Implements IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EventLogWatcher : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,10 +33,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.Eventing.Reader.EventLogWatcher" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public EventLogWatcher (System.Diagnostics.Eventing.Reader.EventLogQuery eventQuery);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Diagnostics.Eventing.Reader.EventLogQuery eventQuery) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogWatcher.#ctor(System.Diagnostics.Eventing.Reader.EventLogQuery)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (eventQuery As EventLogQuery)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EventLogWatcher(System::Diagnostics::Eventing::Reader::EventLogQuery ^ eventQuery);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -53,6 +66,8 @@
       <MemberSignature Language="C#" Value="public EventLogWatcher (string path);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string path) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogWatcher.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (path As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EventLogWatcher(System::String ^ path);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -71,6 +86,8 @@
       <MemberSignature Language="C#" Value="public EventLogWatcher (System.Diagnostics.Eventing.Reader.EventLogQuery eventQuery, System.Diagnostics.Eventing.Reader.EventBookmark bookmark);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Diagnostics.Eventing.Reader.EventLogQuery eventQuery, class System.Diagnostics.Eventing.Reader.EventBookmark bookmark) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogWatcher.#ctor(System.Diagnostics.Eventing.Reader.EventLogQuery,System.Diagnostics.Eventing.Reader.EventBookmark)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (eventQuery As EventLogQuery, bookmark As EventBookmark)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EventLogWatcher(System::Diagnostics::Eventing::Reader::EventLogQuery ^ eventQuery, System::Diagnostics::Eventing::Reader::EventBookmark ^ bookmark);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -91,6 +108,8 @@
       <MemberSignature Language="C#" Value="public EventLogWatcher (System.Diagnostics.Eventing.Reader.EventLogQuery eventQuery, System.Diagnostics.Eventing.Reader.EventBookmark bookmark, bool readExistingEvents);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Diagnostics.Eventing.Reader.EventLogQuery eventQuery, class System.Diagnostics.Eventing.Reader.EventBookmark bookmark, bool readExistingEvents) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogWatcher.#ctor(System.Diagnostics.Eventing.Reader.EventLogQuery,System.Diagnostics.Eventing.Reader.EventBookmark,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (eventQuery As EventLogQuery, bookmark As EventBookmark, readExistingEvents As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EventLogWatcher(System::Diagnostics::Eventing::Reader::EventLogQuery ^ eventQuery, System::Diagnostics::Eventing::Reader::EventBookmark ^ bookmark, bool readExistingEvents);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -109,11 +128,25 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the resources used by this object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Dispose">
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogWatcher.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -131,6 +164,8 @@
       <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogWatcher.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -158,6 +193,8 @@
       <MemberSignature Language="C#" Value="public bool Enabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Enabled" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogWatcher.Enabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property Enabled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Enabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -176,6 +213,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Diagnostics.Eventing.Reader.EventRecordWrittenEventArgs&gt; EventRecordWritten;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Diagnostics.Eventing.Reader.EventRecordWrittenEventArgs&gt; EventRecordWritten" />
       <MemberSignature Language="DocId" Value="E:System.Diagnostics.Eventing.Reader.EventLogWatcher.EventRecordWritten" />
+      <MemberSignature Language="VB.NET" Value="Public Event EventRecordWritten As EventHandler(Of EventRecordWrittenEventArgs) " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Diagnostics::Eventing::Reader::EventRecordWrittenEventArgs ^&gt; ^ EventRecordWritten;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -196,23 +235,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Dispose">
-      <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Releases the resources used by this object.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.Eventing.Reader.EventLogWatcher" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,9 @@
-<Type Name="AutoSizeMode" FullName="System.Windows.Forms.AutoSizeMode">
+﻿<Type Name="AutoSizeMode" FullName="System.Windows.Forms.AutoSizeMode">
   <TypeSignature Language="C#" Value="public enum AutoSizeMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AutoSizeMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.AutoSizeMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum AutoSizeMode" />
+  <TypeSignature Language="C++ CLI" Value="public enum class AutoSizeMode" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +38,8 @@
       <MemberSignature Language="C#" Value="GrowAndShrink" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.AutoSizeMode GrowAndShrink = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.AutoSizeMode.GrowAndShrink" />
+      <MemberSignature Language="VB.NET" Value="GrowAndShrink" />
+      <MemberSignature Language="C++ CLI" Value="GrowAndShrink" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -44,6 +48,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.AutoSizeMode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The control grows or shrinks to fit its contents. The control cannot be resized manually.</summary>
       </Docs>
@@ -52,6 +57,8 @@
       <MemberSignature Language="C#" Value="GrowOnly" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.AutoSizeMode GrowOnly = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.AutoSizeMode.GrowOnly" />
+      <MemberSignature Language="VB.NET" Value="GrowOnly" />
+      <MemberSignature Language="C++ CLI" Value="GrowOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -60,6 +67,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.AutoSizeMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The control grows as much as necessary to fit its contents but does not shrink smaller than the value of its <see cref="P:System.Windows.Forms.Control.Size" /> property. The form can be resized, but cannot be made so small that any of its contained controls are hidden.</summary>
       </Docs>

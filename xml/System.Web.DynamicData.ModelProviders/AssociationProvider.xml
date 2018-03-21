@@ -1,7 +1,9 @@
-<Type Name="AssociationProvider" FullName="System.Web.DynamicData.ModelProviders.AssociationProvider">
+﻿<Type Name="AssociationProvider" FullName="System.Web.DynamicData.ModelProviders.AssociationProvider">
   <TypeSignature Language="C#" Value="public abstract class AssociationProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit AssociationProvider extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.ModelProviders.AssociationProvider" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class AssociationProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AssociationProvider abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DynamicData</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +28,8 @@
       <MemberSignature Language="C#" Value="protected AssociationProvider ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.ModelProviders.AssociationProvider.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; AssociationProvider();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -41,6 +45,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.DynamicData.ModelProviders.AssociationDirection Direction { get; protected set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.DynamicData.ModelProviders.AssociationDirection Direction" />
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.ModelProviders.AssociationProvider.Direction" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Direction As AssociationDirection" />
+      <MemberSignature Language="C++ CLI" Value="public:  virtual property System::Web::DynamicData::ModelProviders::AssociationDirection Direction {  public:&#xA;System::Web::DynamicData::ModelProviders::AssociationDirection get(); protected:&#xA; void set(System::Web::DynamicData::ModelProviders::AssociationDirection value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -66,6 +72,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt; ForeignKeyNames { get; protected set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;string&gt; ForeignKeyNames" />
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.ModelProviders.AssociationProvider.ForeignKeyNames" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property ForeignKeyNames As ReadOnlyCollection(Of String)" />
+      <MemberSignature Language="C++ CLI" Value="public:  virtual property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ ForeignKeyNames {  public:&#xA;System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ get(); protected:&#xA; void set(System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -84,6 +92,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.DynamicData.ModelProviders.ColumnProvider FromColumn { get; protected set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.DynamicData.ModelProviders.ColumnProvider FromColumn" />
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.ModelProviders.AssociationProvider.FromColumn" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property FromColumn As ColumnProvider" />
+      <MemberSignature Language="C++ CLI" Value="public:  virtual property System::Web::DynamicData::ModelProviders::ColumnProvider ^ FromColumn {  public:&#xA;System::Web::DynamicData::ModelProviders::ColumnProvider ^ get(); protected:&#xA; void set(System::Web::DynamicData::ModelProviders::ColumnProvider ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -102,6 +112,8 @@
       <MemberSignature Language="C#" Value="public virtual string GetSortExpression (System.Web.DynamicData.ModelProviders.ColumnProvider sortColumn);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetSortExpression(class System.Web.DynamicData.ModelProviders.ColumnProvider sortColumn) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.ModelProviders.AssociationProvider.GetSortExpression(System.Web.DynamicData.ModelProviders.ColumnProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSortExpression (sortColumn As ColumnProvider) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetSortExpression(System::Web::DynamicData::ModelProviders::ColumnProvider ^ sortColumn);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -124,6 +136,8 @@
       <MemberSignature Language="C#" Value="public virtual bool IsPrimaryKeyInThisTable { get; protected set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsPrimaryKeyInThisTable" />
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.ModelProviders.AssociationProvider.IsPrimaryKeyInThisTable" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property IsPrimaryKeyInThisTable As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:  virtual property bool IsPrimaryKeyInThisTable {  public:&#xA;bool get(); protected:&#xA; void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -143,6 +157,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.DynamicData.ModelProviders.ColumnProvider ToColumn { get; protected set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.DynamicData.ModelProviders.ColumnProvider ToColumn" />
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.ModelProviders.AssociationProvider.ToColumn" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property ToColumn As ColumnProvider" />
+      <MemberSignature Language="C++ CLI" Value="public:  virtual property System::Web::DynamicData::ModelProviders::ColumnProvider ^ ToColumn {  public:&#xA;System::Web::DynamicData::ModelProviders::ColumnProvider ^ get(); protected:&#xA; void set(System::Web::DynamicData::ModelProviders::ColumnProvider ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -168,6 +184,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.DynamicData.ModelProviders.TableProvider ToTable { get; protected set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.DynamicData.ModelProviders.TableProvider ToTable" />
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.ModelProviders.AssociationProvider.ToTable" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property ToTable As TableProvider" />
+      <MemberSignature Language="C++ CLI" Value="public:  virtual property System::Web::DynamicData::ModelProviders::TableProvider ^ ToTable {  public:&#xA;System::Web::DynamicData::ModelProviders::TableProvider ^ get(); protected:&#xA; void set(System::Web::DynamicData::ModelProviders::TableProvider ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>

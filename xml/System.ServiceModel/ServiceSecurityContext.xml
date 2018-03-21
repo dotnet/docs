@@ -1,7 +1,9 @@
-<Type Name="ServiceSecurityContext" FullName="System.ServiceModel.ServiceSecurityContext">
+﻿<Type Name="ServiceSecurityContext" FullName="System.ServiceModel.ServiceSecurityContext">
   <TypeSignature Language="C#" Value="public class ServiceSecurityContext" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ServiceSecurityContext extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.ServiceSecurityContext" />
+  <TypeSignature Language="VB.NET" Value="Public Class ServiceSecurityContext" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ServiceSecurityContext" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -60,10 +62,21 @@
     <altmember cref="T:System.ServiceModel.ServiceAuthorizationManager" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.ServiceSecurityContext" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ServiceSecurityContext (System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Policy.IAuthorizationPolicy&gt; authorizationPolicies);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.IdentityModel.Policy.IAuthorizationPolicy&gt; authorizationPolicies) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ServiceSecurityContext.#ctor(System.Collections.ObjectModel.ReadOnlyCollection{System.IdentityModel.Policy.IAuthorizationPolicy})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (authorizationPolicies As ReadOnlyCollection(Of IAuthorizationPolicy))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ServiceSecurityContext(System::Collections::ObjectModel::ReadOnlyCollection&lt;System::IdentityModel::Policy::IAuthorizationPolicy ^&gt; ^ authorizationPolicies);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -89,6 +102,7 @@
       <MemberSignature Language="C#" Value="public ServiceSecurityContext (System.IdentityModel.Policy.AuthorizationContext authorizationContext);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Policy.AuthorizationContext authorizationContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ServiceSecurityContext.#ctor(System.IdentityModel.Policy.AuthorizationContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ServiceSecurityContext(System::IdentityModel::Policy::AuthorizationContext ^ authorizationContext);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -114,6 +128,7 @@
       <MemberSignature Language="C#" Value="public ServiceSecurityContext (System.IdentityModel.Policy.AuthorizationContext authorizationContext, System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Policy.IAuthorizationPolicy&gt; authorizationPolicies);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Policy.AuthorizationContext authorizationContext, class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.IdentityModel.Policy.IAuthorizationPolicy&gt; authorizationPolicies) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ServiceSecurityContext.#ctor(System.IdentityModel.Policy.AuthorizationContext,System.Collections.ObjectModel.ReadOnlyCollection{System.IdentityModel.Policy.IAuthorizationPolicy})" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ServiceSecurityContext(System::IdentityModel::Policy::AuthorizationContext ^ authorizationContext, System::Collections::ObjectModel::ReadOnlyCollection&lt;System::IdentityModel::Policy::IAuthorizationPolicy ^&gt; ^ authorizationPolicies);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -134,6 +149,8 @@
       <MemberSignature Language="C#" Value="public static System.ServiceModel.ServiceSecurityContext Anonymous { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.ServiceSecurityContext Anonymous" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ServiceSecurityContext.Anonymous" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Anonymous As ServiceSecurityContext" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::ServiceSecurityContext ^ Anonymous { System::ServiceModel::ServiceSecurityContext ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -152,6 +169,8 @@
       <MemberSignature Language="C#" Value="public System.IdentityModel.Policy.AuthorizationContext AuthorizationContext { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Policy.AuthorizationContext AuthorizationContext" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ServiceSecurityContext.AuthorizationContext" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AuthorizationContext As AuthorizationContext" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Policy::AuthorizationContext ^ AuthorizationContext { System::IdentityModel::Policy::AuthorizationContext ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -170,6 +189,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Policy.IAuthorizationPolicy&gt; AuthorizationPolicies { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.IdentityModel.Policy.IAuthorizationPolicy&gt; AuthorizationPolicies" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ServiceSecurityContext.AuthorizationPolicies" />
+      <MemberSignature Language="VB.NET" Value="Public Property AuthorizationPolicies As ReadOnlyCollection(Of IAuthorizationPolicy)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::IdentityModel::Policy::IAuthorizationPolicy ^&gt; ^ AuthorizationPolicies { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::IdentityModel::Policy::IAuthorizationPolicy ^&gt; ^ get(); void set(System::Collections::ObjectModel::ReadOnlyCollection&lt;System::IdentityModel::Policy::IAuthorizationPolicy ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -195,6 +216,8 @@
       <MemberSignature Language="C#" Value="public static System.ServiceModel.ServiceSecurityContext Current { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.ServiceSecurityContext Current" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ServiceSecurityContext.Current" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Current As ServiceSecurityContext" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::ServiceSecurityContext ^ Current { System::ServiceModel::ServiceSecurityContext ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -213,6 +236,8 @@
       <MemberSignature Language="C#" Value="public bool IsAnonymous { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsAnonymous" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ServiceSecurityContext.IsAnonymous" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsAnonymous As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAnonymous { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -232,6 +257,8 @@
       <MemberSignature Language="C#" Value="public System.Security.Principal.IIdentity PrimaryIdentity { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Principal.IIdentity PrimaryIdentity" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ServiceSecurityContext.PrimaryIdentity" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PrimaryIdentity As IIdentity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Principal::IIdentity ^ PrimaryIdentity { System::Security::Principal::IIdentity ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -268,6 +295,8 @@
       <MemberSignature Language="C#" Value="public System.Security.Principal.WindowsIdentity WindowsIdentity { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Principal.WindowsIdentity WindowsIdentity" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ServiceSecurityContext.WindowsIdentity" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WindowsIdentity As WindowsIdentity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Principal::WindowsIdentity ^ WindowsIdentity { System::Security::Principal::WindowsIdentity ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -296,14 +325,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.ServiceSecurityContext" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

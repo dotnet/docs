@@ -1,7 +1,9 @@
-<Type Name="LocalizedNameDescriptionPair" FullName="System.Security.RightsManagement.LocalizedNameDescriptionPair">
+﻿<Type Name="LocalizedNameDescriptionPair" FullName="System.Security.RightsManagement.LocalizedNameDescriptionPair">
   <TypeSignature Language="C#" Value="public class LocalizedNameDescriptionPair" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LocalizedNameDescriptionPair extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Security.RightsManagement.LocalizedNameDescriptionPair" />
+  <TypeSignature Language="VB.NET" Value="Public Class LocalizedNameDescriptionPair" />
+  <TypeSignature Language="C++ CLI" Value="public ref class LocalizedNameDescriptionPair" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +33,8 @@
       <MemberSignature Language="C#" Value="public LocalizedNameDescriptionPair (string name, string description);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, string description) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.RightsManagement.LocalizedNameDescriptionPair.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, description As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LocalizedNameDescriptionPair(System::String ^ name, System::String ^ description);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -54,6 +58,8 @@
       <MemberSignature Language="C#" Value="public string Description { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Description" />
       <MemberSignature Language="DocId" Value="P:System.Security.RightsManagement.LocalizedNameDescriptionPair.Description" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Description As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Description { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -80,6 +86,8 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.RightsManagement.LocalizedNameDescriptionPair.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -103,6 +111,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.RightsManagement.LocalizedNameDescriptionPair.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -122,6 +132,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Security.RightsManagement.LocalizedNameDescriptionPair.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

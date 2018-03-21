@@ -1,7 +1,9 @@
-<Type Name="EncryptedPackageEnvelope" FullName="System.IO.Packaging.EncryptedPackageEnvelope">
+﻿<Type Name="EncryptedPackageEnvelope" FullName="System.IO.Packaging.EncryptedPackageEnvelope">
   <TypeSignature Language="C#" Value="public class EncryptedPackageEnvelope : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EncryptedPackageEnvelope extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.IO.Packaging.EncryptedPackageEnvelope" />
+  <TypeSignature Language="VB.NET" Value="Public Class EncryptedPackageEnvelope&#xA;Implements IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EncryptedPackageEnvelope : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +32,8 @@
       <MemberSignature Language="C#" Value="public void Close ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Close() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.EncryptedPackageEnvelope.Close" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Close ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Close();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -55,10 +59,21 @@
         <altmember cref="Overload:System.IO.Packaging.EncryptedPackageEnvelope.Open" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Create">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates and returns an <see cref="T:System.IO.Packaging.EncryptedPackageEnvelope" />.</summary>
+        <altmember cref="Overload:System.IO.Packaging.EncryptedPackageEnvelope.CreateFromPackage" />
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Create">
       <MemberSignature Language="C#" Value="public static System.IO.Packaging.EncryptedPackageEnvelope Create (System.IO.Stream envelopeStream, System.Security.RightsManagement.PublishLicense publishLicense, System.Security.RightsManagement.CryptoProvider cryptoProvider);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.Packaging.EncryptedPackageEnvelope Create(class System.IO.Stream envelopeStream, class System.Security.RightsManagement.PublishLicense publishLicense, class System.Security.RightsManagement.CryptoProvider cryptoProvider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.EncryptedPackageEnvelope.Create(System.IO.Stream,System.Security.RightsManagement.PublishLicense,System.Security.RightsManagement.CryptoProvider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::Packaging::EncryptedPackageEnvelope ^ Create(System::IO::Stream ^ envelopeStream, System::Security::RightsManagement::PublishLicense ^ publishLicense, System::Security::RightsManagement::CryptoProvider ^ cryptoProvider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -97,6 +112,7 @@
       <MemberSignature Language="C#" Value="public static System.IO.Packaging.EncryptedPackageEnvelope Create (string envelopeFileName, System.Security.RightsManagement.PublishLicense publishLicense, System.Security.RightsManagement.CryptoProvider cryptoProvider);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.Packaging.EncryptedPackageEnvelope Create(string envelopeFileName, class System.Security.RightsManagement.PublishLicense publishLicense, class System.Security.RightsManagement.CryptoProvider cryptoProvider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.EncryptedPackageEnvelope.Create(System.String,System.Security.RightsManagement.PublishLicense,System.Security.RightsManagement.CryptoProvider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::Packaging::EncryptedPackageEnvelope ^ Create(System::String ^ envelopeFileName, System::Security::RightsManagement::PublishLicense ^ publishLicense, System::Security::RightsManagement::CryptoProvider ^ cryptoProvider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -156,6 +172,7 @@
       <MemberSignature Language="C#" Value="public static System.IO.Packaging.EncryptedPackageEnvelope CreateFromPackage (System.IO.Stream envelopeStream, System.IO.Stream packageStream, System.Security.RightsManagement.PublishLicense publishLicense, System.Security.RightsManagement.CryptoProvider cryptoProvider);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.Packaging.EncryptedPackageEnvelope CreateFromPackage(class System.IO.Stream envelopeStream, class System.IO.Stream packageStream, class System.Security.RightsManagement.PublishLicense publishLicense, class System.Security.RightsManagement.CryptoProvider cryptoProvider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.EncryptedPackageEnvelope.CreateFromPackage(System.IO.Stream,System.IO.Stream,System.Security.RightsManagement.PublishLicense,System.Security.RightsManagement.CryptoProvider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::Packaging::EncryptedPackageEnvelope ^ CreateFromPackage(System::IO::Stream ^ envelopeStream, System::IO::Stream ^ packageStream, System::Security::RightsManagement::PublishLicense ^ publishLicense, System::Security::RightsManagement::CryptoProvider ^ cryptoProvider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -204,6 +221,7 @@
       <MemberSignature Language="C#" Value="public static System.IO.Packaging.EncryptedPackageEnvelope CreateFromPackage (string envelopeFileName, System.IO.Stream packageStream, System.Security.RightsManagement.PublishLicense publishLicense, System.Security.RightsManagement.CryptoProvider cryptoProvider);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.Packaging.EncryptedPackageEnvelope CreateFromPackage(string envelopeFileName, class System.IO.Stream packageStream, class System.Security.RightsManagement.PublishLicense publishLicense, class System.Security.RightsManagement.CryptoProvider cryptoProvider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.EncryptedPackageEnvelope.CreateFromPackage(System.String,System.IO.Stream,System.Security.RightsManagement.PublishLicense,System.Security.RightsManagement.CryptoProvider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::Packaging::EncryptedPackageEnvelope ^ CreateFromPackage(System::String ^ envelopeFileName, System::IO::Stream ^ packageStream, System::Security::RightsManagement::PublishLicense ^ publishLicense, System::Security::RightsManagement::CryptoProvider ^ cryptoProvider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -248,11 +266,25 @@
         <altmember cref="Overload:System.IO.Packaging.EncryptedPackageEnvelope.Create" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the resources used by the <see cref="T:System.IO.Packaging.EncryptedPackageEnvelope" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Dispose">
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.EncryptedPackageEnvelope.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -280,6 +312,8 @@
       <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.EncryptedPackageEnvelope.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -317,6 +351,8 @@
       <MemberSignature Language="C#" Value="public System.IO.FileAccess FileOpenAccess { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.IO.FileAccess FileOpenAccess" />
       <MemberSignature Language="DocId" Value="P:System.IO.Packaging.EncryptedPackageEnvelope.FileOpenAccess" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FileOpenAccess As FileAccess" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::FileAccess FileOpenAccess { System::IO::FileAccess get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -335,6 +371,8 @@
       <MemberSignature Language="C#" Value="public void Flush ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Flush() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.EncryptedPackageEnvelope.Flush" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Flush ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Flush();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -353,6 +391,8 @@
       <MemberSignature Language="C#" Value="public System.IO.Packaging.Package GetPackage ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.Packaging.Package GetPackage() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.EncryptedPackageEnvelope.GetPackage" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetPackage () As Package" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Packaging::Package ^ GetPackage();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -368,10 +408,20 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="IsEncryptedPackageEnvelope">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a value specifying whether the file is an OLE compound file with an encrypted package stream</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="IsEncryptedPackageEnvelope">
       <MemberSignature Language="C#" Value="public static bool IsEncryptedPackageEnvelope (System.IO.Stream stream);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsEncryptedPackageEnvelope(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.EncryptedPackageEnvelope.IsEncryptedPackageEnvelope(System.IO.Stream)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsEncryptedPackageEnvelope(System::IO::Stream ^ stream);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -397,6 +447,8 @@
       <MemberSignature Language="C#" Value="public static bool IsEncryptedPackageEnvelope (string fileName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsEncryptedPackageEnvelope(string fileName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.EncryptedPackageEnvelope.IsEncryptedPackageEnvelope(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsEncryptedPackageEnvelope (fileName As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsEncryptedPackageEnvelope(System::String ^ fileName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -428,10 +480,22 @@
           <paramref name="fileName" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Open">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Opens the encrypted package in an OLE compound file.</summary>
+        <altmember cref="M:System.IO.Packaging.EncryptedPackageEnvelope.Close" />
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Open">
       <MemberSignature Language="C#" Value="public static System.IO.Packaging.EncryptedPackageEnvelope Open (System.IO.Stream envelopeStream);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.Packaging.EncryptedPackageEnvelope Open(class System.IO.Stream envelopeStream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.EncryptedPackageEnvelope.Open(System.IO.Stream)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Open (envelopeStream As Stream) As EncryptedPackageEnvelope" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::Packaging::EncryptedPackageEnvelope ^ Open(System::IO::Stream ^ envelopeStream);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -461,6 +525,8 @@
       <MemberSignature Language="C#" Value="public static System.IO.Packaging.EncryptedPackageEnvelope Open (string envelopeFileName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.Packaging.EncryptedPackageEnvelope Open(string envelopeFileName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.EncryptedPackageEnvelope.Open(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Open (envelopeFileName As String) As EncryptedPackageEnvelope" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::Packaging::EncryptedPackageEnvelope ^ Open(System::String ^ envelopeFileName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -493,6 +559,8 @@
       <MemberSignature Language="C#" Value="public static System.IO.Packaging.EncryptedPackageEnvelope Open (string envelopeFileName, System.IO.FileAccess access);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.Packaging.EncryptedPackageEnvelope Open(string envelopeFileName, valuetype System.IO.FileAccess access) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.EncryptedPackageEnvelope.Open(System.String,System.IO.FileAccess)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Open (envelopeFileName As String, access As FileAccess) As EncryptedPackageEnvelope" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::Packaging::EncryptedPackageEnvelope ^ Open(System::String ^ envelopeFileName, System::IO::FileAccess access);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -527,6 +595,8 @@
       <MemberSignature Language="C#" Value="public static System.IO.Packaging.EncryptedPackageEnvelope Open (string envelopeFileName, System.IO.FileAccess access, System.IO.FileShare sharing);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.Packaging.EncryptedPackageEnvelope Open(string envelopeFileName, valuetype System.IO.FileAccess access, valuetype System.IO.FileShare sharing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.EncryptedPackageEnvelope.Open(System.String,System.IO.FileAccess,System.IO.FileShare)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Open (envelopeFileName As String, access As FileAccess, sharing As FileShare) As EncryptedPackageEnvelope" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::Packaging::EncryptedPackageEnvelope ^ Open(System::String ^ envelopeFileName, System::IO::FileAccess access, System::IO::FileShare sharing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -561,6 +631,8 @@
       <MemberSignature Language="C#" Value="public System.IO.Packaging.PackageProperties PackageProperties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IO.Packaging.PackageProperties PackageProperties" />
       <MemberSignature Language="DocId" Value="P:System.IO.Packaging.EncryptedPackageEnvelope.PackageProperties" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PackageProperties As PackageProperties" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::Packaging::PackageProperties ^ PackageProperties { System::IO::Packaging::PackageProperties ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -586,6 +658,8 @@
       <MemberSignature Language="C#" Value="public System.IO.Packaging.RightsManagementInformation RightsManagementInformation { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IO.Packaging.RightsManagementInformation RightsManagementInformation" />
       <MemberSignature Language="DocId" Value="P:System.IO.Packaging.EncryptedPackageEnvelope.RightsManagementInformation" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RightsManagementInformation As RightsManagementInformation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::Packaging::RightsManagementInformation ^ RightsManagementInformation { System::IO::Packaging::RightsManagementInformation ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -614,6 +688,8 @@
       <MemberSignature Language="C#" Value="public System.IO.Packaging.StorageInfo StorageInfo { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IO.Packaging.StorageInfo StorageInfo" />
       <MemberSignature Language="DocId" Value="P:System.IO.Packaging.EncryptedPackageEnvelope.StorageInfo" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StorageInfo As StorageInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::Packaging::StorageInfo ^ StorageInfo { System::IO::Packaging::StorageInfo ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -628,43 +704,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Create">
-      <AssemblyInfo>
-        <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates and returns an <see cref="T:System.IO.Packaging.EncryptedPackageEnvelope" />.</summary>
-        <altmember cref="Overload:System.IO.Packaging.EncryptedPackageEnvelope.CreateFromPackage" />
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="IsEncryptedPackageEnvelope">
-      <AssemblyInfo>
-        <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets a value specifying whether the file is an OLE compound file with an encrypted package stream</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Dispose">
-      <AssemblyInfo>
-        <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Releases the resources used by the <see cref="T:System.IO.Packaging.EncryptedPackageEnvelope" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Open">
-      <AssemblyInfo>
-        <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Opens the encrypted package in an OLE compound file.</summary>
-        <altmember cref="M:System.IO.Packaging.EncryptedPackageEnvelope.Close" />
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

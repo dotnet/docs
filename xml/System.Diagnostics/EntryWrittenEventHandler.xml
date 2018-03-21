@@ -1,7 +1,9 @@
-<Type Name="EntryWrittenEventHandler" FullName="System.Diagnostics.EntryWrittenEventHandler">
+﻿<Type Name="EntryWrittenEventHandler" FullName="System.Diagnostics.EntryWrittenEventHandler">
   <TypeSignature Language="C#" Value="public delegate void EntryWrittenEventHandler(object sender, EntryWrittenEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed EntryWrittenEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.EntryWrittenEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub EntryWrittenEventHandler(sender As Object, e As EntryWrittenEventArgs)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void EntryWrittenEventHandler(System::Object ^ sender, EntryWrittenEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -1,7 +1,9 @@
-<Type Name="DiscoveryDocumentReference" FullName="System.Web.Services.Discovery.DiscoveryDocumentReference">
+﻿<Type Name="DiscoveryDocumentReference" FullName="System.Web.Services.Discovery.DiscoveryDocumentReference">
   <TypeSignature Language="C#" Value="public sealed class DiscoveryDocumentReference : System.Web.Services.Discovery.DiscoveryReference" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DiscoveryDocumentReference extends System.Web.Services.Discovery.DiscoveryReference" />
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Discovery.DiscoveryDocumentReference" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DiscoveryDocumentReference&#xA;Inherits DiscoveryReference" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DiscoveryDocumentReference sealed : System::Web::Services::Discovery::DiscoveryReference" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -38,10 +40,22 @@
     <altmember cref="T:System.Web.Services.Discovery.DiscoveryClientProtocol" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Discovery.DiscoveryDocumentReference" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DiscoveryDocumentReference ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryDocumentReference.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DiscoveryDocumentReference();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -67,6 +81,8 @@
       <MemberSignature Language="C#" Value="public DiscoveryDocumentReference (string href);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string href) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryDocumentReference.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (href As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DiscoveryDocumentReference(System::String ^ href);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -95,6 +111,8 @@
       <MemberSignature Language="C#" Value="public override string DefaultFilename { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DefaultFilename" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Discovery.DiscoveryDocumentReference.DefaultFilename" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property DefaultFilename As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DefaultFilename { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -128,6 +146,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Services.Discovery.DiscoveryDocument Document { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Discovery.DiscoveryDocument Document" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Discovery.DiscoveryDocumentReference.Document" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Document As DiscoveryDocument" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Discovery::DiscoveryDocument ^ Document { System::Web::Services::Discovery::DiscoveryDocument ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -171,6 +191,7 @@
       <MemberSignature Language="C#" Value="public override object ReadDocument (System.IO.Stream stream);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ReadDocument(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryDocumentReference.ReadDocument(System.IO.Stream)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ ReadDocument(System::IO::Stream ^ stream);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -208,6 +229,8 @@
       <MemberSignature Language="C#" Value="public string Ref { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Ref" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Discovery.DiscoveryDocumentReference.Ref" />
+      <MemberSignature Language="VB.NET" Value="Public Property Ref As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Ref { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -243,9 +266,10 @@
       </Docs>
     </Member>
     <Member MemberName="Resolve">
-      <MemberSignature Language="C#" Value="protected override void Resolve (string contentType, System.IO.Stream stream);" />
+      <MemberSignature Language="C#" Value="protected internal override void Resolve (string contentType, System.IO.Stream stream);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void Resolve(string contentType, class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryDocumentReference.Resolve(System.String,System.IO.Stream)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Resolve(System::String ^ contentType, System::IO::Stream ^ stream);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -270,6 +294,8 @@
       <MemberSignature Language="C#" Value="public void ResolveAll ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ResolveAll() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryDocumentReference.ResolveAll" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ResolveAll ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResolveAll();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -312,6 +338,8 @@
       <MemberSignature Language="C#" Value="public override string Url { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Url" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Discovery.DiscoveryDocumentReference.Url" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Url As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Url { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -350,6 +378,7 @@
       <MemberSignature Language="C#" Value="public override void WriteDocument (object document, System.IO.Stream stream);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteDocument(object document, class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryDocumentReference.WriteDocument(System.Object,System.IO.Stream)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteDocument(System::Object ^ document, System::IO::Stream ^ stream);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -383,15 +412,5 @@
         <altmember cref="M:System.Web.Services.Discovery.DiscoveryClientProtocol.WriteAll(System.String,System.String)" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Discovery.DiscoveryDocumentReference" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

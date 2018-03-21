@@ -1,7 +1,9 @@
-<Type Name="ConfigurationElementCollection" FullName="System.Configuration.ConfigurationElementCollection">
+﻿<Type Name="ConfigurationElementCollection" FullName="System.Configuration.ConfigurationElementCollection">
   <TypeSignature Language="C#" Value="public abstract class ConfigurationElementCollection : System.Configuration.ConfigurationElement, System.Collections.ICollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ConfigurationElementCollection extends System.Configuration.ConfigurationElement implements class System.Collections.ICollection, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.ConfigurationElementCollection" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ConfigurationElementCollection&#xA;Inherits ConfigurationElement&#xA;Implements ICollection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ConfigurationElementCollection abstract : System::Configuration::ConfigurationElement, System::Collections::ICollection" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -84,10 +86,21 @@
     <altmember cref="T:System.Configuration.ConfigurationSection" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.ConfigurationElementCollection" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected ConfigurationElementCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElementCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ConfigurationElementCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -114,6 +127,8 @@
       <MemberSignature Language="C#" Value="protected ConfigurationElementCollection (System.Collections.IComparer comparer);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Collections.IComparer comparer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElementCollection.#ctor(System.Collections.IComparer)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (comparer As IComparer)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ConfigurationElementCollection(System::Collections::IComparer ^ comparer);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -142,9 +157,11 @@
       </Docs>
     </Member>
     <Member MemberName="AddElementName">
-      <MemberSignature Language="C#" Value="protected string AddElementName { get; set; }" />
+      <MemberSignature Language="C#" Value="protected internal string AddElementName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string AddElementName" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationElementCollection.AddElementName" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Property AddElementName As String" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property System::String ^ AddElementName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -187,6 +204,8 @@
       <MemberSignature Language="C#" Value="protected virtual void BaseAdd (System.Configuration.ConfigurationElement element);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void BaseAdd(class System.Configuration.ConfigurationElement element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElementCollection.BaseAdd(System.Configuration.ConfigurationElement)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub BaseAdd (element As ConfigurationElement)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void BaseAdd(System::Configuration::ConfigurationElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -229,6 +248,8 @@
       <MemberSignature Language="C#" Value="protected void BaseAdd (System.Configuration.ConfigurationElement element, bool throwIfExists);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void BaseAdd(class System.Configuration.ConfigurationElement element, bool throwIfExists) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElementCollection.BaseAdd(System.Configuration.ConfigurationElement,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub BaseAdd (element As ConfigurationElement, throwIfExists As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void BaseAdd(System::Configuration::ConfigurationElement ^ element, bool throwIfExists);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -267,6 +288,8 @@
       <MemberSignature Language="C#" Value="protected virtual void BaseAdd (int index, System.Configuration.ConfigurationElement element);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void BaseAdd(int32 index, class System.Configuration.ConfigurationElement element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElementCollection.BaseAdd(System.Int32,System.Configuration.ConfigurationElement)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub BaseAdd (index As Integer, element As ConfigurationElement)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void BaseAdd(int index, System::Configuration::ConfigurationElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -298,9 +321,11 @@
       </Docs>
     </Member>
     <Member MemberName="BaseClear">
-      <MemberSignature Language="C#" Value="protected void BaseClear ();" />
+      <MemberSignature Language="C#" Value="protected internal void BaseClear ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance void BaseClear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElementCollection.BaseClear" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Sub BaseClear ()" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; void BaseClear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -339,10 +364,21 @@
  A collection item has been locked in a higher-level configuration.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="BaseGet">
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Configuration.ConfigurationElement" /> at the specified index location.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="BaseGet">
-      <MemberSignature Language="C#" Value="protected System.Configuration.ConfigurationElement BaseGet (int index);" />
+      <MemberSignature Language="C#" Value="protected internal System.Configuration.ConfigurationElement BaseGet (int index);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance class System.Configuration.ConfigurationElement BaseGet(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElementCollection.BaseGet(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Function BaseGet (index As Integer) As ConfigurationElement" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; System::Configuration::ConfigurationElement ^ BaseGet(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -382,9 +418,11 @@
       </Docs>
     </Member>
     <Member MemberName="BaseGet">
-      <MemberSignature Language="C#" Value="protected System.Configuration.ConfigurationElement BaseGet (object key);" />
+      <MemberSignature Language="C#" Value="protected internal System.Configuration.ConfigurationElement BaseGet (object key);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance class System.Configuration.ConfigurationElement BaseGet(object key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElementCollection.BaseGet(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Function BaseGet (key As Object) As ConfigurationElement" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; System::Configuration::ConfigurationElement ^ BaseGet(System::Object ^ key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -423,9 +461,11 @@
       </Docs>
     </Member>
     <Member MemberName="BaseGetAllKeys">
-      <MemberSignature Language="C#" Value="protected object[] BaseGetAllKeys ();" />
+      <MemberSignature Language="C#" Value="protected internal object[] BaseGetAllKeys ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance object[] BaseGetAllKeys() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElementCollection.BaseGetAllKeys" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Function BaseGetAllKeys () As Object()" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; cli::array &lt;System::Object ^&gt; ^ BaseGetAllKeys();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -446,9 +486,11 @@
       </Docs>
     </Member>
     <Member MemberName="BaseGetKey">
-      <MemberSignature Language="C#" Value="protected object BaseGetKey (int index);" />
+      <MemberSignature Language="C#" Value="protected internal object BaseGetKey (int index);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance object BaseGetKey(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElementCollection.BaseGetKey(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Function BaseGetKey (index As Integer) As Object" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; System::Object ^ BaseGetKey(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -481,6 +523,8 @@
       <MemberSignature Language="C#" Value="protected int BaseIndexOf (System.Configuration.ConfigurationElement element);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance int32 BaseIndexOf(class System.Configuration.ConfigurationElement element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElementCollection.BaseIndexOf(System.Configuration.ConfigurationElement)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function BaseIndexOf (element As ConfigurationElement) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; int BaseIndexOf(System::Configuration::ConfigurationElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -513,9 +557,11 @@
       </Docs>
     </Member>
     <Member MemberName="BaseIsRemoved">
-      <MemberSignature Language="C#" Value="protected bool BaseIsRemoved (object key);" />
+      <MemberSignature Language="C#" Value="protected internal bool BaseIsRemoved (object key);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance bool BaseIsRemoved(object key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElementCollection.BaseIsRemoved(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Function BaseIsRemoved (key As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; bool BaseIsRemoved(System::Object ^ key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -540,9 +586,11 @@
       </Docs>
     </Member>
     <Member MemberName="BaseRemove">
-      <MemberSignature Language="C#" Value="protected void BaseRemove (object key);" />
+      <MemberSignature Language="C#" Value="protected internal void BaseRemove (object key);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance void BaseRemove(object key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElementCollection.BaseRemove(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Sub BaseRemove (key As Object)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; void BaseRemove(System::Object ^ key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -581,9 +629,11 @@
       </Docs>
     </Member>
     <Member MemberName="BaseRemoveAt">
-      <MemberSignature Language="C#" Value="protected void BaseRemoveAt (int index);" />
+      <MemberSignature Language="C#" Value="protected internal void BaseRemoveAt (int index);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance void BaseRemoveAt(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElementCollection.BaseRemoveAt(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Sub BaseRemoveAt (index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; void BaseRemoveAt(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -634,9 +684,11 @@
       </Docs>
     </Member>
     <Member MemberName="ClearElementName">
-      <MemberSignature Language="C#" Value="protected string ClearElementName { get; set; }" />
+      <MemberSignature Language="C#" Value="protected internal string ClearElementName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ClearElementName" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationElementCollection.ClearElementName" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Property ClearElementName As String" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property System::String ^ ClearElementName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -660,6 +712,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Configuration.ConfigurationElementCollectionType CollectionType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Configuration.ConfigurationElementCollectionType CollectionType" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationElementCollection.CollectionType" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CollectionType As ConfigurationElementCollectionType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Configuration::ConfigurationElementCollectionType CollectionType { System::Configuration::ConfigurationElementCollectionType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -697,6 +751,8 @@
       <MemberSignature Language="C#" Value="public void CopyTo (System.Configuration.ConfigurationElement[] array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.Configuration.ConfigurationElement[] array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElementCollection.CopyTo(System.Configuration.ConfigurationElement[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As ConfigurationElement(), index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Configuration::ConfigurationElement ^&gt; ^ array, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -724,7 +780,12 @@
       <MemberSignature Language="C#" Value="public int Count { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationElementCollection.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -763,6 +824,8 @@
       <MemberSignature Language="C#" Value="protected abstract System.Configuration.ConfigurationElement CreateNewElement ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Configuration.ConfigurationElement CreateNewElement() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElementCollection.CreateNewElement" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Function CreateNewElement () As ConfigurationElement" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Configuration::ConfigurationElement ^ CreateNewElement();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -801,6 +864,8 @@
       <MemberSignature Language="C#" Value="protected virtual System.Configuration.ConfigurationElement CreateNewElement (string elementName);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Configuration.ConfigurationElement CreateNewElement(string elementName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElementCollection.CreateNewElement(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateNewElement (elementName As String) As ConfigurationElement" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Configuration::ConfigurationElement ^ CreateNewElement(System::String ^ elementName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -841,6 +906,8 @@
       <MemberSignature Language="C#" Value="protected virtual string ElementName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ElementName" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationElementCollection.ElementName" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property ElementName As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::String ^ ElementName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -870,6 +937,8 @@
       <MemberSignature Language="C#" Value="public bool EmitClear { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool EmitClear" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationElementCollection.EmitClear" />
+      <MemberSignature Language="VB.NET" Value="Public Property EmitClear As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EmitClear { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -901,6 +970,8 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object compareTo);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object compareTo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElementCollection.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (compareTo As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ compareTo);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -928,6 +999,8 @@
       <MemberSignature Language="C#" Value="protected abstract object GetElementKey (System.Configuration.ConfigurationElement element);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance object GetElementKey(class System.Configuration.ConfigurationElement element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElementCollection.GetElementKey(System.Configuration.ConfigurationElement)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Function GetElementKey (element As ConfigurationElement) As Object" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Object ^ GetElementKey(System::Configuration::ConfigurationElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -964,7 +1037,12 @@
       <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElementCollection.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -987,6 +1065,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElementCollection.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -1010,6 +1090,8 @@
       <MemberSignature Language="C#" Value="protected virtual bool IsElementName (string elementName);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool IsElementName(string elementName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElementCollection.IsElementName(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function IsElementName (elementName As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool IsElementName(System::String ^ elementName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -1044,6 +1126,8 @@
       <MemberSignature Language="C#" Value="protected virtual bool IsElementRemovable (System.Configuration.ConfigurationElement element);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool IsElementRemovable(class System.Configuration.ConfigurationElement element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElementCollection.IsElementRemovable(System.Configuration.ConfigurationElement)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function IsElementRemovable (element As ConfigurationElement) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool IsElementRemovable(System::Configuration::ConfigurationElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -1075,9 +1159,11 @@
       </Docs>
     </Member>
     <Member MemberName="IsModified">
-      <MemberSignature Language="C#" Value="protected override bool IsModified ();" />
+      <MemberSignature Language="C#" Value="protected internal override bool IsModified ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance bool IsModified() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElementCollection.IsModified" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function IsModified () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override bool IsModified();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -1109,6 +1195,8 @@
       <MemberSignature Language="C#" Value="public override bool IsReadOnly ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsReadOnly() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElementCollection.IsReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function IsReadOnly () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsReadOnly();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -1140,7 +1228,12 @@
       <MemberSignature Language="C#" Value="public bool IsSynchronized { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsSynchronized" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationElementCollection.IsSynchronized" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSynchronized As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSynchronized { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1163,6 +1256,8 @@
       <MemberSignature Language="C#" Value="protected override bool OnDeserializeUnrecognizedElement (string elementName, System.Xml.XmlReader reader);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool OnDeserializeUnrecognizedElement(string elementName, class System.Xml.XmlReader reader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElementCollection.OnDeserializeUnrecognizedElement(System.String,System.Xml.XmlReader)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnDeserializeUnrecognizedElement (elementName As String, reader As XmlReader) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool OnDeserializeUnrecognizedElement(System::String ^ elementName, System::Xml::XmlReader ^ reader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -1201,9 +1296,11 @@
       </Docs>
     </Member>
     <Member MemberName="RemoveElementName">
-      <MemberSignature Language="C#" Value="protected string RemoveElementName { get; set; }" />
+      <MemberSignature Language="C#" Value="protected internal string RemoveElementName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string RemoveElementName" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationElementCollection.RemoveElementName" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Property RemoveElementName As String" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property System::String ^ RemoveElementName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -1224,9 +1321,11 @@
       </Docs>
     </Member>
     <Member MemberName="Reset">
-      <MemberSignature Language="C#" Value="protected override void Reset (System.Configuration.ConfigurationElement parentElement);" />
+      <MemberSignature Language="C#" Value="protected internal override void Reset (System.Configuration.ConfigurationElement parentElement);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void Reset(class System.Configuration.ConfigurationElement parentElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElementCollection.Reset(System.Configuration.ConfigurationElement)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Reset (parentElement As ConfigurationElement)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Reset(System::Configuration::ConfigurationElement ^ parentElement);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -1256,9 +1355,11 @@
       </Docs>
     </Member>
     <Member MemberName="ResetModified">
-      <MemberSignature Language="C#" Value="protected override void ResetModified ();" />
+      <MemberSignature Language="C#" Value="protected internal override void ResetModified ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void ResetModified() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElementCollection.ResetModified" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub ResetModified ()" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void ResetModified();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -1285,9 +1386,11 @@
       </Docs>
     </Member>
     <Member MemberName="SerializeElement">
-      <MemberSignature Language="C#" Value="protected override bool SerializeElement (System.Xml.XmlWriter writer, bool serializeCollectionKey);" />
+      <MemberSignature Language="C#" Value="protected internal override bool SerializeElement (System.Xml.XmlWriter writer, bool serializeCollectionKey);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance bool SerializeElement(class System.Xml.XmlWriter writer, bool serializeCollectionKey) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElementCollection.SerializeElement(System.Xml.XmlWriter,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function SerializeElement (writer As XmlWriter, serializeCollectionKey As Boolean) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override bool SerializeElement(System::Xml::XmlWriter ^ writer, bool serializeCollectionKey);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -1323,9 +1426,11 @@
       </Docs>
     </Member>
     <Member MemberName="SetReadOnly">
-      <MemberSignature Language="C#" Value="protected override void SetReadOnly ();" />
+      <MemberSignature Language="C#" Value="protected internal override void SetReadOnly ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void SetReadOnly() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElementCollection.SetReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub SetReadOnly ()" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void SetReadOnly();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -1355,7 +1460,12 @@
       <MemberSignature Language="C#" Value="public object SyncRoot { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object SyncRoot" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationElementCollection.SyncRoot" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SyncRoot As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ SyncRoot { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1377,7 +1487,12 @@
       <MemberSignature Language="C#" Value="void ICollection.CopyTo (Array arr, int index);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.ICollection.CopyTo(class System.Array arr, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElementCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Sub CopyTo (arr As Array, index As Integer) Implements ICollection.CopyTo" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.ICollection.CopyTo(Array ^ arr, int index) = System::Collections::ICollection::CopyTo;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1404,6 +1519,8 @@
       <MemberSignature Language="C#" Value="protected virtual bool ThrowOnDuplicate { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ThrowOnDuplicate" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationElementCollection.ThrowOnDuplicate" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property ThrowOnDuplicate As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool ThrowOnDuplicate { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -1433,9 +1550,16 @@
       </Docs>
     </Member>
     <Member MemberName="Unmerge">
-      <MemberSignature Language="C#" Value="protected override void Unmerge (System.Configuration.ConfigurationElement sourceElement, System.Configuration.ConfigurationElement parentElement, System.Configuration.ConfigurationSaveMode updateMode);" />
-      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void Unmerge(class System.Configuration.ConfigurationElement sourceElement, class System.Configuration.ConfigurationElement parentElement, valuetype System.Configuration.ConfigurationSaveMode updateMode) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElementCollection.Unmerge(System.Configuration.ConfigurationElement,System.Configuration.ConfigurationElement,System.Configuration.ConfigurationSaveMode)" />
+      <MemberSignature Language="C#" Value="protected internal override void Unmerge (System.Configuration.ConfigurationElement sourceElement, System.Configuration.ConfigurationElement parentElement, System.Configuration.ConfigurationSaveMode saveMode);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void Unmerge(class System.Configuration.ConfigurationElement sourceElement, class System.Configuration.ConfigurationElement parentElement, valuetype System.Configuration.ConfigurationSaveMode saveMode) cil managed" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElementCollection.Unmerge(System.Configuration.ConfigurationElement,System.Configuration.ConfigurationElement,System.Configuration.ConfigurationSaveMode)" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Unmerge (sourceElement As ConfigurationElement, parentElement As ConfigurationElement, saveMode As ConfigurationSaveMode)" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Unmerge(System::Configuration::ConfigurationElement ^ sourceElement, System::Configuration::ConfigurationElement ^ parentElement, System::Configuration::ConfigurationSaveMode saveMode);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="protected internal override void Unmerge (System.Configuration.ConfigurationElement sourceElement, System.Configuration.ConfigurationElement parentElement, System.Configuration.ConfigurationSaveMode updateMode);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void Unmerge(class System.Configuration.ConfigurationElement sourceElement, class System.Configuration.ConfigurationElement parentElement, valuetype System.Configuration.ConfigurationSaveMode updateMode) cil managed" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElementCollection.Unmerge(System.Configuration.ConfigurationElement,System.Configuration.ConfigurationElement,System.Configuration.ConfigurationSaveMode)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Unmerge (sourceElement As ConfigurationElement, parentElement As ConfigurationElement, updateMode As ConfigurationSaveMode)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Unmerge(System::Configuration::ConfigurationElement ^ sourceElement, System::Configuration::ConfigurationElement ^ parentElement, System::Configuration::ConfigurationSaveMode updateMode);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -1449,13 +1573,15 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="sourceElement" Type="System.Configuration.ConfigurationElement" />
-        <Parameter Name="parentElement" Type="System.Configuration.ConfigurationElement" />
-        <Parameter Name="saveMode" Type="System.Configuration.ConfigurationSaveMode" />
+        <Parameter Name="sourceElement" Type="System.Configuration.ConfigurationElement" Index="0" />
+        <Parameter Name="parentElement" Type="System.Configuration.ConfigurationElement" Index="1" />
+        <Parameter Name="saveMode" Type="System.Configuration.ConfigurationSaveMode" Index="2" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="updateMode" Type="System.Configuration.ConfigurationSaveMode" Index="2" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="sourceElement">A <see cref="T:System.Configuration.ConfigurationElement" /> object at the current level containing a merged view of the properties.</param>
         <param name="parentElement">The parent <see cref="T:System.Configuration.ConfigurationElement" /> object of the current element, or <see langword="null" /> if this is the top level.</param>
+        <param name="saveMode">To be added.</param>
         <param name="updateMode">To be added.</param>
         <summary>Reverses the effect of merging configuration information from different levels of the configuration hierarchy</summary>
         <remarks>
@@ -1470,23 +1596,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="BaseGet">
-      <AssemblyInfo>
-        <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets the <see cref="T:System.Configuration.ConfigurationElement" /> at the specified index location.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Configuration.ConfigurationElementCollection" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,9 @@
-<Type Name="DesignSurfaceCollection" FullName="System.ComponentModel.Design.DesignSurfaceCollection">
+﻿<Type Name="DesignSurfaceCollection" FullName="System.ComponentModel.Design.DesignSurfaceCollection">
   <TypeSignature Language="C#" Value="public sealed class DesignSurfaceCollection : System.Collections.ICollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DesignSurfaceCollection extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.DesignSurfaceCollection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DesignSurfaceCollection&#xA;Implements ICollection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DesignSurfaceCollection sealed : System::Collections::ICollection" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +32,8 @@
       <MemberSignature Language="C#" Value="public void CopyTo (System.ComponentModel.Design.DesignSurface[] array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.ComponentModel.Design.DesignSurface[] array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignSurfaceCollection.CopyTo(System.ComponentModel.Design.DesignSurface[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As DesignSurface(), index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::ComponentModel::Design::DesignSurface ^&gt; ^ array, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -53,7 +57,12 @@
       <MemberSignature Language="C#" Value="public int Count { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.DesignSurfaceCollection.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -71,7 +80,12 @@
       <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignSurfaceCollection.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -90,6 +104,8 @@
       <MemberSignature Language="C#" Value="public System.ComponentModel.Design.DesignSurface this[int index] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.Design.DesignSurface Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.DesignSurfaceCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As DesignSurface" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::Design::DesignSurface ^ default[int] { System::ComponentModel::Design::DesignSurface ^ get(int index); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -113,7 +129,11 @@
       <MemberSignature Language="C#" Value="void ICollection.CopyTo (Array array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.ICollection.CopyTo(class System.Array array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignSurfaceCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.ICollection.CopyTo(Array ^ array, int index) = System::Collections::ICollection::CopyTo;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -143,7 +163,12 @@
       <MemberSignature Language="C#" Value="int System.Collections.ICollection.Count { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 System.Collections.ICollection.Count" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.DesignSurfaceCollection.System#Collections#ICollection#Count" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property Count As Integer Implements ICollection.Count" />
+      <MemberSignature Language="C++ CLI" Value="property int System.Collections.ICollection.Count { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -168,7 +193,12 @@
       <MemberSignature Language="C#" Value="bool System.Collections.ICollection.IsSynchronized { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.ICollection.IsSynchronized" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.DesignSurfaceCollection.System#Collections#ICollection#IsSynchronized" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -194,7 +224,12 @@
       <MemberSignature Language="C#" Value="object System.Collections.ICollection.SyncRoot { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.ICollection.SyncRoot" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.DesignSurfaceCollection.System#Collections#ICollection#SyncRoot" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -219,7 +254,12 @@
       <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignSurfaceCollection.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator Implements IEnumerable.GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IEnumerator ^ System.Collections.IEnumerable.GetEnumerator() = System::Collections::IEnumerable::GetEnumerator;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

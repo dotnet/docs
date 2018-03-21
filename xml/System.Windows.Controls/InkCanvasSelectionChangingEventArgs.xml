@@ -1,7 +1,9 @@
-<Type Name="InkCanvasSelectionChangingEventArgs" FullName="System.Windows.Controls.InkCanvasSelectionChangingEventArgs">
+﻿<Type Name="InkCanvasSelectionChangingEventArgs" FullName="System.Windows.Controls.InkCanvasSelectionChangingEventArgs">
   <TypeSignature Language="C#" Value="public class InkCanvasSelectionChangingEventArgs : System.ComponentModel.CancelEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit InkCanvasSelectionChangingEventArgs extends System.ComponentModel.CancelEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.InkCanvasSelectionChangingEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class InkCanvasSelectionChangingEventArgs&#xA;Inherits CancelEventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class InkCanvasSelectionChangingEventArgs : System::ComponentModel::CancelEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Windows.UIElement&gt; GetSelectedElements ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Windows.UIElement&gt; GetSelectedElements() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.InkCanvasSelectionChangingEventArgs.GetSelectedElements" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSelectedElements () As ReadOnlyCollection(Of UIElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Windows::UIElement ^&gt; ^ GetSelectedElements();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -38,6 +42,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Ink.StrokeCollection GetSelectedStrokes ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Ink.StrokeCollection GetSelectedStrokes() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.InkCanvasSelectionChangingEventArgs.GetSelectedStrokes" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSelectedStrokes () As StrokeCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Ink::StrokeCollection ^ GetSelectedStrokes();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -57,6 +63,8 @@
       <MemberSignature Language="C#" Value="public void SetSelectedElements (System.Collections.Generic.IEnumerable&lt;System.Windows.UIElement&gt; selectedElements);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetSelectedElements(class System.Collections.Generic.IEnumerable`1&lt;class System.Windows.UIElement&gt; selectedElements) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.InkCanvasSelectionChangingEventArgs.SetSelectedElements(System.Collections.Generic.IEnumerable{System.Windows.UIElement})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetSelectedElements (selectedElements As IEnumerable(Of UIElement))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetSelectedElements(System::Collections::Generic::IEnumerable&lt;System::Windows::UIElement ^&gt; ^ selectedElements);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -80,6 +88,8 @@
       <MemberSignature Language="C#" Value="public void SetSelectedStrokes (System.Windows.Ink.StrokeCollection selectedStrokes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetSelectedStrokes(class System.Windows.Ink.StrokeCollection selectedStrokes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.InkCanvasSelectionChangingEventArgs.SetSelectedStrokes(System.Windows.Ink.StrokeCollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetSelectedStrokes (selectedStrokes As StrokeCollection)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetSelectedStrokes(System::Windows::Ink::StrokeCollection ^ selectedStrokes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

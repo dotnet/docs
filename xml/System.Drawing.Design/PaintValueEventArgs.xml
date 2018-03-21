@@ -1,7 +1,9 @@
-<Type Name="PaintValueEventArgs" FullName="System.Drawing.Design.PaintValueEventArgs">
+﻿<Type Name="PaintValueEventArgs" FullName="System.Drawing.Design.PaintValueEventArgs">
   <TypeSignature Language="C#" Value="public class PaintValueEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PaintValueEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Design.PaintValueEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class PaintValueEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PaintValueEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +38,7 @@
       <MemberSignature Language="C#" Value="public PaintValueEventArgs (System.ComponentModel.ITypeDescriptorContext context, object value, System.Drawing.Graphics graphics, System.Drawing.Rectangle bounds);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ComponentModel.ITypeDescriptorContext context, object value, class System.Drawing.Graphics graphics, valuetype System.Drawing.Rectangle bounds) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.PaintValueEventArgs.#ctor(System.ComponentModel.ITypeDescriptorContext,System.Object,System.Drawing.Graphics,System.Drawing.Rectangle)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PaintValueEventArgs(System::ComponentModel::ITypeDescriptorContext ^ context, System::Object ^ value, System::Drawing::Graphics ^ graphics, System::Drawing::Rectangle bounds);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -62,6 +65,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Rectangle Bounds { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Rectangle Bounds" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Design.PaintValueEventArgs.Bounds" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Bounds As Rectangle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Rectangle Bounds { System::Drawing::Rectangle get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -80,6 +85,8 @@
       <MemberSignature Language="C#" Value="public System.ComponentModel.ITypeDescriptorContext Context { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.ITypeDescriptorContext Context" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Design.PaintValueEventArgs.Context" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Context As ITypeDescriptorContext" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::ITypeDescriptorContext ^ Context { System::ComponentModel::ITypeDescriptorContext ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -98,6 +105,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Graphics Graphics { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Graphics Graphics" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Design.PaintValueEventArgs.Graphics" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Graphics As Graphics" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Graphics ^ Graphics { System::Drawing::Graphics ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -116,6 +125,8 @@
       <MemberSignature Language="C#" Value="public object Value { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Value" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Design.PaintValueEventArgs.Value" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Value { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

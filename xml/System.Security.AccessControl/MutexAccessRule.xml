@@ -1,7 +1,9 @@
-<Type Name="MutexAccessRule" FullName="System.Security.AccessControl.MutexAccessRule">
+﻿<Type Name="MutexAccessRule" FullName="System.Security.AccessControl.MutexAccessRule">
   <TypeSignature Language="C#" Value="public sealed class MutexAccessRule : System.Security.AccessControl.AccessRule" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MutexAccessRule extends System.Security.AccessControl.AccessRule" />
   <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.MutexAccessRule" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MutexAccessRule&#xA;Inherits AccessRule" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MutexAccessRule sealed : System::Security::AccessControl::AccessRule" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.AccessControl</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,10 +64,22 @@
     <altmember cref="T:System.Security.AccessControl.MutexSecurity" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.MutexAccessRule" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public MutexAccessRule (System.Security.Principal.IdentityReference identity, System.Security.AccessControl.MutexRights eventRights, System.Security.AccessControl.AccessControlType type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Principal.IdentityReference identity, valuetype System.Security.AccessControl.MutexRights eventRights, valuetype System.Security.AccessControl.AccessControlType type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.MutexAccessRule.#ctor(System.Security.Principal.IdentityReference,System.Security.AccessControl.MutexRights,System.Security.AccessControl.AccessControlType)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (identity As IdentityReference, eventRights As MutexRights, type As AccessControlType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MutexAccessRule(System::Security::Principal::IdentityReference ^ identity, System::Security::AccessControl::MutexRights eventRights, System::Security::AccessControl::AccessControlType type);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
@@ -115,6 +129,8 @@
       <MemberSignature Language="C#" Value="public MutexAccessRule (string identity, System.Security.AccessControl.MutexRights eventRights, System.Security.AccessControl.AccessControlType type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string identity, valuetype System.Security.AccessControl.MutexRights eventRights, valuetype System.Security.AccessControl.AccessControlType type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.MutexAccessRule.#ctor(System.String,System.Security.AccessControl.MutexRights,System.Security.AccessControl.AccessControlType)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (identity As String, eventRights As MutexRights, type As AccessControlType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MutexAccessRule(System::String ^ identity, System::Security::AccessControl::MutexRights eventRights, System::Security::AccessControl::AccessControlType type);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
@@ -181,6 +197,8 @@
       <MemberSignature Language="C#" Value="public System.Security.AccessControl.MutexRights MutexRights { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.AccessControl.MutexRights MutexRights" />
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.MutexAccessRule.MutexRights" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MutexRights As MutexRights" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::AccessControl::MutexRights MutexRights { System::Security::AccessControl::MutexRights get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
@@ -219,15 +237,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Threading.AccessControl</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.2.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.MutexAccessRule" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,9 @@
-<Type Name="PathData" FullName="System.Drawing.Drawing2D.PathData">
+﻿<Type Name="PathData" FullName="System.Drawing.Drawing2D.PathData">
   <TypeSignature Language="C#" Value="public sealed class PathData" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PathData extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Drawing2D.PathData" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PathData" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PathData sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public PathData ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.PathData.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PathData();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -34,6 +38,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.PointF[] Points { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.PointF[] Points" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Drawing2D.PathData.Points" />
+      <MemberSignature Language="VB.NET" Value="Public Property Points As PointF()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Drawing::PointF&gt; ^ Points { cli::array &lt;System::Drawing::PointF&gt; ^ get(); void set(cli::array &lt;System::Drawing::PointF&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -52,6 +58,8 @@
       <MemberSignature Language="C#" Value="public byte[] Types { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] Types" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Drawing2D.PathData.Types" />
+      <MemberSignature Language="VB.NET" Value="Public Property Types As Byte()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Byte&gt; ^ Types { cli::array &lt;System::Byte&gt; ^ get(); void set(cli::array &lt;System::Byte&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

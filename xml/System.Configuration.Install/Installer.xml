@@ -1,7 +1,9 @@
-<Type Name="Installer" FullName="System.Configuration.Install.Installer">
+﻿<Type Name="Installer" FullName="System.Configuration.Install.Installer">
   <TypeSignature Language="C#" Value="public class Installer : System.ComponentModel.Component" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Installer extends System.ComponentModel.Component" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.Install.Installer" />
+  <TypeSignature Language="VB.NET" Value="Public Class Installer&#xA;Inherits Component" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Installer : System::ComponentModel::Component" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration.Install</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -66,6 +68,8 @@
       <MemberSignature Language="C#" Value="public Installer ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Install.Installer.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Installer();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
@@ -81,6 +85,8 @@
       <MemberSignature Language="C#" Value="public event System.Configuration.Install.InstallEventHandler AfterInstall;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Configuration.Install.InstallEventHandler AfterInstall" />
       <MemberSignature Language="DocId" Value="E:System.Configuration.Install.Installer.AfterInstall" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event AfterInstall As InstallEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Configuration::Install::InstallEventHandler ^ AfterInstall;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
@@ -112,6 +118,8 @@
       <MemberSignature Language="C#" Value="public event System.Configuration.Install.InstallEventHandler AfterRollback;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Configuration.Install.InstallEventHandler AfterRollback" />
       <MemberSignature Language="DocId" Value="E:System.Configuration.Install.Installer.AfterRollback" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event AfterRollback As InstallEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Configuration::Install::InstallEventHandler ^ AfterRollback;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
@@ -143,6 +151,8 @@
       <MemberSignature Language="C#" Value="public event System.Configuration.Install.InstallEventHandler AfterUninstall;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Configuration.Install.InstallEventHandler AfterUninstall" />
       <MemberSignature Language="DocId" Value="E:System.Configuration.Install.Installer.AfterUninstall" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event AfterUninstall As InstallEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Configuration::Install::InstallEventHandler ^ AfterUninstall;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
@@ -174,6 +184,8 @@
       <MemberSignature Language="C#" Value="public event System.Configuration.Install.InstallEventHandler BeforeInstall;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Configuration.Install.InstallEventHandler BeforeInstall" />
       <MemberSignature Language="DocId" Value="E:System.Configuration.Install.Installer.BeforeInstall" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event BeforeInstall As InstallEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Configuration::Install::InstallEventHandler ^ BeforeInstall;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
@@ -205,6 +217,8 @@
       <MemberSignature Language="C#" Value="public event System.Configuration.Install.InstallEventHandler BeforeRollback;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Configuration.Install.InstallEventHandler BeforeRollback" />
       <MemberSignature Language="DocId" Value="E:System.Configuration.Install.Installer.BeforeRollback" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event BeforeRollback As InstallEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Configuration::Install::InstallEventHandler ^ BeforeRollback;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
@@ -236,6 +250,8 @@
       <MemberSignature Language="C#" Value="public event System.Configuration.Install.InstallEventHandler BeforeUninstall;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Configuration.Install.InstallEventHandler BeforeUninstall" />
       <MemberSignature Language="DocId" Value="E:System.Configuration.Install.Installer.BeforeUninstall" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event BeforeUninstall As InstallEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Configuration::Install::InstallEventHandler ^ BeforeUninstall;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
@@ -267,6 +283,8 @@
       <MemberSignature Language="C#" Value="public virtual void Commit (System.Collections.IDictionary savedState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Commit(class System.Collections.IDictionary savedState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Install.Installer.Commit(System.Collections.IDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Commit (savedState As IDictionary)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Commit(System::Collections::IDictionary ^ savedState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
@@ -313,6 +331,8 @@
       <MemberSignature Language="C#" Value="public event System.Configuration.Install.InstallEventHandler Committed;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Configuration.Install.InstallEventHandler Committed" />
       <MemberSignature Language="DocId" Value="E:System.Configuration.Install.Installer.Committed" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Committed As InstallEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Configuration::Install::InstallEventHandler ^ Committed;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
@@ -344,6 +364,8 @@
       <MemberSignature Language="C#" Value="public event System.Configuration.Install.InstallEventHandler Committing;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Configuration.Install.InstallEventHandler Committing" />
       <MemberSignature Language="DocId" Value="E:System.Configuration.Install.Installer.Committing" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Committing As InstallEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Configuration::Install::InstallEventHandler ^ Committing;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
@@ -375,6 +397,8 @@
       <MemberSignature Language="C#" Value="public System.Configuration.Install.InstallContext Context { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.Install.InstallContext Context" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.Install.Installer.Context" />
+      <MemberSignature Language="VB.NET" Value="Public Property Context As InstallContext" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::Install::InstallContext ^ Context { System::Configuration::Install::InstallContext ^ get(); void set(System::Configuration::Install::InstallContext ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
@@ -385,7 +409,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -427,6 +451,8 @@
       <MemberSignature Language="C#" Value="public virtual string HelpText { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string HelpText" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.Install.Installer.HelpText" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property HelpText As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ HelpText { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
@@ -458,6 +484,8 @@
       <MemberSignature Language="C#" Value="public virtual void Install (System.Collections.IDictionary stateSaver);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Install(class System.Collections.IDictionary stateSaver) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Install.Installer.Install(System.Collections.IDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Install (stateSaver As IDictionary)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Install(System::Collections::IDictionary ^ stateSaver);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
@@ -507,6 +535,8 @@
       <MemberSignature Language="C#" Value="public System.Configuration.Install.InstallerCollection Installers { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.Install.InstallerCollection Installers" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.Install.Installer.Installers" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Installers As InstallerCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::Install::InstallerCollection ^ Installers { System::Configuration::Install::InstallerCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
@@ -552,6 +582,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnAfterInstall (System.Collections.IDictionary savedState);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnAfterInstall(class System.Collections.IDictionary savedState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Install.Installer.OnAfterInstall(System.Collections.IDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnAfterInstall (savedState As IDictionary)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnAfterInstall(System::Collections::IDictionary ^ savedState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
@@ -603,6 +635,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnAfterRollback (System.Collections.IDictionary savedState);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnAfterRollback(class System.Collections.IDictionary savedState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Install.Installer.OnAfterRollback(System.Collections.IDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnAfterRollback (savedState As IDictionary)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnAfterRollback(System::Collections::IDictionary ^ savedState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
@@ -645,6 +679,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnAfterUninstall (System.Collections.IDictionary savedState);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnAfterUninstall(class System.Collections.IDictionary savedState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Install.Installer.OnAfterUninstall(System.Collections.IDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnAfterUninstall (savedState As IDictionary)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnAfterUninstall(System::Collections::IDictionary ^ savedState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
@@ -686,6 +722,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnBeforeInstall (System.Collections.IDictionary savedState);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnBeforeInstall(class System.Collections.IDictionary savedState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Install.Installer.OnBeforeInstall(System.Collections.IDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnBeforeInstall (savedState As IDictionary)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnBeforeInstall(System::Collections::IDictionary ^ savedState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
@@ -737,6 +775,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnBeforeRollback (System.Collections.IDictionary savedState);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnBeforeRollback(class System.Collections.IDictionary savedState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Install.Installer.OnBeforeRollback(System.Collections.IDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnBeforeRollback (savedState As IDictionary)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnBeforeRollback(System::Collections::IDictionary ^ savedState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
@@ -779,6 +819,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnBeforeUninstall (System.Collections.IDictionary savedState);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnBeforeUninstall(class System.Collections.IDictionary savedState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Install.Installer.OnBeforeUninstall(System.Collections.IDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnBeforeUninstall (savedState As IDictionary)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnBeforeUninstall(System::Collections::IDictionary ^ savedState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
@@ -821,6 +863,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnCommitted (System.Collections.IDictionary savedState);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnCommitted(class System.Collections.IDictionary savedState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Install.Installer.OnCommitted(System.Collections.IDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnCommitted (savedState As IDictionary)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnCommitted(System::Collections::IDictionary ^ savedState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
@@ -872,6 +916,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnCommitting (System.Collections.IDictionary savedState);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnCommitting(class System.Collections.IDictionary savedState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Install.Installer.OnCommitting(System.Collections.IDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnCommitting (savedState As IDictionary)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnCommitting(System::Collections::IDictionary ^ savedState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
@@ -923,6 +969,8 @@
       <MemberSignature Language="C#" Value="public System.Configuration.Install.Installer Parent { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.Install.Installer Parent" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.Install.Installer.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public Property Parent As Installer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::Install::Installer ^ Parent { System::Configuration::Install::Installer ^ get(); void set(System::Configuration::Install::Installer ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
@@ -965,6 +1013,8 @@
       <MemberSignature Language="C#" Value="public virtual void Rollback (System.Collections.IDictionary savedState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Rollback(class System.Collections.IDictionary savedState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Install.Installer.Rollback(System.Collections.IDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Rollback (savedState As IDictionary)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Rollback(System::Collections::IDictionary ^ savedState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
@@ -1011,6 +1061,8 @@
       <MemberSignature Language="C#" Value="public virtual void Uninstall (System.Collections.IDictionary savedState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Uninstall(class System.Collections.IDictionary savedState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Install.Installer.Uninstall(System.Collections.IDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Uninstall (savedState As IDictionary)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Uninstall(System::Collections::IDictionary ^ savedState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>

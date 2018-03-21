@@ -1,7 +1,9 @@
-<Type Name="BulletChrome" FullName="Microsoft.Windows.Themes.BulletChrome">
+﻿<Type Name="BulletChrome" FullName="Microsoft.Windows.Themes.BulletChrome">
   <TypeSignature Language="C#" Value="public sealed class BulletChrome : System.Windows.FrameworkElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BulletChrome extends System.Windows.FrameworkElement" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Windows.Themes.BulletChrome" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BulletChrome&#xA;Inherits FrameworkElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BulletChrome sealed : System::Windows::FrameworkElement" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework.Aero</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +54,8 @@
       <MemberSignature Language="C#" Value="public BulletChrome ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Windows.Themes.BulletChrome.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BulletChrome();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Aero</AssemblyName>
@@ -79,6 +83,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Brush Background { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Brush Background" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Windows.Themes.BulletChrome.Background" />
+      <MemberSignature Language="VB.NET" Value="Public Property Background As Brush" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Brush ^ Background { System::Windows::Media::Brush ^ get(); void set(System::Windows::Media::Brush ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Aero</AssemblyName>
@@ -123,6 +129,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty BackgroundProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty BackgroundProperty" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.BulletChrome.BackgroundProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BackgroundProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ BackgroundProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Aero</AssemblyName>
@@ -152,6 +160,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Brush BorderBrush { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Brush BorderBrush" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Windows.Themes.BulletChrome.BorderBrush" />
+      <MemberSignature Language="VB.NET" Value="Public Property BorderBrush As Brush" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Brush ^ BorderBrush { System::Windows::Media::Brush ^ get(); void set(System::Windows::Media::Brush ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Aero</AssemblyName>
@@ -196,6 +206,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty BorderBrushProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty BorderBrushProperty" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.BulletChrome.BorderBrushProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BorderBrushProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ BorderBrushProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Aero</AssemblyName>
@@ -225,6 +237,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Thickness BorderThickness { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Thickness BorderThickness" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Windows.Themes.BulletChrome.BorderThickness" />
+      <MemberSignature Language="VB.NET" Value="Public Property BorderThickness As Thickness" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Thickness BorderThickness { System::Windows::Thickness get(); void set(System::Windows::Thickness value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Luna</AssemblyName>
@@ -262,6 +276,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty BorderThicknessProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty BorderThicknessProperty" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.BulletChrome.BorderThicknessProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BorderThicknessProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ BorderThicknessProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Luna</AssemblyName>
@@ -283,6 +299,8 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; IsChecked { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; IsChecked" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Windows.Themes.BulletChrome.IsChecked" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsChecked As Nullable(Of Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;bool&gt; IsChecked { Nullable&lt;bool&gt; get(); void set(Nullable&lt;bool&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Aero</AssemblyName>
@@ -340,6 +358,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty IsCheckedProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty IsCheckedProperty" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.BulletChrome.IsCheckedProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsCheckedProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsCheckedProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Aero</AssemblyName>
@@ -369,6 +389,8 @@
       <MemberSignature Language="C#" Value="public bool IsRound { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsRound" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Windows.Themes.BulletChrome.IsRound" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsRound As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsRound { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Aero</AssemblyName>
@@ -415,6 +437,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty IsRoundProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty IsRoundProperty" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.BulletChrome.IsRoundProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsRoundProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsRoundProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Aero</AssemblyName>
@@ -444,6 +468,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Size MeasureOverride (System.Windows.Size availableSize);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Size MeasureOverride(valuetype System.Windows.Size availableSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Windows.Themes.BulletChrome.MeasureOverride(System.Windows.Size)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function MeasureOverride (availableSize As Size) As Size" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size MeasureOverride(System::Windows::Size availableSize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Aero</AssemblyName>
@@ -478,6 +504,7 @@
       <MemberSignature Language="C#" Value="protected override void OnRender (System.Windows.Media.DrawingContext drawingContext);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnRender(class System.Windows.Media.DrawingContext drawingContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Windows.Themes.BulletChrome.OnRender(System.Windows.Media.DrawingContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnRender(System::Windows::Media::DrawingContext ^ drawingContext);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Aero</AssemblyName>
@@ -511,6 +538,8 @@
       <MemberSignature Language="C#" Value="public bool RenderMouseOver { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool RenderMouseOver" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Windows.Themes.BulletChrome.RenderMouseOver" />
+      <MemberSignature Language="VB.NET" Value="Public Property RenderMouseOver As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RenderMouseOver { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Aero</AssemblyName>
@@ -556,6 +585,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty RenderMouseOverProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty RenderMouseOverProperty" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.BulletChrome.RenderMouseOverProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly RenderMouseOverProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ RenderMouseOverProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Aero</AssemblyName>
@@ -585,6 +616,8 @@
       <MemberSignature Language="C#" Value="public bool RenderPressed { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool RenderPressed" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Windows.Themes.BulletChrome.RenderPressed" />
+      <MemberSignature Language="VB.NET" Value="Public Property RenderPressed As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RenderPressed { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Aero</AssemblyName>
@@ -630,6 +663,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty RenderPressedProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty RenderPressedProperty" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.BulletChrome.RenderPressedProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly RenderPressedProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ RenderPressedProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Aero</AssemblyName>

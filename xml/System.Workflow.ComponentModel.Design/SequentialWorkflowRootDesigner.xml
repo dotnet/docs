@@ -1,7 +1,9 @@
-<Type Name="SequentialWorkflowRootDesigner" FullName="System.Workflow.ComponentModel.Design.SequentialWorkflowRootDesigner">
+﻿<Type Name="SequentialWorkflowRootDesigner" FullName="System.Workflow.ComponentModel.Design.SequentialWorkflowRootDesigner">
   <TypeSignature Language="C#" Value="public class SequentialWorkflowRootDesigner : System.Workflow.ComponentModel.Design.SequentialActivityDesigner" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SequentialWorkflowRootDesigner extends System.Workflow.ComponentModel.Design.SequentialActivityDesigner" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.SequentialWorkflowRootDesigner" />
+  <TypeSignature Language="VB.NET" Value="Public Class SequentialWorkflowRootDesigner&#xA;Inherits SequentialActivityDesigner" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SequentialWorkflowRootDesigner : System::Workflow::ComponentModel::Design::SequentialActivityDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +37,8 @@
       <MemberSignature Language="C#" Value="public SequentialWorkflowRootDesigner ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.SequentialWorkflowRootDesigner.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SequentialWorkflowRootDesigner();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -50,6 +54,8 @@
       <MemberSignature Language="C#" Value="public override bool CanBeParentedTo (System.Workflow.ComponentModel.Design.CompositeActivityDesigner parentActivityDesigner);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanBeParentedTo(class System.Workflow.ComponentModel.Design.CompositeActivityDesigner parentActivityDesigner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.SequentialWorkflowRootDesigner.CanBeParentedTo(System.Workflow.ComponentModel.Design.CompositeActivityDesigner)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CanBeParentedTo (parentActivityDesigner As CompositeActivityDesigner) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool CanBeParentedTo(System::Workflow::ComponentModel::Design::CompositeActivityDesigner ^ parentActivityDesigner);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -80,6 +86,8 @@
       <MemberSignature Language="C#" Value="public override bool CanExpandCollapse { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanExpandCollapse" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.SequentialWorkflowRootDesigner.CanExpandCollapse" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanExpandCollapse As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanExpandCollapse { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -106,6 +114,8 @@
       <MemberSignature Language="C#" Value="protected virtual System.Workflow.ComponentModel.Design.SequentialWorkflowHeaderFooter Footer { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.ComponentModel.Design.SequentialWorkflowHeaderFooter Footer" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.SequentialWorkflowRootDesigner.Footer" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property Footer As SequentialWorkflowHeaderFooter" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Workflow::ComponentModel::Design::SequentialWorkflowHeaderFooter ^ Footer { System::Workflow::ComponentModel::Design::SequentialWorkflowHeaderFooter ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -131,6 +141,8 @@
       <MemberSignature Language="C#" Value="protected override System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Drawing.Point&gt; GetInnerConnections (System.Workflow.ComponentModel.Design.DesignerEdges edges);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;valuetype System.Drawing.Point&gt; GetInnerConnections(valuetype System.Workflow.ComponentModel.Design.DesignerEdges edges) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.SequentialWorkflowRootDesigner.GetInnerConnections(System.Workflow.ComponentModel.Design.DesignerEdges)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetInnerConnections (edges As DesignerEdges) As ReadOnlyCollection(Of Point)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Drawing::Point&gt; ^ GetInnerConnections(System::Workflow::ComponentModel::Design::DesignerEdges edges);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -157,9 +169,11 @@
       </Docs>
     </Member>
     <Member MemberName="Glyphs">
-      <MemberSignature Language="C#" Value="protected override System.Workflow.ComponentModel.Design.ActivityDesignerGlyphCollection Glyphs { get; }" />
+      <MemberSignature Language="C#" Value="protected internal override System.Workflow.ComponentModel.Design.ActivityDesignerGlyphCollection Glyphs { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.ComponentModel.Design.ActivityDesignerGlyphCollection Glyphs" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.SequentialWorkflowRootDesigner.Glyphs" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property Glyphs As ActivityDesignerGlyphCollection" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property System::Workflow::ComponentModel::Design::ActivityDesignerGlyphCollection ^ Glyphs { System::Workflow::ComponentModel::Design::ActivityDesignerGlyphCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -178,6 +192,8 @@
       <MemberSignature Language="C#" Value="protected virtual System.Workflow.ComponentModel.Design.SequentialWorkflowHeaderFooter Header { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.ComponentModel.Design.SequentialWorkflowHeaderFooter Header" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.SequentialWorkflowRootDesigner.Header" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property Header As SequentialWorkflowHeaderFooter" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Workflow::ComponentModel::Design::SequentialWorkflowHeaderFooter ^ Header { System::Workflow::ComponentModel::Design::SequentialWorkflowHeaderFooter ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -203,6 +219,8 @@
       <MemberSignature Language="C#" Value="public override System.Drawing.Image Image { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Image Image" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.SequentialWorkflowRootDesigner.Image" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Image As Image" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Image ^ Image { System::Drawing::Image ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -230,6 +248,8 @@
       <MemberSignature Language="C#" Value="protected override System.Drawing.Rectangle ImageRectangle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Rectangle ImageRectangle" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.SequentialWorkflowRootDesigner.ImageRectangle" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ImageRectangle As Rectangle" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Drawing::Rectangle ImageRectangle { System::Drawing::Rectangle get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -263,6 +283,8 @@
       <MemberSignature Language="C#" Value="protected override System.Workflow.ComponentModel.Design.CompositeActivityDesigner InvokingDesigner { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.ComponentModel.Design.CompositeActivityDesigner InvokingDesigner" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.SequentialWorkflowRootDesigner.InvokingDesigner" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Property InvokingDesigner As CompositeActivityDesigner" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Workflow::ComponentModel::Design::CompositeActivityDesigner ^ InvokingDesigner { System::Workflow::ComponentModel::Design::CompositeActivityDesigner ^ get(); void set(System::Workflow::ComponentModel::Design::CompositeActivityDesigner ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -281,6 +303,8 @@
       <MemberSignature Language="C#" Value="public override System.Drawing.Size MinimumSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Size MinimumSize" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.SequentialWorkflowRootDesigner.MinimumSize" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property MinimumSize As Size" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Size MinimumSize { System::Drawing::Size get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -306,6 +330,8 @@
       <MemberSignature Language="C#" Value="protected override System.Drawing.Size OnLayoutSize (System.Workflow.ComponentModel.Design.ActivityDesignerLayoutEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Drawing.Size OnLayoutSize(class System.Workflow.ComponentModel.Design.ActivityDesignerLayoutEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.SequentialWorkflowRootDesigner.OnLayoutSize(System.Workflow.ComponentModel.Design.ActivityDesignerLayoutEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnLayoutSize (e As ActivityDesignerLayoutEventArgs) As Size" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Drawing::Size OnLayoutSize(System::Workflow::ComponentModel::Design::ActivityDesignerLayoutEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -328,6 +354,8 @@
       <MemberSignature Language="C#" Value="protected override void OnPaint (System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnPaint(class System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.SequentialWorkflowRootDesigner.OnPaint(System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPaint (e As ActivityDesignerPaintEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPaint(System::Workflow::ComponentModel::Design::ActivityDesignerPaintEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -360,6 +388,8 @@
       <MemberSignature Language="C#" Value="protected override void OnSmartTagVisibilityChanged (bool visible);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnSmartTagVisibilityChanged(bool visible) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.SequentialWorkflowRootDesigner.OnSmartTagVisibilityChanged(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnSmartTagVisibilityChanged (visible As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnSmartTagVisibilityChanged(bool visible);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -391,6 +421,8 @@
       <MemberSignature Language="C#" Value="protected override bool ShowSmartTag { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ShowSmartTag" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.SequentialWorkflowRootDesigner.ShowSmartTag" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ShowSmartTag As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool ShowSmartTag { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -417,6 +449,8 @@
       <MemberSignature Language="C#" Value="protected override System.Drawing.Rectangle SmartTagRectangle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Rectangle SmartTagRectangle" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.SequentialWorkflowRootDesigner.SmartTagRectangle" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property SmartTagRectangle As Rectangle" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Drawing::Rectangle SmartTagRectangle { System::Drawing::Rectangle get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -442,6 +476,8 @@
       <MemberSignature Language="C#" Value="public override string Text { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Text" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.SequentialWorkflowRootDesigner.Text" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Text As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Text { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -467,6 +503,8 @@
       <MemberSignature Language="C#" Value="protected override int TitleHeight { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 TitleHeight" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.SequentialWorkflowRootDesigner.TitleHeight" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property TitleHeight As Integer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property int TitleHeight { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

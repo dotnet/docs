@@ -1,7 +1,9 @@
-<Type Name="SearchForVirtualItemEventHandler" FullName="System.Windows.Forms.SearchForVirtualItemEventHandler">
+﻿<Type Name="SearchForVirtualItemEventHandler" FullName="System.Windows.Forms.SearchForVirtualItemEventHandler">
   <TypeSignature Language="C#" Value="public delegate void SearchForVirtualItemEventHandler(object sender, SearchForVirtualItemEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SearchForVirtualItemEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.SearchForVirtualItemEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub SearchForVirtualItemEventHandler(sender As Object, e As SearchForVirtualItemEventArgs)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void SearchForVirtualItemEventHandler(System::Object ^ sender, SearchForVirtualItemEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

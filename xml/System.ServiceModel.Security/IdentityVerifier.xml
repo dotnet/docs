@@ -1,7 +1,9 @@
-<Type Name="IdentityVerifier" FullName="System.ServiceModel.Security.IdentityVerifier">
+﻿<Type Name="IdentityVerifier" FullName="System.ServiceModel.Security.IdentityVerifier">
   <TypeSignature Language="C#" Value="public abstract class IdentityVerifier" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit IdentityVerifier extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.IdentityVerifier" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class IdentityVerifier" />
+  <TypeSignature Language="C++ CLI" Value="public ref class IdentityVerifier abstract" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +30,8 @@
       <MemberSignature Language="C#" Value="protected IdentityVerifier ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IdentityVerifier.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; IdentityVerifier();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -43,6 +47,8 @@
       <MemberSignature Language="C#" Value="public abstract bool CheckAccess (System.ServiceModel.EndpointIdentity identity, System.IdentityModel.Policy.AuthorizationContext authContext);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CheckAccess(class System.ServiceModel.EndpointIdentity identity, class System.IdentityModel.Policy.AuthorizationContext authContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IdentityVerifier.CheckAccess(System.ServiceModel.EndpointIdentity,System.IdentityModel.Policy.AuthorizationContext)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function CheckAccess (identity As EndpointIdentity, authContext As AuthorizationContext) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool CheckAccess(System::ServiceModel::EndpointIdentity ^ identity, System::IdentityModel::Policy::AuthorizationContext ^ authContext);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -68,6 +74,8 @@
       <MemberSignature Language="C#" Value="public static System.ServiceModel.Security.IdentityVerifier CreateDefault ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Security.IdentityVerifier CreateDefault() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IdentityVerifier.CreateDefault" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateDefault () As IdentityVerifier" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Security::IdentityVerifier ^ CreateDefault();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -87,6 +95,8 @@
       <MemberSignature Language="C#" Value="public abstract bool TryGetIdentity (System.ServiceModel.EndpointAddress reference, out System.ServiceModel.EndpointIdentity identity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetIdentity(class System.ServiceModel.EndpointAddress reference, [out] class System.ServiceModel.EndpointIdentity&amp; identity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IdentityVerifier.TryGetIdentity(System.ServiceModel.EndpointAddress,System.ServiceModel.EndpointIdentity@)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function TryGetIdentity (reference As EndpointAddress, ByRef identity As EndpointIdentity) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool TryGetIdentity(System::ServiceModel::EndpointAddress ^ reference, [Runtime::InteropServices::Out] System::ServiceModel::EndpointIdentity ^ % identity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

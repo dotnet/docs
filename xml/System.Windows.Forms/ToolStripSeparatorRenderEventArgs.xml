@@ -1,7 +1,9 @@
-<Type Name="ToolStripSeparatorRenderEventArgs" FullName="System.Windows.Forms.ToolStripSeparatorRenderEventArgs">
+﻿<Type Name="ToolStripSeparatorRenderEventArgs" FullName="System.Windows.Forms.ToolStripSeparatorRenderEventArgs">
   <TypeSignature Language="C#" Value="public class ToolStripSeparatorRenderEventArgs : System.Windows.Forms.ToolStripItemRenderEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ToolStripSeparatorRenderEventArgs extends System.Windows.Forms.ToolStripItemRenderEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripSeparatorRenderEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class ToolStripSeparatorRenderEventArgs&#xA;Inherits ToolStripItemRenderEventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ToolStripSeparatorRenderEventArgs : System::Windows::Forms::ToolStripItemRenderEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +33,8 @@
       <MemberSignature Language="C#" Value="public ToolStripSeparatorRenderEventArgs (System.Drawing.Graphics g, System.Windows.Forms.ToolStripSeparator separator, bool vertical);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Graphics g, class System.Windows.Forms.ToolStripSeparator separator, bool vertical) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripSeparatorRenderEventArgs.#ctor(System.Drawing.Graphics,System.Windows.Forms.ToolStripSeparator,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (g As Graphics, separator As ToolStripSeparator, vertical As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ToolStripSeparatorRenderEventArgs(System::Drawing::Graphics ^ g, System::Windows::Forms::ToolStripSeparator ^ separator, bool vertical);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -53,6 +57,8 @@
       <MemberSignature Language="C#" Value="public bool Vertical { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Vertical" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripSeparatorRenderEventArgs.Vertical" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Vertical As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Vertical { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

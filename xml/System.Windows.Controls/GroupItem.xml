@@ -1,7 +1,9 @@
-<Type Name="GroupItem" FullName="System.Windows.Controls.GroupItem">
+﻿<Type Name="GroupItem" FullName="System.Windows.Controls.GroupItem">
   <TypeSignature Language="C#" Value="public class GroupItem : System.Windows.Controls.ContentControl, System.Windows.Controls.Primitives.IContainItemStorage, System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi GroupItem extends System.Windows.Controls.ContentControl implements class System.Windows.Controls.Primitives.IContainItemStorage, class System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.GroupItem" />
+  <TypeSignature Language="VB.NET" Value="Public Class GroupItem&#xA;Inherits ContentControl&#xA;Implements IContainItemStorage, IHierarchicalVirtualizationAndScrollInfo" />
+  <TypeSignature Language="C++ CLI" Value="public ref class GroupItem : System::Windows::Controls::ContentControl, System::Windows::Controls::Primitives::IContainItemStorage, System::Windows::Controls::Primitives::IHierarchicalVirtualizationAndScrollInfo" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +37,8 @@
       <MemberSignature Language="C#" Value="public GroupItem ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.GroupItem.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; GroupItem();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -50,6 +54,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Size ArrangeOverride (System.Windows.Size arrangeSize);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Size ArrangeOverride(valuetype System.Windows.Size arrangeSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.GroupItem.ArrangeOverride(System.Windows.Size)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function ArrangeOverride (arrangeSize As Size) As Size" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size ArrangeOverride(System::Windows::Size arrangeSize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -72,6 +78,8 @@
       <MemberSignature Language="C#" Value="public override void OnApplyTemplate ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void OnApplyTemplate() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.GroupItem.OnApplyTemplate" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnApplyTemplate ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnApplyTemplate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -97,6 +105,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.GroupItem.OnCreateAutomationPeer" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnCreateAutomationPeer () As AutomationPeer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationPeer ^ OnCreateAutomationPeer();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -116,7 +126,12 @@
       <MemberSignature Language="C#" Value="void IContainItemStorage.Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Controls.Primitives.IContainItemStorage.Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.GroupItem.System#Windows#Controls#Primitives#IContainItemStorage#Clear" />
+      <MemberSignature Language="VB.NET" Value="Sub Clear () Implements IContainItemStorage.Clear" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.Controls.Primitives.IContainItemStorage.Clear() = System::Windows::Controls::Primitives::IContainItemStorage::Clear;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Controls.Primitives.IContainItemStorage.Clear</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -134,7 +149,12 @@
       <MemberSignature Language="C#" Value="void IContainItemStorage.ClearItemValue (object item, System.Windows.DependencyProperty dp);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Controls.Primitives.IContainItemStorage.ClearItemValue(object item, class System.Windows.DependencyProperty dp) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.GroupItem.System#Windows#Controls#Primitives#IContainItemStorage#ClearItemValue(System.Object,System.Windows.DependencyProperty)" />
+      <MemberSignature Language="VB.NET" Value="Sub ClearItemValue (item As Object, dp As DependencyProperty) Implements IContainItemStorage.ClearItemValue" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.Controls.Primitives.IContainItemStorage.ClearItemValue(System::Object ^ item, System::Windows::DependencyProperty ^ dp) = System::Windows::Controls::Primitives::IContainItemStorage::ClearItemValue;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Controls.Primitives.IContainItemStorage.ClearItemValue(System.Object,System.Windows.DependencyProperty)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -157,7 +177,12 @@
       <MemberSignature Language="C#" Value="void IContainItemStorage.ClearValue (System.Windows.DependencyProperty dp);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Controls.Primitives.IContainItemStorage.ClearValue(class System.Windows.DependencyProperty dp) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.GroupItem.System#Windows#Controls#Primitives#IContainItemStorage#ClearValue(System.Windows.DependencyProperty)" />
+      <MemberSignature Language="VB.NET" Value="Sub ClearValue (dp As DependencyProperty) Implements IContainItemStorage.ClearValue" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.Controls.Primitives.IContainItemStorage.ClearValue(System::Windows::DependencyProperty ^ dp) = System::Windows::Controls::Primitives::IContainItemStorage::ClearValue;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Controls.Primitives.IContainItemStorage.ClearValue(System.Windows.DependencyProperty)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -178,7 +203,12 @@
       <MemberSignature Language="C#" Value="object IContainItemStorage.ReadItemValue (object item, System.Windows.DependencyProperty dp);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.Windows.Controls.Primitives.IContainItemStorage.ReadItemValue(object item, class System.Windows.DependencyProperty dp) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.GroupItem.System#Windows#Controls#Primitives#IContainItemStorage#ReadItemValue(System.Object,System.Windows.DependencyProperty)" />
+      <MemberSignature Language="VB.NET" Value="Function ReadItemValue (item As Object, dp As DependencyProperty) As Object Implements IContainItemStorage.ReadItemValue" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.Windows.Controls.Primitives.IContainItemStorage.ReadItemValue(System::Object ^ item, System::Windows::DependencyProperty ^ dp) = System::Windows::Controls::Primitives::IContainItemStorage::ReadItemValue;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Controls.Primitives.IContainItemStorage.ReadItemValue(System.Object,System.Windows.DependencyProperty)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -202,7 +232,12 @@
       <MemberSignature Language="C#" Value="void IContainItemStorage.StoreItemValue (object item, System.Windows.DependencyProperty dp, object value);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Controls.Primitives.IContainItemStorage.StoreItemValue(object item, class System.Windows.DependencyProperty dp, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.GroupItem.System#Windows#Controls#Primitives#IContainItemStorage#StoreItemValue(System.Object,System.Windows.DependencyProperty,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Sub StoreItemValue (item As Object, dp As DependencyProperty, value As Object) Implements IContainItemStorage.StoreItemValue" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.Controls.Primitives.IContainItemStorage.StoreItemValue(System::Object ^ item, System::Windows::DependencyProperty ^ dp, System::Object ^ value) = System::Windows::Controls::Primitives::IContainItemStorage::StoreItemValue;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Controls.Primitives.IContainItemStorage.StoreItemValue(System.Object,System.Windows.DependencyProperty,System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -227,7 +262,12 @@
       <MemberSignature Language="C#" Value="System.Windows.Controls.HierarchicalVirtualizationConstraints System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.Constraints { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Controls.HierarchicalVirtualizationConstraints System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.Constraints" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.GroupItem.System#Windows#Controls#Primitives#IHierarchicalVirtualizationAndScrollInfo#Constraints" />
+      <MemberSignature Language="VB.NET" Value=" Property Constraints As HierarchicalVirtualizationConstraints Implements IHierarchicalVirtualizationAndScrollInfo.Constraints" />
+      <MemberSignature Language="C++ CLI" Value="property System::Windows::Controls::HierarchicalVirtualizationConstraints System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.Constraints { System::Windows::Controls::HierarchicalVirtualizationConstraints get(); void set(System::Windows::Controls::HierarchicalVirtualizationConstraints value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.Constraints</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -252,7 +292,12 @@
       <MemberSignature Language="C#" Value="System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.HeaderDesiredSizes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.HeaderDesiredSizes" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.GroupItem.System#Windows#Controls#Primitives#IHierarchicalVirtualizationAndScrollInfo#HeaderDesiredSizes" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property HeaderDesiredSizes As HierarchicalVirtualizationHeaderDesiredSizes Implements IHierarchicalVirtualizationAndScrollInfo.HeaderDesiredSizes" />
+      <MemberSignature Language="C++ CLI" Value="property System::Windows::Controls::HierarchicalVirtualizationHeaderDesiredSizes System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.HeaderDesiredSizes { System::Windows::Controls::HierarchicalVirtualizationHeaderDesiredSizes get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.HeaderDesiredSizes</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -277,7 +322,12 @@
       <MemberSignature Language="C#" Value="bool System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.InBackgroundLayout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.InBackgroundLayout" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.GroupItem.System#Windows#Controls#Primitives#IHierarchicalVirtualizationAndScrollInfo#InBackgroundLayout" />
+      <MemberSignature Language="VB.NET" Value=" Property InBackgroundLayout As Boolean Implements IHierarchicalVirtualizationAndScrollInfo.InBackgroundLayout" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.InBackgroundLayout { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.InBackgroundLayout</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -303,7 +353,12 @@
       <MemberSignature Language="C#" Value="System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.ItemDesiredSizes { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.ItemDesiredSizes" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.GroupItem.System#Windows#Controls#Primitives#IHierarchicalVirtualizationAndScrollInfo#ItemDesiredSizes" />
+      <MemberSignature Language="VB.NET" Value=" Property ItemDesiredSizes As HierarchicalVirtualizationItemDesiredSizes Implements IHierarchicalVirtualizationAndScrollInfo.ItemDesiredSizes" />
+      <MemberSignature Language="C++ CLI" Value="property System::Windows::Controls::HierarchicalVirtualizationItemDesiredSizes System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.ItemDesiredSizes { System::Windows::Controls::HierarchicalVirtualizationItemDesiredSizes get(); void set(System::Windows::Controls::HierarchicalVirtualizationItemDesiredSizes value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.ItemDesiredSizes</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -328,7 +383,12 @@
       <MemberSignature Language="C#" Value="System.Windows.Controls.Panel System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.ItemsHost { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Controls.Panel System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.ItemsHost" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.GroupItem.System#Windows#Controls#Primitives#IHierarchicalVirtualizationAndScrollInfo#ItemsHost" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property ItemsHost As Panel Implements IHierarchicalVirtualizationAndScrollInfo.ItemsHost" />
+      <MemberSignature Language="C++ CLI" Value="property System::Windows::Controls::Panel ^ System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.ItemsHost { System::Windows::Controls::Panel ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.ItemsHost</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -353,7 +413,12 @@
       <MemberSignature Language="C#" Value="bool System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.MustDisableVirtualization { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.MustDisableVirtualization" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.GroupItem.System#Windows#Controls#Primitives#IHierarchicalVirtualizationAndScrollInfo#MustDisableVirtualization" />
+      <MemberSignature Language="VB.NET" Value=" Property MustDisableVirtualization As Boolean Implements IHierarchicalVirtualizationAndScrollInfo.MustDisableVirtualization" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.MustDisableVirtualization { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.MustDisableVirtualization</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

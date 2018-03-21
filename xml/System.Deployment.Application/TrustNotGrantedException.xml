@@ -1,7 +1,9 @@
-<Type Name="TrustNotGrantedException" FullName="System.Deployment.Application.TrustNotGrantedException">
+﻿<Type Name="TrustNotGrantedException" FullName="System.Deployment.Application.TrustNotGrantedException">
   <TypeSignature Language="C#" Value="public class TrustNotGrantedException : System.Deployment.Application.DeploymentException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit TrustNotGrantedException extends System.Deployment.Application.DeploymentException" />
   <TypeSignature Language="DocId" Value="T:System.Deployment.Application.TrustNotGrantedException" />
+  <TypeSignature Language="VB.NET" Value="Public Class TrustNotGrantedException&#xA;Inherits DeploymentException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TrustNotGrantedException : System::Deployment::Application::DeploymentException" />
   <AssemblyInfo>
     <AssemblyName>System.Deployment</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,10 +34,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Deployment.Application.TrustNotGrantedException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public TrustNotGrantedException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Deployment.Application.TrustNotGrantedException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TrustNotGrantedException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -65,6 +78,8 @@
       <MemberSignature Language="C#" Value="public TrustNotGrantedException (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Deployment.Application.TrustNotGrantedException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TrustNotGrantedException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -95,6 +110,7 @@
       <MemberSignature Language="C#" Value="protected TrustNotGrantedException (System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext streamingContext);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo serializationInfo, valuetype System.Runtime.Serialization.StreamingContext streamingContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Deployment.Application.TrustNotGrantedException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; TrustNotGrantedException(System::Runtime::Serialization::SerializationInfo ^ serializationInfo, System::Runtime::Serialization::StreamingContext streamingContext);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -115,6 +131,8 @@
       <MemberSignature Language="C#" Value="public TrustNotGrantedException (string message, Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Deployment.Application.TrustNotGrantedException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TrustNotGrantedException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -131,14 +149,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Deployment</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Deployment.Application.TrustNotGrantedException" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

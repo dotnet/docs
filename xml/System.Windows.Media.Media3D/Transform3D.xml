@@ -1,7 +1,9 @@
-<Type Name="Transform3D" FullName="System.Windows.Media.Media3D.Transform3D">
+﻿<Type Name="Transform3D" FullName="System.Windows.Media.Media3D.Transform3D">
   <TypeSignature Language="C#" Value="public abstract class Transform3D : System.Windows.Media.Media3D.GeneralTransform3D" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Transform3D extends System.Windows.Media.Media3D.GeneralTransform3D" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Media3D.Transform3D" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class Transform3D&#xA;Inherits GeneralTransform3D" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Transform3D abstract : System::Windows::Media::Media3D::GeneralTransform3D" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +33,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Media3D.Transform3D Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.Media3D.Transform3D Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Transform3D.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As Transform3D" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Media3D::Transform3D ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -61,6 +65,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Media3D.Transform3D CloneCurrentValue ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.Media3D.Transform3D CloneCurrentValue() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Transform3D.CloneCurrentValue" />
+      <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As Transform3D" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Media3D::Transform3D ^ CloneCurrentValue();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -89,6 +95,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Media3D.Transform3D Identity { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.Media3D.Transform3D Identity" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Transform3D.Identity" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Identity As Transform3D" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Media3D::Transform3D ^ Identity { System::Windows::Media::Media3D::Transform3D ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -114,6 +122,8 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Media.Media3D.GeneralTransform3D Inverse { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Media3D.GeneralTransform3D Inverse" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Transform3D.Inverse" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Inverse As GeneralTransform3D" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Media::Media3D::GeneralTransform3D ^ Inverse { System::Windows::Media::Media3D::GeneralTransform3D ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -139,6 +149,8 @@
       <MemberSignature Language="C#" Value="public abstract bool IsAffine { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsAffine" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Transform3D.IsAffine" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property IsAffine As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool IsAffine { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -161,10 +173,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Transform">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Transforms the specified object or array of objects.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Transform">
       <MemberSignature Language="C#" Value="public System.Windows.Media.Media3D.Point3D Transform (System.Windows.Media.Media3D.Point3D point);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Windows.Media.Media3D.Point3D Transform(valuetype System.Windows.Media.Media3D.Point3D point) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Transform3D.Transform(System.Windows.Media.Media3D.Point3D)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Transform (point As Point3D) As Point3D" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Media3D::Point3D Transform(System::Windows::Media::Media3D::Point3D point);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -187,6 +210,8 @@
       <MemberSignature Language="C#" Value="public void Transform (System.Windows.Media.Media3D.Point3D[] points);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Transform(valuetype System.Windows.Media.Media3D.Point3D[] points) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Transform3D.Transform(System.Windows.Media.Media3D.Point3D[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Transform (points As Point3D())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Transform(cli::array &lt;System::Windows::Media::Media3D::Point3D&gt; ^ points);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -208,6 +233,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Media3D.Point4D Transform (System.Windows.Media.Media3D.Point4D point);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Windows.Media.Media3D.Point4D Transform(valuetype System.Windows.Media.Media3D.Point4D point) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Transform3D.Transform(System.Windows.Media.Media3D.Point4D)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Transform (point As Point4D) As Point4D" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Media3D::Point4D Transform(System::Windows::Media::Media3D::Point4D point);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -230,6 +257,8 @@
       <MemberSignature Language="C#" Value="public void Transform (System.Windows.Media.Media3D.Point4D[] points);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Transform(valuetype System.Windows.Media.Media3D.Point4D[] points) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Transform3D.Transform(System.Windows.Media.Media3D.Point4D[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Transform (points As Point4D())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Transform(cli::array &lt;System::Windows::Media::Media3D::Point4D&gt; ^ points);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -251,6 +280,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Media3D.Vector3D Transform (System.Windows.Media.Media3D.Vector3D vector);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Windows.Media.Media3D.Vector3D Transform(valuetype System.Windows.Media.Media3D.Vector3D vector) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Transform3D.Transform(System.Windows.Media.Media3D.Vector3D)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Transform (vector As Vector3D) As Vector3D" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Media3D::Vector3D Transform(System::Windows::Media::Media3D::Vector3D vector);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -273,6 +304,8 @@
       <MemberSignature Language="C#" Value="public void Transform (System.Windows.Media.Media3D.Vector3D[] vectors);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Transform(valuetype System.Windows.Media.Media3D.Vector3D[] vectors) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Transform3D.Transform(System.Windows.Media.Media3D.Vector3D[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Transform (vectors As Vector3D())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Transform(cli::array &lt;System::Windows::Media::Media3D::Vector3D&gt; ^ vectors);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -294,6 +327,8 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Media.Media3D.Rect3D TransformBounds (System.Windows.Media.Media3D.Rect3D rect);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype System.Windows.Media.Media3D.Rect3D TransformBounds(valuetype System.Windows.Media.Media3D.Rect3D rect) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Transform3D.TransformBounds(System.Windows.Media.Media3D.Rect3D)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function TransformBounds (rect As Rect3D) As Rect3D" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Windows::Media::Media3D::Rect3D TransformBounds(System::Windows::Media::Media3D::Rect3D rect);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -323,6 +358,8 @@
       <MemberSignature Language="C#" Value="public override bool TryTransform (System.Windows.Media.Media3D.Point3D inPoint, out System.Windows.Media.Media3D.Point3D result);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool TryTransform(valuetype System.Windows.Media.Media3D.Point3D inPoint, [out] valuetype System.Windows.Media.Media3D.Point3D&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Transform3D.TryTransform(System.Windows.Media.Media3D.Point3D,System.Windows.Media.Media3D.Point3D@)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function TryTransform (inPoint As Point3D, ByRef result As Point3D) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool TryTransform(System::Windows::Media::Media3D::Point3D inPoint, [Runtime::InteropServices::Out] System::Windows::Media::Media3D::Point3D % result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -357,6 +394,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Windows.Media.Media3D.Matrix3D Value { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Media.Media3D.Matrix3D Value" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Transform3D.Value" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Value As Matrix3D" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Windows::Media::Media3D::Matrix3D Value { System::Windows::Media::Media3D::Matrix3D get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -379,14 +418,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Transform">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Transforms the specified object or array of objects.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

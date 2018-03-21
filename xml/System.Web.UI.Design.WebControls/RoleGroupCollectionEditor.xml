@@ -1,7 +1,9 @@
-<Type Name="RoleGroupCollectionEditor" FullName="System.Web.UI.Design.WebControls.RoleGroupCollectionEditor">
+﻿<Type Name="RoleGroupCollectionEditor" FullName="System.Web.UI.Design.WebControls.RoleGroupCollectionEditor">
   <TypeSignature Language="C#" Value="public class RoleGroupCollectionEditor : System.ComponentModel.Design.CollectionEditor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RoleGroupCollectionEditor extends System.ComponentModel.Design.CollectionEditor" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.RoleGroupCollectionEditor" />
+  <TypeSignature Language="VB.NET" Value="Public Class RoleGroupCollectionEditor&#xA;Inherits CollectionEditor" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RoleGroupCollectionEditor : System::ComponentModel::Design::CollectionEditor" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +22,7 @@
       <MemberSignature Language="C#" Value="public RoleGroupCollectionEditor (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.RoleGroupCollectionEditor.#ctor(System.Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RoleGroupCollectionEditor(Type ^ type);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -38,6 +41,8 @@
       <MemberSignature Language="C#" Value="protected override bool CanSelectMultipleInstances ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool CanSelectMultipleInstances() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.RoleGroupCollectionEditor.CanSelectMultipleInstances" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CanSelectMultipleInstances () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool CanSelectMultipleInstances();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

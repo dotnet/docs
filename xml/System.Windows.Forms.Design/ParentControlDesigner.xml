@@ -1,7 +1,9 @@
-<Type Name="ParentControlDesigner" FullName="System.Windows.Forms.Design.ParentControlDesigner">
+﻿<Type Name="ParentControlDesigner" FullName="System.Windows.Forms.Design.ParentControlDesigner">
   <TypeSignature Language="C#" Value="public class ParentControlDesigner : System.Windows.Forms.Design.ControlDesigner" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ParentControlDesigner extends System.Windows.Forms.Design.ControlDesigner" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.ParentControlDesigner" />
+  <TypeSignature Language="VB.NET" Value="Public Class ParentControlDesigner&#xA;Inherits ControlDesigner" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ParentControlDesigner : System::Windows::Forms::Design::ControlDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +44,8 @@
       <MemberSignature Language="C#" Value="public ParentControlDesigner ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ParentControlDesigner.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ParentControlDesigner();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -62,6 +66,8 @@
       <MemberSignature Language="C#" Value="protected void AddPaddingSnapLines (ref System.Collections.ArrayList snapLines);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void AddPaddingSnapLines(class System.Collections.ArrayList&amp; snapLines) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ParentControlDesigner.AddPaddingSnapLines(System.Collections.ArrayList@)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub AddPaddingSnapLines (ByRef snapLines As ArrayList)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void AddPaddingSnapLines(System::Collections::ArrayList ^ % snapLines);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -88,6 +94,8 @@
       <MemberSignature Language="C#" Value="protected virtual bool AllowControlLasso { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AllowControlLasso" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.ParentControlDesigner.AllowControlLasso" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property AllowControlLasso As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool AllowControlLasso { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -119,6 +127,8 @@
       <MemberSignature Language="C#" Value="protected virtual bool AllowGenericDragBox { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AllowGenericDragBox" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.ParentControlDesigner.AllowGenericDragBox" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property AllowGenericDragBox As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool AllowGenericDragBox { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -140,9 +150,11 @@
       </Docs>
     </Member>
     <Member MemberName="AllowSetChildIndexOnDrop">
-      <MemberSignature Language="C#" Value="protected virtual bool AllowSetChildIndexOnDrop { get; }" />
+      <MemberSignature Language="C#" Value="protected internal virtual bool AllowSetChildIndexOnDrop { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AllowSetChildIndexOnDrop" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.ParentControlDesigner.AllowSetChildIndexOnDrop" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable ReadOnly Property AllowSetChildIndexOnDrop As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property bool AllowSetChildIndexOnDrop { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -171,9 +183,11 @@
       </Docs>
     </Member>
     <Member MemberName="CanAddComponent">
-      <MemberSignature Language="C#" Value="protected virtual bool CanAddComponent (System.ComponentModel.IComponent component);" />
+      <MemberSignature Language="C#" Value="protected internal virtual bool CanAddComponent (System.ComponentModel.IComponent component);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance bool CanAddComponent(class System.ComponentModel.IComponent component) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ParentControlDesigner.CanAddComponent(System.ComponentModel.IComponent)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function CanAddComponent (component As IComponent) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual bool CanAddComponent(System::ComponentModel::IComponent ^ component);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -200,10 +214,20 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CanParent">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Indicates whether the specified control can be a child of the control managed by a designer.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CanParent">
       <MemberSignature Language="C#" Value="public virtual bool CanParent (System.Windows.Forms.Control control);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanParent(class System.Windows.Forms.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ParentControlDesigner.CanParent(System.Windows.Forms.Control)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool CanParent(System::Windows::Forms::Control ^ control);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -239,6 +263,7 @@
       <MemberSignature Language="C#" Value="public virtual bool CanParent (System.Windows.Forms.Design.ControlDesigner controlDesigner);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanParent(class System.Windows.Forms.Design.ControlDesigner controlDesigner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ParentControlDesigner.CanParent(System.Windows.Forms.Design.ControlDesigner)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool CanParent(System::Windows::Forms::Design::ControlDesigner ^ controlDesigner);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -270,10 +295,21 @@
         <altmember cref="T:System.ComponentModel.DesignerAttribute" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateTool">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a component or control from the specified tool and adds it to the current design document.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateTool">
       <MemberSignature Language="C#" Value="protected void CreateTool (System.Drawing.Design.ToolboxItem tool);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void CreateTool(class System.Drawing.Design.ToolboxItem tool) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ParentControlDesigner.CreateTool(System.Drawing.Design.ToolboxItem)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub CreateTool (tool As ToolboxItem)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void CreateTool(System::Drawing::Design::ToolboxItem ^ tool);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -309,6 +345,8 @@
       <MemberSignature Language="C#" Value="protected void CreateTool (System.Drawing.Design.ToolboxItem tool, System.Drawing.Point location);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void CreateTool(class System.Drawing.Design.ToolboxItem tool, valuetype System.Drawing.Point location) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ParentControlDesigner.CreateTool(System.Drawing.Design.ToolboxItem,System.Drawing.Point)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub CreateTool (tool As ToolboxItem, location As Point)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void CreateTool(System::Drawing::Design::ToolboxItem ^ tool, System::Drawing::Point location);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -346,6 +384,8 @@
       <MemberSignature Language="C#" Value="protected void CreateTool (System.Drawing.Design.ToolboxItem tool, System.Drawing.Rectangle bounds);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void CreateTool(class System.Drawing.Design.ToolboxItem tool, valuetype System.Drawing.Rectangle bounds) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ParentControlDesigner.CreateTool(System.Drawing.Design.ToolboxItem,System.Drawing.Rectangle)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub CreateTool (tool As ToolboxItem, bounds As Rectangle)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void CreateTool(System::Drawing::Design::ToolboxItem ^ tool, System::Drawing::Rectangle bounds);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -381,6 +421,8 @@
       <MemberSignature Language="C#" Value="protected virtual System.ComponentModel.IComponent[] CreateToolCore (System.Drawing.Design.ToolboxItem tool, int x, int y, int width, int height, bool hasLocation, bool hasSize);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.ComponentModel.IComponent[] CreateToolCore(class System.Drawing.Design.ToolboxItem tool, int32 x, int32 y, int32 width, int32 height, bool hasLocation, bool hasSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ParentControlDesigner.CreateToolCore(System.Drawing.Design.ToolboxItem,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateToolCore (tool As ToolboxItem, x As Integer, y As Integer, width As Integer, height As Integer, hasLocation As Boolean, hasSize As Boolean) As IComponent()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual cli::array &lt;System::ComponentModel::IComponent ^&gt; ^ CreateToolCore(System::Drawing::Design::ToolboxItem ^ tool, int x, int y, int width, int height, bool hasLocation, bool hasSize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -429,6 +471,8 @@
       <MemberSignature Language="C#" Value="protected virtual System.Drawing.Point DefaultControlLocation { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Point DefaultControlLocation" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.ParentControlDesigner.DefaultControlLocation" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property DefaultControlLocation As Point" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Drawing::Point DefaultControlLocation { System::Drawing::Point get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -459,6 +503,8 @@
       <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ParentControlDesigner.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -501,6 +547,8 @@
       <MemberSignature Language="C#" Value="protected virtual bool DrawGrid { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool DrawGrid" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.ParentControlDesigner.DrawGrid" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Property DrawGrid As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool DrawGrid { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -526,6 +574,8 @@
       <MemberSignature Language="C#" Value="protected override bool EnableDragRect { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool EnableDragRect" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.ParentControlDesigner.EnableDragRect" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property EnableDragRect As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool EnableDragRect { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -550,6 +600,8 @@
       <MemberSignature Language="C#" Value="protected System.Windows.Forms.Control GetControl (object component);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Windows.Forms.Control GetControl(object component) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ParentControlDesigner.GetControl(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function GetControl (component As Object) As Control" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Windows::Forms::Control ^ GetControl(System::Object ^ component);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -577,6 +629,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Forms.Design.Behavior.ControlBodyGlyph GetControlGlyph (System.Windows.Forms.Design.Behavior.GlyphSelectionType selectionType);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Forms.Design.Behavior.ControlBodyGlyph GetControlGlyph(valuetype System.Windows.Forms.Design.Behavior.GlyphSelectionType selectionType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ParentControlDesigner.GetControlGlyph(System.Windows.Forms.Design.Behavior.GlyphSelectionType)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetControlGlyph (selectionType As GlyphSelectionType) As ControlBodyGlyph" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Forms::Design::Behavior::ControlBodyGlyph ^ GetControlGlyph(System::Windows::Forms::Design::Behavior::GlyphSelectionType selectionType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -611,6 +665,8 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.Design.Behavior.GlyphCollection GetGlyphs (System.Windows.Forms.Design.Behavior.GlyphSelectionType selectionType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Windows.Forms.Design.Behavior.GlyphCollection GetGlyphs(valuetype System.Windows.Forms.Design.Behavior.GlyphSelectionType selectionType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ParentControlDesigner.GetGlyphs(System.Windows.Forms.Design.Behavior.GlyphSelectionType)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetGlyphs (selectionType As GlyphSelectionType) As GlyphCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Windows::Forms::Design::Behavior::GlyphCollection ^ GetGlyphs(System::Windows::Forms::Design::Behavior::GlyphSelectionType selectionType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -645,6 +701,8 @@
       <MemberSignature Language="C#" Value="protected virtual System.Windows.Forms.Control GetParentForComponent (System.ComponentModel.IComponent component);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Windows.Forms.Control GetParentForComponent(class System.ComponentModel.IComponent component) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ParentControlDesigner.GetParentForComponent(System.ComponentModel.IComponent)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetParentForComponent (component As IComponent) As Control" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Windows::Forms::Control ^ GetParentForComponent(System::ComponentModel::IComponent ^ component);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -672,6 +730,8 @@
       <MemberSignature Language="C#" Value="protected System.Drawing.Rectangle GetUpdatedRect (System.Drawing.Rectangle originalRect, System.Drawing.Rectangle dragRect, bool updateSize);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance valuetype System.Drawing.Rectangle GetUpdatedRect(valuetype System.Drawing.Rectangle originalRect, valuetype System.Drawing.Rectangle dragRect, bool updateSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ParentControlDesigner.GetUpdatedRect(System.Drawing.Rectangle,System.Drawing.Rectangle,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function GetUpdatedRect (originalRect As Rectangle, dragRect As Rectangle, updateSize As Boolean) As Rectangle" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Drawing::Rectangle GetUpdatedRect(System::Drawing::Rectangle originalRect, System::Drawing::Rectangle dragRect, bool updateSize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -711,6 +771,8 @@
       <MemberSignature Language="C#" Value="protected System.Drawing.Size GridSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Size GridSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.ParentControlDesigner.GridSize" />
+      <MemberSignature Language="VB.NET" Value="Protected Property GridSize As Size" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Drawing::Size GridSize { System::Drawing::Size get(); void set(System::Drawing::Size value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -736,6 +798,8 @@
       <MemberSignature Language="C#" Value="public override void Initialize (System.ComponentModel.IComponent component);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Initialize(class System.ComponentModel.IComponent component) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ParentControlDesigner.Initialize(System.ComponentModel.IComponent)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize (component As IComponent)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize(System::ComponentModel::IComponent ^ component);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -769,6 +833,8 @@
       <MemberSignature Language="C#" Value="public override void InitializeNewComponent (System.Collections.IDictionary defaultValues);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void InitializeNewComponent(class System.Collections.IDictionary defaultValues) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ParentControlDesigner.InitializeNewComponent(System.Collections.IDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub InitializeNewComponent (defaultValues As IDictionary)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void InitializeNewComponent(System::Collections::IDictionary ^ defaultValues);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -796,6 +862,8 @@
       <MemberSignature Language="C#" Value="protected static void InvokeCreateTool (System.Windows.Forms.Design.ParentControlDesigner toInvoke, System.Drawing.Design.ToolboxItem tool);" />
       <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig void InvokeCreateTool(class System.Windows.Forms.Design.ParentControlDesigner toInvoke, class System.Drawing.Design.ToolboxItem tool) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ParentControlDesigner.InvokeCreateTool(System.Windows.Forms.Design.ParentControlDesigner,System.Drawing.Design.ToolboxItem)" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared Sub InvokeCreateTool (toInvoke As ParentControlDesigner, tool As ToolboxItem)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; static void InvokeCreateTool(System::Windows::Forms::Design::ParentControlDesigner ^ toInvoke, System::Drawing::Design::ToolboxItem ^ tool);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -824,6 +892,8 @@
       <MemberSignature Language="C#" Value="protected System.Drawing.Design.ToolboxItem MouseDragTool { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Design.ToolboxItem MouseDragTool" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.ParentControlDesigner.MouseDragTool" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property MouseDragTool As ToolboxItem" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Drawing::Design::ToolboxItem ^ MouseDragTool { System::Drawing::Design::ToolboxItem ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -850,6 +920,8 @@
       <MemberSignature Language="C#" Value="protected override void OnDragComplete (System.Windows.Forms.DragEventArgs de);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnDragComplete(class System.Windows.Forms.DragEventArgs de) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ParentControlDesigner.OnDragComplete(System.Windows.Forms.DragEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnDragComplete (de As DragEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnDragComplete(System::Windows::Forms::DragEventArgs ^ de);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -883,6 +955,8 @@
       <MemberSignature Language="C#" Value="protected override void OnDragDrop (System.Windows.Forms.DragEventArgs de);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnDragDrop(class System.Windows.Forms.DragEventArgs de) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ParentControlDesigner.OnDragDrop(System.Windows.Forms.DragEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnDragDrop (de As DragEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnDragDrop(System::Windows::Forms::DragEventArgs ^ de);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -916,6 +990,8 @@
       <MemberSignature Language="C#" Value="protected override void OnDragEnter (System.Windows.Forms.DragEventArgs de);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnDragEnter(class System.Windows.Forms.DragEventArgs de) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ParentControlDesigner.OnDragEnter(System.Windows.Forms.DragEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnDragEnter (de As DragEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnDragEnter(System::Windows::Forms::DragEventArgs ^ de);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -942,6 +1018,8 @@
       <MemberSignature Language="C#" Value="protected override void OnDragLeave (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnDragLeave(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ParentControlDesigner.OnDragLeave(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnDragLeave (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnDragLeave(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -968,6 +1046,8 @@
       <MemberSignature Language="C#" Value="protected override void OnDragOver (System.Windows.Forms.DragEventArgs de);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnDragOver(class System.Windows.Forms.DragEventArgs de) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ParentControlDesigner.OnDragOver(System.Windows.Forms.DragEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnDragOver (de As DragEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnDragOver(System::Windows::Forms::DragEventArgs ^ de);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -994,6 +1074,8 @@
       <MemberSignature Language="C#" Value="protected override void OnMouseDragBegin (int x, int y);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseDragBegin(int32 x, int32 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ParentControlDesigner.OnMouseDragBegin(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseDragBegin (x As Integer, y As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseDragBegin(int x, int y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1032,6 +1114,8 @@
       <MemberSignature Language="C#" Value="protected override void OnMouseDragEnd (bool cancel);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseDragEnd(bool cancel) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ParentControlDesigner.OnMouseDragEnd(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseDragEnd (cancel As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseDragEnd(bool cancel);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1066,6 +1150,8 @@
       <MemberSignature Language="C#" Value="protected override void OnMouseDragMove (int x, int y);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseDragMove(int32 x, int32 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ParentControlDesigner.OnMouseDragMove(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseDragMove (x As Integer, y As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseDragMove(int x, int y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1104,6 +1190,8 @@
       <MemberSignature Language="C#" Value="protected override void OnPaintAdornments (System.Windows.Forms.PaintEventArgs pe);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnPaintAdornments(class System.Windows.Forms.PaintEventArgs pe) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ParentControlDesigner.OnPaintAdornments(System.Windows.Forms.PaintEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPaintAdornments (pe As PaintEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPaintAdornments(System::Windows::Forms::PaintEventArgs ^ pe);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1130,6 +1218,8 @@
       <MemberSignature Language="C#" Value="protected override void OnSetCursor ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnSetCursor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ParentControlDesigner.OnSetCursor" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnSetCursor ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnSetCursor();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1160,6 +1250,8 @@
       <MemberSignature Language="C#" Value="protected override void PreFilterProperties (System.Collections.IDictionary properties);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void PreFilterProperties(class System.Collections.IDictionary properties) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ParentControlDesigner.PreFilterProperties(System.Collections.IDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PreFilterProperties (properties As IDictionary)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PreFilterProperties(System::Collections::IDictionary ^ properties);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1193,6 +1285,8 @@
       <MemberSignature Language="C#" Value="public override System.Collections.IList SnapLines { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IList SnapLines" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.ParentControlDesigner.SnapLines" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property SnapLines As IList" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::IList ^ SnapLines { System::Collections::IList ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1213,23 +1307,5 @@
         <altmember cref="T:System.Windows.Forms.Design.Behavior.SnapLine" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="CreateTool">
-      <AssemblyInfo>
-        <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a component or control from the specified tool and adds it to the current design document.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="CanParent">
-      <AssemblyInfo>
-        <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Indicates whether the specified control can be a child of the control managed by a designer.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

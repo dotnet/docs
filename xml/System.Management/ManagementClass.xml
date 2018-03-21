@@ -1,7 +1,9 @@
-<Type Name="ManagementClass" FullName="System.Management.ManagementClass">
+﻿<Type Name="ManagementClass" FullName="System.Management.ManagementClass">
   <TypeSignature Language="C#" Value="public class ManagementClass : System.Management.ManagementObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ManagementClass extends System.Management.ManagementObject" />
   <TypeSignature Language="DocId" Value="T:System.Management.ManagementClass" />
+  <TypeSignature Language="VB.NET" Value="Public Class ManagementClass&#xA;Inherits ManagementObject" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ManagementClass : System::Management::ManagementObject" />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +40,8 @@
       <MemberSignature Language="C#" Value="public ManagementClass ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementClass.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ManagementClass();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -70,6 +74,8 @@
       <MemberSignature Language="C#" Value="public ManagementClass (System.Management.ManagementPath path);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Management.ManagementPath path) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementClass.#ctor(System.Management.ManagementPath)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (path As ManagementPath)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ManagementClass(System::Management::ManagementPath ^ path);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -106,6 +112,8 @@
       <MemberSignature Language="C#" Value="public ManagementClass (string path);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string path) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementClass.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (path As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ManagementClass(System::String ^ path);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -141,6 +149,8 @@
       <MemberSignature Language="C#" Value="public ManagementClass (System.Management.ManagementPath path, System.Management.ObjectGetOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Management.ManagementPath path, class System.Management.ObjectGetOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementClass.#ctor(System.Management.ManagementPath,System.Management.ObjectGetOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (path As ManagementPath, options As ObjectGetOptions)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ManagementClass(System::Management::ManagementPath ^ path, System::Management::ObjectGetOptions ^ options);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -178,6 +188,8 @@
       <MemberSignature Language="C#" Value="protected ManagementClass (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementClass.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ManagementClass(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -207,6 +219,8 @@
       <MemberSignature Language="C#" Value="public ManagementClass (string path, System.Management.ObjectGetOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string path, class System.Management.ObjectGetOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementClass.#ctor(System.String,System.Management.ObjectGetOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (path As String, options As ObjectGetOptions)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ManagementClass(System::String ^ path, System::Management::ObjectGetOptions ^ options);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -244,6 +258,8 @@
       <MemberSignature Language="C#" Value="public ManagementClass (System.Management.ManagementScope scope, System.Management.ManagementPath path, System.Management.ObjectGetOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Management.ManagementScope scope, class System.Management.ManagementPath path, class System.Management.ObjectGetOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementClass.#ctor(System.Management.ManagementScope,System.Management.ManagementPath,System.Management.ObjectGetOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (scope As ManagementScope, path As ManagementPath, options As ObjectGetOptions)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ManagementClass(System::Management::ManagementScope ^ scope, System::Management::ManagementPath ^ path, System::Management::ObjectGetOptions ^ options);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -284,6 +300,8 @@
       <MemberSignature Language="C#" Value="public ManagementClass (string scope, string path, System.Management.ObjectGetOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string scope, string path, class System.Management.ObjectGetOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementClass.#ctor(System.String,System.String,System.Management.ObjectGetOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (scope As String, path As String, options As ObjectGetOptions)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ManagementClass(System::String ^ scope, System::String ^ path, System::Management::ObjectGetOptions ^ options);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -324,6 +342,8 @@
       <MemberSignature Language="C#" Value="public override object Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementClass.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Clone () As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -353,6 +373,8 @@
       <MemberSignature Language="C#" Value="public System.Management.ManagementObject CreateInstance ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Management.ManagementObject CreateInstance() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementClass.CreateInstance" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateInstance () As ManagementObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Management::ManagementObject ^ CreateInstance();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -390,6 +412,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Specialized.StringCollection Derivation { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.StringCollection Derivation" />
       <MemberSignature Language="DocId" Value="P:System.Management.ManagementClass.Derivation" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Derivation As StringCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Specialized::StringCollection ^ Derivation { System::Collections::Specialized::StringCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -426,6 +450,8 @@
       <MemberSignature Language="C#" Value="public System.Management.ManagementClass Derive (string newClassName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Management.ManagementClass Derive(string newClassName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementClass.Derive(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Derive (newClassName As String) As ManagementClass" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Management::ManagementClass ^ Derive(System::String ^ newClassName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -485,6 +511,8 @@
       <MemberSignature Language="C#" Value="public System.Management.ManagementObjectCollection GetInstances ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Management.ManagementObjectCollection GetInstances() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementClass.GetInstances" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetInstances () As ManagementObjectCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Management::ManagementObjectCollection ^ GetInstances();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -521,6 +549,8 @@
       <MemberSignature Language="C#" Value="public System.Management.ManagementObjectCollection GetInstances (System.Management.EnumerationOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Management.ManagementObjectCollection GetInstances(class System.Management.EnumerationOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementClass.GetInstances(System.Management.EnumerationOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetInstances (options As EnumerationOptions) As ManagementObjectCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Management::ManagementObjectCollection ^ GetInstances(System::Management::EnumerationOptions ^ options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -560,6 +590,8 @@
       <MemberSignature Language="C#" Value="public void GetInstances (System.Management.ManagementOperationObserver watcher);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GetInstances(class System.Management.ManagementOperationObserver watcher) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementClass.GetInstances(System.Management.ManagementOperationObserver)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetInstances (watcher As ManagementOperationObserver)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetInstances(System::Management::ManagementOperationObserver ^ watcher);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -598,6 +630,8 @@
       <MemberSignature Language="C#" Value="public void GetInstances (System.Management.ManagementOperationObserver watcher, System.Management.EnumerationOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GetInstances(class System.Management.ManagementOperationObserver watcher, class System.Management.EnumerationOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementClass.GetInstances(System.Management.ManagementOperationObserver,System.Management.EnumerationOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetInstances (watcher As ManagementOperationObserver, options As EnumerationOptions)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetInstances(System::Management::ManagementOperationObserver ^ watcher, System::Management::EnumerationOptions ^ options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -630,6 +664,8 @@
       <MemberSignature Language="C#" Value="protected override void GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementClass.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -681,6 +717,8 @@
       <MemberSignature Language="C#" Value="public System.Management.ManagementObjectCollection GetRelatedClasses ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Management.ManagementObjectCollection GetRelatedClasses() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementClass.GetRelatedClasses" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetRelatedClasses () As ManagementObjectCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Management::ManagementObjectCollection ^ GetRelatedClasses();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -718,6 +756,8 @@
       <MemberSignature Language="C#" Value="public void GetRelatedClasses (System.Management.ManagementOperationObserver watcher);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GetRelatedClasses(class System.Management.ManagementOperationObserver watcher) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementClass.GetRelatedClasses(System.Management.ManagementOperationObserver)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetRelatedClasses (watcher As ManagementOperationObserver)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetRelatedClasses(System::Management::ManagementOperationObserver ^ watcher);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -748,6 +788,8 @@
       <MemberSignature Language="C#" Value="public System.Management.ManagementObjectCollection GetRelatedClasses (string relatedClass);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Management.ManagementObjectCollection GetRelatedClasses(string relatedClass) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementClass.GetRelatedClasses(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetRelatedClasses (relatedClass As String) As ManagementObjectCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Management::ManagementObjectCollection ^ GetRelatedClasses(System::String ^ relatedClass);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -779,6 +821,8 @@
       <MemberSignature Language="C#" Value="public void GetRelatedClasses (System.Management.ManagementOperationObserver watcher, string relatedClass);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GetRelatedClasses(class System.Management.ManagementOperationObserver watcher, string relatedClass) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementClass.GetRelatedClasses(System.Management.ManagementOperationObserver,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetRelatedClasses (watcher As ManagementOperationObserver, relatedClass As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetRelatedClasses(System::Management::ManagementOperationObserver ^ watcher, System::String ^ relatedClass);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -811,6 +855,8 @@
       <MemberSignature Language="C#" Value="public System.Management.ManagementObjectCollection GetRelatedClasses (string relatedClass, string relationshipClass, string relationshipQualifier, string relatedQualifier, string relatedRole, string thisRole, System.Management.EnumerationOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Management.ManagementObjectCollection GetRelatedClasses(string relatedClass, string relationshipClass, string relationshipQualifier, string relatedQualifier, string relatedRole, string thisRole, class System.Management.EnumerationOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementClass.GetRelatedClasses(System.String,System.String,System.String,System.String,System.String,System.String,System.Management.EnumerationOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetRelatedClasses (relatedClass As String, relationshipClass As String, relationshipQualifier As String, relatedQualifier As String, relatedRole As String, thisRole As String, options As EnumerationOptions) As ManagementObjectCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Management::ManagementObjectCollection ^ GetRelatedClasses(System::String ^ relatedClass, System::String ^ relationshipClass, System::String ^ relationshipQualifier, System::String ^ relatedQualifier, System::String ^ relatedRole, System::String ^ thisRole, System::Management::EnumerationOptions ^ options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -862,6 +908,8 @@
       <MemberSignature Language="C#" Value="public void GetRelatedClasses (System.Management.ManagementOperationObserver watcher, string relatedClass, string relationshipClass, string relationshipQualifier, string relatedQualifier, string relatedRole, string thisRole, System.Management.EnumerationOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GetRelatedClasses(class System.Management.ManagementOperationObserver watcher, string relatedClass, string relationshipClass, string relationshipQualifier, string relatedQualifier, string relatedRole, string thisRole, class System.Management.EnumerationOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementClass.GetRelatedClasses(System.Management.ManagementOperationObserver,System.String,System.String,System.String,System.String,System.String,System.String,System.Management.EnumerationOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetRelatedClasses (watcher As ManagementOperationObserver, relatedClass As String, relationshipClass As String, relationshipQualifier As String, relatedQualifier As String, relatedRole As String, thisRole As String, options As EnumerationOptions)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetRelatedClasses(System::Management::ManagementOperationObserver ^ watcher, System::String ^ relatedClass, System::String ^ relationshipClass, System::String ^ relationshipQualifier, System::String ^ relatedQualifier, System::String ^ relatedRole, System::String ^ thisRole, System::Management::EnumerationOptions ^ options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -925,6 +973,8 @@
       <MemberSignature Language="C#" Value="public System.Management.ManagementObjectCollection GetRelationshipClasses ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Management.ManagementObjectCollection GetRelationshipClasses() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementClass.GetRelationshipClasses" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetRelationshipClasses () As ManagementObjectCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Management::ManagementObjectCollection ^ GetRelationshipClasses();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -961,6 +1011,8 @@
       <MemberSignature Language="C#" Value="public void GetRelationshipClasses (System.Management.ManagementOperationObserver watcher);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GetRelationshipClasses(class System.Management.ManagementOperationObserver watcher) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementClass.GetRelationshipClasses(System.Management.ManagementOperationObserver)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetRelationshipClasses (watcher As ManagementOperationObserver)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetRelationshipClasses(System::Management::ManagementOperationObserver ^ watcher);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -991,6 +1043,8 @@
       <MemberSignature Language="C#" Value="public System.Management.ManagementObjectCollection GetRelationshipClasses (string relationshipClass);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Management.ManagementObjectCollection GetRelationshipClasses(string relationshipClass) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementClass.GetRelationshipClasses(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetRelationshipClasses (relationshipClass As String) As ManagementObjectCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Management::ManagementObjectCollection ^ GetRelationshipClasses(System::String ^ relationshipClass);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1022,6 +1076,8 @@
       <MemberSignature Language="C#" Value="public void GetRelationshipClasses (System.Management.ManagementOperationObserver watcher, string relationshipClass);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GetRelationshipClasses(class System.Management.ManagementOperationObserver watcher, string relationshipClass) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementClass.GetRelationshipClasses(System.Management.ManagementOperationObserver,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetRelationshipClasses (watcher As ManagementOperationObserver, relationshipClass As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetRelationshipClasses(System::Management::ManagementOperationObserver ^ watcher, System::String ^ relationshipClass);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1055,6 +1111,8 @@
       <MemberSignature Language="C#" Value="public System.Management.ManagementObjectCollection GetRelationshipClasses (string relationshipClass, string relationshipQualifier, string thisRole, System.Management.EnumerationOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Management.ManagementObjectCollection GetRelationshipClasses(string relationshipClass, string relationshipQualifier, string thisRole, class System.Management.EnumerationOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementClass.GetRelationshipClasses(System.String,System.String,System.String,System.Management.EnumerationOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetRelationshipClasses (relationshipClass As String, relationshipQualifier As String, thisRole As String, options As EnumerationOptions) As ManagementObjectCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Management::ManagementObjectCollection ^ GetRelationshipClasses(System::String ^ relationshipClass, System::String ^ relationshipQualifier, System::String ^ thisRole, System::Management::EnumerationOptions ^ options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1092,6 +1150,8 @@
       <MemberSignature Language="C#" Value="public void GetRelationshipClasses (System.Management.ManagementOperationObserver watcher, string relationshipClass, string relationshipQualifier, string thisRole, System.Management.EnumerationOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GetRelationshipClasses(class System.Management.ManagementOperationObserver watcher, string relationshipClass, string relationshipQualifier, string thisRole, class System.Management.EnumerationOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementClass.GetRelationshipClasses(System.Management.ManagementOperationObserver,System.String,System.String,System.String,System.Management.EnumerationOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetRelationshipClasses (watcher As ManagementOperationObserver, relationshipClass As String, relationshipQualifier As String, thisRole As String, options As EnumerationOptions)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetRelationshipClasses(System::Management::ManagementOperationObserver ^ watcher, System::String ^ relationshipClass, System::String ^ relationshipQualifier, System::String ^ thisRole, System::Management::EnumerationOptions ^ options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1149,6 +1209,8 @@
       <MemberSignature Language="C#" Value="public System.CodeDom.CodeTypeDeclaration GetStronglyTypedClassCode (bool includeSystemClassInClassDef, bool systemPropertyClass);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.CodeDom.CodeTypeDeclaration GetStronglyTypedClassCode(bool includeSystemClassInClassDef, bool systemPropertyClass) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementClass.GetStronglyTypedClassCode(System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetStronglyTypedClassCode (includeSystemClassInClassDef As Boolean, systemPropertyClass As Boolean) As CodeTypeDeclaration" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::CodeDom::CodeTypeDeclaration ^ GetStronglyTypedClassCode(bool includeSystemClassInClassDef, bool systemPropertyClass);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1192,6 +1254,8 @@
       <MemberSignature Language="C#" Value="public bool GetStronglyTypedClassCode (System.Management.CodeLanguage lang, string filePath, string classNamespace);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool GetStronglyTypedClassCode(valuetype System.Management.CodeLanguage lang, string filePath, string classNamespace) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementClass.GetStronglyTypedClassCode(System.Management.CodeLanguage,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetStronglyTypedClassCode (lang As CodeLanguage, filePath As String, classNamespace As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool GetStronglyTypedClassCode(System::Management::CodeLanguage lang, System::String ^ filePath, System::String ^ classNamespace);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1255,6 +1319,8 @@
       <MemberSignature Language="C#" Value="public System.Management.ManagementObjectCollection GetSubclasses ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Management.ManagementObjectCollection GetSubclasses() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementClass.GetSubclasses" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSubclasses () As ManagementObjectCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Management::ManagementObjectCollection ^ GetSubclasses();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1291,6 +1357,8 @@
       <MemberSignature Language="C#" Value="public System.Management.ManagementObjectCollection GetSubclasses (System.Management.EnumerationOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Management.ManagementObjectCollection GetSubclasses(class System.Management.EnumerationOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementClass.GetSubclasses(System.Management.EnumerationOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSubclasses (options As EnumerationOptions) As ManagementObjectCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Management::ManagementObjectCollection ^ GetSubclasses(System::Management::EnumerationOptions ^ options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1330,6 +1398,8 @@
       <MemberSignature Language="C#" Value="public void GetSubclasses (System.Management.ManagementOperationObserver watcher);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GetSubclasses(class System.Management.ManagementOperationObserver watcher) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementClass.GetSubclasses(System.Management.ManagementOperationObserver)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetSubclasses (watcher As ManagementOperationObserver)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetSubclasses(System::Management::ManagementOperationObserver ^ watcher);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1360,6 +1430,8 @@
       <MemberSignature Language="C#" Value="public void GetSubclasses (System.Management.ManagementOperationObserver watcher, System.Management.EnumerationOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GetSubclasses(class System.Management.ManagementOperationObserver watcher, class System.Management.EnumerationOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementClass.GetSubclasses(System.Management.ManagementOperationObserver,System.Management.EnumerationOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetSubclasses (watcher As ManagementOperationObserver, options As EnumerationOptions)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetSubclasses(System::Management::ManagementOperationObserver ^ watcher, System::Management::EnumerationOptions ^ options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1392,6 +1464,8 @@
       <MemberSignature Language="C#" Value="public System.Management.MethodDataCollection Methods { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Management.MethodDataCollection Methods" />
       <MemberSignature Language="DocId" Value="P:System.Management.ManagementClass.Methods" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Methods As MethodDataCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Management::MethodDataCollection ^ Methods { System::Management::MethodDataCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1427,6 +1501,8 @@
       <MemberSignature Language="C#" Value="public override System.Management.ManagementPath Path { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Management.ManagementPath Path" />
       <MemberSignature Language="DocId" Value="P:System.Management.ManagementClass.Path" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Path As ManagementPath" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Management::ManagementPath ^ Path { System::Management::ManagementPath ^ get(); void set(System::Management::ManagementPath ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>

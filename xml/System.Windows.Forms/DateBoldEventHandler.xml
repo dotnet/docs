@@ -1,7 +1,9 @@
-<Type Name="DateBoldEventHandler" FullName="System.Windows.Forms.DateBoldEventHandler">
+﻿<Type Name="DateBoldEventHandler" FullName="System.Windows.Forms.DateBoldEventHandler">
   <TypeSignature Language="C#" Value="public delegate void DateBoldEventHandler(object sender, DateBoldEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DateBoldEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DateBoldEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub DateBoldEventHandler(sender As Object, e As DateBoldEventArgs)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void DateBoldEventHandler(System::Object ^ sender, DateBoldEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

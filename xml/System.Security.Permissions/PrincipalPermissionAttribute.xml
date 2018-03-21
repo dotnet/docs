@@ -1,7 +1,9 @@
-<Type Name="PrincipalPermissionAttribute" FullName="System.Security.Permissions.PrincipalPermissionAttribute">
+﻿<Type Name="PrincipalPermissionAttribute" FullName="System.Security.Permissions.PrincipalPermissionAttribute">
   <TypeSignature Language="C#" Value="public sealed class PrincipalPermissionAttribute : System.Security.Permissions.CodeAccessSecurityAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit PrincipalPermissionAttribute extends System.Security.Permissions.CodeAccessSecurityAttribute" />
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.PrincipalPermissionAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PrincipalPermissionAttribute&#xA;Inherits CodeAccessSecurityAttribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PrincipalPermissionAttribute sealed : System::Security::Permissions::CodeAccessSecurityAttribute" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -59,6 +61,8 @@
       <MemberSignature Language="C#" Value="public PrincipalPermissionAttribute (System.Security.Permissions.SecurityAction action);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Permissions.SecurityAction action) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.PrincipalPermissionAttribute.#ctor(System.Security.Permissions.SecurityAction)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (action As SecurityAction)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PrincipalPermissionAttribute(System::Security::Permissions::SecurityAction action);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -101,6 +105,8 @@
       <MemberSignature Language="C#" Value="public bool Authenticated { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Authenticated" />
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.PrincipalPermissionAttribute.Authenticated" />
+      <MemberSignature Language="VB.NET" Value="Public Property Authenticated As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Authenticated { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -125,6 +131,8 @@
       <MemberSignature Language="C#" Value="public override System.Security.IPermission CreatePermission ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission CreatePermission() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.PrincipalPermissionAttribute.CreatePermission" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreatePermission () As IPermission" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ CreatePermission();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -158,6 +166,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.PrincipalPermissionAttribute.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -188,6 +198,8 @@
       <MemberSignature Language="C#" Value="public string Role { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Role" />
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.PrincipalPermissionAttribute.Role" />
+      <MemberSignature Language="VB.NET" Value="Public Property Role As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Role { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

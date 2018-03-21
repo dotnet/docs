@@ -1,7 +1,9 @@
-<Type Name="AceFlags" FullName="System.Security.AccessControl.AceFlags">
+﻿<Type Name="AceFlags" FullName="System.Security.AccessControl.AceFlags">
   <TypeSignature Language="C#" Value="public enum AceFlags" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AceFlags extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.AceFlags" />
+  <TypeSignature Language="VB.NET" Value="Public Enum AceFlags" />
+  <TypeSignature Language="C++ CLI" Value="public enum class AceFlags" />
   <AssemblyInfo>
     <AssemblyName>System.Security.AccessControl</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +31,8 @@
       <MemberSignature Language="C#" Value="AuditFlags" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.AceFlags AuditFlags = unsigned int8(192)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.AceFlags.AuditFlags" />
+      <MemberSignature Language="VB.NET" Value="AuditFlags" />
+      <MemberSignature Language="C++ CLI" Value="AuditFlags" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -43,6 +47,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.AceFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>192</MemberValue>
       <Docs>
         <summary>All access attempts are audited.</summary>
       </Docs>
@@ -51,6 +56,8 @@
       <MemberSignature Language="C#" Value="ContainerInherit" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.AceFlags ContainerInherit = unsigned int8(2)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.AceFlags.ContainerInherit" />
+      <MemberSignature Language="VB.NET" Value="ContainerInherit" />
+      <MemberSignature Language="C++ CLI" Value="ContainerInherit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -65,6 +72,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.AceFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The access mask is propagated to child container objects.</summary>
       </Docs>
@@ -73,6 +81,8 @@
       <MemberSignature Language="C#" Value="FailedAccess" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.AceFlags FailedAccess = unsigned int8(128)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.AceFlags.FailedAccess" />
+      <MemberSignature Language="VB.NET" Value="FailedAccess" />
+      <MemberSignature Language="C++ CLI" Value="FailedAccess" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -87,6 +97,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.AceFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>128</MemberValue>
       <Docs>
         <summary>Failed access attempts are audited.</summary>
       </Docs>
@@ -95,6 +106,8 @@
       <MemberSignature Language="C#" Value="InheritanceFlags" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.AceFlags InheritanceFlags = unsigned int8(15)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.AceFlags.InheritanceFlags" />
+      <MemberSignature Language="VB.NET" Value="InheritanceFlags" />
+      <MemberSignature Language="C++ CLI" Value="InheritanceFlags" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -109,6 +122,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.AceFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>15</MemberValue>
       <Docs>
         <summary>A logical <see langword="OR" /> of <see cref="F:System.Security.AccessControl.AceFlags.ObjectInherit" />, <see cref="F:System.Security.AccessControl.AceFlags.ContainerInherit" />, <see cref="F:System.Security.AccessControl.AceFlags.NoPropagateInherit" />, and <see cref="F:System.Security.AccessControl.AceFlags.InheritOnly" />.</summary>
       </Docs>
@@ -117,6 +131,8 @@
       <MemberSignature Language="C#" Value="Inherited" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.AceFlags Inherited = unsigned int8(16)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.AceFlags.Inherited" />
+      <MemberSignature Language="VB.NET" Value="Inherited" />
+      <MemberSignature Language="C++ CLI" Value="Inherited" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -131,6 +147,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.AceFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>An ACE is inherited from a parent container rather than being explicitly set for an object.</summary>
       </Docs>
@@ -139,6 +156,8 @@
       <MemberSignature Language="C#" Value="InheritOnly" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.AceFlags InheritOnly = unsigned int8(8)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.AceFlags.InheritOnly" />
+      <MemberSignature Language="VB.NET" Value="InheritOnly" />
+      <MemberSignature Language="C++ CLI" Value="InheritOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -153,6 +172,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.AceFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>The access mask is propagated only to child objects. This includes both container and leaf child objects.</summary>
       </Docs>
@@ -161,6 +181,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.AceFlags None = unsigned int8(0)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.AceFlags.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -175,6 +197,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.AceFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>No ACE flags are set.</summary>
       </Docs>
@@ -183,6 +206,8 @@
       <MemberSignature Language="C#" Value="NoPropagateInherit" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.AceFlags NoPropagateInherit = unsigned int8(4)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.AceFlags.NoPropagateInherit" />
+      <MemberSignature Language="VB.NET" Value="NoPropagateInherit" />
+      <MemberSignature Language="C++ CLI" Value="NoPropagateInherit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -197,6 +222,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.AceFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The access checks do not apply to the object; they only apply to its children.</summary>
       </Docs>
@@ -205,6 +231,8 @@
       <MemberSignature Language="C#" Value="ObjectInherit" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.AceFlags ObjectInherit = unsigned int8(1)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.AceFlags.ObjectInherit" />
+      <MemberSignature Language="VB.NET" Value="ObjectInherit" />
+      <MemberSignature Language="C++ CLI" Value="ObjectInherit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -219,6 +247,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.AceFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The access mask is propagated onto child leaf objects.</summary>
       </Docs>
@@ -227,6 +256,8 @@
       <MemberSignature Language="C#" Value="SuccessfulAccess" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.AceFlags SuccessfulAccess = unsigned int8(64)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.AceFlags.SuccessfulAccess" />
+      <MemberSignature Language="VB.NET" Value="SuccessfulAccess" />
+      <MemberSignature Language="C++ CLI" Value="SuccessfulAccess" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -241,6 +272,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.AceFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>64</MemberValue>
       <Docs>
         <summary>Successful access attempts are audited.</summary>
       </Docs>

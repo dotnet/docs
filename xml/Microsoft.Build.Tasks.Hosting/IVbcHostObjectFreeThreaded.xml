@@ -1,7 +1,9 @@
-<Type Name="IVbcHostObjectFreeThreaded" FullName="Microsoft.Build.Tasks.Hosting.IVbcHostObjectFreeThreaded">
+﻿<Type Name="IVbcHostObjectFreeThreaded" FullName="Microsoft.Build.Tasks.Hosting.IVbcHostObjectFreeThreaded">
   <TypeSignature Language="C#" Value="public interface IVbcHostObjectFreeThreaded" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IVbcHostObjectFreeThreaded" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Hosting.IVbcHostObjectFreeThreaded" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IVbcHostObjectFreeThreaded" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IVbcHostObjectFreeThreaded" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,7 +17,7 @@
       <AttributeName>System.Runtime.InteropServices.Guid("ECCF972F-8C2D-4F51-9746-9288661DE2CB")</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -29,6 +31,8 @@
       <MemberSignature Language="C#" Value="public bool Compile ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Compile() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.IVbcHostObjectFreeThreaded.Compile" />
+      <MemberSignature Language="VB.NET" Value="Public Function Compile () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Compile();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

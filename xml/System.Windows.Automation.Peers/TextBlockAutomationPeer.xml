@@ -1,7 +1,9 @@
-<Type Name="TextBlockAutomationPeer" FullName="System.Windows.Automation.Peers.TextBlockAutomationPeer">
+﻿<Type Name="TextBlockAutomationPeer" FullName="System.Windows.Automation.Peers.TextBlockAutomationPeer">
   <TypeSignature Language="C#" Value="public class TextBlockAutomationPeer : System.Windows.Automation.Peers.FrameworkElementAutomationPeer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TextBlockAutomationPeer extends System.Windows.Automation.Peers.FrameworkElementAutomationPeer" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.TextBlockAutomationPeer" />
+  <TypeSignature Language="VB.NET" Value="Public Class TextBlockAutomationPeer&#xA;Inherits FrameworkElementAutomationPeer" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TextBlockAutomationPeer : System::Windows::Automation::Peers::FrameworkElementAutomationPeer" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public TextBlockAutomationPeer (System.Windows.Controls.TextBlock owner);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Controls.TextBlock owner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.TextBlockAutomationPeer.#ctor(System.Windows.Controls.TextBlock)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (owner As TextBlock)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TextBlockAutomationPeer(System::Windows::Controls::TextBlock ^ owner);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -37,6 +41,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.AutomationControlType GetAutomationControlTypeCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Automation.Peers.AutomationControlType GetAutomationControlTypeCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.TextBlockAutomationPeer.GetAutomationControlTypeCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetAutomationControlTypeCore () As AutomationControlType" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationControlType GetAutomationControlTypeCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -56,6 +62,8 @@
       <MemberSignature Language="C#" Value="protected override System.Collections.Generic.List&lt;System.Windows.Automation.Peers.AutomationPeer&gt; GetChildrenCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Collections.Generic.List`1&lt;class System.Windows.Automation.Peers.AutomationPeer&gt; GetChildrenCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.TextBlockAutomationPeer.GetChildrenCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetChildrenCore () As List(Of AutomationPeer)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Collections::Generic::List&lt;System::Windows::Automation::Peers::AutomationPeer ^&gt; ^ GetChildrenCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -75,6 +83,8 @@
       <MemberSignature Language="C#" Value="protected override string GetClassNameCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetClassNameCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.TextBlockAutomationPeer.GetClassNameCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetClassNameCore () As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetClassNameCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -94,6 +104,8 @@
       <MemberSignature Language="C#" Value="protected override bool IsControlElementCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool IsControlElementCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.TextBlockAutomationPeer.IsControlElementCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsControlElementCore () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool IsControlElementCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

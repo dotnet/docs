@@ -1,7 +1,9 @@
-<Type Name="LongType" FullName="Microsoft.VisualBasic.CompilerServices.LongType">
+﻿<Type Name="LongType" FullName="Microsoft.VisualBasic.CompilerServices.LongType">
   <TypeSignature Language="C#" Value="public sealed class LongType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LongType extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.CompilerServices.LongType" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class LongType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class LongType sealed" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -32,6 +34,8 @@
       <MemberSignature Language="C#" Value="public static long FromObject (object Value);" />
       <MemberSignature Language="ILAsm" Value=".method public static int64 FromObject(object Value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.LongType.FromObject(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromObject (Value As Object) As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static long FromObject(System::Object ^ Value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -62,6 +66,8 @@
       <MemberSignature Language="C#" Value="public static long FromString (string Value);" />
       <MemberSignature Language="ILAsm" Value=".method public static int64 FromString(string Value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.LongType.FromString(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromString (Value As String) As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static long FromString(System::String ^ Value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="ISerializerFactory" FullName="System.Windows.Documents.Serialization.ISerializerFactory">
+﻿<Type Name="ISerializerFactory" FullName="System.Windows.Documents.Serialization.ISerializerFactory">
   <TypeSignature Language="C#" Value="public interface ISerializerFactory" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISerializerFactory" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.Serialization.ISerializerFactory" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ISerializerFactory" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ISerializerFactory" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +28,7 @@
       <MemberSignature Language="C#" Value="public System.Windows.Documents.Serialization.SerializerWriter CreateSerializerWriter (System.IO.Stream stream);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Documents.Serialization.SerializerWriter CreateSerializerWriter(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Serialization.ISerializerFactory.CreateSerializerWriter(System.IO.Stream)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Documents::Serialization::SerializerWriter ^ CreateSerializerWriter(System::IO::Stream ^ stream);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -51,6 +54,8 @@
       <MemberSignature Language="C#" Value="public string DefaultFileExtension { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DefaultFileExtension" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Serialization.ISerializerFactory.DefaultFileExtension" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DefaultFileExtension As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DefaultFileExtension { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -76,6 +81,8 @@
       <MemberSignature Language="C#" Value="public string DisplayName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DisplayName" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Serialization.ISerializerFactory.DisplayName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DisplayName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DisplayName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -94,6 +101,8 @@
       <MemberSignature Language="C#" Value="public string ManufacturerName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ManufacturerName" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Serialization.ISerializerFactory.ManufacturerName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ManufacturerName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ManufacturerName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -112,6 +121,8 @@
       <MemberSignature Language="C#" Value="public Uri ManufacturerWebsite { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri ManufacturerWebsite" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Serialization.ISerializerFactory.ManufacturerWebsite" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ManufacturerWebsite As Uri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ ManufacturerWebsite { Uri ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

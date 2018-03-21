@@ -1,7 +1,9 @@
-<Type Name="ContentPropertyAttribute" FullName="System.Workflow.ComponentModel.Serialization.ContentPropertyAttribute">
+﻿<Type Name="ContentPropertyAttribute" FullName="System.Workflow.ComponentModel.Serialization.ContentPropertyAttribute">
   <TypeSignature Language="C#" Value="public sealed class ContentPropertyAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ContentPropertyAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Serialization.ContentPropertyAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ContentPropertyAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ContentPropertyAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,10 +41,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Serialization.ContentPropertyAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ContentPropertyAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Serialization.ContentPropertyAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ContentPropertyAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -58,6 +71,8 @@
       <MemberSignature Language="C#" Value="public ContentPropertyAttribute (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Serialization.ContentPropertyAttribute.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ContentPropertyAttribute(System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -91,6 +106,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Serialization.ContentPropertyAttribute.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -120,14 +137,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Serialization.ContentPropertyAttribute" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

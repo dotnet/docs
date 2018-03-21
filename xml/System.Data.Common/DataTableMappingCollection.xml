@@ -1,7 +1,9 @@
-<Type Name="DataTableMappingCollection" FullName="System.Data.Common.DataTableMappingCollection">
+﻿<Type Name="DataTableMappingCollection" FullName="System.Data.Common.DataTableMappingCollection">
   <TypeSignature Language="C#" Value="public sealed class DataTableMappingCollection : MarshalByRefObject, System.Collections.IList, System.Data.ITableMappingCollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DataTableMappingCollection extends System.MarshalByRefObject implements class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Collections.IList, class System.Data.ITableMappingCollection" />
   <TypeSignature Language="DocId" Value="T:System.Data.Common.DataTableMappingCollection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DataTableMappingCollection&#xA;Inherits MarshalByRefObject&#xA;Implements IList, ITableMappingCollection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataTableMappingCollection sealed : MarshalByRefObject, System::Collections::IList, System::Data::ITableMappingCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -53,6 +55,8 @@
       <MemberSignature Language="C#" Value="public DataTableMappingCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataTableMappingCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataTableMappingCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -83,11 +87,26 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a <see cref="T:System.Data.Common.DataTableMapping" /> object to the collection.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Add">
       <MemberSignature Language="C#" Value="public int Add (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Add(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataTableMappingCollection.Add(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (value As Object) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int Add(System::Object ^ value);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.Add(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -129,6 +148,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Common.DataTableMapping Add (string sourceTable, string dataSetTable);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Common.DataTableMapping Add(string sourceTable, string dataSetTable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataTableMappingCollection.Add(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (sourceTable As String, dataSetTable As String) As DataTableMapping" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Common::DataTableMapping ^ Add(System::String ^ sourceTable, System::String ^ dataSetTable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -168,10 +189,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddRange">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Copies the elements of a given array to the end of the collection.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AddRange">
       <MemberSignature Language="C#" Value="public void AddRange (Array values);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddRange(class System.Array values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataTableMappingCollection.AddRange(System.Array)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddRange (values As Array)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(Array ^ values);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -202,6 +235,8 @@
       <MemberSignature Language="C#" Value="public void AddRange (System.Data.Common.DataTableMapping[] values);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddRange(class System.Data.Common.DataTableMapping[] values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataTableMappingCollection.AddRange(System.Data.Common.DataTableMapping[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddRange (values As DataTableMapping())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(cli::array &lt;System::Data::Common::DataTableMapping ^&gt; ^ values);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -232,7 +267,12 @@
       <MemberSignature Language="C#" Value="public void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataTableMappingCollection.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.Clear</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -265,11 +305,26 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Contains">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a value indicating whether a particular <see cref="T:System.Data.Common.DataTableMapping" /> object exists in the collection.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Contains">
       <MemberSignature Language="C#" Value="public bool Contains (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Contains(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataTableMappingCollection.Contains(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (value As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Contains(System::Object ^ value);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.Contains(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -311,7 +366,12 @@
       <MemberSignature Language="C#" Value="public bool Contains (string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Contains(string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataTableMappingCollection.Contains(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (value As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Contains(System::String ^ value);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.ITableMappingCollection.Contains(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -349,11 +409,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CopyTo">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Copies the elements of a given collection to the specified array.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CopyTo">
       <MemberSignature Language="C#" Value="public void CopyTo (Array array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.Array array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataTableMappingCollection.CopyTo(System.Array,System.Int32)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(Array ^ array, int index);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -385,6 +459,8 @@
       <MemberSignature Language="C#" Value="public void CopyTo (System.Data.Common.DataTableMapping[] array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.Data.Common.DataTableMapping[] array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataTableMappingCollection.CopyTo(System.Data.Common.DataTableMapping[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As DataTableMapping(), index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Data::Common::DataTableMapping ^&gt; ^ array, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -417,7 +493,12 @@
       <MemberSignature Language="C#" Value="public int Count { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DataTableMappingCollection.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -436,7 +517,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -462,6 +543,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Common.DataTableMapping GetByDataSetTable (string dataSetTable);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Common.DataTableMapping GetByDataSetTable(string dataSetTable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataTableMappingCollection.GetByDataSetTable(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetByDataSetTable (dataSetTable As String) As DataTableMapping" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Common::DataTableMapping ^ GetByDataSetTable(System::String ^ dataSetTable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -503,7 +586,12 @@
       <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataTableMappingCollection.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -531,6 +619,8 @@
       <MemberSignature Language="C#" Value="public static System.Data.Common.DataTableMapping GetTableMappingBySchemaAction (System.Data.Common.DataTableMappingCollection tableMappings, string sourceTable, string dataSetTable, System.Data.MissingMappingAction mappingAction);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.DataTableMapping GetTableMappingBySchemaAction(class System.Data.Common.DataTableMappingCollection tableMappings, string sourceTable, string dataSetTable, valuetype System.Data.MissingMappingAction mappingAction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataTableMappingCollection.GetTableMappingBySchemaAction(System.Data.Common.DataTableMappingCollection,System.String,System.String,System.Data.MissingMappingAction)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetTableMappingBySchemaAction (tableMappings As DataTableMappingCollection, sourceTable As String, dataSetTable As String, mappingAction As MissingMappingAction) As DataTableMapping" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Common::DataTableMapping ^ GetTableMappingBySchemaAction(System::Data::Common::DataTableMappingCollection ^ tableMappings, System::String ^ sourceTable, System::String ^ dataSetTable, System::Data::MissingMappingAction mappingAction);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -593,11 +683,26 @@
         <exception cref="T:System.InvalidOperationException">The <paramref name="mappingAction" /> parameter was set to <see langword="Error" />, and no mapping was specified.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="IndexOf">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the location of the specified <see cref="T:System.Data.Common.DataTableMapping" /> object within the collection.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="IndexOf">
       <MemberSignature Language="C#" Value="public int IndexOf (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 IndexOf(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataTableMappingCollection.IndexOf(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As Object) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int IndexOf(System::Object ^ value);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.IndexOf(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -638,7 +743,12 @@
       <MemberSignature Language="C#" Value="public int IndexOf (string sourceTable);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 IndexOf(string sourceTable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataTableMappingCollection.IndexOf(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOf (sourceTable As String) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int IndexOf(System::String ^ sourceTable);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.ITableMappingCollection.IndexOf(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -679,6 +789,8 @@
       <MemberSignature Language="C#" Value="public int IndexOfDataSetTable (string dataSetTable);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOfDataSetTable(string dataSetTable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataTableMappingCollection.IndexOfDataSetTable(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOfDataSetTable (dataSetTable As String) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOfDataSetTable(System::String ^ dataSetTable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -716,10 +828,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Insert">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Inserts an object into the <see cref="T:System.Data.Common.DataTableMappingCollection" /> at a specified index.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Insert">
       <MemberSignature Language="C#" Value="public void Insert (int index, System.Data.Common.DataTableMapping value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(int32 index, class System.Data.Common.DataTableMapping value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataTableMappingCollection.Insert(System.Int32,System.Data.Common.DataTableMapping)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, value As DataTableMapping)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::Data::Common::DataTableMapping ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -752,7 +876,12 @@
       <MemberSignature Language="C#" Value="public void Insert (int index, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Insert(int32 index, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataTableMappingCollection.Insert(System.Int32,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, value As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Insert(int index, System::Object ^ value);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.Insert(System.Int32,System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -780,10 +909,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Data.Common.DataTableMapping" /> object specified.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Item">
       <MemberSignature Language="C#" Value="public System.Data.Common.DataTableMapping this[int index] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Common.DataTableMapping Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DataTableMappingCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As DataTableMapping" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Common::DataTableMapping ^ default[int] { System::Data::Common::DataTableMapping ^ get(int index); void set(int index, System::Data::Common::DataTableMapping ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -803,7 +944,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -833,6 +974,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Common.DataTableMapping this[string sourceTable] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Common.DataTableMapping Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DataTableMappingCollection.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(sourceTable As String) As DataTableMapping" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Common::DataTableMapping ^ default[System::String ^] { System::Data::Common::DataTableMapping ^ get(System::String ^ sourceTable); void set(System::String ^ sourceTable, System::Data::Common::DataTableMapping ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -852,7 +995,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -878,10 +1021,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Remove">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes a specified object from the collection.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Remove">
       <MemberSignature Language="C#" Value="public void Remove (System.Data.Common.DataTableMapping value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Data.Common.DataTableMapping value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataTableMappingCollection.Remove(System.Data.Common.DataTableMapping)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (value As DataTableMapping)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Data::Common::DataTableMapping ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -912,7 +1067,12 @@
       <MemberSignature Language="C#" Value="public void Remove (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Remove(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataTableMappingCollection.Remove(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (value As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Remove(System::Object ^ value);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.Remove(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -950,11 +1110,26 @@
         <exception cref="T:System.ArgumentException">The object specified is not in the collection.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="RemoveAt">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes the specified <see cref="T:System.Data.Common.DataTableMapping" /> object from the collection.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="RemoveAt">
       <MemberSignature Language="C#" Value="public void RemoveAt (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveAt(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataTableMappingCollection.RemoveAt(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveAt(int index);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.RemoveAt(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -995,7 +1170,12 @@
       <MemberSignature Language="C#" Value="public void RemoveAt (string sourceTable);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveAt(string sourceTable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataTableMappingCollection.RemoveAt(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (sourceTable As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveAt(System::String ^ sourceTable);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.ITableMappingCollection.RemoveAt(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -1036,7 +1216,12 @@
       <MemberSignature Language="C#" Value="bool System.Collections.ICollection.IsSynchronized { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.ICollection.IsSynchronized" />
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DataTableMappingCollection.System#Collections#ICollection#IsSynchronized" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -1073,7 +1258,12 @@
       <MemberSignature Language="C#" Value="object System.Collections.ICollection.SyncRoot { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.ICollection.SyncRoot" />
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DataTableMappingCollection.System#Collections#ICollection#SyncRoot" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -1109,7 +1299,12 @@
       <MemberSignature Language="C#" Value="bool System.Collections.IList.IsFixedSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.IList.IsFixedSize" />
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DataTableMappingCollection.System#Collections#IList#IsFixedSize" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsFixedSize As Boolean Implements IList.IsFixedSize" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsFixedSize { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.IList.IsFixedSize</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -1146,7 +1341,12 @@
       <MemberSignature Language="C#" Value="bool System.Collections.IList.IsReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.IList.IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DataTableMappingCollection.System#Collections#IList#IsReadOnly" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements IList.IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.IList.IsReadOnly</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -1183,7 +1383,12 @@
       <MemberSignature Language="C#" Value="object System.Collections.IList.Item[int index] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.IList.Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DataTableMappingCollection.System#Collections#IList#Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value=" Property Item(index As Integer) As Object Implements IList.Item" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IList.Item[int] { System::Object ^ get(int index); void set(int index, System::Object ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.IList.Item(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -1223,7 +1428,12 @@
       <MemberSignature Language="C#" Value="System.Data.ITableMapping ITableMappingCollection.Add (string sourceTableName, string dataSetTableName);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Data.ITableMapping System.Data.ITableMappingCollection.Add(string sourceTableName, string dataSetTableName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataTableMappingCollection.System#Data#ITableMappingCollection#Add(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Function Add (sourceTableName As String, dataSetTableName As String) As ITableMapping Implements ITableMappingCollection.Add" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Data::ITableMapping ^ System.Data.ITableMappingCollection.Add(System::String ^ sourceTableName, System::String ^ dataSetTableName) = System::Data::ITableMappingCollection::Add;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.ITableMappingCollection.Add(System.String,System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -1265,7 +1475,12 @@
       <MemberSignature Language="C#" Value="System.Data.ITableMapping ITableMappingCollection.GetByDataSetTable (string dataSetTableName);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Data.ITableMapping System.Data.ITableMappingCollection.GetByDataSetTable(string dataSetTableName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataTableMappingCollection.System#Data#ITableMappingCollection#GetByDataSetTable(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Function GetByDataSetTable (dataSetTableName As String) As ITableMapping Implements ITableMappingCollection.GetByDataSetTable" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Data::ITableMapping ^ System.Data.ITableMappingCollection.GetByDataSetTable(System::String ^ dataSetTableName) = System::Data::ITableMappingCollection::GetByDataSetTable;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.ITableMappingCollection.GetByDataSetTable(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -1305,7 +1520,12 @@
       <MemberSignature Language="C#" Value="object System.Data.ITableMappingCollection.Item[string index] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object System.Data.ITableMappingCollection.Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DataTableMappingCollection.System#Data#ITableMappingCollection#Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value=" Property Item(index As String) As Object Implements ITableMappingCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Data.ITableMappingCollection.Item[System::String ^] { System::Object ^ get(System::String ^ index); void set(System::String ^ index, System::Object ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Data.ITableMappingCollection.Item(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -1341,95 +1561,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Contains">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets a value indicating whether a particular <see cref="T:System.Data.Common.DataTableMapping" /> object exists in the collection.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Item">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets or sets the <see cref="T:System.Data.Common.DataTableMapping" /> object specified.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Add">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds a <see cref="T:System.Data.Common.DataTableMapping" /> object to the collection.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="CopyTo">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Copies the elements of a given collection to the specified array.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="IndexOf">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets the location of the specified <see cref="T:System.Data.Common.DataTableMapping" /> object within the collection.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Insert">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Inserts an object into the <see cref="T:System.Data.Common.DataTableMappingCollection" /> at a specified index.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="AddRange">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Copies the elements of a given array to the end of the collection.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Remove">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Removes a specified object from the collection.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="RemoveAt">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Removes the specified <see cref="T:System.Data.Common.DataTableMapping" /> object from the collection.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

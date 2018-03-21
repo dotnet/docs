@@ -1,7 +1,9 @@
-<Type Name="StripLine" FullName="System.Web.UI.DataVisualization.Charting.StripLine">
+﻿<Type Name="StripLine" FullName="System.Web.UI.DataVisualization.Charting.StripLine">
   <TypeSignature Language="C#" Value="public class StripLine : System.Web.UI.DataVisualization.Charting.ChartElement, System.Web.UI.DataVisualization.Charting.IChartMapArea" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StripLine extends System.Web.UI.DataVisualization.Charting.ChartElement implements class System.Web.UI.DataVisualization.Charting.IChartMapArea" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.StripLine" />
+  <TypeSignature Language="VB.NET" Value="Public Class StripLine&#xA;Inherits ChartElement&#xA;Implements IChartMapArea" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StripLine : System::Web::UI::DataVisualization::Charting::ChartElement, System::Web::UI::DataVisualization::Charting::IChartMapArea" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -255,6 +257,8 @@ public partial class StripLines : System.Web.UI.Page
       <MemberSignature Language="C#" Value="public StripLine ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.StripLine.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StripLine();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -270,6 +274,8 @@ public partial class StripLines : System.Web.UI.Page
       <MemberSignature Language="C#" Value="public System.Drawing.Color BackColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BackColor" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.StripLine.BackColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property BackColor As Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color BackColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -289,7 +295,7 @@ public partial class StripLines : System.Web.UI.Page
           <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Drawing.ColorConverter))</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.Attribute)</AttributeName>
+          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -525,6 +531,8 @@ public partial class StripLines : System.Web.UI.Page
       <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.GradientStyle BackGradientStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.DataVisualization.Charting.GradientStyle BackGradientStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.StripLine.BackGradientStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property BackGradientStyle As GradientStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::DataVisualization::Charting::GradientStyle BackGradientStyle { System::Web::UI::DataVisualization::Charting::GradientStyle get(); void set(System::Web::UI::DataVisualization::Charting::GradientStyle value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -541,7 +549,7 @@ public partial class StripLines : System.Web.UI.Page
           <AttributeName>System.ComponentModel.Editor("System.Web.UI.Design.DataVisualization.Charting.GradientEditor, System.Web.DataVisualization.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.Attribute)</AttributeName>
+          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -574,6 +582,8 @@ public partial class StripLines : System.Web.UI.Page
       <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.ChartHatchStyle BackHatchStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.DataVisualization.Charting.ChartHatchStyle BackHatchStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.StripLine.BackHatchStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property BackHatchStyle As ChartHatchStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::DataVisualization::Charting::ChartHatchStyle BackHatchStyle { System::Web::UI::DataVisualization::Charting::ChartHatchStyle get(); void set(System::Web::UI::DataVisualization::Charting::ChartHatchStyle value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -590,7 +600,7 @@ public partial class StripLines : System.Web.UI.Page
           <AttributeName>System.ComponentModel.Editor("System.Web.UI.Design.DataVisualization.Charting.HatchStyleEditor, System.Web.DataVisualization.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.Attribute)</AttributeName>
+          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -613,6 +623,8 @@ public partial class StripLines : System.Web.UI.Page
       <MemberSignature Language="C#" Value="public string BackImage { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string BackImage" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.StripLine.BackImage" />
+      <MemberSignature Language="VB.NET" Value="Public Property BackImage As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ BackImage { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -632,7 +644,7 @@ public partial class StripLines : System.Web.UI.Page
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.Attribute)</AttributeName>
+          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -665,6 +677,8 @@ public partial class StripLines : System.Web.UI.Page
       <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.ChartImageAlignmentStyle BackImageAlignment { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.DataVisualization.Charting.ChartImageAlignmentStyle BackImageAlignment" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.StripLine.BackImageAlignment" />
+      <MemberSignature Language="VB.NET" Value="Public Property BackImageAlignment As ChartImageAlignmentStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::DataVisualization::Charting::ChartImageAlignmentStyle BackImageAlignment { System::Web::UI::DataVisualization::Charting::ChartImageAlignmentStyle get(); void set(System::Web::UI::DataVisualization::Charting::ChartImageAlignmentStyle value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -681,7 +695,7 @@ public partial class StripLines : System.Web.UI.Page
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.Attribute)</AttributeName>
+          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -706,6 +720,8 @@ public partial class StripLines : System.Web.UI.Page
       <MemberSignature Language="C#" Value="public System.Drawing.Color BackImageTransparentColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BackImageTransparentColor" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.StripLine.BackImageTransparentColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property BackImageTransparentColor As Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color BackImageTransparentColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -728,7 +744,7 @@ public partial class StripLines : System.Web.UI.Page
           <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Drawing.ColorConverter))</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.Attribute)</AttributeName>
+          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -751,6 +767,8 @@ public partial class StripLines : System.Web.UI.Page
       <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.ChartImageWrapMode BackImageWrapMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.DataVisualization.Charting.ChartImageWrapMode BackImageWrapMode" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.StripLine.BackImageWrapMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property BackImageWrapMode As ChartImageWrapMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::DataVisualization::Charting::ChartImageWrapMode BackImageWrapMode { System::Web::UI::DataVisualization::Charting::ChartImageWrapMode get(); void set(System::Web::UI::DataVisualization::Charting::ChartImageWrapMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -767,7 +785,7 @@ public partial class StripLines : System.Web.UI.Page
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.Attribute)</AttributeName>
+          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -798,6 +816,8 @@ public partial class StripLines : System.Web.UI.Page
       <MemberSignature Language="C#" Value="public System.Drawing.Color BackSecondaryColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BackSecondaryColor" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.StripLine.BackSecondaryColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property BackSecondaryColor As Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color BackSecondaryColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -817,7 +837,7 @@ public partial class StripLines : System.Web.UI.Page
           <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Drawing.ColorConverter))</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.Attribute)</AttributeName>
+          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -854,6 +874,8 @@ public partial class StripLines : System.Web.UI.Page
       <MemberSignature Language="C#" Value="public System.Drawing.Color BorderColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BorderColor" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.StripLine.BorderColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property BorderColor As Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color BorderColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -873,7 +895,7 @@ public partial class StripLines : System.Web.UI.Page
           <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Drawing.ColorConverter))</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.Attribute)</AttributeName>
+          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -898,6 +920,8 @@ public partial class StripLines : System.Web.UI.Page
       <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.ChartDashStyle BorderDashStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.DataVisualization.Charting.ChartDashStyle BorderDashStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.StripLine.BorderDashStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property BorderDashStyle As ChartDashStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::DataVisualization::Charting::ChartDashStyle BorderDashStyle { System::Web::UI::DataVisualization::Charting::ChartDashStyle get(); void set(System::Web::UI::DataVisualization::Charting::ChartDashStyle value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -911,7 +935,7 @@ public partial class StripLines : System.Web.UI.Page
           <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.Attribute)</AttributeName>
+          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -934,6 +958,8 @@ public partial class StripLines : System.Web.UI.Page
       <MemberSignature Language="C#" Value="public int BorderWidth { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 BorderWidth" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.StripLine.BorderWidth" />
+      <MemberSignature Language="VB.NET" Value="Public Property BorderWidth As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int BorderWidth { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -947,7 +973,7 @@ public partial class StripLines : System.Web.UI.Page
           <AttributeName>System.ComponentModel.DefaultValue(1)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.Attribute)</AttributeName>
+          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -970,6 +996,8 @@ public partial class StripLines : System.Web.UI.Page
       <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.StripLine.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -992,6 +1020,8 @@ public partial class StripLines : System.Web.UI.Page
       <MemberSignature Language="C#" Value="public System.Drawing.Font Font { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Font Font" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.StripLine.Font" />
+      <MemberSignature Language="VB.NET" Value="Public Property Font As Font" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Font ^ Font { System::Drawing::Font ^ get(); void set(System::Drawing::Font ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -1008,7 +1038,7 @@ public partial class StripLines : System.Web.UI.Page
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.Attribute)</AttributeName>
+          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1024,6 +1054,8 @@ public partial class StripLines : System.Web.UI.Page
       <MemberSignature Language="C#" Value="public System.Drawing.Color ForeColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ForeColor" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.StripLine.ForeColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property ForeColor As Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color ForeColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -1046,7 +1078,7 @@ public partial class StripLines : System.Web.UI.Page
           <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Drawing.ColorConverter))</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.Attribute)</AttributeName>
+          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1069,6 +1101,8 @@ public partial class StripLines : System.Web.UI.Page
       <MemberSignature Language="C#" Value="public double Interval { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 Interval" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.StripLine.Interval" />
+      <MemberSignature Language="VB.NET" Value="Public Property Interval As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Interval { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -1082,10 +1116,10 @@ public partial class StripLines : System.Web.UI.Page
           <AttributeName>System.ComponentModel.DefaultValue(0)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.Attribute)</AttributeName>
+          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1315,6 +1349,8 @@ public partial class StripLines : System.Web.UI.Page
       <MemberSignature Language="C#" Value="public double IntervalOffset { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 IntervalOffset" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.StripLine.IntervalOffset" />
+      <MemberSignature Language="VB.NET" Value="Public Property IntervalOffset As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double IntervalOffset { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -1331,7 +1367,7 @@ public partial class StripLines : System.Web.UI.Page
           <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Web.UI.DataVisualization.Charting.AxisLabelDateValueConverter))</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.Attribute)</AttributeName>
+          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1567,6 +1603,8 @@ public partial class StripLines : System.Web.UI.Page
       <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.DateTimeIntervalType IntervalOffsetType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.DataVisualization.Charting.DateTimeIntervalType IntervalOffsetType" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.StripLine.IntervalOffsetType" />
+      <MemberSignature Language="VB.NET" Value="Public Property IntervalOffsetType As DateTimeIntervalType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::DataVisualization::Charting::DateTimeIntervalType IntervalOffsetType { System::Web::UI::DataVisualization::Charting::DateTimeIntervalType get(); void set(System::Web::UI::DataVisualization::Charting::DateTimeIntervalType value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -1580,10 +1618,10 @@ public partial class StripLines : System.Web.UI.Page
           <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.Attribute)</AttributeName>
+          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1813,6 +1851,8 @@ public partial class StripLines : System.Web.UI.Page
       <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.DateTimeIntervalType IntervalType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.DataVisualization.Charting.DateTimeIntervalType IntervalType" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.StripLine.IntervalType" />
+      <MemberSignature Language="VB.NET" Value="Public Property IntervalType As DateTimeIntervalType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::DataVisualization::Charting::DateTimeIntervalType IntervalType { System::Web::UI::DataVisualization::Charting::DateTimeIntervalType get(); void set(System::Web::UI::DataVisualization::Charting::DateTimeIntervalType value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -1826,10 +1866,10 @@ public partial class StripLines : System.Web.UI.Page
           <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.Attribute)</AttributeName>
+          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2061,7 +2101,12 @@ public partial class StripLines : System.Web.UI.Page
       <MemberSignature Language="C#" Value="public string MapAreaAttributes { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MapAreaAttributes" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.StripLine.MapAreaAttributes" />
+      <MemberSignature Language="VB.NET" Value="Public Property MapAreaAttributes As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MapAreaAttributes { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.UI.DataVisualization.Charting.IChartMapArea.MapAreaAttributes</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -2074,7 +2119,7 @@ public partial class StripLines : System.Web.UI.Page
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.Attribute)</AttributeName>
+          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2090,6 +2135,8 @@ public partial class StripLines : System.Web.UI.Page
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.StripLine.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -2106,10 +2153,10 @@ public partial class StripLines : System.Web.UI.Page
           <AttributeName>System.ComponentModel.DefaultValue("StripLine")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.Attribute)</AttributeName>
+          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2125,7 +2172,12 @@ public partial class StripLines : System.Web.UI.Page
       <MemberSignature Language="C#" Value="public string PostBackValue { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PostBackValue" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.StripLine.PostBackValue" />
+      <MemberSignature Language="VB.NET" Value="Public Property PostBackValue As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PostBackValue { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.UI.DataVisualization.Charting.IChartMapArea.PostBackValue</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -2148,6 +2200,8 @@ public partial class StripLines : System.Web.UI.Page
       <MemberSignature Language="C#" Value="public double StripWidth { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 StripWidth" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.StripLine.StripWidth" />
+      <MemberSignature Language="VB.NET" Value="Public Property StripWidth As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double StripWidth { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -2161,7 +2215,7 @@ public partial class StripLines : System.Web.UI.Page
           <AttributeName>System.ComponentModel.DefaultValue(0)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.Attribute)</AttributeName>
+          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2190,6 +2244,8 @@ public partial class StripLines : System.Web.UI.Page
       <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.DateTimeIntervalType StripWidthType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.DataVisualization.Charting.DateTimeIntervalType StripWidthType" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.StripLine.StripWidthType" />
+      <MemberSignature Language="VB.NET" Value="Public Property StripWidthType As DateTimeIntervalType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::DataVisualization::Charting::DateTimeIntervalType StripWidthType { System::Web::UI::DataVisualization::Charting::DateTimeIntervalType get(); void set(System::Web::UI::DataVisualization::Charting::DateTimeIntervalType value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -2203,10 +2259,10 @@ public partial class StripLines : System.Web.UI.Page
           <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.Attribute)</AttributeName>
+          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2231,6 +2287,8 @@ public partial class StripLines : System.Web.UI.Page
       <MemberSignature Language="C#" Value="public string Text { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Text" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.StripLine.Text" />
+      <MemberSignature Language="VB.NET" Value="Public Property Text As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -2247,7 +2305,7 @@ public partial class StripLines : System.Web.UI.Page
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.Attribute)</AttributeName>
+          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2382,6 +2440,8 @@ public partial class StripLines : System.Web.UI.Page
       <MemberSignature Language="C#" Value="public System.Drawing.StringAlignment TextAlignment { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.StringAlignment TextAlignment" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.StripLine.TextAlignment" />
+      <MemberSignature Language="VB.NET" Value="Public Property TextAlignment As StringAlignment" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::StringAlignment TextAlignment { System::Drawing::StringAlignment get(); void set(System::Drawing::StringAlignment value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -2398,7 +2458,7 @@ public partial class StripLines : System.Web.UI.Page
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.Attribute)</AttributeName>
+          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2534,6 +2594,8 @@ public partial class StripLines : System.Web.UI.Page
       <MemberSignature Language="C#" Value="public System.Drawing.StringAlignment TextLineAlignment { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.StringAlignment TextLineAlignment" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.StripLine.TextLineAlignment" />
+      <MemberSignature Language="VB.NET" Value="Public Property TextLineAlignment As StringAlignment" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::StringAlignment TextLineAlignment { System::Drawing::StringAlignment get(); void set(System::Drawing::StringAlignment value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -2550,7 +2612,7 @@ public partial class StripLines : System.Web.UI.Page
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.Attribute)</AttributeName>
+          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2686,6 +2748,8 @@ public partial class StripLines : System.Web.UI.Page
       <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.TextOrientation TextOrientation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.DataVisualization.Charting.TextOrientation TextOrientation" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.StripLine.TextOrientation" />
+      <MemberSignature Language="VB.NET" Value="Public Property TextOrientation As TextOrientation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::DataVisualization::Charting::TextOrientation TextOrientation { System::Web::UI::DataVisualization::Charting::TextOrientation get(); void set(System::Web::UI::DataVisualization::Charting::TextOrientation value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -2702,7 +2766,7 @@ public partial class StripLines : System.Web.UI.Page
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.Attribute)</AttributeName>
+          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2842,7 +2906,12 @@ public partial class StripLines : System.Web.UI.Page
       <MemberSignature Language="C#" Value="public string ToolTip { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ToolTip" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.StripLine.ToolTip" />
+      <MemberSignature Language="VB.NET" Value="Public Property ToolTip As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ToolTip { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.UI.DataVisualization.Charting.IChartMapArea.ToolTip</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -2855,7 +2924,7 @@ public partial class StripLines : System.Web.UI.Page
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.Attribute)</AttributeName>
+          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2880,7 +2949,12 @@ public partial class StripLines : System.Web.UI.Page
       <MemberSignature Language="C#" Value="public string Url { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Url" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.StripLine.Url" />
+      <MemberSignature Language="VB.NET" Value="Public Property Url As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Url { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.UI.DataVisualization.Charting.IChartMapArea.Url</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -2896,7 +2970,7 @@ public partial class StripLines : System.Web.UI.Page
           <AttributeName>System.ComponentModel.Editor("System.Web.UI.Design.DataVisualization.Charting.UrlValueEditor, System.Web.DataVisualization.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.Attribute)</AttributeName>
+          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

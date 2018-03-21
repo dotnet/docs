@@ -1,7 +1,9 @@
-<Type Name="RecycleLimitObserver" FullName="System.Web.Hosting.RecycleLimitObserver">
+﻿<Type Name="RecycleLimitObserver" FullName="System.Web.Hosting.RecycleLimitObserver">
   <TypeSignature Language="C#" Value="public class RecycleLimitObserver : IObserver&lt;System.Web.Hosting.RecycleLimitInfo&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RecycleLimitObserver extends System.Object implements class System.IObserver`1&lt;class System.Web.Hosting.RecycleLimitInfo&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Web.Hosting.RecycleLimitObserver" />
+  <TypeSignature Language="VB.NET" Value="Public Class RecycleLimitObserver&#xA;Implements IObserver(Of RecycleLimitInfo)" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RecycleLimitObserver : IObserver&lt;System::Web::Hosting::RecycleLimitInfo ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +25,8 @@
       <MemberSignature Language="C#" Value="public RecycleLimitObserver ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.RecycleLimitObserver.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RecycleLimitObserver();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -38,7 +42,12 @@
       <MemberSignature Language="C#" Value="public void OnCompleted ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnCompleted() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.RecycleLimitObserver.OnCompleted" />
+      <MemberSignature Language="VB.NET" Value="Public Sub OnCompleted ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OnCompleted();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IObserver`1.OnCompleted</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,7 +65,12 @@
       <MemberSignature Language="C#" Value="public void OnError (Exception error);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnError(class System.Exception error) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.RecycleLimitObserver.OnError(System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub OnError (error As Exception)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OnError(Exception ^ error);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IObserver`1.OnError(System.Exception)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -77,7 +91,11 @@
       <MemberSignature Language="C#" Value="public void OnNext (System.Web.Hosting.RecycleLimitInfo recycleLimitInfo);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnNext(class System.Web.Hosting.RecycleLimitInfo recycleLimitInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.RecycleLimitObserver.OnNext(System.Web.Hosting.RecycleLimitInfo)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OnNext(System::Web::Hosting::RecycleLimitInfo ^ recycleLimitInfo);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IObserver`1.OnNext(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

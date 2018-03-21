@@ -1,7 +1,9 @@
-<Type Name="ClientScriptManager" FullName="System.Web.UI.ClientScriptManager">
+﻿<Type Name="ClientScriptManager" FullName="System.Web.UI.ClientScriptManager">
   <TypeSignature Language="C#" Value="public sealed class ClientScriptManager" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ClientScriptManager extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ClientScriptManager" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ClientScriptManager" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ClientScriptManager sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,10 +51,20 @@
     <altmember cref="P:System.Web.Configuration.HttpCapabilitiesBase.SupportsXmlHttp" />
   </Docs>
   <Members>
+    <MemberGroup MemberName="GetCallbackEventReference">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Obtains a reference to a client function that, when invoked, initiates a client call back to a server event.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetCallbackEventReference">
       <MemberSignature Language="C#" Value="public string GetCallbackEventReference (System.Web.UI.Control control, string argument, string clientCallback, string context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetCallbackEventReference(class System.Web.UI.Control control, string argument, string clientCallback, string context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ClientScriptManager.GetCallbackEventReference(System.Web.UI.Control,System.String,System.String,System.String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetCallbackEventReference(System::Web::UI::Control ^ control, System::String ^ argument, System::String ^ clientCallback, System::String ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -117,6 +129,7 @@
       <MemberSignature Language="C#" Value="public string GetCallbackEventReference (System.Web.UI.Control control, string argument, string clientCallback, string context, bool useAsync);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetCallbackEventReference(class System.Web.UI.Control control, string argument, string clientCallback, string context, bool useAsync) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ClientScriptManager.GetCallbackEventReference(System.Web.UI.Control,System.String,System.String,System.String,System.Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetCallbackEventReference(System::Web::UI::Control ^ control, System::String ^ argument, System::String ^ clientCallback, System::String ^ context, bool useAsync);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -162,6 +175,8 @@
       <MemberSignature Language="C#" Value="public string GetCallbackEventReference (string target, string argument, string clientCallback, string context, string clientErrorCallback, bool useAsync);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetCallbackEventReference(string target, string argument, string clientCallback, string context, string clientErrorCallback, bool useAsync) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ClientScriptManager.GetCallbackEventReference(System.String,System.String,System.String,System.String,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetCallbackEventReference (target As String, argument As String, clientCallback As String, context As String, clientErrorCallback As String, useAsync As Boolean) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetCallbackEventReference(System::String ^ target, System::String ^ argument, System::String ^ clientCallback, System::String ^ context, System::String ^ clientErrorCallback, bool useAsync);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -220,6 +235,7 @@
       <MemberSignature Language="C#" Value="public string GetCallbackEventReference (System.Web.UI.Control control, string argument, string clientCallback, string context, string clientErrorCallback, bool useAsync);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetCallbackEventReference(class System.Web.UI.Control control, string argument, string clientCallback, string context, string clientErrorCallback, bool useAsync) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ClientScriptManager.GetCallbackEventReference(System.Web.UI.Control,System.String,System.String,System.String,System.String,System.Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetCallbackEventReference(System::Web::UI::Control ^ control, System::String ^ argument, System::String ^ clientCallback, System::String ^ context, System::String ^ clientErrorCallback, bool useAsync);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -261,10 +277,20 @@
         <altmember cref="T:System.Web.UI.ICallbackEventHandler" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetPostBackClientHyperlink">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a reference, with <see langword="javascript:" /> appended to the beginning of it, that can be used in a client event to post back to the server.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetPostBackClientHyperlink">
       <MemberSignature Language="C#" Value="public string GetPostBackClientHyperlink (System.Web.UI.Control control, string argument);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetPostBackClientHyperlink(class System.Web.UI.Control control, string argument) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ClientScriptManager.GetPostBackClientHyperlink(System.Web.UI.Control,System.String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetPostBackClientHyperlink(System::Web::UI::Control ^ control, System::String ^ argument);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -311,6 +337,7 @@
       <MemberSignature Language="C#" Value="public string GetPostBackClientHyperlink (System.Web.UI.Control control, string argument, bool registerForEventValidation);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetPostBackClientHyperlink(class System.Web.UI.Control control, string argument, bool registerForEventValidation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ClientScriptManager.GetPostBackClientHyperlink(System.Web.UI.Control,System.String,System.Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetPostBackClientHyperlink(System::Web::UI::Control ^ control, System::String ^ argument, bool registerForEventValidation);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -343,10 +370,21 @@
         <altmember cref="M:System.Web.UI.ClientScriptManager.GetPostBackClientHyperlink(System.Web.UI.Control,System.String)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetPostBackEventReference">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a string that can be used in a client event to cause postback to the server.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetPostBackEventReference">
       <MemberSignature Language="C#" Value="public string GetPostBackEventReference (System.Web.UI.PostBackOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetPostBackEventReference(class System.Web.UI.PostBackOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ClientScriptManager.GetPostBackEventReference(System.Web.UI.PostBackOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetPostBackEventReference (options As PostBackOptions) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetPostBackEventReference(System::Web::UI::PostBackOptions ^ options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -382,6 +420,7 @@
       <MemberSignature Language="C#" Value="public string GetPostBackEventReference (System.Web.UI.Control control, string argument);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetPostBackEventReference(class System.Web.UI.Control control, string argument) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ClientScriptManager.GetPostBackEventReference(System.Web.UI.Control,System.String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetPostBackEventReference(System::Web::UI::Control ^ control, System::String ^ argument);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -431,6 +470,8 @@
       <MemberSignature Language="C#" Value="public string GetPostBackEventReference (System.Web.UI.PostBackOptions options, bool registerForEventValidation);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetPostBackEventReference(class System.Web.UI.PostBackOptions options, bool registerForEventValidation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ClientScriptManager.GetPostBackEventReference(System.Web.UI.PostBackOptions,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetPostBackEventReference (options As PostBackOptions, registerForEventValidation As Boolean) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetPostBackEventReference(System::Web::UI::PostBackOptions ^ options, bool registerForEventValidation);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -471,6 +512,7 @@
       <MemberSignature Language="C#" Value="public string GetPostBackEventReference (System.Web.UI.Control control, string argument, bool registerForEventValidation);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetPostBackEventReference(class System.Web.UI.Control control, string argument, bool registerForEventValidation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ClientScriptManager.GetPostBackEventReference(System.Web.UI.Control,System.String,System.Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetPostBackEventReference(System::Web::UI::Control ^ control, System::String ^ argument, bool registerForEventValidation);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -512,6 +554,7 @@
       <MemberSignature Language="C#" Value="public string GetWebResourceUrl (Type type, string resourceName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetWebResourceUrl(class System.Type type, string resourceName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ClientScriptManager.GetWebResourceUrl(System.Type,System.String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetWebResourceUrl(Type ^ type, System::String ^ resourceName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -570,10 +613,21 @@ function DoClick() {Form1.Message.value='Text from resource script.'}
         <altmember cref="T:System.Web.Handlers.AssemblyResourceLoader" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="IsClientScriptBlockRegistered">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether the client script block is registered with the <see cref="T:System.Web.UI.Page" /> object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="IsClientScriptBlockRegistered">
       <MemberSignature Language="C#" Value="public bool IsClientScriptBlockRegistered (string key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsClientScriptBlockRegistered(string key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ClientScriptManager.IsClientScriptBlockRegistered(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsClientScriptBlockRegistered (key As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsClientScriptBlockRegistered(System::String ^ key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -616,6 +670,7 @@ function DoClick() {Form1.Message.value='Text from resource script.'}
       <MemberSignature Language="C#" Value="public bool IsClientScriptBlockRegistered (Type type, string key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsClientScriptBlockRegistered(class System.Type type, string key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ClientScriptManager.IsClientScriptBlockRegistered(System.Type,System.String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsClientScriptBlockRegistered(Type ^ type, System::String ^ key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -657,10 +712,21 @@ function DoClick() {Form1.Message.value='Text from resource script.'}
         <altmember cref="Overload:System.Web.UI.ClientScriptManager.RegisterClientScriptBlock" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="IsClientScriptIncludeRegistered">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether the client script include is registered with the <see cref="T:System.Web.UI.Page" /> object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="IsClientScriptIncludeRegistered">
       <MemberSignature Language="C#" Value="public bool IsClientScriptIncludeRegistered (string key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsClientScriptIncludeRegistered(string key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ClientScriptManager.IsClientScriptIncludeRegistered(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsClientScriptIncludeRegistered (key As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsClientScriptIncludeRegistered(System::String ^ key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -697,6 +763,7 @@ function DoClick() {Form1.Message.value='Text from resource script.'}
       <MemberSignature Language="C#" Value="public bool IsClientScriptIncludeRegistered (Type type, string key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsClientScriptIncludeRegistered(class System.Type type, string key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ClientScriptManager.IsClientScriptIncludeRegistered(System.Type,System.String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsClientScriptIncludeRegistered(Type ^ type, System::String ^ key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -744,10 +811,21 @@ function DoClick() {Form1.Message.value='Text from include script.'}
         <altmember cref="Overload:System.Web.UI.ClientScriptManager.RegisterClientScriptInclude" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="IsOnSubmitStatementRegistered">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether the OnSubmit statement is registered with the <see cref="T:System.Web.UI.Page" /> object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="IsOnSubmitStatementRegistered">
       <MemberSignature Language="C#" Value="public bool IsOnSubmitStatementRegistered (string key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsOnSubmitStatementRegistered(string key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ClientScriptManager.IsOnSubmitStatementRegistered(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsOnSubmitStatementRegistered (key As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsOnSubmitStatementRegistered(System::String ^ key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -784,6 +862,7 @@ function DoClick() {Form1.Message.value='Text from include script.'}
       <MemberSignature Language="C#" Value="public bool IsOnSubmitStatementRegistered (Type type, string key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsOnSubmitStatementRegistered(class System.Type type, string key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ClientScriptManager.IsOnSubmitStatementRegistered(System.Type,System.String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsOnSubmitStatementRegistered(Type ^ type, System::String ^ key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -825,10 +904,21 @@ function DoClick() {Form1.Message.value='Text from include script.'}
         <altmember cref="M:System.Web.UI.ClientScriptManager.RegisterOnSubmitStatement(System.Type,System.String,System.String)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="IsStartupScriptRegistered">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether the startup script is registered with the <see cref="T:System.Web.UI.Page" /> object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="IsStartupScriptRegistered">
       <MemberSignature Language="C#" Value="public bool IsStartupScriptRegistered (string key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsStartupScriptRegistered(string key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ClientScriptManager.IsStartupScriptRegistered(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsStartupScriptRegistered (key As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsStartupScriptRegistered(System::String ^ key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -865,6 +955,7 @@ function DoClick() {Form1.Message.value='Text from include script.'}
       <MemberSignature Language="C#" Value="public bool IsStartupScriptRegistered (Type type, string key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsStartupScriptRegistered(class System.Type type, string key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ClientScriptManager.IsStartupScriptRegistered(System.Type,System.String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsStartupScriptRegistered(Type ^ type, System::String ^ key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -910,6 +1001,8 @@ function DoClick() {Form1.Message.value='Text from include script.'}
       <MemberSignature Language="C#" Value="public void RegisterArrayDeclaration (string arrayName, string arrayValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RegisterArrayDeclaration(string arrayName, string arrayValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ClientScriptManager.RegisterArrayDeclaration(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RegisterArrayDeclaration (arrayName As String, arrayValue As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RegisterArrayDeclaration(System::String ^ arrayName, System::String ^ arrayValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -949,10 +1042,20 @@ function DoClick() {Form1.Message.value='Text from include script.'}
         <altmember cref="Overload:System.String.Split" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="RegisterClientScriptBlock">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Registers the client script with the <see cref="T:System.Web.UI.Page" /> object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="RegisterClientScriptBlock">
       <MemberSignature Language="C#" Value="public void RegisterClientScriptBlock (Type type, string key, string script);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RegisterClientScriptBlock(class System.Type type, string key, string script) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ClientScriptManager.RegisterClientScriptBlock(System.Type,System.String,System.String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RegisterClientScriptBlock(Type ^ type, System::String ^ key, System::String ^ script);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1000,6 +1103,7 @@ function DoClick() {Form1.Message.value='Text from include script.'}
       <MemberSignature Language="C#" Value="public void RegisterClientScriptBlock (Type type, string key, string script, bool addScriptTags);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RegisterClientScriptBlock(class System.Type type, string key, string script, bool addScriptTags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ClientScriptManager.RegisterClientScriptBlock(System.Type,System.String,System.String,System.Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RegisterClientScriptBlock(Type ^ type, System::String ^ key, System::String ^ script, bool addScriptTags);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1046,10 +1150,21 @@ function DoClick() {Form1.Message.value='Text from include script.'}
         <altmember cref="M:System.Web.UI.ClientScriptManager.RegisterClientScriptBlock(System.Type,System.String,System.String)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="RegisterClientScriptInclude">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Registers the client script include with the <see cref="T:System.Web.UI.Page" /> object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="RegisterClientScriptInclude">
       <MemberSignature Language="C#" Value="public void RegisterClientScriptInclude (string key, string url);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RegisterClientScriptInclude(string key, string url) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ClientScriptManager.RegisterClientScriptInclude(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RegisterClientScriptInclude (key As String, url As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RegisterClientScriptInclude(System::String ^ key, System::String ^ url);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1096,6 +1211,7 @@ function DoClick() {Form1.Message.value='Text from include script.'}
       <MemberSignature Language="C#" Value="public void RegisterClientScriptInclude (Type type, string key, string url);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RegisterClientScriptInclude(class System.Type type, string key, string url) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ClientScriptManager.RegisterClientScriptInclude(System.Type,System.String,System.String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RegisterClientScriptInclude(Type ^ type, System::String ^ key, System::String ^ url);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1155,6 +1271,7 @@ function DoClick() {Form1.Message.value='Text from include script.'}
       <MemberSignature Language="C#" Value="public void RegisterClientScriptResource (Type type, string resourceName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RegisterClientScriptResource(class System.Type type, string resourceName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ClientScriptManager.RegisterClientScriptResource(System.Type,System.String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RegisterClientScriptResource(Type ^ type, System::String ^ resourceName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1211,10 +1328,21 @@ function DoClick() {Form1.Message.value='Text from resource script.'}
         <altmember cref="T:System.Web.UI.WebResourceAttribute" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="RegisterExpandoAttribute">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Registers a name/value pair as a custom (expando) attribute of the specified control.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="RegisterExpandoAttribute">
       <MemberSignature Language="C#" Value="public void RegisterExpandoAttribute (string controlId, string attributeName, string attributeValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RegisterExpandoAttribute(string controlId, string attributeName, string attributeValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ClientScriptManager.RegisterExpandoAttribute(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RegisterExpandoAttribute (controlId As String, attributeName As String, attributeValue As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RegisterExpandoAttribute(System::String ^ controlId, System::String ^ attributeName, System::String ^ attributeValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1250,6 +1378,8 @@ function DoClick() {Form1.Message.value='Text from resource script.'}
       <MemberSignature Language="C#" Value="public void RegisterExpandoAttribute (string controlId, string attributeName, string attributeValue, bool encode);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RegisterExpandoAttribute(string controlId, string attributeName, string attributeValue, bool encode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ClientScriptManager.RegisterExpandoAttribute(System.String,System.String,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RegisterExpandoAttribute (controlId As String, attributeName As String, attributeValue As String, encode As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RegisterExpandoAttribute(System::String ^ controlId, System::String ^ attributeName, System::String ^ attributeValue, bool encode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1291,10 +1421,21 @@ function DoClick() {Form1.Message.value='Text from resource script.'}
         <altmember cref="T:Microsoft.JScript.Expando" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="RegisterForEventValidation">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Registers an event reference for validation.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="RegisterForEventValidation">
       <MemberSignature Language="C#" Value="public void RegisterForEventValidation (string uniqueId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RegisterForEventValidation(string uniqueId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ClientScriptManager.RegisterForEventValidation(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RegisterForEventValidation (uniqueId As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RegisterForEventValidation(System::String ^ uniqueId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1332,6 +1473,8 @@ function DoClick() {Form1.Message.value='Text from resource script.'}
       <MemberSignature Language="C#" Value="public void RegisterForEventValidation (System.Web.UI.PostBackOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RegisterForEventValidation(class System.Web.UI.PostBackOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ClientScriptManager.RegisterForEventValidation(System.Web.UI.PostBackOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RegisterForEventValidation (options As PostBackOptions)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RegisterForEventValidation(System::Web::UI::PostBackOptions ^ options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1361,6 +1504,8 @@ function DoClick() {Form1.Message.value='Text from resource script.'}
       <MemberSignature Language="C#" Value="public void RegisterForEventValidation (string uniqueId, string argument);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RegisterForEventValidation(string uniqueId, string argument) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ClientScriptManager.RegisterForEventValidation(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RegisterForEventValidation (uniqueId As String, argument As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RegisterForEventValidation(System::String ^ uniqueId, System::String ^ argument);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1401,6 +1546,8 @@ function DoClick() {Form1.Message.value='Text from resource script.'}
       <MemberSignature Language="C#" Value="public void RegisterHiddenField (string hiddenFieldName, string hiddenFieldInitialValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RegisterHiddenField(string hiddenFieldName, string hiddenFieldInitialValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ClientScriptManager.RegisterHiddenField(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RegisterHiddenField (hiddenFieldName As String, hiddenFieldInitialValue As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RegisterHiddenField(System::String ^ hiddenFieldName, System::String ^ hiddenFieldInitialValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1442,6 +1589,7 @@ function DoClick() {Form1.Message.value='Text from resource script.'}
       <MemberSignature Language="C#" Value="public void RegisterOnSubmitStatement (Type type, string key, string script);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RegisterOnSubmitStatement(class System.Type type, string key, string script) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ClientScriptManager.RegisterOnSubmitStatement(System.Type,System.String,System.String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RegisterOnSubmitStatement(Type ^ type, System::String ^ key, System::String ^ script);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1490,10 +1638,20 @@ function DoClick() {Form1.Message.value='Text from resource script.'}
         <altmember cref="Overload:System.Web.UI.ClientScriptManager.IsOnSubmitStatementRegistered" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="RegisterStartupScript">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Registers the startup script with the <see cref="T:System.Web.UI.Page" /> object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="RegisterStartupScript">
       <MemberSignature Language="C#" Value="public void RegisterStartupScript (Type type, string key, string script);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RegisterStartupScript(class System.Type type, string key, string script) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ClientScriptManager.RegisterStartupScript(System.Type,System.String,System.String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RegisterStartupScript(Type ^ type, System::String ^ key, System::String ^ script);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1541,6 +1699,7 @@ function DoClick() {Form1.Message.value='Text from resource script.'}
       <MemberSignature Language="C#" Value="public void RegisterStartupScript (Type type, string key, string script, bool addScriptTags);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RegisterStartupScript(class System.Type type, string key, string script, bool addScriptTags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ClientScriptManager.RegisterStartupScript(System.Type,System.String,System.String,System.Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RegisterStartupScript(Type ^ type, System::String ^ key, System::String ^ script, bool addScriptTags);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1589,10 +1748,21 @@ function DoClick() {Form1.Message.value='Text from resource script.'}
         <altmember cref="F:System.Web.UI.HtmlTextWriterTag.Script" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ValidateEvent">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Validates a client event.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ValidateEvent">
       <MemberSignature Language="C#" Value="public void ValidateEvent (string uniqueId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ValidateEvent(string uniqueId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ClientScriptManager.ValidateEvent(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ValidateEvent (uniqueId As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ValidateEvent(System::String ^ uniqueId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1615,6 +1785,8 @@ function DoClick() {Form1.Message.value='Text from resource script.'}
       <MemberSignature Language="C#" Value="public void ValidateEvent (string uniqueId, string argument);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ValidateEvent(string uniqueId, string argument) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ClientScriptManager.ValidateEvent(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ValidateEvent (uniqueId As String, argument As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ValidateEvent(System::String ^ uniqueId, System::String ^ argument);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1647,122 +1819,5 @@ function DoClick() {Form1.Message.value='Text from resource script.'}
         <altmember cref="M:System.Web.UI.ClientScriptManager.RegisterForEventValidation(System.String,System.String)" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetPostBackEventReference">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a string that can be used in a client event to cause postback to the server.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="IsOnSubmitStatementRegistered">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Determines whether the OnSubmit statement is registered with the <see cref="T:System.Web.UI.Page" /> object.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="RegisterClientScriptBlock">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Registers the client script with the <see cref="T:System.Web.UI.Page" /> object.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ValidateEvent">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Validates a client event.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetCallbackEventReference">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Obtains a reference to a client function that, when invoked, initiates a client call back to a server event.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="RegisterClientScriptInclude">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Registers the client script include with the <see cref="T:System.Web.UI.Page" /> object.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="IsClientScriptIncludeRegistered">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Determines whether the client script include is registered with the <see cref="T:System.Web.UI.Page" /> object.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="IsStartupScriptRegistered">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Determines whether the startup script is registered with the <see cref="T:System.Web.UI.Page" /> object.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetPostBackClientHyperlink">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets a reference, with <see langword="javascript:" /> appended to the beginning of it, that can be used in a client event to post back to the server.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="IsClientScriptBlockRegistered">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Determines whether the client script block is registered with the <see cref="T:System.Web.UI.Page" /> object.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="RegisterStartupScript">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Registers the startup script with the <see cref="T:System.Web.UI.Page" /> object.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="RegisterForEventValidation">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Registers an event reference for validation.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="RegisterExpandoAttribute">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Registers a name/value pair as a custom (expando) attribute of the specified control.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

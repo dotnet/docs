@@ -1,7 +1,9 @@
-<Type Name="DateRangeEventHandler" FullName="System.Windows.Forms.DateRangeEventHandler">
+﻿<Type Name="DateRangeEventHandler" FullName="System.Windows.Forms.DateRangeEventHandler">
   <TypeSignature Language="C#" Value="public delegate void DateRangeEventHandler(object sender, DateRangeEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DateRangeEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DateRangeEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub DateRangeEventHandler(sender As Object, e As DateRangeEventArgs)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void DateRangeEventHandler(System::Object ^ sender, DateRangeEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

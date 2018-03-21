@@ -1,7 +1,9 @@
-<Type Name="SolutionWrapperProject" FullName="Microsoft.Build.BuildEngine.SolutionWrapperProject">
+﻿<Type Name="SolutionWrapperProject" FullName="Microsoft.Build.BuildEngine.SolutionWrapperProject">
   <TypeSignature Language="C#" Value="public static class SolutionWrapperProject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit SolutionWrapperProject extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.BuildEngine.SolutionWrapperProject" />
+  <TypeSignature Language="VB.NET" Value="Public Class SolutionWrapperProject" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SolutionWrapperProject abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Engine</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public static string Generate (string solutionPath, string toolsVersionOverride, Microsoft.Build.Framework.BuildEventContext projectBuildEventContext);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Generate(string solutionPath, string toolsVersionOverride, class Microsoft.Build.Framework.BuildEventContext projectBuildEventContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.SolutionWrapperProject.Generate(System.String,System.String,Microsoft.Build.Framework.BuildEventContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Generate (solutionPath As String, toolsVersionOverride As String, projectBuildEventContext As BuildEventContext) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Generate(System::String ^ solutionPath, System::String ^ toolsVersionOverride, Microsoft::Build::Framework::BuildEventContext ^ projectBuildEventContext);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>

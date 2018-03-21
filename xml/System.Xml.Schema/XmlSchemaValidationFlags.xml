@@ -1,7 +1,9 @@
-<Type Name="XmlSchemaValidationFlags" FullName="System.Xml.Schema.XmlSchemaValidationFlags">
+﻿<Type Name="XmlSchemaValidationFlags" FullName="System.Xml.Schema.XmlSchemaValidationFlags">
   <TypeSignature Language="C#" Value="public enum XmlSchemaValidationFlags" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XmlSchemaValidationFlags extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaValidationFlags" />
+  <TypeSignature Language="VB.NET" Value="Public Enum XmlSchemaValidationFlags" />
+  <TypeSignature Language="C++ CLI" Value="public enum class XmlSchemaValidationFlags" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -99,6 +101,8 @@
       <MemberSignature Language="C#" Value="AllowXmlAttributes" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Schema.XmlSchemaValidationFlags AllowXmlAttributes = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlSchemaValidationFlags.AllowXmlAttributes" />
+      <MemberSignature Language="VB.NET" Value="AllowXmlAttributes" />
+      <MemberSignature Language="C++ CLI" Value="AllowXmlAttributes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -116,6 +120,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlSchemaValidationFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>Allow xml:* attributes even if they are not defined in the schema. The attributes will be validated based on their data type.</summary>
       </Docs>
@@ -124,6 +129,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Schema.XmlSchemaValidationFlags None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlSchemaValidationFlags.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -141,6 +148,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlSchemaValidationFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Do not process identity constraints, inline schemas, schema location hints, or report schema validation warnings.</summary>
       </Docs>
@@ -149,6 +157,8 @@
       <MemberSignature Language="C#" Value="ProcessIdentityConstraints" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Schema.XmlSchemaValidationFlags ProcessIdentityConstraints = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlSchemaValidationFlags.ProcessIdentityConstraints" />
+      <MemberSignature Language="VB.NET" Value="ProcessIdentityConstraints" />
+      <MemberSignature Language="C++ CLI" Value="ProcessIdentityConstraints" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -166,6 +176,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlSchemaValidationFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>Process identity constraints (<c>xs:ID</c>, <c>xs:IDREF</c>, <c>xs:key</c>, <c>xs:keyref</c>, <c>xs:unique</c>) encountered during validation.</summary>
       </Docs>
@@ -174,6 +185,8 @@
       <MemberSignature Language="C#" Value="ProcessInlineSchema" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Schema.XmlSchemaValidationFlags ProcessInlineSchema = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlSchemaValidationFlags.ProcessInlineSchema" />
+      <MemberSignature Language="VB.NET" Value="ProcessInlineSchema" />
+      <MemberSignature Language="C++ CLI" Value="ProcessInlineSchema" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -191,6 +204,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlSchemaValidationFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Process inline schemas encountered during validation.</summary>
       </Docs>
@@ -199,6 +213,8 @@
       <MemberSignature Language="C#" Value="ProcessSchemaLocation" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Schema.XmlSchemaValidationFlags ProcessSchemaLocation = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlSchemaValidationFlags.ProcessSchemaLocation" />
+      <MemberSignature Language="VB.NET" Value="ProcessSchemaLocation" />
+      <MemberSignature Language="C++ CLI" Value="ProcessSchemaLocation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -216,6 +232,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlSchemaValidationFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Process schema location hints (<c>xsi:schemaLocation</c>, <c>xsi:noNamespaceSchemaLocation</c>) encountered during validation.</summary>
       </Docs>
@@ -224,6 +241,8 @@
       <MemberSignature Language="C#" Value="ReportValidationWarnings" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Schema.XmlSchemaValidationFlags ReportValidationWarnings = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlSchemaValidationFlags.ReportValidationWarnings" />
+      <MemberSignature Language="VB.NET" Value="ReportValidationWarnings" />
+      <MemberSignature Language="C++ CLI" Value="ReportValidationWarnings" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -241,6 +260,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlSchemaValidationFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Report schema validation warnings encountered during validation.</summary>
       </Docs>

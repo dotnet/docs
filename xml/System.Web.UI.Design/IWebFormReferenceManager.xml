@@ -1,7 +1,9 @@
-<Type Name="IWebFormReferenceManager" FullName="System.Web.UI.Design.IWebFormReferenceManager">
+﻿<Type Name="IWebFormReferenceManager" FullName="System.Web.UI.Design.IWebFormReferenceManager">
   <TypeSignature Language="C#" Value="public interface IWebFormReferenceManager" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWebFormReferenceManager" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.IWebFormReferenceManager" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IWebFormReferenceManager" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IWebFormReferenceManager" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +35,8 @@
       <MemberSignature Language="C#" Value="public Type GetObjectType (string tagPrefix, string typeName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type GetObjectType(string tagPrefix, string typeName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IWebFormReferenceManager.GetObjectType(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetObjectType (tagPrefix As String, typeName As String) As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Type ^ GetObjectType(System::String ^ tagPrefix, System::String ^ typeName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -67,6 +71,8 @@
       <MemberSignature Language="C#" Value="public string GetRegisterDirectives ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetRegisterDirectives() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IWebFormReferenceManager.GetRegisterDirectives" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetRegisterDirectives () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetRegisterDirectives();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -96,6 +102,8 @@
       <MemberSignature Language="C#" Value="public string GetTagPrefix (Type objectType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetTagPrefix(class System.Type objectType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IWebFormReferenceManager.GetTagPrefix(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetTagPrefix (objectType As Type) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetTagPrefix(Type ^ objectType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

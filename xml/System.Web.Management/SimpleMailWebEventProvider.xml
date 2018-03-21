@@ -1,7 +1,9 @@
-<Type Name="SimpleMailWebEventProvider" FullName="System.Web.Management.SimpleMailWebEventProvider">
+﻿<Type Name="SimpleMailWebEventProvider" FullName="System.Web.Management.SimpleMailWebEventProvider">
   <TypeSignature Language="C#" Value="public sealed class SimpleMailWebEventProvider : System.Web.Management.MailWebEventProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SimpleMailWebEventProvider extends System.Web.Management.MailWebEventProvider" />
   <TypeSignature Language="DocId" Value="T:System.Web.Management.SimpleMailWebEventProvider" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SimpleMailWebEventProvider&#xA;Inherits MailWebEventProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SimpleMailWebEventProvider sealed : System::Web::Management::MailWebEventProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -111,6 +113,8 @@
       <MemberSignature Language="C#" Value="public override void Initialize (string name, System.Collections.Specialized.NameValueCollection config);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Initialize(string name, class System.Collections.Specialized.NameValueCollection config) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Management.SimpleMailWebEventProvider.Initialize(System.String,System.Collections.Specialized.NameValueCollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize (name As String, config As NameValueCollection)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize(System::String ^ name, System::Collections::Specialized::NameValueCollection ^ config);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

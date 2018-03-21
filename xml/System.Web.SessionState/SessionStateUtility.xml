@@ -1,7 +1,9 @@
-<Type Name="SessionStateUtility" FullName="System.Web.SessionState.SessionStateUtility">
+﻿<Type Name="SessionStateUtility" FullName="System.Web.SessionState.SessionStateUtility">
   <TypeSignature Language="C#" Value="public static class SessionStateUtility" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit SessionStateUtility extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.SessionState.SessionStateUtility" />
+  <TypeSignature Language="VB.NET" Value="Public Class SessionStateUtility" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SessionStateUtility abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -61,6 +63,8 @@
       <MemberSignature Language="C#" Value="public static void AddHttpSessionStateToContext (System.Web.HttpContext context, System.Web.SessionState.IHttpSessionState container);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AddHttpSessionStateToContext(class System.Web.HttpContext context, class System.Web.SessionState.IHttpSessionState container) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.SessionStateUtility.AddHttpSessionStateToContext(System.Web.HttpContext,System.Web.SessionState.IHttpSessionState)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub AddHttpSessionStateToContext (context As HttpContext, container As IHttpSessionState)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddHttpSessionStateToContext(System::Web::HttpContext ^ context, System::Web::SessionState::IHttpSessionState ^ container);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -100,6 +104,8 @@
       <MemberSignature Language="C#" Value="public static System.Web.SessionState.IHttpSessionState GetHttpSessionStateFromContext (System.Web.HttpContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.SessionState.IHttpSessionState GetHttpSessionStateFromContext(class System.Web.HttpContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.SessionStateUtility.GetHttpSessionStateFromContext(System.Web.HttpContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetHttpSessionStateFromContext (context As HttpContext) As IHttpSessionState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::SessionState::IHttpSessionState ^ GetHttpSessionStateFromContext(System::Web::HttpContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -140,6 +146,8 @@
       <MemberSignature Language="C#" Value="public static System.Web.HttpStaticObjectsCollection GetSessionStaticObjects (System.Web.HttpContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.HttpStaticObjectsCollection GetSessionStaticObjects(class System.Web.HttpContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.SessionStateUtility.GetSessionStaticObjects(System.Web.HttpContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetSessionStaticObjects (context As HttpContext) As HttpStaticObjectsCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::HttpStaticObjectsCollection ^ GetSessionStaticObjects(System::Web::HttpContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -179,6 +187,8 @@
       <MemberSignature Language="C#" Value="public static bool IsSessionStateReadOnly (System.Web.HttpContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsSessionStateReadOnly(class System.Web.HttpContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.SessionStateUtility.IsSessionStateReadOnly(System.Web.HttpContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsSessionStateReadOnly (context As HttpContext) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsSessionStateReadOnly(System::Web::HttpContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -202,6 +212,8 @@
       <MemberSignature Language="C#" Value="public static bool IsSessionStateRequired (System.Web.HttpContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsSessionStateRequired(class System.Web.HttpContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.SessionStateUtility.IsSessionStateRequired(System.Web.HttpContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsSessionStateRequired (context As HttpContext) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsSessionStateRequired(System::Web::HttpContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -225,6 +237,7 @@
       <MemberSignature Language="C#" Value="public static void RaiseSessionEnd (System.Web.SessionState.IHttpSessionState session, object eventSource, EventArgs eventArgs);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RaiseSessionEnd(class System.Web.SessionState.IHttpSessionState session, object eventSource, class System.EventArgs eventArgs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.SessionStateUtility.RaiseSessionEnd(System.Web.SessionState.IHttpSessionState,System.Object,System.EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RaiseSessionEnd(System::Web::SessionState::IHttpSessionState ^ session, System::Object ^ eventSource, EventArgs ^ eventArgs);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -265,6 +278,8 @@
       <MemberSignature Language="C#" Value="public static void RemoveHttpSessionStateFromContext (System.Web.HttpContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RemoveHttpSessionStateFromContext(class System.Web.HttpContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.SessionStateUtility.RemoveHttpSessionStateFromContext(System.Web.HttpContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveHttpSessionStateFromContext (context As HttpContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveHttpSessionStateFromContext(System::Web::HttpContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -301,6 +316,8 @@
       <MemberSignature Language="C#" Value="public static System.Runtime.Serialization.ISurrogateSelector SerializationSurrogateSelector { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Runtime.Serialization.ISurrogateSelector SerializationSurrogateSelector" />
       <MemberSignature Language="DocId" Value="P:System.Web.SessionState.SessionStateUtility.SerializationSurrogateSelector" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property SerializationSurrogateSelector As ISurrogateSelector" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Runtime::Serialization::ISurrogateSelector ^ SerializationSurrogateSelector { System::Runtime::Serialization::ISurrogateSelector ^ get(); void set(System::Runtime::Serialization::ISurrogateSelector ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

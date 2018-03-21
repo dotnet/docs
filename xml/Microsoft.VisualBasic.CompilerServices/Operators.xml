@@ -1,7 +1,9 @@
-<Type Name="Operators" FullName="Microsoft.VisualBasic.CompilerServices.Operators">
+﻿<Type Name="Operators" FullName="Microsoft.VisualBasic.CompilerServices.Operators">
   <TypeSignature Language="C#" Value="public sealed class Operators" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Operators extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.CompilerServices.Operators" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Operators" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Operators sealed" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -32,6 +34,8 @@
       <MemberSignature Language="C#" Value="public static object AddObject (object Left, object Right);" />
       <MemberSignature Language="ILAsm" Value=".method public static object AddObject(object Left, object Right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Operators.AddObject(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AddObject (Left As Object, Right As Object) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ AddObject(System::Object ^ Left, System::Object ^ Right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -64,6 +68,8 @@
       <MemberSignature Language="C#" Value="public static object AndObject (object Left, object Right);" />
       <MemberSignature Language="ILAsm" Value=".method public static object AndObject(object Left, object Right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Operators.AndObject(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AndObject (Left As Object, Right As Object) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ AndObject(System::Object ^ Left, System::Object ^ Right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -96,6 +102,8 @@
       <MemberSignature Language="C#" Value="public static int CompareObject (object Left, object Right, bool TextCompare);" />
       <MemberSignature Language="ILAsm" Value=".method public static int32 CompareObject(object Left, object Right, bool TextCompare) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Operators.CompareObject(System.Object,System.Object,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CompareObject (Left As Object, Right As Object, TextCompare As Boolean) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int CompareObject(System::Object ^ Left, System::Object ^ Right, bool TextCompare);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -168,6 +176,8 @@
       <MemberSignature Language="C#" Value="public static object CompareObjectEqual (object Left, object Right, bool TextCompare);" />
       <MemberSignature Language="ILAsm" Value=".method public static object CompareObjectEqual(object Left, object Right, bool TextCompare) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Operators.CompareObjectEqual(System.Object,System.Object,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CompareObjectEqual (Left As Object, Right As Object, TextCompare As Boolean) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ CompareObjectEqual(System::Object ^ Left, System::Object ^ Right, bool TextCompare);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -203,6 +213,8 @@
       <MemberSignature Language="C#" Value="public static object CompareObjectGreater (object Left, object Right, bool TextCompare);" />
       <MemberSignature Language="ILAsm" Value=".method public static object CompareObjectGreater(object Left, object Right, bool TextCompare) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Operators.CompareObjectGreater(System.Object,System.Object,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CompareObjectGreater (Left As Object, Right As Object, TextCompare As Boolean) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ CompareObjectGreater(System::Object ^ Left, System::Object ^ Right, bool TextCompare);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -238,6 +250,8 @@
       <MemberSignature Language="C#" Value="public static object CompareObjectGreaterEqual (object Left, object Right, bool TextCompare);" />
       <MemberSignature Language="ILAsm" Value=".method public static object CompareObjectGreaterEqual(object Left, object Right, bool TextCompare) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Operators.CompareObjectGreaterEqual(System.Object,System.Object,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CompareObjectGreaterEqual (Left As Object, Right As Object, TextCompare As Boolean) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ CompareObjectGreaterEqual(System::Object ^ Left, System::Object ^ Right, bool TextCompare);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -273,6 +287,8 @@
       <MemberSignature Language="C#" Value="public static object CompareObjectLess (object Left, object Right, bool TextCompare);" />
       <MemberSignature Language="ILAsm" Value=".method public static object CompareObjectLess(object Left, object Right, bool TextCompare) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Operators.CompareObjectLess(System.Object,System.Object,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CompareObjectLess (Left As Object, Right As Object, TextCompare As Boolean) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ CompareObjectLess(System::Object ^ Left, System::Object ^ Right, bool TextCompare);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -308,6 +324,8 @@
       <MemberSignature Language="C#" Value="public static object CompareObjectLessEqual (object Left, object Right, bool TextCompare);" />
       <MemberSignature Language="ILAsm" Value=".method public static object CompareObjectLessEqual(object Left, object Right, bool TextCompare) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Operators.CompareObjectLessEqual(System.Object,System.Object,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CompareObjectLessEqual (Left As Object, Right As Object, TextCompare As Boolean) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ CompareObjectLessEqual(System::Object ^ Left, System::Object ^ Right, bool TextCompare);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -343,6 +361,8 @@
       <MemberSignature Language="C#" Value="public static object CompareObjectNotEqual (object Left, object Right, bool TextCompare);" />
       <MemberSignature Language="ILAsm" Value=".method public static object CompareObjectNotEqual(object Left, object Right, bool TextCompare) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Operators.CompareObjectNotEqual(System.Object,System.Object,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CompareObjectNotEqual (Left As Object, Right As Object, TextCompare As Boolean) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ CompareObjectNotEqual(System::Object ^ Left, System::Object ^ Right, bool TextCompare);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -378,6 +398,8 @@
       <MemberSignature Language="C#" Value="public static int CompareString (string Left, string Right, bool TextCompare);" />
       <MemberSignature Language="ILAsm" Value=".method public static int32 CompareString(string Left, string Right, bool TextCompare) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Operators.CompareString(System.String,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CompareString (Left As String, Right As String, TextCompare As Boolean) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int CompareString(System::String ^ Left, System::String ^ Right, bool TextCompare);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -452,6 +474,8 @@
       <MemberSignature Language="C#" Value="public static object ConcatenateObject (object Left, object Right);" />
       <MemberSignature Language="ILAsm" Value=".method public static object ConcatenateObject(object Left, object Right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Operators.ConcatenateObject(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ConcatenateObject (Left As Object, Right As Object) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ ConcatenateObject(System::Object ^ Left, System::Object ^ Right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -484,6 +508,8 @@
       <MemberSignature Language="C#" Value="public static bool ConditionalCompareObjectEqual (object Left, object Right, bool TextCompare);" />
       <MemberSignature Language="ILAsm" Value=".method public static bool ConditionalCompareObjectEqual(object Left, object Right, bool TextCompare) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Operators.ConditionalCompareObjectEqual(System.Object,System.Object,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ConditionalCompareObjectEqual (Left As Object, Right As Object, TextCompare As Boolean) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool ConditionalCompareObjectEqual(System::Object ^ Left, System::Object ^ Right, bool TextCompare);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -518,6 +544,8 @@
       <MemberSignature Language="C#" Value="public static bool ConditionalCompareObjectGreater (object Left, object Right, bool TextCompare);" />
       <MemberSignature Language="ILAsm" Value=".method public static bool ConditionalCompareObjectGreater(object Left, object Right, bool TextCompare) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Operators.ConditionalCompareObjectGreater(System.Object,System.Object,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ConditionalCompareObjectGreater (Left As Object, Right As Object, TextCompare As Boolean) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool ConditionalCompareObjectGreater(System::Object ^ Left, System::Object ^ Right, bool TextCompare);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -552,6 +580,8 @@
       <MemberSignature Language="C#" Value="public static bool ConditionalCompareObjectGreaterEqual (object Left, object Right, bool TextCompare);" />
       <MemberSignature Language="ILAsm" Value=".method public static bool ConditionalCompareObjectGreaterEqual(object Left, object Right, bool TextCompare) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Operators.ConditionalCompareObjectGreaterEqual(System.Object,System.Object,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ConditionalCompareObjectGreaterEqual (Left As Object, Right As Object, TextCompare As Boolean) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool ConditionalCompareObjectGreaterEqual(System::Object ^ Left, System::Object ^ Right, bool TextCompare);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -586,6 +616,8 @@
       <MemberSignature Language="C#" Value="public static bool ConditionalCompareObjectLess (object Left, object Right, bool TextCompare);" />
       <MemberSignature Language="ILAsm" Value=".method public static bool ConditionalCompareObjectLess(object Left, object Right, bool TextCompare) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Operators.ConditionalCompareObjectLess(System.Object,System.Object,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ConditionalCompareObjectLess (Left As Object, Right As Object, TextCompare As Boolean) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool ConditionalCompareObjectLess(System::Object ^ Left, System::Object ^ Right, bool TextCompare);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -620,6 +652,8 @@
       <MemberSignature Language="C#" Value="public static bool ConditionalCompareObjectLessEqual (object Left, object Right, bool TextCompare);" />
       <MemberSignature Language="ILAsm" Value=".method public static bool ConditionalCompareObjectLessEqual(object Left, object Right, bool TextCompare) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Operators.ConditionalCompareObjectLessEqual(System.Object,System.Object,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ConditionalCompareObjectLessEqual (Left As Object, Right As Object, TextCompare As Boolean) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool ConditionalCompareObjectLessEqual(System::Object ^ Left, System::Object ^ Right, bool TextCompare);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -654,6 +688,8 @@
       <MemberSignature Language="C#" Value="public static bool ConditionalCompareObjectNotEqual (object Left, object Right, bool TextCompare);" />
       <MemberSignature Language="ILAsm" Value=".method public static bool ConditionalCompareObjectNotEqual(object Left, object Right, bool TextCompare) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Operators.ConditionalCompareObjectNotEqual(System.Object,System.Object,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ConditionalCompareObjectNotEqual (Left As Object, Right As Object, TextCompare As Boolean) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool ConditionalCompareObjectNotEqual(System::Object ^ Left, System::Object ^ Right, bool TextCompare);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -688,6 +724,8 @@
       <MemberSignature Language="C#" Value="public static object DivideObject (object Left, object Right);" />
       <MemberSignature Language="ILAsm" Value=".method public static object DivideObject(object Left, object Right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Operators.DivideObject(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DivideObject (Left As Object, Right As Object) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ DivideObject(System::Object ^ Left, System::Object ^ Right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -720,6 +758,8 @@
       <MemberSignature Language="C#" Value="public static object ExponentObject (object Left, object Right);" />
       <MemberSignature Language="ILAsm" Value=".method public static object ExponentObject(object Left, object Right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Operators.ExponentObject(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ExponentObject (Left As Object, Right As Object) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ ExponentObject(System::Object ^ Left, System::Object ^ Right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -752,6 +792,8 @@
       <MemberSignature Language="C#" Value="public static object FallbackInvokeUserDefinedOperator (object vbOp, object[] Arguments);" />
       <MemberSignature Language="ILAsm" Value=".method public static object FallbackInvokeUserDefinedOperator(object vbOp, object[] Arguments) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Operators.FallbackInvokeUserDefinedOperator(System.Object,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FallbackInvokeUserDefinedOperator (vbOp As Object, Arguments As Object()) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ FallbackInvokeUserDefinedOperator(System::Object ^ vbOp, cli::array &lt;System::Object ^&gt; ^ Arguments);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -785,6 +827,8 @@
       <MemberSignature Language="C#" Value="public static object IntDivideObject (object Left, object Right);" />
       <MemberSignature Language="ILAsm" Value=".method public static object IntDivideObject(object Left, object Right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Operators.IntDivideObject(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IntDivideObject (Left As Object, Right As Object) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ IntDivideObject(System::Object ^ Left, System::Object ^ Right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -817,6 +861,8 @@
       <MemberSignature Language="C#" Value="public static object LeftShiftObject (object Operand, object Amount);" />
       <MemberSignature Language="ILAsm" Value=".method public static object LeftShiftObject(object Operand, object Amount) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Operators.LeftShiftObject(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function LeftShiftObject (Operand As Object, Amount As Object) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ LeftShiftObject(System::Object ^ Operand, System::Object ^ Amount);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -849,6 +895,8 @@
       <MemberSignature Language="C#" Value="public static object LikeObject (object Source, object Pattern, Microsoft.VisualBasic.CompareMethod CompareOption);" />
       <MemberSignature Language="ILAsm" Value=".method public static object LikeObject(object Source, object Pattern, valuetype Microsoft.VisualBasic.CompareMethod CompareOption) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Operators.LikeObject(System.Object,System.Object,Microsoft.VisualBasic.CompareMethod)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function LikeObject (Source As Object, Pattern As Object, CompareOption As CompareMethod) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ LikeObject(System::Object ^ Source, System::Object ^ Pattern, Microsoft::VisualBasic::CompareMethod CompareOption);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -884,6 +932,8 @@
       <MemberSignature Language="C#" Value="public static bool LikeString (string Source, string Pattern, Microsoft.VisualBasic.CompareMethod CompareOption);" />
       <MemberSignature Language="ILAsm" Value=".method public static bool LikeString(string Source, string Pattern, valuetype Microsoft.VisualBasic.CompareMethod CompareOption) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Operators.LikeString(System.String,System.String,Microsoft.VisualBasic.CompareMethod)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function LikeString (Source As String, Pattern As String, CompareOption As CompareMethod) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool LikeString(System::String ^ Source, System::String ^ Pattern, Microsoft::VisualBasic::CompareMethod CompareOption);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -919,6 +969,8 @@
       <MemberSignature Language="C#" Value="public static object ModObject (object Left, object Right);" />
       <MemberSignature Language="ILAsm" Value=".method public static object ModObject(object Left, object Right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Operators.ModObject(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ModObject (Left As Object, Right As Object) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ ModObject(System::Object ^ Left, System::Object ^ Right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -951,6 +1003,8 @@
       <MemberSignature Language="C#" Value="public static object MultiplyObject (object Left, object Right);" />
       <MemberSignature Language="ILAsm" Value=".method public static object MultiplyObject(object Left, object Right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Operators.MultiplyObject(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MultiplyObject (Left As Object, Right As Object) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ MultiplyObject(System::Object ^ Left, System::Object ^ Right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -983,6 +1037,8 @@
       <MemberSignature Language="C#" Value="public static object NegateObject (object Operand);" />
       <MemberSignature Language="ILAsm" Value=".method public static object NegateObject(object Operand) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Operators.NegateObject(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function NegateObject (Operand As Object) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ NegateObject(System::Object ^ Operand);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1013,6 +1069,8 @@
       <MemberSignature Language="C#" Value="public static object NotObject (object Operand);" />
       <MemberSignature Language="ILAsm" Value=".method public static object NotObject(object Operand) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Operators.NotObject(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function NotObject (Operand As Object) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ NotObject(System::Object ^ Operand);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1043,6 +1101,8 @@
       <MemberSignature Language="C#" Value="public static object OrObject (object Left, object Right);" />
       <MemberSignature Language="ILAsm" Value=".method public static object OrObject(object Left, object Right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Operators.OrObject(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function OrObject (Left As Object, Right As Object) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ OrObject(System::Object ^ Left, System::Object ^ Right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1075,6 +1135,8 @@
       <MemberSignature Language="C#" Value="public static object PlusObject (object Operand);" />
       <MemberSignature Language="ILAsm" Value=".method public static object PlusObject(object Operand) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Operators.PlusObject(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PlusObject (Operand As Object) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ PlusObject(System::Object ^ Operand);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1105,6 +1167,8 @@
       <MemberSignature Language="C#" Value="public static object RightShiftObject (object Operand, object Amount);" />
       <MemberSignature Language="ILAsm" Value=".method public static object RightShiftObject(object Operand, object Amount) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Operators.RightShiftObject(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function RightShiftObject (Operand As Object, Amount As Object) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ RightShiftObject(System::Object ^ Operand, System::Object ^ Amount);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1137,6 +1201,8 @@
       <MemberSignature Language="C#" Value="public static object SubtractObject (object Left, object Right);" />
       <MemberSignature Language="ILAsm" Value=".method public static object SubtractObject(object Left, object Right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Operators.SubtractObject(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SubtractObject (Left As Object, Right As Object) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ SubtractObject(System::Object ^ Left, System::Object ^ Right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1169,6 +1235,8 @@
       <MemberSignature Language="C#" Value="public static object XorObject (object Left, object Right);" />
       <MemberSignature Language="ILAsm" Value=".method public static object XorObject(object Left, object Right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Operators.XorObject(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function XorObject (Left As Object, Right As Object) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ XorObject(System::Object ^ Left, System::Object ^ Right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

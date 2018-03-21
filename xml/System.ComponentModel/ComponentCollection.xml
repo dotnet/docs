@@ -1,7 +1,9 @@
-<Type Name="ComponentCollection" FullName="System.ComponentModel.ComponentCollection">
+﻿<Type Name="ComponentCollection" FullName="System.ComponentModel.ComponentCollection">
   <TypeSignature Language="C#" Value="public class ComponentCollection : System.Collections.ReadOnlyCollectionBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ComponentCollection extends System.Collections.ReadOnlyCollectionBase" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.ComponentCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class ComponentCollection&#xA;Inherits ReadOnlyCollectionBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ComponentCollection : System::Collections::ReadOnlyCollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -54,6 +56,8 @@
       <MemberSignature Language="C#" Value="public ComponentCollection (System.ComponentModel.IComponent[] components);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ComponentModel.IComponent[] components) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ComponentCollection.#ctor(System.ComponentModel.IComponent[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (components As IComponent())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ComponentCollection(cli::array &lt;System::ComponentModel::IComponent ^&gt; ^ components);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -97,6 +101,8 @@
       <MemberSignature Language="C#" Value="public void CopyTo (System.ComponentModel.IComponent[] array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.ComponentModel.IComponent[] array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ComponentCollection.CopyTo(System.ComponentModel.IComponent[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As IComponent(), index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::ComponentModel::IComponent ^&gt; ^ array, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -125,10 +131,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets any component in the collection matching the specified name.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Item">
       <MemberSignature Language="C#" Value="public virtual System.ComponentModel.IComponent this[int index] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.IComponent Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.ComponentCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Overridable ReadOnly Property Item(index As Integer) As IComponent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::IComponent ^ default[int] { System::ComponentModel::IComponent ^ get(int index); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -168,6 +186,8 @@
       <MemberSignature Language="C#" Value="public virtual System.ComponentModel.IComponent this[string name] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.IComponent Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.ComponentCollection.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Overridable ReadOnly Property Item(name As String) As IComponent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::IComponent ^ default[System::String ^] { System::ComponentModel::IComponent ^ get(System::String ^ name); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -209,15 +229,5 @@
         <altmember cref="P:System.ComponentModel.Component.Site" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="Item">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets any component in the collection matching the specified name.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

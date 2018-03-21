@@ -1,7 +1,9 @@
-<Type Name="CngKeyCreationOptions" FullName="System.Security.Cryptography.CngKeyCreationOptions">
+﻿<Type Name="CngKeyCreationOptions" FullName="System.Security.Cryptography.CngKeyCreationOptions">
   <TypeSignature Language="C#" Value="public enum CngKeyCreationOptions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CngKeyCreationOptions extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.CngKeyCreationOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Enum CngKeyCreationOptions" />
+  <TypeSignature Language="C++ CLI" Value="public enum class CngKeyCreationOptions" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
@@ -40,6 +42,8 @@
       <MemberSignature Language="C#" Value="MachineKey" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.CngKeyCreationOptions MachineKey = int32(32)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.CngKeyCreationOptions.MachineKey" />
+      <MemberSignature Language="VB.NET" Value="MachineKey" />
+      <MemberSignature Language="C++ CLI" Value="MachineKey" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -58,6 +62,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.CngKeyCreationOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>32</MemberValue>
       <Docs>
         <summary>A machine-wide key is created.</summary>
       </Docs>
@@ -66,6 +71,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.CngKeyCreationOptions None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.CngKeyCreationOptions.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -84,6 +91,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.CngKeyCreationOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>No key creation options are used.</summary>
       </Docs>
@@ -92,6 +100,8 @@
       <MemberSignature Language="C#" Value="OverwriteExistingKey" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.CngKeyCreationOptions OverwriteExistingKey = int32(128)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.CngKeyCreationOptions.OverwriteExistingKey" />
+      <MemberSignature Language="VB.NET" Value="OverwriteExistingKey" />
+      <MemberSignature Language="C++ CLI" Value="OverwriteExistingKey" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -110,6 +120,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.CngKeyCreationOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>128</MemberValue>
       <Docs>
         <summary>The existing key is overwritten during key creation.</summary>
       </Docs>

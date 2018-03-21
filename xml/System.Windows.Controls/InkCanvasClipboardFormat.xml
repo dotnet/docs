@@ -1,7 +1,9 @@
-<Type Name="InkCanvasClipboardFormat" FullName="System.Windows.Controls.InkCanvasClipboardFormat">
+﻿<Type Name="InkCanvasClipboardFormat" FullName="System.Windows.Controls.InkCanvasClipboardFormat">
   <TypeSignature Language="C#" Value="public enum InkCanvasClipboardFormat" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed InkCanvasClipboardFormat extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.InkCanvasClipboardFormat" />
+  <TypeSignature Language="VB.NET" Value="Public Enum InkCanvasClipboardFormat" />
+  <TypeSignature Language="C++ CLI" Value="public enum class InkCanvasClipboardFormat" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +30,8 @@
       <MemberSignature Language="C#" Value="InkSerializedFormat" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.InkCanvasClipboardFormat InkSerializedFormat = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.InkCanvasClipboardFormat.InkSerializedFormat" />
+      <MemberSignature Language="VB.NET" Value="InkSerializedFormat" />
+      <MemberSignature Language="C++ CLI" Value="InkSerializedFormat" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -36,6 +40,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.InkCanvasClipboardFormat</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Indicates that the <see cref="T:System.Windows.Controls.InkCanvas" /> accepts Ink Serialized Format (ISF).</summary>
       </Docs>
@@ -44,6 +49,8 @@
       <MemberSignature Language="C#" Value="Text" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.InkCanvasClipboardFormat Text = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.InkCanvasClipboardFormat.Text" />
+      <MemberSignature Language="VB.NET" Value="Text" />
+      <MemberSignature Language="C++ CLI" Value="Text" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -52,6 +59,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.InkCanvasClipboardFormat</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Indicates that the <see cref="T:System.Windows.Controls.InkCanvas" /> accepts text.</summary>
       </Docs>
@@ -60,6 +68,8 @@
       <MemberSignature Language="C#" Value="Xaml" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.InkCanvasClipboardFormat Xaml = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.InkCanvasClipboardFormat.Xaml" />
+      <MemberSignature Language="VB.NET" Value="Xaml" />
+      <MemberSignature Language="C++ CLI" Value="Xaml" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -68,6 +78,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.InkCanvasClipboardFormat</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Indicates that the <see cref="T:System.Windows.Controls.InkCanvas" /> accepts "Extensible Application Markup Language" (XAML) format.</summary>
       </Docs>

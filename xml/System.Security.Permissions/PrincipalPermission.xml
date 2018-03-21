@@ -1,7 +1,9 @@
-<Type Name="PrincipalPermission" FullName="System.Security.Permissions.PrincipalPermission">
+﻿<Type Name="PrincipalPermission" FullName="System.Security.Permissions.PrincipalPermission">
   <TypeSignature Language="C#" Value="public sealed class PrincipalPermission : System.Security.IPermission, System.Security.Permissions.IUnrestrictedPermission" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit PrincipalPermission extends System.Object implements class System.Security.IPermission, class System.Security.ISecurityEncodable, class System.Security.Permissions.IUnrestrictedPermission" />
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.PrincipalPermission" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PrincipalPermission&#xA;Implements IPermission, IUnrestrictedPermission" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PrincipalPermission sealed : System::Security::IPermission, System::Security::Permissions::IUnrestrictedPermission" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -61,10 +63,22 @@
     <altmember cref="T:System.Security.Permissions.PrincipalPermissionAttribute" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Permissions.PrincipalPermission" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public PrincipalPermission (System.Security.Permissions.PermissionState state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Permissions.PermissionState state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.PrincipalPermission.#ctor(System.Security.Permissions.PermissionState)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (state As PermissionState)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PrincipalPermission(System::Security::Permissions::PermissionState state);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -99,6 +113,8 @@
       <MemberSignature Language="C#" Value="public PrincipalPermission (string name, string role);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, string role) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.PrincipalPermission.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, role As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PrincipalPermission(System::String ^ name, System::String ^ role);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -142,6 +158,8 @@
       <MemberSignature Language="C#" Value="public PrincipalPermission (string name, string role, bool isAuthenticated);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, string role, bool isAuthenticated) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.PrincipalPermission.#ctor(System.String,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, role As String, isAuthenticated As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PrincipalPermission(System::String ^ name, System::String ^ role, bool isAuthenticated);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -177,7 +195,12 @@
       <MemberSignature Language="C#" Value="public System.Security.IPermission Copy ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Security.IPermission Copy() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.PrincipalPermission.Copy" />
+      <MemberSignature Language="VB.NET" Value="Public Function Copy () As IPermission" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::IPermission ^ Copy();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Security.IPermission.Copy</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -208,7 +231,12 @@
       <MemberSignature Language="C#" Value="public void Demand ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Demand() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.PrincipalPermission.Demand" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Demand ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Demand();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Security.IPermission.Demand</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -247,9 +275,11 @@
       </Docs>
     </Member>
     <Member MemberName="Equals">
-      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Security.Permissions.PrincipalPermission.Equals(System.Object)" />
+      <MemberSignature Language="C#" Value="public override bool Equals (object o);" FrameworkAlternate="netcore-2.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object o) cil managed" FrameworkAlternate="netcore-2.0" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Permissions.PrincipalPermission.Equals(System.Object)" FrameworkAlternate="netcore-2.0" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (o As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -260,19 +290,14 @@
         <AssemblyName>System.Security.Permissions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="obj" Type="System.Object" />
+        <Parameter Name="o" Type="System.Object" Index="0" FrameworkAlternate="netcore-2.0" />
       </Parameters>
       <Docs>
-        <param name="obj">The <see cref="T:System.Security.Permissions.PrincipalPermission" /> object to compare with the current <see cref="T:System.Security.Permissions.PrincipalPermission" />.</param>
+        <param name="o">The <see cref="T:System.Security.Permissions.PrincipalPermission" /> object to compare with the current <see cref="T:System.Security.Permissions.PrincipalPermission" />.</param>
         <summary>Determines whether the specified <see cref="T:System.Security.Permissions.PrincipalPermission" /> object is equal to the current <see cref="T:System.Security.Permissions.PrincipalPermission" />.</summary>
         <returns>
           <see langword="true" /> if the specified <see cref="T:System.Security.Permissions.PrincipalPermission" /> is equal to the current <see cref="T:System.Security.Permissions.PrincipalPermission" /> object; otherwise, <see langword="false" />.</returns>
@@ -290,7 +315,12 @@
       <MemberSignature Language="C#" Value="public void FromXml (System.Security.SecurityElement elem);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void FromXml(class System.Security.SecurityElement elem) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.PrincipalPermission.FromXml(System.Security.SecurityElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub FromXml (elem As SecurityElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void FromXml(System::Security::SecurityElement ^ elem);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Security.ISecurityEncodable.FromXml(System.Security.SecurityElement)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -322,6 +352,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.PrincipalPermission.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -358,7 +390,12 @@
       <MemberSignature Language="C#" Value="public System.Security.IPermission Intersect (System.Security.IPermission target);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Security.IPermission Intersect(class System.Security.IPermission target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.PrincipalPermission.Intersect(System.Security.IPermission)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Intersect (target As IPermission) As IPermission" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::IPermission ^ Intersect(System::Security::IPermission ^ target);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Security.IPermission.Intersect(System.Security.IPermission)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -405,7 +442,12 @@
       <MemberSignature Language="C#" Value="public bool IsSubsetOf (System.Security.IPermission target);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsSubsetOf(class System.Security.IPermission target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.PrincipalPermission.IsSubsetOf(System.Security.IPermission)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsSubsetOf (target As IPermission) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsSubsetOf(System::Security::IPermission ^ target);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Security.IPermission.IsSubsetOf(System.Security.IPermission)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -452,7 +494,12 @@
       <MemberSignature Language="C#" Value="public bool IsUnrestricted ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsUnrestricted() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.PrincipalPermission.IsUnrestricted" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsUnrestricted () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsUnrestricted();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Security.Permissions.IUnrestrictedPermission.IsUnrestricted</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -484,6 +531,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.PrincipalPermission.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -508,7 +557,12 @@
       <MemberSignature Language="C#" Value="public System.Security.SecurityElement ToXml ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Security.SecurityElement ToXml() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.PrincipalPermission.ToXml" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToXml () As SecurityElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::SecurityElement ^ ToXml();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Security.ISecurityEncodable.ToXml</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -532,7 +586,12 @@
       <MemberSignature Language="C#" Value="public System.Security.IPermission Union (System.Security.IPermission other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Security.IPermission Union(class System.Security.IPermission other) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.PrincipalPermission.Union(System.Security.IPermission)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Union (other As IPermission) As IPermission" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::IPermission ^ Union(System::Security::IPermission ^ other);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Security.IPermission.Union(System.Security.IPermission)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -569,15 +628,5 @@
         <exception cref="T:System.ArgumentException">The <paramref name="other" /> parameter is an object that is not of the same type as the current permission.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.Permissions.PrincipalPermission" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

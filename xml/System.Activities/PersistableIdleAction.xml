@@ -1,7 +1,9 @@
-<Type Name="PersistableIdleAction" FullName="System.Activities.PersistableIdleAction">
+﻿<Type Name="PersistableIdleAction" FullName="System.Activities.PersistableIdleAction">
   <TypeSignature Language="C#" Value="public enum PersistableIdleAction" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PersistableIdleAction extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Activities.PersistableIdleAction" />
+  <TypeSignature Language="VB.NET" Value="Public Enum PersistableIdleAction" />
+  <TypeSignature Language="C++ CLI" Value="public enum class PersistableIdleAction" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +27,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.PersistableIdleAction None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Activities.PersistableIdleAction.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -33,6 +37,7 @@
       <ReturnValue>
         <ReturnType>System.Activities.PersistableIdleAction</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Specifies that no action is taken.</summary>
       </Docs>
@@ -41,6 +46,8 @@
       <MemberSignature Language="C#" Value="Persist" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.PersistableIdleAction Persist = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Activities.PersistableIdleAction.Persist" />
+      <MemberSignature Language="VB.NET" Value="Persist" />
+      <MemberSignature Language="C++ CLI" Value="Persist" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -49,6 +56,7 @@
       <ReturnValue>
         <ReturnType>System.Activities.PersistableIdleAction</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Specifies that the <see cref="T:System.Activities.WorkflowApplication" /> should persist the workflow.</summary>
       </Docs>
@@ -57,6 +65,8 @@
       <MemberSignature Language="C#" Value="Unload" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.PersistableIdleAction Unload = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Activities.PersistableIdleAction.Unload" />
+      <MemberSignature Language="VB.NET" Value="Unload" />
+      <MemberSignature Language="C++ CLI" Value="Unload" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -65,6 +75,7 @@
       <ReturnValue>
         <ReturnType>System.Activities.PersistableIdleAction</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Specifies that the <see cref="T:System.Activities.WorkflowApplication" /> should persist and unload the workflow.</summary>
       </Docs>

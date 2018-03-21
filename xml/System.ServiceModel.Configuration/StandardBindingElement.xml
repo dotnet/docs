@@ -1,7 +1,9 @@
-<Type Name="StandardBindingElement" FullName="System.ServiceModel.Configuration.StandardBindingElement">
+﻿<Type Name="StandardBindingElement" FullName="System.ServiceModel.Configuration.StandardBindingElement">
   <TypeSignature Language="C#" Value="public abstract class StandardBindingElement : System.ServiceModel.Configuration.ServiceModelConfigurationElement, System.ServiceModel.Configuration.IBindingConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit StandardBindingElement extends System.ServiceModel.Configuration.ServiceModelConfigurationElement implements class System.ServiceModel.Configuration.IBindingConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.StandardBindingElement" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class StandardBindingElement&#xA;Inherits ServiceModelConfigurationElement&#xA;Implements IBindingConfigurationElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StandardBindingElement abstract : System::ServiceModel::Configuration::ServiceModelConfigurationElement, System::ServiceModel::Configuration::IBindingConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,10 +28,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.StandardBindingElement" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected StandardBindingElement ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.StandardBindingElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; StandardBindingElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -45,6 +58,8 @@
       <MemberSignature Language="C#" Value="protected StandardBindingElement (string name);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.StandardBindingElement.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (name As String)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; StandardBindingElement(System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -63,7 +78,11 @@
       <MemberSignature Language="C#" Value="public void ApplyConfiguration (System.ServiceModel.Channels.Binding binding);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ApplyConfiguration(class System.ServiceModel.Channels.Binding binding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.StandardBindingElement.ApplyConfiguration(System.ServiceModel.Channels.Binding)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ApplyConfiguration(System::ServiceModel::Channels::Binding ^ binding);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Configuration.IBindingConfigurationElement.ApplyConfiguration(System.ServiceModel.Channels.Binding)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -94,6 +113,8 @@
       <MemberSignature Language="C#" Value="protected abstract Type BindingElementType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type BindingElementType" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.StandardBindingElement.BindingElementType" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride ReadOnly Property BindingElementType As Type" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract property Type ^ BindingElementType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -112,6 +133,8 @@
       <MemberSignature Language="C#" Value="public TimeSpan CloseTimeout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan CloseTimeout" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.StandardBindingElement.CloseTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public Property CloseTimeout As TimeSpan" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan CloseTimeout { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -135,9 +158,10 @@
       </Docs>
     </Member>
     <Member MemberName="InitializeFrom">
-      <MemberSignature Language="C#" Value="protected virtual void InitializeFrom (System.ServiceModel.Channels.Binding binding);" />
+      <MemberSignature Language="C#" Value="protected internal virtual void InitializeFrom (System.ServiceModel.Channels.Binding binding);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void InitializeFrom(class System.ServiceModel.Channels.Binding binding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.StandardBindingElement.InitializeFrom(System.ServiceModel.Channels.Binding)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void InitializeFrom(System::ServiceModel::Channels::Binding ^ binding);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -162,6 +186,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.StandardBindingElement.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -195,6 +221,7 @@
       <MemberSignature Language="C#" Value="protected abstract void OnApplyConfiguration (System.ServiceModel.Channels.Binding binding);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnApplyConfiguration(class System.ServiceModel.Channels.Binding binding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.StandardBindingElement.OnApplyConfiguration(System.ServiceModel.Channels.Binding)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void OnApplyConfiguration(System::ServiceModel::Channels::Binding ^ binding);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -216,6 +243,8 @@
       <MemberSignature Language="C#" Value="public TimeSpan OpenTimeout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan OpenTimeout" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.StandardBindingElement.OpenTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public Property OpenTimeout As TimeSpan" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan OpenTimeout { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -242,6 +271,8 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.StandardBindingElement.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -260,6 +291,8 @@
       <MemberSignature Language="C#" Value="public TimeSpan ReceiveTimeout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan ReceiveTimeout" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.StandardBindingElement.ReceiveTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReceiveTimeout As TimeSpan" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan ReceiveTimeout { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -286,6 +319,8 @@
       <MemberSignature Language="C#" Value="protected override void Reset (System.Configuration.ConfigurationElement parentElement);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Reset(class System.Configuration.ConfigurationElement parentElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.StandardBindingElement.Reset(System.Configuration.ConfigurationElement)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Reset (parentElement As ConfigurationElement)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Reset(System::Configuration::ConfigurationElement ^ parentElement);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -312,6 +347,8 @@
       <MemberSignature Language="C#" Value="public TimeSpan SendTimeout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan SendTimeout" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.StandardBindingElement.SendTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public Property SendTimeout As TimeSpan" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan SendTimeout { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -334,14 +371,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.StandardBindingElement" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

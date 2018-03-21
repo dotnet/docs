@@ -1,7 +1,9 @@
-<Type Name="NumberSubstitutionMethod" FullName="System.Windows.Media.NumberSubstitutionMethod">
+﻿<Type Name="NumberSubstitutionMethod" FullName="System.Windows.Media.NumberSubstitutionMethod">
   <TypeSignature Language="C#" Value="public enum NumberSubstitutionMethod" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed NumberSubstitutionMethod extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.NumberSubstitutionMethod" />
+  <TypeSignature Language="VB.NET" Value="Public Enum NumberSubstitutionMethod" />
+  <TypeSignature Language="C++ CLI" Value="public enum class NumberSubstitutionMethod" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +37,8 @@ Example of the appearance of digits in different cultures
       <MemberSignature Language="C#" Value="AsCulture" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.NumberSubstitutionMethod AsCulture = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.NumberSubstitutionMethod.AsCulture" />
+      <MemberSignature Language="VB.NET" Value="AsCulture" />
+      <MemberSignature Language="C++ CLI" Value="AsCulture" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -43,6 +47,7 @@ Example of the appearance of digits in different cultures
       <ReturnValue>
         <ReturnType>System.Windows.Media.NumberSubstitutionMethod</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Default. Specifies that the substitution method should be determined based on the number culture's <see cref="P:System.Globalization.NumberFormatInfo.DigitSubstitution" /> property value.</summary>
       </Docs>
@@ -51,6 +56,8 @@ Example of the appearance of digits in different cultures
       <MemberSignature Language="C#" Value="Context" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.NumberSubstitutionMethod Context = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.NumberSubstitutionMethod.Context" />
+      <MemberSignature Language="VB.NET" Value="Context" />
+      <MemberSignature Language="C++ CLI" Value="Context" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -59,6 +66,7 @@ Example of the appearance of digits in different cultures
       <ReturnValue>
         <ReturnType>System.Windows.Media.NumberSubstitutionMethod</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>If the number culture is an Arabic or Farsi culture, specifies that the digits depend on the context. Either traditional or Latin digits are used depending on the nearest preceding strong character, or, if there is none, the text direction of the paragraph.</summary>
       </Docs>
@@ -67,6 +75,8 @@ Example of the appearance of digits in different cultures
       <MemberSignature Language="C#" Value="European" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.NumberSubstitutionMethod European = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.NumberSubstitutionMethod.European" />
+      <MemberSignature Language="VB.NET" Value="European" />
+      <MemberSignature Language="C++ CLI" Value="European" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -75,6 +85,7 @@ Example of the appearance of digits in different cultures
       <ReturnValue>
         <ReturnType>System.Windows.Media.NumberSubstitutionMethod</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Specifies that code points 0x30-0x39 are always rendered as European digits, in which case, no number substitution is performed.</summary>
       </Docs>
@@ -83,6 +94,8 @@ Example of the appearance of digits in different cultures
       <MemberSignature Language="C#" Value="NativeNational" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.NumberSubstitutionMethod NativeNational = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.NumberSubstitutionMethod.NativeNational" />
+      <MemberSignature Language="VB.NET" Value="NativeNational" />
+      <MemberSignature Language="C++ CLI" Value="NativeNational" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -91,6 +104,7 @@ Example of the appearance of digits in different cultures
       <ReturnValue>
         <ReturnType>System.Windows.Media.NumberSubstitutionMethod</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Specifies that numbers are rendered using the national digits for the number culture, as specified by the culture's <see cref="P:System.Globalization.NumberFormatInfo.NativeDigits" /> property value.</summary>
       </Docs>
@@ -99,6 +113,8 @@ Example of the appearance of digits in different cultures
       <MemberSignature Language="C#" Value="Traditional" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.NumberSubstitutionMethod Traditional = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.NumberSubstitutionMethod.Traditional" />
+      <MemberSignature Language="VB.NET" Value="Traditional" />
+      <MemberSignature Language="C++ CLI" Value="Traditional" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -107,6 +123,7 @@ Example of the appearance of digits in different cultures
       <ReturnValue>
         <ReturnType>System.Windows.Media.NumberSubstitutionMethod</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Specifies that numbers are rendered using the traditional digits for the number culture. For most cultures, this is the same as the <see cref="F:System.Globalization.DigitShapes.NativeNational" /> enumeration value. However, using <see cref="F:System.Windows.Media.NumberSubstitutionMethod.NativeNational" /> can result in Latin digits for some Arabic cultures, whereas using <see cref="F:System.Windows.Media.NumberSubstitutionMethod.Traditional" /> results in Arabic digits for all Arabic cultures.</summary>
       </Docs>

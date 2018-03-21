@@ -1,7 +1,9 @@
-<Type Name="SqlNotificationRequest" FullName="System.Data.Sql.SqlNotificationRequest">
+﻿<Type Name="SqlNotificationRequest" FullName="System.Data.Sql.SqlNotificationRequest">
   <TypeSignature Language="C#" Value="public sealed class SqlNotificationRequest" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SqlNotificationRequest extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Data.Sql.SqlNotificationRequest" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SqlNotificationRequest" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SqlNotificationRequest sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -23,10 +25,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.Data.Sql.SqlNotificationRequest" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SqlNotificationRequest ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Sql.SqlNotificationRequest.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlNotificationRequest();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -50,6 +64,8 @@
       <MemberSignature Language="C#" Value="public SqlNotificationRequest (string userData, string options, int timeout);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string userData, string options, int32 timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Sql.SqlNotificationRequest.#ctor(System.String,System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (userData As String, options As String, timeout As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlNotificationRequest(System::String ^ userData, System::String ^ options, int timeout);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -84,6 +100,8 @@
       <MemberSignature Language="C#" Value="public string Options { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Options" />
       <MemberSignature Language="DocId" Value="P:System.Data.Sql.SqlNotificationRequest.Options" />
+      <MemberSignature Language="VB.NET" Value="Public Property Options As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Options { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -121,6 +139,8 @@
       <MemberSignature Language="C#" Value="public int Timeout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Timeout" />
       <MemberSignature Language="DocId" Value="P:System.Data.Sql.SqlNotificationRequest.Timeout" />
+      <MemberSignature Language="VB.NET" Value="Public Property Timeout As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Timeout { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -148,6 +168,8 @@
       <MemberSignature Language="C#" Value="public string UserData { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string UserData" />
       <MemberSignature Language="DocId" Value="P:System.Data.Sql.SqlNotificationRequest.UserData" />
+      <MemberSignature Language="VB.NET" Value="Public Property UserData As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ UserData { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -171,15 +193,5 @@
         <exception cref="T:System.ArgumentException">The value is longer than <see langword="uint16.MaxValue" />.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a new instance of the <see cref="T:System.Data.Sql.SqlNotificationRequest" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

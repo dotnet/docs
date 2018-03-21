@@ -1,7 +1,9 @@
-<Type Name="Pointer" FullName="System.Reflection.Pointer">
+﻿<Type Name="Pointer" FullName="System.Reflection.Pointer">
   <TypeSignature Language="C#" Value="public sealed class Pointer : System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit Pointer extends System.Object implements class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.Pointer" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Pointer&#xA;Implements ISerializable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Pointer sealed : System::Runtime::Serialization::ISerializable" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -40,6 +42,7 @@
       <MemberSignature Language="C#" Value="public static object Box (void* ptr, Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object Box(void* ptr, class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Pointer.Box(System.Void*,System.Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ Box(void* ptr, Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -83,7 +86,12 @@
       <MemberSignature Language="C#" Value="void ISerializable.GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.Serialization.ISerializable.GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Pointer.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Sub GetObjectData (info As SerializationInfo, context As StreamingContext) Implements ISerializable.GetObjectData" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.Serialization.ISerializable.GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context) = System::Runtime::Serialization::ISerializable::GetObjectData;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -121,6 +129,7 @@
       <MemberSignature Language="C#" Value="public static void* Unbox (object ptr);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void* Unbox(object ptr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Pointer.Unbox(System.Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void* Unbox(System::Object ^ ptr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

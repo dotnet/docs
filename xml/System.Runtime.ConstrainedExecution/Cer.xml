@@ -1,7 +1,9 @@
-<Type Name="Cer" FullName="System.Runtime.ConstrainedExecution.Cer">
+﻿<Type Name="Cer" FullName="System.Runtime.ConstrainedExecution.Cer">
   <TypeSignature Language="C#" Value="public enum Cer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed Cer extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.ConstrainedExecution.Cer" />
+  <TypeSignature Language="VB.NET" Value="Public Enum Cer" />
+  <TypeSignature Language="C++ CLI" Value="public enum class Cer" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -46,6 +48,8 @@
       <MemberSignature Language="C#" Value="MayFail" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.ConstrainedExecution.Cer MayFail = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.ConstrainedExecution.Cer.MayFail" />
+      <MemberSignature Language="VB.NET" Value="MayFail" />
+      <MemberSignature Language="C++ CLI" Value="MayFail" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -63,6 +67,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.ConstrainedExecution.Cer</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>In the face of exceptional conditions, the method might fail. In this case, the method will report back to the calling method whether it succeeded or failed. The method must have a CER around the method body to ensure that it can report the return value.</summary>
       </Docs>
@@ -71,6 +76,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.ConstrainedExecution.Cer None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.ConstrainedExecution.Cer.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -88,6 +95,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.ConstrainedExecution.Cer</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The method, type, or assembly has no concept of a CER. It does not take advantage of CER guarantees. This implies the following:</summary>
         <remarks>
@@ -111,6 +119,8 @@
       <MemberSignature Language="C#" Value="Success" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.ConstrainedExecution.Cer Success = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.ConstrainedExecution.Cer.Success" />
+      <MemberSignature Language="VB.NET" Value="Success" />
+      <MemberSignature Language="C++ CLI" Value="Success" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -128,6 +138,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.ConstrainedExecution.Cer</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>In the face of exceptional conditions, the method is guaranteed to succeed. You should always construct a CER around the method that is called, even when it is called from within a non-CER region. A method is successful if it accomplishes what is intended. For example, marking <see cref="P:System.Collections.ArrayList.Count" /> with <c>ReliabilityContractAttribute(Cer.Success)</c> implies that when it is run under a CER, it always returns a count of the number of elements in the <see cref="T:System.Collections.ArrayList" /> and it can never leave the internal fields in an undetermined state.</summary>
       </Docs>

@@ -1,7 +1,9 @@
-<Type Name="IComponentConnector" FullName="System.Windows.Markup.IComponentConnector">
+﻿<Type Name="IComponentConnector" FullName="System.Windows.Markup.IComponentConnector">
   <TypeSignature Language="C#" Value="public interface IComponentConnector" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IComponentConnector" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.IComponentConnector" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IComponentConnector" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IComponentConnector" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +37,8 @@
       <MemberSignature Language="C#" Value="public void Connect (int connectionId, object target);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Connect(int32 connectionId, object target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.IComponentConnector.Connect(System.Int32,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Connect (connectionId As Integer, target As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Connect(int connectionId, System::Object ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -65,6 +69,8 @@
       <MemberSignature Language="C#" Value="public void InitializeComponent ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void InitializeComponent() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.IComponentConnector.InitializeComponent" />
+      <MemberSignature Language="VB.NET" Value="Public Sub InitializeComponent ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void InitializeComponent();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>

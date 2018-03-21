@@ -1,7 +1,9 @@
-<Type Name="WebUser" FullName="Microsoft.VisualBasic.ApplicationServices.WebUser">
+﻿<Type Name="WebUser" FullName="Microsoft.VisualBasic.ApplicationServices.WebUser">
   <TypeSignature Language="C#" Value="public class WebUser : Microsoft.VisualBasic.ApplicationServices.User" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi WebUser extends Microsoft.VisualBasic.ApplicationServices.User" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.ApplicationServices.WebUser" />
+  <TypeSignature Language="VB.NET" Value="Public Class WebUser&#xA;Inherits User" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WebUser : Microsoft::VisualBasic::ApplicationServices::User" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -48,6 +50,8 @@
       <MemberSignature Language="C#" Value="public WebUser ();" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.ApplicationServices.WebUser.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebUser();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -71,6 +75,8 @@
       <MemberSignature Language="C#" Value="protected override System.Security.Principal.IPrincipal InternalPrincipal { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Principal.IPrincipal InternalPrincipal" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.WebUser.InternalPrincipal" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Property InternalPrincipal As IPrincipal" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Security::Principal::IPrincipal ^ InternalPrincipal { System::Security::Principal::IPrincipal ^ get(); void set(System::Security::Principal::IPrincipal ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

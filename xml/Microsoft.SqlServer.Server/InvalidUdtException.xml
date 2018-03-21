@@ -1,7 +1,9 @@
-<Type Name="InvalidUdtException" FullName="Microsoft.SqlServer.Server.InvalidUdtException">
+﻿<Type Name="InvalidUdtException" FullName="Microsoft.SqlServer.Server.InvalidUdtException">
   <TypeSignature Language="C#" Value="public sealed class InvalidUdtException : SystemException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit InvalidUdtException extends System.SystemException" />
   <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Server.InvalidUdtException" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class InvalidUdtException&#xA;Inherits SystemException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class InvalidUdtException sealed : SystemException" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -20,6 +22,8 @@
       <MemberSignature Language="C#" Value="public override void GetObjectData (System.Runtime.Serialization.SerializationInfo si, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo si, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.InvalidUdtException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (si As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ si, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

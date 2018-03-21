@@ -1,7 +1,9 @@
-<Type Name="IContextManager" FullName="System.ServiceModel.Channels.IContextManager">
+﻿<Type Name="IContextManager" FullName="System.ServiceModel.Channels.IContextManager">
   <TypeSignature Language="C#" Value="public interface IContextManager" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IContextManager" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.IContextManager" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IContextManager" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IContextManager" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +43,8 @@ using (new OperationContextScope((IContextChannel)channel))
       <MemberSignature Language="C#" Value="public bool Enabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Enabled" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.IContextManager.Enabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property Enabled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Enabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -87,6 +91,8 @@ using (new OperationContextScope((IContextChannel)channel))
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,string&gt; GetContext ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IDictionary`2&lt;string, string&gt; GetContext() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.IContextManager.GetContext" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetContext () As IDictionary(Of String, String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ GetContext();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -121,6 +127,8 @@ if (cm != null)
       <MemberSignature Language="C#" Value="public void SetContext (System.Collections.Generic.IDictionary&lt;string,string&gt; context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetContext(class System.Collections.Generic.IDictionary`2&lt;string, string&gt; context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.IContextManager.SetContext(System.Collections.Generic.IDictionary{System.String,System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetContext (context As IDictionary(Of String, String))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetContext(System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="IBuildEngine3" FullName="Microsoft.Build.Framework.IBuildEngine3">
+﻿<Type Name="IBuildEngine3" FullName="Microsoft.Build.Framework.IBuildEngine3">
   <TypeSignature Language="C#" Value="public interface IBuildEngine3 : Microsoft.Build.Framework.IBuildEngine2" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IBuildEngine3 implements class Microsoft.Build.Framework.IBuildEngine, class Microsoft.Build.Framework.IBuildEngine2" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.IBuildEngine3" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IBuildEngine3&#xA;Implements IBuildEngine2" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IBuildEngine3 : Microsoft::Build::Framework::IBuildEngine2" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +22,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.BuildEngineResult BuildProjectFilesInParallel (string[] projectFileNames, string[] targetNames, System.Collections.IDictionary[] globalProperties, System.Collections.Generic.IList&lt;string&gt;[] removeGlobalProperties, string[] toolsVersion, bool returnTargetOutputs);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype Microsoft.Build.Framework.BuildEngineResult BuildProjectFilesInParallel(string[] projectFileNames, string[] targetNames, class System.Collections.IDictionary[] globalProperties, class System.Collections.Generic.IList`1&lt;string&gt;[] removeGlobalProperties, string[] toolsVersion, bool returnTargetOutputs) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.IBuildEngine3.BuildProjectFilesInParallel(System.String[],System.String[],System.Collections.IDictionary[],System.Collections.Generic.IList{System.String}[],System.String[],System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BuildProjectFilesInParallel (projectFileNames As String(), targetNames As String(), globalProperties As IDictionary(), removeGlobalProperties As IList(Of String)(), toolsVersion As String(), returnTargetOutputs As Boolean) As BuildEngineResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Build::Framework::BuildEngineResult BuildProjectFilesInParallel(cli::array &lt;System::String ^&gt; ^ projectFileNames, cli::array &lt;System::String ^&gt; ^ targetNames, cli::array &lt;System::Collections::IDictionary ^&gt; ^ globalProperties, cli::array &lt;System::Collections::Generic::IList&lt;System::String ^&gt; ^&gt; ^ removeGlobalProperties, cli::array &lt;System::String ^&gt; ^ toolsVersion, bool returnTargetOutputs);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -54,6 +58,8 @@
       <MemberSignature Language="C#" Value="public void Reacquire ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Reacquire() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.IBuildEngine3.Reacquire" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Reacquire ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Reacquire();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -72,6 +78,8 @@
       <MemberSignature Language="C#" Value="public void Yield ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Yield() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.IBuildEngine3.Yield" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Yield ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Yield();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>

@@ -1,12 +1,17 @@
-<Type Name="IWorkflowRootDesigner" FullName="System.Workflow.ComponentModel.Design.IWorkflowRootDesigner">
-  <TypeSignature Language="C#" Value="public interface IWorkflowRootDesigner : IDisposable, System.ComponentModel.Design.IRootDesigner" />
+﻿<Type Name="IWorkflowRootDesigner" FullName="System.Workflow.ComponentModel.Design.IWorkflowRootDesigner">
+  <TypeSignature Language="C#" Value="public interface IWorkflowRootDesigner : IDisposable, System.ComponentModel.Design.IDesigner, System.ComponentModel.Design.IRootDesigner" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWorkflowRootDesigner implements class System.ComponentModel.Design.IDesigner, class System.ComponentModel.Design.IRootDesigner, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.IWorkflowRootDesigner" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IWorkflowRootDesigner&#xA;Implements IDesigner, IDisposable, IRootDesigner" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IWorkflowRootDesigner : IDisposable, System::ComponentModel::Design::IDesigner, System::ComponentModel::Design::IRootDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
+    <Interface>
+      <InterfaceName>System.ComponentModel.Design.IDesigner</InterfaceName>
+    </Interface>
     <Interface>
       <InterfaceName>System.ComponentModel.Design.IRootDesigner</InterfaceName>
     </Interface>
@@ -39,6 +44,8 @@
       <MemberSignature Language="C#" Value="public System.Workflow.ComponentModel.Design.CompositeActivityDesigner InvokingDesigner { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.ComponentModel.Design.CompositeActivityDesigner InvokingDesigner" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.IWorkflowRootDesigner.InvokingDesigner" />
+      <MemberSignature Language="VB.NET" Value="Public Property InvokingDesigner As CompositeActivityDesigner" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::ComponentModel::Design::CompositeActivityDesigner ^ InvokingDesigner { System::Workflow::ComponentModel::Design::CompositeActivityDesigner ^ get(); void set(System::Workflow::ComponentModel::Design::CompositeActivityDesigner ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -64,6 +71,8 @@
       <MemberSignature Language="C#" Value="public bool IsSupportedActivityType (Type activityType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsSupportedActivityType(class System.Type activityType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.IWorkflowRootDesigner.IsSupportedActivityType(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsSupportedActivityType (activityType As Type) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsSupportedActivityType(Type ^ activityType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -87,6 +96,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter&gt; MessageFilters { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter&gt; MessageFilters" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.IWorkflowRootDesigner.MessageFilters" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MessageFilters As ReadOnlyCollection(Of WorkflowDesignerMessageFilter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Workflow::ComponentModel::Design::WorkflowDesignerMessageFilter ^&gt; ^ MessageFilters { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Workflow::ComponentModel::Design::WorkflowDesignerMessageFilter ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -105,6 +116,8 @@
       <MemberSignature Language="C#" Value="public bool SupportsLayoutPersistence { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SupportsLayoutPersistence" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.IWorkflowRootDesigner.SupportsLayoutPersistence" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SupportsLayoutPersistence As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SupportsLayoutPersistence { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

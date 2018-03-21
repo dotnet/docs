@@ -1,7 +1,9 @@
-<Type Name="OleDbMetaDataColumnNames" FullName="System.Data.OleDb.OleDbMetaDataColumnNames">
+﻿<Type Name="OleDbMetaDataColumnNames" FullName="System.Data.OleDb.OleDbMetaDataColumnNames">
   <TypeSignature Language="C#" Value="public static class OleDbMetaDataColumnNames" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit OleDbMetaDataColumnNames extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Data.OleDb.OleDbMetaDataColumnNames" />
+  <TypeSignature Language="VB.NET" Value="Public Class OleDbMetaDataColumnNames" />
+  <TypeSignature Language="C++ CLI" Value="public ref class OleDbMetaDataColumnNames abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public static readonly string BooleanFalseLiteral;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string BooleanFalseLiteral" />
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbMetaDataColumnNames.BooleanFalseLiteral" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BooleanFalseLiteral As String " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ BooleanFalseLiteral;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -36,6 +40,8 @@
       <MemberSignature Language="C#" Value="public static readonly string BooleanTrueLiteral;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string BooleanTrueLiteral" />
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbMetaDataColumnNames.BooleanTrueLiteral" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BooleanTrueLiteral As String " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ BooleanTrueLiteral;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -53,6 +59,8 @@
       <MemberSignature Language="C#" Value="public static readonly string DateTimeDigits;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string DateTimeDigits" />
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbMetaDataColumnNames.DateTimeDigits" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DateTimeDigits As String " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ DateTimeDigits;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -70,6 +78,8 @@
       <MemberSignature Language="C#" Value="public static readonly string NativeDataType;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string NativeDataType" />
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbMetaDataColumnNames.NativeDataType" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly NativeDataType As String " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ NativeDataType;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="ThreadStateException" FullName="System.Threading.ThreadStateException">
+﻿<Type Name="ThreadStateException" FullName="System.Threading.ThreadStateException">
   <TypeSignature Language="C#" Value="public class ThreadStateException : SystemException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ThreadStateException extends System.SystemException" />
   <TypeSignature Language="DocId" Value="T:System.Threading.ThreadStateException" />
+  <TypeSignature Language="VB.NET" Value="Public Class ThreadStateException&#xA;Inherits SystemException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ThreadStateException : SystemException" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.Thread</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,10 +64,22 @@ In main. Attempting to restart myThread.
     <altmember cref="T:System.Exception" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Threading.ThreadStateException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ThreadStateException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadStateException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ThreadStateException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Thread</AssemblyName>
@@ -105,6 +119,8 @@ In main. Attempting to restart myThread.
       <MemberSignature Language="C#" Value="public ThreadStateException (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadStateException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ThreadStateException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Thread</AssemblyName>
@@ -147,6 +163,8 @@ In main. Attempting to restart myThread.
       <MemberSignature Language="C#" Value="protected ThreadStateException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadStateException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ThreadStateException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -183,6 +201,8 @@ In main. Attempting to restart myThread.
       <MemberSignature Language="C#" Value="public ThreadStateException (string message, Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadStateException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ThreadStateException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Thread</AssemblyName>
@@ -224,15 +244,5 @@ In main. Attempting to restart myThread.
         <altmember cref="T:System.Exception" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Threading.Thread</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Threading.ThreadStateException" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

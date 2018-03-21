@@ -1,7 +1,9 @@
-<Type Name="ManagementKeyAttribute" FullName="System.Management.Instrumentation.ManagementKeyAttribute">
+﻿<Type Name="ManagementKeyAttribute" FullName="System.Management.Instrumentation.ManagementKeyAttribute">
   <TypeSignature Language="C#" Value="public sealed class ManagementKeyAttribute : System.Management.Instrumentation.ManagementMemberAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ManagementKeyAttribute extends System.Management.Instrumentation.ManagementMemberAttribute" />
   <TypeSignature Language="DocId" Value="T:System.Management.Instrumentation.ManagementKeyAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ManagementKeyAttribute&#xA;Inherits ManagementMemberAttribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ManagementKeyAttribute sealed : System::Management::Instrumentation::ManagementMemberAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -12,7 +14,7 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.AttributeUsage(System.AttributeTargets.Property | System.AttributeTargets.Field, AllowMultiple=false)</AttributeName>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Field | System.AttributeTargets.Property, AllowMultiple=false)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -60,6 +62,8 @@ public int Id
       <MemberSignature Language="C#" Value="public ManagementKeyAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.Instrumentation.ManagementKeyAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ManagementKeyAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>

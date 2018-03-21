@@ -1,7 +1,9 @@
-<Type Name="MemberFilter" FullName="System.Reflection.MemberFilter">
+﻿<Type Name="MemberFilter" FullName="System.Reflection.MemberFilter">
   <TypeSignature Language="C#" Value="public delegate bool MemberFilter(MemberInfo m, object filterCriteria);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed MemberFilter extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.MemberFilter" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Function MemberFilter(m As MemberInfo, filterCriteria As Object) As Boolean " />
+  <TypeSignature Language="C++ CLI" Value="public delegate bool MemberFilter(MemberInfo ^ m, System::Object ^ filterCriteria);" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>

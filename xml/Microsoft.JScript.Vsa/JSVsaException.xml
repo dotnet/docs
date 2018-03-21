@@ -1,7 +1,9 @@
-<Type Name="JSVsaException" FullName="Microsoft.JScript.Vsa.JSVsaException">
+﻿<Type Name="JSVsaException" FullName="Microsoft.JScript.Vsa.JSVsaException">
   <TypeSignature Language="C#" Value="public sealed class JSVsaException : System.Runtime.InteropServices.ExternalException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit JSVsaException extends System.Runtime.InteropServices.ExternalException" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.Vsa.JSVsaException" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class JSVsaException&#xA;Inherits ExternalException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class JSVsaException sealed : System::Runtime::InteropServices::ExternalException" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -26,10 +28,21 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>This member supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public JSVsaException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.JSVsaException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; JSVsaException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -45,6 +58,8 @@
       <MemberSignature Language="C#" Value="public JSVsaException (Microsoft.JScript.Vsa.JSVsaError error);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.JScript.Vsa.JSVsaError error) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.JSVsaException.#ctor(Microsoft.JScript.Vsa.JSVsaError)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (error As JSVsaError)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; JSVsaException(Microsoft::JScript::Vsa::JSVsaError error);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -63,6 +78,8 @@
       <MemberSignature Language="C#" Value="public JSVsaException (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.JSVsaException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; JSVsaException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -81,6 +98,8 @@
       <MemberSignature Language="C#" Value="public JSVsaException (Microsoft.JScript.Vsa.JSVsaError error, string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.JScript.Vsa.JSVsaError error, string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.JSVsaException.#ctor(Microsoft.JScript.Vsa.JSVsaError,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (error As JSVsaError, message As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; JSVsaException(Microsoft::JScript::Vsa::JSVsaError error, System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -101,6 +120,8 @@
       <MemberSignature Language="C#" Value="public JSVsaException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.JSVsaException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; JSVsaException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -121,6 +142,8 @@
       <MemberSignature Language="C#" Value="public JSVsaException (string message, Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.JSVsaException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; JSVsaException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -141,6 +164,8 @@
       <MemberSignature Language="C#" Value="public JSVsaException (Microsoft.JScript.Vsa.JSVsaError error, string message, Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.JScript.Vsa.JSVsaError error, string message, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.JSVsaException.#ctor(Microsoft.JScript.Vsa.JSVsaError,System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (error As JSVsaError, message As String, innerException As Exception)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; JSVsaException(Microsoft::JScript::Vsa::JSVsaError error, System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -163,6 +188,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.JScript.Vsa.JSVsaError ErrorCode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.JScript.Vsa.JSVsaError ErrorCode" />
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.Vsa.JSVsaException.ErrorCode" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ErrorCode As JSVsaError" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::JScript::Vsa::JSVsaError ErrorCode { Microsoft::JScript::Vsa::JSVsaError get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -181,6 +208,8 @@
       <MemberSignature Language="C#" Value="public override void GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.JSVsaException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -209,6 +238,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.JSVsaException.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -224,14 +255,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>This member supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

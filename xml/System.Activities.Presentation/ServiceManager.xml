@@ -1,7 +1,9 @@
-<Type Name="ServiceManager" FullName="System.Activities.Presentation.ServiceManager">
+﻿<Type Name="ServiceManager" FullName="System.Activities.Presentation.ServiceManager">
   <TypeSignature Language="C#" Value="public abstract class ServiceManager : IServiceProvider, System.Collections.Generic.IEnumerable&lt;Type&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ServiceManager extends System.Object implements class System.Collections.Generic.IEnumerable`1&lt;class System.Type&gt;, class System.Collections.IEnumerable, class System.IServiceProvider" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.ServiceManager" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ServiceManager&#xA;Implements IEnumerable(Of Type), IServiceProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ServiceManager abstract : IServiceProvider, System::Collections::Generic::IEnumerable&lt;Type ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +35,8 @@
       <MemberSignature Language="C#" Value="protected ServiceManager ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.ServiceManager.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ServiceManager();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -48,6 +52,8 @@
       <MemberSignature Language="C#" Value="public abstract bool Contains (Type serviceType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Contains(class System.Type serviceType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.ServiceManager.Contains(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function Contains (serviceType As Type) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool Contains(Type ^ serviceType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -71,6 +77,8 @@
       <MemberSignature Language="C#" Value="public bool Contains&lt;TServiceType&gt; ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains&lt;TServiceType&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.ServiceManager.Contains``1" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains(Of TServiceType) () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TServiceType&gt;&#xA; bool Contains();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -95,7 +103,12 @@
       <MemberSignature Language="C#" Value="public abstract System.Collections.Generic.IEnumerator&lt;Type&gt; GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerator`1&lt;class System.Type&gt; GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.ServiceManager.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetEnumerator () As IEnumerator(Of Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Collections::Generic::IEnumerator&lt;Type ^&gt; ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -114,6 +127,8 @@
       <MemberSignature Language="C#" Value="public TServiceType GetRequiredService&lt;TServiceType&gt; ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!TServiceType GetRequiredService&lt;TServiceType&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.ServiceManager.GetRequiredService``1" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetRequiredService(Of TServiceType) () As TServiceType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TServiceType&gt;&#xA; TServiceType GetRequiredService();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -145,6 +160,8 @@
       <MemberSignature Language="C#" Value="public abstract object GetService (Type serviceType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetService(class System.Type serviceType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.ServiceManager.GetService(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetService (serviceType As Type) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Object ^ GetService(Type ^ serviceType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -169,6 +186,8 @@
       <MemberSignature Language="C#" Value="public TServiceType GetService&lt;TServiceType&gt; ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!TServiceType GetService&lt;TServiceType&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.ServiceManager.GetService``1" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetService(Of TServiceType) () As TServiceType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TServiceType&gt;&#xA; TServiceType GetService();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -192,6 +211,8 @@
       <MemberSignature Language="C#" Value="protected static object GetTarget (Delegate callback);" />
       <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig object GetTarget(class System.Delegate callback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.ServiceManager.GetTarget(System.Delegate)" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared Function GetTarget (callback As Delegate) As Object" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; static System::Object ^ GetTarget(Delegate ^ callback);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -212,10 +233,21 @@
           <paramref name="callback" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Publish">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Publishes the given service type, but does not declare an instance. When the service is requested, the Publish service callback will be invoked to create the instance. The callback is invoked only once. After that, the instance it returned is cached.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Publish">
       <MemberSignature Language="C#" Value="public abstract void Publish (Type serviceType, System.Activities.Presentation.PublishServiceCallback callback);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Publish(class System.Type serviceType, class System.Activities.Presentation.PublishServiceCallback callback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.ServiceManager.Publish(System.Type,System.Activities.Presentation.PublishServiceCallback)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Publish (serviceType As Type, callback As PublishServiceCallback)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Publish(Type ^ serviceType, System::Activities::Presentation::PublishServiceCallback ^ callback);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -243,6 +275,8 @@
       <MemberSignature Language="C#" Value="public abstract void Publish (Type serviceType, object serviceInstance);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Publish(class System.Type serviceType, object serviceInstance) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.ServiceManager.Publish(System.Type,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Publish (serviceType As Type, serviceInstance As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Publish(Type ^ serviceType, System::Object ^ serviceInstance);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -270,6 +304,8 @@
       <MemberSignature Language="C#" Value="public void Publish&lt;TServiceType&gt; (System.Activities.Presentation.PublishServiceCallback&lt;TServiceType&gt; callback);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Publish&lt;TServiceType&gt;(class System.Activities.Presentation.PublishServiceCallback`1&lt;!!TServiceType&gt; callback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.ServiceManager.Publish``1(System.Activities.Presentation.PublishServiceCallback{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Publish(Of TServiceType) (callback As PublishServiceCallback(Of TServiceType))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TServiceType&gt;&#xA; void Publish(System::Activities::Presentation::PublishServiceCallback&lt;TServiceType&gt; ^ callback);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -297,6 +333,8 @@
       <MemberSignature Language="C#" Value="public void Publish&lt;TServiceType&gt; (TServiceType serviceInstance);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Publish&lt;TServiceType&gt;(!!TServiceType serviceInstance) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.ServiceManager.Publish``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Publish(Of TServiceType) (serviceInstance As TServiceType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TServiceType&gt;&#xA; void Publish(TServiceType serviceInstance);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -324,6 +362,8 @@
       <MemberSignature Language="C#" Value="protected static Delegate RemoveCallback (Delegate existing, Delegate toRemove);" />
       <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig class System.Delegate RemoveCallback(class System.Delegate existing, class System.Delegate toRemove) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.ServiceManager.RemoveCallback(System.Delegate,System.Delegate)" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared Function RemoveCallback (existing As Delegate, toRemove As Delegate) As Delegate" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; static Delegate ^ RemoveCallback(Delegate ^ existing, Delegate ^ toRemove);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -348,6 +388,8 @@
       <MemberSignature Language="C#" Value="public abstract void Subscribe (Type serviceType, System.Activities.Presentation.SubscribeServiceCallback callback);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Subscribe(class System.Type serviceType, class System.Activities.Presentation.SubscribeServiceCallback callback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.ServiceManager.Subscribe(System.Type,System.Activities.Presentation.SubscribeServiceCallback)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Subscribe (serviceType As Type, callback As SubscribeServiceCallback)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Subscribe(Type ^ serviceType, System::Activities::Presentation::SubscribeServiceCallback ^ callback);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -373,6 +415,8 @@
       <MemberSignature Language="C#" Value="public void Subscribe&lt;TServiceType&gt; (System.Activities.Presentation.SubscribeServiceCallback&lt;TServiceType&gt; callback);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Subscribe&lt;TServiceType&gt;(class System.Activities.Presentation.SubscribeServiceCallback`1&lt;!!TServiceType&gt; callback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.ServiceManager.Subscribe``1(System.Activities.Presentation.SubscribeServiceCallback{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Subscribe(Of TServiceType) (callback As SubscribeServiceCallback(Of TServiceType))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TServiceType&gt;&#xA; void Subscribe(System::Activities::Presentation::SubscribeServiceCallback&lt;TServiceType&gt; ^ callback);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -400,7 +444,12 @@
       <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.ServiceManager.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator Implements IEnumerable.GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IEnumerator ^ System.Collections.IEnumerable.GetEnumerator() = System::Collections::IEnumerable::GetEnumerator;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -419,6 +468,8 @@
       <MemberSignature Language="C#" Value="public abstract void Unsubscribe (Type serviceType, System.Activities.Presentation.SubscribeServiceCallback callback);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Unsubscribe(class System.Type serviceType, class System.Activities.Presentation.SubscribeServiceCallback callback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.ServiceManager.Unsubscribe(System.Type,System.Activities.Presentation.SubscribeServiceCallback)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Unsubscribe (serviceType As Type, callback As SubscribeServiceCallback)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Unsubscribe(Type ^ serviceType, System::Activities::Presentation::SubscribeServiceCallback ^ callback);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -444,6 +495,8 @@
       <MemberSignature Language="C#" Value="public void Unsubscribe&lt;TServiceType&gt; (System.Activities.Presentation.SubscribeServiceCallback&lt;TServiceType&gt; callback);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Unsubscribe&lt;TServiceType&gt;(class System.Activities.Presentation.SubscribeServiceCallback`1&lt;!!TServiceType&gt; callback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.ServiceManager.Unsubscribe``1(System.Activities.Presentation.SubscribeServiceCallback{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Unsubscribe(Of TServiceType) (callback As SubscribeServiceCallback(Of TServiceType))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TServiceType&gt;&#xA; void Unsubscribe(System::Activities::Presentation::SubscribeServiceCallback&lt;TServiceType&gt; ^ callback);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -467,14 +520,5 @@
           <paramref name="callback" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Publish">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities.Presentation</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Publishes the given service type, but does not declare an instance. When the service is requested, the Publish service callback will be invoked to create the instance. The callback is invoked only once. After that, the instance it returned is cached.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

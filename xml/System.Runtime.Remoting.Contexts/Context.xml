@@ -1,7 +1,9 @@
-<Type Name="Context" FullName="System.Runtime.Remoting.Contexts.Context">
+﻿<Type Name="Context" FullName="System.Runtime.Remoting.Contexts.Context">
   <TypeSignature Language="C#" Value="public class Context" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi beforefieldinit Context extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Contexts.Context" />
+  <TypeSignature Language="VB.NET" Value="Public Class Context" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Context" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -39,6 +41,8 @@
       <MemberSignature Language="C#" Value="public Context ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Contexts.Context.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Context();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -56,6 +60,8 @@
       <MemberSignature Language="C#" Value="public static LocalDataStoreSlot AllocateDataSlot ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.LocalDataStoreSlot AllocateDataSlot() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Contexts.Context.AllocateDataSlot" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AllocateDataSlot () As LocalDataStoreSlot" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static LocalDataStoreSlot ^ AllocateDataSlot();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -84,6 +90,8 @@
       <MemberSignature Language="C#" Value="public static LocalDataStoreSlot AllocateNamedDataSlot (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.LocalDataStoreSlot AllocateNamedDataSlot(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Contexts.Context.AllocateNamedDataSlot(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AllocateNamedDataSlot (name As String) As LocalDataStoreSlot" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static LocalDataStoreSlot ^ AllocateNamedDataSlot(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -115,6 +123,8 @@
       <MemberSignature Language="C#" Value="public virtual int ContextID { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ContextID" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Contexts.Context.ContextID" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ContextID As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int ContextID { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -135,6 +145,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Runtime.Remoting.Contexts.IContextProperty[] ContextProperties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Runtime.Remoting.Contexts.IContextProperty[] ContextProperties" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Contexts.Context.ContextProperties" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ContextProperties As IContextProperty()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property cli::array &lt;System::Runtime::Remoting::Contexts::IContextProperty ^&gt; ^ ContextProperties { cli::array &lt;System::Runtime::Remoting::Contexts::IContextProperty ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -155,6 +167,8 @@
       <MemberSignature Language="C#" Value="public static System.Runtime.Remoting.Contexts.Context DefaultContext { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Runtime.Remoting.Contexts.Context DefaultContext" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Contexts.Context.DefaultContext" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DefaultContext As Context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Runtime::Remoting::Contexts::Context ^ DefaultContext { System::Runtime::Remoting::Contexts::Context ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -182,6 +196,8 @@
       <MemberSignature Language="C#" Value="public void DoCallBack (System.Runtime.Remoting.Contexts.CrossContextDelegate deleg);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DoCallBack(class System.Runtime.Remoting.Contexts.CrossContextDelegate deleg) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Contexts.Context.DoCallBack(System.Runtime.Remoting.Contexts.CrossContextDelegate)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DoCallBack (deleg As CrossContextDelegate)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DoCallBack(System::Runtime::Remoting::Contexts::CrossContextDelegate ^ deleg);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -212,6 +228,8 @@
       <MemberSignature Language="C#" Value="~Context ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Contexts.Context.Finalize" />
+      <MemberSignature Language="VB.NET" Value="Finalize ()" />
+      <MemberSignature Language="C++ CLI" Value="!Context ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -239,6 +257,8 @@
       <MemberSignature Language="C#" Value="public static void FreeNamedDataSlot (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void FreeNamedDataSlot(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Contexts.Context.FreeNamedDataSlot(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub FreeNamedDataSlot (name As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void FreeNamedDataSlot(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -269,6 +289,8 @@
       <MemberSignature Language="C#" Value="public virtual void Freeze ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Freeze() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Contexts.Context.Freeze" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Freeze ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Freeze();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -297,6 +319,8 @@
       <MemberSignature Language="C#" Value="public static object GetData (LocalDataStoreSlot slot);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetData(class System.LocalDataStoreSlot slot) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Contexts.Context.GetData(System.LocalDataStoreSlot)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetData (slot As LocalDataStoreSlot) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetData(LocalDataStoreSlot ^ slot);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -321,6 +345,8 @@
       <MemberSignature Language="C#" Value="public static LocalDataStoreSlot GetNamedDataSlot (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.LocalDataStoreSlot GetNamedDataSlot(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Contexts.Context.GetNamedDataSlot(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetNamedDataSlot (name As String) As LocalDataStoreSlot" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static LocalDataStoreSlot ^ GetNamedDataSlot(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -352,6 +378,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Runtime.Remoting.Contexts.IContextProperty GetProperty (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Runtime.Remoting.Contexts.IContextProperty GetProperty(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Contexts.Context.GetProperty(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetProperty (name As String) As IContextProperty" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Runtime::Remoting::Contexts::IContextProperty ^ GetProperty(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -376,6 +404,8 @@
       <MemberSignature Language="C#" Value="public static bool RegisterDynamicProperty (System.Runtime.Remoting.Contexts.IDynamicProperty prop, ContextBoundObject obj, System.Runtime.Remoting.Contexts.Context ctx);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool RegisterDynamicProperty(class System.Runtime.Remoting.Contexts.IDynamicProperty prop, class System.ContextBoundObject obj, class System.Runtime.Remoting.Contexts.Context ctx) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Contexts.Context.RegisterDynamicProperty(System.Runtime.Remoting.Contexts.IDynamicProperty,System.ContextBoundObject,System.Runtime.Remoting.Contexts.Context)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function RegisterDynamicProperty (prop As IDynamicProperty, obj As ContextBoundObject, ctx As Context) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool RegisterDynamicProperty(System::Runtime::Remoting::Contexts::IDynamicProperty ^ prop, ContextBoundObject ^ obj, System::Runtime::Remoting::Contexts::Context ^ ctx);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -421,6 +451,8 @@
       <MemberSignature Language="C#" Value="public static void SetData (LocalDataStoreSlot slot, object data);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetData(class System.LocalDataStoreSlot slot, object data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Contexts.Context.SetData(System.LocalDataStoreSlot,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetData (slot As LocalDataStoreSlot, data As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetData(LocalDataStoreSlot ^ slot, System::Object ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -446,6 +478,8 @@
       <MemberSignature Language="C#" Value="public virtual void SetProperty (System.Runtime.Remoting.Contexts.IContextProperty prop);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetProperty(class System.Runtime.Remoting.Contexts.IContextProperty prop) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Contexts.Context.SetProperty(System.Runtime.Remoting.Contexts.IContextProperty)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetProperty (prop As IContextProperty)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetProperty(System::Runtime::Remoting::Contexts::IContextProperty ^ prop);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -478,6 +512,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Contexts.Context.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -499,6 +535,8 @@
       <MemberSignature Language="C#" Value="public static bool UnregisterDynamicProperty (string name, ContextBoundObject obj, System.Runtime.Remoting.Contexts.Context ctx);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool UnregisterDynamicProperty(string name, class System.ContextBoundObject obj, class System.Runtime.Remoting.Contexts.Context ctx) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Contexts.Context.UnregisterDynamicProperty(System.String,System.ContextBoundObject,System.Runtime.Remoting.Contexts.Context)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function UnregisterDynamicProperty (name As String, obj As ContextBoundObject, ctx As Context) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool UnregisterDynamicProperty(System::String ^ name, ContextBoundObject ^ obj, System::Runtime::Remoting::Contexts::Context ^ ctx);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

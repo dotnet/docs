@@ -1,7 +1,9 @@
-<Type Name="DataObject" FullName="System.Security.Cryptography.Xml.DataObject">
+﻿<Type Name="DataObject" FullName="System.Security.Cryptography.Xml.DataObject">
   <TypeSignature Language="C#" Value="public class DataObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataObject extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Xml.DataObject" />
+  <TypeSignature Language="VB.NET" Value="Public Class DataObject" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataObject" />
   <AssemblyInfo>
     <AssemblyName>System.Security</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,10 +45,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Xml.DataObject" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DataObject ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.DataObject.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataObject();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -88,6 +101,8 @@
       <MemberSignature Language="C#" Value="public DataObject (string id, string mimeType, string encoding, System.Xml.XmlElement data);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, string mimeType, string encoding, class System.Xml.XmlElement data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.DataObject.#ctor(System.String,System.String,System.String,System.Xml.XmlElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (id As String, mimeType As String, encoding As String, data As XmlElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataObject(System::String ^ id, System::String ^ mimeType, System::String ^ encoding, System::Xml::XmlElement ^ data);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -124,6 +139,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.XmlNodeList Data { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlNodeList Data" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.DataObject.Data" />
+      <MemberSignature Language="VB.NET" Value="Public Property Data As XmlNodeList" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlNodeList ^ Data { System::Xml::XmlNodeList ^ get(); void set(System::Xml::XmlNodeList ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -169,6 +186,8 @@
       <MemberSignature Language="C#" Value="public string Encoding { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Encoding" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.DataObject.Encoding" />
+      <MemberSignature Language="VB.NET" Value="Public Property Encoding As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Encoding { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -198,6 +217,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.XmlElement GetXml ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlElement GetXml() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.DataObject.GetXml" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetXml () As XmlElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::XmlElement ^ GetXml();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -228,6 +249,8 @@
       <MemberSignature Language="C#" Value="public string Id { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Id" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.DataObject.Id" />
+      <MemberSignature Language="VB.NET" Value="Public Property Id As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Id { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -272,6 +295,8 @@
       <MemberSignature Language="C#" Value="public void LoadXml (System.Xml.XmlElement value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void LoadXml(class System.Xml.XmlElement value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.DataObject.LoadXml(System.Xml.XmlElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub LoadXml (value As XmlElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void LoadXml(System::Xml::XmlElement ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -305,6 +330,8 @@
       <MemberSignature Language="C#" Value="public string MimeType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MimeType" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.DataObject.MimeType" />
+      <MemberSignature Language="VB.NET" Value="Public Property MimeType As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MimeType { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -330,14 +357,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Xml.DataObject" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

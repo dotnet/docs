@@ -1,7 +1,9 @@
-<Type Name="TextExpressionCompilerResults" FullName="System.Activities.XamlIntegration.TextExpressionCompilerResults">
+﻿<Type Name="TextExpressionCompilerResults" FullName="System.Activities.XamlIntegration.TextExpressionCompilerResults">
   <TypeSignature Language="C#" Value="public class TextExpressionCompilerResults" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TextExpressionCompilerResults extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Activities.XamlIntegration.TextExpressionCompilerResults" />
+  <TypeSignature Language="VB.NET" Value="Public Class TextExpressionCompilerResults" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TextExpressionCompilerResults" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Activities.XamlIntegration.TextExpressionCompilerError&gt; CompilerMessages { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Activities.XamlIntegration.TextExpressionCompilerError&gt; CompilerMessages" />
       <MemberSignature Language="DocId" Value="P:System.Activities.XamlIntegration.TextExpressionCompilerResults.CompilerMessages" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CompilerMessages As ReadOnlyCollection(Of TextExpressionCompilerError)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Activities::XamlIntegration::TextExpressionCompilerError ^&gt; ^ CompilerMessages { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Activities::XamlIntegration::TextExpressionCompilerError ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -37,6 +41,8 @@
       <MemberSignature Language="C#" Value="public bool HasErrors { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasErrors" />
       <MemberSignature Language="DocId" Value="P:System.Activities.XamlIntegration.TextExpressionCompilerResults.HasErrors" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasErrors As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasErrors { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -56,6 +62,8 @@
       <MemberSignature Language="C#" Value="public bool HasSourceInfo { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasSourceInfo" />
       <MemberSignature Language="DocId" Value="P:System.Activities.XamlIntegration.TextExpressionCompilerResults.HasSourceInfo" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasSourceInfo As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasSourceInfo { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -75,6 +83,8 @@
       <MemberSignature Language="C#" Value="public Type ResultType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type ResultType" />
       <MemberSignature Language="DocId" Value="P:System.Activities.XamlIntegration.TextExpressionCompilerResults.ResultType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResultType As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ResultType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

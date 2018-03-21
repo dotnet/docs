@@ -1,7 +1,9 @@
-<Type Name="ConfigurationBuilder" FullName="System.Configuration.ConfigurationBuilder">
+﻿<Type Name="ConfigurationBuilder" FullName="System.Configuration.ConfigurationBuilder">
   <TypeSignature Language="C#" Value="public abstract class ConfigurationBuilder : System.Configuration.Provider.ProviderBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ConfigurationBuilder extends System.Configuration.Provider.ProviderBase" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.ConfigurationBuilder" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ConfigurationBuilder&#xA;Inherits ProviderBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ConfigurationBuilder abstract : System::Configuration::Provider::ProviderBase" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -60,6 +62,8 @@
       <MemberSignature Language="C#" Value="protected ConfigurationBuilder ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationBuilder.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ConfigurationBuilder();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -75,6 +79,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Configuration.ConfigurationSection ProcessConfigurationSection (System.Configuration.ConfigurationSection configSection);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Configuration.ConfigurationSection ProcessConfigurationSection(class System.Configuration.ConfigurationSection configSection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationBuilder.ProcessConfigurationSection(System.Configuration.ConfigurationSection)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ProcessConfigurationSection (configSection As ConfigurationSection) As ConfigurationSection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Configuration::ConfigurationSection ^ ProcessConfigurationSection(System::Configuration::ConfigurationSection ^ configSection);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -97,6 +103,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Xml.XmlNode ProcessRawXml (System.Xml.XmlNode rawXml);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Xml.XmlNode ProcessRawXml(class System.Xml.XmlNode rawXml) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationBuilder.ProcessRawXml(System.Xml.XmlNode)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ProcessRawXml (rawXml As XmlNode) As XmlNode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Xml::XmlNode ^ ProcessRawXml(System::Xml::XmlNode ^ rawXml);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="PrintJobType" FullName="System.Printing.PrintJobType">
+﻿<Type Name="PrintJobType" FullName="System.Printing.PrintJobType">
   <TypeSignature Language="C#" Value="public enum PrintJobType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PrintJobType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Printing.PrintJobType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum PrintJobType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class PrintJobType" />
   <AssemblyInfo>
     <AssemblyName>System.Printing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="Legacy" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintJobType Legacy = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintJobType.Legacy" />
+      <MemberSignature Language="VB.NET" Value="Legacy" />
+      <MemberSignature Language="C++ CLI" Value="Legacy" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -27,6 +31,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.PrintJobType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>A non-XPS print job.</summary>
       </Docs>
@@ -35,6 +40,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintJobType None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintJobType.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -43,6 +50,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.PrintJobType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Not specified whether the print job is [!INCLUDE[TLA2#tla_metro](~/includes/tla2sharptla-metro-md.md)].</summary>
       </Docs>
@@ -51,6 +59,8 @@
       <MemberSignature Language="C#" Value="Xps" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintJobType Xps = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintJobType.Xps" />
+      <MemberSignature Language="VB.NET" Value="Xps" />
+      <MemberSignature Language="C++ CLI" Value="Xps" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -59,6 +69,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.PrintJobType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>An [!INCLUDE[TLA2#tla_metro](~/includes/tla2sharptla-metro-md.md)] print job.</summary>
       </Docs>

@@ -1,7 +1,9 @@
-<Type Name="ObjectManager" FullName="System.Runtime.Serialization.ObjectManager">
+﻿<Type Name="ObjectManager" FullName="System.Runtime.Serialization.ObjectManager">
   <TypeSignature Language="C#" Value="public class ObjectManager" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi ObjectManager extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.ObjectManager" />
+  <TypeSignature Language="VB.NET" Value="Public Class ObjectManager" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ObjectManager" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -49,6 +51,8 @@
       <MemberSignature Language="C#" Value="public ObjectManager (System.Runtime.Serialization.ISurrogateSelector selector, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.ISurrogateSelector selector, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.ObjectManager.#ctor(System.Runtime.Serialization.ISurrogateSelector,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (selector As ISurrogateSelector, context As StreamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ObjectManager(System::Runtime::Serialization::ISurrogateSelector ^ selector, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -85,6 +89,8 @@
       <MemberSignature Language="C#" Value="public virtual void DoFixups ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DoFixups() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.ObjectManager.DoFixups" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub DoFixups ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void DoFixups();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -125,6 +131,8 @@
       <MemberSignature Language="C#" Value="public virtual object GetObject (long objectID);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetObject(int64 objectID) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.ObjectManager.GetObject(System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetObject (objectID As Long) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ GetObject(long objectID);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -164,6 +172,8 @@
       <MemberSignature Language="C#" Value="public virtual void RaiseDeserializationEvent ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RaiseDeserializationEvent() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.ObjectManager.RaiseDeserializationEvent" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub RaiseDeserializationEvent ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RaiseDeserializationEvent();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -191,6 +201,8 @@
       <MemberSignature Language="C#" Value="public void RaiseOnDeserializingEvent (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RaiseOnDeserializingEvent(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.ObjectManager.RaiseOnDeserializingEvent(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RaiseOnDeserializingEvent (obj As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RaiseOnDeserializingEvent(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -217,10 +229,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="RecordArrayElementFixup">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Records a fixup for one element in an array, to be executed later.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="RecordArrayElementFixup">
       <MemberSignature Language="C#" Value="public virtual void RecordArrayElementFixup (long arrayToBeFixed, int index, long objectRequired);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RecordArrayElementFixup(int64 arrayToBeFixed, int32 index, int64 objectRequired) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.ObjectManager.RecordArrayElementFixup(System.Int64,System.Int32,System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub RecordArrayElementFixup (arrayToBeFixed As Long, index As Integer, objectRequired As Long)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RecordArrayElementFixup(long arrayToBeFixed, int index, long objectRequired);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -264,6 +288,8 @@
       <MemberSignature Language="C#" Value="public virtual void RecordArrayElementFixup (long arrayToBeFixed, int[] indices, long objectRequired);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RecordArrayElementFixup(int64 arrayToBeFixed, int32[] indices, int64 objectRequired) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.ObjectManager.RecordArrayElementFixup(System.Int64,System.Int32[],System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub RecordArrayElementFixup (arrayToBeFixed As Long, indices As Integer(), objectRequired As Long)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RecordArrayElementFixup(long arrayToBeFixed, cli::array &lt;int&gt; ^ indices, long objectRequired);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -307,6 +333,8 @@
       <MemberSignature Language="C#" Value="public virtual void RecordDelayedFixup (long objectToBeFixed, string memberName, long objectRequired);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RecordDelayedFixup(int64 objectToBeFixed, string memberName, int64 objectRequired) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.ObjectManager.RecordDelayedFixup(System.Int64,System.String,System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub RecordDelayedFixup (objectToBeFixed As Long, memberName As String, objectRequired As Long)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RecordDelayedFixup(long objectToBeFixed, System::String ^ memberName, long objectRequired);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -351,6 +379,8 @@
       <MemberSignature Language="C#" Value="public virtual void RecordFixup (long objectToBeFixed, System.Reflection.MemberInfo member, long objectRequired);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RecordFixup(int64 objectToBeFixed, class System.Reflection.MemberInfo member, int64 objectRequired) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.ObjectManager.RecordFixup(System.Int64,System.Reflection.MemberInfo,System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub RecordFixup (objectToBeFixed As Long, member As MemberInfo, objectRequired As Long)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RecordFixup(long objectToBeFixed, System::Reflection::MemberInfo ^ member, long objectRequired);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -390,10 +420,22 @@
         <exception cref="T:System.ArgumentNullException">The <paramref name="member" /> parameter is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="RegisterObject">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Registers an object as it is deserialized.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="RegisterObject">
       <MemberSignature Language="C#" Value="public virtual void RegisterObject (object obj, long objectID);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RegisterObject(object obj, int64 objectID) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.ObjectManager.RegisterObject(System.Object,System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub RegisterObject (obj As Object, objectID As Long)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RegisterObject(System::Object ^ obj, long objectID);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -441,6 +483,8 @@
       <MemberSignature Language="C#" Value="public void RegisterObject (object obj, long objectID, System.Runtime.Serialization.SerializationInfo info);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RegisterObject(object obj, int64 objectID, class System.Runtime.Serialization.SerializationInfo info) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.ObjectManager.RegisterObject(System.Object,System.Int64,System.Runtime.Serialization.SerializationInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RegisterObject (obj As Object, objectID As Long, info As SerializationInfo)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RegisterObject(System::Object ^ obj, long objectID, System::Runtime::Serialization::SerializationInfo ^ info);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -490,6 +534,8 @@
       <MemberSignature Language="C#" Value="public void RegisterObject (object obj, long objectID, System.Runtime.Serialization.SerializationInfo info, long idOfContainingObj, System.Reflection.MemberInfo member);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RegisterObject(object obj, int64 objectID, class System.Runtime.Serialization.SerializationInfo info, int64 idOfContainingObj, class System.Reflection.MemberInfo member) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.ObjectManager.RegisterObject(System.Object,System.Int64,System.Runtime.Serialization.SerializationInfo,System.Int64,System.Reflection.MemberInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RegisterObject (obj As Object, objectID As Long, info As SerializationInfo, idOfContainingObj As Long, member As MemberInfo)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RegisterObject(System::Object ^ obj, long objectID, System::Runtime::Serialization::SerializationInfo ^ info, long idOfContainingObj, System::Reflection::MemberInfo ^ member);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -545,6 +591,8 @@
       <MemberSignature Language="C#" Value="public void RegisterObject (object obj, long objectID, System.Runtime.Serialization.SerializationInfo info, long idOfContainingObj, System.Reflection.MemberInfo member, int[] arrayIndex);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RegisterObject(object obj, int64 objectID, class System.Runtime.Serialization.SerializationInfo info, int64 idOfContainingObj, class System.Reflection.MemberInfo member, int32[] arrayIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.ObjectManager.RegisterObject(System.Object,System.Int64,System.Runtime.Serialization.SerializationInfo,System.Int64,System.Reflection.MemberInfo,System.Int32[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RegisterObject (obj As Object, objectID As Long, info As SerializationInfo, idOfContainingObj As Long, member As MemberInfo, arrayIndex As Integer())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RegisterObject(System::Object ^ obj, long objectID, System::Runtime::Serialization::SerializationInfo ^ info, long idOfContainingObj, System::Reflection::MemberInfo ^ member, cli::array &lt;int&gt; ^ arrayIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -598,25 +646,5 @@
         <exception cref="T:System.Runtime.Serialization.SerializationException">The <paramref name="objectID" /> has already been registered for an object other than <paramref name="obj" />, or <paramref name="member" /> is not a <see cref="T:System.Reflection.FieldInfo" /> and <paramref name="member" /> isn't <see langword="null" />.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="RecordArrayElementFixup">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Records a fixup for one element in an array, to be executed later.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="RegisterObject">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Registers an object as it is deserialized.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

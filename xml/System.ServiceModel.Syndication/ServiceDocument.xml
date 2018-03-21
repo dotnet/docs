@@ -1,7 +1,9 @@
-<Type Name="ServiceDocument" FullName="System.ServiceModel.Syndication.ServiceDocument">
+﻿<Type Name="ServiceDocument" FullName="System.ServiceModel.Syndication.ServiceDocument">
   <TypeSignature Language="C#" Value="public class ServiceDocument" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ServiceDocument extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Syndication.ServiceDocument" />
+  <TypeSignature Language="VB.NET" Value="Public Class ServiceDocument" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ServiceDocument" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,10 +28,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Syndication.ServiceDocument" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ServiceDocument ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.ServiceDocument.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ServiceDocument();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -49,6 +62,8 @@
       <MemberSignature Language="C#" Value="public ServiceDocument (System.Collections.Generic.IEnumerable&lt;System.ServiceModel.Syndication.Workspace&gt; workspaces);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;class System.ServiceModel.Syndication.Workspace&gt; workspaces) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.ServiceDocument.#ctor(System.Collections.Generic.IEnumerable{System.ServiceModel.Syndication.Workspace})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (workspaces As IEnumerable(Of Workspace))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ServiceDocument(System::Collections::Generic::IEnumerable&lt;System::ServiceModel::Syndication::Workspace ^&gt; ^ workspaces);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -71,6 +86,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.Dictionary&lt;System.Xml.XmlQualifiedName,string&gt; AttributeExtensions { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.Dictionary`2&lt;class System.Xml.XmlQualifiedName, string&gt; AttributeExtensions" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.ServiceDocument.AttributeExtensions" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AttributeExtensions As Dictionary(Of XmlQualifiedName, String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::Dictionary&lt;System::Xml::XmlQualifiedName ^, System::String ^&gt; ^ AttributeExtensions { System::Collections::Generic::Dictionary&lt;System::Xml::XmlQualifiedName ^, System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -93,6 +110,8 @@
       <MemberSignature Language="C#" Value="public Uri BaseUri { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri BaseUri" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.ServiceDocument.BaseUri" />
+      <MemberSignature Language="VB.NET" Value="Public Property BaseUri As Uri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ BaseUri { Uri ^ get(); void set(Uri ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -112,9 +131,11 @@
       </Docs>
     </Member>
     <Member MemberName="CreateWorkspace">
-      <MemberSignature Language="C#" Value="protected virtual System.ServiceModel.Syndication.Workspace CreateWorkspace ();" />
+      <MemberSignature Language="C#" Value="protected internal virtual System.ServiceModel.Syndication.Workspace CreateWorkspace ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.ServiceModel.Syndication.Workspace CreateWorkspace() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.ServiceDocument.CreateWorkspace" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function CreateWorkspace () As Workspace" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::ServiceModel::Syndication::Workspace ^ CreateWorkspace();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -138,6 +159,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Syndication.SyndicationElementExtensionCollection ElementExtensions { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Syndication.SyndicationElementExtensionCollection ElementExtensions" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.ServiceDocument.ElementExtensions" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ElementExtensions As SyndicationElementExtensionCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Syndication::SyndicationElementExtensionCollection ^ ElementExtensions { System::ServiceModel::Syndication::SyndicationElementExtensionCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -171,6 +194,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Syndication.ServiceDocumentFormatter GetFormatter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ServiceModel.Syndication.ServiceDocumentFormatter GetFormatter() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.ServiceDocument.GetFormatter" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetFormatter () As ServiceDocumentFormatter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Syndication::ServiceDocumentFormatter ^ GetFormatter();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -194,6 +219,8 @@
       <MemberSignature Language="C#" Value="public string Language { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Language" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.ServiceDocument.Language" />
+      <MemberSignature Language="VB.NET" Value="Public Property Language As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Language { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -216,6 +243,8 @@
       <MemberSignature Language="C#" Value="public static System.ServiceModel.Syndication.ServiceDocument Load (System.Xml.XmlReader reader);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Syndication.ServiceDocument Load(class System.Xml.XmlReader reader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.ServiceDocument.Load(System.Xml.XmlReader)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Load (reader As XmlReader) As ServiceDocument" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Syndication::ServiceDocument ^ Load(System::Xml::XmlReader ^ reader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -242,6 +271,8 @@
       <MemberSignature Language="C#" Value="public static TServiceDocument Load&lt;TServiceDocument&gt; (System.Xml.XmlReader reader) where TServiceDocument : System.ServiceModel.Syndication.ServiceDocumentnew();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TServiceDocument Load&lt;.ctor (class System.ServiceModel.Syndication.ServiceDocument) TServiceDocument&gt;(class System.Xml.XmlReader reader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.ServiceDocument.Load``1(System.Xml.XmlReader)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Load(Of TServiceDocument As {ServiceDocumentNew}) (reader As XmlReader) As TServiceDocument" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TServiceDocument&gt;&#xA; where TServiceDocument : System::ServiceModel::Syndication::ServiceDocumentgcnew() static TServiceDocument Load(System::Xml::XmlReader ^ reader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -277,6 +308,8 @@
       <MemberSignature Language="C#" Value="public void Save (System.Xml.XmlWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Save(class System.Xml.XmlWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.ServiceDocument.Save(System.Xml.XmlWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Save (writer As XmlWriter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save(System::Xml::XmlWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -299,9 +332,11 @@
       </Docs>
     </Member>
     <Member MemberName="TryParseAttribute">
-      <MemberSignature Language="C#" Value="protected virtual bool TryParseAttribute (string name, string ns, string value, string version);" />
+      <MemberSignature Language="C#" Value="protected internal virtual bool TryParseAttribute (string name, string ns, string value, string version);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance bool TryParseAttribute(string name, string ns, string value, string version) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.ServiceDocument.TryParseAttribute(System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function TryParseAttribute (name As String, ns As String, value As String, version As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual bool TryParseAttribute(System::String ^ name, System::String ^ ns, System::String ^ value, System::String ^ version);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -332,9 +367,11 @@
       </Docs>
     </Member>
     <Member MemberName="TryParseElement">
-      <MemberSignature Language="C#" Value="protected virtual bool TryParseElement (System.Xml.XmlReader reader, string version);" />
+      <MemberSignature Language="C#" Value="protected internal virtual bool TryParseElement (System.Xml.XmlReader reader, string version);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance bool TryParseElement(class System.Xml.XmlReader reader, string version) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.ServiceDocument.TryParseElement(System.Xml.XmlReader,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function TryParseElement (reader As XmlReader, version As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual bool TryParseElement(System::Xml::XmlReader ^ reader, System::String ^ version);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -364,6 +401,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Syndication.Workspace&gt; Workspaces { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.ServiceModel.Syndication.Workspace&gt; Workspaces" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.ServiceDocument.Workspaces" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Workspaces As Collection(Of Workspace)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Syndication::Workspace ^&gt; ^ Workspaces { System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Syndication::Workspace ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -383,9 +422,11 @@
       </Docs>
     </Member>
     <Member MemberName="WriteAttributeExtensions">
-      <MemberSignature Language="C#" Value="protected virtual void WriteAttributeExtensions (System.Xml.XmlWriter writer, string version);" />
+      <MemberSignature Language="C#" Value="protected internal virtual void WriteAttributeExtensions (System.Xml.XmlWriter writer, string version);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void WriteAttributeExtensions(class System.Xml.XmlWriter writer, string version) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.ServiceDocument.WriteAttributeExtensions(System.Xml.XmlWriter,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub WriteAttributeExtensions (writer As XmlWriter, version As String)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void WriteAttributeExtensions(System::Xml::XmlWriter ^ writer, System::String ^ version);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -410,9 +451,11 @@
       </Docs>
     </Member>
     <Member MemberName="WriteElementExtensions">
-      <MemberSignature Language="C#" Value="protected virtual void WriteElementExtensions (System.Xml.XmlWriter writer, string version);" />
+      <MemberSignature Language="C#" Value="protected internal virtual void WriteElementExtensions (System.Xml.XmlWriter writer, string version);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void WriteElementExtensions(class System.Xml.XmlWriter writer, string version) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.ServiceDocument.WriteElementExtensions(System.Xml.XmlWriter,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub WriteElementExtensions (writer As XmlWriter, version As String)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void WriteElementExtensions(System::Xml::XmlWriter ^ writer, System::String ^ version);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -436,14 +479,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Syndication.ServiceDocument" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

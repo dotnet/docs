@@ -1,7 +1,9 @@
-<Type Name="DockPanel" FullName="System.Windows.Controls.DockPanel">
+﻿<Type Name="DockPanel" FullName="System.Windows.Controls.DockPanel">
   <TypeSignature Language="C#" Value="public class DockPanel : System.Windows.Controls.Panel" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi DockPanel extends System.Windows.Controls.Panel" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.DockPanel" />
+  <TypeSignature Language="VB.NET" Value="Public Class DockPanel&#xA;Inherits Panel" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DockPanel : System::Windows::Controls::Panel" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +37,8 @@
       <MemberSignature Language="C#" Value="public DockPanel ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DockPanel.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DockPanel();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -50,6 +54,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Size ArrangeOverride (System.Windows.Size arrangeSize);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Size ArrangeOverride(valuetype System.Windows.Size arrangeSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DockPanel.ArrangeOverride(System.Windows.Size)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function ArrangeOverride (arrangeSize As Size) As Size" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size ArrangeOverride(System::Windows::Size arrangeSize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -68,10 +74,27 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Dock">
+      <MemberSignature Language="C#" Value="see GetDock, and SetDock" />
+      <MemberSignature Language="ILAsm" Value="see GetDock, and SetDock" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DockPanel.Dock" />
+      <MemberSignature Language="VB.NET" Value="see GetDock, and SetDock" />
+      <MemberType>AttachedProperty</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="DockProperty">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty DockProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty DockProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DockPanel.DockProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DockProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ DockProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -90,6 +113,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Controls.Dock GetDock (System.Windows.UIElement element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Controls.Dock GetDock(class System.Windows.UIElement element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DockPanel.GetDock(System.Windows.UIElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetDock (element As UIElement) As Dock" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Controls::Dock GetDock(System::Windows::UIElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -119,6 +144,8 @@
       <MemberSignature Language="C#" Value="public bool LastChildFill { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool LastChildFill" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DockPanel.LastChildFill" />
+      <MemberSignature Language="VB.NET" Value="Public Property LastChildFill As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool LastChildFill { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -153,6 +180,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty LastChildFillProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty LastChildFillProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DockPanel.LastChildFillProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly LastChildFillProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ LastChildFillProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -171,6 +200,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Size MeasureOverride (System.Windows.Size constraint);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Size MeasureOverride(valuetype System.Windows.Size constraint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DockPanel.MeasureOverride(System.Windows.Size)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function MeasureOverride (constraint As Size) As Size" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size MeasureOverride(System::Windows::Size constraint);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -200,6 +231,7 @@
       <MemberSignature Language="C#" Value="public static void SetDock (System.Windows.UIElement element, System.Windows.Controls.Dock dock);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetDock(class System.Windows.UIElement element, valuetype System.Windows.Controls.Dock dock) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DockPanel.SetDock(System.Windows.UIElement,System.Windows.Controls.Dock)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetDock(System::Windows::UIElement ^ element, System::Windows::Controls::Dock dock);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

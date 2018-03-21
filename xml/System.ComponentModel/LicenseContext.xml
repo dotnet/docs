@@ -1,7 +1,9 @@
-<Type Name="LicenseContext" FullName="System.ComponentModel.LicenseContext">
+﻿<Type Name="LicenseContext" FullName="System.ComponentModel.LicenseContext">
   <TypeSignature Language="C#" Value="public class LicenseContext : IServiceProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LicenseContext extends System.Object implements class System.IServiceProvider" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.LicenseContext" />
+  <TypeSignature Language="VB.NET" Value="Public Class LicenseContext&#xA;Implements IServiceProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class LicenseContext : IServiceProvider" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -51,6 +53,8 @@
       <MemberSignature Language="C#" Value="public LicenseContext ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.LicenseContext.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LicenseContext();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -75,6 +79,7 @@
       <MemberSignature Language="C#" Value="public virtual string GetSavedLicenseKey (Type type, System.Reflection.Assembly resourceAssembly);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetSavedLicenseKey(class System.Type type, class System.Reflection.Assembly resourceAssembly) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.LicenseContext.GetSavedLicenseKey(System.Type,System.Reflection.Assembly)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetSavedLicenseKey(Type ^ type, System::Reflection::Assembly ^ resourceAssembly);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -119,6 +124,7 @@
       <MemberSignature Language="C#" Value="public virtual object GetService (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetService(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.LicenseContext.GetService(System.Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ GetService(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -150,6 +156,7 @@
       <MemberSignature Language="C#" Value="public virtual void SetSavedLicenseKey (Type type, string key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetSavedLicenseKey(class System.Type type, string key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.LicenseContext.SetSavedLicenseKey(System.Type,System.String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetSavedLicenseKey(Type ^ type, System::String ^ key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -200,6 +207,8 @@
       <MemberSignature Language="C#" Value="public virtual System.ComponentModel.LicenseUsageMode UsageMode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ComponentModel.LicenseUsageMode UsageMode" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.LicenseContext.UsageMode" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property UsageMode As LicenseUsageMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::LicenseUsageMode UsageMode { System::ComponentModel::LicenseUsageMode get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

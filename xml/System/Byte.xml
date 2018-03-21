@@ -1,7 +1,9 @@
-<Type Name="Byte" FullName="System.Byte">
+﻿<Type Name="Byte" FullName="System.Byte">
   <TypeSignature Language="C#" Value="public struct Byte : IComparable, IComparable&lt;byte&gt;, IConvertible, IEquatable&lt;byte&gt;, IFormattable" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable sealed beforefieldinit unsigned int8 extends System.ValueType implements class System.IComparable, class System.IComparable`1&lt;unsigned int8&gt;, class System.IConvertible, class System.IEquatable`1&lt;unsigned int8&gt;, class System.IFormattable" />
   <TypeSignature Language="DocId" Value="T:System.Byte" />
+  <TypeSignature Language="VB.NET" Value="Public Structure Byte&#xA;Implements IComparable, IComparable(Of Byte), IConvertible, IEquatable(Of Byte), IFormattable" />
+  <TypeSignature Language="C++ CLI" Value="public value class Byte : IComparable, IComparable&lt;System::Byte&gt;, IConvertible, IEquatable&lt;System::Byte&gt;, IFormattable" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -119,11 +121,29 @@
     <altmember cref="T:System.IConvertible" />
   </Docs>
   <Members>
+    <MemberGroup MemberName="CompareTo">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Compares this instance to a specified object or <see cref="T:System.Byte" /> and returns an indication of their relative values.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CompareTo">
       <MemberSignature Language="C#" Value="public int CompareTo (byte value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 CompareTo(unsigned int8 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Byte.CompareTo(System.Byte)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CompareTo (value As Byte) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int CompareTo(System::Byte value);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IComparable`1.CompareTo(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -200,7 +220,12 @@
       <MemberSignature Language="C#" Value="public int CompareTo (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 CompareTo(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Byte.CompareTo(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CompareTo (value As Object) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int CompareTo(System::Object ^ value);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IComparable.CompareTo(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -274,11 +299,29 @@
         <altmember cref="M:System.Byte.Equals(System.Object)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a value indicating whether two instances of <see cref="T:System.Byte" /> represent the same value.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Equals">
       <MemberSignature Language="C#" Value="public bool Equals (byte obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(unsigned int8 obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Byte.Equals(System.Byte)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (obj As Byte) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Byte obj);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -331,6 +374,8 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Byte.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -379,6 +424,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Byte.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -412,7 +459,12 @@
       <MemberSignature Language="C#" Value="public TypeCode GetTypeCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.TypeCode GetTypeCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Byte.GetTypeCode" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetTypeCode () As TypeCode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual TypeCode GetTypeCode();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.GetTypeCode</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -440,6 +492,8 @@
       <MemberSignature Language="C#" Value="public const byte MaxValue = 255;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int8 MaxValue = unsigned int8(255)" />
       <MemberSignature Language="DocId" Value="F:System.Byte.MaxValue" />
+      <MemberSignature Language="VB.NET" Value="Public Const MaxValue As Byte  = 255" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Byte MaxValue = 255;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -488,6 +542,8 @@
       <MemberSignature Language="C#" Value="public const byte MinValue = 0;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int8 MinValue = unsigned int8(0)" />
       <MemberSignature Language="DocId" Value="F:System.Byte.MinValue" />
+      <MemberSignature Language="VB.NET" Value="Public Const MinValue As Byte  = 0" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Byte MinValue = 0;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -532,10 +588,26 @@
         <altmember cref="F:System.Byte.MaxValue" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Parse">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the string representation of a number to its <see cref="T:System.Byte" /> equivalent.</summary>
+        <altmember cref="Overload:System.Byte.TryParse" />
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Parse">
       <MemberSignature Language="C#" Value="public static byte Parse (string s);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int8 Parse(string s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Byte.Parse(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (s As String) As Byte" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Byte Parse(System::String ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -612,6 +684,8 @@
       <MemberSignature Language="C#" Value="public static byte Parse (string s, System.Globalization.NumberStyles style);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int8 Parse(string s, valuetype System.Globalization.NumberStyles style) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Byte.Parse(System.String,System.Globalization.NumberStyles)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (s As String, style As NumberStyles) As Byte" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Byte Parse(System::String ^ s, System::Globalization::NumberStyles style);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -726,6 +800,8 @@
       <MemberSignature Language="C#" Value="public static byte Parse (string s, IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int8 Parse(string s, class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Byte.Parse(System.String,System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (s As String, provider As IFormatProvider) As Byte" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Byte Parse(System::String ^ s, IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -806,6 +882,8 @@
       <MemberSignature Language="C#" Value="public static byte Parse (string s, System.Globalization.NumberStyles style, IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int8 Parse(string s, valuetype System.Globalization.NumberStyles style, class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Byte.Parse(System.String,System.Globalization.NumberStyles,System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (s As String, style As NumberStyles, provider As IFormatProvider) As Byte" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Byte Parse(System::String ^ s, System::Globalization::NumberStyles style, IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -921,7 +999,12 @@
       <MemberSignature Language="C#" Value="int IComparable.CompareTo (object value);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.IComparable.CompareTo(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Byte.System#IComparable#CompareTo(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Function CompareTo (value As Object) As Integer Implements IComparable.CompareTo" />
+      <MemberSignature Language="C++ CLI" Value=" virtual int System.IComparable.CompareTo(System::Object ^ value) = IComparable::CompareTo;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IComparable.CompareTo(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -946,7 +1029,12 @@
       <MemberSignature Language="C#" Value="TypeCode IConvertible.GetTypeCode ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance valuetype System.TypeCode System.IConvertible.GetTypeCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Byte.System#IConvertible#GetTypeCode" />
+      <MemberSignature Language="VB.NET" Value="Function GetTypeCode () As TypeCode Implements IConvertible.GetTypeCode" />
+      <MemberSignature Language="C++ CLI" Value=" virtual TypeCode System.IConvertible.GetTypeCode() = IConvertible::GetTypeCode;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.GetTypeCode</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -966,7 +1054,12 @@
       <MemberSignature Language="C#" Value="bool IConvertible.ToBoolean (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.IConvertible.ToBoolean(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Byte.System#IConvertible#ToBoolean(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToBoolean (provider As IFormatProvider) As Boolean Implements IConvertible.ToBoolean" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.IConvertible.ToBoolean(IFormatProvider ^ provider) = IConvertible::ToBoolean;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToBoolean(System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -1007,7 +1100,12 @@
       <MemberSignature Language="C#" Value="byte IConvertible.ToByte (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance unsigned int8 System.IConvertible.ToByte(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Byte.System#IConvertible#ToByte(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToByte (provider As IFormatProvider) As Byte Implements IConvertible.ToByte" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Byte System.IConvertible.ToByte(IFormatProvider ^ provider) = IConvertible::ToByte;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToByte(System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -1047,7 +1145,12 @@
       <MemberSignature Language="C#" Value="char IConvertible.ToChar (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance char System.IConvertible.ToChar(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Byte.System#IConvertible#ToChar(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToChar (provider As IFormatProvider) As Char Implements IConvertible.ToChar" />
+      <MemberSignature Language="C++ CLI" Value=" virtual char System.IConvertible.ToChar(IFormatProvider ^ provider) = IConvertible::ToChar;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToChar(System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -1087,7 +1190,12 @@
       <MemberSignature Language="C#" Value="DateTime IConvertible.ToDateTime (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance valuetype System.DateTime System.IConvertible.ToDateTime(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Byte.System#IConvertible#ToDateTime(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToDateTime (provider As IFormatProvider) As DateTime Implements IConvertible.ToDateTime" />
+      <MemberSignature Language="C++ CLI" Value=" virtual DateTime System.IConvertible.ToDateTime(IFormatProvider ^ provider) = IConvertible::ToDateTime;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToDateTime(System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -1121,7 +1229,12 @@
       <MemberSignature Language="C#" Value="decimal IConvertible.ToDecimal (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance valuetype System.Decimal System.IConvertible.ToDecimal(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Byte.System#IConvertible#ToDecimal(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToDecimal (provider As IFormatProvider) As Decimal Implements IConvertible.ToDecimal" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Decimal System.IConvertible.ToDecimal(IFormatProvider ^ provider) = IConvertible::ToDecimal;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToDecimal(System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -1161,7 +1274,12 @@
       <MemberSignature Language="C#" Value="double IConvertible.ToDouble (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance float64 System.IConvertible.ToDouble(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Byte.System#IConvertible#ToDouble(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToDouble (provider As IFormatProvider) As Double Implements IConvertible.ToDouble" />
+      <MemberSignature Language="C++ CLI" Value=" virtual double System.IConvertible.ToDouble(IFormatProvider ^ provider) = IConvertible::ToDouble;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToDouble(System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -1201,7 +1319,12 @@
       <MemberSignature Language="C#" Value="short IConvertible.ToInt16 (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int16 System.IConvertible.ToInt16(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Byte.System#IConvertible#ToInt16(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToInt16 (provider As IFormatProvider) As Short Implements IConvertible.ToInt16" />
+      <MemberSignature Language="C++ CLI" Value=" virtual short System.IConvertible.ToInt16(IFormatProvider ^ provider) = IConvertible::ToInt16;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToInt16(System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -1241,7 +1364,12 @@
       <MemberSignature Language="C#" Value="int IConvertible.ToInt32 (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.IConvertible.ToInt32(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Byte.System#IConvertible#ToInt32(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToInt32 (provider As IFormatProvider) As Integer Implements IConvertible.ToInt32" />
+      <MemberSignature Language="C++ CLI" Value=" virtual int System.IConvertible.ToInt32(IFormatProvider ^ provider) = IConvertible::ToInt32;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToInt32(System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -1281,7 +1409,12 @@
       <MemberSignature Language="C#" Value="long IConvertible.ToInt64 (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int64 System.IConvertible.ToInt64(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Byte.System#IConvertible#ToInt64(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToInt64 (provider As IFormatProvider) As Long Implements IConvertible.ToInt64" />
+      <MemberSignature Language="C++ CLI" Value=" virtual long System.IConvertible.ToInt64(IFormatProvider ^ provider) = IConvertible::ToInt64;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToInt64(System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -1321,7 +1454,12 @@
       <MemberSignature Language="C#" Value="sbyte IConvertible.ToSByte (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int8 System.IConvertible.ToSByte(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Byte.System#IConvertible#ToSByte(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToSByte (provider As IFormatProvider) As SByte Implements IConvertible.ToSByte" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::SByte System.IConvertible.ToSByte(IFormatProvider ^ provider) = IConvertible::ToSByte;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToSByte(System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -1361,7 +1499,12 @@
       <MemberSignature Language="C#" Value="float IConvertible.ToSingle (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance float32 System.IConvertible.ToSingle(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Byte.System#IConvertible#ToSingle(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToSingle (provider As IFormatProvider) As Single Implements IConvertible.ToSingle" />
+      <MemberSignature Language="C++ CLI" Value=" virtual float System.IConvertible.ToSingle(IFormatProvider ^ provider) = IConvertible::ToSingle;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToSingle(System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -1401,7 +1544,11 @@
       <MemberSignature Language="C#" Value="object IConvertible.ToType (Type type, IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.IConvertible.ToType(class System.Type type, class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Byte.System#IConvertible#ToType(System.Type,System.IFormatProvider)" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.IConvertible.ToType(Type ^ type, IFormatProvider ^ provider) = IConvertible::ToType;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToType(System.Type,System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -1446,7 +1593,12 @@
       <MemberSignature Language="C#" Value="ushort IConvertible.ToUInt16 (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance unsigned int16 System.IConvertible.ToUInt16(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Byte.System#IConvertible#ToUInt16(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToUInt16 (provider As IFormatProvider) As UShort Implements IConvertible.ToUInt16" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::UInt16 System.IConvertible.ToUInt16(IFormatProvider ^ provider) = IConvertible::ToUInt16;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToUInt16(System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -1486,7 +1638,12 @@
       <MemberSignature Language="C#" Value="uint IConvertible.ToUInt32 (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance unsigned int32 System.IConvertible.ToUInt32(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Byte.System#IConvertible#ToUInt32(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToUInt32 (provider As IFormatProvider) As UInteger Implements IConvertible.ToUInt32" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::UInt32 System.IConvertible.ToUInt32(IFormatProvider ^ provider) = IConvertible::ToUInt32;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToUInt32(System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -1526,7 +1683,12 @@
       <MemberSignature Language="C#" Value="ulong IConvertible.ToUInt64 (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance unsigned int64 System.IConvertible.ToUInt64(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Byte.System#IConvertible#ToUInt64(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToUInt64 (provider As IFormatProvider) As ULong Implements IConvertible.ToUInt64" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::UInt64 System.IConvertible.ToUInt64(IFormatProvider ^ provider) = IConvertible::ToUInt64;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToUInt64(System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -1562,10 +1724,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the value of the current <see cref="T:System.Byte" /> object to its equivalent string representation.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ToString">
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Byte.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1627,7 +1804,12 @@
       <MemberSignature Language="C#" Value="public string ToString (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string ToString(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Byte.ToString(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToString (provider As IFormatProvider) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ ToString(IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToString(System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1702,6 +1884,8 @@
       <MemberSignature Language="C#" Value="public string ToString (string format);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string ToString(string format) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Byte.ToString(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToString (format As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToString(System::String ^ format);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1768,7 +1952,12 @@
       <MemberSignature Language="C#" Value="public string ToString (string format, IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string ToString(string format, class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Byte.ToString(System.String,System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToString (format As String, provider As IFormatProvider) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ ToString(System::String ^ format, IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IFormattable.ToString(System.String,System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1847,10 +2036,26 @@
         <altmember cref="T:System.IFormatProvider" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="TryParse">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Tries to convert the string representation of a number to its <see cref="T:System.Byte" /> equivalent, and returns a value that indicates whether the conversion succeeded.</summary>
+        <altmember cref="Overload:System.Byte.Parse" />
+      </Docs>
+    </MemberGroup>
     <Member MemberName="TryParse">
       <MemberSignature Language="C#" Value="public static bool TryParse (string s, out byte result);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string s, [out] unsigned int8&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Byte.TryParse(System.String,System.Byte@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryParse (s As String, ByRef result As Byte) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryParse(System::String ^ s, [Runtime::InteropServices::Out] System::Byte % result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1927,6 +2132,8 @@
       <MemberSignature Language="C#" Value="public static bool TryParse (string s, System.Globalization.NumberStyles style, IFormatProvider provider, out byte result);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string s, valuetype System.Globalization.NumberStyles style, class System.IFormatProvider provider, [out] unsigned int8&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Byte.TryParse(System.String,System.Globalization.NumberStyles,System.IFormatProvider,System.Byte@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryParse (s As String, style As NumberStyles, provider As IFormatProvider, ByRef result As Byte) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryParse(System::String ^ s, System::Globalization::NumberStyles style, IFormatProvider ^ provider, [Runtime::InteropServices::Out] System::Byte % result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2035,72 +2242,5 @@
         <altmember cref="T:System.IFormatProvider" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="Parse">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Converts the string representation of a number to its <see cref="T:System.Byte" /> equivalent.</summary>
-        <altmember cref="Overload:System.Byte.TryParse" />
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="CompareTo">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Compares this instance to a specified object or <see cref="T:System.Byte" /> and returns an indication of their relative values.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="TryParse">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Tries to convert the string representation of a number to its <see cref="T:System.Byte" /> equivalent, and returns a value that indicates whether the conversion succeeded.</summary>
-        <altmember cref="Overload:System.Byte.Parse" />
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Equals">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a value indicating whether two instances of <see cref="T:System.Byte" /> represent the same value.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ToString">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Converts the value of the current <see cref="T:System.Byte" /> object to its equivalent string representation.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

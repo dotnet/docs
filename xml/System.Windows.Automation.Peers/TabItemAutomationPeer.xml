@@ -1,7 +1,9 @@
-<Type Name="TabItemAutomationPeer" FullName="System.Windows.Automation.Peers.TabItemAutomationPeer">
+﻿<Type Name="TabItemAutomationPeer" FullName="System.Windows.Automation.Peers.TabItemAutomationPeer">
   <TypeSignature Language="C#" Value="public class TabItemAutomationPeer : System.Windows.Automation.Peers.SelectorItemAutomationPeer, System.Windows.Automation.Provider.ISelectionItemProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TabItemAutomationPeer extends System.Windows.Automation.Peers.SelectorItemAutomationPeer implements class System.Windows.Automation.Provider.ISelectionItemProvider" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.TabItemAutomationPeer" />
+  <TypeSignature Language="VB.NET" Value="Public Class TabItemAutomationPeer&#xA;Inherits SelectorItemAutomationPeer&#xA;Implements ISelectionItemProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TabItemAutomationPeer : System::Windows::Automation::Peers::SelectorItemAutomationPeer, System::Windows::Automation::Provider::ISelectionItemProvider" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +25,7 @@
       <MemberSignature Language="C#" Value="public TabItemAutomationPeer (object owner, System.Windows.Automation.Peers.TabControlAutomationPeer tabControlAutomationPeer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object owner, class System.Windows.Automation.Peers.TabControlAutomationPeer tabControlAutomationPeer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.TabItemAutomationPeer.#ctor(System.Object,System.Windows.Automation.Peers.TabControlAutomationPeer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TabItemAutomationPeer(System::Object ^ owner, System::Windows::Automation::Peers::TabControlAutomationPeer ^ tabControlAutomationPeer);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -43,6 +46,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.AutomationControlType GetAutomationControlTypeCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Automation.Peers.AutomationControlType GetAutomationControlTypeCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.TabItemAutomationPeer.GetAutomationControlTypeCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetAutomationControlTypeCore () As AutomationControlType" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationControlType GetAutomationControlTypeCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -62,6 +67,8 @@
       <MemberSignature Language="C#" Value="protected override System.Collections.Generic.List&lt;System.Windows.Automation.Peers.AutomationPeer&gt; GetChildrenCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Collections.Generic.List`1&lt;class System.Windows.Automation.Peers.AutomationPeer&gt; GetChildrenCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.TabItemAutomationPeer.GetChildrenCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetChildrenCore () As List(Of AutomationPeer)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Collections::Generic::List&lt;System::Windows::Automation::Peers::AutomationPeer ^&gt; ^ GetChildrenCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -81,6 +88,8 @@
       <MemberSignature Language="C#" Value="protected override string GetClassNameCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetClassNameCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.TabItemAutomationPeer.GetClassNameCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetClassNameCore () As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetClassNameCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -100,6 +109,8 @@
       <MemberSignature Language="C#" Value="protected override string GetNameCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetNameCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.TabItemAutomationPeer.GetNameCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetNameCore () As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetNameCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -126,7 +137,12 @@
       <MemberSignature Language="C#" Value="void ISelectionItemProvider.RemoveFromSelection ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Automation.Provider.ISelectionItemProvider.RemoveFromSelection() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.TabItemAutomationPeer.System#Windows#Automation#Provider#ISelectionItemProvider#RemoveFromSelection" />
+      <MemberSignature Language="VB.NET" Value="Sub RemoveFromSelection () Implements ISelectionItemProvider.RemoveFromSelection" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.Automation.Provider.ISelectionItemProvider.RemoveFromSelection() = System::Windows::Automation::Provider::ISelectionItemProvider::RemoveFromSelection;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Automation.Provider.ISelectionItemProvider.RemoveFromSelection</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

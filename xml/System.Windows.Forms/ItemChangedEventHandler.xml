@@ -1,7 +1,9 @@
-<Type Name="ItemChangedEventHandler" FullName="System.Windows.Forms.ItemChangedEventHandler">
+﻿<Type Name="ItemChangedEventHandler" FullName="System.Windows.Forms.ItemChangedEventHandler">
   <TypeSignature Language="C#" Value="public delegate void ItemChangedEventHandler(object sender, ItemChangedEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ItemChangedEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ItemChangedEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub ItemChangedEventHandler(sender As Object, e As ItemChangedEventArgs)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void ItemChangedEventHandler(System::Object ^ sender, ItemChangedEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

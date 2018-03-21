@@ -1,7 +1,9 @@
-<Type Name="OwnerDrawPropertyBag" FullName="System.Windows.Forms.OwnerDrawPropertyBag">
+﻿<Type Name="OwnerDrawPropertyBag" FullName="System.Windows.Forms.OwnerDrawPropertyBag">
   <TypeSignature Language="C#" Value="public class OwnerDrawPropertyBag : MarshalByRefObject, System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit OwnerDrawPropertyBag extends System.MarshalByRefObject implements class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.OwnerDrawPropertyBag" />
+  <TypeSignature Language="VB.NET" Value="Public Class OwnerDrawPropertyBag&#xA;Inherits MarshalByRefObject&#xA;Implements ISerializable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class OwnerDrawPropertyBag : MarshalByRefObject, System::Runtime::Serialization::ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +36,8 @@
       <MemberSignature Language="C#" Value="protected OwnerDrawPropertyBag (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.OwnerDrawPropertyBag.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; OwnerDrawPropertyBag(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -55,6 +59,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color BackColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BackColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.OwnerDrawPropertyBag.BackColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property BackColor As Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color BackColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -74,6 +80,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Forms.OwnerDrawPropertyBag Copy (System.Windows.Forms.OwnerDrawPropertyBag value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Forms.OwnerDrawPropertyBag Copy(class System.Windows.Forms.OwnerDrawPropertyBag value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.OwnerDrawPropertyBag.Copy(System.Windows.Forms.OwnerDrawPropertyBag)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Copy (value As OwnerDrawPropertyBag) As OwnerDrawPropertyBag" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Forms::OwnerDrawPropertyBag ^ Copy(System::Windows::Forms::OwnerDrawPropertyBag ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -97,6 +105,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Font Font { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Font Font" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.OwnerDrawPropertyBag.Font" />
+      <MemberSignature Language="VB.NET" Value="Public Property Font As Font" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Font ^ Font { System::Drawing::Font ^ get(); void set(System::Drawing::Font ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -116,6 +126,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color ForeColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ForeColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.OwnerDrawPropertyBag.ForeColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property ForeColor As Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color ForeColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -135,6 +147,8 @@
       <MemberSignature Language="C#" Value="public virtual bool IsEmpty ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsEmpty() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.OwnerDrawPropertyBag.IsEmpty" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function IsEmpty () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsEmpty();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -156,7 +170,12 @@
       <MemberSignature Language="C#" Value="void ISerializable.GetObjectData (System.Runtime.Serialization.SerializationInfo si, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.Serialization.ISerializable.GetObjectData(class System.Runtime.Serialization.SerializationInfo si, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.OwnerDrawPropertyBag.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Sub GetObjectData (si As SerializationInfo, context As StreamingContext) Implements ISerializable.GetObjectData" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.Serialization.ISerializable.GetObjectData(System::Runtime::Serialization::SerializationInfo ^ si, System::Runtime::Serialization::StreamingContext context) = System::Runtime::Serialization::ISerializable::GetObjectData;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

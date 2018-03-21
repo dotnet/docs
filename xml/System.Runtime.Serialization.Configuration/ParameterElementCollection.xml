@@ -1,7 +1,9 @@
-<Type Name="ParameterElementCollection" FullName="System.Runtime.Serialization.Configuration.ParameterElementCollection">
+﻿<Type Name="ParameterElementCollection" FullName="System.Runtime.Serialization.Configuration.ParameterElementCollection">
   <TypeSignature Language="C#" Value="public sealed class ParameterElementCollection : System.Configuration.ConfigurationElementCollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ParameterElementCollection extends System.Configuration.ConfigurationElementCollection" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.Configuration.ParameterElementCollection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ParameterElementCollection&#xA;Inherits ConfigurationElementCollection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ParameterElementCollection sealed : System::Configuration::ConfigurationElementCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Serialization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +34,8 @@
       <MemberSignature Language="C#" Value="public ParameterElementCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Configuration.ParameterElementCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ParameterElementCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -48,6 +52,8 @@
       <MemberSignature Language="C#" Value="public void Add (System.Runtime.Serialization.Configuration.ParameterElement element);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Runtime.Serialization.Configuration.ParameterElement element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Configuration.ParameterElementCollection.Add(System.Runtime.Serialization.Configuration.ParameterElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (element As ParameterElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Runtime::Serialization::Configuration::ParameterElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -70,6 +76,8 @@
       <MemberSignature Language="C#" Value="public void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Configuration.ParameterElementCollection.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -89,6 +97,8 @@
       <MemberSignature Language="C#" Value="public override System.Configuration.ConfigurationElementCollectionType CollectionType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Configuration.ConfigurationElementCollectionType CollectionType" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Configuration.ParameterElementCollection.CollectionType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CollectionType As ConfigurationElementCollectionType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Configuration::ConfigurationElementCollectionType CollectionType { System::Configuration::ConfigurationElementCollectionType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -108,6 +118,8 @@
       <MemberSignature Language="C#" Value="public bool Contains (string typeName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(string typeName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Configuration.ParameterElementCollection.Contains(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (typeName As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::String ^ typeName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -132,6 +144,8 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationElement CreateNewElement ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Configuration.ConfigurationElement CreateNewElement() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Configuration.ParameterElementCollection.CreateNewElement" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateNewElement () As ConfigurationElement" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Configuration::ConfigurationElement ^ CreateNewElement();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -151,6 +165,8 @@
       <MemberSignature Language="C#" Value="protected override string ElementName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ElementName" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Configuration.ParameterElementCollection.ElementName" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ElementName As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::String ^ ElementName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -169,6 +185,8 @@
       <MemberSignature Language="C#" Value="protected override object GetElementKey (System.Configuration.ConfigurationElement element);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object GetElementKey(class System.Configuration.ConfigurationElement element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Configuration.ParameterElementCollection.GetElementKey(System.Configuration.ConfigurationElement)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetElementKey (element As ConfigurationElement) As Object" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetElementKey(System::Configuration::ConfigurationElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -191,6 +209,8 @@
       <MemberSignature Language="C#" Value="public int IndexOf (System.Runtime.Serialization.Configuration.ParameterElement element);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.Runtime.Serialization.Configuration.ParameterElement element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Configuration.ParameterElementCollection.IndexOf(System.Runtime.Serialization.Configuration.ParameterElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOf (element As ParameterElement) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Runtime::Serialization::Configuration::ParameterElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -214,6 +234,8 @@
       <MemberSignature Language="C#" Value="public System.Runtime.Serialization.Configuration.ParameterElement this[int index] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Runtime.Serialization.Configuration.ParameterElement Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Configuration.ParameterElementCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As ParameterElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::Serialization::Configuration::ParameterElement ^ default[int] { System::Runtime::Serialization::Configuration::ParameterElement ^ get(int index); void set(int index, System::Runtime::Serialization::Configuration::ParameterElement ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -237,6 +259,8 @@
       <MemberSignature Language="C#" Value="public void Remove (System.Runtime.Serialization.Configuration.ParameterElement element);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Runtime.Serialization.Configuration.ParameterElement element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Configuration.ParameterElementCollection.Remove(System.Runtime.Serialization.Configuration.ParameterElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (element As ParameterElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Runtime::Serialization::Configuration::ParameterElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -259,6 +283,8 @@
       <MemberSignature Language="C#" Value="public void RemoveAt (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAt(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Configuration.ParameterElementCollection.RemoveAt(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>

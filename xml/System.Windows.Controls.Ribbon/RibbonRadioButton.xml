@@ -1,7 +1,9 @@
-<Type Name="RibbonRadioButton" FullName="System.Windows.Controls.Ribbon.RibbonRadioButton">
+﻿<Type Name="RibbonRadioButton" FullName="System.Windows.Controls.Ribbon.RibbonRadioButton">
   <TypeSignature Language="C#" Value="public class RibbonRadioButton : System.Windows.Controls.RadioButton" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi RibbonRadioButton extends System.Windows.Controls.RadioButton" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Ribbon.RibbonRadioButton" />
+  <TypeSignature Language="VB.NET" Value="Public Class RibbonRadioButton&#xA;Inherits RadioButton" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RibbonRadioButton : System::Windows::Controls::RadioButton" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +48,8 @@ Ribbon radio button controls that are selected
       <MemberSignature Language="C#" Value="public RibbonRadioButton ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonRadioButton.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RibbonRadioButton();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -61,6 +65,8 @@ Ribbon radio button controls that are selected
       <MemberSignature Language="C#" Value="public bool CanAddToQuickAccessToolBarDirectly { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanAddToQuickAccessToolBarDirectly" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonRadioButton.CanAddToQuickAccessToolBarDirectly" />
+      <MemberSignature Language="VB.NET" Value="Public Property CanAddToQuickAccessToolBarDirectly As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanAddToQuickAccessToolBarDirectly { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -94,6 +100,8 @@ Ribbon radio button controls that are selected
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty CanAddToQuickAccessToolBarDirectlyProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty CanAddToQuickAccessToolBarDirectlyProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonRadioButton.CanAddToQuickAccessToolBarDirectlyProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CanAddToQuickAccessToolBarDirectlyProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CanAddToQuickAccessToolBarDirectlyProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -111,6 +119,8 @@ Ribbon radio button controls that are selected
       <MemberSignature Language="C#" Value="public System.Windows.Media.Brush CheckedBackground { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Brush CheckedBackground" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonRadioButton.CheckedBackground" />
+      <MemberSignature Language="VB.NET" Value="Public Property CheckedBackground As Brush" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Brush ^ CheckedBackground { System::Windows::Media::Brush ^ get(); void set(System::Windows::Media::Brush ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -143,6 +153,8 @@ Ribbon radio button controls that are selected
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty CheckedBackgroundProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty CheckedBackgroundProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonRadioButton.CheckedBackgroundProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CheckedBackgroundProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CheckedBackgroundProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -160,6 +172,8 @@ Ribbon radio button controls that are selected
       <MemberSignature Language="C#" Value="public System.Windows.Media.Brush CheckedBorderBrush { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Brush CheckedBorderBrush" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonRadioButton.CheckedBorderBrush" />
+      <MemberSignature Language="VB.NET" Value="Public Property CheckedBorderBrush As Brush" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Brush ^ CheckedBorderBrush { System::Windows::Media::Brush ^ get(); void set(System::Windows::Media::Brush ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -192,6 +206,8 @@ Ribbon radio button controls that are selected
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty CheckedBorderBrushProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty CheckedBorderBrushProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonRadioButton.CheckedBorderBrushProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CheckedBorderBrushProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CheckedBorderBrushProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -209,6 +225,8 @@ Ribbon radio button controls that are selected
       <MemberSignature Language="C#" Value="public System.Windows.Controls.Ribbon.RibbonControlSizeDefinition ControlSizeDefinition { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Controls.Ribbon.RibbonControlSizeDefinition ControlSizeDefinition" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonRadioButton.ControlSizeDefinition" />
+      <MemberSignature Language="VB.NET" Value="Public Property ControlSizeDefinition As RibbonControlSizeDefinition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::Ribbon::RibbonControlSizeDefinition ^ ControlSizeDefinition { System::Windows::Controls::Ribbon::RibbonControlSizeDefinition ^ get(); void set(System::Windows::Controls::Ribbon::RibbonControlSizeDefinition ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -242,6 +260,8 @@ Ribbon radio button controls that are selected
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ControlSizeDefinitionProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ControlSizeDefinitionProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonRadioButton.ControlSizeDefinitionProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ControlSizeDefinitionProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ControlSizeDefinitionProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -259,6 +279,8 @@ Ribbon radio button controls that are selected
       <MemberSignature Language="C#" Value="public System.Windows.CornerRadius CornerRadius { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.CornerRadius CornerRadius" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonRadioButton.CornerRadius" />
+      <MemberSignature Language="VB.NET" Value="Public Property CornerRadius As CornerRadius" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::CornerRadius CornerRadius { System::Windows::CornerRadius get(); void set(System::Windows::CornerRadius value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -291,6 +313,8 @@ Ribbon radio button controls that are selected
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty CornerRadiusProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty CornerRadiusProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonRadioButton.CornerRadiusProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CornerRadiusProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CornerRadiusProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -308,6 +332,8 @@ Ribbon radio button controls that are selected
       <MemberSignature Language="C#" Value="public System.Windows.Media.Brush FocusedBackground { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Brush FocusedBackground" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonRadioButton.FocusedBackground" />
+      <MemberSignature Language="VB.NET" Value="Public Property FocusedBackground As Brush" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Brush ^ FocusedBackground { System::Windows::Media::Brush ^ get(); void set(System::Windows::Media::Brush ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -340,6 +366,8 @@ Ribbon radio button controls that are selected
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty FocusedBackgroundProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty FocusedBackgroundProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonRadioButton.FocusedBackgroundProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FocusedBackgroundProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ FocusedBackgroundProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -357,6 +385,8 @@ Ribbon radio button controls that are selected
       <MemberSignature Language="C#" Value="public System.Windows.Media.Brush FocusedBorderBrush { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Brush FocusedBorderBrush" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonRadioButton.FocusedBorderBrush" />
+      <MemberSignature Language="VB.NET" Value="Public Property FocusedBorderBrush As Brush" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Brush ^ FocusedBorderBrush { System::Windows::Media::Brush ^ get(); void set(System::Windows::Media::Brush ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -389,6 +419,8 @@ Ribbon radio button controls that are selected
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty FocusedBorderBrushProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty FocusedBorderBrushProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonRadioButton.FocusedBorderBrushProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FocusedBorderBrushProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ FocusedBorderBrushProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -406,6 +438,8 @@ Ribbon radio button controls that are selected
       <MemberSignature Language="C#" Value="public bool IsInControlGroup { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsInControlGroup" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonRadioButton.IsInControlGroup" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsInControlGroup As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsInControlGroup { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -439,6 +473,8 @@ Ribbon radio button controls that are selected
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty IsInControlGroupProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty IsInControlGroupProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonRadioButton.IsInControlGroupProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsInControlGroupProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsInControlGroupProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -456,6 +492,8 @@ Ribbon radio button controls that are selected
       <MemberSignature Language="C#" Value="public bool IsInQuickAccessToolBar { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsInQuickAccessToolBar" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonRadioButton.IsInQuickAccessToolBar" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsInQuickAccessToolBar As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsInQuickAccessToolBar { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -489,6 +527,8 @@ Ribbon radio button controls that are selected
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty IsInQuickAccessToolBarProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty IsInQuickAccessToolBarProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonRadioButton.IsInQuickAccessToolBarProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsInQuickAccessToolBarProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsInQuickAccessToolBarProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -506,6 +546,8 @@ Ribbon radio button controls that are selected
       <MemberSignature Language="C#" Value="public string KeyTip { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string KeyTip" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonRadioButton.KeyTip" />
+      <MemberSignature Language="VB.NET" Value="Public Property KeyTip As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ KeyTip { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -541,6 +583,8 @@ Ribbon radio button controls that are selected
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty KeyTipProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty KeyTipProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonRadioButton.KeyTipProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly KeyTipProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ KeyTipProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -558,6 +602,8 @@ Ribbon radio button controls that are selected
       <MemberSignature Language="C#" Value="public string Label { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Label" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonRadioButton.Label" />
+      <MemberSignature Language="VB.NET" Value="Public Property Label As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Label { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -598,6 +644,8 @@ Ribbon radio button controls that are selected
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty LabelProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty LabelProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonRadioButton.LabelProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly LabelProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ LabelProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -615,6 +663,8 @@ Ribbon radio button controls that are selected
       <MemberSignature Language="C#" Value="public System.Windows.Media.ImageSource LargeImageSource { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.ImageSource LargeImageSource" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonRadioButton.LargeImageSource" />
+      <MemberSignature Language="VB.NET" Value="Public Property LargeImageSource As ImageSource" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::ImageSource ^ LargeImageSource { System::Windows::Media::ImageSource ^ get(); void set(System::Windows::Media::ImageSource ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -655,6 +705,8 @@ Ribbon radio button controls that are selected
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty LargeImageSourceProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty LargeImageSourceProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonRadioButton.LargeImageSourceProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly LargeImageSourceProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ LargeImageSourceProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -672,6 +724,8 @@ Ribbon radio button controls that are selected
       <MemberSignature Language="C#" Value="public System.Windows.Media.Brush MouseOverBackground { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Brush MouseOverBackground" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonRadioButton.MouseOverBackground" />
+      <MemberSignature Language="VB.NET" Value="Public Property MouseOverBackground As Brush" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Brush ^ MouseOverBackground { System::Windows::Media::Brush ^ get(); void set(System::Windows::Media::Brush ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -704,6 +758,8 @@ Ribbon radio button controls that are selected
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty MouseOverBackgroundProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty MouseOverBackgroundProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonRadioButton.MouseOverBackgroundProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MouseOverBackgroundProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ MouseOverBackgroundProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -721,6 +777,8 @@ Ribbon radio button controls that are selected
       <MemberSignature Language="C#" Value="public System.Windows.Media.Brush MouseOverBorderBrush { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Brush MouseOverBorderBrush" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonRadioButton.MouseOverBorderBrush" />
+      <MemberSignature Language="VB.NET" Value="Public Property MouseOverBorderBrush As Brush" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Brush ^ MouseOverBorderBrush { System::Windows::Media::Brush ^ get(); void set(System::Windows::Media::Brush ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -753,6 +811,8 @@ Ribbon radio button controls that are selected
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty MouseOverBorderBrushProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty MouseOverBorderBrushProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonRadioButton.MouseOverBorderBrushProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MouseOverBorderBrushProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ MouseOverBorderBrushProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -770,6 +830,8 @@ Ribbon radio button controls that are selected
       <MemberSignature Language="C#" Value="protected virtual void OnActivatingKeyTip (System.Windows.Controls.ActivatingKeyTipEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnActivatingKeyTip(class System.Windows.Controls.ActivatingKeyTipEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonRadioButton.OnActivatingKeyTip(System.Windows.Controls.ActivatingKeyTipEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnActivatingKeyTip (e As ActivatingKeyTipEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnActivatingKeyTip(System::Windows::Controls::ActivatingKeyTipEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -791,6 +853,8 @@ Ribbon radio button controls that are selected
       <MemberSignature Language="C#" Value="public override void OnApplyTemplate ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void OnApplyTemplate() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonRadioButton.OnApplyTemplate" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnApplyTemplate ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnApplyTemplate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -816,6 +880,8 @@ Ribbon radio button controls that are selected
       <MemberSignature Language="C#" Value="protected override void OnClick ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnClick() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonRadioButton.OnClick" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnClick ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnClick();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -841,6 +907,8 @@ Ribbon radio button controls that are selected
       <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonRadioButton.OnCreateAutomationPeer" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnCreateAutomationPeer () As AutomationPeer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationPeer ^ OnCreateAutomationPeer();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -860,6 +928,8 @@ Ribbon radio button controls that are selected
       <MemberSignature Language="C#" Value="protected override void OnGotKeyboardFocus (System.Windows.Input.KeyboardFocusChangedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnGotKeyboardFocus(class System.Windows.Input.KeyboardFocusChangedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonRadioButton.OnGotKeyboardFocus(System.Windows.Input.KeyboardFocusChangedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnGotKeyboardFocus (e As KeyboardFocusChangedEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnGotKeyboardFocus(System::Windows::Input::KeyboardFocusChangedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -890,6 +960,8 @@ Ribbon radio button controls that are selected
       <MemberSignature Language="C#" Value="protected virtual void OnKeyTipAccessed (System.Windows.Controls.KeyTipAccessedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnKeyTipAccessed(class System.Windows.Controls.KeyTipAccessedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonRadioButton.OnKeyTipAccessed(System.Windows.Controls.KeyTipAccessedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnKeyTipAccessed (e As KeyTipAccessedEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnKeyTipAccessed(System::Windows::Controls::KeyTipAccessedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -911,6 +983,8 @@ Ribbon radio button controls that are selected
       <MemberSignature Language="C#" Value="protected override void OnLostKeyboardFocus (System.Windows.Input.KeyboardFocusChangedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnLostKeyboardFocus(class System.Windows.Input.KeyboardFocusChangedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonRadioButton.OnLostKeyboardFocus(System.Windows.Input.KeyboardFocusChangedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnLostKeyboardFocus (e As KeyboardFocusChangedEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnLostKeyboardFocus(System::Windows::Input::KeyboardFocusChangedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -941,6 +1015,8 @@ Ribbon radio button controls that are selected
       <MemberSignature Language="C#" Value="protected override void OnMouseLeftButtonDown (System.Windows.Input.MouseButtonEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseLeftButtonDown(class System.Windows.Input.MouseButtonEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonRadioButton.OnMouseLeftButtonDown(System.Windows.Input.MouseButtonEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseLeftButtonDown (e As MouseButtonEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseLeftButtonDown(System::Windows::Input::MouseButtonEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -971,6 +1047,8 @@ Ribbon radio button controls that are selected
       <MemberSignature Language="C#" Value="public System.Windows.Media.Brush PressedBackground { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Brush PressedBackground" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonRadioButton.PressedBackground" />
+      <MemberSignature Language="VB.NET" Value="Public Property PressedBackground As Brush" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Brush ^ PressedBackground { System::Windows::Media::Brush ^ get(); void set(System::Windows::Media::Brush ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1003,6 +1081,8 @@ Ribbon radio button controls that are selected
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty PressedBackgroundProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty PressedBackgroundProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonRadioButton.PressedBackgroundProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PressedBackgroundProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ PressedBackgroundProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1020,6 +1100,8 @@ Ribbon radio button controls that are selected
       <MemberSignature Language="C#" Value="public System.Windows.Media.Brush PressedBorderBrush { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Brush PressedBorderBrush" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonRadioButton.PressedBorderBrush" />
+      <MemberSignature Language="VB.NET" Value="Public Property PressedBorderBrush As Brush" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Brush ^ PressedBorderBrush { System::Windows::Media::Brush ^ get(); void set(System::Windows::Media::Brush ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1052,6 +1134,8 @@ Ribbon radio button controls that are selected
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty PressedBorderBrushProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty PressedBorderBrushProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonRadioButton.PressedBorderBrushProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PressedBorderBrushProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ PressedBorderBrushProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1069,6 +1153,8 @@ Ribbon radio button controls that are selected
       <MemberSignature Language="C#" Value="public System.Windows.Controls.Ribbon.RibbonControlSizeDefinition QuickAccessToolBarControlSizeDefinition { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Controls.Ribbon.RibbonControlSizeDefinition QuickAccessToolBarControlSizeDefinition" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonRadioButton.QuickAccessToolBarControlSizeDefinition" />
+      <MemberSignature Language="VB.NET" Value="Public Property QuickAccessToolBarControlSizeDefinition As RibbonControlSizeDefinition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::Ribbon::RibbonControlSizeDefinition ^ QuickAccessToolBarControlSizeDefinition { System::Windows::Controls::Ribbon::RibbonControlSizeDefinition ^ get(); void set(System::Windows::Controls::Ribbon::RibbonControlSizeDefinition ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1103,6 +1189,8 @@ Ribbon radio button controls that are selected
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty QuickAccessToolBarControlSizeDefinitionProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty QuickAccessToolBarControlSizeDefinitionProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonRadioButton.QuickAccessToolBarControlSizeDefinitionProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly QuickAccessToolBarControlSizeDefinitionProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ QuickAccessToolBarControlSizeDefinitionProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1120,6 +1208,8 @@ Ribbon radio button controls that are selected
       <MemberSignature Language="C#" Value="public object QuickAccessToolBarId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object QuickAccessToolBarId" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonRadioButton.QuickAccessToolBarId" />
+      <MemberSignature Language="VB.NET" Value="Public Property QuickAccessToolBarId As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ QuickAccessToolBarId { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1152,6 +1242,8 @@ Ribbon radio button controls that are selected
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty QuickAccessToolBarIdProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty QuickAccessToolBarIdProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonRadioButton.QuickAccessToolBarIdProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly QuickAccessToolBarIdProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ QuickAccessToolBarIdProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1169,6 +1261,8 @@ Ribbon radio button controls that are selected
       <MemberSignature Language="C#" Value="public System.Windows.Controls.Ribbon.Ribbon Ribbon { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Controls.Ribbon.Ribbon Ribbon" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonRadioButton.Ribbon" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Ribbon As Ribbon" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::Ribbon::Ribbon ^ Ribbon { System::Windows::Controls::Ribbon::Ribbon ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1202,6 +1296,8 @@ Ribbon radio button controls that are selected
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty RibbonProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty RibbonProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonRadioButton.RibbonProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly RibbonProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ RibbonProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1219,6 +1315,8 @@ Ribbon radio button controls that are selected
       <MemberSignature Language="C#" Value="public bool ShowKeyboardCues { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ShowKeyboardCues" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonRadioButton.ShowKeyboardCues" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ShowKeyboardCues As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowKeyboardCues { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1252,6 +1350,8 @@ Ribbon radio button controls that are selected
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ShowKeyboardCuesProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ShowKeyboardCuesProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonRadioButton.ShowKeyboardCuesProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ShowKeyboardCuesProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ShowKeyboardCuesProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1269,6 +1369,8 @@ Ribbon radio button controls that are selected
       <MemberSignature Language="C#" Value="public System.Windows.Media.ImageSource SmallImageSource { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.ImageSource SmallImageSource" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonRadioButton.SmallImageSource" />
+      <MemberSignature Language="VB.NET" Value="Public Property SmallImageSource As ImageSource" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::ImageSource ^ SmallImageSource { System::Windows::Media::ImageSource ^ get(); void set(System::Windows::Media::ImageSource ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1309,6 +1411,8 @@ Ribbon radio button controls that are selected
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty SmallImageSourceProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty SmallImageSourceProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonRadioButton.SmallImageSourceProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SmallImageSourceProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ SmallImageSourceProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1326,6 +1430,8 @@ Ribbon radio button controls that are selected
       <MemberSignature Language="C#" Value="public string ToolTipDescription { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ToolTipDescription" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonRadioButton.ToolTipDescription" />
+      <MemberSignature Language="VB.NET" Value="Public Property ToolTipDescription As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ToolTipDescription { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1372,6 +1478,8 @@ Enhanced ToolTip
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ToolTipDescriptionProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ToolTipDescriptionProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonRadioButton.ToolTipDescriptionProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ToolTipDescriptionProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ToolTipDescriptionProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1389,6 +1497,8 @@ Enhanced ToolTip
       <MemberSignature Language="C#" Value="public string ToolTipFooterDescription { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ToolTipFooterDescription" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonRadioButton.ToolTipFooterDescription" />
+      <MemberSignature Language="VB.NET" Value="Public Property ToolTipFooterDescription As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ToolTipFooterDescription { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1435,6 +1545,8 @@ Enhanced ToolTip
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ToolTipFooterDescriptionProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ToolTipFooterDescriptionProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonRadioButton.ToolTipFooterDescriptionProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ToolTipFooterDescriptionProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ToolTipFooterDescriptionProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1452,6 +1564,8 @@ Enhanced ToolTip
       <MemberSignature Language="C#" Value="public System.Windows.Media.ImageSource ToolTipFooterImageSource { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.ImageSource ToolTipFooterImageSource" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonRadioButton.ToolTipFooterImageSource" />
+      <MemberSignature Language="VB.NET" Value="Public Property ToolTipFooterImageSource As ImageSource" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::ImageSource ^ ToolTipFooterImageSource { System::Windows::Media::ImageSource ^ get(); void set(System::Windows::Media::ImageSource ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1498,6 +1612,8 @@ Enhanced ToolTip
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ToolTipFooterImageSourceProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ToolTipFooterImageSourceProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonRadioButton.ToolTipFooterImageSourceProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ToolTipFooterImageSourceProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ToolTipFooterImageSourceProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1515,6 +1631,8 @@ Enhanced ToolTip
       <MemberSignature Language="C#" Value="public string ToolTipFooterTitle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ToolTipFooterTitle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonRadioButton.ToolTipFooterTitle" />
+      <MemberSignature Language="VB.NET" Value="Public Property ToolTipFooterTitle As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ToolTipFooterTitle { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1561,6 +1679,8 @@ Enhanced ToolTip
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ToolTipFooterTitleProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ToolTipFooterTitleProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonRadioButton.ToolTipFooterTitleProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ToolTipFooterTitleProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ToolTipFooterTitleProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1578,6 +1698,8 @@ Enhanced ToolTip
       <MemberSignature Language="C#" Value="public System.Windows.Media.ImageSource ToolTipImageSource { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.ImageSource ToolTipImageSource" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonRadioButton.ToolTipImageSource" />
+      <MemberSignature Language="VB.NET" Value="Public Property ToolTipImageSource As ImageSource" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::ImageSource ^ ToolTipImageSource { System::Windows::Media::ImageSource ^ get(); void set(System::Windows::Media::ImageSource ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1624,6 +1746,8 @@ Enhanced ToolTip
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ToolTipImageSourceProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ToolTipImageSourceProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonRadioButton.ToolTipImageSourceProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ToolTipImageSourceProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ToolTipImageSourceProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1641,6 +1765,8 @@ Enhanced ToolTip
       <MemberSignature Language="C#" Value="public string ToolTipTitle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ToolTipTitle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonRadioButton.ToolTipTitle" />
+      <MemberSignature Language="VB.NET" Value="Public Property ToolTipTitle As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ToolTipTitle { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1687,6 +1813,8 @@ Enhanced ToolTip
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ToolTipTitleProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ToolTipTitleProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonRadioButton.ToolTipTitleProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ToolTipTitleProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ToolTipTitleProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>

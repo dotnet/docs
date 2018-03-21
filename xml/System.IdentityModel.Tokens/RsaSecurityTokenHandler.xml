@@ -1,7 +1,9 @@
-<Type Name="RsaSecurityTokenHandler" FullName="System.IdentityModel.Tokens.RsaSecurityTokenHandler">
+﻿<Type Name="RsaSecurityTokenHandler" FullName="System.IdentityModel.Tokens.RsaSecurityTokenHandler">
   <TypeSignature Language="C#" Value="public class RsaSecurityTokenHandler : System.IdentityModel.Tokens.SecurityTokenHandler" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RsaSecurityTokenHandler extends System.IdentityModel.Tokens.SecurityTokenHandler" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.RsaSecurityTokenHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Class RsaSecurityTokenHandler&#xA;Inherits SecurityTokenHandler" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RsaSecurityTokenHandler : System::IdentityModel::Tokens::SecurityTokenHandler" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public RsaSecurityTokenHandler ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.RsaSecurityTokenHandler.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RsaSecurityTokenHandler();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -34,6 +38,8 @@
       <MemberSignature Language="C#" Value="public override bool CanReadToken (System.Xml.XmlReader reader);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanReadToken(class System.Xml.XmlReader reader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.RsaSecurityTokenHandler.CanReadToken(System.Xml.XmlReader)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CanReadToken (reader As XmlReader) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool CanReadToken(System::Xml::XmlReader ^ reader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -59,6 +65,8 @@
       <MemberSignature Language="C#" Value="public override bool CanValidateToken { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanValidateToken" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.RsaSecurityTokenHandler.CanValidateToken" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanValidateToken As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanValidateToken { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -78,6 +86,8 @@
       <MemberSignature Language="C#" Value="public override bool CanWriteToken { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanWriteToken" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.RsaSecurityTokenHandler.CanWriteToken" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanWriteToken As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanWriteToken { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -97,6 +107,8 @@
       <MemberSignature Language="C#" Value="public override string[] GetTokenTypeIdentifiers ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string[] GetTokenTypeIdentifiers() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.RsaSecurityTokenHandler.GetTokenTypeIdentifiers" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetTokenTypeIdentifiers () As String()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::String ^&gt; ^ GetTokenTypeIdentifiers();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -116,6 +128,8 @@
       <MemberSignature Language="C#" Value="public override System.IdentityModel.Tokens.SecurityToken ReadToken (System.Xml.XmlReader reader);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.IdentityModel.Tokens.SecurityToken ReadToken(class System.Xml.XmlReader reader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.RsaSecurityTokenHandler.ReadToken(System.Xml.XmlReader)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ReadToken (reader As XmlReader) As SecurityToken" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::IdentityModel::Tokens::SecurityToken ^ ReadToken(System::Xml::XmlReader ^ reader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -142,6 +156,8 @@
       <MemberSignature Language="C#" Value="public override Type TokenType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type TokenType" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.RsaSecurityTokenHandler.TokenType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property TokenType As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ TokenType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -160,6 +176,8 @@
       <MemberSignature Language="C#" Value="public override System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Security.Claims.ClaimsIdentity&gt; ValidateToken (System.IdentityModel.Tokens.SecurityToken token);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Security.Claims.ClaimsIdentity&gt; ValidateToken(class System.IdentityModel.Tokens.SecurityToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.RsaSecurityTokenHandler.ValidateToken(System.IdentityModel.Tokens.SecurityToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ValidateToken (token As SecurityToken) As ReadOnlyCollection(Of ClaimsIdentity)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Security::Claims::ClaimsIdentity ^&gt; ^ ValidateToken(System::IdentityModel::Tokens::SecurityToken ^ token);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -187,6 +205,8 @@
       <MemberSignature Language="C#" Value="public override void WriteToken (System.Xml.XmlWriter writer, System.IdentityModel.Tokens.SecurityToken token);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteToken(class System.Xml.XmlWriter writer, class System.IdentityModel.Tokens.SecurityToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.RsaSecurityTokenHandler.WriteToken(System.Xml.XmlWriter,System.IdentityModel.Tokens.SecurityToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteToken (writer As XmlWriter, token As SecurityToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteToken(System::Xml::XmlWriter ^ writer, System::IdentityModel::Tokens::SecurityToken ^ token);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

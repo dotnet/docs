@@ -1,7 +1,9 @@
-<Type Name="AutomationPattern" FullName="System.Windows.Automation.AutomationPattern">
+﻿<Type Name="AutomationPattern" FullName="System.Windows.Automation.AutomationPattern">
   <TypeSignature Language="C#" Value="public class AutomationPattern : System.Windows.Automation.AutomationIdentifier" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AutomationPattern extends System.Windows.Automation.AutomationIdentifier" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.AutomationPattern" />
+  <TypeSignature Language="VB.NET" Value="Public Class AutomationPattern&#xA;Inherits AutomationIdentifier" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AutomationPattern : System::Windows::Automation::AutomationIdentifier" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationTypes</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +38,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Automation.AutomationPattern LookupById (int id);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Automation.AutomationPattern LookupById(int32 id) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationPattern.LookupById(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function LookupById (id As Integer) As AutomationPattern" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Automation::AutomationPattern ^ LookupById(int id);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>

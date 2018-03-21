@@ -1,7 +1,9 @@
-<Type Name="SettingsProperty" FullName="System.Configuration.SettingsProperty">
+﻿<Type Name="SettingsProperty" FullName="System.Configuration.SettingsProperty">
   <TypeSignature Language="C#" Value="public class SettingsProperty" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SettingsProperty extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.SettingsProperty" />
+  <TypeSignature Language="VB.NET" Value="Public Class SettingsProperty" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SettingsProperty" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,10 +44,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.SettingsProperty" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SettingsProperty (System.Configuration.SettingsProperty propertyToCopy);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Configuration.SettingsProperty propertyToCopy) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.SettingsProperty.#ctor(System.Configuration.SettingsProperty)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (propertyToCopy As SettingsProperty)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SettingsProperty(System::Configuration::SettingsProperty ^ propertyToCopy);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -68,6 +81,8 @@
       <MemberSignature Language="C#" Value="public SettingsProperty (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.SettingsProperty.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SettingsProperty(System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -90,6 +105,8 @@
       <MemberSignature Language="C#" Value="public SettingsProperty (string name, Type propertyType, System.Configuration.SettingsProvider provider, bool isReadOnly, object defaultValue, System.Configuration.SettingsSerializeAs serializeAs, System.Configuration.SettingsAttributeDictionary attributes, bool throwOnErrorDeserializing, bool throwOnErrorSerializing);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class System.Type propertyType, class System.Configuration.SettingsProvider provider, bool isReadOnly, object defaultValue, valuetype System.Configuration.SettingsSerializeAs serializeAs, class System.Configuration.SettingsAttributeDictionary attributes, bool throwOnErrorDeserializing, bool throwOnErrorSerializing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.SettingsProperty.#ctor(System.String,System.Type,System.Configuration.SettingsProvider,System.Boolean,System.Object,System.Configuration.SettingsSerializeAs,System.Configuration.SettingsAttributeDictionary,System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, propertyType As Type, provider As SettingsProvider, isReadOnly As Boolean, defaultValue As Object, serializeAs As SettingsSerializeAs, attributes As SettingsAttributeDictionary, throwOnErrorDeserializing As Boolean, throwOnErrorSerializing As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SettingsProperty(System::String ^ name, Type ^ propertyType, System::Configuration::SettingsProvider ^ provider, bool isReadOnly, System::Object ^ defaultValue, System::Configuration::SettingsSerializeAs serializeAs, System::Configuration::SettingsAttributeDictionary ^ attributes, bool throwOnErrorDeserializing, bool throwOnErrorSerializing);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -128,6 +145,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Configuration.SettingsAttributeDictionary Attributes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.SettingsAttributeDictionary Attributes" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.SettingsProperty.Attributes" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Attributes As SettingsAttributeDictionary" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Configuration::SettingsAttributeDictionary ^ Attributes { System::Configuration::SettingsAttributeDictionary ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -157,6 +176,8 @@
       <MemberSignature Language="C#" Value="public virtual object DefaultValue { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object DefaultValue" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.SettingsProperty.DefaultValue" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property DefaultValue As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ DefaultValue { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -179,6 +200,8 @@
       <MemberSignature Language="C#" Value="public virtual bool IsReadOnly { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.SettingsProperty.IsReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property IsReadOnly As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsReadOnly { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -209,6 +232,8 @@
       <MemberSignature Language="C#" Value="public virtual string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.SettingsProperty.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -238,6 +263,8 @@
       <MemberSignature Language="C#" Value="public virtual Type PropertyType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type PropertyType" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.SettingsProperty.PropertyType" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property PropertyType As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ PropertyType { Type ^ get(); void set(Type ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -260,6 +287,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Configuration.SettingsProvider Provider { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.SettingsProvider Provider" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.SettingsProperty.Provider" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Provider As SettingsProvider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Configuration::SettingsProvider ^ Provider { System::Configuration::SettingsProvider ^ get(); void set(System::Configuration::SettingsProvider ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -282,6 +311,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Configuration.SettingsSerializeAs SerializeAs { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Configuration.SettingsSerializeAs SerializeAs" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.SettingsProperty.SerializeAs" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property SerializeAs As SettingsSerializeAs" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Configuration::SettingsSerializeAs SerializeAs { System::Configuration::SettingsSerializeAs get(); void set(System::Configuration::SettingsSerializeAs value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -311,6 +342,8 @@
       <MemberSignature Language="C#" Value="public bool ThrowOnErrorDeserializing { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ThrowOnErrorDeserializing" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.SettingsProperty.ThrowOnErrorDeserializing" />
+      <MemberSignature Language="VB.NET" Value="Public Property ThrowOnErrorDeserializing As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ThrowOnErrorDeserializing { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -334,6 +367,8 @@
       <MemberSignature Language="C#" Value="public bool ThrowOnErrorSerializing { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ThrowOnErrorSerializing" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.SettingsProperty.ThrowOnErrorSerializing" />
+      <MemberSignature Language="VB.NET" Value="Public Property ThrowOnErrorSerializing As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ThrowOnErrorSerializing { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -353,14 +388,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Configuration.SettingsProperty" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

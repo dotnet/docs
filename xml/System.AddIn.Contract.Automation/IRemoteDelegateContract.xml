@@ -1,7 +1,9 @@
-<Type Name="IRemoteDelegateContract" FullName="System.AddIn.Contract.Automation.IRemoteDelegateContract">
+﻿<Type Name="IRemoteDelegateContract" FullName="System.AddIn.Contract.Automation.IRemoteDelegateContract">
   <TypeSignature Language="C#" Value="public interface IRemoteDelegateContract : System.AddIn.Contract.Automation.IRemoteObjectContract" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRemoteDelegateContract implements class System.AddIn.Contract.Automation.IRemoteObjectContract, class System.AddIn.Contract.IContract" />
   <TypeSignature Language="DocId" Value="T:System.AddIn.Contract.Automation.IRemoteDelegateContract" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IRemoteDelegateContract&#xA;Implements IRemoteObjectContract" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IRemoteDelegateContract : System::AddIn::Contract::Automation::IRemoteObjectContract" />
   <AssemblyInfo>
     <AssemblyName>System.AddIn.Contract</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +31,8 @@
       <MemberSignature Language="C#" Value="public System.AddIn.Contract.RemoteArgument InvokeDelegate (System.AddIn.Contract.Collections.IRemoteArgumentArrayContract args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.AddIn.Contract.RemoteArgument InvokeDelegate(class System.AddIn.Contract.Collections.IRemoteArgumentArrayContract args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Automation.IRemoteDelegateContract.InvokeDelegate(System.AddIn.Contract.Collections.IRemoteArgumentArrayContract)" />
+      <MemberSignature Language="VB.NET" Value="Public Function InvokeDelegate (args As IRemoteArgumentArrayContract) As RemoteArgument" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::AddIn::Contract::RemoteArgument InvokeDelegate(System::AddIn::Contract::Collections::IRemoteArgumentArrayContract ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="PartChromeState" FullName="System.Web.UI.WebControls.WebParts.PartChromeState">
+﻿<Type Name="PartChromeState" FullName="System.Web.UI.WebControls.WebParts.PartChromeState">
   <TypeSignature Language="C#" Value="public enum PartChromeState" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PartChromeState extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.PartChromeState" />
+  <TypeSignature Language="VB.NET" Value="Public Enum PartChromeState" />
+  <TypeSignature Language="C++ CLI" Value="public enum class PartChromeState" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +43,8 @@
       <MemberSignature Language="C#" Value="Minimized" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.WebParts.PartChromeState Minimized = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.WebParts.PartChromeState.Minimized" />
+      <MemberSignature Language="VB.NET" Value="Minimized" />
+      <MemberSignature Language="C++ CLI" Value="Minimized" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -49,6 +53,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.WebParts.PartChromeState</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>A control and border in a collapsed or minimized state.</summary>
       </Docs>
@@ -57,6 +62,8 @@
       <MemberSignature Language="C#" Value="Normal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.WebParts.PartChromeState Normal = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.WebParts.PartChromeState.Normal" />
+      <MemberSignature Language="VB.NET" Value="Normal" />
+      <MemberSignature Language="C++ CLI" Value="Normal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -65,6 +72,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.WebParts.PartChromeState</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>A control and border in a normal state.</summary>
       </Docs>

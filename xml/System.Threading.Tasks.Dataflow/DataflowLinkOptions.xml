@@ -1,7 +1,9 @@
-<Type Name="DataflowLinkOptions" FullName="System.Threading.Tasks.Dataflow.DataflowLinkOptions">
+﻿<Type Name="DataflowLinkOptions" FullName="System.Threading.Tasks.Dataflow.DataflowLinkOptions">
   <TypeSignature Language="C#" Value="public class DataflowLinkOptions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataflowLinkOptions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Threading.Tasks.Dataflow.DataflowLinkOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Class DataflowLinkOptions" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataflowLinkOptions" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
     <AssemblyVersion>4.6.0.0</AssemblyVersion>
@@ -41,6 +43,8 @@
       <MemberSignature Language="C#" Value="public DataflowLinkOptions ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.DataflowLinkOptions.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataflowLinkOptions();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -58,6 +62,8 @@
       <MemberSignature Language="C#" Value="public bool Append { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Append" />
       <MemberSignature Language="DocId" Value="P:System.Threading.Tasks.Dataflow.DataflowLinkOptions.Append" />
+      <MemberSignature Language="VB.NET" Value="Public Property Append As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Append { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -78,6 +84,8 @@
       <MemberSignature Language="C#" Value="public int MaxMessages { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxMessages" />
       <MemberSignature Language="DocId" Value="P:System.Threading.Tasks.Dataflow.DataflowLinkOptions.MaxMessages" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxMessages As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxMessages { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -98,6 +106,8 @@
       <MemberSignature Language="C#" Value="public bool PropagateCompletion { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool PropagateCompletion" />
       <MemberSignature Language="DocId" Value="P:System.Threading.Tasks.Dataflow.DataflowLinkOptions.PropagateCompletion" />
+      <MemberSignature Language="VB.NET" Value="Public Property PropagateCompletion As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PropagateCompletion { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>

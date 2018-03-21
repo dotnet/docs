@@ -1,7 +1,9 @@
-<Type Name="EventArgs" FullName="System.EventArgs">
+﻿<Type Name="EventArgs" FullName="System.EventArgs">
   <TypeSignature Language="C#" Value="public class EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit EventArgs extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.EventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -57,6 +59,8 @@
       <MemberSignature Language="C#" Value="public EventArgs ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EventArgs.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EventArgs();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -92,6 +96,8 @@
       <MemberSignature Language="C#" Value="public static readonly EventArgs Empty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.EventArgs Empty" />
       <MemberSignature Language="DocId" Value="F:System.EventArgs.Empty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Empty As EventArgs " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly EventArgs ^ Empty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

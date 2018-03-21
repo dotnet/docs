@@ -1,7 +1,9 @@
-<Type Name="ManagementEntityAttribute" FullName="System.Management.Instrumentation.ManagementEntityAttribute">
+﻿<Type Name="ManagementEntityAttribute" FullName="System.Management.Instrumentation.ManagementEntityAttribute">
   <TypeSignature Language="C#" Value="public sealed class ManagementEntityAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ManagementEntityAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Management.Instrumentation.ManagementEntityAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ManagementEntityAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ManagementEntityAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +50,8 @@
       <MemberSignature Language="C#" Value="public ManagementEntityAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.Instrumentation.ManagementEntityAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ManagementEntityAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -70,6 +74,8 @@
       <MemberSignature Language="C#" Value="public bool External { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool External" />
       <MemberSignature Language="DocId" Value="P:System.Management.Instrumentation.ManagementEntityAttribute.External" />
+      <MemberSignature Language="VB.NET" Value="Public Property External As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool External { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -95,6 +101,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Management.Instrumentation.ManagementEntityAttribute.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -132,6 +140,8 @@ public class MortgageCalcWMIProvider
       <MemberSignature Language="C#" Value="public bool Singleton { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Singleton" />
       <MemberSignature Language="DocId" Value="P:System.Management.Instrumentation.ManagementEntityAttribute.Singleton" />
+      <MemberSignature Language="VB.NET" Value="Public Property Singleton As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Singleton { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>

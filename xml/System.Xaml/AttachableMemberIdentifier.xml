@@ -1,7 +1,9 @@
-<Type Name="AttachableMemberIdentifier" FullName="System.Xaml.AttachableMemberIdentifier">
+﻿<Type Name="AttachableMemberIdentifier" FullName="System.Xaml.AttachableMemberIdentifier">
   <TypeSignature Language="C#" Value="public class AttachableMemberIdentifier : IEquatable&lt;System.Xaml.AttachableMemberIdentifier&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AttachableMemberIdentifier extends System.Object implements class System.IEquatable`1&lt;class System.Xaml.AttachableMemberIdentifier&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Xaml.AttachableMemberIdentifier" />
+  <TypeSignature Language="VB.NET" Value="Public Class AttachableMemberIdentifier&#xA;Implements IEquatable(Of AttachableMemberIdentifier)" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AttachableMemberIdentifier : IEquatable&lt;System::Xaml::AttachableMemberIdentifier ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +27,8 @@
       <MemberSignature Language="C#" Value="public AttachableMemberIdentifier (Type declaringType, string memberName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type declaringType, string memberName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.AttachableMemberIdentifier.#ctor(System.Type,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (declaringType As Type, memberName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AttachableMemberIdentifier(Type ^ declaringType, System::String ^ memberName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -45,6 +49,8 @@
       <MemberSignature Language="C#" Value="public Type DeclaringType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type DeclaringType" />
       <MemberSignature Language="DocId" Value="P:System.Xaml.AttachableMemberIdentifier.DeclaringType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DeclaringType As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ DeclaringType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -66,10 +72,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether two <see cref="T:System.Xaml.AttachableMemberIdentifier" /> objects have the same value.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Equals">
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.AttachableMemberIdentifier.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -93,7 +110,12 @@
       <MemberSignature Language="C#" Value="public bool Equals (System.Xaml.AttachableMemberIdentifier other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(class System.Xaml.AttachableMemberIdentifier other) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.AttachableMemberIdentifier.Equals(System.Xaml.AttachableMemberIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (other As AttachableMemberIdentifier) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Xaml::AttachableMemberIdentifier ^ other);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -123,6 +145,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.AttachableMemberIdentifier.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -142,6 +166,8 @@
       <MemberSignature Language="C#" Value="public string MemberName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MemberName" />
       <MemberSignature Language="DocId" Value="P:System.Xaml.AttachableMemberIdentifier.MemberName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MemberName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MemberName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -167,6 +193,8 @@
       <MemberSignature Language="C#" Value="public static bool operator == (System.Xaml.AttachableMemberIdentifier left, System.Xaml.AttachableMemberIdentifier right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(class System.Xaml.AttachableMemberIdentifier left, class System.Xaml.AttachableMemberIdentifier right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.AttachableMemberIdentifier.op_Equality(System.Xaml.AttachableMemberIdentifier,System.Xaml.AttachableMemberIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As AttachableMemberIdentifier, right As AttachableMemberIdentifier) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Xaml::AttachableMemberIdentifier ^ left, System::Xaml::AttachableMemberIdentifier ^ right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -192,6 +220,8 @@
       <MemberSignature Language="C#" Value="public static bool operator != (System.Xaml.AttachableMemberIdentifier left, System.Xaml.AttachableMemberIdentifier right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class System.Xaml.AttachableMemberIdentifier left, class System.Xaml.AttachableMemberIdentifier right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.AttachableMemberIdentifier.op_Inequality(System.Xaml.AttachableMemberIdentifier,System.Xaml.AttachableMemberIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As AttachableMemberIdentifier, right As AttachableMemberIdentifier) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Xaml::AttachableMemberIdentifier ^ left, System::Xaml::AttachableMemberIdentifier ^ right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -217,6 +247,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.AttachableMemberIdentifier.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -239,14 +271,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Equals">
-      <AssemblyInfo>
-        <AssemblyName>System.Xaml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Determines whether two <see cref="T:System.Xaml.AttachableMemberIdentifier" /> objects have the same value.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

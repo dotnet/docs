@@ -1,7 +1,9 @@
-<Type Name="ComUdtElement" FullName="System.ServiceModel.Configuration.ComUdtElement">
+﻿<Type Name="ComUdtElement" FullName="System.ServiceModel.Configuration.ComUdtElement">
   <TypeSignature Language="C#" Value="public sealed class ComUdtElement : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ComUdtElement extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.ComUdtElement" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ComUdtElement&#xA;Inherits ConfigurationElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ComUdtElement sealed : System::Configuration::ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,10 +49,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.ComUdtElement" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ComUdtElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ComUdtElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ComUdtElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -66,6 +79,8 @@
       <MemberSignature Language="C#" Value="public ComUdtElement (string typeDefID);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string typeDefID) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ComUdtElement.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (typeDefID As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ComUdtElement(System::String ^ typeDefID);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -84,6 +99,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ComUdtElement.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -110,6 +127,8 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ComUdtElement.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -128,6 +147,8 @@
       <MemberSignature Language="C#" Value="public string TypeDefID { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TypeDefID" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ComUdtElement.TypeDefID" />
+      <MemberSignature Language="VB.NET" Value="Public Property TypeDefID As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TypeDefID { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -135,7 +156,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Configuration.ConfigurationProperty("typeDefID", Options=System.Configuration.ConfigurationPropertyOptions.IsRequired | System.Configuration.ConfigurationPropertyOptions.IsKey)</AttributeName>
+          <AttributeName>System.Configuration.ConfigurationProperty("typeDefID", Options=System.Configuration.ConfigurationPropertyOptions.IsKey | System.Configuration.ConfigurationPropertyOptions.IsRequired)</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.Configuration.StringValidator(MinLength=1)</AttributeName>
@@ -154,6 +175,8 @@
       <MemberSignature Language="C#" Value="public string TypeLibID { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TypeLibID" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ComUdtElement.TypeLibID" />
+      <MemberSignature Language="VB.NET" Value="Public Property TypeLibID As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TypeLibID { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -180,6 +203,8 @@
       <MemberSignature Language="C#" Value="public string TypeLibVersion { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TypeLibVersion" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ComUdtElement.TypeLibVersion" />
+      <MemberSignature Language="VB.NET" Value="Public Property TypeLibVersion As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TypeLibVersion { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -202,14 +227,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.ComUdtElement" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

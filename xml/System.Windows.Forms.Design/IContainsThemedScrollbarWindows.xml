@@ -1,7 +1,9 @@
-<Type Name="IContainsThemedScrollbarWindows" FullName="System.Windows.Forms.Design.IContainsThemedScrollbarWindows">
+﻿<Type Name="IContainsThemedScrollbarWindows" FullName="System.Windows.Forms.Design.IContainsThemedScrollbarWindows">
   <TypeSignature Language="C#" Value="public interface IContainsThemedScrollbarWindows" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IContainsThemedScrollbarWindows" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.IContainsThemedScrollbarWindows" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IContainsThemedScrollbarWindows" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IContainsThemedScrollbarWindows" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -16,6 +18,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.IEnumerable ThemedScrollbarWindows ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerable ThemedScrollbarWindows() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.IContainsThemedScrollbarWindows.ThemedScrollbarWindows" />
+      <MemberSignature Language="VB.NET" Value="Public Function ThemedScrollbarWindows () As IEnumerable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerable ^ ThemedScrollbarWindows();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

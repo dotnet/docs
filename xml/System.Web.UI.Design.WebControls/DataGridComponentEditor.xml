@@ -1,7 +1,9 @@
-<Type Name="DataGridComponentEditor" FullName="System.Web.UI.Design.WebControls.DataGridComponentEditor">
+﻿<Type Name="DataGridComponentEditor" FullName="System.Web.UI.Design.WebControls.DataGridComponentEditor">
   <TypeSignature Language="C#" Value="public class DataGridComponentEditor : System.Web.UI.Design.WebControls.BaseDataListComponentEditor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataGridComponentEditor extends System.Web.UI.Design.WebControls.BaseDataListComponentEditor" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.DataGridComponentEditor" />
+  <TypeSignature Language="VB.NET" Value="Public Class DataGridComponentEditor&#xA;Inherits BaseDataListComponentEditor" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataGridComponentEditor : System::Web::UI::Design::WebControls::BaseDataListComponentEditor" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,10 +33,21 @@
     <altmember cref="T:System.Web.UI.Design.WebControls.DataGridDesigner" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.DataGridComponentEditor" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DataGridComponentEditor ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.DataGridComponentEditor.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridComponentEditor();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -50,6 +63,8 @@
       <MemberSignature Language="C#" Value="public DataGridComponentEditor (int initialPage);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 initialPage) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.DataGridComponentEditor.#ctor(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (initialPage As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridComponentEditor(int initialPage);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -68,6 +83,8 @@
       <MemberSignature Language="C#" Value="protected override Type[] GetComponentEditorPages ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Type[] GetComponentEditorPages() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.DataGridComponentEditor.GetComponentEditorPages" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetComponentEditorPages () As Type()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override cli::array &lt;Type ^&gt; ^ GetComponentEditorPages();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -88,14 +105,5 @@
         <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.DataGridComponentEditor" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

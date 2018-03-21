@@ -1,7 +1,9 @@
-<Type Name="ListViewItem" FullName="System.Windows.Forms.ListViewItem">
+﻿<Type Name="ListViewItem" FullName="System.Windows.Forms.ListViewItem">
   <TypeSignature Language="C#" Value="public class ListViewItem : ICloneable, System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ListViewItem extends System.Object implements class System.ICloneable, class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ListViewItem" />
+  <TypeSignature Language="VB.NET" Value="Public Class ListViewItem&#xA;Implements ICloneable, ISerializable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ListViewItem : ICloneable, System::Runtime::Serialization::ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -76,10 +78,21 @@
     <altmember cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ListViewItem" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ListViewItem ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewItem.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ListViewItem();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -122,6 +135,8 @@
       <MemberSignature Language="C#" Value="public ListViewItem (string text);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewItem.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (text As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ListViewItem(System::String ^ text);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -147,6 +162,8 @@
       <MemberSignature Language="C#" Value="public ListViewItem (string[] items);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string[] items) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewItem.#ctor(System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (items As String())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ListViewItem(cli::array &lt;System::String ^&gt; ^ items);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -165,6 +182,8 @@
       <MemberSignature Language="C#" Value="public ListViewItem (System.Windows.Forms.ListViewGroup group);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.ListViewGroup group) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewItem.#ctor(System.Windows.Forms.ListViewGroup)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (group As ListViewGroup)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ListViewItem(System::Windows::Forms::ListViewGroup ^ group);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -195,6 +214,8 @@
       <MemberSignature Language="C#" Value="protected ListViewItem (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewItem.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ListViewItem(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -215,6 +236,8 @@
       <MemberSignature Language="C#" Value="public ListViewItem (string text, int imageIndex);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string text, int32 imageIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewItem.#ctor(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (text As String, imageIndex As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ListViewItem(System::String ^ text, int imageIndex);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -244,6 +267,8 @@
       <MemberSignature Language="C#" Value="public ListViewItem (string text, string imageKey);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string text, string imageKey) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewItem.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (text As String, imageKey As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ListViewItem(System::String ^ text, System::String ^ imageKey);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -273,6 +298,8 @@
       <MemberSignature Language="C#" Value="public ListViewItem (string text, System.Windows.Forms.ListViewGroup group);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string text, class System.Windows.Forms.ListViewGroup group) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewItem.#ctor(System.String,System.Windows.Forms.ListViewGroup)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (text As String, group As ListViewGroup)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ListViewItem(System::String ^ text, System::Windows::Forms::ListViewGroup ^ group);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -307,6 +334,8 @@
       <MemberSignature Language="C#" Value="public ListViewItem (string[] items, int imageIndex);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string[] items, int32 imageIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewItem.#ctor(System.String[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (items As String(), imageIndex As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ListViewItem(cli::array &lt;System::String ^&gt; ^ items, int imageIndex);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -329,6 +358,8 @@
       <MemberSignature Language="C#" Value="public ListViewItem (string[] items, string imageKey);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string[] items, string imageKey) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewItem.#ctor(System.String[],System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (items As String(), imageKey As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ListViewItem(cli::array &lt;System::String ^&gt; ^ items, System::String ^ imageKey);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -356,6 +387,8 @@
       <MemberSignature Language="C#" Value="public ListViewItem (string[] items, System.Windows.Forms.ListViewGroup group);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string[] items, class System.Windows.Forms.ListViewGroup group) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewItem.#ctor(System.String[],System.Windows.Forms.ListViewGroup)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (items As String(), group As ListViewGroup)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ListViewItem(cli::array &lt;System::String ^&gt; ^ items, System::Windows::Forms::ListViewGroup ^ group);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -388,6 +421,8 @@
       <MemberSignature Language="C#" Value="public ListViewItem (System.Windows.Forms.ListViewItem.ListViewSubItem[] subItems, int imageIndex);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.ListViewItem/ListViewSubItem[] subItems, int32 imageIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewItem.#ctor(System.Windows.Forms.ListViewItem.ListViewSubItem[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (subItems As ListViewItem.ListViewSubItem(), imageIndex As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ListViewItem(cli::array &lt;System::Windows::Forms::ListViewItem::ListViewSubItem ^&gt; ^ subItems, int imageIndex);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -418,6 +453,8 @@
       <MemberSignature Language="C#" Value="public ListViewItem (System.Windows.Forms.ListViewItem.ListViewSubItem[] subItems, string imageKey);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.ListViewItem/ListViewSubItem[] subItems, string imageKey) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewItem.#ctor(System.Windows.Forms.ListViewItem.ListViewSubItem[],System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (subItems As ListViewItem.ListViewSubItem(), imageKey As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ListViewItem(cli::array &lt;System::Windows::Forms::ListViewItem::ListViewSubItem ^&gt; ^ subItems, System::String ^ imageKey);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -445,6 +482,8 @@
       <MemberSignature Language="C#" Value="public ListViewItem (string text, int imageIndex, System.Windows.Forms.ListViewGroup group);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string text, int32 imageIndex, class System.Windows.Forms.ListViewGroup group) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewItem.#ctor(System.String,System.Int32,System.Windows.Forms.ListViewGroup)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (text As String, imageIndex As Integer, group As ListViewGroup)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ListViewItem(System::String ^ text, int imageIndex, System::Windows::Forms::ListViewGroup ^ group);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -482,6 +521,8 @@
       <MemberSignature Language="C#" Value="public ListViewItem (string text, string imageKey, System.Windows.Forms.ListViewGroup group);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string text, string imageKey, class System.Windows.Forms.ListViewGroup group) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewItem.#ctor(System.String,System.String,System.Windows.Forms.ListViewGroup)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (text As String, imageKey As String, group As ListViewGroup)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ListViewItem(System::String ^ text, System::String ^ imageKey, System::Windows::Forms::ListViewGroup ^ group);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -518,6 +559,8 @@
       <MemberSignature Language="C#" Value="public ListViewItem (string[] items, int imageIndex, System.Windows.Forms.ListViewGroup group);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string[] items, int32 imageIndex, class System.Windows.Forms.ListViewGroup group) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewItem.#ctor(System.String[],System.Int32,System.Windows.Forms.ListViewGroup)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (items As String(), imageIndex As Integer, group As ListViewGroup)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ListViewItem(cli::array &lt;System::String ^&gt; ^ items, int imageIndex, System::Windows::Forms::ListViewGroup ^ group);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -553,6 +596,8 @@
       <MemberSignature Language="C#" Value="public ListViewItem (string[] items, string imageKey, System.Windows.Forms.ListViewGroup group);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string[] items, string imageKey, class System.Windows.Forms.ListViewGroup group) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewItem.#ctor(System.String[],System.String,System.Windows.Forms.ListViewGroup)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (items As String(), imageKey As String, group As ListViewGroup)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ListViewItem(cli::array &lt;System::String ^&gt; ^ items, System::String ^ imageKey, System::Windows::Forms::ListViewGroup ^ group);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -587,6 +632,8 @@
       <MemberSignature Language="C#" Value="public ListViewItem (System.Windows.Forms.ListViewItem.ListViewSubItem[] subItems, int imageIndex, System.Windows.Forms.ListViewGroup group);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.ListViewItem/ListViewSubItem[] subItems, int32 imageIndex, class System.Windows.Forms.ListViewGroup group) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewItem.#ctor(System.Windows.Forms.ListViewItem.ListViewSubItem[],System.Int32,System.Windows.Forms.ListViewGroup)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (subItems As ListViewItem.ListViewSubItem(), imageIndex As Integer, group As ListViewGroup)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ListViewItem(cli::array &lt;System::Windows::Forms::ListViewItem::ListViewSubItem ^&gt; ^ subItems, int imageIndex, System::Windows::Forms::ListViewGroup ^ group);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -623,6 +670,8 @@
       <MemberSignature Language="C#" Value="public ListViewItem (System.Windows.Forms.ListViewItem.ListViewSubItem[] subItems, string imageKey, System.Windows.Forms.ListViewGroup group);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.ListViewItem/ListViewSubItem[] subItems, string imageKey, class System.Windows.Forms.ListViewGroup group) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewItem.#ctor(System.Windows.Forms.ListViewItem.ListViewSubItem[],System.String,System.Windows.Forms.ListViewGroup)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (subItems As ListViewItem.ListViewSubItem(), imageKey As String, group As ListViewGroup)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ListViewItem(cli::array &lt;System::Windows::Forms::ListViewItem::ListViewSubItem ^&gt; ^ subItems, System::String ^ imageKey, System::Windows::Forms::ListViewGroup ^ group);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -657,6 +706,7 @@
       <MemberSignature Language="C#" Value="public ListViewItem (string[] items, int imageIndex, System.Drawing.Color foreColor, System.Drawing.Color backColor, System.Drawing.Font font);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string[] items, int32 imageIndex, valuetype System.Drawing.Color foreColor, valuetype System.Drawing.Color backColor, class System.Drawing.Font font) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewItem.#ctor(System.String[],System.Int32,System.Drawing.Color,System.Drawing.Color,System.Drawing.Font)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ListViewItem(cli::array &lt;System::String ^&gt; ^ items, int imageIndex, System::Drawing::Color foreColor, System::Drawing::Color backColor, System::Drawing::Font ^ font);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -698,6 +748,7 @@
       <MemberSignature Language="C#" Value="public ListViewItem (string[] items, string imageKey, System.Drawing.Color foreColor, System.Drawing.Color backColor, System.Drawing.Font font);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string[] items, string imageKey, valuetype System.Drawing.Color foreColor, valuetype System.Drawing.Color backColor, class System.Drawing.Font font) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewItem.#ctor(System.String[],System.String,System.Drawing.Color,System.Drawing.Color,System.Drawing.Font)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ListViewItem(cli::array &lt;System::String ^&gt; ^ items, System::String ^ imageKey, System::Drawing::Color foreColor, System::Drawing::Color backColor, System::Drawing::Font ^ font);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -731,6 +782,7 @@
       <MemberSignature Language="C#" Value="public ListViewItem (string[] items, int imageIndex, System.Drawing.Color foreColor, System.Drawing.Color backColor, System.Drawing.Font font, System.Windows.Forms.ListViewGroup group);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string[] items, int32 imageIndex, valuetype System.Drawing.Color foreColor, valuetype System.Drawing.Color backColor, class System.Drawing.Font font, class System.Windows.Forms.ListViewGroup group) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewItem.#ctor(System.String[],System.Int32,System.Drawing.Color,System.Drawing.Color,System.Drawing.Font,System.Windows.Forms.ListViewGroup)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ListViewItem(cli::array &lt;System::String ^&gt; ^ items, int imageIndex, System::Drawing::Color foreColor, System::Drawing::Color backColor, System::Drawing::Font ^ font, System::Windows::Forms::ListViewGroup ^ group);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -774,6 +826,7 @@
       <MemberSignature Language="C#" Value="public ListViewItem (string[] items, string imageKey, System.Drawing.Color foreColor, System.Drawing.Color backColor, System.Drawing.Font font, System.Windows.Forms.ListViewGroup group);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string[] items, string imageKey, valuetype System.Drawing.Color foreColor, valuetype System.Drawing.Color backColor, class System.Drawing.Font font, class System.Windows.Forms.ListViewGroup group) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewItem.#ctor(System.String[],System.String,System.Drawing.Color,System.Drawing.Color,System.Drawing.Font,System.Windows.Forms.ListViewGroup)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ListViewItem(cli::array &lt;System::String ^&gt; ^ items, System::String ^ imageKey, System::Drawing::Color foreColor, System::Drawing::Color backColor, System::Drawing::Font ^ font, System::Windows::Forms::ListViewGroup ^ group);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -814,6 +867,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color BackColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BackColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewItem.BackColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property BackColor As Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color BackColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -821,7 +876,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -848,6 +903,8 @@
       <MemberSignature Language="C#" Value="public void BeginEdit ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void BeginEdit() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewItem.BeginEdit" />
+      <MemberSignature Language="VB.NET" Value="Public Sub BeginEdit ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void BeginEdit();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -874,6 +931,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Rectangle Bounds { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Rectangle Bounds" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewItem.Bounds" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Bounds As Rectangle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Rectangle Bounds { System::Drawing::Rectangle get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -910,6 +969,8 @@
       <MemberSignature Language="C#" Value="public bool Checked { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Checked" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewItem.Checked" />
+      <MemberSignature Language="VB.NET" Value="Public Property Checked As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Checked { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -920,7 +981,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -972,7 +1033,12 @@
       <MemberSignature Language="C#" Value="public virtual object Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewItem.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Clone () As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Clone();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -998,6 +1064,8 @@
       <MemberSignature Language="C#" Value="protected virtual void Deserialize (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Deserialize(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewItem.Deserialize(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Deserialize (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Deserialize(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1027,6 +1095,8 @@
       <MemberSignature Language="C#" Value="public virtual void EnsureVisible ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnsureVisible() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewItem.EnsureVisible" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub EnsureVisible ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EnsureVisible();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1055,6 +1125,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ListViewItem FindNearestItem (System.Windows.Forms.SearchDirectionHint searchDirection);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Forms.ListViewItem FindNearestItem(valuetype System.Windows.Forms.SearchDirectionHint searchDirection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewItem.FindNearestItem(System.Windows.Forms.SearchDirectionHint)" />
+      <MemberSignature Language="VB.NET" Value="Public Function FindNearestItem (searchDirection As SearchDirectionHint) As ListViewItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::ListViewItem ^ FindNearestItem(System::Windows::Forms::SearchDirectionHint searchDirection);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1095,6 +1167,8 @@
       <MemberSignature Language="C#" Value="public bool Focused { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Focused" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewItem.Focused" />
+      <MemberSignature Language="VB.NET" Value="Public Property Focused As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Focused { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1105,7 +1179,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1132,6 +1206,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Font Font { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Font Font" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewItem.Font" />
+      <MemberSignature Language="VB.NET" Value="Public Property Font As Font" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Font ^ Font { System::Drawing::Font ^ get(); void set(System::Drawing::Font ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1139,7 +1215,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
@@ -1180,6 +1256,8 @@ ListViewItem1.Font = New Font(ListViewItem1.Font, _
       <MemberSignature Language="C#" Value="public System.Drawing.Color ForeColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ForeColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewItem.ForeColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property ForeColor As Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color ForeColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1187,7 +1265,7 @@ ListViewItem1.Font = New Font(ListViewItem1.Font, _
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1214,6 +1292,8 @@ ListViewItem1.Font = New Font(ListViewItem1.Font, _
       <MemberSignature Language="C#" Value="public System.Drawing.Rectangle GetBounds (System.Windows.Forms.ItemBoundsPortion portion);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Drawing.Rectangle GetBounds(valuetype System.Windows.Forms.ItemBoundsPortion portion) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewItem.GetBounds(System.Windows.Forms.ItemBoundsPortion)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetBounds (portion As ItemBoundsPortion) As Rectangle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::Rectangle GetBounds(System::Windows::Forms::ItemBoundsPortion portion);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1244,6 +1324,8 @@ ListViewItem1.Font = New Font(ListViewItem1.Font, _
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ListViewItem.ListViewSubItem GetSubItemAt (int x, int y);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Forms.ListViewItem/ListViewSubItem GetSubItemAt(int32 x, int32 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewItem.GetSubItemAt(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSubItemAt (x As Integer, y As Integer) As ListViewItem.ListViewSubItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::ListViewItem::ListViewSubItem ^ GetSubItemAt(int x, int y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1283,6 +1365,8 @@ ListViewItem1.Font = New Font(ListViewItem1.Font, _
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ListViewGroup Group { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ListViewGroup Group" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewItem.Group" />
+      <MemberSignature Language="VB.NET" Value="Public Property Group As ListViewGroup" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ListViewGroup ^ Group { System::Windows::Forms::ListViewGroup ^ get(); void set(System::Windows::Forms::ListViewGroup ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1331,6 +1415,8 @@ ListViewItem1.Font = New Font(ListViewItem1.Font, _
       <MemberSignature Language="C#" Value="public int ImageIndex { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ImageIndex" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewItem.ImageIndex" />
+      <MemberSignature Language="VB.NET" Value="Public Property ImageIndex As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ImageIndex { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1341,7 +1427,7 @@ ListViewItem1.Font = New Font(ListViewItem1.Font, _
           <AttributeName>System.ComponentModel.DefaultValue(-1)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.ImageIndexEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
@@ -1350,7 +1436,7 @@ ListViewItem1.Font = New Font(ListViewItem1.Font, _
           <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Forms.NoneExcludedImageIndexConverter))</AttributeName>
@@ -1380,6 +1466,8 @@ ListViewItem1.Font = New Font(ListViewItem1.Font, _
       <MemberSignature Language="C#" Value="public string ImageKey { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ImageKey" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewItem.ImageKey" />
+      <MemberSignature Language="VB.NET" Value="Public Property ImageKey As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ImageKey { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1390,7 +1478,7 @@ ListViewItem1.Font = New Font(ListViewItem1.Font, _
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.ImageIndexEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
@@ -1399,7 +1487,7 @@ ListViewItem1.Font = New Font(ListViewItem1.Font, _
           <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Forms.ImageKeyConverter))</AttributeName>
@@ -1428,6 +1516,8 @@ ListViewItem1.Font = New Font(ListViewItem1.Font, _
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ImageList ImageList { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ImageList ImageList" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewItem.ImageList" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ImageList As ImageList" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ImageList ^ ImageList { System::Windows::Forms::ImageList ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1459,6 +1549,8 @@ ListViewItem1.Font = New Font(ListViewItem1.Font, _
       <MemberSignature Language="C#" Value="public int IndentCount { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 IndentCount" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewItem.IndentCount" />
+      <MemberSignature Language="VB.NET" Value="Public Property IndentCount As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int IndentCount { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1498,6 +1590,8 @@ ListViewItem1.Font = New Font(ListViewItem1.Font, _
       <MemberSignature Language="C#" Value="public int Index { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Index" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewItem.Index" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Index As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Index { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1528,6 +1622,8 @@ ListViewItem1.Font = New Font(ListViewItem1.Font, _
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ListView ListView { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ListView ListView" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewItem.ListView" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ListView As ListView" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ListView ^ ListView { System::Windows::Forms::ListView ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1559,6 +1655,8 @@ ListViewItem1.Font = New Font(ListViewItem1.Font, _
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewItem.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1569,7 +1667,7 @@ ListViewItem1.Font = New Font(ListViewItem1.Font, _
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
@@ -1595,6 +1693,8 @@ ListViewItem1.Font = New Font(ListViewItem1.Font, _
       <MemberSignature Language="C#" Value="public System.Drawing.Point Position { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Point Position" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewItem.Position" />
+      <MemberSignature Language="VB.NET" Value="Public Property Position As Point" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Point Position { System::Drawing::Point get(); void set(System::Drawing::Point value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1605,7 +1705,7 @@ ListViewItem1.Font = New Font(ListViewItem1.Font, _
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1640,6 +1740,8 @@ ListViewItem1.Font = New Font(ListViewItem1.Font, _
       <MemberSignature Language="C#" Value="public virtual void Remove ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Remove() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewItem.Remove" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Remove ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Remove();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1667,6 +1769,8 @@ ListViewItem1.Font = New Font(ListViewItem1.Font, _
       <MemberSignature Language="C#" Value="public bool Selected { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Selected" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewItem.Selected" />
+      <MemberSignature Language="VB.NET" Value="Public Property Selected As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Selected { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1677,7 +1781,7 @@ ListViewItem1.Font = New Font(ListViewItem1.Font, _
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1715,6 +1819,8 @@ ListViewItem1.Font = New Font(ListViewItem1.Font, _
       <MemberSignature Language="C#" Value="protected virtual void Serialize (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Serialize(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewItem.Serialize(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Serialize (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Serialize(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1744,6 +1850,8 @@ ListViewItem1.Font = New Font(ListViewItem1.Font, _
       <MemberSignature Language="C#" Value="public int StateImageIndex { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 StateImageIndex" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewItem.StateImageIndex" />
+      <MemberSignature Language="VB.NET" Value="Public Property StateImageIndex As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int StateImageIndex { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1760,7 +1868,7 @@ ListViewItem1.Font = New Font(ListViewItem1.Font, _
           <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Forms.NoneExcludedImageIndexConverter))</AttributeName>
@@ -1798,6 +1906,8 @@ ListViewItem1.Font = New Font(ListViewItem1.Font, _
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ListViewItem.ListViewSubItemCollection SubItems { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ListViewItem/ListViewSubItemCollection SubItems" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewItem.SubItems" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SubItems As ListViewItem.ListViewSubItemCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ListViewItem::ListViewSubItemCollection ^ SubItems { System::Windows::Forms::ListViewItem::ListViewSubItemCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1805,7 +1915,7 @@ ListViewItem1.Font = New Font(ListViewItem1.Font, _
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.ListViewSubItemCollectionEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
@@ -1860,7 +1970,12 @@ ListViewItem1.Font = New Font(ListViewItem1.Font, _
       <MemberSignature Language="C#" Value="void ISerializable.GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.Serialization.ISerializable.GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewItem.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Sub GetObjectData (info As SerializationInfo, context As StreamingContext) Implements ISerializable.GetObjectData" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.Serialization.ISerializable.GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context) = System::Runtime::Serialization::ISerializable::GetObjectData;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1883,6 +1998,8 @@ ListViewItem1.Font = New Font(ListViewItem1.Font, _
       <MemberSignature Language="C#" Value="public object Tag { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Tag" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewItem.Tag" />
+      <MemberSignature Language="VB.NET" Value="Public Property Tag As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Tag { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1931,6 +2048,8 @@ ListViewItem1.Font = New Font(ListViewItem1.Font, _
       <MemberSignature Language="C#" Value="public string Text { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Text" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewItem.Text" />
+      <MemberSignature Language="VB.NET" Value="Public Property Text As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1938,7 +2057,7 @@ ListViewItem1.Font = New Font(ListViewItem1.Font, _
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
@@ -1979,6 +2098,8 @@ ListViewItem1.Font = New Font(ListViewItem1.Font, _
       <MemberSignature Language="C#" Value="public string ToolTipText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ToolTipText" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewItem.ToolTipText" />
+      <MemberSignature Language="VB.NET" Value="Public Property ToolTipText As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ToolTipText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2017,6 +2138,8 @@ ListViewItem1.Font = New Font(ListViewItem1.Font, _
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewItem.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2037,6 +2160,8 @@ ListViewItem1.Font = New Font(ListViewItem1.Font, _
       <MemberSignature Language="C#" Value="public bool UseItemStyleForSubItems { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UseItemStyleForSubItems" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewItem.UseItemStyleForSubItems" />
+      <MemberSignature Language="VB.NET" Value="Public Property UseItemStyleForSubItems As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseItemStyleForSubItems { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2076,14 +2201,5 @@ ListViewItem1.Font = New Font(ListViewItem1.Font, _
         <altmember cref="P:System.Windows.Forms.ListViewItem.Font" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ListViewItem" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

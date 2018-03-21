@@ -1,7 +1,9 @@
-<Type Name="ContextAttribute" FullName="System.Runtime.Remoting.Contexts.ContextAttribute">
+﻿<Type Name="ContextAttribute" FullName="System.Runtime.Remoting.Contexts.ContextAttribute">
   <TypeSignature Language="C#" Value="public class ContextAttribute : Attribute, System.Runtime.Remoting.Contexts.IContextAttribute, System.Runtime.Remoting.Contexts.IContextProperty" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ContextAttribute extends System.Attribute implements class System.Runtime.Remoting.Contexts.IContextAttribute, class System.Runtime.Remoting.Contexts.IContextProperty" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Contexts.ContextAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public Class ContextAttribute&#xA;Inherits Attribute&#xA;Implements IContextAttribute, IContextProperty" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ContextAttribute : Attribute, System::Runtime::Remoting::Contexts::IContextAttribute, System::Runtime::Remoting::Contexts::IContextProperty" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -46,6 +48,8 @@
       <MemberSignature Language="C#" Value="public ContextAttribute (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Contexts.ContextAttribute.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ContextAttribute(System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -66,6 +70,8 @@
       <MemberSignature Language="C#" Value="protected string AttributeName;" />
       <MemberSignature Language="ILAsm" Value=".field family string AttributeName" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.Remoting.Contexts.ContextAttribute.AttributeName" />
+      <MemberSignature Language="VB.NET" Value="Protected AttributeName As String " />
+      <MemberSignature Language="C++ CLI" Value="protected: System::String ^ AttributeName;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -85,6 +91,8 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object o);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object o) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Contexts.ContextAttribute.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (o As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -110,7 +118,12 @@
       <MemberSignature Language="C#" Value="public virtual void Freeze (System.Runtime.Remoting.Contexts.Context newContext);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Freeze(class System.Runtime.Remoting.Contexts.Context newContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Contexts.ContextAttribute.Freeze(System.Runtime.Remoting.Contexts.Context)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Freeze (newContext As Context)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Freeze(System::Runtime::Remoting::Contexts::Context ^ newContext);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Remoting.Contexts.IContextProperty.Freeze(System.Runtime.Remoting.Contexts.Context)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -140,6 +153,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Contexts.ContextAttribute.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -161,7 +176,12 @@
       <MemberSignature Language="C#" Value="public virtual void GetPropertiesForNewContext (System.Runtime.Remoting.Activation.IConstructionCallMessage ctorMsg);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetPropertiesForNewContext(class System.Runtime.Remoting.Activation.IConstructionCallMessage ctorMsg) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Contexts.ContextAttribute.GetPropertiesForNewContext(System.Runtime.Remoting.Activation.IConstructionCallMessage)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub GetPropertiesForNewContext (ctorMsg As IConstructionCallMessage)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void GetPropertiesForNewContext(System::Runtime::Remoting::Activation::IConstructionCallMessage ^ ctorMsg);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Remoting.Contexts.IContextAttribute.GetPropertiesForNewContext(System.Runtime.Remoting.Activation.IConstructionCallMessage)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -192,7 +212,12 @@
       <MemberSignature Language="C#" Value="public virtual bool IsContextOK (System.Runtime.Remoting.Contexts.Context ctx, System.Runtime.Remoting.Activation.IConstructionCallMessage ctorMsg);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsContextOK(class System.Runtime.Remoting.Contexts.Context ctx, class System.Runtime.Remoting.Activation.IConstructionCallMessage ctorMsg) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Contexts.ContextAttribute.IsContextOK(System.Runtime.Remoting.Contexts.Context,System.Runtime.Remoting.Activation.IConstructionCallMessage)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function IsContextOK (ctx As Context, ctorMsg As IConstructionCallMessage) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsContextOK(System::Runtime::Remoting::Contexts::Context ^ ctx, System::Runtime::Remoting::Activation::IConstructionCallMessage ^ ctorMsg);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Remoting.Contexts.IContextAttribute.IsContextOK(System.Runtime.Remoting.Contexts.Context,System.Runtime.Remoting.Activation.IConstructionCallMessage)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -220,7 +245,12 @@
       <MemberSignature Language="C#" Value="public virtual bool IsNewContextOK (System.Runtime.Remoting.Contexts.Context newCtx);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsNewContextOK(class System.Runtime.Remoting.Contexts.Context newCtx) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Contexts.ContextAttribute.IsNewContextOK(System.Runtime.Remoting.Contexts.Context)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function IsNewContextOK (newCtx As Context) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsNewContextOK(System::Runtime::Remoting::Contexts::Context ^ newCtx);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Remoting.Contexts.IContextProperty.IsNewContextOK(System.Runtime.Remoting.Contexts.Context)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -255,7 +285,12 @@
       <MemberSignature Language="C#" Value="public virtual string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Contexts.ContextAttribute.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Runtime.Remoting.Contexts.IContextProperty.Name</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>

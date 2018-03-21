@@ -1,7 +1,9 @@
-<Type Name="SplashScreen" FullName="System.Windows.SplashScreen">
+﻿<Type Name="SplashScreen" FullName="System.Windows.SplashScreen">
   <TypeSignature Language="C#" Value="public class SplashScreen" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SplashScreen extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.SplashScreen" />
+  <TypeSignature Language="VB.NET" Value="Public Class SplashScreen" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SplashScreen" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,10 +56,21 @@
     <altmember cref="M:System.Windows.SplashScreen.Close(System.TimeSpan)" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.SplashScreen" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SplashScreen (string resourceName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string resourceName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.SplashScreen.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (resourceName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SplashScreen(System::String ^ resourceName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -91,6 +104,8 @@
       <MemberSignature Language="C#" Value="public SplashScreen (System.Reflection.Assembly resourceAssembly, string resourceName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Reflection.Assembly resourceAssembly, string resourceName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.SplashScreen.#ctor(System.Reflection.Assembly,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (resourceAssembly As Assembly, resourceName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SplashScreen(System::Reflection::Assembly ^ resourceAssembly, System::String ^ resourceName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -125,6 +140,8 @@
       <MemberSignature Language="C#" Value="public void Close (TimeSpan fadeoutDuration);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Close(valuetype System.TimeSpan fadeoutDuration) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.SplashScreen.Close(System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Close (fadeoutDuration As TimeSpan)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Close(TimeSpan fadeoutDuration);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -156,10 +173,21 @@
         <altmember cref="T:System.TimeSpan" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Show">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Displays the splash screen.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Show">
       <MemberSignature Language="C#" Value="public void Show (bool autoClose);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Show(bool autoClose) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.SplashScreen.Show(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Show (autoClose As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Show(bool autoClose);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -198,6 +226,8 @@
       <MemberSignature Language="C#" Value="public void Show (bool autoClose, bool topMost);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Show(bool autoClose, bool topMost) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.SplashScreen.Show(System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Show (autoClose As Boolean, topMost As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Show(bool autoClose, bool topMost);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -224,23 +254,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Show">
-      <AssemblyInfo>
-        <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Displays the splash screen.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.SplashScreen" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

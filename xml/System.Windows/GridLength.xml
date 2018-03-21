@@ -1,7 +1,9 @@
-<Type Name="GridLength" FullName="System.Windows.GridLength">
+﻿<Type Name="GridLength" FullName="System.Windows.GridLength">
   <TypeSignature Language="C#" Value="public struct GridLength : IEquatable&lt;System.Windows.GridLength&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit GridLength extends System.ValueType implements class System.IEquatable`1&lt;valuetype System.Windows.GridLength&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Windows.GridLength" />
+  <TypeSignature Language="VB.NET" Value="Public Structure GridLength&#xA;Implements IEquatable(Of GridLength)" />
+  <TypeSignature Language="C++ CLI" Value="public value class GridLength : IEquatable&lt;System::Windows::GridLength&gt;" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -60,10 +62,21 @@
     <altmember cref="T:System.Windows.GridUnitType" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.GridLength" /> structure.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public GridLength (double pixels);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 pixels) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.GridLength.#ctor(System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (pixels As Double)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; GridLength(double pixels);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -84,6 +97,8 @@
       <MemberSignature Language="C#" Value="public GridLength (double value, System.Windows.GridUnitType type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 value, valuetype System.Windows.GridUnitType type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.GridLength.#ctor(System.Double,System.Windows.GridUnitType)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As Double, type As GridUnitType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; GridLength(double value, System::Windows::GridUnitType type);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -107,6 +122,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.GridLength Auto { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.GridLength Auto" />
       <MemberSignature Language="DocId" Value="P:System.Windows.GridLength.Auto" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Auto As GridLength" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::GridLength Auto { System::Windows::GridLength get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -122,10 +139,21 @@
         <altmember cref="T:System.Windows.GridUnitType" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether two <see cref="T:System.Windows.GridLength" /> structures are equal.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Equals">
       <MemberSignature Language="C#" Value="public override bool Equals (object oCompare);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object oCompare) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.GridLength.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (oCompare As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ oCompare);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -150,7 +178,11 @@
       <MemberSignature Language="C#" Value="public bool Equals (System.Windows.GridLength gridLength);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(valuetype System.Windows.GridLength gridLength) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.GridLength.Equals(System.Windows.GridLength)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Windows::GridLength gridLength);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -174,6 +206,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.GridLength.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -193,6 +227,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.GridUnitType GridUnitType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.GridUnitType GridUnitType" />
       <MemberSignature Language="DocId" Value="P:System.Windows.GridLength.GridUnitType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GridUnitType As GridUnitType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::GridUnitType GridUnitType { System::Windows::GridUnitType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -212,6 +248,8 @@
       <MemberSignature Language="C#" Value="public bool IsAbsolute { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsAbsolute" />
       <MemberSignature Language="DocId" Value="P:System.Windows.GridLength.IsAbsolute" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsAbsolute As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAbsolute { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -232,6 +270,8 @@
       <MemberSignature Language="C#" Value="public bool IsAuto { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsAuto" />
       <MemberSignature Language="DocId" Value="P:System.Windows.GridLength.IsAuto" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsAuto As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAuto { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -259,6 +299,8 @@
       <MemberSignature Language="C#" Value="public bool IsStar { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsStar" />
       <MemberSignature Language="DocId" Value="P:System.Windows.GridLength.IsStar" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsStar As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsStar { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -279,6 +321,8 @@
       <MemberSignature Language="C#" Value="public static bool operator == (System.Windows.GridLength gl1, System.Windows.GridLength gl2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Windows.GridLength gl1, valuetype System.Windows.GridLength gl2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.GridLength.op_Equality(System.Windows.GridLength,System.Windows.GridLength)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (gl1 As GridLength, gl2 As GridLength) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Windows::GridLength gl1, System::Windows::GridLength gl2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -305,6 +349,8 @@
       <MemberSignature Language="C#" Value="public static bool operator != (System.Windows.GridLength gl1, System.Windows.GridLength gl2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Windows.GridLength gl1, valuetype System.Windows.GridLength gl2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.GridLength.op_Inequality(System.Windows.GridLength,System.Windows.GridLength)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (gl1 As GridLength, gl2 As GridLength) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Windows::GridLength gl1, System::Windows::GridLength gl2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -331,6 +377,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.GridLength.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -350,6 +398,8 @@
       <MemberSignature Language="C#" Value="public double Value { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 Value" />
       <MemberSignature Language="DocId" Value="P:System.Windows.GridLength.Value" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Value { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -364,23 +414,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.GridLength" /> structure.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Equals">
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Determines whether two <see cref="T:System.Windows.GridLength" /> structures are equal.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

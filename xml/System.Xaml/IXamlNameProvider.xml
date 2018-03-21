@@ -1,7 +1,9 @@
-<Type Name="IXamlNameProvider" FullName="System.Xaml.IXamlNameProvider">
+﻿<Type Name="IXamlNameProvider" FullName="System.Xaml.IXamlNameProvider">
   <TypeSignature Language="C#" Value="public interface IXamlNameProvider" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IXamlNameProvider" />
   <TypeSignature Language="DocId" Value="T:System.Xaml.IXamlNameProvider" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IXamlNameProvider" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IXamlNameProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +29,8 @@
       <MemberSignature Language="C#" Value="public string GetName (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetName(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.IXamlNameProvider.GetName(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetName (value As Object) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetName(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>

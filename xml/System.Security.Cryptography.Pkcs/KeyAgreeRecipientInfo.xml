@@ -1,7 +1,9 @@
-<Type Name="KeyAgreeRecipientInfo" FullName="System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo">
+﻿<Type Name="KeyAgreeRecipientInfo" FullName="System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo">
   <TypeSignature Language="C#" Value="public sealed class KeyAgreeRecipientInfo : System.Security.Cryptography.Pkcs.RecipientInfo" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit KeyAgreeRecipientInfo extends System.Security.Cryptography.Pkcs.RecipientInfo" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class KeyAgreeRecipientInfo&#xA;Inherits RecipientInfo" />
+  <TypeSignature Language="C++ CLI" Value="public ref class KeyAgreeRecipientInfo sealed : System::Security::Cryptography::Pkcs::RecipientInfo" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +35,8 @@
       <MemberSignature Language="C#" Value="public DateTime Date { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime Date" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo.Date" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Date As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime Date { DateTime get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
@@ -64,6 +68,8 @@
       <MemberSignature Language="C#" Value="public override byte[] EncryptedKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] EncryptedKey" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo.EncryptedKey" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property EncryptedKey As Byte()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property cli::array &lt;System::Byte&gt; ^ EncryptedKey { cli::array &lt;System::Byte&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
@@ -94,6 +100,8 @@
       <MemberSignature Language="C#" Value="public override System.Security.Cryptography.Pkcs.AlgorithmIdentifier KeyEncryptionAlgorithm { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.Pkcs.AlgorithmIdentifier KeyEncryptionAlgorithm" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo.KeyEncryptionAlgorithm" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property KeyEncryptionAlgorithm As AlgorithmIdentifier" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Security::Cryptography::Pkcs::AlgorithmIdentifier ^ KeyEncryptionAlgorithm { System::Security::Cryptography::Pkcs::AlgorithmIdentifier ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
@@ -124,6 +132,8 @@
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.Pkcs.SubjectIdentifierOrKey OriginatorIdentifierOrKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.Pkcs.SubjectIdentifierOrKey OriginatorIdentifierOrKey" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo.OriginatorIdentifierOrKey" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OriginatorIdentifierOrKey As SubjectIdentifierOrKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::Pkcs::SubjectIdentifierOrKey ^ OriginatorIdentifierOrKey { System::Security::Cryptography::Pkcs::SubjectIdentifierOrKey ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
@@ -154,6 +164,8 @@
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.CryptographicAttributeObject OtherKeyAttribute { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.CryptographicAttributeObject OtherKeyAttribute" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo.OtherKeyAttribute" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OtherKeyAttribute As CryptographicAttributeObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::CryptographicAttributeObject ^ OtherKeyAttribute { System::Security::Cryptography::CryptographicAttributeObject ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
@@ -185,6 +197,8 @@
       <MemberSignature Language="C#" Value="public override System.Security.Cryptography.Pkcs.SubjectIdentifier RecipientIdentifier { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.Pkcs.SubjectIdentifier RecipientIdentifier" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo.RecipientIdentifier" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property RecipientIdentifier As SubjectIdentifier" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Security::Cryptography::Pkcs::SubjectIdentifier ^ RecipientIdentifier { System::Security::Cryptography::Pkcs::SubjectIdentifier ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
@@ -215,6 +229,8 @@
       <MemberSignature Language="C#" Value="public override int Version { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Version" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo.Version" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Version As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Version { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>

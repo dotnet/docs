@@ -1,7 +1,9 @@
-<Type Name="ReadEntityBodyMode" FullName="System.Web.ReadEntityBodyMode">
+﻿<Type Name="ReadEntityBodyMode" FullName="System.Web.ReadEntityBodyMode">
   <TypeSignature Language="C#" Value="public enum ReadEntityBodyMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ReadEntityBodyMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.ReadEntityBodyMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ReadEntityBodyMode" />
+  <TypeSignature Language="C++ CLI" Value="public enum class ReadEntityBodyMode" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -18,6 +20,8 @@
       <MemberSignature Language="C#" Value="Buffered" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.ReadEntityBodyMode Buffered = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Web.ReadEntityBodyMode.Buffered" />
+      <MemberSignature Language="VB.NET" Value="Buffered" />
+      <MemberSignature Language="C++ CLI" Value="Buffered" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -26,6 +30,7 @@
       <ReturnValue>
         <ReturnType>System.Web.ReadEntityBodyMode</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The entity body has been read into a <see cref="T:System.IO.Stream" /> object by using the <see cref="M:System.Web.HttpRequest.GetBufferedInputStream" /> method.</summary>
       </Docs>
@@ -34,6 +39,8 @@
       <MemberSignature Language="C#" Value="Bufferless" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.ReadEntityBodyMode Bufferless = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.ReadEntityBodyMode.Bufferless" />
+      <MemberSignature Language="VB.NET" Value="Bufferless" />
+      <MemberSignature Language="C++ CLI" Value="Bufferless" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -42,6 +49,7 @@
       <ReturnValue>
         <ReturnType>System.Web.ReadEntityBodyMode</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The entity body has been read into a <see cref="T:System.IO.Stream" /> object by using the <see cref="M:System.Web.HttpRequest.GetBufferlessInputStream" /> method.</summary>
       </Docs>
@@ -50,6 +58,8 @@
       <MemberSignature Language="C#" Value="Classic" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.ReadEntityBodyMode Classic = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.ReadEntityBodyMode.Classic" />
+      <MemberSignature Language="VB.NET" Value="Classic" />
+      <MemberSignature Language="C++ CLI" Value="Classic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -58,6 +68,7 @@
       <ReturnValue>
         <ReturnType>System.Web.ReadEntityBodyMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The entity body has already been read and its contents have been put into HTTP request collections like <see cref="P:System.Web.HttpRequest.Form" />, <see cref="P:System.Web.HttpRequest.Files" />, <see cref="P:System.Web.HttpRequest.InputStream" />, and <see cref="M:System.Web.HttpRequest.BinaryRead(System.Int32)" />.</summary>
         <remarks>
@@ -74,6 +85,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.ReadEntityBodyMode None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.ReadEntityBodyMode.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -82,6 +95,7 @@
       <ReturnValue>
         <ReturnType>System.Web.ReadEntityBodyMode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The entity body has not been read.</summary>
       </Docs>

@@ -1,7 +1,9 @@
-<Type Name="TargetConverter" FullName="System.Web.UI.WebControls.TargetConverter">
+﻿<Type Name="TargetConverter" FullName="System.Web.UI.WebControls.TargetConverter">
   <TypeSignature Language="C#" Value="public class TargetConverter : System.ComponentModel.StringConverter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TargetConverter extends System.ComponentModel.StringConverter" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.TargetConverter" />
+  <TypeSignature Language="VB.NET" Value="Public Class TargetConverter&#xA;Inherits StringConverter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TargetConverter : System::ComponentModel::StringConverter" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +31,8 @@
       <MemberSignature Language="C#" Value="public TargetConverter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TargetConverter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TargetConverter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -44,6 +48,8 @@
       <MemberSignature Language="C#" Value="public override System.ComponentModel.TypeConverter.StandardValuesCollection GetStandardValues (System.ComponentModel.ITypeDescriptorContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ComponentModel.TypeConverter/StandardValuesCollection GetStandardValues(class System.ComponentModel.ITypeDescriptorContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TargetConverter.GetStandardValues(System.ComponentModel.ITypeDescriptorContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetStandardValues (context As ITypeDescriptorContext) As TypeConverter.StandardValuesCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ComponentModel::TypeConverter::StandardValuesCollection ^ GetStandardValues(System::ComponentModel::ITypeDescriptorContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -73,6 +79,8 @@
       <MemberSignature Language="C#" Value="public override bool GetStandardValuesExclusive (System.ComponentModel.ITypeDescriptorContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool GetStandardValuesExclusive(class System.ComponentModel.ITypeDescriptorContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TargetConverter.GetStandardValuesExclusive(System.ComponentModel.ITypeDescriptorContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetStandardValuesExclusive (context As ITypeDescriptorContext) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool GetStandardValuesExclusive(System::ComponentModel::ITypeDescriptorContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -103,6 +111,8 @@
       <MemberSignature Language="C#" Value="public override bool GetStandardValuesSupported (System.ComponentModel.ITypeDescriptorContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool GetStandardValuesSupported(class System.ComponentModel.ITypeDescriptorContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TargetConverter.GetStandardValuesSupported(System.ComponentModel.ITypeDescriptorContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetStandardValuesSupported (context As ITypeDescriptorContext) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool GetStandardValuesSupported(System::ComponentModel::ITypeDescriptorContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

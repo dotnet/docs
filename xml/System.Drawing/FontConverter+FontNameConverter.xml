@@ -1,7 +1,9 @@
-<Type Name="FontConverter+FontNameConverter" FullName="System.Drawing.FontConverter+FontNameConverter">
+﻿<Type Name="FontConverter+FontNameConverter" FullName="System.Drawing.FontConverter+FontNameConverter">
   <TypeSignature Language="C#" Value="public sealed class FontConverter.FontNameConverter : System.ComponentModel.TypeConverter, IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed beforefieldinit FontConverter/FontNameConverter extends System.ComponentModel.TypeConverter implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.FontConverter.FontNameConverter" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FontConverter.FontNameConverter&#xA;Inherits TypeConverter&#xA;Implements IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public: ref class FontConverter::FontNameConverter sealed : System::ComponentModel::TypeConverter, IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +27,8 @@
       <MemberSignature Language="C#" Value="public FontNameConverter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.FontConverter.FontNameConverter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FontNameConverter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -41,6 +45,8 @@
       <MemberSignature Language="C#" Value="public override bool CanConvertFrom (System.ComponentModel.ITypeDescriptorContext context, Type sourceType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanConvertFrom(class System.ComponentModel.ITypeDescriptorContext context, class System.Type sourceType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.FontConverter.FontNameConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CanConvertFrom (context As ITypeDescriptorContext, sourceType As Type) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool CanConvertFrom(System::ComponentModel::ITypeDescriptorContext ^ context, Type ^ sourceType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -68,6 +74,8 @@
       <MemberSignature Language="C#" Value="public override object ConvertFrom (System.ComponentModel.ITypeDescriptorContext context, System.Globalization.CultureInfo culture, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ConvertFrom(class System.ComponentModel.ITypeDescriptorContext context, class System.Globalization.CultureInfo culture, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.FontConverter.FontNameConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ConvertFrom (context As ITypeDescriptorContext, culture As CultureInfo, value As Object) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ ConvertFrom(System::ComponentModel::ITypeDescriptorContext ^ context, System::Globalization::CultureInfo ^ culture, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -97,6 +105,8 @@
       <MemberSignature Language="C#" Value="public override System.ComponentModel.TypeConverter.StandardValuesCollection GetStandardValues (System.ComponentModel.ITypeDescriptorContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ComponentModel.TypeConverter/StandardValuesCollection GetStandardValues(class System.ComponentModel.ITypeDescriptorContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.FontConverter.FontNameConverter.GetStandardValues(System.ComponentModel.ITypeDescriptorContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetStandardValues (context As ITypeDescriptorContext) As TypeConverter.StandardValuesCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ComponentModel::TypeConverter::StandardValuesCollection ^ GetStandardValues(System::ComponentModel::ITypeDescriptorContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -120,6 +130,8 @@
       <MemberSignature Language="C#" Value="public override bool GetStandardValuesExclusive (System.ComponentModel.ITypeDescriptorContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool GetStandardValuesExclusive(class System.ComponentModel.ITypeDescriptorContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.FontConverter.FontNameConverter.GetStandardValuesExclusive(System.ComponentModel.ITypeDescriptorContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetStandardValuesExclusive (context As ITypeDescriptorContext) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool GetStandardValuesExclusive(System::ComponentModel::ITypeDescriptorContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -151,6 +163,8 @@
       <MemberSignature Language="C#" Value="public override bool GetStandardValuesSupported (System.ComponentModel.ITypeDescriptorContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool GetStandardValuesSupported(class System.ComponentModel.ITypeDescriptorContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.FontConverter.FontNameConverter.GetStandardValuesSupported(System.ComponentModel.ITypeDescriptorContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetStandardValuesSupported (context As ITypeDescriptorContext) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool GetStandardValuesSupported(System::ComponentModel::ITypeDescriptorContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -175,7 +189,12 @@
       <MemberSignature Language="C#" Value="void IDisposable.Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.IDisposable.Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.FontConverter.FontNameConverter.System#IDisposable#Dispose" />
+      <MemberSignature Language="VB.NET" Value="Sub Dispose () Implements IDisposable.Dispose" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.IDisposable.Dispose() = IDisposable::Dispose;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -1,7 +1,9 @@
-<Type Name="SmtpStatusCode" FullName="System.Net.Mail.SmtpStatusCode">
+﻿<Type Name="SmtpStatusCode" FullName="System.Net.Mail.SmtpStatusCode">
   <TypeSignature Language="C#" Value="public enum SmtpStatusCode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SmtpStatusCode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Net.Mail.SmtpStatusCode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum SmtpStatusCode" />
+  <TypeSignature Language="C++ CLI" Value="public enum class SmtpStatusCode" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -44,6 +46,8 @@
       <MemberSignature Language="C#" Value="BadCommandSequence" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Mail.SmtpStatusCode BadCommandSequence = int32(503)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Mail.SmtpStatusCode.BadCommandSequence" />
+      <MemberSignature Language="VB.NET" Value="BadCommandSequence" />
+      <MemberSignature Language="C++ CLI" Value="BadCommandSequence" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -61,6 +65,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Mail.SmtpStatusCode</ReturnType>
       </ReturnValue>
+      <MemberValue>503</MemberValue>
       <Docs>
         <summary>The commands were sent in the incorrect sequence.</summary>
       </Docs>
@@ -69,6 +74,8 @@
       <MemberSignature Language="C#" Value="CannotVerifyUserWillAttemptDelivery" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Mail.SmtpStatusCode CannotVerifyUserWillAttemptDelivery = int32(252)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Mail.SmtpStatusCode.CannotVerifyUserWillAttemptDelivery" />
+      <MemberSignature Language="VB.NET" Value="CannotVerifyUserWillAttemptDelivery" />
+      <MemberSignature Language="C++ CLI" Value="CannotVerifyUserWillAttemptDelivery" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -86,6 +93,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Mail.SmtpStatusCode</ReturnType>
       </ReturnValue>
+      <MemberValue>252</MemberValue>
       <Docs>
         <summary>The specified user is not local, but the receiving SMTP service accepted the message and attempted to deliver it. This status code is defined in RFC 1123, which is available at [http://www.ietf.org](http://www.ietf.org/).</summary>
       </Docs>
@@ -94,6 +102,8 @@
       <MemberSignature Language="C#" Value="ClientNotPermitted" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Mail.SmtpStatusCode ClientNotPermitted = int32(454)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Mail.SmtpStatusCode.ClientNotPermitted" />
+      <MemberSignature Language="VB.NET" Value="ClientNotPermitted" />
+      <MemberSignature Language="C++ CLI" Value="ClientNotPermitted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -111,6 +121,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Mail.SmtpStatusCode</ReturnType>
       </ReturnValue>
+      <MemberValue>454</MemberValue>
       <Docs>
         <summary>The client was not authenticated or is not allowed to send mail using the specified SMTP host.</summary>
       </Docs>
@@ -119,6 +130,8 @@
       <MemberSignature Language="C#" Value="CommandNotImplemented" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Mail.SmtpStatusCode CommandNotImplemented = int32(502)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Mail.SmtpStatusCode.CommandNotImplemented" />
+      <MemberSignature Language="VB.NET" Value="CommandNotImplemented" />
+      <MemberSignature Language="C++ CLI" Value="CommandNotImplemented" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -136,6 +149,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Mail.SmtpStatusCode</ReturnType>
       </ReturnValue>
+      <MemberValue>502</MemberValue>
       <Docs>
         <summary>The SMTP service does not implement the specified command.</summary>
       </Docs>
@@ -144,6 +158,8 @@
       <MemberSignature Language="C#" Value="CommandParameterNotImplemented" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Mail.SmtpStatusCode CommandParameterNotImplemented = int32(504)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Mail.SmtpStatusCode.CommandParameterNotImplemented" />
+      <MemberSignature Language="VB.NET" Value="CommandParameterNotImplemented" />
+      <MemberSignature Language="C++ CLI" Value="CommandParameterNotImplemented" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -161,6 +177,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Mail.SmtpStatusCode</ReturnType>
       </ReturnValue>
+      <MemberValue>504</MemberValue>
       <Docs>
         <summary>The SMTP service does not implement the specified command parameter.</summary>
       </Docs>
@@ -169,6 +186,8 @@
       <MemberSignature Language="C#" Value="CommandUnrecognized" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Mail.SmtpStatusCode CommandUnrecognized = int32(500)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Mail.SmtpStatusCode.CommandUnrecognized" />
+      <MemberSignature Language="VB.NET" Value="CommandUnrecognized" />
+      <MemberSignature Language="C++ CLI" Value="CommandUnrecognized" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -186,6 +205,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Mail.SmtpStatusCode</ReturnType>
       </ReturnValue>
+      <MemberValue>500</MemberValue>
       <Docs>
         <summary>The SMTP service does not recognize the specified command.</summary>
       </Docs>
@@ -194,6 +214,8 @@
       <MemberSignature Language="C#" Value="ExceededStorageAllocation" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Mail.SmtpStatusCode ExceededStorageAllocation = int32(552)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Mail.SmtpStatusCode.ExceededStorageAllocation" />
+      <MemberSignature Language="VB.NET" Value="ExceededStorageAllocation" />
+      <MemberSignature Language="C++ CLI" Value="ExceededStorageAllocation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -211,6 +233,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Mail.SmtpStatusCode</ReturnType>
       </ReturnValue>
+      <MemberValue>552</MemberValue>
       <Docs>
         <summary>The message is too large to be stored in the destination mailbox.</summary>
       </Docs>
@@ -219,6 +242,8 @@
       <MemberSignature Language="C#" Value="GeneralFailure" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Mail.SmtpStatusCode GeneralFailure = int32(-1)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Mail.SmtpStatusCode.GeneralFailure" />
+      <MemberSignature Language="VB.NET" Value="GeneralFailure" />
+      <MemberSignature Language="C++ CLI" Value="GeneralFailure" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -236,6 +261,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Mail.SmtpStatusCode</ReturnType>
       </ReturnValue>
+      <MemberValue>-1</MemberValue>
       <Docs>
         <summary>The transaction could not occur. You receive this error when the specified SMTP host cannot be found.</summary>
       </Docs>
@@ -244,6 +270,8 @@
       <MemberSignature Language="C#" Value="HelpMessage" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Mail.SmtpStatusCode HelpMessage = int32(214)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Mail.SmtpStatusCode.HelpMessage" />
+      <MemberSignature Language="VB.NET" Value="HelpMessage" />
+      <MemberSignature Language="C++ CLI" Value="HelpMessage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -261,6 +289,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Mail.SmtpStatusCode</ReturnType>
       </ReturnValue>
+      <MemberValue>214</MemberValue>
       <Docs>
         <summary>A Help message was returned by the service.</summary>
       </Docs>
@@ -269,6 +298,8 @@
       <MemberSignature Language="C#" Value="InsufficientStorage" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Mail.SmtpStatusCode InsufficientStorage = int32(452)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Mail.SmtpStatusCode.InsufficientStorage" />
+      <MemberSignature Language="VB.NET" Value="InsufficientStorage" />
+      <MemberSignature Language="C++ CLI" Value="InsufficientStorage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -286,6 +317,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Mail.SmtpStatusCode</ReturnType>
       </ReturnValue>
+      <MemberValue>452</MemberValue>
       <Docs>
         <summary>The SMTP service does not have sufficient storage to complete the request.</summary>
       </Docs>
@@ -294,6 +326,8 @@
       <MemberSignature Language="C#" Value="LocalErrorInProcessing" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Mail.SmtpStatusCode LocalErrorInProcessing = int32(451)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Mail.SmtpStatusCode.LocalErrorInProcessing" />
+      <MemberSignature Language="VB.NET" Value="LocalErrorInProcessing" />
+      <MemberSignature Language="C++ CLI" Value="LocalErrorInProcessing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -311,6 +345,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Mail.SmtpStatusCode</ReturnType>
       </ReturnValue>
+      <MemberValue>451</MemberValue>
       <Docs>
         <summary>The SMTP service cannot complete the request. This error can occur if the client's IP address cannot be resolved (that is, a reverse lookup failed). You can also receive this error if the client domain has been identified as an open relay or source for unsolicited email (spam). For details, see RFC 2505, which is available at [http://www.ietf.org](http://www.ietf.org/).</summary>
       </Docs>
@@ -319,6 +354,8 @@
       <MemberSignature Language="C#" Value="MailboxBusy" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Mail.SmtpStatusCode MailboxBusy = int32(450)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Mail.SmtpStatusCode.MailboxBusy" />
+      <MemberSignature Language="VB.NET" Value="MailboxBusy" />
+      <MemberSignature Language="C++ CLI" Value="MailboxBusy" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -336,6 +373,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Mail.SmtpStatusCode</ReturnType>
       </ReturnValue>
+      <MemberValue>450</MemberValue>
       <Docs>
         <summary>The destination mailbox is in use.</summary>
       </Docs>
@@ -344,6 +382,8 @@
       <MemberSignature Language="C#" Value="MailboxNameNotAllowed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Mail.SmtpStatusCode MailboxNameNotAllowed = int32(553)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Mail.SmtpStatusCode.MailboxNameNotAllowed" />
+      <MemberSignature Language="VB.NET" Value="MailboxNameNotAllowed" />
+      <MemberSignature Language="C++ CLI" Value="MailboxNameNotAllowed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -361,6 +401,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Mail.SmtpStatusCode</ReturnType>
       </ReturnValue>
+      <MemberValue>553</MemberValue>
       <Docs>
         <summary>The syntax used to specify the destination mailbox is incorrect.</summary>
       </Docs>
@@ -369,6 +410,8 @@
       <MemberSignature Language="C#" Value="MailboxUnavailable" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Mail.SmtpStatusCode MailboxUnavailable = int32(550)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Mail.SmtpStatusCode.MailboxUnavailable" />
+      <MemberSignature Language="VB.NET" Value="MailboxUnavailable" />
+      <MemberSignature Language="C++ CLI" Value="MailboxUnavailable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -386,6 +429,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Mail.SmtpStatusCode</ReturnType>
       </ReturnValue>
+      <MemberValue>550</MemberValue>
       <Docs>
         <summary>The destination mailbox was not found or could not be accessed.</summary>
       </Docs>
@@ -394,6 +438,8 @@
       <MemberSignature Language="C#" Value="MustIssueStartTlsFirst" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Mail.SmtpStatusCode MustIssueStartTlsFirst = int32(530)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Mail.SmtpStatusCode.MustIssueStartTlsFirst" />
+      <MemberSignature Language="VB.NET" Value="MustIssueStartTlsFirst" />
+      <MemberSignature Language="C++ CLI" Value="MustIssueStartTlsFirst" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -411,6 +457,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Mail.SmtpStatusCode</ReturnType>
       </ReturnValue>
+      <MemberValue>530</MemberValue>
       <Docs>
         <summary>The SMTP server is configured to accept only TLS connections, and the SMTP client is attempting to connect by using a non-TLS connection. The solution is for the user to set EnableSsl=true on the SMTP Client.</summary>
       </Docs>
@@ -419,6 +466,8 @@
       <MemberSignature Language="C#" Value="Ok" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Mail.SmtpStatusCode Ok = int32(250)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Mail.SmtpStatusCode.Ok" />
+      <MemberSignature Language="VB.NET" Value="Ok" />
+      <MemberSignature Language="C++ CLI" Value="Ok" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -436,6 +485,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Mail.SmtpStatusCode</ReturnType>
       </ReturnValue>
+      <MemberValue>250</MemberValue>
       <Docs>
         <summary>The email was successfully sent to the SMTP service.</summary>
       </Docs>
@@ -444,6 +494,8 @@
       <MemberSignature Language="C#" Value="ServiceClosingTransmissionChannel" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Mail.SmtpStatusCode ServiceClosingTransmissionChannel = int32(221)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Mail.SmtpStatusCode.ServiceClosingTransmissionChannel" />
+      <MemberSignature Language="VB.NET" Value="ServiceClosingTransmissionChannel" />
+      <MemberSignature Language="C++ CLI" Value="ServiceClosingTransmissionChannel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -461,6 +513,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Mail.SmtpStatusCode</ReturnType>
       </ReturnValue>
+      <MemberValue>221</MemberValue>
       <Docs>
         <summary>The SMTP service is closing the transmission channel.</summary>
       </Docs>
@@ -469,6 +522,8 @@
       <MemberSignature Language="C#" Value="ServiceNotAvailable" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Mail.SmtpStatusCode ServiceNotAvailable = int32(421)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Mail.SmtpStatusCode.ServiceNotAvailable" />
+      <MemberSignature Language="VB.NET" Value="ServiceNotAvailable" />
+      <MemberSignature Language="C++ CLI" Value="ServiceNotAvailable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -486,6 +541,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Mail.SmtpStatusCode</ReturnType>
       </ReturnValue>
+      <MemberValue>421</MemberValue>
       <Docs>
         <summary>The SMTP service is not available; the server is closing the transmission channel.</summary>
       </Docs>
@@ -494,6 +550,8 @@
       <MemberSignature Language="C#" Value="ServiceReady" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Mail.SmtpStatusCode ServiceReady = int32(220)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Mail.SmtpStatusCode.ServiceReady" />
+      <MemberSignature Language="VB.NET" Value="ServiceReady" />
+      <MemberSignature Language="C++ CLI" Value="ServiceReady" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -511,6 +569,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Mail.SmtpStatusCode</ReturnType>
       </ReturnValue>
+      <MemberValue>220</MemberValue>
       <Docs>
         <summary>The SMTP service is ready.</summary>
       </Docs>
@@ -519,6 +578,8 @@
       <MemberSignature Language="C#" Value="StartMailInput" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Mail.SmtpStatusCode StartMailInput = int32(354)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Mail.SmtpStatusCode.StartMailInput" />
+      <MemberSignature Language="VB.NET" Value="StartMailInput" />
+      <MemberSignature Language="C++ CLI" Value="StartMailInput" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -536,6 +597,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Mail.SmtpStatusCode</ReturnType>
       </ReturnValue>
+      <MemberValue>354</MemberValue>
       <Docs>
         <summary>The SMTP service is ready to receive the email content.</summary>
       </Docs>
@@ -544,6 +606,8 @@
       <MemberSignature Language="C#" Value="SyntaxError" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Mail.SmtpStatusCode SyntaxError = int32(501)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Mail.SmtpStatusCode.SyntaxError" />
+      <MemberSignature Language="VB.NET" Value="SyntaxError" />
+      <MemberSignature Language="C++ CLI" Value="SyntaxError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -561,6 +625,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Mail.SmtpStatusCode</ReturnType>
       </ReturnValue>
+      <MemberValue>501</MemberValue>
       <Docs>
         <summary>The syntax used to specify a command or parameter is incorrect.</summary>
       </Docs>
@@ -569,6 +634,8 @@
       <MemberSignature Language="C#" Value="SystemStatus" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Mail.SmtpStatusCode SystemStatus = int32(211)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Mail.SmtpStatusCode.SystemStatus" />
+      <MemberSignature Language="VB.NET" Value="SystemStatus" />
+      <MemberSignature Language="C++ CLI" Value="SystemStatus" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -586,6 +653,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Mail.SmtpStatusCode</ReturnType>
       </ReturnValue>
+      <MemberValue>211</MemberValue>
       <Docs>
         <summary>A system status or system Help reply.</summary>
       </Docs>
@@ -594,6 +662,8 @@
       <MemberSignature Language="C#" Value="TransactionFailed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Mail.SmtpStatusCode TransactionFailed = int32(554)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Mail.SmtpStatusCode.TransactionFailed" />
+      <MemberSignature Language="VB.NET" Value="TransactionFailed" />
+      <MemberSignature Language="C++ CLI" Value="TransactionFailed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -611,6 +681,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Mail.SmtpStatusCode</ReturnType>
       </ReturnValue>
+      <MemberValue>554</MemberValue>
       <Docs>
         <summary>The transaction failed.</summary>
       </Docs>
@@ -619,6 +690,8 @@
       <MemberSignature Language="C#" Value="UserNotLocalTryAlternatePath" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Mail.SmtpStatusCode UserNotLocalTryAlternatePath = int32(551)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Mail.SmtpStatusCode.UserNotLocalTryAlternatePath" />
+      <MemberSignature Language="VB.NET" Value="UserNotLocalTryAlternatePath" />
+      <MemberSignature Language="C++ CLI" Value="UserNotLocalTryAlternatePath" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -636,6 +709,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Mail.SmtpStatusCode</ReturnType>
       </ReturnValue>
+      <MemberValue>551</MemberValue>
       <Docs>
         <summary>The user mailbox is not located on the receiving server. You should resend using the supplied address information.</summary>
       </Docs>
@@ -644,6 +718,8 @@
       <MemberSignature Language="C#" Value="UserNotLocalWillForward" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Mail.SmtpStatusCode UserNotLocalWillForward = int32(251)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Mail.SmtpStatusCode.UserNotLocalWillForward" />
+      <MemberSignature Language="VB.NET" Value="UserNotLocalWillForward" />
+      <MemberSignature Language="C++ CLI" Value="UserNotLocalWillForward" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -661,6 +737,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Mail.SmtpStatusCode</ReturnType>
       </ReturnValue>
+      <MemberValue>251</MemberValue>
       <Docs>
         <summary>The user mailbox is not located on the receiving server; the server forwards the email.</summary>
       </Docs>

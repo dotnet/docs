@@ -1,7 +1,9 @@
-<Type Name="Table+RowControlCollection" FullName="System.Web.UI.WebControls.Table+RowControlCollection">
+﻿<Type Name="Table+RowControlCollection" FullName="System.Web.UI.WebControls.Table+RowControlCollection">
   <TypeSignature Language="C#" Value="protected class Table.RowControlCollection : System.Web.UI.ControlCollection" />
   <TypeSignature Language="ILAsm" Value=".class nested protected auto ansi beforefieldinit Table/RowControlCollection extends System.Web.UI.ControlCollection" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.Table.RowControlCollection" />
+  <TypeSignature Language="VB.NET" Value="Protected Class Table.RowControlCollection&#xA;Inherits ControlCollection" />
+  <TypeSignature Language="C++ CLI" Value="protected: ref class Table::RowControlCollection : System::Web::UI::ControlCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +31,8 @@
       <MemberSignature Language="C#" Value="public override void Add (System.Web.UI.Control child);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Add(class System.Web.UI.Control child) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Table.RowControlCollection.Add(System.Web.UI.Control)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Add (child As Control)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Add(System::Web::UI::Control ^ child);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -63,6 +67,8 @@
       <MemberSignature Language="C#" Value="public override void AddAt (int index, System.Web.UI.Control child);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void AddAt(int32 index, class System.Web.UI.Control child) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Table.RowControlCollection.AddAt(System.Int32,System.Web.UI.Control)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub AddAt (index As Integer, child As Control)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void AddAt(int index, System::Web::UI::Control ^ child);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

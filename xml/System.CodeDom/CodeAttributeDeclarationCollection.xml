@@ -1,7 +1,9 @@
-<Type Name="CodeAttributeDeclarationCollection" FullName="System.CodeDom.CodeAttributeDeclarationCollection">
+﻿<Type Name="CodeAttributeDeclarationCollection" FullName="System.CodeDom.CodeAttributeDeclarationCollection">
   <TypeSignature Language="C#" Value="public class CodeAttributeDeclarationCollection : System.Collections.CollectionBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CodeAttributeDeclarationCollection extends System.Collections.CollectionBase" />
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeAttributeDeclarationCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class CodeAttributeDeclarationCollection&#xA;Inherits CollectionBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CodeAttributeDeclarationCollection : System::Collections::CollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -16,7 +18,7 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
@@ -44,10 +46,21 @@
     <altmember cref="T:System.CodeDom.CodeAttributeDeclaration" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeAttributeDeclarationCollection" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public CodeAttributeDeclarationCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeAttributeDeclarationCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeAttributeDeclarationCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -67,6 +80,8 @@
       <MemberSignature Language="C#" Value="public CodeAttributeDeclarationCollection (System.CodeDom.CodeAttributeDeclaration[] value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.CodeDom.CodeAttributeDeclaration[] value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeAttributeDeclarationCollection.#ctor(System.CodeDom.CodeAttributeDeclaration[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As CodeAttributeDeclaration())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeAttributeDeclarationCollection(cli::array &lt;System::CodeDom::CodeAttributeDeclaration ^&gt; ^ value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -90,6 +105,8 @@
       <MemberSignature Language="C#" Value="public CodeAttributeDeclarationCollection (System.CodeDom.CodeAttributeDeclarationCollection value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.CodeDom.CodeAttributeDeclarationCollection value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeAttributeDeclarationCollection.#ctor(System.CodeDom.CodeAttributeDeclarationCollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As CodeAttributeDeclarationCollection)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeAttributeDeclarationCollection(System::CodeDom::CodeAttributeDeclarationCollection ^ value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -114,6 +131,8 @@
       <MemberSignature Language="C#" Value="public int Add (System.CodeDom.CodeAttributeDeclaration value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Add(class System.CodeDom.CodeAttributeDeclaration value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeAttributeDeclarationCollection.Add(System.CodeDom.CodeAttributeDeclaration)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (value As CodeAttributeDeclaration) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::CodeDom::CodeAttributeDeclaration ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -148,10 +167,21 @@
         <altmember cref="M:System.CodeDom.CodeAttributeDeclarationCollection.AddRange(System.CodeDom.CodeAttributeDeclaration[])" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddRange">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Copies the elements of the specified <see cref="T:System.CodeDom.CodeAttributeDeclaration" /> array to the end of the collection.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AddRange">
       <MemberSignature Language="C#" Value="public void AddRange (System.CodeDom.CodeAttributeDeclaration[] value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddRange(class System.CodeDom.CodeAttributeDeclaration[] value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeAttributeDeclarationCollection.AddRange(System.CodeDom.CodeAttributeDeclaration[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddRange (value As CodeAttributeDeclaration())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(cli::array &lt;System::CodeDom::CodeAttributeDeclaration ^&gt; ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -191,6 +221,8 @@
       <MemberSignature Language="C#" Value="public void AddRange (System.CodeDom.CodeAttributeDeclarationCollection value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddRange(class System.CodeDom.CodeAttributeDeclarationCollection value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeAttributeDeclarationCollection.AddRange(System.CodeDom.CodeAttributeDeclarationCollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddRange (value As CodeAttributeDeclarationCollection)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(System::CodeDom::CodeAttributeDeclarationCollection ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -230,6 +262,8 @@
       <MemberSignature Language="C#" Value="public bool Contains (System.CodeDom.CodeAttributeDeclaration value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.CodeDom.CodeAttributeDeclaration value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeAttributeDeclarationCollection.Contains(System.CodeDom.CodeAttributeDeclaration)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (value As CodeAttributeDeclaration) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::CodeDom::CodeAttributeDeclaration ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -269,6 +303,8 @@
       <MemberSignature Language="C#" Value="public void CopyTo (System.CodeDom.CodeAttributeDeclaration[] array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.CodeDom.CodeAttributeDeclaration[] array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeAttributeDeclarationCollection.CopyTo(System.CodeDom.CodeAttributeDeclaration[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As CodeAttributeDeclaration(), index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::CodeDom::CodeAttributeDeclaration ^&gt; ^ array, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -315,6 +351,8 @@
       <MemberSignature Language="C#" Value="public int IndexOf (System.CodeDom.CodeAttributeDeclaration value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.CodeDom.CodeAttributeDeclaration value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeAttributeDeclarationCollection.IndexOf(System.CodeDom.CodeAttributeDeclaration)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As CodeAttributeDeclaration) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::CodeDom::CodeAttributeDeclaration ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -353,6 +391,8 @@
       <MemberSignature Language="C#" Value="public void Insert (int index, System.CodeDom.CodeAttributeDeclaration value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(int32 index, class System.CodeDom.CodeAttributeDeclaration value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeAttributeDeclarationCollection.Insert(System.Int32,System.CodeDom.CodeAttributeDeclaration)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, value As CodeAttributeDeclaration)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::CodeDom::CodeAttributeDeclaration ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -392,6 +432,8 @@
       <MemberSignature Language="C#" Value="public System.CodeDom.CodeAttributeDeclaration this[int index] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeAttributeDeclaration Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeAttributeDeclarationCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As CodeAttributeDeclaration" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeAttributeDeclaration ^ default[int] { System::CodeDom::CodeAttributeDeclaration ^ get(int index); void set(int index, System::CodeDom::CodeAttributeDeclaration ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -427,6 +469,8 @@
       <MemberSignature Language="C#" Value="public void Remove (System.CodeDom.CodeAttributeDeclaration value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.CodeDom.CodeAttributeDeclaration value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeAttributeDeclarationCollection.Remove(System.CodeDom.CodeAttributeDeclaration)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (value As CodeAttributeDeclaration)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::CodeDom::CodeAttributeDeclaration ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -460,23 +504,5 @@
         <exception cref="T:System.ArgumentException">The specified object is not found in the collection.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="AddRange">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Copies the elements of the specified <see cref="T:System.CodeDom.CodeAttributeDeclaration" /> array to the end of the collection.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeAttributeDeclarationCollection" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

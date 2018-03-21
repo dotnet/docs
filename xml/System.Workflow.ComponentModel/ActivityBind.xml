@@ -1,7 +1,9 @@
-<Type Name="ActivityBind" FullName="System.Workflow.ComponentModel.ActivityBind">
+﻿<Type Name="ActivityBind" FullName="System.Workflow.ComponentModel.ActivityBind">
   <TypeSignature Language="C#" Value="public sealed class ActivityBind : System.Workflow.ComponentModel.Serialization.MarkupExtension" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ActivityBind extends System.Workflow.ComponentModel.Serialization.MarkupExtension" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.ActivityBind" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ActivityBind&#xA;Inherits MarkupExtension" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ActivityBind sealed : System::Workflow::ComponentModel::Serialization::MarkupExtension" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,10 +49,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.ActivityBind" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ActivityBind ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.ActivityBind.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ActivityBind();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -78,6 +91,8 @@
       <MemberSignature Language="C#" Value="public ActivityBind (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.ActivityBind.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ActivityBind(System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -96,6 +111,8 @@
       <MemberSignature Language="C#" Value="public ActivityBind (string name, string path);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, string path) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.ActivityBind.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, path As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ActivityBind(System::String ^ name, System::String ^ path);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -148,6 +165,7 @@ Returns the run-time value.
       <MemberSignature Language="C#" Value="public object GetRuntimeValue (System.Workflow.ComponentModel.Activity activity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetRuntimeValue(class System.Workflow.ComponentModel.Activity activity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.ActivityBind.GetRuntimeValue(System.Workflow.ComponentModel.Activity)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetRuntimeValue(System::Workflow::ComponentModel::Activity ^ activity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -172,6 +190,7 @@ Returns the run-time value.
       <MemberSignature Language="C#" Value="public object GetRuntimeValue (System.Workflow.ComponentModel.Activity activity, Type targetType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetRuntimeValue(class System.Workflow.ComponentModel.Activity activity, class System.Type targetType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.ActivityBind.GetRuntimeValue(System.Workflow.ComponentModel.Activity,System.Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetRuntimeValue(System::Workflow::ComponentModel::Activity ^ activity, Type ^ targetType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -198,6 +217,8 @@ Returns the run-time value.
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.ActivityBind.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -234,6 +255,8 @@ Returns the run-time value.
       <MemberSignature Language="C#" Value="public string Path { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Path" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.ActivityBind.Path" />
+      <MemberSignature Language="VB.NET" Value="Public Property Path As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Path { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -277,6 +300,8 @@ Returns the run-time value.
       <MemberSignature Language="C#" Value="public override object ProvideValue (IServiceProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ProvideValue(class System.IServiceProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.ActivityBind.ProvideValue(System.IServiceProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ProvideValue (provider As IServiceProvider) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ ProvideValue(IServiceProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -299,6 +324,7 @@ Returns the run-time value.
       <MemberSignature Language="C#" Value="public void SetRuntimeValue (System.Workflow.ComponentModel.Activity activity, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetRuntimeValue(class System.Workflow.ComponentModel.Activity activity, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.ActivityBind.SetRuntimeValue(System.Workflow.ComponentModel.Activity,System.Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetRuntimeValue(System::Workflow::ComponentModel::Activity ^ activity, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -324,6 +350,8 @@ Returns the run-time value.
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.ActivityBind.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -343,6 +371,8 @@ Returns the run-time value.
       <MemberSignature Language="C#" Value="public System.Collections.IDictionary UserData { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IDictionary UserData" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.ActivityBind.UserData" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UserData As IDictionary" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IDictionary ^ UserData { System::Collections::IDictionary ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -353,7 +383,7 @@ Returns the run-time value.
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -365,14 +395,5 @@ Returns the run-time value.
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.ActivityBind" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

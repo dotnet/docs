@@ -1,7 +1,9 @@
-<Type Name="SettingsAttributeDictionary" FullName="System.Configuration.SettingsAttributeDictionary">
+﻿<Type Name="SettingsAttributeDictionary" FullName="System.Configuration.SettingsAttributeDictionary">
   <TypeSignature Language="C#" Value="public class SettingsAttributeDictionary : System.Collections.Hashtable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit SettingsAttributeDictionary extends System.Collections.Hashtable" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.SettingsAttributeDictionary" />
+  <TypeSignature Language="VB.NET" Value="Public Class SettingsAttributeDictionary&#xA;Inherits Hashtable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SettingsAttributeDictionary : System::Collections::Hashtable" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,10 +30,21 @@
     <altmember cref="T:System.Configuration.SettingsProperty" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.SettingsAttributeDictionary" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SettingsAttributeDictionary ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.SettingsAttributeDictionary.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SettingsAttributeDictionary();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -51,6 +64,8 @@
       <MemberSignature Language="C#" Value="public SettingsAttributeDictionary (System.Configuration.SettingsAttributeDictionary attributes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Configuration.SettingsAttributeDictionary attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.SettingsAttributeDictionary.#ctor(System.Configuration.SettingsAttributeDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (attributes As SettingsAttributeDictionary)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SettingsAttributeDictionary(System::Configuration::SettingsAttributeDictionary ^ attributes);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -69,14 +84,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Configuration.SettingsAttributeDictionary" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

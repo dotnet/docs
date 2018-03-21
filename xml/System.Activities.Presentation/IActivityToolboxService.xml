@@ -1,7 +1,9 @@
-<Type Name="IActivityToolboxService" FullName="System.Activities.Presentation.IActivityToolboxService">
+﻿<Type Name="IActivityToolboxService" FullName="System.Activities.Presentation.IActivityToolboxService">
   <TypeSignature Language="C#" Value="public interface IActivityToolboxService" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IActivityToolboxService" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.IActivityToolboxService" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IActivityToolboxService" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IActivityToolboxService" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -16,6 +18,8 @@
       <MemberSignature Language="C#" Value="public void AddCategory (string categoryName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddCategory(string categoryName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.IActivityToolboxService.AddCategory(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddCategory (categoryName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddCategory(System::String ^ categoryName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -37,6 +41,8 @@
       <MemberSignature Language="C#" Value="public void AddItem (string qualifiedTypeName, string categoryName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddItem(string qualifiedTypeName, string categoryName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.IActivityToolboxService.AddItem(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddItem (qualifiedTypeName As String, categoryName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddItem(System::String ^ qualifiedTypeName, System::String ^ categoryName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -60,6 +66,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;string&gt; EnumCategories ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IList`1&lt;string&gt; EnumCategories() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.IActivityToolboxService.EnumCategories" />
+      <MemberSignature Language="VB.NET" Value="Public Function EnumCategories () As IList(Of String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IList&lt;System::String ^&gt; ^ EnumCategories();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -79,6 +87,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;string&gt; EnumItems (string categoryName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IList`1&lt;string&gt; EnumItems(string categoryName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.IActivityToolboxService.EnumItems(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EnumItems (categoryName As String) As IList(Of String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IList&lt;System::String ^&gt; ^ EnumItems(System::String ^ categoryName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -101,6 +111,8 @@
       <MemberSignature Language="C#" Value="public void RemoveCategory (string categoryName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveCategory(string categoryName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.IActivityToolboxService.RemoveCategory(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveCategory (categoryName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveCategory(System::String ^ categoryName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -122,6 +134,8 @@
       <MemberSignature Language="C#" Value="public void RemoveItem (string qualifiedTypeName, string categoryName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveItem(string qualifiedTypeName, string categoryName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.IActivityToolboxService.RemoveItem(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveItem (qualifiedTypeName As String, categoryName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveItem(System::String ^ qualifiedTypeName, System::String ^ categoryName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

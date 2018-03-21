@@ -1,7 +1,9 @@
-<Type Name="ActivityCodeDomSerializationManager" FullName="System.Workflow.ComponentModel.Serialization.ActivityCodeDomSerializationManager">
+﻿<Type Name="ActivityCodeDomSerializationManager" FullName="System.Workflow.ComponentModel.Serialization.ActivityCodeDomSerializationManager">
   <TypeSignature Language="C#" Value="public class ActivityCodeDomSerializationManager : IServiceProvider, System.ComponentModel.Design.Serialization.IDesignerSerializationManager" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ActivityCodeDomSerializationManager extends System.Object implements class System.ComponentModel.Design.Serialization.IDesignerSerializationManager, class System.IServiceProvider" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Serialization.ActivityCodeDomSerializationManager" />
+  <TypeSignature Language="VB.NET" Value="Public Class ActivityCodeDomSerializationManager&#xA;Implements IDesignerSerializationManager, IServiceProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ActivityCodeDomSerializationManager : IServiceProvider, System::ComponentModel::Design::Serialization::IDesignerSerializationManager" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +42,8 @@
       <MemberSignature Language="C#" Value="public ActivityCodeDomSerializationManager (System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Serialization.ActivityCodeDomSerializationManager.#ctor(System.ComponentModel.Design.Serialization.IDesignerSerializationManager)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (manager As IDesignerSerializationManager)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ActivityCodeDomSerializationManager(System::ComponentModel::Design::Serialization::IDesignerSerializationManager ^ manager);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -58,6 +62,8 @@
       <MemberSignature Language="C#" Value="public void AddSerializationProvider (System.ComponentModel.Design.Serialization.IDesignerSerializationProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddSerializationProvider(class System.ComponentModel.Design.Serialization.IDesignerSerializationProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Serialization.ActivityCodeDomSerializationManager.AddSerializationProvider(System.ComponentModel.Design.Serialization.IDesignerSerializationProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddSerializationProvider (provider As IDesignerSerializationProvider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddSerializationProvider(System::ComponentModel::Design::Serialization::IDesignerSerializationProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -79,6 +85,8 @@
       <MemberSignature Language="C#" Value="public System.ComponentModel.Design.Serialization.ContextStack Context { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.Design.Serialization.ContextStack Context" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Serialization.ActivityCodeDomSerializationManager.Context" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Context As ContextStack" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::Design::Serialization::ContextStack ^ Context { System::ComponentModel::Design::Serialization::ContextStack ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -104,6 +112,7 @@
       <MemberSignature Language="C#" Value="public object CreateInstance (Type type, System.Collections.ICollection arguments, string name, bool addToContainer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object CreateInstance(class System.Type type, class System.Collections.ICollection arguments, string name, bool addToContainer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Serialization.ActivityCodeDomSerializationManager.CreateInstance(System.Type,System.Collections.ICollection,System.String,System.Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ CreateInstance(Type ^ type, System::Collections::ICollection ^ arguments, System::String ^ name, bool addToContainer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -144,6 +153,8 @@
       <MemberSignature Language="C#" Value="public object GetInstance (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetInstance(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Serialization.ActivityCodeDomSerializationManager.GetInstance(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetInstance (name As String) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ GetInstance(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -173,6 +184,8 @@
       <MemberSignature Language="C#" Value="public string GetName (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetName(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Serialization.ActivityCodeDomSerializationManager.GetName(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetName (value As Object) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetName(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -204,6 +217,8 @@
       <MemberSignature Language="C#" Value="public object GetSerializer (Type objectType, Type serializerType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetSerializer(class System.Type objectType, class System.Type serializerType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Serialization.ActivityCodeDomSerializationManager.GetSerializer(System.Type,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSerializer (objectType As Type, serializerType As Type) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ GetSerializer(Type ^ objectType, Type ^ serializerType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -235,6 +250,8 @@
       <MemberSignature Language="C#" Value="public object GetService (Type serviceType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetService(class System.Type serviceType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Serialization.ActivityCodeDomSerializationManager.GetService(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetService (serviceType As Type) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ GetService(Type ^ serviceType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -257,6 +274,8 @@
       <MemberSignature Language="C#" Value="public Type GetType (string typeName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type GetType(string typeName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Serialization.ActivityCodeDomSerializationManager.GetType(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetType (typeName As String) As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Type ^ GetType(System::String ^ typeName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -286,6 +305,8 @@
       <MemberSignature Language="C#" Value="public System.ComponentModel.PropertyDescriptorCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.PropertyDescriptorCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Serialization.ActivityCodeDomSerializationManager.Properties" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Properties As PropertyDescriptorCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::PropertyDescriptorCollection ^ Properties { System::ComponentModel::PropertyDescriptorCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -313,6 +334,8 @@
       <MemberSignature Language="C#" Value="public void RemoveSerializationProvider (System.ComponentModel.Design.Serialization.IDesignerSerializationProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveSerializationProvider(class System.ComponentModel.Design.Serialization.IDesignerSerializationProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Serialization.ActivityCodeDomSerializationManager.RemoveSerializationProvider(System.ComponentModel.Design.Serialization.IDesignerSerializationProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveSerializationProvider (provider As IDesignerSerializationProvider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveSerializationProvider(System::ComponentModel::Design::Serialization::IDesignerSerializationProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -343,6 +366,8 @@
       <MemberSignature Language="C#" Value="public void ReportError (object errorInformation);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ReportError(object errorInformation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Serialization.ActivityCodeDomSerializationManager.ReportError(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ReportError (errorInformation As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ReportError(System::Object ^ errorInformation);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -375,6 +400,8 @@
       <MemberSignature Language="C#" Value="public event System.ComponentModel.Design.Serialization.ResolveNameEventHandler ResolveName;" />
       <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.Design.Serialization.ResolveNameEventHandler ResolveName" />
       <MemberSignature Language="DocId" Value="E:System.Workflow.ComponentModel.Serialization.ActivityCodeDomSerializationManager.ResolveName" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ResolveName As ResolveNameEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event System::ComponentModel::Design::Serialization::ResolveNameEventHandler ^ ResolveName;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -399,6 +426,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler SerializationComplete;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler SerializationComplete" />
       <MemberSignature Language="DocId" Value="E:System.Workflow.ComponentModel.Serialization.ActivityCodeDomSerializationManager.SerializationComplete" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event SerializationComplete As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler ^ SerializationComplete;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -423,6 +452,8 @@
       <MemberSignature Language="C#" Value="protected System.ComponentModel.Design.Serialization.IDesignerSerializationManager SerializationManager { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.Design.Serialization.IDesignerSerializationManager SerializationManager" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Serialization.ActivityCodeDomSerializationManager.SerializationManager" />
+      <MemberSignature Language="VB.NET" Value="Protected Property SerializationManager As IDesignerSerializationManager" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::ComponentModel::Design::Serialization::IDesignerSerializationManager ^ SerializationManager { System::ComponentModel::Design::Serialization::IDesignerSerializationManager ^ get(); void set(System::ComponentModel::Design::Serialization::IDesignerSerializationManager ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -448,6 +479,8 @@
       <MemberSignature Language="C#" Value="public void SetName (object instance, string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetName(object instance, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Serialization.ActivityCodeDomSerializationManager.SetName(System.Object,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetName (instance As Object, name As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetName(System::Object ^ instance, System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

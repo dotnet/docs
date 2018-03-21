@@ -1,7 +1,9 @@
-<Type Name="SecurityKey" FullName="System.IdentityModel.Tokens.SecurityKey">
+﻿<Type Name="SecurityKey" FullName="System.IdentityModel.Tokens.SecurityKey">
   <TypeSignature Language="C#" Value="public abstract class SecurityKey" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit SecurityKey extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.SecurityKey" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class SecurityKey" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SecurityKey abstract" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +28,8 @@
       <MemberSignature Language="C#" Value="protected SecurityKey ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityKey.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; SecurityKey();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -41,6 +45,8 @@
       <MemberSignature Language="C#" Value="public abstract byte[] DecryptKey (string algorithm, byte[] keyData);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance unsigned int8[] DecryptKey(string algorithm, unsigned int8[] keyData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityKey.DecryptKey(System.String,System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function DecryptKey (algorithm As String, keyData As Byte()) As Byte()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract cli::array &lt;System::Byte&gt; ^ DecryptKey(System::String ^ algorithm, cli::array &lt;System::Byte&gt; ^ keyData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -72,6 +78,8 @@
       <MemberSignature Language="C#" Value="public abstract byte[] EncryptKey (string algorithm, byte[] keyData);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance unsigned int8[] EncryptKey(string algorithm, unsigned int8[] keyData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityKey.EncryptKey(System.String,System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function EncryptKey (algorithm As String, keyData As Byte()) As Byte()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract cli::array &lt;System::Byte&gt; ^ EncryptKey(System::String ^ algorithm, cli::array &lt;System::Byte&gt; ^ keyData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -103,6 +111,8 @@
       <MemberSignature Language="C#" Value="public abstract bool IsAsymmetricAlgorithm (string algorithm);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsAsymmetricAlgorithm(string algorithm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityKey.IsAsymmetricAlgorithm(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function IsAsymmetricAlgorithm (algorithm As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool IsAsymmetricAlgorithm(System::String ^ algorithm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -133,6 +143,8 @@
       <MemberSignature Language="C#" Value="public abstract bool IsSupportedAlgorithm (string algorithm);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsSupportedAlgorithm(string algorithm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityKey.IsSupportedAlgorithm(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function IsSupportedAlgorithm (algorithm As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool IsSupportedAlgorithm(System::String ^ algorithm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -156,6 +168,8 @@
       <MemberSignature Language="C#" Value="public abstract bool IsSymmetricAlgorithm (string algorithm);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsSymmetricAlgorithm(string algorithm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityKey.IsSymmetricAlgorithm(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function IsSymmetricAlgorithm (algorithm As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool IsSymmetricAlgorithm(System::String ^ algorithm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -186,6 +200,8 @@
       <MemberSignature Language="C#" Value="public abstract int KeySize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 KeySize" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SecurityKey.KeySize" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property KeySize As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property int KeySize { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="CheckBox" FullName="System.Windows.Forms.CheckBox">
+﻿<Type Name="CheckBox" FullName="System.Windows.Forms.CheckBox">
   <TypeSignature Language="C#" Value="public class CheckBox : System.Windows.Forms.ButtonBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CheckBox extends System.Windows.Forms.ButtonBase" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.CheckBox" />
+  <TypeSignature Language="VB.NET" Value="Public Class CheckBox&#xA;Inherits ButtonBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CheckBox : System::Windows::Forms::ButtonBase" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,7 +26,7 @@
       <AttributeName>System.ComponentModel.ToolboxItem("System.Windows.Forms.Design.AutoSizeToolboxItem,System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
@@ -72,6 +74,8 @@
       <MemberSignature Language="C#" Value="public CheckBox ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.CheckBox.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CheckBox();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -104,6 +108,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.Appearance Appearance { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.Appearance Appearance" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.CheckBox.Appearance" />
+      <MemberSignature Language="VB.NET" Value="Public Property Appearance As Appearance" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Appearance Appearance { System::Windows::Forms::Appearance get(); void set(System::Windows::Forms::Appearance value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -148,6 +154,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler AppearanceChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler AppearanceChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.CheckBox.AppearanceChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event AppearanceChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ AppearanceChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -183,6 +191,8 @@
       <MemberSignature Language="C#" Value="public bool AutoCheck { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AutoCheck" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.CheckBox.AutoCheck" />
+      <MemberSignature Language="VB.NET" Value="Public Property AutoCheck As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutoCheck { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -223,6 +233,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.ContentAlignment CheckAlign { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.ContentAlignment CheckAlign" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.CheckBox.CheckAlign" />
+      <MemberSignature Language="VB.NET" Value="Public Property CheckAlign As ContentAlignment" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::ContentAlignment CheckAlign { System::Drawing::ContentAlignment get(); void set(System::Drawing::ContentAlignment value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -233,7 +245,7 @@
           <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+          <AttributeName>System.ComponentModel.DefaultValue</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
@@ -266,6 +278,8 @@
       <MemberSignature Language="C#" Value="public bool Checked { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Checked" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.CheckBox.Checked" />
+      <MemberSignature Language="VB.NET" Value="Public Property Checked As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Checked { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -279,7 +293,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.SettingsBindable(true)</AttributeName>
@@ -322,6 +336,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler CheckedChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler CheckedChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.CheckBox.CheckedChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event CheckedChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ CheckedChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -357,6 +373,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.CheckState CheckState { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.CheckState CheckState" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.CheckBox.CheckState" />
+      <MemberSignature Language="VB.NET" Value="Public Property CheckState As CheckState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::CheckState CheckState { System::Windows::Forms::CheckState get(); void set(System::Windows::Forms::CheckState value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -370,7 +388,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -413,6 +431,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler CheckStateChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler CheckStateChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.CheckBox.CheckStateChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event CheckStateChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ CheckStateChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -448,6 +468,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Forms.AccessibleObject CreateAccessibilityInstance ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Forms.AccessibleObject CreateAccessibilityInstance() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.CheckBox.CreateAccessibilityInstance" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateAccessibilityInstance () As AccessibleObject" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Forms::AccessibleObject ^ CreateAccessibilityInstance();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -480,6 +502,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Forms.CreateParams CreateParams { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.CreateParams CreateParams" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.CheckBox.CreateParams" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property CreateParams As CreateParams" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Windows::Forms::CreateParams ^ CreateParams { System::Windows::Forms::CreateParams ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -510,6 +534,8 @@
       <MemberSignature Language="C#" Value="protected override System.Drawing.Size DefaultSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Size DefaultSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.CheckBox.DefaultSize" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DefaultSize As Size" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Drawing::Size DefaultSize { System::Drawing::Size get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -528,6 +554,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler DoubleClick;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler DoubleClick" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.CheckBox.DoubleClick" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event DoubleClick As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ DoubleClick;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -562,6 +590,8 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.MouseEventHandler MouseDoubleClick;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.MouseEventHandler MouseDoubleClick" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.CheckBox.MouseDoubleClick" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event MouseDoubleClick As MouseEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::MouseEventHandler ^ MouseDoubleClick;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -596,6 +626,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnAppearanceChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnAppearanceChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.CheckBox.OnAppearanceChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnAppearanceChanged (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnAppearanceChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -630,6 +662,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnCheckedChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnCheckedChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.CheckBox.OnCheckedChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnCheckedChanged (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnCheckedChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -664,6 +698,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnCheckStateChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnCheckStateChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.CheckBox.OnCheckStateChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnCheckStateChanged (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnCheckStateChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -698,6 +734,8 @@
       <MemberSignature Language="C#" Value="protected override void OnClick (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnClick(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.CheckBox.OnClick(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnClick (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnClick(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -733,6 +771,8 @@
       <MemberSignature Language="C#" Value="protected override void OnHandleCreated (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnHandleCreated(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.CheckBox.OnHandleCreated(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnHandleCreated (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnHandleCreated(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -755,6 +795,8 @@
       <MemberSignature Language="C#" Value="protected override void OnKeyDown (System.Windows.Forms.KeyEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnKeyDown(class System.Windows.Forms.KeyEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.CheckBox.OnKeyDown(System.Windows.Forms.KeyEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnKeyDown (e As KeyEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnKeyDown(System::Windows::Forms::KeyEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -777,6 +819,8 @@
       <MemberSignature Language="C#" Value="protected override void OnMouseUp (System.Windows.Forms.MouseEventArgs mevent);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseUp(class System.Windows.Forms.MouseEventArgs mevent) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.CheckBox.OnMouseUp(System.Windows.Forms.MouseEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseUp (mevent As MouseEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseUp(System::Windows::Forms::MouseEventArgs ^ mevent);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -796,9 +840,11 @@
       </Docs>
     </Member>
     <Member MemberName="ProcessMnemonic">
-      <MemberSignature Language="C#" Value="protected override bool ProcessMnemonic (char charCode);" />
+      <MemberSignature Language="C#" Value="protected internal override bool ProcessMnemonic (char charCode);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance bool ProcessMnemonic(char charCode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.CheckBox.ProcessMnemonic(System.Char)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function ProcessMnemonic (charCode As Char) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override bool ProcessMnemonic(char charCode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -848,6 +894,8 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
       <MemberSignature Language="C#" Value="public override System.Drawing.ContentAlignment TextAlign { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.ContentAlignment TextAlign" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.CheckBox.TextAlign" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property TextAlign As ContentAlignment" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::ContentAlignment TextAlign { System::Drawing::ContentAlignment get(); void set(System::Drawing::ContentAlignment value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -855,7 +903,7 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+          <AttributeName>System.ComponentModel.DefaultValue</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
@@ -874,6 +922,8 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
       <MemberSignature Language="C#" Value="public bool ThreeState { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ThreeState" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.CheckBox.ThreeState" />
+      <MemberSignature Language="VB.NET" Value="Public Property ThreeState As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ThreeState { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -914,6 +964,8 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.CheckBox.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

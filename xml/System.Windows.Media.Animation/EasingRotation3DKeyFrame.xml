@@ -1,7 +1,9 @@
-<Type Name="EasingRotation3DKeyFrame" FullName="System.Windows.Media.Animation.EasingRotation3DKeyFrame">
+﻿<Type Name="EasingRotation3DKeyFrame" FullName="System.Windows.Media.Animation.EasingRotation3DKeyFrame">
   <TypeSignature Language="C#" Value="public class EasingRotation3DKeyFrame : System.Windows.Media.Animation.Rotation3DKeyFrame" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EasingRotation3DKeyFrame extends System.Windows.Media.Animation.Rotation3DKeyFrame" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.EasingRotation3DKeyFrame" />
+  <TypeSignature Language="VB.NET" Value="Public Class EasingRotation3DKeyFrame&#xA;Inherits Rotation3DKeyFrame" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EasingRotation3DKeyFrame : System::Windows::Media::Animation::Rotation3DKeyFrame" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,10 +25,21 @@
     <altmember cref="T:System.Windows.Media.Animation.IEasingFunction" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.EasingRotation3DKeyFrame" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public EasingRotation3DKeyFrame ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.EasingRotation3DKeyFrame.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EasingRotation3DKeyFrame();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -43,6 +56,8 @@
       <MemberSignature Language="C#" Value="public EasingRotation3DKeyFrame (System.Windows.Media.Media3D.Rotation3D value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Media.Media3D.Rotation3D value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.EasingRotation3DKeyFrame.#ctor(System.Windows.Media.Media3D.Rotation3D)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As Rotation3D)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EasingRotation3DKeyFrame(System::Windows::Media::Media3D::Rotation3D ^ value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -61,6 +76,7 @@
       <MemberSignature Language="C#" Value="public EasingRotation3DKeyFrame (System.Windows.Media.Media3D.Rotation3D value, System.Windows.Media.Animation.KeyTime keyTime);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Media.Media3D.Rotation3D value, valuetype System.Windows.Media.Animation.KeyTime keyTime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.EasingRotation3DKeyFrame.#ctor(System.Windows.Media.Media3D.Rotation3D,System.Windows.Media.Animation.KeyTime)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EasingRotation3DKeyFrame(System::Windows::Media::Media3D::Rotation3D ^ value, System::Windows::Media::Animation::KeyTime keyTime);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -82,6 +98,7 @@
       <MemberSignature Language="C#" Value="public EasingRotation3DKeyFrame (System.Windows.Media.Media3D.Rotation3D value, System.Windows.Media.Animation.KeyTime keyTime, System.Windows.Media.Animation.IEasingFunction easingFunction);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Media.Media3D.Rotation3D value, valuetype System.Windows.Media.Animation.KeyTime keyTime, class System.Windows.Media.Animation.IEasingFunction easingFunction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.EasingRotation3DKeyFrame.#ctor(System.Windows.Media.Media3D.Rotation3D,System.Windows.Media.Animation.KeyTime,System.Windows.Media.Animation.IEasingFunction)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EasingRotation3DKeyFrame(System::Windows::Media::Media3D::Rotation3D ^ value, System::Windows::Media::Animation::KeyTime keyTime, System::Windows::Media::Animation::IEasingFunction ^ easingFunction);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -105,6 +122,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.EasingRotation3DKeyFrame.CreateInstanceCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -140,6 +159,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Animation.IEasingFunction EasingFunction { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Animation.IEasingFunction EasingFunction" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.EasingRotation3DKeyFrame.EasingFunction" />
+      <MemberSignature Language="VB.NET" Value="Public Property EasingFunction As IEasingFunction" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Animation::IEasingFunction ^ EasingFunction { System::Windows::Media::Animation::IEasingFunction ^ get(); void set(System::Windows::Media::Animation::IEasingFunction ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -159,6 +180,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty EasingFunctionProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty EasingFunctionProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.EasingRotation3DKeyFrame.EasingFunctionProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly EasingFunctionProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ EasingFunctionProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -177,6 +200,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Media.Media3D.Rotation3D InterpolateValueCore (System.Windows.Media.Media3D.Rotation3D baseValue, double keyFrameProgress);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Media.Media3D.Rotation3D InterpolateValueCore(class System.Windows.Media.Media3D.Rotation3D baseValue, float64 keyFrameProgress) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.EasingRotation3DKeyFrame.InterpolateValueCore(System.Windows.Media.Media3D.Rotation3D,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function InterpolateValueCore (baseValue As Rotation3D, keyFrameProgress As Double) As Rotation3D" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Media::Media3D::Rotation3D ^ InterpolateValueCore(System::Windows::Media::Media3D::Rotation3D ^ baseValue, double keyFrameProgress);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -198,14 +223,5 @@
         <altmember cref="T:System.Windows.Media.Animation.IEasingFunction" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.EasingRotation3DKeyFrame" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,9 @@
-<Type Name="IVbcHostObject3" FullName="Microsoft.Build.Tasks.Hosting.IVbcHostObject3">
+﻿<Type Name="IVbcHostObject3" FullName="Microsoft.Build.Tasks.Hosting.IVbcHostObject3">
   <TypeSignature Language="C#" Value="public interface IVbcHostObject3 : Microsoft.Build.Framework.ITaskHost, Microsoft.Build.Tasks.Hosting.IVbcHostObject2" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IVbcHostObject3 implements class Microsoft.Build.Framework.ITaskHost, class Microsoft.Build.Tasks.Hosting.IVbcHostObject, class Microsoft.Build.Tasks.Hosting.IVbcHostObject2" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Hosting.IVbcHostObject3" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IVbcHostObject3&#xA;Implements ITaskHost, IVbcHostObject2" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IVbcHostObject3 : Microsoft::Build::Framework::ITaskHost, Microsoft::Build::Tasks::Hosting::IVbcHostObject2" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,7 +24,7 @@
       <AttributeName>System.Runtime.InteropServices.Guid("1186fe8f-8aba-48d6-8ce3-32ca42f53728")</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -34,6 +36,8 @@
       <MemberSignature Language="C#" Value="public bool SetLanguageVersion (string languageVersion);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SetLanguageVersion(string languageVersion) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.IVbcHostObject3.SetLanguageVersion(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetLanguageVersion (languageVersion As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetLanguageVersion(System::String ^ languageVersion);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

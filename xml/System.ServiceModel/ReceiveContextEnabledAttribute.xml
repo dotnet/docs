@@ -1,7 +1,9 @@
-<Type Name="ReceiveContextEnabledAttribute" FullName="System.ServiceModel.ReceiveContextEnabledAttribute">
+﻿<Type Name="ReceiveContextEnabledAttribute" FullName="System.ServiceModel.ReceiveContextEnabledAttribute">
   <TypeSignature Language="C#" Value="public sealed class ReceiveContextEnabledAttribute : Attribute, System.ServiceModel.Description.IOperationBehavior" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ReceiveContextEnabledAttribute extends System.Attribute implements class System.ServiceModel.Description.IOperationBehavior" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.ReceiveContextEnabledAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ReceiveContextEnabledAttribute&#xA;Inherits Attribute&#xA;Implements IOperationBehavior" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ReceiveContextEnabledAttribute sealed : Attribute, System::ServiceModel::Description::IOperationBehavior" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +30,8 @@
       <MemberSignature Language="C#" Value="public ReceiveContextEnabledAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ReceiveContextEnabledAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ReceiveContextEnabledAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -43,7 +47,11 @@
       <MemberSignature Language="C#" Value="public void AddBindingParameters (System.ServiceModel.Description.OperationDescription operationDescription, System.ServiceModel.Channels.BindingParameterCollection bindingParameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddBindingParameters(class System.ServiceModel.Description.OperationDescription operationDescription, class System.ServiceModel.Channels.BindingParameterCollection bindingParameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ReceiveContextEnabledAttribute.AddBindingParameters(System.ServiceModel.Description.OperationDescription,System.ServiceModel.Channels.BindingParameterCollection)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddBindingParameters(System::ServiceModel::Description::OperationDescription ^ operationDescription, System::ServiceModel::Channels::BindingParameterCollection ^ bindingParameters);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Description.IOperationBehavior.AddBindingParameters(System.ServiceModel.Description.OperationDescription,System.ServiceModel.Channels.BindingParameterCollection)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -66,7 +74,11 @@
       <MemberSignature Language="C#" Value="public void ApplyClientBehavior (System.ServiceModel.Description.OperationDescription operationDescription, System.ServiceModel.Dispatcher.ClientOperation clientOperation);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ApplyClientBehavior(class System.ServiceModel.Description.OperationDescription operationDescription, class System.ServiceModel.Dispatcher.ClientOperation clientOperation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ReceiveContextEnabledAttribute.ApplyClientBehavior(System.ServiceModel.Description.OperationDescription,System.ServiceModel.Dispatcher.ClientOperation)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ApplyClientBehavior(System::ServiceModel::Description::OperationDescription ^ operationDescription, System::ServiceModel::Dispatcher::ClientOperation ^ clientOperation);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Description.IOperationBehavior.ApplyClientBehavior(System.ServiceModel.Description.OperationDescription,System.ServiceModel.Dispatcher.ClientOperation)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -89,7 +101,11 @@
       <MemberSignature Language="C#" Value="public void ApplyDispatchBehavior (System.ServiceModel.Description.OperationDescription operationDescription, System.ServiceModel.Dispatcher.DispatchOperation dispatchOperation);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ApplyDispatchBehavior(class System.ServiceModel.Description.OperationDescription operationDescription, class System.ServiceModel.Dispatcher.DispatchOperation dispatchOperation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ReceiveContextEnabledAttribute.ApplyDispatchBehavior(System.ServiceModel.Description.OperationDescription,System.ServiceModel.Dispatcher.DispatchOperation)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ApplyDispatchBehavior(System::ServiceModel::Description::OperationDescription ^ operationDescription, System::ServiceModel::Dispatcher::DispatchOperation ^ dispatchOperation);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Description.IOperationBehavior.ApplyDispatchBehavior(System.ServiceModel.Description.OperationDescription,System.ServiceModel.Dispatcher.DispatchOperation)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -112,6 +128,8 @@
       <MemberSignature Language="C#" Value="public bool ManualControl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ManualControl" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ReceiveContextEnabledAttribute.ManualControl" />
+      <MemberSignature Language="VB.NET" Value="Public Property ManualControl As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ManualControl { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -138,7 +156,11 @@
       <MemberSignature Language="C#" Value="public void Validate (System.ServiceModel.Description.OperationDescription operationDescription);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Validate(class System.ServiceModel.Description.OperationDescription operationDescription) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ReceiveContextEnabledAttribute.Validate(System.ServiceModel.Description.OperationDescription)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Validate(System::ServiceModel::Description::OperationDescription ^ operationDescription);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Description.IOperationBehavior.Validate(System.ServiceModel.Description.OperationDescription)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

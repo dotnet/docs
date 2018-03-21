@@ -1,7 +1,9 @@
-<Type Name="MsmqBindingBase" FullName="System.ServiceModel.MsmqBindingBase">
+﻿<Type Name="MsmqBindingBase" FullName="System.ServiceModel.MsmqBindingBase">
   <TypeSignature Language="C#" Value="public abstract class MsmqBindingBase : System.ServiceModel.Channels.Binding, System.ServiceModel.Channels.IBindingRuntimePreferences" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit MsmqBindingBase extends System.ServiceModel.Channels.Binding implements class System.ServiceModel.Channels.IBindingRuntimePreferences" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.MsmqBindingBase" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class MsmqBindingBase&#xA;Inherits Binding&#xA;Implements IBindingRuntimePreferences" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MsmqBindingBase abstract : System::ServiceModel::Channels::Binding, System::ServiceModel::Channels::IBindingRuntimePreferences" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +32,8 @@
       <MemberSignature Language="C#" Value="protected MsmqBindingBase ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.MsmqBindingBase.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; MsmqBindingBase();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -45,6 +49,8 @@
       <MemberSignature Language="C#" Value="public Uri CustomDeadLetterQueue { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri CustomDeadLetterQueue" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.MsmqBindingBase.CustomDeadLetterQueue" />
+      <MemberSignature Language="VB.NET" Value="Public Property CustomDeadLetterQueue As Uri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ CustomDeadLetterQueue { Uri ^ get(); void set(Uri ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -79,6 +85,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.DeadLetterQueue DeadLetterQueue { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.DeadLetterQueue DeadLetterQueue" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.MsmqBindingBase.DeadLetterQueue" />
+      <MemberSignature Language="VB.NET" Value="Public Property DeadLetterQueue As DeadLetterQueue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::DeadLetterQueue DeadLetterQueue { System::ServiceModel::DeadLetterQueue get(); void set(System::ServiceModel::DeadLetterQueue value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -137,6 +145,8 @@
       <MemberSignature Language="C#" Value="public bool Durable { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Durable" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.MsmqBindingBase.Durable" />
+      <MemberSignature Language="VB.NET" Value="Public Property Durable As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Durable { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -170,6 +180,8 @@
       <MemberSignature Language="C#" Value="public bool ExactlyOnce { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ExactlyOnce" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.MsmqBindingBase.ExactlyOnce" />
+      <MemberSignature Language="VB.NET" Value="Public Property ExactlyOnce As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ExactlyOnce { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -209,6 +221,8 @@
       <MemberSignature Language="C#" Value="public long MaxReceivedMessageSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 MaxReceivedMessageSize" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.MsmqBindingBase.MaxReceivedMessageSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxReceivedMessageSize As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long MaxReceivedMessageSize { long get(); void set(long value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -239,6 +253,8 @@
       <MemberSignature Language="C#" Value="public int MaxRetryCycles { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxRetryCycles" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.MsmqBindingBase.MaxRetryCycles" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxRetryCycles As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxRetryCycles { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -269,6 +285,8 @@
       <MemberSignature Language="C#" Value="public bool ReceiveContextEnabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ReceiveContextEnabled" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.MsmqBindingBase.ReceiveContextEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReceiveContextEnabled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ReceiveContextEnabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -293,6 +311,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.ReceiveErrorHandling ReceiveErrorHandling { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.ReceiveErrorHandling ReceiveErrorHandling" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.MsmqBindingBase.ReceiveErrorHandling" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReceiveErrorHandling As ReceiveErrorHandling" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::ReceiveErrorHandling ReceiveErrorHandling { System::ServiceModel::ReceiveErrorHandling get(); void set(System::ServiceModel::ReceiveErrorHandling value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -329,6 +349,8 @@
       <MemberSignature Language="C#" Value="public int ReceiveRetryCount { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ReceiveRetryCount" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.MsmqBindingBase.ReceiveRetryCount" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReceiveRetryCount As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ReceiveRetryCount { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -361,6 +383,8 @@
       <MemberSignature Language="C#" Value="public TimeSpan RetryCycleDelay { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan RetryCycleDelay" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.MsmqBindingBase.RetryCycleDelay" />
+      <MemberSignature Language="VB.NET" Value="Public Property RetryCycleDelay As TimeSpan" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan RetryCycleDelay { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -391,6 +415,8 @@
       <MemberSignature Language="C#" Value="public override string Scheme { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Scheme" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.MsmqBindingBase.Scheme" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Scheme As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Scheme { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -418,7 +444,12 @@
       <MemberSignature Language="C#" Value="bool System.ServiceModel.Channels.IBindingRuntimePreferences.ReceiveSynchronously { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.ServiceModel.Channels.IBindingRuntimePreferences.ReceiveSynchronously" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.MsmqBindingBase.System#ServiceModel#Channels#IBindingRuntimePreferences#ReceiveSynchronously" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property ReceiveSynchronously As Boolean Implements IBindingRuntimePreferences.ReceiveSynchronously" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.ServiceModel.Channels.IBindingRuntimePreferences.ReceiveSynchronously { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.ServiceModel.Channels.IBindingRuntimePreferences.ReceiveSynchronously</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -444,6 +475,8 @@
       <MemberSignature Language="C#" Value="public TimeSpan TimeToLive { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan TimeToLive" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.MsmqBindingBase.TimeToLive" />
+      <MemberSignature Language="VB.NET" Value="Public Property TimeToLive As TimeSpan" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan TimeToLive { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -474,6 +507,8 @@
       <MemberSignature Language="C#" Value="public bool UseMsmqTracing { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UseMsmqTracing" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.MsmqBindingBase.UseMsmqTracing" />
+      <MemberSignature Language="VB.NET" Value="Public Property UseMsmqTracing As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseMsmqTracing { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -505,6 +540,8 @@
       <MemberSignature Language="C#" Value="public bool UseSourceJournal { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UseSourceJournal" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.MsmqBindingBase.UseSourceJournal" />
+      <MemberSignature Language="VB.NET" Value="Public Property UseSourceJournal As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseSourceJournal { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -536,6 +573,8 @@
       <MemberSignature Language="C#" Value="public TimeSpan ValidityDuration { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan ValidityDuration" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.MsmqBindingBase.ValidityDuration" />
+      <MemberSignature Language="VB.NET" Value="Public Property ValidityDuration As TimeSpan" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan ValidityDuration { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

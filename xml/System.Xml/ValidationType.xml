@@ -1,7 +1,9 @@
-<Type Name="ValidationType" FullName="System.Xml.ValidationType">
+﻿<Type Name="ValidationType" FullName="System.Xml.ValidationType">
   <TypeSignature Language="C#" Value="public enum ValidationType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ValidationType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Xml.ValidationType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ValidationType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class ValidationType" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -37,6 +39,8 @@
       <MemberSignature Language="C#" Value="Auto" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.ValidationType Auto = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.ValidationType.Auto" />
+      <MemberSignature Language="VB.NET" Value="Auto" />
+      <MemberSignature Language="C++ CLI" Value="Auto" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -59,6 +63,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.ValidationType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Validates if DTD or schema information is found.</summary>
         <remarks>
@@ -77,6 +82,8 @@
       <MemberSignature Language="C#" Value="DTD" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.ValidationType DTD = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.ValidationType.DTD" />
+      <MemberSignature Language="VB.NET" Value="DTD" />
+      <MemberSignature Language="C++ CLI" Value="DTD" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -94,6 +101,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.ValidationType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Validates according to the DTD.</summary>
       </Docs>
@@ -102,6 +110,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.ValidationType None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.ValidationType.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -119,6 +129,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.ValidationType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>No validation is performed. This setting creates an XML 1.0 compliant non-validating parser.</summary>
         <remarks>
@@ -137,6 +148,8 @@
       <MemberSignature Language="C#" Value="Schema" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.ValidationType Schema = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.ValidationType.Schema" />
+      <MemberSignature Language="VB.NET" Value="Schema" />
+      <MemberSignature Language="C++ CLI" Value="Schema" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -154,6 +167,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.ValidationType</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Validate according to XML Schema definition language (XSD) schemas, including inline XML Schemas. XML Schemas are associated with namespace URIs either by using the <see langword="schemaLocation" /> attribute or the provided <see langword="Schemas" /> property.</summary>
       </Docs>
@@ -162,6 +176,8 @@
       <MemberSignature Language="C#" Value="XDR" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.ValidationType XDR = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.ValidationType.XDR" />
+      <MemberSignature Language="VB.NET" Value="XDR" />
+      <MemberSignature Language="C++ CLI" Value="XDR" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -184,6 +200,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.ValidationType</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Validate according to XML-Data Reduced (XDR) schemas, including inline XDR schemas. XDR schemas are recognized using the <see langword="x-schema" /> namespace prefix or the <see cref="P:System.Xml.XmlValidatingReader.Schemas" /> property.</summary>
         <remarks>

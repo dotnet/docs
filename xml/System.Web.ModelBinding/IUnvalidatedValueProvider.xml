@@ -1,7 +1,9 @@
-<Type Name="IUnvalidatedValueProvider" FullName="System.Web.ModelBinding.IUnvalidatedValueProvider">
+﻿<Type Name="IUnvalidatedValueProvider" FullName="System.Web.ModelBinding.IUnvalidatedValueProvider">
   <TypeSignature Language="C#" Value="public interface IUnvalidatedValueProvider : System.Web.ModelBinding.IValueProvider" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IUnvalidatedValueProvider implements class System.Web.ModelBinding.IValueProvider" />
   <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.IUnvalidatedValueProvider" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IUnvalidatedValueProvider&#xA;Implements IValueProvider" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IUnvalidatedValueProvider : System::Web::ModelBinding::IValueProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +22,8 @@
       <MemberSignature Language="C#" Value="public System.Web.ModelBinding.ValueProviderResult GetValue (string key, bool skipValidation);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.ModelBinding.ValueProviderResult GetValue(string key, bool skipValidation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.IUnvalidatedValueProvider.GetValue(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetValue (key As String, skipValidation As Boolean) As ValueProviderResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::ModelBinding::ValueProviderResult ^ GetValue(System::String ^ key, bool skipValidation);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

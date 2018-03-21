@@ -1,7 +1,9 @@
-<Type Name="InitializeCorrelation" FullName="System.ServiceModel.Activities.InitializeCorrelation">
+﻿<Type Name="InitializeCorrelation" FullName="System.ServiceModel.Activities.InitializeCorrelation">
   <TypeSignature Language="C#" Value="public sealed class InitializeCorrelation : System.Activities.NativeActivity" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit InitializeCorrelation extends System.Activities.NativeActivity" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.InitializeCorrelation" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class InitializeCorrelation&#xA;Inherits NativeActivity" />
+  <TypeSignature Language="C++ CLI" Value="public ref class InitializeCorrelation sealed : System::Activities::NativeActivity" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +33,8 @@
       <MemberSignature Language="C#" Value="public InitializeCorrelation ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.InitializeCorrelation.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InitializeCorrelation();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -46,6 +50,8 @@
       <MemberSignature Language="C#" Value="public System.Activities.InArgument&lt;System.ServiceModel.Activities.CorrelationHandle&gt; Correlation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.InArgument`1&lt;class System.ServiceModel.Activities.CorrelationHandle&gt; Correlation" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.InitializeCorrelation.Correlation" />
+      <MemberSignature Language="VB.NET" Value="Public Property Correlation As InArgument(Of CorrelationHandle)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::InArgument&lt;System::ServiceModel::Activities::CorrelationHandle ^&gt; ^ Correlation { System::Activities::InArgument&lt;System::ServiceModel::Activities::CorrelationHandle ^&gt; ^ get(); void set(System::Activities::InArgument&lt;System::ServiceModel::Activities::CorrelationHandle ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -76,6 +82,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,System.Activities.InArgument&lt;string&gt;&gt; CorrelationData { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, class System.Activities.InArgument`1&lt;string&gt;&gt; CorrelationData" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CorrelationData As IDictionary(Of String, InArgument(Of String))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::String ^, System::Activities::InArgument&lt;System::String ^&gt; ^&gt; ^ CorrelationData { System::Collections::Generic::IDictionary&lt;System::String ^, System::Activities::InArgument&lt;System::String ^&gt; ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -101,6 +109,8 @@
       <MemberSignature Language="C#" Value="protected override void Execute (System.Activities.NativeActivityContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Execute(class System.Activities.NativeActivityContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.InitializeCorrelation.Execute(System.Activities.NativeActivityContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Execute (context As NativeActivityContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Execute(System::Activities::NativeActivityContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>

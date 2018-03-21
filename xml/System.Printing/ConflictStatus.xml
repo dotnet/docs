@@ -1,7 +1,9 @@
-<Type Name="ConflictStatus" FullName="System.Printing.ConflictStatus">
+﻿<Type Name="ConflictStatus" FullName="System.Printing.ConflictStatus">
   <TypeSignature Language="C#" Value="public enum ConflictStatus" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ConflictStatus extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Printing.ConflictStatus" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ConflictStatus" />
+  <TypeSignature Language="C++ CLI" Value="public enum class ConflictStatus" />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +32,8 @@
       <MemberSignature Language="C#" Value="ConflictResolved" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.ConflictStatus ConflictResolved = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.ConflictStatus.ConflictResolved" />
+      <MemberSignature Language="VB.NET" Value="ConflictResolved" />
+      <MemberSignature Language="C++ CLI" Value="ConflictResolved" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -38,6 +42,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.ConflictStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>One or more conflicts were found and all conflicts were resolved.</summary>
       </Docs>
@@ -46,6 +51,8 @@
       <MemberSignature Language="C#" Value="NoConflict" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.ConflictStatus NoConflict = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.ConflictStatus.NoConflict" />
+      <MemberSignature Language="VB.NET" Value="NoConflict" />
+      <MemberSignature Language="C++ CLI" Value="NoConflict" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -54,6 +61,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.ConflictStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>No conflicts were found between the initial merged print ticket and the supported printer functions.</summary>
       </Docs>

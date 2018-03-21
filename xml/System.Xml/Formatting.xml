@@ -1,7 +1,9 @@
-<Type Name="Formatting" FullName="System.Xml.Formatting">
+﻿<Type Name="Formatting" FullName="System.Xml.Formatting">
   <TypeSignature Language="C#" Value="public enum Formatting" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed Formatting extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Formatting" />
+  <TypeSignature Language="VB.NET" Value="Public Enum Formatting" />
+  <TypeSignature Language="C++ CLI" Value="public enum class Formatting" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -27,6 +29,8 @@
       <MemberSignature Language="C#" Value="Indented" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Formatting Indented = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Formatting.Indented" />
+      <MemberSignature Language="VB.NET" Value="Indented" />
+      <MemberSignature Language="C++ CLI" Value="Indented" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -44,6 +48,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Formatting</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Causes child elements to be indented according to the <see cref="P:System.Xml.XmlTextWriter.Indentation" /> and <see cref="P:System.Xml.XmlTextWriter.IndentChar" /> settings.</summary>
         <remarks>
@@ -60,6 +65,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Formatting None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Formatting.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -77,6 +84,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Formatting</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>No special formatting is applied. This is the default.</summary>
       </Docs>

@@ -1,7 +1,9 @@
-<Type Name="LabelEditEventHandler" FullName="System.Windows.Forms.LabelEditEventHandler">
+﻿<Type Name="LabelEditEventHandler" FullName="System.Windows.Forms.LabelEditEventHandler">
   <TypeSignature Language="C#" Value="public delegate void LabelEditEventHandler(object sender, LabelEditEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LabelEditEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.LabelEditEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub LabelEditEventHandler(sender As Object, e As LabelEditEventArgs)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void LabelEditEventHandler(System::Object ^ sender, LabelEditEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -1,7 +1,9 @@
-<Type Name="BamlLocalizationDictionaryEnumerator" FullName="System.Windows.Markup.Localizer.BamlLocalizationDictionaryEnumerator">
+﻿<Type Name="BamlLocalizationDictionaryEnumerator" FullName="System.Windows.Markup.Localizer.BamlLocalizationDictionaryEnumerator">
   <TypeSignature Language="C#" Value="public sealed class BamlLocalizationDictionaryEnumerator : System.Collections.IDictionaryEnumerator" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit BamlLocalizationDictionaryEnumerator extends System.Object implements class System.Collections.IDictionaryEnumerator, class System.Collections.IEnumerator" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.Localizer.BamlLocalizationDictionaryEnumerator" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BamlLocalizationDictionaryEnumerator&#xA;Implements IDictionaryEnumerator" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BamlLocalizationDictionaryEnumerator sealed : System::Collections::IDictionaryEnumerator" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +27,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.DictionaryEntry Current { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Collections.DictionaryEntry Current" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.Localizer.BamlLocalizationDictionaryEnumerator.Current" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Current As DictionaryEntry" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::DictionaryEntry Current { System::Collections::DictionaryEntry get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -43,7 +47,12 @@
       <MemberSignature Language="C#" Value="public System.Collections.DictionaryEntry Entry { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Collections.DictionaryEntry Entry" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.Localizer.BamlLocalizationDictionaryEnumerator.Entry" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Entry As DictionaryEntry" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::DictionaryEntry Entry { System::Collections::DictionaryEntry get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.IDictionaryEnumerator.Entry</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -61,6 +70,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Markup.Localizer.BamlLocalizableResourceKey Key { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Markup.Localizer.BamlLocalizableResourceKey Key" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.Localizer.BamlLocalizationDictionaryEnumerator.Key" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Key As BamlLocalizableResourceKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Markup::Localizer::BamlLocalizableResourceKey ^ Key { System::Windows::Markup::Localizer::BamlLocalizableResourceKey ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -79,7 +90,12 @@
       <MemberSignature Language="C#" Value="public bool MoveNext ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool MoveNext() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.Localizer.BamlLocalizationDictionaryEnumerator.MoveNext" />
+      <MemberSignature Language="VB.NET" Value="Public Function MoveNext () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool MoveNext();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerator.MoveNext</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -99,7 +115,12 @@
       <MemberSignature Language="C#" Value="public void Reset ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Reset() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.Localizer.BamlLocalizationDictionaryEnumerator.Reset" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Reset ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Reset();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerator.Reset</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -117,7 +138,12 @@
       <MemberSignature Language="C#" Value="object System.Collections.IDictionaryEnumerator.Key { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.IDictionaryEnumerator.Key" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.Localizer.BamlLocalizationDictionaryEnumerator.System#Collections#IDictionaryEnumerator#Key" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property Key As Object Implements IDictionaryEnumerator.Key" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IDictionaryEnumerator.Key { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.IDictionaryEnumerator.Key</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -136,7 +162,12 @@
       <MemberSignature Language="C#" Value="object System.Collections.IDictionaryEnumerator.Value { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.IDictionaryEnumerator.Value" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.Localizer.BamlLocalizationDictionaryEnumerator.System#Collections#IDictionaryEnumerator#Value" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property Value As Object Implements IDictionaryEnumerator.Value" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IDictionaryEnumerator.Value { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.IDictionaryEnumerator.Value</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -155,7 +186,12 @@
       <MemberSignature Language="C#" Value="object System.Collections.IEnumerator.Current { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.IEnumerator.Current" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.Localizer.BamlLocalizationDictionaryEnumerator.System#Collections#IEnumerator#Current" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property Current As Object Implements IEnumerator.Current" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IEnumerator.Current { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.IEnumerator.Current</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -173,6 +209,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Markup.Localizer.BamlLocalizableResource Value { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Markup.Localizer.BamlLocalizableResource Value" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.Localizer.BamlLocalizationDictionaryEnumerator.Value" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As BamlLocalizableResource" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Markup::Localizer::BamlLocalizableResource ^ Value { System::Windows::Markup::Localizer::BamlLocalizableResource ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

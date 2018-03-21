@@ -1,7 +1,9 @@
-<Type Name="StartFromZero" FullName="System.Web.UI.DataVisualization.Charting.StartFromZero">
+﻿<Type Name="StartFromZero" FullName="System.Web.UI.DataVisualization.Charting.StartFromZero">
   <TypeSignature Language="C#" Value="public enum StartFromZero" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed StartFromZero extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.StartFromZero" />
+  <TypeSignature Language="VB.NET" Value="Public Enum StartFromZero" />
+  <TypeSignature Language="C++ CLI" Value="public enum class StartFromZero" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +27,8 @@
       <MemberSignature Language="C#" Value="Auto" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.StartFromZero Auto = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.StartFromZero.Auto" />
+      <MemberSignature Language="VB.NET" Value="Auto" />
+      <MemberSignature Language="C++ CLI" Value="Auto" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -33,6 +37,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.StartFromZero</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Web.UI.DataVisualization.Charting.Chart" /> control calculates whether to start the axis scale at zero or at a more appropriate rounded value.</summary>
       </Docs>
@@ -41,6 +46,8 @@
       <MemberSignature Language="C#" Value="No" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.StartFromZero No = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.StartFromZero.No" />
+      <MemberSignature Language="VB.NET" Value="No" />
+      <MemberSignature Language="C++ CLI" Value="No" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -49,6 +56,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.StartFromZero</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Do not start the axis segment scale from zero.</summary>
       </Docs>
@@ -57,6 +65,8 @@
       <MemberSignature Language="C#" Value="Yes" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.StartFromZero Yes = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.StartFromZero.Yes" />
+      <MemberSignature Language="VB.NET" Value="Yes" />
+      <MemberSignature Language="C++ CLI" Value="Yes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -65,6 +75,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.StartFromZero</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Start the axis segment scale from zero.</summary>
       </Docs>

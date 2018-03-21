@@ -1,7 +1,9 @@
-<Type Name="DetailsViewUpdatedEventArgs" FullName="System.Web.UI.WebControls.DetailsViewUpdatedEventArgs">
+﻿<Type Name="DetailsViewUpdatedEventArgs" FullName="System.Web.UI.WebControls.DetailsViewUpdatedEventArgs">
   <TypeSignature Language="C#" Value="public class DetailsViewUpdatedEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DetailsViewUpdatedEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DetailsViewUpdatedEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class DetailsViewUpdatedEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DetailsViewUpdatedEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +51,8 @@
       <MemberSignature Language="C#" Value="public DetailsViewUpdatedEventArgs (int affectedRows, Exception e);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 affectedRows, class System.Exception e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DetailsViewUpdatedEventArgs.#ctor(System.Int32,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (affectedRows As Integer, e As Exception)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DetailsViewUpdatedEventArgs(int affectedRows, Exception ^ e);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -95,6 +99,8 @@
       <MemberSignature Language="C#" Value="public int AffectedRows { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 AffectedRows" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DetailsViewUpdatedEventArgs.AffectedRows" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AffectedRows As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int AffectedRows { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -133,6 +139,8 @@
       <MemberSignature Language="C#" Value="public Exception Exception { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Exception Exception" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DetailsViewUpdatedEventArgs.Exception" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Exception As Exception" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Exception ^ Exception { Exception ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -174,6 +182,8 @@
       <MemberSignature Language="C#" Value="public bool ExceptionHandled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ExceptionHandled" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DetailsViewUpdatedEventArgs.ExceptionHandled" />
+      <MemberSignature Language="VB.NET" Value="Public Property ExceptionHandled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ExceptionHandled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -213,6 +223,8 @@
       <MemberSignature Language="C#" Value="public bool KeepInEditMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool KeepInEditMode" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DetailsViewUpdatedEventArgs.KeepInEditMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property KeepInEditMode As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool KeepInEditMode { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -254,6 +266,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Specialized.IOrderedDictionary Keys { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.IOrderedDictionary Keys" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DetailsViewUpdatedEventArgs.Keys" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Keys As IOrderedDictionary" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Specialized::IOrderedDictionary ^ Keys { System::Collections::Specialized::IOrderedDictionary ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -297,6 +311,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Specialized.IOrderedDictionary NewValues { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.IOrderedDictionary NewValues" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DetailsViewUpdatedEventArgs.NewValues" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NewValues As IOrderedDictionary" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Specialized::IOrderedDictionary ^ NewValues { System::Collections::Specialized::IOrderedDictionary ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -340,6 +356,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Specialized.IOrderedDictionary OldValues { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.IOrderedDictionary OldValues" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DetailsViewUpdatedEventArgs.OldValues" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OldValues As IOrderedDictionary" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Specialized::IOrderedDictionary ^ OldValues { System::Collections::Specialized::IOrderedDictionary ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

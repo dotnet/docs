@@ -1,7 +1,9 @@
-<Type Name="AspLog" FullName="Microsoft.VisualBasic.Logging.AspLog">
+﻿<Type Name="AspLog" FullName="Microsoft.VisualBasic.Logging.AspLog">
   <TypeSignature Language="C#" Value="public class AspLog : Microsoft.VisualBasic.Logging.Log" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi AspLog extends Microsoft.VisualBasic.Logging.Log" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Logging.AspLog" />
+  <TypeSignature Language="VB.NET" Value="Public Class AspLog&#xA;Inherits Log" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AspLog : Microsoft::VisualBasic::Logging::Log" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -41,10 +43,21 @@
     <altmember cref="T:Microsoft.VisualBasic.ApplicationServices.ApplicationBase" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.Logging.AspLog" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public AspLog ();" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Logging.AspLog.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AspLog();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -69,6 +82,8 @@
       <MemberSignature Language="C#" Value="public AspLog (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Logging.AspLog.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AspLog(System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -99,9 +114,11 @@
       </Docs>
     </Member>
     <Member MemberName="InitializeWithDefaultsSinceNoConfigExists">
-      <MemberSignature Language="C#" Value="protected override void InitializeWithDefaultsSinceNoConfigExists ();" />
+      <MemberSignature Language="C#" Value="protected internal override void InitializeWithDefaultsSinceNoConfigExists ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void InitializeWithDefaultsSinceNoConfigExists() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Logging.AspLog.InitializeWithDefaultsSinceNoConfigExists" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub InitializeWithDefaultsSinceNoConfigExists ()" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void InitializeWithDefaultsSinceNoConfigExists();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -131,14 +148,5 @@
         <altmember cref="T:Microsoft.VisualBasic.Logging.FileLogTraceListener" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.Logging.AspLog" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

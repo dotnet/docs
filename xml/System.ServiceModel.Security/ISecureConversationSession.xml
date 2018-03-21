@@ -1,7 +1,9 @@
-<Type Name="ISecureConversationSession" FullName="System.ServiceModel.Security.ISecureConversationSession">
+﻿<Type Name="ISecureConversationSession" FullName="System.ServiceModel.Security.ISecureConversationSession">
   <TypeSignature Language="C#" Value="public interface ISecureConversationSession : System.ServiceModel.Security.ISecuritySession" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISecureConversationSession implements class System.ServiceModel.Channels.ISession, class System.ServiceModel.Security.ISecuritySession" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.ISecureConversationSession" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ISecureConversationSession&#xA;Implements ISecuritySession" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ISecureConversationSession : System::ServiceModel::Security::ISecuritySession" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +22,8 @@
       <MemberSignature Language="C#" Value="public bool TryReadSessionTokenIdentifier (System.Xml.XmlReader reader);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryReadSessionTokenIdentifier(class System.Xml.XmlReader reader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.ISecureConversationSession.TryReadSessionTokenIdentifier(System.Xml.XmlReader)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryReadSessionTokenIdentifier (reader As XmlReader) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryReadSessionTokenIdentifier(System::Xml::XmlReader ^ reader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -50,6 +54,8 @@
       <MemberSignature Language="C#" Value="public void WriteSessionTokenIdentifier (System.Xml.XmlDictionaryWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteSessionTokenIdentifier(class System.Xml.XmlDictionaryWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.ISecureConversationSession.WriteSessionTokenIdentifier(System.Xml.XmlDictionaryWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteSessionTokenIdentifier (writer As XmlDictionaryWriter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteSessionTokenIdentifier(System::Xml::XmlDictionaryWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

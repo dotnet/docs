@@ -1,7 +1,9 @@
-<Type Name="DropShadowEffect" FullName="System.Windows.Media.Effects.DropShadowEffect">
+﻿<Type Name="DropShadowEffect" FullName="System.Windows.Media.Effects.DropShadowEffect">
   <TypeSignature Language="C#" Value="public sealed class DropShadowEffect : System.Windows.Media.Effects.Effect" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DropShadowEffect extends System.Windows.Media.Effects.Effect" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Effects.DropShadowEffect" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DropShadowEffect&#xA;Inherits Effect" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DropShadowEffect sealed : System::Windows::Media::Effects::Effect" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -21,6 +23,8 @@
       <MemberSignature Language="C#" Value="public DropShadowEffect ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.DropShadowEffect.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DropShadowEffect();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -38,6 +42,8 @@
       <MemberSignature Language="C#" Value="public double BlurRadius { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 BlurRadius" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Effects.DropShadowEffect.BlurRadius" />
+      <MemberSignature Language="VB.NET" Value="Public Property BlurRadius As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double BlurRadius { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -58,6 +64,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty BlurRadiusProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty BlurRadiusProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Effects.DropShadowEffect.BlurRadiusProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BlurRadiusProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ BlurRadiusProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -77,6 +85,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Effects.DropShadowEffect Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.Effects.DropShadowEffect Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.DropShadowEffect.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As DropShadowEffect" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Effects::DropShadowEffect ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -98,6 +108,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Effects.DropShadowEffect CloneCurrentValue ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.Effects.DropShadowEffect CloneCurrentValue() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.DropShadowEffect.CloneCurrentValue" />
+      <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As DropShadowEffect" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Effects::DropShadowEffect ^ CloneCurrentValue();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -119,6 +131,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Color Color { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Media.Color Color" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Effects.DropShadowEffect.Color" />
+      <MemberSignature Language="VB.NET" Value="Public Property Color As Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Color Color { System::Windows::Media::Color get(); void set(System::Windows::Media::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -139,6 +153,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ColorProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ColorProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Effects.DropShadowEffect.ColorProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ColorProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ColorProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -158,6 +174,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.DropShadowEffect.CreateInstanceCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -177,6 +195,8 @@
       <MemberSignature Language="C#" Value="public double Direction { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 Direction" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Effects.DropShadowEffect.Direction" />
+      <MemberSignature Language="VB.NET" Value="Public Property Direction As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Direction { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -197,6 +217,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty DirectionProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty DirectionProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Effects.DropShadowEffect.DirectionProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DirectionProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ DirectionProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -216,6 +238,8 @@
       <MemberSignature Language="C#" Value="public double Opacity { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 Opacity" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Effects.DropShadowEffect.Opacity" />
+      <MemberSignature Language="VB.NET" Value="Public Property Opacity As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Opacity { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -236,6 +260,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty OpacityProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty OpacityProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Effects.DropShadowEffect.OpacityProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly OpacityProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ OpacityProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -255,6 +281,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Effects.RenderingBias RenderingBias { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Media.Effects.RenderingBias RenderingBias" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Effects.DropShadowEffect.RenderingBias" />
+      <MemberSignature Language="VB.NET" Value="Public Property RenderingBias As RenderingBias" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Effects::RenderingBias RenderingBias { System::Windows::Media::Effects::RenderingBias get(); void set(System::Windows::Media::Effects::RenderingBias value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -275,6 +303,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty RenderingBiasProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty RenderingBiasProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Effects.DropShadowEffect.RenderingBiasProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly RenderingBiasProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ RenderingBiasProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -294,6 +324,8 @@
       <MemberSignature Language="C#" Value="public double ShadowDepth { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 ShadowDepth" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Effects.DropShadowEffect.ShadowDepth" />
+      <MemberSignature Language="VB.NET" Value="Public Property ShadowDepth As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double ShadowDepth { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -314,6 +346,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ShadowDepthProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ShadowDepthProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Effects.DropShadowEffect.ShadowDepthProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ShadowDepthProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ShadowDepthProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

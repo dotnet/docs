@@ -1,7 +1,9 @@
-<Type Name="DataGridColumnStyle+CompModSwitches" FullName="System.Windows.Forms.DataGridColumnStyle+CompModSwitches">
+﻿<Type Name="DataGridColumnStyle+CompModSwitches" FullName="System.Windows.Forms.DataGridColumnStyle+CompModSwitches">
   <TypeSignature Language="C#" Value="protected class DataGridColumnStyle.CompModSwitches" />
   <TypeSignature Language="ILAsm" Value=".class nested protected auto ansi beforefieldinit DataGridColumnStyle/CompModSwitches extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridColumnStyle.CompModSwitches" />
+  <TypeSignature Language="VB.NET" Value="Protected Class DataGridColumnStyle.CompModSwitches" />
+  <TypeSignature Language="C++ CLI" Value="protected: ref class DataGridColumnStyle::CompModSwitches" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +22,8 @@
       <MemberSignature Language="C#" Value="public CompModSwitches ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridColumnStyle.CompModSwitches.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CompModSwitches();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -36,6 +40,8 @@
       <MemberSignature Language="C#" Value="public static System.Diagnostics.TraceSwitch DGEditColumnEditing { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Diagnostics.TraceSwitch DGEditColumnEditing" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridColumnStyle.CompModSwitches.DGEditColumnEditing" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DGEditColumnEditing As TraceSwitch" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Diagnostics::TraceSwitch ^ DGEditColumnEditing { System::Diagnostics::TraceSwitch ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="GenericWebPart" FullName="System.Web.UI.WebControls.WebParts.GenericWebPart">
+﻿<Type Name="GenericWebPart" FullName="System.Web.UI.WebControls.WebParts.GenericWebPart">
   <TypeSignature Language="C#" Value="public class GenericWebPart : System.Web.UI.WebControls.WebParts.WebPart" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GenericWebPart extends System.Web.UI.WebControls.WebParts.WebPart" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.GenericWebPart" />
+  <TypeSignature Language="VB.NET" Value="Public Class GenericWebPart&#xA;Inherits WebPart" />
+  <TypeSignature Language="C++ CLI" Value="public ref class GenericWebPart : System::Web::UI::WebControls::WebParts::WebPart" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -76,9 +78,10 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="protected GenericWebPart (System.Web.UI.Control control);" />
+      <MemberSignature Language="C#" Value="protected internal GenericWebPart (System.Web.UI.Control control);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.GenericWebPart.#ctor(System.Web.UI.Control)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; GenericWebPart(System::Web::UI::Control ^ control);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -116,6 +119,8 @@
       <MemberSignature Language="C#" Value="public override string CatalogIconImageUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CatalogIconImageUrl" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.GenericWebPart.CatalogIconImageUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property CatalogIconImageUrl As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ CatalogIconImageUrl { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -158,6 +163,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.Control ChildControl { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.Control ChildControl" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.GenericWebPart.ChildControl" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChildControl As Control" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::Control ^ ChildControl { System::Web::UI::Control ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -188,9 +195,11 @@
       </Docs>
     </Member>
     <Member MemberName="CreateChildControls">
-      <MemberSignature Language="C#" Value="protected override void CreateChildControls ();" />
+      <MemberSignature Language="C#" Value="protected internal override void CreateChildControls ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void CreateChildControls() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.GenericWebPart.CreateChildControls" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub CreateChildControls ()" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void CreateChildControls();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -209,6 +218,8 @@
       <MemberSignature Language="C#" Value="protected override System.Web.UI.ControlCollection CreateControlCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Web.UI.ControlCollection CreateControlCollection() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.GenericWebPart.CreateControlCollection" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateControlCollection () As ControlCollection" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Web::UI::ControlCollection ^ CreateControlCollection();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -238,6 +249,8 @@
       <MemberSignature Language="C#" Value="public override System.Web.UI.WebControls.WebParts.EditorPartCollection CreateEditorParts ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.UI.WebControls.WebParts.EditorPartCollection CreateEditorParts() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.GenericWebPart.CreateEditorParts" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateEditorParts () As EditorPartCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::UI::WebControls::WebParts::EditorPartCollection ^ CreateEditorParts();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -266,6 +279,8 @@
       <MemberSignature Language="C#" Value="public override string Description { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Description" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.GenericWebPart.Description" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Description As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Description { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -310,6 +325,8 @@
       <MemberSignature Language="C#" Value="public override System.Web.UI.WebControls.Unit Height { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.Unit Height" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.GenericWebPart.Height" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Height As Unit" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::Unit Height { System::Web::UI::WebControls::Unit get(); void set(System::Web::UI::WebControls::Unit value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -336,6 +353,8 @@
       <MemberSignature Language="C#" Value="public override sealed string ID { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ID" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.GenericWebPart.ID" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Property ID As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ID { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -352,9 +371,11 @@
       </Docs>
     </Member>
     <Member MemberName="Render">
-      <MemberSignature Language="C#" Value="protected override void Render (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="C#" Value="protected internal override void Render (System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void Render(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.GenericWebPart.Render(System.Web.UI.HtmlTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Render (writer As HtmlTextWriter)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Render(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -376,6 +397,8 @@
       <MemberSignature Language="C#" Value="public override string Subtitle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Subtitle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.GenericWebPart.Subtitle" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Subtitle As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Subtitle { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -406,6 +429,8 @@
       <MemberSignature Language="C#" Value="public override string Title { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Title" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.GenericWebPart.Title" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Title As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Title { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -454,6 +479,8 @@
       <MemberSignature Language="C#" Value="public override string TitleIconImageUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TitleIconImageUrl" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.GenericWebPart.TitleIconImageUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property TitleIconImageUrl As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ TitleIconImageUrl { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -500,6 +527,8 @@
       <MemberSignature Language="C#" Value="public override string TitleUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TitleUrl" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.GenericWebPart.TitleUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property TitleUrl As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ TitleUrl { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -544,6 +573,8 @@
       <MemberSignature Language="C#" Value="public override System.Web.UI.WebControls.WebParts.WebPartVerbCollection Verbs { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.WebParts.WebPartVerbCollection Verbs" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.GenericWebPart.Verbs" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Verbs As WebPartVerbCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::WebParts::WebPartVerbCollection ^ Verbs { System::Web::UI::WebControls::WebParts::WebPartVerbCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -575,6 +606,8 @@
       <MemberSignature Language="C#" Value="public override object WebBrowsableObject { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object WebBrowsableObject" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.GenericWebPart.WebBrowsableObject" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property WebBrowsableObject As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ WebBrowsableObject { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -602,6 +635,8 @@
       <MemberSignature Language="C#" Value="public override System.Web.UI.WebControls.Unit Width { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.Unit Width" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.GenericWebPart.Width" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Width As Unit" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::Unit Width { System::Web::UI::WebControls::Unit get(); void set(System::Web::UI::WebControls::Unit value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

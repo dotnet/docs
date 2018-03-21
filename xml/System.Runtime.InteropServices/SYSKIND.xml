@@ -1,7 +1,9 @@
-<Type Name="SYSKIND" FullName="System.Runtime.InteropServices.SYSKIND">
+﻿<Type Name="SYSKIND" FullName="System.Runtime.InteropServices.SYSKIND">
   <TypeSignature Language="C#" Value="public enum SYSKIND" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed SYSKIND extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.SYSKIND" />
+  <TypeSignature Language="VB.NET" Value="Public Enum SYSKIND" />
+  <TypeSignature Language="C++ CLI" Value="public enum class SYSKIND" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -31,6 +33,8 @@
       <MemberSignature Language="C#" Value="SYS_MAC" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.SYSKIND SYS_MAC = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.SYSKIND.SYS_MAC" />
+      <MemberSignature Language="VB.NET" Value="SYS_MAC" />
+      <MemberSignature Language="C++ CLI" Value="SYS_MAC" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -40,6 +44,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.SYSKIND</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The target operating system for the type library is Apple Macintosh. By default, all data fields are aligned on even-byte boundaries.</summary>
       </Docs>
@@ -48,6 +53,8 @@
       <MemberSignature Language="C#" Value="SYS_WIN16" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.SYSKIND SYS_WIN16 = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.SYSKIND.SYS_WIN16" />
+      <MemberSignature Language="VB.NET" Value="SYS_WIN16" />
+      <MemberSignature Language="C++ CLI" Value="SYS_WIN16" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -57,6 +64,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.SYSKIND</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The target operating system for the type library is 16-bit Windows systems. By default, data fields are packed.</summary>
       </Docs>
@@ -65,6 +73,8 @@
       <MemberSignature Language="C#" Value="SYS_WIN32" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.SYSKIND SYS_WIN32 = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.SYSKIND.SYS_WIN32" />
+      <MemberSignature Language="VB.NET" Value="SYS_WIN32" />
+      <MemberSignature Language="C++ CLI" Value="SYS_WIN32" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -74,6 +84,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.SYSKIND</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The target operating system for the type library is 32-bit Windows systems. By default, data fields are naturally aligned (for example, 2-byte integers are aligned on even-byte boundaries; 4-byte integers are aligned on quad-word boundaries, and so on).</summary>
       </Docs>

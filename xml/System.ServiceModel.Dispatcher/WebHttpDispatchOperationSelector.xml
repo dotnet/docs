@@ -1,7 +1,9 @@
-<Type Name="WebHttpDispatchOperationSelector" FullName="System.ServiceModel.Dispatcher.WebHttpDispatchOperationSelector">
+﻿<Type Name="WebHttpDispatchOperationSelector" FullName="System.ServiceModel.Dispatcher.WebHttpDispatchOperationSelector">
   <TypeSignature Language="C#" Value="public class WebHttpDispatchOperationSelector : System.ServiceModel.Dispatcher.IDispatchOperationSelector" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WebHttpDispatchOperationSelector extends System.Object implements class System.ServiceModel.Dispatcher.IDispatchOperationSelector" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Dispatcher.WebHttpDispatchOperationSelector" />
+  <TypeSignature Language="VB.NET" Value="Public Class WebHttpDispatchOperationSelector&#xA;Implements IDispatchOperationSelector" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WebHttpDispatchOperationSelector : System::ServiceModel::Dispatcher::IDispatchOperationSelector" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,10 +28,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Dispatcher.WebHttpDispatchOperationSelector" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected WebHttpDispatchOperationSelector ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.WebHttpDispatchOperationSelector.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; WebHttpDispatchOperationSelector();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -45,6 +58,8 @@
       <MemberSignature Language="C#" Value="public WebHttpDispatchOperationSelector (System.ServiceModel.Description.ServiceEndpoint endpoint);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Description.ServiceEndpoint endpoint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.WebHttpDispatchOperationSelector.#ctor(System.ServiceModel.Description.ServiceEndpoint)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (endpoint As ServiceEndpoint)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebHttpDispatchOperationSelector(System::ServiceModel::Description::ServiceEndpoint ^ endpoint);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -63,6 +78,8 @@
       <MemberSignature Language="C#" Value="public virtual UriTemplate GetUriTemplate (string operationName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.UriTemplate GetUriTemplate(string operationName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.WebHttpDispatchOperationSelector.GetUriTemplate(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetUriTemplate (operationName As String) As UriTemplate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual UriTemplate ^ GetUriTemplate(System::String ^ operationName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -85,6 +102,8 @@
       <MemberSignature Language="C#" Value="public const string HttpOperationNamePropertyName;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string HttpOperationNamePropertyName" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Dispatcher.WebHttpDispatchOperationSelector.HttpOperationNamePropertyName" />
+      <MemberSignature Language="VB.NET" Value="Public Const HttpOperationNamePropertyName As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ HttpOperationNamePropertyName;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -102,6 +121,8 @@
       <MemberSignature Language="C#" Value="public const string HttpOperationSelectorUriMatchedPropertyName;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string HttpOperationSelectorUriMatchedPropertyName" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Dispatcher.WebHttpDispatchOperationSelector.HttpOperationSelectorUriMatchedPropertyName" />
+      <MemberSignature Language="VB.NET" Value="Public Const HttpOperationSelectorUriMatchedPropertyName As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ HttpOperationSelectorUriMatchedPropertyName;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -122,11 +143,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SelectOperation">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Selects the service operation to call.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="SelectOperation">
       <MemberSignature Language="C#" Value="public string SelectOperation (ref System.ServiceModel.Channels.Message message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string SelectOperation(class System.ServiceModel.Channels.Message&amp; message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.WebHttpDispatchOperationSelector.SelectOperation(System.ServiceModel.Channels.Message@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SelectOperation (ByRef message As Message) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ SelectOperation(System::ServiceModel::Channels::Message ^ % message);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Dispatcher.IDispatchOperationSelector.SelectOperation(System.ServiceModel.Channels.Message@)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -148,6 +183,8 @@
       <MemberSignature Language="C#" Value="protected virtual string SelectOperation (ref System.ServiceModel.Channels.Message message, out bool uriMatched);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance string SelectOperation(class System.ServiceModel.Channels.Message&amp; message, [out] bool&amp; uriMatched) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.WebHttpDispatchOperationSelector.SelectOperation(System.ServiceModel.Channels.Message@,System.Boolean@)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function SelectOperation (ByRef message As Message, ByRef uriMatched As Boolean) As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::String ^ SelectOperation(System::ServiceModel::Channels::Message ^ % message, [Runtime::InteropServices::Out] bool % uriMatched);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -175,23 +212,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="SelectOperation">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Selects the service operation to call.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Dispatcher.WebHttpDispatchOperationSelector" />.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

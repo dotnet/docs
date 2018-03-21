@@ -1,7 +1,9 @@
-<Type Name="WorkflowTerminatedException" FullName="System.Workflow.ComponentModel.WorkflowTerminatedException">
+﻿<Type Name="WorkflowTerminatedException" FullName="System.Workflow.ComponentModel.WorkflowTerminatedException">
   <TypeSignature Language="C#" Value="public sealed class WorkflowTerminatedException : Exception" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit WorkflowTerminatedException extends System.Exception" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.WorkflowTerminatedException" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WorkflowTerminatedException&#xA;Inherits Exception" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WorkflowTerminatedException sealed : Exception" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,10 +31,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.WorkflowTerminatedException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public WorkflowTerminatedException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.WorkflowTerminatedException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowTerminatedException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -48,6 +61,8 @@
       <MemberSignature Language="C#" Value="public WorkflowTerminatedException (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.WorkflowTerminatedException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowTerminatedException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -66,6 +81,7 @@
       <MemberSignature Language="C#" Value="public WorkflowTerminatedException (string message, Exception exception);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception exception) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.WorkflowTerminatedException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowTerminatedException(System::String ^ message, Exception ^ exception);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -82,14 +98,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.WorkflowTerminatedException" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

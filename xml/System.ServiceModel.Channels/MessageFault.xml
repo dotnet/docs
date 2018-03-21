@@ -1,7 +1,9 @@
-<Type Name="MessageFault" FullName="System.ServiceModel.Channels.MessageFault">
+﻿<Type Name="MessageFault" FullName="System.ServiceModel.Channels.MessageFault">
   <TypeSignature Language="C#" Value="public abstract class MessageFault" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit MessageFault extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.MessageFault" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class MessageFault" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MessageFault abstract" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -45,6 +47,8 @@
       <MemberSignature Language="C#" Value="protected MessageFault ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageFault.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; MessageFault();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -67,6 +71,8 @@
       <MemberSignature Language="C#" Value="public virtual string Actor { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Actor" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.MessageFault.Actor" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Actor As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Actor { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -92,6 +98,8 @@
       <MemberSignature Language="C#" Value="public abstract System.ServiceModel.FaultCode Code { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.FaultCode Code" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.MessageFault.Code" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Code As FaultCode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::ServiceModel::FaultCode ^ Code { System::ServiceModel::FaultCode ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -113,10 +121,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateFault">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a new <see cref="T:System.ServiceModel.Channels.MessageFault" /> object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateFault">
       <MemberSignature Language="C#" Value="public static System.ServiceModel.Channels.MessageFault CreateFault (System.ServiceModel.Channels.Message message, int maxBufferSize);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Channels.MessageFault CreateFault(class System.ServiceModel.Channels.Message message, int32 maxBufferSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageFault.CreateFault(System.ServiceModel.Channels.Message,System.Int32)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Channels::MessageFault ^ CreateFault(System::ServiceModel::Channels::Message ^ message, int maxBufferSize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -148,6 +167,8 @@
       <MemberSignature Language="C#" Value="public static System.ServiceModel.Channels.MessageFault CreateFault (System.ServiceModel.FaultCode code, System.ServiceModel.FaultReason reason);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Channels.MessageFault CreateFault(class System.ServiceModel.FaultCode code, class System.ServiceModel.FaultReason reason) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageFault.CreateFault(System.ServiceModel.FaultCode,System.ServiceModel.FaultReason)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateFault (code As FaultCode, reason As FaultReason) As MessageFault" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Channels::MessageFault ^ CreateFault(System::ServiceModel::FaultCode ^ code, System::ServiceModel::FaultReason ^ reason);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -173,6 +194,8 @@
       <MemberSignature Language="C#" Value="public static System.ServiceModel.Channels.MessageFault CreateFault (System.ServiceModel.FaultCode code, string reason);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Channels.MessageFault CreateFault(class System.ServiceModel.FaultCode code, string reason) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageFault.CreateFault(System.ServiceModel.FaultCode,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateFault (code As FaultCode, reason As String) As MessageFault" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Channels::MessageFault ^ CreateFault(System::ServiceModel::FaultCode ^ code, System::String ^ reason);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -198,6 +221,8 @@
       <MemberSignature Language="C#" Value="public static System.ServiceModel.Channels.MessageFault CreateFault (System.ServiceModel.FaultCode code, System.ServiceModel.FaultReason reason, object detail);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Channels.MessageFault CreateFault(class System.ServiceModel.FaultCode code, class System.ServiceModel.FaultReason reason, object detail) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageFault.CreateFault(System.ServiceModel.FaultCode,System.ServiceModel.FaultReason,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateFault (code As FaultCode, reason As FaultReason, detail As Object) As MessageFault" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Channels::MessageFault ^ CreateFault(System::ServiceModel::FaultCode ^ code, System::ServiceModel::FaultReason ^ reason, System::Object ^ detail);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -222,9 +247,16 @@
       </Docs>
     </Member>
     <Member MemberName="CreateFault">
-      <MemberSignature Language="C#" Value="public static System.ServiceModel.Channels.MessageFault CreateFault (System.ServiceModel.FaultCode code, System.ServiceModel.FaultReason reason, object detail, System.Runtime.Serialization.XmlObjectSerializer formatter);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Channels.MessageFault CreateFault(class System.ServiceModel.FaultCode code, class System.ServiceModel.FaultReason reason, object detail, class System.Runtime.Serialization.XmlObjectSerializer formatter) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageFault.CreateFault(System.ServiceModel.FaultCode,System.ServiceModel.FaultReason,System.Object,System.Runtime.Serialization.XmlObjectSerializer)" />
+      <MemberSignature Language="C#" Value="public static System.ServiceModel.Channels.MessageFault CreateFault (System.ServiceModel.FaultCode code, System.ServiceModel.FaultReason reason, object detail, System.Runtime.Serialization.XmlObjectSerializer serializer);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Channels.MessageFault CreateFault(class System.ServiceModel.FaultCode code, class System.ServiceModel.FaultReason reason, object detail, class System.Runtime.Serialization.XmlObjectSerializer serializer) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageFault.CreateFault(System.ServiceModel.FaultCode,System.ServiceModel.FaultReason,System.Object,System.Runtime.Serialization.XmlObjectSerializer)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateFault (code As FaultCode, reason As FaultReason, detail As Object, serializer As XmlObjectSerializer) As MessageFault" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Channels::MessageFault ^ CreateFault(System::ServiceModel::FaultCode ^ code, System::ServiceModel::FaultReason ^ reason, System::Object ^ detail, System::Runtime::Serialization::XmlObjectSerializer ^ serializer);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public static System.ServiceModel.Channels.MessageFault CreateFault (System.ServiceModel.FaultCode code, System.ServiceModel.FaultReason reason, object detail, System.Runtime.Serialization.XmlObjectSerializer formatter);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Channels.MessageFault CreateFault(class System.ServiceModel.FaultCode code, class System.ServiceModel.FaultReason reason, object detail, class System.Runtime.Serialization.XmlObjectSerializer formatter) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageFault.CreateFault(System.ServiceModel.FaultCode,System.ServiceModel.FaultReason,System.Object,System.Runtime.Serialization.XmlObjectSerializer)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateFault (code As FaultCode, reason As FaultReason, detail As Object, formatter As XmlObjectSerializer) As MessageFault" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Channels::MessageFault ^ CreateFault(System::ServiceModel::FaultCode ^ code, System::ServiceModel::FaultReason ^ reason, System::Object ^ detail, System::Runtime::Serialization::XmlObjectSerializer ^ formatter);" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -235,15 +267,17 @@
         <ReturnType>System.ServiceModel.Channels.MessageFault</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="code" Type="System.ServiceModel.FaultCode" />
-        <Parameter Name="reason" Type="System.ServiceModel.FaultReason" />
-        <Parameter Name="detail" Type="System.Object" />
-        <Parameter Name="serializer" Type="System.Runtime.Serialization.XmlObjectSerializer" />
+        <Parameter Name="code" Type="System.ServiceModel.FaultCode" Index="0" />
+        <Parameter Name="reason" Type="System.ServiceModel.FaultReason" Index="1" />
+        <Parameter Name="detail" Type="System.Object" Index="2" />
+        <Parameter Name="serializer" Type="System.Runtime.Serialization.XmlObjectSerializer" Index="3" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="formatter" Type="System.Runtime.Serialization.XmlObjectSerializer" Index="3" FrameworkAlternate="xamarinandroid-7.1" />
       </Parameters>
       <Docs>
         <param name="code">The fault code for the fault message.</param>
         <param name="reason">The reason for the fault.</param>
         <param name="detail">The fault detail object.</param>
+        <param name="serializer">To be added.</param>
         <param name="formatter">To be added.</param>
         <summary>Returns a new <see cref="T:System.ServiceModel.Channels.MessageFault" /> object that uses the specified <see cref="T:System.ServiceModel.FaultCode" />, <see cref="T:System.ServiceModel.FaultReason" />, detail object, and  <see cref="T:System.Runtime.Serialization.XmlObjectSerializer" /> objects.</summary>
         <returns>A <see cref="T:System.ServiceModel.Channels.MessageFault" /> object with initial values from the passed in parameters.</returns>
@@ -251,9 +285,16 @@
       </Docs>
     </Member>
     <Member MemberName="CreateFault">
-      <MemberSignature Language="C#" Value="public static System.ServiceModel.Channels.MessageFault CreateFault (System.ServiceModel.FaultCode code, System.ServiceModel.FaultReason reason, object detail, System.Runtime.Serialization.XmlObjectSerializer formatter, string actor);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Channels.MessageFault CreateFault(class System.ServiceModel.FaultCode code, class System.ServiceModel.FaultReason reason, object detail, class System.Runtime.Serialization.XmlObjectSerializer formatter, string actor) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageFault.CreateFault(System.ServiceModel.FaultCode,System.ServiceModel.FaultReason,System.Object,System.Runtime.Serialization.XmlObjectSerializer,System.String)" />
+      <MemberSignature Language="C#" Value="public static System.ServiceModel.Channels.MessageFault CreateFault (System.ServiceModel.FaultCode code, System.ServiceModel.FaultReason reason, object detail, System.Runtime.Serialization.XmlObjectSerializer serializer, string actor);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Channels.MessageFault CreateFault(class System.ServiceModel.FaultCode code, class System.ServiceModel.FaultReason reason, object detail, class System.Runtime.Serialization.XmlObjectSerializer serializer, string actor) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageFault.CreateFault(System.ServiceModel.FaultCode,System.ServiceModel.FaultReason,System.Object,System.Runtime.Serialization.XmlObjectSerializer,System.String)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateFault (code As FaultCode, reason As FaultReason, detail As Object, serializer As XmlObjectSerializer, actor As String) As MessageFault" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Channels::MessageFault ^ CreateFault(System::ServiceModel::FaultCode ^ code, System::ServiceModel::FaultReason ^ reason, System::Object ^ detail, System::Runtime::Serialization::XmlObjectSerializer ^ serializer, System::String ^ actor);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public static System.ServiceModel.Channels.MessageFault CreateFault (System.ServiceModel.FaultCode code, System.ServiceModel.FaultReason reason, object detail, System.Runtime.Serialization.XmlObjectSerializer formatter, string actor);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Channels.MessageFault CreateFault(class System.ServiceModel.FaultCode code, class System.ServiceModel.FaultReason reason, object detail, class System.Runtime.Serialization.XmlObjectSerializer formatter, string actor) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageFault.CreateFault(System.ServiceModel.FaultCode,System.ServiceModel.FaultReason,System.Object,System.Runtime.Serialization.XmlObjectSerializer,System.String)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateFault (code As FaultCode, reason As FaultReason, detail As Object, formatter As XmlObjectSerializer, actor As String) As MessageFault" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Channels::MessageFault ^ CreateFault(System::ServiceModel::FaultCode ^ code, System::ServiceModel::FaultReason ^ reason, System::Object ^ detail, System::Runtime::Serialization::XmlObjectSerializer ^ formatter, System::String ^ actor);" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -264,16 +305,18 @@
         <ReturnType>System.ServiceModel.Channels.MessageFault</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="code" Type="System.ServiceModel.FaultCode" />
-        <Parameter Name="reason" Type="System.ServiceModel.FaultReason" />
-        <Parameter Name="detail" Type="System.Object" />
-        <Parameter Name="serializer" Type="System.Runtime.Serialization.XmlObjectSerializer" />
-        <Parameter Name="actor" Type="System.String" />
+        <Parameter Name="code" Type="System.ServiceModel.FaultCode" Index="0" />
+        <Parameter Name="reason" Type="System.ServiceModel.FaultReason" Index="1" />
+        <Parameter Name="detail" Type="System.Object" Index="2" />
+        <Parameter Name="serializer" Type="System.Runtime.Serialization.XmlObjectSerializer" Index="3" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="formatter" Type="System.Runtime.Serialization.XmlObjectSerializer" Index="3" FrameworkAlternate="xamarinandroid-7.1" />
+        <Parameter Name="actor" Type="System.String" Index="4" />
       </Parameters>
       <Docs>
         <param name="code">The fault code for the fault message.</param>
         <param name="reason">The reason for the fault.</param>
         <param name="detail">The fault detail object.</param>
+        <param name="serializer">To be added.</param>
         <param name="formatter">To be added.</param>
         <param name="actor">The value of the actor.</param>
         <summary>Returns a new <see cref="T:System.ServiceModel.Channels.MessageFault" /> object that uses the specified <see cref="T:System.ServiceModel.FaultCode" />, <see cref="T:System.ServiceModel.FaultReason" />, detail object, <see cref="T:System.Runtime.Serialization.XmlObjectSerializer" />, and actor.</summary>
@@ -282,9 +325,16 @@
       </Docs>
     </Member>
     <Member MemberName="CreateFault">
-      <MemberSignature Language="C#" Value="public static System.ServiceModel.Channels.MessageFault CreateFault (System.ServiceModel.FaultCode code, System.ServiceModel.FaultReason reason, object detail, System.Runtime.Serialization.XmlObjectSerializer formatter, string actor, string node);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Channels.MessageFault CreateFault(class System.ServiceModel.FaultCode code, class System.ServiceModel.FaultReason reason, object detail, class System.Runtime.Serialization.XmlObjectSerializer formatter, string actor, string node) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageFault.CreateFault(System.ServiceModel.FaultCode,System.ServiceModel.FaultReason,System.Object,System.Runtime.Serialization.XmlObjectSerializer,System.String,System.String)" />
+      <MemberSignature Language="C#" Value="public static System.ServiceModel.Channels.MessageFault CreateFault (System.ServiceModel.FaultCode code, System.ServiceModel.FaultReason reason, object detail, System.Runtime.Serialization.XmlObjectSerializer serializer, string actor, string node);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Channels.MessageFault CreateFault(class System.ServiceModel.FaultCode code, class System.ServiceModel.FaultReason reason, object detail, class System.Runtime.Serialization.XmlObjectSerializer serializer, string actor, string node) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageFault.CreateFault(System.ServiceModel.FaultCode,System.ServiceModel.FaultReason,System.Object,System.Runtime.Serialization.XmlObjectSerializer,System.String,System.String)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateFault (code As FaultCode, reason As FaultReason, detail As Object, serializer As XmlObjectSerializer, actor As String, node As String) As MessageFault" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Channels::MessageFault ^ CreateFault(System::ServiceModel::FaultCode ^ code, System::ServiceModel::FaultReason ^ reason, System::Object ^ detail, System::Runtime::Serialization::XmlObjectSerializer ^ serializer, System::String ^ actor, System::String ^ node);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public static System.ServiceModel.Channels.MessageFault CreateFault (System.ServiceModel.FaultCode code, System.ServiceModel.FaultReason reason, object detail, System.Runtime.Serialization.XmlObjectSerializer formatter, string actor, string node);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Channels.MessageFault CreateFault(class System.ServiceModel.FaultCode code, class System.ServiceModel.FaultReason reason, object detail, class System.Runtime.Serialization.XmlObjectSerializer formatter, string actor, string node) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageFault.CreateFault(System.ServiceModel.FaultCode,System.ServiceModel.FaultReason,System.Object,System.Runtime.Serialization.XmlObjectSerializer,System.String,System.String)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateFault (code As FaultCode, reason As FaultReason, detail As Object, formatter As XmlObjectSerializer, actor As String, node As String) As MessageFault" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Channels::MessageFault ^ CreateFault(System::ServiceModel::FaultCode ^ code, System::ServiceModel::FaultReason ^ reason, System::Object ^ detail, System::Runtime::Serialization::XmlObjectSerializer ^ formatter, System::String ^ actor, System::String ^ node);" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -295,17 +345,19 @@
         <ReturnType>System.ServiceModel.Channels.MessageFault</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="code" Type="System.ServiceModel.FaultCode" />
-        <Parameter Name="reason" Type="System.ServiceModel.FaultReason" />
-        <Parameter Name="detail" Type="System.Object" />
-        <Parameter Name="serializer" Type="System.Runtime.Serialization.XmlObjectSerializer" />
-        <Parameter Name="actor" Type="System.String" />
-        <Parameter Name="node" Type="System.String" />
+        <Parameter Name="code" Type="System.ServiceModel.FaultCode" Index="0" />
+        <Parameter Name="reason" Type="System.ServiceModel.FaultReason" Index="1" />
+        <Parameter Name="detail" Type="System.Object" Index="2" />
+        <Parameter Name="serializer" Type="System.Runtime.Serialization.XmlObjectSerializer" Index="3" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="formatter" Type="System.Runtime.Serialization.XmlObjectSerializer" Index="3" FrameworkAlternate="xamarinandroid-7.1" />
+        <Parameter Name="actor" Type="System.String" Index="4" />
+        <Parameter Name="node" Type="System.String" Index="5" />
       </Parameters>
       <Docs>
         <param name="code">The fault code for the fault message.</param>
         <param name="reason">The reason for the fault.</param>
         <param name="detail">The fault detail object.</param>
+        <param name="serializer">To be added.</param>
         <param name="formatter">To be added.</param>
         <param name="actor">The value of the actor.</param>
         <param name="node">The value of the node.</param>
@@ -314,10 +366,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetDetail&lt;T&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the detail object of the message fault.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetDetail&lt;T&gt;">
       <MemberSignature Language="C#" Value="public T GetDetail&lt;T&gt; ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T GetDetail&lt;T&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageFault.GetDetail``1" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetDetail(Of T) () As T" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; T GetDetail();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -348,6 +412,8 @@
       <MemberSignature Language="C#" Value="public T GetDetail&lt;T&gt; (System.Runtime.Serialization.XmlObjectSerializer serializer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T GetDetail&lt;T&gt;(class System.Runtime.Serialization.XmlObjectSerializer serializer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageFault.GetDetail``1(System.Runtime.Serialization.XmlObjectSerializer)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetDetail(Of T) (serializer As XmlObjectSerializer) As T" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; T GetDetail(System::Runtime::Serialization::XmlObjectSerializer ^ serializer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -381,6 +447,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.XmlDictionaryReader GetReaderAtDetailContents ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlDictionaryReader GetReaderAtDetailContents() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageFault.GetReaderAtDetailContents" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetReaderAtDetailContents () As XmlDictionaryReader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::XmlDictionaryReader ^ GetReaderAtDetailContents();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -407,6 +475,8 @@
       <MemberSignature Language="C#" Value="public abstract bool HasDetail { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasDetail" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.MessageFault.HasDetail" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property HasDetail As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool HasDetail { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -433,6 +503,8 @@
       <MemberSignature Language="C#" Value="public bool IsMustUnderstandFault { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsMustUnderstandFault" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.MessageFault.IsMustUnderstandFault" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsMustUnderstandFault As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsMustUnderstandFault { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -452,6 +524,8 @@
       <MemberSignature Language="C#" Value="public virtual string Node { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Node" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.MessageFault.Node" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Node As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Node { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -477,6 +551,8 @@
       <MemberSignature Language="C#" Value="protected virtual System.Xml.XmlDictionaryReader OnGetReaderAtDetailContents ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Xml.XmlDictionaryReader OnGetReaderAtDetailContents() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageFault.OnGetReaderAtDetailContents" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnGetReaderAtDetailContents () As XmlDictionaryReader" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Xml::XmlDictionaryReader ^ OnGetReaderAtDetailContents();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -503,6 +579,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnWriteDetail (System.Xml.XmlDictionaryWriter writer, System.ServiceModel.EnvelopeVersion version);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnWriteDetail(class System.Xml.XmlDictionaryWriter writer, class System.ServiceModel.EnvelopeVersion version) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageFault.OnWriteDetail(System.Xml.XmlDictionaryWriter,System.ServiceModel.EnvelopeVersion)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnWriteDetail (writer As XmlDictionaryWriter, version As EnvelopeVersion)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnWriteDetail(System::Xml::XmlDictionaryWriter ^ writer, System::ServiceModel::EnvelopeVersion ^ version);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -540,6 +618,8 @@
       <MemberSignature Language="C#" Value="protected abstract void OnWriteDetailContents (System.Xml.XmlDictionaryWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnWriteDetailContents(class System.Xml.XmlDictionaryWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageFault.OnWriteDetailContents(System.Xml.XmlDictionaryWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub OnWriteDetailContents (writer As XmlDictionaryWriter)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void OnWriteDetailContents(System::Xml::XmlDictionaryWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -575,6 +655,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnWriteStartDetail (System.Xml.XmlDictionaryWriter writer, System.ServiceModel.EnvelopeVersion version);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnWriteStartDetail(class System.Xml.XmlDictionaryWriter writer, class System.ServiceModel.EnvelopeVersion version) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageFault.OnWriteStartDetail(System.Xml.XmlDictionaryWriter,System.ServiceModel.EnvelopeVersion)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnWriteStartDetail (writer As XmlDictionaryWriter, version As EnvelopeVersion)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnWriteStartDetail(System::Xml::XmlDictionaryWriter ^ writer, System::ServiceModel::EnvelopeVersion ^ version);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -605,6 +687,8 @@
       <MemberSignature Language="C#" Value="public abstract System.ServiceModel.FaultReason Reason { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.FaultReason Reason" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.MessageFault.Reason" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Reason As FaultReason" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::ServiceModel::FaultReason ^ Reason { System::ServiceModel::FaultReason ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -630,6 +714,8 @@
       <MemberSignature Language="C#" Value="public static bool WasHeaderNotUnderstood (System.ServiceModel.Channels.MessageHeaders headers, string name, string ns);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool WasHeaderNotUnderstood(class System.ServiceModel.Channels.MessageHeaders headers, string name, string ns) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageFault.WasHeaderNotUnderstood(System.ServiceModel.Channels.MessageHeaders,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function WasHeaderNotUnderstood (headers As MessageHeaders, name As String, ns As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool WasHeaderNotUnderstood(System::ServiceModel::Channels::MessageHeaders ^ headers, System::String ^ name, System::String ^ ns);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -653,10 +739,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteTo">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Serializes the message fault.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="WriteTo">
       <MemberSignature Language="C#" Value="public void WriteTo (System.Xml.XmlDictionaryWriter writer, System.ServiceModel.EnvelopeVersion version);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteTo(class System.Xml.XmlDictionaryWriter writer, class System.ServiceModel.EnvelopeVersion version) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageFault.WriteTo(System.Xml.XmlDictionaryWriter,System.ServiceModel.EnvelopeVersion)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteTo (writer As XmlDictionaryWriter, version As EnvelopeVersion)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteTo(System::Xml::XmlDictionaryWriter ^ writer, System::ServiceModel::EnvelopeVersion ^ version);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -681,6 +779,8 @@
       <MemberSignature Language="C#" Value="public void WriteTo (System.Xml.XmlWriter writer, System.ServiceModel.EnvelopeVersion version);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteTo(class System.Xml.XmlWriter writer, class System.ServiceModel.EnvelopeVersion version) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageFault.WriteTo(System.Xml.XmlWriter,System.ServiceModel.EnvelopeVersion)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteTo (writer As XmlWriter, version As EnvelopeVersion)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteTo(System::Xml::XmlWriter ^ writer, System::ServiceModel::EnvelopeVersion ^ version);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -701,35 +801,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="WriteTo">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Serializes the message fault.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="CreateFault">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a new <see cref="T:System.ServiceModel.Channels.MessageFault" /> object.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetDetail&lt;T&gt;">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns the detail object of the message fault.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

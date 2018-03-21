@@ -1,7 +1,9 @@
-<Type Name="SamlDoNotCacheCondition" FullName="System.IdentityModel.Tokens.SamlDoNotCacheCondition">
+﻿<Type Name="SamlDoNotCacheCondition" FullName="System.IdentityModel.Tokens.SamlDoNotCacheCondition">
   <TypeSignature Language="C#" Value="public class SamlDoNotCacheCondition : System.IdentityModel.Tokens.SamlCondition" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SamlDoNotCacheCondition extends System.IdentityModel.Tokens.SamlCondition" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.SamlDoNotCacheCondition" />
+  <TypeSignature Language="VB.NET" Value="Public Class SamlDoNotCacheCondition&#xA;Inherits SamlCondition" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SamlDoNotCacheCondition : System::IdentityModel::Tokens::SamlCondition" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +35,8 @@
       <MemberSignature Language="C#" Value="public SamlDoNotCacheCondition ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlDoNotCacheCondition.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SamlDoNotCacheCondition();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -55,6 +59,8 @@
       <MemberSignature Language="C#" Value="public override bool IsReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlDoNotCacheCondition.IsReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsReadOnly As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -81,6 +87,8 @@
       <MemberSignature Language="C#" Value="public override void MakeReadOnly ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void MakeReadOnly() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlDoNotCacheCondition.MakeReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub MakeReadOnly ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void MakeReadOnly();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -106,6 +114,7 @@
       <MemberSignature Language="C#" Value="public override void ReadXml (System.Xml.XmlDictionaryReader reader, System.IdentityModel.Tokens.SamlSerializer samlSerializer, System.IdentityModel.Selectors.SecurityTokenSerializer keyInfoSerializer, System.IdentityModel.Selectors.SecurityTokenResolver outOfBandTokenResolver);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ReadXml(class System.Xml.XmlDictionaryReader reader, class System.IdentityModel.Tokens.SamlSerializer samlSerializer, class System.IdentityModel.Selectors.SecurityTokenSerializer keyInfoSerializer, class System.IdentityModel.Selectors.SecurityTokenResolver outOfBandTokenResolver) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlDoNotCacheCondition.ReadXml(System.Xml.XmlDictionaryReader,System.IdentityModel.Tokens.SamlSerializer,System.IdentityModel.Selectors.SecurityTokenSerializer,System.IdentityModel.Selectors.SecurityTokenResolver)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ReadXml(System::Xml::XmlDictionaryReader ^ reader, System::IdentityModel::Tokens::SamlSerializer ^ samlSerializer, System::IdentityModel::Selectors::SecurityTokenSerializer ^ keyInfoSerializer, System::IdentityModel::Selectors::SecurityTokenResolver ^ outOfBandTokenResolver);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -148,6 +157,7 @@
       <MemberSignature Language="C#" Value="public override void WriteXml (System.Xml.XmlDictionaryWriter writer, System.IdentityModel.Tokens.SamlSerializer samlSerializer, System.IdentityModel.Selectors.SecurityTokenSerializer keyInfoSerializer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteXml(class System.Xml.XmlDictionaryWriter writer, class System.IdentityModel.Tokens.SamlSerializer samlSerializer, class System.IdentityModel.Selectors.SecurityTokenSerializer keyInfoSerializer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlDoNotCacheCondition.WriteXml(System.Xml.XmlDictionaryWriter,System.IdentityModel.Tokens.SamlSerializer,System.IdentityModel.Selectors.SecurityTokenSerializer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteXml(System::Xml::XmlDictionaryWriter ^ writer, System::IdentityModel::Tokens::SamlSerializer ^ samlSerializer, System::IdentityModel::Selectors::SecurityTokenSerializer ^ keyInfoSerializer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

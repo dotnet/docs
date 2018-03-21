@@ -1,7 +1,9 @@
-<Type Name="DialogResult" FullName="System.Windows.Forms.DialogResult">
+﻿<Type Name="DialogResult" FullName="System.Windows.Forms.DialogResult">
   <TypeSignature Language="C#" Value="public enum DialogResult" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DialogResult extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DialogResult" />
+  <TypeSignature Language="VB.NET" Value="Public Enum DialogResult" />
+  <TypeSignature Language="C++ CLI" Value="public enum class DialogResult" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +43,8 @@
       <MemberSignature Language="C#" Value="Abort" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DialogResult Abort = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DialogResult.Abort" />
+      <MemberSignature Language="VB.NET" Value="Abort" />
+      <MemberSignature Language="C++ CLI" Value="Abort" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -49,6 +53,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DialogResult</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The dialog box return value is <see langword="Abort" /> (usually sent from a button labeled Abort).</summary>
       </Docs>
@@ -57,6 +62,8 @@
       <MemberSignature Language="C#" Value="Cancel" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DialogResult Cancel = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DialogResult.Cancel" />
+      <MemberSignature Language="VB.NET" Value="Cancel" />
+      <MemberSignature Language="C++ CLI" Value="Cancel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -65,6 +72,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DialogResult</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The dialog box return value is <see langword="Cancel" /> (usually sent from a button labeled Cancel).</summary>
       </Docs>
@@ -73,6 +81,8 @@
       <MemberSignature Language="C#" Value="Ignore" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DialogResult Ignore = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DialogResult.Ignore" />
+      <MemberSignature Language="VB.NET" Value="Ignore" />
+      <MemberSignature Language="C++ CLI" Value="Ignore" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -81,6 +91,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DialogResult</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>The dialog box return value is <see langword="Ignore" /> (usually sent from a button labeled Ignore).</summary>
       </Docs>
@@ -89,6 +100,8 @@
       <MemberSignature Language="C#" Value="No" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DialogResult No = int32(7)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DialogResult.No" />
+      <MemberSignature Language="VB.NET" Value="No" />
+      <MemberSignature Language="C++ CLI" Value="No" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -97,6 +110,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DialogResult</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>The dialog box return value is <see langword="No" /> (usually sent from a button labeled No).</summary>
       </Docs>
@@ -105,6 +119,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DialogResult None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DialogResult.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -113,6 +129,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DialogResult</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>
           <see langword="Nothing" /> is returned from the dialog box. This means that the modal dialog continues running.</summary>
@@ -122,6 +139,8 @@
       <MemberSignature Language="C#" Value="OK" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DialogResult OK = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DialogResult.OK" />
+      <MemberSignature Language="VB.NET" Value="OK" />
+      <MemberSignature Language="C++ CLI" Value="OK" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -130,6 +149,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DialogResult</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The dialog box return value is <see langword="OK" /> (usually sent from a button labeled OK).</summary>
       </Docs>
@@ -138,6 +158,8 @@
       <MemberSignature Language="C#" Value="Retry" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DialogResult Retry = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DialogResult.Retry" />
+      <MemberSignature Language="VB.NET" Value="Retry" />
+      <MemberSignature Language="C++ CLI" Value="Retry" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -146,6 +168,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DialogResult</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The dialog box return value is <see langword="Retry" /> (usually sent from a button labeled Retry).</summary>
       </Docs>
@@ -154,6 +177,8 @@
       <MemberSignature Language="C#" Value="Yes" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DialogResult Yes = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DialogResult.Yes" />
+      <MemberSignature Language="VB.NET" Value="Yes" />
+      <MemberSignature Language="C++ CLI" Value="Yes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -162,6 +187,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DialogResult</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>The dialog box return value is <see langword="Yes" /> (usually sent from a button labeled Yes).</summary>
       </Docs>

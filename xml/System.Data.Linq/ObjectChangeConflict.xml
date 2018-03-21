@@ -1,7 +1,9 @@
-<Type Name="ObjectChangeConflict" FullName="System.Data.Linq.ObjectChangeConflict">
+﻿<Type Name="ObjectChangeConflict" FullName="System.Data.Linq.ObjectChangeConflict">
   <TypeSignature Language="C#" Value="public sealed class ObjectChangeConflict" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ObjectChangeConflict extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Data.Linq.ObjectChangeConflict" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ObjectChangeConflict" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ObjectChangeConflict sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Linq</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +36,8 @@
       <MemberSignature Language="C#" Value="public bool IsDeleted { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsDeleted" />
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.ObjectChangeConflict.IsDeleted" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsDeleted As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDeleted { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -53,6 +57,8 @@
       <MemberSignature Language="C#" Value="public bool IsResolved { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsResolved" />
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.ObjectChangeConflict.IsResolved" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsResolved As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsResolved { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -79,6 +85,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Linq.MemberChangeConflict&gt; MemberConflicts { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Data.Linq.MemberChangeConflict&gt; MemberConflicts" />
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.ObjectChangeConflict.MemberConflicts" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MemberConflicts As ReadOnlyCollection(Of MemberChangeConflict)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Data::Linq::MemberChangeConflict ^&gt; ^ MemberConflicts { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Data::Linq::MemberChangeConflict ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -97,6 +105,8 @@
       <MemberSignature Language="C#" Value="public object Object { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Object" />
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.ObjectChangeConflict.Object" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Object As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Object { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -111,10 +121,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Resolve">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Resolves member conflicts.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Resolve">
       <MemberSignature Language="C#" Value="public void Resolve ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Resolve() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.ObjectChangeConflict.Resolve" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Resolve ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Resolve();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -133,6 +154,7 @@
       <MemberSignature Language="C#" Value="public void Resolve (System.Data.Linq.RefreshMode refreshMode);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Resolve(valuetype System.Data.Linq.RefreshMode refreshMode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.ObjectChangeConflict.Resolve(System.Data.Linq.RefreshMode)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Resolve(System::Data::Linq::RefreshMode refreshMode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -179,6 +201,7 @@
       <MemberSignature Language="C#" Value="public void Resolve (System.Data.Linq.RefreshMode refreshMode, bool autoResolveDeletes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Resolve(valuetype System.Data.Linq.RefreshMode refreshMode, bool autoResolveDeletes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.ObjectChangeConflict.Resolve(System.Data.Linq.RefreshMode,System.Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Resolve(System::Data::Linq::RefreshMode refreshMode, bool autoResolveDeletes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -198,14 +221,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Resolve">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Linq</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Resolves member conflicts.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

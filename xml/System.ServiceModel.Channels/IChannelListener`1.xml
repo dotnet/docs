@@ -1,7 +1,9 @@
-<Type Name="IChannelListener&lt;TChannel&gt;" FullName="System.ServiceModel.Channels.IChannelListener&lt;TChannel&gt;">
+﻿<Type Name="IChannelListener&lt;TChannel&gt;" FullName="System.ServiceModel.Channels.IChannelListener&lt;TChannel&gt;">
   <TypeSignature Language="C#" Value="public interface IChannelListener&lt;TChannel&gt; : System.ServiceModel.Channels.IChannelListener where TChannel : class, IChannel" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IChannelListener`1&lt;class (class System.ServiceModel.Channels.IChannel) TChannel&gt; implements class System.ServiceModel.Channels.IChannelListener, class System.ServiceModel.ICommunicationObject" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.IChannelListener`1" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IChannelListener(Of TChannel)&#xA;Implements IChannelListener" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename TChannel&gt;&#xA; where TChannel : class, IChannelpublic interface class IChannelListener : System::ServiceModel::Channels::IChannelListener" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,6 +57,8 @@
       <MemberSignature Language="C#" Value="public TChannel AcceptChannel ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !TChannel AcceptChannel() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.IChannelListener`1.AcceptChannel" />
+      <MemberSignature Language="VB.NET" Value="Public Function AcceptChannel () As TChannel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TChannel AcceptChannel();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -81,6 +85,8 @@
       <MemberSignature Language="C#" Value="public TChannel AcceptChannel (TimeSpan timeout);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !TChannel AcceptChannel(valuetype System.TimeSpan timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.IChannelListener`1.AcceptChannel(System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AcceptChannel (timeout As TimeSpan) As TChannel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TChannel AcceptChannel(TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -127,6 +133,8 @@
       <MemberSignature Language="C#" Value="public IAsyncResult BeginAcceptChannel (AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginAcceptChannel(class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.IChannelListener`1.BeginAcceptChannel(System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginAcceptChannel (callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginAcceptChannel(AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -158,6 +166,8 @@
       <MemberSignature Language="C#" Value="public IAsyncResult BeginAcceptChannel (TimeSpan timeout, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginAcceptChannel(valuetype System.TimeSpan timeout, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.IChannelListener`1.BeginAcceptChannel(System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginAcceptChannel (timeout As TimeSpan, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginAcceptChannel(TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -191,6 +201,8 @@
       <MemberSignature Language="C#" Value="public TChannel EndAcceptChannel (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !TChannel EndAcceptChannel(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.IChannelListener`1.EndAcceptChannel(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EndAcceptChannel (result As IAsyncResult) As TChannel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TChannel EndAcceptChannel(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

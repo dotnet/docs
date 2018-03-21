@@ -1,7 +1,9 @@
-<Type Name="CodeGenerationManager" FullName="System.Workflow.ComponentModel.Compiler.CodeGenerationManager">
+﻿<Type Name="CodeGenerationManager" FullName="System.Workflow.ComponentModel.Compiler.CodeGenerationManager">
   <TypeSignature Language="C#" Value="public sealed class CodeGenerationManager : IServiceProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CodeGenerationManager extends System.Object implements class System.IServiceProvider" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Compiler.CodeGenerationManager" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CodeGenerationManager&#xA;Implements IServiceProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CodeGenerationManager sealed : IServiceProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +41,8 @@
       <MemberSignature Language="C#" Value="public CodeGenerationManager (IServiceProvider serviceProvider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IServiceProvider serviceProvider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.CodeGenerationManager.#ctor(System.IServiceProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (serviceProvider As IServiceProvider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeGenerationManager(IServiceProvider ^ serviceProvider);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -57,6 +61,8 @@
       <MemberSignature Language="C#" Value="public System.ComponentModel.Design.Serialization.ContextStack Context { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.Design.Serialization.ContextStack Context" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.CodeGenerationManager.Context" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Context As ContextStack" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::Design::Serialization::ContextStack ^ Context { System::ComponentModel::Design::Serialization::ContextStack ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -75,6 +81,7 @@
       <MemberSignature Language="C#" Value="public System.Workflow.ComponentModel.Compiler.ActivityCodeGenerator[] GetCodeGenerators (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Workflow.ComponentModel.Compiler.ActivityCodeGenerator[] GetCodeGenerators(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.CodeGenerationManager.GetCodeGenerators(System.Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Workflow::ComponentModel::Compiler::ActivityCodeGenerator ^&gt; ^ GetCodeGenerators(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -97,6 +104,8 @@
       <MemberSignature Language="C#" Value="public object GetService (Type serviceType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetService(class System.Type serviceType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.CodeGenerationManager.GetService(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetService (serviceType As Type) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ GetService(Type ^ serviceType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

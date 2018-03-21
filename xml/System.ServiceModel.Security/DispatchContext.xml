@@ -1,7 +1,9 @@
-<Type Name="DispatchContext" FullName="System.ServiceModel.Security.DispatchContext">
+﻿<Type Name="DispatchContext" FullName="System.ServiceModel.Security.DispatchContext">
   <TypeSignature Language="C#" Value="public class DispatchContext" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DispatchContext extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.DispatchContext" />
+  <TypeSignature Language="VB.NET" Value="Public Class DispatchContext" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DispatchContext" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public DispatchContext ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.DispatchContext.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DispatchContext();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -34,6 +38,8 @@
       <MemberSignature Language="C#" Value="public System.Security.Claims.ClaimsPrincipal Principal { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Claims.ClaimsPrincipal Principal" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.DispatchContext.Principal" />
+      <MemberSignature Language="VB.NET" Value="Public Property Principal As ClaimsPrincipal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Claims::ClaimsPrincipal ^ Principal { System::Security::Claims::ClaimsPrincipal ^ get(); void set(System::Security::Claims::ClaimsPrincipal ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -52,6 +58,8 @@
       <MemberSignature Language="C#" Value="public string RequestAction { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string RequestAction" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.DispatchContext.RequestAction" />
+      <MemberSignature Language="VB.NET" Value="Public Property RequestAction As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RequestAction { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -70,6 +78,8 @@
       <MemberSignature Language="C#" Value="public System.IdentityModel.Protocols.WSTrust.WSTrustMessage RequestMessage { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Protocols.WSTrust.WSTrustMessage RequestMessage" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.DispatchContext.RequestMessage" />
+      <MemberSignature Language="VB.NET" Value="Public Property RequestMessage As WSTrustMessage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Protocols::WSTrust::WSTrustMessage ^ RequestMessage { System::IdentityModel::Protocols::WSTrust::WSTrustMessage ^ get(); void set(System::IdentityModel::Protocols::WSTrust::WSTrustMessage ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -88,6 +98,8 @@
       <MemberSignature Language="C#" Value="public string ResponseAction { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ResponseAction" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.DispatchContext.ResponseAction" />
+      <MemberSignature Language="VB.NET" Value="Public Property ResponseAction As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ResponseAction { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -106,6 +118,8 @@
       <MemberSignature Language="C#" Value="public System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse ResponseMessage { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse ResponseMessage" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.DispatchContext.ResponseMessage" />
+      <MemberSignature Language="VB.NET" Value="Public Property ResponseMessage As RequestSecurityTokenResponse" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Protocols::WSTrust::RequestSecurityTokenResponse ^ ResponseMessage { System::IdentityModel::Protocols::WSTrust::RequestSecurityTokenResponse ^ get(); void set(System::IdentityModel::Protocols::WSTrust::RequestSecurityTokenResponse ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -124,6 +138,8 @@
       <MemberSignature Language="C#" Value="public System.IdentityModel.SecurityTokenService SecurityTokenService { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.SecurityTokenService SecurityTokenService" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.DispatchContext.SecurityTokenService" />
+      <MemberSignature Language="VB.NET" Value="Public Property SecurityTokenService As SecurityTokenService" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::SecurityTokenService ^ SecurityTokenService { System::IdentityModel::SecurityTokenService ^ get(); void set(System::IdentityModel::SecurityTokenService ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -149,6 +165,8 @@
       <MemberSignature Language="C#" Value="public string TrustNamespace { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TrustNamespace" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.DispatchContext.TrustNamespace" />
+      <MemberSignature Language="VB.NET" Value="Public Property TrustNamespace As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TrustNamespace { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

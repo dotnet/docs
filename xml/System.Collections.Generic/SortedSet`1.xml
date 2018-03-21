@@ -1,7 +1,9 @@
-<Type Name="SortedSet&lt;T&gt;" FullName="System.Collections.Generic.SortedSet&lt;T&gt;">
+﻿<Type Name="SortedSet&lt;T&gt;" FullName="System.Collections.Generic.SortedSet&lt;T&gt;">
   <TypeSignature Language="C#" Value="public class SortedSet&lt;T&gt; : System.Collections.Generic.ICollection&lt;T&gt;, System.Collections.Generic.IEnumerable&lt;T&gt;, System.Collections.Generic.IReadOnlyCollection&lt;T&gt;, System.Collections.Generic.ISet&lt;T&gt;, System.Collections.ICollection, System.Runtime.Serialization.IDeserializationCallback, System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit SortedSet`1&lt;T&gt; extends System.Object implements class System.Collections.Generic.ICollection`1&lt;!T&gt;, class System.Collections.Generic.IEnumerable`1&lt;!T&gt;, class System.Collections.Generic.IReadOnlyCollection`1&lt;!T&gt;, class System.Collections.Generic.ISet`1&lt;!T&gt;, class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Runtime.Serialization.IDeserializationCallback, class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.Collections.Generic.SortedSet`1" />
+  <TypeSignature Language="VB.NET" Value="Public Class SortedSet(Of T)&#xA;Implements ICollection, ICollection(Of T), IDeserializationCallback, IEnumerable(Of T), IReadOnlyCollection(Of T), ISerializable, ISet(Of T)" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class SortedSet : System::Collections::Generic::ICollection&lt;T&gt;, System::Collections::Generic::IEnumerable&lt;T&gt;, System::Collections::Generic::IReadOnlyCollection&lt;T&gt;, System::Collections::Generic::ISet&lt;T&gt;, System::Collections::ICollection, System::Runtime::Serialization::IDeserializationCallback, System::Runtime::Serialization::ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.Collections</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -102,6 +104,8 @@
       <MemberSignature Language="C#" Value="public SortedSet ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedSet`1.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SortedSet();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -128,6 +132,8 @@
       <MemberSignature Language="C#" Value="public SortedSet (System.Collections.Generic.IComparer&lt;T&gt; comparer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IComparer`1&lt;!T&gt; comparer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedSet`1.#ctor(System.Collections.Generic.IComparer{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (comparer As IComparer(Of T))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SortedSet(System::Collections::Generic::IComparer&lt;T&gt; ^ comparer);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -176,6 +182,8 @@
       <MemberSignature Language="C#" Value="public SortedSet (System.Collections.Generic.IEnumerable&lt;T&gt; collection);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;!T&gt; collection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedSet`1.#ctor(System.Collections.Generic.IEnumerable{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (collection As IEnumerable(Of T))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SortedSet(System::Collections::Generic::IEnumerable&lt;T&gt; ^ collection);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -214,6 +222,8 @@
       <MemberSignature Language="C#" Value="public SortedSet (System.Collections.Generic.IEnumerable&lt;T&gt; collection, System.Collections.Generic.IComparer&lt;T&gt; comparer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;!T&gt; collection, class System.Collections.Generic.IComparer`1&lt;!T&gt; comparer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedSet`1.#ctor(System.Collections.Generic.IEnumerable{`0},System.Collections.Generic.IComparer{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (collection As IEnumerable(Of T), comparer As IComparer(Of T))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SortedSet(System::Collections::Generic::IEnumerable&lt;T&gt; ^ collection, System::Collections::Generic::IComparer&lt;T&gt; ^ comparer);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -247,6 +257,8 @@
       <MemberSignature Language="C#" Value="protected SortedSet (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedSet`1.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; SortedSet(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -283,7 +295,12 @@
       <MemberSignature Language="C#" Value="public bool Add (T item);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Add(!T item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedSet`1.Add(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (item As T) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Add(T item);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ISet`1.Add(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -334,7 +351,12 @@
       <MemberSignature Language="C#" Value="public virtual void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedSet`1.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Clear ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Clear</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -370,6 +392,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IComparer&lt;T&gt; Comparer { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IComparer`1&lt;!T&gt; Comparer" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.SortedSet`1.Comparer" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Comparer As IComparer(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IComparer&lt;T&gt; ^ Comparer { System::Collections::Generic::IComparer&lt;T&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -408,7 +432,12 @@
       <MemberSignature Language="C#" Value="public virtual bool Contains (T item);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Contains(!T item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedSet`1.Contains(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Contains (item As T) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Contains(T item);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Contains(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -467,6 +496,8 @@
       <MemberSignature Language="C#" Value="public void CopyTo (T[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedSet`1.CopyTo(`0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As T())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;T&gt; ^ array);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -509,7 +540,12 @@
       <MemberSignature Language="C#" Value="public void CopyTo (T[] array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(!T[] array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedSet`1.CopyTo(`0[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As T(), index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(cli::array &lt;T&gt; ^ array, int index);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -555,6 +591,8 @@
       <MemberSignature Language="C#" Value="public void CopyTo (T[] array, int index, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(!T[] array, int32 index, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedSet`1.CopyTo(`0[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As T(), index As Integer, count As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;T&gt; ^ array, int index, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -607,7 +645,14 @@
       <MemberSignature Language="C#" Value="public int Count { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.SortedSet`1.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.Generic.ICollection`1.Count</InterfaceMember>
+        <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
+        <InterfaceMember>P:System.Collections.Generic.IReadOnlyCollection`1.Count</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -639,10 +684,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateSetComparer">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an <see cref="T:System.Collections.IEqualityComparer" /> object that can be used to create a collection that contains individual sets.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateSetComparer">
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEqualityComparer&lt;System.Collections.Generic.SortedSet&lt;T&gt;&gt; CreateSetComparer ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEqualityComparer`1&lt;class System.Collections.Generic.SortedSet`1&lt;!T&gt;&gt; CreateSetComparer() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedSet`1.CreateSetComparer" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateSetComparer () As IEqualityComparer(Of SortedSet(Of T))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Generic::IEqualityComparer&lt;System::Collections::Generic::SortedSet&lt;T&gt; ^&gt; ^ CreateSetComparer();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -680,6 +737,8 @@
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEqualityComparer&lt;System.Collections.Generic.SortedSet&lt;T&gt;&gt; CreateSetComparer (System.Collections.Generic.IEqualityComparer&lt;T&gt; memberEqualityComparer);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEqualityComparer`1&lt;class System.Collections.Generic.SortedSet`1&lt;!T&gt;&gt; CreateSetComparer(class System.Collections.Generic.IEqualityComparer`1&lt;!T&gt; memberEqualityComparer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedSet`1.CreateSetComparer(System.Collections.Generic.IEqualityComparer{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateSetComparer (memberEqualityComparer As IEqualityComparer(Of T)) As IEqualityComparer(Of SortedSet(Of T))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Generic::IEqualityComparer&lt;System::Collections::Generic::SortedSet&lt;T&gt; ^&gt; ^ CreateSetComparer(System::Collections::Generic::IEqualityComparer&lt;T&gt; ^ memberEqualityComparer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -728,7 +787,12 @@
       <MemberSignature Language="C#" Value="public void ExceptWith (System.Collections.Generic.IEnumerable&lt;T&gt; other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExceptWith(class System.Collections.Generic.IEnumerable`1&lt;!T&gt; other) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedSet`1.ExceptWith(System.Collections.Generic.IEnumerable{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ExceptWith (other As IEnumerable(Of T))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ExceptWith(System::Collections::Generic::IEnumerable&lt;T&gt; ^ other);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ISet`1.ExceptWith(System.Collections.Generic.IEnumerable{`0})</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -779,6 +843,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.SortedSet&lt;T&gt;.Enumerator GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Collections.Generic.SortedSet`1/Enumerator&lt;!T&gt; GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedSet`1.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As SortedSet(Of T).Enumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::SortedSet&lt;T&gt;::Enumerator GetEnumerator();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -818,7 +884,12 @@
       <MemberSignature Language="C#" Value="protected virtual void GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedSet`1.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -860,6 +931,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.SortedSet&lt;T&gt; GetViewBetween (T lowerValue, T upperValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.SortedSet`1&lt;!T&gt; GetViewBetween(!T lowerValue, !T upperValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedSet`1.GetViewBetween(`0,`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetViewBetween (lowerValue As T, upperValue As T) As SortedSet(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::SortedSet&lt;T&gt; ^ GetViewBetween(T lowerValue, T upperValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -913,7 +986,12 @@
       <MemberSignature Language="C#" Value="public virtual void IntersectWith (System.Collections.Generic.IEnumerable&lt;T&gt; other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void IntersectWith(class System.Collections.Generic.IEnumerable`1&lt;!T&gt; other) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedSet`1.IntersectWith(System.Collections.Generic.IEnumerable{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub IntersectWith (other As IEnumerable(Of T))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void IntersectWith(System::Collections::Generic::IEnumerable&lt;T&gt; ^ other);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ISet`1.IntersectWith(System.Collections.Generic.IEnumerable{`0})</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -956,7 +1034,12 @@
       <MemberSignature Language="C#" Value="public bool IsProperSubsetOf (System.Collections.Generic.IEnumerable&lt;T&gt; other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsProperSubsetOf(class System.Collections.Generic.IEnumerable`1&lt;!T&gt; other) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedSet`1.IsProperSubsetOf(System.Collections.Generic.IEnumerable{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsProperSubsetOf (other As IEnumerable(Of T)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsProperSubsetOf(System::Collections::Generic::IEnumerable&lt;T&gt; ^ other);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ISet`1.IsProperSubsetOf(System.Collections.Generic.IEnumerable{`0})</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1008,7 +1091,12 @@
       <MemberSignature Language="C#" Value="public bool IsProperSupersetOf (System.Collections.Generic.IEnumerable&lt;T&gt; other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsProperSupersetOf(class System.Collections.Generic.IEnumerable`1&lt;!T&gt; other) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedSet`1.IsProperSupersetOf(System.Collections.Generic.IEnumerable{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsProperSupersetOf (other As IEnumerable(Of T)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsProperSupersetOf(System::Collections::Generic::IEnumerable&lt;T&gt; ^ other);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ISet`1.IsProperSupersetOf(System.Collections.Generic.IEnumerable{`0})</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1060,7 +1148,12 @@
       <MemberSignature Language="C#" Value="public bool IsSubsetOf (System.Collections.Generic.IEnumerable&lt;T&gt; other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsSubsetOf(class System.Collections.Generic.IEnumerable`1&lt;!T&gt; other) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedSet`1.IsSubsetOf(System.Collections.Generic.IEnumerable{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsSubsetOf (other As IEnumerable(Of T)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsSubsetOf(System::Collections::Generic::IEnumerable&lt;T&gt; ^ other);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ISet`1.IsSubsetOf(System.Collections.Generic.IEnumerable{`0})</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1112,7 +1205,12 @@
       <MemberSignature Language="C#" Value="public bool IsSupersetOf (System.Collections.Generic.IEnumerable&lt;T&gt; other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsSupersetOf(class System.Collections.Generic.IEnumerable`1&lt;!T&gt; other) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedSet`1.IsSupersetOf(System.Collections.Generic.IEnumerable{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsSupersetOf (other As IEnumerable(Of T)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsSupersetOf(System::Collections::Generic::IEnumerable&lt;T&gt; ^ other);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ISet`1.IsSupersetOf(System.Collections.Generic.IEnumerable{`0})</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1159,6 +1257,8 @@
       <MemberSignature Language="C#" Value="public T Max { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance !T Max" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.SortedSet`1.Max" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Max As T" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property T Max { T get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -1188,6 +1288,8 @@
       <MemberSignature Language="C#" Value="public T Min { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance !T Min" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.SortedSet`1.Min" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Min As T" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property T Min { T get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -1217,7 +1319,12 @@
       <MemberSignature Language="C#" Value="protected virtual void OnDeserialization (object sender);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnDeserialization(object sender) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedSet`1.OnDeserialization(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnDeserialization (sender As Object)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnDeserialization(System::Object ^ sender);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Serialization.IDeserializationCallback.OnDeserialization(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -1255,7 +1362,12 @@
       <MemberSignature Language="C#" Value="public bool Overlaps (System.Collections.Generic.IEnumerable&lt;T&gt; other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Overlaps(class System.Collections.Generic.IEnumerable`1&lt;!T&gt; other) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedSet`1.Overlaps(System.Collections.Generic.IEnumerable{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Function Overlaps (other As IEnumerable(Of T)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Overlaps(System::Collections::Generic::IEnumerable&lt;T&gt; ^ other);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ISet`1.Overlaps(System.Collections.Generic.IEnumerable{`0})</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1300,7 +1412,12 @@
       <MemberSignature Language="C#" Value="public bool Remove (T item);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Remove(!T item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedSet`1.Remove(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Remove (item As T) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Remove(T item);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Remove(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1345,6 +1462,8 @@
       <MemberSignature Language="C#" Value="public int RemoveWhere (Predicate&lt;T&gt; match);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 RemoveWhere(class System.Predicate`1&lt;!T&gt; match) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedSet`1.RemoveWhere(System.Predicate{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Function RemoveWhere (match As Predicate(Of T)) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int RemoveWhere(Predicate&lt;T&gt; ^ match);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -1399,6 +1518,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;T&gt; Reverse ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;!T&gt; Reverse() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedSet`1.Reverse" />
+      <MemberSignature Language="VB.NET" Value="Public Function Reverse () As IEnumerable(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;T&gt; ^ Reverse();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -1429,7 +1550,12 @@
       <MemberSignature Language="C#" Value="public bool SetEquals (System.Collections.Generic.IEnumerable&lt;T&gt; other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SetEquals(class System.Collections.Generic.IEnumerable`1&lt;!T&gt; other) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedSet`1.SetEquals(System.Collections.Generic.IEnumerable{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetEquals (other As IEnumerable(Of T)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool SetEquals(System::Collections::Generic::IEnumerable&lt;T&gt; ^ other);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ISet`1.SetEquals(System.Collections.Generic.IEnumerable{`0})</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1479,7 +1605,12 @@
       <MemberSignature Language="C#" Value="public void SymmetricExceptWith (System.Collections.Generic.IEnumerable&lt;T&gt; other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SymmetricExceptWith(class System.Collections.Generic.IEnumerable`1&lt;!T&gt; other) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedSet`1.SymmetricExceptWith(System.Collections.Generic.IEnumerable{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SymmetricExceptWith (other As IEnumerable(Of T))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SymmetricExceptWith(System::Collections::Generic::IEnumerable&lt;T&gt; ^ other);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ISet`1.SymmetricExceptWith(System.Collections.Generic.IEnumerable{`0})</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1522,7 +1653,12 @@
       <MemberSignature Language="C#" Value="void ICollection&lt;T&gt;.Add (T item);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.Generic.ICollection&lt;T&gt;.Add(!T item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedSet`1.System#Collections#Generic#ICollection&lt;T&gt;#Add(`0)" />
+      <MemberSignature Language="VB.NET" Value="Sub Add (item As T) Implements ICollection(Of T).Add" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.Generic.ICollection&lt;T&gt;.Add(T item) = System::Collections::Generic::ICollection&lt;T&gt;::Add;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Add(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1564,7 +1700,12 @@
       <MemberSignature Language="C#" Value="bool System.Collections.Generic.ICollection&lt;T&gt;.IsReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.Generic.ICollection&lt;T&gt;.IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.SortedSet`1.System#Collections#Generic#ICollection&lt;T&gt;#IsReadOnly" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements ICollection(Of T).IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.Generic.ICollection&lt;T&gt;.IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.Generic.ICollection`1.IsReadOnly</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1607,7 +1748,12 @@
       <MemberSignature Language="C#" Value="System.Collections.Generic.IEnumerator&lt;T&gt; IEnumerable&lt;T&gt;.GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.Generic.IEnumerator`1&lt;!T&gt; System.Collections.Generic.IEnumerable&lt;T&gt;.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedSet`1.System#Collections#Generic#IEnumerable&lt;T&gt;#GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator(Of T) Implements IEnumerable(Of T).GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::Generic::IEnumerator&lt;T&gt; ^ System.Collections.Generic.IEnumerable&lt;T&gt;.GetEnumerator() = System::Collections::Generic::IEnumerable&lt;T&gt;::GetEnumerator;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1644,7 +1790,11 @@
       <MemberSignature Language="C#" Value="void ICollection.CopyTo (Array array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.ICollection.CopyTo(class System.Array array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedSet`1.System#Collections#ICollection#CopyTo(System.Array,System.Int32)" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.ICollection.CopyTo(Array ^ array, int index) = System::Collections::ICollection::CopyTo;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1690,7 +1840,12 @@
       <MemberSignature Language="C#" Value="bool System.Collections.ICollection.IsSynchronized { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.ICollection.IsSynchronized" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.SortedSet`1.System#Collections#ICollection#IsSynchronized" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1727,7 +1882,12 @@
       <MemberSignature Language="C#" Value="object System.Collections.ICollection.SyncRoot { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.ICollection.SyncRoot" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.SortedSet`1.System#Collections#ICollection#SyncRoot" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1765,7 +1925,12 @@
       <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedSet`1.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator Implements IEnumerable.GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IEnumerator ^ System.Collections.IEnumerable.GetEnumerator() = System::Collections::IEnumerable::GetEnumerator;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1804,7 +1969,12 @@
       <MemberSignature Language="C#" Value="void IDeserializationCallback.OnDeserialization (object sender);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.Serialization.IDeserializationCallback.OnDeserialization(object sender) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedSet`1.System#Runtime#Serialization#IDeserializationCallback#OnDeserialization(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Sub OnDeserialization (sender As Object) Implements IDeserializationCallback.OnDeserialization" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.Serialization.IDeserializationCallback.OnDeserialization(System::Object ^ sender) = System::Runtime::Serialization::IDeserializationCallback::OnDeserialization;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Serialization.IDeserializationCallback.OnDeserialization(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -1842,7 +2012,12 @@
       <MemberSignature Language="C#" Value="void ISerializable.GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.Serialization.ISerializable.GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedSet`1.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Sub GetObjectData (info As SerializationInfo, context As StreamingContext) Implements ISerializable.GetObjectData" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.Serialization.ISerializable.GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context) = System::Runtime::Serialization::ISerializable::GetObjectData;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -1884,6 +2059,8 @@
       <MemberSignature Language="C#" Value="public bool TryGetValue (T equalValue, out T actualValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetValue(!T equalValue, [out] !T&amp; actualValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedSet`1.TryGetValue(`0,`0@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryGetValue (equalValue As T, ByRef actualValue As T) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryGetValue(T equalValue, [Runtime::InteropServices::Out] T % actualValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -1908,7 +2085,12 @@
       <MemberSignature Language="C#" Value="public void UnionWith (System.Collections.Generic.IEnumerable&lt;T&gt; other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void UnionWith(class System.Collections.Generic.IEnumerable`1&lt;!T&gt; other) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedSet`1.UnionWith(System.Collections.Generic.IEnumerable{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub UnionWith (other As IEnumerable(Of T))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void UnionWith(System::Collections::Generic::IEnumerable&lt;T&gt; ^ other);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ISet`1.UnionWith(System.Collections.Generic.IEnumerable{`0})</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1945,15 +2127,5 @@
           <paramref name="other" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="CreateSetComparer">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns an <see cref="T:System.Collections.IEqualityComparer" /> object that can be used to create a collection that contains individual sets.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

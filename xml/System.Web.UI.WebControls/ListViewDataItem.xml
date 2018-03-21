@@ -1,7 +1,9 @@
-<Type Name="ListViewDataItem" FullName="System.Web.UI.WebControls.ListViewDataItem">
+﻿<Type Name="ListViewDataItem" FullName="System.Web.UI.WebControls.ListViewDataItem">
   <TypeSignature Language="C#" Value="public class ListViewDataItem : System.Web.UI.WebControls.ListViewItem" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ListViewDataItem extends System.Web.UI.WebControls.ListViewItem" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ListViewDataItem" />
+  <TypeSignature Language="VB.NET" Value="Public Class ListViewDataItem&#xA;Inherits ListViewItem" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ListViewDataItem : System::Web::UI::WebControls::ListViewItem" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +51,8 @@
       <MemberSignature Language="C#" Value="public ListViewDataItem (int dataItemIndex, int displayIndex);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 dataItemIndex, int32 displayIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListViewDataItem.#ctor(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (dataItemIndex As Integer, displayIndex As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ListViewDataItem(int dataItemIndex, int displayIndex);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -81,6 +85,8 @@
       <MemberSignature Language="C#" Value="public override object DataItem { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object DataItem" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListViewDataItem.DataItem" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property DataItem As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ DataItem { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -115,6 +121,8 @@
       <MemberSignature Language="C#" Value="public override int DataItemIndex { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 DataItemIndex" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListViewDataItem.DataItemIndex" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property DataItemIndex As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int DataItemIndex { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -142,6 +150,8 @@
       <MemberSignature Language="C#" Value="public override int DisplayIndex { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 DisplayIndex" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListViewDataItem.DisplayIndex" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property DisplayIndex As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int DisplayIndex { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -180,6 +190,8 @@
       <MemberSignature Language="C#" Value="protected override bool OnBubbleEvent (object source, EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool OnBubbleEvent(object source, class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListViewDataItem.OnBubbleEvent(System.Object,System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnBubbleEvent (source As Object, e As EventArgs) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool OnBubbleEvent(System::Object ^ source, EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

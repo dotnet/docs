@@ -1,7 +1,9 @@
-<Type Name="DynamicValidator" FullName="System.Web.DynamicData.DynamicValidator">
+﻿<Type Name="DynamicValidator" FullName="System.Web.DynamicData.DynamicValidator">
   <TypeSignature Language="C#" Value="public class DynamicValidator : System.Web.UI.WebControls.BaseValidator" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DynamicValidator extends System.Web.UI.WebControls.BaseValidator" />
   <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.DynamicValidator" />
+  <TypeSignature Language="VB.NET" Value="Public Class DynamicValidator&#xA;Inherits BaseValidator" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DynamicValidator : System::Web::UI::WebControls::BaseValidator" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DynamicData</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -121,6 +123,8 @@ public class MyDynamicValidator : DynamicValidator {
       <MemberSignature Language="C#" Value="public DynamicValidator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicValidator.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DynamicValidator();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -136,6 +140,8 @@ public class MyDynamicValidator : DynamicValidator {
       <MemberSignature Language="C#" Value="public System.Web.DynamicData.MetaColumn Column { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.DynamicData.MetaColumn Column" />
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.DynamicValidator.Column" />
+      <MemberSignature Language="VB.NET" Value="Public Property Column As MetaColumn" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::DynamicData::MetaColumn ^ Column { System::Web::DynamicData::MetaColumn ^ get(); void set(System::Web::DynamicData::MetaColumn ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -162,6 +168,8 @@ public class MyDynamicValidator : DynamicValidator {
       <MemberSignature Language="C#" Value="public string ColumnName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ColumnName" />
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.DynamicValidator.ColumnName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ColumnName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ColumnName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -188,6 +196,8 @@ public class MyDynamicValidator : DynamicValidator {
       <MemberSignature Language="C#" Value="protected override bool ControlPropertiesValid ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ControlPropertiesValid() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicValidator.ControlPropertiesValid" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function ControlPropertiesValid () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool ControlPropertiesValid();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -215,6 +225,8 @@ public class MyDynamicValidator : DynamicValidator {
       <MemberSignature Language="C#" Value="protected override bool EvaluateIsValid ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool EvaluateIsValid() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicValidator.EvaluateIsValid" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function EvaluateIsValid () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool EvaluateIsValid();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -235,6 +247,8 @@ public class MyDynamicValidator : DynamicValidator {
       <MemberSignature Language="C#" Value="protected override void OnInit (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnInit(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicValidator.OnInit(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnInit (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnInit(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -256,6 +270,7 @@ public class MyDynamicValidator : DynamicValidator {
       <MemberSignature Language="C#" Value="protected virtual void ValidateException (Exception exception);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ValidateException(class System.Exception exception) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicValidator.ValidateException(System.Exception)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ValidateException(Exception ^ exception);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -287,6 +302,8 @@ public class MyDynamicValidator : DynamicValidator {
       <MemberSignature Language="C#" Value="protected virtual Exception ValidationException { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Exception ValidationException" />
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.DynamicValidator.ValidationException" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Property ValidationException As Exception" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property Exception ^ ValidationException { Exception ^ get(); void set(Exception ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>

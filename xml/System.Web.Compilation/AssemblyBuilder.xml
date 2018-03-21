@@ -1,7 +1,9 @@
-<Type Name="AssemblyBuilder" FullName="System.Web.Compilation.AssemblyBuilder">
+﻿<Type Name="AssemblyBuilder" FullName="System.Web.Compilation.AssemblyBuilder">
   <TypeSignature Language="C#" Value="public class AssemblyBuilder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AssemblyBuilder extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.Compilation.AssemblyBuilder" />
+  <TypeSignature Language="VB.NET" Value="Public Class AssemblyBuilder" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AssemblyBuilder" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +51,8 @@
       <MemberSignature Language="C#" Value="public void AddAssemblyReference (System.Reflection.Assembly a);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddAssemblyReference(class System.Reflection.Assembly a) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.AssemblyBuilder.AddAssemblyReference(System.Reflection.Assembly)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddAssemblyReference (a As Assembly)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddAssemblyReference(System::Reflection::Assembly ^ a);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -84,6 +88,7 @@
       <MemberSignature Language="C#" Value="public void AddCodeCompileUnit (System.Web.Compilation.BuildProvider buildProvider, System.CodeDom.CodeCompileUnit compileUnit);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddCodeCompileUnit(class System.Web.Compilation.BuildProvider buildProvider, class System.CodeDom.CodeCompileUnit compileUnit) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.AssemblyBuilder.AddCodeCompileUnit(System.Web.Compilation.BuildProvider,System.CodeDom.CodeCompileUnit)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddCodeCompileUnit(System::Web::Compilation::BuildProvider ^ buildProvider, System::CodeDom::CodeCompileUnit ^ compileUnit);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -120,6 +125,8 @@
       <MemberSignature Language="C#" Value="public System.CodeDom.Compiler.CodeDomProvider CodeDomProvider { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.Compiler.CodeDomProvider CodeDomProvider" />
       <MemberSignature Language="DocId" Value="P:System.Web.Compilation.AssemblyBuilder.CodeDomProvider" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CodeDomProvider As CodeDomProvider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::Compiler::CodeDomProvider ^ CodeDomProvider { System::CodeDom::Compiler::CodeDomProvider ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -152,6 +159,7 @@
       <MemberSignature Language="C#" Value="public System.IO.TextWriter CreateCodeFile (System.Web.Compilation.BuildProvider buildProvider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.TextWriter CreateCodeFile(class System.Web.Compilation.BuildProvider buildProvider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.AssemblyBuilder.CreateCodeFile(System.Web.Compilation.BuildProvider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::TextWriter ^ CreateCodeFile(System::Web::Compilation::BuildProvider ^ buildProvider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -199,6 +207,7 @@
       <MemberSignature Language="C#" Value="public System.IO.Stream CreateEmbeddedResource (System.Web.Compilation.BuildProvider buildProvider, string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.Stream CreateEmbeddedResource(class System.Web.Compilation.BuildProvider buildProvider, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.AssemblyBuilder.CreateEmbeddedResource(System.Web.Compilation.BuildProvider,System.String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Stream ^ CreateEmbeddedResource(System::Web::Compilation::BuildProvider ^ buildProvider, System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -234,6 +243,8 @@
       <MemberSignature Language="C#" Value="public void GenerateTypeFactory (string typeName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GenerateTypeFactory(string typeName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.AssemblyBuilder.GenerateTypeFactory(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GenerateTypeFactory (typeName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GenerateTypeFactory(System::String ^ typeName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -264,6 +275,8 @@
       <MemberSignature Language="C#" Value="public string GetTempFilePhysicalPath (string extension);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetTempFilePhysicalPath(string extension) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.AssemblyBuilder.GetTempFilePhysicalPath(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetTempFilePhysicalPath (extension As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetTempFilePhysicalPath(System::String ^ extension);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

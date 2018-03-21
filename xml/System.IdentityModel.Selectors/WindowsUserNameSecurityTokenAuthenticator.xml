@@ -1,7 +1,9 @@
-<Type Name="WindowsUserNameSecurityTokenAuthenticator" FullName="System.IdentityModel.Selectors.WindowsUserNameSecurityTokenAuthenticator">
+﻿<Type Name="WindowsUserNameSecurityTokenAuthenticator" FullName="System.IdentityModel.Selectors.WindowsUserNameSecurityTokenAuthenticator">
   <TypeSignature Language="C#" Value="public class WindowsUserNameSecurityTokenAuthenticator : System.IdentityModel.Selectors.UserNameSecurityTokenAuthenticator" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WindowsUserNameSecurityTokenAuthenticator extends System.IdentityModel.Selectors.UserNameSecurityTokenAuthenticator" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Selectors.WindowsUserNameSecurityTokenAuthenticator" />
+  <TypeSignature Language="VB.NET" Value="Public Class WindowsUserNameSecurityTokenAuthenticator&#xA;Inherits UserNameSecurityTokenAuthenticator" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WindowsUserNameSecurityTokenAuthenticator : System::IdentityModel::Selectors::UserNameSecurityTokenAuthenticator" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,10 +26,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Selectors.WindowsUserNameSecurityTokenAuthenticator" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public WindowsUserNameSecurityTokenAuthenticator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.WindowsUserNameSecurityTokenAuthenticator.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WindowsUserNameSecurityTokenAuthenticator();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -50,6 +63,8 @@
       <MemberSignature Language="C#" Value="public WindowsUserNameSecurityTokenAuthenticator (bool includeWindowsGroups);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool includeWindowsGroups) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.WindowsUserNameSecurityTokenAuthenticator.#ctor(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (includeWindowsGroups As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WindowsUserNameSecurityTokenAuthenticator(bool includeWindowsGroups);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -69,6 +84,8 @@
       <MemberSignature Language="C#" Value="protected override System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Policy.IAuthorizationPolicy&gt; ValidateUserNamePasswordCore (string userName, string password);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.IdentityModel.Policy.IAuthorizationPolicy&gt; ValidateUserNamePasswordCore(string userName, string password) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.WindowsUserNameSecurityTokenAuthenticator.ValidateUserNamePasswordCore(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function ValidateUserNamePasswordCore (userName As String, password As String) As ReadOnlyCollection(Of IAuthorizationPolicy)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Collections::ObjectModel::ReadOnlyCollection&lt;System::IdentityModel::Policy::IAuthorizationPolicy ^&gt; ^ ValidateUserNamePasswordCore(System::String ^ userName, System::String ^ password);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -98,14 +115,5 @@
           <paramref name="userName" /> contains more than one backslash (\\) character.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Selectors.WindowsUserNameSecurityTokenAuthenticator" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

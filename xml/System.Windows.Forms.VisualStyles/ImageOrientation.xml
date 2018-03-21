@@ -1,7 +1,9 @@
-<Type Name="ImageOrientation" FullName="System.Windows.Forms.VisualStyles.ImageOrientation">
+﻿<Type Name="ImageOrientation" FullName="System.Windows.Forms.VisualStyles.ImageOrientation">
   <TypeSignature Language="C#" Value="public enum ImageOrientation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ImageOrientation extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.ImageOrientation" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ImageOrientation" />
+  <TypeSignature Language="C++ CLI" Value="public enum class ImageOrientation" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +27,8 @@
       <MemberSignature Language="C#" Value="Horizontal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.ImageOrientation Horizontal = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.ImageOrientation.Horizontal" />
+      <MemberSignature Language="VB.NET" Value="Horizontal" />
+      <MemberSignature Language="C++ CLI" Value="Horizontal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -33,6 +37,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.ImageOrientation</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Images are arranged horizontally in the multiple-image file.</summary>
       </Docs>
@@ -41,6 +46,8 @@
       <MemberSignature Language="C#" Value="Vertical" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.ImageOrientation Vertical = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.ImageOrientation.Vertical" />
+      <MemberSignature Language="VB.NET" Value="Vertical" />
+      <MemberSignature Language="C++ CLI" Value="Vertical" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -49,6 +56,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.ImageOrientation</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Images are arranged vertically in the multiple-image file.</summary>
       </Docs>

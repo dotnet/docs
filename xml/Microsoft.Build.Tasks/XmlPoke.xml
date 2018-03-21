@@ -1,7 +1,9 @@
-<Type Name="XmlPoke" FullName="Microsoft.Build.Tasks.XmlPoke">
+﻿<Type Name="XmlPoke" FullName="Microsoft.Build.Tasks.XmlPoke">
   <TypeSignature Language="C#" Value="public class XmlPoke : Microsoft.Build.Tasks.TaskExtension" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlPoke extends Microsoft.Build.Tasks.TaskExtension" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.XmlPoke" />
+  <TypeSignature Language="VB.NET" Value="Public Class XmlPoke&#xA;Inherits TaskExtension" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlPoke : Microsoft::Build::Tasks::TaskExtension" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public XmlPoke ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.XmlPoke.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlPoke();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -34,6 +38,8 @@
       <MemberSignature Language="C#" Value="public override bool Execute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Execute() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.XmlPoke.Execute" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Execute () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Execute();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -53,6 +59,8 @@
       <MemberSignature Language="C#" Value="public string Namespaces { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Namespaces" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.XmlPoke.Namespaces" />
+      <MemberSignature Language="VB.NET" Value="Public Property Namespaces As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Namespaces { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -71,6 +79,8 @@
       <MemberSignature Language="C#" Value="public string Query { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Query" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.XmlPoke.Query" />
+      <MemberSignature Language="VB.NET" Value="Public Property Query As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Query { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -89,6 +99,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem Value { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem Value" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.XmlPoke.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Property Value As ITaskItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Framework::ITaskItem ^ Value { Microsoft::Build::Framework::ITaskItem ^ get(); void set(Microsoft::Build::Framework::ITaskItem ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -112,6 +124,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem XmlInputPath { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem XmlInputPath" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.XmlPoke.XmlInputPath" />
+      <MemberSignature Language="VB.NET" Value="Public Property XmlInputPath As ITaskItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Framework::ITaskItem ^ XmlInputPath { Microsoft::Build::Framework::ITaskItem ^ get(); void set(Microsoft::Build::Framework::ITaskItem ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

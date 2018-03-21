@@ -1,7 +1,9 @@
-<Type Name="LogoutAction" FullName="System.Web.UI.WebControls.LogoutAction">
+﻿<Type Name="LogoutAction" FullName="System.Web.UI.WebControls.LogoutAction">
   <TypeSignature Language="C#" Value="public enum LogoutAction" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LogoutAction extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.LogoutAction" />
+  <TypeSignature Language="VB.NET" Value="Public Enum LogoutAction" />
+  <TypeSignature Language="C++ CLI" Value="public enum class LogoutAction" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +36,8 @@
       <MemberSignature Language="C#" Value="Redirect" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.LogoutAction Redirect = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.LogoutAction.Redirect" />
+      <MemberSignature Language="VB.NET" Value="Redirect" />
+      <MemberSignature Language="C++ CLI" Value="Redirect" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -42,6 +46,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.LogoutAction</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Redirects the user to a specified URL.</summary>
       </Docs>
@@ -50,6 +55,8 @@
       <MemberSignature Language="C#" Value="RedirectToLoginPage" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.LogoutAction RedirectToLoginPage = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.LogoutAction.RedirectToLoginPage" />
+      <MemberSignature Language="VB.NET" Value="RedirectToLoginPage" />
+      <MemberSignature Language="C++ CLI" Value="RedirectToLoginPage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -58,6 +65,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.LogoutAction</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Redirects the user to the login page defined in the site's configuration files (Machine.config and Web.config).</summary>
       </Docs>
@@ -66,6 +74,8 @@
       <MemberSignature Language="C#" Value="Refresh" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.LogoutAction Refresh = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.LogoutAction.Refresh" />
+      <MemberSignature Language="VB.NET" Value="Refresh" />
+      <MemberSignature Language="C++ CLI" Value="Refresh" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -74,6 +84,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.LogoutAction</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Reloads the current page with the user logged out.</summary>
       </Docs>

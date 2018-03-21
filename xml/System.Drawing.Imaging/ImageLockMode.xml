@@ -1,7 +1,9 @@
-<Type Name="ImageLockMode" FullName="System.Drawing.Imaging.ImageLockMode">
+﻿<Type Name="ImageLockMode" FullName="System.Drawing.Imaging.ImageLockMode">
   <TypeSignature Language="C#" Value="public enum ImageLockMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ImageLockMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Imaging.ImageLockMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ImageLockMode" />
+  <TypeSignature Language="C++ CLI" Value="public enum class ImageLockMode" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +31,8 @@
       <MemberSignature Language="C#" Value="ReadOnly" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.ImageLockMode ReadOnly = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.ImageLockMode.ReadOnly" />
+      <MemberSignature Language="VB.NET" Value="ReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="ReadOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -37,6 +41,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.ImageLockMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Specifies that a portion of the image is locked for reading.</summary>
       </Docs>
@@ -45,6 +50,8 @@
       <MemberSignature Language="C#" Value="ReadWrite" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.ImageLockMode ReadWrite = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.ImageLockMode.ReadWrite" />
+      <MemberSignature Language="VB.NET" Value="ReadWrite" />
+      <MemberSignature Language="C++ CLI" Value="ReadWrite" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -53,6 +60,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.ImageLockMode</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Specifies that a portion of the image is locked for reading or writing.</summary>
       </Docs>
@@ -61,6 +69,8 @@
       <MemberSignature Language="C#" Value="UserInputBuffer" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.ImageLockMode UserInputBuffer = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.ImageLockMode.UserInputBuffer" />
+      <MemberSignature Language="VB.NET" Value="UserInputBuffer" />
+      <MemberSignature Language="C++ CLI" Value="UserInputBuffer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -69,6 +79,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.ImageLockMode</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Specifies that the buffer used for reading or writing pixel data is allocated by the user. If this flag is set, the <paramref name="flags" /> parameter of the <see cref="Overload:System.Drawing.Bitmap.LockBits" /> method serves as an input parameter (and possibly as an output parameter). If this flag is cleared, then the <paramref name="flags" /> parameter serves only as an output parameter.</summary>
       </Docs>
@@ -77,6 +88,8 @@
       <MemberSignature Language="C#" Value="WriteOnly" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.ImageLockMode WriteOnly = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.ImageLockMode.WriteOnly" />
+      <MemberSignature Language="VB.NET" Value="WriteOnly" />
+      <MemberSignature Language="C++ CLI" Value="WriteOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -85,6 +98,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.ImageLockMode</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Specifies that a portion of the image is locked for writing.</summary>
       </Docs>

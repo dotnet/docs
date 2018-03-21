@@ -1,7 +1,9 @@
-<Type Name="EditorBrowsableState" FullName="System.ComponentModel.EditorBrowsableState">
+﻿<Type Name="EditorBrowsableState" FullName="System.ComponentModel.EditorBrowsableState">
   <TypeSignature Language="C#" Value="public enum EditorBrowsableState" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed EditorBrowsableState extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.EditorBrowsableState" />
+  <TypeSignature Language="VB.NET" Value="Public Enum EditorBrowsableState" />
+  <TypeSignature Language="C++ CLI" Value="public enum class EditorBrowsableState" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +46,8 @@
       <MemberSignature Language="C#" Value="Advanced" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.EditorBrowsableState Advanced = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.EditorBrowsableState.Advanced" />
+      <MemberSignature Language="VB.NET" Value="Advanced" />
+      <MemberSignature Language="C++ CLI" Value="Advanced" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -65,6 +69,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.EditorBrowsableState</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The property or method is a feature that only advanced users should see. An editor can either show or hide such properties.</summary>
       </Docs>
@@ -73,6 +78,8 @@
       <MemberSignature Language="C#" Value="Always" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.EditorBrowsableState Always = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.EditorBrowsableState.Always" />
+      <MemberSignature Language="VB.NET" Value="Always" />
+      <MemberSignature Language="C++ CLI" Value="Always" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -94,6 +101,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.EditorBrowsableState</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The property or method is always browsable from within an editor.</summary>
       </Docs>
@@ -102,6 +110,8 @@
       <MemberSignature Language="C#" Value="Never" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.EditorBrowsableState Never = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.EditorBrowsableState.Never" />
+      <MemberSignature Language="VB.NET" Value="Never" />
+      <MemberSignature Language="C++ CLI" Value="Never" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -123,6 +133,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.EditorBrowsableState</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The property or method is never browsable from within an editor.</summary>
       </Docs>

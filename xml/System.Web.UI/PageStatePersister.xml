@@ -1,7 +1,9 @@
-<Type Name="PageStatePersister" FullName="System.Web.UI.PageStatePersister">
+﻿<Type Name="PageStatePersister" FullName="System.Web.UI.PageStatePersister">
   <TypeSignature Language="C#" Value="public abstract class PageStatePersister" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit PageStatePersister extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.PageStatePersister" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class PageStatePersister" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PageStatePersister abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -67,6 +69,7 @@
       <MemberSignature Language="C#" Value="protected PageStatePersister (System.Web.UI.Page page);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.Page page) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.PageStatePersister.#ctor(System.Web.UI.Page)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; PageStatePersister(System::Web::UI::Page ^ page);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -86,6 +89,8 @@
       <MemberSignature Language="C#" Value="public object ControlState { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object ControlState" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.PageStatePersister.ControlState" />
+      <MemberSignature Language="VB.NET" Value="Public Property ControlState As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ControlState { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -119,6 +124,8 @@
       <MemberSignature Language="C#" Value="public abstract void Load ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Load() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.PageStatePersister.Load" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Load ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Load();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -152,6 +159,8 @@
       <MemberSignature Language="C#" Value="protected System.Web.UI.Page Page { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.Page Page" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.PageStatePersister.Page" />
+      <MemberSignature Language="VB.NET" Value="Protected Property Page As Page" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Web::UI::Page ^ Page { System::Web::UI::Page ^ get(); void set(System::Web::UI::Page ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -177,6 +186,8 @@
       <MemberSignature Language="C#" Value="public abstract void Save ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Save() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.PageStatePersister.Save" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Save ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Save();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -210,6 +221,8 @@
       <MemberSignature Language="C#" Value="protected System.Web.UI.IStateFormatter StateFormatter { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.IStateFormatter StateFormatter" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.PageStatePersister.StateFormatter" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property StateFormatter As IStateFormatter" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Web::UI::IStateFormatter ^ StateFormatter { System::Web::UI::IStateFormatter ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -243,6 +256,8 @@
       <MemberSignature Language="C#" Value="public object ViewState { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object ViewState" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.PageStatePersister.ViewState" />
+      <MemberSignature Language="VB.NET" Value="Public Property ViewState As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ViewState { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

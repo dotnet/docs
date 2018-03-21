@@ -1,7 +1,9 @@
-<Type Name="ServiceBuildProvider" FullName="System.ServiceModel.Activation.ServiceBuildProvider">
+﻿<Type Name="ServiceBuildProvider" FullName="System.ServiceModel.Activation.ServiceBuildProvider">
   <TypeSignature Language="C#" Value="public sealed class ServiceBuildProvider : System.Web.Compilation.BuildProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ServiceBuildProvider extends System.Web.Compilation.BuildProvider" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activation.ServiceBuildProvider" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ServiceBuildProvider&#xA;Inherits BuildProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ServiceBuildProvider sealed : System::Web::Compilation::BuildProvider" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -18,7 +20,7 @@
       <AttributeName>System.ServiceModel.Activation.ServiceActivationBuildProvider</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Web.Compilation.BuildProviderAppliesTo(System.Web.Compilation.BuildProviderAppliesTo.Web)</AttributeName>
+      <AttributeName>System.Web.Compilation.BuildProviderAppliesTo</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -31,6 +33,8 @@
       <MemberSignature Language="C#" Value="public ServiceBuildProvider ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activation.ServiceBuildProvider.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ServiceBuildProvider();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activation</AssemblyName>
@@ -47,6 +51,8 @@
       <MemberSignature Language="C#" Value="public override System.Web.Compilation.CompilerType CodeCompilerType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Compilation.CompilerType CodeCompilerType" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activation.ServiceBuildProvider.CodeCompilerType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CodeCompilerType As CompilerType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::Compilation::CompilerType ^ CodeCompilerType { System::Web::Compilation::CompilerType ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activation</AssemblyName>
@@ -66,6 +72,7 @@
       <MemberSignature Language="C#" Value="public override void GenerateCode (System.Web.Compilation.AssemblyBuilder assemblyBuilder);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GenerateCode(class System.Web.Compilation.AssemblyBuilder assemblyBuilder) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activation.ServiceBuildProvider.GenerateCode(System.Web.Compilation.AssemblyBuilder)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GenerateCode(System::Web::Compilation::AssemblyBuilder ^ assemblyBuilder);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activation</AssemblyName>
@@ -88,6 +95,8 @@
       <MemberSignature Language="C#" Value="protected override System.CodeDom.CodeCompileUnit GetCodeCompileUnit (out System.Collections.IDictionary linePragmasTable);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.CodeDom.CodeCompileUnit GetCodeCompileUnit([out] class System.Collections.IDictionary&amp; linePragmasTable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activation.ServiceBuildProvider.GetCodeCompileUnit(System.Collections.IDictionary@)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetCodeCompileUnit (ByRef linePragmasTable As IDictionary) As CodeCompileUnit" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::CodeDom::CodeCompileUnit ^ GetCodeCompileUnit([Runtime::InteropServices::Out] System::Collections::IDictionary ^ % linePragmasTable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activation</AssemblyName>
@@ -110,6 +119,8 @@
       <MemberSignature Language="C#" Value="public override string GetCustomString (System.CodeDom.Compiler.CompilerResults results);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetCustomString(class System.CodeDom.Compiler.CompilerResults results) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activation.ServiceBuildProvider.GetCustomString(System.CodeDom.Compiler.CompilerResults)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetCustomString (results As CompilerResults) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetCustomString(System::CodeDom::Compiler::CompilerResults ^ results);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activation</AssemblyName>
@@ -133,6 +144,8 @@
       <MemberSignature Language="C#" Value="public override System.Web.Compilation.BuildProviderResultFlags GetResultFlags (System.CodeDom.Compiler.CompilerResults results);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype System.Web.Compilation.BuildProviderResultFlags GetResultFlags(class System.CodeDom.Compiler.CompilerResults results) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activation.ServiceBuildProvider.GetResultFlags(System.CodeDom.Compiler.CompilerResults)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetResultFlags (results As CompilerResults) As BuildProviderResultFlags" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::Compilation::BuildProviderResultFlags GetResultFlags(System::CodeDom::Compiler::CompilerResults ^ results);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activation</AssemblyName>
@@ -156,6 +169,8 @@
       <MemberSignature Language="C#" Value="public override System.Collections.ICollection VirtualPathDependencies { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ICollection VirtualPathDependencies" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activation.ServiceBuildProvider.VirtualPathDependencies" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property VirtualPathDependencies As ICollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::ICollection ^ VirtualPathDependencies { System::Collections::ICollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activation</AssemblyName>

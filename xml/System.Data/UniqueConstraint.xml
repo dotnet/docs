@@ -1,7 +1,9 @@
-<Type Name="UniqueConstraint" FullName="System.Data.UniqueConstraint">
+﻿<Type Name="UniqueConstraint" FullName="System.Data.UniqueConstraint">
   <TypeSignature Language="C#" Value="public class UniqueConstraint : System.Data.Constraint" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit UniqueConstraint extends System.Data.Constraint" />
   <TypeSignature Language="DocId" Value="T:System.Data.UniqueConstraint" />
+  <TypeSignature Language="VB.NET" Value="Public Class UniqueConstraint&#xA;Inherits Constraint" />
+  <TypeSignature Language="C++ CLI" Value="public ref class UniqueConstraint : System::Data::Constraint" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -57,10 +59,22 @@
     <altmember cref="T:System.Data.ForeignKeyConstraint" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.UniqueConstraint" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public UniqueConstraint (System.Data.DataColumn column);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Data.DataColumn column) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.UniqueConstraint.#ctor(System.Data.DataColumn)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (column As DataColumn)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UniqueConstraint(System::Data::DataColumn ^ column);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -97,6 +111,8 @@
       <MemberSignature Language="C#" Value="public UniqueConstraint (System.Data.DataColumn[] columns);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Data.DataColumn[] columns) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.UniqueConstraint.#ctor(System.Data.DataColumn[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (columns As DataColumn())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UniqueConstraint(cli::array &lt;System::Data::DataColumn ^&gt; ^ columns);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -124,6 +140,8 @@
       <MemberSignature Language="C#" Value="public UniqueConstraint (System.Data.DataColumn column, bool isPrimaryKey);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Data.DataColumn column, bool isPrimaryKey) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.UniqueConstraint.#ctor(System.Data.DataColumn,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (column As DataColumn, isPrimaryKey As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UniqueConstraint(System::Data::DataColumn ^ column, bool isPrimaryKey);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -154,6 +172,8 @@
       <MemberSignature Language="C#" Value="public UniqueConstraint (System.Data.DataColumn[] columns, bool isPrimaryKey);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Data.DataColumn[] columns, bool isPrimaryKey) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.UniqueConstraint.#ctor(System.Data.DataColumn[],System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (columns As DataColumn(), isPrimaryKey As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UniqueConstraint(cli::array &lt;System::Data::DataColumn ^&gt; ^ columns, bool isPrimaryKey);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -184,6 +204,8 @@
       <MemberSignature Language="C#" Value="public UniqueConstraint (string name, System.Data.DataColumn column);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class System.Data.DataColumn column) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.UniqueConstraint.#ctor(System.String,System.Data.DataColumn)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, column As DataColumn)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UniqueConstraint(System::String ^ name, System::Data::DataColumn ^ column);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -224,6 +246,8 @@
       <MemberSignature Language="C#" Value="public UniqueConstraint (string name, System.Data.DataColumn[] columns);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class System.Data.DataColumn[] columns) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.UniqueConstraint.#ctor(System.String,System.Data.DataColumn[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, columns As DataColumn())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UniqueConstraint(System::String ^ name, cli::array &lt;System::Data::DataColumn ^&gt; ^ columns);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -263,6 +287,8 @@
       <MemberSignature Language="C#" Value="public UniqueConstraint (string name, System.Data.DataColumn column, bool isPrimaryKey);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class System.Data.DataColumn column, bool isPrimaryKey) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.UniqueConstraint.#ctor(System.String,System.Data.DataColumn,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, column As DataColumn, isPrimaryKey As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UniqueConstraint(System::String ^ name, System::Data::DataColumn ^ column, bool isPrimaryKey);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -295,6 +321,8 @@
       <MemberSignature Language="C#" Value="public UniqueConstraint (string name, System.Data.DataColumn[] columns, bool isPrimaryKey);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class System.Data.DataColumn[] columns, bool isPrimaryKey) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.UniqueConstraint.#ctor(System.String,System.Data.DataColumn[],System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, columns As DataColumn(), isPrimaryKey As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UniqueConstraint(System::String ^ name, cli::array &lt;System::Data::DataColumn ^&gt; ^ columns, bool isPrimaryKey);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -327,6 +355,8 @@
       <MemberSignature Language="C#" Value="public UniqueConstraint (string name, string[] columnNames, bool isPrimaryKey);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, string[] columnNames, bool isPrimaryKey) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.UniqueConstraint.#ctor(System.String,System.String[],System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, columnNames As String(), isPrimaryKey As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UniqueConstraint(System::String ^ name, cli::array &lt;System::String ^&gt; ^ columnNames, bool isPrimaryKey);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -371,6 +401,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Data.DataColumn[] Columns { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.DataColumn[] Columns" />
       <MemberSignature Language="DocId" Value="P:System.Data.UniqueConstraint.Columns" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Columns As DataColumn()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property cli::array &lt;System::Data::DataColumn ^&gt; ^ Columns { cli::array &lt;System::Data::DataColumn ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -412,6 +444,8 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object key2);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object key2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.UniqueConstraint.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (key2 As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ key2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -459,6 +493,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.UniqueConstraint.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -487,6 +523,8 @@
       <MemberSignature Language="C#" Value="public bool IsPrimaryKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsPrimaryKey" />
       <MemberSignature Language="DocId" Value="P:System.Data.UniqueConstraint.IsPrimaryKey" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsPrimaryKey As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsPrimaryKey { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -529,6 +567,8 @@
       <MemberSignature Language="C#" Value="public override System.Data.DataTable Table { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.DataTable Table" />
       <MemberSignature Language="DocId" Value="P:System.Data.UniqueConstraint.Table" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Table As DataTable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Data::DataTable ^ Table { System::Data::DataTable ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -567,15 +607,5 @@
         <altmember cref="P:System.Data.DataRelation.ParentKeyConstraint" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.UniqueConstraint" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

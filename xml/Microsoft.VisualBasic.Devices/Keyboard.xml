@@ -1,7 +1,9 @@
-<Type Name="Keyboard" FullName="Microsoft.VisualBasic.Devices.Keyboard">
+﻿<Type Name="Keyboard" FullName="Microsoft.VisualBasic.Devices.Keyboard">
   <TypeSignature Language="C#" Value="public class Keyboard" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi Keyboard extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Devices.Keyboard" />
+  <TypeSignature Language="VB.NET" Value="Public Class Keyboard" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Keyboard" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -53,6 +55,8 @@
       <MemberSignature Language="C#" Value="public Keyboard ();" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Keyboard.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Keyboard();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -69,6 +73,8 @@
       <MemberSignature Language="C#" Value="public bool AltKeyDown { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AltKeyDown" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Devices.Keyboard.AltKeyDown" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AltKeyDown As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AltKeyDown { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -115,6 +121,8 @@
       <MemberSignature Language="C#" Value="public bool CapsLock { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CapsLock" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Devices.Keyboard.CapsLock" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CapsLock As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CapsLock { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -165,6 +173,8 @@
       <MemberSignature Language="C#" Value="public bool CtrlKeyDown { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CtrlKeyDown" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Devices.Keyboard.CtrlKeyDown" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CtrlKeyDown As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CtrlKeyDown { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -211,6 +221,8 @@
       <MemberSignature Language="C#" Value="public bool NumLock { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool NumLock" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Devices.Keyboard.NumLock" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NumLock As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool NumLock { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -261,6 +273,8 @@
       <MemberSignature Language="C#" Value="public bool ScrollLock { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ScrollLock" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Devices.Keyboard.ScrollLock" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ScrollLock As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ScrollLock { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -307,10 +321,21 @@
         <altmember cref="T:Microsoft.VisualBasic.Devices.Computer" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="SendKeys">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sends one or more keystrokes to the active window, as if typed on the keyboard.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="SendKeys">
       <MemberSignature Language="C#" Value="public void SendKeys (string keys);" />
       <MemberSignature Language="ILAsm" Value=".method public instance void SendKeys(string keys) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Keyboard.SendKeys(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SendKeys (keys As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SendKeys(System::String ^ keys);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -405,6 +430,8 @@
       <MemberSignature Language="C#" Value="public void SendKeys (string keys, bool wait);" />
       <MemberSignature Language="ILAsm" Value=".method public instance void SendKeys(string keys, bool wait) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Keyboard.SendKeys(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SendKeys (keys As String, wait As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SendKeys(System::String ^ keys, bool wait);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -501,6 +528,8 @@
       <MemberSignature Language="C#" Value="public bool ShiftKeyDown { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ShiftKeyDown" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Devices.Keyboard.ShiftKeyDown" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ShiftKeyDown As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShiftKeyDown { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -543,14 +572,5 @@
         <altmember cref="P:System.Windows.Forms.Control.ModifierKeys" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="SendKeys">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Sends one or more keystrokes to the active window, as if typed on the keyboard.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

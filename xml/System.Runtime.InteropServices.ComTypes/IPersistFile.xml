@@ -1,7 +1,9 @@
-<Type Name="IPersistFile" FullName="System.Runtime.InteropServices.ComTypes.IPersistFile">
+﻿<Type Name="IPersistFile" FullName="System.Runtime.InteropServices.ComTypes.IPersistFile">
   <TypeSignature Language="C#" Value="public interface IPersistFile" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IPersistFile" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComTypes.IPersistFile" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IPersistFile" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IPersistFile" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +49,8 @@
       <MemberSignature Language="C#" Value="public void GetClassID (out Guid pClassID);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetClassID([out] valuetype System.Guid&amp; pClassID) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IPersistFile.GetClassID(System.Guid@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetClassID (ByRef pClassID As Guid)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetClassID([Runtime::InteropServices::Out] Guid % pClassID);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -89,6 +93,8 @@
       <MemberSignature Language="C#" Value="public void GetCurFile (out string ppszFileName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetCurFile([out] string&amp; ppszFileName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IPersistFile.GetCurFile(System.String@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetCurFile (ByRef ppszFileName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetCurFile([Runtime::InteropServices::Out] System::String ^ % ppszFileName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -131,6 +137,8 @@
       <MemberSignature Language="C#" Value="public int IsDirty ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 IsDirty() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IPersistFile.IsDirty" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsDirty () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IsDirty();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -172,6 +180,8 @@
       <MemberSignature Language="C#" Value="public void Load (string pszFileName, int dwMode);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Load(string pszFileName, int32 dwMode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IPersistFile.Load(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Load (pszFileName As String, dwMode As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Load(System::String ^ pszFileName, int dwMode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -218,6 +228,8 @@
       <MemberSignature Language="C#" Value="public void Save (string pszFileName, bool fRemember);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Save(string pszFileName, bool fRemember) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IPersistFile.Save(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Save (pszFileName As String, fRemember As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save(System::String ^ pszFileName, bool fRemember);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -263,6 +275,8 @@
       <MemberSignature Language="C#" Value="public void SaveCompleted (string pszFileName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SaveCompleted(string pszFileName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IPersistFile.SaveCompleted(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SaveCompleted (pszFileName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SaveCompleted(System::String ^ pszFileName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="ProcessModelInfo" FullName="System.Web.ProcessModelInfo">
+﻿<Type Name="ProcessModelInfo" FullName="System.Web.ProcessModelInfo">
   <TypeSignature Language="C#" Value="public class ProcessModelInfo" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ProcessModelInfo extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.ProcessModelInfo" />
+  <TypeSignature Language="VB.NET" Value="Public Class ProcessModelInfo" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ProcessModelInfo" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +39,8 @@
       <MemberSignature Language="C#" Value="public ProcessModelInfo ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ProcessModelInfo.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ProcessModelInfo();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -52,6 +56,8 @@
       <MemberSignature Language="C#" Value="public static System.Web.ProcessInfo GetCurrentProcessInfo ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.ProcessInfo GetCurrentProcessInfo() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ProcessModelInfo.GetCurrentProcessInfo" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetCurrentProcessInfo () As ProcessInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::ProcessInfo ^ GetCurrentProcessInfo();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -87,6 +93,8 @@
       <MemberSignature Language="C#" Value="public static System.Web.ProcessInfo[] GetHistory (int numRecords);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.ProcessInfo[] GetHistory(int32 numRecords) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ProcessModelInfo.GetHistory(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetHistory (numRecords As Integer) As ProcessInfo()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Web::ProcessInfo ^&gt; ^ GetHistory(int numRecords);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

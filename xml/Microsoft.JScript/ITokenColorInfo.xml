@@ -1,7 +1,9 @@
-<Type Name="ITokenColorInfo" FullName="Microsoft.JScript.ITokenColorInfo">
+﻿<Type Name="ITokenColorInfo" FullName="Microsoft.JScript.ITokenColorInfo">
   <TypeSignature Language="C#" Value="public interface ITokenColorInfo" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITokenColorInfo" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.ITokenColorInfo" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ITokenColorInfo" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ITokenColorInfo" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -29,6 +31,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.JScript.TokenColor Color { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.JScript.TokenColor Color" />
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.ITokenColorInfo.Color" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Color As TokenColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::JScript::TokenColor Color { Microsoft::JScript::TokenColor get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -51,6 +55,8 @@
       <MemberSignature Language="C#" Value="public int EndPosition { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 EndPosition" />
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.ITokenColorInfo.EndPosition" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EndPosition As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int EndPosition { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -74,6 +80,8 @@
       <MemberSignature Language="C#" Value="public int StartPosition { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 StartPosition" />
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.ITokenColorInfo.StartPosition" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StartPosition As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int StartPosition { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

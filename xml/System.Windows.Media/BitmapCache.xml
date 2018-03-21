@@ -1,7 +1,9 @@
-<Type Name="BitmapCache" FullName="System.Windows.Media.BitmapCache">
+﻿<Type Name="BitmapCache" FullName="System.Windows.Media.BitmapCache">
   <TypeSignature Language="C#" Value="public sealed class BitmapCache : System.Windows.Media.CacheMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BitmapCache extends System.Windows.Media.CacheMode" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.BitmapCache" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BitmapCache&#xA;Inherits CacheMode" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BitmapCache sealed : System::Windows::Media::CacheMode" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,10 +48,21 @@
     <altmember cref="T:System.Windows.Media.BitmapCacheBrush" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.BitmapCache" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public BitmapCache ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.BitmapCache.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BitmapCache();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -65,6 +78,8 @@
       <MemberSignature Language="C#" Value="public BitmapCache (double renderAtScale);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 renderAtScale) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.BitmapCache.#ctor(System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (renderAtScale As Double)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BitmapCache(double renderAtScale);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -93,6 +108,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.BitmapCache Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.BitmapCache Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.BitmapCache.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As BitmapCache" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::BitmapCache ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -112,6 +129,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.BitmapCache CloneCurrentValue ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.BitmapCache CloneCurrentValue() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.BitmapCache.CloneCurrentValue" />
+      <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As BitmapCache" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::BitmapCache ^ CloneCurrentValue();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -131,6 +150,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.BitmapCache.CreateInstanceCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -150,6 +171,8 @@
       <MemberSignature Language="C#" Value="public bool EnableClearType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool EnableClearType" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.BitmapCache.EnableClearType" />
+      <MemberSignature Language="VB.NET" Value="Public Property EnableClearType As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableClearType { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -185,6 +208,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty EnableClearTypeProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty EnableClearTypeProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.BitmapCache.EnableClearTypeProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly EnableClearTypeProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ EnableClearTypeProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -202,6 +227,8 @@
       <MemberSignature Language="C#" Value="public double RenderAtScale { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 RenderAtScale" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.BitmapCache.RenderAtScale" />
+      <MemberSignature Language="VB.NET" Value="Public Property RenderAtScale As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double RenderAtScale { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -257,6 +284,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty RenderAtScaleProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty RenderAtScaleProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.BitmapCache.RenderAtScaleProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly RenderAtScaleProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ RenderAtScaleProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -274,6 +303,8 @@
       <MemberSignature Language="C#" Value="public bool SnapsToDevicePixels { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SnapsToDevicePixels" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.BitmapCache.SnapsToDevicePixels" />
+      <MemberSignature Language="VB.NET" Value="Public Property SnapsToDevicePixels As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SnapsToDevicePixels { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -307,6 +338,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty SnapsToDevicePixelsProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty SnapsToDevicePixelsProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.BitmapCache.SnapsToDevicePixelsProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SnapsToDevicePixelsProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ SnapsToDevicePixelsProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -320,14 +353,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.BitmapCache" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

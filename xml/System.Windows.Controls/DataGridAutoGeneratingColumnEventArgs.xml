@@ -1,7 +1,9 @@
-<Type Name="DataGridAutoGeneratingColumnEventArgs" FullName="System.Windows.Controls.DataGridAutoGeneratingColumnEventArgs">
+﻿<Type Name="DataGridAutoGeneratingColumnEventArgs" FullName="System.Windows.Controls.DataGridAutoGeneratingColumnEventArgs">
   <TypeSignature Language="C#" Value="public class DataGridAutoGeneratingColumnEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataGridAutoGeneratingColumnEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.DataGridAutoGeneratingColumnEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class DataGridAutoGeneratingColumnEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataGridAutoGeneratingColumnEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public DataGridAutoGeneratingColumnEventArgs (string propertyName, Type propertyType, System.Windows.Controls.DataGridColumn column);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string propertyName, class System.Type propertyType, class System.Windows.Controls.DataGridColumn column) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridAutoGeneratingColumnEventArgs.#ctor(System.String,System.Type,System.Windows.Controls.DataGridColumn)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (propertyName As String, propertyType As Type, column As DataGridColumn)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridAutoGeneratingColumnEventArgs(System::String ^ propertyName, Type ^ propertyType, System::Windows::Controls::DataGridColumn ^ column);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -41,6 +45,8 @@
       <MemberSignature Language="C#" Value="public bool Cancel { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Cancel" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridAutoGeneratingColumnEventArgs.Cancel" />
+      <MemberSignature Language="VB.NET" Value="Public Property Cancel As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Cancel { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -67,6 +73,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Controls.DataGridColumn Column { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Controls.DataGridColumn Column" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridAutoGeneratingColumnEventArgs.Column" />
+      <MemberSignature Language="VB.NET" Value="Public Property Column As DataGridColumn" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::DataGridColumn ^ Column { System::Windows::Controls::DataGridColumn ^ get(); void set(System::Windows::Controls::DataGridColumn ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -92,6 +100,8 @@
       <MemberSignature Language="C#" Value="public object PropertyDescriptor { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object PropertyDescriptor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridAutoGeneratingColumnEventArgs.PropertyDescriptor" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PropertyDescriptor As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ PropertyDescriptor { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -110,6 +120,8 @@
       <MemberSignature Language="C#" Value="public string PropertyName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PropertyName" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridAutoGeneratingColumnEventArgs.PropertyName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PropertyName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PropertyName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -128,6 +140,8 @@
       <MemberSignature Language="C#" Value="public Type PropertyType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type PropertyType" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridAutoGeneratingColumnEventArgs.PropertyType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PropertyType As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ PropertyType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

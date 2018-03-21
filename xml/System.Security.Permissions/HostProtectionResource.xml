@@ -1,7 +1,9 @@
-<Type Name="HostProtectionResource" FullName="System.Security.Permissions.HostProtectionResource">
+﻿<Type Name="HostProtectionResource" FullName="System.Security.Permissions.HostProtectionResource">
   <TypeSignature Language="C#" Value="public enum HostProtectionResource" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed HostProtectionResource extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.HostProtectionResource" />
+  <TypeSignature Language="VB.NET" Value="Public Enum HostProtectionResource" />
+  <TypeSignature Language="C++ CLI" Value="public enum class HostProtectionResource" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -47,6 +49,8 @@
       <MemberSignature Language="C#" Value="All" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.HostProtectionResource All = int32(511)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.HostProtectionResource.All" />
+      <MemberSignature Language="VB.NET" Value="All" />
+      <MemberSignature Language="C++ CLI" Value="All" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -60,6 +64,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Permissions.HostProtectionResource</ReturnType>
       </ReturnValue>
+      <MemberValue>511</MemberValue>
       <Docs>
         <summary>Exposes all host resources.</summary>
       </Docs>
@@ -68,6 +73,8 @@
       <MemberSignature Language="C#" Value="ExternalProcessMgmt" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.HostProtectionResource ExternalProcessMgmt = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.HostProtectionResource.ExternalProcessMgmt" />
+      <MemberSignature Language="VB.NET" Value="ExternalProcessMgmt" />
+      <MemberSignature Language="C++ CLI" Value="ExternalProcessMgmt" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -81,6 +88,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Permissions.HostProtectionResource</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Might create or destroy other processes.</summary>
       </Docs>
@@ -89,6 +97,8 @@
       <MemberSignature Language="C#" Value="ExternalThreading" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.HostProtectionResource ExternalThreading = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.HostProtectionResource.ExternalThreading" />
+      <MemberSignature Language="VB.NET" Value="ExternalThreading" />
+      <MemberSignature Language="C++ CLI" Value="ExternalThreading" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -102,6 +112,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Permissions.HostProtectionResource</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>Creates or manipulates threads other than its own, which might be harmful to the host.</summary>
       </Docs>
@@ -110,6 +121,8 @@
       <MemberSignature Language="C#" Value="MayLeakOnAbort" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.HostProtectionResource MayLeakOnAbort = int32(256)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.HostProtectionResource.MayLeakOnAbort" />
+      <MemberSignature Language="VB.NET" Value="MayLeakOnAbort" />
+      <MemberSignature Language="C++ CLI" Value="MayLeakOnAbort" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -123,6 +136,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Permissions.HostProtectionResource</ReturnType>
       </ReturnValue>
+      <MemberValue>256</MemberValue>
       <Docs>
         <summary>Might cause a resource leak on termination, if not protected by a safe handle or some other means of ensuring the release of resources.</summary>
       </Docs>
@@ -131,6 +145,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.HostProtectionResource None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.HostProtectionResource.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -144,6 +160,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Permissions.HostProtectionResource</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Exposes no host resources.</summary>
       </Docs>
@@ -152,6 +169,8 @@
       <MemberSignature Language="C#" Value="SecurityInfrastructure" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.HostProtectionResource SecurityInfrastructure = int32(64)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.HostProtectionResource.SecurityInfrastructure" />
+      <MemberSignature Language="VB.NET" Value="SecurityInfrastructure" />
+      <MemberSignature Language="C++ CLI" Value="SecurityInfrastructure" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -165,6 +184,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Permissions.HostProtectionResource</ReturnType>
       </ReturnValue>
+      <MemberValue>64</MemberValue>
       <Docs>
         <summary>Exposes the security infrastructure.</summary>
       </Docs>
@@ -173,6 +193,8 @@
       <MemberSignature Language="C#" Value="SelfAffectingProcessMgmt" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.HostProtectionResource SelfAffectingProcessMgmt = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.HostProtectionResource.SelfAffectingProcessMgmt" />
+      <MemberSignature Language="VB.NET" Value="SelfAffectingProcessMgmt" />
+      <MemberSignature Language="C++ CLI" Value="SelfAffectingProcessMgmt" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -186,6 +208,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Permissions.HostProtectionResource</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>Might exit the current process, terminating the server.</summary>
       </Docs>
@@ -194,6 +217,8 @@
       <MemberSignature Language="C#" Value="SelfAffectingThreading" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.HostProtectionResource SelfAffectingThreading = int32(32)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.HostProtectionResource.SelfAffectingThreading" />
+      <MemberSignature Language="VB.NET" Value="SelfAffectingThreading" />
+      <MemberSignature Language="C++ CLI" Value="SelfAffectingThreading" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -207,6 +232,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Permissions.HostProtectionResource</ReturnType>
       </ReturnValue>
+      <MemberValue>32</MemberValue>
       <Docs>
         <summary>Manipulates threads in a way that only affects user code.</summary>
       </Docs>
@@ -215,6 +241,8 @@
       <MemberSignature Language="C#" Value="SharedState" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.HostProtectionResource SharedState = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.HostProtectionResource.SharedState" />
+      <MemberSignature Language="VB.NET" Value="SharedState" />
+      <MemberSignature Language="C++ CLI" Value="SharedState" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -228,6 +256,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Permissions.HostProtectionResource</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Exposes state that might be shared between threads.</summary>
       </Docs>
@@ -236,6 +265,8 @@
       <MemberSignature Language="C#" Value="Synchronization" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.HostProtectionResource Synchronization = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.HostProtectionResource.Synchronization" />
+      <MemberSignature Language="VB.NET" Value="Synchronization" />
+      <MemberSignature Language="C++ CLI" Value="Synchronization" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -249,6 +280,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Permissions.HostProtectionResource</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Exposes synchronization.</summary>
       </Docs>
@@ -257,6 +289,8 @@
       <MemberSignature Language="C#" Value="UI" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.HostProtectionResource UI = int32(128)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.HostProtectionResource.UI" />
+      <MemberSignature Language="VB.NET" Value="UI" />
+      <MemberSignature Language="C++ CLI" Value="UI" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -270,6 +304,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Permissions.HostProtectionResource</ReturnType>
       </ReturnValue>
+      <MemberValue>128</MemberValue>
       <Docs>
         <summary>Exposes the user interface.</summary>
       </Docs>

@@ -1,7 +1,9 @@
-<Type Name="IViewAutomationPeer" FullName="System.Windows.Automation.Peers.IViewAutomationPeer">
+﻿<Type Name="IViewAutomationPeer" FullName="System.Windows.Automation.Peers.IViewAutomationPeer">
   <TypeSignature Language="C#" Value="public interface IViewAutomationPeer" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IViewAutomationPeer" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.IViewAutomationPeer" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IViewAutomationPeer" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IViewAutomationPeer" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +32,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Automation.Peers.ItemAutomationPeer CreateItemAutomationPeer (object item);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Automation.Peers.ItemAutomationPeer CreateItemAutomationPeer(object item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.IViewAutomationPeer.CreateItemAutomationPeer(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateItemAutomationPeer (item As Object) As ItemAutomationPeer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Automation::Peers::ItemAutomationPeer ^ CreateItemAutomationPeer(System::Object ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -53,6 +57,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Automation.Peers.AutomationControlType GetAutomationControlType ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Windows.Automation.Peers.AutomationControlType GetAutomationControlType() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.IViewAutomationPeer.GetAutomationControlType" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAutomationControlType () As AutomationControlType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Automation::Peers::AutomationControlType GetAutomationControlType();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -73,6 +79,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;System.Windows.Automation.Peers.AutomationPeer&gt; GetChildren (System.Collections.Generic.List&lt;System.Windows.Automation.Peers.AutomationPeer&gt; children);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.List`1&lt;class System.Windows.Automation.Peers.AutomationPeer&gt; GetChildren(class System.Collections.Generic.List`1&lt;class System.Windows.Automation.Peers.AutomationPeer&gt; children) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.IViewAutomationPeer.GetChildren(System.Collections.Generic.List{System.Windows.Automation.Peers.AutomationPeer})" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetChildren (children As List(Of AutomationPeer)) As List(Of AutomationPeer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::List&lt;System::Windows::Automation::Peers::AutomationPeer ^&gt; ^ GetChildren(System::Collections::Generic::List&lt;System::Windows::Automation::Peers::AutomationPeer ^&gt; ^ children);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -96,6 +104,7 @@
       <MemberSignature Language="C#" Value="public object GetPattern (System.Windows.Automation.Peers.PatternInterface patternInterface);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetPattern(valuetype System.Windows.Automation.Peers.PatternInterface patternInterface) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.IViewAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetPattern(System::Windows::Automation::Peers::PatternInterface patternInterface);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -119,6 +128,8 @@
       <MemberSignature Language="C#" Value="public void ItemsChanged (System.Collections.Specialized.NotifyCollectionChangedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ItemsChanged(class System.Collections.Specialized.NotifyCollectionChangedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.IViewAutomationPeer.ItemsChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ItemsChanged (e As NotifyCollectionChangedEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ItemsChanged(System::Collections::Specialized::NotifyCollectionChangedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -141,6 +152,8 @@
       <MemberSignature Language="C#" Value="public void ViewDetached ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ViewDetached() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.IViewAutomationPeer.ViewDetached" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ViewDetached ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ViewDetached();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

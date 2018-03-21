@@ -1,7 +1,9 @@
-<Type Name="Utils" FullName="Microsoft.VisualBasic.CompilerServices.Utils">
+﻿<Type Name="Utils" FullName="Microsoft.VisualBasic.CompilerServices.Utils">
   <TypeSignature Language="C#" Value="public sealed class Utils" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Utils extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.CompilerServices.Utils" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Utils" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Utils sealed" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -32,6 +34,8 @@
       <MemberSignature Language="C#" Value="public static Array CopyArray (Array arySrc, Array aryDest);" />
       <MemberSignature Language="ILAsm" Value=".method public static class System.Array CopyArray(class System.Array arySrc, class System.Array aryDest) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Utils.CopyArray(System.Array,System.Array)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CopyArray (arySrc As Array, aryDest As Array) As Array" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Array ^ CopyArray(Array ^ arySrc, Array ^ aryDest);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -64,6 +68,8 @@
       <MemberSignature Language="C#" Value="public static string GetResourceString (string ResourceKey, params string[] Args);" />
       <MemberSignature Language="ILAsm" Value=".method public static string GetResourceString(string ResourceKey, string[] Args) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Utils.GetResourceString(System.String,System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetResourceString (ResourceKey As String, ParamArray Args As String()) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetResourceString(System::String ^ ResourceKey, ... cli::array &lt;System::String ^&gt; ^ Args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -102,6 +108,8 @@
       <MemberSignature Language="C#" Value="public static string MethodToString (System.Reflection.MethodBase Method);" />
       <MemberSignature Language="ILAsm" Value=".method public static string MethodToString(class System.Reflection.MethodBase Method) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Utils.MethodToString(System.Reflection.MethodBase)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MethodToString (Method As MethodBase) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ MethodToString(System::Reflection::MethodBase ^ Method);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -132,6 +140,8 @@
       <MemberSignature Language="C#" Value="public static object SetCultureInfo (System.Globalization.CultureInfo Culture);" />
       <MemberSignature Language="ILAsm" Value=".method public static object SetCultureInfo(class System.Globalization.CultureInfo Culture) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Utils.SetCultureInfo(System.Globalization.CultureInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SetCultureInfo (Culture As CultureInfo) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ SetCultureInfo(System::Globalization::CultureInfo ^ Culture);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -162,6 +172,8 @@
       <MemberSignature Language="C#" Value="public static void ThrowException (int hr);" />
       <MemberSignature Language="ILAsm" Value=".method public static void ThrowException(int32 hr) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Utils.ThrowException(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub ThrowException (hr As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ThrowException(int hr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

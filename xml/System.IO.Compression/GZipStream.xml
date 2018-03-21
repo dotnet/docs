@@ -1,7 +1,9 @@
-<Type Name="GZipStream" FullName="System.IO.Compression.GZipStream">
+﻿<Type Name="GZipStream" FullName="System.IO.Compression.GZipStream">
   <TypeSignature Language="C#" Value="public class GZipStream : System.IO.Stream" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GZipStream extends System.IO.Stream" />
   <TypeSignature Language="DocId" Value="T:System.IO.Compression.GZipStream" />
+  <TypeSignature Language="VB.NET" Value="Public Class GZipStream&#xA;Inherits Stream" />
+  <TypeSignature Language="C++ CLI" Value="public ref class GZipStream : System::IO::Stream" />
   <AssemblyInfo>
     <AssemblyName>System.IO.Compression</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,10 +52,22 @@
     </block>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Compression</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IO.Compression.GZipStream" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public GZipStream (System.IO.Stream stream, System.IO.Compression.CompressionLevel compressionLevel);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream, valuetype System.IO.Compression.CompressionLevel compressionLevel) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Compression.GZipStream.#ctor(System.IO.Stream,System.IO.Compression.CompressionLevel)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; GZipStream(System::IO::Stream ^ stream, System::IO::Compression::CompressionLevel compressionLevel);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression</AssemblyName>
@@ -105,6 +119,7 @@
       <MemberSignature Language="C#" Value="public GZipStream (System.IO.Stream stream, System.IO.Compression.CompressionMode mode);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream, valuetype System.IO.Compression.CompressionMode mode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Compression.GZipStream.#ctor(System.IO.Stream,System.IO.Compression.CompressionMode)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; GZipStream(System::IO::Stream ^ stream, System::IO::Compression::CompressionMode mode);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression</AssemblyName>
@@ -167,6 +182,7 @@
       <MemberSignature Language="C#" Value="public GZipStream (System.IO.Stream stream, System.IO.Compression.CompressionLevel compressionLevel, bool leaveOpen);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream, valuetype System.IO.Compression.CompressionLevel compressionLevel, bool leaveOpen) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Compression.GZipStream.#ctor(System.IO.Stream,System.IO.Compression.CompressionLevel,System.Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; GZipStream(System::IO::Stream ^ stream, System::IO::Compression::CompressionLevel compressionLevel, bool leaveOpen);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression</AssemblyName>
@@ -221,6 +237,7 @@
       <MemberSignature Language="C#" Value="public GZipStream (System.IO.Stream stream, System.IO.Compression.CompressionMode mode, bool leaveOpen);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream, valuetype System.IO.Compression.CompressionMode mode, bool leaveOpen) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Compression.GZipStream.#ctor(System.IO.Stream,System.IO.Compression.CompressionMode,System.Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; GZipStream(System::IO::Stream ^ stream, System::IO::Compression::CompressionMode mode, bool leaveOpen);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression</AssemblyName>
@@ -278,6 +295,8 @@
       <MemberSignature Language="C#" Value="public System.IO.Stream BaseStream { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IO.Stream BaseStream" />
       <MemberSignature Language="DocId" Value="P:System.IO.Compression.GZipStream.BaseStream" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BaseStream As Stream" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::Stream ^ BaseStream { System::IO::Stream ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression</AssemblyName>
@@ -305,9 +324,15 @@
       </Docs>
     </Member>
     <Member MemberName="BeginRead">
-      <MemberSignature Language="C#" Value="public override IAsyncResult BeginRead (byte[] buffer, int offset, int count, AsyncCallback cback, object state);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.IAsyncResult BeginRead(unsigned int8[] buffer, int32 offset, int32 count, class System.AsyncCallback cback, object state) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.IO.Compression.GZipStream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="C#" Value="public override IAsyncResult BeginRead (byte[] array, int offset, int count, AsyncCallback asyncCallback, object asyncState);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.IAsyncResult BeginRead(unsigned int8[] array, int32 offset, int32 count, class System.AsyncCallback asyncCallback, object asyncState) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Compression.GZipStream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override IAsyncResult ^ BeginRead(cli::array &lt;System::Byte&gt; ^ array, int offset, int count, AsyncCallback ^ asyncCallback, System::Object ^ asyncState);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
+      <MemberSignature Language="C#" Value="public override IAsyncResult BeginRead (byte[] buffer, int offset, int count, AsyncCallback cback, object state);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.IAsyncResult BeginRead(unsigned int8[] buffer, int32 offset, int32 count, class System.AsyncCallback cback, object state) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Compression.GZipStream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function BeginRead (buffer As Byte(), offset As Integer, count As Integer, cback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override IAsyncResult ^ BeginRead(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count, AsyncCallback ^ cback, System::Object ^ state);" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -326,17 +351,23 @@
         <ReturnType>System.IAsyncResult</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="array" Type="System.Byte[]" />
-        <Parameter Name="offset" Type="System.Int32" />
-        <Parameter Name="count" Type="System.Int32" />
-        <Parameter Name="asyncCallback" Type="System.AsyncCallback" />
-        <Parameter Name="asyncState" Type="System.Object" />
+        <Parameter Name="array" Type="System.Byte[]" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
+        <Parameter Name="buffer" Type="System.Byte[]" Index="0" FrameworkAlternate="xamarinandroid-7.1" />
+        <Parameter Name="offset" Type="System.Int32" Index="1" />
+        <Parameter Name="count" Type="System.Int32" Index="2" />
+        <Parameter Name="asyncCallback" Type="System.AsyncCallback" Index="3" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
+        <Parameter Name="cback" Type="System.AsyncCallback" Index="3" FrameworkAlternate="xamarinandroid-7.1" />
+        <Parameter Name="asyncState" Type="System.Object" Index="4" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
+        <Parameter Name="state" Type="System.Object" Index="4" FrameworkAlternate="xamarinandroid-7.1" />
       </Parameters>
       <Docs>
+        <param name="array">To be added.</param>
         <param name="buffer">To be added.</param>
         <param name="offset">The byte offset in <c>array</c> at which to begin reading data from the stream.</param>
         <param name="count">The maximum number of bytes to read.</param>
+        <param name="asyncCallback">To be added.</param>
         <param name="cback">To be added.</param>
+        <param name="asyncState">To be added.</param>
         <param name="state">To be added.</param>
         <summary>Begins an asynchronous read operation. (Consider using the <see cref="M:System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32)" /> method instead.)</summary>
         <returns>An object that represents the asynchronous read operation, which could still be pending.</returns>
@@ -374,9 +405,15 @@
       </Docs>
     </Member>
     <Member MemberName="BeginWrite">
-      <MemberSignature Language="C#" Value="public override IAsyncResult BeginWrite (byte[] buffer, int offset, int count, AsyncCallback cback, object state);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.IAsyncResult BeginWrite(unsigned int8[] buffer, int32 offset, int32 count, class System.AsyncCallback cback, object state) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.IO.Compression.GZipStream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="C#" Value="public override IAsyncResult BeginWrite (byte[] array, int offset, int count, AsyncCallback asyncCallback, object asyncState);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.IAsyncResult BeginWrite(unsigned int8[] array, int32 offset, int32 count, class System.AsyncCallback asyncCallback, object asyncState) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Compression.GZipStream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override IAsyncResult ^ BeginWrite(cli::array &lt;System::Byte&gt; ^ array, int offset, int count, AsyncCallback ^ asyncCallback, System::Object ^ asyncState);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
+      <MemberSignature Language="C#" Value="public override IAsyncResult BeginWrite (byte[] buffer, int offset, int count, AsyncCallback cback, object state);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.IAsyncResult BeginWrite(unsigned int8[] buffer, int32 offset, int32 count, class System.AsyncCallback cback, object state) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Compression.GZipStream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function BeginWrite (buffer As Byte(), offset As Integer, count As Integer, cback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override IAsyncResult ^ BeginWrite(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count, AsyncCallback ^ cback, System::Object ^ state);" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -395,17 +432,23 @@
         <ReturnType>System.IAsyncResult</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="array" Type="System.Byte[]" />
-        <Parameter Name="offset" Type="System.Int32" />
-        <Parameter Name="count" Type="System.Int32" />
-        <Parameter Name="asyncCallback" Type="System.AsyncCallback" />
-        <Parameter Name="asyncState" Type="System.Object" />
+        <Parameter Name="array" Type="System.Byte[]" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
+        <Parameter Name="buffer" Type="System.Byte[]" Index="0" FrameworkAlternate="xamarinandroid-7.1" />
+        <Parameter Name="offset" Type="System.Int32" Index="1" />
+        <Parameter Name="count" Type="System.Int32" Index="2" />
+        <Parameter Name="asyncCallback" Type="System.AsyncCallback" Index="3" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
+        <Parameter Name="cback" Type="System.AsyncCallback" Index="3" FrameworkAlternate="xamarinandroid-7.1" />
+        <Parameter Name="asyncState" Type="System.Object" Index="4" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
+        <Parameter Name="state" Type="System.Object" Index="4" FrameworkAlternate="xamarinandroid-7.1" />
       </Parameters>
       <Docs>
+        <param name="array">To be added.</param>
         <param name="buffer">To be added.</param>
         <param name="offset">The byte offset in <c>array</c> at which to begin writing.</param>
         <param name="count">The maximum number of bytes to write.</param>
+        <param name="asyncCallback">To be added.</param>
         <param name="cback">To be added.</param>
+        <param name="asyncState">To be added.</param>
         <param name="state">To be added.</param>
         <summary>Begins an asynchronous write operation. (Consider using the <see cref="M:System.IO.Stream.WriteAsync(System.Byte[],System.Int32,System.Int32)" /> method instead.)</summary>
         <returns>An  object that represents the asynchronous write operation, which could still be pending.</returns>
@@ -432,6 +475,8 @@
       <MemberSignature Language="C#" Value="public override bool CanRead { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanRead" />
       <MemberSignature Language="DocId" Value="P:System.IO.Compression.GZipStream.CanRead" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanRead As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanRead { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression</AssemblyName>
@@ -465,6 +510,8 @@
       <MemberSignature Language="C#" Value="public override bool CanSeek { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanSeek" />
       <MemberSignature Language="DocId" Value="P:System.IO.Compression.GZipStream.CanSeek" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanSeek As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanSeek { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression</AssemblyName>
@@ -498,6 +545,8 @@
       <MemberSignature Language="C#" Value="public override bool CanWrite { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanWrite" />
       <MemberSignature Language="DocId" Value="P:System.IO.Compression.GZipStream.CanWrite" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanWrite As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanWrite { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression</AssemblyName>
@@ -531,6 +580,8 @@
       <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Compression.GZipStream.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression</AssemblyName>
@@ -576,9 +627,16 @@
       </Docs>
     </Member>
     <Member MemberName="EndRead">
-      <MemberSignature Language="C#" Value="public override int EndRead (IAsyncResult async_result);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 EndRead(class System.IAsyncResult async_result) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.IO.Compression.GZipStream.EndRead(System.IAsyncResult)" />
+      <MemberSignature Language="C#" Value="public override int EndRead (IAsyncResult asyncResult);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 EndRead(class System.IAsyncResult asyncResult) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Compression.GZipStream.EndRead(System.IAsyncResult)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function EndRead (asyncResult As IAsyncResult) As Integer" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int EndRead(IAsyncResult ^ asyncResult);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
+      <MemberSignature Language="C#" Value="public override int EndRead (IAsyncResult async_result);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 EndRead(class System.IAsyncResult async_result) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Compression.GZipStream.EndRead(System.IAsyncResult)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function EndRead (async_result As IAsyncResult) As Integer" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int EndRead(IAsyncResult ^ async_result);" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -597,7 +655,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="asyncResult" Type="System.IAsyncResult" />
+        <Parameter Name="asyncResult" Type="System.IAsyncResult" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
+        <Parameter Name="async_result" Type="System.IAsyncResult" Index="0" FrameworkAlternate="xamarinandroid-7.1" />
       </Parameters>
       <Docs>
         <param name="async_result">To be added.</param>
@@ -631,9 +690,16 @@
       </Docs>
     </Member>
     <Member MemberName="EndWrite">
-      <MemberSignature Language="C#" Value="public override void EndWrite (IAsyncResult async_result);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void EndWrite(class System.IAsyncResult async_result) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.IO.Compression.GZipStream.EndWrite(System.IAsyncResult)" />
+      <MemberSignature Language="C#" Value="public override void EndWrite (IAsyncResult asyncResult);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void EndWrite(class System.IAsyncResult asyncResult) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Compression.GZipStream.EndWrite(System.IAsyncResult)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub EndWrite (asyncResult As IAsyncResult)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void EndWrite(IAsyncResult ^ asyncResult);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
+      <MemberSignature Language="C#" Value="public override void EndWrite (IAsyncResult async_result);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void EndWrite(class System.IAsyncResult async_result) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Compression.GZipStream.EndWrite(System.IAsyncResult)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub EndWrite (async_result As IAsyncResult)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void EndWrite(IAsyncResult ^ async_result);" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -652,7 +718,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="asyncResult" Type="System.IAsyncResult" />
+        <Parameter Name="asyncResult" Type="System.IAsyncResult" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0" />
+        <Parameter Name="async_result" Type="System.IAsyncResult" Index="0" FrameworkAlternate="xamarinandroid-7.1" />
       </Parameters>
       <Docs>
         <param name="async_result">To be added.</param>
@@ -678,6 +745,8 @@
       <MemberSignature Language="C#" Value="public override void Flush ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Flush() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Compression.GZipStream.Flush" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Flush ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Flush();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression</AssemblyName>
@@ -715,6 +784,8 @@
       <MemberSignature Language="C#" Value="public override long Length { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 Length" />
       <MemberSignature Language="DocId" Value="P:System.IO.Compression.GZipStream.Length" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Length As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property long Length { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression</AssemblyName>
@@ -745,6 +816,8 @@
       <MemberSignature Language="C#" Value="public override long Position { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 Position" />
       <MemberSignature Language="DocId" Value="P:System.IO.Compression.GZipStream.Position" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Position As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property long Position { long get(); void set(long value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression</AssemblyName>
@@ -775,6 +848,8 @@
       <MemberSignature Language="C#" Value="public override int Read (byte[] array, int offset, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 Read(unsigned int8[] array, int32 offset, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Compression.GZipStream.Read(System.Byte[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Read (array As Byte(), offset As Integer, count As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int Read(cli::array &lt;System::Byte&gt; ^ array, int offset, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression</AssemblyName>
@@ -842,6 +917,7 @@
       <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task&lt;int&gt; ReadAsync (byte[] array, int offset, int count, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task`1&lt;int32&gt; ReadAsync(unsigned int8[] array, int32 offset, int32 count, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Compression.GZipStream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task&lt;int&gt; ^ ReadAsync(cli::array &lt;System::Byte&gt; ^ array, int offset, int count, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression</AssemblyName>
@@ -871,6 +947,8 @@
       <MemberSignature Language="C#" Value="public override long Seek (long offset, System.IO.SeekOrigin origin);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int64 Seek(int64 offset, valuetype System.IO.SeekOrigin origin) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Compression.GZipStream.Seek(System.Int64,System.IO.SeekOrigin)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Seek (offset As Long, origin As SeekOrigin) As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override long Seek(long offset, System::IO::SeekOrigin origin);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression</AssemblyName>
@@ -907,6 +985,8 @@
       <MemberSignature Language="C#" Value="public override void SetLength (long value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetLength(int64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Compression.GZipStream.SetLength(System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetLength (value As Long)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SetLength(long value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression</AssemblyName>
@@ -940,6 +1020,8 @@
       <MemberSignature Language="C#" Value="public override void Write (byte[] array, int offset, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(unsigned int8[] array, int32 offset, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Compression.GZipStream.Write(System.Byte[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (array As Byte(), offset As Integer, count As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(cli::array &lt;System::Byte&gt; ^ array, int offset, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression</AssemblyName>
@@ -992,6 +1074,7 @@
       <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task WriteAsync (byte[] array, int offset, int count, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task WriteAsync(unsigned int8[] array, int32 offset, int32 count, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Compression.GZipStream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task ^ WriteAsync(cli::array &lt;System::Byte&gt; ^ array, int offset, int count, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression</AssemblyName>
@@ -1017,16 +1100,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.IO.Compression</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IO.Compression.GZipStream" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

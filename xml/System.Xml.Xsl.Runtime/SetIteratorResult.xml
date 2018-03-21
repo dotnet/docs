@@ -1,7 +1,9 @@
-<Type Name="SetIteratorResult" FullName="System.Xml.Xsl.Runtime.SetIteratorResult">
+﻿<Type Name="SetIteratorResult" FullName="System.Xml.Xsl.Runtime.SetIteratorResult">
   <TypeSignature Language="C#" Value="public enum SetIteratorResult" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SetIteratorResult extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Xsl.Runtime.SetIteratorResult" />
+  <TypeSignature Language="VB.NET" Value="Public Enum SetIteratorResult" />
+  <TypeSignature Language="C++ CLI" Value="public enum class SetIteratorResult" />
   <AssemblyInfo>
     <AssemblyName>System.Data.SqlXml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +30,8 @@
       <MemberSignature Language="C#" Value="HaveCurrentNode" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Xsl.Runtime.SetIteratorResult HaveCurrentNode = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Xsl.Runtime.SetIteratorResult.HaveCurrentNode" />
+      <MemberSignature Language="VB.NET" Value="HaveCurrentNode" />
+      <MemberSignature Language="C++ CLI" Value="HaveCurrentNode" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -40,6 +44,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Xsl.Runtime.SetIteratorResult</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>This iterator's <see cref="P:System.Xml.XPath.XPathNodeIterator.Current" /> property is set to the next node in the iteration.</summary>
         <forInternalUseOnly />
@@ -49,6 +54,8 @@
       <MemberSignature Language="C#" Value="InitRightIterator" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Xsl.Runtime.SetIteratorResult InitRightIterator = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Xsl.Runtime.SetIteratorResult.InitRightIterator" />
+      <MemberSignature Language="VB.NET" Value="InitRightIterator" />
+      <MemberSignature Language="C++ CLI" Value="InitRightIterator" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -61,6 +68,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Xsl.Runtime.SetIteratorResult</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Initialize right-nested iterator.</summary>
         <forInternalUseOnly />
@@ -70,6 +78,8 @@
       <MemberSignature Language="C#" Value="NeedLeftNode" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Xsl.Runtime.SetIteratorResult NeedLeftNode = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Xsl.Runtime.SetIteratorResult.NeedLeftNode" />
+      <MemberSignature Language="VB.NET" Value="NeedLeftNode" />
+      <MemberSignature Language="C++ CLI" Value="NeedLeftNode" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -82,6 +92,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Xsl.Runtime.SetIteratorResult</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The next node needs to be fetched from the left-nested iterator.</summary>
         <forInternalUseOnly />
@@ -91,6 +102,8 @@
       <MemberSignature Language="C#" Value="NeedRightNode" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Xsl.Runtime.SetIteratorResult NeedRightNode = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Xsl.Runtime.SetIteratorResult.NeedRightNode" />
+      <MemberSignature Language="VB.NET" Value="NeedRightNode" />
+      <MemberSignature Language="C++ CLI" Value="NeedRightNode" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -103,6 +116,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Xsl.Runtime.SetIteratorResult</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The next node needs to be fetched from the right-nested iterator.</summary>
         <forInternalUseOnly />
@@ -112,6 +126,8 @@
       <MemberSignature Language="C#" Value="NoMoreNodes" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Xsl.Runtime.SetIteratorResult NoMoreNodes = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Xsl.Runtime.SetIteratorResult.NoMoreNodes" />
+      <MemberSignature Language="VB.NET" Value="NoMoreNodes" />
+      <MemberSignature Language="C++ CLI" Value="NoMoreNodes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -124,6 +140,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Xsl.Runtime.SetIteratorResult</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Iteration is complete; there are no more nodes.</summary>
         <forInternalUseOnly />

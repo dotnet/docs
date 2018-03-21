@@ -1,7 +1,9 @@
-<Type Name="ActivityValidationServices" FullName="System.Activities.Validation.ActivityValidationServices">
+﻿<Type Name="ActivityValidationServices" FullName="System.Activities.Validation.ActivityValidationServices">
   <TypeSignature Language="C#" Value="public static class ActivityValidationServices" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ActivityValidationServices extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Validation.ActivityValidationServices" />
+  <TypeSignature Language="VB.NET" Value="Public Class ActivityValidationServices" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ActivityValidationServices abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public static System.Activities.Activity Resolve (System.Activities.Activity root, string id);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Activities.Activity Resolve(class System.Activities.Activity root, string id) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Validation.ActivityValidationServices.Resolve(System.Activities.Activity,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Resolve (root As Activity, id As String) As Activity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Activities::Activity ^ Resolve(System::Activities::Activity ^ root, System::String ^ id);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -60,6 +64,8 @@
       <MemberSignature Language="C#" Value="public static System.Activities.Validation.ValidationResults Validate (System.Activities.Activity toValidate);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Activities.Validation.ValidationResults Validate(class System.Activities.Activity toValidate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Validation.ActivityValidationServices.Validate(System.Activities.Activity)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Validate (toValidate As Activity) As ValidationResults" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Activities::Validation::ValidationResults ^ Validate(System::Activities::Activity ^ toValidate);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -89,6 +95,8 @@
       <MemberSignature Language="C#" Value="public static System.Activities.Validation.ValidationResults Validate (System.Activities.Activity toValidate, System.Activities.Validation.ValidationSettings settings);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Activities.Validation.ValidationResults Validate(class System.Activities.Activity toValidate, class System.Activities.Validation.ValidationSettings settings) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Validation.ActivityValidationServices.Validate(System.Activities.Activity,System.Activities.Validation.ValidationSettings)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Validate (toValidate As Activity, settings As ValidationSettings) As ValidationResults" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Activities::Validation::ValidationResults ^ Validate(System::Activities::Activity ^ toValidate, System::Activities::Validation::ValidationSettings ^ settings);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

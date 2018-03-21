@@ -1,7 +1,9 @@
-<Type Name="DesignerSerializationOptionsAttribute" FullName="System.Windows.Markup.DesignerSerializationOptionsAttribute">
+﻿<Type Name="DesignerSerializationOptionsAttribute" FullName="System.Windows.Markup.DesignerSerializationOptionsAttribute">
   <TypeSignature Language="C#" Value="public sealed class DesignerSerializationOptionsAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DesignerSerializationOptionsAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.DesignerSerializationOptionsAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DesignerSerializationOptionsAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DesignerSerializationOptionsAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -12,7 +14,7 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.AttributeUsage(System.AttributeTargets.Method | System.AttributeTargets.Property | System.AttributeTargets.Field, AllowMultiple=false)</AttributeName>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Field | System.AttributeTargets.Method | System.AttributeTargets.Property, AllowMultiple=false)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -35,6 +37,7 @@
       <MemberSignature Language="C#" Value="public DesignerSerializationOptionsAttribute (System.Windows.Markup.DesignerSerializationOptions designerSerializationOptions);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Markup.DesignerSerializationOptions designerSerializationOptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.DesignerSerializationOptionsAttribute.#ctor(System.Windows.Markup.DesignerSerializationOptions)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DesignerSerializationOptionsAttribute(System::Windows::Markup::DesignerSerializationOptions designerSerializationOptions);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -55,6 +58,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Markup.DesignerSerializationOptions DesignerSerializationOptions { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Markup.DesignerSerializationOptions DesignerSerializationOptions" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.DesignerSerializationOptionsAttribute.DesignerSerializationOptions" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DesignerSerializationOptions As DesignerSerializationOptions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Markup::DesignerSerializationOptions DesignerSerializationOptions { System::Windows::Markup::DesignerSerializationOptions get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

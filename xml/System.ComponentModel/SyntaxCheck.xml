@@ -1,7 +1,9 @@
-<Type Name="SyntaxCheck" FullName="System.ComponentModel.SyntaxCheck">
+﻿<Type Name="SyntaxCheck" FullName="System.ComponentModel.SyntaxCheck">
   <TypeSignature Language="C#" Value="public static class SyntaxCheck" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit SyntaxCheck extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.SyntaxCheck" />
+  <TypeSignature Language="VB.NET" Value="Public Class SyntaxCheck" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SyntaxCheck abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -29,6 +31,8 @@
       <MemberSignature Language="C#" Value="public static bool CheckMachineName (string value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool CheckMachineName(string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.SyntaxCheck.CheckMachineName(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CheckMachineName (value As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool CheckMachineName(System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -62,6 +66,8 @@
       <MemberSignature Language="C#" Value="public static bool CheckPath (string value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool CheckPath(string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.SyntaxCheck.CheckPath(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CheckPath (value As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool CheckPath(System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -95,6 +101,8 @@
       <MemberSignature Language="C#" Value="public static bool CheckRootedPath (string value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool CheckRootedPath(string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.SyntaxCheck.CheckRootedPath(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CheckRootedPath (value As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool CheckRootedPath(System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

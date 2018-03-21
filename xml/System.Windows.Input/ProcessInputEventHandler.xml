@@ -1,7 +1,9 @@
-<Type Name="ProcessInputEventHandler" FullName="System.Windows.Input.ProcessInputEventHandler">
+﻿<Type Name="ProcessInputEventHandler" FullName="System.Windows.Input.ProcessInputEventHandler">
   <TypeSignature Language="C#" Value="public delegate void ProcessInputEventHandler(object sender, ProcessInputEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ProcessInputEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.ProcessInputEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub ProcessInputEventHandler(sender As Object, e As ProcessInputEventArgs)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void ProcessInputEventHandler(System::Object ^ sender, ProcessInputEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

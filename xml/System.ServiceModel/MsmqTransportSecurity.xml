@@ -1,7 +1,9 @@
-<Type Name="MsmqTransportSecurity" FullName="System.ServiceModel.MsmqTransportSecurity">
+﻿<Type Name="MsmqTransportSecurity" FullName="System.ServiceModel.MsmqTransportSecurity">
   <TypeSignature Language="C#" Value="public sealed class MsmqTransportSecurity" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MsmqTransportSecurity extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.MsmqTransportSecurity" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MsmqTransportSecurity" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MsmqTransportSecurity sealed" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,10 +17,21 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.MsmqTransportSecurity" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public MsmqTransportSecurity ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.MsmqTransportSecurity.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MsmqTransportSecurity();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -34,6 +47,8 @@
       <MemberSignature Language="C#" Value="public MsmqTransportSecurity (System.ServiceModel.MsmqTransportSecurity other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.MsmqTransportSecurity other) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.MsmqTransportSecurity.#ctor(System.ServiceModel.MsmqTransportSecurity)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (other As MsmqTransportSecurity)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MsmqTransportSecurity(System::ServiceModel::MsmqTransportSecurity ^ other);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -54,6 +69,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.MsmqAuthenticationMode MsmqAuthenticationMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.MsmqAuthenticationMode MsmqAuthenticationMode" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.MsmqTransportSecurity.MsmqAuthenticationMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property MsmqAuthenticationMode As MsmqAuthenticationMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::MsmqAuthenticationMode MsmqAuthenticationMode { System::ServiceModel::MsmqAuthenticationMode get(); void set(System::ServiceModel::MsmqAuthenticationMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -85,6 +102,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.MsmqEncryptionAlgorithm MsmqEncryptionAlgorithm { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.MsmqEncryptionAlgorithm MsmqEncryptionAlgorithm" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.MsmqTransportSecurity.MsmqEncryptionAlgorithm" />
+      <MemberSignature Language="VB.NET" Value="Public Property MsmqEncryptionAlgorithm As MsmqEncryptionAlgorithm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::MsmqEncryptionAlgorithm MsmqEncryptionAlgorithm { System::ServiceModel::MsmqEncryptionAlgorithm get(); void set(System::ServiceModel::MsmqEncryptionAlgorithm value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -116,6 +135,8 @@
       <MemberSignature Language="C#" Value="public System.Net.Security.ProtectionLevel MsmqProtectionLevel { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Net.Security.ProtectionLevel MsmqProtectionLevel" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.MsmqTransportSecurity.MsmqProtectionLevel" />
+      <MemberSignature Language="VB.NET" Value="Public Property MsmqProtectionLevel As ProtectionLevel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Security::ProtectionLevel MsmqProtectionLevel { System::Net::Security::ProtectionLevel get(); void set(System::Net::Security::ProtectionLevel value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -123,7 +144,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+          <AttributeName>System.ComponentModel.DefaultValue</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -147,6 +168,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.MsmqSecureHashAlgorithm MsmqSecureHashAlgorithm { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.MsmqSecureHashAlgorithm MsmqSecureHashAlgorithm" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.MsmqTransportSecurity.MsmqSecureHashAlgorithm" />
+      <MemberSignature Language="VB.NET" Value="Public Property MsmqSecureHashAlgorithm As MsmqSecureHashAlgorithm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::MsmqSecureHashAlgorithm MsmqSecureHashAlgorithm { System::ServiceModel::MsmqSecureHashAlgorithm get(); void set(System::ServiceModel::MsmqSecureHashAlgorithm value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -174,14 +197,5 @@
         <exception cref="T:System.ArgumentOutOfRangeException">The value is not one of <see cref="T:System.ServiceModel.MsmqSecureHashAlgorithm" /> values.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.MsmqTransportSecurity" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

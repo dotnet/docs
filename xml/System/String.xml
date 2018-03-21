@@ -1,7 +1,9 @@
-<Type Name="String" FullName="System.String">
+﻿<Type Name="String" FullName="System.String">
   <TypeSignature Language="C#" Value="public sealed class String : ICloneable, IComparable, IComparable&lt;string&gt;, IConvertible, IEquatable&lt;string&gt;, System.Collections.Generic.IEnumerable&lt;char&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit string extends System.Object implements class System.Collections.Generic.IEnumerable`1&lt;char&gt;, class System.Collections.IEnumerable, class System.ICloneable, class System.IComparable, class System.IComparable`1&lt;string&gt;, class System.IConvertible, class System.IEquatable`1&lt;string&gt;" />
   <TypeSignature Language="DocId" Value="T:System.String" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class String&#xA;Implements ICloneable, IComparable, IComparable(Of String), IConvertible, IEnumerable(Of Char), IEquatable(Of String)" />
+  <TypeSignature Language="C++ CLI" Value="public ref class String sealed : ICloneable, IComparable, IComparable&lt;System::String ^&gt;, IConvertible, IEquatable&lt;System::String ^&gt;, System::Collections::Generic::IEnumerable&lt;char&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -769,6 +771,7 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="C#" Value="public String (char* value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(char* value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.#ctor(System.Char*)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; String(char* value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -821,6 +824,8 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="C#" Value="public String (char[] value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(char[] value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.#ctor(System.Char[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As Char())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; String(cli::array &lt;char&gt; ^ value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -866,6 +871,7 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="C#" Value="public String (sbyte* value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int8* value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.#ctor(System.SByte*)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; String(System::SByte* value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -917,6 +923,8 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="C#" Value="public String (char c, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(char c, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.#ctor(System.Char,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (c As Char, count As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; String(char c, int count);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -966,6 +974,7 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="C#" Value="public String (char* value, int startIndex, int length);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(char* value, int32 startIndex, int32 length) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.#ctor(System.Char*,System.Int32,System.Int32)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; String(char* value, int startIndex, int length);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1023,6 +1032,8 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="C#" Value="public String (char[] value, int startIndex, int length);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(char[] value, int32 startIndex, int32 length) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.#ctor(System.Char[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As Char(), startIndex As Integer, length As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; String(cli::array &lt;char&gt; ^ value, int startIndex, int length);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1080,6 +1091,7 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="C#" Value="public String (sbyte* value, int startIndex, int length);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int8* value, int32 startIndex, int32 length) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.#ctor(System.SByte*,System.Int32,System.Int32)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; String(System::SByte* value, int startIndex, int length);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1148,6 +1160,7 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="C#" Value="public String (sbyte* value, int startIndex, int length, System.Text.Encoding enc);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int8* value, int32 startIndex, int32 length, class System.Text.Encoding enc) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.#ctor(System.SByte*,System.Int32,System.Int32,System.Text.Encoding)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; String(System::SByte* value, int startIndex, int length, System::Text::Encoding ^ enc);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1218,6 +1231,8 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="C#" Value="public char this[int index] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance char Chars(int32)" />
       <MemberSignature Language="DocId" Value="P:System.String.Chars(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Chars(index As Integer) As Char" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property char default[int] { char get(int index); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1281,7 +1296,12 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="C#" Value="public object Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Clone();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -1349,6 +1369,8 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="C#" Value="public static int Compare (string strA, string strB);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 Compare(string strA, string strB) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Compare(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Compare (strA As String, strB As String) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Compare(System::String ^ strA, System::String ^ strB);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1458,6 +1480,8 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="C#" Value="public static int Compare (string strA, string strB, bool ignoreCase);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 Compare(string strA, string strB, bool ignoreCase) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Compare(System.String,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Compare (strA As String, strB As String, ignoreCase As Boolean) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Compare(System::String ^ strA, System::String ^ strB, bool ignoreCase);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1563,6 +1587,8 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="C#" Value="public static int Compare (string strA, string strB, StringComparison comparisonType);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 Compare(string strA, string strB, valuetype System.StringComparison comparisonType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Compare(System.String,System.String,System.StringComparison)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Compare (strA As String, strB As String, comparisonType As StringComparison) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Compare(System::String ^ strA, System::String ^ strB, StringComparison comparisonType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1668,6 +1694,8 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="C#" Value="public static int Compare (string strA, string strB, bool ignoreCase, System.Globalization.CultureInfo culture);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 Compare(string strA, string strB, bool ignoreCase, class System.Globalization.CultureInfo culture) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Compare(System.String,System.String,System.Boolean,System.Globalization.CultureInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Compare (strA As String, strB As String, ignoreCase As Boolean, culture As CultureInfo) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Compare(System::String ^ strA, System::String ^ strB, bool ignoreCase, System::Globalization::CultureInfo ^ culture);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1773,6 +1801,8 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="C#" Value="public static int Compare (string strA, string strB, System.Globalization.CultureInfo culture, System.Globalization.CompareOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 Compare(string strA, string strB, class System.Globalization.CultureInfo culture, valuetype System.Globalization.CompareOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Compare(System.String,System.String,System.Globalization.CultureInfo,System.Globalization.CompareOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Compare (strA As String, strB As String, culture As CultureInfo, options As CompareOptions) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Compare(System::String ^ strA, System::String ^ strB, System::Globalization::CultureInfo ^ culture, System::Globalization::CompareOptions options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1863,6 +1893,8 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="C#" Value="public static int Compare (string strA, int indexA, string strB, int indexB, int length);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 Compare(string strA, int32 indexA, string strB, int32 indexB, int32 length) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Compare(System.String,System.Int32,System.String,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Compare (strA As String, indexA As Integer, strB As String, indexB As Integer, length As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Compare(System::String ^ strA, int indexA, System::String ^ strB, int indexB, int length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1985,6 +2017,8 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="C#" Value="public static int Compare (string strA, int indexA, string strB, int indexB, int length, bool ignoreCase);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 Compare(string strA, int32 indexA, string strB, int32 indexB, int32 length, bool ignoreCase) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Compare(System.String,System.Int32,System.String,System.Int32,System.Int32,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Compare (strA As String, indexA As Integer, strB As String, indexB As Integer, length As Integer, ignoreCase As Boolean) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Compare(System::String ^ strA, int indexA, System::String ^ strB, int indexB, int length, bool ignoreCase);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2106,6 +2140,8 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="C#" Value="public static int Compare (string strA, int indexA, string strB, int indexB, int length, StringComparison comparisonType);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 Compare(string strA, int32 indexA, string strB, int32 indexB, int32 length, valuetype System.StringComparison comparisonType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Compare(System.String,System.Int32,System.String,System.Int32,System.Int32,System.StringComparison)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Compare (strA As String, indexA As Integer, strB As String, indexB As Integer, length As Integer, comparisonType As StringComparison) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Compare(System::String ^ strA, int indexA, System::String ^ strB, int indexB, int length, StringComparison comparisonType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2232,6 +2268,8 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="C#" Value="public static int Compare (string strA, int indexA, string strB, int indexB, int length, bool ignoreCase, System.Globalization.CultureInfo culture);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 Compare(string strA, int32 indexA, string strB, int32 indexB, int32 length, bool ignoreCase, class System.Globalization.CultureInfo culture) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Compare(System.String,System.Int32,System.String,System.Int32,System.Int32,System.Boolean,System.Globalization.CultureInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Compare (strA As String, indexA As Integer, strB As String, indexB As Integer, length As Integer, ignoreCase As Boolean, culture As CultureInfo) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Compare(System::String ^ strA, int indexA, System::String ^ strB, int indexB, int length, bool ignoreCase, System::Globalization::CultureInfo ^ culture);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2354,6 +2392,8 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="C#" Value="public static int Compare (string strA, int indexA, string strB, int indexB, int length, System.Globalization.CultureInfo culture, System.Globalization.CompareOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 Compare(string strA, int32 indexA, string strB, int32 indexB, int32 length, class System.Globalization.CultureInfo culture, valuetype System.Globalization.CompareOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Compare(System.String,System.Int32,System.String,System.Int32,System.Int32,System.Globalization.CultureInfo,System.Globalization.CompareOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Compare (strA As String, indexA As Integer, strB As String, indexB As Integer, length As Integer, culture As CultureInfo, options As CompareOptions) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Compare(System::String ^ strA, int indexA, System::String ^ strB, int indexB, int length, System::Globalization::CultureInfo ^ culture, System::Globalization::CompareOptions options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2461,10 +2501,25 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
         <altmember cref="Overload:System.String.Equals" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="CompareOrdinal">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Compares two <see cref="T:System.String" /> objects by evaluating the numeric values of the corresponding <see cref="T:System.Char" /> objects in each string.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CompareOrdinal">
       <MemberSignature Language="C#" Value="public static int CompareOrdinal (string strA, string strB);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 CompareOrdinal(string strA, string strB) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.CompareOrdinal(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CompareOrdinal (strA As String, strB As String) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int CompareOrdinal(System::String ^ strA, System::String ^ strB);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2541,6 +2596,8 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="C#" Value="public static int CompareOrdinal (string strA, int indexA, string strB, int indexB, int length);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 CompareOrdinal(string strA, int32 indexA, string strB, int32 indexB, int32 length) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.CompareOrdinal(System.String,System.Int32,System.String,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CompareOrdinal (strA As String, indexA As Integer, strB As String, indexB As Integer, length As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int CompareOrdinal(System::String ^ strA, int indexA, System::String ^ strB, int indexB, int length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2660,7 +2717,12 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="C#" Value="public int CompareTo (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 CompareTo(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.CompareTo(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CompareTo (value As Object) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int CompareTo(System::Object ^ value);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IComparable.CompareTo(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -2748,7 +2810,12 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="C#" Value="public int CompareTo (string strB);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 CompareTo(string strB) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.CompareTo(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CompareTo (strB As String) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int CompareTo(System::String ^ strB);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IComparable`1.CompareTo(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -2840,10 +2907,25 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
         <altmember cref="M:System.String.CompareOrdinal(System.String,System.String)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Concat">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Concatenates one or more instances of <see cref="T:System.String" />, or the <see cref="T:System.String" /> representations of the values of one or more instances of <see cref="T:System.Object" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Concat">
       <MemberSignature Language="C#" Value="public static string Concat (System.Collections.Generic.IEnumerable&lt;string&gt; values);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Concat(class System.Collections.Generic.IEnumerable`1&lt;string&gt; values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Concat(System.Collections.Generic.IEnumerable{System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Concat (values As IEnumerable(Of String)) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Concat(System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ values);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2910,6 +2992,8 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="C#" Value="public static string Concat (object arg0);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Concat(object arg0) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Concat(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Concat (arg0 As Object) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Concat(System::Object ^ arg0);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2963,6 +3047,8 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="C#" Value="public static string Concat (params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Concat(object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Concat(System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Concat (ParamArray args As Object()) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Concat(... cli::array &lt;System::Object ^&gt; ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3029,6 +3115,8 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="C#" Value="public static string Concat (params string[] values);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Concat(string[] values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Concat(System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Concat (ParamArray values As String()) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Concat(... cli::array &lt;System::String ^&gt; ^ values);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3092,6 +3180,8 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="C#" Value="public static string Concat (object arg0, object arg1);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Concat(object arg0, object arg1) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Concat(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Concat (arg0 As Object, arg1 As Object) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Concat(System::Object ^ arg0, System::Object ^ arg1);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3151,6 +3241,8 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="C#" Value="public static string Concat (string str0, string str1);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Concat(string str0, string str1) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Concat(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Concat (str0 As String, str1 As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Concat(System::String ^ str0, System::String ^ str1);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3217,6 +3309,8 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="C#" Value="public static string Concat (object arg0, object arg1, object arg2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Concat(object arg0, object arg1, object arg2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Concat(System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Concat (arg0 As Object, arg1 As Object, arg2 As Object) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Concat(System::Object ^ arg0, System::Object ^ arg1, System::Object ^ arg2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3276,6 +3370,8 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="C#" Value="public static string Concat (string str0, string str1, string str2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Concat(string str0, string str1, string str2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Concat(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Concat (str0 As String, str1 As String, str2 As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Concat(System::String ^ str0, System::String ^ str1, System::String ^ str2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3344,6 +3440,8 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="C#" Value="public static string Concat (object arg0, object arg1, object arg2, object arg3);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Concat(object arg0, object arg1, object arg2, object arg3) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Concat(System.Object,System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Concat (arg0 As Object, arg1 As Object, arg2 As Object, arg3 As Object) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Concat(System::Object ^ arg0, System::Object ^ arg1, System::Object ^ arg2, System::Object ^ arg3);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3409,6 +3507,8 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="C#" Value="public static string Concat (string str0, string str1, string str2, string str3);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Concat(string str0, string str1, string str2, string str3) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Concat(System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Concat (str0 As String, str1 As String, str2 As String, str3 As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Concat(System::String ^ str0, System::String ^ str1, System::String ^ str2, System::String ^ str3);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3478,6 +3578,8 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="C#" Value="public static string Concat&lt;T&gt; (System.Collections.Generic.IEnumerable&lt;T&gt; values);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Concat&lt;T&gt;(class System.Collections.Generic.IEnumerable`1&lt;!!T&gt; values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Concat``1(System.Collections.Generic.IEnumerable{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Concat(Of T) (values As IEnumerable(Of T)) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static System::String ^ Concat(System::Collections::Generic::IEnumerable&lt;T&gt; ^ values);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3543,6 +3645,8 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="C#" Value="public bool Contains (string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Contains(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (value As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3611,6 +3715,8 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="C#" Value="public static string Copy (string str);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Copy(string str) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Copy(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Copy (str As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Copy(System::String ^ str);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3664,6 +3770,8 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="C#" Value="public void CopyTo (int sourceIndex, char[] destination, int destinationIndex, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(int32 sourceIndex, char[] destination, int32 destinationIndex, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.CopyTo(System.Int32,System.Char[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (sourceIndex As Integer, destination As Char(), destinationIndex As Integer, count As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(int sourceIndex, cli::array &lt;char&gt; ^ destination, int destinationIndex, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3751,6 +3859,8 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="C#" Value="public static readonly string Empty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string Empty" />
       <MemberSignature Language="DocId" Value="F:System.String.Empty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Empty As String " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ Empty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3788,10 +3898,21 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
         <altmember cref="M:System.String.IsNullOrWhiteSpace(System.String)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="EndsWith">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether the end of this string instance matches a specified string.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="EndsWith">
       <MemberSignature Language="C#" Value="public bool EndsWith (char value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool EndsWith(char value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.EndsWith(System.Char)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EndsWith (value As Char) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool EndsWith(char value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3814,6 +3935,8 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="C#" Value="public bool EndsWith (string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool EndsWith(string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.EndsWith(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EndsWith (value As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool EndsWith(System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3880,6 +4003,8 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="C#" Value="public bool EndsWith (string value, StringComparison comparisonType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool EndsWith(string value, valuetype System.StringComparison comparisonType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.EndsWith(System.String,System.StringComparison)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EndsWith (value As String, comparisonType As StringComparison) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool EndsWith(System::String ^ value, StringComparison comparisonType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3947,6 +4072,8 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="C#" Value="public bool EndsWith (string value, bool ignoreCase, System.Globalization.CultureInfo culture);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool EndsWith(string value, bool ignoreCase, class System.Globalization.CultureInfo culture) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.EndsWith(System.String,System.Boolean,System.Globalization.CultureInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EndsWith (value As String, ignoreCase As Boolean, culture As CultureInfo) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool EndsWith(System::String ^ value, bool ignoreCase, System::Globalization::CultureInfo ^ culture);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4000,10 +4127,25 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
         <altmember cref="P:System.Globalization.CultureInfo.InvariantCulture" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether two <see cref="T:System.String" /> objects have the same value.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Equals">
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4063,7 +4205,12 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="C#" Value="public bool Equals (string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Equals(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (value As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::String ^ value);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -4120,6 +4267,8 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="C#" Value="public static bool Equals (string a, string b);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Equals(string a, string b) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Equals(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Equals (a As String, b As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool Equals(System::String ^ a, System::String ^ b);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4175,6 +4324,8 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="C#" Value="public bool Equals (string value, StringComparison comparisonType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Equals(string value, valuetype System.StringComparison comparisonType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Equals(System.String,System.StringComparison)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (value As String, comparisonType As StringComparison) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(System::String ^ value, StringComparison comparisonType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4241,6 +4392,8 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <MemberSignature Language="C#" Value="public static bool Equals (string a, string b, StringComparison comparisonType);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Equals(string a, string b, valuetype System.StringComparison comparisonType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Equals(System.String,System.String,System.StringComparison)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Equals (a As String, b As String, comparisonType As StringComparison) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool Equals(System::String ^ a, System::String ^ b, StringComparison comparisonType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4661,6 +4814,8 @@ The following are some of the examples included in the article:
       <MemberSignature Language="C#" Value="public static string Format (string format, object arg0);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Format(string format, object arg0) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Format(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Format (format As String, arg0 As Object) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Format(System::String ^ format, System::Object ^ arg0);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4723,6 +4878,8 @@ This method uses the [composite formatting feature](~/docs/standard/base-types/c
       <MemberSignature Language="C#" Value="public static string Format (string format, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Format(string format, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Format(System.String,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Format (format As String, ParamArray args As Object()) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Format(System::String ^ format, ... cli::array &lt;System::Object ^&gt; ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4800,6 +4957,8 @@ This method uses the [composite formatting feature](~/docs/standard/base-types/c
       <MemberSignature Language="C#" Value="public static string Format (IFormatProvider provider, string format, object arg0);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Format(class System.IFormatProvider provider, string format, object arg0) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Format(System.IFormatProvider,System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Format (provider As IFormatProvider, format As String, arg0 As Object) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Format(IFormatProvider ^ provider, System::String ^ format, System::Object ^ arg0);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4857,6 +5016,8 @@ This method uses the [composite formatting feature](~/docs/standard/base-types/c
       <MemberSignature Language="C#" Value="public static string Format (IFormatProvider provider, string format, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Format(class System.IFormatProvider provider, string format, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Format(System.IFormatProvider,System.String,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Format (provider As IFormatProvider, format As String, ParamArray args As Object()) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Format(IFormatProvider ^ provider, System::String ^ format, ... cli::array &lt;System::Object ^&gt; ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4932,6 +5093,8 @@ This method uses the [composite formatting feature](~/docs/standard/base-types/c
       <MemberSignature Language="C#" Value="public static string Format (string format, object arg0, object arg1);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Format(string format, object arg0, object arg1) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Format(System.String,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Format (format As String, arg0 As Object, arg1 As Object) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Format(System::String ^ format, System::Object ^ arg0, System::Object ^ arg1);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4997,6 +5160,8 @@ This method uses the [composite formatting feature](~/docs/standard/base-types/c
       <MemberSignature Language="C#" Value="public static string Format (IFormatProvider provider, string format, object arg0, object arg1);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Format(class System.IFormatProvider provider, string format, object arg0, object arg1) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Format(System.IFormatProvider,System.String,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Format (provider As IFormatProvider, format As String, arg0 As Object, arg1 As Object) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Format(IFormatProvider ^ provider, System::String ^ format, System::Object ^ arg0, System::Object ^ arg1);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -5056,6 +5221,8 @@ This method uses the [composite formatting feature](~/docs/standard/base-types/c
       <MemberSignature Language="C#" Value="public static string Format (string format, object arg0, object arg1, object arg2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Format(string format, object arg0, object arg1, object arg2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Format(System.String,System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Format (format As String, arg0 As Object, arg1 As Object, arg2 As Object) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Format(System::String ^ format, System::Object ^ arg0, System::Object ^ arg1, System::Object ^ arg2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -5123,6 +5290,8 @@ This method uses the [composite formatting feature](~/docs/standard/base-types/c
       <MemberSignature Language="C#" Value="public static string Format (IFormatProvider provider, string format, object arg0, object arg1, object arg2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Format(class System.IFormatProvider provider, string format, object arg0, object arg1, object arg2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Format(System.IFormatProvider,System.String,System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Format (provider As IFormatProvider, format As String, arg0 As Object, arg1 As Object, arg2 As Object) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Format(IFormatProvider ^ provider, System::String ^ format, System::Object ^ arg0, System::Object ^ arg1, System::Object ^ arg2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -5184,6 +5353,8 @@ This method uses the [composite formatting feature](~/docs/standard/base-types/c
       <MemberSignature Language="C#" Value="public CharEnumerator GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.CharEnumerator GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As CharEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CharEnumerator ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -5235,6 +5406,8 @@ This method uses the [composite formatting feature](~/docs/standard/base-types/c
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -5347,6 +5520,8 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="public int GetHashCode (StringComparison comparisonType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 GetHashCode(valuetype System.StringComparison comparisonType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.GetHashCode(System.StringComparison)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetHashCode (comparisonType As StringComparison) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetHashCode(StringComparison comparisonType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -5369,7 +5544,12 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="public TypeCode GetTypeCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.TypeCode GetTypeCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.GetTypeCode" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetTypeCode () As TypeCode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual TypeCode GetTypeCode();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.GetTypeCode</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -5404,10 +5584,25 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="IndexOf">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reports the zero-based index of the first occurrence of a specified Unicode character or string within this instance. The method returns -1 if the character or string is not found in this instance.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="IndexOf">
       <MemberSignature Language="C#" Value="public int IndexOf (char value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(char value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.IndexOf(System.Char)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As Char) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(char value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -5465,6 +5660,8 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="public int IndexOf (string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.IndexOf(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As String) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -5539,6 +5736,8 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="public int IndexOf (char value, int startIndex);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(char value, int32 startIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.IndexOf(System.Char,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As Char, startIndex As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(char value, int startIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -5603,6 +5802,8 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="public int IndexOf (string value, int startIndex);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(string value, int32 startIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.IndexOf(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As String, startIndex As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::String ^ value, int startIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -5675,6 +5876,8 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="public int IndexOf (string value, StringComparison comparisonType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(string value, valuetype System.StringComparison comparisonType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.IndexOf(System.String,System.StringComparison)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As String, comparisonType As StringComparison) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::String ^ value, StringComparison comparisonType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -5741,6 +5944,8 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="public int IndexOf (char value, int startIndex, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(char value, int32 startIndex, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.IndexOf(System.Char,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As Char, startIndex As Integer, count As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(char value, int startIndex, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -5815,6 +6020,8 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="public int IndexOf (string value, int startIndex, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(string value, int32 startIndex, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.IndexOf(System.String,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As String, startIndex As Integer, count As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::String ^ value, int startIndex, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -5897,6 +6104,8 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="public int IndexOf (string value, int startIndex, StringComparison comparisonType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(string value, int32 startIndex, valuetype System.StringComparison comparisonType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.IndexOf(System.String,System.Int32,System.StringComparison)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As String, startIndex As Integer, comparisonType As StringComparison) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::String ^ value, int startIndex, StringComparison comparisonType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -5967,6 +6176,8 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="public int IndexOf (string value, int startIndex, int count, StringComparison comparisonType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(string value, int32 startIndex, int32 count, valuetype System.StringComparison comparisonType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.IndexOf(System.String,System.Int32,System.Int32,System.StringComparison)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As String, startIndex As Integer, count As Integer, comparisonType As StringComparison) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::String ^ value, int startIndex, int count, StringComparison comparisonType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -6050,10 +6261,25 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
         </block>
       </Docs>
     </Member>
+    <MemberGroup MemberName="IndexOfAny">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reports the index of the first occurrence in this instance of any character in a specified array of Unicode characters. The method returns -1 if the characters in the array are not found in this instance.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="IndexOfAny">
       <MemberSignature Language="C#" Value="public int IndexOfAny (char[] anyOf);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOfAny(char[] anyOf) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.IndexOfAny(System.Char[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOfAny (anyOf As Char()) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOfAny(cli::array &lt;char&gt; ^ anyOf);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -6113,6 +6339,8 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="public int IndexOfAny (char[] anyOf, int startIndex);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOfAny(char[] anyOf, int32 startIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.IndexOfAny(System.Char[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOfAny (anyOf As Char(), startIndex As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOfAny(cli::array &lt;char&gt; ^ anyOf, int startIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -6186,6 +6414,8 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="public int IndexOfAny (char[] anyOf, int startIndex, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOfAny(char[] anyOf, int32 startIndex, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.IndexOfAny(System.Char[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOfAny (anyOf As Char(), startIndex As Integer, count As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOfAny(cli::array &lt;char&gt; ^ anyOf, int startIndex, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -6261,6 +6491,8 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="public string Insert (int startIndex, string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string Insert(int32 startIndex, string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Insert(System.Int32,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Insert (startIndex As Integer, value As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ Insert(int startIndex, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -6343,6 +6575,8 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="public static string Intern (string str);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Intern(string str) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Intern(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Intern (str As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Intern(System::String ^ str);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -6422,6 +6656,8 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="public static string IsInterned (string str);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string IsInterned(string str) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.IsInterned(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsInterned (str As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ IsInterned(System::String ^ str);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -6487,10 +6723,22 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
         <altmember cref="M:System.String.Intern(System.String)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="IsNormalized">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Indicates whether this string is in a particular Unicode normalization form.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="IsNormalized">
       <MemberSignature Language="C#" Value="public bool IsNormalized ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsNormalized() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.IsNormalized" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsNormalized () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsNormalized();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -6545,6 +6793,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="public bool IsNormalized (System.Text.NormalizationForm normalizationForm);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsNormalized(valuetype System.Text.NormalizationForm normalizationForm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.IsNormalized(System.Text.NormalizationForm)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsNormalized(System::Text::NormalizationForm normalizationForm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -6607,6 +6856,8 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="public static bool IsNullOrEmpty (string value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsNullOrEmpty(string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.IsNullOrEmpty(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsNullOrEmpty (value As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsNullOrEmpty(System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -6680,6 +6931,8 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="public static bool IsNullOrWhiteSpace (string value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsNullOrWhiteSpace(string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.IsNullOrWhiteSpace(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsNullOrWhiteSpace (value As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsNullOrWhiteSpace(System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -6733,10 +6986,22 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
         <altmember cref="M:System.String.IsNullOrEmpty(System.String)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Join">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Concatenates the elements of a specified array or the members of a collection, using the specified separator between each element or member.</summary>
+        <altmember cref="M:System.String.Split(System.Char[])" />
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Join">
       <MemberSignature Language="C#" Value="public static string Join (char separator, params object[] values);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Join(char separator, object[] values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Join(System.Char,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Join (separator As Char, ParamArray values As Object()) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Join(char separator, ... cli::array &lt;System::Object ^&gt; ^ values);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -6767,6 +7032,8 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="public static string Join (char separator, params string[] value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Join(char separator, string[] value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Join(System.Char,System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Join (separator As Char, ParamArray value As String()) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Join(char separator, ... cli::array &lt;System::String ^&gt; ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -6797,6 +7064,8 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="public static string Join (string separator, System.Collections.Generic.IEnumerable&lt;string&gt; values);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Join(string separator, class System.Collections.Generic.IEnumerable`1&lt;string&gt; values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Join(System.String,System.Collections.Generic.IEnumerable{System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Join (separator As String, values As IEnumerable(Of String)) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Join(System::String ^ separator, System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ values);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -6862,6 +7131,8 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="public static string Join (string separator, params object[] values);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Join(string separator, object[] values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Join(System.String,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Join (separator As String, ParamArray values As Object()) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Join(System::String ^ separator, ... cli::array &lt;System::Object ^&gt; ^ values);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -6936,6 +7207,8 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="public static string Join (string separator, params string[] value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Join(string separator, string[] value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Join(System.String,System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Join (separator As String, ParamArray value As String()) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Join(System::String ^ separator, ... cli::array &lt;System::String ^&gt; ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -7000,6 +7273,8 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="public static string Join (char separator, string[] value, int startIndex, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Join(char separator, string[] value, int32 startIndex, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Join(System.Char,System.String[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Join (separator As Char, value As String(), startIndex As Integer, count As Integer) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Join(char separator, cli::array &lt;System::String ^&gt; ^ value, int startIndex, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -7028,6 +7303,8 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="public static string Join (string separator, string[] value, int startIndex, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Join(string separator, string[] value, int32 startIndex, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Join(System.String,System.String[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Join (separator As String, value As String(), startIndex As Integer, count As Integer) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Join(System::String ^ separator, cli::array &lt;System::String ^&gt; ^ value, int startIndex, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -7106,6 +7383,8 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="public static string Join&lt;T&gt; (char separator, System.Collections.Generic.IEnumerable&lt;T&gt; values);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Join&lt;T&gt;(char separator, class System.Collections.Generic.IEnumerable`1&lt;!!T&gt; values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Join``1(System.Char,System.Collections.Generic.IEnumerable{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Join(Of T) (separator As Char, values As IEnumerable(Of T)) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static System::String ^ Join(char separator, System::Collections::Generic::IEnumerable&lt;T&gt; ^ values);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -7134,6 +7413,8 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="public static string Join&lt;T&gt; (string separator, System.Collections.Generic.IEnumerable&lt;T&gt; values);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Join&lt;T&gt;(string separator, class System.Collections.Generic.IEnumerable`1&lt;!!T&gt; values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Join``1(System.String,System.Collections.Generic.IEnumerable{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Join(Of T) (separator As String, values As IEnumerable(Of T)) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static System::String ^ Join(System::String ^ separator, System::Collections::Generic::IEnumerable&lt;T&gt; ^ values);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -7201,10 +7482,25 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
         <altmember cref="M:System.String.Split(System.Char[])" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="LastIndexOf">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reports the zero-based index position of the last occurrence of a specified Unicode character or string within this instance. The method returns -1 if the character or string is not found in this instance.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="LastIndexOf">
       <MemberSignature Language="C#" Value="public int LastIndexOf (char value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 LastIndexOf(char value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.LastIndexOf(System.Char)" />
+      <MemberSignature Language="VB.NET" Value="Public Function LastIndexOf (value As Char) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int LastIndexOf(char value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -7263,6 +7559,8 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="public int LastIndexOf (string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 LastIndexOf(string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.LastIndexOf(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function LastIndexOf (value As String) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int LastIndexOf(System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -7331,6 +7629,8 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="public int LastIndexOf (char value, int startIndex);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 LastIndexOf(char value, int32 startIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.LastIndexOf(System.Char,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function LastIndexOf (value As Char, startIndex As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int LastIndexOf(char value, int startIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -7392,6 +7692,8 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="public int LastIndexOf (string value, int startIndex);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 LastIndexOf(string value, int32 startIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.LastIndexOf(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function LastIndexOf (value As String, startIndex As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int LastIndexOf(System::String ^ value, int startIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -7468,6 +7770,8 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="public int LastIndexOf (string value, StringComparison comparisonType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 LastIndexOf(string value, valuetype System.StringComparison comparisonType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.LastIndexOf(System.String,System.StringComparison)" />
+      <MemberSignature Language="VB.NET" Value="Public Function LastIndexOf (value As String, comparisonType As StringComparison) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int LastIndexOf(System::String ^ value, StringComparison comparisonType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -7536,6 +7840,8 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="public int LastIndexOf (char value, int startIndex, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 LastIndexOf(char value, int32 startIndex, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.LastIndexOf(System.Char,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function LastIndexOf (value As Char, startIndex As Integer, count As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int LastIndexOf(char value, int startIndex, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -7605,6 +7911,8 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="public int LastIndexOf (string value, int startIndex, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 LastIndexOf(string value, int32 startIndex, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.LastIndexOf(System.String,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function LastIndexOf (value As String, startIndex As Integer, count As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int LastIndexOf(System::String ^ value, int startIndex, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -7700,6 +8008,8 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="public int LastIndexOf (string value, int startIndex, StringComparison comparisonType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 LastIndexOf(string value, int32 startIndex, valuetype System.StringComparison comparisonType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.LastIndexOf(System.String,System.Int32,System.StringComparison)" />
+      <MemberSignature Language="VB.NET" Value="Public Function LastIndexOf (value As String, startIndex As Integer, comparisonType As StringComparison) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int LastIndexOf(System::String ^ value, int startIndex, StringComparison comparisonType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -7775,6 +8085,8 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="public int LastIndexOf (string value, int startIndex, int count, StringComparison comparisonType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 LastIndexOf(string value, int32 startIndex, int32 count, valuetype System.StringComparison comparisonType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.LastIndexOf(System.String,System.Int32,System.Int32,System.StringComparison)" />
+      <MemberSignature Language="VB.NET" Value="Public Function LastIndexOf (value As String, startIndex As Integer, count As Integer, comparisonType As StringComparison) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int LastIndexOf(System::String ^ value, int startIndex, int count, StringComparison comparisonType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -7870,10 +8182,25 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
         </block>
       </Docs>
     </Member>
+    <MemberGroup MemberName="LastIndexOfAny">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reports the zero-based index position of the last occurrence in this instance of one or more characters specified in a Unicode array. The method returns -1 if the characters in the array are not found in this instance.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="LastIndexOfAny">
       <MemberSignature Language="C#" Value="public int LastIndexOfAny (char[] anyOf);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 LastIndexOfAny(char[] anyOf) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.LastIndexOfAny(System.Char[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function LastIndexOfAny (anyOf As Char()) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int LastIndexOfAny(cli::array &lt;char&gt; ^ anyOf);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -7937,6 +8264,8 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="public int LastIndexOfAny (char[] anyOf, int startIndex);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 LastIndexOfAny(char[] anyOf, int32 startIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.LastIndexOfAny(System.Char[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function LastIndexOfAny (anyOf As Char(), startIndex As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int LastIndexOfAny(cli::array &lt;char&gt; ^ anyOf, int startIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -8003,6 +8332,8 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="public int LastIndexOfAny (char[] anyOf, int startIndex, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 LastIndexOfAny(char[] anyOf, int32 startIndex, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.LastIndexOfAny(System.Char[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function LastIndexOfAny (anyOf As Char(), startIndex As Integer, count As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int LastIndexOfAny(cli::array &lt;char&gt; ^ anyOf, int startIndex, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -8075,6 +8406,8 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="public int Length { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Length" />
       <MemberSignature Language="DocId" Value="P:System.String.Length" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Length As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Length { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -8125,10 +8458,22 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
         <altmember cref="T:System.Int32" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Normalize">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a new string whose binary representation is in a particular Unicode normalization form.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Normalize">
       <MemberSignature Language="C#" Value="public string Normalize ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string Normalize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Normalize" />
+      <MemberSignature Language="VB.NET" Value="Public Function Normalize () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ Normalize();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -8200,6 +8545,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="public string Normalize (System.Text.NormalizationForm normalizationForm);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string Normalize(valuetype System.Text.NormalizationForm normalizationForm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Normalize(System.Text.NormalizationForm)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ Normalize(System::Text::NormalizationForm normalizationForm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -8271,6 +8617,8 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="public static bool operator == (string a, string b);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(string a, string b) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.op_Equality(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (a As String, b As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::String ^ a, System::String ^ b);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -8327,6 +8675,8 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="public static bool operator != (string a, string b);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(string a, string b) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.op_Inequality(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (a As String, b As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::String ^ a, System::String ^ b);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -8381,10 +8731,25 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="PadLeft">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a new string of a specified length in which the beginning of the current string is padded with spaces or with a specified Unicode character.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="PadLeft">
       <MemberSignature Language="C#" Value="public string PadLeft (int totalWidth);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string PadLeft(int32 totalWidth) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.PadLeft(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function PadLeft (totalWidth As Integer) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ PadLeft(int totalWidth);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -8446,6 +8811,8 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="public string PadLeft (int totalWidth, char paddingChar);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string PadLeft(int32 totalWidth, char paddingChar) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.PadLeft(System.Int32,System.Char)" />
+      <MemberSignature Language="VB.NET" Value="Public Function PadLeft (totalWidth As Integer, paddingChar As Char) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ PadLeft(int totalWidth, char paddingChar);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -8504,10 +8871,25 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
         <altmember cref="M:System.String.Trim(System.Char[])" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="PadRight">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a new string of a specified length in which the end of the current string is padded with spaces or with a specified Unicode character.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="PadRight">
       <MemberSignature Language="C#" Value="public string PadRight (int totalWidth);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string PadRight(int32 totalWidth) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.PadRight(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function PadRight (totalWidth As Integer) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ PadRight(int totalWidth);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -8569,6 +8951,8 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="public string PadRight (int totalWidth, char paddingChar);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string PadRight(int32 totalWidth, char paddingChar) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.PadRight(System.Int32,System.Char)" />
+      <MemberSignature Language="VB.NET" Value="Public Function PadRight (totalWidth As Integer, paddingChar As Char) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ PadRight(int totalWidth, char paddingChar);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -8627,10 +9011,25 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
         <altmember cref="M:System.String.Trim(System.Char[])" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Remove">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a new string in which a specified number of characters from the current string are deleted.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Remove">
       <MemberSignature Language="C#" Value="public string Remove (int startIndex);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string Remove(int32 startIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Remove(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Remove (startIndex As Integer) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ Remove(int startIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -8699,6 +9098,8 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="public string Remove (int startIndex, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string Remove(int32 startIndex, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Remove(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Remove (startIndex As Integer, count As Integer) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ Remove(int startIndex, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -8769,10 +9170,25 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
         <altmember cref="M:System.String.Trim(System.Char[])" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Replace">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a new string in which all occurrences of a specified Unicode character or <see cref="T:System.String" /> in the current string are replaced with another specified Unicode character or <see cref="T:System.String" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Replace">
       <MemberSignature Language="C#" Value="public string Replace (char oldChar, char newChar);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string Replace(char oldChar, char newChar) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Replace(System.Char,System.Char)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Replace (oldChar As Char, newChar As Char) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ Replace(char oldChar, char newChar);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -8842,6 +9258,8 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="public string Replace (string oldValue, string newValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string Replace(string oldValue, string newValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Replace(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Replace (oldValue As String, newValue As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ Replace(System::String ^ oldValue, System::String ^ newValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -8916,6 +9334,8 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="public string Replace (string oldValue, string newValue, StringComparison comparisonType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string Replace(string oldValue, string newValue, valuetype System.StringComparison comparisonType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Replace(System.String,System.String,System.StringComparison)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Replace (oldValue As String, newValue As String, comparisonType As StringComparison) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ Replace(System::String ^ oldValue, System::String ^ newValue, StringComparison comparisonType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -8942,6 +9362,8 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="public string Replace (string oldValue, string newValue, bool ignoreCase, System.Globalization.CultureInfo culture);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string Replace(string oldValue, string newValue, bool ignoreCase, class System.Globalization.CultureInfo culture) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Replace(System.String,System.String,System.Boolean,System.Globalization.CultureInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Replace (oldValue As String, newValue As String, ignoreCase As Boolean, culture As CultureInfo) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ Replace(System::String ^ oldValue, System::String ^ newValue, bool ignoreCase, System::Globalization::CultureInfo ^ culture);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -9070,6 +9492,8 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="public string[] Split (params char[] separator);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string[] Split(char[] separator) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Split(System.Char[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function Split (ParamArray separator As Char()) As String()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::String ^&gt; ^ Split(... cli::array &lt;char&gt; ^ separator);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -9254,6 +9678,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="public string[] Split (char separator, StringSplitOptions options = System.StringSplitOptions.None);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string[] Split(char separator, valuetype System.StringSplitOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Split(System.Char,System.StringSplitOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Split (separator As Char, Optional options As StringSplitOptions = System.StringSplitOptions.None) As String()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -9278,6 +9703,8 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="public string[] Split (char[] separator, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string[] Split(char[] separator, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Split(System.Char[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Split (separator As Char(), count As Integer) As String()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::String ^&gt; ^ Split(cli::array &lt;char&gt; ^ separator, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -9373,6 +9800,8 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="public string[] Split (char[] separator, StringSplitOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string[] Split(char[] separator, valuetype System.StringSplitOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Split(System.Char[],System.StringSplitOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Split (separator As Char(), options As StringSplitOptions) As String()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::String ^&gt; ^ Split(cli::array &lt;char&gt; ^ separator, StringSplitOptions options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -9475,6 +9904,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="public string[] Split (string separator, StringSplitOptions options = System.StringSplitOptions.None);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string[] Split(string separator, valuetype System.StringSplitOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Split(System.String,System.StringSplitOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Split (separator As String, Optional options As StringSplitOptions = System.StringSplitOptions.None) As String()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -9499,6 +9929,8 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="public string[] Split (string[] separator, StringSplitOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string[] Split(string[] separator, valuetype System.StringSplitOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Split(System.String[],System.StringSplitOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Split (separator As String(), options As StringSplitOptions) As String()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::String ^&gt; ^ Split(cli::array &lt;System::String ^&gt; ^ separator, StringSplitOptions options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -9618,6 +10050,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="public string[] Split (char separator, int count, StringSplitOptions options = System.StringSplitOptions.None);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string[] Split(char separator, int32 count, valuetype System.StringSplitOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Split(System.Char,System.Int32,System.StringSplitOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Split (separator As Char, count As Integer, Optional options As StringSplitOptions = System.StringSplitOptions.None) As String()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -9644,6 +10077,8 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="public string[] Split (char[] separator, int count, StringSplitOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string[] Split(char[] separator, int32 count, valuetype System.StringSplitOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Split(System.Char[],System.Int32,System.StringSplitOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Split (separator As Char(), count As Integer, options As StringSplitOptions) As String()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::String ^&gt; ^ Split(cli::array &lt;char&gt; ^ separator, int count, StringSplitOptions options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -9732,6 +10167,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="public string[] Split (string separator, int count, StringSplitOptions options = System.StringSplitOptions.None);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string[] Split(string separator, int32 count, valuetype System.StringSplitOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Split(System.String,System.Int32,System.StringSplitOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Split (separator As String, count As Integer, Optional options As StringSplitOptions = System.StringSplitOptions.None) As String()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -9758,6 +10194,8 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="public string[] Split (string[] separator, int count, StringSplitOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string[] Split(string[] separator, int32 count, valuetype System.StringSplitOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Split(System.String[],System.Int32,System.StringSplitOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Split (separator As String(), count As Integer, options As StringSplitOptions) As String()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::String ^&gt; ^ Split(cli::array &lt;System::String ^&gt; ^ separator, int count, StringSplitOptions options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -9860,10 +10298,21 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
         </block>
       </Docs>
     </Member>
+    <MemberGroup MemberName="StartsWith">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether the beginning of this string instance matches a specified string.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="StartsWith">
       <MemberSignature Language="C#" Value="public bool StartsWith (char value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool StartsWith(char value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.StartsWith(System.Char)" />
+      <MemberSignature Language="VB.NET" Value="Public Function StartsWith (value As Char) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool StartsWith(char value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -9886,6 +10335,8 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="public bool StartsWith (string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool StartsWith(string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.StartsWith(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function StartsWith (value As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool StartsWith(System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -9946,6 +10397,8 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="public bool StartsWith (string value, StringComparison comparisonType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool StartsWith(string value, valuetype System.StringComparison comparisonType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.StartsWith(System.String,System.StringComparison)" />
+      <MemberSignature Language="VB.NET" Value="Public Function StartsWith (value As String, comparisonType As StringComparison) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool StartsWith(System::String ^ value, StringComparison comparisonType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -10019,6 +10472,8 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="public bool StartsWith (string value, bool ignoreCase, System.Globalization.CultureInfo culture);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool StartsWith(string value, bool ignoreCase, class System.Globalization.CultureInfo culture) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.StartsWith(System.String,System.Boolean,System.Globalization.CultureInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Function StartsWith (value As String, ignoreCase As Boolean, culture As CultureInfo) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool StartsWith(System::String ^ value, bool ignoreCase, System::Globalization::CultureInfo ^ culture);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -10071,10 +10526,27 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
           <paramref name="value" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Substring">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves a substring from this instance.  
+  
+ This member is overloaded. For complete information about this member, including syntax, usage, and examples, click a name in the overload list.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Substring">
       <MemberSignature Language="C#" Value="public string Substring (int startIndex);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string Substring(int32 startIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Substring(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Substring (startIndex As Integer) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ Substring(int startIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -10150,6 +10622,8 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="public string Substring (int startIndex, int length);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string Substring(int32 startIndex, int32 length) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Substring(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Substring (startIndex As Integer, length As Integer) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ Substring(int startIndex, int length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -10257,7 +10731,12 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="System.Collections.Generic.IEnumerator&lt;char&gt; IEnumerable&lt;char&gt;.GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.Generic.IEnumerator`1&lt;char&gt; System.Collections.Generic.IEnumerable&lt;char&gt;.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.System#Collections#Generic#IEnumerable&lt;char&gt;#GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator(Of Char) Implements IEnumerable(Of Char).GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::Generic::IEnumerator&lt;char&gt; ^ System.Collections.Generic.IEnumerable&lt;char&gt;.GetEnumerator() = System::Collections::Generic::IEnumerable&lt;char&gt;::GetEnumerator;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -10295,7 +10774,12 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator Implements IEnumerable.GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IEnumerator ^ System.Collections.IEnumerable.GetEnumerator() = System::Collections::IEnumerable::GetEnumerator;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -10334,7 +10818,12 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="int IComparable.CompareTo (object value);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.IComparable.CompareTo(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.System#IComparable#CompareTo(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Function CompareTo (value As Object) As Integer Implements IComparable.CompareTo" />
+      <MemberSignature Language="C++ CLI" Value=" virtual int System.IComparable.CompareTo(System::Object ^ value) = IComparable::CompareTo;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IComparable.CompareTo(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -10359,7 +10848,12 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="TypeCode IConvertible.GetTypeCode ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance valuetype System.TypeCode System.IConvertible.GetTypeCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.System#IConvertible#GetTypeCode" />
+      <MemberSignature Language="VB.NET" Value="Function GetTypeCode () As TypeCode Implements IConvertible.GetTypeCode" />
+      <MemberSignature Language="C++ CLI" Value=" virtual TypeCode System.IConvertible.GetTypeCode() = IConvertible::GetTypeCode;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.GetTypeCode</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -10379,7 +10873,12 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="bool IConvertible.ToBoolean (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.IConvertible.ToBoolean(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.System#IConvertible#ToBoolean(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToBoolean (provider As IFormatProvider) As Boolean Implements IConvertible.ToBoolean" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.IConvertible.ToBoolean(IFormatProvider ^ provider) = IConvertible::ToBoolean;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToBoolean(System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -10421,7 +10920,12 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="byte IConvertible.ToByte (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance unsigned int8 System.IConvertible.ToByte(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.System#IConvertible#ToByte(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToByte (provider As IFormatProvider) As Byte Implements IConvertible.ToByte" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Byte System.IConvertible.ToByte(IFormatProvider ^ provider) = IConvertible::ToByte;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToByte(System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -10463,7 +10967,12 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="char IConvertible.ToChar (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance char System.IConvertible.ToChar(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.System#IConvertible#ToChar(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToChar (provider As IFormatProvider) As Char Implements IConvertible.ToChar" />
+      <MemberSignature Language="C++ CLI" Value=" virtual char System.IConvertible.ToChar(IFormatProvider ^ provider) = IConvertible::ToChar;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToChar(System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -10503,7 +11012,12 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="DateTime IConvertible.ToDateTime (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance valuetype System.DateTime System.IConvertible.ToDateTime(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.System#IConvertible#ToDateTime(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToDateTime (provider As IFormatProvider) As DateTime Implements IConvertible.ToDateTime" />
+      <MemberSignature Language="C++ CLI" Value=" virtual DateTime System.IConvertible.ToDateTime(IFormatProvider ^ provider) = IConvertible::ToDateTime;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToDateTime(System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -10543,7 +11057,12 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="decimal IConvertible.ToDecimal (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance valuetype System.Decimal System.IConvertible.ToDecimal(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.System#IConvertible#ToDecimal(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToDecimal (provider As IFormatProvider) As Decimal Implements IConvertible.ToDecimal" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Decimal System.IConvertible.ToDecimal(IFormatProvider ^ provider) = IConvertible::ToDecimal;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToDecimal(System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -10585,7 +11104,12 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="double IConvertible.ToDouble (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance float64 System.IConvertible.ToDouble(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.System#IConvertible#ToDouble(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToDouble (provider As IFormatProvider) As Double Implements IConvertible.ToDouble" />
+      <MemberSignature Language="C++ CLI" Value=" virtual double System.IConvertible.ToDouble(IFormatProvider ^ provider) = IConvertible::ToDouble;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToDouble(System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -10627,7 +11151,12 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="short IConvertible.ToInt16 (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int16 System.IConvertible.ToInt16(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.System#IConvertible#ToInt16(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToInt16 (provider As IFormatProvider) As Short Implements IConvertible.ToInt16" />
+      <MemberSignature Language="C++ CLI" Value=" virtual short System.IConvertible.ToInt16(IFormatProvider ^ provider) = IConvertible::ToInt16;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToInt16(System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -10669,7 +11198,12 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="int IConvertible.ToInt32 (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.IConvertible.ToInt32(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.System#IConvertible#ToInt32(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToInt32 (provider As IFormatProvider) As Integer Implements IConvertible.ToInt32" />
+      <MemberSignature Language="C++ CLI" Value=" virtual int System.IConvertible.ToInt32(IFormatProvider ^ provider) = IConvertible::ToInt32;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToInt32(System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -10709,7 +11243,12 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="long IConvertible.ToInt64 (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int64 System.IConvertible.ToInt64(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.System#IConvertible#ToInt64(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToInt64 (provider As IFormatProvider) As Long Implements IConvertible.ToInt64" />
+      <MemberSignature Language="C++ CLI" Value=" virtual long System.IConvertible.ToInt64(IFormatProvider ^ provider) = IConvertible::ToInt64;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToInt64(System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -10749,7 +11288,12 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="sbyte IConvertible.ToSByte (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int8 System.IConvertible.ToSByte(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.System#IConvertible#ToSByte(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToSByte (provider As IFormatProvider) As SByte Implements IConvertible.ToSByte" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::SByte System.IConvertible.ToSByte(IFormatProvider ^ provider) = IConvertible::ToSByte;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToSByte(System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -10791,7 +11335,12 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="float IConvertible.ToSingle (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance float32 System.IConvertible.ToSingle(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.System#IConvertible#ToSingle(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToSingle (provider As IFormatProvider) As Single Implements IConvertible.ToSingle" />
+      <MemberSignature Language="C++ CLI" Value=" virtual float System.IConvertible.ToSingle(IFormatProvider ^ provider) = IConvertible::ToSingle;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToSingle(System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -10831,7 +11380,12 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="string IConvertible.ToString (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string System.IConvertible.ToString(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.System#IConvertible#ToString(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToString (provider As IFormatProvider) As String Implements IConvertible.ToString" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::String ^ System.IConvertible.ToString(IFormatProvider ^ provider) = IConvertible::ToString;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToString(System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -10854,7 +11408,11 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="object IConvertible.ToType (Type type, IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.IConvertible.ToType(class System.Type type, class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.System#IConvertible#ToType(System.Type,System.IFormatProvider)" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.IConvertible.ToType(Type ^ type, IFormatProvider ^ provider) = IConvertible::ToType;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToType(System.Type,System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -10899,7 +11457,12 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="ushort IConvertible.ToUInt16 (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance unsigned int16 System.IConvertible.ToUInt16(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.System#IConvertible#ToUInt16(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToUInt16 (provider As IFormatProvider) As UShort Implements IConvertible.ToUInt16" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::UInt16 System.IConvertible.ToUInt16(IFormatProvider ^ provider) = IConvertible::ToUInt16;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToUInt16(System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -10941,7 +11504,12 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="uint IConvertible.ToUInt32 (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance unsigned int32 System.IConvertible.ToUInt32(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.System#IConvertible#ToUInt32(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToUInt32 (provider As IFormatProvider) As UInteger Implements IConvertible.ToUInt32" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::UInt32 System.IConvertible.ToUInt32(IFormatProvider ^ provider) = IConvertible::ToUInt32;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToUInt32(System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -10983,7 +11551,12 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="ulong IConvertible.ToUInt64 (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance unsigned int64 System.IConvertible.ToUInt64(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.System#IConvertible#ToUInt64(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToUInt64 (provider As IFormatProvider) As ULong Implements IConvertible.ToUInt64" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::UInt64 System.IConvertible.ToUInt64(IFormatProvider ^ provider) = IConvertible::ToUInt64;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToUInt64(System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -11019,10 +11592,25 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ToCharArray">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Copies the characters in this instance to a Unicode character array.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ToCharArray">
       <MemberSignature Language="C#" Value="public char[] ToCharArray ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance char[] ToCharArray() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.ToCharArray" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToCharArray () As Char()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;char&gt; ^ ToCharArray();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -11097,6 +11685,8 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="public char[] ToCharArray (int startIndex, int length);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance char[] ToCharArray(int32 startIndex, int32 length) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.ToCharArray(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToCharArray (startIndex As Integer, length As Integer) As Char()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;char&gt; ^ ToCharArray(int startIndex, int length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -11176,10 +11766,25 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
         <altmember cref="T:System.Int32" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ToLower">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a copy of this string converted to lowercase.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ToLower">
       <MemberSignature Language="C#" Value="public string ToLower ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string ToLower() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.ToLower" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToLower () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToLower();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -11240,6 +11845,8 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="public string ToLower (System.Globalization.CultureInfo culture);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string ToLower(class System.Globalization.CultureInfo culture) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.ToLower(System.Globalization.CultureInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToLower (culture As CultureInfo) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToLower(System::Globalization::CultureInfo ^ culture);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -11297,6 +11904,8 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="public string ToLowerInvariant ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string ToLowerInvariant() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.ToLowerInvariant" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToLowerInvariant () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToLowerInvariant();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -11352,10 +11961,25 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
         <altmember cref="P:System.Globalization.CultureInfo.InvariantCulture" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the value of this instance to a <see cref="T:System.String" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ToString">
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -11405,7 +12029,12 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="public string ToString (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string ToString(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.ToString(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToString (provider As IFormatProvider) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ ToString(IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToString(System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -11441,10 +12070,25 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ToUpper">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a copy of this string converted to uppercase.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ToUpper">
       <MemberSignature Language="C#" Value="public string ToUpper ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string ToUpper() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.ToUpper" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToUpper () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToUpper();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -11507,6 +12151,8 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="public string ToUpper (System.Globalization.CultureInfo culture);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string ToUpper(class System.Globalization.CultureInfo culture) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.ToUpper(System.Globalization.CultureInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToUpper (culture As CultureInfo) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToUpper(System::Globalization::CultureInfo ^ culture);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -11564,6 +12210,8 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="public string ToUpperInvariant ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string ToUpperInvariant() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.ToUpperInvariant" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToUpperInvariant () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToUpperInvariant();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -11618,10 +12266,25 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
         <altmember cref="P:System.Globalization.CultureInfo.InvariantCulture" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Trim">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a new string in which all leading and trailing occurrences of a set of specified characters from the current <see cref="T:System.String" /> object are removed.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Trim">
       <MemberSignature Language="C#" Value="public string Trim ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string Trim() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Trim" />
+      <MemberSignature Language="VB.NET" Value="Public Function Trim () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ Trim();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -11683,6 +12346,8 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="public string Trim (char trimChar);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string Trim(char trimChar) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Trim(System.Char)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Trim (trimChar As Char) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ Trim(char trimChar);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -11705,6 +12370,8 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="public string Trim (params char[] trimChars);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string Trim(char[] trimChars) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.Trim(System.Char[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function Trim (ParamArray trimChars As Char()) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ Trim(... cli::array &lt;char&gt; ^ trimChars);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -11776,6 +12443,8 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="public string TrimEnd ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string TrimEnd() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.TrimEnd" />
+      <MemberSignature Language="VB.NET" Value="Public Function TrimEnd () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ TrimEnd();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -11795,6 +12464,8 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="public string TrimEnd (char trimChar);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string TrimEnd(char trimChar) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.TrimEnd(System.Char)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TrimEnd (trimChar As Char) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ TrimEnd(char trimChar);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -11817,6 +12488,8 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="public string TrimEnd (params char[] trimChars);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string TrimEnd(char[] trimChars) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.TrimEnd(System.Char[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function TrimEnd (ParamArray trimChars As Char()) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ TrimEnd(... cli::array &lt;char&gt; ^ trimChars);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -11883,6 +12556,8 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="public string TrimStart ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string TrimStart() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.TrimStart" />
+      <MemberSignature Language="VB.NET" Value="Public Function TrimStart () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ TrimStart();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -11902,6 +12577,8 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="public string TrimStart (char trimChar);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string TrimStart(char trimChar) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.TrimStart(System.Char)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TrimStart (trimChar As Char) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ TrimStart(char trimChar);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -11924,6 +12601,8 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       <MemberSignature Language="C#" Value="public string TrimStart (params char[] trimChars);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string TrimStart(char[] trimChars) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.TrimStart(System.Char[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function TrimStart (ParamArray trimChars As Char()) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ TrimStart(... cli::array &lt;char&gt; ^ trimChars);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -11991,276 +12670,5 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
         <altmember cref="M:System.Char.IsWhiteSpace(System.Char)" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="StartsWith">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Determines whether the beginning of this string instance matches a specified string.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="PadRight">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a new string of a specified length in which the end of the current string is padded with spaces or with a specified Unicode character.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="EndsWith">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Determines whether the end of this string instance matches a specified string.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Normalize">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a new string whose binary representation is in a particular Unicode normalization form.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ToCharArray">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Copies the characters in this instance to a Unicode character array.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="CompareOrdinal">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Compares two <see cref="T:System.String" /> objects by evaluating the numeric values of the corresponding <see cref="T:System.Char" /> objects in each string.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ToUpper">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a copy of this string converted to uppercase.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ToString">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Converts the value of this instance to a <see cref="T:System.String" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ToLower">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a copy of this string converted to lowercase.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Join">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Concatenates the elements of a specified array or the members of a collection, using the specified separator between each element or member.</summary>
-        <altmember cref="M:System.String.Split(System.Char[])" />
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="LastIndexOfAny">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Reports the zero-based index position of the last occurrence in this instance of one or more characters specified in a Unicode array. The method returns -1 if the characters in the array are not found in this instance.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Remove">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a new string in which a specified number of characters from the current string are deleted.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="IndexOfAny">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Reports the index of the first occurrence in this instance of any character in a specified array of Unicode characters. The method returns -1 if the characters in the array are not found in this instance.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Concat">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Concatenates one or more instances of <see cref="T:System.String" />, or the <see cref="T:System.String" /> representations of the values of one or more instances of <see cref="T:System.Object" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="LastIndexOf">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Reports the zero-based index position of the last occurrence of a specified Unicode character or string within this instance. The method returns -1 if the character or string is not found in this instance.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Equals">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Determines whether two <see cref="T:System.String" /> objects have the same value.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="PadLeft">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a new string of a specified length in which the beginning of the current string is padded with spaces or with a specified Unicode character.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Trim">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a new string in which all leading and trailing occurrences of a set of specified characters from the current <see cref="T:System.String" /> object are removed.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Replace">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a new string in which all occurrences of a specified Unicode character or <see cref="T:System.String" /> in the current string are replaced with another specified Unicode character or <see cref="T:System.String" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Substring">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Retrieves a substring from this instance.  
-  
- This member is overloaded. For complete information about this member, including syntax, usage, and examples, click a name in the overload list.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="IsNormalized">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Indicates whether this string is in a particular Unicode normalization form.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="IndexOf">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Reports the zero-based index of the first occurrence of a specified Unicode character or string within this instance. The method returns -1 if the character or string is not found in this instance.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

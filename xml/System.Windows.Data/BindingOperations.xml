@@ -1,7 +1,9 @@
-<Type Name="BindingOperations" FullName="System.Windows.Data.BindingOperations">
+﻿<Type Name="BindingOperations" FullName="System.Windows.Data.BindingOperations">
   <TypeSignature Language="C#" Value="public static class BindingOperations" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit BindingOperations extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Data.BindingOperations" />
+  <TypeSignature Language="VB.NET" Value="Public Class BindingOperations" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BindingOperations abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +28,8 @@
       <MemberSignature Language="C#" Value="public static void AccessCollection (System.Collections.IEnumerable collection, Action accessMethod, bool writeAccess);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AccessCollection(class System.Collections.IEnumerable collection, class System.Action accessMethod, bool writeAccess) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingOperations.AccessCollection(System.Collections.IEnumerable,System.Action,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub AccessCollection (collection As IEnumerable, accessMethod As Action, writeAccess As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AccessCollection(System::Collections::IEnumerable ^ collection, Action ^ accessMethod, bool writeAccess);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -52,6 +56,8 @@
       <MemberSignature Language="C#" Value="public static void ClearAllBindings (System.Windows.DependencyObject target);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ClearAllBindings(class System.Windows.DependencyObject target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingOperations.ClearAllBindings(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub ClearAllBindings (target As DependencyObject)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ClearAllBindings(System::Windows::DependencyObject ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -81,6 +87,8 @@
       <MemberSignature Language="C#" Value="public static void ClearBinding (System.Windows.DependencyObject target, System.Windows.DependencyProperty dp);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ClearBinding(class System.Windows.DependencyObject target, class System.Windows.DependencyProperty dp) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingOperations.ClearBinding(System.Windows.DependencyObject,System.Windows.DependencyProperty)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub ClearBinding (target As DependencyObject, dp As DependencyProperty)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ClearBinding(System::Windows::DependencyObject ^ target, System::Windows::DependencyProperty ^ dp);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -114,6 +122,8 @@
       <MemberSignature Language="C#" Value="public static event EventHandler&lt;System.Windows.Data.CollectionRegisteringEventArgs&gt; CollectionRegistering;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Windows.Data.CollectionRegisteringEventArgs&gt; CollectionRegistering" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Data.BindingOperations.CollectionRegistering" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Event CollectionRegistering As EventHandler(Of CollectionRegisteringEventArgs) " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static event EventHandler&lt;System::Windows::Data::CollectionRegisteringEventArgs ^&gt; ^ CollectionRegistering;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -131,6 +141,8 @@
       <MemberSignature Language="C#" Value="public static event EventHandler&lt;System.Windows.Data.CollectionViewRegisteringEventArgs&gt; CollectionViewRegistering;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Windows.Data.CollectionViewRegisteringEventArgs&gt; CollectionViewRegistering" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Data.BindingOperations.CollectionViewRegistering" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Event CollectionViewRegistering As EventHandler(Of CollectionViewRegisteringEventArgs) " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static event EventHandler&lt;System::Windows::Data::CollectionViewRegisteringEventArgs ^&gt; ^ CollectionViewRegistering;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -148,6 +160,8 @@
       <MemberSignature Language="C#" Value="public static void DisableCollectionSynchronization (System.Collections.IEnumerable collection);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DisableCollectionSynchronization(class System.Collections.IEnumerable collection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingOperations.DisableCollectionSynchronization(System.Collections.IEnumerable)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub DisableCollectionSynchronization (collection As IEnumerable)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DisableCollectionSynchronization(System::Collections::IEnumerable ^ collection);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -169,6 +183,8 @@
       <MemberSignature Language="C#" Value="public static object DisconnectedSource { get; }" />
       <MemberSignature Language="ILAsm" Value=".property object DisconnectedSource" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.BindingOperations.DisconnectedSource" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DisconnectedSource As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Object ^ DisconnectedSource { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -252,6 +268,8 @@ The net effect is that you can change the collection on any thread, and those c
       <MemberSignature Language="C#" Value="public static void EnableCollectionSynchronization (System.Collections.IEnumerable collection, object lockObject);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void EnableCollectionSynchronization(class System.Collections.IEnumerable collection, object lockObject) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingOperations.EnableCollectionSynchronization(System.Collections.IEnumerable,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub EnableCollectionSynchronization (collection As IEnumerable, lockObject As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void EnableCollectionSynchronization(System::Collections::IEnumerable ^ collection, System::Object ^ lockObject);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -319,6 +337,8 @@ The net effect is that you can change the collection on any thread, and those c
       <MemberSignature Language="C#" Value="public static void EnableCollectionSynchronization (System.Collections.IEnumerable collection, object context, System.Windows.Data.CollectionSynchronizationCallback synchronizationCallback);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void EnableCollectionSynchronization(class System.Collections.IEnumerable collection, object context, class System.Windows.Data.CollectionSynchronizationCallback synchronizationCallback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingOperations.EnableCollectionSynchronization(System.Collections.IEnumerable,System.Object,System.Windows.Data.CollectionSynchronizationCallback)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub EnableCollectionSynchronization (collection As IEnumerable, context As Object, synchronizationCallback As CollectionSynchronizationCallback)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void EnableCollectionSynchronization(System::Collections::IEnumerable ^ collection, System::Object ^ context, System::Windows::Data::CollectionSynchronizationCallback ^ synchronizationCallback);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -397,6 +417,8 @@ The net effect is that you can change the collection on any thread, and those c
       <MemberSignature Language="C#" Value="public static System.Windows.Data.Binding GetBinding (System.Windows.DependencyObject target, System.Windows.DependencyProperty dp);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Data.Binding GetBinding(class System.Windows.DependencyObject target, class System.Windows.DependencyProperty dp) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingOperations.GetBinding(System.Windows.DependencyObject,System.Windows.DependencyProperty)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetBinding (target As DependencyObject, dp As DependencyProperty) As Binding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Data::Binding ^ GetBinding(System::Windows::DependencyObject ^ target, System::Windows::DependencyProperty ^ dp);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -426,6 +448,8 @@ The net effect is that you can change the collection on any thread, and those c
       <MemberSignature Language="C#" Value="public static System.Windows.Data.BindingBase GetBindingBase (System.Windows.DependencyObject target, System.Windows.DependencyProperty dp);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Data.BindingBase GetBindingBase(class System.Windows.DependencyObject target, class System.Windows.DependencyProperty dp) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingOperations.GetBindingBase(System.Windows.DependencyObject,System.Windows.DependencyProperty)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetBindingBase (target As DependencyObject, dp As DependencyProperty) As BindingBase" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Data::BindingBase ^ GetBindingBase(System::Windows::DependencyObject ^ target, System::Windows::DependencyProperty ^ dp);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -459,6 +483,8 @@ The net effect is that you can change the collection on any thread, and those c
       <MemberSignature Language="C#" Value="public static System.Windows.Data.BindingExpression GetBindingExpression (System.Windows.DependencyObject target, System.Windows.DependencyProperty dp);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Data.BindingExpression GetBindingExpression(class System.Windows.DependencyObject target, class System.Windows.DependencyProperty dp) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingOperations.GetBindingExpression(System.Windows.DependencyObject,System.Windows.DependencyProperty)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetBindingExpression (target As DependencyObject, dp As DependencyProperty) As BindingExpression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Data::BindingExpression ^ GetBindingExpression(System::Windows::DependencyObject ^ target, System::Windows::DependencyProperty ^ dp);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -504,6 +530,8 @@ The net effect is that you can change the collection on any thread, and those c
       <MemberSignature Language="C#" Value="public static System.Windows.Data.BindingExpressionBase GetBindingExpressionBase (System.Windows.DependencyObject target, System.Windows.DependencyProperty dp);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Data.BindingExpressionBase GetBindingExpressionBase(class System.Windows.DependencyObject target, class System.Windows.DependencyProperty dp) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingOperations.GetBindingExpressionBase(System.Windows.DependencyObject,System.Windows.DependencyProperty)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetBindingExpressionBase (target As DependencyObject, dp As DependencyProperty) As BindingExpressionBase" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Data::BindingExpressionBase ^ GetBindingExpressionBase(System::Windows::DependencyObject ^ target, System::Windows::DependencyProperty ^ dp);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -537,6 +565,8 @@ The net effect is that you can change the collection on any thread, and those c
       <MemberSignature Language="C#" Value="public static System.Windows.Data.MultiBinding GetMultiBinding (System.Windows.DependencyObject target, System.Windows.DependencyProperty dp);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Data.MultiBinding GetMultiBinding(class System.Windows.DependencyObject target, class System.Windows.DependencyProperty dp) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingOperations.GetMultiBinding(System.Windows.DependencyObject,System.Windows.DependencyProperty)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetMultiBinding (target As DependencyObject, dp As DependencyProperty) As MultiBinding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Data::MultiBinding ^ GetMultiBinding(System::Windows::DependencyObject ^ target, System::Windows::DependencyProperty ^ dp);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -564,6 +594,8 @@ The net effect is that you can change the collection on any thread, and those c
       <MemberSignature Language="C#" Value="public static System.Windows.Data.MultiBindingExpression GetMultiBindingExpression (System.Windows.DependencyObject target, System.Windows.DependencyProperty dp);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Data.MultiBindingExpression GetMultiBindingExpression(class System.Windows.DependencyObject target, class System.Windows.DependencyProperty dp) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingOperations.GetMultiBindingExpression(System.Windows.DependencyObject,System.Windows.DependencyProperty)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetMultiBindingExpression (target As DependencyObject, dp As DependencyProperty) As MultiBindingExpression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Data::MultiBindingExpression ^ GetMultiBindingExpression(System::Windows::DependencyObject ^ target, System::Windows::DependencyProperty ^ dp);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -599,6 +631,8 @@ The net effect is that you can change the collection on any thread, and those c
       <MemberSignature Language="C#" Value="public static System.Windows.Data.PriorityBinding GetPriorityBinding (System.Windows.DependencyObject target, System.Windows.DependencyProperty dp);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Data.PriorityBinding GetPriorityBinding(class System.Windows.DependencyObject target, class System.Windows.DependencyProperty dp) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingOperations.GetPriorityBinding(System.Windows.DependencyObject,System.Windows.DependencyProperty)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetPriorityBinding (target As DependencyObject, dp As DependencyProperty) As PriorityBinding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Data::PriorityBinding ^ GetPriorityBinding(System::Windows::DependencyObject ^ target, System::Windows::DependencyProperty ^ dp);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -626,6 +660,8 @@ The net effect is that you can change the collection on any thread, and those c
       <MemberSignature Language="C#" Value="public static System.Windows.Data.PriorityBindingExpression GetPriorityBindingExpression (System.Windows.DependencyObject target, System.Windows.DependencyProperty dp);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Data.PriorityBindingExpression GetPriorityBindingExpression(class System.Windows.DependencyObject target, class System.Windows.DependencyProperty dp) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingOperations.GetPriorityBindingExpression(System.Windows.DependencyObject,System.Windows.DependencyProperty)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetPriorityBindingExpression (target As DependencyObject, dp As DependencyProperty) As PriorityBindingExpression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Data::PriorityBindingExpression ^ GetPriorityBindingExpression(System::Windows::DependencyObject ^ target, System::Windows::DependencyProperty ^ dp);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -654,6 +690,8 @@ The net effect is that you can change the collection on any thread, and those c
       <MemberSignature Language="C#" Value="public static System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Windows.Data.BindingGroup&gt; GetSourceUpdatingBindingGroups (System.Windows.DependencyObject root);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Windows.Data.BindingGroup&gt; GetSourceUpdatingBindingGroups(class System.Windows.DependencyObject root) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingOperations.GetSourceUpdatingBindingGroups(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetSourceUpdatingBindingGroups (root As DependencyObject) As ReadOnlyCollection(Of BindingGroup)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Windows::Data::BindingGroup ^&gt; ^ GetSourceUpdatingBindingGroups(System::Windows::DependencyObject ^ root);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -683,6 +721,8 @@ The net effect is that you can change the collection on any thread, and those c
       <MemberSignature Language="C#" Value="public static System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Windows.Data.BindingExpressionBase&gt; GetSourceUpdatingBindings (System.Windows.DependencyObject root);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Windows.Data.BindingExpressionBase&gt; GetSourceUpdatingBindings(class System.Windows.DependencyObject root) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingOperations.GetSourceUpdatingBindings(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetSourceUpdatingBindings (root As DependencyObject) As ReadOnlyCollection(Of BindingExpressionBase)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Windows::Data::BindingExpressionBase ^&gt; ^ GetSourceUpdatingBindings(System::Windows::DependencyObject ^ root);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -712,6 +752,8 @@ The net effect is that you can change the collection on any thread, and those c
       <MemberSignature Language="C#" Value="public static bool IsDataBound (System.Windows.DependencyObject target, System.Windows.DependencyProperty dp);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsDataBound(class System.Windows.DependencyObject target, class System.Windows.DependencyProperty dp) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingOperations.IsDataBound(System.Windows.DependencyObject,System.Windows.DependencyProperty)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsDataBound (target As DependencyObject, dp As DependencyProperty) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsDataBound(System::Windows::DependencyObject ^ target, System::Windows::DependencyProperty ^ dp);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -738,6 +780,8 @@ The net effect is that you can change the collection on any thread, and those c
       <MemberSignature Language="C#" Value="public static System.Windows.Data.BindingExpressionBase SetBinding (System.Windows.DependencyObject target, System.Windows.DependencyProperty dp, System.Windows.Data.BindingBase binding);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Data.BindingExpressionBase SetBinding(class System.Windows.DependencyObject target, class System.Windows.DependencyProperty dp, class System.Windows.Data.BindingBase binding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingOperations.SetBinding(System.Windows.DependencyObject,System.Windows.DependencyProperty,System.Windows.Data.BindingBase)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SetBinding (target As DependencyObject, dp As DependencyProperty, binding As BindingBase) As BindingExpressionBase" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Data::BindingExpressionBase ^ SetBinding(System::Windows::DependencyObject ^ target, System::Windows::DependencyProperty ^ dp, System::Windows::Data::BindingBase ^ binding);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

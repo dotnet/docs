@@ -1,7 +1,9 @@
-<Type Name="FlatStyle" FullName="System.Windows.Forms.FlatStyle">
+﻿<Type Name="FlatStyle" FullName="System.Windows.Forms.FlatStyle">
   <TypeSignature Language="C#" Value="public enum FlatStyle" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FlatStyle extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.FlatStyle" />
+  <TypeSignature Language="VB.NET" Value="Public Enum FlatStyle" />
+  <TypeSignature Language="C++ CLI" Value="public enum class FlatStyle" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -67,6 +69,8 @@
       <MemberSignature Language="C#" Value="Flat" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.FlatStyle Flat = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.FlatStyle.Flat" />
+      <MemberSignature Language="VB.NET" Value="Flat" />
+      <MemberSignature Language="C++ CLI" Value="Flat" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -75,6 +79,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.FlatStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The control appears flat.</summary>
       </Docs>
@@ -83,6 +88,8 @@
       <MemberSignature Language="C#" Value="Popup" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.FlatStyle Popup = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.FlatStyle.Popup" />
+      <MemberSignature Language="VB.NET" Value="Popup" />
+      <MemberSignature Language="C++ CLI" Value="Popup" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -91,6 +98,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.FlatStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>A control appears flat until the mouse pointer moves over it, at which point it appears three-dimensional.</summary>
       </Docs>
@@ -99,6 +107,8 @@
       <MemberSignature Language="C#" Value="Standard" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.FlatStyle Standard = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.FlatStyle.Standard" />
+      <MemberSignature Language="VB.NET" Value="Standard" />
+      <MemberSignature Language="C++ CLI" Value="Standard" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -107,6 +117,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.FlatStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The control appears three-dimensional.</summary>
       </Docs>
@@ -115,6 +126,8 @@
       <MemberSignature Language="C#" Value="System" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.FlatStyle System = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.FlatStyle.System" />
+      <MemberSignature Language="VB.NET" Value="System" />
+      <MemberSignature Language="C++ CLI" Value="System" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -123,6 +136,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.FlatStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The appearance of the control is determined by the user's operating system.</summary>
       </Docs>

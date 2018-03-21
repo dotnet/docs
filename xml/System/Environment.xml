@@ -1,7 +1,9 @@
-<Type Name="Environment" FullName="System.Environment">
+﻿<Type Name="Environment" FullName="System.Environment">
   <TypeSignature Language="C#" Value="public static class Environment" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Environment extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Environment" />
+  <TypeSignature Language="VB.NET" Value="Public Class Environment" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Environment abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +54,8 @@
       <MemberSignature Language="C#" Value="public static string CommandLine { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string CommandLine" />
       <MemberSignature Language="DocId" Value="P:System.Environment.CommandLine" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CommandLine As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ CommandLine { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -101,6 +105,8 @@
       <MemberSignature Language="C#" Value="public static string CurrentDirectory { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property string CurrentDirectory" />
       <MemberSignature Language="DocId" Value="P:System.Environment.CurrentDirectory" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property CurrentDirectory As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ CurrentDirectory { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -151,6 +157,8 @@
       <MemberSignature Language="C#" Value="public static int CurrentManagedThreadId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property int32 CurrentManagedThreadId" />
       <MemberSignature Language="DocId" Value="P:System.Environment.CurrentManagedThreadId" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CurrentManagedThreadId As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int CurrentManagedThreadId { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -181,6 +189,8 @@
       <MemberSignature Language="C#" Value="public static void Exit (int exitCode);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Exit(int32 exitCode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Environment.Exit(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Exit (exitCode As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Exit(int exitCode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -233,6 +243,8 @@
       <MemberSignature Language="C#" Value="public static int ExitCode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property int32 ExitCode" />
       <MemberSignature Language="DocId" Value="P:System.Environment.ExitCode" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property ExitCode As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int ExitCode { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -319,6 +331,8 @@ goto :EOF
       <MemberSignature Language="C#" Value="public static string ExpandEnvironmentVariables (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string ExpandEnvironmentVariables(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Environment.ExpandEnvironmentVariables(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ExpandEnvironmentVariables (name As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ExpandEnvironmentVariables(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -371,10 +385,24 @@ goto :EOF
         <permission cref="T:System.Security.Permissions.EnvironmentPermission">for the ability to access the environment variables in <paramref name="name" />. Associated enumeration: <see cref="F:System.Security.Permissions.EnvironmentPermissionAccess.Read" /></permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="FailFast">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Immediately terminates a process after writing a message to the Windows Application event log, and then includes the message and optional exception information in error reporting to Microsoft.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="FailFast">
       <MemberSignature Language="C#" Value="public static void FailFast (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void FailFast(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Environment.FailFast(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub FailFast (message As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void FailFast(System::String ^ message);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -430,6 +458,7 @@ goto :EOF
       <MemberSignature Language="C#" Value="public static void FailFast (string message, Exception exception);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void FailFast(string message, class System.Exception exception) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Environment.FailFast(System.String,System.Exception)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void FailFast(System::String ^ message, Exception ^ exception);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -486,6 +515,8 @@ goto :EOF
       <MemberSignature Language="C#" Value="public static string[] GetCommandLineArgs ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string[] GetCommandLineArgs() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Environment.GetCommandLineArgs" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetCommandLineArgs () As String()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::String ^&gt; ^ GetCommandLineArgs();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -548,10 +579,24 @@ goto :EOF
         <altmember cref="P:System.Environment.CommandLine" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetEnvironmentVariable">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the value of an environment variable.</summary>
+        <altmember cref="M:System.Environment.GetEnvironmentVariables" />
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetEnvironmentVariable">
       <MemberSignature Language="C#" Value="public static string GetEnvironmentVariable (string variable);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetEnvironmentVariable(string variable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Environment.GetEnvironmentVariable(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetEnvironmentVariable (variable As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetEnvironmentVariable(System::String ^ variable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -625,6 +670,8 @@ goto :EOF
       <MemberSignature Language="C#" Value="public static string GetEnvironmentVariable (string variable, EnvironmentVariableTarget target);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetEnvironmentVariable(string variable, valuetype System.EnvironmentVariableTarget target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Environment.GetEnvironmentVariable(System.String,System.EnvironmentVariableTarget)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetEnvironmentVariable (variable As String, target As EnvironmentVariableTarget) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetEnvironmentVariable(System::String ^ variable, EnvironmentVariableTarget target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -687,10 +734,23 @@ goto :EOF
         <altmember cref="T:System.EnvironmentVariableTarget" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetEnvironmentVariables">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves all environment variable names and their values.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetEnvironmentVariables">
       <MemberSignature Language="C#" Value="public static System.Collections.IDictionary GetEnvironmentVariables ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.IDictionary GetEnvironmentVariables() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Environment.GetEnvironmentVariables" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetEnvironmentVariables () As IDictionary" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::IDictionary ^ GetEnvironmentVariables();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -741,6 +801,8 @@ goto :EOF
       <MemberSignature Language="C#" Value="public static System.Collections.IDictionary GetEnvironmentVariables (EnvironmentVariableTarget target);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.IDictionary GetEnvironmentVariables(valuetype System.EnvironmentVariableTarget target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Environment.GetEnvironmentVariables(System.EnvironmentVariableTarget)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetEnvironmentVariables (target As EnvironmentVariableTarget) As IDictionary" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::IDictionary ^ GetEnvironmentVariables(EnvironmentVariableTarget target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -796,10 +858,22 @@ goto :EOF
         <altmember cref="T:System.EnvironmentVariableTarget" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetFolderPath">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the path to the system special folder that is identified by the specified enumeration.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetFolderPath">
       <MemberSignature Language="C#" Value="public static string GetFolderPath (Environment.SpecialFolder folder);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetFolderPath(valuetype System.Environment/SpecialFolder folder) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Environment.GetFolderPath(System.Environment.SpecialFolder)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetFolderPath (folder As Environment.SpecialFolder) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetFolderPath(Environment::SpecialFolder folder);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -857,6 +931,8 @@ goto :EOF
       <MemberSignature Language="C#" Value="public static string GetFolderPath (Environment.SpecialFolder folder, Environment.SpecialFolderOption option);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetFolderPath(valuetype System.Environment/SpecialFolder folder, valuetype System.Environment/SpecialFolderOption option) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Environment.GetFolderPath(System.Environment.SpecialFolder,System.Environment.SpecialFolderOption)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetFolderPath (folder As Environment.SpecialFolder, option As Environment.SpecialFolderOption) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetFolderPath(Environment::SpecialFolder folder, Environment::SpecialFolderOption option);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -909,6 +985,8 @@ goto :EOF
       <MemberSignature Language="C#" Value="public static string[] GetLogicalDrives ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string[] GetLogicalDrives() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Environment.GetLogicalDrives" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetLogicalDrives () As String()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::String ^&gt; ^ GetLogicalDrives();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -951,6 +1029,8 @@ goto :EOF
       <MemberSignature Language="C#" Value="public static bool HasShutdownStarted { get; }" />
       <MemberSignature Language="ILAsm" Value=".property bool HasShutdownStarted" />
       <MemberSignature Language="DocId" Value="P:System.Environment.HasShutdownStarted" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property HasShutdownStarted As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool HasShutdownStarted { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -994,6 +1074,8 @@ goto :EOF
       <MemberSignature Language="C#" Value="public static bool Is64BitOperatingSystem { get; }" />
       <MemberSignature Language="ILAsm" Value=".property bool Is64BitOperatingSystem" />
       <MemberSignature Language="DocId" Value="P:System.Environment.Is64BitOperatingSystem" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Is64BitOperatingSystem As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool Is64BitOperatingSystem { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1022,6 +1104,8 @@ goto :EOF
       <MemberSignature Language="C#" Value="public static bool Is64BitProcess { get; }" />
       <MemberSignature Language="ILAsm" Value=".property bool Is64BitProcess" />
       <MemberSignature Language="DocId" Value="P:System.Environment.Is64BitProcess" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Is64BitProcess As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool Is64BitProcess { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1050,6 +1134,8 @@ goto :EOF
       <MemberSignature Language="C#" Value="public static string MachineName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string MachineName" />
       <MemberSignature Language="DocId" Value="P:System.Environment.MachineName" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MachineName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ MachineName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1096,6 +1182,8 @@ goto :EOF
       <MemberSignature Language="C#" Value="public static string NewLine { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string NewLine" />
       <MemberSignature Language="DocId" Value="P:System.Environment.NewLine" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property NewLine As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ NewLine { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1148,6 +1236,8 @@ goto :EOF
       <MemberSignature Language="C#" Value="public static OperatingSystem OSVersion { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.OperatingSystem OSVersion" />
       <MemberSignature Language="DocId" Value="P:System.Environment.OSVersion" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property OSVersion As OperatingSystem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property OperatingSystem ^ OSVersion { OperatingSystem ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1207,6 +1297,8 @@ goto :EOF
       <MemberSignature Language="C#" Value="public static int ProcessorCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property int32 ProcessorCount" />
       <MemberSignature Language="DocId" Value="P:System.Environment.ProcessorCount" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ProcessorCount As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int ProcessorCount { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1249,10 +1341,23 @@ goto :EOF
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetEnvironmentVariable">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates, modifies, or deletes an environment variable.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="SetEnvironmentVariable">
       <MemberSignature Language="C#" Value="public static void SetEnvironmentVariable (string variable, string value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetEnvironmentVariable(string variable, string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Environment.SetEnvironmentVariable(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetEnvironmentVariable (variable As String, value As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetEnvironmentVariable(System::String ^ variable, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1343,6 +1448,8 @@ goto :EOF
       <MemberSignature Language="C#" Value="public static void SetEnvironmentVariable (string variable, string value, EnvironmentVariableTarget target);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetEnvironmentVariable(string variable, string value, valuetype System.EnvironmentVariableTarget target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Environment.SetEnvironmentVariable(System.String,System.String,System.EnvironmentVariableTarget)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetEnvironmentVariable (variable As String, value As String, target As EnvironmentVariableTarget)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetEnvironmentVariable(System::String ^ variable, System::String ^ value, EnvironmentVariableTarget target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1446,6 +1553,8 @@ goto :EOF
       <MemberSignature Language="C#" Value="public static string StackTrace { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string StackTrace" />
       <MemberSignature Language="DocId" Value="P:System.Environment.StackTrace" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property StackTrace As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ StackTrace { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1518,6 +1627,8 @@ goto :EOF
       <MemberSignature Language="C#" Value="public static string SystemDirectory { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string SystemDirectory" />
       <MemberSignature Language="DocId" Value="P:System.Environment.SystemDirectory" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SystemDirectory As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ SystemDirectory { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1562,6 +1673,8 @@ goto :EOF
       <MemberSignature Language="C#" Value="public static int SystemPageSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property int32 SystemPageSize" />
       <MemberSignature Language="DocId" Value="P:System.Environment.SystemPageSize" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SystemPageSize As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int SystemPageSize { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1601,6 +1714,8 @@ goto :EOF
       <MemberSignature Language="C#" Value="public static int TickCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property int32 TickCount" />
       <MemberSignature Language="DocId" Value="P:System.Environment.TickCount" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TickCount As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int TickCount { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1654,6 +1769,8 @@ goto :EOF
       <MemberSignature Language="C#" Value="public static string UserDomainName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string UserDomainName" />
       <MemberSignature Language="DocId" Value="P:System.Environment.UserDomainName" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property UserDomainName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ UserDomainName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1694,6 +1811,8 @@ goto :EOF
       <MemberSignature Language="C#" Value="public static bool UserInteractive { get; }" />
       <MemberSignature Language="ILAsm" Value=".property bool UserInteractive" />
       <MemberSignature Language="DocId" Value="P:System.Environment.UserInteractive" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property UserInteractive As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool UserInteractive { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1739,6 +1858,8 @@ goto :EOF
       <MemberSignature Language="C#" Value="public static string UserName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string UserName" />
       <MemberSignature Language="DocId" Value="P:System.Environment.UserName" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property UserName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ UserName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1788,6 +1909,8 @@ goto :EOF
       <MemberSignature Language="C#" Value="public static Version Version { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Version Version" />
       <MemberSignature Language="DocId" Value="P:System.Environment.Version" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Version As Version" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Version ^ Version { Version ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1836,6 +1959,8 @@ goto :EOF
       <MemberSignature Language="C#" Value="public static long WorkingSet { get; }" />
       <MemberSignature Language="ILAsm" Value=".property int64 WorkingSet" />
       <MemberSignature Language="DocId" Value="P:System.Environment.WorkingSet" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property WorkingSet As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property long WorkingSet { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1871,61 +1996,5 @@ goto :EOF
         <permission cref="T:System.Security.Permissions.EnvironmentPermission">for full access to the resource protected by this permission. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetEnvironmentVariable">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.Extensions</AssemblyName>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Retrieves the value of an environment variable.</summary>
-        <altmember cref="M:System.Environment.GetEnvironmentVariables" />
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetEnvironmentVariables">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.Extensions</AssemblyName>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Retrieves all environment variable names and their values.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="SetEnvironmentVariable">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.Extensions</AssemblyName>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates, modifies, or deletes an environment variable.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetFolderPath">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets the path to the system special folder that is identified by the specified enumeration.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="FailFast">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.Extensions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Immediately terminates a process after writing a message to the Windows Application event log, and then includes the message and optional exception information in error reporting to Microsoft.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

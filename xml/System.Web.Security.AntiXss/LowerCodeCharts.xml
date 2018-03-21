@@ -1,7 +1,9 @@
-<Type Name="LowerCodeCharts" FullName="System.Web.Security.AntiXss.LowerCodeCharts">
+﻿<Type Name="LowerCodeCharts" FullName="System.Web.Security.AntiXss.LowerCodeCharts">
   <TypeSignature Language="C#" Value="public enum LowerCodeCharts" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LowerCodeCharts extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.Security.AntiXss.LowerCodeCharts" />
+  <TypeSignature Language="VB.NET" Value="Public Enum LowerCodeCharts" />
+  <TypeSignature Language="C++ CLI" Value="public enum class LowerCodeCharts" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +25,8 @@
       <MemberSignature Language="C#" Value="Arabic" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.LowerCodeCharts Arabic = int64(4096)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.LowerCodeCharts.Arabic" />
+      <MemberSignature Language="VB.NET" Value="Arabic" />
+      <MemberSignature Language="C++ CLI" Value="Arabic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -31,6 +35,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.LowerCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>4096</MemberValue>
       <Docs>
         <summary>The Arabic code chart.</summary>
       </Docs>
@@ -39,6 +44,8 @@
       <MemberSignature Language="C#" Value="ArabicSupplement" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.LowerCodeCharts ArabicSupplement = int64(16384)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.LowerCodeCharts.ArabicSupplement" />
+      <MemberSignature Language="VB.NET" Value="ArabicSupplement" />
+      <MemberSignature Language="C++ CLI" Value="ArabicSupplement" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -47,6 +54,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.LowerCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>16384</MemberValue>
       <Docs>
         <summary>The Arabic Supplement code chart.</summary>
       </Docs>
@@ -55,6 +63,8 @@
       <MemberSignature Language="C#" Value="Armenian" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.LowerCodeCharts Armenian = int64(1024)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.LowerCodeCharts.Armenian" />
+      <MemberSignature Language="VB.NET" Value="Armenian" />
+      <MemberSignature Language="C++ CLI" Value="Armenian" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -63,6 +73,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.LowerCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>1024</MemberValue>
       <Docs>
         <summary>The Armenian code chart.</summary>
       </Docs>
@@ -71,6 +82,8 @@
       <MemberSignature Language="C#" Value="BasicLatin" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.LowerCodeCharts BasicLatin = int64(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.LowerCodeCharts.BasicLatin" />
+      <MemberSignature Language="VB.NET" Value="BasicLatin" />
+      <MemberSignature Language="C++ CLI" Value="BasicLatin" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -79,6 +92,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.LowerCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The Basic Latin code chart.</summary>
       </Docs>
@@ -87,6 +101,8 @@
       <MemberSignature Language="C#" Value="Bengali" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.LowerCodeCharts Bengali = int64(524288)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.LowerCodeCharts.Bengali" />
+      <MemberSignature Language="VB.NET" Value="Bengali" />
+      <MemberSignature Language="C++ CLI" Value="Bengali" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -95,6 +111,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.LowerCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>524288</MemberValue>
       <Docs>
         <summary>The Bengali code chart.</summary>
       </Docs>
@@ -103,6 +120,8 @@
       <MemberSignature Language="C#" Value="C1ControlsAndLatin1Supplement" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.LowerCodeCharts C1ControlsAndLatin1Supplement = int64(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.LowerCodeCharts.C1ControlsAndLatin1Supplement" />
+      <MemberSignature Language="VB.NET" Value="C1ControlsAndLatin1Supplement" />
+      <MemberSignature Language="C++ CLI" Value="C1ControlsAndLatin1Supplement" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -111,6 +130,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.LowerCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The C1 Controls and Latin-1 Supplement code chart.</summary>
       </Docs>
@@ -119,6 +139,8 @@
       <MemberSignature Language="C#" Value="CombiningDiacriticalMarks" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.LowerCodeCharts CombiningDiacriticalMarks = int64(64)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.LowerCodeCharts.CombiningDiacriticalMarks" />
+      <MemberSignature Language="VB.NET" Value="CombiningDiacriticalMarks" />
+      <MemberSignature Language="C++ CLI" Value="CombiningDiacriticalMarks" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -127,6 +149,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.LowerCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>64</MemberValue>
       <Docs>
         <summary>The Combining Diacritical Marks code chart.</summary>
       </Docs>
@@ -135,6 +158,8 @@
       <MemberSignature Language="C#" Value="Cyrillic" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.LowerCodeCharts Cyrillic = int64(256)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.LowerCodeCharts.Cyrillic" />
+      <MemberSignature Language="VB.NET" Value="Cyrillic" />
+      <MemberSignature Language="C++ CLI" Value="Cyrillic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -143,6 +168,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.LowerCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>256</MemberValue>
       <Docs>
         <summary>The Cyrillic code chart.</summary>
       </Docs>
@@ -151,6 +177,8 @@
       <MemberSignature Language="C#" Value="CyrillicSupplement" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.LowerCodeCharts CyrillicSupplement = int64(512)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.LowerCodeCharts.CyrillicSupplement" />
+      <MemberSignature Language="VB.NET" Value="CyrillicSupplement" />
+      <MemberSignature Language="C++ CLI" Value="CyrillicSupplement" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -159,6 +187,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.LowerCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>512</MemberValue>
       <Docs>
         <summary>The Cyrillic Supplement code chart.</summary>
       </Docs>
@@ -167,6 +196,8 @@
       <MemberSignature Language="C#" Value="Default" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.LowerCodeCharts Default = int64(127)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.LowerCodeCharts.Default" />
+      <MemberSignature Language="VB.NET" Value="Default" />
+      <MemberSignature Language="C++ CLI" Value="Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -175,6 +206,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.LowerCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>127</MemberValue>
       <Docs>
         <summary>The code charts that are marked as safe on initialization.</summary>
         <remarks>
@@ -205,6 +237,8 @@
       <MemberSignature Language="C#" Value="Devanagari" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.LowerCodeCharts Devanagari = int64(262144)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.LowerCodeCharts.Devanagari" />
+      <MemberSignature Language="VB.NET" Value="Devanagari" />
+      <MemberSignature Language="C++ CLI" Value="Devanagari" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -213,6 +247,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.LowerCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>262144</MemberValue>
       <Docs>
         <summary>The Devanagari code chart.</summary>
       </Docs>
@@ -221,6 +256,8 @@
       <MemberSignature Language="C#" Value="GreekAndCoptic" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.LowerCodeCharts GreekAndCoptic = int64(128)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.LowerCodeCharts.GreekAndCoptic" />
+      <MemberSignature Language="VB.NET" Value="GreekAndCoptic" />
+      <MemberSignature Language="C++ CLI" Value="GreekAndCoptic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -229,6 +266,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.LowerCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>128</MemberValue>
       <Docs>
         <summary>The Greek and Coptic code chart.</summary>
       </Docs>
@@ -237,6 +275,8 @@
       <MemberSignature Language="C#" Value="Gujarati" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.LowerCodeCharts Gujarati = int64(2097152)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.LowerCodeCharts.Gujarati" />
+      <MemberSignature Language="VB.NET" Value="Gujarati" />
+      <MemberSignature Language="C++ CLI" Value="Gujarati" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -245,6 +285,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.LowerCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>2097152</MemberValue>
       <Docs>
         <summary>The Gujarati code chart.</summary>
       </Docs>
@@ -253,6 +294,8 @@
       <MemberSignature Language="C#" Value="Gurmukhi" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.LowerCodeCharts Gurmukhi = int64(1048576)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.LowerCodeCharts.Gurmukhi" />
+      <MemberSignature Language="VB.NET" Value="Gurmukhi" />
+      <MemberSignature Language="C++ CLI" Value="Gurmukhi" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -261,6 +304,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.LowerCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>1048576</MemberValue>
       <Docs>
         <summary>The Gurmukhi code chart.</summary>
       </Docs>
@@ -269,6 +313,8 @@
       <MemberSignature Language="C#" Value="Hebrew" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.LowerCodeCharts Hebrew = int64(2048)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.LowerCodeCharts.Hebrew" />
+      <MemberSignature Language="VB.NET" Value="Hebrew" />
+      <MemberSignature Language="C++ CLI" Value="Hebrew" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -277,6 +323,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.LowerCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>2048</MemberValue>
       <Docs>
         <summary>The Hebrew code chart.</summary>
       </Docs>
@@ -285,6 +332,8 @@
       <MemberSignature Language="C#" Value="IpaExtensions" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.LowerCodeCharts IpaExtensions = int64(16)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.LowerCodeCharts.IpaExtensions" />
+      <MemberSignature Language="VB.NET" Value="IpaExtensions" />
+      <MemberSignature Language="C++ CLI" Value="IpaExtensions" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -293,6 +342,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.LowerCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>The IPA Extensions code chart.</summary>
       </Docs>
@@ -301,6 +351,8 @@
       <MemberSignature Language="C#" Value="Kannada" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.LowerCodeCharts Kannada = int64(33554432)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.LowerCodeCharts.Kannada" />
+      <MemberSignature Language="VB.NET" Value="Kannada" />
+      <MemberSignature Language="C++ CLI" Value="Kannada" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -309,6 +361,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.LowerCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>33554432</MemberValue>
       <Docs>
         <summary>The Kannada code chart.</summary>
       </Docs>
@@ -317,6 +370,8 @@
       <MemberSignature Language="C#" Value="Lao" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.LowerCodeCharts Lao = int64(536870912)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.LowerCodeCharts.Lao" />
+      <MemberSignature Language="VB.NET" Value="Lao" />
+      <MemberSignature Language="C++ CLI" Value="Lao" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -325,6 +380,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.LowerCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>536870912</MemberValue>
       <Docs>
         <summary>The Lao code chart.</summary>
       </Docs>
@@ -333,6 +389,8 @@
       <MemberSignature Language="C#" Value="LatinExtendedA" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.LowerCodeCharts LatinExtendedA = int64(4)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.LowerCodeCharts.LatinExtendedA" />
+      <MemberSignature Language="VB.NET" Value="LatinExtendedA" />
+      <MemberSignature Language="C++ CLI" Value="LatinExtendedA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -341,6 +399,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.LowerCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The Latin Extended-A code chart.</summary>
       </Docs>
@@ -349,6 +408,8 @@
       <MemberSignature Language="C#" Value="LatinExtendedB" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.LowerCodeCharts LatinExtendedB = int64(8)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.LowerCodeCharts.LatinExtendedB" />
+      <MemberSignature Language="VB.NET" Value="LatinExtendedB" />
+      <MemberSignature Language="C++ CLI" Value="LatinExtendedB" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -357,6 +418,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.LowerCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>The Latin Extended-B code chart.</summary>
       </Docs>
@@ -365,6 +427,8 @@
       <MemberSignature Language="C#" Value="Malayalam" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.LowerCodeCharts Malayalam = int64(67108864)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.LowerCodeCharts.Malayalam" />
+      <MemberSignature Language="VB.NET" Value="Malayalam" />
+      <MemberSignature Language="C++ CLI" Value="Malayalam" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -373,6 +437,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.LowerCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>67108864</MemberValue>
       <Docs>
         <summary>The Malayalam code chart.</summary>
       </Docs>
@@ -381,6 +446,8 @@
       <MemberSignature Language="C#" Value="Nko" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.LowerCodeCharts Nko = int64(65536)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.LowerCodeCharts.Nko" />
+      <MemberSignature Language="VB.NET" Value="Nko" />
+      <MemberSignature Language="C++ CLI" Value="Nko" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -389,6 +456,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.LowerCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>65536</MemberValue>
       <Docs>
         <summary>The N'ko code chart.</summary>
       </Docs>
@@ -397,6 +465,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.LowerCodeCharts None = int64(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.LowerCodeCharts.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -405,6 +475,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.LowerCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>None of the UTF-8 Unicode code charts from the lower region are marked as safe.</summary>
       </Docs>
@@ -413,6 +484,8 @@
       <MemberSignature Language="C#" Value="Oriya" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.LowerCodeCharts Oriya = int64(4194304)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.LowerCodeCharts.Oriya" />
+      <MemberSignature Language="VB.NET" Value="Oriya" />
+      <MemberSignature Language="C++ CLI" Value="Oriya" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -421,6 +494,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.LowerCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>4194304</MemberValue>
       <Docs>
         <summary>The Oriya code chart.</summary>
       </Docs>
@@ -429,6 +503,8 @@
       <MemberSignature Language="C#" Value="Samaritan" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.LowerCodeCharts Samaritan = int64(131072)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.LowerCodeCharts.Samaritan" />
+      <MemberSignature Language="VB.NET" Value="Samaritan" />
+      <MemberSignature Language="C++ CLI" Value="Samaritan" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -437,6 +513,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.LowerCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>131072</MemberValue>
       <Docs>
         <summary>The Samaritan code chart.</summary>
       </Docs>
@@ -445,6 +522,8 @@
       <MemberSignature Language="C#" Value="Sinhala" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.LowerCodeCharts Sinhala = int64(134217728)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.LowerCodeCharts.Sinhala" />
+      <MemberSignature Language="VB.NET" Value="Sinhala" />
+      <MemberSignature Language="C++ CLI" Value="Sinhala" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -453,6 +532,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.LowerCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>134217728</MemberValue>
       <Docs>
         <summary>The Sinhala code chart.</summary>
       </Docs>
@@ -461,6 +541,8 @@
       <MemberSignature Language="C#" Value="SpacingModifierLetters" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.LowerCodeCharts SpacingModifierLetters = int64(32)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.LowerCodeCharts.SpacingModifierLetters" />
+      <MemberSignature Language="VB.NET" Value="SpacingModifierLetters" />
+      <MemberSignature Language="C++ CLI" Value="SpacingModifierLetters" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -469,6 +551,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.LowerCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>32</MemberValue>
       <Docs>
         <summary>The Spacing Modifier Letters code chart.</summary>
       </Docs>
@@ -477,6 +560,8 @@
       <MemberSignature Language="C#" Value="Syriac" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.LowerCodeCharts Syriac = int64(8192)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.LowerCodeCharts.Syriac" />
+      <MemberSignature Language="VB.NET" Value="Syriac" />
+      <MemberSignature Language="C++ CLI" Value="Syriac" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -485,6 +570,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.LowerCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>8192</MemberValue>
       <Docs>
         <summary>The Syriac code chart.</summary>
       </Docs>
@@ -493,6 +579,8 @@
       <MemberSignature Language="C#" Value="Tamil" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.LowerCodeCharts Tamil = int64(8388608)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.LowerCodeCharts.Tamil" />
+      <MemberSignature Language="VB.NET" Value="Tamil" />
+      <MemberSignature Language="C++ CLI" Value="Tamil" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -501,6 +589,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.LowerCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>8388608</MemberValue>
       <Docs>
         <summary>The Tamil code chart.</summary>
       </Docs>
@@ -509,6 +598,8 @@
       <MemberSignature Language="C#" Value="Telugu" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.LowerCodeCharts Telugu = int64(16777216)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.LowerCodeCharts.Telugu" />
+      <MemberSignature Language="VB.NET" Value="Telugu" />
+      <MemberSignature Language="C++ CLI" Value="Telugu" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -517,6 +608,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.LowerCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>16777216</MemberValue>
       <Docs>
         <summary>The Telugu code chart.</summary>
       </Docs>
@@ -525,6 +617,8 @@
       <MemberSignature Language="C#" Value="Thaana" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.LowerCodeCharts Thaana = int64(32768)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.LowerCodeCharts.Thaana" />
+      <MemberSignature Language="VB.NET" Value="Thaana" />
+      <MemberSignature Language="C++ CLI" Value="Thaana" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -533,6 +627,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.LowerCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>32768</MemberValue>
       <Docs>
         <summary>The Thaana code chart.</summary>
       </Docs>
@@ -541,6 +636,8 @@
       <MemberSignature Language="C#" Value="Thai" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.LowerCodeCharts Thai = int64(268435456)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.LowerCodeCharts.Thai" />
+      <MemberSignature Language="VB.NET" Value="Thai" />
+      <MemberSignature Language="C++ CLI" Value="Thai" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -549,6 +646,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.LowerCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>268435456</MemberValue>
       <Docs>
         <summary>The Thai code chart.</summary>
       </Docs>
@@ -557,6 +655,8 @@
       <MemberSignature Language="C#" Value="Tibetan" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.LowerCodeCharts Tibetan = int64(1073741824)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.LowerCodeCharts.Tibetan" />
+      <MemberSignature Language="VB.NET" Value="Tibetan" />
+      <MemberSignature Language="C++ CLI" Value="Tibetan" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -565,6 +665,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.LowerCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>1073741824</MemberValue>
       <Docs>
         <summary>The Tibetan code table.</summary>
       </Docs>

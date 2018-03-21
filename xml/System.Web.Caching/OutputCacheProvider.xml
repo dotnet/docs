@@ -1,7 +1,9 @@
-<Type Name="OutputCacheProvider" FullName="System.Web.Caching.OutputCacheProvider">
+﻿<Type Name="OutputCacheProvider" FullName="System.Web.Caching.OutputCacheProvider">
   <TypeSignature Language="C#" Value="public abstract class OutputCacheProvider : System.Configuration.Provider.ProviderBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit OutputCacheProvider extends System.Configuration.Provider.ProviderBase" />
   <TypeSignature Language="DocId" Value="T:System.Web.Caching.OutputCacheProvider" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class OutputCacheProvider&#xA;Inherits ProviderBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class OutputCacheProvider abstract : System::Configuration::Provider::ProviderBase" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +39,8 @@
       <MemberSignature Language="C#" Value="protected OutputCacheProvider ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.OutputCacheProvider.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; OutputCacheProvider();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -52,6 +56,8 @@
       <MemberSignature Language="C#" Value="public abstract object Add (string key, object entry, DateTime utcExpiry);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Add(string key, object entry, valuetype System.DateTime utcExpiry) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.OutputCacheProvider.Add(System.String,System.Object,System.DateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function Add (key As String, entry As Object, utcExpiry As DateTime) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Object ^ Add(System::String ^ key, System::Object ^ entry, DateTime utcExpiry);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -85,6 +91,8 @@
       <MemberSignature Language="C#" Value="public abstract object Get (string key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Get(string key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.OutputCacheProvider.Get(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function Get (key As String) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Object ^ Get(System::String ^ key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -107,6 +115,8 @@
       <MemberSignature Language="C#" Value="public abstract void Remove (string key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Remove(string key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.OutputCacheProvider.Remove(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Remove (key As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Remove(System::String ^ key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -128,6 +138,8 @@
       <MemberSignature Language="C#" Value="public abstract void Set (string key, object entry, DateTime utcExpiry);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Set(string key, object entry, valuetype System.DateTime utcExpiry) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.OutputCacheProvider.Set(System.String,System.Object,System.DateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Set (key As String, entry As Object, utcExpiry As DateTime)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Set(System::String ^ key, System::Object ^ entry, DateTime utcExpiry);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

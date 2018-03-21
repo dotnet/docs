@@ -1,7 +1,9 @@
-<Type Name="CodeWriter" FullName="Mono.CodeGeneration.CodeWriter">
+﻿<Type Name="CodeWriter" FullName="Mono.CodeGeneration.CodeWriter">
   <TypeSignature Language="C#" Value="public class CodeWriter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CodeWriter extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Mono.CodeGeneration.CodeWriter" />
+  <TypeSignature Language="VB.NET" Value="Public Class CodeWriter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CodeWriter" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -20,6 +22,8 @@
       <MemberSignature Language="C#" Value="public CodeWriter (System.IO.TextWriter tw);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.TextWriter tw) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeWriter.#ctor(System.IO.TextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (tw As TextWriter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeWriter(System::IO::TextWriter ^ tw);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -39,6 +43,8 @@
       <MemberSignature Language="C#" Value="public Mono.CodeGeneration.CodeWriter BeginLine ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Mono.CodeGeneration.CodeWriter BeginLine() cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeWriter.BeginLine" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginLine () As CodeWriter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Mono::CodeGeneration::CodeWriter ^ BeginLine();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -59,6 +65,8 @@
       <MemberSignature Language="C#" Value="public Mono.CodeGeneration.CodeWriter EndLine ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Mono.CodeGeneration.CodeWriter EndLine() cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeWriter.EndLine" />
+      <MemberSignature Language="VB.NET" Value="Public Function EndLine () As CodeWriter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Mono::CodeGeneration::CodeWriter ^ EndLine();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -79,6 +87,8 @@
       <MemberSignature Language="C#" Value="public void Indent ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Indent() cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeWriter.Indent" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Indent ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Indent();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -98,6 +108,8 @@
       <MemberSignature Language="C#" Value="public void Unindent ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Unindent() cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeWriter.Unindent" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Unindent ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Unindent();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -117,6 +129,8 @@
       <MemberSignature Language="C#" Value="public Mono.CodeGeneration.CodeWriter Write (string s);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Mono.CodeGeneration.CodeWriter Write(string s) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeWriter.Write(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Write (s As String) As CodeWriter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Mono::CodeGeneration::CodeWriter ^ Write(System::String ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -140,6 +154,8 @@
       <MemberSignature Language="C#" Value="public Mono.CodeGeneration.CodeWriter WriteLine (string s);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Mono.CodeGeneration.CodeWriter WriteLine(string s) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeWriter.WriteLine(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function WriteLine (s As String) As CodeWriter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Mono::CodeGeneration::CodeWriter ^ WriteLine(System::String ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -163,6 +179,8 @@
       <MemberSignature Language="C#" Value="public Mono.CodeGeneration.CodeWriter WriteLineInd (string s);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Mono.CodeGeneration.CodeWriter WriteLineInd(string s) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeWriter.WriteLineInd(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function WriteLineInd (s As String) As CodeWriter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Mono::CodeGeneration::CodeWriter ^ WriteLineInd(System::String ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -186,6 +204,8 @@
       <MemberSignature Language="C#" Value="public Mono.CodeGeneration.CodeWriter WriteLineUnind (string s);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Mono.CodeGeneration.CodeWriter WriteLineUnind(string s) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeWriter.WriteLineUnind(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function WriteLineUnind (s As String) As CodeWriter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Mono::CodeGeneration::CodeWriter ^ WriteLineUnind(System::String ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

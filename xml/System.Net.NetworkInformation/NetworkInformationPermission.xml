@@ -1,7 +1,9 @@
-<Type Name="NetworkInformationPermission" FullName="System.Net.NetworkInformation.NetworkInformationPermission">
+﻿<Type Name="NetworkInformationPermission" FullName="System.Net.NetworkInformation.NetworkInformationPermission">
   <TypeSignature Language="C#" Value="public sealed class NetworkInformationPermission : System.Security.CodeAccessPermission, System.Security.Permissions.IUnrestrictedPermission" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit NetworkInformationPermission extends System.Security.CodeAccessPermission implements class System.Security.Permissions.IUnrestrictedPermission" />
   <TypeSignature Language="DocId" Value="T:System.Net.NetworkInformation.NetworkInformationPermission" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class NetworkInformationPermission&#xA;Inherits CodeAccessPermission&#xA;Implements IUnrestrictedPermission" />
+  <TypeSignature Language="C++ CLI" Value="public ref class NetworkInformationPermission sealed : System::Security::CodeAccessPermission, System::Security::Permissions::IUnrestrictedPermission" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -42,10 +44,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.NetworkInformation.NetworkInformationPermission" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public NetworkInformationPermission (System.Net.NetworkInformation.NetworkInformationAccess access);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Net.NetworkInformation.NetworkInformationAccess access) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.NetworkInformationPermission.#ctor(System.Net.NetworkInformation.NetworkInformationAccess)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (access As NetworkInformationAccess)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NetworkInformationPermission(System::Net::NetworkInformation::NetworkInformationAccess access);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -85,6 +99,8 @@
       <MemberSignature Language="C#" Value="public NetworkInformationPermission (System.Security.Permissions.PermissionState state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Permissions.PermissionState state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.NetworkInformationPermission.#ctor(System.Security.Permissions.PermissionState)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (state As PermissionState)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NetworkInformationPermission(System::Security::Permissions::PermissionState state);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -124,6 +140,8 @@
       <MemberSignature Language="C#" Value="public System.Net.NetworkInformation.NetworkInformationAccess Access { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Net.NetworkInformation.NetworkInformationAccess Access" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.NetworkInformationPermission.Access" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Access As NetworkInformationAccess" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::NetworkInformation::NetworkInformationAccess Access { System::Net::NetworkInformation::NetworkInformationAccess get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -163,6 +181,8 @@
       <MemberSignature Language="C#" Value="public void AddPermission (System.Net.NetworkInformation.NetworkInformationAccess access);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddPermission(valuetype System.Net.NetworkInformation.NetworkInformationAccess access) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.NetworkInformationPermission.AddPermission(System.Net.NetworkInformation.NetworkInformationAccess)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddPermission (access As NetworkInformationAccess)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddPermission(System::Net::NetworkInformation::NetworkInformationAccess access);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -205,6 +225,8 @@
       <MemberSignature Language="C#" Value="public override System.Security.IPermission Copy ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission Copy() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.NetworkInformationPermission.Copy" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Copy () As IPermission" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Copy();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -245,6 +267,7 @@
       <MemberSignature Language="C#" Value="public override void FromXml (System.Security.SecurityElement securityElement);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void FromXml(class System.Security.SecurityElement securityElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.NetworkInformationPermission.FromXml(System.Security.SecurityElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void FromXml(System::Security::SecurityElement ^ securityElement);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -290,6 +313,8 @@
       <MemberSignature Language="C#" Value="public override System.Security.IPermission Intersect (System.Security.IPermission target);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission Intersect(class System.Security.IPermission target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.NetworkInformationPermission.Intersect(System.Security.IPermission)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Intersect (target As IPermission) As IPermission" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Intersect(System::Security::IPermission ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -335,6 +360,8 @@
       <MemberSignature Language="C#" Value="public override bool IsSubsetOf (System.Security.IPermission target);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsSubsetOf(class System.Security.IPermission target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.NetworkInformationPermission.IsSubsetOf(System.Security.IPermission)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function IsSubsetOf (target As IPermission) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsSubsetOf(System::Security::IPermission ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -379,6 +406,8 @@
       <MemberSignature Language="C#" Value="public bool IsUnrestricted ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsUnrestricted() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.NetworkInformationPermission.IsUnrestricted" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsUnrestricted () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsUnrestricted();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -420,6 +449,8 @@
       <MemberSignature Language="C#" Value="public override System.Security.SecurityElement ToXml ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.SecurityElement ToXml() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.NetworkInformationPermission.ToXml" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToXml () As SecurityElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::SecurityElement ^ ToXml();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -451,6 +482,8 @@
       <MemberSignature Language="C#" Value="public override System.Security.IPermission Union (System.Security.IPermission target);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission Union(class System.Security.IPermission target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.NetworkInformationPermission.Union(System.Security.IPermission)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Union (target As IPermission) As IPermission" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Union(System::Security::IPermission ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -490,15 +523,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Net.NetworkInformation.NetworkInformationPermission" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

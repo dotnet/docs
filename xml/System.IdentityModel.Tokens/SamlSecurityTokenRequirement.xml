@@ -1,7 +1,9 @@
-<Type Name="SamlSecurityTokenRequirement" FullName="System.IdentityModel.Tokens.SamlSecurityTokenRequirement">
+﻿<Type Name="SamlSecurityTokenRequirement" FullName="System.IdentityModel.Tokens.SamlSecurityTokenRequirement">
   <TypeSignature Language="C#" Value="public class SamlSecurityTokenRequirement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SamlSecurityTokenRequirement extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.SamlSecurityTokenRequirement" />
+  <TypeSignature Language="VB.NET" Value="Public Class SamlSecurityTokenRequirement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SamlSecurityTokenRequirement" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -16,10 +18,21 @@
     <altmember cref="T:System.IdentityModel.Tokens.SamlSecurityTokenHandler" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SamlSecurityTokenRequirement" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SamlSecurityTokenRequirement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenRequirement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SamlSecurityTokenRequirement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -35,6 +48,8 @@
       <MemberSignature Language="C#" Value="public SamlSecurityTokenRequirement (System.Xml.XmlElement element);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.XmlElement element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenRequirement.#ctor(System.Xml.XmlElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (element As XmlElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SamlSecurityTokenRequirement(System::Xml::XmlElement ^ element);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -53,6 +68,8 @@
       <MemberSignature Language="C#" Value="public System.IdentityModel.Selectors.X509CertificateValidator CertificateValidator { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Selectors.X509CertificateValidator CertificateValidator" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlSecurityTokenRequirement.CertificateValidator" />
+      <MemberSignature Language="VB.NET" Value="Public Property CertificateValidator As X509CertificateValidator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Selectors::X509CertificateValidator ^ CertificateValidator { System::IdentityModel::Selectors::X509CertificateValidator ^ get(); void set(System::IdentityModel::Selectors::X509CertificateValidator ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -71,6 +88,8 @@
       <MemberSignature Language="C#" Value="public bool MapToWindows { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool MapToWindows" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlSecurityTokenRequirement.MapToWindows" />
+      <MemberSignature Language="VB.NET" Value="Public Property MapToWindows As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MapToWindows { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -90,6 +109,8 @@
       <MemberSignature Language="C#" Value="public string NameClaimType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string NameClaimType" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlSecurityTokenRequirement.NameClaimType" />
+      <MemberSignature Language="VB.NET" Value="Public Property NameClaimType As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NameClaimType { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -108,6 +129,8 @@
       <MemberSignature Language="C#" Value="public string RoleClaimType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string RoleClaimType" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlSecurityTokenRequirement.RoleClaimType" />
+      <MemberSignature Language="VB.NET" Value="Public Property RoleClaimType As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RoleClaimType { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -126,6 +149,7 @@
       <MemberSignature Language="C#" Value="public virtual bool ShouldEnforceAudienceRestriction (System.IdentityModel.Selectors.AudienceUriMode audienceUriMode, System.IdentityModel.Tokens.SecurityToken token);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ShouldEnforceAudienceRestriction(valuetype System.IdentityModel.Selectors.AudienceUriMode audienceUriMode, class System.IdentityModel.Tokens.SecurityToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenRequirement.ShouldEnforceAudienceRestriction(System.IdentityModel.Selectors.AudienceUriMode,System.IdentityModel.Tokens.SecurityToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool ShouldEnforceAudienceRestriction(System::IdentityModel::Selectors::AudienceUriMode audienceUriMode, System::IdentityModel::Tokens::SecurityToken ^ token);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -153,6 +177,8 @@
       <MemberSignature Language="C#" Value="public virtual void ValidateAudienceRestriction (System.Collections.Generic.IList&lt;Uri&gt; allowedAudienceUris, System.Collections.Generic.IList&lt;Uri&gt; tokenAudiences);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ValidateAudienceRestriction(class System.Collections.Generic.IList`1&lt;class System.Uri&gt; allowedAudienceUris, class System.Collections.Generic.IList`1&lt;class System.Uri&gt; tokenAudiences) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSecurityTokenRequirement.ValidateAudienceRestriction(System.Collections.Generic.IList{System.Uri},System.Collections.Generic.IList{System.Uri})" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub ValidateAudienceRestriction (allowedAudienceUris As IList(Of Uri), tokenAudiences As IList(Of Uri))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ValidateAudienceRestriction(System::Collections::Generic::IList&lt;Uri ^&gt; ^ allowedAudienceUris, System::Collections::Generic::IList&lt;Uri ^&gt; ^ tokenAudiences);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -188,14 +214,5 @@
  Validation fails.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SamlSecurityTokenRequirement" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

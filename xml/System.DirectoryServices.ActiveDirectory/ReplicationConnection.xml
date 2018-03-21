@@ -1,7 +1,9 @@
-<Type Name="ReplicationConnection" FullName="System.DirectoryServices.ActiveDirectory.ReplicationConnection">
+﻿<Type Name="ReplicationConnection" FullName="System.DirectoryServices.ActiveDirectory.ReplicationConnection">
   <TypeSignature Language="C#" Value="public class ReplicationConnection : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ReplicationConnection extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.ReplicationConnection" />
+  <TypeSignature Language="VB.NET" Value="Public Class ReplicationConnection&#xA;Implements IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ReplicationConnection : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,10 +30,22 @@
     <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" /></permission>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectory.ReplicationConnection" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ReplicationConnection (System.DirectoryServices.ActiveDirectory.DirectoryContext context, string name, System.DirectoryServices.ActiveDirectory.DirectoryServer sourceServer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.DirectoryServices.ActiveDirectory.DirectoryContext context, string name, class System.DirectoryServices.ActiveDirectory.DirectoryServer sourceServer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ReplicationConnection.#ctor(System.DirectoryServices.ActiveDirectory.DirectoryContext,System.String,System.DirectoryServices.ActiveDirectory.DirectoryServer)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (context As DirectoryContext, name As String, sourceServer As DirectoryServer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ReplicationConnection(System::DirectoryServices::ActiveDirectory::DirectoryContext ^ context, System::String ^ name, System::DirectoryServices::ActiveDirectory::DirectoryServer ^ sourceServer);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -73,6 +87,8 @@
       <MemberSignature Language="C#" Value="public ReplicationConnection (System.DirectoryServices.ActiveDirectory.DirectoryContext context, string name, System.DirectoryServices.ActiveDirectory.DirectoryServer sourceServer, System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule schedule);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.DirectoryServices.ActiveDirectory.DirectoryContext context, string name, class System.DirectoryServices.ActiveDirectory.DirectoryServer sourceServer, class System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule schedule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ReplicationConnection.#ctor(System.DirectoryServices.ActiveDirectory.DirectoryContext,System.String,System.DirectoryServices.ActiveDirectory.DirectoryServer,System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (context As DirectoryContext, name As String, sourceServer As DirectoryServer, schedule As ActiveDirectorySchedule)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ReplicationConnection(System::DirectoryServices::ActiveDirectory::DirectoryContext ^ context, System::String ^ name, System::DirectoryServices::ActiveDirectory::DirectoryServer ^ sourceServer, System::DirectoryServices::ActiveDirectory::ActiveDirectorySchedule ^ schedule);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -117,6 +133,8 @@
       <MemberSignature Language="C#" Value="public ReplicationConnection (System.DirectoryServices.ActiveDirectory.DirectoryContext context, string name, System.DirectoryServices.ActiveDirectory.DirectoryServer sourceServer, System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType transport);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.DirectoryServices.ActiveDirectory.DirectoryContext context, string name, class System.DirectoryServices.ActiveDirectory.DirectoryServer sourceServer, valuetype System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType transport) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ReplicationConnection.#ctor(System.DirectoryServices.ActiveDirectory.DirectoryContext,System.String,System.DirectoryServices.ActiveDirectory.DirectoryServer,System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (context As DirectoryContext, name As String, sourceServer As DirectoryServer, transport As ActiveDirectoryTransportType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ReplicationConnection(System::DirectoryServices::ActiveDirectory::DirectoryContext ^ context, System::String ^ name, System::DirectoryServices::ActiveDirectory::DirectoryServer ^ sourceServer, System::DirectoryServices::ActiveDirectory::ActiveDirectoryTransportType transport);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -164,6 +182,8 @@
       <MemberSignature Language="C#" Value="public ReplicationConnection (System.DirectoryServices.ActiveDirectory.DirectoryContext context, string name, System.DirectoryServices.ActiveDirectory.DirectoryServer sourceServer, System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule schedule, System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType transport);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.DirectoryServices.ActiveDirectory.DirectoryContext context, string name, class System.DirectoryServices.ActiveDirectory.DirectoryServer sourceServer, class System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule schedule, valuetype System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType transport) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ReplicationConnection.#ctor(System.DirectoryServices.ActiveDirectory.DirectoryContext,System.String,System.DirectoryServices.ActiveDirectory.DirectoryServer,System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule,System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (context As DirectoryContext, name As String, sourceServer As DirectoryServer, schedule As ActiveDirectorySchedule, transport As ActiveDirectoryTransportType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ReplicationConnection(System::DirectoryServices::ActiveDirectory::DirectoryContext ^ context, System::String ^ name, System::DirectoryServices::ActiveDirectory::DirectoryServer ^ sourceServer, System::DirectoryServices::ActiveDirectory::ActiveDirectorySchedule ^ schedule, System::DirectoryServices::ActiveDirectory::ActiveDirectoryTransportType transport);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -215,6 +235,8 @@
       <MemberSignature Language="C#" Value="public System.DirectoryServices.ActiveDirectory.NotificationStatus ChangeNotificationStatus { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DirectoryServices.ActiveDirectory.NotificationStatus ChangeNotificationStatus" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ReplicationConnection.ChangeNotificationStatus" />
+      <MemberSignature Language="VB.NET" Value="Public Property ChangeNotificationStatus As NotificationStatus" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::ActiveDirectory::NotificationStatus ChangeNotificationStatus { System::DirectoryServices::ActiveDirectory::NotificationStatus get(); void set(System::DirectoryServices::ActiveDirectory::NotificationStatus value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -237,6 +259,8 @@
       <MemberSignature Language="C#" Value="public bool DataCompressionEnabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool DataCompressionEnabled" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ReplicationConnection.DataCompressionEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property DataCompressionEnabled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DataCompressionEnabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -258,6 +282,8 @@
       <MemberSignature Language="C#" Value="public void Delete ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Delete() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ReplicationConnection.Delete" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -283,6 +309,8 @@
       <MemberSignature Language="C#" Value="public string DestinationServer { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DestinationServer" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ReplicationConnection.DestinationServer" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DestinationServer As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DestinationServer { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -299,11 +327,26 @@
         <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the resources held by the object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Dispose">
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ReplicationConnection.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -322,6 +365,8 @@
       <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ReplicationConnection.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -345,6 +390,8 @@
       <MemberSignature Language="C#" Value="public bool Enabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Enabled" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ReplicationConnection.Enabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property Enabled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Enabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -366,6 +413,8 @@
       <MemberSignature Language="C#" Value="~ReplicationConnection ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ReplicationConnection.Finalize" />
+      <MemberSignature Language="VB.NET" Value="Finalize ()" />
+      <MemberSignature Language="C++ CLI" Value="!ReplicationConnection ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -386,6 +435,8 @@
       <MemberSignature Language="C#" Value="public static System.DirectoryServices.ActiveDirectory.ReplicationConnection FindByName (System.DirectoryServices.ActiveDirectory.DirectoryContext context, string name);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.DirectoryServices.ActiveDirectory.ReplicationConnection FindByName(class System.DirectoryServices.ActiveDirectory.DirectoryContext context, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ReplicationConnection.FindByName(System.DirectoryServices.ActiveDirectory.DirectoryContext,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FindByName (context As DirectoryContext, name As String) As ReplicationConnection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::DirectoryServices::ActiveDirectory::ReplicationConnection ^ FindByName(System::DirectoryServices::ActiveDirectory::DirectoryContext ^ context, System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -420,6 +471,8 @@
       <MemberSignature Language="C#" Value="public bool GeneratedByKcc { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool GeneratedByKcc" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ReplicationConnection.GeneratedByKcc" />
+      <MemberSignature Language="VB.NET" Value="Public Property GeneratedByKcc As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool GeneratedByKcc { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -441,6 +494,8 @@
       <MemberSignature Language="C#" Value="public System.DirectoryServices.DirectoryEntry GetDirectoryEntry ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.DirectoryServices.DirectoryEntry GetDirectoryEntry() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ReplicationConnection.GetDirectoryEntry" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetDirectoryEntry () As DirectoryEntry" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::DirectoryEntry ^ GetDirectoryEntry();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -464,6 +519,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ReplicationConnection.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -484,6 +541,8 @@
       <MemberSignature Language="C#" Value="public bool ReciprocalReplicationEnabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ReciprocalReplicationEnabled" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ReplicationConnection.ReciprocalReplicationEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReciprocalReplicationEnabled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ReciprocalReplicationEnabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -505,6 +564,8 @@
       <MemberSignature Language="C#" Value="public System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule ReplicationSchedule { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule ReplicationSchedule" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ReplicationConnection.ReplicationSchedule" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReplicationSchedule As ActiveDirectorySchedule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::ActiveDirectory::ActiveDirectorySchedule ^ ReplicationSchedule { System::DirectoryServices::ActiveDirectory::ActiveDirectorySchedule ^ get(); void set(System::DirectoryServices::ActiveDirectory::ActiveDirectorySchedule ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -526,6 +587,8 @@
       <MemberSignature Language="C#" Value="public bool ReplicationScheduleOwnedByUser { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ReplicationScheduleOwnedByUser" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ReplicationConnection.ReplicationScheduleOwnedByUser" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReplicationScheduleOwnedByUser As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ReplicationScheduleOwnedByUser { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -547,6 +610,8 @@
       <MemberSignature Language="C#" Value="public System.DirectoryServices.ActiveDirectory.ReplicationSpan ReplicationSpan { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DirectoryServices.ActiveDirectory.ReplicationSpan ReplicationSpan" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ReplicationConnection.ReplicationSpan" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReplicationSpan As ReplicationSpan" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::ActiveDirectory::ReplicationSpan ReplicationSpan { System::DirectoryServices::ActiveDirectory::ReplicationSpan get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -567,6 +632,8 @@
       <MemberSignature Language="C#" Value="public void Save ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Save() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ReplicationConnection.Save" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Save ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -590,6 +657,8 @@
       <MemberSignature Language="C#" Value="public string SourceServer { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SourceServer" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ReplicationConnection.SourceServer" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SourceServer As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SourceServer { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -609,6 +678,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ReplicationConnection.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -631,6 +702,8 @@
       <MemberSignature Language="C#" Value="public System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType TransportType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType TransportType" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ReplicationConnection.TransportType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TransportType As ActiveDirectoryTransportType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::ActiveDirectory::ActiveDirectoryTransportType TransportType { System::DirectoryServices::ActiveDirectory::ActiveDirectoryTransportType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -648,25 +721,5 @@
         <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectory.ReplicationConnection" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Dispose">
-      <AssemblyInfo>
-        <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Releases the resources held by the object.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

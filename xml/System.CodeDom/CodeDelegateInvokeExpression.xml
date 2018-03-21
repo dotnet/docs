@@ -1,7 +1,9 @@
-<Type Name="CodeDelegateInvokeExpression" FullName="System.CodeDom.CodeDelegateInvokeExpression">
+﻿<Type Name="CodeDelegateInvokeExpression" FullName="System.CodeDom.CodeDelegateInvokeExpression">
   <TypeSignature Language="C#" Value="public class CodeDelegateInvokeExpression : System.CodeDom.CodeExpression" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CodeDelegateInvokeExpression extends System.CodeDom.CodeExpression" />
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeDelegateInvokeExpression" />
+  <TypeSignature Language="VB.NET" Value="Public Class CodeDelegateInvokeExpression&#xA;Inherits CodeExpression" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CodeDelegateInvokeExpression : System::CodeDom::CodeExpression" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -16,7 +18,7 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
@@ -46,10 +48,21 @@
     <altmember cref="T:System.CodeDom.CodeExpression" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeDelegateInvokeExpression" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public CodeDelegateInvokeExpression ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeDelegateInvokeExpression.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeDelegateInvokeExpression();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -69,6 +82,8 @@
       <MemberSignature Language="C#" Value="public CodeDelegateInvokeExpression (System.CodeDom.CodeExpression targetObject);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.CodeDom.CodeExpression targetObject) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeDelegateInvokeExpression.#ctor(System.CodeDom.CodeExpression)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (targetObject As CodeExpression)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeDelegateInvokeExpression(System::CodeDom::CodeExpression ^ targetObject);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -92,6 +107,8 @@
       <MemberSignature Language="C#" Value="public CodeDelegateInvokeExpression (System.CodeDom.CodeExpression targetObject, params System.CodeDom.CodeExpression[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.CodeDom.CodeExpression targetObject, class System.CodeDom.CodeExpression[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeDelegateInvokeExpression.#ctor(System.CodeDom.CodeExpression,System.CodeDom.CodeExpression[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (targetObject As CodeExpression, ParamArray parameters As CodeExpression())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeDelegateInvokeExpression(System::CodeDom::CodeExpression ^ targetObject, ... cli::array &lt;System::CodeDom::CodeExpression ^&gt; ^ parameters);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -123,6 +140,8 @@
       <MemberSignature Language="C#" Value="public System.CodeDom.CodeExpressionCollection Parameters { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeExpressionCollection Parameters" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeDelegateInvokeExpression.Parameters" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parameters As CodeExpressionCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeExpressionCollection ^ Parameters { System::CodeDom::CodeExpressionCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -146,6 +165,8 @@
       <MemberSignature Language="C#" Value="public System.CodeDom.CodeExpression TargetObject { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeExpression TargetObject" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeDelegateInvokeExpression.TargetObject" />
+      <MemberSignature Language="VB.NET" Value="Public Property TargetObject As CodeExpression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeExpression ^ TargetObject { System::CodeDom::CodeExpression ^ get(); void set(System::CodeDom::CodeExpression ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -165,14 +186,5 @@
         <altmember cref="T:System.CodeDom.CodeExpression" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeDelegateInvokeExpression" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

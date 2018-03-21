@@ -1,7 +1,9 @@
-<Type Name="VirtualPathProvider" FullName="System.Web.Hosting.VirtualPathProvider">
+﻿<Type Name="VirtualPathProvider" FullName="System.Web.Hosting.VirtualPathProvider">
   <TypeSignature Language="C#" Value="public abstract class VirtualPathProvider : MarshalByRefObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit VirtualPathProvider extends System.MarshalByRefObject" />
   <TypeSignature Language="DocId" Value="T:System.Web.Hosting.VirtualPathProvider" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class VirtualPathProvider&#xA;Inherits MarshalByRefObject" />
+  <TypeSignature Language="C++ CLI" Value="public ref class VirtualPathProvider abstract : MarshalByRefObject" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -167,6 +169,8 @@
       <MemberSignature Language="C#" Value="protected VirtualPathProvider ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.VirtualPathProvider.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; VirtualPathProvider();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -197,6 +201,8 @@
       <MemberSignature Language="C#" Value="public virtual string CombineVirtualPaths (string basePath, string relativePath);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string CombineVirtualPaths(string basePath, string relativePath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.VirtualPathProvider.CombineVirtualPaths(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CombineVirtualPaths (basePath As String, relativePath As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ CombineVirtualPaths(System::String ^ basePath, System::String ^ relativePath);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -235,6 +241,8 @@
       <MemberSignature Language="C#" Value="public virtual bool DirectoryExists (string virtualDir);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool DirectoryExists(string virtualDir) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.VirtualPathProvider.DirectoryExists(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DirectoryExists (virtualDir As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool DirectoryExists(System::String ^ virtualDir);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -278,6 +286,8 @@
       <MemberSignature Language="C#" Value="public virtual bool FileExists (string virtualPath);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool FileExists(string virtualPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.VirtualPathProvider.FileExists(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function FileExists (virtualPath As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool FileExists(System::String ^ virtualPath);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -316,6 +326,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.Caching.CacheDependency GetCacheDependency (string virtualPath, System.Collections.IEnumerable virtualPathDependencies, DateTime utcStart);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.Caching.CacheDependency GetCacheDependency(string virtualPath, class System.Collections.IEnumerable virtualPathDependencies, valuetype System.DateTime utcStart) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.VirtualPathProvider.GetCacheDependency(System.String,System.Collections.IEnumerable,System.DateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetCacheDependency (virtualPath As String, virtualPathDependencies As IEnumerable, utcStart As DateTime) As CacheDependency" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Web::Caching::CacheDependency ^ GetCacheDependency(System::String ^ virtualPath, System::Collections::IEnumerable ^ virtualPathDependencies, DateTime utcStart);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -357,6 +369,8 @@
       <MemberSignature Language="C#" Value="public virtual string GetCacheKey (string virtualPath);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetCacheKey(string virtualPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.VirtualPathProvider.GetCacheKey(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetCacheKey (virtualPath As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetCacheKey(System::String ^ virtualPath);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -389,6 +403,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.Hosting.VirtualDirectory GetDirectory (string virtualDir);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.Hosting.VirtualDirectory GetDirectory(string virtualDir) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.VirtualPathProvider.GetDirectory(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDirectory (virtualDir As String) As VirtualDirectory" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Web::Hosting::VirtualDirectory ^ GetDirectory(System::String ^ virtualDir);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -431,6 +447,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.Hosting.VirtualFile GetFile (string virtualPath);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.Hosting.VirtualFile GetFile(string virtualPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.VirtualPathProvider.GetFile(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetFile (virtualPath As String) As VirtualFile" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Web::Hosting::VirtualFile ^ GetFile(System::String ^ virtualPath);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -468,6 +486,8 @@
       <MemberSignature Language="C#" Value="public virtual string GetFileHash (string virtualPath, System.Collections.IEnumerable virtualPathDependencies);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetFileHash(string virtualPath, class System.Collections.IEnumerable virtualPathDependencies) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.VirtualPathProvider.GetFileHash(System.String,System.Collections.IEnumerable)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetFileHash (virtualPath As String, virtualPathDependencies As IEnumerable) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetFileHash(System::String ^ virtualPath, System::Collections::IEnumerable ^ virtualPathDependencies);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -499,6 +519,8 @@
       <MemberSignature Language="C#" Value="protected virtual void Initialize ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Initialize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.VirtualPathProvider.Initialize" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Initialize ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Initialize();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -532,6 +554,8 @@
       <MemberSignature Language="C#" Value="public override object InitializeLifetimeService ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object InitializeLifetimeService() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.VirtualPathProvider.InitializeLifetimeService" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function InitializeLifetimeService () As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ InitializeLifetimeService();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -558,6 +582,8 @@
       <MemberSignature Language="C#" Value="public static System.IO.Stream OpenFile (string virtualPath);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.Stream OpenFile(string virtualPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.VirtualPathProvider.OpenFile(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function OpenFile (virtualPath As String) As Stream" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::Stream ^ OpenFile(System::String ^ virtualPath);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -584,9 +610,11 @@
       </Docs>
     </Member>
     <Member MemberName="Previous">
-      <MemberSignature Language="C#" Value="protected System.Web.Hosting.VirtualPathProvider Previous { get; }" />
+      <MemberSignature Language="C#" Value="protected internal System.Web.Hosting.VirtualPathProvider Previous { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Hosting.VirtualPathProvider Previous" />
       <MemberSignature Language="DocId" Value="P:System.Web.Hosting.VirtualPathProvider.Previous" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend ReadOnly Property Previous As VirtualPathProvider" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property System::Web::Hosting::VirtualPathProvider ^ Previous { System::Web::Hosting::VirtualPathProvider ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

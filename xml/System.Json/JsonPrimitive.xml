@@ -1,7 +1,9 @@
-<Type Name="JsonPrimitive" FullName="System.Json.JsonPrimitive">
+﻿<Type Name="JsonPrimitive" FullName="System.Json.JsonPrimitive">
   <TypeSignature Language="C#" Value="public class JsonPrimitive : System.Json.JsonValue" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit JsonPrimitive extends System.Json.JsonValue" />
   <TypeSignature Language="DocId" Value="T:System.Json.JsonPrimitive" />
+  <TypeSignature Language="VB.NET" Value="Public Class JsonPrimitive&#xA;Inherits JsonValue" />
+  <TypeSignature Language="C++ CLI" Value="public ref class JsonPrimitive : System::Json::JsonValue" />
   <AssemblyInfo>
     <AssemblyName>System.Json</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -20,6 +22,8 @@
       <MemberSignature Language="C#" Value="public JsonPrimitive (bool value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Json.JsonPrimitive.#ctor(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; JsonPrimitive(bool value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Json</AssemblyName>
@@ -39,6 +43,8 @@
       <MemberSignature Language="C#" Value="public JsonPrimitive (byte value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int8 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Json.JsonPrimitive.#ctor(System.Byte)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As Byte)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; JsonPrimitive(System::Byte value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Json</AssemblyName>
@@ -58,6 +64,8 @@
       <MemberSignature Language="C#" Value="public JsonPrimitive (char value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(char value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Json.JsonPrimitive.#ctor(System.Char)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As Char)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; JsonPrimitive(char value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Json</AssemblyName>
@@ -77,6 +85,8 @@
       <MemberSignature Language="C#" Value="public JsonPrimitive (DateTime value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.DateTime value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Json.JsonPrimitive.#ctor(System.DateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As DateTime)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; JsonPrimitive(DateTime value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Json</AssemblyName>
@@ -96,6 +106,8 @@
       <MemberSignature Language="C#" Value="public JsonPrimitive (DateTimeOffset value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.DateTimeOffset value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Json.JsonPrimitive.#ctor(System.DateTimeOffset)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As DateTimeOffset)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; JsonPrimitive(DateTimeOffset value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Json</AssemblyName>
@@ -115,6 +127,8 @@
       <MemberSignature Language="C#" Value="public JsonPrimitive (decimal value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Decimal value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Json.JsonPrimitive.#ctor(System.Decimal)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As Decimal)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; JsonPrimitive(System::Decimal value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Json</AssemblyName>
@@ -134,6 +148,8 @@
       <MemberSignature Language="C#" Value="public JsonPrimitive (double value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Json.JsonPrimitive.#ctor(System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As Double)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; JsonPrimitive(double value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Json</AssemblyName>
@@ -153,6 +169,8 @@
       <MemberSignature Language="C#" Value="public JsonPrimitive (Guid value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Guid value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Json.JsonPrimitive.#ctor(System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As Guid)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; JsonPrimitive(Guid value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Json</AssemblyName>
@@ -172,6 +190,8 @@
       <MemberSignature Language="C#" Value="public JsonPrimitive (short value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int16 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Json.JsonPrimitive.#ctor(System.Int16)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As Short)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; JsonPrimitive(short value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Json</AssemblyName>
@@ -191,6 +211,8 @@
       <MemberSignature Language="C#" Value="public JsonPrimitive (int value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Json.JsonPrimitive.#ctor(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; JsonPrimitive(int value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Json</AssemblyName>
@@ -210,6 +232,8 @@
       <MemberSignature Language="C#" Value="public JsonPrimitive (long value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Json.JsonPrimitive.#ctor(System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As Long)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; JsonPrimitive(long value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Json</AssemblyName>
@@ -229,6 +253,8 @@
       <MemberSignature Language="C#" Value="public JsonPrimitive (sbyte value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int8 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Json.JsonPrimitive.#ctor(System.SByte)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As SByte)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; JsonPrimitive(System::SByte value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Json</AssemblyName>
@@ -248,6 +274,8 @@
       <MemberSignature Language="C#" Value="public JsonPrimitive (float value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Json.JsonPrimitive.#ctor(System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; JsonPrimitive(float value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Json</AssemblyName>
@@ -267,6 +295,8 @@
       <MemberSignature Language="C#" Value="public JsonPrimitive (string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Json.JsonPrimitive.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; JsonPrimitive(System::String ^ value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Json</AssemblyName>
@@ -286,6 +316,8 @@
       <MemberSignature Language="C#" Value="public JsonPrimitive (TimeSpan value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.TimeSpan value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Json.JsonPrimitive.#ctor(System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As TimeSpan)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; JsonPrimitive(TimeSpan value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Json</AssemblyName>
@@ -305,6 +337,8 @@
       <MemberSignature Language="C#" Value="public JsonPrimitive (ushort value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int16 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Json.JsonPrimitive.#ctor(System.UInt16)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As UShort)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; JsonPrimitive(System::UInt16 value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Json</AssemblyName>
@@ -324,6 +358,8 @@
       <MemberSignature Language="C#" Value="public JsonPrimitive (uint value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Json.JsonPrimitive.#ctor(System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As UInteger)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; JsonPrimitive(System::UInt32 value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Json</AssemblyName>
@@ -343,6 +379,8 @@
       <MemberSignature Language="C#" Value="public JsonPrimitive (ulong value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Json.JsonPrimitive.#ctor(System.UInt64)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As ULong)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; JsonPrimitive(System::UInt64 value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Json</AssemblyName>
@@ -362,6 +400,8 @@
       <MemberSignature Language="C#" Value="public JsonPrimitive (Uri value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Json.JsonPrimitive.#ctor(System.Uri)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As Uri)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; JsonPrimitive(Uri ^ value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Json</AssemblyName>
@@ -381,6 +421,8 @@
       <MemberSignature Language="C#" Value="public override System.Json.JsonType JsonType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Json.JsonType JsonType" />
       <MemberSignature Language="DocId" Value="P:System.Json.JsonPrimitive.JsonType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property JsonType As JsonType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Json::JsonType JsonType { System::Json::JsonType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Json</AssemblyName>
@@ -400,6 +442,7 @@
       <MemberSignature Language="C#" Value="public override void Save (System.IO.Stream stream);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Save(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Json.JsonPrimitive.Save(System.IO.Stream)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Save(System::IO::Stream ^ stream);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Json</AssemblyName>

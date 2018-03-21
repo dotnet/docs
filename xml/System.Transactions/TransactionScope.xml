@@ -1,7 +1,9 @@
-<Type Name="TransactionScope" FullName="System.Transactions.TransactionScope">
+﻿<Type Name="TransactionScope" FullName="System.Transactions.TransactionScope">
   <TypeSignature Language="C#" Value="public sealed class TransactionScope : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TransactionScope extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Transactions.TransactionScope" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TransactionScope&#xA;Implements IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TransactionScope sealed : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Transactions</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -57,10 +59,22 @@
     <threadsafe>This type is thread safe.</threadsafe>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Transactions.TransactionScope" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public TransactionScope ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Transactions.TransactionScope.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TransactionScope();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -89,9 +103,37 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public TransactionScope (System.Transactions.Transaction transaction);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Transactions.Transaction transaction) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Transactions.TransactionScope.#ctor(System.Transactions.Transaction)" />
+      <MemberSignature Language="C#" Value="public TransactionScope (System.Transactions.Transaction transaction, TimeSpan timeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Transactions.Transaction transaction, valuetype System.TimeSpan timeout) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Transactions.TransactionScope.#ctor(System.Transactions.Transaction,System.TimeSpan)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TransactionScope(System::Transactions::Transaction ^ transaction, TimeSpan timeout);" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="transaction" Type="System.Transactions.Transaction" />
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+      </Parameters>
+      <Docs>
+        <param name="transaction">To be added.</param>
+        <param name="timeout">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TransactionScope (System.Transactions.Transaction transactionToUse);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Transactions.Transaction transactionToUse) cil managed" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0" />
+      <MemberSignature Language="DocId" Value="M:System.Transactions.TransactionScope.#ctor(System.Transactions.Transaction)" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (transactionToUse As Transaction)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TransactionScope(System::Transactions::Transaction ^ transactionToUse);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0" />
+      <MemberSignature Language="C#" Value="public TransactionScope (System.Transactions.Transaction transaction);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Transactions.Transaction transaction) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="DocId" Value="M:System.Transactions.TransactionScope.#ctor(System.Transactions.Transaction)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TransactionScope(System::Transactions::Transaction ^ transaction);" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -107,7 +149,8 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="transactionToUse" Type="System.Transactions.Transaction" />
+        <Parameter Name="transactionToUse" Type="System.Transactions.Transaction" Index="0" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0" />
+        <Parameter Name="transaction" Type="System.Transactions.Transaction" Index="0" FrameworkAlternate="xamarinandroid-7.1" />
       </Parameters>
       <Docs>
         <param name="transaction">To be added.</param>
@@ -116,94 +159,11 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public TransactionScope (System.Transactions.TransactionScopeAsyncFlowOption asyncFlow);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Transactions.TransactionScopeAsyncFlowOption asyncFlow) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Transactions.TransactionScope.#ctor(System.Transactions.TransactionScopeAsyncFlowOption)" />
-      <MemberType>Constructor</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Transactions</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Transactions.Local</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Parameters>
-        <Parameter Name="asyncFlowOption" Type="System.Transactions.TransactionScopeAsyncFlowOption" />
-      </Parameters>
-      <Docs>
-        <param name="asyncFlow">To be added.</param>
-        <summary>[Supported in the .NET Framework 4.5.1 and later versions]  
-  
- Initializes a new instance of the <see cref="T:System.Transactions.TransactionScope" /> class with the specified asynchronous flow option.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public TransactionScope (System.Transactions.TransactionScopeOption option);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Transactions.TransactionScopeOption option) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Transactions.TransactionScope.#ctor(System.Transactions.TransactionScopeOption)" />
-      <MemberType>Constructor</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Transactions</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Transactions.Local</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Parameters>
-        <Parameter Name="scopeOption" Type="System.Transactions.TransactionScopeOption" />
-      </Parameters>
-      <Docs>
-        <param name="option">To be added.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Transactions.TransactionScope" /> class with the specified requirements.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public TransactionScope (System.Transactions.Transaction transaction, TimeSpan timeout);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Transactions.Transaction transaction, valuetype System.TimeSpan timeout) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Transactions.TransactionScope.#ctor(System.Transactions.Transaction,System.TimeSpan)" />
-      <MemberType>Constructor</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Transactions</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Transactions.Local</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Parameters>
-        <Parameter Name="transactionToUse" Type="System.Transactions.Transaction" />
-        <Parameter Name="scopeTimeout" Type="System.TimeSpan" />
-      </Parameters>
-      <Docs>
-        <param name="transaction">To be added.</param>
-        <param name="timeout">To be added.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Transactions.TransactionScope" /> class with the specified timeout value, and sets the specified transaction as the ambient transaction, so that transactional work done inside the scope uses this transaction.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public TransactionScope (System.Transactions.Transaction transactionToUse, System.Transactions.TransactionScopeAsyncFlowOption asyncFlowOption);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Transactions.Transaction transactionToUse, valuetype System.Transactions.TransactionScopeAsyncFlowOption asyncFlowOption) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Transactions.TransactionScope.#ctor(System.Transactions.Transaction,System.Transactions.TransactionScopeAsyncFlowOption)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (transactionToUse As Transaction, asyncFlowOption As TransactionScopeAsyncFlowOption)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TransactionScope(System::Transactions::Transaction ^ transactionToUse, System::Transactions::TransactionScopeAsyncFlowOption asyncFlowOption);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -232,9 +192,16 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public TransactionScope (System.Transactions.TransactionScopeOption option, TimeSpan timeout);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Transactions.TransactionScopeOption option, valuetype System.TimeSpan timeout) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Transactions.TransactionScope.#ctor(System.Transactions.TransactionScopeOption,System.TimeSpan)" />
+      <MemberSignature Language="C#" Value="public TransactionScope (System.Transactions.TransactionScopeAsyncFlowOption asyncFlowOption);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Transactions.TransactionScopeAsyncFlowOption asyncFlowOption) cil managed" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0" />
+      <MemberSignature Language="DocId" Value="M:System.Transactions.TransactionScope.#ctor(System.Transactions.TransactionScopeAsyncFlowOption)" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (asyncFlowOption As TransactionScopeAsyncFlowOption)" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TransactionScope(System::Transactions::TransactionScopeAsyncFlowOption asyncFlowOption);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0" />
+      <MemberSignature Language="C#" Value="public TransactionScope (System.Transactions.TransactionScopeAsyncFlowOption asyncFlow);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Transactions.TransactionScopeAsyncFlowOption asyncFlow) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="DocId" Value="M:System.Transactions.TransactionScope.#ctor(System.Transactions.TransactionScopeAsyncFlowOption)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (asyncFlow As TransactionScopeAsyncFlowOption)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TransactionScope(System::Transactions::TransactionScopeAsyncFlowOption asyncFlow);" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -250,56 +217,74 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="scopeOption" Type="System.Transactions.TransactionScopeOption" />
-        <Parameter Name="scopeTimeout" Type="System.TimeSpan" />
+        <Parameter Name="asyncFlowOption" Type="System.Transactions.TransactionScopeAsyncFlowOption" Index="0" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0" />
+        <Parameter Name="asyncFlow" Type="System.Transactions.TransactionScopeAsyncFlowOption" Index="0" FrameworkAlternate="xamarinandroid-7.1" />
       </Parameters>
       <Docs>
-        <param name="option">To be added.</param>
-        <param name="timeout">To be added.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Transactions.TransactionScope" /> class with the specified timeout value and requirements.</summary>
+        <param name="asyncFlow">To be added.</param>
+        <summary>[Supported in the .NET Framework 4.5.1 and later versions]  
+  
+ Initializes a new instance of the <see cref="T:System.Transactions.TransactionScope" /> class with the specified asynchronous flow option.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public TransactionScope (System.Transactions.TransactionScopeOption scopeOption, System.Transactions.TransactionOptions options);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Transactions.TransactionScopeOption scopeOption, valuetype System.Transactions.TransactionOptions options) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Transactions.TransactionScope.#ctor(System.Transactions.TransactionScopeOption,System.Transactions.TransactionOptions)" />
+      <MemberSignature Language="C#" Value="public TransactionScope (System.Transactions.TransactionScopeOption option, TimeSpan timeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Transactions.TransactionScopeOption option, valuetype System.TimeSpan timeout) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Transactions.TransactionScope.#ctor(System.Transactions.TransactionScopeOption,System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (option As TransactionScopeOption, timeout As TimeSpan)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TransactionScope(System::Transactions::TransactionScopeOption option, TimeSpan timeout);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Transactions.Local</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
       <Parameters>
-        <Parameter Name="scopeOption" Type="System.Transactions.TransactionScopeOption" />
-        <Parameter Name="transactionOptions" Type="System.Transactions.TransactionOptions" />
+        <Parameter Name="option" Type="System.Transactions.TransactionScopeOption" />
+        <Parameter Name="timeout" Type="System.TimeSpan" />
       </Parameters>
       <Docs>
-        <param name="scopeOption">An instance of the <see cref="T:System.Transactions.TransactionScopeOption" /> enumeration that describes the transaction requirements associated with this transaction scope.</param>
-        <param name="options">To be added.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Transactions.TransactionScope" /> class with the specified requirements.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When you use the `transactionOptions` parameter to specify an <xref:System.Transactions.IsolationLevel>, and the scope creates a transaction later, the new transaction is associated with the specified isolation level. If an isolation level is passed in together with a transaction, the transaction must have an identical isolation level, or an exception is thrown.  
-  
- ]]></format>
-        </remarks>
+        <param name="option">To be added.</param>
+        <param name="timeout">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public TransactionScope (System.Transactions.TransactionScopeOption option, System.Transactions.TransactionScopeAsyncFlowOption asyncFlow);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Transactions.TransactionScopeOption option, valuetype System.Transactions.TransactionScopeAsyncFlowOption asyncFlow) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Transactions.TransactionScope.#ctor(System.Transactions.TransactionScopeOption,System.Transactions.TransactionScopeAsyncFlowOption)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (option As TransactionScopeOption, asyncFlow As TransactionScopeAsyncFlowOption)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TransactionScope(System::Transactions::TransactionScopeOption option, System::Transactions::TransactionScopeAsyncFlowOption asyncFlow);" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="option" Type="System.Transactions.TransactionScopeOption" />
+        <Parameter Name="asyncFlow" Type="System.Transactions.TransactionScopeAsyncFlowOption" />
+      </Parameters>
+      <Docs>
+        <param name="option">To be added.</param>
+        <param name="asyncFlow">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TransactionScope (System.Transactions.TransactionScopeOption scopeOption);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Transactions.TransactionScopeOption scopeOption) cil managed" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0" />
+      <MemberSignature Language="DocId" Value="M:System.Transactions.TransactionScope.#ctor(System.Transactions.TransactionScopeOption)" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (scopeOption As TransactionScopeOption)" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TransactionScope(System::Transactions::TransactionScopeOption scopeOption);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0" />
+      <MemberSignature Language="C#" Value="public TransactionScope (System.Transactions.TransactionScopeOption option);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Transactions.TransactionScopeOption option) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="DocId" Value="M:System.Transactions.TransactionScope.#ctor(System.Transactions.TransactionScopeOption)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (option As TransactionScopeOption)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TransactionScope(System::Transactions::TransactionScopeOption option);" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -315,15 +300,12 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="scopeOption" Type="System.Transactions.TransactionScopeOption" />
-        <Parameter Name="asyncFlowOption" Type="System.Transactions.TransactionScopeAsyncFlowOption" />
+        <Parameter Name="scopeOption" Type="System.Transactions.TransactionScopeOption" Index="0" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0" />
+        <Parameter Name="option" Type="System.Transactions.TransactionScopeOption" Index="0" FrameworkAlternate="xamarinandroid-7.1" />
       </Parameters>
       <Docs>
         <param name="option">To be added.</param>
-        <param name="asyncFlow">To be added.</param>
-        <summary>[Supported in the .NET Framework 4.5.1 and later versions]  
-  
- Initializes a new instance of the <see cref="T:System.Transactions.TransactionScope" /> class with the specified requirements and asynchronous flow option.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Transactions.TransactionScope" /> class with the specified requirements.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -331,44 +313,32 @@
       <MemberSignature Language="C#" Value="public TransactionScope (System.Transactions.Transaction transaction, TimeSpan timeout, System.Transactions.EnterpriseServicesInteropOption opt);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Transactions.Transaction transaction, valuetype System.TimeSpan timeout, valuetype System.Transactions.EnterpriseServicesInteropOption opt) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Transactions.TransactionScope.#ctor(System.Transactions.Transaction,System.TimeSpan,System.Transactions.EnterpriseServicesInteropOption)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TransactionScope(System::Transactions::Transaction ^ transaction, TimeSpan timeout, System::Transactions::EnterpriseServicesInteropOption opt);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Transactions.Local</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
       <Parameters>
-        <Parameter Name="transactionToUse" Type="System.Transactions.Transaction" />
-        <Parameter Name="scopeTimeout" Type="System.TimeSpan" />
-        <Parameter Name="interopOption" Type="System.Transactions.EnterpriseServicesInteropOption" />
+        <Parameter Name="transaction" Type="System.Transactions.Transaction" />
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+        <Parameter Name="opt" Type="System.Transactions.EnterpriseServicesInteropOption" />
       </Parameters>
       <Docs>
         <param name="transaction">To be added.</param>
         <param name="timeout">To be added.</param>
         <param name="opt">To be added.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Transactions.TransactionScope" /> class with the specified timeout value and COM+ interoperability requirements, and sets the specified transaction as the ambient transaction, so that transactional work done inside the scope uses this transaction.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- **Note** This method uses <xref:System.Security.Permissions.SecurityAction.LinkDemand> to prevent it from being called from untrusted code; however, only the immediate caller is required to possess the `FullTrust` permission set.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public TransactionScope (System.Transactions.Transaction transactionToUse, TimeSpan scopeTimeout, System.Transactions.TransactionScopeAsyncFlowOption asyncFlowOption);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Transactions.Transaction transactionToUse, valuetype System.TimeSpan scopeTimeout, valuetype System.Transactions.TransactionScopeAsyncFlowOption asyncFlowOption) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Transactions.TransactionScope.#ctor(System.Transactions.Transaction,System.TimeSpan,System.Transactions.TransactionScopeAsyncFlowOption)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (transactionToUse As Transaction, scopeTimeout As TimeSpan, asyncFlowOption As TransactionScopeAsyncFlowOption)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TransactionScope(System::Transactions::Transaction ^ transactionToUse, TimeSpan scopeTimeout, System::Transactions::TransactionScopeAsyncFlowOption asyncFlowOption);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -402,32 +372,24 @@
       <MemberSignature Language="C#" Value="public TransactionScope (System.Transactions.TransactionScopeOption option, TimeSpan timeout, System.Transactions.TransactionScopeAsyncFlowOption asyncFlow);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Transactions.TransactionScopeOption option, valuetype System.TimeSpan timeout, valuetype System.Transactions.TransactionScopeAsyncFlowOption asyncFlow) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Transactions.TransactionScope.#ctor(System.Transactions.TransactionScopeOption,System.TimeSpan,System.Transactions.TransactionScopeAsyncFlowOption)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (option As TransactionScopeOption, timeout As TimeSpan, asyncFlow As TransactionScopeAsyncFlowOption)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TransactionScope(System::Transactions::TransactionScopeOption option, TimeSpan timeout, System::Transactions::TransactionScopeAsyncFlowOption asyncFlow);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Transactions.Local</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
       <Parameters>
-        <Parameter Name="scopeOption" Type="System.Transactions.TransactionScopeOption" />
-        <Parameter Name="scopeTimeout" Type="System.TimeSpan" />
-        <Parameter Name="asyncFlowOption" Type="System.Transactions.TransactionScopeAsyncFlowOption" />
+        <Parameter Name="option" Type="System.Transactions.TransactionScopeOption" />
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+        <Parameter Name="asyncFlow" Type="System.Transactions.TransactionScopeAsyncFlowOption" />
       </Parameters>
       <Docs>
         <param name="option">To be added.</param>
         <param name="timeout">To be added.</param>
         <param name="asyncFlow">To be added.</param>
-        <summary>[Supported in the .NET Framework 4.5.1 and later versions]  
-  
- Initializes a new instance of the <see cref="T:System.Transactions.TransactionScope" /> class with the specified timeout value, requirements, and asynchronous flow option.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -435,46 +397,31 @@
       <MemberSignature Language="C#" Value="public TransactionScope (System.Transactions.TransactionScopeOption scopeOption, System.Transactions.TransactionOptions options, System.Transactions.EnterpriseServicesInteropOption opt);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Transactions.TransactionScopeOption scopeOption, valuetype System.Transactions.TransactionOptions options, valuetype System.Transactions.EnterpriseServicesInteropOption opt) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Transactions.TransactionScope.#ctor(System.Transactions.TransactionScopeOption,System.Transactions.TransactionOptions,System.Transactions.EnterpriseServicesInteropOption)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (scopeOption As TransactionScopeOption, options As TransactionOptions, opt As EnterpriseServicesInteropOption)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TransactionScope(System::Transactions::TransactionScopeOption scopeOption, System::Transactions::TransactionOptions options, System::Transactions::EnterpriseServicesInteropOption opt);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Transactions.Local</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="scopeOption" Type="System.Transactions.TransactionScopeOption" />
-        <Parameter Name="transactionOptions" Type="System.Transactions.TransactionOptions" />
-        <Parameter Name="interopOption" Type="System.Transactions.EnterpriseServicesInteropOption" />
+        <Parameter Name="options" Type="System.Transactions.TransactionOptions" />
+        <Parameter Name="opt" Type="System.Transactions.EnterpriseServicesInteropOption" />
       </Parameters>
       <Docs>
-        <param name="scopeOption">An instance of the <see cref="T:System.Transactions.TransactionScopeOption" /> enumeration that describes the transaction requirements associated with this transaction scope.</param>
+        <param name="scopeOption">To be added.</param>
         <param name="options">To be added.</param>
         <param name="opt">To be added.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Transactions.TransactionScope" /> class with the specified scope and COM+ interoperability requirements, and transaction options.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When you use the `transactionOptions` parameter to specify an <xref:System.Transactions.IsolationLevel>, and the scope creates a transaction later, the new transaction is associated with the specified isolation level. If an isolation level is passed in together with a transaction, the transaction must have an identical isolation level, or an exception is thrown.  
-  
- **Note** This method uses <xref:System.Security.Permissions.SecurityAction.LinkDemand> to prevent it from being called from untrusted code; however, only the immediate caller is required to possess the `FullTrust` permission set.  
-  
- ]]></format>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public TransactionScope (System.Transactions.TransactionScopeOption scopeOption, System.Transactions.TransactionOptions transactionOptions, System.Transactions.TransactionScopeAsyncFlowOption asyncFlowOption);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Transactions.TransactionScopeOption scopeOption, valuetype System.Transactions.TransactionOptions transactionOptions, valuetype System.Transactions.TransactionScopeAsyncFlowOption asyncFlowOption) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Transactions.TransactionScope.#ctor(System.Transactions.TransactionScopeOption,System.Transactions.TransactionOptions,System.Transactions.TransactionScopeAsyncFlowOption)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TransactionScope(System::Transactions::TransactionScopeOption scopeOption, System::Transactions::TransactionOptions transactionOptions, System::Transactions::TransactionScopeAsyncFlowOption asyncFlowOption);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -504,10 +451,99 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TransactionScope (System.Transactions.TransactionScopeOption scopeOption, TimeSpan scopeTimeout);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Transactions.TransactionScopeOption scopeOption, valuetype System.TimeSpan scopeTimeout) cil managed" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0" />
+      <MemberSignature Language="DocId" Value="M:System.Transactions.TransactionScope.#ctor(System.Transactions.TransactionScopeOption,System.TimeSpan)" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (scopeOption As TransactionScopeOption, scopeTimeout As TimeSpan)" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TransactionScope(System::Transactions::TransactionScopeOption scopeOption, TimeSpan scopeTimeout);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0" />
+      <MemberSignature Language="C#" Value="public TransactionScope (System.Transactions.TransactionScopeOption option, TimeSpan timeout);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Transactions.TransactionScopeOption option, valuetype System.TimeSpan timeout) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="DocId" Value="M:System.Transactions.TransactionScope.#ctor(System.Transactions.TransactionScopeOption,System.TimeSpan)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (option As TransactionScopeOption, timeout As TimeSpan)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TransactionScope(System::Transactions::TransactionScopeOption option, TimeSpan timeout);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions.Local</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="scopeOption" Type="System.Transactions.TransactionScopeOption" Index="0" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0" />
+        <Parameter Name="option" Type="System.Transactions.TransactionScopeOption" Index="0" FrameworkAlternate="xamarinandroid-7.1" />
+        <Parameter Name="scopeTimeout" Type="System.TimeSpan" Index="1" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0" />
+        <Parameter Name="timeout" Type="System.TimeSpan" Index="1" FrameworkAlternate="xamarinandroid-7.1" />
+      </Parameters>
+      <Docs>
+        <param name="scopeOption">To be added.</param>
+        <param name="option">To be added.</param>
+        <param name="scopeTimeout">To be added.</param>
+        <param name="timeout">To be added.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Transactions.TransactionScope" /> class with the specified timeout value and requirements.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TransactionScope (System.Transactions.TransactionScopeOption scopeOption, System.Transactions.TransactionOptions transactionOptions);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Transactions.TransactionScopeOption scopeOption, valuetype System.Transactions.TransactionOptions transactionOptions) cil managed" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0" />
+      <MemberSignature Language="DocId" Value="M:System.Transactions.TransactionScope.#ctor(System.Transactions.TransactionScopeOption,System.Transactions.TransactionOptions)" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TransactionScope(System::Transactions::TransactionScopeOption scopeOption, System::Transactions::TransactionOptions transactionOptions);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0" />
+      <MemberSignature Language="C#" Value="public TransactionScope (System.Transactions.TransactionScopeOption scopeOption, System.Transactions.TransactionOptions options);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Transactions.TransactionScopeOption scopeOption, valuetype System.Transactions.TransactionOptions options) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="DocId" Value="M:System.Transactions.TransactionScope.#ctor(System.Transactions.TransactionScopeOption,System.Transactions.TransactionOptions)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (scopeOption As TransactionScopeOption, options As TransactionOptions)" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0;xamarinandroid-7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TransactionScope(System::Transactions::TransactionScopeOption scopeOption, System::Transactions::TransactionOptions options);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (option As TransactionScopeOption)" FrameworkAlternate="xamarinios-10.8" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions.Local</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="scopeOption" Type="System.Transactions.TransactionScopeOption" Index="0" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0;xamarinandroid-7.1" />
+        <Parameter Name="option" Type="System.Transactions.TransactionScopeOption" Index="0" FrameworkAlternate="xamarinios-10.8" />
+        <Parameter Name="transactionOptions" Type="System.Transactions.TransactionOptions" Index="1" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0" />
+        <Parameter Name="options" Type="System.Transactions.TransactionOptions" Index="2" FrameworkAlternate="xamarinandroid-7.1" />
+      </Parameters>
+      <Docs>
+        <param name="scopeOption">An instance of the <see cref="T:System.Transactions.TransactionScopeOption" /> enumeration that describes the transaction requirements associated with this transaction scope.</param>
+        <param name="option">To be added.</param>
+        <param name="transactionOptions">To be added.</param>
+        <param name="options">To be added.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Transactions.TransactionScope" /> class with the specified requirements.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you use the `transactionOptions` parameter to specify an <xref:System.Transactions.IsolationLevel>, and the scope creates a transaction later, the new transaction is associated with the specified isolation level. If an isolation level is passed in together with a transaction, the transaction must have an identical isolation level, or an exception is thrown.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Complete">
       <MemberSignature Language="C#" Value="public void Complete ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Complete() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Transactions.TransactionScope.Complete" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Complete ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Complete();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -557,7 +593,12 @@
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Transactions.TransactionScope.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -601,15 +642,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Transactions</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Transactions.TransactionScope" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

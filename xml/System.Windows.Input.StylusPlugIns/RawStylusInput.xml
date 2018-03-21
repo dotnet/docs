@@ -1,7 +1,9 @@
-<Type Name="RawStylusInput" FullName="System.Windows.Input.StylusPlugIns.RawStylusInput">
+﻿<Type Name="RawStylusInput" FullName="System.Windows.Input.StylusPlugIns.RawStylusInput">
   <TypeSignature Language="C#" Value="public class RawStylusInput" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RawStylusInput extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.StylusPlugIns.RawStylusInput" />
+  <TypeSignature Language="VB.NET" Value="Public Class RawStylusInput" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RawStylusInput" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +36,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Input.StylusPointCollection GetStylusPoints ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Input.StylusPointCollection GetStylusPoints() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPlugIns.RawStylusInput.GetStylusPoints" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetStylusPoints () As StylusPointCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Input::StylusPointCollection ^ GetStylusPoints();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -63,6 +67,8 @@
       <MemberSignature Language="C#" Value="public void NotifyWhenProcessed (object callbackData);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void NotifyWhenProcessed(object callbackData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPlugIns.RawStylusInput.NotifyWhenProcessed(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub NotifyWhenProcessed (callbackData As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void NotifyWhenProcessed(System::Object ^ callbackData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -105,6 +111,8 @@
       <MemberSignature Language="C#" Value="public void SetStylusPoints (System.Windows.Input.StylusPointCollection stylusPoints);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetStylusPoints(class System.Windows.Input.StylusPointCollection stylusPoints) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPlugIns.RawStylusInput.SetStylusPoints(System.Windows.Input.StylusPointCollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetStylusPoints (stylusPoints As StylusPointCollection)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetStylusPoints(System::Windows::Input::StylusPointCollection ^ stylusPoints);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -147,6 +155,8 @@
       <MemberSignature Language="C#" Value="public int StylusDeviceId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 StylusDeviceId" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.StylusPlugIns.RawStylusInput.StylusDeviceId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StylusDeviceId As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int StylusDeviceId { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -175,6 +185,8 @@
       <MemberSignature Language="C#" Value="public int TabletDeviceId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 TabletDeviceId" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.StylusPlugIns.RawStylusInput.TabletDeviceId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TabletDeviceId As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int TabletDeviceId { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -193,6 +205,8 @@
       <MemberSignature Language="C#" Value="public int Timestamp { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Timestamp" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.StylusPlugIns.RawStylusInput.Timestamp" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Timestamp As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Timestamp { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

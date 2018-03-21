@@ -1,7 +1,9 @@
-<Type Name="TouchPointCollection" FullName="System.Windows.Input.TouchPointCollection">
+﻿<Type Name="TouchPointCollection" FullName="System.Windows.Input.TouchPointCollection">
   <TypeSignature Language="C#" Value="public class TouchPointCollection : System.Collections.ObjectModel.Collection&lt;System.Windows.Input.TouchPoint&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TouchPointCollection extends System.Collections.ObjectModel.Collection`1&lt;class System.Windows.Input.TouchPoint&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.TouchPointCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class TouchPointCollection&#xA;Inherits Collection(Of TouchPoint)" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TouchPointCollection : System::Collections::ObjectModel::Collection&lt;System::Windows::Input::TouchPoint ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +24,8 @@
       <MemberSignature Language="C#" Value="public TouchPointCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.TouchPointCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TouchPointCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

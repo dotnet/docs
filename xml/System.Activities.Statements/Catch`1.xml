@@ -1,7 +1,9 @@
-<Type Name="Catch&lt;TException&gt;" FullName="System.Activities.Statements.Catch&lt;TException&gt;">
+﻿<Type Name="Catch&lt;TException&gt;" FullName="System.Activities.Statements.Catch&lt;TException&gt;">
   <TypeSignature Language="C#" Value="public sealed class Catch&lt;TException&gt; : System.Activities.Statements.Catch where TException : Exception" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Catch`1&lt;(class System.Exception) TException&gt; extends System.Activities.Statements.Catch" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Statements.Catch`1" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Catch(Of TException)&#xA;Inherits Catch" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename TException&gt;&#xA; where TException : Exceptionpublic ref class Catch sealed : System::Activities::Statements::Catch" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +48,8 @@
       <MemberSignature Language="C#" Value="public Catch ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.Catch`1.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Catch();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -70,6 +74,8 @@
       <MemberSignature Language="C#" Value="public System.Activities.ActivityAction&lt;TException&gt; Action { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.ActivityAction`1&lt;!TException&gt; Action" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.Catch`1.Action" />
+      <MemberSignature Language="VB.NET" Value="Public Property Action As ActivityAction(Of TException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::ActivityAction&lt;TException&gt; ^ Action { System::Activities::ActivityAction&lt;TException&gt; ^ get(); void set(System::Activities::ActivityAction&lt;TException&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -107,6 +113,8 @@
       <MemberSignature Language="C#" Value="public override Type ExceptionType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type ExceptionType" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.Catch`1.ExceptionType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ExceptionType As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ ExceptionType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

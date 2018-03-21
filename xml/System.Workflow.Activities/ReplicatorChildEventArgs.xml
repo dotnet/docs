@@ -1,7 +1,9 @@
-<Type Name="ReplicatorChildEventArgs" FullName="System.Workflow.Activities.ReplicatorChildEventArgs">
+﻿<Type Name="ReplicatorChildEventArgs" FullName="System.Workflow.Activities.ReplicatorChildEventArgs">
   <TypeSignature Language="C#" Value="public sealed class ReplicatorChildEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ReplicatorChildEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.ReplicatorChildEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ReplicatorChildEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ReplicatorChildEventArgs sealed : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +35,7 @@
       <MemberSignature Language="C#" Value="public ReplicatorChildEventArgs (object instanceData, System.Workflow.ComponentModel.Activity activity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object instanceData, class System.Workflow.ComponentModel.Activity activity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.ReplicatorChildEventArgs.#ctor(System.Object,System.Workflow.ComponentModel.Activity)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ReplicatorChildEventArgs(System::Object ^ instanceData, System::Workflow::ComponentModel::Activity ^ activity);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -53,6 +56,8 @@
       <MemberSignature Language="C#" Value="public System.Workflow.ComponentModel.Activity Activity { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.ComponentModel.Activity Activity" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.ReplicatorChildEventArgs.Activity" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Activity As Activity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::ComponentModel::Activity ^ Activity { System::Workflow::ComponentModel::Activity ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -71,6 +76,8 @@
       <MemberSignature Language="C#" Value="public object InstanceData { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object InstanceData" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.ReplicatorChildEventArgs.InstanceData" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InstanceData As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ InstanceData { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>

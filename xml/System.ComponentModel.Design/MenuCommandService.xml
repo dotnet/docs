@@ -1,7 +1,9 @@
-<Type Name="MenuCommandService" FullName="System.ComponentModel.Design.MenuCommandService">
+﻿<Type Name="MenuCommandService" FullName="System.ComponentModel.Design.MenuCommandService">
   <TypeSignature Language="C#" Value="public class MenuCommandService : IDisposable, System.ComponentModel.Design.IMenuCommandService" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MenuCommandService extends System.Object implements class System.ComponentModel.Design.IMenuCommandService, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.MenuCommandService" />
+  <TypeSignature Language="VB.NET" Value="Public Class MenuCommandService&#xA;Implements IDisposable, IMenuCommandService" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MenuCommandService : IDisposable, System::ComponentModel::Design::IMenuCommandService" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +50,8 @@
       <MemberSignature Language="C#" Value="public MenuCommandService (IServiceProvider serviceProvider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IServiceProvider serviceProvider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.MenuCommandService.#ctor(System.IServiceProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (serviceProvider As IServiceProvider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MenuCommandService(IServiceProvider ^ serviceProvider);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -75,6 +79,8 @@
       <MemberSignature Language="C#" Value="public virtual void AddCommand (System.ComponentModel.Design.MenuCommand command);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddCommand(class System.ComponentModel.Design.MenuCommand command) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.MenuCommandService.AddCommand(System.ComponentModel.Design.MenuCommand)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub AddCommand (command As MenuCommand)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddCommand(System::ComponentModel::Design::MenuCommand ^ command);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -110,6 +116,8 @@
       <MemberSignature Language="C#" Value="public virtual void AddVerb (System.ComponentModel.Design.DesignerVerb verb);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddVerb(class System.ComponentModel.Design.DesignerVerb verb) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.MenuCommandService.AddVerb(System.ComponentModel.Design.DesignerVerb)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub AddVerb (verb As DesignerVerb)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddVerb(System::ComponentModel::Design::DesignerVerb ^ verb);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -140,11 +148,25 @@
         <altmember cref="T:System.IServiceProvider" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases all resources used by the <see cref="T:System.ComponentModel.Design.MenuCommandService" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Dispose">
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.MenuCommandService.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -172,6 +194,8 @@
       <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.MenuCommandService.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -209,6 +233,8 @@
       <MemberSignature Language="C#" Value="protected void EnsureVerbs ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void EnsureVerbs() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.MenuCommandService.EnsureVerbs" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub EnsureVerbs ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void EnsureVerbs();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -234,10 +260,20 @@
         <altmember cref="T:System.IServiceProvider" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="FindCommand">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Searches for the <see cref="T:System.ComponentModel.Design.MenuCommand" /> associated with the given command ID.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="FindCommand">
       <MemberSignature Language="C#" Value="public System.ComponentModel.Design.MenuCommand FindCommand (System.ComponentModel.Design.CommandID commandID);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ComponentModel.Design.MenuCommand FindCommand(class System.ComponentModel.Design.CommandID commandID) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.MenuCommandService.FindCommand(System.ComponentModel.Design.CommandID)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ComponentModel::Design::MenuCommand ^ FindCommand(System::ComponentModel::Design::CommandID ^ commandID);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -264,6 +300,7 @@
       <MemberSignature Language="C#" Value="protected System.ComponentModel.Design.MenuCommand FindCommand (Guid guid, int id);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.ComponentModel.Design.MenuCommand FindCommand(valuetype System.Guid guid, int32 id) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.MenuCommandService.FindCommand(System.Guid,System.Int32)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::ComponentModel::Design::MenuCommand ^ FindCommand(Guid guid, int id);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -292,6 +329,7 @@
       <MemberSignature Language="C#" Value="protected System.Collections.ICollection GetCommandList (Guid guid);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Collections.ICollection GetCommandList(valuetype System.Guid guid) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.MenuCommandService.GetCommandList(System.Guid)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Collections::ICollection ^ GetCommandList(Guid guid);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -318,6 +356,8 @@
       <MemberSignature Language="C#" Value="protected object GetService (Type serviceType);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance object GetService(class System.Type serviceType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.MenuCommandService.GetService(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function GetService (serviceType As Type) As Object" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Object ^ GetService(Type ^ serviceType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -342,10 +382,20 @@
         <altmember cref="T:System.IServiceProvider" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GlobalInvoke">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Invokes a command on the local form or in the global environment.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GlobalInvoke">
       <MemberSignature Language="C#" Value="public virtual bool GlobalInvoke (System.ComponentModel.Design.CommandID commandID);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool GlobalInvoke(class System.ComponentModel.Design.CommandID commandID) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.MenuCommandService.GlobalInvoke(System.ComponentModel.Design.CommandID)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool GlobalInvoke(System::ComponentModel::Design::CommandID ^ commandID);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -380,6 +430,7 @@
       <MemberSignature Language="C#" Value="public virtual bool GlobalInvoke (System.ComponentModel.Design.CommandID commandId, object arg);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool GlobalInvoke(class System.ComponentModel.Design.CommandID commandId, object arg) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.MenuCommandService.GlobalInvoke(System.ComponentModel.Design.CommandID,System.Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool GlobalInvoke(System::ComponentModel::Design::CommandID ^ commandId, System::Object ^ arg);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -416,6 +467,8 @@
       <MemberSignature Language="C#" Value="public event System.ComponentModel.Design.MenuCommandsChangedEventHandler MenuCommandsChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.Design.MenuCommandsChangedEventHandler MenuCommandsChanged" />
       <MemberSignature Language="DocId" Value="E:System.ComponentModel.Design.MenuCommandService.MenuCommandsChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event MenuCommandsChanged As MenuCommandsChangedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::ComponentModel::Design::MenuCommandsChangedEventHandler ^ MenuCommandsChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -440,6 +493,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnCommandsChanged (System.ComponentModel.Design.MenuCommandsChangedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnCommandsChanged(class System.ComponentModel.Design.MenuCommandsChangedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.MenuCommandService.OnCommandsChanged(System.ComponentModel.Design.MenuCommandsChangedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnCommandsChanged (e As MenuCommandsChangedEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnCommandsChanged(System::ComponentModel::Design::MenuCommandsChangedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -479,6 +534,8 @@
       <MemberSignature Language="C#" Value="public virtual void RemoveCommand (System.ComponentModel.Design.MenuCommand command);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveCommand(class System.ComponentModel.Design.MenuCommand command) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.MenuCommandService.RemoveCommand(System.ComponentModel.Design.MenuCommand)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub RemoveCommand (command As MenuCommand)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveCommand(System::ComponentModel::Design::MenuCommand ^ command);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -513,6 +570,8 @@
       <MemberSignature Language="C#" Value="public virtual void RemoveVerb (System.ComponentModel.Design.DesignerVerb verb);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveVerb(class System.ComponentModel.Design.DesignerVerb verb) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.MenuCommandService.RemoveVerb(System.ComponentModel.Design.DesignerVerb)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub RemoveVerb (verb As DesignerVerb)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveVerb(System::ComponentModel::Design::DesignerVerb ^ verb);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -540,6 +599,8 @@
       <MemberSignature Language="C#" Value="public virtual void ShowContextMenu (System.ComponentModel.Design.CommandID menuID, int x, int y);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ShowContextMenu(class System.ComponentModel.Design.CommandID menuID, int32 x, int32 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.MenuCommandService.ShowContextMenu(System.ComponentModel.Design.CommandID,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub ShowContextMenu (menuID As CommandID, x As Integer, y As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ShowContextMenu(System::ComponentModel::Design::CommandID ^ menuID, int x, int y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -576,6 +637,8 @@
       <MemberSignature Language="C#" Value="public virtual System.ComponentModel.Design.DesignerVerbCollection Verbs { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.Design.DesignerVerbCollection Verbs" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.MenuCommandService.Verbs" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Verbs As DesignerVerbCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::Design::DesignerVerbCollection ^ Verbs { System::ComponentModel::Design::DesignerVerbCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -607,32 +670,5 @@
         <altmember cref="T:System.IServiceProvider" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="FindCommand">
-      <AssemblyInfo>
-        <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Searches for the <see cref="T:System.ComponentModel.Design.MenuCommand" /> associated with the given command ID.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GlobalInvoke">
-      <AssemblyInfo>
-        <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Invokes a command on the local form or in the global environment.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Dispose">
-      <AssemblyInfo>
-        <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Releases all resources used by the <see cref="T:System.ComponentModel.Design.MenuCommandService" />.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

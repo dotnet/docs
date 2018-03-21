@@ -1,7 +1,9 @@
-<Type Name="RenderTargetBitmap" FullName="System.Windows.Media.Imaging.RenderTargetBitmap">
+﻿<Type Name="RenderTargetBitmap" FullName="System.Windows.Media.Imaging.RenderTargetBitmap">
   <TypeSignature Language="C#" Value="public sealed class RenderTargetBitmap : System.Windows.Media.Imaging.BitmapSource" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RenderTargetBitmap extends System.Windows.Media.Imaging.BitmapSource" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Imaging.RenderTargetBitmap" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RenderTargetBitmap&#xA;Inherits BitmapSource" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RenderTargetBitmap sealed : System::Windows::Media::Imaging::BitmapSource" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +31,7 @@
       <MemberSignature Language="C#" Value="public RenderTargetBitmap (int pixelWidth, int pixelHeight, double dpiX, double dpiY, System.Windows.Media.PixelFormat pixelFormat);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 pixelWidth, int32 pixelHeight, float64 dpiX, float64 dpiY, valuetype System.Windows.Media.PixelFormat pixelFormat) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.RenderTargetBitmap.#ctor(System.Int32,System.Int32,System.Double,System.Double,System.Windows.Media.PixelFormat)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RenderTargetBitmap(int pixelWidth, int pixelHeight, double dpiX, double dpiY, System::Windows::Media::PixelFormat pixelFormat);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -60,6 +63,8 @@
       <MemberSignature Language="C#" Value="public void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.RenderTargetBitmap.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -83,6 +88,8 @@
       <MemberSignature Language="C#" Value="protected override void CloneCore (System.Windows.Freezable sourceFreezable);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CloneCore(class System.Windows.Freezable sourceFreezable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.RenderTargetBitmap.CloneCore(System.Windows.Freezable)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CloneCore (sourceFreezable As Freezable)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CloneCore(System::Windows::Freezable ^ sourceFreezable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -104,6 +111,8 @@
       <MemberSignature Language="C#" Value="protected override void CloneCurrentValueCore (System.Windows.Freezable sourceFreezable);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CloneCurrentValueCore(class System.Windows.Freezable sourceFreezable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.RenderTargetBitmap.CloneCurrentValueCore(System.Windows.Freezable)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CloneCurrentValueCore (sourceFreezable As Freezable)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CloneCurrentValueCore(System::Windows::Freezable ^ sourceFreezable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -125,6 +134,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.RenderTargetBitmap.CreateInstanceCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -144,6 +155,8 @@
       <MemberSignature Language="C#" Value="protected override void GetAsFrozenCore (System.Windows.Freezable sourceFreezable);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void GetAsFrozenCore(class System.Windows.Freezable sourceFreezable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.RenderTargetBitmap.GetAsFrozenCore(System.Windows.Freezable)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetAsFrozenCore (sourceFreezable As Freezable)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetAsFrozenCore(System::Windows::Freezable ^ sourceFreezable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -165,6 +178,8 @@
       <MemberSignature Language="C#" Value="protected override void GetCurrentValueAsFrozenCore (System.Windows.Freezable sourceFreezable);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void GetCurrentValueAsFrozenCore(class System.Windows.Freezable sourceFreezable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.RenderTargetBitmap.GetCurrentValueAsFrozenCore(System.Windows.Freezable)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetCurrentValueAsFrozenCore (sourceFreezable As Freezable)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetCurrentValueAsFrozenCore(System::Windows::Freezable ^ sourceFreezable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -186,6 +201,7 @@
       <MemberSignature Language="C#" Value="public void Render (System.Windows.Media.Visual visual);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Render(class System.Windows.Media.Visual visual) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.RenderTargetBitmap.Render(System.Windows.Media.Visual)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Render(System::Windows::Media::Visual ^ visual);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="QualifierData" FullName="System.Management.QualifierData">
+﻿<Type Name="QualifierData" FullName="System.Management.QualifierData">
   <TypeSignature Language="C#" Value="public class QualifierData" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit QualifierData extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Management.QualifierData" />
+  <TypeSignature Language="VB.NET" Value="Public Class QualifierData" />
+  <TypeSignature Language="C++ CLI" Value="public ref class QualifierData" />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +31,8 @@
       <MemberSignature Language="C#" Value="public bool IsAmended { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsAmended" />
       <MemberSignature Language="DocId" Value="P:System.Management.QualifierData.IsAmended" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsAmended As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAmended { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -60,6 +64,8 @@
       <MemberSignature Language="C#" Value="public bool IsLocal { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsLocal" />
       <MemberSignature Language="DocId" Value="P:System.Management.QualifierData.IsLocal" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsLocal As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsLocal { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -90,6 +96,8 @@
       <MemberSignature Language="C#" Value="public bool IsOverridable { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsOverridable" />
       <MemberSignature Language="DocId" Value="P:System.Management.QualifierData.IsOverridable" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsOverridable As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsOverridable { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -120,6 +128,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Management.QualifierData.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -158,6 +168,8 @@
       <MemberSignature Language="C#" Value="public bool PropagatesToInstance { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool PropagatesToInstance" />
       <MemberSignature Language="DocId" Value="P:System.Management.QualifierData.PropagatesToInstance" />
+      <MemberSignature Language="VB.NET" Value="Public Property PropagatesToInstance As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PropagatesToInstance { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -188,6 +200,8 @@
       <MemberSignature Language="C#" Value="public bool PropagatesToSubclass { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool PropagatesToSubclass" />
       <MemberSignature Language="DocId" Value="P:System.Management.QualifierData.PropagatesToSubclass" />
+      <MemberSignature Language="VB.NET" Value="Public Property PropagatesToSubclass As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PropagatesToSubclass { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -218,6 +232,8 @@
       <MemberSignature Language="C#" Value="public object Value { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Value" />
       <MemberSignature Language="DocId" Value="P:System.Management.QualifierData.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Property Value As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Value { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>

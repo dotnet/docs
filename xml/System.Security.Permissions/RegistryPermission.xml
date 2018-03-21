@@ -1,7 +1,9 @@
-<Type Name="RegistryPermission" FullName="System.Security.Permissions.RegistryPermission">
+﻿<Type Name="RegistryPermission" FullName="System.Security.Permissions.RegistryPermission">
   <TypeSignature Language="C#" Value="public sealed class RegistryPermission : System.Security.CodeAccessPermission, System.Security.Permissions.IUnrestrictedPermission" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit RegistryPermission extends System.Security.CodeAccessPermission implements class System.Security.Permissions.IUnrestrictedPermission" />
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.RegistryPermission" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RegistryPermission&#xA;Inherits CodeAccessPermission&#xA;Implements IUnrestrictedPermission" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RegistryPermission sealed : System::Security::CodeAccessPermission, System::Security::Permissions::IUnrestrictedPermission" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -45,10 +47,22 @@
     <altmember cref="T:System.Security.Permissions.RegistryPermissionAccess" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Permissions.RegistryPermission" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public RegistryPermission (System.Security.Permissions.PermissionState state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Permissions.PermissionState state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.RegistryPermission.#ctor(System.Security.Permissions.PermissionState)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (state As PermissionState)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RegistryPermission(System::Security::Permissions::PermissionState state);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -88,6 +102,8 @@
       <MemberSignature Language="C#" Value="public RegistryPermission (System.Security.Permissions.RegistryPermissionAccess access, string pathList);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Permissions.RegistryPermissionAccess access, string pathList) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.RegistryPermission.#ctor(System.Security.Permissions.RegistryPermissionAccess,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (access As RegistryPermissionAccess, pathList As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RegistryPermission(System::Security::Permissions::RegistryPermissionAccess access, System::String ^ pathList);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -133,6 +149,8 @@
       <MemberSignature Language="C#" Value="public RegistryPermission (System.Security.Permissions.RegistryPermissionAccess access, System.Security.AccessControl.AccessControlActions control, string pathList);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Permissions.RegistryPermissionAccess access, valuetype System.Security.AccessControl.AccessControlActions control, string pathList) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.RegistryPermission.#ctor(System.Security.Permissions.RegistryPermissionAccess,System.Security.AccessControl.AccessControlActions,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (access As RegistryPermissionAccess, control As AccessControlActions, pathList As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RegistryPermission(System::Security::Permissions::RegistryPermissionAccess access, System::Security::AccessControl::AccessControlActions control, System::String ^ pathList);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -195,6 +213,8 @@
       <MemberSignature Language="C#" Value="public void AddPathList (System.Security.Permissions.RegistryPermissionAccess access, string pathList);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddPathList(valuetype System.Security.Permissions.RegistryPermissionAccess access, string pathList) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.RegistryPermission.AddPathList(System.Security.Permissions.RegistryPermissionAccess,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddPathList (access As RegistryPermissionAccess, pathList As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddPathList(System::Security::Permissions::RegistryPermissionAccess access, System::String ^ pathList);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -240,9 +260,11 @@
       </Docs>
     </Member>
     <Member MemberName="AddPathList">
-      <MemberSignature Language="C#" Value="public void AddPathList (System.Security.Permissions.RegistryPermissionAccess access, System.Security.AccessControl.AccessControlActions control, string pathList);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddPathList(valuetype System.Security.Permissions.RegistryPermissionAccess access, valuetype System.Security.AccessControl.AccessControlActions control, string pathList) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Security.Permissions.RegistryPermission.AddPathList(System.Security.Permissions.RegistryPermissionAccess,System.Security.AccessControl.AccessControlActions,System.String)" />
+      <MemberSignature Language="C#" Value="public void AddPathList (System.Security.Permissions.RegistryPermissionAccess access, System.Security.AccessControl.AccessControlActions actions, string pathList);" FrameworkAlternate="netcore-2.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddPathList(valuetype System.Security.Permissions.RegistryPermissionAccess access, valuetype System.Security.AccessControl.AccessControlActions actions, string pathList) cil managed" FrameworkAlternate="netcore-2.0" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Permissions.RegistryPermission.AddPathList(System.Security.Permissions.RegistryPermissionAccess,System.Security.AccessControl.AccessControlActions,System.String)" FrameworkAlternate="netcore-2.0" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddPathList (access As RegistryPermissionAccess, actions As AccessControlActions, pathList As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddPathList(System::Security::Permissions::RegistryPermissionAccess access, System::Security::AccessControl::AccessControlActions actions, System::String ^ pathList);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -257,13 +279,14 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="access" Type="System.Security.Permissions.RegistryPermissionAccess" />
-        <Parameter Name="control" Type="System.Security.AccessControl.AccessControlActions" />
-        <Parameter Name="pathList" Type="System.String" />
+        <Parameter Name="access" Type="System.Security.Permissions.RegistryPermissionAccess" Index="0" />
+        <Parameter Name="actions" Type="System.Security.AccessControl.AccessControlActions" Index="1" FrameworkAlternate="netcore-2.0" />
+        <Parameter Name="pathList" Type="System.String" Index="2" />
       </Parameters>
       <Docs>
         <param name="access">One of the <see cref="T:System.Security.Permissions.RegistryPermissionAccess" /> values.</param>
         <param name="control">One of the <see cref="T:System.Security.AccessControl.AccessControlActions" /> values.</param>
+        <param name="actions">To be added.</param>
         <param name="pathList">A list of registry variables (separated by semicolons).</param>
         <summary>Adds access for the specified registry variables to the existing state of the permission, specifying registry permission access and access control actions.</summary>
         <remarks>
@@ -290,6 +313,8 @@
       <MemberSignature Language="C#" Value="public override System.Security.IPermission Copy ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission Copy() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.RegistryPermission.Copy" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Copy () As IPermission" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Copy();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -318,9 +343,11 @@
       </Docs>
     </Member>
     <Member MemberName="FromXml">
-      <MemberSignature Language="C#" Value="public override void FromXml (System.Security.SecurityElement esd);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void FromXml(class System.Security.SecurityElement esd) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Security.Permissions.RegistryPermission.FromXml(System.Security.SecurityElement)" />
+      <MemberSignature Language="C#" Value="public override void FromXml (System.Security.SecurityElement elem);" FrameworkAlternate="netcore-2.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void FromXml(class System.Security.SecurityElement elem) cil managed" FrameworkAlternate="netcore-2.0" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Permissions.RegistryPermission.FromXml(System.Security.SecurityElement)" FrameworkAlternate="netcore-2.0" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub FromXml (elem As SecurityElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void FromXml(System::Security::SecurityElement ^ elem);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -335,24 +362,26 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="esd" Type="System.Security.SecurityElement" />
+        <Parameter Name="elem" Type="System.Security.SecurityElement" Index="0" FrameworkAlternate="netcore-2.0" />
       </Parameters>
       <Docs>
-        <param name="esd">The XML encoding to use to reconstruct the permission.</param>
+        <param name="elem">The XML encoding to use to reconstruct the permission.</param>
         <summary>Reconstructs a permission with a specified state from an XML encoding.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="esd" /> parameter is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">The <paramref name="esd" /> parameter is not a valid permission element.  
+        <exception cref="T:System.ArgumentNullException">The <paramref name="elem" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="elem" /> parameter is not a valid permission element.  
   
  -or-  
   
- The <paramref name="esd" /> parameter's version number is not valid.</exception>
+ The <paramref name="elem" /> parameter's version number is not valid.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetPathList">
       <MemberSignature Language="C#" Value="public string GetPathList (System.Security.Permissions.RegistryPermissionAccess access);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetPathList(valuetype System.Security.Permissions.RegistryPermissionAccess access) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.RegistryPermission.GetPathList(System.Security.Permissions.RegistryPermissionAccess)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetPathList (access As RegistryPermissionAccess) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetPathList(System::Security::Permissions::RegistryPermissionAccess access);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -404,6 +433,8 @@
       <MemberSignature Language="C#" Value="public override System.Security.IPermission Intersect (System.Security.IPermission target);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission Intersect(class System.Security.IPermission target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.RegistryPermission.Intersect(System.Security.IPermission)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Intersect (target As IPermission) As IPermission" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Intersect(System::Security::IPermission ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -439,6 +470,8 @@
       <MemberSignature Language="C#" Value="public override bool IsSubsetOf (System.Security.IPermission target);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsSubsetOf(class System.Security.IPermission target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.RegistryPermission.IsSubsetOf(System.Security.IPermission)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function IsSubsetOf (target As IPermission) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsSubsetOf(System::Security::IPermission ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -475,7 +508,12 @@
       <MemberSignature Language="C#" Value="public bool IsUnrestricted ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsUnrestricted() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.RegistryPermission.IsUnrestricted" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsUnrestricted () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsUnrestricted();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Security.Permissions.IUnrestrictedPermission.IsUnrestricted</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -507,6 +545,8 @@
       <MemberSignature Language="C#" Value="public void SetPathList (System.Security.Permissions.RegistryPermissionAccess access, string pathList);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetPathList(valuetype System.Security.Permissions.RegistryPermissionAccess access, string pathList) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.RegistryPermission.SetPathList(System.Security.Permissions.RegistryPermissionAccess,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetPathList (access As RegistryPermissionAccess, pathList As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetPathList(System::Security::Permissions::RegistryPermissionAccess access, System::String ^ pathList);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -555,6 +595,8 @@
       <MemberSignature Language="C#" Value="public override System.Security.SecurityElement ToXml ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.SecurityElement ToXml() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.RegistryPermission.ToXml" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToXml () As SecurityElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::SecurityElement ^ ToXml();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -579,6 +621,8 @@
       <MemberSignature Language="C#" Value="public override System.Security.IPermission Union (System.Security.IPermission other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission Union(class System.Security.IPermission other) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.RegistryPermission.Union(System.Security.IPermission)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Union (other As IPermission) As IPermission" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Union(System::Security::IPermission ^ other);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -610,15 +654,5 @@
         <exception cref="T:System.ArgumentException">The <paramref name="other" /> parameter is not <see langword="null" /> and is not of the same type as the current permission.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.Permissions.RegistryPermission" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

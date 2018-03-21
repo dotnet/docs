@@ -1,7 +1,9 @@
-<Type Name="ErrorObject" FullName="Microsoft.JScript.ErrorObject">
+﻿<Type Name="ErrorObject" FullName="Microsoft.JScript.ErrorObject">
   <TypeSignature Language="C#" Value="public class ErrorObject : Microsoft.JScript.JSObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ErrorObject extends Microsoft.JScript.JSObject" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.ErrorObject" />
+  <TypeSignature Language="VB.NET" Value="Public Class ErrorObject&#xA;Inherits JSObject" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ErrorObject : Microsoft::JScript::JSObject" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -22,6 +24,8 @@
       <MemberSignature Language="C#" Value="public object description;" />
       <MemberSignature Language="ILAsm" Value=".field public object description" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.ErrorObject.description" />
+      <MemberSignature Language="VB.NET" Value="Public description As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ description;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -42,6 +46,8 @@
       <MemberSignature Language="C#" Value="public object message;" />
       <MemberSignature Language="ILAsm" Value=".field public object message" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.ErrorObject.message" />
+      <MemberSignature Language="VB.NET" Value="Public message As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ message;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -62,6 +68,8 @@
       <MemberSignature Language="C#" Value="public object number;" />
       <MemberSignature Language="ILAsm" Value=".field public object number" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.ErrorObject.number" />
+      <MemberSignature Language="VB.NET" Value="Public number As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ number;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -89,6 +97,8 @@
       <MemberSignature Language="C#" Value="public static explicit operator Exception (Microsoft.JScript.ErrorObject err);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Exception op_Explicit(class Microsoft.JScript.ErrorObject err) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ErrorObject.op_Explicit(Microsoft.JScript.ErrorObject)~System.Exception" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (err As ErrorObject) As Exception" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator Exception ^(Microsoft::JScript::ErrorObject ^ err);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -113,6 +123,8 @@
       <MemberSignature Language="C#" Value="public static Exception ToException (Microsoft.JScript.ErrorObject err);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Exception ToException(class Microsoft.JScript.ErrorObject err) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ErrorObject.ToException(Microsoft.JScript.ErrorObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToException (err As ErrorObject) As Exception" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Exception ^ ToException(Microsoft::JScript::ErrorObject ^ err);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

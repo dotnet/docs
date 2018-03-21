@@ -1,7 +1,9 @@
-<Type Name="RouteParameter" FullName="System.Web.UI.WebControls.RouteParameter">
+﻿<Type Name="RouteParameter" FullName="System.Web.UI.WebControls.RouteParameter">
   <TypeSignature Language="C#" Value="public class RouteParameter : System.Web.UI.WebControls.Parameter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RouteParameter extends System.Web.UI.WebControls.Parameter" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.RouteParameter" />
+  <TypeSignature Language="VB.NET" Value="Public Class RouteParameter&#xA;Inherits Parameter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RouteParameter : System::Web::UI::WebControls::Parameter" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -65,10 +67,21 @@
     <altmember cref="T:System.Web.UI.WebControls.QueryExtender" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.RouteParameter" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public RouteParameter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.RouteParameter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RouteParameter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -101,6 +114,8 @@
       <MemberSignature Language="C#" Value="protected RouteParameter (System.Web.UI.WebControls.RouteParameter original);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.WebControls.RouteParameter original) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.RouteParameter.#ctor(System.Web.UI.WebControls.RouteParameter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (original As RouteParameter)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; RouteParameter(System::Web::UI::WebControls::RouteParameter ^ original);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -126,6 +141,8 @@
       <MemberSignature Language="C#" Value="public RouteParameter (string name, string routeKey);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, string routeKey) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.RouteParameter.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, routeKey As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RouteParameter(System::String ^ name, System::String ^ routeKey);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -146,6 +163,7 @@
       <MemberSignature Language="C#" Value="public RouteParameter (string name, System.Data.DbType dbType, string routeKey);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, valuetype System.Data.DbType dbType, string routeKey) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.RouteParameter.#ctor(System.String,System.Data.DbType,System.String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RouteParameter(System::String ^ name, System::Data::DbType dbType, System::String ^ routeKey);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -168,6 +186,8 @@
       <MemberSignature Language="C#" Value="public RouteParameter (string name, TypeCode type, string routeKey);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, valuetype System.TypeCode type, string routeKey) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.RouteParameter.#ctor(System.String,System.TypeCode,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, type As TypeCode, routeKey As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RouteParameter(System::String ^ name, TypeCode type, System::String ^ routeKey);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -190,6 +210,8 @@
       <MemberSignature Language="C#" Value="protected override System.Web.UI.WebControls.Parameter Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Web.UI.WebControls.Parameter Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.RouteParameter.Clone" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function Clone () As Parameter" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Web::UI::WebControls::Parameter ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -206,9 +228,10 @@
       </Docs>
     </Member>
     <Member MemberName="Evaluate">
-      <MemberSignature Language="C#" Value="protected override object Evaluate (System.Web.HttpContext context, System.Web.UI.Control control);" />
+      <MemberSignature Language="C#" Value="protected internal override object Evaluate (System.Web.HttpContext context, System.Web.UI.Control control);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance object Evaluate(class System.Web.HttpContext context, class System.Web.UI.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.RouteParameter.Evaluate(System.Web.HttpContext,System.Web.UI.Control)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Object ^ Evaluate(System::Web::HttpContext ^ context, System::Web::UI::Control ^ control);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -233,6 +256,8 @@
       <MemberSignature Language="C#" Value="public string RouteKey { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string RouteKey" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.RouteParameter.RouteKey" />
+      <MemberSignature Language="VB.NET" Value="Public Property RouteKey As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RouteKey { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -259,14 +284,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.RouteParameter" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

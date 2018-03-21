@@ -1,7 +1,9 @@
-<Type Name="ToolTask" FullName="Microsoft.Build.Utilities.ToolTask">
+﻿<Type Name="ToolTask" FullName="Microsoft.Build.Utilities.ToolTask">
   <TypeSignature Language="C#" Value="public abstract class ToolTask : Microsoft.Build.Utilities.Task, Microsoft.Build.Framework.ICancelableTask" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ToolTask extends Microsoft.Build.Utilities.Task implements class Microsoft.Build.Framework.ICancelableTask, class Microsoft.Build.Framework.ITask" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Utilities.ToolTask" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ToolTask&#xA;Inherits Task&#xA;Implements ICancelableTask" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ToolTask abstract : Microsoft::Build::Utilities::Task, Microsoft::Build::Framework::ICancelableTask" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,10 +36,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Utilities.ToolTask" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected ToolTask ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.ToolTask.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ToolTask();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -53,6 +66,8 @@
       <MemberSignature Language="C#" Value="protected ToolTask (System.Resources.ResourceManager taskResources);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Resources.ResourceManager taskResources) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.ToolTask.#ctor(System.Resources.ResourceManager)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (taskResources As ResourceManager)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ToolTask(System::Resources::ResourceManager ^ taskResources);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -71,6 +86,8 @@
       <MemberSignature Language="C#" Value="protected ToolTask (System.Resources.ResourceManager taskResources, string helpKeywordPrefix);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Resources.ResourceManager taskResources, string helpKeywordPrefix) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.ToolTask.#ctor(System.Resources.ResourceManager,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (taskResources As ResourceManager, helpKeywordPrefix As String)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ToolTask(System::Resources::ResourceManager ^ taskResources, System::String ^ helpKeywordPrefix);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -91,6 +108,8 @@
       <MemberSignature Language="C#" Value="protected virtual bool CallHostObjectToExecute ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool CallHostObjectToExecute() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.ToolTask.CallHostObjectToExecute" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function CallHostObjectToExecute () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool CallHostObjectToExecute();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -111,7 +130,12 @@
       <MemberSignature Language="C#" Value="public virtual void Cancel ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Cancel() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.ToolTask.Cancel" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Cancel ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Cancel();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Build.Framework.ICancelableTask.Cancel</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -129,6 +153,8 @@
       <MemberSignature Language="C#" Value="protected void DeleteTempFile (string fileName);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void DeleteTempFile(string fileName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.ToolTask.DeleteTempFile(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub DeleteTempFile (fileName As String)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void DeleteTempFile(System::String ^ fileName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -157,6 +183,8 @@
       <MemberSignature Language="C#" Value="public bool EchoOff { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool EchoOff" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.ToolTask.EchoOff" />
+      <MemberSignature Language="VB.NET" Value="Public Property EchoOff As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EchoOff { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -182,6 +210,8 @@
       <MemberSignature Language="C#" Value="protected virtual System.Collections.Specialized.StringDictionary EnvironmentOverride { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.StringDictionary EnvironmentOverride" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.ToolTask.EnvironmentOverride" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property EnvironmentOverride As StringDictionary" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Collections::Specialized::StringDictionary ^ EnvironmentOverride { System::Collections::Specialized::StringDictionary ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -241,6 +271,8 @@ abstract class CustomToolTask : ToolTask
       <MemberSignature Language="C#" Value="public string[] EnvironmentVariables { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string[] EnvironmentVariables" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.ToolTask.EnvironmentVariables" />
+      <MemberSignature Language="VB.NET" Value="Public Property EnvironmentVariables As String()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ EnvironmentVariables { cli::array &lt;System::String ^&gt; ^ get(); void set(cli::array &lt;System::String ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -266,7 +298,12 @@ abstract class CustomToolTask : ToolTask
       <MemberSignature Language="C#" Value="public override bool Execute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Execute() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.ToolTask.Execute" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Execute () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Execute();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Build.Framework.ITask.Execute</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -286,6 +323,8 @@ abstract class CustomToolTask : ToolTask
       <MemberSignature Language="C#" Value="protected virtual int ExecuteTool (string pathToTool, string responseFileCommands, string commandLineCommands);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance int32 ExecuteTool(string pathToTool, string responseFileCommands, string commandLineCommands) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.ToolTask.ExecuteTool(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function ExecuteTool (pathToTool As String, responseFileCommands As String, commandLineCommands As String) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual int ExecuteTool(System::String ^ pathToTool, System::String ^ responseFileCommands, System::String ^ commandLineCommands);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -312,6 +351,8 @@ abstract class CustomToolTask : ToolTask
       <MemberSignature Language="C#" Value="public int ExitCode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ExitCode" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.ToolTask.ExitCode" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExitCode As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ExitCode { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -335,6 +376,8 @@ abstract class CustomToolTask : ToolTask
       <MemberSignature Language="C#" Value="protected virtual string GenerateCommandLineCommands ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance string GenerateCommandLineCommands() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.ToolTask.GenerateCommandLineCommands" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function GenerateCommandLineCommands () As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::String ^ GenerateCommandLineCommands();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -369,6 +412,8 @@ abstract class CustomToolTask : ToolTask
       <MemberSignature Language="C#" Value="protected abstract string GenerateFullPathToTool ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance string GenerateFullPathToTool() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.ToolTask.GenerateFullPathToTool" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Function GenerateFullPathToTool () As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::String ^ GenerateFullPathToTool();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -403,6 +448,8 @@ abstract class CustomToolTask : ToolTask
       <MemberSignature Language="C#" Value="protected virtual string GenerateResponseFileCommands ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance string GenerateResponseFileCommands() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.ToolTask.GenerateResponseFileCommands" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function GenerateResponseFileCommands () As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::String ^ GenerateResponseFileCommands();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -429,6 +476,8 @@ abstract class CustomToolTask : ToolTask
       <MemberSignature Language="C#" Value="protected System.Diagnostics.ProcessStartInfo GetProcessStartInfo (string pathToTool, string commandLineCommands, string responseFileSwitch);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Diagnostics.ProcessStartInfo GetProcessStartInfo(string pathToTool, string commandLineCommands, string responseFileSwitch) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.ToolTask.GetProcessStartInfo(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function GetProcessStartInfo (pathToTool As String, commandLineCommands As String, responseFileSwitch As String) As ProcessStartInfo" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Diagnostics::ProcessStartInfo ^ GetProcessStartInfo(System::String ^ pathToTool, System::String ^ commandLineCommands, System::String ^ responseFileSwitch);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -455,6 +504,8 @@ abstract class CustomToolTask : ToolTask
       <MemberSignature Language="C#" Value="protected virtual string GetResponseFileSwitch (string responseFilePath);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance string GetResponseFileSwitch(string responseFilePath) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.ToolTask.GetResponseFileSwitch(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetResponseFileSwitch (responseFilePath As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::String ^ GetResponseFileSwitch(System::String ^ responseFilePath);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -486,6 +537,8 @@ abstract class CustomToolTask : ToolTask
       <MemberSignature Language="C#" Value="protected virtual string GetWorkingDirectory ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance string GetWorkingDirectory() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.ToolTask.GetWorkingDirectory" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetWorkingDirectory () As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::String ^ GetWorkingDirectory();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -512,6 +565,8 @@ abstract class CustomToolTask : ToolTask
       <MemberSignature Language="C#" Value="protected virtual bool HandleTaskExecutionErrors ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool HandleTaskExecutionErrors() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.ToolTask.HandleTaskExecutionErrors" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function HandleTaskExecutionErrors () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool HandleTaskExecutionErrors();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -541,6 +596,8 @@ abstract class CustomToolTask : ToolTask
       <MemberSignature Language="C#" Value="protected virtual bool HasLoggedErrors { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasLoggedErrors" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.ToolTask.HasLoggedErrors" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property HasLoggedErrors As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool HasLoggedErrors { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -559,6 +616,8 @@ abstract class CustomToolTask : ToolTask
       <MemberSignature Language="C#" Value="protected virtual Microsoft.Build.Utilities.HostObjectInitializationStatus InitializeHostObject ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance valuetype Microsoft.Build.Utilities.HostObjectInitializationStatus InitializeHostObject() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.ToolTask.InitializeHostObject" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function InitializeHostObject () As HostObjectInitializationStatus" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual Microsoft::Build::Utilities::HostObjectInitializationStatus InitializeHostObject();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -578,6 +637,7 @@ abstract class CustomToolTask : ToolTask
       <MemberSignature Language="C#" Value="protected virtual void LogEventsFromTextOutput (string singleLine, Microsoft.Build.Framework.MessageImportance messageImportance);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void LogEventsFromTextOutput(string singleLine, valuetype Microsoft.Build.Framework.MessageImportance messageImportance) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.ToolTask.LogEventsFromTextOutput(System.String,Microsoft.Build.Framework.MessageImportance)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void LogEventsFromTextOutput(System::String ^ singleLine, Microsoft::Build::Framework::MessageImportance messageImportance);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -601,6 +661,8 @@ abstract class CustomToolTask : ToolTask
       <MemberSignature Language="C#" Value="protected virtual void LogPathToTool (string toolName, string pathToTool);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void LogPathToTool(string toolName, string pathToTool) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.ToolTask.LogPathToTool(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub LogPathToTool (toolName As String, pathToTool As String)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void LogPathToTool(System::String ^ toolName, System::String ^ pathToTool);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -624,6 +686,8 @@ abstract class CustomToolTask : ToolTask
       <MemberSignature Language="C#" Value="public bool LogStandardErrorAsError { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool LogStandardErrorAsError" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.ToolTask.LogStandardErrorAsError" />
+      <MemberSignature Language="VB.NET" Value="Public Property LogStandardErrorAsError As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool LogStandardErrorAsError { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -642,6 +706,8 @@ abstract class CustomToolTask : ToolTask
       <MemberSignature Language="C#" Value="protected virtual void LogToolCommand (string message);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void LogToolCommand(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.ToolTask.LogToolCommand(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub LogToolCommand (message As String)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void LogToolCommand(System::String ^ message);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -663,6 +729,8 @@ abstract class CustomToolTask : ToolTask
       <MemberSignature Language="C#" Value="protected virtual System.Text.Encoding ResponseFileEncoding { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Text.Encoding ResponseFileEncoding" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.ToolTask.ResponseFileEncoding" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property ResponseFileEncoding As Encoding" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Text::Encoding ^ ResponseFileEncoding { System::Text::Encoding ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -688,6 +756,8 @@ abstract class CustomToolTask : ToolTask
       <MemberSignature Language="C#" Value="protected virtual string ResponseFileEscape (string responseString);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance string ResponseFileEscape(string responseString) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.ToolTask.ResponseFileEscape(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function ResponseFileEscape (responseString As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::String ^ ResponseFileEscape(System::String ^ responseString);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -710,6 +780,8 @@ abstract class CustomToolTask : ToolTask
       <MemberSignature Language="C#" Value="protected virtual bool SkipTaskExecution ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool SkipTaskExecution() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.ToolTask.SkipTaskExecution" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function SkipTaskExecution () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool SkipTaskExecution();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -737,6 +809,8 @@ abstract class CustomToolTask : ToolTask
       <MemberSignature Language="C#" Value="protected virtual System.Text.Encoding StandardErrorEncoding { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Text.Encoding StandardErrorEncoding" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.ToolTask.StandardErrorEncoding" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property StandardErrorEncoding As Encoding" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Text::Encoding ^ StandardErrorEncoding { System::Text::Encoding ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -762,6 +836,8 @@ abstract class CustomToolTask : ToolTask
       <MemberSignature Language="C#" Value="public string StandardErrorImportance { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string StandardErrorImportance" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.ToolTask.StandardErrorImportance" />
+      <MemberSignature Language="VB.NET" Value="Public Property StandardErrorImportance As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ StandardErrorImportance { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -780,6 +856,8 @@ abstract class CustomToolTask : ToolTask
       <MemberSignature Language="C#" Value="protected Microsoft.Build.Framework.MessageImportance StandardErrorImportanceToUse { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Build.Framework.MessageImportance StandardErrorImportanceToUse" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.ToolTask.StandardErrorImportanceToUse" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property StandardErrorImportanceToUse As MessageImportance" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property Microsoft::Build::Framework::MessageImportance StandardErrorImportanceToUse { Microsoft::Build::Framework::MessageImportance get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -798,6 +876,8 @@ abstract class CustomToolTask : ToolTask
       <MemberSignature Language="C#" Value="protected virtual Microsoft.Build.Framework.MessageImportance StandardErrorLoggingImportance { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Build.Framework.MessageImportance StandardErrorLoggingImportance" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.ToolTask.StandardErrorLoggingImportance" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property StandardErrorLoggingImportance As MessageImportance" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property Microsoft::Build::Framework::MessageImportance StandardErrorLoggingImportance { Microsoft::Build::Framework::MessageImportance get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -816,6 +896,8 @@ abstract class CustomToolTask : ToolTask
       <MemberSignature Language="C#" Value="protected virtual System.Text.Encoding StandardOutputEncoding { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Text.Encoding StandardOutputEncoding" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.ToolTask.StandardOutputEncoding" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property StandardOutputEncoding As Encoding" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Text::Encoding ^ StandardOutputEncoding { System::Text::Encoding ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -841,6 +923,8 @@ abstract class CustomToolTask : ToolTask
       <MemberSignature Language="C#" Value="public string StandardOutputImportance { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string StandardOutputImportance" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.ToolTask.StandardOutputImportance" />
+      <MemberSignature Language="VB.NET" Value="Public Property StandardOutputImportance As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ StandardOutputImportance { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -859,6 +943,8 @@ abstract class CustomToolTask : ToolTask
       <MemberSignature Language="C#" Value="protected Microsoft.Build.Framework.MessageImportance StandardOutputImportanceToUse { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Build.Framework.MessageImportance StandardOutputImportanceToUse" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.ToolTask.StandardOutputImportanceToUse" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property StandardOutputImportanceToUse As MessageImportance" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property Microsoft::Build::Framework::MessageImportance StandardOutputImportanceToUse { Microsoft::Build::Framework::MessageImportance get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -877,6 +963,8 @@ abstract class CustomToolTask : ToolTask
       <MemberSignature Language="C#" Value="protected virtual Microsoft.Build.Framework.MessageImportance StandardOutputLoggingImportance { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Build.Framework.MessageImportance StandardOutputLoggingImportance" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.ToolTask.StandardOutputLoggingImportance" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property StandardOutputLoggingImportance As MessageImportance" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property Microsoft::Build::Framework::MessageImportance StandardOutputLoggingImportance { Microsoft::Build::Framework::MessageImportance get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -895,6 +983,8 @@ abstract class CustomToolTask : ToolTask
       <MemberSignature Language="C#" Value="protected int TaskProcessTerminationTimeout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 TaskProcessTerminationTimeout" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.ToolTask.TaskProcessTerminationTimeout" />
+      <MemberSignature Language="VB.NET" Value="Protected Property TaskProcessTerminationTimeout As Integer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property int TaskProcessTerminationTimeout { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -913,6 +1003,8 @@ abstract class CustomToolTask : ToolTask
       <MemberSignature Language="C#" Value="public virtual int Timeout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Timeout" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.ToolTask.Timeout" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Timeout As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Timeout { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -931,6 +1023,8 @@ abstract class CustomToolTask : ToolTask
       <MemberSignature Language="C#" Value="protected System.Threading.ManualResetEvent ToolCanceled { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Threading.ManualResetEvent ToolCanceled" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.ToolTask.ToolCanceled" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property ToolCanceled As ManualResetEvent" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Threading::ManualResetEvent ^ ToolCanceled { System::Threading::ManualResetEvent ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -949,6 +1043,8 @@ abstract class CustomToolTask : ToolTask
       <MemberSignature Language="C#" Value="public virtual string ToolExe { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ToolExe" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.ToolTask.ToolExe" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property ToolExe As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ToolExe { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -967,6 +1063,8 @@ abstract class CustomToolTask : ToolTask
       <MemberSignature Language="C#" Value="protected abstract string ToolName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ToolName" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.ToolTask.ToolName" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride ReadOnly Property ToolName As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract property System::String ^ ToolName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -995,6 +1093,8 @@ abstract class CustomToolTask : ToolTask
       <MemberSignature Language="C#" Value="public string ToolPath { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ToolPath" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.ToolTask.ToolPath" />
+      <MemberSignature Language="VB.NET" Value="Public Property ToolPath As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ToolPath { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -1013,6 +1113,8 @@ abstract class CustomToolTask : ToolTask
       <MemberSignature Language="C#" Value="public bool UseCommandProcessor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UseCommandProcessor" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.ToolTask.UseCommandProcessor" />
+      <MemberSignature Language="VB.NET" Value="Public Property UseCommandProcessor As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseCommandProcessor { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -1028,9 +1130,11 @@ abstract class CustomToolTask : ToolTask
       </Docs>
     </Member>
     <Member MemberName="ValidateParameters">
-      <MemberSignature Language="C#" Value="protected virtual bool ValidateParameters ();" />
+      <MemberSignature Language="C#" Value="protected internal virtual bool ValidateParameters ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance bool ValidateParameters() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.ToolTask.ValidateParameters" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function ValidateParameters () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual bool ValidateParameters();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -1051,6 +1155,8 @@ abstract class CustomToolTask : ToolTask
       <MemberSignature Language="C#" Value="public bool YieldDuringToolExecution { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool YieldDuringToolExecution" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.ToolTask.YieldDuringToolExecution" />
+      <MemberSignature Language="VB.NET" Value="Public Property YieldDuringToolExecution As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool YieldDuringToolExecution { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -1065,14 +1171,5 @@ abstract class CustomToolTask : ToolTask
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Utilities.ToolTask" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,9 @@
-<Type Name="SpeechRecognizedEventArgs" FullName="System.Speech.Recognition.SpeechRecognizedEventArgs">
+﻿<Type Name="SpeechRecognizedEventArgs" FullName="System.Speech.Recognition.SpeechRecognizedEventArgs">
   <TypeSignature Language="C#" Value="public class SpeechRecognizedEventArgs : System.Speech.Recognition.RecognitionEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit SpeechRecognizedEventArgs extends System.Speech.Recognition.RecognitionEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Speech.Recognition.SpeechRecognizedEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class SpeechRecognizedEventArgs&#xA;Inherits RecognitionEventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SpeechRecognizedEventArgs : System::Speech::Recognition::RecognitionEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

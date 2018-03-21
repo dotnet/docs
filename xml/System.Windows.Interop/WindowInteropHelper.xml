@@ -1,7 +1,9 @@
-<Type Name="WindowInteropHelper" FullName="System.Windows.Interop.WindowInteropHelper">
+﻿<Type Name="WindowInteropHelper" FullName="System.Windows.Interop.WindowInteropHelper">
   <TypeSignature Language="C#" Value="public sealed class WindowInteropHelper" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WindowInteropHelper extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Interop.WindowInteropHelper" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WindowInteropHelper" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WindowInteropHelper sealed" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +40,7 @@
       <MemberSignature Language="C#" Value="public WindowInteropHelper (System.Windows.Window window);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Window window) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.WindowInteropHelper.#ctor(System.Windows.Window)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WindowInteropHelper(System::Windows::Window ^ window);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -63,6 +66,8 @@
       <MemberSignature Language="C#" Value="public IntPtr EnsureHandle ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance native int EnsureHandle() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.WindowInteropHelper.EnsureHandle" />
+      <MemberSignature Language="VB.NET" Value="Public Function EnsureHandle () As IntPtr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IntPtr EnsureHandle();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -105,6 +110,8 @@
       <MemberSignature Language="C#" Value="public IntPtr Handle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance native int Handle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Interop.WindowInteropHelper.Handle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Handle As IntPtr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property IntPtr Handle { IntPtr get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -130,6 +137,8 @@
       <MemberSignature Language="C#" Value="public IntPtr Owner { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance native int Owner" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Interop.WindowInteropHelper.Owner" />
+      <MemberSignature Language="VB.NET" Value="Public Property Owner As IntPtr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property IntPtr Owner { IntPtr get(); void set(IntPtr value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

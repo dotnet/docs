@@ -1,7 +1,9 @@
-<Type Name="WorkflowIdentity" FullName="System.Activities.WorkflowIdentity">
+﻿<Type Name="WorkflowIdentity" FullName="System.Activities.WorkflowIdentity">
   <TypeSignature Language="C#" Value="public class WorkflowIdentity : IEquatable&lt;System.Activities.WorkflowIdentity&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit WorkflowIdentity extends System.Object implements class System.IEquatable`1&lt;class System.Activities.WorkflowIdentity&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Activities.WorkflowIdentity" />
+  <TypeSignature Language="VB.NET" Value="Public Class WorkflowIdentity&#xA;Implements IEquatable(Of WorkflowIdentity)" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WorkflowIdentity : IEquatable&lt;System::Activities::WorkflowIdentity ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,10 +54,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.WorkflowIdentity" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public WorkflowIdentity ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowIdentity.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowIdentity();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -71,6 +84,7 @@
       <MemberSignature Language="C#" Value="public WorkflowIdentity (string name, Version version, string package);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class System.Version version, string package) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowIdentity.#ctor(System.String,System.Version,System.String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowIdentity(System::String ^ name, Version ^ version, System::String ^ package);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -89,11 +103,25 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether the current WorkflowIdentity and the specified WorkflowIdentity are the same.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Equals">
       <MemberSignature Language="C#" Value="public bool Equals (System.Activities.WorkflowIdentity other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(class System.Activities.WorkflowIdentity other) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowIdentity.Equals(System.Activities.WorkflowIdentity)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (other As WorkflowIdentity) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Activities::WorkflowIdentity ^ other);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -116,6 +144,8 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowIdentity.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -139,6 +169,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowIdentity.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -158,6 +190,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Activities.WorkflowIdentity.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -176,6 +210,8 @@
       <MemberSignature Language="C#" Value="public string Package { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Package" />
       <MemberSignature Language="DocId" Value="P:System.Activities.WorkflowIdentity.Package" />
+      <MemberSignature Language="VB.NET" Value="Public Property Package As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Package { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -194,6 +230,8 @@
       <MemberSignature Language="C#" Value="public static System.Activities.WorkflowIdentity Parse (string identity);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Activities.WorkflowIdentity Parse(string identity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowIdentity.Parse(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (identity As String) As WorkflowIdentity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Activities::WorkflowIdentity ^ Parse(System::String ^ identity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -216,6 +254,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowIdentity.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -235,6 +275,8 @@
       <MemberSignature Language="C#" Value="public static bool TryParse (string identity, out System.Activities.WorkflowIdentity result);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string identity, [out] class System.Activities.WorkflowIdentity&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowIdentity.TryParse(System.String,System.Activities.WorkflowIdentity@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryParse (identity As String, ByRef result As WorkflowIdentity) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryParse(System::String ^ identity, [Runtime::InteropServices::Out] System::Activities::WorkflowIdentity ^ % result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -260,6 +302,8 @@
       <MemberSignature Language="C#" Value="public Version Version { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Version Version" />
       <MemberSignature Language="DocId" Value="P:System.Activities.WorkflowIdentity.Version" />
+      <MemberSignature Language="VB.NET" Value="Public Property Version As Version" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Version ^ Version { Version ^ get(); void set(Version ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -274,23 +318,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Equals">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Determines whether the current WorkflowIdentity and the specified WorkflowIdentity are the same.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Activities.WorkflowIdentity" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

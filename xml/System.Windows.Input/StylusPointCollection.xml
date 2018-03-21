@@ -1,7 +1,9 @@
-<Type Name="StylusPointCollection" FullName="System.Windows.Input.StylusPointCollection">
+﻿<Type Name="StylusPointCollection" FullName="System.Windows.Input.StylusPointCollection">
   <TypeSignature Language="C#" Value="public class StylusPointCollection : System.Collections.ObjectModel.Collection&lt;System.Windows.Input.StylusPoint&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StylusPointCollection extends System.Collections.ObjectModel.Collection`1&lt;valuetype System.Windows.Input.StylusPoint&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.StylusPointCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class StylusPointCollection&#xA;Inherits Collection(Of StylusPoint)" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StylusPointCollection : System::Collections::ObjectModel::Collection&lt;System::Windows::Input::StylusPoint&gt;" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,10 +35,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.StylusPointCollection" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public StylusPointCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPointCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StylusPointCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -62,6 +75,8 @@
       <MemberSignature Language="C#" Value="public StylusPointCollection (System.Collections.Generic.IEnumerable&lt;System.Windows.Input.StylusPoint&gt; stylusPoints);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Windows.Input.StylusPoint&gt; stylusPoints) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPointCollection.#ctor(System.Collections.Generic.IEnumerable{System.Windows.Input.StylusPoint})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (stylusPoints As IEnumerable(Of StylusPoint))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StylusPointCollection(System::Collections::Generic::IEnumerable&lt;System::Windows::Input::StylusPoint&gt; ^ stylusPoints);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -97,6 +112,8 @@
       <MemberSignature Language="C#" Value="public StylusPointCollection (System.Collections.Generic.IEnumerable&lt;System.Windows.Point&gt; points);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Windows.Point&gt; points) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPointCollection.#ctor(System.Collections.Generic.IEnumerable{System.Windows.Point})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (points As IEnumerable(Of Point))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StylusPointCollection(System::Collections::Generic::IEnumerable&lt;System::Windows::Point&gt; ^ points);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -128,6 +145,8 @@
       <MemberSignature Language="C#" Value="public StylusPointCollection (int initialCapacity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 initialCapacity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPointCollection.#ctor(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (initialCapacity As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StylusPointCollection(int initialCapacity);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -163,6 +182,7 @@
       <MemberSignature Language="C#" Value="public StylusPointCollection (System.Windows.Input.StylusPointDescription stylusPointDescription);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Input.StylusPointDescription stylusPointDescription) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPointCollection.#ctor(System.Windows.Input.StylusPointDescription)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StylusPointCollection(System::Windows::Input::StylusPointDescription ^ stylusPointDescription);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -198,6 +218,7 @@
       <MemberSignature Language="C#" Value="public StylusPointCollection (System.Windows.Input.StylusPointDescription stylusPointDescription, int initialCapacity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Input.StylusPointDescription stylusPointDescription, int32 initialCapacity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPointCollection.#ctor(System.Windows.Input.StylusPointDescription,System.Int32)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StylusPointCollection(System::Windows::Input::StylusPointDescription ^ stylusPointDescription, int initialCapacity);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -237,6 +258,8 @@
       <MemberSignature Language="C#" Value="public void Add (System.Windows.Input.StylusPointCollection stylusPoints);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Windows.Input.StylusPointCollection stylusPoints) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPointCollection.Add(System.Windows.Input.StylusPointCollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (stylusPoints As StylusPointCollection)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Windows::Input::StylusPointCollection ^ stylusPoints);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -271,6 +294,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler Changed;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Changed" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Input.StylusPointCollection.Changed" />
+      <MemberSignature Language="VB.NET" Value="Public Event Changed As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Changed;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -298,6 +323,8 @@
       <MemberSignature Language="C#" Value="protected override sealed void ClearItems ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void ClearItems() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPointCollection.ClearItems" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides NotOverridable Sub ClearItems ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ClearItems();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -317,6 +344,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Input.StylusPointCollection Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Input.StylusPointCollection Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPointCollection.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As StylusPointCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Input::StylusPointCollection ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -346,6 +375,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Input.StylusPointDescription Description { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Input.StylusPointDescription Description" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.StylusPointCollection.Description" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Description As StylusPointDescription" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::StylusPointDescription ^ Description { System::Windows::Input::StylusPointDescription ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -376,6 +407,7 @@
       <MemberSignature Language="C#" Value="protected override sealed void InsertItem (int index, System.Windows.Input.StylusPoint stylusPoint);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InsertItem(int32 index, valuetype System.Windows.Input.StylusPoint stylusPoint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPointCollection.InsertItem(System.Int32,System.Windows.Input.StylusPoint)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InsertItem(int index, System::Windows::Input::StylusPoint stylusPoint);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -402,6 +434,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPointCollection.OnChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnChanged (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -423,6 +457,8 @@
       <MemberSignature Language="C#" Value="public static explicit operator System.Windows.Point[] (System.Windows.Input.StylusPointCollection stylusPoints);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Point[] op_Explicit(class System.Windows.Input.StylusPointCollection stylusPoints) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPointCollection.op_Explicit(System.Windows.Input.StylusPointCollection)~System.Windows.Point[]" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (stylusPoints As StylusPointCollection) As Point()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator cli::array &lt;System::Windows::Point&gt; ^(System::Windows::Input::StylusPointCollection ^ stylusPoints);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -453,6 +489,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Input.StylusPointCollection Reformat (System.Windows.Input.StylusPointDescription subsetToReformatTo);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Input.StylusPointCollection Reformat(class System.Windows.Input.StylusPointDescription subsetToReformatTo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPointCollection.Reformat(System.Windows.Input.StylusPointDescription)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Reformat (subsetToReformatTo As StylusPointDescription) As StylusPointCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Input::StylusPointCollection ^ Reformat(System::Windows::Input::StylusPointDescription ^ subsetToReformatTo);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -497,6 +535,8 @@
       <MemberSignature Language="C#" Value="protected override sealed void RemoveItem (int index);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RemoveItem(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPointCollection.RemoveItem(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides NotOverridable Sub RemoveItem (index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RemoveItem(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -519,6 +559,7 @@
       <MemberSignature Language="C#" Value="protected override sealed void SetItem (int index, System.Windows.Input.StylusPoint stylusPoint);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetItem(int32 index, valuetype System.Windows.Input.StylusPoint stylusPoint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPointCollection.SetItem(System.Int32,System.Windows.Input.StylusPoint)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetItem(int index, System::Windows::Input::StylusPoint stylusPoint);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -545,6 +586,8 @@
       <MemberSignature Language="C#" Value="public int[] ToHiMetricArray ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32[] ToHiMetricArray() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPointCollection.ToHiMetricArray" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToHiMetricArray () As Integer()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;int&gt; ^ ToHiMetricArray();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -560,14 +603,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.StylusPointCollection" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,9 @@
-<Type Name="TypeCodeDomSerializer" FullName="System.ComponentModel.Design.Serialization.TypeCodeDomSerializer">
+﻿<Type Name="TypeCodeDomSerializer" FullName="System.ComponentModel.Design.Serialization.TypeCodeDomSerializer">
   <TypeSignature Language="C#" Value="public class TypeCodeDomSerializer : System.ComponentModel.Design.Serialization.CodeDomSerializerBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TypeCodeDomSerializer extends System.ComponentModel.Design.Serialization.CodeDomSerializerBase" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Serialization.TypeCodeDomSerializer" />
+  <TypeSignature Language="VB.NET" Value="Public Class TypeCodeDomSerializer&#xA;Inherits CodeDomSerializerBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TypeCodeDomSerializer : System::ComponentModel::Design::Serialization::CodeDomSerializerBase" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +36,8 @@
       <MemberSignature Language="C#" Value="public TypeCodeDomSerializer ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.TypeCodeDomSerializer.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TypeCodeDomSerializer();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -49,6 +53,8 @@
       <MemberSignature Language="C#" Value="public virtual object Deserialize (System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, System.CodeDom.CodeTypeDeclaration declaration);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Deserialize(class System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, class System.CodeDom.CodeTypeDeclaration declaration) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.TypeCodeDomSerializer.Deserialize(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.CodeDom.CodeTypeDeclaration)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Deserialize (manager As IDesignerSerializationManager, declaration As CodeTypeDeclaration) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Deserialize(System::ComponentModel::Design::Serialization::IDesignerSerializationManager ^ manager, System::CodeDom::CodeTypeDeclaration ^ declaration);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -99,6 +105,8 @@
       <MemberSignature Language="C#" Value="protected virtual System.CodeDom.CodeMemberMethod GetInitializeMethod (System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, System.CodeDom.CodeTypeDeclaration declaration, object value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.CodeDom.CodeMemberMethod GetInitializeMethod(class System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, class System.CodeDom.CodeTypeDeclaration declaration, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.TypeCodeDomSerializer.GetInitializeMethod(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.CodeDom.CodeTypeDeclaration,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetInitializeMethod (manager As IDesignerSerializationManager, declaration As CodeTypeDeclaration, value As Object) As CodeMemberMethod" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::CodeDom::CodeMemberMethod ^ GetInitializeMethod(System::ComponentModel::Design::Serialization::IDesignerSerializationManager ^ manager, System::CodeDom::CodeTypeDeclaration ^ declaration, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -138,6 +146,8 @@
       <MemberSignature Language="C#" Value="protected virtual System.CodeDom.CodeMemberMethod[] GetInitializeMethods (System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, System.CodeDom.CodeTypeDeclaration declaration);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.CodeDom.CodeMemberMethod[] GetInitializeMethods(class System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, class System.CodeDom.CodeTypeDeclaration declaration) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.TypeCodeDomSerializer.GetInitializeMethods(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.CodeDom.CodeTypeDeclaration)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetInitializeMethods (manager As IDesignerSerializationManager, declaration As CodeTypeDeclaration) As CodeMemberMethod()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual cli::array &lt;System::CodeDom::CodeMemberMethod ^&gt; ^ GetInitializeMethods(System::ComponentModel::Design::Serialization::IDesignerSerializationManager ^ manager, System::CodeDom::CodeTypeDeclaration ^ declaration);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -175,6 +185,8 @@
       <MemberSignature Language="C#" Value="public virtual System.CodeDom.CodeTypeDeclaration Serialize (System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, object root, System.Collections.ICollection members);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.CodeDom.CodeTypeDeclaration Serialize(class System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, object root, class System.Collections.ICollection members) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.TypeCodeDomSerializer.Serialize(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.Object,System.Collections.ICollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Serialize (manager As IDesignerSerializationManager, root As Object, members As ICollection) As CodeTypeDeclaration" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::CodeDom::CodeTypeDeclaration ^ Serialize(System::ComponentModel::Design::Serialization::IDesignerSerializationManager ^ manager, System::Object ^ root, System::Collections::ICollection ^ members);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="IRawElementProviderFragmentRoot" FullName="System.Windows.Automation.Provider.IRawElementProviderFragmentRoot">
+﻿<Type Name="IRawElementProviderFragmentRoot" FullName="System.Windows.Automation.Provider.IRawElementProviderFragmentRoot">
   <TypeSignature Language="C#" Value="public interface IRawElementProviderFragmentRoot : System.Windows.Automation.Provider.IRawElementProviderFragment" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRawElementProviderFragmentRoot implements class System.Windows.Automation.Provider.IRawElementProviderFragment, class System.Windows.Automation.Provider.IRawElementProviderSimple" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Provider.IRawElementProviderFragmentRoot" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IRawElementProviderFragmentRoot&#xA;Implements IRawElementProviderFragment" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IRawElementProviderFragmentRoot : System::Windows::Automation::Provider::IRawElementProviderFragment" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationProvider</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,7 +21,7 @@
       <AttributeName>System.Runtime.InteropServices.Guid("620ce2a5-ab8f-40a9-86cb-de3c75599b58")</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -38,6 +40,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Automation.Provider.IRawElementProviderFragment ElementProviderFromPoint (double x, double y);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Automation.Provider.IRawElementProviderFragment ElementProviderFromPoint(float64 x, float64 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.IRawElementProviderFragmentRoot.ElementProviderFromPoint(System.Double,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ElementProviderFromPoint (x As Double, y As Double) As IRawElementProviderFragment" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Automation::Provider::IRawElementProviderFragment ^ ElementProviderFromPoint(double x, double y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -80,6 +84,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Automation.Provider.IRawElementProviderFragment GetFocus ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Automation.Provider.IRawElementProviderFragment GetFocus() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.IRawElementProviderFragmentRoot.GetFocus" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetFocus () As IRawElementProviderFragment" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Automation::Provider::IRawElementProviderFragment ^ GetFocus();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>

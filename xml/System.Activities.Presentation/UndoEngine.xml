@@ -1,7 +1,9 @@
-<Type Name="UndoEngine" FullName="System.Activities.Presentation.UndoEngine">
+﻿<Type Name="UndoEngine" FullName="System.Activities.Presentation.UndoEngine">
   <TypeSignature Language="C#" Value="public class UndoEngine" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit UndoEngine extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.UndoEngine" />
+  <TypeSignature Language="VB.NET" Value="Public Class UndoEngine" />
+  <TypeSignature Language="C++ CLI" Value="public ref class UndoEngine" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public UndoEngine (System.Activities.Presentation.EditingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Activities.Presentation.EditingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.UndoEngine.#ctor(System.Activities.Presentation.EditingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (context As EditingContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UndoEngine(System::Activities::Presentation::EditingContext ^ context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -37,6 +41,8 @@
       <MemberSignature Language="C#" Value="public void AddUndoUnit (System.Activities.Presentation.UndoUnit unit);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddUndoUnit(class System.Activities.Presentation.UndoUnit unit) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.UndoEngine.AddUndoUnit(System.Activities.Presentation.UndoUnit)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddUndoUnit (unit As UndoUnit)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddUndoUnit(System::Activities::Presentation::UndoUnit ^ unit);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -58,6 +64,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;string&gt; GetRedoActions ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;string&gt; GetRedoActions() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.UndoEngine.GetRedoActions" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetRedoActions () As IEnumerable(Of String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ GetRedoActions();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -77,6 +85,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;string&gt; GetUndoActions ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;string&gt; GetUndoActions() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.UndoEngine.GetUndoActions" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetUndoActions () As IEnumerable(Of String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ GetUndoActions();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -96,6 +106,8 @@
       <MemberSignature Language="C#" Value="public bool IsUndoRedoInProgress { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsUndoRedoInProgress" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.UndoEngine.IsUndoRedoInProgress" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsUndoRedoInProgress As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsUndoRedoInProgress { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -115,6 +127,8 @@
       <MemberSignature Language="C#" Value="public bool Redo ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Redo() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.UndoEngine.Redo" />
+      <MemberSignature Language="VB.NET" Value="Public Function Redo () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Redo();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -135,6 +149,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Activities.Presentation.UndoUnitEventArgs&gt; RedoCompleted;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Activities.Presentation.UndoUnitEventArgs&gt; RedoCompleted" />
       <MemberSignature Language="DocId" Value="E:System.Activities.Presentation.UndoEngine.RedoCompleted" />
+      <MemberSignature Language="VB.NET" Value="Public Event RedoCompleted As EventHandler(Of UndoUnitEventArgs) " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Activities::Presentation::UndoUnitEventArgs ^&gt; ^ RedoCompleted;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -152,6 +168,8 @@
       <MemberSignature Language="C#" Value="public bool Undo ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Undo() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.UndoEngine.Undo" />
+      <MemberSignature Language="VB.NET" Value="Public Function Undo () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Undo();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -172,6 +190,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Activities.Presentation.UndoUnitEventArgs&gt; UndoCompleted;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Activities.Presentation.UndoUnitEventArgs&gt; UndoCompleted" />
       <MemberSignature Language="DocId" Value="E:System.Activities.Presentation.UndoEngine.UndoCompleted" />
+      <MemberSignature Language="VB.NET" Value="Public Event UndoCompleted As EventHandler(Of UndoUnitEventArgs) " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Activities::Presentation::UndoUnitEventArgs ^&gt; ^ UndoCompleted;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -189,6 +209,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler UndoRedoBufferChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler UndoRedoBufferChanged" />
       <MemberSignature Language="DocId" Value="E:System.Activities.Presentation.UndoEngine.UndoRedoBufferChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event UndoRedoBufferChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ UndoRedoBufferChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -206,6 +228,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Activities.Presentation.UndoUnitEventArgs&gt; UndoUnitAdded;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Activities.Presentation.UndoUnitEventArgs&gt; UndoUnitAdded" />
       <MemberSignature Language="DocId" Value="E:System.Activities.Presentation.UndoEngine.UndoUnitAdded" />
+      <MemberSignature Language="VB.NET" Value="Public Event UndoUnitAdded As EventHandler(Of UndoUnitEventArgs) " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Activities::Presentation::UndoUnitEventArgs ^&gt; ^ UndoUnitAdded;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -223,6 +247,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Activities.Presentation.UndoUnitEventArgs&gt; UndoUnitCancelled;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Activities.Presentation.UndoUnitEventArgs&gt; UndoUnitCancelled" />
       <MemberSignature Language="DocId" Value="E:System.Activities.Presentation.UndoEngine.UndoUnitCancelled" />
+      <MemberSignature Language="VB.NET" Value="Public Event UndoUnitCancelled As EventHandler(Of UndoUnitEventArgs) " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Activities::Presentation::UndoUnitEventArgs ^&gt; ^ UndoUnitCancelled;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -240,6 +266,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler UndoUnitDiscarded;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler UndoUnitDiscarded" />
       <MemberSignature Language="DocId" Value="E:System.Activities.Presentation.UndoEngine.UndoUnitDiscarded" />
+      <MemberSignature Language="VB.NET" Value="Public Event UndoUnitDiscarded As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ UndoUnitDiscarded;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

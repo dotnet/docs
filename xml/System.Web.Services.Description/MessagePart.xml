@@ -1,7 +1,9 @@
-<Type Name="MessagePart" FullName="System.Web.Services.Description.MessagePart">
+﻿<Type Name="MessagePart" FullName="System.Web.Services.Description.MessagePart">
   <TypeSignature Language="C#" Value="public sealed class MessagePart : System.Web.Services.Description.NamedItem" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MessagePart extends System.Web.Services.Description.NamedItem" />
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.MessagePart" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MessagePart&#xA;Inherits NamedItem" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MessagePart sealed : System::Web::Services::Description::NamedItem" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -42,6 +44,8 @@
       <MemberSignature Language="C#" Value="public MessagePart ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.MessagePart.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MessagePart();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -58,6 +62,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.XmlQualifiedName Element { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlQualifiedName Element" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.MessagePart.Element" />
+      <MemberSignature Language="VB.NET" Value="Public Property Element As XmlQualifiedName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlQualifiedName ^ Element { System::Xml::XmlQualifiedName ^ get(); void set(System::Xml::XmlQualifiedName ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -96,6 +102,8 @@
       <MemberSignature Language="C#" Value="public override System.Web.Services.Description.ServiceDescriptionFormatExtensionCollection Extensions { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Description.ServiceDescriptionFormatExtensionCollection Extensions" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.MessagePart.Extensions" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Extensions As ServiceDescriptionFormatExtensionCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::Services::Description::ServiceDescriptionFormatExtensionCollection ^ Extensions { System::Web::Services::Description::ServiceDescriptionFormatExtensionCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -120,6 +128,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Services.Description.Message Message { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Description.Message Message" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.MessagePart.Message" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Message As Message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Description::Message ^ Message { System::Web::Services::Description::Message ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -150,6 +160,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.XmlQualifiedName Type { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlQualifiedName Type" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.MessagePart.Type" />
+      <MemberSignature Language="VB.NET" Value="Public Property Type As XmlQualifiedName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlQualifiedName ^ Type { System::Xml::XmlQualifiedName ^ get(); void set(System::Xml::XmlQualifiedName ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

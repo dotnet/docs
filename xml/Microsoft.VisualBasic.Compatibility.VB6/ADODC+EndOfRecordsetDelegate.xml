@@ -1,7 +1,9 @@
-<Type Name="ADODC+EndOfRecordsetDelegate" FullName="Microsoft.VisualBasic.Compatibility.VB6.ADODC+EndOfRecordsetDelegate">
+﻿<Type Name="ADODC+EndOfRecordsetDelegate" FullName="Microsoft.VisualBasic.Compatibility.VB6.ADODC+EndOfRecordsetDelegate">
   <TypeSignature Language="C#" Value="public delegate void ADODC.EndOfRecordsetDelegate(ref bool fMoreData, ref EventStatusEnum adStatus, Recordset pRecordset);" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed ADODC/EndOfRecordsetDelegate extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.ADODC.EndOfRecordsetDelegate" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub ADODC.EndOfRecordsetDelegate(ByRef fMoreData As Boolean, ByRef adStatus As EventStatusEnum, pRecordset As Recordset)" />
+  <TypeSignature Language="C++ CLI" Value="public: delegate void ADODC::EndOfRecordsetDelegate(bool % fMoreData, EventStatusEnum % adStatus, Recordset ^ pRecordset);" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>

@@ -1,7 +1,9 @@
-<Type Name="StringComparison" FullName="System.StringComparison">
+﻿<Type Name="StringComparison" FullName="System.StringComparison">
   <TypeSignature Language="C#" Value="public enum StringComparison" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed StringComparison extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.StringComparison" />
+  <TypeSignature Language="VB.NET" Value="Public Enum StringComparison" />
+  <TypeSignature Language="C++ CLI" Value="public enum class StringComparison" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -65,6 +67,8 @@
       <MemberSignature Language="C#" Value="CurrentCulture" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.StringComparison CurrentCulture = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.StringComparison.CurrentCulture" />
+      <MemberSignature Language="VB.NET" Value="CurrentCulture" />
+      <MemberSignature Language="C++ CLI" Value="CurrentCulture" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -86,6 +90,7 @@
       <ReturnValue>
         <ReturnType>System.StringComparison</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Compare strings using culture-sensitive sort rules and the current culture.</summary>
       </Docs>
@@ -94,6 +99,8 @@
       <MemberSignature Language="C#" Value="CurrentCultureIgnoreCase" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.StringComparison CurrentCultureIgnoreCase = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.StringComparison.CurrentCultureIgnoreCase" />
+      <MemberSignature Language="VB.NET" Value="CurrentCultureIgnoreCase" />
+      <MemberSignature Language="C++ CLI" Value="CurrentCultureIgnoreCase" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -115,6 +122,7 @@
       <ReturnValue>
         <ReturnType>System.StringComparison</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Compare strings using culture-sensitive sort rules, the current culture, and ignoring the case of the strings being compared.</summary>
       </Docs>
@@ -123,6 +131,8 @@
       <MemberSignature Language="C#" Value="InvariantCulture" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.StringComparison InvariantCulture = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.StringComparison.InvariantCulture" />
+      <MemberSignature Language="VB.NET" Value="InvariantCulture" />
+      <MemberSignature Language="C++ CLI" Value="InvariantCulture" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -140,6 +150,7 @@
       <ReturnValue>
         <ReturnType>System.StringComparison</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Compare strings using culture-sensitive sort rules and the invariant culture.</summary>
       </Docs>
@@ -148,6 +159,8 @@
       <MemberSignature Language="C#" Value="InvariantCultureIgnoreCase" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.StringComparison InvariantCultureIgnoreCase = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.StringComparison.InvariantCultureIgnoreCase" />
+      <MemberSignature Language="VB.NET" Value="InvariantCultureIgnoreCase" />
+      <MemberSignature Language="C++ CLI" Value="InvariantCultureIgnoreCase" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -165,6 +178,7 @@
       <ReturnValue>
         <ReturnType>System.StringComparison</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Compare strings using culture-sensitive sort rules, the invariant culture, and ignoring the case of the strings being compared.</summary>
       </Docs>
@@ -173,6 +187,8 @@
       <MemberSignature Language="C#" Value="Ordinal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.StringComparison Ordinal = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.StringComparison.Ordinal" />
+      <MemberSignature Language="VB.NET" Value="Ordinal" />
+      <MemberSignature Language="C++ CLI" Value="Ordinal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -194,6 +210,7 @@
       <ReturnValue>
         <ReturnType>System.StringComparison</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Compare strings using ordinal (binary) sort rules.</summary>
       </Docs>
@@ -202,6 +219,8 @@
       <MemberSignature Language="C#" Value="OrdinalIgnoreCase" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.StringComparison OrdinalIgnoreCase = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.StringComparison.OrdinalIgnoreCase" />
+      <MemberSignature Language="VB.NET" Value="OrdinalIgnoreCase" />
+      <MemberSignature Language="C++ CLI" Value="OrdinalIgnoreCase" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -223,6 +242,7 @@
       <ReturnValue>
         <ReturnType>System.StringComparison</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>Compare strings using ordinal (binary) sort rules and ignoring the case of the strings being compared.</summary>
       </Docs>

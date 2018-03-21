@@ -1,7 +1,9 @@
-<Type Name="ScrollGlyph" FullName="Microsoft.Windows.Themes.ScrollGlyph">
+﻿<Type Name="ScrollGlyph" FullName="Microsoft.Windows.Themes.ScrollGlyph">
   <TypeSignature Language="C#" Value="public enum ScrollGlyph" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ScrollGlyph extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Windows.Themes.ScrollGlyph" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ScrollGlyph" />
+  <TypeSignature Language="C++ CLI" Value="public enum class ScrollGlyph" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework.Aero</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +36,8 @@
       <MemberSignature Language="C#" Value="DownArrow" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Windows.Themes.ScrollGlyph DownArrow = int32(4)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ScrollGlyph.DownArrow" />
+      <MemberSignature Language="VB.NET" Value="DownArrow" />
+      <MemberSignature Language="C++ CLI" Value="DownArrow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Aero</AssemblyName>
@@ -54,6 +58,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Windows.Themes.ScrollGlyph</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>An arrow glyph pointing down.</summary>
       </Docs>
@@ -62,6 +67,8 @@
       <MemberSignature Language="C#" Value="HorizontalGripper" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Windows.Themes.ScrollGlyph HorizontalGripper = int32(6)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ScrollGlyph.HorizontalGripper" />
+      <MemberSignature Language="VB.NET" Value="HorizontalGripper" />
+      <MemberSignature Language="C++ CLI" Value="HorizontalGripper" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Aero</AssemblyName>
@@ -86,6 +93,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Windows.Themes.ScrollGlyph</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>horizontal gripper glyph.</summary>
       </Docs>
@@ -94,6 +102,8 @@
       <MemberSignature Language="C#" Value="LeftArrow" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Windows.Themes.ScrollGlyph LeftArrow = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ScrollGlyph.LeftArrow" />
+      <MemberSignature Language="VB.NET" Value="LeftArrow" />
+      <MemberSignature Language="C++ CLI" Value="LeftArrow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Aero</AssemblyName>
@@ -114,6 +124,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Windows.Themes.ScrollGlyph</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>An arrow glyph pointing to the left.</summary>
       </Docs>
@@ -122,6 +133,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Windows.Themes.ScrollGlyph None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ScrollGlyph.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Aero</AssemblyName>
@@ -146,6 +159,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Windows.Themes.ScrollGlyph</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>No glyph is used.</summary>
       </Docs>
@@ -154,6 +168,8 @@
       <MemberSignature Language="C#" Value="RightArrow" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Windows.Themes.ScrollGlyph RightArrow = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ScrollGlyph.RightArrow" />
+      <MemberSignature Language="VB.NET" Value="RightArrow" />
+      <MemberSignature Language="C++ CLI" Value="RightArrow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Aero</AssemblyName>
@@ -174,6 +190,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Windows.Themes.ScrollGlyph</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>An arrow glyph pointing to the right.</summary>
       </Docs>
@@ -182,6 +199,8 @@
       <MemberSignature Language="C#" Value="UpArrow" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Windows.Themes.ScrollGlyph UpArrow = int32(3)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ScrollGlyph.UpArrow" />
+      <MemberSignature Language="VB.NET" Value="UpArrow" />
+      <MemberSignature Language="C++ CLI" Value="UpArrow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Aero</AssemblyName>
@@ -202,6 +221,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Windows.Themes.ScrollGlyph</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>An arrow glyph pointing up.</summary>
       </Docs>
@@ -210,6 +230,8 @@
       <MemberSignature Language="C#" Value="VerticalGripper" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Windows.Themes.ScrollGlyph VerticalGripper = int32(5)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ScrollGlyph.VerticalGripper" />
+      <MemberSignature Language="VB.NET" Value="VerticalGripper" />
+      <MemberSignature Language="C++ CLI" Value="VerticalGripper" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Aero</AssemblyName>
@@ -234,6 +256,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Windows.Themes.ScrollGlyph</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>A vertical gripper glyph.</summary>
       </Docs>

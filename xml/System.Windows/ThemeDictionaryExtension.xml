@@ -1,7 +1,9 @@
-<Type Name="ThemeDictionaryExtension" FullName="System.Windows.ThemeDictionaryExtension">
+﻿<Type Name="ThemeDictionaryExtension" FullName="System.Windows.ThemeDictionaryExtension">
   <TypeSignature Language="C#" Value="public class ThemeDictionaryExtension : System.Windows.Markup.MarkupExtension" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ThemeDictionaryExtension extends System.Windows.Markup.MarkupExtension" />
   <TypeSignature Language="DocId" Value="T:System.Windows.ThemeDictionaryExtension" />
+  <TypeSignature Language="VB.NET" Value="Public Class ThemeDictionaryExtension&#xA;Inherits MarkupExtension" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ThemeDictionaryExtension : System::Windows::Markup::MarkupExtension" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,10 +33,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.ThemeDictionaryExtension" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ThemeDictionaryExtension ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.ThemeDictionaryExtension.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ThemeDictionaryExtension();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -50,6 +63,8 @@
       <MemberSignature Language="C#" Value="public ThemeDictionaryExtension (string assemblyName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string assemblyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.ThemeDictionaryExtension.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (assemblyName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ThemeDictionaryExtension(System::String ^ assemblyName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -68,6 +83,8 @@
       <MemberSignature Language="C#" Value="public string AssemblyName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string AssemblyName" />
       <MemberSignature Language="DocId" Value="P:System.Windows.ThemeDictionaryExtension.AssemblyName" />
+      <MemberSignature Language="VB.NET" Value="Public Property AssemblyName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AssemblyName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -96,6 +113,8 @@
       <MemberSignature Language="C#" Value="public override object ProvideValue (IServiceProvider serviceProvider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ProvideValue(class System.IServiceProvider serviceProvider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.ThemeDictionaryExtension.ProvideValue(System.IServiceProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ProvideValue (serviceProvider As IServiceProvider) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ ProvideValue(IServiceProvider ^ serviceProvider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -132,14 +151,5 @@
  <paramref name="serviceProvider" /> specifies a target type that does not match <see cref="P:System.Windows.ResourceDictionary.Source" />.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.ThemeDictionaryExtension" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

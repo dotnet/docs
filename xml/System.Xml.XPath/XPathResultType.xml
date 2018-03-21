@@ -1,7 +1,9 @@
-<Type Name="XPathResultType" FullName="System.Xml.XPath.XPathResultType">
+﻿<Type Name="XPathResultType" FullName="System.Xml.XPath.XPathResultType">
   <TypeSignature Language="C#" Value="public enum XPathResultType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XPathResultType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Xml.XPath.XPathResultType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum XPathResultType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class XPathResultType" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.XPath</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -35,6 +37,8 @@
       <MemberSignature Language="C#" Value="Any" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.XPath.XPathResultType Any = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.XPath.XPathResultType.Any" />
+      <MemberSignature Language="VB.NET" Value="Any" />
+      <MemberSignature Language="C++ CLI" Value="Any" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
@@ -56,6 +60,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.XPath.XPathResultType</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>Any of the XPath node types.</summary>
       </Docs>
@@ -64,6 +69,8 @@
       <MemberSignature Language="C#" Value="Boolean" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.XPath.XPathResultType Boolean = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.XPath.XPathResultType.Boolean" />
+      <MemberSignature Language="VB.NET" Value="Boolean" />
+      <MemberSignature Language="C++ CLI" Value="Boolean" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
@@ -85,6 +92,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.XPath.XPathResultType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>A <see cref="T:System.Boolean" /><see langword="true" /> or <see langword="false" /> value.</summary>
       </Docs>
@@ -93,6 +101,8 @@
       <MemberSignature Language="C#" Value="Error" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.XPath.XPathResultType Error = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.XPath.XPathResultType.Error" />
+      <MemberSignature Language="VB.NET" Value="Error" />
+      <MemberSignature Language="C++ CLI" Value="Error" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
@@ -114,6 +124,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.XPath.XPathResultType</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>The expression does not evaluate to the correct XPath type.</summary>
       </Docs>
@@ -122,6 +133,8 @@
       <MemberSignature Language="C#" Value="Navigator" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.XPath.XPathResultType Navigator = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.XPath.XPathResultType.Navigator" />
+      <MemberSignature Language="VB.NET" Value="Navigator" />
+      <MemberSignature Language="C++ CLI" Value="Navigator" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
@@ -143,6 +156,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.XPath.XPathResultType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>A tree fragment.</summary>
       </Docs>
@@ -151,6 +165,8 @@
       <MemberSignature Language="C#" Value="NodeSet" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.XPath.XPathResultType NodeSet = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.XPath.XPathResultType.NodeSet" />
+      <MemberSignature Language="VB.NET" Value="NodeSet" />
+      <MemberSignature Language="C++ CLI" Value="NodeSet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
@@ -172,6 +188,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.XPath.XPathResultType</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>A node collection.</summary>
       </Docs>
@@ -180,6 +197,8 @@
       <MemberSignature Language="C#" Value="Number" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.XPath.XPathResultType Number = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.XPath.XPathResultType.Number" />
+      <MemberSignature Language="VB.NET" Value="Number" />
+      <MemberSignature Language="C++ CLI" Value="Number" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
@@ -201,6 +220,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.XPath.XPathResultType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>A numeric value.</summary>
       </Docs>
@@ -209,6 +229,8 @@
       <MemberSignature Language="C#" Value="String" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.XPath.XPathResultType String = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.XPath.XPathResultType.String" />
+      <MemberSignature Language="VB.NET" Value="String" />
+      <MemberSignature Language="C++ CLI" Value="String" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
@@ -230,6 +252,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.XPath.XPathResultType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>A <see cref="T:System.String" /> value.</summary>
       </Docs>

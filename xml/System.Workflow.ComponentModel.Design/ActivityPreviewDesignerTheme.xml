@@ -1,7 +1,9 @@
-<Type Name="ActivityPreviewDesignerTheme" FullName="System.Workflow.ComponentModel.Design.ActivityPreviewDesignerTheme">
+﻿<Type Name="ActivityPreviewDesignerTheme" FullName="System.Workflow.ComponentModel.Design.ActivityPreviewDesignerTheme">
   <TypeSignature Language="C#" Value="public class ActivityPreviewDesignerTheme : System.Workflow.ComponentModel.Design.CompositeDesignerTheme" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ActivityPreviewDesignerTheme extends System.Workflow.ComponentModel.Design.CompositeDesignerTheme" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.ActivityPreviewDesignerTheme" />
+  <TypeSignature Language="VB.NET" Value="Public Class ActivityPreviewDesignerTheme&#xA;Inherits CompositeDesignerTheme" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ActivityPreviewDesignerTheme : System::Workflow::ComponentModel::Design::CompositeDesignerTheme" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +39,8 @@
       <MemberSignature Language="C#" Value="public ActivityPreviewDesignerTheme (System.Workflow.ComponentModel.Design.WorkflowTheme theme);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Workflow.ComponentModel.Design.WorkflowTheme theme) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityPreviewDesignerTheme.#ctor(System.Workflow.ComponentModel.Design.WorkflowTheme)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (theme As WorkflowTheme)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ActivityPreviewDesignerTheme(System::Workflow::ComponentModel::Design::WorkflowTheme ^ theme);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -55,6 +59,8 @@
       <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityPreviewDesignerTheme.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -77,6 +83,8 @@
       <MemberSignature Language="C#" Value="public override void Initialize ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Initialize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityPreviewDesignerTheme.Initialize" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -102,6 +110,7 @@
       <MemberSignature Language="C#" Value="public override void OnAmbientPropertyChanged (System.Workflow.ComponentModel.Design.AmbientProperty ambientProperty);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void OnAmbientPropertyChanged(valuetype System.Workflow.ComponentModel.Design.AmbientProperty ambientProperty) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityPreviewDesignerTheme.OnAmbientPropertyChanged(System.Workflow.ComponentModel.Design.AmbientProperty)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnAmbientPropertyChanged(System::Workflow::ComponentModel::Design::AmbientProperty ambientProperty);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -130,6 +139,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color PreviewBackColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color PreviewBackColor" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.ActivityPreviewDesignerTheme.PreviewBackColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property PreviewBackColor As Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color PreviewBackColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -159,6 +170,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color PreviewBorderColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color PreviewBorderColor" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.ActivityPreviewDesignerTheme.PreviewBorderColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property PreviewBorderColor As Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color PreviewBorderColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -188,6 +201,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color PreviewForeColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color PreviewForeColor" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.ActivityPreviewDesignerTheme.PreviewForeColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property PreviewForeColor As Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color PreviewForeColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="NetTcpBindingElement" FullName="System.ServiceModel.Configuration.NetTcpBindingElement">
+﻿<Type Name="NetTcpBindingElement" FullName="System.ServiceModel.Configuration.NetTcpBindingElement">
   <TypeSignature Language="C#" Value="public class NetTcpBindingElement : System.ServiceModel.Configuration.StandardBindingElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NetTcpBindingElement extends System.ServiceModel.Configuration.StandardBindingElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.NetTcpBindingElement" />
+  <TypeSignature Language="VB.NET" Value="Public Class NetTcpBindingElement&#xA;Inherits StandardBindingElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class NetTcpBindingElement : System::ServiceModel::Configuration::StandardBindingElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,10 +25,21 @@
     <altmember cref="T:System.ServiceModel.NetTcpBinding" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.NetTcpBindingElement" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public NetTcpBindingElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.NetTcpBindingElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NetTcpBindingElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -42,6 +55,8 @@
       <MemberSignature Language="C#" Value="public NetTcpBindingElement (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.NetTcpBindingElement.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NetTcpBindingElement(System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -60,6 +75,8 @@
       <MemberSignature Language="C#" Value="protected override Type BindingElementType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type BindingElementType" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NetTcpBindingElement.BindingElementType" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property BindingElementType As Type" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property Type ^ BindingElementType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -78,6 +95,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.HostNameComparisonMode HostNameComparisonMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.HostNameComparisonMode HostNameComparisonMode" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NetTcpBindingElement.HostNameComparisonMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property HostNameComparisonMode As HostNameComparisonMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::HostNameComparisonMode HostNameComparisonMode { System::ServiceModel::HostNameComparisonMode get(); void set(System::ServiceModel::HostNameComparisonMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -98,9 +117,10 @@
       </Docs>
     </Member>
     <Member MemberName="InitializeFrom">
-      <MemberSignature Language="C#" Value="protected override void InitializeFrom (System.ServiceModel.Channels.Binding binding);" />
+      <MemberSignature Language="C#" Value="protected internal override void InitializeFrom (System.ServiceModel.Channels.Binding binding);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void InitializeFrom(class System.ServiceModel.Channels.Binding binding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.NetTcpBindingElement.InitializeFrom(System.ServiceModel.Channels.Binding)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void InitializeFrom(System::ServiceModel::Channels::Binding ^ binding);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -122,6 +142,8 @@
       <MemberSignature Language="C#" Value="public int ListenBacklog { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ListenBacklog" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NetTcpBindingElement.ListenBacklog" />
+      <MemberSignature Language="VB.NET" Value="Public Property ListenBacklog As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ListenBacklog { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -155,6 +177,8 @@
       <MemberSignature Language="C#" Value="public long MaxBufferPoolSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 MaxBufferPoolSize" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NetTcpBindingElement.MaxBufferPoolSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxBufferPoolSize As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long MaxBufferPoolSize { long get(); void set(long value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -181,6 +205,8 @@
       <MemberSignature Language="C#" Value="public int MaxBufferSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxBufferSize" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NetTcpBindingElement.MaxBufferSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxBufferSize As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxBufferSize { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -216,6 +242,8 @@
       <MemberSignature Language="C#" Value="public int MaxConnections { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxConnections" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NetTcpBindingElement.MaxConnections" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxConnections As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxConnections { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -249,6 +277,8 @@
       <MemberSignature Language="C#" Value="public long MaxReceivedMessageSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 MaxReceivedMessageSize" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NetTcpBindingElement.MaxReceivedMessageSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxReceivedMessageSize As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long MaxReceivedMessageSize { long get(); void set(long value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -275,6 +305,7 @@
       <MemberSignature Language="C#" Value="protected override void OnApplyConfiguration (System.ServiceModel.Channels.Binding binding);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnApplyConfiguration(class System.ServiceModel.Channels.Binding binding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.NetTcpBindingElement.OnApplyConfiguration(System.ServiceModel.Channels.Binding)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnApplyConfiguration(System::ServiceModel::Channels::Binding ^ binding);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -296,6 +327,8 @@
       <MemberSignature Language="C#" Value="public bool PortSharingEnabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool PortSharingEnabled" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NetTcpBindingElement.PortSharingEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property PortSharingEnabled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PortSharingEnabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -320,6 +353,8 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NetTcpBindingElement.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -338,6 +373,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement ReaderQuotas { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement ReaderQuotas" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NetTcpBindingElement.ReaderQuotas" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReaderQuotas As XmlDictionaryReaderQuotasElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::XmlDictionaryReaderQuotasElement ^ ReaderQuotas { System::ServiceModel::Configuration::XmlDictionaryReaderQuotasElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -368,6 +405,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Configuration.StandardBindingOptionalReliableSessionElement ReliableSession { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Configuration.StandardBindingOptionalReliableSessionElement ReliableSession" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NetTcpBindingElement.ReliableSession" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReliableSession As StandardBindingOptionalReliableSessionElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::StandardBindingOptionalReliableSessionElement ^ ReliableSession { System::ServiceModel::Configuration::StandardBindingOptionalReliableSessionElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -391,6 +430,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Configuration.NetTcpSecurityElement Security { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Configuration.NetTcpSecurityElement Security" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NetTcpBindingElement.Security" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Security As NetTcpSecurityElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::NetTcpSecurityElement ^ Security { System::ServiceModel::Configuration::NetTcpSecurityElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -414,6 +455,8 @@
       <MemberSignature Language="C#" Value="public bool TransactionFlow { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool TransactionFlow" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NetTcpBindingElement.TransactionFlow" />
+      <MemberSignature Language="VB.NET" Value="Public Property TransactionFlow As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool TransactionFlow { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -438,6 +481,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.TransactionProtocol TransactionProtocol { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.TransactionProtocol TransactionProtocol" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NetTcpBindingElement.TransactionProtocol" />
+      <MemberSignature Language="VB.NET" Value="Public Property TransactionProtocol As TransactionProtocol" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::TransactionProtocol ^ TransactionProtocol { System::ServiceModel::TransactionProtocol ^ get(); void set(System::ServiceModel::TransactionProtocol ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -464,6 +509,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.TransferMode TransferMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.TransferMode TransferMode" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NetTcpBindingElement.TransferMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property TransferMode As TransferMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::TransferMode TransferMode { System::ServiceModel::TransferMode get(); void set(System::ServiceModel::TransferMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -483,14 +530,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.NetTcpBindingElement" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

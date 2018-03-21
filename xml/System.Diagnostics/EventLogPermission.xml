@@ -1,7 +1,9 @@
-<Type Name="EventLogPermission" FullName="System.Diagnostics.EventLogPermission">
+﻿<Type Name="EventLogPermission" FullName="System.Diagnostics.EventLogPermission">
   <TypeSignature Language="C#" Value="public sealed class EventLogPermission : System.Security.Permissions.ResourcePermissionBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit EventLogPermission extends System.Security.Permissions.ResourcePermissionBase" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.EventLogPermission" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EventLogPermission&#xA;Inherits ResourcePermissionBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EventLogPermission sealed : System::Security::Permissions::ResourcePermissionBase" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,10 +40,21 @@
     <altmember cref="T:System.Diagnostics.EventLogPermissionEntryCollection" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.EventLogPermission" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public EventLogPermission ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLogPermission.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EventLogPermission();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -61,6 +74,8 @@
       <MemberSignature Language="C#" Value="public EventLogPermission (System.Diagnostics.EventLogPermissionEntry[] permissionAccessEntries);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Diagnostics.EventLogPermissionEntry[] permissionAccessEntries) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLogPermission.#ctor(System.Diagnostics.EventLogPermissionEntry[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (permissionAccessEntries As EventLogPermissionEntry())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EventLogPermission(cli::array &lt;System::Diagnostics::EventLogPermissionEntry ^&gt; ^ permissionAccessEntries);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -85,6 +100,8 @@
       <MemberSignature Language="C#" Value="public EventLogPermission (System.Security.Permissions.PermissionState state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Permissions.PermissionState state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLogPermission.#ctor(System.Security.Permissions.PermissionState)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (state As PermissionState)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EventLogPermission(System::Security::Permissions::PermissionState state);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -109,6 +126,8 @@
       <MemberSignature Language="C#" Value="public EventLogPermission (System.Diagnostics.EventLogPermissionAccess permissionAccess, string machineName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Diagnostics.EventLogPermissionAccess permissionAccess, string machineName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLogPermission.#ctor(System.Diagnostics.EventLogPermissionAccess,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (permissionAccess As EventLogPermissionAccess, machineName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EventLogPermission(System::Diagnostics::EventLogPermissionAccess permissionAccess, System::String ^ machineName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -133,6 +152,8 @@
       <MemberSignature Language="C#" Value="public System.Diagnostics.EventLogPermissionEntryCollection PermissionEntries { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Diagnostics.EventLogPermissionEntryCollection PermissionEntries" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventLogPermission.PermissionEntries" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PermissionEntries As EventLogPermissionEntryCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::EventLogPermissionEntryCollection ^ PermissionEntries { System::Diagnostics::EventLogPermissionEntryCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -151,14 +172,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.EventLogPermission" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

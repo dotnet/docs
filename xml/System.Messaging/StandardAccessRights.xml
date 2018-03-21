@@ -1,7 +1,9 @@
-<Type Name="StandardAccessRights" FullName="System.Messaging.StandardAccessRights">
+﻿<Type Name="StandardAccessRights" FullName="System.Messaging.StandardAccessRights">
   <TypeSignature Language="C#" Value="public enum StandardAccessRights" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed StandardAccessRights extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Messaging.StandardAccessRights" />
+  <TypeSignature Language="VB.NET" Value="Public Enum StandardAccessRights" />
+  <TypeSignature Language="C++ CLI" Value="public enum class StandardAccessRights" />
   <AssemblyInfo>
     <AssemblyName>System.Messaging</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +39,8 @@
       <MemberSignature Language="C#" Value="All" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.StandardAccessRights All = int32(2031616)" />
       <MemberSignature Language="DocId" Value="F:System.Messaging.StandardAccessRights.All" />
+      <MemberSignature Language="VB.NET" Value="All" />
+      <MemberSignature Language="C++ CLI" Value="All" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -45,6 +49,7 @@
       <ReturnValue>
         <ReturnType>System.Messaging.StandardAccessRights</ReturnType>
       </ReturnValue>
+      <MemberValue>2031616</MemberValue>
       <Docs>
         <summary>Combines <see langword="Delete" />, <see langword="ReadSecurity" />, <see langword="WriteSecurity" />, <see langword="ModifyOwner" />, and <see langword="Synchronize" /> access.</summary>
       </Docs>
@@ -53,6 +58,8 @@
       <MemberSignature Language="C#" Value="Delete" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.StandardAccessRights Delete = int32(65536)" />
       <MemberSignature Language="DocId" Value="F:System.Messaging.StandardAccessRights.Delete" />
+      <MemberSignature Language="VB.NET" Value="Delete" />
+      <MemberSignature Language="C++ CLI" Value="Delete" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -61,6 +68,7 @@
       <ReturnValue>
         <ReturnType>System.Messaging.StandardAccessRights</ReturnType>
       </ReturnValue>
+      <MemberValue>65536</MemberValue>
       <Docs>
         <summary>The right to delete the object.</summary>
       </Docs>
@@ -69,6 +77,8 @@
       <MemberSignature Language="C#" Value="Execute" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.StandardAccessRights Execute = int32(131072)" />
       <MemberSignature Language="DocId" Value="F:System.Messaging.StandardAccessRights.Execute" />
+      <MemberSignature Language="VB.NET" Value="Execute" />
+      <MemberSignature Language="C++ CLI" Value="Execute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -77,6 +87,7 @@
       <ReturnValue>
         <ReturnType>System.Messaging.StandardAccessRights</ReturnType>
       </ReturnValue>
+      <MemberValue>131072</MemberValue>
       <Docs>
         <summary>The right to read the information in the object's security descriptor. On Windows 2000 and Windows NT, the security descriptor contains the security information for a securable object. It identifies the object's owner and primary group. <see langword="Execute" /> is currently defined to equal <see langword="ReadSecurity" />.</summary>
       </Docs>
@@ -85,6 +96,8 @@
       <MemberSignature Language="C#" Value="ModifyOwner" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.StandardAccessRights ModifyOwner = int32(524288)" />
       <MemberSignature Language="DocId" Value="F:System.Messaging.StandardAccessRights.ModifyOwner" />
+      <MemberSignature Language="VB.NET" Value="ModifyOwner" />
+      <MemberSignature Language="C++ CLI" Value="ModifyOwner" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -93,6 +106,7 @@
       <ReturnValue>
         <ReturnType>System.Messaging.StandardAccessRights</ReturnType>
       </ReturnValue>
+      <MemberValue>524288</MemberValue>
       <Docs>
         <summary>The right to change the owner in the object's security descriptor.</summary>
       </Docs>
@@ -101,6 +115,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.StandardAccessRights None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Messaging.StandardAccessRights.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -109,6 +125,7 @@
       <ReturnValue>
         <ReturnType>System.Messaging.StandardAccessRights</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>No access.</summary>
       </Docs>
@@ -117,6 +134,8 @@
       <MemberSignature Language="C#" Value="Read" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.StandardAccessRights Read = int32(131072)" />
       <MemberSignature Language="DocId" Value="F:System.Messaging.StandardAccessRights.Read" />
+      <MemberSignature Language="VB.NET" Value="Read" />
+      <MemberSignature Language="C++ CLI" Value="Read" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -125,6 +144,7 @@
       <ReturnValue>
         <ReturnType>System.Messaging.StandardAccessRights</ReturnType>
       </ReturnValue>
+      <MemberValue>131072</MemberValue>
       <Docs>
         <summary>The right to read the information in the object's security descriptor. <see langword="Read" /> is currently defined to equal <see langword="ReadSecurity" />.</summary>
       </Docs>
@@ -133,6 +153,8 @@
       <MemberSignature Language="C#" Value="ReadSecurity" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.StandardAccessRights ReadSecurity = int32(131072)" />
       <MemberSignature Language="DocId" Value="F:System.Messaging.StandardAccessRights.ReadSecurity" />
+      <MemberSignature Language="VB.NET" Value="ReadSecurity" />
+      <MemberSignature Language="C++ CLI" Value="ReadSecurity" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -141,6 +163,7 @@
       <ReturnValue>
         <ReturnType>System.Messaging.StandardAccessRights</ReturnType>
       </ReturnValue>
+      <MemberValue>131072</MemberValue>
       <Docs>
         <summary>The right to read the information in the object's security descriptor.</summary>
       </Docs>
@@ -149,6 +172,8 @@
       <MemberSignature Language="C#" Value="Required" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.StandardAccessRights Required = int32(851968)" />
       <MemberSignature Language="DocId" Value="F:System.Messaging.StandardAccessRights.Required" />
+      <MemberSignature Language="VB.NET" Value="Required" />
+      <MemberSignature Language="C++ CLI" Value="Required" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -157,6 +182,7 @@
       <ReturnValue>
         <ReturnType>System.Messaging.StandardAccessRights</ReturnType>
       </ReturnValue>
+      <MemberValue>851968</MemberValue>
       <Docs>
         <summary>Combines <see langword="Delete" />, <see langword="ReadSecurity" />, <see langword="WriteSecurity" />, and <see langword="ModifyOwner" /> access.</summary>
       </Docs>
@@ -165,6 +191,8 @@
       <MemberSignature Language="C#" Value="Synchronize" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.StandardAccessRights Synchronize = int32(1048576)" />
       <MemberSignature Language="DocId" Value="F:System.Messaging.StandardAccessRights.Synchronize" />
+      <MemberSignature Language="VB.NET" Value="Synchronize" />
+      <MemberSignature Language="C++ CLI" Value="Synchronize" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -173,6 +201,7 @@
       <ReturnValue>
         <ReturnType>System.Messaging.StandardAccessRights</ReturnType>
       </ReturnValue>
+      <MemberValue>1048576</MemberValue>
       <Docs>
         <summary>The right to use the object for synchronization. This enables a thread to wait until the object is in a specific state.</summary>
       </Docs>
@@ -181,6 +210,8 @@
       <MemberSignature Language="C#" Value="Write" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.StandardAccessRights Write = int32(131072)" />
       <MemberSignature Language="DocId" Value="F:System.Messaging.StandardAccessRights.Write" />
+      <MemberSignature Language="VB.NET" Value="Write" />
+      <MemberSignature Language="C++ CLI" Value="Write" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -189,6 +220,7 @@
       <ReturnValue>
         <ReturnType>System.Messaging.StandardAccessRights</ReturnType>
       </ReturnValue>
+      <MemberValue>131072</MemberValue>
       <Docs>
         <summary>The right to read the information in the object's security descriptor. <see langword="Write" /> is currently defined to equal <see langword="ReadSecurity" />.</summary>
       </Docs>
@@ -197,6 +229,8 @@
       <MemberSignature Language="C#" Value="WriteSecurity" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.StandardAccessRights WriteSecurity = int32(262144)" />
       <MemberSignature Language="DocId" Value="F:System.Messaging.StandardAccessRights.WriteSecurity" />
+      <MemberSignature Language="VB.NET" Value="WriteSecurity" />
+      <MemberSignature Language="C++ CLI" Value="WriteSecurity" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -205,6 +239,7 @@
       <ReturnValue>
         <ReturnType>System.Messaging.StandardAccessRights</ReturnType>
       </ReturnValue>
+      <MemberValue>262144</MemberValue>
       <Docs>
         <summary>The right to modify the discretionary access control list (DACL) in the security descriptor.</summary>
         <remarks>

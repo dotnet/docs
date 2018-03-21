@@ -1,7 +1,9 @@
-<Type Name="ConsoleLogger" FullName="Microsoft.Build.Logging.ConsoleLogger">
+﻿<Type Name="ConsoleLogger" FullName="Microsoft.Build.Logging.ConsoleLogger">
   <TypeSignature Language="C#" Value="public class ConsoleLogger : Microsoft.Build.Framework.INodeLogger" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ConsoleLogger extends System.Object implements class Microsoft.Build.Framework.ILogger, class Microsoft.Build.Framework.INodeLogger" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Logging.ConsoleLogger" />
+  <TypeSignature Language="VB.NET" Value="Public Class ConsoleLogger&#xA;Implements INodeLogger" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ConsoleLogger : Microsoft::Build::Framework::INodeLogger" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,10 +30,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a console logger instance.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ConsoleLogger ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Logging.ConsoleLogger.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ConsoleLogger();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -47,6 +60,8 @@
       <MemberSignature Language="C#" Value="public ConsoleLogger (Microsoft.Build.Framework.LoggerVerbosity verbosity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.Build.Framework.LoggerVerbosity verbosity) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Logging.ConsoleLogger.#ctor(Microsoft.Build.Framework.LoggerVerbosity)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (verbosity As LoggerVerbosity)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ConsoleLogger(Microsoft::Build::Framework::LoggerVerbosity verbosity);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -65,6 +80,8 @@
       <MemberSignature Language="C#" Value="public ConsoleLogger (Microsoft.Build.Framework.LoggerVerbosity verbosity, Microsoft.Build.Logging.WriteHandler write, Microsoft.Build.Logging.ColorSetter colorSet, Microsoft.Build.Logging.ColorResetter colorReset);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.Build.Framework.LoggerVerbosity verbosity, class Microsoft.Build.Logging.WriteHandler write, class Microsoft.Build.Logging.ColorSetter colorSet, class Microsoft.Build.Logging.ColorResetter colorReset) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Logging.ConsoleLogger.#ctor(Microsoft.Build.Framework.LoggerVerbosity,Microsoft.Build.Logging.WriteHandler,Microsoft.Build.Logging.ColorSetter,Microsoft.Build.Logging.ColorResetter)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (verbosity As LoggerVerbosity, write As WriteHandler, colorSet As ColorSetter, colorReset As ColorResetter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ConsoleLogger(Microsoft::Build::Framework::LoggerVerbosity verbosity, Microsoft::Build::Logging::WriteHandler ^ write, Microsoft::Build::Logging::ColorSetter ^ colorSet, Microsoft::Build::Logging::ColorResetter ^ colorReset);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -89,6 +106,8 @@
       <MemberSignature Language="C#" Value="public void ApplyParameter (string parameterName, string parameterValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ApplyParameter(string parameterName, string parameterValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Logging.ConsoleLogger.ApplyParameter(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ApplyParameter (parameterName As String, parameterValue As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ApplyParameter(System::String ^ parameterName, System::String ^ parameterValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -119,6 +138,8 @@
       <MemberSignature Language="C#" Value="public void BuildFinishedHandler (object sender, Microsoft.Build.Framework.BuildFinishedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void BuildFinishedHandler(object sender, class Microsoft.Build.Framework.BuildFinishedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Logging.ConsoleLogger.BuildFinishedHandler(System.Object,Microsoft.Build.Framework.BuildFinishedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub BuildFinishedHandler (sender As Object, e As BuildFinishedEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void BuildFinishedHandler(System::Object ^ sender, Microsoft::Build::Framework::BuildFinishedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -142,6 +163,8 @@
       <MemberSignature Language="C#" Value="public void BuildStartedHandler (object sender, Microsoft.Build.Framework.BuildStartedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void BuildStartedHandler(object sender, class Microsoft.Build.Framework.BuildStartedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Logging.ConsoleLogger.BuildStartedHandler(System.Object,Microsoft.Build.Framework.BuildStartedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub BuildStartedHandler (sender As Object, e As BuildStartedEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void BuildStartedHandler(System::Object ^ sender, Microsoft::Build::Framework::BuildStartedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -165,6 +188,8 @@
       <MemberSignature Language="C#" Value="public void CustomEventHandler (object sender, Microsoft.Build.Framework.CustomBuildEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CustomEventHandler(object sender, class Microsoft.Build.Framework.CustomBuildEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Logging.ConsoleLogger.CustomEventHandler(System.Object,Microsoft.Build.Framework.CustomBuildEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CustomEventHandler (sender As Object, e As CustomBuildEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CustomEventHandler(System::Object ^ sender, Microsoft::Build::Framework::CustomBuildEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -188,6 +213,8 @@
       <MemberSignature Language="C#" Value="public void ErrorHandler (object sender, Microsoft.Build.Framework.BuildErrorEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ErrorHandler(object sender, class Microsoft.Build.Framework.BuildErrorEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Logging.ConsoleLogger.ErrorHandler(System.Object,Microsoft.Build.Framework.BuildErrorEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ErrorHandler (sender As Object, e As BuildErrorEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ErrorHandler(System::Object ^ sender, Microsoft::Build::Framework::BuildErrorEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -207,11 +234,25 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Initialize">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes the console logger for the given build event or node count.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Initialize">
       <MemberSignature Language="C#" Value="public virtual void Initialize (Microsoft.Build.Framework.IEventSource eventSource);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Initialize(class Microsoft.Build.Framework.IEventSource eventSource) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Logging.ConsoleLogger.Initialize(Microsoft.Build.Framework.IEventSource)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Initialize (eventSource As IEventSource)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Initialize(Microsoft::Build::Framework::IEventSource ^ eventSource);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Build.Framework.ILogger.Initialize(Microsoft.Build.Framework.IEventSource)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -232,7 +273,12 @@
       <MemberSignature Language="C#" Value="public virtual void Initialize (Microsoft.Build.Framework.IEventSource eventSource, int nodeCount);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Initialize(class Microsoft.Build.Framework.IEventSource eventSource, int32 nodeCount) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Logging.ConsoleLogger.Initialize(Microsoft.Build.Framework.IEventSource,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Initialize (eventSource As IEventSource, nodeCount As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Initialize(Microsoft::Build::Framework::IEventSource ^ eventSource, int nodeCount);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Build.Framework.INodeLogger.Initialize(Microsoft.Build.Framework.IEventSource,System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -255,6 +301,8 @@
       <MemberSignature Language="C#" Value="public void MessageHandler (object sender, Microsoft.Build.Framework.BuildMessageEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void MessageHandler(object sender, class Microsoft.Build.Framework.BuildMessageEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Logging.ConsoleLogger.MessageHandler(System.Object,Microsoft.Build.Framework.BuildMessageEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub MessageHandler (sender As Object, e As BuildMessageEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void MessageHandler(System::Object ^ sender, Microsoft::Build::Framework::BuildMessageEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -278,7 +326,12 @@
       <MemberSignature Language="C#" Value="public string Parameters { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Parameters" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Logging.ConsoleLogger.Parameters" />
+      <MemberSignature Language="VB.NET" Value="Public Property Parameters As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Parameters { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Build.Framework.ILogger.Parameters</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -296,6 +349,8 @@
       <MemberSignature Language="C#" Value="public void ProjectFinishedHandler (object sender, Microsoft.Build.Framework.ProjectFinishedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ProjectFinishedHandler(object sender, class Microsoft.Build.Framework.ProjectFinishedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Logging.ConsoleLogger.ProjectFinishedHandler(System.Object,Microsoft.Build.Framework.ProjectFinishedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ProjectFinishedHandler (sender As Object, e As ProjectFinishedEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ProjectFinishedHandler(System::Object ^ sender, Microsoft::Build::Framework::ProjectFinishedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -319,6 +374,8 @@
       <MemberSignature Language="C#" Value="public void ProjectStartedHandler (object sender, Microsoft.Build.Framework.ProjectStartedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ProjectStartedHandler(object sender, class Microsoft.Build.Framework.ProjectStartedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Logging.ConsoleLogger.ProjectStartedHandler(System.Object,Microsoft.Build.Framework.ProjectStartedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ProjectStartedHandler (sender As Object, e As ProjectStartedEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ProjectStartedHandler(System::Object ^ sender, Microsoft::Build::Framework::ProjectStartedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -342,6 +399,8 @@
       <MemberSignature Language="C#" Value="public bool ShowSummary { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ShowSummary" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Logging.ConsoleLogger.ShowSummary" />
+      <MemberSignature Language="VB.NET" Value="Public Property ShowSummary As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowSummary { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -360,7 +419,12 @@
       <MemberSignature Language="C#" Value="public virtual void Shutdown ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Shutdown() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Logging.ConsoleLogger.Shutdown" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Shutdown ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Shutdown();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Build.Framework.ILogger.Shutdown</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -385,6 +449,8 @@
       <MemberSignature Language="C#" Value="public bool SkipProjectStartedText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SkipProjectStartedText" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Logging.ConsoleLogger.SkipProjectStartedText" />
+      <MemberSignature Language="VB.NET" Value="Public Property SkipProjectStartedText As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SkipProjectStartedText { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -410,6 +476,8 @@
       <MemberSignature Language="C#" Value="public void TargetFinishedHandler (object sender, Microsoft.Build.Framework.TargetFinishedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void TargetFinishedHandler(object sender, class Microsoft.Build.Framework.TargetFinishedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Logging.ConsoleLogger.TargetFinishedHandler(System.Object,Microsoft.Build.Framework.TargetFinishedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub TargetFinishedHandler (sender As Object, e As TargetFinishedEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void TargetFinishedHandler(System::Object ^ sender, Microsoft::Build::Framework::TargetFinishedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -433,6 +501,8 @@
       <MemberSignature Language="C#" Value="public void TargetStartedHandler (object sender, Microsoft.Build.Framework.TargetStartedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void TargetStartedHandler(object sender, class Microsoft.Build.Framework.TargetStartedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Logging.ConsoleLogger.TargetStartedHandler(System.Object,Microsoft.Build.Framework.TargetStartedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub TargetStartedHandler (sender As Object, e As TargetStartedEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void TargetStartedHandler(System::Object ^ sender, Microsoft::Build::Framework::TargetStartedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -456,6 +526,8 @@
       <MemberSignature Language="C#" Value="public void TaskFinishedHandler (object sender, Microsoft.Build.Framework.TaskFinishedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void TaskFinishedHandler(object sender, class Microsoft.Build.Framework.TaskFinishedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Logging.ConsoleLogger.TaskFinishedHandler(System.Object,Microsoft.Build.Framework.TaskFinishedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub TaskFinishedHandler (sender As Object, e As TaskFinishedEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void TaskFinishedHandler(System::Object ^ sender, Microsoft::Build::Framework::TaskFinishedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -479,6 +551,8 @@
       <MemberSignature Language="C#" Value="public void TaskStartedHandler (object sender, Microsoft.Build.Framework.TaskStartedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void TaskStartedHandler(object sender, class Microsoft.Build.Framework.TaskStartedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Logging.ConsoleLogger.TaskStartedHandler(System.Object,Microsoft.Build.Framework.TaskStartedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub TaskStartedHandler (sender As Object, e As TaskStartedEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void TaskStartedHandler(System::Object ^ sender, Microsoft::Build::Framework::TaskStartedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -502,7 +576,12 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.LoggerVerbosity Verbosity { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Build.Framework.LoggerVerbosity Verbosity" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Logging.ConsoleLogger.Verbosity" />
+      <MemberSignature Language="VB.NET" Value="Public Property Verbosity As LoggerVerbosity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Framework::LoggerVerbosity Verbosity { Microsoft::Build::Framework::LoggerVerbosity get(); void set(Microsoft::Build::Framework::LoggerVerbosity value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Build.Framework.ILogger.Verbosity</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -520,6 +599,8 @@
       <MemberSignature Language="C#" Value="public void WarningHandler (object sender, Microsoft.Build.Framework.BuildWarningEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WarningHandler(object sender, class Microsoft.Build.Framework.BuildWarningEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Logging.ConsoleLogger.WarningHandler(System.Object,Microsoft.Build.Framework.BuildWarningEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WarningHandler (sender As Object, e As BuildWarningEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WarningHandler(System::Object ^ sender, Microsoft::Build::Framework::BuildWarningEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -543,6 +624,8 @@
       <MemberSignature Language="C#" Value="protected Microsoft.Build.Logging.WriteHandler WriteHandler { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Logging.WriteHandler WriteHandler" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Logging.ConsoleLogger.WriteHandler" />
+      <MemberSignature Language="VB.NET" Value="Protected Property WriteHandler As WriteHandler" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property Microsoft::Build::Logging::WriteHandler ^ WriteHandler { Microsoft::Build::Logging::WriteHandler ^ get(); void set(Microsoft::Build::Logging::WriteHandler ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -557,23 +640,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Initialize">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes the console logger for the given build event or node count.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a console logger instance.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

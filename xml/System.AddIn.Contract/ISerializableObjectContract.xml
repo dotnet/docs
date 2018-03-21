@@ -1,7 +1,9 @@
-<Type Name="ISerializableObjectContract" FullName="System.AddIn.Contract.ISerializableObjectContract">
+﻿<Type Name="ISerializableObjectContract" FullName="System.AddIn.Contract.ISerializableObjectContract">
   <TypeSignature Language="C#" Value="public interface ISerializableObjectContract : System.AddIn.Contract.Collections.IRemoteArgumentDictionaryContract" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISerializableObjectContract implements class System.AddIn.Contract.Collections.IRemoteArgumentCollectionContract, class System.AddIn.Contract.Collections.IRemoteArgumentDictionaryContract, class System.AddIn.Contract.Collections.IRemoteArgumentEnumerableContract, class System.AddIn.Contract.IContract" />
   <TypeSignature Language="DocId" Value="T:System.AddIn.Contract.ISerializableObjectContract" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ISerializableObjectContract&#xA;Implements IRemoteArgumentDictionaryContract" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ISerializableObjectContract : System::AddIn::Contract::Collections::IRemoteArgumentDictionaryContract" />
   <AssemblyInfo>
     <AssemblyName>System.AddIn.Contract</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +22,8 @@
       <MemberSignature Language="C#" Value="public string GetCanonicalName ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetCanonicalName() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.ISerializableObjectContract.GetCanonicalName" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetCanonicalName () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetCanonicalName();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -48,6 +52,8 @@
       <MemberSignature Language="C#" Value="public System.AddIn.Contract.SerializableObjectData GetSerializableObjectData ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.AddIn.Contract.SerializableObjectData GetSerializableObjectData() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.ISerializableObjectContract.GetSerializableObjectData" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSerializableObjectData () As SerializableObjectData" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::AddIn::Contract::SerializableObjectData GetSerializableObjectData();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>

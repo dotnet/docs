@@ -1,7 +1,9 @@
-<Type Name="DataGridSortCommandEventHandler" FullName="System.Web.UI.WebControls.DataGridSortCommandEventHandler">
+﻿<Type Name="DataGridSortCommandEventHandler" FullName="System.Web.UI.WebControls.DataGridSortCommandEventHandler">
   <TypeSignature Language="C#" Value="public delegate void DataGridSortCommandEventHandler(object source, DataGridSortCommandEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataGridSortCommandEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DataGridSortCommandEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub DataGridSortCommandEventHandler(source As Object, e As DataGridSortCommandEventArgs)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void DataGridSortCommandEventHandler(System::Object ^ source, DataGridSortCommandEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

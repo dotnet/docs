@@ -1,7 +1,9 @@
-<Type Name="NetworkInterface" FullName="System.Net.NetworkInformation.NetworkInterface">
+﻿<Type Name="NetworkInterface" FullName="System.Net.NetworkInformation.NetworkInterface">
   <TypeSignature Language="C#" Value="public abstract class NetworkInterface" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit NetworkInterface extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Net.NetworkInformation.NetworkInterface" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class NetworkInterface" />
+  <TypeSignature Language="C++ CLI" Value="public ref class NetworkInterface abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Net.NetworkInformation</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -45,6 +47,8 @@
       <MemberSignature Language="C#" Value="protected NetworkInterface ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.NetworkInterface.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; NetworkInterface();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -77,6 +81,8 @@
       <MemberSignature Language="C#" Value="public virtual string Description { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Description" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.NetworkInterface.Description" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Description As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Description { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -120,6 +126,8 @@
       <MemberSignature Language="C#" Value="public static System.Net.NetworkInformation.NetworkInterface[] GetAllNetworkInterfaces ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Net.NetworkInformation.NetworkInterface[] GetAllNetworkInterfaces() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.NetworkInterface.GetAllNetworkInterfaces" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetAllNetworkInterfaces () As NetworkInterface()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Net::NetworkInformation::NetworkInterface ^&gt; ^ GetAllNetworkInterfaces();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -166,6 +174,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Net.NetworkInformation.IPInterfaceProperties GetIPProperties ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Net.NetworkInformation.IPInterfaceProperties GetIPProperties() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.NetworkInterface.GetIPProperties" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetIPProperties () As IPInterfaceProperties" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Net::NetworkInformation::IPInterfaceProperties ^ GetIPProperties();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -211,6 +221,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Net.NetworkInformation.IPInterfaceStatistics GetIPStatistics ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Net.NetworkInformation.IPInterfaceStatistics GetIPStatistics() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.NetworkInterface.GetIPStatistics" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetIPStatistics () As IPInterfaceStatistics" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Net::NetworkInformation::IPInterfaceStatistics ^ GetIPStatistics();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -242,6 +254,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Net.NetworkInformation.IPv4InterfaceStatistics GetIPv4Statistics ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Net.NetworkInformation.IPv4InterfaceStatistics GetIPv4Statistics() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.NetworkInterface.GetIPv4Statistics" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetIPv4Statistics () As IPv4InterfaceStatistics" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Net::NetworkInformation::IPv4InterfaceStatistics ^ GetIPv4Statistics();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -270,6 +284,8 @@
       <MemberSignature Language="C#" Value="public static bool GetIsNetworkAvailable ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetIsNetworkAvailable() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.NetworkInterface.GetIsNetworkAvailable" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetIsNetworkAvailable () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetIsNetworkAvailable();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -307,6 +323,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Net.NetworkInformation.PhysicalAddress GetPhysicalAddress ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Net.NetworkInformation.PhysicalAddress GetPhysicalAddress() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.NetworkInterface.GetPhysicalAddress" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetPhysicalAddress () As PhysicalAddress" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Net::NetworkInformation::PhysicalAddress ^ GetPhysicalAddress();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -352,6 +370,8 @@
       <MemberSignature Language="C#" Value="public virtual string Id { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Id" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.NetworkInterface.Id" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Id As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Id { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -380,6 +400,8 @@
       <MemberSignature Language="C#" Value="public static int IPv6LoopbackInterfaceIndex { get; }" />
       <MemberSignature Language="ILAsm" Value=".property int32 IPv6LoopbackInterfaceIndex" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.NetworkInterface.IPv6LoopbackInterfaceIndex" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IPv6LoopbackInterfaceIndex As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int IPv6LoopbackInterfaceIndex { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -418,6 +440,8 @@
       <MemberSignature Language="C#" Value="public virtual bool IsReceiveOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsReceiveOnly" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.NetworkInterface.IsReceiveOnly" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsReceiveOnly As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsReceiveOnly { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -459,6 +483,8 @@
       <MemberSignature Language="C#" Value="public static int LoopbackInterfaceIndex { get; }" />
       <MemberSignature Language="ILAsm" Value=".property int32 LoopbackInterfaceIndex" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.NetworkInterface.LoopbackInterfaceIndex" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property LoopbackInterfaceIndex As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int LoopbackInterfaceIndex { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -498,6 +524,8 @@
       <MemberSignature Language="C#" Value="public virtual string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.NetworkInterface.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -536,6 +564,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Net.NetworkInformation.NetworkInterfaceType NetworkInterfaceType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Net.NetworkInformation.NetworkInterfaceType NetworkInterfaceType" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.NetworkInterface.NetworkInterfaceType" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property NetworkInterfaceType As NetworkInterfaceType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Net::NetworkInformation::NetworkInterfaceType NetworkInterfaceType { System::Net::NetworkInformation::NetworkInterfaceType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -584,6 +614,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Net.NetworkInformation.OperationalStatus OperationalStatus { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Net.NetworkInformation.OperationalStatus OperationalStatus" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.NetworkInterface.OperationalStatus" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property OperationalStatus As OperationalStatus" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Net::NetworkInformation::OperationalStatus OperationalStatus { System::Net::NetworkInformation::OperationalStatus get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -627,6 +659,8 @@
       <MemberSignature Language="C#" Value="public virtual long Speed { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 Speed" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.NetworkInterface.Speed" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Speed As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property long Speed { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -671,6 +705,7 @@
       <MemberSignature Language="C#" Value="public virtual bool Supports (System.Net.NetworkInformation.NetworkInterfaceComponent networkInterfaceComponent);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Supports(valuetype System.Net.NetworkInformation.NetworkInterfaceComponent networkInterfaceComponent) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.NetworkInterface.Supports(System.Net.NetworkInformation.NetworkInterfaceComponent)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Supports(System::Net::NetworkInformation::NetworkInterfaceComponent networkInterfaceComponent);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -715,6 +750,8 @@
       <MemberSignature Language="C#" Value="public virtual bool SupportsMulticast { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SupportsMulticast" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.NetworkInterface.SupportsMulticast" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SupportsMulticast As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsMulticast { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>

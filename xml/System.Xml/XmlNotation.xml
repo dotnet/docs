@@ -1,7 +1,9 @@
-<Type Name="XmlNotation" FullName="System.Xml.XmlNotation">
+﻿<Type Name="XmlNotation" FullName="System.Xml.XmlNotation">
   <TypeSignature Language="C#" Value="public class XmlNotation : System.Xml.XmlNode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlNotation extends System.Xml.XmlNode" />
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlNotation" />
+  <TypeSignature Language="VB.NET" Value="Public Class XmlNotation&#xA;Inherits XmlNode" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlNotation : System::Xml::XmlNode" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -29,6 +31,8 @@
       <MemberSignature Language="C#" Value="public override System.Xml.XmlNode CloneNode (bool deep);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Xml.XmlNode CloneNode(bool deep) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlNotation.CloneNode(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CloneNode (deep As Boolean) As XmlNode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Xml::XmlNode ^ CloneNode(bool deep);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -62,6 +66,8 @@
       <MemberSignature Language="C#" Value="public override string InnerXml { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string InnerXml" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlNotation.InnerXml" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property InnerXml As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ InnerXml { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -99,6 +105,8 @@
       <MemberSignature Language="C#" Value="public override bool IsReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlNotation.IsReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsReadOnly As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -138,6 +146,8 @@
       <MemberSignature Language="C#" Value="public override string LocalName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string LocalName" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlNotation.LocalName" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property LocalName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ LocalName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -165,6 +175,8 @@
       <MemberSignature Language="C#" Value="public override string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlNotation.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -208,6 +220,8 @@
       <MemberSignature Language="C#" Value="public override System.Xml.XmlNodeType NodeType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Xml.XmlNodeType NodeType" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlNotation.NodeType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property NodeType As XmlNodeType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xml::XmlNodeType NodeType { System::Xml::XmlNodeType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -251,6 +265,8 @@
       <MemberSignature Language="C#" Value="public override string OuterXml { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string OuterXml" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlNotation.OuterXml" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property OuterXml As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ OuterXml { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -285,6 +301,8 @@
       <MemberSignature Language="C#" Value="public string PublicId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PublicId" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlNotation.PublicId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PublicId As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PublicId { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -328,6 +346,8 @@
       <MemberSignature Language="C#" Value="public string SystemId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SystemId" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlNotation.SystemId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SystemId As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SystemId { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -371,6 +391,8 @@
       <MemberSignature Language="C#" Value="public override void WriteContentTo (System.Xml.XmlWriter w);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteContentTo(class System.Xml.XmlWriter w) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlNotation.WriteContentTo(System.Xml.XmlWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteContentTo (w As XmlWriter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteContentTo(System::Xml::XmlWriter ^ w);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -408,6 +430,8 @@
       <MemberSignature Language="C#" Value="public override void WriteTo (System.Xml.XmlWriter w);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteTo(class System.Xml.XmlWriter w) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlNotation.WriteTo(System.Xml.XmlWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteTo (w As XmlWriter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteTo(System::Xml::XmlWriter ^ w);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

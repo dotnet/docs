@@ -1,7 +1,9 @@
-<Type Name="LoadedEventHandler" FullName="System.ComponentModel.Design.LoadedEventHandler">
+﻿<Type Name="LoadedEventHandler" FullName="System.ComponentModel.Design.LoadedEventHandler">
   <TypeSignature Language="C#" Value="public delegate void LoadedEventHandler(object sender, LoadedEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LoadedEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.LoadedEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub LoadedEventHandler(sender As Object, e As LoadedEventArgs)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void LoadedEventHandler(System::Object ^ sender, LoadedEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

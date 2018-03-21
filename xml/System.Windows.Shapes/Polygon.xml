@@ -1,7 +1,9 @@
-<Type Name="Polygon" FullName="System.Windows.Shapes.Polygon">
+﻿<Type Name="Polygon" FullName="System.Windows.Shapes.Polygon">
   <TypeSignature Language="C#" Value="public sealed class Polygon : System.Windows.Shapes.Shape" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Polygon extends System.Windows.Shapes.Shape" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Shapes.Polygon" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Polygon&#xA;Inherits Shape" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Polygon sealed : System::Windows::Shapes::Shape" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +37,8 @@
       <MemberSignature Language="C#" Value="public Polygon ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Shapes.Polygon.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Polygon();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -50,6 +54,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Media.Geometry DefiningGeometry { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Geometry DefiningGeometry" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Shapes.Polygon.DefiningGeometry" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DefiningGeometry As Geometry" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Windows::Media::Geometry ^ DefiningGeometry { System::Windows::Media::Geometry ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -68,6 +74,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.FillRule FillRule { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Media.FillRule FillRule" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Shapes.Polygon.FillRule" />
+      <MemberSignature Language="VB.NET" Value="Public Property FillRule As FillRule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::FillRule FillRule { System::Windows::Media::FillRule get(); void set(System::Windows::Media::FillRule value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -107,6 +115,8 @@ FillRule Example
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty FillRuleProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty FillRuleProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Shapes.Polygon.FillRuleProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FillRuleProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ FillRuleProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -124,6 +134,8 @@ FillRule Example
       <MemberSignature Language="C#" Value="public System.Windows.Media.PointCollection Points { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.PointCollection Points" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Shapes.Polygon.Points" />
+      <MemberSignature Language="VB.NET" Value="Public Property Points As PointCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::PointCollection ^ Points { System::Windows::Media::PointCollection ^ get(); void set(System::Windows::Media::PointCollection ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -167,6 +179,8 @@ FillRule Example
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty PointsProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty PointsProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Shapes.Polygon.PointsProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PointsProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ PointsProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="QueryCursorEventHandler" FullName="System.Windows.Input.QueryCursorEventHandler">
+﻿<Type Name="QueryCursorEventHandler" FullName="System.Windows.Input.QueryCursorEventHandler">
   <TypeSignature Language="C#" Value="public delegate void QueryCursorEventHandler(object sender, QueryCursorEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed QueryCursorEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.QueryCursorEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub QueryCursorEventHandler(sender As Object, e As QueryCursorEventArgs)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void QueryCursorEventHandler(System::Object ^ sender, QueryCursorEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

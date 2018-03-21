@@ -1,7 +1,9 @@
-<Type Name="SymBinder" FullName="System.Diagnostics.SymbolStore.SymBinder">
+﻿<Type Name="SymBinder" FullName="System.Diagnostics.SymbolStore.SymBinder">
   <TypeSignature Language="C#" Value="public class SymBinder : System.Diagnostics.SymbolStore.SymBinderBase, IDisposable, System.Diagnostics.SymbolStore.ISymbolBinder, System.Diagnostics.SymbolStore.ISymbolBinder1" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SymBinder extends System.Diagnostics.SymbolStore.SymBinderBase implements class System.Diagnostics.SymbolStore.ISymbolBinder, class System.Diagnostics.SymbolStore.ISymbolBinder1, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.SymbolStore.SymBinder" />
+  <TypeSignature Language="VB.NET" Value="Public Class SymBinder&#xA;Inherits SymBinderBase&#xA;Implements IDisposable, ISymbolBinder, ISymbolBinder1" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SymBinder : System::Diagnostics::SymbolStore::SymBinderBase, IDisposable, System::Diagnostics::SymbolStore::ISymbolBinder, System::Diagnostics::SymbolStore::ISymbolBinder1" />
   <AssemblyInfo>
     <AssemblyName>ISymWrapper</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +36,8 @@
       <MemberSignature Language="C#" Value="public SymBinder ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymBinder.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SymBinder();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
@@ -46,11 +50,25 @@
         <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to access unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>ISymWrapper</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the resources used by the current instance of the <see cref="T:System.Diagnostics.SymbolStore.SymBinder" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Dispose">
       <MemberSignature Language="C#" Value="public override sealed void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymBinder.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Sub Dispose ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -68,6 +86,8 @@
       <MemberSignature Language="C#" Value="protected virtual void Dispose (bool A_0);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool A_0) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymBinder.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (A_0 As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool A_0);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
@@ -102,6 +122,8 @@
       <MemberSignature Language="C#" Value="~SymBinder ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymBinder.Finalize" />
+      <MemberSignature Language="VB.NET" Value="Finalize ()" />
+      <MemberSignature Language="C++ CLI" Value="!SymBinder ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
@@ -123,10 +145,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetReader">
+      <AssemblyInfo>
+        <AssemblyName>ISymWrapper</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the interface of the symbol reader for the current file.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetReader">
       <MemberSignature Language="C#" Value="public virtual System.Diagnostics.SymbolStore.ISymbolReader GetReader (int importer, string filename, string searchPath);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Diagnostics.SymbolStore.ISymbolReader GetReader(int32 importer, string filename, string searchPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymBinder.GetReader(System.Int32,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetReader (importer As Integer, filename As String, searchPath As String) As ISymbolReader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Diagnostics::SymbolStore::ISymbolReader ^ GetReader(int importer, System::String ^ filename, System::String ^ searchPath);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
@@ -169,6 +202,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Diagnostics.SymbolStore.ISymbolReader GetReader (IntPtr importer, string filename, string searchPath);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Diagnostics.SymbolStore.ISymbolReader GetReader(native int importer, string filename, string searchPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymBinder.GetReader(System.IntPtr,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetReader (importer As IntPtr, filename As String, searchPath As String) As ISymbolReader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Diagnostics::SymbolStore::ISymbolReader ^ GetReader(IntPtr importer, System::String ^ filename, System::String ^ searchPath);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
@@ -199,23 +234,5 @@
         <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to access unmanaged code. Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Dispose">
-      <AssemblyInfo>
-        <AssemblyName>ISymWrapper</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Releases the resources used by the current instance of the <see cref="T:System.Diagnostics.SymbolStore.SymBinder" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetReader">
-      <AssemblyInfo>
-        <AssemblyName>ISymWrapper</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets the interface of the symbol reader for the current file.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,9 @@
-<Type Name="ValidateValueCallback" FullName="System.Windows.ValidateValueCallback">
+﻿<Type Name="ValidateValueCallback" FullName="System.Windows.ValidateValueCallback">
   <TypeSignature Language="C#" Value="public delegate bool ValidateValueCallback(object value);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ValidateValueCallback extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.ValidateValueCallback" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Function ValidateValueCallback(value As Object) As Boolean " />
+  <TypeSignature Language="C++ CLI" Value="public delegate bool ValidateValueCallback(System::Object ^ value);" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -1,7 +1,9 @@
-<Type Name="IDataServiceConfiguration" FullName="System.Data.Services.IDataServiceConfiguration">
+﻿<Type Name="IDataServiceConfiguration" FullName="System.Data.Services.IDataServiceConfiguration">
   <TypeSignature Language="C#" Value="public interface IDataServiceConfiguration" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDataServiceConfiguration" />
   <TypeSignature Language="DocId" Value="T:System.Data.Services.IDataServiceConfiguration" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IDataServiceConfiguration" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IDataServiceConfiguration" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +25,8 @@
       <MemberSignature Language="C#" Value="public int MaxBatchCount { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxBatchCount" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.IDataServiceConfiguration.MaxBatchCount" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxBatchCount As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxBatchCount { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -41,6 +45,8 @@
       <MemberSignature Language="C#" Value="public int MaxChangesetCount { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxChangesetCount" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.IDataServiceConfiguration.MaxChangesetCount" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxChangesetCount As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxChangesetCount { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -59,6 +65,8 @@
       <MemberSignature Language="C#" Value="public int MaxExpandCount { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxExpandCount" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.IDataServiceConfiguration.MaxExpandCount" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxExpandCount As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxExpandCount { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -86,6 +94,8 @@
       <MemberSignature Language="C#" Value="public int MaxExpandDepth { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxExpandDepth" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.IDataServiceConfiguration.MaxExpandDepth" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxExpandDepth As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxExpandDepth { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -113,6 +123,8 @@
       <MemberSignature Language="C#" Value="public int MaxObjectCountOnInsert { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxObjectCountOnInsert" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.IDataServiceConfiguration.MaxObjectCountOnInsert" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxObjectCountOnInsert As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxObjectCountOnInsert { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -131,6 +143,8 @@
       <MemberSignature Language="C#" Value="public int MaxResultsPerCollection { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxResultsPerCollection" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.IDataServiceConfiguration.MaxResultsPerCollection" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxResultsPerCollection As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxResultsPerCollection { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -149,6 +163,7 @@
       <MemberSignature Language="C#" Value="public void RegisterKnownType (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RegisterKnownType(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.IDataServiceConfiguration.RegisterKnownType(System.Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RegisterKnownType(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -170,6 +185,8 @@
       <MemberSignature Language="C#" Value="public void SetEntitySetAccessRule (string name, System.Data.Services.EntitySetRights rights);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetEntitySetAccessRule(string name, valuetype System.Data.Services.EntitySetRights rights) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.IDataServiceConfiguration.SetEntitySetAccessRule(System.String,System.Data.Services.EntitySetRights)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetEntitySetAccessRule (name As String, rights As EntitySetRights)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetEntitySetAccessRule(System::String ^ name, System::Data::Services::EntitySetRights rights);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -200,6 +217,8 @@
       <MemberSignature Language="C#" Value="public void SetServiceOperationAccessRule (string name, System.Data.Services.ServiceOperationRights rights);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetServiceOperationAccessRule(string name, valuetype System.Data.Services.ServiceOperationRights rights) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.IDataServiceConfiguration.SetServiceOperationAccessRule(System.String,System.Data.Services.ServiceOperationRights)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetServiceOperationAccessRule (name As String, rights As ServiceOperationRights)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetServiceOperationAccessRule(System::String ^ name, System::Data::Services::ServiceOperationRights rights);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -230,6 +249,8 @@
       <MemberSignature Language="C#" Value="public bool UseVerboseErrors { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UseVerboseErrors" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.IDataServiceConfiguration.UseVerboseErrors" />
+      <MemberSignature Language="VB.NET" Value="Public Property UseVerboseErrors As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseVerboseErrors { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>

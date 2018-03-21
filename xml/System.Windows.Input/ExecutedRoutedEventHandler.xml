@@ -1,7 +1,9 @@
-<Type Name="ExecutedRoutedEventHandler" FullName="System.Windows.Input.ExecutedRoutedEventHandler">
+﻿<Type Name="ExecutedRoutedEventHandler" FullName="System.Windows.Input.ExecutedRoutedEventHandler">
   <TypeSignature Language="C#" Value="public delegate void ExecutedRoutedEventHandler(object sender, ExecutedRoutedEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ExecutedRoutedEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.ExecutedRoutedEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub ExecutedRoutedEventHandler(sender As Object, e As ExecutedRoutedEventArgs)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void ExecutedRoutedEventHandler(System::Object ^ sender, ExecutedRoutedEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -1,7 +1,9 @@
-<Type Name="TreeViewAction" FullName="System.Windows.Forms.TreeViewAction">
+﻿<Type Name="TreeViewAction" FullName="System.Windows.Forms.TreeViewAction">
   <TypeSignature Language="C#" Value="public enum TreeViewAction" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TreeViewAction extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TreeViewAction" />
+  <TypeSignature Language="VB.NET" Value="Public Enum TreeViewAction" />
+  <TypeSignature Language="C++ CLI" Value="public enum class TreeViewAction" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +37,8 @@
       <MemberSignature Language="C#" Value="ByKeyboard" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TreeViewAction ByKeyboard = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TreeViewAction.ByKeyboard" />
+      <MemberSignature Language="VB.NET" Value="ByKeyboard" />
+      <MemberSignature Language="C++ CLI" Value="ByKeyboard" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -43,6 +47,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TreeViewAction</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The event was caused by a keystroke.</summary>
       </Docs>
@@ -51,6 +56,8 @@
       <MemberSignature Language="C#" Value="ByMouse" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TreeViewAction ByMouse = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TreeViewAction.ByMouse" />
+      <MemberSignature Language="VB.NET" Value="ByMouse" />
+      <MemberSignature Language="C++ CLI" Value="ByMouse" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -59,6 +66,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TreeViewAction</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The event was caused by a mouse operation.</summary>
       </Docs>
@@ -67,6 +75,8 @@
       <MemberSignature Language="C#" Value="Collapse" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TreeViewAction Collapse = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TreeViewAction.Collapse" />
+      <MemberSignature Language="VB.NET" Value="Collapse" />
+      <MemberSignature Language="C++ CLI" Value="Collapse" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -75,6 +85,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TreeViewAction</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The event was caused by the <see cref="T:System.Windows.Forms.TreeNode" /> collapsing.</summary>
       </Docs>
@@ -83,6 +94,8 @@
       <MemberSignature Language="C#" Value="Expand" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TreeViewAction Expand = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TreeViewAction.Expand" />
+      <MemberSignature Language="VB.NET" Value="Expand" />
+      <MemberSignature Language="C++ CLI" Value="Expand" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -91,6 +104,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TreeViewAction</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The event was caused by the <see cref="T:System.Windows.Forms.TreeNode" /> expanding.</summary>
       </Docs>
@@ -99,6 +113,8 @@
       <MemberSignature Language="C#" Value="Unknown" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TreeViewAction Unknown = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TreeViewAction.Unknown" />
+      <MemberSignature Language="VB.NET" Value="Unknown" />
+      <MemberSignature Language="C++ CLI" Value="Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -107,6 +123,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TreeViewAction</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The action that caused the event is unknown.</summary>
       </Docs>

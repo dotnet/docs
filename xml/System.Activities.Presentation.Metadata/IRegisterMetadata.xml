@@ -1,7 +1,9 @@
-<Type Name="IRegisterMetadata" FullName="System.Activities.Presentation.Metadata.IRegisterMetadata">
+﻿<Type Name="IRegisterMetadata" FullName="System.Activities.Presentation.Metadata.IRegisterMetadata">
   <TypeSignature Language="C#" Value="public interface IRegisterMetadata" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRegisterMetadata" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Metadata.IRegisterMetadata" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IRegisterMetadata" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IRegisterMetadata" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +25,8 @@
       <MemberSignature Language="C#" Value="public void Register ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Register() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Metadata.IRegisterMetadata.Register" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Register ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Register();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

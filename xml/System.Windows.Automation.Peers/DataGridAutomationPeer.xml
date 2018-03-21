@@ -1,7 +1,9 @@
-<Type Name="DataGridAutomationPeer" FullName="System.Windows.Automation.Peers.DataGridAutomationPeer">
+﻿<Type Name="DataGridAutomationPeer" FullName="System.Windows.Automation.Peers.DataGridAutomationPeer">
   <TypeSignature Language="C#" Value="public sealed class DataGridAutomationPeer : System.Windows.Automation.Peers.ItemsControlAutomationPeer, System.Windows.Automation.Provider.ISelectionProvider, System.Windows.Automation.Provider.ITableProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DataGridAutomationPeer extends System.Windows.Automation.Peers.ItemsControlAutomationPeer implements class System.Windows.Automation.Provider.IGridProvider, class System.Windows.Automation.Provider.ISelectionProvider, class System.Windows.Automation.Provider.ITableProvider" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.DataGridAutomationPeer" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DataGridAutomationPeer&#xA;Inherits ItemsControlAutomationPeer&#xA;Implements ISelectionProvider, ITableProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataGridAutomationPeer sealed : System::Windows::Automation::Peers::ItemsControlAutomationPeer, System::Windows::Automation::Provider::ISelectionProvider, System::Windows::Automation::Provider::ITableProvider" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +28,8 @@
       <MemberSignature Language="C#" Value="public DataGridAutomationPeer (System.Windows.Controls.DataGrid owner);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Controls.DataGrid owner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DataGridAutomationPeer.#ctor(System.Windows.Controls.DataGrid)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (owner As DataGrid)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridAutomationPeer(System::Windows::Controls::DataGrid ^ owner);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -44,6 +48,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.ItemAutomationPeer CreateItemAutomationPeer (object item);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Automation.Peers.ItemAutomationPeer CreateItemAutomationPeer(object item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DataGridAutomationPeer.CreateItemAutomationPeer(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateItemAutomationPeer (item As Object) As ItemAutomationPeer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::ItemAutomationPeer ^ CreateItemAutomationPeer(System::Object ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -66,6 +72,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.AutomationControlType GetAutomationControlTypeCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Automation.Peers.AutomationControlType GetAutomationControlTypeCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DataGridAutomationPeer.GetAutomationControlTypeCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetAutomationControlTypeCore () As AutomationControlType" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationControlType GetAutomationControlTypeCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -85,6 +93,8 @@
       <MemberSignature Language="C#" Value="protected override System.Collections.Generic.List&lt;System.Windows.Automation.Peers.AutomationPeer&gt; GetChildrenCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Collections.Generic.List`1&lt;class System.Windows.Automation.Peers.AutomationPeer&gt; GetChildrenCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DataGridAutomationPeer.GetChildrenCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetChildrenCore () As List(Of AutomationPeer)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Collections::Generic::List&lt;System::Windows::Automation::Peers::AutomationPeer ^&gt; ^ GetChildrenCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -104,6 +114,8 @@
       <MemberSignature Language="C#" Value="protected override string GetClassNameCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetClassNameCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DataGridAutomationPeer.GetClassNameCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetClassNameCore () As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetClassNameCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -123,6 +135,7 @@
       <MemberSignature Language="C#" Value="public override object GetPattern (System.Windows.Automation.Peers.PatternInterface patternInterface);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetPattern(valuetype System.Windows.Automation.Peers.PatternInterface patternInterface) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DataGridAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetPattern(System::Windows::Automation::Peers::PatternInterface patternInterface);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -145,7 +158,12 @@
       <MemberSignature Language="C#" Value="int System.Windows.Automation.Provider.IGridProvider.ColumnCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 System.Windows.Automation.Provider.IGridProvider.ColumnCount" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.DataGridAutomationPeer.System#Windows#Automation#Provider#IGridProvider#ColumnCount" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property ColumnCount As Integer Implements IGridProvider.ColumnCount" />
+      <MemberSignature Language="C++ CLI" Value="property int System.Windows.Automation.Provider.IGridProvider.ColumnCount { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Windows.Automation.Provider.IGridProvider.ColumnCount</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -170,7 +188,12 @@
       <MemberSignature Language="C#" Value="System.Windows.Automation.Provider.IRawElementProviderSimple IGridProvider.GetItem (int row, int column);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Windows.Automation.Provider.IRawElementProviderSimple System.Windows.Automation.Provider.IGridProvider.GetItem(int32 row, int32 column) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DataGridAutomationPeer.System#Windows#Automation#Provider#IGridProvider#GetItem(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Function GetItem (row As Integer, column As Integer) As IRawElementProviderSimple Implements IGridProvider.GetItem" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Windows::Automation::Provider::IRawElementProviderSimple ^ System.Windows.Automation.Provider.IGridProvider.GetItem(int row, int column) = System::Windows::Automation::Provider::IGridProvider::GetItem;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Automation.Provider.IGridProvider.GetItem(System.Int32,System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -201,7 +224,12 @@
       <MemberSignature Language="C#" Value="int System.Windows.Automation.Provider.IGridProvider.RowCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 System.Windows.Automation.Provider.IGridProvider.RowCount" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.DataGridAutomationPeer.System#Windows#Automation#Provider#IGridProvider#RowCount" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property RowCount As Integer Implements IGridProvider.RowCount" />
+      <MemberSignature Language="C++ CLI" Value="property int System.Windows.Automation.Provider.IGridProvider.RowCount { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Windows.Automation.Provider.IGridProvider.RowCount</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -226,7 +254,12 @@
       <MemberSignature Language="C#" Value="bool System.Windows.Automation.Provider.ISelectionProvider.CanSelectMultiple { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Windows.Automation.Provider.ISelectionProvider.CanSelectMultiple" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.DataGridAutomationPeer.System#Windows#Automation#Provider#ISelectionProvider#CanSelectMultiple" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property CanSelectMultiple As Boolean Implements ISelectionProvider.CanSelectMultiple" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Windows.Automation.Provider.ISelectionProvider.CanSelectMultiple { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Windows.Automation.Provider.ISelectionProvider.CanSelectMultiple</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -252,7 +285,12 @@
       <MemberSignature Language="C#" Value="System.Windows.Automation.Provider.IRawElementProviderSimple[] ISelectionProvider.GetSelection ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Windows.Automation.Provider.IRawElementProviderSimple[] System.Windows.Automation.Provider.ISelectionProvider.GetSelection() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DataGridAutomationPeer.System#Windows#Automation#Provider#ISelectionProvider#GetSelection" />
+      <MemberSignature Language="VB.NET" Value="Function GetSelection () As IRawElementProviderSimple() Implements ISelectionProvider.GetSelection" />
+      <MemberSignature Language="C++ CLI" Value=" virtual cli::array &lt;System::Windows::Automation::Provider::IRawElementProviderSimple ^&gt; ^ System.Windows.Automation.Provider.ISelectionProvider.GetSelection() = System::Windows::Automation::Provider::ISelectionProvider::GetSelection;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Automation.Provider.ISelectionProvider.GetSelection</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -278,7 +316,12 @@
       <MemberSignature Language="C#" Value="bool System.Windows.Automation.Provider.ISelectionProvider.IsSelectionRequired { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Windows.Automation.Provider.ISelectionProvider.IsSelectionRequired" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.DataGridAutomationPeer.System#Windows#Automation#Provider#ISelectionProvider#IsSelectionRequired" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSelectionRequired As Boolean Implements ISelectionProvider.IsSelectionRequired" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Windows.Automation.Provider.ISelectionProvider.IsSelectionRequired { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Windows.Automation.Provider.ISelectionProvider.IsSelectionRequired</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -304,7 +347,12 @@
       <MemberSignature Language="C#" Value="System.Windows.Automation.Provider.IRawElementProviderSimple[] ITableProvider.GetColumnHeaders ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Windows.Automation.Provider.IRawElementProviderSimple[] System.Windows.Automation.Provider.ITableProvider.GetColumnHeaders() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DataGridAutomationPeer.System#Windows#Automation#Provider#ITableProvider#GetColumnHeaders" />
+      <MemberSignature Language="VB.NET" Value="Function GetColumnHeaders () As IRawElementProviderSimple() Implements ITableProvider.GetColumnHeaders" />
+      <MemberSignature Language="C++ CLI" Value=" virtual cli::array &lt;System::Windows::Automation::Provider::IRawElementProviderSimple ^&gt; ^ System.Windows.Automation.Provider.ITableProvider.GetColumnHeaders() = System::Windows::Automation::Provider::ITableProvider::GetColumnHeaders;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Automation.Provider.ITableProvider.GetColumnHeaders</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -330,7 +378,12 @@
       <MemberSignature Language="C#" Value="System.Windows.Automation.Provider.IRawElementProviderSimple[] ITableProvider.GetRowHeaders ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Windows.Automation.Provider.IRawElementProviderSimple[] System.Windows.Automation.Provider.ITableProvider.GetRowHeaders() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DataGridAutomationPeer.System#Windows#Automation#Provider#ITableProvider#GetRowHeaders" />
+      <MemberSignature Language="VB.NET" Value="Function GetRowHeaders () As IRawElementProviderSimple() Implements ITableProvider.GetRowHeaders" />
+      <MemberSignature Language="C++ CLI" Value=" virtual cli::array &lt;System::Windows::Automation::Provider::IRawElementProviderSimple ^&gt; ^ System.Windows.Automation.Provider.ITableProvider.GetRowHeaders() = System::Windows::Automation::Provider::ITableProvider::GetRowHeaders;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Automation.Provider.ITableProvider.GetRowHeaders</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -356,7 +409,12 @@
       <MemberSignature Language="C#" Value="System.Windows.Automation.RowOrColumnMajor System.Windows.Automation.Provider.ITableProvider.RowOrColumnMajor { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Automation.RowOrColumnMajor System.Windows.Automation.Provider.ITableProvider.RowOrColumnMajor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.DataGridAutomationPeer.System#Windows#Automation#Provider#ITableProvider#RowOrColumnMajor" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property RowOrColumnMajor As RowOrColumnMajor Implements ITableProvider.RowOrColumnMajor" />
+      <MemberSignature Language="C++ CLI" Value="property System::Windows::Automation::RowOrColumnMajor System.Windows.Automation.Provider.ITableProvider.RowOrColumnMajor { System::Windows::Automation::RowOrColumnMajor get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Windows.Automation.Provider.ITableProvider.RowOrColumnMajor</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

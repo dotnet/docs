@@ -1,7 +1,9 @@
-<Type Name="KerberosTicketHashKeyIdentifierClause" FullName="System.IdentityModel.Tokens.KerberosTicketHashKeyIdentifierClause">
+﻿<Type Name="KerberosTicketHashKeyIdentifierClause" FullName="System.IdentityModel.Tokens.KerberosTicketHashKeyIdentifierClause">
   <TypeSignature Language="C#" Value="public sealed class KerberosTicketHashKeyIdentifierClause : System.IdentityModel.Tokens.BinaryKeyIdentifierClause" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit KerberosTicketHashKeyIdentifierClause extends System.IdentityModel.Tokens.BinaryKeyIdentifierClause" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.KerberosTicketHashKeyIdentifierClause" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class KerberosTicketHashKeyIdentifierClause&#xA;Inherits BinaryKeyIdentifierClause" />
+  <TypeSignature Language="C++ CLI" Value="public ref class KerberosTicketHashKeyIdentifierClause sealed : System::IdentityModel::Tokens::BinaryKeyIdentifierClause" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,10 +27,21 @@
     <altmember cref="T:System.IdentityModel.Tokens.KerberosReceiverSecurityToken" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.KerberosTicketHashKeyIdentifierClause" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public KerberosTicketHashKeyIdentifierClause (byte[] ticketHash);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int8[] ticketHash) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.KerberosTicketHashKeyIdentifierClause.#ctor(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (ticketHash As Byte())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; KerberosTicketHashKeyIdentifierClause(cli::array &lt;System::Byte&gt; ^ ticketHash);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -49,6 +62,8 @@
       <MemberSignature Language="C#" Value="public KerberosTicketHashKeyIdentifierClause (byte[] ticketHash, byte[] derivationNonce, int derivationLength);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int8[] ticketHash, unsigned int8[] derivationNonce, int32 derivationLength) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.KerberosTicketHashKeyIdentifierClause.#ctor(System.Byte[],System.Byte[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (ticketHash As Byte(), derivationNonce As Byte(), derivationLength As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; KerberosTicketHashKeyIdentifierClause(cli::array &lt;System::Byte&gt; ^ ticketHash, cli::array &lt;System::Byte&gt; ^ derivationNonce, int derivationLength);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -82,6 +97,8 @@
       <MemberSignature Language="C#" Value="public byte[] GetKerberosTicketHash ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] GetKerberosTicketHash() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.KerberosTicketHashKeyIdentifierClause.GetKerberosTicketHash" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetKerberosTicketHash () As Byte()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ GetKerberosTicketHash();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -101,6 +118,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.KerberosTicketHashKeyIdentifierClause.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -123,14 +142,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.KerberosTicketHashKeyIdentifierClause" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

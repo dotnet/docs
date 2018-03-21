@@ -1,7 +1,9 @@
-<Type Name="XmlUrlResolver" FullName="System.Xml.XmlUrlResolver">
+﻿<Type Name="XmlUrlResolver" FullName="System.Xml.XmlUrlResolver">
   <TypeSignature Language="C#" Value="public class XmlUrlResolver : System.Xml.XmlResolver" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlUrlResolver extends System.Xml.XmlResolver" />
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlUrlResolver" />
+  <TypeSignature Language="VB.NET" Value="Public Class XmlUrlResolver&#xA;Inherits XmlResolver" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlUrlResolver : System::Xml::XmlResolver" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -72,6 +74,8 @@
       <MemberSignature Language="C#" Value="public XmlUrlResolver ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlUrlResolver.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlUrlResolver();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -96,6 +100,8 @@
       <MemberSignature Language="C#" Value="public System.Net.Cache.RequestCachePolicy CachePolicy { set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Cache.RequestCachePolicy CachePolicy" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlUrlResolver.CachePolicy" />
+      <MemberSignature Language="VB.NET" Value="Public Property CachePolicy As RequestCachePolicy" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Cache::RequestCachePolicy ^ CachePolicy {  void set(System::Net::Cache::RequestCachePolicy ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -123,6 +129,8 @@
       <MemberSignature Language="C#" Value="public override System.Net.ICredentials Credentials { set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.ICredentials Credentials" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlUrlResolver.Credentials" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Credentials As ICredentials" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Net::ICredentials ^ Credentials {  void set(System::Net::ICredentials ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -180,6 +188,8 @@ resolver.Credentials = myCache;
       <MemberSignature Language="C#" Value="public override object GetEntity (Uri absoluteUri, string role, Type ofObjectToReturn);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetEntity(class System.Uri absoluteUri, string role, class System.Type ofObjectToReturn) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlUrlResolver.GetEntity(System.Uri,System.String,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetEntity (absoluteUri As Uri, role As String, ofObjectToReturn As Type) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetEntity(Uri ^ absoluteUri, System::String ^ role, Type ^ ofObjectToReturn);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -243,6 +253,8 @@ resolver.Credentials = myCache;
       <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task&lt;object&gt; GetEntityAsync (Uri absoluteUri, string role, Type ofObjectToReturn);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task`1&lt;object&gt; GetEntityAsync(class System.Uri absoluteUri, string role, class System.Type ofObjectToReturn) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlUrlResolver.GetEntityAsync(System.Uri,System.String,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetEntityAsync (absoluteUri As Uri, role As String, ofObjectToReturn As Type) As Task(Of Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task&lt;System::Object ^&gt; ^ GetEntityAsync(Uri ^ absoluteUri, System::String ^ role, Type ^ ofObjectToReturn);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -286,6 +298,8 @@ resolver.Credentials = myCache;
       <MemberSignature Language="C#" Value="public System.Net.IWebProxy Proxy { set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.IWebProxy Proxy" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlUrlResolver.Proxy" />
+      <MemberSignature Language="VB.NET" Value="Public Property Proxy As IWebProxy" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::IWebProxy ^ Proxy {  void set(System::Net::IWebProxy ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -313,6 +327,8 @@ resolver.Credentials = myCache;
       <MemberSignature Language="C#" Value="public override Uri ResolveUri (Uri baseUri, string relativeUri);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Uri ResolveUri(class System.Uri baseUri, string relativeUri) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlUrlResolver.ResolveUri(System.Uri,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ResolveUri (baseUri As Uri, relativeUri As String) As Uri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override Uri ^ ResolveUri(Uri ^ baseUri, System::String ^ relativeUri);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

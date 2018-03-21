@@ -1,7 +1,9 @@
-<Type Name="DateTimeFormat" FullName="System.Runtime.Serialization.DateTimeFormat">
+﻿<Type Name="DateTimeFormat" FullName="System.Runtime.Serialization.DateTimeFormat">
   <TypeSignature Language="C#" Value="public class DateTimeFormat" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DateTimeFormat extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.DateTimeFormat" />
+  <TypeSignature Language="VB.NET" Value="Public Class DateTimeFormat" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DateTimeFormat" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Serialization.Json</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,10 +27,22 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.DateTimeFormat" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DateTimeFormat (string formatString);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string formatString) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.DateTimeFormat.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (formatString As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DateTimeFormat(System::String ^ formatString);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Json</AssemblyName>
@@ -57,6 +71,8 @@
       <MemberSignature Language="C#" Value="public DateTimeFormat (string formatString, IFormatProvider formatProvider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string formatString, class System.IFormatProvider formatProvider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.DateTimeFormat.#ctor(System.String,System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (formatString As String, formatProvider As IFormatProvider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DateTimeFormat(System::String ^ formatString, IFormatProvider ^ formatProvider);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Json</AssemblyName>
@@ -87,6 +103,8 @@
       <MemberSignature Language="C#" Value="public System.Globalization.DateTimeStyles DateTimeStyles { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Globalization.DateTimeStyles DateTimeStyles" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.DateTimeFormat.DateTimeStyles" />
+      <MemberSignature Language="VB.NET" Value="Public Property DateTimeStyles As DateTimeStyles" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Globalization::DateTimeStyles DateTimeStyles { System::Globalization::DateTimeStyles get(); void set(System::Globalization::DateTimeStyles value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Json</AssemblyName>
@@ -115,6 +133,8 @@
       <MemberSignature Language="C#" Value="public IFormatProvider FormatProvider { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IFormatProvider FormatProvider" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.DateTimeFormat.FormatProvider" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FormatProvider As IFormatProvider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property IFormatProvider ^ FormatProvider { IFormatProvider ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Json</AssemblyName>
@@ -143,6 +163,8 @@
       <MemberSignature Language="C#" Value="public string FormatString { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string FormatString" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.DateTimeFormat.FormatString" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FormatString As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FormatString { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Json</AssemblyName>
@@ -167,15 +189,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.Serialization.Json</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.4.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.DateTimeFormat" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

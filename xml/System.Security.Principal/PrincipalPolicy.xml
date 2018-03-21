@@ -1,7 +1,9 @@
-<Type Name="PrincipalPolicy" FullName="System.Security.Principal.PrincipalPolicy">
+﻿<Type Name="PrincipalPolicy" FullName="System.Security.Principal.PrincipalPolicy">
   <TypeSignature Language="C#" Value="public enum PrincipalPolicy" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed PrincipalPolicy extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Security.Principal.PrincipalPolicy" />
+  <TypeSignature Language="VB.NET" Value="Public Enum PrincipalPolicy" />
+  <TypeSignature Language="C++ CLI" Value="public enum class PrincipalPolicy" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -41,6 +43,8 @@
       <MemberSignature Language="C#" Value="NoPrincipal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Principal.PrincipalPolicy NoPrincipal = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.PrincipalPolicy.NoPrincipal" />
+      <MemberSignature Language="VB.NET" Value="NoPrincipal" />
+      <MemberSignature Language="C++ CLI" Value="NoPrincipal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -58,6 +62,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Principal.PrincipalPolicy</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>No principal or identity objects should be created.</summary>
       </Docs>
@@ -66,6 +71,8 @@
       <MemberSignature Language="C#" Value="UnauthenticatedPrincipal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Principal.PrincipalPolicy UnauthenticatedPrincipal = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.PrincipalPolicy.UnauthenticatedPrincipal" />
+      <MemberSignature Language="VB.NET" Value="UnauthenticatedPrincipal" />
+      <MemberSignature Language="C++ CLI" Value="UnauthenticatedPrincipal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -83,6 +90,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Principal.PrincipalPolicy</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Principal and identity objects for the unauthenticated entity should be created. An unauthenticated entity has <see cref="P:System.Security.Principal.GenericIdentity.Name" /> set to the empty string ("") and <see cref="P:System.Security.Principal.GenericIdentity.IsAuthenticated" /> set to <see langword="false" />.</summary>
       </Docs>
@@ -91,6 +99,8 @@
       <MemberSignature Language="C#" Value="WindowsPrincipal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Principal.PrincipalPolicy WindowsPrincipal = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.PrincipalPolicy.WindowsPrincipal" />
+      <MemberSignature Language="VB.NET" Value="WindowsPrincipal" />
+      <MemberSignature Language="C++ CLI" Value="WindowsPrincipal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -108,6 +118,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Principal.PrincipalPolicy</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Principal and identity objects that reflect the operating system token associated with the current execution thread should be created, and the associated operating system groups should be mapped into roles.</summary>
       </Docs>

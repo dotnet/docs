@@ -1,7 +1,9 @@
-<Type Name="MasterPage" FullName="System.Web.UI.MasterPage">
+﻿<Type Name="MasterPage" FullName="System.Web.UI.MasterPage">
   <TypeSignature Language="C#" Value="public class MasterPage : System.Web.UI.UserControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MasterPage extends System.Web.UI.UserControl" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MasterPage" />
+  <TypeSignature Language="VB.NET" Value="Public Class MasterPage&#xA;Inherits UserControl" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MasterPage : System::Web::UI::UserControl" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -260,6 +262,8 @@
       <MemberSignature Language="C#" Value="public MasterPage ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MasterPage.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MasterPage();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -272,9 +276,11 @@
       </Docs>
     </Member>
     <Member MemberName="AddContentTemplate">
-      <MemberSignature Language="C#" Value="protected void AddContentTemplate (string templateName, System.Web.UI.ITemplate template);" />
+      <MemberSignature Language="C#" Value="protected internal void AddContentTemplate (string templateName, System.Web.UI.ITemplate template);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance void AddContentTemplate(string templateName, class System.Web.UI.ITemplate template) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MasterPage.AddContentTemplate(System.String,System.Web.UI.ITemplate)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Sub AddContentTemplate (templateName As String, template As ITemplate)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; void AddContentTemplate(System::String ^ templateName, System::Web::UI::ITemplate ^ template);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -309,9 +315,11 @@
       </Docs>
     </Member>
     <Member MemberName="ContentPlaceHolders">
-      <MemberSignature Language="C#" Value="protected System.Collections.IList ContentPlaceHolders { get; }" />
+      <MemberSignature Language="C#" Value="protected internal System.Collections.IList ContentPlaceHolders { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IList ContentPlaceHolders" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MasterPage.ContentPlaceHolders" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend ReadOnly Property ContentPlaceHolders As IList" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property System::Collections::IList ^ ContentPlaceHolders { System::Collections::IList ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -342,9 +350,11 @@
       </Docs>
     </Member>
     <Member MemberName="ContentTemplates">
-      <MemberSignature Language="C#" Value="protected System.Collections.IDictionary ContentTemplates { get; }" />
+      <MemberSignature Language="C#" Value="protected internal System.Collections.IDictionary ContentTemplates { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IDictionary ContentTemplates" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MasterPage.ContentTemplates" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend ReadOnly Property ContentTemplates As IDictionary" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property System::Collections::IDictionary ^ ContentTemplates { System::Collections::IDictionary ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -378,6 +388,8 @@
       <MemberSignature Language="C#" Value="public void InstantiateInContentPlaceHolder (System.Web.UI.Control contentPlaceHolder, System.Web.UI.ITemplate template);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void InstantiateInContentPlaceHolder(class System.Web.UI.Control contentPlaceHolder, class System.Web.UI.ITemplate template) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MasterPage.InstantiateInContentPlaceHolder(System.Web.UI.Control,System.Web.UI.ITemplate)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub InstantiateInContentPlaceHolder (contentPlaceHolder As Control, template As ITemplate)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void InstantiateInContentPlaceHolder(System::Web::UI::Control ^ contentPlaceHolder, System::Web::UI::ITemplate ^ template);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -401,6 +413,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.MasterPage Master { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.MasterPage Master" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MasterPage.Master" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Master As MasterPage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::MasterPage ^ Master { System::Web::UI::MasterPage ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -411,7 +425,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -527,6 +541,8 @@ This is the content of a Content control.
       <MemberSignature Language="C#" Value="public string MasterPageFile { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MasterPageFile" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MasterPage.MasterPageFile" />
+      <MemberSignature Language="VB.NET" Value="Public Property MasterPageFile As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MasterPageFile { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

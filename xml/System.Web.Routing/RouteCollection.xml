@@ -1,7 +1,9 @@
-<Type Name="RouteCollection" FullName="System.Web.Routing.RouteCollection">
+﻿<Type Name="RouteCollection" FullName="System.Web.Routing.RouteCollection">
   <TypeSignature Language="C#" Value="public class RouteCollection : System.Collections.ObjectModel.Collection&lt;System.Web.Routing.RouteBase&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RouteCollection extends System.Collections.ObjectModel.Collection`1&lt;class System.Web.Routing.RouteBase&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Web.Routing.RouteCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class RouteCollection&#xA;Inherits Collection(Of RouteBase)" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RouteCollection : System::Collections::ObjectModel::Collection&lt;System::Web::Routing::RouteBase ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,10 +44,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Routing.RouteCollection" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public RouteCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Routing.RouteCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RouteCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -61,6 +74,7 @@
       <MemberSignature Language="C#" Value="public RouteCollection (System.Web.Hosting.VirtualPathProvider virtualPathProvider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.Hosting.VirtualPathProvider virtualPathProvider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Routing.RouteCollection.#ctor(System.Web.Hosting.VirtualPathProvider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RouteCollection(System::Web::Hosting::VirtualPathProvider ^ virtualPathProvider);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -79,6 +93,8 @@
       <MemberSignature Language="C#" Value="public void Add (string name, System.Web.Routing.RouteBase item);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(string name, class System.Web.Routing.RouteBase item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Routing.RouteCollection.Add(System.String,System.Web.Routing.RouteBase)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (name As String, item As RouteBase)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::String ^ name, System::Web::Routing::RouteBase ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -127,6 +143,8 @@
       <MemberSignature Language="C#" Value="public bool AppendTrailingSlash { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AppendTrailingSlash" />
       <MemberSignature Language="DocId" Value="P:System.Web.Routing.RouteCollection.AppendTrailingSlash" />
+      <MemberSignature Language="VB.NET" Value="Public Property AppendTrailingSlash As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AppendTrailingSlash { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -146,6 +164,8 @@
       <MemberSignature Language="C#" Value="protected override void ClearItems ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void ClearItems() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Routing.RouteCollection.ClearItems" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub ClearItems ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ClearItems();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -171,6 +191,8 @@
       <MemberSignature Language="C#" Value="public IDisposable GetReadLock ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IDisposable GetReadLock() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Routing.RouteCollection.GetReadLock" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetReadLock () As IDisposable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IDisposable ^ GetReadLock();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -214,6 +236,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Routing.RouteData GetRouteData (System.Web.HttpContextBase httpContext);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.Routing.RouteData GetRouteData(class System.Web.HttpContextBase httpContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Routing.RouteCollection.GetRouteData(System.Web.HttpContextBase)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetRouteData (httpContext As HttpContextBase) As RouteData" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::Routing::RouteData ^ GetRouteData(System::Web::HttpContextBase ^ httpContext);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -235,10 +259,20 @@
         <exception cref="T:System.ArgumentException">The <see cref="P:System.Web.HttpContextBase.Request" /> property of the object in the <paramref name="context" /> parameter is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetVirtualPath">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns information about the URL path that is associated with the route.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetVirtualPath">
       <MemberSignature Language="C#" Value="public System.Web.Routing.VirtualPathData GetVirtualPath (System.Web.Routing.RequestContext requestContext, System.Web.Routing.RouteValueDictionary values);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.Routing.VirtualPathData GetVirtualPath(class System.Web.Routing.RequestContext requestContext, class System.Web.Routing.RouteValueDictionary values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Routing.RouteCollection.GetVirtualPath(System.Web.Routing.RequestContext,System.Web.Routing.RouteValueDictionary)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::Routing::VirtualPathData ^ GetVirtualPath(System::Web::Routing::RequestContext ^ requestContext, System::Web::Routing::RouteValueDictionary ^ values);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -263,6 +297,7 @@
       <MemberSignature Language="C#" Value="public System.Web.Routing.VirtualPathData GetVirtualPath (System.Web.Routing.RequestContext requestContext, string name, System.Web.Routing.RouteValueDictionary values);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.Routing.VirtualPathData GetVirtualPath(class System.Web.Routing.RequestContext requestContext, string name, class System.Web.Routing.RouteValueDictionary values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Routing.RouteCollection.GetVirtualPath(System.Web.Routing.RequestContext,System.String,System.Web.Routing.RouteValueDictionary)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::Routing::VirtualPathData ^ GetVirtualPath(System::Web::Routing::RequestContext ^ requestContext, System::String ^ name, System::Web::Routing::RouteValueDictionary ^ values);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -290,6 +325,8 @@
       <MemberSignature Language="C#" Value="public IDisposable GetWriteLock ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IDisposable GetWriteLock() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Routing.RouteCollection.GetWriteLock" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetWriteLock () As IDisposable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IDisposable ^ GetWriteLock();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -344,6 +381,8 @@
       <MemberSignature Language="C#" Value="public void Ignore (string url);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Ignore(string url) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Routing.RouteCollection.Ignore(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Ignore (url As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Ignore(System::String ^ url);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -382,6 +421,8 @@
       <MemberSignature Language="C#" Value="public void Ignore (string url, object constraints);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Ignore(string url, object constraints) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Routing.RouteCollection.Ignore(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Ignore (url As String, constraints As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Ignore(System::String ^ url, System::Object ^ constraints);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -430,6 +471,8 @@ routes.Ignore("{*allaspx}", new {allaspx=@".*\.aspx(/.*)?"});
       <MemberSignature Language="C#" Value="protected override void InsertItem (int index, System.Web.Routing.RouteBase item);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InsertItem(int32 index, class System.Web.Routing.RouteBase item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Routing.RouteCollection.InsertItem(System.Int32,System.Web.Routing.RouteBase)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InsertItem (index As Integer, item As RouteBase)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InsertItem(int index, System::Web::Routing::RouteBase ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -466,6 +509,8 @@ routes.Ignore("{*allaspx}", new {allaspx=@".*\.aspx(/.*)?"});
       <MemberSignature Language="C#" Value="public System.Web.Routing.RouteBase this[string name] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Routing.RouteBase Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.Web.Routing.RouteCollection.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(name As String) As RouteBase" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Routing::RouteBase ^ default[System::String ^] { System::Web::Routing::RouteBase ^ get(System::String ^ name); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -495,6 +540,8 @@ routes.Ignore("{*allaspx}", new {allaspx=@".*\.aspx(/.*)?"});
       <MemberSignature Language="C#" Value="public bool LowercaseUrls { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool LowercaseUrls" />
       <MemberSignature Language="DocId" Value="P:System.Web.Routing.RouteCollection.LowercaseUrls" />
+      <MemberSignature Language="VB.NET" Value="Public Property LowercaseUrls As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool LowercaseUrls { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -546,6 +593,8 @@ routes.Ignore("{*allaspx}", new {allaspx=@".*\.aspx(/.*)?"});
       <MemberSignature Language="C#" Value="public System.Web.Routing.Route MapPageRoute (string routeName, string routeUrl, string physicalFile);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.Routing.Route MapPageRoute(string routeName, string routeUrl, string physicalFile) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Routing.RouteCollection.MapPageRoute(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function MapPageRoute (routeName As String, routeUrl As String, physicalFile As String) As Route" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::Routing::Route ^ MapPageRoute(System::String ^ routeName, System::String ^ routeUrl, System::String ^ physicalFile);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -587,6 +636,8 @@ routes.Ignore("{*allaspx}", new {allaspx=@".*\.aspx(/.*)?"});
       <MemberSignature Language="C#" Value="public System.Web.Routing.Route MapPageRoute (string routeName, string routeUrl, string physicalFile, bool checkPhysicalUrlAccess);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.Routing.Route MapPageRoute(string routeName, string routeUrl, string physicalFile, bool checkPhysicalUrlAccess) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Routing.RouteCollection.MapPageRoute(System.String,System.String,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function MapPageRoute (routeName As String, routeUrl As String, physicalFile As String, checkPhysicalUrlAccess As Boolean) As Route" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::Routing::Route ^ MapPageRoute(System::String ^ routeName, System::String ^ routeUrl, System::String ^ physicalFile, bool checkPhysicalUrlAccess);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -630,6 +681,8 @@ routes.Ignore("{*allaspx}", new {allaspx=@".*\.aspx(/.*)?"});
       <MemberSignature Language="C#" Value="public System.Web.Routing.Route MapPageRoute (string routeName, string routeUrl, string physicalFile, bool checkPhysicalUrlAccess, System.Web.Routing.RouteValueDictionary defaults);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.Routing.Route MapPageRoute(string routeName, string routeUrl, string physicalFile, bool checkPhysicalUrlAccess, class System.Web.Routing.RouteValueDictionary defaults) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Routing.RouteCollection.MapPageRoute(System.String,System.String,System.String,System.Boolean,System.Web.Routing.RouteValueDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Public Function MapPageRoute (routeName As String, routeUrl As String, physicalFile As String, checkPhysicalUrlAccess As Boolean, defaults As RouteValueDictionary) As Route" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::Routing::Route ^ MapPageRoute(System::String ^ routeName, System::String ^ routeUrl, System::String ^ physicalFile, bool checkPhysicalUrlAccess, System::Web::Routing::RouteValueDictionary ^ defaults);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -675,6 +728,8 @@ routes.Ignore("{*allaspx}", new {allaspx=@".*\.aspx(/.*)?"});
       <MemberSignature Language="C#" Value="public System.Web.Routing.Route MapPageRoute (string routeName, string routeUrl, string physicalFile, bool checkPhysicalUrlAccess, System.Web.Routing.RouteValueDictionary defaults, System.Web.Routing.RouteValueDictionary constraints);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.Routing.Route MapPageRoute(string routeName, string routeUrl, string physicalFile, bool checkPhysicalUrlAccess, class System.Web.Routing.RouteValueDictionary defaults, class System.Web.Routing.RouteValueDictionary constraints) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Routing.RouteCollection.MapPageRoute(System.String,System.String,System.String,System.Boolean,System.Web.Routing.RouteValueDictionary,System.Web.Routing.RouteValueDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Public Function MapPageRoute (routeName As String, routeUrl As String, physicalFile As String, checkPhysicalUrlAccess As Boolean, defaults As RouteValueDictionary, constraints As RouteValueDictionary) As Route" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::Routing::Route ^ MapPageRoute(System::String ^ routeName, System::String ^ routeUrl, System::String ^ physicalFile, bool checkPhysicalUrlAccess, System::Web::Routing::RouteValueDictionary ^ defaults, System::Web::Routing::RouteValueDictionary ^ constraints);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -722,6 +777,8 @@ routes.Ignore("{*allaspx}", new {allaspx=@".*\.aspx(/.*)?"});
       <MemberSignature Language="C#" Value="public System.Web.Routing.Route MapPageRoute (string routeName, string routeUrl, string physicalFile, bool checkPhysicalUrlAccess, System.Web.Routing.RouteValueDictionary defaults, System.Web.Routing.RouteValueDictionary constraints, System.Web.Routing.RouteValueDictionary dataTokens);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.Routing.Route MapPageRoute(string routeName, string routeUrl, string physicalFile, bool checkPhysicalUrlAccess, class System.Web.Routing.RouteValueDictionary defaults, class System.Web.Routing.RouteValueDictionary constraints, class System.Web.Routing.RouteValueDictionary dataTokens) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Routing.RouteCollection.MapPageRoute(System.String,System.String,System.String,System.Boolean,System.Web.Routing.RouteValueDictionary,System.Web.Routing.RouteValueDictionary,System.Web.Routing.RouteValueDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Public Function MapPageRoute (routeName As String, routeUrl As String, physicalFile As String, checkPhysicalUrlAccess As Boolean, defaults As RouteValueDictionary, constraints As RouteValueDictionary, dataTokens As RouteValueDictionary) As Route" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::Routing::Route ^ MapPageRoute(System::String ^ routeName, System::String ^ routeUrl, System::String ^ physicalFile, bool checkPhysicalUrlAccess, System::Web::Routing::RouteValueDictionary ^ defaults, System::Web::Routing::RouteValueDictionary ^ constraints, System::Web::Routing::RouteValueDictionary ^ dataTokens);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -772,6 +829,8 @@ routes.Ignore("{*allaspx}", new {allaspx=@".*\.aspx(/.*)?"});
       <MemberSignature Language="C#" Value="protected override void RemoveItem (int index);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RemoveItem(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Routing.RouteCollection.RemoveItem(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RemoveItem (index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RemoveItem(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -800,6 +859,8 @@ routes.Ignore("{*allaspx}", new {allaspx=@".*\.aspx(/.*)?"});
       <MemberSignature Language="C#" Value="public bool RouteExistingFiles { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool RouteExistingFiles" />
       <MemberSignature Language="DocId" Value="P:System.Web.Routing.RouteCollection.RouteExistingFiles" />
+      <MemberSignature Language="VB.NET" Value="Public Property RouteExistingFiles As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RouteExistingFiles { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -826,6 +887,8 @@ routes.Ignore("{*allaspx}", new {allaspx=@".*\.aspx(/.*)?"});
       <MemberSignature Language="C#" Value="protected override void SetItem (int index, System.Web.Routing.RouteBase item);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetItem(int32 index, class System.Web.Routing.RouteBase item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Routing.RouteCollection.SetItem(System.Int32,System.Web.Routing.RouteBase)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetItem (index As Integer, item As RouteBase)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetItem(int index, System::Web::Routing::RouteBase ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -858,23 +921,5 @@ routes.Ignore("{*allaspx}", new {allaspx=@".*\.aspx(/.*)?"});
           <paramref name="item" /> is already in the collection.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Routing.RouteCollection" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetVirtualPath">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns information about the URL path that is associated with the route.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

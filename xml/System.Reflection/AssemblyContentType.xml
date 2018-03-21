@@ -1,7 +1,9 @@
-<Type Name="AssemblyContentType" FullName="System.Reflection.AssemblyContentType">
+﻿<Type Name="AssemblyContentType" FullName="System.Reflection.AssemblyContentType">
   <TypeSignature Language="C#" Value="public enum AssemblyContentType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed AssemblyContentType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.AssemblyContentType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum AssemblyContentType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class AssemblyContentType" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +40,8 @@
       <MemberSignature Language="C#" Value="Default" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.AssemblyContentType Default = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.AssemblyContentType.Default" />
+      <MemberSignature Language="VB.NET" Value="Default" />
+      <MemberSignature Language="C++ CLI" Value="Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -61,6 +65,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.AssemblyContentType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The assembly contains .NET Framework code.</summary>
       </Docs>
@@ -69,6 +74,8 @@
       <MemberSignature Language="C#" Value="WindowsRuntime" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.AssemblyContentType WindowsRuntime = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.AssemblyContentType.WindowsRuntime" />
+      <MemberSignature Language="VB.NET" Value="WindowsRuntime" />
+      <MemberSignature Language="C++ CLI" Value="WindowsRuntime" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -92,6 +99,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.AssemblyContentType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The assembly contains [!INCLUDE[wrt](~/includes/wrt-md.md)] code.</summary>
       </Docs>

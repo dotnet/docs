@@ -1,7 +1,9 @@
-<Type Name="Route" FullName="System.Web.Routing.Route">
+﻿<Type Name="Route" FullName="System.Web.Routing.Route">
   <TypeSignature Language="C#" Value="public class Route : System.Web.Routing.RouteBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Route extends System.Web.Routing.RouteBase" />
   <TypeSignature Language="DocId" Value="T:System.Web.Routing.Route" />
+  <TypeSignature Language="VB.NET" Value="Public Class Route&#xA;Inherits RouteBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Route : System::Web::Routing::RouteBase" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,10 +41,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Routing.Route" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public Route (string url, System.Web.Routing.IRouteHandler routeHandler);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string url, class System.Web.Routing.IRouteHandler routeHandler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Routing.Route.#ctor(System.String,System.Web.Routing.IRouteHandler)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (url As String, routeHandler As IRouteHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Route(System::String ^ url, System::Web::Routing::IRouteHandler ^ routeHandler);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -73,6 +86,8 @@
       <MemberSignature Language="C#" Value="public Route (string url, System.Web.Routing.RouteValueDictionary defaults, System.Web.Routing.IRouteHandler routeHandler);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string url, class System.Web.Routing.RouteValueDictionary defaults, class System.Web.Routing.IRouteHandler routeHandler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Routing.Route.#ctor(System.String,System.Web.Routing.RouteValueDictionary,System.Web.Routing.IRouteHandler)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (url As String, defaults As RouteValueDictionary, routeHandler As IRouteHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Route(System::String ^ url, System::Web::Routing::RouteValueDictionary ^ defaults, System::Web::Routing::IRouteHandler ^ routeHandler);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -96,6 +111,8 @@
       <MemberSignature Language="C#" Value="public Route (string url, System.Web.Routing.RouteValueDictionary defaults, System.Web.Routing.RouteValueDictionary constraints, System.Web.Routing.IRouteHandler routeHandler);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string url, class System.Web.Routing.RouteValueDictionary defaults, class System.Web.Routing.RouteValueDictionary constraints, class System.Web.Routing.IRouteHandler routeHandler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Routing.Route.#ctor(System.String,System.Web.Routing.RouteValueDictionary,System.Web.Routing.RouteValueDictionary,System.Web.Routing.IRouteHandler)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (url As String, defaults As RouteValueDictionary, constraints As RouteValueDictionary, routeHandler As IRouteHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Route(System::String ^ url, System::Web::Routing::RouteValueDictionary ^ defaults, System::Web::Routing::RouteValueDictionary ^ constraints, System::Web::Routing::IRouteHandler ^ routeHandler);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -122,6 +139,8 @@
       <MemberSignature Language="C#" Value="public Route (string url, System.Web.Routing.RouteValueDictionary defaults, System.Web.Routing.RouteValueDictionary constraints, System.Web.Routing.RouteValueDictionary dataTokens, System.Web.Routing.IRouteHandler routeHandler);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string url, class System.Web.Routing.RouteValueDictionary defaults, class System.Web.Routing.RouteValueDictionary constraints, class System.Web.Routing.RouteValueDictionary dataTokens, class System.Web.Routing.IRouteHandler routeHandler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Routing.Route.#ctor(System.String,System.Web.Routing.RouteValueDictionary,System.Web.Routing.RouteValueDictionary,System.Web.Routing.RouteValueDictionary,System.Web.Routing.IRouteHandler)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (url As String, defaults As RouteValueDictionary, constraints As RouteValueDictionary, dataTokens As RouteValueDictionary, routeHandler As IRouteHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Route(System::String ^ url, System::Web::Routing::RouteValueDictionary ^ defaults, System::Web::Routing::RouteValueDictionary ^ constraints, System::Web::Routing::RouteValueDictionary ^ dataTokens, System::Web::Routing::IRouteHandler ^ routeHandler);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -151,6 +170,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Routing.RouteValueDictionary Constraints { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Routing.RouteValueDictionary Constraints" />
       <MemberSignature Language="DocId" Value="P:System.Web.Routing.Route.Constraints" />
+      <MemberSignature Language="VB.NET" Value="Public Property Constraints As RouteValueDictionary" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Routing::RouteValueDictionary ^ Constraints { System::Web::Routing::RouteValueDictionary ^ get(); void set(System::Web::Routing::RouteValueDictionary ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -195,6 +216,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Routing.RouteValueDictionary DataTokens { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Routing.RouteValueDictionary DataTokens" />
       <MemberSignature Language="DocId" Value="P:System.Web.Routing.Route.DataTokens" />
+      <MemberSignature Language="VB.NET" Value="Public Property DataTokens As RouteValueDictionary" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Routing::RouteValueDictionary ^ DataTokens { System::Web::Routing::RouteValueDictionary ^ get(); void set(System::Web::Routing::RouteValueDictionary ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -228,6 +251,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Routing.RouteValueDictionary Defaults { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Routing.RouteValueDictionary Defaults" />
       <MemberSignature Language="DocId" Value="P:System.Web.Routing.Route.Defaults" />
+      <MemberSignature Language="VB.NET" Value="Public Property Defaults As RouteValueDictionary" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Routing::RouteValueDictionary ^ Defaults { System::Web::Routing::RouteValueDictionary ^ get(); void set(System::Web::Routing::RouteValueDictionary ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -268,6 +293,8 @@
       <MemberSignature Language="C#" Value="public override System.Web.Routing.RouteData GetRouteData (System.Web.HttpContextBase httpContext);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.Routing.RouteData GetRouteData(class System.Web.HttpContextBase httpContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Routing.Route.GetRouteData(System.Web.HttpContextBase)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetRouteData (httpContext As HttpContextBase) As RouteData" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::Routing::RouteData ^ GetRouteData(System::Web::HttpContextBase ^ httpContext);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -290,6 +317,7 @@
       <MemberSignature Language="C#" Value="public override System.Web.Routing.VirtualPathData GetVirtualPath (System.Web.Routing.RequestContext requestContext, System.Web.Routing.RouteValueDictionary values);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.Routing.VirtualPathData GetVirtualPath(class System.Web.Routing.RequestContext requestContext, class System.Web.Routing.RouteValueDictionary values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Routing.Route.GetVirtualPath(System.Web.Routing.RequestContext,System.Web.Routing.RouteValueDictionary)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::Routing::VirtualPathData ^ GetVirtualPath(System::Web::Routing::RequestContext ^ requestContext, System::Web::Routing::RouteValueDictionary ^ values);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -314,6 +342,7 @@
       <MemberSignature Language="C#" Value="protected virtual bool ProcessConstraint (System.Web.HttpContextBase httpContext, object constraint, string parameterName, System.Web.Routing.RouteValueDictionary values, System.Web.Routing.RouteDirection routeDirection);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool ProcessConstraint(class System.Web.HttpContextBase httpContext, object constraint, string parameterName, class System.Web.Routing.RouteValueDictionary values, valuetype System.Web.Routing.RouteDirection routeDirection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Routing.Route.ProcessConstraint(System.Web.HttpContextBase,System.Object,System.String,System.Web.Routing.RouteValueDictionary,System.Web.Routing.RouteDirection)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool ProcessConstraint(System::Web::HttpContextBase ^ httpContext, System::Object ^ constraint, System::String ^ parameterName, System::Web::Routing::RouteValueDictionary ^ values, System::Web::Routing::RouteDirection routeDirection);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -347,6 +376,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Routing.IRouteHandler RouteHandler { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Routing.IRouteHandler RouteHandler" />
       <MemberSignature Language="DocId" Value="P:System.Web.Routing.Route.RouteHandler" />
+      <MemberSignature Language="VB.NET" Value="Public Property RouteHandler As IRouteHandler" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Routing::IRouteHandler ^ RouteHandler { System::Web::Routing::IRouteHandler ^ get(); void set(System::Web::Routing::IRouteHandler ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -365,6 +396,8 @@
       <MemberSignature Language="C#" Value="public string Url { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Url" />
       <MemberSignature Language="DocId" Value="P:System.Web.Routing.Route.Url" />
+      <MemberSignature Language="VB.NET" Value="Public Property Url As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Url { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -404,14 +437,5 @@
         <exception cref="T:System.Exception">URL segments are not separated by a delimiter or a literal constant.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Routing.Route" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,9 @@
-<Type Name="LinqDataSourceStatusEventArgs" FullName="System.Web.UI.WebControls.LinqDataSourceStatusEventArgs">
+﻿<Type Name="LinqDataSourceStatusEventArgs" FullName="System.Web.UI.WebControls.LinqDataSourceStatusEventArgs">
   <TypeSignature Language="C#" Value="public class LinqDataSourceStatusEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LinqDataSourceStatusEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.LinqDataSourceStatusEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class LinqDataSourceStatusEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class LinqDataSourceStatusEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,10 +36,20 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.LinqDataSourceStatusEventArgs" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public LinqDataSourceStatusEventArgs (Exception exception);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Exception exception) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.LinqDataSourceStatusEventArgs.#ctor(System.Exception)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LinqDataSourceStatusEventArgs(Exception ^ exception);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -63,6 +75,8 @@
       <MemberSignature Language="C#" Value="public LinqDataSourceStatusEventArgs (object result);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.LinqDataSourceStatusEventArgs.#ctor(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (result As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LinqDataSourceStatusEventArgs(System::Object ^ result);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -88,6 +102,8 @@
       <MemberSignature Language="C#" Value="public LinqDataSourceStatusEventArgs (object result, int totalRowCount);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object result, int32 totalRowCount) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.LinqDataSourceStatusEventArgs.#ctor(System.Object,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (result As Object, totalRowCount As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LinqDataSourceStatusEventArgs(System::Object ^ result, int totalRowCount);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -108,6 +124,8 @@
       <MemberSignature Language="C#" Value="public Exception Exception { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Exception Exception" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LinqDataSourceStatusEventArgs.Exception" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Exception As Exception" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Exception ^ Exception { Exception ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -141,6 +159,8 @@
       <MemberSignature Language="C#" Value="public bool ExceptionHandled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ExceptionHandled" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LinqDataSourceStatusEventArgs.ExceptionHandled" />
+      <MemberSignature Language="VB.NET" Value="Public Property ExceptionHandled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ExceptionHandled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -175,6 +195,8 @@
       <MemberSignature Language="C#" Value="public object Result { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Result" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LinqDataSourceStatusEventArgs.Result" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Result As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Result { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -212,6 +234,8 @@
       <MemberSignature Language="C#" Value="public int TotalRowCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 TotalRowCount" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LinqDataSourceStatusEventArgs.TotalRowCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TotalRowCount As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int TotalRowCount { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -259,14 +283,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.Extensions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.LinqDataSourceStatusEventArgs" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

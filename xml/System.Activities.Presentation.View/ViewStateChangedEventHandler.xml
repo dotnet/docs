@@ -1,7 +1,9 @@
-<Type Name="ViewStateChangedEventHandler" FullName="System.Activities.Presentation.View.ViewStateChangedEventHandler">
+﻿<Type Name="ViewStateChangedEventHandler" FullName="System.Activities.Presentation.View.ViewStateChangedEventHandler">
   <TypeSignature Language="C#" Value="public delegate void ViewStateChangedEventHandler(object sender, ViewStateChangedEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ViewStateChangedEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.View.ViewStateChangedEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub ViewStateChangedEventHandler(sender As Object, e As ViewStateChangedEventArgs)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void ViewStateChangedEventHandler(System::Object ^ sender, ViewStateChangedEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

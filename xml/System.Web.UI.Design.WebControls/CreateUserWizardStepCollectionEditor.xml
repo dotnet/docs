@@ -1,7 +1,9 @@
-<Type Name="CreateUserWizardStepCollectionEditor" FullName="System.Web.UI.Design.WebControls.CreateUserWizardStepCollectionEditor">
+﻿<Type Name="CreateUserWizardStepCollectionEditor" FullName="System.Web.UI.Design.WebControls.CreateUserWizardStepCollectionEditor">
   <TypeSignature Language="C#" Value="public class CreateUserWizardStepCollectionEditor : System.Web.UI.Design.WebControls.WizardStepCollectionEditor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CreateUserWizardStepCollectionEditor extends System.Web.UI.Design.WebControls.WizardStepCollectionEditor" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.CreateUserWizardStepCollectionEditor" />
+  <TypeSignature Language="VB.NET" Value="Public Class CreateUserWizardStepCollectionEditor&#xA;Inherits WizardStepCollectionEditor" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CreateUserWizardStepCollectionEditor : System::Web::UI::Design::WebControls::WizardStepCollectionEditor" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +24,7 @@
       <MemberSignature Language="C#" Value="public CreateUserWizardStepCollectionEditor (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.CreateUserWizardStepCollectionEditor.#ctor(System.Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CreateUserWizardStepCollectionEditor(Type ^ type);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -42,6 +45,8 @@
       <MemberSignature Language="C#" Value="protected override bool CanRemoveInstance (object value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool CanRemoveInstance(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.CreateUserWizardStepCollectionEditor.CanRemoveInstance(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CanRemoveInstance (value As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool CanRemoveInstance(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -67,6 +72,8 @@
       <MemberSignature Language="C#" Value="protected override System.ComponentModel.Design.CollectionEditor.CollectionForm CreateCollectionForm ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.ComponentModel.Design.CollectionEditor/CollectionForm CreateCollectionForm() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.CreateUserWizardStepCollectionEditor.CreateCollectionForm" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateCollectionForm () As CollectionEditor.CollectionForm" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::ComponentModel::Design::CollectionEditor::CollectionForm ^ CreateCollectionForm();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -88,6 +95,8 @@
       <MemberSignature Language="C#" Value="protected override string HelpTopic { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string HelpTopic" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.CreateUserWizardStepCollectionEditor.HelpTopic" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property HelpTopic As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::String ^ HelpTopic { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

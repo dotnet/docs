@@ -1,7 +1,9 @@
-<Type Name="IWSTrustContract" FullName="System.ServiceModel.Security.IWSTrustContract">
+﻿<Type Name="IWSTrustContract" FullName="System.ServiceModel.Security.IWSTrustContract">
   <TypeSignature Language="C#" Value="public interface IWSTrustContract" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWSTrustContract" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.IWSTrustContract" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IWSTrustContract" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IWSTrustContract" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -21,6 +23,7 @@
       <MemberSignature Language="C#" Value="public IAsyncResult BeginCancel (System.ServiceModel.Channels.Message message, AsyncCallback callback, object asyncState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginCancel(class System.ServiceModel.Channels.Message message, class System.AsyncCallback callback, object asyncState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustContract.BeginCancel(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginCancel(System::ServiceModel::Channels::Message ^ message, AsyncCallback ^ callback, System::Object ^ asyncState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -52,6 +55,7 @@
       <MemberSignature Language="C#" Value="public IAsyncResult BeginIssue (System.ServiceModel.Channels.Message message, AsyncCallback callback, object asyncState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginIssue(class System.ServiceModel.Channels.Message message, class System.AsyncCallback callback, object asyncState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustContract.BeginIssue(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginIssue(System::ServiceModel::Channels::Message ^ message, AsyncCallback ^ callback, System::Object ^ asyncState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -83,6 +87,7 @@
       <MemberSignature Language="C#" Value="public IAsyncResult BeginRenew (System.ServiceModel.Channels.Message message, AsyncCallback callback, object asyncState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginRenew(class System.ServiceModel.Channels.Message message, class System.AsyncCallback callback, object asyncState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustContract.BeginRenew(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginRenew(System::ServiceModel::Channels::Message ^ message, AsyncCallback ^ callback, System::Object ^ asyncState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -114,6 +119,7 @@
       <MemberSignature Language="C#" Value="public IAsyncResult BeginValidate (System.ServiceModel.Channels.Message message, AsyncCallback callback, object asyncState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginValidate(class System.ServiceModel.Channels.Message message, class System.AsyncCallback callback, object asyncState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustContract.BeginValidate(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginValidate(System::ServiceModel::Channels::Message ^ message, AsyncCallback ^ callback, System::Object ^ asyncState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -145,6 +151,7 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message Cancel (System.ServiceModel.Channels.Message message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message Cancel(class System.ServiceModel.Channels.Message message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustContract.Cancel(System.ServiceModel.Channels.Message)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Channels::Message ^ Cancel(System::ServiceModel::Channels::Message ^ message);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -172,6 +179,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message EndCancel (IAsyncResult asyncResult);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message EndCancel(class System.IAsyncResult asyncResult) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustContract.EndCancel(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EndCancel (asyncResult As IAsyncResult) As Message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Channels::Message ^ EndCancel(IAsyncResult ^ asyncResult);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -194,6 +203,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message EndIssue (IAsyncResult asyncResult);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message EndIssue(class System.IAsyncResult asyncResult) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustContract.EndIssue(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EndIssue (asyncResult As IAsyncResult) As Message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Channels::Message ^ EndIssue(IAsyncResult ^ asyncResult);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -216,6 +227,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message EndRenew (IAsyncResult asyncResult);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message EndRenew(class System.IAsyncResult asyncResult) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustContract.EndRenew(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EndRenew (asyncResult As IAsyncResult) As Message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Channels::Message ^ EndRenew(IAsyncResult ^ asyncResult);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -238,6 +251,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message EndValidate (IAsyncResult asyncResult);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message EndValidate(class System.IAsyncResult asyncResult) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustContract.EndValidate(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EndValidate (asyncResult As IAsyncResult) As Message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Channels::Message ^ EndValidate(IAsyncResult ^ asyncResult);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -260,6 +275,7 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message Issue (System.ServiceModel.Channels.Message message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message Issue(class System.ServiceModel.Channels.Message message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustContract.Issue(System.ServiceModel.Channels.Message)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Channels::Message ^ Issue(System::ServiceModel::Channels::Message ^ message);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -287,6 +303,7 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message Renew (System.ServiceModel.Channels.Message message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message Renew(class System.ServiceModel.Channels.Message message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustContract.Renew(System.ServiceModel.Channels.Message)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Channels::Message ^ Renew(System::ServiceModel::Channels::Message ^ message);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -314,6 +331,7 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message Validate (System.ServiceModel.Channels.Message message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message Validate(class System.ServiceModel.Channels.Message message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustContract.Validate(System.ServiceModel.Channels.Message)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Channels::Message ^ Validate(System::ServiceModel::Channels::Message ^ message);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

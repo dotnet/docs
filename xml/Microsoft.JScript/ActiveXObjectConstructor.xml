@@ -1,7 +1,9 @@
-<Type Name="ActiveXObjectConstructor" FullName="Microsoft.JScript.ActiveXObjectConstructor">
+﻿<Type Name="ActiveXObjectConstructor" FullName="Microsoft.JScript.ActiveXObjectConstructor">
   <TypeSignature Language="C#" Value="public sealed class ActiveXObjectConstructor : Microsoft.JScript.ScriptFunction" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ActiveXObjectConstructor extends Microsoft.JScript.ScriptFunction" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.ActiveXObjectConstructor" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ActiveXObjectConstructor&#xA;Inherits ScriptFunction" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ActiveXObjectConstructor sealed : Microsoft::JScript::ScriptFunction" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -20,6 +22,8 @@
       <MemberSignature Language="C#" Value="public object CreateInstance (params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object CreateInstance(object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ActiveXObjectConstructor.CreateInstance(System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateInstance (ParamArray args As Object()) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ CreateInstance(... cli::array &lt;System::Object ^&gt; ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -54,6 +58,8 @@
       <MemberSignature Language="C#" Value="public object Invoke ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object Invoke() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ActiveXObjectConstructor.Invoke" />
+      <MemberSignature Language="VB.NET" Value="Public Function Invoke () As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Invoke();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

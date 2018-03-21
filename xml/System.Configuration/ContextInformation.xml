@@ -1,7 +1,9 @@
-<Type Name="ContextInformation" FullName="System.Configuration.ContextInformation">
+﻿<Type Name="ContextInformation" FullName="System.Configuration.ContextInformation">
   <TypeSignature Language="C#" Value="public sealed class ContextInformation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ContextInformation extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.ContextInformation" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ContextInformation" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ContextInformation sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +40,8 @@
       <MemberSignature Language="C#" Value="public object GetSection (string sectionName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetSection(string sectionName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ContextInformation.GetSection(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSection (sectionName As String) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetSection(System::String ^ sectionName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -72,6 +76,8 @@
       <MemberSignature Language="C#" Value="public object HostingContext { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object HostingContext" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ContextInformation.HostingContext" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HostingContext As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ HostingContext { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -111,6 +117,8 @@
       <MemberSignature Language="C#" Value="public bool IsMachineLevel { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsMachineLevel" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ContextInformation.IsMachineLevel" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsMachineLevel As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsMachineLevel { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>

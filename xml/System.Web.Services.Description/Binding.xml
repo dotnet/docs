@@ -1,7 +1,9 @@
-<Type Name="Binding" FullName="System.Web.Services.Description.Binding">
+﻿<Type Name="Binding" FullName="System.Web.Services.Description.Binding">
   <TypeSignature Language="C#" Value="public sealed class Binding : System.Web.Services.Description.NamedItem" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Binding extends System.Web.Services.Description.NamedItem" />
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.Binding" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Binding&#xA;Inherits NamedItem" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Binding sealed : System::Web::Services::Description::NamedItem" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -41,6 +43,8 @@
       <MemberSignature Language="C#" Value="public Binding ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.Binding.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Binding();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -57,6 +61,8 @@
       <MemberSignature Language="C#" Value="public override System.Web.Services.Description.ServiceDescriptionFormatExtensionCollection Extensions { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Description.ServiceDescriptionFormatExtensionCollection Extensions" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.Binding.Extensions" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Extensions As ServiceDescriptionFormatExtensionCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::Services::Description::ServiceDescriptionFormatExtensionCollection ^ Extensions { System::Web::Services::Description::ServiceDescriptionFormatExtensionCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -92,6 +98,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Services.Description.OperationBindingCollection Operations { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Description.OperationBindingCollection Operations" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.Binding.Operations" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Operations As OperationBindingCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Description::OperationBindingCollection ^ Operations { System::Web::Services::Description::OperationBindingCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -130,6 +138,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Services.Description.ServiceDescription ServiceDescription { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Description.ServiceDescription ServiceDescription" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.Binding.ServiceDescription" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ServiceDescription As ServiceDescription" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Description::ServiceDescription ^ ServiceDescription { System::Web::Services::Description::ServiceDescription ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -149,6 +159,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.XmlQualifiedName Type { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlQualifiedName Type" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.Binding.Type" />
+      <MemberSignature Language="VB.NET" Value="Public Property Type As XmlQualifiedName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlQualifiedName ^ Type { System::Xml::XmlQualifiedName ^ get(); void set(System::Xml::XmlQualifiedName ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

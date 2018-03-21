@@ -1,7 +1,9 @@
-<Type Name="TypeExtension" FullName="System.Windows.Markup.TypeExtension">
+﻿<Type Name="TypeExtension" FullName="System.Windows.Markup.TypeExtension">
   <TypeSignature Language="C#" Value="public class TypeExtension : System.Windows.Markup.MarkupExtension" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TypeExtension extends System.Windows.Markup.MarkupExtension" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.TypeExtension" />
+  <TypeSignature Language="VB.NET" Value="Public Class TypeExtension&#xA;Inherits MarkupExtension" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TypeExtension : System::Windows::Markup::MarkupExtension" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,10 +41,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Markup.TypeExtension" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public TypeExtension ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.TypeExtension.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TypeExtension();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -58,6 +71,8 @@
       <MemberSignature Language="C#" Value="public TypeExtension (string typeName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string typeName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.TypeExtension.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (typeName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TypeExtension(System::String ^ typeName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -84,6 +99,7 @@
       <MemberSignature Language="C#" Value="public TypeExtension (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.TypeExtension.#ctor(System.Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TypeExtension(Type ^ type);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -111,6 +127,8 @@
       <MemberSignature Language="C#" Value="public override object ProvideValue (IServiceProvider serviceProvider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ProvideValue(class System.IServiceProvider serviceProvider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.TypeExtension.ProvideValue(System.IServiceProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ProvideValue (serviceProvider As IServiceProvider) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ ProvideValue(IServiceProvider ^ serviceProvider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -153,6 +171,8 @@
       <MemberSignature Language="C#" Value="public Type Type { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type Type" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.TypeExtension.Type" />
+      <MemberSignature Language="VB.NET" Value="Public Property Type As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ Type { Type ^ get(); void set(Type ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -189,6 +209,8 @@
       <MemberSignature Language="C#" Value="public string TypeName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TypeName" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.TypeExtension.TypeName" />
+      <MemberSignature Language="VB.NET" Value="Public Property TypeName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TypeName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -196,7 +218,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -209,14 +231,5 @@
         <exception cref="T:System.ArgumentNullException">Attempted to set to <see langword="null" />.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Xaml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Markup.TypeExtension" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

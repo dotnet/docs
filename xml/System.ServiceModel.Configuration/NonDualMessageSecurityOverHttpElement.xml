@@ -1,7 +1,9 @@
-<Type Name="NonDualMessageSecurityOverHttpElement" FullName="System.ServiceModel.Configuration.NonDualMessageSecurityOverHttpElement">
+﻿<Type Name="NonDualMessageSecurityOverHttpElement" FullName="System.ServiceModel.Configuration.NonDualMessageSecurityOverHttpElement">
   <TypeSignature Language="C#" Value="public sealed class NonDualMessageSecurityOverHttpElement : System.ServiceModel.Configuration.MessageSecurityOverHttpElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit NonDualMessageSecurityOverHttpElement extends System.ServiceModel.Configuration.MessageSecurityOverHttpElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.NonDualMessageSecurityOverHttpElement" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class NonDualMessageSecurityOverHttpElement&#xA;Inherits MessageSecurityOverHttpElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class NonDualMessageSecurityOverHttpElement sealed : System::ServiceModel::Configuration::MessageSecurityOverHttpElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +22,8 @@
       <MemberSignature Language="C#" Value="public NonDualMessageSecurityOverHttpElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.NonDualMessageSecurityOverHttpElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NonDualMessageSecurityOverHttpElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -35,6 +39,8 @@
       <MemberSignature Language="C#" Value="public bool EstablishSecurityContext { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool EstablishSecurityContext" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NonDualMessageSecurityOverHttpElement.EstablishSecurityContext" />
+      <MemberSignature Language="VB.NET" Value="Public Property EstablishSecurityContext As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EstablishSecurityContext { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -59,6 +65,8 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NonDualMessageSecurityOverHttpElement.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

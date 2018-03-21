@@ -1,7 +1,9 @@
-<Type Name="DesignerLoader" FullName="System.ComponentModel.Design.Serialization.DesignerLoader">
+﻿<Type Name="DesignerLoader" FullName="System.ComponentModel.Design.Serialization.DesignerLoader">
   <TypeSignature Language="C#" Value="public abstract class DesignerLoader" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DesignerLoader extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Serialization.DesignerLoader" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class DesignerLoader" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DesignerLoader abstract" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -45,6 +47,8 @@
       <MemberSignature Language="C#" Value="protected DesignerLoader ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.DesignerLoader.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; DesignerLoader();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -69,6 +73,8 @@
       <MemberSignature Language="C#" Value="public abstract void BeginLoad (System.ComponentModel.Design.Serialization.IDesignerLoaderHost host);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void BeginLoad(class System.ComponentModel.Design.Serialization.IDesignerLoaderHost host) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.DesignerLoader.BeginLoad(System.ComponentModel.Design.Serialization.IDesignerLoaderHost)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub BeginLoad (host As IDesignerLoaderHost)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void BeginLoad(System::ComponentModel::Design::Serialization::IDesignerLoaderHost ^ host);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -106,6 +112,8 @@
       <MemberSignature Language="C#" Value="public abstract void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.DesignerLoader.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Dispose ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Dispose();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -143,6 +151,8 @@
       <MemberSignature Language="C#" Value="public virtual void Flush ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Flush() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.DesignerLoader.Flush" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Flush ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Flush();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -177,6 +187,8 @@
       <MemberSignature Language="C#" Value="public virtual bool Loading { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Loading" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Serialization.DesignerLoader.Loading" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Loading As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Loading { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

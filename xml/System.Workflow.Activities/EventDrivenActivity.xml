@@ -1,7 +1,9 @@
-<Type Name="EventDrivenActivity" FullName="System.Workflow.Activities.EventDrivenActivity">
+﻿<Type Name="EventDrivenActivity" FullName="System.Workflow.Activities.EventDrivenActivity">
   <TypeSignature Language="C#" Value="public sealed class EventDrivenActivity : System.Workflow.Activities.SequenceActivity" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EventDrivenActivity extends System.Workflow.Activities.SequenceActivity" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.EventDrivenActivity" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EventDrivenActivity&#xA;Inherits SequenceActivity" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EventDrivenActivity sealed : System::Workflow::Activities::SequenceActivity" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -69,10 +71,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.EventDrivenActivity" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public EventDrivenActivity ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.EventDrivenActivity.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EventDrivenActivity();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -98,6 +111,8 @@
       <MemberSignature Language="C#" Value="public EventDrivenActivity (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.EventDrivenActivity.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EventDrivenActivity(System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -116,6 +131,8 @@
       <MemberSignature Language="C#" Value="public System.Workflow.Activities.IEventActivity EventActivity { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.Activities.IEventActivity EventActivity" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.EventDrivenActivity.EventActivity" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EventActivity As IEventActivity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::Activities::IEventActivity ^ EventActivity { System::Workflow::Activities::IEventActivity ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -126,7 +143,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -138,14 +155,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.EventDrivenActivity" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

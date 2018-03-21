@@ -1,7 +1,9 @@
-<Type Name="OdbcMetaDataColumnNames" FullName="System.Data.Odbc.OdbcMetaDataColumnNames">
+﻿<Type Name="OdbcMetaDataColumnNames" FullName="System.Data.Odbc.OdbcMetaDataColumnNames">
   <TypeSignature Language="C#" Value="public static class OdbcMetaDataColumnNames" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit OdbcMetaDataColumnNames extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Data.Odbc.OdbcMetaDataColumnNames" />
+  <TypeSignature Language="VB.NET" Value="Public Class OdbcMetaDataColumnNames" />
+  <TypeSignature Language="C++ CLI" Value="public ref class OdbcMetaDataColumnNames abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +25,8 @@
       <MemberSignature Language="C#" Value="public static readonly string BooleanFalseLiteral;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string BooleanFalseLiteral" />
       <MemberSignature Language="DocId" Value="F:System.Data.Odbc.OdbcMetaDataColumnNames.BooleanFalseLiteral" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BooleanFalseLiteral As String " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ BooleanFalseLiteral;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -44,6 +48,8 @@
       <MemberSignature Language="C#" Value="public static readonly string BooleanTrueLiteral;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string BooleanTrueLiteral" />
       <MemberSignature Language="DocId" Value="F:System.Data.Odbc.OdbcMetaDataColumnNames.BooleanTrueLiteral" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BooleanTrueLiteral As String " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ BooleanTrueLiteral;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -65,6 +71,8 @@
       <MemberSignature Language="C#" Value="public static readonly string SQLType;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string SQLType" />
       <MemberSignature Language="DocId" Value="F:System.Data.Odbc.OdbcMetaDataColumnNames.SQLType" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SQLType As String " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ SQLType;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

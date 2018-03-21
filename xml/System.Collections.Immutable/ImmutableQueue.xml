@@ -1,7 +1,9 @@
-<Type Name="ImmutableQueue" FullName="System.Collections.Immutable.ImmutableQueue">
+﻿<Type Name="ImmutableQueue" FullName="System.Collections.Immutable.ImmutableQueue">
   <TypeSignature Language="C#" Value="public static class ImmutableQueue" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ImmutableQueue extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Collections.Immutable.ImmutableQueue" />
+  <TypeSignature Language="VB.NET" Value="Public Module ImmutableQueue" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ImmutableQueue abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Collections.Immutable</AssemblyName>
     <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -31,6 +33,8 @@
       <MemberSignature Language="C#" Value="public static System.Collections.Immutable.ImmutableQueue&lt;T&gt; Create&lt;T&gt; ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Immutable.ImmutableQueue`1&lt;!!T&gt; Create&lt;T&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableQueue.Create``1" />
+      <MemberSignature Language="VB.NET" Value="Public Function Create(Of T) () As ImmutableQueue(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static System::Collections::Immutable::ImmutableQueue&lt;T&gt; ^ Create();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -56,6 +60,8 @@
       <MemberSignature Language="C#" Value="public static System.Collections.Immutable.ImmutableQueue&lt;T&gt; Create&lt;T&gt; (T item);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Immutable.ImmutableQueue`1&lt;!!T&gt; Create&lt;T&gt;(!!T item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableQueue.Create``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Create(Of T) (item As T) As ImmutableQueue(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static System::Collections::Immutable::ImmutableQueue&lt;T&gt; ^ Create(T item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -84,6 +90,8 @@
       <MemberSignature Language="C#" Value="public static System.Collections.Immutable.ImmutableQueue&lt;T&gt; Create&lt;T&gt; (params T[] items);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Immutable.ImmutableQueue`1&lt;!!T&gt; Create&lt;T&gt;(!!T[] items) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableQueue.Create``1(``0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function Create(Of T) (ParamArray items As T()) As ImmutableQueue(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static System::Collections::Immutable::ImmutableQueue&lt;T&gt; ^ Create(... cli::array &lt;T&gt; ^ items);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -118,6 +126,8 @@
       <MemberSignature Language="C#" Value="public static System.Collections.Immutable.ImmutableQueue&lt;T&gt; CreateRange&lt;T&gt; (System.Collections.Generic.IEnumerable&lt;T&gt; items);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Immutable.ImmutableQueue`1&lt;!!T&gt; CreateRange&lt;T&gt;(class System.Collections.Generic.IEnumerable`1&lt;!!T&gt; items) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableQueue.CreateRange``1(System.Collections.Generic.IEnumerable{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateRange(Of T) (items As IEnumerable(Of T)) As ImmutableQueue(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static System::Collections::Immutable::ImmutableQueue&lt;T&gt; ^ CreateRange(System::Collections::Generic::IEnumerable&lt;T&gt; ^ items);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -146,6 +156,8 @@
       <MemberSignature Language="C#" Value="public static System.Collections.Immutable.IImmutableQueue&lt;T&gt; Dequeue&lt;T&gt; (this System.Collections.Immutable.IImmutableQueue&lt;T&gt; queue, out T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Immutable.IImmutableQueue`1&lt;!!T&gt; Dequeue&lt;T&gt;(class System.Collections.Immutable.IImmutableQueue`1&lt;!!T&gt; queue, [out] !!T&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableQueue.Dequeue``1(System.Collections.Immutable.IImmutableQueue{``0},``0@)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Dequeue(Of T) (queue As IImmutableQueue(Of T), ByRef value As T) As IImmutableQueue(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Immutable::IImmutableQueue&lt;T&gt; ^ Dequeue(System::Collections::Immutable::IImmutableQueue&lt;T&gt; ^ queue, [Runtime::InteropServices::Out] T % value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>

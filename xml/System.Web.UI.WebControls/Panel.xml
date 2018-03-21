@@ -1,7 +1,9 @@
-<Type Name="Panel" FullName="System.Web.UI.WebControls.Panel">
+﻿<Type Name="Panel" FullName="System.Web.UI.WebControls.Panel">
   <TypeSignature Language="C#" Value="public class Panel : System.Web.UI.WebControls.WebControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Panel extends System.Web.UI.WebControls.WebControl" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.Panel" />
+  <TypeSignature Language="VB.NET" Value="Public Class Panel&#xA;Inherits WebControl" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Panel : System::Web::UI::WebControls::WebControl" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -113,6 +115,8 @@
       <MemberSignature Language="C#" Value="public Panel ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Panel.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Panel();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -141,6 +145,8 @@
       <MemberSignature Language="C#" Value="protected override void AddAttributesToRender (System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void AddAttributesToRender(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Panel.AddAttributesToRender(System.Web.UI.HtmlTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub AddAttributesToRender (writer As HtmlTextWriter)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void AddAttributesToRender(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -181,6 +187,8 @@
       <MemberSignature Language="C#" Value="public virtual string BackImageUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string BackImageUrl" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Panel.BackImageUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property BackImageUrl As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ BackImageUrl { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -233,6 +241,8 @@
       <MemberSignature Language="C#" Value="protected override System.Web.UI.WebControls.Style CreateControlStyle ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Web.UI.WebControls.Style CreateControlStyle() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Panel.CreateControlStyle" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateControlStyle () As Style" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Web::UI::WebControls::Style ^ CreateControlStyle();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -259,6 +269,8 @@
       <MemberSignature Language="C#" Value="public virtual string DefaultButton { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DefaultButton" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Panel.DefaultButton" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property DefaultButton As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DefaultButton { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -308,6 +320,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.ContentDirection Direction { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.ContentDirection Direction" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Panel.Direction" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Direction As ContentDirection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::ContentDirection Direction { System::Web::UI::WebControls::ContentDirection get(); void set(System::Web::UI::WebControls::ContentDirection value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -360,6 +374,8 @@
       <MemberSignature Language="C#" Value="public virtual string GroupingText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string GroupingText" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Panel.GroupingText" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property GroupingText As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ GroupingText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -397,6 +413,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.HorizontalAlign HorizontalAlign { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.HorizontalAlign HorizontalAlign" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Panel.HorizontalAlign" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property HorizontalAlign As HorizontalAlign" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::HorizontalAlign HorizontalAlign { System::Web::UI::WebControls::HorizontalAlign get(); void set(System::Web::UI::WebControls::HorizontalAlign value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -440,6 +458,8 @@
       <MemberSignature Language="C#" Value="public override void RenderBeginTag (System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void RenderBeginTag(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Panel.RenderBeginTag(System.Web.UI.HtmlTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub RenderBeginTag (writer As HtmlTextWriter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void RenderBeginTag(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -468,6 +488,8 @@
       <MemberSignature Language="C#" Value="public override void RenderEndTag (System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void RenderEndTag(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Panel.RenderEndTag(System.Web.UI.HtmlTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub RenderEndTag (writer As HtmlTextWriter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void RenderEndTag(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -496,6 +518,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.ScrollBars ScrollBars { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.ScrollBars ScrollBars" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Panel.ScrollBars" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property ScrollBars As ScrollBars" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::ScrollBars ScrollBars { System::Web::UI::WebControls::ScrollBars get(); void set(System::Web::UI::WebControls::ScrollBars value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -559,6 +583,8 @@
       <MemberSignature Language="C#" Value="public override bool SupportsDisabledAttribute { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SupportsDisabledAttribute" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Panel.SupportsDisabledAttribute" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property SupportsDisabledAttribute As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsDisabledAttribute { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -588,6 +614,8 @@
       <MemberSignature Language="C#" Value="public virtual bool Wrap { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Wrap" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Panel.Wrap" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Wrap As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Wrap { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

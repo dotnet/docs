@@ -1,7 +1,9 @@
-<Type Name="IStopListeningRegisteredObject" FullName="System.Web.Hosting.IStopListeningRegisteredObject">
+﻿<Type Name="IStopListeningRegisteredObject" FullName="System.Web.Hosting.IStopListeningRegisteredObject">
   <TypeSignature Language="C#" Value="public interface IStopListeningRegisteredObject : System.Web.Hosting.IRegisteredObject" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IStopListeningRegisteredObject implements class System.Web.Hosting.IRegisteredObject" />
   <TypeSignature Language="DocId" Value="T:System.Web.Hosting.IStopListeningRegisteredObject" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IStopListeningRegisteredObject&#xA;Implements IRegisteredObject" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IStopListeningRegisteredObject : System::Web::Hosting::IRegisteredObject" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +32,8 @@
       <MemberSignature Language="C#" Value="public void StopListening ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void StopListening() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IStopListeningRegisteredObject.StopListening" />
+      <MemberSignature Language="VB.NET" Value="Public Sub StopListening ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void StopListening();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

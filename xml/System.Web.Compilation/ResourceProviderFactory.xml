@@ -1,7 +1,9 @@
-<Type Name="ResourceProviderFactory" FullName="System.Web.Compilation.ResourceProviderFactory">
+﻿<Type Name="ResourceProviderFactory" FullName="System.Web.Compilation.ResourceProviderFactory">
   <TypeSignature Language="C#" Value="public abstract class ResourceProviderFactory" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ResourceProviderFactory extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.Compilation.ResourceProviderFactory" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ResourceProviderFactory" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ResourceProviderFactory abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +37,8 @@
       <MemberSignature Language="C#" Value="protected ResourceProviderFactory ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ResourceProviderFactory.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ResourceProviderFactory();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -57,6 +61,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Web.Compilation.IResourceProvider CreateGlobalResourceProvider (string classKey);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.Compilation.IResourceProvider CreateGlobalResourceProvider(string classKey) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ResourceProviderFactory.CreateGlobalResourceProvider(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function CreateGlobalResourceProvider (classKey As String) As IResourceProvider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Web::Compilation::IResourceProvider ^ CreateGlobalResourceProvider(System::String ^ classKey);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -95,6 +101,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Web.Compilation.IResourceProvider CreateLocalResourceProvider (string virtualPath);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.Compilation.IResourceProvider CreateLocalResourceProvider(string virtualPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ResourceProviderFactory.CreateLocalResourceProvider(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function CreateLocalResourceProvider (virtualPath As String) As IResourceProvider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Web::Compilation::IResourceProvider ^ CreateLocalResourceProvider(System::String ^ virtualPath);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

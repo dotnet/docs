@@ -1,7 +1,9 @@
-<Type Name="InstancePersistenceCommand" FullName="System.Runtime.DurableInstancing.InstancePersistenceCommand">
+﻿<Type Name="InstancePersistenceCommand" FullName="System.Runtime.DurableInstancing.InstancePersistenceCommand">
   <TypeSignature Language="C#" Value="public abstract class InstancePersistenceCommand" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit InstancePersistenceCommand extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.DurableInstancing.InstancePersistenceCommand" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class InstancePersistenceCommand" />
+  <TypeSignature Language="C++ CLI" Value="public ref class InstancePersistenceCommand abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="protected InstancePersistenceCommand (System.Xml.Linq.XName name);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Xml.Linq.XName name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstancePersistenceCommand.#ctor(System.Xml.Linq.XName)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (name As XName)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; InstancePersistenceCommand(System::Xml::Linq::XName ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -34,9 +38,11 @@
       </Docs>
     </Member>
     <Member MemberName="AutomaticallyAcquiringLock">
-      <MemberSignature Language="C#" Value="protected virtual bool AutomaticallyAcquiringLock { get; }" />
+      <MemberSignature Language="C#" Value="protected internal virtual bool AutomaticallyAcquiringLock { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AutomaticallyAcquiringLock" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.DurableInstancing.InstancePersistenceCommand.AutomaticallyAcquiringLock" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable ReadOnly Property AutomaticallyAcquiringLock As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property bool AutomaticallyAcquiringLock { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -60,9 +66,11 @@
       </Docs>
     </Member>
     <Member MemberName="IsTransactionEnlistmentOptional">
-      <MemberSignature Language="C#" Value="protected virtual bool IsTransactionEnlistmentOptional { get; }" />
+      <MemberSignature Language="C#" Value="protected internal virtual bool IsTransactionEnlistmentOptional { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsTransactionEnlistmentOptional" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.DurableInstancing.InstancePersistenceCommand.IsTransactionEnlistmentOptional" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable ReadOnly Property IsTransactionEnlistmentOptional As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property bool IsTransactionEnlistmentOptional { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -89,6 +97,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.Linq.XName Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Linq.XName Name" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.DurableInstancing.InstancePersistenceCommand.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As XName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Linq::XName ^ Name { System::Xml::Linq::XName ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -104,9 +114,11 @@
       </Docs>
     </Member>
     <Member MemberName="Validate">
-      <MemberSignature Language="C#" Value="protected virtual void Validate (System.Runtime.DurableInstancing.InstanceView view);" />
+      <MemberSignature Language="C#" Value="protected internal virtual void Validate (System.Runtime.DurableInstancing.InstanceView view);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void Validate(class System.Runtime.DurableInstancing.InstanceView view) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstancePersistenceCommand.Validate(System.Runtime.DurableInstancing.InstanceView)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub Validate (view As InstanceView)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void Validate(System::Runtime::DurableInstancing::InstanceView ^ view);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>

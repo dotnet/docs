@@ -1,7 +1,9 @@
-<Type Name="MessageState" FullName="System.ServiceModel.Channels.MessageState">
+﻿<Type Name="MessageState" FullName="System.ServiceModel.Channels.MessageState">
   <TypeSignature Language="C#" Value="public enum MessageState" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MessageState extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.MessageState" />
+  <TypeSignature Language="VB.NET" Value="Public Enum MessageState" />
+  <TypeSignature Language="C++ CLI" Value="public enum class MessageState" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -32,6 +34,8 @@
       <MemberSignature Language="C#" Value="Closed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Channels.MessageState Closed = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.MessageState.Closed" />
+      <MemberSignature Language="VB.NET" Value="Closed" />
+      <MemberSignature Language="C++ CLI" Value="Closed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -47,6 +51,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.MessageState</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The message has been closed and can no longer be accessed.</summary>
       </Docs>
@@ -55,6 +60,8 @@
       <MemberSignature Language="C#" Value="Copied" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Channels.MessageState Copied = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.MessageState.Copied" />
+      <MemberSignature Language="VB.NET" Value="Copied" />
+      <MemberSignature Language="C++ CLI" Value="Copied" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -70,6 +77,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.MessageState</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The message has been copied.</summary>
       </Docs>
@@ -78,6 +86,8 @@
       <MemberSignature Language="C#" Value="Created" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Channels.MessageState Created = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.MessageState.Created" />
+      <MemberSignature Language="VB.NET" Value="Created" />
+      <MemberSignature Language="C++ CLI" Value="Created" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -93,6 +103,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.MessageState</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The message has been created.</summary>
       </Docs>
@@ -101,6 +112,8 @@
       <MemberSignature Language="C#" Value="Read" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Channels.MessageState Read = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.MessageState.Read" />
+      <MemberSignature Language="VB.NET" Value="Read" />
+      <MemberSignature Language="C++ CLI" Value="Read" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -116,6 +129,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.MessageState</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The message is being read.</summary>
       </Docs>
@@ -124,6 +138,8 @@
       <MemberSignature Language="C#" Value="Written" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Channels.MessageState Written = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.MessageState.Written" />
+      <MemberSignature Language="VB.NET" Value="Written" />
+      <MemberSignature Language="C++ CLI" Value="Written" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -139,6 +155,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.MessageState</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The message has been written.</summary>
       </Docs>

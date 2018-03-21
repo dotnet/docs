@@ -1,7 +1,9 @@
-<Type Name="IComparer&lt;T&gt;" FullName="System.Collections.Generic.IComparer&lt;T&gt;">
+﻿<Type Name="IComparer&lt;T&gt;" FullName="System.Collections.Generic.IComparer&lt;T&gt;">
   <TypeSignature Language="C#" Value="public interface IComparer&lt;in T&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IComparer`1&lt;- T&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Collections.Generic.IComparer`1" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IComparer(Of In T)" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public interface class IComparer" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -64,6 +66,7 @@
       <MemberSignature Language="C#" Value="public int Compare (T x, T y);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Compare(!T x, !T y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.IComparer`1.Compare(`0,`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Compare (x As T, y As T) As Integer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

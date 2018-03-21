@@ -1,7 +1,9 @@
-<Type Name="MappingType" FullName="System.Data.MappingType">
+﻿<Type Name="MappingType" FullName="System.Data.MappingType">
   <TypeSignature Language="C#" Value="public enum MappingType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed MappingType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Data.MappingType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum MappingType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class MappingType" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -42,6 +44,8 @@
       <MemberSignature Language="C#" Value="Attribute" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.MappingType Attribute = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Data.MappingType.Attribute" />
+      <MemberSignature Language="VB.NET" Value="Attribute" />
+      <MemberSignature Language="C++ CLI" Value="Attribute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -59,6 +63,7 @@
       <ReturnValue>
         <ReturnType>System.Data.MappingType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The column is mapped to an XML attribute.</summary>
       </Docs>
@@ -67,6 +72,8 @@
       <MemberSignature Language="C#" Value="Element" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.MappingType Element = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Data.MappingType.Element" />
+      <MemberSignature Language="VB.NET" Value="Element" />
+      <MemberSignature Language="C++ CLI" Value="Element" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -84,6 +91,7 @@
       <ReturnValue>
         <ReturnType>System.Data.MappingType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The column is mapped to an XML element.</summary>
       </Docs>
@@ -92,6 +100,8 @@
       <MemberSignature Language="C#" Value="Hidden" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.MappingType Hidden = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Data.MappingType.Hidden" />
+      <MemberSignature Language="VB.NET" Value="Hidden" />
+      <MemberSignature Language="C++ CLI" Value="Hidden" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -109,6 +119,7 @@
       <ReturnValue>
         <ReturnType>System.Data.MappingType</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The column is mapped to an internal structure.</summary>
       </Docs>
@@ -117,6 +128,8 @@
       <MemberSignature Language="C#" Value="SimpleContent" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.MappingType SimpleContent = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Data.MappingType.SimpleContent" />
+      <MemberSignature Language="VB.NET" Value="SimpleContent" />
+      <MemberSignature Language="C++ CLI" Value="SimpleContent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -134,6 +147,7 @@
       <ReturnValue>
         <ReturnType>System.Data.MappingType</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The column is mapped to an <see cref="T:System.Xml.XmlText" /> node.</summary>
       </Docs>

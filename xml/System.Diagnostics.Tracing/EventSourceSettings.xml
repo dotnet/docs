@@ -1,7 +1,9 @@
-<Type Name="EventSourceSettings" FullName="System.Diagnostics.Tracing.EventSourceSettings">
+﻿<Type Name="EventSourceSettings" FullName="System.Diagnostics.Tracing.EventSourceSettings">
   <TypeSignature Language="C#" Value="public enum EventSourceSettings" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed EventSourceSettings extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Tracing.EventSourceSettings" />
+  <TypeSignature Language="VB.NET" Value="Public Enum EventSourceSettings" />
+  <TypeSignature Language="C++ CLI" Value="public enum class EventSourceSettings" />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
     <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -41,6 +43,8 @@
       <MemberSignature Language="C#" Value="Default" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Tracing.EventSourceSettings Default = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventSourceSettings.Default" />
+      <MemberSignature Language="VB.NET" Value="Default" />
+      <MemberSignature Language="C++ CLI" Value="Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -60,6 +64,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.Tracing.EventSourceSettings</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>None of the special configuration options are enabled.</summary>
       </Docs>
@@ -68,6 +73,8 @@
       <MemberSignature Language="C#" Value="EtwManifestEventFormat" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Tracing.EventSourceSettings EtwManifestEventFormat = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventSourceSettings.EtwManifestEventFormat" />
+      <MemberSignature Language="VB.NET" Value="EtwManifestEventFormat" />
+      <MemberSignature Language="C++ CLI" Value="EtwManifestEventFormat" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -87,6 +94,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.Tracing.EventSourceSettings</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The ETW listener should use a manifest-based format when raising events. Setting this option is a directive to the ETW listener should use manifest-based format when raising events. This is the default option when defining a type derived from <see cref="T:System.Diagnostics.Tracing.EventSource" /> using one of the protected <see cref="T:System.Diagnostics.Tracing.EventSource" /> constructors.</summary>
       </Docs>
@@ -95,6 +103,8 @@
       <MemberSignature Language="C#" Value="EtwSelfDescribingEventFormat" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Tracing.EventSourceSettings EtwSelfDescribingEventFormat = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventSourceSettings.EtwSelfDescribingEventFormat" />
+      <MemberSignature Language="VB.NET" Value="EtwSelfDescribingEventFormat" />
+      <MemberSignature Language="C++ CLI" Value="EtwSelfDescribingEventFormat" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -114,6 +124,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.Tracing.EventSourceSettings</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>The ETW listener should use self-describing event format. This is the default option when creating a new instance of the <see cref="T:System.Diagnostics.Tracing.EventSource" /> using one of the public <see cref="T:System.Diagnostics.Tracing.EventSource" /> constructors.</summary>
       </Docs>
@@ -122,6 +133,8 @@
       <MemberSignature Language="C#" Value="ThrowOnEventWriteErrors" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Tracing.EventSourceSettings ThrowOnEventWriteErrors = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventSourceSettings.ThrowOnEventWriteErrors" />
+      <MemberSignature Language="VB.NET" Value="ThrowOnEventWriteErrors" />
+      <MemberSignature Language="C++ CLI" Value="ThrowOnEventWriteErrors" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -141,6 +154,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.Tracing.EventSourceSettings</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The event source throws an exception when an error occurs.</summary>
       </Docs>

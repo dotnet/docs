@@ -1,7 +1,9 @@
-<Type Name="InputLanguageChangedEventHandler" FullName="System.Windows.Forms.InputLanguageChangedEventHandler">
+﻿<Type Name="InputLanguageChangedEventHandler" FullName="System.Windows.Forms.InputLanguageChangedEventHandler">
   <TypeSignature Language="C#" Value="public delegate void InputLanguageChangedEventHandler(object sender, InputLanguageChangedEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed InputLanguageChangedEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.InputLanguageChangedEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub InputLanguageChangedEventHandler(sender As Object, e As InputLanguageChangedEventArgs)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void InputLanguageChangedEventHandler(System::Object ^ sender, InputLanguageChangedEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

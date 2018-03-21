@@ -1,7 +1,9 @@
-<Type Name="InkCanvasGestureEventArgs" FullName="System.Windows.Controls.InkCanvasGestureEventArgs">
+﻿<Type Name="InkCanvasGestureEventArgs" FullName="System.Windows.Controls.InkCanvasGestureEventArgs">
   <TypeSignature Language="C#" Value="public class InkCanvasGestureEventArgs : System.Windows.RoutedEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit InkCanvasGestureEventArgs extends System.Windows.RoutedEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.InkCanvasGestureEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class InkCanvasGestureEventArgs&#xA;Inherits RoutedEventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class InkCanvasGestureEventArgs : System::Windows::RoutedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public InkCanvasGestureEventArgs (System.Windows.Ink.StrokeCollection strokes, System.Collections.Generic.IEnumerable&lt;System.Windows.Ink.GestureRecognitionResult&gt; gestureRecognitionResults);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Ink.StrokeCollection strokes, class System.Collections.Generic.IEnumerable`1&lt;class System.Windows.Ink.GestureRecognitionResult&gt; gestureRecognitionResults) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.InkCanvasGestureEventArgs.#ctor(System.Windows.Ink.StrokeCollection,System.Collections.Generic.IEnumerable{System.Windows.Ink.GestureRecognitionResult})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (strokes As StrokeCollection, gestureRecognitionResults As IEnumerable(Of GestureRecognitionResult))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InkCanvasGestureEventArgs(System::Windows::Ink::StrokeCollection ^ strokes, System::Collections::Generic::IEnumerable&lt;System::Windows::Ink::GestureRecognitionResult ^&gt; ^ gestureRecognitionResults);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -39,6 +43,8 @@
       <MemberSignature Language="C#" Value="public bool Cancel { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Cancel" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.InkCanvasGestureEventArgs.Cancel" />
+      <MemberSignature Language="VB.NET" Value="Public Property Cancel As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Cancel { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -65,6 +71,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Windows.Ink.GestureRecognitionResult&gt; GetGestureRecognitionResults ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Windows.Ink.GestureRecognitionResult&gt; GetGestureRecognitionResults() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.InkCanvasGestureEventArgs.GetGestureRecognitionResults" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetGestureRecognitionResults () As ReadOnlyCollection(Of GestureRecognitionResult)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Windows::Ink::GestureRecognitionResult ^&gt; ^ GetGestureRecognitionResults();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -103,6 +111,8 @@
       <MemberSignature Language="C#" Value="protected override void InvokeEventHandler (Delegate genericHandler, object genericTarget);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InvokeEventHandler(class System.Delegate genericHandler, object genericTarget) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.InkCanvasGestureEventArgs.InvokeEventHandler(System.Delegate,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InvokeEventHandler (genericHandler As Delegate, genericTarget As Object)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InvokeEventHandler(Delegate ^ genericHandler, System::Object ^ genericTarget);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -127,6 +137,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Ink.StrokeCollection Strokes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Ink.StrokeCollection Strokes" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.InkCanvasGestureEventArgs.Strokes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Strokes As StrokeCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Ink::StrokeCollection ^ Strokes { System::Windows::Ink::StrokeCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

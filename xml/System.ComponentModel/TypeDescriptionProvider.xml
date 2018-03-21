@@ -1,7 +1,9 @@
-<Type Name="TypeDescriptionProvider" FullName="System.ComponentModel.TypeDescriptionProvider">
+﻿<Type Name="TypeDescriptionProvider" FullName="System.ComponentModel.TypeDescriptionProvider">
   <TypeSignature Language="C#" Value="public abstract class TypeDescriptionProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit TypeDescriptionProvider extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.TypeDescriptionProvider" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class TypeDescriptionProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TypeDescriptionProvider abstract" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -50,10 +52,22 @@
     <altmember cref="T:System.ComponentModel.ICustomTypeDescriptor" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.TypeDescriptionProvider" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected TypeDescriptionProvider ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptionProvider.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; TypeDescriptionProvider();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -87,6 +101,8 @@
       <MemberSignature Language="C#" Value="protected TypeDescriptionProvider (System.ComponentModel.TypeDescriptionProvider parent);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ComponentModel.TypeDescriptionProvider parent) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptionProvider.#ctor(System.ComponentModel.TypeDescriptionProvider)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (parent As TypeDescriptionProvider)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; TypeDescriptionProvider(System::ComponentModel::TypeDescriptionProvider ^ parent);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -133,6 +149,8 @@
       <MemberSignature Language="C#" Value="public virtual object CreateInstance (IServiceProvider provider, Type objectType, Type[] argTypes, object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object CreateInstance(class System.IServiceProvider provider, class System.Type objectType, class System.Type[] argTypes, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptionProvider.CreateInstance(System.IServiceProvider,System.Type,System.Type[],System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateInstance (provider As IServiceProvider, objectType As Type, argTypes As Type(), args As Object()) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ CreateInstance(IServiceProvider ^ provider, Type ^ objectType, cli::array &lt;Type ^&gt; ^ argTypes, cli::array &lt;System::Object ^&gt; ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -184,6 +202,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Collections.IDictionary GetCache (object instance);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IDictionary GetCache(object instance) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptionProvider.GetCache(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetCache (instance As Object) As IDictionary" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IDictionary ^ GetCache(System::Object ^ instance);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -227,6 +247,8 @@
       <MemberSignature Language="C#" Value="public virtual System.ComponentModel.ICustomTypeDescriptor GetExtendedTypeDescriptor (object instance);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ComponentModel.ICustomTypeDescriptor GetExtendedTypeDescriptor(object instance) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptionProvider.GetExtendedTypeDescriptor(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetExtendedTypeDescriptor (instance As Object) As ICustomTypeDescriptor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ComponentModel::ICustomTypeDescriptor ^ GetExtendedTypeDescriptor(System::Object ^ instance);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -267,9 +289,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetExtenderProviders">
-      <MemberSignature Language="C#" Value="protected virtual System.ComponentModel.IExtenderProvider[] GetExtenderProviders (object instance);" />
+      <MemberSignature Language="C#" Value="protected internal virtual System.ComponentModel.IExtenderProvider[] GetExtenderProviders (object instance);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.ComponentModel.IExtenderProvider[] GetExtenderProviders(object instance) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptionProvider.GetExtenderProviders(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function GetExtenderProviders (instance As Object) As IExtenderProvider()" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual cli::array &lt;System::ComponentModel::IExtenderProvider ^&gt; ^ GetExtenderProviders(System::Object ^ instance);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -304,6 +328,8 @@
       <MemberSignature Language="C#" Value="public virtual string GetFullComponentName (object component);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetFullComponentName(object component) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptionProvider.GetFullComponentName(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetFullComponentName (component As Object) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetFullComponentName(System::Object ^ component);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -334,10 +360,22 @@
           <paramref name="component" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetReflectionType">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Performs normal reflection against an object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetReflectionType">
       <MemberSignature Language="C#" Value="public Type GetReflectionType (object instance);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Type GetReflectionType(object instance) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptionProvider.GetReflectionType(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetReflectionType (instance As Object) As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Type ^ GetReflectionType(System::Object ^ instance);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -382,6 +420,8 @@
       <MemberSignature Language="C#" Value="public Type GetReflectionType (Type objectType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Type GetReflectionType(class System.Type objectType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptionProvider.GetReflectionType(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetReflectionType (objectType As Type) As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Type ^ GetReflectionType(Type ^ objectType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -426,6 +466,8 @@
       <MemberSignature Language="C#" Value="public virtual Type GetReflectionType (Type objectType, object instance);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type GetReflectionType(class System.Type objectType, object instance) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptionProvider.GetReflectionType(System.Type,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetReflectionType (objectType As Type, instance As Object) As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Type ^ GetReflectionType(Type ^ objectType, System::Object ^ instance);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -471,6 +513,8 @@
       <MemberSignature Language="C#" Value="public virtual Type GetRuntimeType (Type reflectionType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type GetRuntimeType(class System.Type reflectionType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptionProvider.GetRuntimeType(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetRuntimeType (reflectionType As Type) As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Type ^ GetRuntimeType(Type ^ reflectionType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -508,10 +552,22 @@
           <paramref name="reflectionType" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetTypeDescriptor">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a custom type descriptor for the given type or object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetTypeDescriptor">
       <MemberSignature Language="C#" Value="public System.ComponentModel.ICustomTypeDescriptor GetTypeDescriptor (object instance);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ComponentModel.ICustomTypeDescriptor GetTypeDescriptor(object instance) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptionProvider.GetTypeDescriptor(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetTypeDescriptor (instance As Object) As ICustomTypeDescriptor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::ICustomTypeDescriptor ^ GetTypeDescriptor(System::Object ^ instance);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -547,6 +603,8 @@
       <MemberSignature Language="C#" Value="public System.ComponentModel.ICustomTypeDescriptor GetTypeDescriptor (Type objectType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ComponentModel.ICustomTypeDescriptor GetTypeDescriptor(class System.Type objectType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptionProvider.GetTypeDescriptor(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetTypeDescriptor (objectType As Type) As ICustomTypeDescriptor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::ICustomTypeDescriptor ^ GetTypeDescriptor(Type ^ objectType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -580,6 +638,8 @@
       <MemberSignature Language="C#" Value="public virtual System.ComponentModel.ICustomTypeDescriptor GetTypeDescriptor (Type objectType, object instance);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ComponentModel.ICustomTypeDescriptor GetTypeDescriptor(class System.Type objectType, object instance) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptionProvider.GetTypeDescriptor(System.Type,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTypeDescriptor (objectType As Type, instance As Object) As ICustomTypeDescriptor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ComponentModel::ICustomTypeDescriptor ^ GetTypeDescriptor(Type ^ objectType, System::Object ^ instance);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -625,6 +685,7 @@
       <MemberSignature Language="C#" Value="public virtual bool IsSupportedType (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsSupportedType(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptionProvider.IsSupportedType(System.Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsSupportedType(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -656,35 +717,5 @@
           <paramref name="type" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetTypeDescriptor">
-      <AssemblyInfo>
-        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets a custom type descriptor for the given type or object.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.TypeDescriptionProvider" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetReflectionType">
-      <AssemblyInfo>
-        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Performs normal reflection against an object.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

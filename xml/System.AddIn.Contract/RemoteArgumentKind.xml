@@ -1,7 +1,9 @@
-<Type Name="RemoteArgumentKind" FullName="System.AddIn.Contract.RemoteArgumentKind">
+﻿<Type Name="RemoteArgumentKind" FullName="System.AddIn.Contract.RemoteArgumentKind">
   <TypeSignature Language="C#" Value="public enum RemoteArgumentKind" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RemoteArgumentKind extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.AddIn.Contract.RemoteArgumentKind" />
+  <TypeSignature Language="VB.NET" Value="Public Enum RemoteArgumentKind" />
+  <TypeSignature Language="C++ CLI" Value="public enum class RemoteArgumentKind" />
   <AssemblyInfo>
     <AssemblyName>System.AddIn.Contract</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +29,8 @@
       <MemberSignature Language="C#" Value="Contract" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.AddIn.Contract.RemoteArgumentKind Contract = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.AddIn.Contract.RemoteArgumentKind.Contract" />
+      <MemberSignature Language="VB.NET" Value="Contract" />
+      <MemberSignature Language="C++ CLI" Value="Contract" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -35,6 +39,7 @@
       <ReturnValue>
         <ReturnType>System.AddIn.Contract.RemoteArgumentKind</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.AddIn.Contract.RemoteArgument" /> represents an <see cref="T:System.AddIn.Contract.IContract" />.</summary>
       </Docs>
@@ -43,6 +48,8 @@
       <MemberSignature Language="C#" Value="Intrinsic" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.AddIn.Contract.RemoteArgumentKind Intrinsic = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.AddIn.Contract.RemoteArgumentKind.Intrinsic" />
+      <MemberSignature Language="VB.NET" Value="Intrinsic" />
+      <MemberSignature Language="C++ CLI" Value="Intrinsic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -51,6 +58,7 @@
       <ReturnValue>
         <ReturnType>System.AddIn.Contract.RemoteArgumentKind</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.AddIn.Contract.RemoteArgument" /> represents an intrinsic data type.</summary>
       </Docs>
@@ -59,6 +67,8 @@
       <MemberSignature Language="C#" Value="IntrinsicArray" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.AddIn.Contract.RemoteArgumentKind IntrinsicArray = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.AddIn.Contract.RemoteArgumentKind.IntrinsicArray" />
+      <MemberSignature Language="VB.NET" Value="IntrinsicArray" />
+      <MemberSignature Language="C++ CLI" Value="IntrinsicArray" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -67,6 +77,7 @@
       <ReturnValue>
         <ReturnType>System.AddIn.Contract.RemoteArgumentKind</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.AddIn.Contract.RemoteArgument" /> represents an <see cref="T:System.Array" /> that contains elements of an intrinsic data type.</summary>
       </Docs>
@@ -75,6 +86,8 @@
       <MemberSignature Language="C#" Value="Missing" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.AddIn.Contract.RemoteArgumentKind Missing = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.AddIn.Contract.RemoteArgumentKind.Missing" />
+      <MemberSignature Language="VB.NET" Value="Missing" />
+      <MemberSignature Language="C++ CLI" Value="Missing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -83,6 +96,7 @@
       <ReturnValue>
         <ReturnType>System.AddIn.Contract.RemoteArgumentKind</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.AddIn.Contract.RemoteArgument" /> represents the <see cref="F:System.Type.Missing" /> value. This is the default value for the <see cref="P:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind" /> property.</summary>
       </Docs>

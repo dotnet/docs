@@ -1,7 +1,9 @@
-<Type Name="WebBrowser+WebBrowserSite" FullName="System.Windows.Forms.WebBrowser+WebBrowserSite">
+﻿<Type Name="WebBrowser+WebBrowserSite" FullName="System.Windows.Forms.WebBrowser+WebBrowserSite">
   <TypeSignature Language="C#" Value="protected class WebBrowser.WebBrowserSite : System.Windows.Forms.WebBrowserSiteBase" />
   <TypeSignature Language="ILAsm" Value=".class nested protected auto ansi beforefieldinit WebBrowser/WebBrowserSite extends System.Windows.Forms.WebBrowserSiteBase" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.WebBrowser.WebBrowserSite" />
+  <TypeSignature Language="VB.NET" Value="Protected Class WebBrowser.WebBrowserSite&#xA;Inherits WebBrowserSiteBase" />
+  <TypeSignature Language="C++ CLI" Value="protected: ref class WebBrowser::WebBrowserSite : System::Windows::Forms::WebBrowserSiteBase" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +39,8 @@
       <MemberSignature Language="C#" Value="public WebBrowserSite (System.Windows.Forms.WebBrowser host);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.WebBrowser host) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WebBrowser.WebBrowserSite.#ctor(System.Windows.Forms.WebBrowser)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (host As WebBrowser)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebBrowserSite(System::Windows::Forms::WebBrowser ^ host);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

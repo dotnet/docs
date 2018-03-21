@@ -1,7 +1,9 @@
-<Type Name="TransferCodingHeaderValue" FullName="System.Net.Http.Headers.TransferCodingHeaderValue">
+﻿<Type Name="TransferCodingHeaderValue" FullName="System.Net.Http.Headers.TransferCodingHeaderValue">
   <TypeSignature Language="C#" Value="public class TransferCodingHeaderValue : ICloneable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TransferCodingHeaderValue extends System.Object implements class System.ICloneable" />
   <TypeSignature Language="DocId" Value="T:System.Net.Http.Headers.TransferCodingHeaderValue" />
+  <TypeSignature Language="VB.NET" Value="Public Class TransferCodingHeaderValue&#xA;Implements ICloneable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TransferCodingHeaderValue : ICloneable" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Http</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,10 +35,24 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.Http.Headers.TransferCodingHeaderValue" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected TransferCodingHeaderValue (System.Net.Http.Headers.TransferCodingHeaderValue source);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Net.Http.Headers.TransferCodingHeaderValue source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.TransferCodingHeaderValue.#ctor(System.Net.Http.Headers.TransferCodingHeaderValue)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (source As TransferCodingHeaderValue)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; TransferCodingHeaderValue(System::Net::Http::Headers::TransferCodingHeaderValue ^ source);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -62,6 +78,8 @@
       <MemberSignature Language="C#" Value="public TransferCodingHeaderValue (string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.TransferCodingHeaderValue.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TransferCodingHeaderValue(System::String ^ value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -87,6 +105,8 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.TransferCodingHeaderValue.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -117,6 +137,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.TransferCodingHeaderValue.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -152,6 +174,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.ICollection&lt;System.Net.Http.Headers.NameValueHeaderValue&gt; Parameters { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;class System.Net.Http.Headers.NameValueHeaderValue&gt; Parameters" />
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.TransferCodingHeaderValue.Parameters" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parameters As ICollection(Of NameValueHeaderValue)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;System::Net::Http::Headers::NameValueHeaderValue ^&gt; ^ Parameters { System::Collections::Generic::ICollection&lt;System::Net::Http::Headers::NameValueHeaderValue ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -177,6 +201,8 @@
       <MemberSignature Language="C#" Value="public static System.Net.Http.Headers.TransferCodingHeaderValue Parse (string input);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Net.Http.Headers.TransferCodingHeaderValue Parse(string input) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.TransferCodingHeaderValue.Parse(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (input As String) As TransferCodingHeaderValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Net::Http::Headers::TransferCodingHeaderValue ^ Parse(System::String ^ input);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -210,7 +236,12 @@
       <MemberSignature Language="C#" Value="object ICloneable.Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.ICloneable.Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.TransferCodingHeaderValue.System#ICloneable#Clone" />
+      <MemberSignature Language="VB.NET" Value="Function Clone () As Object Implements ICloneable.Clone" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.ICloneable.Clone() = ICloneable::Clone;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -234,6 +265,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.TransferCodingHeaderValue.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -260,6 +293,8 @@
       <MemberSignature Language="C#" Value="public static bool TryParse (string input, out System.Net.Http.Headers.TransferCodingHeaderValue parsedValue);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string input, [out] class System.Net.Http.Headers.TransferCodingHeaderValue&amp; parsedValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.TransferCodingHeaderValue.TryParse(System.String,System.Net.Http.Headers.TransferCodingHeaderValue@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryParse (input As String, ByRef parsedValue As TransferCodingHeaderValue) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryParse(System::String ^ input, [Runtime::InteropServices::Out] System::Net::Http::Headers::TransferCodingHeaderValue ^ % parsedValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -292,6 +327,8 @@
       <MemberSignature Language="C#" Value="public string Value { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Value" />
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.TransferCodingHeaderValue.Value" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Value { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -313,17 +350,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Net.Http</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Net.Http.Headers.TransferCodingHeaderValue" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

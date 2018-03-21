@@ -1,7 +1,9 @@
-<Type Name="XamlObjectWriterSettings" FullName="System.Xaml.XamlObjectWriterSettings">
+﻿<Type Name="XamlObjectWriterSettings" FullName="System.Xaml.XamlObjectWriterSettings">
   <TypeSignature Language="C#" Value="public class XamlObjectWriterSettings : System.Xaml.XamlWriterSettings" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XamlObjectWriterSettings extends System.Xaml.XamlWriterSettings" />
   <TypeSignature Language="DocId" Value="T:System.Xaml.XamlObjectWriterSettings" />
+  <TypeSignature Language="VB.NET" Value="Public Class XamlObjectWriterSettings&#xA;Inherits XamlWriterSettings" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XamlObjectWriterSettings : System::Xaml::XamlWriterSettings" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,10 +26,21 @@
     <altmember cref="M:System.Xaml.IXamlObjectWriterFactory.GetXamlObjectWriter(System.Xaml.XamlObjectWriterSettings)" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlObjectWriterSettings" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public XamlObjectWriterSettings ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlObjectWriterSettings.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlObjectWriterSettings();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -43,6 +56,8 @@
       <MemberSignature Language="C#" Value="public XamlObjectWriterSettings (System.Xaml.XamlObjectWriterSettings settings);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xaml.XamlObjectWriterSettings settings) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlObjectWriterSettings.#ctor(System.Xaml.XamlObjectWriterSettings)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (settings As XamlObjectWriterSettings)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlObjectWriterSettings(System::Xaml::XamlObjectWriterSettings ^ settings);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -63,6 +78,8 @@
       <MemberSignature Language="C#" Value="public System.Xaml.Permissions.XamlAccessLevel AccessLevel { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xaml.Permissions.XamlAccessLevel AccessLevel" />
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlObjectWriterSettings.AccessLevel" />
+      <MemberSignature Language="VB.NET" Value="Public Property AccessLevel As XamlAccessLevel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xaml::Permissions::XamlAccessLevel ^ AccessLevel { System::Xaml::Permissions::XamlAccessLevel ^ get(); void set(System::Xaml::Permissions::XamlAccessLevel ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -88,6 +105,8 @@
       <MemberSignature Language="C#" Value="public EventHandler&lt;System.Xaml.XamlObjectEventArgs&gt; AfterBeginInitHandler { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.EventHandler`1&lt;class System.Xaml.XamlObjectEventArgs&gt; AfterBeginInitHandler" />
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlObjectWriterSettings.AfterBeginInitHandler" />
+      <MemberSignature Language="VB.NET" Value="Public Property AfterBeginInitHandler As EventHandler(Of XamlObjectEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property EventHandler&lt;System::Xaml::XamlObjectEventArgs ^&gt; ^ AfterBeginInitHandler { EventHandler&lt;System::Xaml::XamlObjectEventArgs ^&gt; ^ get(); void set(EventHandler&lt;System::Xaml::XamlObjectEventArgs ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -108,6 +127,8 @@
       <MemberSignature Language="C#" Value="public EventHandler&lt;System.Xaml.XamlObjectEventArgs&gt; AfterEndInitHandler { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.EventHandler`1&lt;class System.Xaml.XamlObjectEventArgs&gt; AfterEndInitHandler" />
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlObjectWriterSettings.AfterEndInitHandler" />
+      <MemberSignature Language="VB.NET" Value="Public Property AfterEndInitHandler As EventHandler(Of XamlObjectEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property EventHandler&lt;System::Xaml::XamlObjectEventArgs ^&gt; ^ AfterEndInitHandler { EventHandler&lt;System::Xaml::XamlObjectEventArgs ^&gt; ^ get(); void set(EventHandler&lt;System::Xaml::XamlObjectEventArgs ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -128,6 +149,8 @@
       <MemberSignature Language="C#" Value="public EventHandler&lt;System.Xaml.XamlObjectEventArgs&gt; AfterPropertiesHandler { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.EventHandler`1&lt;class System.Xaml.XamlObjectEventArgs&gt; AfterPropertiesHandler" />
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlObjectWriterSettings.AfterPropertiesHandler" />
+      <MemberSignature Language="VB.NET" Value="Public Property AfterPropertiesHandler As EventHandler(Of XamlObjectEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property EventHandler&lt;System::Xaml::XamlObjectEventArgs ^&gt; ^ AfterPropertiesHandler { EventHandler&lt;System::Xaml::XamlObjectEventArgs ^&gt; ^ get(); void set(EventHandler&lt;System::Xaml::XamlObjectEventArgs ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -148,6 +171,8 @@
       <MemberSignature Language="C#" Value="public EventHandler&lt;System.Xaml.XamlObjectEventArgs&gt; BeforePropertiesHandler { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.EventHandler`1&lt;class System.Xaml.XamlObjectEventArgs&gt; BeforePropertiesHandler" />
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlObjectWriterSettings.BeforePropertiesHandler" />
+      <MemberSignature Language="VB.NET" Value="Public Property BeforePropertiesHandler As EventHandler(Of XamlObjectEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property EventHandler&lt;System::Xaml::XamlObjectEventArgs ^&gt; ^ BeforePropertiesHandler { EventHandler&lt;System::Xaml::XamlObjectEventArgs ^&gt; ^ get(); void set(EventHandler&lt;System::Xaml::XamlObjectEventArgs ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -168,6 +193,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Markup.INameScope ExternalNameScope { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Markup.INameScope ExternalNameScope" />
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlObjectWriterSettings.ExternalNameScope" />
+      <MemberSignature Language="VB.NET" Value="Public Property ExternalNameScope As INameScope" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Markup::INameScope ^ ExternalNameScope { System::Windows::Markup::INameScope ^ get(); void set(System::Windows::Markup::INameScope ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -196,6 +223,8 @@
       <MemberSignature Language="C#" Value="public bool IgnoreCanConvert { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreCanConvert" />
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlObjectWriterSettings.IgnoreCanConvert" />
+      <MemberSignature Language="VB.NET" Value="Public Property IgnoreCanConvert As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IgnoreCanConvert { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -224,6 +253,8 @@
       <MemberSignature Language="C#" Value="public bool PreferUnconvertedDictionaryKeys { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool PreferUnconvertedDictionaryKeys" />
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlObjectWriterSettings.PreferUnconvertedDictionaryKeys" />
+      <MemberSignature Language="VB.NET" Value="Public Property PreferUnconvertedDictionaryKeys As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PreferUnconvertedDictionaryKeys { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -250,6 +281,8 @@
       <MemberSignature Language="C#" Value="public bool RegisterNamesOnExternalNamescope { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool RegisterNamesOnExternalNamescope" />
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlObjectWriterSettings.RegisterNamesOnExternalNamescope" />
+      <MemberSignature Language="VB.NET" Value="Public Property RegisterNamesOnExternalNamescope As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RegisterNamesOnExternalNamescope { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -269,6 +302,8 @@
       <MemberSignature Language="C#" Value="public object RootObjectInstance { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object RootObjectInstance" />
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlObjectWriterSettings.RootObjectInstance" />
+      <MemberSignature Language="VB.NET" Value="Public Property RootObjectInstance As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ RootObjectInstance { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -294,6 +329,8 @@
       <MemberSignature Language="C#" Value="public bool SkipDuplicatePropertyCheck { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SkipDuplicatePropertyCheck" />
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlObjectWriterSettings.SkipDuplicatePropertyCheck" />
+      <MemberSignature Language="VB.NET" Value="Public Property SkipDuplicatePropertyCheck As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SkipDuplicatePropertyCheck { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -320,6 +357,8 @@
       <MemberSignature Language="C#" Value="public bool SkipProvideValueOnRoot { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SkipProvideValueOnRoot" />
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlObjectWriterSettings.SkipProvideValueOnRoot" />
+      <MemberSignature Language="VB.NET" Value="Public Property SkipProvideValueOnRoot As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SkipProvideValueOnRoot { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -346,6 +385,8 @@
       <MemberSignature Language="C#" Value="public Uri SourceBamlUri { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri SourceBamlUri" />
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlObjectWriterSettings.SourceBamlUri" />
+      <MemberSignature Language="VB.NET" Value="Public Property SourceBamlUri As Uri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ SourceBamlUri { Uri ^ get(); void set(Uri ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -371,6 +412,8 @@
       <MemberSignature Language="C#" Value="public EventHandler&lt;System.Windows.Markup.XamlSetValueEventArgs&gt; XamlSetValueHandler { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.EventHandler`1&lt;class System.Windows.Markup.XamlSetValueEventArgs&gt; XamlSetValueHandler" />
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlObjectWriterSettings.XamlSetValueHandler" />
+      <MemberSignature Language="VB.NET" Value="Public Property XamlSetValueHandler As EventHandler(Of XamlSetValueEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property EventHandler&lt;System::Windows::Markup::XamlSetValueEventArgs ^&gt; ^ XamlSetValueHandler { EventHandler&lt;System::Windows::Markup::XamlSetValueEventArgs ^&gt; ^ get(); void set(EventHandler&lt;System::Windows::Markup::XamlSetValueEventArgs ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -392,14 +435,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Xaml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlObjectWriterSettings" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

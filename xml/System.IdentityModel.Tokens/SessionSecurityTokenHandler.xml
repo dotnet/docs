@@ -1,7 +1,9 @@
-<Type Name="SessionSecurityTokenHandler" FullName="System.IdentityModel.Tokens.SessionSecurityTokenHandler">
+﻿<Type Name="SessionSecurityTokenHandler" FullName="System.IdentityModel.Tokens.SessionSecurityTokenHandler">
   <TypeSignature Language="C#" Value="public class SessionSecurityTokenHandler : System.IdentityModel.Tokens.SecurityTokenHandler" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SessionSecurityTokenHandler extends System.IdentityModel.Tokens.SecurityTokenHandler" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.SessionSecurityTokenHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Class SessionSecurityTokenHandler&#xA;Inherits SecurityTokenHandler" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SessionSecurityTokenHandler : System::IdentityModel::Tokens::SecurityTokenHandler" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -59,10 +61,21 @@
     <altmember cref="T:System.IdentityModel.CookieTransform" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SessionSecurityTokenHandler" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SessionSecurityTokenHandler ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SessionSecurityTokenHandler.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SessionSecurityTokenHandler();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -85,6 +98,8 @@
       <MemberSignature Language="C#" Value="public SessionSecurityTokenHandler (System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.CookieTransform&gt; transforms);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.IdentityModel.CookieTransform&gt; transforms) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SessionSecurityTokenHandler.#ctor(System.Collections.ObjectModel.ReadOnlyCollection{System.IdentityModel.CookieTransform})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (transforms As ReadOnlyCollection(Of CookieTransform))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SessionSecurityTokenHandler(System::Collections::ObjectModel::ReadOnlyCollection&lt;System::IdentityModel::CookieTransform ^&gt; ^ transforms);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -112,6 +127,8 @@
       <MemberSignature Language="C#" Value="public SessionSecurityTokenHandler (System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.CookieTransform&gt; transforms, TimeSpan tokenLifetime);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.IdentityModel.CookieTransform&gt; transforms, valuetype System.TimeSpan tokenLifetime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SessionSecurityTokenHandler.#ctor(System.Collections.ObjectModel.ReadOnlyCollection{System.IdentityModel.CookieTransform},System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (transforms As ReadOnlyCollection(Of CookieTransform), tokenLifetime As TimeSpan)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SessionSecurityTokenHandler(System::Collections::ObjectModel::ReadOnlyCollection&lt;System::IdentityModel::CookieTransform ^&gt; ^ transforms, TimeSpan tokenLifetime);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -136,6 +153,8 @@
       <MemberSignature Language="C#" Value="protected virtual byte[] ApplyTransforms (byte[] cookie, bool outbound);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance unsigned int8[] ApplyTransforms(unsigned int8[] cookie, bool outbound) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SessionSecurityTokenHandler.ApplyTransforms(System.Byte[],System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function ApplyTransforms (cookie As Byte(), outbound As Boolean) As Byte()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual cli::array &lt;System::Byte&gt; ^ ApplyTransforms(cli::array &lt;System::Byte&gt; ^ cookie, bool outbound);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -171,6 +190,8 @@
       <MemberSignature Language="C#" Value="public override bool CanReadToken (System.Xml.XmlReader reader);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanReadToken(class System.Xml.XmlReader reader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SessionSecurityTokenHandler.CanReadToken(System.Xml.XmlReader)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CanReadToken (reader As XmlReader) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool CanReadToken(System::Xml::XmlReader ^ reader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -196,6 +217,8 @@
       <MemberSignature Language="C#" Value="public override bool CanValidateToken { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanValidateToken" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SessionSecurityTokenHandler.CanValidateToken" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanValidateToken As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanValidateToken { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -215,6 +238,8 @@
       <MemberSignature Language="C#" Value="public override bool CanWriteToken { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanWriteToken" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SessionSecurityTokenHandler.CanWriteToken" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanWriteToken As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanWriteToken { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -234,6 +259,8 @@
       <MemberSignature Language="C#" Value="public virtual string CookieElementName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CookieElementName" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SessionSecurityTokenHandler.CookieElementName" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CookieElementName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ CookieElementName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -262,6 +289,8 @@
       <MemberSignature Language="C#" Value="public virtual string CookieNamespace { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CookieNamespace" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SessionSecurityTokenHandler.CookieNamespace" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CookieNamespace As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ CookieNamespace { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -290,6 +319,8 @@
       <MemberSignature Language="C#" Value="public virtual System.IdentityModel.Tokens.SessionSecurityToken CreateSessionSecurityToken (System.Security.Claims.ClaimsPrincipal principal, string context, string endpointId, DateTime validFrom, DateTime validTo);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IdentityModel.Tokens.SessionSecurityToken CreateSessionSecurityToken(class System.Security.Claims.ClaimsPrincipal principal, string context, string endpointId, valuetype System.DateTime validFrom, valuetype System.DateTime validTo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SessionSecurityTokenHandler.CreateSessionSecurityToken(System.Security.Claims.ClaimsPrincipal,System.String,System.String,System.DateTime,System.DateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateSessionSecurityToken (principal As ClaimsPrincipal, context As String, endpointId As String, validFrom As DateTime, validTo As DateTime) As SessionSecurityToken" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::IdentityModel::Tokens::SessionSecurityToken ^ CreateSessionSecurityToken(System::Security::Claims::ClaimsPrincipal ^ principal, System::String ^ context, System::String ^ endpointId, DateTime validFrom, DateTime validTo);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -323,6 +354,8 @@
       <MemberSignature Language="C#" Value="public override System.IdentityModel.Tokens.SecurityToken CreateToken (System.IdentityModel.Tokens.SecurityTokenDescriptor tokenDescriptor);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.IdentityModel.Tokens.SecurityToken CreateToken(class System.IdentityModel.Tokens.SecurityTokenDescriptor tokenDescriptor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SessionSecurityTokenHandler.CreateToken(System.IdentityModel.Tokens.SecurityTokenDescriptor)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateToken (tokenDescriptor As SecurityTokenDescriptor) As SecurityToken" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::IdentityModel::Tokens::SecurityToken ^ CreateToken(System::IdentityModel::Tokens::SecurityTokenDescriptor ^ tokenDescriptor);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -355,6 +388,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.CookieTransform&gt; DefaultCookieTransforms;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.IdentityModel.CookieTransform&gt; DefaultCookieTransforms" />
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SessionSecurityTokenHandler.DefaultCookieTransforms" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DefaultCookieTransforms As ReadOnlyCollection(Of CookieTransform) " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Collections::ObjectModel::ReadOnlyCollection&lt;System::IdentityModel::CookieTransform ^&gt; ^ DefaultCookieTransforms;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -372,6 +407,8 @@
       <MemberSignature Language="C#" Value="public static readonly TimeSpan DefaultLifetime;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.TimeSpan DefaultLifetime" />
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SessionSecurityTokenHandler.DefaultLifetime" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DefaultLifetime As TimeSpan " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly TimeSpan DefaultLifetime;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -389,6 +426,8 @@
       <MemberSignature Language="C#" Value="public static TimeSpan DefaultTokenLifetime { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.TimeSpan DefaultTokenLifetime" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SessionSecurityTokenHandler.DefaultTokenLifetime" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DefaultTokenLifetime As TimeSpan" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property TimeSpan DefaultTokenLifetime { TimeSpan get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -407,6 +446,8 @@
       <MemberSignature Language="C#" Value="public override string[] GetTokenTypeIdentifiers ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string[] GetTokenTypeIdentifiers() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SessionSecurityTokenHandler.GetTokenTypeIdentifiers" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetTokenTypeIdentifiers () As String()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::String ^&gt; ^ GetTokenTypeIdentifiers();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -433,6 +474,8 @@
       <MemberSignature Language="C#" Value="public override void LoadCustomConfiguration (System.Xml.XmlNodeList customConfigElements);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void LoadCustomConfiguration(class System.Xml.XmlNodeList customConfigElements) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SessionSecurityTokenHandler.LoadCustomConfiguration(System.Xml.XmlNodeList)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub LoadCustomConfiguration (customConfigElements As XmlNodeList)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void LoadCustomConfiguration(System::Xml::XmlNodeList ^ customConfigElements);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -481,6 +524,8 @@
       <MemberSignature Language="C#" Value="public override System.IdentityModel.Tokens.SecurityToken ReadToken (System.Xml.XmlReader reader);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.IdentityModel.Tokens.SecurityToken ReadToken(class System.Xml.XmlReader reader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SessionSecurityTokenHandler.ReadToken(System.Xml.XmlReader)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ReadToken (reader As XmlReader) As SecurityToken" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::IdentityModel::Tokens::SecurityToken ^ ReadToken(System::Xml::XmlReader ^ reader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -515,6 +560,8 @@
       <MemberSignature Language="C#" Value="public virtual System.IdentityModel.Tokens.SecurityToken ReadToken (byte[] token, System.IdentityModel.Selectors.SecurityTokenResolver tokenResolver);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IdentityModel.Tokens.SecurityToken ReadToken(unsigned int8[] token, class System.IdentityModel.Selectors.SecurityTokenResolver tokenResolver) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SessionSecurityTokenHandler.ReadToken(System.Byte[],System.IdentityModel.Selectors.SecurityTokenResolver)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadToken (token As Byte(), tokenResolver As SecurityTokenResolver) As SecurityToken" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::IdentityModel::Tokens::SecurityToken ^ ReadToken(cli::array &lt;System::Byte&gt; ^ token, System::IdentityModel::Selectors::SecurityTokenResolver ^ tokenResolver);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -546,6 +593,8 @@
       <MemberSignature Language="C#" Value="public override System.IdentityModel.Tokens.SecurityToken ReadToken (System.Xml.XmlReader reader, System.IdentityModel.Selectors.SecurityTokenResolver tokenResolver);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.IdentityModel.Tokens.SecurityToken ReadToken(class System.Xml.XmlReader reader, class System.IdentityModel.Selectors.SecurityTokenResolver tokenResolver) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SessionSecurityTokenHandler.ReadToken(System.Xml.XmlReader,System.IdentityModel.Selectors.SecurityTokenResolver)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ReadToken (reader As XmlReader, tokenResolver As SecurityTokenResolver) As SecurityToken" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::IdentityModel::Tokens::SecurityToken ^ ReadToken(System::Xml::XmlReader ^ reader, System::IdentityModel::Selectors::SecurityTokenResolver ^ tokenResolver);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -588,6 +637,8 @@
       <MemberSignature Language="C#" Value="protected void SetTransforms (System.Collections.Generic.IEnumerable&lt;System.IdentityModel.CookieTransform&gt; transforms);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void SetTransforms(class System.Collections.Generic.IEnumerable`1&lt;class System.IdentityModel.CookieTransform&gt; transforms) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SessionSecurityTokenHandler.SetTransforms(System.Collections.Generic.IEnumerable{System.IdentityModel.CookieTransform})" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub SetTransforms (transforms As IEnumerable(Of CookieTransform))" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void SetTransforms(System::Collections::Generic::IEnumerable&lt;System::IdentityModel::CookieTransform ^&gt; ^ transforms);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -619,6 +670,8 @@
       <MemberSignature Language="C#" Value="public virtual TimeSpan TokenLifetime { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan TokenLifetime" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SessionSecurityTokenHandler.TokenLifetime" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property TokenLifetime As TimeSpan" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property TimeSpan TokenLifetime { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -645,6 +698,8 @@
       <MemberSignature Language="C#" Value="public override Type TokenType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type TokenType" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SessionSecurityTokenHandler.TokenType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property TokenType As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ TokenType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -663,6 +718,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.CookieTransform&gt; Transforms { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.IdentityModel.CookieTransform&gt; Transforms" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SessionSecurityTokenHandler.Transforms" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Transforms As ReadOnlyCollection(Of CookieTransform)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::IdentityModel::CookieTransform ^&gt; ^ Transforms { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::IdentityModel::CookieTransform ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -688,6 +745,8 @@
       <MemberSignature Language="C#" Value="protected virtual void ValidateSession (System.IdentityModel.Tokens.SessionSecurityToken securityToken);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ValidateSession(class System.IdentityModel.Tokens.SessionSecurityToken securityToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SessionSecurityTokenHandler.ValidateSession(System.IdentityModel.Tokens.SessionSecurityToken)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ValidateSession (securityToken As SessionSecurityToken)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ValidateSession(System::IdentityModel::Tokens::SessionSecurityToken ^ securityToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -719,10 +778,22 @@
         <exception cref="T:System.IdentityModel.Tokens.SecurityTokenExpiredException">The <see cref="P:System.IdentityModel.Tokens.SecurityToken.ValidTo" /> property of the token is earlier than <see cref="P:System.DateTime.UtcNow" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ValidateToken">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Validates a token and returns its claims.</summary>
+        <altmember cref="P:System.IdentityModel.Tokens.SessionSecurityTokenHandler.CanValidateToken" />
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ValidateToken">
       <MemberSignature Language="C#" Value="public override System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Security.Claims.ClaimsIdentity&gt; ValidateToken (System.IdentityModel.Tokens.SecurityToken token);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Security.Claims.ClaimsIdentity&gt; ValidateToken(class System.IdentityModel.Tokens.SecurityToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SessionSecurityTokenHandler.ValidateToken(System.IdentityModel.Tokens.SecurityToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ValidateToken (token As SecurityToken) As ReadOnlyCollection(Of ClaimsIdentity)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Security::Claims::ClaimsIdentity ^&gt; ^ ValidateToken(System::IdentityModel::Tokens::SecurityToken ^ token);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -758,6 +829,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Security.Claims.ClaimsIdentity&gt; ValidateToken (System.IdentityModel.Tokens.SessionSecurityToken token, string endpointId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Security.Claims.ClaimsIdentity&gt; ValidateToken(class System.IdentityModel.Tokens.SessionSecurityToken token, string endpointId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SessionSecurityTokenHandler.ValidateToken(System.IdentityModel.Tokens.SessionSecurityToken,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ValidateToken (token As SessionSecurityToken, endpointId As String) As ReadOnlyCollection(Of ClaimsIdentity)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Security::Claims::ClaimsIdentity ^&gt; ^ ValidateToken(System::IdentityModel::Tokens::SessionSecurityToken ^ token, System::String ^ endpointId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -820,6 +893,8 @@
       <MemberSignature Language="C#" Value="public virtual byte[] WriteToken (System.IdentityModel.Tokens.SessionSecurityToken sessionToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance unsigned int8[] WriteToken(class System.IdentityModel.Tokens.SessionSecurityToken sessionToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SessionSecurityTokenHandler.WriteToken(System.IdentityModel.Tokens.SessionSecurityToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function WriteToken (sessionToken As SessionSecurityToken) As Byte()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Byte&gt; ^ WriteToken(System::IdentityModel::Tokens::SessionSecurityToken ^ sessionToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -852,6 +927,8 @@
       <MemberSignature Language="C#" Value="public override void WriteToken (System.Xml.XmlWriter writer, System.IdentityModel.Tokens.SecurityToken token);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteToken(class System.Xml.XmlWriter writer, class System.IdentityModel.Tokens.SecurityToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SessionSecurityTokenHandler.WriteToken(System.Xml.XmlWriter,System.IdentityModel.Tokens.SecurityToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteToken (writer As XmlWriter, token As SecurityToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteToken(System::Xml::XmlWriter ^ writer, System::IdentityModel::Tokens::SecurityToken ^ token);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -891,24 +968,5 @@
         <altmember cref="P:System.IdentityModel.Tokens.SessionSecurityTokenHandler.CanWriteToken" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="ValidateToken">
-      <AssemblyInfo>
-        <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Validates a token and returns its claims.</summary>
-        <altmember cref="P:System.IdentityModel.Tokens.SessionSecurityTokenHandler.CanValidateToken" />
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SessionSecurityTokenHandler" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

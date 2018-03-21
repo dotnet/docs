@@ -1,7 +1,9 @@
-<Type Name="RuleAnalysis" FullName="System.Workflow.Activities.Rules.RuleAnalysis">
+﻿<Type Name="RuleAnalysis" FullName="System.Workflow.Activities.Rules.RuleAnalysis">
   <TypeSignature Language="C#" Value="public class RuleAnalysis" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RuleAnalysis extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.Rules.RuleAnalysis" />
+  <TypeSignature Language="VB.NET" Value="Public Class RuleAnalysis" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RuleAnalysis" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +28,8 @@
       <MemberSignature Language="C#" Value="public RuleAnalysis (System.Workflow.Activities.Rules.RuleValidation validation, bool forWrites);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Workflow.Activities.Rules.RuleValidation validation, bool forWrites) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleAnalysis.#ctor(System.Workflow.Activities.Rules.RuleValidation,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (validation As RuleValidation, forWrites As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RuleAnalysis(System::Workflow::Activities::Rules::RuleValidation ^ validation, bool forWrites);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -46,6 +50,8 @@
       <MemberSignature Language="C#" Value="public void AddSymbol (string symbol);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddSymbol(string symbol) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleAnalysis.AddSymbol(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddSymbol (symbol As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddSymbol(System::String ^ symbol);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -74,6 +80,8 @@
       <MemberSignature Language="C#" Value="public bool ForWrites { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ForWrites" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Rules.RuleAnalysis.ForWrites" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ForWrites As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ForWrites { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -93,6 +101,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.ICollection&lt;string&gt; GetSymbols ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.ICollection`1&lt;string&gt; GetSymbols() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleAnalysis.GetSymbols" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSymbols () As ICollection(Of String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::ICollection&lt;System::String ^&gt; ^ GetSymbols();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>

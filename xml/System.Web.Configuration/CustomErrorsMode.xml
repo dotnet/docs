@@ -1,7 +1,9 @@
-<Type Name="CustomErrorsMode" FullName="System.Web.Configuration.CustomErrorsMode">
+﻿<Type Name="CustomErrorsMode" FullName="System.Web.Configuration.CustomErrorsMode">
   <TypeSignature Language="C#" Value="public enum CustomErrorsMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CustomErrorsMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.CustomErrorsMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum CustomErrorsMode" />
+  <TypeSignature Language="C++ CLI" Value="public enum class CustomErrorsMode" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +36,8 @@
       <MemberSignature Language="C#" Value="Off" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Configuration.CustomErrorsMode Off = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.CustomErrorsMode.Off" />
+      <MemberSignature Language="VB.NET" Value="Off" />
+      <MemberSignature Language="C++ CLI" Value="Off" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -42,6 +46,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Configuration.CustomErrorsMode</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Disables custom errors, allowing display of standard errors.</summary>
       </Docs>
@@ -50,6 +55,8 @@
       <MemberSignature Language="C#" Value="On" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Configuration.CustomErrorsMode On = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.CustomErrorsMode.On" />
+      <MemberSignature Language="VB.NET" Value="On" />
+      <MemberSignature Language="C++ CLI" Value="On" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -58,6 +65,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Configuration.CustomErrorsMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Enables custom errors. If no <see cref="P:System.Web.Configuration.CustomErrorsSection.DefaultRedirect" /> is specified, standard errors are issued.</summary>
       </Docs>
@@ -66,6 +74,8 @@
       <MemberSignature Language="C#" Value="RemoteOnly" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Configuration.CustomErrorsMode RemoteOnly = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.CustomErrorsMode.RemoteOnly" />
+      <MemberSignature Language="VB.NET" Value="RemoteOnly" />
+      <MemberSignature Language="C++ CLI" Value="RemoteOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -74,6 +84,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Configuration.CustomErrorsMode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Enables custom errors on remote clients only. Custom errors are shown only to remote clients and ASP.NET errors are shown to the local host.</summary>
       </Docs>

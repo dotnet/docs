@@ -1,7 +1,9 @@
-<Type Name="UnmanagedMarshal" FullName="System.Reflection.Emit.UnmanagedMarshal">
+﻿<Type Name="UnmanagedMarshal" FullName="System.Reflection.Emit.UnmanagedMarshal">
   <TypeSignature Language="C#" Value="public sealed class UnmanagedMarshal" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable sealed beforefieldinit UnmanagedMarshal extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.Emit.UnmanagedMarshal" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class UnmanagedMarshal" />
+  <TypeSignature Language="C++ CLI" Value="public ref class UnmanagedMarshal sealed" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -51,6 +53,8 @@
       <MemberSignature Language="C#" Value="public System.Runtime.InteropServices.UnmanagedType BaseType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Runtime.InteropServices.UnmanagedType BaseType" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.UnmanagedMarshal.BaseType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BaseType As UnmanagedType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::InteropServices::UnmanagedType BaseType { System::Runtime::InteropServices::UnmanagedType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -72,6 +76,8 @@
       <MemberSignature Language="C#" Value="public static System.Reflection.Emit.UnmanagedMarshal DefineByValArray (int elemCount);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.Emit.UnmanagedMarshal DefineByValArray(int32 elemCount) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.UnmanagedMarshal.DefineByValArray(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DefineByValArray (elemCount As Integer) As UnmanagedMarshal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Reflection::Emit::UnmanagedMarshal ^ DefineByValArray(int elemCount);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -108,6 +114,8 @@
       <MemberSignature Language="C#" Value="public static System.Reflection.Emit.UnmanagedMarshal DefineByValTStr (int elemCount);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.Emit.UnmanagedMarshal DefineByValTStr(int32 elemCount) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.UnmanagedMarshal.DefineByValTStr(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DefineByValTStr (elemCount As Integer) As UnmanagedMarshal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Reflection::Emit::UnmanagedMarshal ^ DefineByValTStr(int elemCount);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -147,6 +155,8 @@
       <MemberSignature Language="C#" Value="public static System.Reflection.Emit.UnmanagedMarshal DefineLPArray (System.Runtime.InteropServices.UnmanagedType elemType);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.Emit.UnmanagedMarshal DefineLPArray(valuetype System.Runtime.InteropServices.UnmanagedType elemType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.UnmanagedMarshal.DefineLPArray(System.Runtime.InteropServices.UnmanagedType)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DefineLPArray (elemType As UnmanagedType) As UnmanagedMarshal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Reflection::Emit::UnmanagedMarshal ^ DefineLPArray(System::Runtime::InteropServices::UnmanagedType elemType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -183,6 +193,8 @@
       <MemberSignature Language="C#" Value="public static System.Reflection.Emit.UnmanagedMarshal DefineSafeArray (System.Runtime.InteropServices.UnmanagedType elemType);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.Emit.UnmanagedMarshal DefineSafeArray(valuetype System.Runtime.InteropServices.UnmanagedType elemType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.UnmanagedMarshal.DefineSafeArray(System.Runtime.InteropServices.UnmanagedType)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DefineSafeArray (elemType As UnmanagedType) As UnmanagedMarshal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Reflection::Emit::UnmanagedMarshal ^ DefineSafeArray(System::Runtime::InteropServices::UnmanagedType elemType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -219,6 +231,7 @@
       <MemberSignature Language="C#" Value="public static System.Reflection.Emit.UnmanagedMarshal DefineUnmanagedMarshal (System.Runtime.InteropServices.UnmanagedType unmanagedType);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.Emit.UnmanagedMarshal DefineUnmanagedMarshal(valuetype System.Runtime.InteropServices.UnmanagedType unmanagedType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.UnmanagedMarshal.DefineUnmanagedMarshal(System.Runtime.InteropServices.UnmanagedType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Reflection::Emit::UnmanagedMarshal ^ DefineUnmanagedMarshal(System::Runtime::InteropServices::UnmanagedType unmanagedType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -253,6 +266,8 @@
       <MemberSignature Language="C#" Value="public int ElementCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ElementCount" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.UnmanagedMarshal.ElementCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ElementCount As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ElementCount { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -280,6 +295,8 @@
       <MemberSignature Language="C#" Value="public System.Runtime.InteropServices.UnmanagedType GetUnmanagedType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Runtime.InteropServices.UnmanagedType GetUnmanagedType" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.UnmanagedMarshal.GetUnmanagedType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GetUnmanagedType As UnmanagedType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::InteropServices::UnmanagedType GetUnmanagedType { System::Runtime::InteropServices::UnmanagedType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -307,6 +324,8 @@
       <MemberSignature Language="C#" Value="public Guid IIDGuid { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid IIDGuid" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.UnmanagedMarshal.IIDGuid" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IIDGuid As Guid" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid IIDGuid { Guid get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

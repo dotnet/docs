@@ -1,7 +1,9 @@
-<Type Name="AspNetWebSocket" FullName="System.Web.WebSockets.AspNetWebSocket">
+﻿<Type Name="AspNetWebSocket" FullName="System.Web.WebSockets.AspNetWebSocket">
   <TypeSignature Language="C#" Value="public sealed class AspNetWebSocket : System.Net.WebSockets.WebSocket" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AspNetWebSocket extends System.Net.WebSockets.WebSocket" />
   <TypeSignature Language="DocId" Value="T:System.Web.WebSockets.AspNetWebSocket" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AspNetWebSocket&#xA;Inherits WebSocket" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AspNetWebSocket sealed : System::Net::WebSockets::WebSocket" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public override void Abort ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Abort() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.WebSockets.AspNetWebSocket.Abort" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Abort ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Abort();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -45,6 +49,7 @@
       <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task CloseAsync (System.Net.WebSockets.WebSocketCloseStatus closeStatus, string statusDescription, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task CloseAsync(valuetype System.Net.WebSockets.WebSocketCloseStatus closeStatus, string statusDescription, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.WebSockets.AspNetWebSocket.CloseAsync(System.Net.WebSockets.WebSocketCloseStatus,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task ^ CloseAsync(System::Net::WebSockets::WebSocketCloseStatus closeStatus, System::String ^ statusDescription, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -90,6 +95,7 @@
       <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task CloseOutputAsync (System.Net.WebSockets.WebSocketCloseStatus closeStatus, string statusDescription, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task CloseOutputAsync(valuetype System.Net.WebSockets.WebSocketCloseStatus closeStatus, string statusDescription, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.WebSockets.AspNetWebSocket.CloseOutputAsync(System.Net.WebSockets.WebSocketCloseStatus,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task ^ CloseOutputAsync(System::Net::WebSockets::WebSocketCloseStatus closeStatus, System::String ^ statusDescription, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -131,6 +137,8 @@
       <MemberSignature Language="C#" Value="public override Nullable&lt;System.Net.WebSockets.WebSocketCloseStatus&gt; CloseStatus { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Net.WebSockets.WebSocketCloseStatus&gt; CloseStatus" />
       <MemberSignature Language="DocId" Value="P:System.Web.WebSockets.AspNetWebSocket.CloseStatus" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CloseStatus As Nullable(Of WebSocketCloseStatus)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Nullable&lt;System::Net::WebSockets::WebSocketCloseStatus&gt; CloseStatus { Nullable&lt;System::Net::WebSockets::WebSocketCloseStatus&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -150,6 +158,8 @@
       <MemberSignature Language="C#" Value="public override string CloseStatusDescription { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CloseStatusDescription" />
       <MemberSignature Language="DocId" Value="P:System.Web.WebSockets.AspNetWebSocket.CloseStatusDescription" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CloseStatusDescription As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ CloseStatusDescription { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -169,6 +179,8 @@
       <MemberSignature Language="C#" Value="public override void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.WebSockets.AspNetWebSocket.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Dispose ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Dispose();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -194,6 +206,7 @@
       <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task&lt;System.Net.WebSockets.WebSocketReceiveResult&gt; ReceiveAsync (ArraySegment&lt;byte&gt; buffer, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task`1&lt;class System.Net.WebSockets.WebSocketReceiveResult&gt; ReceiveAsync(valuetype System.ArraySegment`1&lt;unsigned int8&gt; buffer, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.WebSockets.AspNetWebSocket.ReceiveAsync(System.ArraySegment{System.Byte},System.Threading.CancellationToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task&lt;System::Net::WebSockets::WebSocketReceiveResult ^&gt; ^ ReceiveAsync(ArraySegment&lt;System::Byte&gt; buffer, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -224,6 +237,7 @@
       <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task SendAsync (ArraySegment&lt;byte&gt; buffer, System.Net.WebSockets.WebSocketMessageType messageType, bool endOfMessage, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task SendAsync(valuetype System.ArraySegment`1&lt;unsigned int8&gt; buffer, valuetype System.Net.WebSockets.WebSocketMessageType messageType, bool endOfMessage, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.WebSockets.AspNetWebSocket.SendAsync(System.ArraySegment{System.Byte},System.Net.WebSockets.WebSocketMessageType,System.Boolean,System.Threading.CancellationToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task ^ SendAsync(ArraySegment&lt;System::Byte&gt; buffer, System::Net::WebSockets::WebSocketMessageType messageType, bool endOfMessage, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -259,6 +273,8 @@
       <MemberSignature Language="C#" Value="public override System.Net.WebSockets.WebSocketState State { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Net.WebSockets.WebSocketState State" />
       <MemberSignature Language="DocId" Value="P:System.Web.WebSockets.AspNetWebSocket.State" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property State As WebSocketState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Net::WebSockets::WebSocketState State { System::Net::WebSockets::WebSocketState get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -278,6 +294,8 @@
       <MemberSignature Language="C#" Value="public override string SubProtocol { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SubProtocol" />
       <MemberSignature Language="DocId" Value="P:System.Web.WebSockets.AspNetWebSocket.SubProtocol" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property SubProtocol As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ SubProtocol { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

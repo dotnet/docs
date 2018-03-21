@@ -1,7 +1,9 @@
-<Type Name="EmptyControlCollection" FullName="System.Web.UI.EmptyControlCollection">
+﻿<Type Name="EmptyControlCollection" FullName="System.Web.UI.EmptyControlCollection">
   <TypeSignature Language="C#" Value="public class EmptyControlCollection : System.Web.UI.ControlCollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EmptyControlCollection extends System.Web.UI.ControlCollection" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.EmptyControlCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class EmptyControlCollection&#xA;Inherits ControlCollection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EmptyControlCollection : System::Web::UI::ControlCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +34,8 @@
       <MemberSignature Language="C#" Value="public EmptyControlCollection (System.Web.UI.Control owner);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.Control owner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.EmptyControlCollection.#ctor(System.Web.UI.Control)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (owner As Control)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EmptyControlCollection(System::Web::UI::Control ^ owner);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -93,6 +97,8 @@ csc /t:library /out:myWebAppPath/bin/cs_myEmptyControlCollection.dll
       <MemberSignature Language="C#" Value="public override void Add (System.Web.UI.Control child);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Add(class System.Web.UI.Control child) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.EmptyControlCollection.Add(System.Web.UI.Control)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Add (child As Control)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Add(System::Web::UI::Control ^ child);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -115,6 +121,8 @@ csc /t:library /out:myWebAppPath/bin/cs_myEmptyControlCollection.dll
       <MemberSignature Language="C#" Value="public override void AddAt (int index, System.Web.UI.Control child);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void AddAt(int32 index, class System.Web.UI.Control child) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.EmptyControlCollection.AddAt(System.Int32,System.Web.UI.Control)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub AddAt (index As Integer, child As Control)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void AddAt(int index, System::Web::UI::Control ^ child);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="ToolCreatedEventHandler" FullName="System.Activities.Presentation.Toolbox.ToolCreatedEventHandler">
+﻿<Type Name="ToolCreatedEventHandler" FullName="System.Activities.Presentation.Toolbox.ToolCreatedEventHandler">
   <TypeSignature Language="C#" Value="public delegate void ToolCreatedEventHandler(object sender, ToolCreatedEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ToolCreatedEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Toolbox.ToolCreatedEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub ToolCreatedEventHandler(sender As Object, e As ToolCreatedEventArgs)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void ToolCreatedEventHandler(System::Object ^ sender, ToolCreatedEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

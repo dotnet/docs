@@ -1,7 +1,9 @@
-<Type Name="XmlOutputMethod" FullName="System.Xml.XmlOutputMethod">
+﻿<Type Name="XmlOutputMethod" FullName="System.Xml.XmlOutputMethod">
   <TypeSignature Language="C#" Value="public enum XmlOutputMethod" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XmlOutputMethod extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlOutputMethod" />
+  <TypeSignature Language="VB.NET" Value="Public Enum XmlOutputMethod" />
+  <TypeSignature Language="C++ CLI" Value="public enum class XmlOutputMethod" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -28,6 +30,8 @@
       <MemberSignature Language="C#" Value="AutoDetect" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.XmlOutputMethod AutoDetect = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.XmlOutputMethod.AutoDetect" />
+      <MemberSignature Language="VB.NET" Value="AutoDetect" />
+      <MemberSignature Language="C++ CLI" Value="AutoDetect" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -45,6 +49,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.XmlOutputMethod</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Use the XSLT rules to choose between the <see cref="F:System.Xml.XmlOutputMethod.Xml" /> and <see cref="F:System.Xml.XmlOutputMethod.Html" /> output methods at runtime.</summary>
       </Docs>
@@ -53,6 +58,8 @@
       <MemberSignature Language="C#" Value="Html" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.XmlOutputMethod Html = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.XmlOutputMethod.Html" />
+      <MemberSignature Language="VB.NET" Value="Html" />
+      <MemberSignature Language="C++ CLI" Value="Html" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -70,6 +77,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.XmlOutputMethod</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Serialize according to the HTML rules specified by XSLT.</summary>
       </Docs>
@@ -78,6 +86,8 @@
       <MemberSignature Language="C#" Value="Text" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.XmlOutputMethod Text = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.XmlOutputMethod.Text" />
+      <MemberSignature Language="VB.NET" Value="Text" />
+      <MemberSignature Language="C++ CLI" Value="Text" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -95,6 +105,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.XmlOutputMethod</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Serialize text blocks only.</summary>
       </Docs>
@@ -103,6 +114,8 @@
       <MemberSignature Language="C#" Value="Xml" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.XmlOutputMethod Xml = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.XmlOutputMethod.Xml" />
+      <MemberSignature Language="VB.NET" Value="Xml" />
+      <MemberSignature Language="C++ CLI" Value="Xml" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -120,6 +133,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.XmlOutputMethod</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Serialize according to the XML 1.0 rules.</summary>
       </Docs>

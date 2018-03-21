@@ -1,7 +1,9 @@
-<Type Name="NetHttpsBindingElement" FullName="System.ServiceModel.Configuration.NetHttpsBindingElement">
+﻿<Type Name="NetHttpsBindingElement" FullName="System.ServiceModel.Configuration.NetHttpsBindingElement">
   <TypeSignature Language="C#" Value="public sealed class NetHttpsBindingElement : System.ServiceModel.Configuration.HttpBindingBaseElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit NetHttpsBindingElement extends System.ServiceModel.Configuration.HttpBindingBaseElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.NetHttpsBindingElement" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class NetHttpsBindingElement&#xA;Inherits HttpBindingBaseElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class NetHttpsBindingElement sealed : System::ServiceModel::Configuration::HttpBindingBaseElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,10 +17,21 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.NetHttpsBindingElement" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public NetHttpsBindingElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.NetHttpsBindingElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NetHttpsBindingElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -34,6 +47,8 @@
       <MemberSignature Language="C#" Value="public NetHttpsBindingElement (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.NetHttpsBindingElement.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NetHttpsBindingElement(System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -52,6 +67,8 @@
       <MemberSignature Language="C#" Value="protected override Type BindingElementType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type BindingElementType" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NetHttpsBindingElement.BindingElementType" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property BindingElementType As Type" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property Type ^ BindingElementType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -67,9 +84,10 @@
       </Docs>
     </Member>
     <Member MemberName="InitializeFrom">
-      <MemberSignature Language="C#" Value="protected override void InitializeFrom (System.ServiceModel.Channels.Binding binding);" />
+      <MemberSignature Language="C#" Value="protected internal override void InitializeFrom (System.ServiceModel.Channels.Binding binding);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void InitializeFrom(class System.ServiceModel.Channels.Binding binding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.NetHttpsBindingElement.InitializeFrom(System.ServiceModel.Channels.Binding)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void InitializeFrom(System::ServiceModel::Channels::Binding ^ binding);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -91,6 +109,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.NetHttpMessageEncoding MessageEncoding { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.NetHttpMessageEncoding MessageEncoding" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NetHttpsBindingElement.MessageEncoding" />
+      <MemberSignature Language="VB.NET" Value="Public Property MessageEncoding As NetHttpMessageEncoding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::NetHttpMessageEncoding MessageEncoding { System::ServiceModel::NetHttpMessageEncoding get(); void set(System::ServiceModel::NetHttpMessageEncoding value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -114,6 +134,7 @@
       <MemberSignature Language="C#" Value="protected override void OnApplyConfiguration (System.ServiceModel.Channels.Binding binding);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnApplyConfiguration(class System.ServiceModel.Channels.Binding binding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.NetHttpsBindingElement.OnApplyConfiguration(System.ServiceModel.Channels.Binding)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnApplyConfiguration(System::ServiceModel::Channels::Binding ^ binding);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -135,6 +156,8 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NetHttpsBindingElement.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -153,6 +176,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Configuration.StandardBindingOptionalReliableSessionElement ReliableSession { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Configuration.StandardBindingOptionalReliableSessionElement ReliableSession" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NetHttpsBindingElement.ReliableSession" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReliableSession As StandardBindingOptionalReliableSessionElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::StandardBindingOptionalReliableSessionElement ^ ReliableSession { System::ServiceModel::Configuration::StandardBindingOptionalReliableSessionElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -176,6 +201,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Configuration.BasicHttpsSecurityElement Security { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Configuration.BasicHttpsSecurityElement Security" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NetHttpsBindingElement.Security" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Security As BasicHttpsSecurityElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::BasicHttpsSecurityElement ^ Security { System::ServiceModel::Configuration::BasicHttpsSecurityElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -199,6 +226,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Configuration.NetHttpWebSocketTransportSettingsElement WebSocketSettings { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Configuration.NetHttpWebSocketTransportSettingsElement WebSocketSettings" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NetHttpsBindingElement.WebSocketSettings" />
+      <MemberSignature Language="VB.NET" Value="Public Property WebSocketSettings As NetHttpWebSocketTransportSettingsElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::NetHttpWebSocketTransportSettingsElement ^ WebSocketSettings { System::ServiceModel::Configuration::NetHttpWebSocketTransportSettingsElement ^ get(); void set(System::ServiceModel::Configuration::NetHttpWebSocketTransportSettingsElement ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -218,14 +247,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.NetHttpsBindingElement" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

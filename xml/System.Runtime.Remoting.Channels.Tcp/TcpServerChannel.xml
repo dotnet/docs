@@ -1,7 +1,9 @@
-<Type Name="TcpServerChannel" FullName="System.Runtime.Remoting.Channels.Tcp.TcpServerChannel">
-  <TypeSignature Language="C#" Value="public class TcpServerChannel : System.Runtime.Remoting.Channels.IChannelReceiver, System.Runtime.Remoting.Channels.ISecurableChannel" />
+﻿<Type Name="TcpServerChannel" FullName="System.Runtime.Remoting.Channels.Tcp.TcpServerChannel">
+  <TypeSignature Language="C#" Value="public class TcpServerChannel : System.Runtime.Remoting.Channels.IChannel, System.Runtime.Remoting.Channels.IChannelReceiver, System.Runtime.Remoting.Channels.ISecurableChannel" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TcpServerChannel extends System.Object implements class System.Runtime.Remoting.Channels.IChannel, class System.Runtime.Remoting.Channels.IChannelReceiver, class System.Runtime.Remoting.Channels.ISecurableChannel" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Channels.Tcp.TcpServerChannel" />
+  <TypeSignature Language="VB.NET" Value="Public Class TcpServerChannel&#xA;Implements IChannel, IChannelReceiver, ISecurableChannel" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TcpServerChannel : System::Runtime::Remoting::Channels::IChannel, System::Runtime::Remoting::Channels::IChannelReceiver, System::Runtime::Remoting::Channels::ISecurableChannel" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Remoting</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -10,6 +12,9 @@
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces>
+    <Interface>
+      <InterfaceName>System.Runtime.Remoting.Channels.IChannel</InterfaceName>
+    </Interface>
     <Interface>
       <InterfaceName>System.Runtime.Remoting.Channels.IChannelReceiver</InterfaceName>
     </Interface>
@@ -53,10 +58,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.Channels.Tcp.TcpServerChannel" /> class that listens on the specified port.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public TcpServerChannel (int port);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 port) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.Tcp.TcpServerChannel.#ctor(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (port As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TcpServerChannel(int port);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -90,6 +106,8 @@
       <MemberSignature Language="C#" Value="public TcpServerChannel (System.Collections.IDictionary properties, System.Runtime.Remoting.Channels.IServerChannelSinkProvider sinkProvider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.IDictionary properties, class System.Runtime.Remoting.Channels.IServerChannelSinkProvider sinkProvider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.Tcp.TcpServerChannel.#ctor(System.Collections.IDictionary,System.Runtime.Remoting.Channels.IServerChannelSinkProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (properties As IDictionary, sinkProvider As IServerChannelSinkProvider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TcpServerChannel(System::Collections::IDictionary ^ properties, System::Runtime::Remoting::Channels::IServerChannelSinkProvider ^ sinkProvider);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -131,6 +149,8 @@
       <MemberSignature Language="C#" Value="public TcpServerChannel (string name, int port);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, int32 port) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.Tcp.TcpServerChannel.#ctor(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, port As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TcpServerChannel(System::String ^ name, int port);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -168,6 +188,8 @@
       <MemberSignature Language="C#" Value="public TcpServerChannel (System.Collections.IDictionary properties, System.Runtime.Remoting.Channels.IServerChannelSinkProvider sinkProvider, System.Runtime.Remoting.Channels.IAuthorizeRemotingConnection authorizeCallback);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.IDictionary properties, class System.Runtime.Remoting.Channels.IServerChannelSinkProvider sinkProvider, class System.Runtime.Remoting.Channels.IAuthorizeRemotingConnection authorizeCallback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.Tcp.TcpServerChannel.#ctor(System.Collections.IDictionary,System.Runtime.Remoting.Channels.IServerChannelSinkProvider,System.Runtime.Remoting.Channels.IAuthorizeRemotingConnection)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (properties As IDictionary, sinkProvider As IServerChannelSinkProvider, authorizeCallback As IAuthorizeRemotingConnection)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TcpServerChannel(System::Collections::IDictionary ^ properties, System::Runtime::Remoting::Channels::IServerChannelSinkProvider ^ sinkProvider, System::Runtime::Remoting::Channels::IAuthorizeRemotingConnection ^ authorizeCallback);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -201,6 +223,8 @@
       <MemberSignature Language="C#" Value="public TcpServerChannel (string name, int port, System.Runtime.Remoting.Channels.IServerChannelSinkProvider sinkProvider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, int32 port, class System.Runtime.Remoting.Channels.IServerChannelSinkProvider sinkProvider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.Tcp.TcpServerChannel.#ctor(System.String,System.Int32,System.Runtime.Remoting.Channels.IServerChannelSinkProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, port As Integer, sinkProvider As IServerChannelSinkProvider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TcpServerChannel(System::String ^ name, int port, System::Runtime::Remoting::Channels::IServerChannelSinkProvider ^ sinkProvider);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -242,6 +266,8 @@
       <MemberSignature Language="C#" Value="public object ChannelData { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object ChannelData" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.Tcp.TcpServerChannel.ChannelData" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChannelData As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ChannelData { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -275,6 +301,8 @@
       <MemberSignature Language="C#" Value="public string ChannelName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ChannelName" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.Tcp.TcpServerChannel.ChannelName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChannelName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ChannelName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -308,6 +336,8 @@
       <MemberSignature Language="C#" Value="public int ChannelPriority { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ChannelPriority" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.Tcp.TcpServerChannel.ChannelPriority" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChannelPriority As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ChannelPriority { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -341,6 +371,8 @@
       <MemberSignature Language="C#" Value="public string GetChannelUri ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetChannelUri() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.Tcp.TcpServerChannel.GetChannelUri" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetChannelUri () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetChannelUri();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -370,6 +402,8 @@
       <MemberSignature Language="C#" Value="public virtual string[] GetUrlsForUri (string objectUri);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string[] GetUrlsForUri(string objectUri) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.Tcp.TcpServerChannel.GetUrlsForUri(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetUrlsForUri (objectUri As String) As String()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::String ^&gt; ^ GetUrlsForUri(System::String ^ objectUri);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -408,6 +442,8 @@
       <MemberSignature Language="C#" Value="public bool IsSecured { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsSecured" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.Tcp.TcpServerChannel.IsSecured" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsSecured As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSecured { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -426,6 +462,8 @@
       <MemberSignature Language="C#" Value="public string Parse (string url, out string objectURI);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string Parse(string url, [out] string&amp; objectURI) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.Tcp.TcpServerChannel.Parse(System.String,System.String@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Parse (url As String, ByRef objectURI As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ Parse(System::String ^ url, [Runtime::InteropServices::Out] System::String ^ % objectURI);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -466,6 +504,8 @@
       <MemberSignature Language="C#" Value="public void StartListening (object data);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void StartListening(object data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.Tcp.TcpServerChannel.StartListening(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub StartListening (data As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void StartListening(System::Object ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -500,6 +540,8 @@
       <MemberSignature Language="C#" Value="public void StopListening (object data);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void StopListening(object data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.Tcp.TcpServerChannel.StopListening(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub StopListening (data As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void StopListening(System::Object ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -528,14 +570,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.Remoting</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.Channels.Tcp.TcpServerChannel" /> class that listens on the specified port.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

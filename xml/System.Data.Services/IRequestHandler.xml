@@ -1,7 +1,9 @@
-<Type Name="IRequestHandler" FullName="System.Data.Services.IRequestHandler">
+﻿<Type Name="IRequestHandler" FullName="System.Data.Services.IRequestHandler">
   <TypeSignature Language="C#" Value="public interface IRequestHandler" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRequestHandler" />
   <TypeSignature Language="DocId" Value="T:System.Data.Services.IRequestHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IRequestHandler" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IRequestHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -21,6 +23,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message ProcessRequestForMessage (System.IO.Stream messageBody);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message ProcessRequestForMessage(class System.IO.Stream messageBody) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.IRequestHandler.ProcessRequestForMessage(System.IO.Stream)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ProcessRequestForMessage (messageBody As Stream) As Message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Channels::Message ^ ProcessRequestForMessage(System::IO::Stream ^ messageBody);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>

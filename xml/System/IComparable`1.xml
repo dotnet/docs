@@ -1,7 +1,9 @@
-<Type Name="IComparable&lt;T&gt;" FullName="System.IComparable&lt;T&gt;">
+﻿<Type Name="IComparable&lt;T&gt;" FullName="System.IComparable&lt;T&gt;">
   <TypeSignature Language="C#" Value="public interface IComparable&lt;in T&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IComparable`1&lt;- T&gt;" />
   <TypeSignature Language="DocId" Value="T:System.IComparable`1" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IComparable(Of In T)" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public interface class IComparable" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -72,6 +74,7 @@
       <MemberSignature Language="C#" Value="public int CompareTo (T other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 CompareTo(!T other) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IComparable`1.CompareTo(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CompareTo (other As T) As Integer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

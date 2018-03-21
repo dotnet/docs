@@ -1,7 +1,9 @@
-<Type Name="WebApplicationLevel" FullName="System.Web.Configuration.WebApplicationLevel">
+﻿<Type Name="WebApplicationLevel" FullName="System.Web.Configuration.WebApplicationLevel">
   <TypeSignature Language="C#" Value="public enum WebApplicationLevel" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WebApplicationLevel extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.WebApplicationLevel" />
+  <TypeSignature Language="VB.NET" Value="Public Enum WebApplicationLevel" />
+  <TypeSignature Language="C++ CLI" Value="public enum class WebApplicationLevel" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +27,8 @@
       <MemberSignature Language="C#" Value="AboveApplication" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Configuration.WebApplicationLevel AboveApplication = int32(10)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.WebApplicationLevel.AboveApplication" />
+      <MemberSignature Language="VB.NET" Value="AboveApplication" />
+      <MemberSignature Language="C++ CLI" Value="AboveApplication" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -33,6 +37,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Configuration.WebApplicationLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>10</MemberValue>
       <Docs>
         <summary>Specifies that the configuration file is in a global directory in relation to the current ASP.NET Web application.</summary>
       </Docs>
@@ -41,6 +46,8 @@
       <MemberSignature Language="C#" Value="AtApplication" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Configuration.WebApplicationLevel AtApplication = int32(20)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.WebApplicationLevel.AtApplication" />
+      <MemberSignature Language="VB.NET" Value="AtApplication" />
+      <MemberSignature Language="C++ CLI" Value="AtApplication" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -49,6 +56,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Configuration.WebApplicationLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>20</MemberValue>
       <Docs>
         <summary>Specifies that the configuration file is in the root directory of the current ASP.NET Web application.</summary>
       </Docs>
@@ -57,6 +65,8 @@
       <MemberSignature Language="C#" Value="BelowApplication" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Configuration.WebApplicationLevel BelowApplication = int32(30)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.WebApplicationLevel.BelowApplication" />
+      <MemberSignature Language="VB.NET" Value="BelowApplication" />
+      <MemberSignature Language="C++ CLI" Value="BelowApplication" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -65,6 +75,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Configuration.WebApplicationLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>30</MemberValue>
       <Docs>
         <summary>Specifies that the configuration file is in a sub-directory of the current ASP.NET Web application.</summary>
       </Docs>

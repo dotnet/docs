@@ -1,7 +1,9 @@
-<Type Name="DataSourceViewOperationCallback" FullName="System.Web.UI.DataSourceViewOperationCallback">
+﻿<Type Name="DataSourceViewOperationCallback" FullName="System.Web.UI.DataSourceViewOperationCallback">
   <TypeSignature Language="C#" Value="public delegate bool DataSourceViewOperationCallback(int affectedRecords, Exception ex);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataSourceViewOperationCallback extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataSourceViewOperationCallback" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Function DataSourceViewOperationCallback(affectedRecords As Integer, ex As Exception) As Boolean " />
+  <TypeSignature Language="C++ CLI" Value="public delegate bool DataSourceViewOperationCallback(int affectedRecords, Exception ^ ex);" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

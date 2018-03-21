@@ -1,7 +1,9 @@
-<Type Name="RedirectionDuration" FullName="System.ServiceModel.Channels.RedirectionDuration">
+﻿<Type Name="RedirectionDuration" FullName="System.ServiceModel.Channels.RedirectionDuration">
   <TypeSignature Language="C#" Value="public class RedirectionDuration" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit RedirectionDuration extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.RedirectionDuration" />
+  <TypeSignature Language="VB.NET" Value="Public Class RedirectionDuration" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RedirectionDuration" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public static System.ServiceModel.Channels.RedirectionDuration Create (string duration, string ns);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Channels.RedirectionDuration Create(string duration, string ns) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.RedirectionDuration.Create(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (duration As String, ns As String) As RedirectionDuration" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Channels::RedirectionDuration ^ Create(System::String ^ duration, System::String ^ ns);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -43,6 +47,8 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.RedirectionDuration.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -66,6 +72,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.RedirectionDuration.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -85,6 +93,8 @@
       <MemberSignature Language="C#" Value="public string Namespace { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Namespace" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.RedirectionDuration.Namespace" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Namespace As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Namespace { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -103,6 +113,8 @@
       <MemberSignature Language="C#" Value="public static bool operator == (System.ServiceModel.Channels.RedirectionDuration left, System.ServiceModel.Channels.RedirectionDuration right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(class System.ServiceModel.Channels.RedirectionDuration left, class System.ServiceModel.Channels.RedirectionDuration right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.RedirectionDuration.op_Equality(System.ServiceModel.Channels.RedirectionDuration,System.ServiceModel.Channels.RedirectionDuration)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As RedirectionDuration, right As RedirectionDuration) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::ServiceModel::Channels::RedirectionDuration ^ left, System::ServiceModel::Channels::RedirectionDuration ^ right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -128,6 +140,8 @@
       <MemberSignature Language="C#" Value="public static bool operator != (System.ServiceModel.Channels.RedirectionDuration left, System.ServiceModel.Channels.RedirectionDuration right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class System.ServiceModel.Channels.RedirectionDuration left, class System.ServiceModel.Channels.RedirectionDuration right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.RedirectionDuration.op_Inequality(System.ServiceModel.Channels.RedirectionDuration,System.ServiceModel.Channels.RedirectionDuration)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As RedirectionDuration, right As RedirectionDuration) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::ServiceModel::Channels::RedirectionDuration ^ left, System::ServiceModel::Channels::RedirectionDuration ^ right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -153,6 +167,8 @@
       <MemberSignature Language="C#" Value="public static System.ServiceModel.Channels.RedirectionDuration Permanent { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.Channels.RedirectionDuration Permanent" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.RedirectionDuration.Permanent" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Permanent As RedirectionDuration" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::Channels::RedirectionDuration ^ Permanent { System::ServiceModel::Channels::RedirectionDuration ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -178,6 +194,8 @@
       <MemberSignature Language="C#" Value="public static System.ServiceModel.Channels.RedirectionDuration Temporary { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.Channels.RedirectionDuration Temporary" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.RedirectionDuration.Temporary" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Temporary As RedirectionDuration" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::Channels::RedirectionDuration ^ Temporary { System::ServiceModel::Channels::RedirectionDuration ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -203,6 +221,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.RedirectionDuration.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -222,6 +242,8 @@
       <MemberSignature Language="C#" Value="public string Value { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Value" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.RedirectionDuration.Value" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Value { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

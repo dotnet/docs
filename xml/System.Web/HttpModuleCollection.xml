@@ -1,7 +1,9 @@
-<Type Name="HttpModuleCollection" FullName="System.Web.HttpModuleCollection">
+﻿<Type Name="HttpModuleCollection" FullName="System.Web.HttpModuleCollection">
   <TypeSignature Language="C#" Value="public sealed class HttpModuleCollection : System.Collections.Specialized.NameObjectCollectionBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit HttpModuleCollection extends System.Collections.Specialized.NameObjectCollectionBase" />
   <TypeSignature Language="DocId" Value="T:System.Web.HttpModuleCollection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HttpModuleCollection&#xA;Inherits NameObjectCollectionBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HttpModuleCollection sealed : System::Collections::Specialized::NameObjectCollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +31,8 @@
       <MemberSignature Language="C#" Value="public string[] AllKeys { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string[] AllKeys" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpModuleCollection.AllKeys" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AllKeys As String()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ AllKeys { cli::array &lt;System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -57,6 +61,8 @@
       <MemberSignature Language="C#" Value="public void CopyTo (Array dest, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.Array dest, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpModuleCollection.CopyTo(System.Array,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (dest As Array, index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(Array ^ dest, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -86,10 +92,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Get">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an individual <see cref="T:System.Web.IHttpModule" /> object from the <see cref="T:System.Web.HttpModuleCollection" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Get">
       <MemberSignature Language="C#" Value="public System.Web.IHttpModule Get (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.IHttpModule Get(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpModuleCollection.Get(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Get (index As Integer) As IHttpModule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::IHttpModule ^ Get(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -112,6 +129,8 @@
       <MemberSignature Language="C#" Value="public System.Web.IHttpModule Get (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.IHttpModule Get(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpModuleCollection.Get(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Get (name As String) As IHttpModule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::IHttpModule ^ Get(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -134,6 +153,8 @@
       <MemberSignature Language="C#" Value="public string GetKey (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetKey(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpModuleCollection.GetKey(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetKey (index As Integer) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetKey(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -162,10 +183,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the specified <see cref="T:System.Web.IHttpModule" /> object from the <see cref="T:System.Web.HttpModuleCollection" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Item">
       <MemberSignature Language="C#" Value="public System.Web.IHttpModule this[int index] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.IHttpModule Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpModuleCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As IHttpModule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::IHttpModule ^ default[int] { System::Web::IHttpModule ^ get(int index); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -188,6 +220,8 @@
       <MemberSignature Language="C#" Value="public System.Web.IHttpModule this[string name] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.IHttpModule Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpModuleCollection.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(name As String) As IHttpModule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::IHttpModule ^ default[System::String ^] { System::Web::IHttpModule ^ get(System::String ^ name); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -206,23 +240,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Item">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets the specified <see cref="T:System.Web.IHttpModule" /> object from the <see cref="T:System.Web.HttpModuleCollection" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Get">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns an individual <see cref="T:System.Web.IHttpModule" /> object from the <see cref="T:System.Web.HttpModuleCollection" />.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

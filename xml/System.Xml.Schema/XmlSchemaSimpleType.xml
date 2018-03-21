@@ -1,7 +1,9 @@
-<Type Name="XmlSchemaSimpleType" FullName="System.Xml.Schema.XmlSchemaSimpleType">
+﻿<Type Name="XmlSchemaSimpleType" FullName="System.Xml.Schema.XmlSchemaSimpleType">
   <TypeSignature Language="C#" Value="public class XmlSchemaSimpleType : System.Xml.Schema.XmlSchemaType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlSchemaSimpleType extends System.Xml.Schema.XmlSchemaType" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaSimpleType" />
+  <TypeSignature Language="VB.NET" Value="Public Class XmlSchemaSimpleType&#xA;Inherits XmlSchemaType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlSchemaSimpleType : System::Xml::Schema::XmlSchemaType" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -48,6 +50,8 @@
       <MemberSignature Language="C#" Value="public XmlSchemaSimpleType ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaSimpleType.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlSchemaSimpleType();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -72,6 +76,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.Schema.XmlSchemaSimpleTypeContent Content { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Schema.XmlSchemaSimpleTypeContent Content" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaSimpleType.Content" />
+      <MemberSignature Language="VB.NET" Value="Public Property Content As XmlSchemaSimpleTypeContent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSchemaSimpleTypeContent ^ Content { System::Xml::Schema::XmlSchemaSimpleTypeContent ^ get(); void set(System::Xml::Schema::XmlSchemaSimpleTypeContent ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

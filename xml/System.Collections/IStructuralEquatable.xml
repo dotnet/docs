@@ -1,7 +1,9 @@
-<Type Name="IStructuralEquatable" FullName="System.Collections.IStructuralEquatable">
+﻿<Type Name="IStructuralEquatable" FullName="System.Collections.IStructuralEquatable">
   <TypeSignature Language="C#" Value="public interface IStructuralEquatable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IStructuralEquatable" />
   <TypeSignature Language="DocId" Value="T:System.Collections.IStructuralEquatable" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IStructuralEquatable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IStructuralEquatable" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -59,6 +61,8 @@
       <MemberSignature Language="C#" Value="public bool Equals (object other, System.Collections.IEqualityComparer comparer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(object other, class System.Collections.IEqualityComparer comparer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.IStructuralEquatable.Equals(System.Object,System.Collections.IEqualityComparer)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (other As Object, comparer As IEqualityComparer) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(System::Object ^ other, System::Collections::IEqualityComparer ^ comparer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -118,6 +122,8 @@
       <MemberSignature Language="C#" Value="public int GetHashCode (System.Collections.IEqualityComparer comparer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetHashCode(class System.Collections.IEqualityComparer comparer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.IStructuralEquatable.GetHashCode(System.Collections.IEqualityComparer)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetHashCode (comparer As IEqualityComparer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetHashCode(System::Collections::IEqualityComparer ^ comparer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

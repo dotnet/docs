@@ -1,7 +1,9 @@
-<Type Name="IConfigurationManagerInternal" FullName="System.Configuration.Internal.IConfigurationManagerInternal">
+﻿<Type Name="IConfigurationManagerInternal" FullName="System.Configuration.Internal.IConfigurationManagerInternal">
   <TypeSignature Language="C#" Value="public interface IConfigurationManagerInternal" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IConfigurationManagerInternal" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.Internal.IConfigurationManagerInternal" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IConfigurationManagerInternal" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IConfigurationManagerInternal" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +28,8 @@
       <MemberSignature Language="C#" Value="public string ApplicationConfigUri { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ApplicationConfigUri" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.Internal.IConfigurationManagerInternal.ApplicationConfigUri" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ApplicationConfigUri As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ApplicationConfigUri { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -49,6 +53,8 @@
       <MemberSignature Language="C#" Value="public string ExeLocalConfigDirectory { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ExeLocalConfigDirectory" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.Internal.IConfigurationManagerInternal.ExeLocalConfigDirectory" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExeLocalConfigDirectory As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ExeLocalConfigDirectory { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -72,6 +78,8 @@
       <MemberSignature Language="C#" Value="public string ExeLocalConfigPath { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ExeLocalConfigPath" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.Internal.IConfigurationManagerInternal.ExeLocalConfigPath" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExeLocalConfigPath As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ExeLocalConfigPath { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -95,6 +103,8 @@
       <MemberSignature Language="C#" Value="public string ExeProductName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ExeProductName" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.Internal.IConfigurationManagerInternal.ExeProductName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExeProductName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ExeProductName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -118,6 +128,8 @@
       <MemberSignature Language="C#" Value="public string ExeProductVersion { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ExeProductVersion" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.Internal.IConfigurationManagerInternal.ExeProductVersion" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExeProductVersion As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ExeProductVersion { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -141,6 +153,8 @@
       <MemberSignature Language="C#" Value="public string ExeRoamingConfigDirectory { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ExeRoamingConfigDirectory" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.Internal.IConfigurationManagerInternal.ExeRoamingConfigDirectory" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExeRoamingConfigDirectory As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ExeRoamingConfigDirectory { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -164,6 +178,8 @@
       <MemberSignature Language="C#" Value="public string ExeRoamingConfigPath { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ExeRoamingConfigPath" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.Internal.IConfigurationManagerInternal.ExeRoamingConfigPath" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExeRoamingConfigPath As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ExeRoamingConfigPath { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -187,6 +203,8 @@
       <MemberSignature Language="C#" Value="public string MachineConfigPath { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MachineConfigPath" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.Internal.IConfigurationManagerInternal.MachineConfigPath" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MachineConfigPath As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MachineConfigPath { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -210,6 +228,8 @@
       <MemberSignature Language="C#" Value="public bool SetConfigurationSystemInProgress { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SetConfigurationSystemInProgress" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.Internal.IConfigurationManagerInternal.SetConfigurationSystemInProgress" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SetConfigurationSystemInProgress As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SetConfigurationSystemInProgress { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -242,6 +262,8 @@
       <MemberSignature Language="C#" Value="public bool SupportsUserConfig { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SupportsUserConfig" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.Internal.IConfigurationManagerInternal.SupportsUserConfig" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SupportsUserConfig As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SupportsUserConfig { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -266,6 +288,8 @@
       <MemberSignature Language="C#" Value="public string UserConfigFilename { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string UserConfigFilename" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.Internal.IConfigurationManagerInternal.UserConfigFilename" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UserConfigFilename As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ UserConfigFilename { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>

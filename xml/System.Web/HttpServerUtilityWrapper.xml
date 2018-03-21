@@ -1,7 +1,9 @@
-<Type Name="HttpServerUtilityWrapper" FullName="System.Web.HttpServerUtilityWrapper">
+﻿<Type Name="HttpServerUtilityWrapper" FullName="System.Web.HttpServerUtilityWrapper">
   <TypeSignature Language="C#" Value="public class HttpServerUtilityWrapper : System.Web.HttpServerUtilityBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HttpServerUtilityWrapper extends System.Web.HttpServerUtilityBase" />
   <TypeSignature Language="DocId" Value="T:System.Web.HttpServerUtilityWrapper" />
+  <TypeSignature Language="VB.NET" Value="Public Class HttpServerUtilityWrapper&#xA;Inherits HttpServerUtilityBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HttpServerUtilityWrapper : System::Web::HttpServerUtilityBase" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +33,7 @@
       <MemberSignature Language="C#" Value="public HttpServerUtilityWrapper (System.Web.HttpServerUtility httpServerUtility);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.HttpServerUtility httpServerUtility) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpServerUtilityWrapper.#ctor(System.Web.HttpServerUtility)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpServerUtilityWrapper(System::Web::HttpServerUtility ^ httpServerUtility);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -50,6 +53,8 @@
       <MemberSignature Language="C#" Value="public override void ClearError ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ClearError() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpServerUtilityWrapper.ClearError" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub ClearError ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ClearError();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -64,10 +69,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateObject">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a server instance of a COM object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateObject">
       <MemberSignature Language="C#" Value="public override object CreateObject (string progID);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object CreateObject(string progID) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpServerUtilityWrapper.CreateObject(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateObject (progID As String) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ CreateObject(System::String ^ progID);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -91,6 +107,7 @@
       <MemberSignature Language="C#" Value="public override object CreateObject (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object CreateObject(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpServerUtilityWrapper.CreateObject(System.Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ CreateObject(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -113,6 +130,8 @@
       <MemberSignature Language="C#" Value="public override object CreateObjectFromClsid (string clsid);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object CreateObjectFromClsid(string clsid) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpServerUtilityWrapper.CreateObjectFromClsid(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateObjectFromClsid (clsid As String) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ CreateObjectFromClsid(System::String ^ clsid);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -132,10 +151,21 @@
         <exception cref="T:System.Web.HttpException">An instance of the object cannot be created.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Execute">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Executes the handler for a specified resource in the context of the current request and returns execution to the process that invoked it.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Execute">
       <MemberSignature Language="C#" Value="public override void Execute (string path);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Execute(string path) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpServerUtilityWrapper.Execute(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Execute (path As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Execute(System::String ^ path);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -168,6 +198,8 @@
       <MemberSignature Language="C#" Value="public override void Execute (string path, bool preserveForm);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Execute(string path, bool preserveForm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpServerUtilityWrapper.Execute(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Execute (path As String, preserveForm As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Execute(System::String ^ path, bool preserveForm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -203,6 +235,8 @@
       <MemberSignature Language="C#" Value="public override void Execute (string path, System.IO.TextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Execute(string path, class System.IO.TextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpServerUtilityWrapper.Execute(System.String,System.IO.TextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Execute (path As String, writer As TextWriter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Execute(System::String ^ path, System::IO::TextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -244,6 +278,8 @@
       <MemberSignature Language="C#" Value="public override void Execute (string path, System.IO.TextWriter writer, bool preserveForm);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Execute(string path, class System.IO.TextWriter writer, bool preserveForm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpServerUtilityWrapper.Execute(System.String,System.IO.TextWriter,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Execute (path As String, writer As TextWriter, preserveForm As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Execute(System::String ^ path, System::IO::TextWriter ^ writer, bool preserveForm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -283,6 +319,8 @@
       <MemberSignature Language="C#" Value="public override void Execute (System.Web.IHttpHandler handler, System.IO.TextWriter writer, bool preserveForm);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Execute(class System.Web.IHttpHandler handler, class System.IO.TextWriter writer, bool preserveForm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpServerUtilityWrapper.Execute(System.Web.IHttpHandler,System.IO.TextWriter,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Execute (handler As IHttpHandler, writer As TextWriter, preserveForm As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Execute(System::Web::IHttpHandler ^ handler, System::IO::TextWriter ^ writer, bool preserveForm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -311,6 +349,8 @@
       <MemberSignature Language="C#" Value="public override Exception GetLastError ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Exception GetLastError() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpServerUtilityWrapper.GetLastError" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetLastError () As Exception" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override Exception ^ GetLastError();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -326,10 +366,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="HtmlDecode">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Decodes an HTML-encoded string.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="HtmlDecode">
       <MemberSignature Language="C#" Value="public override string HtmlDecode (string s);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string HtmlDecode(string s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpServerUtilityWrapper.HtmlDecode(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function HtmlDecode (s As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ HtmlDecode(System::String ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -352,6 +403,8 @@
       <MemberSignature Language="C#" Value="public override void HtmlDecode (string s, System.IO.TextWriter output);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void HtmlDecode(string s, class System.IO.TextWriter output) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpServerUtilityWrapper.HtmlDecode(System.String,System.IO.TextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub HtmlDecode (s As String, output As TextWriter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void HtmlDecode(System::String ^ s, System::IO::TextWriter ^ output);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -378,10 +431,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="HtmlEncode">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Encodes a string to be displayed in a browser.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="HtmlEncode">
       <MemberSignature Language="C#" Value="public override string HtmlEncode (string s);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string HtmlEncode(string s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpServerUtilityWrapper.HtmlEncode(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function HtmlEncode (s As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ HtmlEncode(System::String ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -404,6 +468,8 @@
       <MemberSignature Language="C#" Value="public override void HtmlEncode (string s, System.IO.TextWriter output);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void HtmlEncode(string s, class System.IO.TextWriter output) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpServerUtilityWrapper.HtmlEncode(System.String,System.IO.TextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub HtmlEncode (s As String, output As TextWriter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void HtmlEncode(System::String ^ s, System::IO::TextWriter ^ output);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -434,6 +500,8 @@
       <MemberSignature Language="C#" Value="public override string MachineName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MachineName" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpServerUtilityWrapper.MachineName" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property MachineName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ MachineName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -453,6 +521,8 @@
       <MemberSignature Language="C#" Value="public override string MapPath (string path);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string MapPath(string path) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpServerUtilityWrapper.MapPath(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function MapPath (path As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ MapPath(System::String ^ path);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -476,6 +546,8 @@
       <MemberSignature Language="C#" Value="public override int ScriptTimeout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ScriptTimeout" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpServerUtilityWrapper.ScriptTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property ScriptTimeout As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int ScriptTimeout { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -492,10 +564,21 @@
         <exception cref="T:System.ArgumentOutOfRangeException">The time-out period is <see langword="null" /> or otherwise cannot be set.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Transfer">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Terminates execution of the current process and starts execution of a different process for the current request.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Transfer">
       <MemberSignature Language="C#" Value="public override void Transfer (string path);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Transfer(string path) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpServerUtilityWrapper.Transfer(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Transfer (path As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Transfer(System::String ^ path);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -517,6 +600,8 @@
       <MemberSignature Language="C#" Value="public override void Transfer (string path, bool preserveForm);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Transfer(string path, bool preserveForm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpServerUtilityWrapper.Transfer(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Transfer (path As String, preserveForm As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Transfer(System::String ^ path, bool preserveForm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -542,6 +627,8 @@
       <MemberSignature Language="C#" Value="public override void Transfer (System.Web.IHttpHandler handler, bool preserveForm);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Transfer(class System.Web.IHttpHandler handler, bool preserveForm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpServerUtilityWrapper.Transfer(System.Web.IHttpHandler,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Transfer (handler As IHttpHandler, preserveForm As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Transfer(System::Web::IHttpHandler ^ handler, bool preserveForm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -563,10 +650,21 @@
         <exception cref="T:System.ApplicationException">The current page request is a callback.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="TransferRequest">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Asynchronously executes the end point at the specified URL</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="TransferRequest">
       <MemberSignature Language="C#" Value="public override void TransferRequest (string path);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void TransferRequest(string path) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpServerUtilityWrapper.TransferRequest(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub TransferRequest (path As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void TransferRequest(System::String ^ path);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -592,6 +690,8 @@
       <MemberSignature Language="C#" Value="public override void TransferRequest (string path, bool preserveForm);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void TransferRequest(string path, bool preserveForm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpServerUtilityWrapper.TransferRequest(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub TransferRequest (path As String, preserveForm As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void TransferRequest(System::String ^ path, bool preserveForm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -620,6 +720,8 @@
       <MemberSignature Language="C#" Value="public override void TransferRequest (string path, bool preserveForm, string method, System.Collections.Specialized.NameValueCollection headers);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void TransferRequest(string path, bool preserveForm, string method, class System.Collections.Specialized.NameValueCollection headers) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpServerUtilityWrapper.TransferRequest(System.String,System.Boolean,System.String,System.Collections.Specialized.NameValueCollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub TransferRequest (path As String, preserveForm As Boolean, method As String, headers As NameValueCollection)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void TransferRequest(System::String ^ path, bool preserveForm, System::String ^ method, System::Collections::Specialized::NameValueCollection ^ headers);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -652,6 +754,8 @@
       <MemberSignature Language="C#" Value="public override void TransferRequest (string path, bool preserveForm, string method, System.Collections.Specialized.NameValueCollection headers, bool preserveUser);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void TransferRequest(string path, bool preserveForm, string method, class System.Collections.Specialized.NameValueCollection headers, bool preserveUser) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpServerUtilityWrapper.TransferRequest(System.String,System.Boolean,System.String,System.Collections.Specialized.NameValueCollection,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub TransferRequest (path As String, preserveForm As Boolean, method As String, headers As NameValueCollection, preserveUser As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void TransferRequest(System::String ^ path, bool preserveForm, System::String ^ method, System::Collections::Specialized::NameValueCollection ^ headers, bool preserveUser);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -683,10 +787,21 @@
         <exception cref="T:System.ArgumentException">The <paramref name="path" /> parameter is invalid.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="UrlDecode">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Decodes a string that was encoded to include only characters that are valid in a URL.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="UrlDecode">
       <MemberSignature Language="C#" Value="public override string UrlDecode (string s);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string UrlDecode(string s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpServerUtilityWrapper.UrlDecode(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function UrlDecode (s As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ UrlDecode(System::String ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -709,6 +824,8 @@
       <MemberSignature Language="C#" Value="public override void UrlDecode (string s, System.IO.TextWriter output);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void UrlDecode(string s, class System.IO.TextWriter output) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpServerUtilityWrapper.UrlDecode(System.String,System.IO.TextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub UrlDecode (s As String, output As TextWriter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void UrlDecode(System::String ^ s, System::IO::TextWriter ^ output);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -735,10 +852,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="UrlEncode">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Encodes a string to include only characters that are valid in a URL.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="UrlEncode">
       <MemberSignature Language="C#" Value="public override string UrlEncode (string s);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string UrlEncode(string s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpServerUtilityWrapper.UrlEncode(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function UrlEncode (s As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ UrlEncode(System::String ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -761,6 +889,8 @@
       <MemberSignature Language="C#" Value="public override void UrlEncode (string s, System.IO.TextWriter output);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void UrlEncode(string s, class System.IO.TextWriter output) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpServerUtilityWrapper.UrlEncode(System.String,System.IO.TextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub UrlEncode (s As String, output As TextWriter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void UrlEncode(System::String ^ s, System::IO::TextWriter ^ output);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -784,6 +914,8 @@
       <MemberSignature Language="C#" Value="public override string UrlPathEncode (string s);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string UrlPathEncode(string s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpServerUtilityWrapper.UrlPathEncode(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function UrlPathEncode (s As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ UrlPathEncode(System::String ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -806,6 +938,8 @@
       <MemberSignature Language="C#" Value="public override byte[] UrlTokenDecode (string input);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance unsigned int8[] UrlTokenDecode(string input) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpServerUtilityWrapper.UrlTokenDecode(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function UrlTokenDecode (input As String) As Byte()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Byte&gt; ^ UrlTokenDecode(System::String ^ input);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -829,6 +963,8 @@
       <MemberSignature Language="C#" Value="public override string UrlTokenEncode (byte[] input);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string UrlTokenEncode(unsigned int8[] input) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpServerUtilityWrapper.UrlTokenEncode(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function UrlTokenEncode (input As Byte()) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ UrlTokenEncode(cli::array &lt;System::Byte&gt; ^ input);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -848,77 +984,5 @@
         <exception cref="T:System.ArgumentNullException">The value of the <paramref name="input" /> parameter is <see langword="null" />.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="HtmlDecode">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Decodes an HTML-encoded string.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="TransferRequest">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Asynchronously executes the end point at the specified URL</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="CreateObject">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a server instance of a COM object.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="UrlEncode">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Encodes a string to include only characters that are valid in a URL.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="UrlDecode">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Decodes a string that was encoded to include only characters that are valid in a URL.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Execute">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Executes the handler for a specified resource in the context of the current request and returns execution to the process that invoked it.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="HtmlEncode">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Encodes a string to be displayed in a browser.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Transfer">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Terminates execution of the current process and starts execution of a different process for the current request.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

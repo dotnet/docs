@@ -1,7 +1,9 @@
-<Type Name="SubclassTypeValidator" FullName="System.Configuration.SubclassTypeValidator">
+﻿<Type Name="SubclassTypeValidator" FullName="System.Configuration.SubclassTypeValidator">
   <TypeSignature Language="C#" Value="public sealed class SubclassTypeValidator : System.Configuration.ConfigurationValidatorBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SubclassTypeValidator extends System.Configuration.ConfigurationValidatorBase" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.SubclassTypeValidator" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SubclassTypeValidator&#xA;Inherits ConfigurationValidatorBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SubclassTypeValidator sealed : System::Configuration::ConfigurationValidatorBase" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +34,8 @@
       <MemberSignature Language="C#" Value="public SubclassTypeValidator (Type baseClass);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type baseClass) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.SubclassTypeValidator.#ctor(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (baseClass As Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SubclassTypeValidator(Type ^ baseClass);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -63,6 +67,7 @@
       <MemberSignature Language="C#" Value="public override bool CanValidate (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanValidate(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.SubclassTypeValidator.CanValidate(System.Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool CanValidate(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -97,6 +102,8 @@
       <MemberSignature Language="C#" Value="public override void Validate (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Validate(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.SubclassTypeValidator.Validate(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Validate (value As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Validate(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>

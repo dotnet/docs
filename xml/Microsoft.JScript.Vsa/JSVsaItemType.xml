@@ -1,7 +1,9 @@
-<Type Name="JSVsaItemType" FullName="Microsoft.JScript.Vsa.JSVsaItemType">
+﻿<Type Name="JSVsaItemType" FullName="Microsoft.JScript.Vsa.JSVsaItemType">
   <TypeSignature Language="C#" Value="public enum JSVsaItemType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed JSVsaItemType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.Vsa.JSVsaItemType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum JSVsaItemType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class JSVsaItemType" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -29,6 +31,8 @@
       <MemberSignature Language="C#" Value="AppGlobal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaItemType AppGlobal = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaItemType.AppGlobal" />
+      <MemberSignature Language="VB.NET" Value="AppGlobal" />
+      <MemberSignature Language="C++ CLI" Value="AppGlobal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -37,6 +41,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaItemType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Used to add a global object to the .NET script engine. This type is used to create an IJSVsaGlobalItem object.</summary>
       </Docs>
@@ -45,6 +50,8 @@
       <MemberSignature Language="C#" Value="Code" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaItemType Code = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaItemType.Code" />
+      <MemberSignature Language="VB.NET" Value="Code" />
+      <MemberSignature Language="C++ CLI" Value="Code" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -53,6 +60,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaItemType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Used to create a code item for storing source code for the .NET script engine.</summary>
       </Docs>
@@ -61,6 +69,8 @@
       <MemberSignature Language="C#" Value="Reference" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaItemType Reference = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaItemType.Reference" />
+      <MemberSignature Language="VB.NET" Value="Reference" />
+      <MemberSignature Language="C++ CLI" Value="Reference" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -69,6 +79,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.Vsa.JSVsaItemType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Used to add a reference to an external .NET assembly, which can then be referenced from code. This type is used to create an IJSVsaReferenceItem object</summary>
       </Docs>

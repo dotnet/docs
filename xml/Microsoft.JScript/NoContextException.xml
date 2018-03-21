@@ -1,7 +1,9 @@
-<Type Name="NoContextException" FullName="Microsoft.JScript.NoContextException">
+﻿<Type Name="NoContextException" FullName="Microsoft.JScript.NoContextException">
   <TypeSignature Language="C#" Value="public class NoContextException : ApplicationException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit NoContextException extends System.ApplicationException" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.NoContextException" />
+  <TypeSignature Language="VB.NET" Value="Public Class NoContextException&#xA;Inherits ApplicationException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class NoContextException : ApplicationException" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -16,10 +18,22 @@
     <forInternalUseOnly />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.NoContextException" /> class.</summary>
+        <altmember cref="T:Microsoft.JScript.Context" />
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public NoContextException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.NoContextException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NoContextException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -37,6 +51,8 @@
       <MemberSignature Language="C#" Value="public NoContextException (string m);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string m) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.NoContextException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (m As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NoContextException(System::String ^ m);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -57,6 +73,8 @@
       <MemberSignature Language="C#" Value="protected NoContextException (System.Runtime.Serialization.SerializationInfo s, System.Runtime.Serialization.StreamingContext c);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo s, valuetype System.Runtime.Serialization.StreamingContext c) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.NoContextException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (s As SerializationInfo, c As StreamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; NoContextException(System::Runtime::Serialization::SerializationInfo ^ s, System::Runtime::Serialization::StreamingContext c);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -79,6 +97,8 @@
       <MemberSignature Language="C#" Value="public NoContextException (string m, Exception e);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string m, class System.Exception e) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.NoContextException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (m As String, e As Exception)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NoContextException(System::String ^ m, Exception ^ e);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -97,15 +117,5 @@
         <altmember cref="T:Microsoft.JScript.Context" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.NoContextException" /> class.</summary>
-        <altmember cref="T:Microsoft.JScript.Context" />
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

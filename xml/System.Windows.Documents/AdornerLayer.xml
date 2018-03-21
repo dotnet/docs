@@ -1,7 +1,9 @@
-<Type Name="AdornerLayer" FullName="System.Windows.Documents.AdornerLayer">
+﻿<Type Name="AdornerLayer" FullName="System.Windows.Documents.AdornerLayer">
   <TypeSignature Language="C#" Value="public class AdornerLayer : System.Windows.FrameworkElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AdornerLayer extends System.Windows.FrameworkElement" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.AdornerLayer" />
+  <TypeSignature Language="VB.NET" Value="Public Class AdornerLayer&#xA;Inherits FrameworkElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AdornerLayer : System::Windows::FrameworkElement" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +36,7 @@
       <MemberSignature Language="C#" Value="public void Add (System.Windows.Documents.Adorner adorner);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Windows.Documents.Adorner adorner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.AdornerLayer.Add(System.Windows.Documents.Adorner)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Windows::Documents::Adorner ^ adorner);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -56,6 +59,7 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.AdornerHitTestResult AdornerHitTest (System.Windows.Point point);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.AdornerHitTestResult AdornerHitTest(valuetype System.Windows.Point point) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.AdornerLayer.AdornerHitTest(System.Windows.Point)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::AdornerHitTestResult ^ AdornerHitTest(System::Windows::Point point);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -85,6 +89,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Size ArrangeOverride (System.Windows.Size finalSize);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Size ArrangeOverride(valuetype System.Windows.Size finalSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.AdornerLayer.ArrangeOverride(System.Windows.Size)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function ArrangeOverride (finalSize As Size) As Size" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size ArrangeOverride(System::Windows::Size finalSize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -115,6 +121,7 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Documents.AdornerLayer GetAdornerLayer (System.Windows.Media.Visual visual);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Documents.AdornerLayer GetAdornerLayer(class System.Windows.Media.Visual visual) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.AdornerLayer.GetAdornerLayer(System.Windows.Media.Visual)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Documents::AdornerLayer ^ GetAdornerLayer(System::Windows::Media::Visual ^ visual);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -145,6 +152,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Documents.Adorner[] GetAdorners (System.Windows.UIElement element);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Documents.Adorner[] GetAdorners(class System.Windows.UIElement element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.AdornerLayer.GetAdorners(System.Windows.UIElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAdorners (element As UIElement) As Adorner()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Windows::Documents::Adorner ^&gt; ^ GetAdorners(System::Windows::UIElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -167,6 +176,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Media.Visual GetVisualChild (int index);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Media.Visual GetVisualChild(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.AdornerLayer.GetVisualChild(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetVisualChild (index As Integer) As Visual" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Media::Visual ^ GetVisualChild(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -194,9 +205,11 @@
       </Docs>
     </Member>
     <Member MemberName="LogicalChildren">
-      <MemberSignature Language="C#" Value="protected override System.Collections.IEnumerator LogicalChildren { get; }" />
+      <MemberSignature Language="C#" Value="protected internal override System.Collections.IEnumerator LogicalChildren { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IEnumerator LogicalChildren" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.AdornerLayer.LogicalChildren" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property LogicalChildren As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property System::Collections::IEnumerator ^ LogicalChildren { System::Collections::IEnumerator ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -215,6 +228,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Size MeasureOverride (System.Windows.Size constraint);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Size MeasureOverride(valuetype System.Windows.Size constraint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.AdornerLayer.MeasureOverride(System.Windows.Size)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function MeasureOverride (constraint As Size) As Size" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size MeasureOverride(System::Windows::Size constraint);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -247,6 +262,7 @@
       <MemberSignature Language="C#" Value="public void Remove (System.Windows.Documents.Adorner adorner);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Windows.Documents.Adorner adorner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.AdornerLayer.Remove(System.Windows.Documents.Adorner)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Windows::Documents::Adorner ^ adorner);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -272,10 +288,21 @@
         <exception cref="T:System.ArgumentNullException">Raised when *adorner* is **null**.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Update">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Updates the layout and redraws all of the adorners in the adorner layer.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Update">
       <MemberSignature Language="C#" Value="public void Update ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Update() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.AdornerLayer.Update" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Update ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Update();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -294,6 +321,8 @@
       <MemberSignature Language="C#" Value="public void Update (System.Windows.UIElement element);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Update(class System.Windows.UIElement element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.AdornerLayer.Update(System.Windows.UIElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Update (element As UIElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Update(System::Windows::UIElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -317,6 +346,8 @@
       <MemberSignature Language="C#" Value="protected override int VisualChildrenCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 VisualChildrenCount" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.AdornerLayer.VisualChildrenCount" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property VisualChildrenCount As Integer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property int VisualChildrenCount { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -339,14 +370,5 @@
         <altmember cref="M:System.Windows.Documents.AdornerLayer.GetVisualChild(System.Int32)" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="Update">
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Updates the layout and redraws all of the adorners in the adorner layer.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

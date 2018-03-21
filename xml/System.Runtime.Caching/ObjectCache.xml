@@ -1,7 +1,9 @@
-<Type Name="ObjectCache" FullName="System.Runtime.Caching.ObjectCache">
+﻿<Type Name="ObjectCache" FullName="System.Runtime.Caching.ObjectCache">
   <TypeSignature Language="C#" Value="public abstract class ObjectCache : System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;string,object&gt;&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ObjectCache extends System.Object implements class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, object&gt;&gt;, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Caching.ObjectCache" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ObjectCache&#xA;Implements IEnumerable(Of KeyValuePair(Of String, Object))" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ObjectCache abstract : System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;System::String ^, System::Object ^&gt;&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Caching</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +47,8 @@
       <MemberSignature Language="C#" Value="protected ObjectCache ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.ObjectCache.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ObjectCache();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -79,6 +83,8 @@
       <MemberSignature Language="C#" Value="public virtual bool Add (System.Runtime.Caching.CacheItem item, System.Runtime.Caching.CacheItemPolicy policy);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Add(class System.Runtime.Caching.CacheItem item, class System.Runtime.Caching.CacheItemPolicy policy) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.ObjectCache.Add(System.Runtime.Caching.CacheItem,System.Runtime.Caching.CacheItemPolicy)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Add (item As CacheItem, policy As CacheItemPolicy) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Add(System::Runtime::Caching::CacheItem ^ item, System::Runtime::Caching::CacheItemPolicy ^ policy);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -111,6 +117,7 @@
       <MemberSignature Language="C#" Value="public virtual bool Add (string key, object value, DateTimeOffset absoluteExpiration, string regionName = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Add(string key, object value, valuetype System.DateTimeOffset absoluteExpiration, string regionName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.ObjectCache.Add(System.String,System.Object,System.DateTimeOffset,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Add (key As String, value As Object, absoluteExpiration As DateTimeOffset, Optional regionName As String = null) As Boolean" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -147,6 +154,7 @@
       <MemberSignature Language="C#" Value="public virtual bool Add (string key, object value, System.Runtime.Caching.CacheItemPolicy policy, string regionName = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Add(string key, object value, class System.Runtime.Caching.CacheItemPolicy policy, string regionName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.ObjectCache.Add(System.String,System.Object,System.Runtime.Caching.CacheItemPolicy,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Add (key As String, value As Object, policy As CacheItemPolicy, Optional regionName As String = null) As Boolean" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -202,6 +210,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Runtime.Caching.CacheItem AddOrGetExisting (System.Runtime.Caching.CacheItem value, System.Runtime.Caching.CacheItemPolicy policy);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Runtime.Caching.CacheItem AddOrGetExisting(class System.Runtime.Caching.CacheItem value, class System.Runtime.Caching.CacheItemPolicy policy) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.ObjectCache.AddOrGetExisting(System.Runtime.Caching.CacheItem,System.Runtime.Caching.CacheItemPolicy)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function AddOrGetExisting (value As CacheItem, policy As CacheItemPolicy) As CacheItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Runtime::Caching::CacheItem ^ AddOrGetExisting(System::Runtime::Caching::CacheItem ^ value, System::Runtime::Caching::CacheItemPolicy ^ policy);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -226,6 +236,7 @@
       <MemberSignature Language="C#" Value="public abstract object AddOrGetExisting (string key, object value, DateTimeOffset absoluteExpiration, string regionName = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object AddOrGetExisting(string key, object value, valuetype System.DateTimeOffset absoluteExpiration, string regionName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.ObjectCache.AddOrGetExisting(System.String,System.Object,System.DateTimeOffset,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function AddOrGetExisting (key As String, value As Object, absoluteExpiration As DateTimeOffset, Optional regionName As String = null) As Object" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -261,6 +272,7 @@
       <MemberSignature Language="C#" Value="public abstract object AddOrGetExisting (string key, object value, System.Runtime.Caching.CacheItemPolicy policy, string regionName = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object AddOrGetExisting(string key, object value, class System.Runtime.Caching.CacheItemPolicy policy, string regionName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.ObjectCache.AddOrGetExisting(System.String,System.Object,System.Runtime.Caching.CacheItemPolicy,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function AddOrGetExisting (key As String, value As Object, policy As CacheItemPolicy, Optional regionName As String = null) As Object" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -296,6 +308,7 @@
       <MemberSignature Language="C#" Value="public abstract bool Contains (string key, string regionName = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Contains(string key, string regionName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.ObjectCache.Contains(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function Contains (key As String, Optional regionName As String = null) As Boolean" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -321,6 +334,7 @@
       <MemberSignature Language="C#" Value="public abstract System.Runtime.Caching.CacheEntryChangeMonitor CreateCacheEntryChangeMonitor (System.Collections.Generic.IEnumerable&lt;string&gt; keys, string regionName = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Runtime.Caching.CacheEntryChangeMonitor CreateCacheEntryChangeMonitor(class System.Collections.Generic.IEnumerable`1&lt;string&gt; keys, string regionName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.ObjectCache.CreateCacheEntryChangeMonitor(System.Collections.Generic.IEnumerable{System.String},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function CreateCacheEntryChangeMonitor (keys As IEnumerable(Of String), Optional regionName As String = null) As CacheEntryChangeMonitor" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -357,6 +371,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Runtime.Caching.DefaultCacheCapabilities DefaultCacheCapabilities { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Runtime.Caching.DefaultCacheCapabilities DefaultCacheCapabilities" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Caching.ObjectCache.DefaultCacheCapabilities" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property DefaultCacheCapabilities As DefaultCacheCapabilities" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Runtime::Caching::DefaultCacheCapabilities DefaultCacheCapabilities { System::Runtime::Caching::DefaultCacheCapabilities get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -375,6 +391,7 @@
       <MemberSignature Language="C#" Value="public abstract object Get (string key, string regionName = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Get(string key, string regionName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.ObjectCache.Get(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function Get (key As String, Optional regionName As String = null) As Object" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -399,6 +416,7 @@
       <MemberSignature Language="C#" Value="public abstract System.Runtime.Caching.CacheItem GetCacheItem (string key, string regionName = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Runtime.Caching.CacheItem GetCacheItem(string key, string regionName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.ObjectCache.GetCacheItem(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetCacheItem (key As String, Optional regionName As String = null) As CacheItem" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -432,6 +450,7 @@
       <MemberSignature Language="C#" Value="public abstract long GetCount (string regionName = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int64 GetCount(string regionName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.ObjectCache.GetCount(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetCount (Optional regionName As String = null) As Long" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -454,7 +473,12 @@
       <MemberSignature Language="C#" Value="protected abstract System.Collections.Generic.IEnumerator&lt;System.Collections.Generic.KeyValuePair&lt;string,object&gt;&gt; GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Collections.Generic.IEnumerator`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, object&gt;&gt; GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.ObjectCache.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Function GetEnumerator () As IEnumerator(Of KeyValuePair(Of String, Object))" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Collections::Generic::IEnumerator&lt;System::Collections::Generic::KeyValuePair&lt;System::String ^, System::Object ^&gt;&gt; ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -481,10 +505,20 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetValues">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Caching</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a set of cache entries.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetValues">
       <MemberSignature Language="C#" Value="public abstract System.Collections.Generic.IDictionary&lt;string,object&gt; GetValues (System.Collections.Generic.IEnumerable&lt;string&gt; keys, string regionName = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IDictionary`2&lt;string, object&gt; GetValues(class System.Collections.Generic.IEnumerable`1&lt;string&gt; keys, string regionName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.ObjectCache.GetValues(System.Collections.Generic.IEnumerable{System.String},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetValues (keys As IEnumerable(Of String), Optional regionName As String = null) As IDictionary(Of String, Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -518,6 +552,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IDictionary&lt;string,object&gt; GetValues (string regionName, params string[] keys);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IDictionary`2&lt;string, object&gt; GetValues(string regionName, string[] keys) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.ObjectCache.GetValues(System.String,System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetValues (regionName As String, ParamArray keys As String()) As IDictionary(Of String, Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ GetValues(System::String ^ regionName, ... cli::array &lt;System::String ^&gt; ^ keys);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -557,6 +593,8 @@
       <MemberSignature Language="C#" Value="public static IServiceProvider Host { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.IServiceProvider Host" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Caching.ObjectCache.Host" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property Host As IServiceProvider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property IServiceProvider ^ Host { IServiceProvider ^ get(); void set(IServiceProvider ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -604,6 +642,8 @@
       <MemberSignature Language="C#" Value="public static readonly DateTimeOffset InfiniteAbsoluteExpiration;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.DateTimeOffset InfiniteAbsoluteExpiration" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.Caching.ObjectCache.InfiniteAbsoluteExpiration" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly InfiniteAbsoluteExpiration As DateTimeOffset " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly DateTimeOffset InfiniteAbsoluteExpiration;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -628,6 +668,8 @@
       <MemberSignature Language="C#" Value="public abstract object this[string key] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Caching.ObjectCache.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public MustOverride Property Item(key As String) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Object ^ default[System::String ^] { System::Object ^ get(System::String ^ key); void set(System::String ^ key, System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -659,6 +701,8 @@
       <MemberSignature Language="C#" Value="public abstract string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Caching.ObjectCache.Name" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -684,6 +728,8 @@
       <MemberSignature Language="C#" Value="public static readonly TimeSpan NoSlidingExpiration;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.TimeSpan NoSlidingExpiration" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.Caching.ObjectCache.NoSlidingExpiration" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly NoSlidingExpiration As TimeSpan " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly TimeSpan NoSlidingExpiration;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -710,6 +756,7 @@
       <MemberSignature Language="C#" Value="public abstract object Remove (string key, string regionName = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Remove(string key, string regionName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.ObjectCache.Remove(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function Remove (key As String, Optional regionName As String = null) As Object" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -761,6 +808,8 @@
       <MemberSignature Language="C#" Value="public abstract void Set (System.Runtime.Caching.CacheItem item, System.Runtime.Caching.CacheItemPolicy policy);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Set(class System.Runtime.Caching.CacheItem item, class System.Runtime.Caching.CacheItemPolicy policy) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.ObjectCache.Set(System.Runtime.Caching.CacheItem,System.Runtime.Caching.CacheItemPolicy)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Set (item As CacheItem, policy As CacheItemPolicy)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Set(System::Runtime::Caching::CacheItem ^ item, System::Runtime::Caching::CacheItemPolicy ^ policy);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -791,6 +840,7 @@
       <MemberSignature Language="C#" Value="public abstract void Set (string key, object value, DateTimeOffset absoluteExpiration, string regionName = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Set(string key, object value, valuetype System.DateTimeOffset absoluteExpiration, string regionName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.ObjectCache.Set(System.String,System.Object,System.DateTimeOffset,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Set (key As String, value As Object, absoluteExpiration As DateTimeOffset, Optional regionName As String = null)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -825,6 +875,7 @@
       <MemberSignature Language="C#" Value="public abstract void Set (string key, object value, System.Runtime.Caching.CacheItemPolicy policy, string regionName = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Set(string key, object value, class System.Runtime.Caching.CacheItemPolicy policy, string regionName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.ObjectCache.Set(System.String,System.Object,System.Runtime.Caching.CacheItemPolicy,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Set (key As String, value As Object, policy As CacheItemPolicy, Optional regionName As String = null)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -861,7 +912,12 @@
       <MemberSignature Language="C#" Value="System.Collections.Generic.IEnumerator&lt;System.Collections.Generic.KeyValuePair&lt;string,object&gt;&gt; IEnumerable&lt;KeyValuePair&lt;string,object&gt;&gt;.GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.Generic.IEnumerator`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, object&gt;&gt; System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;&gt;.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.ObjectCache.System#Collections#Generic#IEnumerable&lt;System#Collections#Generic#KeyValuePair&lt;System#String,System#Object&gt;&gt;#GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator(Of KeyValuePair(Of String, Object)) Implements IEnumerable(Of KeyValuePair(Of String, Object)).GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::Generic::IEnumerator&lt;System::Collections::Generic::KeyValuePair&lt;System::String ^, System::Object ^&gt;&gt; ^ System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;&gt;.GetEnumerator() = System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;System::String ^, System::Object ^&gt;&gt;::GetEnumerator;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -880,7 +936,12 @@
       <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.ObjectCache.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator Implements IEnumerable.GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IEnumerator ^ System.Collections.IEnumerable.GetEnumerator() = System::Collections::IEnumerable::GetEnumerator;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -906,14 +967,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetValues">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.Caching</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets a set of cache entries.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

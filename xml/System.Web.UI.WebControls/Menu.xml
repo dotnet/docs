@@ -1,7 +1,9 @@
-<Type Name="Menu" FullName="System.Web.UI.WebControls.Menu">
+﻿<Type Name="Menu" FullName="System.Web.UI.WebControls.Menu">
   <TypeSignature Language="C#" Value="public class Menu : System.Web.UI.WebControls.HierarchicalDataBoundControl, System.Web.UI.INamingContainer, System.Web.UI.IPostBackEventHandler" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Menu extends System.Web.UI.WebControls.HierarchicalDataBoundControl implements class System.Web.UI.INamingContainer, class System.Web.UI.IPostBackEventHandler" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.Menu" />
+  <TypeSignature Language="VB.NET" Value="Public Class Menu&#xA;Inherits HierarchicalDataBoundControl&#xA;Implements INamingContainer, IPostBackEventHandler" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Menu : System::Web::UI::WebControls::HierarchicalDataBoundControl, System::Web::UI::INamingContainer, System::Web::UI::IPostBackEventHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -556,6 +558,8 @@
       <MemberSignature Language="C#" Value="public Menu ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Menu.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Menu();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -588,6 +592,8 @@
       <MemberSignature Language="C#" Value="protected override void AddAttributesToRender (System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void AddAttributesToRender(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Menu.AddAttributesToRender(System.Web.UI.HtmlTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub AddAttributesToRender (writer As HtmlTextWriter)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void AddAttributesToRender(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -616,6 +622,8 @@
       <MemberSignature Language="C#" Value="public override System.Web.UI.ControlCollection Controls { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.ControlCollection Controls" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Menu.Controls" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Controls As ControlCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ControlCollection ^ Controls { System::Web::UI::ControlCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -638,9 +646,11 @@
       </Docs>
     </Member>
     <Member MemberName="CreateChildControls">
-      <MemberSignature Language="C#" Value="protected override void CreateChildControls ();" />
+      <MemberSignature Language="C#" Value="protected internal override void CreateChildControls ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void CreateChildControls() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Menu.CreateChildControls" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub CreateChildControls ()" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void CreateChildControls();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -668,6 +678,8 @@
       <MemberSignature Language="C#" Value="public override sealed void DataBind ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void DataBind() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Menu.DataBind" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Sub DataBind ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void DataBind();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -698,6 +710,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.MenuItemBindingCollection DataBindings { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.MenuItemBindingCollection DataBindings" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Menu.DataBindings" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataBindings As MenuItemBindingCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::MenuItemBindingCollection ^ DataBindings { System::Web::UI::WebControls::MenuItemBindingCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -798,6 +812,8 @@
       <MemberSignature Language="C#" Value="public int DisappearAfter { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 DisappearAfter" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Menu.DisappearAfter" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisappearAfter As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int DisappearAfter { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -848,6 +864,8 @@
       <MemberSignature Language="C#" Value="public string DynamicBottomSeparatorImageUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DynamicBottomSeparatorImageUrl" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Menu.DynamicBottomSeparatorImageUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Property DynamicBottomSeparatorImageUrl As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DynamicBottomSeparatorImageUrl { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -905,6 +923,8 @@
       <MemberSignature Language="C#" Value="public bool DynamicEnableDefaultPopOutImage { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool DynamicEnableDefaultPopOutImage" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Menu.DynamicEnableDefaultPopOutImage" />
+      <MemberSignature Language="VB.NET" Value="Public Property DynamicEnableDefaultPopOutImage As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DynamicEnableDefaultPopOutImage { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -960,6 +980,8 @@
       <MemberSignature Language="C#" Value="public int DynamicHorizontalOffset { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 DynamicHorizontalOffset" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Menu.DynamicHorizontalOffset" />
+      <MemberSignature Language="VB.NET" Value="Public Property DynamicHorizontalOffset As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int DynamicHorizontalOffset { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1008,6 +1030,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.Style DynamicHoverStyle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.Style DynamicHoverStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Menu.DynamicHoverStyle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DynamicHoverStyle As Style" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::Style ^ DynamicHoverStyle { System::Web::UI::WebControls::Style ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1018,7 +1042,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
@@ -1075,6 +1099,8 @@
       <MemberSignature Language="C#" Value="public string DynamicItemFormatString { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DynamicItemFormatString" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Menu.DynamicItemFormatString" />
+      <MemberSignature Language="VB.NET" Value="Public Property DynamicItemFormatString As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DynamicItemFormatString { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1120,6 +1146,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.ITemplate DynamicItemTemplate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.ITemplate DynamicItemTemplate" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Menu.DynamicItemTemplate" />
+      <MemberSignature Language="VB.NET" Value="Public Property DynamicItemTemplate As ITemplate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::ITemplate ^ DynamicItemTemplate { System::Web::UI::ITemplate ^ get(); void set(System::Web::UI::ITemplate ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1161,6 +1189,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.MenuItemStyle DynamicMenuItemStyle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.MenuItemStyle DynamicMenuItemStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Menu.DynamicMenuItemStyle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DynamicMenuItemStyle As MenuItemStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::MenuItemStyle ^ DynamicMenuItemStyle { System::Web::UI::WebControls::MenuItemStyle ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1171,7 +1201,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
@@ -1228,6 +1258,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.SubMenuStyle DynamicMenuStyle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.SubMenuStyle DynamicMenuStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Menu.DynamicMenuStyle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DynamicMenuStyle As SubMenuStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::SubMenuStyle ^ DynamicMenuStyle { System::Web::UI::WebControls::SubMenuStyle ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1238,7 +1270,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
@@ -1295,6 +1327,8 @@
       <MemberSignature Language="C#" Value="public string DynamicPopOutImageTextFormatString { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DynamicPopOutImageTextFormatString" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Menu.DynamicPopOutImageTextFormatString" />
+      <MemberSignature Language="VB.NET" Value="Public Property DynamicPopOutImageTextFormatString As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DynamicPopOutImageTextFormatString { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1342,6 +1376,8 @@
       <MemberSignature Language="C#" Value="public string DynamicPopOutImageUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DynamicPopOutImageUrl" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Menu.DynamicPopOutImageUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Property DynamicPopOutImageUrl As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DynamicPopOutImageUrl { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1404,6 +1440,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.MenuItemStyle DynamicSelectedStyle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.MenuItemStyle DynamicSelectedStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Menu.DynamicSelectedStyle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DynamicSelectedStyle As MenuItemStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::MenuItemStyle ^ DynamicSelectedStyle { System::Web::UI::WebControls::MenuItemStyle ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1414,7 +1452,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
@@ -1471,6 +1509,8 @@
       <MemberSignature Language="C#" Value="public string DynamicTopSeparatorImageUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DynamicTopSeparatorImageUrl" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Menu.DynamicTopSeparatorImageUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Property DynamicTopSeparatorImageUrl As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DynamicTopSeparatorImageUrl { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1525,6 +1565,8 @@
       <MemberSignature Language="C#" Value="public int DynamicVerticalOffset { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 DynamicVerticalOffset" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Menu.DynamicVerticalOffset" />
+      <MemberSignature Language="VB.NET" Value="Public Property DynamicVerticalOffset As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int DynamicVerticalOffset { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1574,6 +1616,8 @@
       <MemberSignature Language="C#" Value="protected override void EnsureDataBound ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void EnsureDataBound() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Menu.EnsureDataBound" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub EnsureDataBound ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void EnsureDataBound();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1601,6 +1645,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.MenuItem FindItem (string valuePath);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.UI.WebControls.MenuItem FindItem(string valuePath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Menu.FindItem(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function FindItem (valuePath As String) As MenuItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::WebControls::MenuItem ^ FindItem(System::String ^ valuePath);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1640,6 +1686,8 @@
       <MemberSignature Language="C#" Value="protected override System.Collections.IDictionary GetDesignModeState ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Collections.IDictionary GetDesignModeState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Menu.GetDesignModeState" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetDesignModeState () As IDictionary" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Collections::IDictionary ^ GetDesignModeState();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1667,6 +1715,8 @@
       <MemberSignature Language="C#" Value="public bool IncludeStyleBlock { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IncludeStyleBlock" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Menu.IncludeStyleBlock" />
+      <MemberSignature Language="VB.NET" Value="Public Property IncludeStyleBlock As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IncludeStyleBlock { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1705,6 +1755,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.MenuItemCollection Items { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.MenuItemCollection Items" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Menu.Items" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Items As MenuItemCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::MenuItemCollection ^ Items { System::Web::UI::WebControls::MenuItemCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1757,6 +1809,8 @@
       <MemberSignature Language="C#" Value="public bool ItemWrap { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ItemWrap" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Menu.ItemWrap" />
+      <MemberSignature Language="VB.NET" Value="Public Property ItemWrap As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ItemWrap { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1801,6 +1855,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.MenuItemStyleCollection LevelMenuItemStyles { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.MenuItemStyleCollection LevelMenuItemStyles" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Menu.LevelMenuItemStyles" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LevelMenuItemStyles As MenuItemStyleCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::MenuItemStyleCollection ^ LevelMenuItemStyles { System::Web::UI::WebControls::MenuItemStyleCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1858,6 +1914,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.MenuItemStyleCollection LevelSelectedStyles { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.MenuItemStyleCollection LevelSelectedStyles" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Menu.LevelSelectedStyles" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LevelSelectedStyles As MenuItemStyleCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::MenuItemStyleCollection ^ LevelSelectedStyles { System::Web::UI::WebControls::MenuItemStyleCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1915,6 +1973,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.SubMenuStyleCollection LevelSubMenuStyles { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.SubMenuStyleCollection LevelSubMenuStyles" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Menu.LevelSubMenuStyles" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LevelSubMenuStyles As SubMenuStyleCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::SubMenuStyleCollection ^ LevelSubMenuStyles { System::Web::UI::WebControls::SubMenuStyleCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1969,9 +2029,11 @@
       </Docs>
     </Member>
     <Member MemberName="LoadControlState">
-      <MemberSignature Language="C#" Value="protected override void LoadControlState (object savedState);" />
+      <MemberSignature Language="C#" Value="protected internal override void LoadControlState (object savedState);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void LoadControlState(object savedState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Menu.LoadControlState(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub LoadControlState (savedState As Object)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void LoadControlState(System::Object ^ savedState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2002,6 +2064,8 @@
       <MemberSignature Language="C#" Value="protected override void LoadViewState (object state);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void LoadViewState(object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Menu.LoadViewState(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub LoadViewState (state As Object)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void LoadViewState(System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2023,6 +2087,8 @@
       <MemberSignature Language="C#" Value="public int MaximumDynamicDisplayLevels { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaximumDynamicDisplayLevels" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Menu.MaximumDynamicDisplayLevels" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaximumDynamicDisplayLevels As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaximumDynamicDisplayLevels { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2069,6 +2135,8 @@
       <MemberSignature Language="C#" Value="public event System.Web.UI.WebControls.MenuEventHandler MenuItemClick;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Web.UI.WebControls.MenuEventHandler MenuItemClick" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.Menu.MenuItemClick" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event MenuItemClick As MenuEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::MenuEventHandler ^ MenuItemClick;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2109,6 +2177,8 @@
       <MemberSignature Language="C#" Value="public static readonly string MenuItemClickCommandName;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string MenuItemClickCommandName" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.Menu.MenuItemClickCommandName" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MenuItemClickCommandName As String " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ MenuItemClickCommandName;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2133,6 +2203,8 @@
       <MemberSignature Language="C#" Value="public event System.Web.UI.WebControls.MenuEventHandler MenuItemDataBound;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Web.UI.WebControls.MenuEventHandler MenuItemDataBound" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.Menu.MenuItemDataBound" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event MenuItemDataBound As MenuEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::MenuEventHandler ^ MenuItemDataBound;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2173,6 +2245,8 @@
       <MemberSignature Language="C#" Value="protected override bool OnBubbleEvent (object source, EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool OnBubbleEvent(object source, class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Menu.OnBubbleEvent(System.Object,System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnBubbleEvent (source As Object, e As EventArgs) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool OnBubbleEvent(System::Object ^ source, EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2208,6 +2282,8 @@
       <MemberSignature Language="C#" Value="protected override void OnDataBinding (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnDataBinding(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Menu.OnDataBinding(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnDataBinding (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnDataBinding(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2245,9 +2321,11 @@
       </Docs>
     </Member>
     <Member MemberName="OnInit">
-      <MemberSignature Language="C#" Value="protected override void OnInit (EventArgs e);" />
+      <MemberSignature Language="C#" Value="protected internal override void OnInit (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnInit(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Menu.OnInit(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnInit (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnInit(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2283,6 +2361,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnMenuItemClick (System.Web.UI.WebControls.MenuEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnMenuItemClick(class System.Web.UI.WebControls.MenuEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Menu.OnMenuItemClick(System.Web.UI.WebControls.MenuEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnMenuItemClick (e As MenuEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnMenuItemClick(System::Web::UI::WebControls::MenuEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2322,6 +2402,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnMenuItemDataBound (System.Web.UI.WebControls.MenuEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnMenuItemDataBound(class System.Web.UI.WebControls.MenuEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Menu.OnMenuItemDataBound(System.Web.UI.WebControls.MenuEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnMenuItemDataBound (e As MenuEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnMenuItemDataBound(System::Web::UI::WebControls::MenuEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2358,9 +2440,11 @@
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
-      <MemberSignature Language="C#" Value="protected override void OnPreRender (EventArgs e);" />
+      <MemberSignature Language="C#" Value="protected internal override void OnPreRender (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnPreRender(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Menu.OnPreRender(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnPreRender (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnPreRender(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2396,6 +2480,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.Orientation Orientation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.Orientation Orientation" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Menu.Orientation" />
+      <MemberSignature Language="VB.NET" Value="Public Property Orientation As Orientation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::Orientation Orientation { System::Web::UI::WebControls::Orientation get(); void set(System::Web::UI::WebControls::Orientation value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2440,6 +2526,8 @@
       <MemberSignature Language="C#" Value="public char PathSeparator { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance char PathSeparator" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Menu.PathSeparator" />
+      <MemberSignature Language="VB.NET" Value="Public Property PathSeparator As Char" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property char PathSeparator { char get(); void set(char value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2479,9 +2567,11 @@
       </Docs>
     </Member>
     <Member MemberName="PerformDataBinding">
-      <MemberSignature Language="C#" Value="protected override void PerformDataBinding ();" />
+      <MemberSignature Language="C#" Value="protected internal override void PerformDataBinding ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void PerformDataBinding() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Menu.PerformDataBinding" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub PerformDataBinding ()" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void PerformDataBinding();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2505,10 +2595,15 @@
       </Docs>
     </Member>
     <Member MemberName="RaisePostBackEvent">
-      <MemberSignature Language="C#" Value="protected virtual void RaisePostBackEvent (string eventArgument);" />
+      <MemberSignature Language="C#" Value="protected internal virtual void RaisePostBackEvent (string eventArgument);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void RaisePostBackEvent(string eventArgument) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Menu.RaisePostBackEvent(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub RaisePostBackEvent (eventArgument As String)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void RaisePostBackEvent(System::String ^ eventArgument);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -2527,9 +2622,11 @@
       </Docs>
     </Member>
     <Member MemberName="Render">
-      <MemberSignature Language="C#" Value="protected override void Render (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="C#" Value="protected internal override void Render (System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void Render(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Menu.Render(System.Web.UI.HtmlTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Render (writer As HtmlTextWriter)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Render(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2551,6 +2648,8 @@
       <MemberSignature Language="C#" Value="public override void RenderBeginTag (System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void RenderBeginTag(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Menu.RenderBeginTag(System.Web.UI.HtmlTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub RenderBeginTag (writer As HtmlTextWriter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void RenderBeginTag(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2581,9 +2680,11 @@
       </Docs>
     </Member>
     <Member MemberName="RenderContents">
-      <MemberSignature Language="C#" Value="protected override void RenderContents (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="C#" Value="protected internal override void RenderContents (System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void RenderContents(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Menu.RenderContents(System.Web.UI.HtmlTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub RenderContents (writer As HtmlTextWriter)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void RenderContents(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2612,6 +2713,8 @@
       <MemberSignature Language="C#" Value="public override void RenderEndTag (System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void RenderEndTag(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Menu.RenderEndTag(System.Web.UI.HtmlTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub RenderEndTag (writer As HtmlTextWriter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void RenderEndTag(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2643,6 +2746,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.MenuRenderingMode RenderingMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.MenuRenderingMode RenderingMode" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Menu.RenderingMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property RenderingMode As MenuRenderingMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::MenuRenderingMode RenderingMode { System::Web::UI::WebControls::MenuRenderingMode get(); void set(System::Web::UI::WebControls::MenuRenderingMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2681,9 +2786,11 @@
       </Docs>
     </Member>
     <Member MemberName="SaveControlState">
-      <MemberSignature Language="C#" Value="protected override object SaveControlState ();" />
+      <MemberSignature Language="C#" Value="protected internal override object SaveControlState ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance object SaveControlState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Menu.SaveControlState" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function SaveControlState () As Object" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Object ^ SaveControlState();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2713,6 +2820,8 @@
       <MemberSignature Language="C#" Value="protected override object SaveViewState ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object SaveViewState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Menu.SaveViewState" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function SaveViewState () As Object" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ SaveViewState();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2732,6 +2841,8 @@
       <MemberSignature Language="C#" Value="public string ScrollDownImageUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ScrollDownImageUrl" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Menu.ScrollDownImageUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Property ScrollDownImageUrl As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ScrollDownImageUrl { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2790,6 +2901,8 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
       <MemberSignature Language="C#" Value="public string ScrollDownText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ScrollDownText" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Menu.ScrollDownText" />
+      <MemberSignature Language="VB.NET" Value="Public Property ScrollDownText As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ScrollDownText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2839,6 +2952,8 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
       <MemberSignature Language="C#" Value="public string ScrollUpImageUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ScrollUpImageUrl" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Menu.ScrollUpImageUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Property ScrollUpImageUrl As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ScrollUpImageUrl { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2897,6 +3012,8 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
       <MemberSignature Language="C#" Value="public string ScrollUpText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ScrollUpText" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Menu.ScrollUpText" />
+      <MemberSignature Language="VB.NET" Value="Public Property ScrollUpText As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ScrollUpText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2946,6 +3063,8 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.MenuItem SelectedItem { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.MenuItem SelectedItem" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Menu.SelectedItem" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SelectedItem As MenuItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::MenuItem ^ SelectedItem { System::Web::UI::WebControls::MenuItem ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2956,7 +3075,7 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2994,6 +3113,8 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
       <MemberSignature Language="C#" Value="public string SelectedValue { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SelectedValue" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Menu.SelectedValue" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SelectedValue As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SelectedValue { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3007,7 +3128,7 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -3040,6 +3161,8 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
       <MemberSignature Language="C#" Value="protected override void SetDesignModeState (System.Collections.IDictionary data);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetDesignModeState(class System.Collections.IDictionary data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Menu.SetDesignModeState(System.Collections.IDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetDesignModeState (data As IDictionary)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetDesignModeState(System::Collections::IDictionary ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3071,6 +3194,8 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
       <MemberSignature Language="C#" Value="protected void SetItemDataBound (System.Web.UI.WebControls.MenuItem node, bool dataBound);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void SetItemDataBound(class System.Web.UI.WebControls.MenuItem node, bool dataBound) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Menu.SetItemDataBound(System.Web.UI.WebControls.MenuItem,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub SetItemDataBound (node As MenuItem, dataBound As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void SetItemDataBound(System::Web::UI::WebControls::MenuItem ^ node, bool dataBound);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3104,6 +3229,8 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
       <MemberSignature Language="C#" Value="protected void SetItemDataItem (System.Web.UI.WebControls.MenuItem node, object dataItem);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void SetItemDataItem(class System.Web.UI.WebControls.MenuItem node, object dataItem) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Menu.SetItemDataItem(System.Web.UI.WebControls.MenuItem,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub SetItemDataItem (node As MenuItem, dataItem As Object)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void SetItemDataItem(System::Web::UI::WebControls::MenuItem ^ node, System::Object ^ dataItem);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3136,6 +3263,8 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
       <MemberSignature Language="C#" Value="protected void SetItemDataPath (System.Web.UI.WebControls.MenuItem node, string dataPath);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void SetItemDataPath(class System.Web.UI.WebControls.MenuItem node, string dataPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Menu.SetItemDataPath(System.Web.UI.WebControls.MenuItem,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub SetItemDataPath (node As MenuItem, dataPath As String)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void SetItemDataPath(System::Web::UI::WebControls::MenuItem ^ node, System::String ^ dataPath);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3168,6 +3297,8 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
       <MemberSignature Language="C#" Value="public string SkipLinkText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SkipLinkText" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Menu.SkipLinkText" />
+      <MemberSignature Language="VB.NET" Value="Public Property SkipLinkText As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SkipLinkText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3214,6 +3345,8 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
       <MemberSignature Language="C#" Value="public string StaticBottomSeparatorImageUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string StaticBottomSeparatorImageUrl" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Menu.StaticBottomSeparatorImageUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Property StaticBottomSeparatorImageUrl As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ StaticBottomSeparatorImageUrl { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3268,6 +3401,8 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
       <MemberSignature Language="C#" Value="public int StaticDisplayLevels { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 StaticDisplayLevels" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Menu.StaticDisplayLevels" />
+      <MemberSignature Language="VB.NET" Value="Public Property StaticDisplayLevels As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int StaticDisplayLevels { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3311,6 +3446,8 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
       <MemberSignature Language="C#" Value="public bool StaticEnableDefaultPopOutImage { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool StaticEnableDefaultPopOutImage" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Menu.StaticEnableDefaultPopOutImage" />
+      <MemberSignature Language="VB.NET" Value="Public Property StaticEnableDefaultPopOutImage As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool StaticEnableDefaultPopOutImage { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3366,6 +3503,8 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.Style StaticHoverStyle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.Style StaticHoverStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Menu.StaticHoverStyle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StaticHoverStyle As Style" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::Style ^ StaticHoverStyle { System::Web::UI::WebControls::Style ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3376,7 +3515,7 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
@@ -3433,6 +3572,8 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
       <MemberSignature Language="C#" Value="public string StaticItemFormatString { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string StaticItemFormatString" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Menu.StaticItemFormatString" />
+      <MemberSignature Language="VB.NET" Value="Public Property StaticItemFormatString As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ StaticItemFormatString { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3478,6 +3619,8 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
       <MemberSignature Language="C#" Value="public System.Web.UI.ITemplate StaticItemTemplate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.ITemplate StaticItemTemplate" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Menu.StaticItemTemplate" />
+      <MemberSignature Language="VB.NET" Value="Public Property StaticItemTemplate As ITemplate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::ITemplate ^ StaticItemTemplate { System::Web::UI::ITemplate ^ get(); void set(System::Web::UI::ITemplate ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3517,6 +3660,8 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.MenuItemStyle StaticMenuItemStyle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.MenuItemStyle StaticMenuItemStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Menu.StaticMenuItemStyle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StaticMenuItemStyle As MenuItemStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::MenuItemStyle ^ StaticMenuItemStyle { System::Web::UI::WebControls::MenuItemStyle ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3527,7 +3672,7 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
@@ -3584,6 +3729,8 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.SubMenuStyle StaticMenuStyle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.SubMenuStyle StaticMenuStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Menu.StaticMenuStyle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StaticMenuStyle As SubMenuStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::SubMenuStyle ^ StaticMenuStyle { System::Web::UI::WebControls::SubMenuStyle ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3594,7 +3741,7 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
@@ -3651,6 +3798,8 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
       <MemberSignature Language="C#" Value="public string StaticPopOutImageTextFormatString { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string StaticPopOutImageTextFormatString" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Menu.StaticPopOutImageTextFormatString" />
+      <MemberSignature Language="VB.NET" Value="Public Property StaticPopOutImageTextFormatString As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ StaticPopOutImageTextFormatString { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3698,6 +3847,8 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
       <MemberSignature Language="C#" Value="public string StaticPopOutImageUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string StaticPopOutImageUrl" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Menu.StaticPopOutImageUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Property StaticPopOutImageUrl As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ StaticPopOutImageUrl { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3760,6 +3911,8 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.MenuItemStyle StaticSelectedStyle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.MenuItemStyle StaticSelectedStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Menu.StaticSelectedStyle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StaticSelectedStyle As MenuItemStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::MenuItemStyle ^ StaticSelectedStyle { System::Web::UI::WebControls::MenuItemStyle ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3770,7 +3923,7 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
@@ -3867,6 +4020,8 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.Unit StaticSubMenuIndent { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.Unit StaticSubMenuIndent" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Menu.StaticSubMenuIndent" />
+      <MemberSignature Language="VB.NET" Value="Public Property StaticSubMenuIndent As Unit" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::Unit StaticSubMenuIndent { System::Web::UI::WebControls::Unit get(); void set(System::Web::UI::WebControls::Unit value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3912,6 +4067,8 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
       <MemberSignature Language="C#" Value="public string StaticTopSeparatorImageUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string StaticTopSeparatorImageUrl" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Menu.StaticTopSeparatorImageUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Property StaticTopSeparatorImageUrl As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ StaticTopSeparatorImageUrl { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3966,7 +4123,12 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
       <MemberSignature Language="C#" Value="void IPostBackEventHandler.RaisePostBackEvent (string eventArgument);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(string eventArgument) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Menu.System#Web#UI#IPostBackEventHandler#RaisePostBackEvent(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Sub RaisePostBackEvent (eventArgument As String) Implements IPostBackEventHandler.RaisePostBackEvent" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(System::String ^ eventArgument) = System::Web::UI::IPostBackEventHandler::RaisePostBackEvent;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -3987,6 +4149,8 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
       <MemberSignature Language="C#" Value="protected override System.Web.UI.HtmlTextWriterTag TagKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.HtmlTextWriterTag TagKey" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Menu.TagKey" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property TagKey As HtmlTextWriterTag" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Web::UI::HtmlTextWriterTag TagKey { System::Web::UI::HtmlTextWriterTag get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4013,6 +4177,8 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
       <MemberSignature Language="C#" Value="public string Target { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Target" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Menu.Target" />
+      <MemberSignature Language="VB.NET" Value="Public Property Target As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Target { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4068,6 +4234,8 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
       <MemberSignature Language="C#" Value="protected override void TrackViewState ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void TrackViewState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Menu.TrackViewState" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub TrackViewState ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void TrackViewState();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

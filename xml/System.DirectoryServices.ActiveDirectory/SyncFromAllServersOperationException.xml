@@ -1,7 +1,9 @@
-<Type Name="SyncFromAllServersOperationException" FullName="System.DirectoryServices.ActiveDirectory.SyncFromAllServersOperationException">
+﻿<Type Name="SyncFromAllServersOperationException" FullName="System.DirectoryServices.ActiveDirectory.SyncFromAllServersOperationException">
   <TypeSignature Language="C#" Value="public class SyncFromAllServersOperationException : System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit SyncFromAllServersOperationException extends System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException implements class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.SyncFromAllServersOperationException" />
+  <TypeSignature Language="VB.NET" Value="Public Class SyncFromAllServersOperationException&#xA;Inherits ActiveDirectoryOperationException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SyncFromAllServersOperationException : System::DirectoryServices::ActiveDirectory::ActiveDirectoryOperationException" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,10 +21,22 @@
     <altmember cref="M:System.DirectoryServices.ActiveDirectory.DomainController.SyncReplicaFromAllServers(System.String,System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions)" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectory.SyncFromAllServersOperationException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SyncFromAllServersOperationException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.SyncFromAllServersOperationException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SyncFromAllServersOperationException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -39,6 +53,8 @@
       <MemberSignature Language="C#" Value="public SyncFromAllServersOperationException (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.SyncFromAllServersOperationException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SyncFromAllServersOperationException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -58,6 +74,8 @@
       <MemberSignature Language="C#" Value="protected SyncFromAllServersOperationException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.SyncFromAllServersOperationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; SyncFromAllServersOperationException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -79,6 +97,8 @@
       <MemberSignature Language="C#" Value="public SyncFromAllServersOperationException (string message, Exception inner);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception inner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.SyncFromAllServersOperationException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, inner As Exception)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SyncFromAllServersOperationException(System::String ^ message, Exception ^ inner);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -100,6 +120,8 @@
       <MemberSignature Language="C#" Value="public SyncFromAllServersOperationException (string message, Exception inner, System.DirectoryServices.ActiveDirectory.SyncFromAllServersErrorInformation[] errors);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception inner, class System.DirectoryServices.ActiveDirectory.SyncFromAllServersErrorInformation[] errors) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.SyncFromAllServersOperationException.#ctor(System.String,System.Exception,System.DirectoryServices.ActiveDirectory.SyncFromAllServersErrorInformation[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, inner As Exception, errors As SyncFromAllServersErrorInformation())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SyncFromAllServersOperationException(System::String ^ message, Exception ^ inner, cli::array &lt;System::DirectoryServices::ActiveDirectory::SyncFromAllServersErrorInformation ^&gt; ^ errors);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -124,6 +146,8 @@
       <MemberSignature Language="C#" Value="public System.DirectoryServices.ActiveDirectory.SyncFromAllServersErrorInformation[] ErrorInformation { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.DirectoryServices.ActiveDirectory.SyncFromAllServersErrorInformation[] ErrorInformation" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.SyncFromAllServersOperationException.ErrorInformation" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ErrorInformation As SyncFromAllServersErrorInformation()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::DirectoryServices::ActiveDirectory::SyncFromAllServersErrorInformation ^&gt; ^ ErrorInformation { cli::array &lt;System::DirectoryServices::ActiveDirectory::SyncFromAllServersErrorInformation ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -144,7 +168,11 @@
       <MemberSignature Language="C#" Value="public override void GetObjectData (System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext streamingContext);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo serializationInfo, valuetype System.Runtime.Serialization.StreamingContext streamingContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.SyncFromAllServersOperationException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ serializationInfo, System::Runtime::Serialization::StreamingContext streamingContext);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -166,15 +194,5 @@
         <altmember cref="T:System.Runtime.Serialization.StreamingContext" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectory.SyncFromAllServersOperationException" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

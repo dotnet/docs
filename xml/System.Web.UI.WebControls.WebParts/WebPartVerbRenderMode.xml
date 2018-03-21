@@ -1,7 +1,9 @@
-<Type Name="WebPartVerbRenderMode" FullName="System.Web.UI.WebControls.WebParts.WebPartVerbRenderMode">
+﻿<Type Name="WebPartVerbRenderMode" FullName="System.Web.UI.WebControls.WebParts.WebPartVerbRenderMode">
   <TypeSignature Language="C#" Value="public enum WebPartVerbRenderMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WebPartVerbRenderMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.WebPartVerbRenderMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum WebPartVerbRenderMode" />
+  <TypeSignature Language="C++ CLI" Value="public enum class WebPartVerbRenderMode" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +28,8 @@
       <MemberSignature Language="C#" Value="Menu" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.WebParts.WebPartVerbRenderMode Menu = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.WebParts.WebPartVerbRenderMode.Menu" />
+      <MemberSignature Language="VB.NET" Value="Menu" />
+      <MemberSignature Language="C++ CLI" Value="Menu" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -34,6 +38,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.WebParts.WebPartVerbRenderMode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Verbs are rendered in a shortcut menu in the title bar.</summary>
       </Docs>
@@ -42,6 +47,8 @@
       <MemberSignature Language="C#" Value="TitleBar" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.WebParts.WebPartVerbRenderMode TitleBar = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.WebParts.WebPartVerbRenderMode.TitleBar" />
+      <MemberSignature Language="VB.NET" Value="TitleBar" />
+      <MemberSignature Language="C++ CLI" Value="TitleBar" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -50,6 +57,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.WebParts.WebPartVerbRenderMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Verbs are rendered as links directly in the title bar.</summary>
       </Docs>

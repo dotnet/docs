@@ -1,7 +1,9 @@
-<Type Name="DataListComponentEditor" FullName="System.Web.UI.Design.WebControls.DataListComponentEditor">
+﻿<Type Name="DataListComponentEditor" FullName="System.Web.UI.Design.WebControls.DataListComponentEditor">
   <TypeSignature Language="C#" Value="public class DataListComponentEditor : System.Web.UI.Design.WebControls.BaseDataListComponentEditor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataListComponentEditor extends System.Web.UI.Design.WebControls.BaseDataListComponentEditor" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.DataListComponentEditor" />
+  <TypeSignature Language="VB.NET" Value="Public Class DataListComponentEditor&#xA;Inherits BaseDataListComponentEditor" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataListComponentEditor : System::Web::UI::Design::WebControls::BaseDataListComponentEditor" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,10 +35,24 @@
     <altmember cref="T:System.Web.UI.Design.WebControls.DataListDesigner" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.DataListComponentEditor" /> class.</summary>
+        <altmember cref="T:System.Web.UI.WebControls.DataList" />
+        <altmember cref="T:System.ComponentModel.ComponentEditor" />
+        <altmember cref="T:System.Web.UI.Design.WebControls.DataListDesigner" />
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DataListComponentEditor ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.DataListComponentEditor.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataListComponentEditor();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -55,6 +71,8 @@
       <MemberSignature Language="C#" Value="public DataListComponentEditor (int initialPage);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 initialPage) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.DataListComponentEditor.#ctor(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (initialPage As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataListComponentEditor(int initialPage);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -76,6 +94,8 @@
       <MemberSignature Language="C#" Value="protected override Type[] GetComponentEditorPages ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Type[] GetComponentEditorPages() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.DataListComponentEditor.GetComponentEditorPages" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetComponentEditorPages () As Type()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override cli::array &lt;Type ^&gt; ^ GetComponentEditorPages();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -97,17 +117,5 @@
         <altmember cref="T:System.Web.UI.Design.WebControls.DataListDesigner" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.DataListComponentEditor" /> class.</summary>
-        <altmember cref="T:System.Web.UI.WebControls.DataList" />
-        <altmember cref="T:System.ComponentModel.ComponentEditor" />
-        <altmember cref="T:System.Web.UI.Design.WebControls.DataListDesigner" />
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

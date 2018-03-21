@@ -1,7 +1,9 @@
-<Type Name="ResourceSet" FullName="System.Resources.ResourceSet">
+﻿<Type Name="ResourceSet" FullName="System.Resources.ResourceSet">
   <TypeSignature Language="C#" Value="public class ResourceSet : IDisposable, System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ResourceSet extends System.Object implements class System.Collections.IEnumerable, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Resources.ResourceSet" />
+  <TypeSignature Language="VB.NET" Value="Public Class ResourceSet&#xA;Implements IDisposable, IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ResourceSet : IDisposable, System::Collections::IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -53,10 +55,22 @@
     </block>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.Resources.ResourceSet" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected ResourceSet ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResourceSet.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ResourceSet();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -81,6 +95,7 @@
       <MemberSignature Language="C#" Value="public ResourceSet (System.IO.Stream stream);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResourceSet.#ctor(System.IO.Stream)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ResourceSet(System::IO::Stream ^ stream);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -117,6 +132,8 @@
       <MemberSignature Language="C#" Value="public ResourceSet (System.Resources.IResourceReader reader);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Resources.IResourceReader reader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResourceSet.#ctor(System.Resources.IResourceReader)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (reader As IResourceReader)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ResourceSet(System::Resources::IResourceReader ^ reader);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -152,6 +169,8 @@
       <MemberSignature Language="C#" Value="public ResourceSet (string fileName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string fileName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResourceSet.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (fileName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ResourceSet(System::String ^ fileName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -191,6 +210,8 @@
       <MemberSignature Language="C#" Value="public virtual void Close ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Close() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResourceSet.Close" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Close ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Close();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -235,11 +256,26 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases resources used by the current <see cref="T:System.Resources.ResourceSet" /> instance.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Dispose">
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResourceSet.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -276,6 +312,8 @@
       <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResourceSet.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -313,6 +351,8 @@
       <MemberSignature Language="C#" Value="public virtual Type GetDefaultReader ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type GetDefaultReader() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResourceSet.GetDefaultReader" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDefaultReader () As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Type ^ GetDefaultReader();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -345,6 +385,8 @@
       <MemberSignature Language="C#" Value="public virtual Type GetDefaultWriter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type GetDefaultWriter() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResourceSet.GetDefaultWriter" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDefaultWriter () As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Type ^ GetDefaultWriter();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -377,6 +419,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Collections.IDictionaryEnumerator GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IDictionaryEnumerator GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResourceSet.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEnumerator () As IDictionaryEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IDictionaryEnumerator ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -435,10 +479,22 @@
         <exception cref="T:System.ObjectDisposedException">The resource set has been closed or disposed.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetObject">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a resource object with the specified name.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetObject">
       <MemberSignature Language="C#" Value="public virtual object GetObject (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetObject(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResourceSet.GetObject(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetObject (name As String) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ GetObject(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -479,6 +535,8 @@
       <MemberSignature Language="C#" Value="public virtual object GetObject (string name, bool ignoreCase);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetObject(string name, bool ignoreCase) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResourceSet.GetObject(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetObject (name As String, ignoreCase As Boolean) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ GetObject(System::String ^ name, bool ignoreCase);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -519,10 +577,22 @@
         <exception cref="T:System.ObjectDisposedException">The object has been closed or disposed.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetString">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a <see cref="T:System.String" /> resource with a specified name.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetString">
       <MemberSignature Language="C#" Value="public virtual string GetString (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetString(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResourceSet.GetString(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetString (name As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetString(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -557,6 +627,8 @@
       <MemberSignature Language="C#" Value="public virtual string GetString (string name, bool ignoreCase);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetString(string name, bool ignoreCase) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResourceSet.GetString(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetString (name As String, ignoreCase As Boolean) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetString(System::String ^ name, bool ignoreCase);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -602,6 +674,8 @@
       <MemberSignature Language="C#" Value="protected System.Resources.IResourceReader Reader;" />
       <MemberSignature Language="ILAsm" Value=".field family class System.Resources.IResourceReader Reader" />
       <MemberSignature Language="DocId" Value="F:System.Resources.ResourceSet.Reader" />
+      <MemberSignature Language="VB.NET" Value="Protected Reader As IResourceReader " />
+      <MemberSignature Language="C++ CLI" Value="protected: System::Resources::IResourceReader ^ Reader;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -621,6 +695,8 @@
       <MemberSignature Language="C#" Value="protected virtual void ReadResources ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ReadResources() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResourceSet.ReadResources" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ReadResources ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ReadResources();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -651,7 +727,12 @@
       <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResourceSet.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator Implements IEnumerable.GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IEnumerator ^ System.Collections.IEnumerable.GetEnumerator() = System::Collections::IEnumerable::GetEnumerator;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -679,6 +760,8 @@
       <MemberSignature Language="C#" Value="protected System.Collections.Hashtable Table;" />
       <MemberSignature Language="ILAsm" Value=".field family class System.Collections.Hashtable Table" />
       <MemberSignature Language="DocId" Value="F:System.Resources.ResourceSet.Table" />
+      <MemberSignature Language="VB.NET" Value="Protected Table As Hashtable " />
+      <MemberSignature Language="C++ CLI" Value="protected: System::Collections::Hashtable ^ Table;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -694,45 +777,5 @@
         <altmember cref="T:System.Collections.Hashtable" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a new instance of the <see cref="T:System.Resources.ResourceSet" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetObject">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a resource object with the specified name.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetString">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a <see cref="T:System.String" /> resource with a specified name.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Dispose">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Releases resources used by the current <see cref="T:System.Resources.ResourceSet" /> instance.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

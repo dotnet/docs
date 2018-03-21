@@ -1,7 +1,9 @@
-<Type Name="SaveOptions" FullName="System.Xml.Linq.SaveOptions">
+﻿<Type Name="SaveOptions" FullName="System.Xml.Linq.SaveOptions">
   <TypeSignature Language="C#" Value="public enum SaveOptions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SaveOptions extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Linq.SaveOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Enum SaveOptions" />
+  <TypeSignature Language="C++ CLI" Value="public enum class SaveOptions" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.XDocument</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -91,6 +93,8 @@ Console.WriteLine(str)
       <MemberSignature Language="C#" Value="DisableFormatting" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Linq.SaveOptions DisableFormatting = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Linq.SaveOptions.DisableFormatting" />
+      <MemberSignature Language="VB.NET" Value="DisableFormatting" />
+      <MemberSignature Language="C++ CLI" Value="DisableFormatting" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -110,6 +114,7 @@ Console.WriteLine(str)
       <ReturnValue>
         <ReturnType>System.Xml.Linq.SaveOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Preserve all insignificant white space while serializing.</summary>
       </Docs>
@@ -118,6 +123,8 @@ Console.WriteLine(str)
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Linq.SaveOptions None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Linq.SaveOptions.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -137,6 +144,7 @@ Console.WriteLine(str)
       <ReturnValue>
         <ReturnType>System.Xml.Linq.SaveOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Format (indent) the XML while serializing.</summary>
       </Docs>
@@ -145,6 +153,8 @@ Console.WriteLine(str)
       <MemberSignature Language="C#" Value="OmitDuplicateNamespaces" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Linq.SaveOptions OmitDuplicateNamespaces = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Linq.SaveOptions.OmitDuplicateNamespaces" />
+      <MemberSignature Language="VB.NET" Value="OmitDuplicateNamespaces" />
+      <MemberSignature Language="C++ CLI" Value="OmitDuplicateNamespaces" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -164,6 +174,7 @@ Console.WriteLine(str)
       <ReturnValue>
         <ReturnType>System.Xml.Linq.SaveOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Remove the duplicate namespace declarations while serializing.</summary>
       </Docs>

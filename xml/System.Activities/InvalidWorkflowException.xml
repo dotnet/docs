@@ -1,7 +1,9 @@
-<Type Name="InvalidWorkflowException" FullName="System.Activities.InvalidWorkflowException">
+﻿<Type Name="InvalidWorkflowException" FullName="System.Activities.InvalidWorkflowException">
   <TypeSignature Language="C#" Value="public class InvalidWorkflowException : Exception" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit InvalidWorkflowException extends System.Exception" />
   <TypeSignature Language="DocId" Value="T:System.Activities.InvalidWorkflowException" />
+  <TypeSignature Language="VB.NET" Value="Public Class InvalidWorkflowException&#xA;Inherits Exception" />
+  <TypeSignature Language="C++ CLI" Value="public ref class InvalidWorkflowException : Exception" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,10 +24,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Create a new instance of the <see cref="T:System.Activities.InvalidWorkflowException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public InvalidWorkflowException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.InvalidWorkflowException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InvalidWorkflowException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -41,6 +54,8 @@
       <MemberSignature Language="C#" Value="public InvalidWorkflowException (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.InvalidWorkflowException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InvalidWorkflowException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -59,6 +74,8 @@
       <MemberSignature Language="C#" Value="protected InvalidWorkflowException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.InvalidWorkflowException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; InvalidWorkflowException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -79,6 +96,8 @@
       <MemberSignature Language="C#" Value="public InvalidWorkflowException (string message, Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.InvalidWorkflowException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InvalidWorkflowException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -95,14 +114,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Create a new instance of the <see cref="T:System.Activities.InvalidWorkflowException" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

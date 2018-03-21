@@ -1,7 +1,9 @@
-<Type Name="TabAlignment" FullName="System.Windows.Forms.TabAlignment">
+﻿<Type Name="TabAlignment" FullName="System.Windows.Forms.TabAlignment">
   <TypeSignature Language="C#" Value="public enum TabAlignment" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TabAlignment extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TabAlignment" />
+  <TypeSignature Language="VB.NET" Value="Public Enum TabAlignment" />
+  <TypeSignature Language="C++ CLI" Value="public enum class TabAlignment" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +37,8 @@
       <MemberSignature Language="C#" Value="Bottom" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TabAlignment Bottom = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TabAlignment.Bottom" />
+      <MemberSignature Language="VB.NET" Value="Bottom" />
+      <MemberSignature Language="C++ CLI" Value="Bottom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -43,6 +47,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TabAlignment</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The tabs are located across the bottom of the control.</summary>
       </Docs>
@@ -51,6 +56,8 @@
       <MemberSignature Language="C#" Value="Left" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TabAlignment Left = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TabAlignment.Left" />
+      <MemberSignature Language="VB.NET" Value="Left" />
+      <MemberSignature Language="C++ CLI" Value="Left" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -59,6 +66,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TabAlignment</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The tabs are located along the left edge of the control.</summary>
       </Docs>
@@ -67,6 +75,8 @@
       <MemberSignature Language="C#" Value="Right" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TabAlignment Right = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TabAlignment.Right" />
+      <MemberSignature Language="VB.NET" Value="Right" />
+      <MemberSignature Language="C++ CLI" Value="Right" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -75,6 +85,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TabAlignment</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The tabs are located along the right edge of the control.</summary>
       </Docs>
@@ -83,6 +94,8 @@
       <MemberSignature Language="C#" Value="Top" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TabAlignment Top = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TabAlignment.Top" />
+      <MemberSignature Language="VB.NET" Value="Top" />
+      <MemberSignature Language="C++ CLI" Value="Top" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -91,6 +104,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TabAlignment</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The tabs are located across the top of the control.</summary>
       </Docs>

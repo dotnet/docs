@@ -1,7 +1,9 @@
-<Type Name="RunWorkerCompletedEventHandler" FullName="System.ComponentModel.RunWorkerCompletedEventHandler">
+﻿<Type Name="RunWorkerCompletedEventHandler" FullName="System.ComponentModel.RunWorkerCompletedEventHandler">
   <TypeSignature Language="C#" Value="public delegate void RunWorkerCompletedEventHandler(object sender, RunWorkerCompletedEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RunWorkerCompletedEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.RunWorkerCompletedEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub RunWorkerCompletedEventHandler(sender As Object, e As RunWorkerCompletedEventArgs)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void RunWorkerCompletedEventHandler(System::Object ^ sender, RunWorkerCompletedEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>

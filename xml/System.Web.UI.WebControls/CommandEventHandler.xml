@@ -1,7 +1,9 @@
-<Type Name="CommandEventHandler" FullName="System.Web.UI.WebControls.CommandEventHandler">
+﻿<Type Name="CommandEventHandler" FullName="System.Web.UI.WebControls.CommandEventHandler">
   <TypeSignature Language="C#" Value="public delegate void CommandEventHandler(object sender, CommandEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CommandEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.CommandEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub CommandEventHandler(sender As Object, e As CommandEventArgs)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void CommandEventHandler(System::Object ^ sender, CommandEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -1,7 +1,9 @@
-<Type Name="AsyncResult" FullName="System.IdentityModel.AsyncResult">
+﻿<Type Name="AsyncResult" FullName="System.IdentityModel.AsyncResult">
   <TypeSignature Language="C#" Value="public abstract class AsyncResult : IAsyncResult, IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit AsyncResult extends System.Object implements class System.IAsyncResult, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.AsyncResult" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class AsyncResult&#xA;Implements IAsyncResult, IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AsyncResult abstract : IAsyncResult, IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,10 +33,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Called from constructors in derived classes to initialize the <see cref="T:System.IdentityModel.AsyncResult" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected AsyncResult ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.AsyncResult.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; AsyncResult();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -50,6 +63,8 @@
       <MemberSignature Language="C#" Value="protected AsyncResult (object state);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.AsyncResult.#ctor(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (state As Object)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; AsyncResult(System::Object ^ state);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -68,6 +83,8 @@
       <MemberSignature Language="C#" Value="protected AsyncResult (AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.AsyncResult.#ctor(System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (callback As AsyncCallback, state As Object)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; AsyncResult(AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -88,7 +105,12 @@
       <MemberSignature Language="C#" Value="public object AsyncState { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object AsyncState" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.AsyncResult.AsyncState" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AsyncState As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ AsyncState { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.IAsyncResult.AsyncState</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -113,7 +135,12 @@
       <MemberSignature Language="C#" Value="public virtual System.Threading.WaitHandle AsyncWaitHandle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Threading.WaitHandle AsyncWaitHandle" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.AsyncResult.AsyncWaitHandle" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property AsyncWaitHandle As WaitHandle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Threading::WaitHandle ^ AsyncWaitHandle { System::Threading::WaitHandle ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.IAsyncResult.AsyncWaitHandle</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -134,10 +161,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Complete">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Called to complete the asynchronous operation.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Complete">
       <MemberSignature Language="C#" Value="protected void Complete (bool completedSynchronously);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void Complete(bool completedSynchronously) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.AsyncResult.Complete(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub Complete (completedSynchronously As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void Complete(bool completedSynchronously);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -160,6 +198,7 @@
       <MemberSignature Language="C#" Value="protected void Complete (bool completedSynchronously, Exception exception);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void Complete(bool completedSynchronously, class System.Exception exception) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.AsyncResult.Complete(System.Boolean,System.Exception)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void Complete(bool completedSynchronously, Exception ^ exception);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -184,7 +223,12 @@
       <MemberSignature Language="C#" Value="public bool CompletedSynchronously { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CompletedSynchronously" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.AsyncResult.CompletedSynchronously" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CompletedSynchronously As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CompletedSynchronously { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.IAsyncResult.CompletedSynchronously</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -206,11 +250,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the resources used by the current instance of the <see cref="T:System.IdentityModel.AsyncResult" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Dispose">
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.AsyncResult.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -228,6 +286,8 @@
       <MemberSignature Language="C#" Value="protected virtual void Dispose (bool isExplicitDispose);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool isExplicitDispose) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.AsyncResult.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (isExplicitDispose As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool isExplicitDispose);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -250,6 +310,8 @@
       <MemberSignature Language="C#" Value="public static void End (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void End(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.AsyncResult.End(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub End (result As IAsyncResult)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void End(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -271,6 +333,8 @@
       <MemberSignature Language="C#" Value="~AsyncResult ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.AsyncResult.Finalize" />
+      <MemberSignature Language="VB.NET" Value="Finalize ()" />
+      <MemberSignature Language="C++ CLI" Value="!AsyncResult ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -289,7 +353,12 @@
       <MemberSignature Language="C#" Value="public bool IsCompleted { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsCompleted" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.AsyncResult.IsCompleted" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsCompleted As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCompleted { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.IAsyncResult.IsCompleted</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -304,32 +373,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Complete">
-      <AssemblyInfo>
-        <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Called to complete the asynchronous operation.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Called from constructors in derived classes to initialize the <see cref="T:System.IdentityModel.AsyncResult" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Dispose">
-      <AssemblyInfo>
-        <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Releases the resources used by the current instance of the <see cref="T:System.IdentityModel.AsyncResult" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

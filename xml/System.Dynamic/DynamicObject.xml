@@ -1,7 +1,9 @@
-<Type Name="DynamicObject" FullName="System.Dynamic.DynamicObject">
+﻿<Type Name="DynamicObject" FullName="System.Dynamic.DynamicObject">
   <TypeSignature Language="C#" Value="public class DynamicObject : System.Dynamic.IDynamicMetaObjectProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit DynamicObject extends System.Object implements class System.Dynamic.IDynamicMetaObjectProvider" />
   <TypeSignature Language="DocId" Value="T:System.Dynamic.DynamicObject" />
+  <TypeSignature Language="VB.NET" Value="Public Class DynamicObject&#xA;Implements IDynamicMetaObjectProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DynamicObject : System::Dynamic::IDynamicMetaObjectProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Dynamic.Runtime</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -87,6 +89,8 @@ Dim sampleObject As Object = New SampleDynamicObject()
       <MemberSignature Language="C#" Value="protected DynamicObject ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Dynamic.DynamicObject.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; DynamicObject();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -144,6 +148,8 @@ Dim sampleObject As Object = New SampleDynamicObject()
       <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerable&lt;string&gt; GetDynamicMemberNames ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;string&gt; GetDynamicMemberNames() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Dynamic.DynamicObject.GetDynamicMemberNames" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDynamicMemberNames () As IEnumerable(Of String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ GetDynamicMemberNames();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -183,7 +189,12 @@ Dim sampleObject As Object = New SampleDynamicObject()
       <MemberSignature Language="C#" Value="public virtual System.Dynamic.DynamicMetaObject GetMetaObject (System.Linq.Expressions.Expression parameter);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Dynamic.DynamicMetaObject GetMetaObject(class System.Linq.Expressions.Expression parameter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Dynamic.DynamicObject.GetMetaObject(System.Linq.Expressions.Expression)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetMetaObject (parameter As Expression) As DynamicMetaObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Dynamic::DynamicMetaObject ^ GetMetaObject(System::Linq::Expressions::Expression ^ parameter);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Dynamic.IDynamicMetaObjectProvider.GetMetaObject(System.Linq.Expressions.Expression)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -218,6 +229,8 @@ Dim sampleObject As Object = New SampleDynamicObject()
       <MemberSignature Language="C#" Value="public virtual bool TryBinaryOperation (System.Dynamic.BinaryOperationBinder binder, object arg, out object result);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryBinaryOperation(class System.Dynamic.BinaryOperationBinder binder, object arg, [out] object&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Dynamic.DynamicObject.TryBinaryOperation(System.Dynamic.BinaryOperationBinder,System.Object,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function TryBinaryOperation (binder As BinaryOperationBinder, arg As Object, ByRef result As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool TryBinaryOperation(System::Dynamic::BinaryOperationBinder ^ binder, System::Object ^ arg, [Runtime::InteropServices::Out] System::Object ^ % result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -319,6 +332,8 @@ Dim sampleObject As Object = New SampleDynamicObject()
       <MemberSignature Language="C#" Value="public virtual bool TryConvert (System.Dynamic.ConvertBinder binder, out object result);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryConvert(class System.Dynamic.ConvertBinder binder, [out] object&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Dynamic.DynamicObject.TryConvert(System.Dynamic.ConvertBinder,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function TryConvert (binder As ConvertBinder, ByRef result As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool TryConvert(System::Dynamic::ConvertBinder ^ binder, [Runtime::InteropServices::Out] System::Object ^ % result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -394,6 +409,8 @@ Dim testExplicit2 = CTypeDynamic(sampleObject, GetType(String))
       <MemberSignature Language="C#" Value="public virtual bool TryCreateInstance (System.Dynamic.CreateInstanceBinder binder, object[] args, out object result);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryCreateInstance(class System.Dynamic.CreateInstanceBinder binder, object[] args, [out] object&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Dynamic.DynamicObject.TryCreateInstance(System.Dynamic.CreateInstanceBinder,System.Object[],System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function TryCreateInstance (binder As CreateInstanceBinder, args As Object(), ByRef result As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool TryCreateInstance(System::Dynamic::CreateInstanceBinder ^ binder, cli::array &lt;System::Object ^&gt; ^ args, [Runtime::InteropServices::Out] System::Object ^ % result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -443,6 +460,8 @@ Dim testExplicit2 = CTypeDynamic(sampleObject, GetType(String))
       <MemberSignature Language="C#" Value="public virtual bool TryDeleteIndex (System.Dynamic.DeleteIndexBinder binder, object[] indexes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryDeleteIndex(class System.Dynamic.DeleteIndexBinder binder, object[] indexes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Dynamic.DynamicObject.TryDeleteIndex(System.Dynamic.DeleteIndexBinder,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function TryDeleteIndex (binder As DeleteIndexBinder, indexes As Object()) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool TryDeleteIndex(System::Dynamic::DeleteIndexBinder ^ binder, cli::array &lt;System::Object ^&gt; ^ indexes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -490,6 +509,8 @@ Dim testExplicit2 = CTypeDynamic(sampleObject, GetType(String))
       <MemberSignature Language="C#" Value="public virtual bool TryDeleteMember (System.Dynamic.DeleteMemberBinder binder);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryDeleteMember(class System.Dynamic.DeleteMemberBinder binder) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Dynamic.DynamicObject.TryDeleteMember(System.Dynamic.DeleteMemberBinder)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function TryDeleteMember (binder As DeleteMemberBinder) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool TryDeleteMember(System::Dynamic::DeleteMemberBinder ^ binder);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -535,6 +556,8 @@ Dim testExplicit2 = CTypeDynamic(sampleObject, GetType(String))
       <MemberSignature Language="C#" Value="public virtual bool TryGetIndex (System.Dynamic.GetIndexBinder binder, object[] indexes, out object result);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetIndex(class System.Dynamic.GetIndexBinder binder, object[] indexes, [out] object&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Dynamic.DynamicObject.TryGetIndex(System.Dynamic.GetIndexBinder,System.Object[],System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function TryGetIndex (binder As GetIndexBinder, indexes As Object(), ByRef result As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool TryGetIndex(System::Dynamic::GetIndexBinder ^ binder, cli::array &lt;System::Object ^&gt; ^ indexes, [Runtime::InteropServices::Out] System::Object ^ % result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -594,6 +617,8 @@ Dim testExplicit2 = CTypeDynamic(sampleObject, GetType(String))
       <MemberSignature Language="C#" Value="public virtual bool TryGetMember (System.Dynamic.GetMemberBinder binder, out object result);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetMember(class System.Dynamic.GetMemberBinder binder, [out] object&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Dynamic.DynamicObject.TryGetMember(System.Dynamic.GetMemberBinder,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function TryGetMember (binder As GetMemberBinder, ByRef result As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool TryGetMember(System::Dynamic::GetMemberBinder ^ binder, [Runtime::InteropServices::Out] System::Object ^ % result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -653,6 +678,8 @@ Dim testExplicit2 = CTypeDynamic(sampleObject, GetType(String))
       <MemberSignature Language="C#" Value="public virtual bool TryInvoke (System.Dynamic.InvokeBinder binder, object[] args, out object result);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryInvoke(class System.Dynamic.InvokeBinder binder, object[] args, [out] object&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Dynamic.DynamicObject.TryInvoke(System.Dynamic.InvokeBinder,System.Object[],System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function TryInvoke (binder As InvokeBinder, args As Object(), ByRef result As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool TryInvoke(System::Dynamic::InvokeBinder ^ binder, cli::array &lt;System::Object ^&gt; ^ args, [Runtime::InteropServices::Out] System::Object ^ % result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -713,6 +740,8 @@ Dim testExplicit2 = CTypeDynamic(sampleObject, GetType(String))
       <MemberSignature Language="C#" Value="public virtual bool TryInvokeMember (System.Dynamic.InvokeMemberBinder binder, object[] args, out object result);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryInvokeMember(class System.Dynamic.InvokeMemberBinder binder, object[] args, [out] object&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Dynamic.DynamicObject.TryInvokeMember(System.Dynamic.InvokeMemberBinder,System.Object[],System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function TryInvokeMember (binder As InvokeMemberBinder, args As Object(), ByRef result As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool TryInvokeMember(System::Dynamic::InvokeMemberBinder ^ binder, cli::array &lt;System::Object ^&gt; ^ args, [Runtime::InteropServices::Out] System::Object ^ % result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -776,6 +805,8 @@ Dim testExplicit2 = CTypeDynamic(sampleObject, GetType(String))
       <MemberSignature Language="C#" Value="public virtual bool TrySetIndex (System.Dynamic.SetIndexBinder binder, object[] indexes, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TrySetIndex(class System.Dynamic.SetIndexBinder binder, object[] indexes, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Dynamic.DynamicObject.TrySetIndex(System.Dynamic.SetIndexBinder,System.Object[],System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function TrySetIndex (binder As SetIndexBinder, indexes As Object(), value As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool TrySetIndex(System::Dynamic::SetIndexBinder ^ binder, cli::array &lt;System::Object ^&gt; ^ indexes, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -835,6 +866,8 @@ Dim testExplicit2 = CTypeDynamic(sampleObject, GetType(String))
       <MemberSignature Language="C#" Value="public virtual bool TrySetMember (System.Dynamic.SetMemberBinder binder, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TrySetMember(class System.Dynamic.SetMemberBinder binder, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Dynamic.DynamicObject.TrySetMember(System.Dynamic.SetMemberBinder,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function TrySetMember (binder As SetMemberBinder, value As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool TrySetMember(System::Dynamic::SetMemberBinder ^ binder, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -894,6 +927,8 @@ Dim testExplicit2 = CTypeDynamic(sampleObject, GetType(String))
       <MemberSignature Language="C#" Value="public virtual bool TryUnaryOperation (System.Dynamic.UnaryOperationBinder binder, out object result);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryUnaryOperation(class System.Dynamic.UnaryOperationBinder binder, [out] object&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Dynamic.DynamicObject.TryUnaryOperation(System.Dynamic.UnaryOperationBinder,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function TryUnaryOperation (binder As UnaryOperationBinder, ByRef result As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool TryUnaryOperation(System::Dynamic::UnaryOperationBinder ^ binder, [Runtime::InteropServices::Out] System::Object ^ % result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>

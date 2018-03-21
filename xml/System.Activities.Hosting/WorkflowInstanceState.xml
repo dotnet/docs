@@ -1,7 +1,9 @@
-<Type Name="WorkflowInstanceState" FullName="System.Activities.Hosting.WorkflowInstanceState">
+﻿<Type Name="WorkflowInstanceState" FullName="System.Activities.Hosting.WorkflowInstanceState">
   <TypeSignature Language="C#" Value="public enum WorkflowInstanceState" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WorkflowInstanceState extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Hosting.WorkflowInstanceState" />
+  <TypeSignature Language="VB.NET" Value="Public Enum WorkflowInstanceState" />
+  <TypeSignature Language="C++ CLI" Value="public enum class WorkflowInstanceState" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -18,6 +20,8 @@
       <MemberSignature Language="C#" Value="Aborted" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.Hosting.WorkflowInstanceState Aborted = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Hosting.WorkflowInstanceState.Aborted" />
+      <MemberSignature Language="VB.NET" Value="Aborted" />
+      <MemberSignature Language="C++ CLI" Value="Aborted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -26,6 +30,7 @@
       <ReturnValue>
         <ReturnType>System.Activities.Hosting.WorkflowInstanceState</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Activities.Hosting.WorkflowInstance" /> is aborted.</summary>
         <remarks>
@@ -42,6 +47,8 @@
       <MemberSignature Language="C#" Value="Complete" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.Hosting.WorkflowInstanceState Complete = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Hosting.WorkflowInstanceState.Complete" />
+      <MemberSignature Language="VB.NET" Value="Complete" />
+      <MemberSignature Language="C++ CLI" Value="Complete" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -50,6 +57,7 @@
       <ReturnValue>
         <ReturnType>System.Activities.Hosting.WorkflowInstanceState</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Activities.Hosting.WorkflowInstance" /> is complete.</summary>
         <remarks>
@@ -66,6 +74,8 @@
       <MemberSignature Language="C#" Value="Idle" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.Hosting.WorkflowInstanceState Idle = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Hosting.WorkflowInstanceState.Idle" />
+      <MemberSignature Language="VB.NET" Value="Idle" />
+      <MemberSignature Language="C++ CLI" Value="Idle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -74,6 +84,7 @@
       <ReturnValue>
         <ReturnType>System.Activities.Hosting.WorkflowInstanceState</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Activities.Hosting.WorkflowInstance" /> is idle.</summary>
         <remarks>
@@ -90,6 +101,8 @@
       <MemberSignature Language="C#" Value="Runnable" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.Hosting.WorkflowInstanceState Runnable = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Hosting.WorkflowInstanceState.Runnable" />
+      <MemberSignature Language="VB.NET" Value="Runnable" />
+      <MemberSignature Language="C++ CLI" Value="Runnable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -98,6 +111,7 @@
       <ReturnValue>
         <ReturnType>System.Activities.Hosting.WorkflowInstanceState</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Activities.Hosting.WorkflowInstance" /> can be run.</summary>
         <remarks>

@@ -1,7 +1,9 @@
-<Type Name="IDataParameterCollection" FullName="System.Data.IDataParameterCollection">
+﻿<Type Name="IDataParameterCollection" FullName="System.Data.IDataParameterCollection">
   <TypeSignature Language="C#" Value="public interface IDataParameterCollection : System.Collections.IList" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDataParameterCollection implements class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Collections.IList" />
   <TypeSignature Language="DocId" Value="T:System.Data.IDataParameterCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IDataParameterCollection&#xA;Implements IList" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IDataParameterCollection : System::Collections::IList" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Common</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -54,6 +56,8 @@
       <MemberSignature Language="C#" Value="public bool Contains (string parameterName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Contains(string parameterName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.IDataParameterCollection.Contains(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (parameterName As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::String ^ parameterName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -87,6 +91,8 @@
       <MemberSignature Language="C#" Value="public int IndexOf (string parameterName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 IndexOf(string parameterName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.IDataParameterCollection.IndexOf(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOf (parameterName As String) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::String ^ parameterName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -119,6 +125,8 @@
       <MemberSignature Language="C#" Value="public object this[string parameterName] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.Data.IDataParameterCollection.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(parameterName As String) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[System::String ^] { System::Object ^ get(System::String ^ parameterName); void set(System::String ^ parameterName, System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -151,6 +159,8 @@
       <MemberSignature Language="C#" Value="public void RemoveAt (string parameterName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveAt(string parameterName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.IDataParameterCollection.RemoveAt(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (parameterName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(System::String ^ parameterName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>

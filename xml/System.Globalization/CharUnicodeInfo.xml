@@ -1,7 +1,9 @@
-<Type Name="CharUnicodeInfo" FullName="System.Globalization.CharUnicodeInfo">
+﻿<Type Name="CharUnicodeInfo" FullName="System.Globalization.CharUnicodeInfo">
   <TypeSignature Language="C#" Value="public static class CharUnicodeInfo" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit CharUnicodeInfo extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Globalization.CharUnicodeInfo" />
+  <TypeSignature Language="VB.NET" Value="Public Class CharUnicodeInfo" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CharUnicodeInfo abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Globalization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -110,10 +112,22 @@
     <altmember cref="N:System.Text" />
   </Docs>
   <Members>
+    <MemberGroup MemberName="GetDecimalDigitValue">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the decimal digit value of a numeric Unicode character.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetDecimalDigitValue">
       <MemberSignature Language="C#" Value="public static int GetDecimalDigitValue (char ch);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetDecimalDigitValue(char ch) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CharUnicodeInfo.GetDecimalDigitValue(System.Char)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetDecimalDigitValue (ch As Char) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int GetDecimalDigitValue(char ch);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -167,6 +181,8 @@
       <MemberSignature Language="C#" Value="public static int GetDecimalDigitValue (string s, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetDecimalDigitValue(string s, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CharUnicodeInfo.GetDecimalDigitValue(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetDecimalDigitValue (s As String, index As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int GetDecimalDigitValue(System::String ^ s, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -222,10 +238,22 @@
           <paramref name="index" /> is outside the range of valid indexes in <paramref name="s" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetDigitValue">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the digit value of a numeric Unicode character.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetDigitValue">
       <MemberSignature Language="C#" Value="public static int GetDigitValue (char ch);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetDigitValue(char ch) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CharUnicodeInfo.GetDigitValue(System.Char)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetDigitValue (ch As Char) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int GetDigitValue(char ch);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -279,6 +307,8 @@
       <MemberSignature Language="C#" Value="public static int GetDigitValue (string s, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetDigitValue(string s, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CharUnicodeInfo.GetDigitValue(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetDigitValue (s As String, index As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int GetDigitValue(System::String ^ s, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -334,10 +364,22 @@
           <paramref name="index" /> is outside the range of valid indexes in <paramref name="s" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetNumericValue">
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the numeric value associated with a Unicode character.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetNumericValue">
       <MemberSignature Language="C#" Value="public static double GetNumericValue (char ch);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 GetNumericValue(char ch) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CharUnicodeInfo.GetNumericValue(System.Char)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetNumericValue (ch As Char) As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double GetNumericValue(char ch);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -399,6 +441,8 @@
       <MemberSignature Language="C#" Value="public static double GetNumericValue (string s, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 GetNumericValue(string s, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CharUnicodeInfo.GetNumericValue(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetNumericValue (s As String, index As Integer) As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double GetNumericValue(System::String ^ s, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -462,10 +506,22 @@
           <paramref name="index" /> is outside the range of valid indexes in <paramref name="s" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetUnicodeCategory">
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the Unicode category of a Unicode character.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetUnicodeCategory">
       <MemberSignature Language="C#" Value="public static System.Globalization.UnicodeCategory GetUnicodeCategory (char ch);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Globalization.UnicodeCategory GetUnicodeCategory(char ch) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CharUnicodeInfo.GetUnicodeCategory(System.Char)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetUnicodeCategory (ch As Char) As UnicodeCategory" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Globalization::UnicodeCategory GetUnicodeCategory(char ch);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -526,6 +582,8 @@
       <MemberSignature Language="C#" Value="public static System.Globalization.UnicodeCategory GetUnicodeCategory (string s, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Globalization.UnicodeCategory GetUnicodeCategory(string s, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CharUnicodeInfo.GetUnicodeCategory(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetUnicodeCategory (s As String, index As Integer) As UnicodeCategory" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Globalization::UnicodeCategory GetUnicodeCategory(System::String ^ s, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -588,45 +646,5 @@
         <altmember cref="T:System.Globalization.UnicodeCategory" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetNumericValue">
-      <AssemblyInfo>
-        <AssemblyName>System.Globalization</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets the numeric value associated with a Unicode character.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetDecimalDigitValue">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets the decimal digit value of a numeric Unicode character.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetDigitValue">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets the digit value of a numeric Unicode character.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetUnicodeCategory">
-      <AssemblyInfo>
-        <AssemblyName>System.Globalization</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets the Unicode category of a Unicode character.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

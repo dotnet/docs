@@ -1,7 +1,9 @@
-<Type Name="SoapServices" FullName="System.Runtime.Remoting.SoapServices">
+﻿<Type Name="SoapServices" FullName="System.Runtime.Remoting.SoapServices">
   <TypeSignature Language="C#" Value="public class SoapServices" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SoapServices extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.SoapServices" />
+  <TypeSignature Language="VB.NET" Value="Public Class SoapServices" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SoapServices" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -41,6 +43,8 @@
       <MemberSignature Language="C#" Value="public static string CodeXmlNamespaceForClrTypeNamespace (string typeNamespace, string assemblyName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string CodeXmlNamespaceForClrTypeNamespace(string typeNamespace, string assemblyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.SoapServices.CodeXmlNamespaceForClrTypeNamespace(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CodeXmlNamespaceForClrTypeNamespace (typeNamespace As String, assemblyName As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ CodeXmlNamespaceForClrTypeNamespace(System::String ^ typeNamespace, System::String ^ assemblyName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -86,6 +90,8 @@
       <MemberSignature Language="C#" Value="public static bool DecodeXmlNamespaceForClrTypeNamespace (string inNamespace, out string typeNamespace, out string assemblyName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool DecodeXmlNamespaceForClrTypeNamespace(string inNamespace, [out] string&amp; typeNamespace, [out] string&amp; assemblyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.SoapServices.DecodeXmlNamespaceForClrTypeNamespace(System.String,System.String@,System.String@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DecodeXmlNamespaceForClrTypeNamespace (inNamespace As String, ByRef typeNamespace As String, ByRef assemblyName As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool DecodeXmlNamespaceForClrTypeNamespace(System::String ^ inNamespace, [Runtime::InteropServices::Out] System::String ^ % typeNamespace, [Runtime::InteropServices::Out] System::String ^ % assemblyName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -132,6 +138,7 @@
       <MemberSignature Language="C#" Value="public static void GetInteropFieldTypeAndNameFromXmlAttribute (Type containingType, string xmlAttribute, string xmlNamespace, out Type type, out string name);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void GetInteropFieldTypeAndNameFromXmlAttribute(class System.Type containingType, string xmlAttribute, string xmlNamespace, [out] class System.Type&amp; type, [out] string&amp; name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.SoapServices.GetInteropFieldTypeAndNameFromXmlAttribute(System.Type,System.String,System.String,System.Type@,System.String@)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void GetInteropFieldTypeAndNameFromXmlAttribute(Type ^ containingType, System::String ^ xmlAttribute, System::String ^ xmlNamespace, [Runtime::InteropServices::Out] Type ^ % type, [Runtime::InteropServices::Out] System::String ^ % name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -179,6 +186,7 @@
       <MemberSignature Language="C#" Value="public static void GetInteropFieldTypeAndNameFromXmlElement (Type containingType, string xmlElement, string xmlNamespace, out Type type, out string name);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void GetInteropFieldTypeAndNameFromXmlElement(class System.Type containingType, string xmlElement, string xmlNamespace, [out] class System.Type&amp; type, [out] string&amp; name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.SoapServices.GetInteropFieldTypeAndNameFromXmlElement(System.Type,System.String,System.String,System.Type@,System.String@)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void GetInteropFieldTypeAndNameFromXmlElement(Type ^ containingType, System::String ^ xmlElement, System::String ^ xmlNamespace, [Runtime::InteropServices::Out] Type ^ % type, [Runtime::InteropServices::Out] System::String ^ % name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -226,6 +234,8 @@
       <MemberSignature Language="C#" Value="public static Type GetInteropTypeFromXmlElement (string xmlElement, string xmlNamespace);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Type GetInteropTypeFromXmlElement(string xmlElement, string xmlNamespace) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.SoapServices.GetInteropTypeFromXmlElement(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetInteropTypeFromXmlElement (xmlElement As String, xmlNamespace As String) As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Type ^ GetInteropTypeFromXmlElement(System::String ^ xmlElement, System::String ^ xmlNamespace);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -268,6 +278,8 @@
       <MemberSignature Language="C#" Value="public static Type GetInteropTypeFromXmlType (string xmlType, string xmlTypeNamespace);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Type GetInteropTypeFromXmlType(string xmlType, string xmlTypeNamespace) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.SoapServices.GetInteropTypeFromXmlType(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetInteropTypeFromXmlType (xmlType As String, xmlTypeNamespace As String) As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Type ^ GetInteropTypeFromXmlType(System::String ^ xmlType, System::String ^ xmlTypeNamespace);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -310,6 +322,8 @@
       <MemberSignature Language="C#" Value="public static string GetSoapActionFromMethodBase (System.Reflection.MethodBase mb);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetSoapActionFromMethodBase(class System.Reflection.MethodBase mb) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.SoapServices.GetSoapActionFromMethodBase(System.Reflection.MethodBase)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetSoapActionFromMethodBase (mb As MethodBase) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetSoapActionFromMethodBase(System::Reflection::MethodBase ^ mb);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -350,6 +364,8 @@
       <MemberSignature Language="C#" Value="public static bool GetTypeAndMethodNameFromSoapAction (string soapAction, out string typeName, out string methodName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetTypeAndMethodNameFromSoapAction(string soapAction, [out] string&amp; typeName, [out] string&amp; methodName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.SoapServices.GetTypeAndMethodNameFromSoapAction(System.String,System.String@,System.String@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetTypeAndMethodNameFromSoapAction (soapAction As String, ByRef typeName As String, ByRef methodName As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetTypeAndMethodNameFromSoapAction(System::String ^ soapAction, [Runtime::InteropServices::Out] System::String ^ % typeName, [Runtime::InteropServices::Out] System::String ^ % methodName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -396,6 +412,7 @@
       <MemberSignature Language="C#" Value="public static bool GetXmlElementForInteropType (Type type, out string xmlElement, out string xmlNamespace);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetXmlElementForInteropType(class System.Type type, [out] string&amp; xmlElement, [out] string&amp; xmlNamespace) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.SoapServices.GetXmlElementForInteropType(System.Type,System.String@,System.String@)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetXmlElementForInteropType(Type ^ type, [Runtime::InteropServices::Out] System::String ^ % xmlElement, [Runtime::InteropServices::Out] System::String ^ % xmlNamespace);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -437,6 +454,8 @@
       <MemberSignature Language="C#" Value="public static string GetXmlNamespaceForMethodCall (System.Reflection.MethodBase mb);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetXmlNamespaceForMethodCall(class System.Reflection.MethodBase mb) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.SoapServices.GetXmlNamespaceForMethodCall(System.Reflection.MethodBase)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetXmlNamespaceForMethodCall (mb As MethodBase) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetXmlNamespaceForMethodCall(System::Reflection::MethodBase ^ mb);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -472,6 +491,8 @@
       <MemberSignature Language="C#" Value="public static string GetXmlNamespaceForMethodResponse (System.Reflection.MethodBase mb);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetXmlNamespaceForMethodResponse(class System.Reflection.MethodBase mb) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.SoapServices.GetXmlNamespaceForMethodResponse(System.Reflection.MethodBase)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetXmlNamespaceForMethodResponse (mb As MethodBase) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetXmlNamespaceForMethodResponse(System::Reflection::MethodBase ^ mb);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -507,6 +528,7 @@
       <MemberSignature Language="C#" Value="public static bool GetXmlTypeForInteropType (Type type, out string xmlType, out string xmlTypeNamespace);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetXmlTypeForInteropType(class System.Type type, [out] string&amp; xmlType, [out] string&amp; xmlTypeNamespace) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.SoapServices.GetXmlTypeForInteropType(System.Type,System.String@,System.String@)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetXmlTypeForInteropType(Type ^ type, [Runtime::InteropServices::Out] System::String ^ % xmlType, [Runtime::InteropServices::Out] System::String ^ % xmlTypeNamespace);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -548,6 +570,8 @@
       <MemberSignature Language="C#" Value="public static bool IsClrTypeNamespace (string namespaceString);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsClrTypeNamespace(string namespaceString) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.SoapServices.IsClrTypeNamespace(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsClrTypeNamespace (namespaceString As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsClrTypeNamespace(System::String ^ namespaceString);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -591,6 +615,8 @@
       <MemberSignature Language="C#" Value="public static bool IsSoapActionValidForMethodBase (string soapAction, System.Reflection.MethodBase mb);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsSoapActionValidForMethodBase(string soapAction, class System.Reflection.MethodBase mb) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.SoapServices.IsSoapActionValidForMethodBase(System.String,System.Reflection.MethodBase)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsSoapActionValidForMethodBase (soapAction As String, mb As MethodBase) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsSoapActionValidForMethodBase(System::String ^ soapAction, System::Reflection::MethodBase ^ mb);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -625,10 +651,21 @@
         <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="PreLoad">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Preloads specified types based on values set in the <see cref="T:System.Runtime.Remoting.Metadata.SoapTypeAttribute" /> applied to the types.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="PreLoad">
       <MemberSignature Language="C#" Value="public static void PreLoad (System.Reflection.Assembly assembly);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void PreLoad(class System.Reflection.Assembly assembly) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.SoapServices.PreLoad(System.Reflection.Assembly)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void PreLoad(System::Reflection::Assembly ^ assembly);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -668,6 +705,7 @@
       <MemberSignature Language="C#" Value="public static void PreLoad (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void PreLoad(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.SoapServices.PreLoad(System.Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void PreLoad(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -707,6 +745,7 @@
       <MemberSignature Language="C#" Value="public static void RegisterInteropXmlElement (string xmlElement, string xmlNamespace, Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterInteropXmlElement(string xmlElement, string xmlNamespace, class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.SoapServices.RegisterInteropXmlElement(System.String,System.String,System.Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterInteropXmlElement(System::String ^ xmlElement, System::String ^ xmlNamespace, Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -746,6 +785,7 @@
       <MemberSignature Language="C#" Value="public static void RegisterInteropXmlType (string xmlType, string xmlTypeNamespace, Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterInteropXmlType(string xmlType, string xmlTypeNamespace, class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.SoapServices.RegisterInteropXmlType(System.String,System.String,System.Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterInteropXmlType(System::String ^ xmlType, System::String ^ xmlTypeNamespace, Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -780,10 +820,22 @@
         <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="RegisterSoapActionForMethodBase">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Associates a SOAPAction value with the provided <see cref="T:System.Reflection.MethodBase" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="RegisterSoapActionForMethodBase">
       <MemberSignature Language="C#" Value="public static void RegisterSoapActionForMethodBase (System.Reflection.MethodBase mb);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterSoapActionForMethodBase(class System.Reflection.MethodBase mb) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.SoapServices.RegisterSoapActionForMethodBase(System.Reflection.MethodBase)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub RegisterSoapActionForMethodBase (mb As MethodBase)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterSoapActionForMethodBase(System::Reflection::MethodBase ^ mb);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -825,6 +877,8 @@
       <MemberSignature Language="C#" Value="public static void RegisterSoapActionForMethodBase (System.Reflection.MethodBase mb, string soapAction);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterSoapActionForMethodBase(class System.Reflection.MethodBase mb, string soapAction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.SoapServices.RegisterSoapActionForMethodBase(System.Reflection.MethodBase,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub RegisterSoapActionForMethodBase (mb As MethodBase, soapAction As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterSoapActionForMethodBase(System::Reflection::MethodBase ^ mb, System::String ^ soapAction);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -866,6 +920,8 @@
       <MemberSignature Language="C#" Value="public static string XmlNsForClrType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string XmlNsForClrType" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.SoapServices.XmlNsForClrType" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property XmlNsForClrType As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ XmlNsForClrType { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -902,6 +958,8 @@
       <MemberSignature Language="C#" Value="public static string XmlNsForClrTypeWithAssembly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string XmlNsForClrTypeWithAssembly" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.SoapServices.XmlNsForClrTypeWithAssembly" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property XmlNsForClrTypeWithAssembly As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ XmlNsForClrTypeWithAssembly { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -938,6 +996,8 @@
       <MemberSignature Language="C#" Value="public static string XmlNsForClrTypeWithNs { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string XmlNsForClrTypeWithNs" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.SoapServices.XmlNsForClrTypeWithNs" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property XmlNsForClrTypeWithNs As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ XmlNsForClrTypeWithNs { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -974,6 +1034,8 @@
       <MemberSignature Language="C#" Value="public static string XmlNsForClrTypeWithNsAndAssembly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string XmlNsForClrTypeWithNsAndAssembly" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.SoapServices.XmlNsForClrTypeWithNsAndAssembly" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property XmlNsForClrTypeWithNsAndAssembly As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ XmlNsForClrTypeWithNsAndAssembly { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1006,25 +1068,5 @@
         <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
       </Docs>
     </Member>
-    <MemberGroup MemberName="PreLoad">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Preloads specified types based on values set in the <see cref="T:System.Runtime.Remoting.Metadata.SoapTypeAttribute" /> applied to the types.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="RegisterSoapActionForMethodBase">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Associates a SOAPAction value with the provided <see cref="T:System.Reflection.MethodBase" />.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,9 @@
-<Type Name="SerialPinChange" FullName="System.IO.Ports.SerialPinChange">
+﻿<Type Name="SerialPinChange" FullName="System.IO.Ports.SerialPinChange">
   <TypeSignature Language="C#" Value="public enum SerialPinChange" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SerialPinChange extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.IO.Ports.SerialPinChange" />
+  <TypeSignature Language="VB.NET" Value="Public Enum SerialPinChange" />
+  <TypeSignature Language="C++ CLI" Value="public enum class SerialPinChange" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +33,8 @@
       <MemberSignature Language="C#" Value="Break" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Ports.SerialPinChange Break = int32(64)" />
       <MemberSignature Language="DocId" Value="F:System.IO.Ports.SerialPinChange.Break" />
+      <MemberSignature Language="VB.NET" Value="Break" />
+      <MemberSignature Language="C++ CLI" Value="Break" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -43,6 +47,7 @@
       <ReturnValue>
         <ReturnType>System.IO.Ports.SerialPinChange</ReturnType>
       </ReturnValue>
+      <MemberValue>64</MemberValue>
       <Docs>
         <summary>A break was detected on input.</summary>
       </Docs>
@@ -51,6 +56,8 @@
       <MemberSignature Language="C#" Value="CDChanged" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Ports.SerialPinChange CDChanged = int32(32)" />
       <MemberSignature Language="DocId" Value="F:System.IO.Ports.SerialPinChange.CDChanged" />
+      <MemberSignature Language="VB.NET" Value="CDChanged" />
+      <MemberSignature Language="C++ CLI" Value="CDChanged" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -63,6 +70,7 @@
       <ReturnValue>
         <ReturnType>System.IO.Ports.SerialPinChange</ReturnType>
       </ReturnValue>
+      <MemberValue>32</MemberValue>
       <Docs>
         <summary>The Carrier Detect (CD) signal changed state. This signal is used to indicate whether a modem is connected to a working phone line and a data carrier signal is detected.</summary>
       </Docs>
@@ -71,6 +79,8 @@
       <MemberSignature Language="C#" Value="CtsChanged" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Ports.SerialPinChange CtsChanged = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.IO.Ports.SerialPinChange.CtsChanged" />
+      <MemberSignature Language="VB.NET" Value="CtsChanged" />
+      <MemberSignature Language="C++ CLI" Value="CtsChanged" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -83,6 +93,7 @@
       <ReturnValue>
         <ReturnType>System.IO.Ports.SerialPinChange</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>The Clear to Send (CTS) signal changed state. This signal is used to indicate whether data can be sent over the serial port.</summary>
       </Docs>
@@ -91,6 +102,8 @@
       <MemberSignature Language="C#" Value="DsrChanged" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Ports.SerialPinChange DsrChanged = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.IO.Ports.SerialPinChange.DsrChanged" />
+      <MemberSignature Language="VB.NET" Value="DsrChanged" />
+      <MemberSignature Language="C++ CLI" Value="DsrChanged" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -103,6 +116,7 @@
       <ReturnValue>
         <ReturnType>System.IO.Ports.SerialPinChange</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>The Data Set Ready (DSR) signal changed state. This signal is used to indicate whether the device on the serial port is ready to operate.</summary>
       </Docs>
@@ -111,6 +125,8 @@
       <MemberSignature Language="C#" Value="Ring" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Ports.SerialPinChange Ring = int32(256)" />
       <MemberSignature Language="DocId" Value="F:System.IO.Ports.SerialPinChange.Ring" />
+      <MemberSignature Language="VB.NET" Value="Ring" />
+      <MemberSignature Language="C++ CLI" Value="Ring" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -123,6 +139,7 @@
       <ReturnValue>
         <ReturnType>System.IO.Ports.SerialPinChange</ReturnType>
       </ReturnValue>
+      <MemberValue>256</MemberValue>
       <Docs>
         <summary>A ring indicator was detected.</summary>
       </Docs>

@@ -1,7 +1,9 @@
-<Type Name="IDataItemContainer" FullName="System.Web.UI.IDataItemContainer">
+﻿<Type Name="IDataItemContainer" FullName="System.Web.UI.IDataItemContainer">
   <TypeSignature Language="C#" Value="public interface IDataItemContainer : System.Web.UI.INamingContainer" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDataItemContainer implements class System.Web.UI.INamingContainer" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.IDataItemContainer" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IDataItemContainer&#xA;Implements INamingContainer" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IDataItemContainer : System::Web::UI::INamingContainer" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +48,8 @@
       <MemberSignature Language="C#" Value="public object DataItem { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object DataItem" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.IDataItemContainer.DataItem" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataItem As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ DataItem { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -82,6 +86,8 @@
       <MemberSignature Language="C#" Value="public int DataItemIndex { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 DataItemIndex" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.IDataItemContainer.DataItemIndex" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataItemIndex As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int DataItemIndex { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -119,6 +125,8 @@
       <MemberSignature Language="C#" Value="public int DisplayIndex { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 DisplayIndex" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.IDataItemContainer.DisplayIndex" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DisplayIndex As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int DisplayIndex { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

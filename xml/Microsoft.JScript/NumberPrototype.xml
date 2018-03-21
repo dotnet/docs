@@ -1,7 +1,9 @@
-<Type Name="NumberPrototype" FullName="Microsoft.JScript.NumberPrototype">
+﻿<Type Name="NumberPrototype" FullName="Microsoft.JScript.NumberPrototype">
   <TypeSignature Language="C#" Value="public class NumberPrototype : Microsoft.JScript.NumberObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NumberPrototype extends Microsoft.JScript.NumberObject" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.NumberPrototype" />
+  <TypeSignature Language="VB.NET" Value="Public Class NumberPrototype&#xA;Inherits NumberObject" />
+  <TypeSignature Language="C++ CLI" Value="public ref class NumberPrototype : Microsoft::JScript::NumberObject" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -21,6 +23,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.JScript.NumberConstructor constructor { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class Microsoft.JScript.NumberConstructor constructor" />
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.NumberPrototype.constructor" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property constructor As NumberConstructor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Microsoft::JScript::NumberConstructor ^ constructor { Microsoft::JScript::NumberConstructor ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -41,6 +45,8 @@
       <MemberSignature Language="C#" Value="public static string toExponential (object thisob, object fractionDigits);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string toExponential(object thisob, object fractionDigits) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.NumberPrototype.toExponential(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function toExponential (thisob As Object, fractionDigits As Object) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ toExponential(System::Object ^ thisob, System::Object ^ fractionDigits);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -72,6 +78,8 @@
       <MemberSignature Language="C#" Value="public static string toFixed (object thisob, double fractionDigits);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string toFixed(object thisob, float64 fractionDigits) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.NumberPrototype.toFixed(System.Object,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function toFixed (thisob As Object, fractionDigits As Double) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ toFixed(System::Object ^ thisob, double fractionDigits);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -103,6 +111,8 @@
       <MemberSignature Language="C#" Value="public static string toLocaleString (object thisob);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string toLocaleString(object thisob) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.NumberPrototype.toLocaleString(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function toLocaleString (thisob As Object) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ toLocaleString(System::Object ^ thisob);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -133,6 +143,8 @@
       <MemberSignature Language="C#" Value="public static string toPrecision (object thisob, object precision);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string toPrecision(object thisob, object precision) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.NumberPrototype.toPrecision(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function toPrecision (thisob As Object, precision As Object) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ toPrecision(System::Object ^ thisob, System::Object ^ precision);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -165,6 +177,8 @@
       <MemberSignature Language="C#" Value="public static string toString (object thisob, object radix);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string toString(object thisob, object radix) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.NumberPrototype.toString(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function toString (thisob As Object, radix As Object) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ toString(System::Object ^ thisob, System::Object ^ radix);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -197,6 +211,8 @@
       <MemberSignature Language="C#" Value="public static object valueOf (object thisob);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object valueOf(object thisob) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.NumberPrototype.valueOf(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function valueOf (thisob As Object) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ valueOf(System::Object ^ thisob);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

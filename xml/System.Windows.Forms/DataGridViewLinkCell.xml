@@ -1,7 +1,9 @@
-<Type Name="DataGridViewLinkCell" FullName="System.Windows.Forms.DataGridViewLinkCell">
+﻿<Type Name="DataGridViewLinkCell" FullName="System.Windows.Forms.DataGridViewLinkCell">
   <TypeSignature Language="C#" Value="public class DataGridViewLinkCell : System.Windows.Forms.DataGridViewCell" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataGridViewLinkCell extends System.Windows.Forms.DataGridViewCell" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewLinkCell" />
+  <TypeSignature Language="VB.NET" Value="Public Class DataGridViewLinkCell&#xA;Inherits DataGridViewCell" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataGridViewLinkCell : System::Windows::Forms::DataGridViewCell" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +50,8 @@
       <MemberSignature Language="C#" Value="public DataGridViewLinkCell ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewLinkCell.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridViewLinkCell();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -64,6 +68,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color ActiveLinkColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ActiveLinkColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewLinkCell.ActiveLinkColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property ActiveLinkColor As Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color ActiveLinkColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -100,6 +106,8 @@
       <MemberSignature Language="C#" Value="public override object Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewLinkCell.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Clone () As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -130,6 +138,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Forms.AccessibleObject CreateAccessibilityInstance ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Forms.AccessibleObject CreateAccessibilityInstance() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewLinkCell.CreateAccessibilityInstance" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateAccessibilityInstance () As AccessibleObject" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Forms::AccessibleObject ^ CreateAccessibilityInstance();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -162,6 +172,8 @@
       <MemberSignature Language="C#" Value="public override Type EditType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type EditType" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewLinkCell.EditType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property EditType As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ EditType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -188,6 +200,8 @@
       <MemberSignature Language="C#" Value="public override Type FormattedValueType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type FormattedValueType" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewLinkCell.FormattedValueType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property FormattedValueType As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ FormattedValueType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -217,6 +231,7 @@
       <MemberSignature Language="C#" Value="protected override System.Drawing.Rectangle GetContentBounds (System.Drawing.Graphics graphics, System.Windows.Forms.DataGridViewCellStyle cellStyle, int rowIndex);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Drawing.Rectangle GetContentBounds(class System.Drawing.Graphics graphics, class System.Windows.Forms.DataGridViewCellStyle cellStyle, int32 rowIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewLinkCell.GetContentBounds(System.Drawing.Graphics,System.Windows.Forms.DataGridViewCellStyle,System.Int32)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Drawing::Rectangle GetContentBounds(System::Drawing::Graphics ^ graphics, System::Windows::Forms::DataGridViewCellStyle ^ cellStyle, int rowIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -244,6 +259,7 @@
       <MemberSignature Language="C#" Value="protected override System.Drawing.Rectangle GetErrorIconBounds (System.Drawing.Graphics graphics, System.Windows.Forms.DataGridViewCellStyle cellStyle, int rowIndex);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Drawing.Rectangle GetErrorIconBounds(class System.Drawing.Graphics graphics, class System.Windows.Forms.DataGridViewCellStyle cellStyle, int32 rowIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewLinkCell.GetErrorIconBounds(System.Drawing.Graphics,System.Windows.Forms.DataGridViewCellStyle,System.Int32)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Drawing::Rectangle GetErrorIconBounds(System::Drawing::Graphics ^ graphics, System::Windows::Forms::DataGridViewCellStyle ^ cellStyle, int rowIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -271,6 +287,7 @@
       <MemberSignature Language="C#" Value="protected override System.Drawing.Size GetPreferredSize (System.Drawing.Graphics graphics, System.Windows.Forms.DataGridViewCellStyle cellStyle, int rowIndex, System.Drawing.Size constraintSize);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Drawing.Size GetPreferredSize(class System.Drawing.Graphics graphics, class System.Windows.Forms.DataGridViewCellStyle cellStyle, int32 rowIndex, valuetype System.Drawing.Size constraintSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewLinkCell.GetPreferredSize(System.Drawing.Graphics,System.Windows.Forms.DataGridViewCellStyle,System.Int32,System.Drawing.Size)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Drawing::Size GetPreferredSize(System::Drawing::Graphics ^ graphics, System::Windows::Forms::DataGridViewCellStyle ^ cellStyle, int rowIndex, System::Drawing::Size constraintSize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -300,6 +317,8 @@
       <MemberSignature Language="C#" Value="protected override object GetValue (int rowIndex);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object GetValue(int32 rowIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewLinkCell.GetValue(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetValue (rowIndex As Integer) As Object" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetValue(int rowIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -323,6 +342,8 @@
       <MemberSignature Language="C#" Value="protected override bool KeyUpUnsharesRow (System.Windows.Forms.KeyEventArgs e, int rowIndex);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool KeyUpUnsharesRow(class System.Windows.Forms.KeyEventArgs e, int32 rowIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewLinkCell.KeyUpUnsharesRow(System.Windows.Forms.KeyEventArgs,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function KeyUpUnsharesRow (e As KeyEventArgs, rowIndex As Integer) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool KeyUpUnsharesRow(System::Windows::Forms::KeyEventArgs ^ e, int rowIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -359,6 +380,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.LinkBehavior LinkBehavior { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.LinkBehavior LinkBehavior" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewLinkCell.LinkBehavior" />
+      <MemberSignature Language="VB.NET" Value="Public Property LinkBehavior As LinkBehavior" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::LinkBehavior LinkBehavior { System::Windows::Forms::LinkBehavior get(); void set(System::Windows::Forms::LinkBehavior value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -404,6 +427,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color LinkColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color LinkColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewLinkCell.LinkColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property LinkColor As Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color LinkColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -440,6 +465,8 @@
       <MemberSignature Language="C#" Value="public bool LinkVisited { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool LinkVisited" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewLinkCell.LinkVisited" />
+      <MemberSignature Language="VB.NET" Value="Public Property LinkVisited As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool LinkVisited { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -470,6 +497,8 @@
       <MemberSignature Language="C#" Value="protected override bool MouseDownUnsharesRow (System.Windows.Forms.DataGridViewCellMouseEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool MouseDownUnsharesRow(class System.Windows.Forms.DataGridViewCellMouseEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewLinkCell.MouseDownUnsharesRow(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function MouseDownUnsharesRow (e As DataGridViewCellMouseEventArgs) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool MouseDownUnsharesRow(System::Windows::Forms::DataGridViewCellMouseEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -504,6 +533,8 @@
       <MemberSignature Language="C#" Value="protected override bool MouseLeaveUnsharesRow (int rowIndex);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool MouseLeaveUnsharesRow(int32 rowIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewLinkCell.MouseLeaveUnsharesRow(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function MouseLeaveUnsharesRow (rowIndex As Integer) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool MouseLeaveUnsharesRow(int rowIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -538,6 +569,8 @@
       <MemberSignature Language="C#" Value="protected override bool MouseMoveUnsharesRow (System.Windows.Forms.DataGridViewCellMouseEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool MouseMoveUnsharesRow(class System.Windows.Forms.DataGridViewCellMouseEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewLinkCell.MouseMoveUnsharesRow(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function MouseMoveUnsharesRow (e As DataGridViewCellMouseEventArgs) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool MouseMoveUnsharesRow(System::Windows::Forms::DataGridViewCellMouseEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -572,6 +605,8 @@
       <MemberSignature Language="C#" Value="protected override bool MouseUpUnsharesRow (System.Windows.Forms.DataGridViewCellMouseEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool MouseUpUnsharesRow(class System.Windows.Forms.DataGridViewCellMouseEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewLinkCell.MouseUpUnsharesRow(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function MouseUpUnsharesRow (e As DataGridViewCellMouseEventArgs) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool MouseUpUnsharesRow(System::Windows::Forms::DataGridViewCellMouseEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -606,6 +641,8 @@
       <MemberSignature Language="C#" Value="protected override void OnKeyUp (System.Windows.Forms.KeyEventArgs e, int rowIndex);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnKeyUp(class System.Windows.Forms.KeyEventArgs e, int32 rowIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewLinkCell.OnKeyUp(System.Windows.Forms.KeyEventArgs,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnKeyUp (e As KeyEventArgs, rowIndex As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnKeyUp(System::Windows::Forms::KeyEventArgs ^ e, int rowIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -630,6 +667,8 @@
       <MemberSignature Language="C#" Value="protected override void OnMouseDown (System.Windows.Forms.DataGridViewCellMouseEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseDown(class System.Windows.Forms.DataGridViewCellMouseEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewLinkCell.OnMouseDown(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseDown (e As DataGridViewCellMouseEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseDown(System::Windows::Forms::DataGridViewCellMouseEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -652,6 +691,8 @@
       <MemberSignature Language="C#" Value="protected override void OnMouseLeave (int rowIndex);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseLeave(int32 rowIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewLinkCell.OnMouseLeave(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseLeave (rowIndex As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseLeave(int rowIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -674,6 +715,8 @@
       <MemberSignature Language="C#" Value="protected override void OnMouseMove (System.Windows.Forms.DataGridViewCellMouseEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseMove(class System.Windows.Forms.DataGridViewCellMouseEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewLinkCell.OnMouseMove(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseMove (e As DataGridViewCellMouseEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseMove(System::Windows::Forms::DataGridViewCellMouseEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -696,6 +739,8 @@
       <MemberSignature Language="C#" Value="protected override void OnMouseUp (System.Windows.Forms.DataGridViewCellMouseEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseUp(class System.Windows.Forms.DataGridViewCellMouseEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewLinkCell.OnMouseUp(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseUp (e As DataGridViewCellMouseEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseUp(System::Windows::Forms::DataGridViewCellMouseEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -718,6 +763,7 @@
       <MemberSignature Language="C#" Value="protected override void Paint (System.Drawing.Graphics graphics, System.Drawing.Rectangle clipBounds, System.Drawing.Rectangle cellBounds, int rowIndex, System.Windows.Forms.DataGridViewElementStates cellState, object value, object formattedValue, string errorText, System.Windows.Forms.DataGridViewCellStyle cellStyle, System.Windows.Forms.DataGridViewAdvancedBorderStyle advancedBorderStyle, System.Windows.Forms.DataGridViewPaintParts paintParts);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Paint(class System.Drawing.Graphics graphics, valuetype System.Drawing.Rectangle clipBounds, valuetype System.Drawing.Rectangle cellBounds, int32 rowIndex, valuetype System.Windows.Forms.DataGridViewElementStates cellState, object value, object formattedValue, string errorText, class System.Windows.Forms.DataGridViewCellStyle cellStyle, class System.Windows.Forms.DataGridViewAdvancedBorderStyle advancedBorderStyle, valuetype System.Windows.Forms.DataGridViewPaintParts paintParts) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewLinkCell.Paint(System.Drawing.Graphics,System.Drawing.Rectangle,System.Drawing.Rectangle,System.Int32,System.Windows.Forms.DataGridViewElementStates,System.Object,System.Object,System.String,System.Windows.Forms.DataGridViewCellStyle,System.Windows.Forms.DataGridViewAdvancedBorderStyle,System.Windows.Forms.DataGridViewPaintParts)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Paint(System::Drawing::Graphics ^ graphics, System::Drawing::Rectangle clipBounds, System::Drawing::Rectangle cellBounds, int rowIndex, System::Windows::Forms::DataGridViewElementStates cellState, System::Object ^ value, System::Object ^ formattedValue, System::String ^ errorText, System::Windows::Forms::DataGridViewCellStyle ^ cellStyle, System::Windows::Forms::DataGridViewAdvancedBorderStyle ^ advancedBorderStyle, System::Windows::Forms::DataGridViewPaintParts paintParts);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -760,6 +806,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewLinkCell.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -780,6 +828,8 @@
       <MemberSignature Language="C#" Value="public bool TrackVisitedState { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool TrackVisitedState" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewLinkCell.TrackVisitedState" />
+      <MemberSignature Language="VB.NET" Value="Public Property TrackVisitedState As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool TrackVisitedState { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -825,6 +875,8 @@
       <MemberSignature Language="C#" Value="public bool UseColumnTextForLinkValue { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UseColumnTextForLinkValue" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewLinkCell.UseColumnTextForLinkValue" />
+      <MemberSignature Language="VB.NET" Value="Public Property UseColumnTextForLinkValue As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseColumnTextForLinkValue { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -869,6 +921,8 @@
       <MemberSignature Language="C#" Value="public override Type ValueType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type ValueType" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewLinkCell.ValueType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ValueType As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ ValueType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -888,6 +942,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color VisitedLinkColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color VisitedLinkColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewLinkCell.VisitedLinkColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property VisitedLinkColor As Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color VisitedLinkColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

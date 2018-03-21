@@ -1,7 +1,9 @@
-<Type Name="UdpTransportSettingsElement" FullName="System.ServiceModel.Discovery.Configuration.UdpTransportSettingsElement">
+﻿<Type Name="UdpTransportSettingsElement" FullName="System.ServiceModel.Discovery.Configuration.UdpTransportSettingsElement">
   <TypeSignature Language="C#" Value="public sealed class UdpTransportSettingsElement : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit UdpTransportSettingsElement extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Discovery.Configuration.UdpTransportSettingsElement" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class UdpTransportSettingsElement&#xA;Inherits ConfigurationElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class UdpTransportSettingsElement sealed : System::Configuration::ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +28,8 @@
       <MemberSignature Language="C#" Value="public UdpTransportSettingsElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.Configuration.UdpTransportSettingsElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UdpTransportSettingsElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -41,6 +45,8 @@
       <MemberSignature Language="C#" Value="public int DuplicateMessageHistoryLength { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 DuplicateMessageHistoryLength" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.Configuration.UdpTransportSettingsElement.DuplicateMessageHistoryLength" />
+      <MemberSignature Language="VB.NET" Value="Public Property DuplicateMessageHistoryLength As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int DuplicateMessageHistoryLength { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -67,6 +73,8 @@
       <MemberSignature Language="C#" Value="public long MaxBufferPoolSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 MaxBufferPoolSize" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.Configuration.UdpTransportSettingsElement.MaxBufferPoolSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxBufferPoolSize As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long MaxBufferPoolSize { long get(); void set(long value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -93,6 +101,8 @@
       <MemberSignature Language="C#" Value="public int MaxMulticastRetransmitCount { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxMulticastRetransmitCount" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.Configuration.UdpTransportSettingsElement.MaxMulticastRetransmitCount" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxMulticastRetransmitCount As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxMulticastRetransmitCount { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -119,6 +129,8 @@
       <MemberSignature Language="C#" Value="public int MaxPendingMessageCount { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxPendingMessageCount" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.Configuration.UdpTransportSettingsElement.MaxPendingMessageCount" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxPendingMessageCount As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxPendingMessageCount { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -145,6 +157,8 @@
       <MemberSignature Language="C#" Value="public long MaxReceivedMessageSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 MaxReceivedMessageSize" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.Configuration.UdpTransportSettingsElement.MaxReceivedMessageSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxReceivedMessageSize As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long MaxReceivedMessageSize { long get(); void set(long value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -171,6 +185,8 @@
       <MemberSignature Language="C#" Value="public int MaxUnicastRetransmitCount { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxUnicastRetransmitCount" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.Configuration.UdpTransportSettingsElement.MaxUnicastRetransmitCount" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxUnicastRetransmitCount As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxUnicastRetransmitCount { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -197,6 +213,8 @@
       <MemberSignature Language="C#" Value="public string MulticastInterfaceId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MulticastInterfaceId" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.Configuration.UdpTransportSettingsElement.MulticastInterfaceId" />
+      <MemberSignature Language="VB.NET" Value="Public Property MulticastInterfaceId As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MulticastInterfaceId { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -220,6 +238,8 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.Configuration.UdpTransportSettingsElement.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -238,6 +258,8 @@
       <MemberSignature Language="C#" Value="public int SocketReceiveBufferSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 SocketReceiveBufferSize" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.Configuration.UdpTransportSettingsElement.SocketReceiveBufferSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property SocketReceiveBufferSize As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SocketReceiveBufferSize { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -264,6 +286,8 @@
       <MemberSignature Language="C#" Value="public int TimeToLive { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 TimeToLive" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.Configuration.UdpTransportSettingsElement.TimeToLive" />
+      <MemberSignature Language="VB.NET" Value="Public Property TimeToLive As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int TimeToLive { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>

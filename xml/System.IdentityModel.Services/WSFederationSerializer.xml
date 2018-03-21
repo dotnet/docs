@@ -1,7 +1,9 @@
-<Type Name="WSFederationSerializer" FullName="System.IdentityModel.Services.WSFederationSerializer">
+﻿<Type Name="WSFederationSerializer" FullName="System.IdentityModel.Services.WSFederationSerializer">
   <TypeSignature Language="C#" Value="public class WSFederationSerializer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WSFederationSerializer extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Services.WSFederationSerializer" />
+  <TypeSignature Language="VB.NET" Value="Public Class WSFederationSerializer" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WSFederationSerializer" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,10 +17,21 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Services.WSFederationSerializer" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public WSFederationSerializer ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.WSFederationSerializer.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WSFederationSerializer();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -41,6 +54,8 @@
       <MemberSignature Language="C#" Value="public WSFederationSerializer (System.Xml.XmlDictionaryReader reader);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.XmlDictionaryReader reader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.WSFederationSerializer.#ctor(System.Xml.XmlDictionaryReader)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (reader As XmlDictionaryReader)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WSFederationSerializer(System::Xml::XmlDictionaryReader ^ reader);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -68,6 +83,8 @@
       <MemberSignature Language="C#" Value="public WSFederationSerializer (System.IdentityModel.Protocols.WSTrust.WSTrustRequestSerializer requestSerializer, System.IdentityModel.Protocols.WSTrust.WSTrustResponseSerializer responseSerializer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Protocols.WSTrust.WSTrustRequestSerializer requestSerializer, class System.IdentityModel.Protocols.WSTrust.WSTrustResponseSerializer responseSerializer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.WSFederationSerializer.#ctor(System.IdentityModel.Protocols.WSTrust.WSTrustRequestSerializer,System.IdentityModel.Protocols.WSTrust.WSTrustResponseSerializer)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (requestSerializer As WSTrustRequestSerializer, responseSerializer As WSTrustResponseSerializer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WSFederationSerializer(System::IdentityModel::Protocols::WSTrust::WSTrustRequestSerializer ^ requestSerializer, System::IdentityModel::Protocols::WSTrust::WSTrustResponseSerializer ^ responseSerializer);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -94,6 +111,8 @@
       <MemberSignature Language="C#" Value="public virtual bool CanReadRequest (string trustMessage);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanReadRequest(string trustMessage) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.WSFederationSerializer.CanReadRequest(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CanReadRequest (trustMessage As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool CanReadRequest(System::String ^ trustMessage);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -117,6 +136,8 @@
       <MemberSignature Language="C#" Value="public virtual bool CanReadResponse (string trustMessage);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanReadResponse(string trustMessage) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.WSFederationSerializer.CanReadResponse(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CanReadResponse (trustMessage As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool CanReadResponse(System::String ^ trustMessage);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -140,6 +161,8 @@
       <MemberSignature Language="C#" Value="public virtual System.IdentityModel.Protocols.WSTrust.RequestSecurityToken CreateRequest (System.IdentityModel.Services.FederationMessage message, System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IdentityModel.Protocols.WSTrust.RequestSecurityToken CreateRequest(class System.IdentityModel.Services.FederationMessage message, class System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.WSFederationSerializer.CreateRequest(System.IdentityModel.Services.FederationMessage,System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateRequest (message As FederationMessage, context As WSTrustSerializationContext) As RequestSecurityToken" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::IdentityModel::Protocols::WSTrust::RequestSecurityToken ^ CreateRequest(System::IdentityModel::Services::FederationMessage ^ message, System::IdentityModel::Protocols::WSTrust::WSTrustSerializationContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -175,6 +198,8 @@
       <MemberSignature Language="C#" Value="public virtual System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse CreateResponse (System.IdentityModel.Services.FederationMessage message, System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse CreateResponse(class System.IdentityModel.Services.FederationMessage message, class System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.WSFederationSerializer.CreateResponse(System.IdentityModel.Services.FederationMessage,System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateResponse (message As FederationMessage, context As WSTrustSerializationContext) As RequestSecurityTokenResponse" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::IdentityModel::Protocols::WSTrust::RequestSecurityTokenResponse ^ CreateResponse(System::IdentityModel::Services::FederationMessage ^ message, System::IdentityModel::Protocols::WSTrust::WSTrustSerializationContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -210,6 +235,8 @@
       <MemberSignature Language="C#" Value="public virtual string GetReferencedRequest (string wreqptr);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetReferencedRequest(string wreqptr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.WSFederationSerializer.GetReferencedRequest(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetReferencedRequest (wreqptr As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetReferencedRequest(System::String ^ wreqptr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -240,6 +267,8 @@
       <MemberSignature Language="C#" Value="public virtual string GetReferencedResult (string wresultptr);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetReferencedResult(string wresultptr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.WSFederationSerializer.GetReferencedResult(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetReferencedResult (wresultptr As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetReferencedResult(System::String ^ wresultptr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -270,6 +299,8 @@
       <MemberSignature Language="C#" Value="public virtual string GetRequestAsString (System.IdentityModel.Protocols.WSTrust.RequestSecurityToken request, System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetRequestAsString(class System.IdentityModel.Protocols.WSTrust.RequestSecurityToken request, class System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.WSFederationSerializer.GetRequestAsString(System.IdentityModel.Protocols.WSTrust.RequestSecurityToken,System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetRequestAsString (request As RequestSecurityToken, context As WSTrustSerializationContext) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetRequestAsString(System::IdentityModel::Protocols::WSTrust::RequestSecurityToken ^ request, System::IdentityModel::Protocols::WSTrust::WSTrustSerializationContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -300,6 +331,8 @@
       <MemberSignature Language="C#" Value="public virtual string GetResponseAsString (System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse response, System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetResponseAsString(class System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse response, class System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.WSFederationSerializer.GetResponseAsString(System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse,System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetResponseAsString (response As RequestSecurityTokenResponse, context As WSTrustSerializationContext) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetResponseAsString(System::IdentityModel::Protocols::WSTrust::RequestSecurityTokenResponse ^ response, System::IdentityModel::Protocols::WSTrust::WSTrustSerializationContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -326,14 +359,5 @@
  <paramref name="context" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.IdentityModel.Services</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Services.WSFederationSerializer" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,9 @@
-<Type Name="SoapServerFormatterSinkProvider" FullName="System.Runtime.Remoting.Channels.SoapServerFormatterSinkProvider">
-  <TypeSignature Language="C#" Value="public class SoapServerFormatterSinkProvider : System.Runtime.Remoting.Channels.IServerFormatterSinkProvider" />
+﻿<Type Name="SoapServerFormatterSinkProvider" FullName="System.Runtime.Remoting.Channels.SoapServerFormatterSinkProvider">
+  <TypeSignature Language="C#" Value="public class SoapServerFormatterSinkProvider : System.Runtime.Remoting.Channels.IServerChannelSinkProvider, System.Runtime.Remoting.Channels.IServerFormatterSinkProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SoapServerFormatterSinkProvider extends System.Object implements class System.Runtime.Remoting.Channels.IServerChannelSinkProvider, class System.Runtime.Remoting.Channels.IServerFormatterSinkProvider" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Channels.SoapServerFormatterSinkProvider" />
+  <TypeSignature Language="VB.NET" Value="Public Class SoapServerFormatterSinkProvider&#xA;Implements IServerChannelSinkProvider, IServerFormatterSinkProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SoapServerFormatterSinkProvider : System::Runtime::Remoting::Channels::IServerChannelSinkProvider, System::Runtime::Remoting::Channels::IServerFormatterSinkProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Remoting</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -10,6 +12,9 @@
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces>
+    <Interface>
+      <InterfaceName>System.Runtime.Remoting.Channels.IServerChannelSinkProvider</InterfaceName>
+    </Interface>
     <Interface>
       <InterfaceName>System.Runtime.Remoting.Channels.IServerFormatterSinkProvider</InterfaceName>
     </Interface>
@@ -41,10 +46,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.Channels.SoapServerFormatterSinkProvider" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SoapServerFormatterSinkProvider ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.SoapServerFormatterSinkProvider.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SoapServerFormatterSinkProvider();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -60,6 +76,8 @@
       <MemberSignature Language="C#" Value="public SoapServerFormatterSinkProvider (System.Collections.IDictionary properties, System.Collections.ICollection providerData);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.IDictionary properties, class System.Collections.ICollection providerData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.SoapServerFormatterSinkProvider.#ctor(System.Collections.IDictionary,System.Collections.ICollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (properties As IDictionary, providerData As ICollection)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SoapServerFormatterSinkProvider(System::Collections::IDictionary ^ properties, System::Collections::ICollection ^ providerData);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -80,6 +98,8 @@
       <MemberSignature Language="C#" Value="public System.Runtime.Remoting.Channels.IServerChannelSink CreateSink (System.Runtime.Remoting.Channels.IChannelReceiver channel);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Runtime.Remoting.Channels.IServerChannelSink CreateSink(class System.Runtime.Remoting.Channels.IChannelReceiver channel) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.SoapServerFormatterSinkProvider.CreateSink(System.Runtime.Remoting.Channels.IChannelReceiver)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateSink (channel As IChannelReceiver) As IServerChannelSink" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Runtime::Remoting::Channels::IServerChannelSink ^ CreateSink(System::Runtime::Remoting::Channels::IChannelReceiver ^ channel);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -102,6 +122,8 @@
       <MemberSignature Language="C#" Value="public void GetChannelData (System.Runtime.Remoting.Channels.IChannelDataStore channelData);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetChannelData(class System.Runtime.Remoting.Channels.IChannelDataStore channelData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.SoapServerFormatterSinkProvider.GetChannelData(System.Runtime.Remoting.Channels.IChannelDataStore)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetChannelData (channelData As IChannelDataStore)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void GetChannelData(System::Runtime::Remoting::Channels::IChannelDataStore ^ channelData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -123,6 +145,8 @@
       <MemberSignature Language="C#" Value="public System.Runtime.Remoting.Channels.IServerChannelSinkProvider Next { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Runtime.Remoting.Channels.IServerChannelSinkProvider Next" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.SoapServerFormatterSinkProvider.Next" />
+      <MemberSignature Language="VB.NET" Value="Public Property Next As IServerChannelSinkProvider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::Remoting::Channels::IServerChannelSinkProvider ^ Next { System::Runtime::Remoting::Channels::IServerChannelSinkProvider ^ get(); void set(System::Runtime::Remoting::Channels::IServerChannelSinkProvider ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -141,6 +165,8 @@
       <MemberSignature Language="C#" Value="public System.Runtime.Serialization.Formatters.TypeFilterLevel TypeFilterLevel { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Runtime.Serialization.Formatters.TypeFilterLevel TypeFilterLevel" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.SoapServerFormatterSinkProvider.TypeFilterLevel" />
+      <MemberSignature Language="VB.NET" Value="Public Property TypeFilterLevel As TypeFilterLevel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::Serialization::Formatters::TypeFilterLevel TypeFilterLevel { System::Runtime::Serialization::Formatters::TypeFilterLevel get(); void set(System::Runtime::Serialization::Formatters::TypeFilterLevel value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -167,14 +193,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.Remoting</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.Channels.SoapServerFormatterSinkProvider" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

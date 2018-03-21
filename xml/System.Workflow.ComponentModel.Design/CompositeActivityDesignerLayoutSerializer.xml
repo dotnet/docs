@@ -1,7 +1,9 @@
-<Type Name="CompositeActivityDesignerLayoutSerializer" FullName="System.Workflow.ComponentModel.Design.CompositeActivityDesignerLayoutSerializer">
+﻿<Type Name="CompositeActivityDesignerLayoutSerializer" FullName="System.Workflow.ComponentModel.Design.CompositeActivityDesignerLayoutSerializer">
   <TypeSignature Language="C#" Value="public class CompositeActivityDesignerLayoutSerializer : System.Workflow.ComponentModel.Design.ActivityDesignerLayoutSerializer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CompositeActivityDesignerLayoutSerializer extends System.Workflow.ComponentModel.Design.ActivityDesignerLayoutSerializer" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.CompositeActivityDesignerLayoutSerializer" />
+  <TypeSignature Language="VB.NET" Value="Public Class CompositeActivityDesignerLayoutSerializer&#xA;Inherits ActivityDesignerLayoutSerializer" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CompositeActivityDesignerLayoutSerializer : System::Workflow::ComponentModel::Design::ActivityDesignerLayoutSerializer" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +35,8 @@
       <MemberSignature Language="C#" Value="public CompositeActivityDesignerLayoutSerializer ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.CompositeActivityDesignerLayoutSerializer.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CompositeActivityDesignerLayoutSerializer();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -45,9 +49,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetProperties">
-      <MemberSignature Language="C#" Value="protected override System.Reflection.PropertyInfo[] GetProperties (System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager serializationManager, object obj);" />
+      <MemberSignature Language="C#" Value="protected internal override System.Reflection.PropertyInfo[] GetProperties (System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager serializationManager, object obj);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance class System.Reflection.PropertyInfo[] GetProperties(class System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager serializationManager, object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.CompositeActivityDesignerLayoutSerializer.GetProperties(System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function GetProperties (serializationManager As WorkflowMarkupSerializationManager, obj As Object) As PropertyInfo()" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override cli::array &lt;System::Reflection::PropertyInfo ^&gt; ^ GetProperties(System::Workflow::ComponentModel::Serialization::WorkflowMarkupSerializationManager ^ serializationManager, System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

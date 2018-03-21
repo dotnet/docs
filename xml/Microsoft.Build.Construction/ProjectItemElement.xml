@@ -1,7 +1,9 @@
-<Type Name="ProjectItemElement" FullName="Microsoft.Build.Construction.ProjectItemElement">
+﻿<Type Name="ProjectItemElement" FullName="Microsoft.Build.Construction.ProjectItemElement">
   <TypeSignature Language="C#" Value="public class ProjectItemElement : Microsoft.Build.Construction.ProjectElementContainer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ProjectItemElement extends Microsoft.Build.Construction.ProjectElementContainer" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Construction.ProjectItemElement" />
+  <TypeSignature Language="VB.NET" Value="Public Class ProjectItemElement&#xA;Inherits ProjectElementContainer" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ProjectItemElement : Microsoft::Build::Construction::ProjectElementContainer" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +26,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Construction.ProjectMetadataElement AddMetadata (string name, string unevaluatedValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Build.Construction.ProjectMetadataElement AddMetadata(string name, string unevaluatedValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Construction.ProjectItemElement.AddMetadata(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddMetadata (name As String, unevaluatedValue As String) As ProjectMetadataElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Build::Construction::ProjectMetadataElement ^ AddMetadata(System::String ^ name, System::String ^ unevaluatedValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -48,6 +52,8 @@
       <MemberSignature Language="C#" Value="public string Exclude { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Exclude" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectItemElement.Exclude" />
+      <MemberSignature Language="VB.NET" Value="Public Property Exclude As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Exclude { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -78,6 +84,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Construction.ElementLocation ExcludeLocation { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Construction.ElementLocation ExcludeLocation" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectItemElement.ExcludeLocation" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExcludeLocation As ElementLocation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Construction::ElementLocation ^ ExcludeLocation { Microsoft::Build::Construction::ElementLocation ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -96,6 +104,8 @@
       <MemberSignature Language="C#" Value="public bool HasMetadata { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasMetadata" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectItemElement.HasMetadata" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasMetadata As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasMetadata { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -114,6 +124,8 @@
       <MemberSignature Language="C#" Value="public string Include { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Include" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectItemElement.Include" />
+      <MemberSignature Language="VB.NET" Value="Public Property Include As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Include { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -144,6 +156,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Construction.ElementLocation IncludeLocation { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Construction.ElementLocation IncludeLocation" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectItemElement.IncludeLocation" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IncludeLocation As ElementLocation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Construction::ElementLocation ^ IncludeLocation { Microsoft::Build::Construction::ElementLocation ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -162,6 +176,8 @@
       <MemberSignature Language="C#" Value="public string ItemType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ItemType" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectItemElement.ItemType" />
+      <MemberSignature Language="VB.NET" Value="Public Property ItemType As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ItemType { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -185,6 +201,8 @@
       <MemberSignature Language="C#" Value="public string KeepDuplicates { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string KeepDuplicates" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectItemElement.KeepDuplicates" />
+      <MemberSignature Language="VB.NET" Value="Public Property KeepDuplicates As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ KeepDuplicates { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -215,6 +233,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Construction.ElementLocation KeepDuplicatesLocation { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Construction.ElementLocation KeepDuplicatesLocation" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectItemElement.KeepDuplicatesLocation" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property KeepDuplicatesLocation As ElementLocation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Construction::ElementLocation ^ KeepDuplicatesLocation { Microsoft::Build::Construction::ElementLocation ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -233,6 +253,8 @@
       <MemberSignature Language="C#" Value="public string KeepMetadata { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string KeepMetadata" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectItemElement.KeepMetadata" />
+      <MemberSignature Language="VB.NET" Value="Public Property KeepMetadata As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ KeepMetadata { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -263,6 +285,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Construction.ElementLocation KeepMetadataLocation { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Construction.ElementLocation KeepMetadataLocation" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectItemElement.KeepMetadataLocation" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property KeepMetadataLocation As ElementLocation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Construction::ElementLocation ^ KeepMetadataLocation { Microsoft::Build::Construction::ElementLocation ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -281,6 +305,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.ICollection&lt;Microsoft.Build.Construction.ProjectMetadataElement&gt; Metadata { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;class Microsoft.Build.Construction.ProjectMetadataElement&gt; Metadata" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectItemElement.Metadata" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Metadata As ICollection(Of ProjectMetadataElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;Microsoft::Build::Construction::ProjectMetadataElement ^&gt; ^ Metadata { System::Collections::Generic::ICollection&lt;Microsoft::Build::Construction::ProjectMetadataElement ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -299,6 +325,8 @@
       <MemberSignature Language="C#" Value="public string Remove { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Remove" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectItemElement.Remove" />
+      <MemberSignature Language="VB.NET" Value="Public Property Remove As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Remove { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -329,6 +357,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Construction.ElementLocation RemoveLocation { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Construction.ElementLocation RemoveLocation" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectItemElement.RemoveLocation" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RemoveLocation As ElementLocation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Construction::ElementLocation ^ RemoveLocation { Microsoft::Build::Construction::ElementLocation ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -347,6 +377,8 @@
       <MemberSignature Language="C#" Value="public string RemoveMetadata { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string RemoveMetadata" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectItemElement.RemoveMetadata" />
+      <MemberSignature Language="VB.NET" Value="Public Property RemoveMetadata As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RemoveMetadata { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -377,6 +409,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Construction.ElementLocation RemoveMetadataLocation { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Construction.ElementLocation RemoveMetadataLocation" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectItemElement.RemoveMetadataLocation" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RemoveMetadataLocation As ElementLocation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Construction::ElementLocation ^ RemoveMetadataLocation { Microsoft::Build::Construction::ElementLocation ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>

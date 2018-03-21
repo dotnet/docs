@@ -1,7 +1,9 @@
-<Type Name="UCOMIMoniker" FullName="System.Runtime.InteropServices.UCOMIMoniker">
+﻿<Type Name="UCOMIMoniker" FullName="System.Runtime.InteropServices.UCOMIMoniker">
   <TypeSignature Language="C#" Value="public interface UCOMIMoniker" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract UCOMIMoniker" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.UCOMIMoniker" />
+  <TypeSignature Language="VB.NET" Value="Public Interface UCOMIMoniker" />
+  <TypeSignature Language="C++ CLI" Value="public interface class UCOMIMoniker" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -35,6 +37,8 @@
       <MemberSignature Language="C#" Value="public void BindToObject (System.Runtime.InteropServices.UCOMIBindCtx pbc, System.Runtime.InteropServices.UCOMIMoniker pmkToLeft, ref Guid riidResult, out object ppvResult);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void BindToObject(class System.Runtime.InteropServices.UCOMIBindCtx pbc, class System.Runtime.InteropServices.UCOMIMoniker pmkToLeft, [in]valuetype System.Guid&amp; riidResult, [out] object&amp; ppvResult) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIMoniker.BindToObject(System.Runtime.InteropServices.UCOMIBindCtx,System.Runtime.InteropServices.UCOMIMoniker,System.Guid@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub BindToObject (pbc As UCOMIBindCtx, pmkToLeft As UCOMIMoniker, ByRef riidResult As Guid, ByRef ppvResult As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void BindToObject(System::Runtime::InteropServices::UCOMIBindCtx ^ pbc, System::Runtime::InteropServices::UCOMIMoniker ^ pmkToLeft, Guid % riidResult, [Runtime::InteropServices::Out] System::Object ^ % ppvResult);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -70,6 +74,8 @@
       <MemberSignature Language="C#" Value="public void BindToStorage (System.Runtime.InteropServices.UCOMIBindCtx pbc, System.Runtime.InteropServices.UCOMIMoniker pmkToLeft, ref Guid riid, out object ppvObj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void BindToStorage(class System.Runtime.InteropServices.UCOMIBindCtx pbc, class System.Runtime.InteropServices.UCOMIMoniker pmkToLeft, [in]valuetype System.Guid&amp; riid, [out] object&amp; ppvObj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIMoniker.BindToStorage(System.Runtime.InteropServices.UCOMIBindCtx,System.Runtime.InteropServices.UCOMIMoniker,System.Guid@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub BindToStorage (pbc As UCOMIBindCtx, pmkToLeft As UCOMIMoniker, ByRef riid As Guid, ByRef ppvObj As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void BindToStorage(System::Runtime::InteropServices::UCOMIBindCtx ^ pbc, System::Runtime::InteropServices::UCOMIMoniker ^ pmkToLeft, Guid % riid, [Runtime::InteropServices::Out] System::Object ^ % ppvObj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -105,6 +111,8 @@
       <MemberSignature Language="C#" Value="public void CommonPrefixWith (System.Runtime.InteropServices.UCOMIMoniker pmkOther, out System.Runtime.InteropServices.UCOMIMoniker ppmkPrefix);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CommonPrefixWith(class System.Runtime.InteropServices.UCOMIMoniker pmkOther, [out] class System.Runtime.InteropServices.UCOMIMoniker&amp; ppmkPrefix) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIMoniker.CommonPrefixWith(System.Runtime.InteropServices.UCOMIMoniker,System.Runtime.InteropServices.UCOMIMoniker@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CommonPrefixWith (pmkOther As UCOMIMoniker, ByRef ppmkPrefix As UCOMIMoniker)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CommonPrefixWith(System::Runtime::InteropServices::UCOMIMoniker ^ pmkOther, [Runtime::InteropServices::Out] System::Runtime::InteropServices::UCOMIMoniker ^ % ppmkPrefix);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -136,6 +144,8 @@
       <MemberSignature Language="C#" Value="public void ComposeWith (System.Runtime.InteropServices.UCOMIMoniker pmkRight, bool fOnlyIfNotGeneric, out System.Runtime.InteropServices.UCOMIMoniker ppmkComposite);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ComposeWith(class System.Runtime.InteropServices.UCOMIMoniker pmkRight, bool fOnlyIfNotGeneric, [out] class System.Runtime.InteropServices.UCOMIMoniker&amp; ppmkComposite) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIMoniker.ComposeWith(System.Runtime.InteropServices.UCOMIMoniker,System.Boolean,System.Runtime.InteropServices.UCOMIMoniker@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ComposeWith (pmkRight As UCOMIMoniker, fOnlyIfNotGeneric As Boolean, ByRef ppmkComposite As UCOMIMoniker)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ComposeWith(System::Runtime::InteropServices::UCOMIMoniker ^ pmkRight, bool fOnlyIfNotGeneric, [Runtime::InteropServices::Out] System::Runtime::InteropServices::UCOMIMoniker ^ % ppmkComposite);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -169,6 +179,8 @@
       <MemberSignature Language="C#" Value="public void Enum (bool fForward, out System.Runtime.InteropServices.UCOMIEnumMoniker ppenumMoniker);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Enum(bool fForward, [out] class System.Runtime.InteropServices.UCOMIEnumMoniker&amp; ppenumMoniker) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIMoniker.Enum(System.Boolean,System.Runtime.InteropServices.UCOMIEnumMoniker@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Enum (fForward As Boolean, ByRef ppenumMoniker As UCOMIEnumMoniker)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Enum(bool fForward, [Runtime::InteropServices::Out] System::Runtime::InteropServices::UCOMIEnumMoniker ^ % ppenumMoniker);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -200,6 +212,8 @@
       <MemberSignature Language="C#" Value="public void GetClassID (out Guid pClassID);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetClassID([out] valuetype System.Guid&amp; pClassID) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIMoniker.GetClassID(System.Guid@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetClassID (ByRef pClassID As Guid)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetClassID([Runtime::InteropServices::Out] Guid % pClassID);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -229,6 +243,8 @@
       <MemberSignature Language="C#" Value="public void GetDisplayName (System.Runtime.InteropServices.UCOMIBindCtx pbc, System.Runtime.InteropServices.UCOMIMoniker pmkToLeft, out string ppszDisplayName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetDisplayName(class System.Runtime.InteropServices.UCOMIBindCtx pbc, class System.Runtime.InteropServices.UCOMIMoniker pmkToLeft, [out] string&amp; ppszDisplayName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIMoniker.GetDisplayName(System.Runtime.InteropServices.UCOMIBindCtx,System.Runtime.InteropServices.UCOMIMoniker,System.String@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetDisplayName (pbc As UCOMIBindCtx, pmkToLeft As UCOMIMoniker, ByRef ppszDisplayName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetDisplayName(System::Runtime::InteropServices::UCOMIBindCtx ^ pbc, System::Runtime::InteropServices::UCOMIMoniker ^ pmkToLeft, [Runtime::InteropServices::Out] System::String ^ % ppszDisplayName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -262,6 +278,8 @@
       <MemberSignature Language="C#" Value="public void GetSizeMax (out long pcbSize);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetSizeMax([out] int64&amp; pcbSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIMoniker.GetSizeMax(System.Int64@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetSizeMax (ByRef pcbSize As Long)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetSizeMax([Runtime::InteropServices::Out] long % pcbSize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -291,6 +309,8 @@
       <MemberSignature Language="C#" Value="public void GetTimeOfLastChange (System.Runtime.InteropServices.UCOMIBindCtx pbc, System.Runtime.InteropServices.UCOMIMoniker pmkToLeft, out System.Runtime.InteropServices.FILETIME pFileTime);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetTimeOfLastChange(class System.Runtime.InteropServices.UCOMIBindCtx pbc, class System.Runtime.InteropServices.UCOMIMoniker pmkToLeft, [out] valuetype System.Runtime.InteropServices.FILETIME&amp; pFileTime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIMoniker.GetTimeOfLastChange(System.Runtime.InteropServices.UCOMIBindCtx,System.Runtime.InteropServices.UCOMIMoniker,System.Runtime.InteropServices.FILETIME@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetTimeOfLastChange (pbc As UCOMIBindCtx, pmkToLeft As UCOMIMoniker, ByRef pFileTime As FILETIME)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetTimeOfLastChange(System::Runtime::InteropServices::UCOMIBindCtx ^ pbc, System::Runtime::InteropServices::UCOMIMoniker ^ pmkToLeft, [Runtime::InteropServices::Out] System::Runtime::InteropServices::FILETIME % pFileTime);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -324,6 +344,8 @@
       <MemberSignature Language="C#" Value="public void Hash (out int pdwHash);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Hash([out] int32&amp; pdwHash) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIMoniker.Hash(System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Hash (ByRef pdwHash As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Hash([Runtime::InteropServices::Out] int % pdwHash);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -353,6 +375,8 @@
       <MemberSignature Language="C#" Value="public void Inverse (out System.Runtime.InteropServices.UCOMIMoniker ppmk);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Inverse([out] class System.Runtime.InteropServices.UCOMIMoniker&amp; ppmk) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIMoniker.Inverse(System.Runtime.InteropServices.UCOMIMoniker@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Inverse (ByRef ppmk As UCOMIMoniker)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Inverse([Runtime::InteropServices::Out] System::Runtime::InteropServices::UCOMIMoniker ^ % ppmk);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -382,6 +406,8 @@
       <MemberSignature Language="C#" Value="public int IsDirty ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 IsDirty() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIMoniker.IsDirty" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsDirty () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IsDirty();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -409,6 +435,8 @@
       <MemberSignature Language="C#" Value="public void IsEqual (System.Runtime.InteropServices.UCOMIMoniker pmkOtherMoniker);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void IsEqual(class System.Runtime.InteropServices.UCOMIMoniker pmkOtherMoniker) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIMoniker.IsEqual(System.Runtime.InteropServices.UCOMIMoniker)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub IsEqual (pmkOtherMoniker As UCOMIMoniker)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void IsEqual(System::Runtime::InteropServices::UCOMIMoniker ^ pmkOtherMoniker);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -438,6 +466,8 @@
       <MemberSignature Language="C#" Value="public void IsRunning (System.Runtime.InteropServices.UCOMIBindCtx pbc, System.Runtime.InteropServices.UCOMIMoniker pmkToLeft, System.Runtime.InteropServices.UCOMIMoniker pmkNewlyRunning);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void IsRunning(class System.Runtime.InteropServices.UCOMIBindCtx pbc, class System.Runtime.InteropServices.UCOMIMoniker pmkToLeft, class System.Runtime.InteropServices.UCOMIMoniker pmkNewlyRunning) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIMoniker.IsRunning(System.Runtime.InteropServices.UCOMIBindCtx,System.Runtime.InteropServices.UCOMIMoniker,System.Runtime.InteropServices.UCOMIMoniker)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub IsRunning (pbc As UCOMIBindCtx, pmkToLeft As UCOMIMoniker, pmkNewlyRunning As UCOMIMoniker)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void IsRunning(System::Runtime::InteropServices::UCOMIBindCtx ^ pbc, System::Runtime::InteropServices::UCOMIMoniker ^ pmkToLeft, System::Runtime::InteropServices::UCOMIMoniker ^ pmkNewlyRunning);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -471,6 +501,8 @@
       <MemberSignature Language="C#" Value="public void IsSystemMoniker (out int pdwMksys);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void IsSystemMoniker([out] int32&amp; pdwMksys) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIMoniker.IsSystemMoniker(System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub IsSystemMoniker (ByRef pdwMksys As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void IsSystemMoniker([Runtime::InteropServices::Out] int % pdwMksys);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -500,6 +532,8 @@
       <MemberSignature Language="C#" Value="public void Load (System.Runtime.InteropServices.UCOMIStream pStm);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Load(class System.Runtime.InteropServices.UCOMIStream pStm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIMoniker.Load(System.Runtime.InteropServices.UCOMIStream)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Load (pStm As UCOMIStream)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Load(System::Runtime::InteropServices::UCOMIStream ^ pStm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -529,6 +563,8 @@
       <MemberSignature Language="C#" Value="public void ParseDisplayName (System.Runtime.InteropServices.UCOMIBindCtx pbc, System.Runtime.InteropServices.UCOMIMoniker pmkToLeft, string pszDisplayName, out int pchEaten, out System.Runtime.InteropServices.UCOMIMoniker ppmkOut);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ParseDisplayName(class System.Runtime.InteropServices.UCOMIBindCtx pbc, class System.Runtime.InteropServices.UCOMIMoniker pmkToLeft, string pszDisplayName, [out] int32&amp; pchEaten, [out] class System.Runtime.InteropServices.UCOMIMoniker&amp; ppmkOut) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIMoniker.ParseDisplayName(System.Runtime.InteropServices.UCOMIBindCtx,System.Runtime.InteropServices.UCOMIMoniker,System.String,System.Int32@,System.Runtime.InteropServices.UCOMIMoniker@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ParseDisplayName (pbc As UCOMIBindCtx, pmkToLeft As UCOMIMoniker, pszDisplayName As String, ByRef pchEaten As Integer, ByRef ppmkOut As UCOMIMoniker)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ParseDisplayName(System::Runtime::InteropServices::UCOMIBindCtx ^ pbc, System::Runtime::InteropServices::UCOMIMoniker ^ pmkToLeft, System::String ^ pszDisplayName, [Runtime::InteropServices::Out] int % pchEaten, [Runtime::InteropServices::Out] System::Runtime::InteropServices::UCOMIMoniker ^ % ppmkOut);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -566,6 +602,8 @@
       <MemberSignature Language="C#" Value="public void Reduce (System.Runtime.InteropServices.UCOMIBindCtx pbc, int dwReduceHowFar, ref System.Runtime.InteropServices.UCOMIMoniker ppmkToLeft, out System.Runtime.InteropServices.UCOMIMoniker ppmkReduced);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Reduce(class System.Runtime.InteropServices.UCOMIBindCtx pbc, int32 dwReduceHowFar, class System.Runtime.InteropServices.UCOMIMoniker&amp; ppmkToLeft, [out] class System.Runtime.InteropServices.UCOMIMoniker&amp; ppmkReduced) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIMoniker.Reduce(System.Runtime.InteropServices.UCOMIBindCtx,System.Int32,System.Runtime.InteropServices.UCOMIMoniker@,System.Runtime.InteropServices.UCOMIMoniker@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Reduce (pbc As UCOMIBindCtx, dwReduceHowFar As Integer, ByRef ppmkToLeft As UCOMIMoniker, ByRef ppmkReduced As UCOMIMoniker)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Reduce(System::Runtime::InteropServices::UCOMIBindCtx ^ pbc, int dwReduceHowFar, System::Runtime::InteropServices::UCOMIMoniker ^ % ppmkToLeft, [Runtime::InteropServices::Out] System::Runtime::InteropServices::UCOMIMoniker ^ % ppmkReduced);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -601,6 +639,8 @@
       <MemberSignature Language="C#" Value="public void RelativePathTo (System.Runtime.InteropServices.UCOMIMoniker pmkOther, out System.Runtime.InteropServices.UCOMIMoniker ppmkRelPath);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RelativePathTo(class System.Runtime.InteropServices.UCOMIMoniker pmkOther, [out] class System.Runtime.InteropServices.UCOMIMoniker&amp; ppmkRelPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIMoniker.RelativePathTo(System.Runtime.InteropServices.UCOMIMoniker,System.Runtime.InteropServices.UCOMIMoniker@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RelativePathTo (pmkOther As UCOMIMoniker, ByRef ppmkRelPath As UCOMIMoniker)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RelativePathTo(System::Runtime::InteropServices::UCOMIMoniker ^ pmkOther, [Runtime::InteropServices::Out] System::Runtime::InteropServices::UCOMIMoniker ^ % ppmkRelPath);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -632,6 +672,8 @@
       <MemberSignature Language="C#" Value="public void Save (System.Runtime.InteropServices.UCOMIStream pStm, bool fClearDirty);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Save(class System.Runtime.InteropServices.UCOMIStream pStm, bool fClearDirty) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIMoniker.Save(System.Runtime.InteropServices.UCOMIStream,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Save (pStm As UCOMIStream, fClearDirty As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save(System::Runtime::InteropServices::UCOMIStream ^ pStm, bool fClearDirty);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

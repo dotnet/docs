@@ -1,7 +1,9 @@
-<Type Name="KeyStates" FullName="System.Windows.Input.KeyStates">
+﻿<Type Name="KeyStates" FullName="System.Windows.Input.KeyStates">
   <TypeSignature Language="C#" Value="public enum KeyStates" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed KeyStates extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.KeyStates" />
+  <TypeSignature Language="VB.NET" Value="Public Enum KeyStates" />
+  <TypeSignature Language="C++ CLI" Value="public enum class KeyStates" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +42,8 @@
       <MemberSignature Language="C#" Value="Down" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.KeyStates Down = unsigned int8(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.KeyStates.Down" />
+      <MemberSignature Language="VB.NET" Value="Down" />
+      <MemberSignature Language="C++ CLI" Value="Down" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -48,6 +52,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Input.KeyStates</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The key is pressed.</summary>
       </Docs>
@@ -56,6 +61,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.KeyStates None = unsigned int8(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.KeyStates.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -64,6 +71,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Input.KeyStates</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The key is not pressed.</summary>
       </Docs>
@@ -72,6 +80,8 @@
       <MemberSignature Language="C#" Value="Toggled" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.KeyStates Toggled = unsigned int8(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.KeyStates.Toggled" />
+      <MemberSignature Language="VB.NET" Value="Toggled" />
+      <MemberSignature Language="C++ CLI" Value="Toggled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -80,6 +90,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Input.KeyStates</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The key is toggled.</summary>
       </Docs>

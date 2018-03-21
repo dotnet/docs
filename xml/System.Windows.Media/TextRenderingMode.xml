@@ -1,7 +1,9 @@
-<Type Name="TextRenderingMode" FullName="System.Windows.Media.TextRenderingMode">
+﻿<Type Name="TextRenderingMode" FullName="System.Windows.Media.TextRenderingMode">
   <TypeSignature Language="C#" Value="public enum TextRenderingMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TextRenderingMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.TextRenderingMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum TextRenderingMode" />
+  <TypeSignature Language="C++ CLI" Value="public enum class TextRenderingMode" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +30,8 @@
       <MemberSignature Language="C#" Value="Aliased" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.TextRenderingMode Aliased = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.TextRenderingMode.Aliased" />
+      <MemberSignature Language="VB.NET" Value="Aliased" />
+      <MemberSignature Language="C++ CLI" Value="Aliased" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -36,6 +40,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Media.TextRenderingMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Text is rendered with bilevel anti-aliasing.</summary>
         <altmember cref="T:System.Windows.Media.TextFormatting.TextFormatter" />
@@ -47,6 +52,8 @@
       <MemberSignature Language="C#" Value="Auto" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.TextRenderingMode Auto = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.TextRenderingMode.Auto" />
+      <MemberSignature Language="VB.NET" Value="Auto" />
+      <MemberSignature Language="C++ CLI" Value="Auto" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -55,6 +62,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Media.TextRenderingMode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Text is rendered with the most appropriate rendering algorithm based on the layout mode that was used to format the text.</summary>
         <altmember cref="T:System.Windows.Media.TextFormatting.TextFormatter" />
@@ -66,6 +74,8 @@
       <MemberSignature Language="C#" Value="ClearType" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.TextRenderingMode ClearType = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.TextRenderingMode.ClearType" />
+      <MemberSignature Language="VB.NET" Value="ClearType" />
+      <MemberSignature Language="C++ CLI" Value="ClearType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -74,6 +84,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Media.TextRenderingMode</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Text is rendered with the most appropriate ClearType rendering algorithm based on the layout mode that was used to format the text.</summary>
         <altmember cref="T:System.Windows.Media.TextFormatting.TextFormatter" />
@@ -85,6 +96,8 @@
       <MemberSignature Language="C#" Value="Grayscale" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.TextRenderingMode Grayscale = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.TextRenderingMode.Grayscale" />
+      <MemberSignature Language="VB.NET" Value="Grayscale" />
+      <MemberSignature Language="C++ CLI" Value="Grayscale" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -93,6 +106,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Media.TextRenderingMode</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Text is rendered with grayscale anti-aliasing.</summary>
         <altmember cref="T:System.Windows.Media.TextFormatting.TextFormatter" />

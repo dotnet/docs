@@ -1,7 +1,9 @@
-<Type Name="XmlMappingAccess" FullName="System.Xml.Serialization.XmlMappingAccess">
+﻿<Type Name="XmlMappingAccess" FullName="System.Xml.Serialization.XmlMappingAccess">
   <TypeSignature Language="C#" Value="public enum XmlMappingAccess" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XmlMappingAccess extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.XmlMappingAccess" />
+  <TypeSignature Language="VB.NET" Value="Public Enum XmlMappingAccess" />
+  <TypeSignature Language="C++ CLI" Value="public enum class XmlMappingAccess" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -40,6 +42,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Serialization.XmlMappingAccess None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Serialization.XmlMappingAccess.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -57,6 +61,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Serialization.XmlMappingAccess</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Both read and write methods are generated.</summary>
         <forInternalUseOnly />
@@ -66,6 +71,8 @@
       <MemberSignature Language="C#" Value="Read" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Serialization.XmlMappingAccess Read = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Serialization.XmlMappingAccess.Read" />
+      <MemberSignature Language="VB.NET" Value="Read" />
+      <MemberSignature Language="C++ CLI" Value="Read" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -83,6 +90,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Serialization.XmlMappingAccess</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Read methods are generated.</summary>
         <forInternalUseOnly />
@@ -92,6 +100,8 @@
       <MemberSignature Language="C#" Value="Write" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Serialization.XmlMappingAccess Write = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Serialization.XmlMappingAccess.Write" />
+      <MemberSignature Language="VB.NET" Value="Write" />
+      <MemberSignature Language="C++ CLI" Value="Write" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -109,6 +119,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Serialization.XmlMappingAccess</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Write methods are generated.</summary>
         <forInternalUseOnly />

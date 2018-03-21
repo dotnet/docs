@@ -1,7 +1,9 @@
-<Type Name="InternalBufferOverflowException" FullName="System.IO.InternalBufferOverflowException">
+﻿<Type Name="InternalBufferOverflowException" FullName="System.IO.InternalBufferOverflowException">
   <TypeSignature Language="C#" Value="public class InternalBufferOverflowException : SystemException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit InternalBufferOverflowException extends System.SystemException" />
   <TypeSignature Language="DocId" Value="T:System.IO.InternalBufferOverflowException" />
+  <TypeSignature Language="VB.NET" Value="Public Class InternalBufferOverflowException&#xA;Inherits SystemException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class InternalBufferOverflowException : SystemException" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -50,10 +52,22 @@
     <altmember cref="T:System.IO.WatcherChangeTypes" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IO.InternalBufferOverflowException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public InternalBufferOverflowException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.InternalBufferOverflowException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InternalBufferOverflowException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -89,6 +103,8 @@
       <MemberSignature Language="C#" Value="public InternalBufferOverflowException (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.InternalBufferOverflowException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InternalBufferOverflowException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -125,6 +141,8 @@
       <MemberSignature Language="C#" Value="protected InternalBufferOverflowException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.InternalBufferOverflowException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; InternalBufferOverflowException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -154,6 +172,8 @@
       <MemberSignature Language="C#" Value="public InternalBufferOverflowException (string message, Exception inner);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception inner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.InternalBufferOverflowException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, inner As Exception)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InternalBufferOverflowException(System::String ^ message, Exception ^ inner);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -188,15 +208,5 @@
         <altmember cref="P:System.IO.FileSystemWatcher.InternalBufferSize" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IO.InternalBufferOverflowException" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

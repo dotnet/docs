@@ -1,7 +1,9 @@
-<Type Name="Content" FullName="System.Web.UI.WebControls.Content">
+﻿<Type Name="Content" FullName="System.Web.UI.WebControls.Content">
   <TypeSignature Language="C#" Value="public class Content : System.Web.UI.Control" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Content extends System.Web.UI.Control implements class System.Web.UI.INamingContainer" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.Content" />
+  <TypeSignature Language="VB.NET" Value="Public Class Content&#xA;Inherits Control" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Content : System::Web::UI::Control" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -81,6 +83,8 @@
       <MemberSignature Language="C#" Value="public Content ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Content.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Content();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -103,6 +107,8 @@
       <MemberSignature Language="C#" Value="public string ContentPlaceHolderID { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ContentPlaceHolderID" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Content.ContentPlaceHolderID" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContentPlaceHolderID As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ContentPlaceHolderID { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -166,6 +172,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler DataBinding;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler DataBinding" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.Content.DataBinding" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event DataBinding As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ DataBinding;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -176,7 +184,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -200,6 +208,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler Disposed;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Disposed" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.Content.Disposed" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Disposed As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Disposed;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -210,7 +220,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -234,6 +244,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler Init;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Init" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.Content.Init" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Init As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Init;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -244,7 +256,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -268,6 +280,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler Load;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Load" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.Content.Load" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Load As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Load;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -278,7 +292,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -302,6 +316,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler PreRender;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler PreRender" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.Content.PreRender" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event PreRender As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ PreRender;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -312,7 +328,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -336,6 +352,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler Unload;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Unload" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.Content.Unload" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Unload As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Unload;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -346,7 +364,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

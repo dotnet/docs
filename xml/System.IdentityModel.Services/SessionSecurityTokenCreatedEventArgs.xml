@@ -1,7 +1,9 @@
-<Type Name="SessionSecurityTokenCreatedEventArgs" FullName="System.IdentityModel.Services.SessionSecurityTokenCreatedEventArgs">
+﻿<Type Name="SessionSecurityTokenCreatedEventArgs" FullName="System.IdentityModel.Services.SessionSecurityTokenCreatedEventArgs">
   <TypeSignature Language="C#" Value="public class SessionSecurityTokenCreatedEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SessionSecurityTokenCreatedEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Services.SessionSecurityTokenCreatedEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class SessionSecurityTokenCreatedEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SessionSecurityTokenCreatedEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +36,8 @@
       <MemberSignature Language="C#" Value="public SessionSecurityTokenCreatedEventArgs (System.IdentityModel.Tokens.SessionSecurityToken sessionToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Tokens.SessionSecurityToken sessionToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.SessionSecurityTokenCreatedEventArgs.#ctor(System.IdentityModel.Tokens.SessionSecurityToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (sessionToken As SessionSecurityToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SessionSecurityTokenCreatedEventArgs(System::IdentityModel::Tokens::SessionSecurityToken ^ sessionToken);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -61,6 +65,8 @@
       <MemberSignature Language="C#" Value="public System.IdentityModel.Tokens.SessionSecurityToken SessionToken { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Tokens.SessionSecurityToken SessionToken" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.SessionSecurityTokenCreatedEventArgs.SessionToken" />
+      <MemberSignature Language="VB.NET" Value="Public Property SessionToken As SessionSecurityToken" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Tokens::SessionSecurityToken ^ SessionToken { System::IdentityModel::Tokens::SessionSecurityToken ^ get(); void set(System::IdentityModel::Tokens::SessionSecurityToken ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -79,6 +85,8 @@
       <MemberSignature Language="C#" Value="public bool WriteSessionCookie { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool WriteSessionCookie" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.SessionSecurityTokenCreatedEventArgs.WriteSessionCookie" />
+      <MemberSignature Language="VB.NET" Value="Public Property WriteSessionCookie As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool WriteSessionCookie { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>

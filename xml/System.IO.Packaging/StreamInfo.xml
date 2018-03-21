@@ -1,7 +1,9 @@
-<Type Name="StreamInfo" FullName="System.IO.Packaging.StreamInfo">
+﻿<Type Name="StreamInfo" FullName="System.IO.Packaging.StreamInfo">
   <TypeSignature Language="C#" Value="public class StreamInfo" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StreamInfo extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.IO.Packaging.StreamInfo" />
+  <TypeSignature Language="VB.NET" Value="Public Class StreamInfo" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StreamInfo" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +26,8 @@
       <MemberSignature Language="C#" Value="public System.IO.Packaging.CompressionOption CompressionOption { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.IO.Packaging.CompressionOption CompressionOption" />
       <MemberSignature Language="DocId" Value="P:System.IO.Packaging.StreamInfo.CompressionOption" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CompressionOption As CompressionOption" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::Packaging::CompressionOption CompressionOption { System::IO::Packaging::CompressionOption get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -51,6 +55,8 @@
       <MemberSignature Language="C#" Value="public System.IO.Packaging.EncryptionOption EncryptionOption { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.IO.Packaging.EncryptionOption EncryptionOption" />
       <MemberSignature Language="DocId" Value="P:System.IO.Packaging.StreamInfo.EncryptionOption" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EncryptionOption As EncryptionOption" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::Packaging::EncryptionOption EncryptionOption { System::IO::Packaging::EncryptionOption get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -74,10 +80,22 @@
         <altmember cref="Overload:System.IO.Packaging.StreamInfo.GetStream" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetStream">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Opens and returns the I/O stream for the <see cref="T:System.IO.Packaging.Package" /> root.</summary>
+        <altmember cref="Overload:System.IO.Packaging.StorageInfo.CreateStream" />
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetStream">
       <MemberSignature Language="C#" Value="public System.IO.Stream GetStream ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.Stream GetStream() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.StreamInfo.GetStream" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetStream () As Stream" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Stream ^ GetStream();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -105,6 +123,8 @@
       <MemberSignature Language="C#" Value="public System.IO.Stream GetStream (System.IO.FileMode mode);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.Stream GetStream(valuetype System.IO.FileMode mode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.StreamInfo.GetStream(System.IO.FileMode)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetStream (mode As FileMode) As Stream" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Stream ^ GetStream(System::IO::FileMode mode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -135,6 +155,8 @@
       <MemberSignature Language="C#" Value="public System.IO.Stream GetStream (System.IO.FileMode mode, System.IO.FileAccess access);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.Stream GetStream(valuetype System.IO.FileMode mode, valuetype System.IO.FileAccess access) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.StreamInfo.GetStream(System.IO.FileMode,System.IO.FileAccess)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetStream (mode As FileMode, access As FileAccess) As Stream" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Stream ^ GetStream(System::IO::FileMode mode, System::IO::FileAccess access);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -160,6 +182,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.IO.Packaging.StreamInfo.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -182,15 +206,5 @@
         <altmember cref="Overload:System.IO.Packaging.StorageInfo.CreateStream" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetStream">
-      <AssemblyInfo>
-        <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Opens and returns the I/O stream for the <see cref="T:System.IO.Packaging.Package" /> root.</summary>
-        <altmember cref="Overload:System.IO.Packaging.StorageInfo.CreateStream" />
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

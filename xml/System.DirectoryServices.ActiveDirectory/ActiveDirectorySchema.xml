@@ -1,7 +1,9 @@
-<Type Name="ActiveDirectorySchema" FullName="System.DirectoryServices.ActiveDirectory.ActiveDirectorySchema">
+﻿<Type Name="ActiveDirectorySchema" FullName="System.DirectoryServices.ActiveDirectory.ActiveDirectorySchema">
   <TypeSignature Language="C#" Value="public class ActiveDirectorySchema : System.DirectoryServices.ActiveDirectory.ActiveDirectoryPartition" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ActiveDirectorySchema extends System.DirectoryServices.ActiveDirectory.ActiveDirectoryPartition" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchema" />
+  <TypeSignature Language="VB.NET" Value="Public Class ActiveDirectorySchema&#xA;Inherits ActiveDirectoryPartition" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ActiveDirectorySchema : System::DirectoryServices::ActiveDirectory::ActiveDirectoryPartition" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -21,6 +23,8 @@
       <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchema.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -47,10 +51,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="FindAllClasses">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves all Active Directory Domain Services classes in the schema.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="FindAllClasses">
       <MemberSignature Language="C#" Value="public System.DirectoryServices.ActiveDirectory.ReadOnlyActiveDirectorySchemaClassCollection FindAllClasses ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.DirectoryServices.ActiveDirectory.ReadOnlyActiveDirectorySchemaClassCollection FindAllClasses() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchema.FindAllClasses" />
+      <MemberSignature Language="VB.NET" Value="Public Function FindAllClasses () As ReadOnlyActiveDirectorySchemaClassCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::ActiveDirectory::ReadOnlyActiveDirectorySchemaClassCollection ^ FindAllClasses();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -75,6 +91,8 @@
       <MemberSignature Language="C#" Value="public System.DirectoryServices.ActiveDirectory.ReadOnlyActiveDirectorySchemaClassCollection FindAllClasses (System.DirectoryServices.ActiveDirectory.SchemaClassType type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.DirectoryServices.ActiveDirectory.ReadOnlyActiveDirectorySchemaClassCollection FindAllClasses(valuetype System.DirectoryServices.ActiveDirectory.SchemaClassType type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchema.FindAllClasses(System.DirectoryServices.ActiveDirectory.SchemaClassType)" />
+      <MemberSignature Language="VB.NET" Value="Public Function FindAllClasses (type As SchemaClassType) As ReadOnlyActiveDirectorySchemaClassCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::ActiveDirectory::ReadOnlyActiveDirectorySchemaClassCollection ^ FindAllClasses(System::DirectoryServices::ActiveDirectory::SchemaClassType type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -102,6 +120,8 @@
       <MemberSignature Language="C#" Value="public System.DirectoryServices.ActiveDirectory.ReadOnlyActiveDirectorySchemaClassCollection FindAllDefunctClasses ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.DirectoryServices.ActiveDirectory.ReadOnlyActiveDirectorySchemaClassCollection FindAllDefunctClasses() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchema.FindAllDefunctClasses" />
+      <MemberSignature Language="VB.NET" Value="Public Function FindAllDefunctClasses () As ReadOnlyActiveDirectorySchemaClassCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::ActiveDirectory::ReadOnlyActiveDirectorySchemaClassCollection ^ FindAllDefunctClasses();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -125,6 +145,8 @@
       <MemberSignature Language="C#" Value="public System.DirectoryServices.ActiveDirectory.ReadOnlyActiveDirectorySchemaPropertyCollection FindAllDefunctProperties ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.DirectoryServices.ActiveDirectory.ReadOnlyActiveDirectorySchemaPropertyCollection FindAllDefunctProperties() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchema.FindAllDefunctProperties" />
+      <MemberSignature Language="VB.NET" Value="Public Function FindAllDefunctProperties () As ReadOnlyActiveDirectorySchemaPropertyCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::ActiveDirectory::ReadOnlyActiveDirectorySchemaPropertyCollection ^ FindAllDefunctProperties();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -145,10 +167,22 @@
         <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchema" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="FindAllProperties">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves all of the Active Directory Domain Services properties in the schema.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="FindAllProperties">
       <MemberSignature Language="C#" Value="public System.DirectoryServices.ActiveDirectory.ReadOnlyActiveDirectorySchemaPropertyCollection FindAllProperties ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.DirectoryServices.ActiveDirectory.ReadOnlyActiveDirectorySchemaPropertyCollection FindAllProperties() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchema.FindAllProperties" />
+      <MemberSignature Language="VB.NET" Value="Public Function FindAllProperties () As ReadOnlyActiveDirectorySchemaPropertyCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::ActiveDirectory::ReadOnlyActiveDirectorySchemaPropertyCollection ^ FindAllProperties();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -173,6 +207,8 @@
       <MemberSignature Language="C#" Value="public System.DirectoryServices.ActiveDirectory.ReadOnlyActiveDirectorySchemaPropertyCollection FindAllProperties (System.DirectoryServices.ActiveDirectory.PropertyTypes type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.DirectoryServices.ActiveDirectory.ReadOnlyActiveDirectorySchemaPropertyCollection FindAllProperties(valuetype System.DirectoryServices.ActiveDirectory.PropertyTypes type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchema.FindAllProperties(System.DirectoryServices.ActiveDirectory.PropertyTypes)" />
+      <MemberSignature Language="VB.NET" Value="Public Function FindAllProperties (type As PropertyTypes) As ReadOnlyActiveDirectorySchemaPropertyCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::ActiveDirectory::ReadOnlyActiveDirectorySchemaPropertyCollection ^ FindAllProperties(System::DirectoryServices::ActiveDirectory::PropertyTypes type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -201,6 +237,8 @@
       <MemberSignature Language="C#" Value="public System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass FindClass (string ldapDisplayName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass FindClass(string ldapDisplayName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchema.FindClass(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function FindClass (ldapDisplayName As String) As ActiveDirectorySchemaClass" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::ActiveDirectory::ActiveDirectorySchemaClass ^ FindClass(System::String ^ ldapDisplayName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -232,6 +270,8 @@
       <MemberSignature Language="C#" Value="public System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass FindDefunctClass (string commonName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass FindDefunctClass(string commonName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchema.FindDefunctClass(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function FindDefunctClass (commonName As String) As ActiveDirectorySchemaClass" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::ActiveDirectory::ActiveDirectorySchemaClass ^ FindDefunctClass(System::String ^ commonName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -263,6 +303,8 @@
       <MemberSignature Language="C#" Value="public System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty FindDefunctProperty (string commonName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty FindDefunctProperty(string commonName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchema.FindDefunctProperty(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function FindDefunctProperty (commonName As String) As ActiveDirectorySchemaProperty" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::ActiveDirectory::ActiveDirectorySchemaProperty ^ FindDefunctProperty(System::String ^ commonName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -294,6 +336,8 @@
       <MemberSignature Language="C#" Value="public System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty FindProperty (string ldapDisplayName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty FindProperty(string ldapDisplayName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchema.FindProperty(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function FindProperty (ldapDisplayName As String) As ActiveDirectorySchemaProperty" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::ActiveDirectory::ActiveDirectorySchemaProperty ^ FindProperty(System::String ^ ldapDisplayName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -325,6 +369,8 @@
       <MemberSignature Language="C#" Value="public static System.DirectoryServices.ActiveDirectory.ActiveDirectorySchema GetCurrentSchema ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.DirectoryServices.ActiveDirectory.ActiveDirectorySchema GetCurrentSchema() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchema.GetCurrentSchema" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetCurrentSchema () As ActiveDirectorySchema" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::DirectoryServices::ActiveDirectory::ActiveDirectorySchema ^ GetCurrentSchema();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -347,6 +393,8 @@
       <MemberSignature Language="C#" Value="public override System.DirectoryServices.DirectoryEntry GetDirectoryEntry ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.DirectoryServices.DirectoryEntry GetDirectoryEntry() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchema.GetDirectoryEntry" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDirectoryEntry () As DirectoryEntry" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::DirectoryServices::DirectoryEntry ^ GetDirectoryEntry();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -370,6 +418,8 @@
       <MemberSignature Language="C#" Value="public static System.DirectoryServices.ActiveDirectory.ActiveDirectorySchema GetSchema (System.DirectoryServices.ActiveDirectory.DirectoryContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.DirectoryServices.ActiveDirectory.ActiveDirectorySchema GetSchema(class System.DirectoryServices.ActiveDirectory.DirectoryContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchema.GetSchema(System.DirectoryServices.ActiveDirectory.DirectoryContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetSchema (context As DirectoryContext) As ActiveDirectorySchema" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::DirectoryServices::ActiveDirectory::ActiveDirectorySchema ^ GetSchema(System::DirectoryServices::ActiveDirectory::DirectoryContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -399,6 +449,8 @@
       <MemberSignature Language="C#" Value="public void RefreshSchema ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RefreshSchema() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchema.RefreshSchema" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RefreshSchema ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RefreshSchema();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -418,6 +470,8 @@
       <MemberSignature Language="C#" Value="public System.DirectoryServices.ActiveDirectory.DirectoryServer SchemaRoleOwner { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.DirectoryServices.ActiveDirectory.DirectoryServer SchemaRoleOwner" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchema.SchemaRoleOwner" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SchemaRoleOwner As DirectoryServer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::ActiveDirectory::DirectoryServer ^ SchemaRoleOwner { System::DirectoryServices::ActiveDirectory::DirectoryServer ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -435,25 +489,5 @@
         <altmember cref="T:System.DirectoryServices.ActiveDirectory.DirectoryServer" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="FindAllClasses">
-      <AssemblyInfo>
-        <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Retrieves all Active Directory Domain Services classes in the schema.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="FindAllProperties">
-      <AssemblyInfo>
-        <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Retrieves all of the Active Directory Domain Services properties in the schema.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

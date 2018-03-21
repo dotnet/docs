@@ -1,7 +1,9 @@
-<Type Name="Path" FullName="System.IO.Path">
+﻿<Type Name="Path" FullName="System.IO.Path">
   <TypeSignature Language="C#" Value="public static class Path" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed Path extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.IO.Path" />
+  <TypeSignature Language="VB.NET" Value="Public Class Path" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Path abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -79,6 +81,8 @@
       <MemberSignature Language="C#" Value="public static readonly char AltDirectorySeparatorChar;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly char AltDirectorySeparatorChar" />
       <MemberSignature Language="DocId" Value="F:System.IO.Path.AltDirectorySeparatorChar" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly AltDirectorySeparatorChar As Char " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly char AltDirectorySeparatorChar;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -125,6 +129,8 @@
       <MemberSignature Language="C#" Value="public static string ChangeExtension (string path, string extension);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string ChangeExtension(string path, string extension) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Path.ChangeExtension(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ChangeExtension (path As String, extension As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ChangeExtension(System::String ^ path, System::String ^ extension);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -191,10 +197,24 @@
           <paramref name="path" /> contains one or more of the invalid characters defined in <see cref="M:System.IO.Path.GetInvalidPathChars" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Combine">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Combines strings into a path.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Combine">
       <MemberSignature Language="C#" Value="public static string Combine (params string[] paths);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Combine(string[] paths) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Path.Combine(System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Combine (ParamArray paths As String()) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Combine(... cli::array &lt;System::String ^&gt; ^ paths);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -258,6 +278,8 @@
       <MemberSignature Language="C#" Value="public static string Combine (string path1, string path2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Combine(string path1, string path2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Path.Combine(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Combine (path1 As String, path2 As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Combine(System::String ^ path1, System::String ^ path2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -321,6 +343,8 @@
       <MemberSignature Language="C#" Value="public static string Combine (string path1, string path2, string path3);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Combine(string path1, string path2, string path3) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Path.Combine(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Combine (path1 As String, path2 As String, path3 As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Combine(System::String ^ path1, System::String ^ path2, System::String ^ path3);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -387,6 +411,8 @@
       <MemberSignature Language="C#" Value="public static string Combine (string path1, string path2, string path3, string path4);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Combine(string path1, string path2, string path3, string path4) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Path.Combine(System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Combine (path1 As String, path2 As String, path3 As String, path4 As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Combine(System::String ^ path1, System::String ^ path2, System::String ^ path3, System::String ^ path4);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -453,6 +479,8 @@
       <MemberSignature Language="C#" Value="public static readonly char DirectorySeparatorChar;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly char DirectorySeparatorChar" />
       <MemberSignature Language="DocId" Value="F:System.IO.Path.DirectorySeparatorChar" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DirectorySeparatorChar As Char " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly char DirectorySeparatorChar;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -497,6 +525,8 @@
       <MemberSignature Language="C#" Value="public static string GetDirectoryName (string path);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetDirectoryName(string path) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Path.GetDirectoryName(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetDirectoryName (path As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetDirectoryName(System::String ^ path);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -559,6 +589,8 @@
       <MemberSignature Language="C#" Value="public static string GetExtension (string path);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetExtension(string path) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Path.GetExtension(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetExtension (path As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetExtension(System::String ^ path);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -613,6 +645,8 @@
       <MemberSignature Language="C#" Value="public static string GetFileName (string path);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetFileName(string path) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Path.GetFileName(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetFileName (path As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetFileName(System::String ^ path);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -669,6 +703,8 @@
       <MemberSignature Language="C#" Value="public static string GetFileNameWithoutExtension (string path);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetFileNameWithoutExtension(string path) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Path.GetFileNameWithoutExtension(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetFileNameWithoutExtension (path As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetFileNameWithoutExtension(System::String ^ path);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -723,6 +759,8 @@
       <MemberSignature Language="C#" Value="public static string GetFullPath (string path);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetFullPath(string path) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Path.GetFullPath(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetFullPath (path As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetFullPath(System::String ^ path);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -799,6 +837,8 @@
       <MemberSignature Language="C#" Value="public static char[] GetInvalidFileNameChars ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig char[] GetInvalidFileNameChars() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Path.GetInvalidFileNameChars" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetInvalidFileNameChars () As Char()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;char&gt; ^ GetInvalidFileNameChars();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -846,6 +886,8 @@
       <MemberSignature Language="C#" Value="public static char[] GetInvalidPathChars ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig char[] GetInvalidPathChars() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Path.GetInvalidPathChars" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetInvalidPathChars () As Char()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;char&gt; ^ GetInvalidPathChars();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -893,6 +935,8 @@
       <MemberSignature Language="C#" Value="public static string GetPathRoot (string path);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetPathRoot(string path) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Path.GetPathRoot(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetPathRoot (path As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetPathRoot(System::String ^ path);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -965,6 +1009,8 @@
       <MemberSignature Language="C#" Value="public static string GetRandomFileName ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetRandomFileName() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Path.GetRandomFileName" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetRandomFileName () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetRandomFileName();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1011,6 +1057,8 @@
       <MemberSignature Language="C#" Value="public static string GetRelativePath (string relativeTo, string path);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetRelativePath(string relativeTo, string path) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Path.GetRelativePath(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetRelativePath (relativeTo As String, path As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetRelativePath(System::String ^ relativeTo, System::String ^ path);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1035,6 +1083,8 @@
       <MemberSignature Language="C#" Value="public static string GetTempFileName ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetTempFileName() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Path.GetTempFileName" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetTempFileName () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetTempFileName();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1084,6 +1134,8 @@
       <MemberSignature Language="C#" Value="public static string GetTempPath ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetTempPath() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Path.GetTempPath" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetTempPath () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetTempPath();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1152,6 +1204,8 @@ C:\Users\UserName\AppData\Local\Temp\
       <MemberSignature Language="C#" Value="public static bool HasExtension (string path);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool HasExtension(string path) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Path.HasExtension(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function HasExtension (path As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool HasExtension(System::String ^ path);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1207,6 +1261,8 @@ C:\Users\UserName\AppData\Local\Temp\
       <MemberSignature Language="C#" Value="public static readonly char[] InvalidPathChars;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly char[] InvalidPathChars" />
       <MemberSignature Language="DocId" Value="F:System.IO.Path.InvalidPathChars" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly InvalidPathChars As Char() " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly cli::array &lt;char&gt; ^ InvalidPathChars;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1257,6 +1313,8 @@ C:\Users\UserName\AppData\Local\Temp\
       <MemberSignature Language="C#" Value="public static bool IsPathRooted (string path);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsPathRooted(string path) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Path.IsPathRooted(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsPathRooted (path As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsPathRooted(System::String ^ path);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1314,6 +1372,8 @@ C:\Users\UserName\AppData\Local\Temp\
       <MemberSignature Language="C#" Value="public static readonly char PathSeparator;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly char PathSeparator" />
       <MemberSignature Language="DocId" Value="F:System.IO.Path.PathSeparator" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PathSeparator As Char " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly char PathSeparator;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1358,6 +1418,8 @@ C:\Users\UserName\AppData\Local\Temp\
       <MemberSignature Language="C#" Value="public static readonly char VolumeSeparatorChar;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly char VolumeSeparatorChar" />
       <MemberSignature Language="DocId" Value="F:System.IO.Path.VolumeSeparatorChar" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly VolumeSeparatorChar As Char " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly char VolumeSeparatorChar;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1398,17 +1460,5 @@ C:\Users\UserName\AppData\Local\Temp\
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Combine">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.Extensions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Combines strings into a path.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

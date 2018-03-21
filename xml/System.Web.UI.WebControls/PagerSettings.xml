@@ -1,7 +1,9 @@
-<Type Name="PagerSettings" FullName="System.Web.UI.WebControls.PagerSettings">
+﻿<Type Name="PagerSettings" FullName="System.Web.UI.WebControls.PagerSettings">
   <TypeSignature Language="C#" Value="public sealed class PagerSettings : System.Web.UI.IStateManager" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PagerSettings extends System.Object implements class System.Web.UI.IStateManager" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.PagerSettings" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PagerSettings&#xA;Implements IStateManager" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PagerSettings sealed : System::Web::UI::IStateManager" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -97,6 +99,8 @@
       <MemberSignature Language="C#" Value="public PagerSettings ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.PagerSettings.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PagerSettings();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -131,6 +135,8 @@
       <MemberSignature Language="C#" Value="public string FirstPageImageUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string FirstPageImageUrl" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.PagerSettings.FirstPageImageUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Property FirstPageImageUrl As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FirstPageImageUrl { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -192,6 +198,8 @@
       <MemberSignature Language="C#" Value="public string FirstPageText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string FirstPageText" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.PagerSettings.FirstPageText" />
+      <MemberSignature Language="VB.NET" Value="Public Property FirstPageText As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FirstPageText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -247,6 +255,8 @@
       <MemberSignature Language="C#" Value="public string LastPageImageUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string LastPageImageUrl" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.PagerSettings.LastPageImageUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Property LastPageImageUrl As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LastPageImageUrl { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -308,6 +318,8 @@
       <MemberSignature Language="C#" Value="public string LastPageText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string LastPageText" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.PagerSettings.LastPageText" />
+      <MemberSignature Language="VB.NET" Value="Public Property LastPageText As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LastPageText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -363,6 +375,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.PagerButtons Mode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.PagerButtons Mode" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.PagerSettings.Mode" />
+      <MemberSignature Language="VB.NET" Value="Public Property Mode As PagerButtons" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::PagerButtons Mode { System::Web::UI::WebControls::PagerButtons get(); void set(System::Web::UI::WebControls::PagerButtons value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -444,6 +458,8 @@
       <MemberSignature Language="C#" Value="public string NextPageImageUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string NextPageImageUrl" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.PagerSettings.NextPageImageUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Property NextPageImageUrl As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NextPageImageUrl { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -505,6 +521,8 @@
       <MemberSignature Language="C#" Value="public string NextPageText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string NextPageText" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.PagerSettings.NextPageText" />
+      <MemberSignature Language="VB.NET" Value="Public Property NextPageText As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NextPageText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -560,6 +578,8 @@
       <MemberSignature Language="C#" Value="public int PageButtonCount { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 PageButtonCount" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.PagerSettings.PageButtonCount" />
+      <MemberSignature Language="VB.NET" Value="Public Property PageButtonCount As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PageButtonCount { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -607,6 +627,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.PagerPosition Position { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.PagerPosition Position" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.PagerSettings.Position" />
+      <MemberSignature Language="VB.NET" Value="Public Property Position As PagerPosition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::PagerPosition Position { System::Web::UI::WebControls::PagerPosition get(); void set(System::Web::UI::WebControls::PagerPosition value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -660,6 +682,8 @@
       <MemberSignature Language="C#" Value="public string PreviousPageImageUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PreviousPageImageUrl" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.PagerSettings.PreviousPageImageUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Property PreviousPageImageUrl As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PreviousPageImageUrl { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -721,6 +745,8 @@
       <MemberSignature Language="C#" Value="public string PreviousPageText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PreviousPageText" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.PagerSettings.PreviousPageText" />
+      <MemberSignature Language="VB.NET" Value="Public Property PreviousPageText As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PreviousPageText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -776,6 +802,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler PropertyChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler PropertyChanged" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.PagerSettings.PropertyChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event PropertyChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ PropertyChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -807,7 +835,12 @@
       <MemberSignature Language="C#" Value="bool System.Web.UI.IStateManager.IsTrackingViewState { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Web.UI.IStateManager.IsTrackingViewState" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.PagerSettings.System#Web#UI#IStateManager#IsTrackingViewState" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsTrackingViewState As Boolean Implements IStateManager.IsTrackingViewState" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Web.UI.IStateManager.IsTrackingViewState { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.UI.IStateManager.IsTrackingViewState</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -834,7 +867,12 @@
       <MemberSignature Language="C#" Value="void IStateManager.LoadViewState (object state);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IStateManager.LoadViewState(object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.PagerSettings.System#Web#UI#IStateManager#LoadViewState(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Sub LoadViewState (state As Object) Implements IStateManager.LoadViewState" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IStateManager.LoadViewState(System::Object ^ state) = System::Web::UI::IStateManager::LoadViewState;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IStateManager.LoadViewState(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -868,7 +906,12 @@
       <MemberSignature Language="C#" Value="object IStateManager.SaveViewState ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.Web.UI.IStateManager.SaveViewState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.PagerSettings.System#Web#UI#IStateManager#SaveViewState" />
+      <MemberSignature Language="VB.NET" Value="Function SaveViewState () As Object Implements IStateManager.SaveViewState" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.Web.UI.IStateManager.SaveViewState() = System::Web::UI::IStateManager::SaveViewState;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IStateManager.SaveViewState</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -900,7 +943,12 @@
       <MemberSignature Language="C#" Value="void IStateManager.TrackViewState ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IStateManager.TrackViewState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.PagerSettings.System#Web#UI#IStateManager#TrackViewState" />
+      <MemberSignature Language="VB.NET" Value="Sub TrackViewState () Implements IStateManager.TrackViewState" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IStateManager.TrackViewState() = System::Web::UI::IStateManager::TrackViewState;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IStateManager.TrackViewState</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -932,6 +980,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.PagerSettings.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -959,6 +1009,8 @@
       <MemberSignature Language="C#" Value="public bool Visible { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Visible" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.PagerSettings.Visible" />
+      <MemberSignature Language="VB.NET" Value="Public Property Visible As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Visible { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="Calendar" FullName="System.Globalization.Calendar">
+﻿<Type Name="Calendar" FullName="System.Globalization.Calendar">
   <TypeSignature Language="C#" Value="public abstract class Calendar : ICloneable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit Calendar extends System.Object implements class System.ICloneable" />
   <TypeSignature Language="DocId" Value="T:System.Globalization.Calendar" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class Calendar&#xA;Implements ICloneable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Calendar abstract : ICloneable" />
   <AssemblyInfo>
     <AssemblyName>System.Globalization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -118,6 +120,8 @@
       <MemberSignature Language="C#" Value="protected Calendar ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.Calendar.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; Calendar();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -161,6 +165,8 @@
       <MemberSignature Language="C#" Value="public virtual DateTime AddDays (DateTime time, int days);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.DateTime AddDays(valuetype System.DateTime time, int32 days) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.Calendar.AddDays(System.DateTime,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function AddDays (time As DateTime, days As Integer) As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual DateTime AddDays(DateTime time, int days);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -233,6 +239,8 @@
       <MemberSignature Language="C#" Value="public virtual DateTime AddHours (DateTime time, int hours);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.DateTime AddHours(valuetype System.DateTime time, int32 hours) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.Calendar.AddHours(System.DateTime,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function AddHours (time As DateTime, hours As Integer) As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual DateTime AddHours(DateTime time, int hours);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -305,6 +313,8 @@
       <MemberSignature Language="C#" Value="public virtual DateTime AddMilliseconds (DateTime time, double milliseconds);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.DateTime AddMilliseconds(valuetype System.DateTime time, float64 milliseconds) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.Calendar.AddMilliseconds(System.DateTime,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function AddMilliseconds (time As DateTime, milliseconds As Double) As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual DateTime AddMilliseconds(DateTime time, double milliseconds);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -377,6 +387,8 @@
       <MemberSignature Language="C#" Value="public virtual DateTime AddMinutes (DateTime time, int minutes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.DateTime AddMinutes(valuetype System.DateTime time, int32 minutes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.Calendar.AddMinutes(System.DateTime,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function AddMinutes (time As DateTime, minutes As Integer) As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual DateTime AddMinutes(DateTime time, int minutes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -449,6 +461,8 @@
       <MemberSignature Language="C#" Value="public abstract DateTime AddMonths (DateTime time, int months);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.DateTime AddMonths(valuetype System.DateTime time, int32 months) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.Calendar.AddMonths(System.DateTime,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function AddMonths (time As DateTime, months As Integer) As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract DateTime AddMonths(DateTime time, int months);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -525,6 +539,8 @@
       <MemberSignature Language="C#" Value="public virtual DateTime AddSeconds (DateTime time, int seconds);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.DateTime AddSeconds(valuetype System.DateTime time, int32 seconds) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.Calendar.AddSeconds(System.DateTime,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function AddSeconds (time As DateTime, seconds As Integer) As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual DateTime AddSeconds(DateTime time, int seconds);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -597,6 +613,8 @@
       <MemberSignature Language="C#" Value="public virtual DateTime AddWeeks (DateTime time, int weeks);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.DateTime AddWeeks(valuetype System.DateTime time, int32 weeks) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.Calendar.AddWeeks(System.DateTime,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function AddWeeks (time As DateTime, weeks As Integer) As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual DateTime AddWeeks(DateTime time, int weeks);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -671,6 +689,8 @@
       <MemberSignature Language="C#" Value="public abstract DateTime AddYears (DateTime time, int years);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.DateTime AddYears(valuetype System.DateTime time, int32 years) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.Calendar.AddYears(System.DateTime,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function AddYears (time As DateTime, years As Integer) As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract DateTime AddYears(DateTime time, int years);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -747,6 +767,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Globalization.CalendarAlgorithmType AlgorithmType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Globalization.CalendarAlgorithmType AlgorithmType" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.Calendar.AlgorithmType" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property AlgorithmType As CalendarAlgorithmType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Globalization::CalendarAlgorithmType AlgorithmType { System::Globalization::CalendarAlgorithmType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -789,7 +811,12 @@
       <MemberSignature Language="C#" Value="public virtual object Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.Calendar.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Clone () As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Clone();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -830,6 +857,8 @@
       <MemberSignature Language="C#" Value="public const int CurrentEra = 0;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal int32 CurrentEra = (0)" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.Calendar.CurrentEra" />
+      <MemberSignature Language="VB.NET" Value="Public Const CurrentEra As Integer  = 0" />
+      <MemberSignature Language="C++ CLI" Value="public: int CurrentEra = 0;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -870,6 +899,8 @@
       <MemberSignature Language="C#" Value="protected virtual int DaysInYearBeforeMinSupportedYear { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 DaysInYearBeforeMinSupportedYear" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.Calendar.DaysInYearBeforeMinSupportedYear" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property DaysInYearBeforeMinSupportedYear As Integer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property int DaysInYearBeforeMinSupportedYear { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -904,6 +935,8 @@
       <MemberSignature Language="C#" Value="public abstract int[] Eras { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32[] Eras" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.Calendar.Eras" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Eras As Integer()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property cli::array &lt;int&gt; ^ Eras { cli::array &lt;int&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -953,6 +986,8 @@
       <MemberSignature Language="C#" Value="public abstract int GetDayOfMonth (DateTime time);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetDayOfMonth(valuetype System.DateTime time) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.Calendar.GetDayOfMonth(System.DateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetDayOfMonth (time As DateTime) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract int GetDayOfMonth(DateTime time);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -1011,6 +1046,8 @@
       <MemberSignature Language="C#" Value="public abstract DayOfWeek GetDayOfWeek (DateTime time);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.DayOfWeek GetDayOfWeek(valuetype System.DateTime time) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.Calendar.GetDayOfWeek(System.DateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetDayOfWeek (time As DateTime) As DayOfWeek" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract DayOfWeek GetDayOfWeek(DateTime time);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -1075,6 +1112,8 @@
       <MemberSignature Language="C#" Value="public abstract int GetDayOfYear (DateTime time);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetDayOfYear(valuetype System.DateTime time) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.Calendar.GetDayOfYear(System.DateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetDayOfYear (time As DateTime) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract int GetDayOfYear(DateTime time);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -1134,10 +1173,22 @@
         <altmember cref="M:System.Globalization.Calendar.GetMilliseconds(System.DateTime)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetDaysInMonth">
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, returns the number of days in the specified month.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetDaysInMonth">
       <MemberSignature Language="C#" Value="public virtual int GetDaysInMonth (int year, int month);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetDaysInMonth(int32 year, int32 month) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.Calendar.GetDaysInMonth(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDaysInMonth (year As Integer, month As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int GetDaysInMonth(int year, int month);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -1201,6 +1252,8 @@
       <MemberSignature Language="C#" Value="public abstract int GetDaysInMonth (int year, int month, int era);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetDaysInMonth(int32 year, int32 month, int32 era) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.Calendar.GetDaysInMonth(System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetDaysInMonth (year As Integer, month As Integer, era As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract int GetDaysInMonth(int year, int month, int era);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -1262,10 +1315,22 @@
         <altmember cref="M:System.Globalization.Calendar.GetDaysInYear(System.Int32)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetDaysInYear">
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, returns the number of days in the specified year.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetDaysInYear">
       <MemberSignature Language="C#" Value="public virtual int GetDaysInYear (int year);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetDaysInYear(int32 year) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.Calendar.GetDaysInYear(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDaysInYear (year As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int GetDaysInYear(int year);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -1323,6 +1388,8 @@
       <MemberSignature Language="C#" Value="public abstract int GetDaysInYear (int year, int era);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetDaysInYear(int32 year, int32 era) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.Calendar.GetDaysInYear(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetDaysInYear (year As Integer, era As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract int GetDaysInYear(int year, int era);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -1382,6 +1449,8 @@
       <MemberSignature Language="C#" Value="public abstract int GetEra (DateTime time);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetEra(valuetype System.DateTime time) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.Calendar.GetEra(System.DateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetEra (time As DateTime) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract int GetEra(DateTime time);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -1442,6 +1511,8 @@
       <MemberSignature Language="C#" Value="public virtual int GetHour (DateTime time);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetHour(valuetype System.DateTime time) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.Calendar.GetHour(System.DateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetHour (time As DateTime) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int GetHour(DateTime time);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -1496,10 +1567,22 @@
         <altmember cref="M:System.Globalization.Calendar.GetMilliseconds(System.DateTime)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetLeapMonth">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Calculates the leap month for a specified year, or year and era.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetLeapMonth">
       <MemberSignature Language="C#" Value="public virtual int GetLeapMonth (int year);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetLeapMonth(int32 year) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.Calendar.GetLeapMonth(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetLeapMonth (year As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int GetLeapMonth(int year);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1547,6 +1630,8 @@
       <MemberSignature Language="C#" Value="public virtual int GetLeapMonth (int year, int era);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetLeapMonth(int32 year, int32 era) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.Calendar.GetLeapMonth(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetLeapMonth (year As Integer, era As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int GetLeapMonth(int year, int era);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -1601,6 +1686,8 @@
       <MemberSignature Language="C#" Value="public virtual double GetMilliseconds (DateTime time);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance float64 GetMilliseconds(valuetype System.DateTime time) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.Calendar.GetMilliseconds(System.DateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetMilliseconds (time As DateTime) As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual double GetMilliseconds(DateTime time);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -1659,6 +1746,8 @@
       <MemberSignature Language="C#" Value="public virtual int GetMinute (DateTime time);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetMinute(valuetype System.DateTime time) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.Calendar.GetMinute(System.DateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetMinute (time As DateTime) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int GetMinute(DateTime time);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -1717,6 +1806,8 @@
       <MemberSignature Language="C#" Value="public abstract int GetMonth (DateTime time);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetMonth(valuetype System.DateTime time) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.Calendar.GetMonth(System.DateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetMonth (time As DateTime) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract int GetMonth(DateTime time);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -1776,10 +1867,22 @@
         <altmember cref="M:System.Globalization.Calendar.GetMilliseconds(System.DateTime)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetMonthsInYear">
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, returns the number of months in the specified year.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetMonthsInYear">
       <MemberSignature Language="C#" Value="public virtual int GetMonthsInYear (int year);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetMonthsInYear(int32 year) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.Calendar.GetMonthsInYear(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetMonthsInYear (year As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int GetMonthsInYear(int year);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -1836,6 +1939,8 @@
       <MemberSignature Language="C#" Value="public abstract int GetMonthsInYear (int year, int era);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetMonthsInYear(int32 year, int32 era) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.Calendar.GetMonthsInYear(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetMonthsInYear (year As Integer, era As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract int GetMonthsInYear(int year, int era);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -1894,6 +1999,8 @@
       <MemberSignature Language="C#" Value="public virtual int GetSecond (DateTime time);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetSecond(valuetype System.DateTime time) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.Calendar.GetSecond(System.DateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSecond (time As DateTime) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int GetSecond(DateTime time);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -1952,6 +2059,8 @@
       <MemberSignature Language="C#" Value="public virtual int GetWeekOfYear (DateTime time, System.Globalization.CalendarWeekRule rule, DayOfWeek firstDayOfWeek);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetWeekOfYear(valuetype System.DateTime time, valuetype System.Globalization.CalendarWeekRule rule, valuetype System.DayOfWeek firstDayOfWeek) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.Calendar.GetWeekOfYear(System.DateTime,System.Globalization.CalendarWeekRule,System.DayOfWeek)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetWeekOfYear (time As DateTime, rule As CalendarWeekRule, firstDayOfWeek As DayOfWeek) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int GetWeekOfYear(DateTime time, System::Globalization::CalendarWeekRule rule, DayOfWeek firstDayOfWeek);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -2066,6 +2175,8 @@
       <MemberSignature Language="C#" Value="public abstract int GetYear (DateTime time);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetYear(valuetype System.DateTime time) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.Calendar.GetYear(System.DateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetYear (time As DateTime) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract int GetYear(DateTime time);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -2120,10 +2231,22 @@
         <altmember cref="M:System.Globalization.Calendar.GetMilliseconds(System.DateTime)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="IsLeapDay">
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, determines whether a date is a leap day.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="IsLeapDay">
       <MemberSignature Language="C#" Value="public virtual bool IsLeapDay (int year, int month, int day);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsLeapDay(int32 year, int32 month, int32 day) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.Calendar.IsLeapDay(System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function IsLeapDay (year As Integer, month As Integer, day As Integer) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsLeapDay(int year, int month, int day);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -2197,6 +2320,8 @@
       <MemberSignature Language="C#" Value="public abstract bool IsLeapDay (int year, int month, int day, int era);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsLeapDay(int32 year, int32 month, int32 day, int32 era) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.Calendar.IsLeapDay(System.Int32,System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function IsLeapDay (year As Integer, month As Integer, day As Integer, era As Integer) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool IsLeapDay(int year, int month, int day, int era);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -2268,10 +2393,22 @@
         <altmember cref="M:System.Globalization.Calendar.IsLeapMonth(System.Int32,System.Int32)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="IsLeapMonth">
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, determines whether a month is a leap month.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="IsLeapMonth">
       <MemberSignature Language="C#" Value="public virtual bool IsLeapMonth (int year, int month);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsLeapMonth(int32 year, int32 month) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.Calendar.IsLeapMonth(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function IsLeapMonth (year As Integer, month As Integer) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsLeapMonth(int year, int month);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -2338,6 +2475,8 @@
       <MemberSignature Language="C#" Value="public abstract bool IsLeapMonth (int year, int month, int era);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsLeapMonth(int32 year, int32 month, int32 era) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.Calendar.IsLeapMonth(System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function IsLeapMonth (year As Integer, month As Integer, era As Integer) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool IsLeapMonth(int year, int month, int era);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -2402,10 +2541,22 @@
         <altmember cref="M:System.Globalization.Calendar.IsLeapDay(System.Int32,System.Int32,System.Int32)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="IsLeapYear">
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, determines whether a year is a leap year.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="IsLeapYear">
       <MemberSignature Language="C#" Value="public virtual bool IsLeapYear (int year);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsLeapYear(int32 year) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.Calendar.IsLeapYear(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function IsLeapYear (year As Integer) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsLeapYear(int year);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -2463,6 +2614,8 @@
       <MemberSignature Language="C#" Value="public abstract bool IsLeapYear (int year, int era);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsLeapYear(int32 year, int32 era) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.Calendar.IsLeapYear(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function IsLeapYear (year As Integer, era As Integer) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool IsLeapYear(int year, int era);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -2522,6 +2675,8 @@
       <MemberSignature Language="C#" Value="public bool IsReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.Calendar.IsReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -2560,6 +2715,8 @@
       <MemberSignature Language="C#" Value="public virtual DateTime MaxSupportedDateTime { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime MaxSupportedDateTime" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.Calendar.MaxSupportedDateTime" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property MaxSupportedDateTime As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property DateTime MaxSupportedDateTime { DateTime get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -2598,6 +2755,8 @@
       <MemberSignature Language="C#" Value="public virtual DateTime MinSupportedDateTime { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime MinSupportedDateTime" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.Calendar.MinSupportedDateTime" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property MinSupportedDateTime As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property DateTime MinSupportedDateTime { DateTime get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -2636,6 +2795,7 @@
       <MemberSignature Language="C#" Value="public static System.Globalization.Calendar ReadOnly (System.Globalization.Calendar calendar);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Globalization.Calendar ReadOnly(class System.Globalization.Calendar calendar) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.Calendar.ReadOnly(System.Globalization.Calendar)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Globalization::Calendar ^ ReadOnly(System::Globalization::Calendar ^ calendar);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2675,10 +2835,22 @@
         <altmember cref="M:System.Object.MemberwiseClone" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ToDateTime">
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, returns a <see cref="T:System.DateTime" /> that is set to the specified date and time.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ToDateTime">
       <MemberSignature Language="C#" Value="public virtual DateTime ToDateTime (int year, int month, int day, int hour, int minute, int second, int millisecond);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.DateTime ToDateTime(int32 year, int32 month, int32 day, int32 hour, int32 minute, int32 second, int32 millisecond) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.Calendar.ToDateTime(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ToDateTime (year As Integer, month As Integer, day As Integer, hour As Integer, minute As Integer, second As Integer, millisecond As Integer) As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual DateTime ToDateTime(int year, int month, int day, int hour, int minute, int second, int millisecond);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -2756,6 +2928,8 @@
       <MemberSignature Language="C#" Value="public abstract DateTime ToDateTime (int year, int month, int day, int hour, int minute, int second, int millisecond, int era);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.DateTime ToDateTime(int32 year, int32 month, int32 day, int32 hour, int32 minute, int32 second, int32 millisecond, int32 era) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.Calendar.ToDateTime(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function ToDateTime (year As Integer, month As Integer, day As Integer, hour As Integer, minute As Integer, second As Integer, millisecond As Integer, era As Integer) As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract DateTime ToDateTime(int year, int month, int day, int hour, int minute, int second, int millisecond, int era);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -2851,6 +3025,8 @@
       <MemberSignature Language="C#" Value="public virtual int ToFourDigitYear (int year);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 ToFourDigitYear(int32 year) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.Calendar.ToFourDigitYear(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ToFourDigitYear (year As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int ToFourDigitYear(int year);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -2901,6 +3077,8 @@
       <MemberSignature Language="C#" Value="public virtual int TwoDigitYearMax { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 TwoDigitYearMax" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.Calendar.TwoDigitYearMax" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property TwoDigitYearMax As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int TwoDigitYearMax { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -2942,85 +3120,5 @@
         <altmember cref="M:System.Globalization.Calendar.ToFourDigitYear(System.Int32)" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="IsLeapYear">
-      <AssemblyInfo>
-        <AssemblyName>System.Globalization</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>When overridden in a derived class, determines whether a year is a leap year.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetLeapMonth">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Calculates the leap month for a specified year, or year and era.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetMonthsInYear">
-      <AssemblyInfo>
-        <AssemblyName>System.Globalization</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>When overridden in a derived class, returns the number of months in the specified year.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="IsLeapMonth">
-      <AssemblyInfo>
-        <AssemblyName>System.Globalization</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>When overridden in a derived class, determines whether a month is a leap month.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetDaysInMonth">
-      <AssemblyInfo>
-        <AssemblyName>System.Globalization</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>When overridden in a derived class, returns the number of days in the specified month.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="IsLeapDay">
-      <AssemblyInfo>
-        <AssemblyName>System.Globalization</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>When overridden in a derived class, determines whether a date is a leap day.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetDaysInYear">
-      <AssemblyInfo>
-        <AssemblyName>System.Globalization</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>When overridden in a derived class, returns the number of days in the specified year.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ToDateTime">
-      <AssemblyInfo>
-        <AssemblyName>System.Globalization</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>When overridden in a derived class, returns a <see cref="T:System.DateTime" /> that is set to the specified date and time.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

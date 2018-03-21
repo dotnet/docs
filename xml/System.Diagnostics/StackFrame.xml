@@ -1,7 +1,9 @@
-<Type Name="StackFrame" FullName="System.Diagnostics.StackFrame">
+﻿<Type Name="StackFrame" FullName="System.Diagnostics.StackFrame">
   <TypeSignature Language="C#" Value="public class StackFrame" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable beforefieldinit StackFrame extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.StackFrame" />
+  <TypeSignature Language="VB.NET" Value="Public Class StackFrame" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StackFrame" />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.StackTrace</AssemblyName>
     <AssemblyVersion>4.0.2.0</AssemblyVersion>
@@ -55,10 +57,22 @@
     <altmember cref="T:System.Diagnostics.StackTrace" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.StackFrame" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public StackFrame ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.StackFrame.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StackFrame();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -83,6 +97,8 @@
       <MemberSignature Language="C#" Value="public StackFrame (bool fNeedFileInfo);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool fNeedFileInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.StackFrame.#ctor(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (fNeedFileInfo As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StackFrame(bool fNeedFileInfo);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -122,6 +138,8 @@
       <MemberSignature Language="C#" Value="public StackFrame (int skipFrames);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 skipFrames) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.StackFrame.#ctor(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (skipFrames As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StackFrame(int skipFrames);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -160,6 +178,8 @@
       <MemberSignature Language="C#" Value="public StackFrame (int skipFrames, bool fNeedFileInfo);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 skipFrames, bool fNeedFileInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.StackFrame.#ctor(System.Int32,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (skipFrames As Integer, fNeedFileInfo As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StackFrame(int skipFrames, bool fNeedFileInfo);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -201,6 +221,8 @@
       <MemberSignature Language="C#" Value="public StackFrame (string fileName, int lineNumber);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string fileName, int32 lineNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.StackFrame.#ctor(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (fileName As String, lineNumber As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StackFrame(System::String ^ fileName, int lineNumber);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -246,6 +268,8 @@
       <MemberSignature Language="C#" Value="public StackFrame (string fileName, int lineNumber, int colNumber);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string fileName, int32 lineNumber, int32 colNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.StackFrame.#ctor(System.String,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (fileName As String, lineNumber As Integer, colNumber As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StackFrame(System::String ^ fileName, int lineNumber, int colNumber);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -293,6 +317,8 @@
       <MemberSignature Language="C#" Value="public virtual int GetFileColumnNumber ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetFileColumnNumber() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.StackFrame.GetFileColumnNumber" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetFileColumnNumber () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int GetFileColumnNumber();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.StackTrace</AssemblyName>
@@ -333,6 +359,8 @@
       <MemberSignature Language="C#" Value="public virtual int GetFileLineNumber ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetFileLineNumber() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.StackFrame.GetFileLineNumber" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetFileLineNumber () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int GetFileLineNumber();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.StackTrace</AssemblyName>
@@ -373,6 +401,8 @@
       <MemberSignature Language="C#" Value="public virtual string GetFileName ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetFileName() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.StackFrame.GetFileName" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetFileName () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetFileName();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.StackTrace</AssemblyName>
@@ -414,6 +444,8 @@
       <MemberSignature Language="C#" Value="public virtual int GetILOffset ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetILOffset() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.StackFrame.GetILOffset" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetILOffset () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int GetILOffset();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.StackTrace</AssemblyName>
@@ -455,6 +487,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Reflection.MethodBase GetMethod ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.MethodBase GetMethod() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.StackFrame.GetMethod" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetMethod () As MethodBase" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Reflection::MethodBase ^ GetMethod();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.StackTrace</AssemblyName>
@@ -500,6 +534,8 @@
       <MemberSignature Language="C#" Value="public virtual int GetNativeOffset ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetNativeOffset() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.StackFrame.GetNativeOffset" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetNativeOffset () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int GetNativeOffset();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -540,6 +576,8 @@
       <MemberSignature Language="C#" Value="public const int OFFSET_UNKNOWN = -1;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal int32 OFFSET_UNKNOWN = (-1)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.StackFrame.OFFSET_UNKNOWN" />
+      <MemberSignature Language="VB.NET" Value="Public Const OFFSET_UNKNOWN As Integer  = -1" />
+      <MemberSignature Language="C++ CLI" Value="public: int OFFSET_UNKNOWN = -1;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.StackTrace</AssemblyName>
@@ -575,6 +613,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.StackFrame.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.StackTrace</AssemblyName>
@@ -612,15 +652,5 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">for access to the path information. Associated enumeration: <see cref="T:System.Security.Permissions.FileIOPermissionAccess" /></permission>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.StackFrame" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

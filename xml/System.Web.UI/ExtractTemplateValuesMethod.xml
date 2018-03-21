@@ -1,7 +1,9 @@
-<Type Name="ExtractTemplateValuesMethod" FullName="System.Web.UI.ExtractTemplateValuesMethod">
+﻿<Type Name="ExtractTemplateValuesMethod" FullName="System.Web.UI.ExtractTemplateValuesMethod">
   <TypeSignature Language="C#" Value="public delegate System.Collections.Specialized.IOrderedDictionary ExtractTemplateValuesMethod(Control control);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ExtractTemplateValuesMethod extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ExtractTemplateValuesMethod" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Function ExtractTemplateValuesMethod(control As Control) As IOrderedDictionary " />
+  <TypeSignature Language="C++ CLI" Value="public delegate System::Collections::Specialized::IOrderedDictionary ^ ExtractTemplateValuesMethod(Control ^ control);" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

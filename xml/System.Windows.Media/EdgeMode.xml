@@ -1,7 +1,9 @@
-<Type Name="EdgeMode" FullName="System.Windows.Media.EdgeMode">
+﻿<Type Name="EdgeMode" FullName="System.Windows.Media.EdgeMode">
   <TypeSignature Language="C#" Value="public enum EdgeMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed EdgeMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.EdgeMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum EdgeMode" />
+  <TypeSignature Language="C++ CLI" Value="public enum class EdgeMode" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +37,8 @@
       <MemberSignature Language="C#" Value="Aliased" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.EdgeMode Aliased = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.EdgeMode.Aliased" />
+      <MemberSignature Language="VB.NET" Value="Aliased" />
+      <MemberSignature Language="C++ CLI" Value="Aliased" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -43,6 +47,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Media.EdgeMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Render the edges of non-text drawing primitives as aliased edges.</summary>
       </Docs>
@@ -51,6 +56,8 @@
       <MemberSignature Language="C#" Value="Unspecified" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.EdgeMode Unspecified = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.EdgeMode.Unspecified" />
+      <MemberSignature Language="VB.NET" Value="Unspecified" />
+      <MemberSignature Language="C++ CLI" Value="Unspecified" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -59,6 +66,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Media.EdgeMode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>No edge mode is specified. Do not alter the current edge mode of non-text drawing primitives. This is the default value.</summary>
       </Docs>

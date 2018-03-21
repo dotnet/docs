@@ -1,7 +1,9 @@
-<Type Name="PassportAuthentication" FullName="System.Web.Configuration.PassportAuthentication">
+﻿<Type Name="PassportAuthentication" FullName="System.Web.Configuration.PassportAuthentication">
   <TypeSignature Language="C#" Value="public sealed class PassportAuthentication : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PassportAuthentication extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.PassportAuthentication" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PassportAuthentication&#xA;Inherits ConfigurationElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PassportAuthentication sealed : System::Configuration::ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +53,8 @@
       <MemberSignature Language="C#" Value="public PassportAuthentication ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.PassportAuthentication.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PassportAuthentication();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -76,6 +80,8 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationElementProperty ElementProperty { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationElementProperty ElementProperty" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.PassportAuthentication.ElementProperty" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ElementProperty As ConfigurationElementProperty" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationElementProperty ^ ElementProperty { System::Configuration::ConfigurationElementProperty ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -94,6 +100,8 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.PassportAuthentication.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -112,6 +120,8 @@
       <MemberSignature Language="C#" Value="public string RedirectUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string RedirectUrl" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.PassportAuthentication.RedirectUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Property RedirectUrl As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RedirectUrl { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

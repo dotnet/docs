@@ -1,7 +1,9 @@
-<Type Name="OneWayBindingElement" FullName="System.ServiceModel.Channels.OneWayBindingElement">
+﻿<Type Name="OneWayBindingElement" FullName="System.ServiceModel.Channels.OneWayBindingElement">
   <TypeSignature Language="C#" Value="public sealed class OneWayBindingElement : System.ServiceModel.Channels.BindingElement, System.ServiceModel.Description.IPolicyExportExtension" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit OneWayBindingElement extends System.ServiceModel.Channels.BindingElement implements class System.ServiceModel.Description.IPolicyExportExtension" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.OneWayBindingElement" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OneWayBindingElement&#xA;Inherits BindingElement&#xA;Implements IPolicyExportExtension" />
+  <TypeSignature Language="C++ CLI" Value="public ref class OneWayBindingElement sealed : System::ServiceModel::Channels::BindingElement, System::ServiceModel::Description::IPolicyExportExtension" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +34,8 @@
       <MemberSignature Language="C#" Value="public OneWayBindingElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.OneWayBindingElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OneWayBindingElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -47,6 +51,8 @@
       <MemberSignature Language="C#" Value="public override System.ServiceModel.Channels.IChannelFactory&lt;TChannel&gt; BuildChannelFactory&lt;TChannel&gt; (System.ServiceModel.Channels.BindingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ServiceModel.Channels.IChannelFactory`1&lt;!!TChannel&gt; BuildChannelFactory&lt;TChannel&gt;(class System.ServiceModel.Channels.BindingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.OneWayBindingElement.BuildChannelFactory``1(System.ServiceModel.Channels.BindingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function BuildChannelFactory(Of TChannel) (context As BindingContext) As IChannelFactory(Of TChannel)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; override System::ServiceModel::Channels::IChannelFactory&lt;TChannel&gt; ^ BuildChannelFactory(System::ServiceModel::Channels::BindingContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -84,6 +90,8 @@
       <MemberSignature Language="C#" Value="public override System.ServiceModel.Channels.IChannelListener&lt;TChannel&gt; BuildChannelListener&lt;TChannel&gt; (System.ServiceModel.Channels.BindingContext context) where TChannel : class, System.ServiceModel.Channels.IChannel;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ServiceModel.Channels.IChannelListener`1&lt;!!TChannel&gt; BuildChannelListener&lt;class (class System.ServiceModel.Channels.IChannel) TChannel&gt;(class System.ServiceModel.Channels.BindingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.OneWayBindingElement.BuildChannelListener``1(System.ServiceModel.Channels.BindingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function BuildChannelListener(Of TChannel As {Class, IChannel}) (context As BindingContext) As IChannelListener(Of TChannel)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; where TChannel : class, System::ServiceModel::Channels::IChannel override System::ServiceModel::Channels::IChannelListener&lt;TChannel&gt; ^ BuildChannelListener(System::ServiceModel::Channels::BindingContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -126,6 +134,8 @@
       <MemberSignature Language="C#" Value="public override bool CanBuildChannelFactory&lt;TChannel&gt; (System.ServiceModel.Channels.BindingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanBuildChannelFactory&lt;TChannel&gt;(class System.ServiceModel.Channels.BindingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.OneWayBindingElement.CanBuildChannelFactory``1(System.ServiceModel.Channels.BindingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CanBuildChannelFactory(Of TChannel) (context As BindingContext) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; override bool CanBuildChannelFactory(System::ServiceModel::Channels::BindingContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -164,6 +174,8 @@
       <MemberSignature Language="C#" Value="public override bool CanBuildChannelListener&lt;TChannel&gt; (System.ServiceModel.Channels.BindingContext context) where TChannel : class, System.ServiceModel.Channels.IChannel;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanBuildChannelListener&lt;class (class System.ServiceModel.Channels.IChannel) TChannel&gt;(class System.ServiceModel.Channels.BindingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.OneWayBindingElement.CanBuildChannelListener``1(System.ServiceModel.Channels.BindingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CanBuildChannelListener(Of TChannel As {Class, IChannel}) (context As BindingContext) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; where TChannel : class, System::ServiceModel::Channels::IChannel override bool CanBuildChannelListener(System::ServiceModel::Channels::BindingContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -207,6 +219,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.ChannelPoolSettings ChannelPoolSettings { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Channels.ChannelPoolSettings ChannelPoolSettings" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.OneWayBindingElement.ChannelPoolSettings" />
+      <MemberSignature Language="VB.NET" Value="Public Property ChannelPoolSettings As ChannelPoolSettings" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Channels::ChannelPoolSettings ^ ChannelPoolSettings { System::ServiceModel::Channels::ChannelPoolSettings ^ get(); void set(System::ServiceModel::Channels::ChannelPoolSettings ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -225,6 +239,8 @@
       <MemberSignature Language="C#" Value="public override System.ServiceModel.Channels.BindingElement Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ServiceModel.Channels.BindingElement Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.OneWayBindingElement.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Clone () As BindingElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ServiceModel::Channels::BindingElement ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -244,6 +260,8 @@
       <MemberSignature Language="C#" Value="public override T GetProperty&lt;T&gt; (System.ServiceModel.Channels.BindingContext context) where T : class;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance !!T GetProperty&lt;class T&gt;(class System.ServiceModel.Channels.BindingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.OneWayBindingElement.GetProperty``1(System.ServiceModel.Channels.BindingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetProperty(Of T As Class) (context As BindingContext) As T" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : class override T GetProperty(System::ServiceModel::Channels::BindingContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -285,6 +303,8 @@
       <MemberSignature Language="C#" Value="public int MaxAcceptedChannels { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxAcceptedChannels" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.OneWayBindingElement.MaxAcceptedChannels" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxAcceptedChannels As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxAcceptedChannels { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -308,6 +328,8 @@
       <MemberSignature Language="C#" Value="public bool PacketRoutable { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool PacketRoutable" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.OneWayBindingElement.PacketRoutable" />
+      <MemberSignature Language="VB.NET" Value="Public Property PacketRoutable As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PacketRoutable { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -343,6 +365,8 @@
       <MemberSignature Language="C#" Value="public bool ShouldSerializeChannelPoolSettings ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeChannelPoolSettings() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.OneWayBindingElement.ShouldSerializeChannelPoolSettings" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeChannelPoolSettings () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeChannelPoolSettings();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -368,7 +392,12 @@
       <MemberSignature Language="C#" Value="void IPolicyExportExtension.ExportPolicy (System.ServiceModel.Description.MetadataExporter exporter, System.ServiceModel.Description.PolicyConversionContext context);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.Description.IPolicyExportExtension.ExportPolicy(class System.ServiceModel.Description.MetadataExporter exporter, class System.ServiceModel.Description.PolicyConversionContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.OneWayBindingElement.System#ServiceModel#Description#IPolicyExportExtension#ExportPolicy(System.ServiceModel.Description.MetadataExporter,System.ServiceModel.Description.PolicyConversionContext)" />
+      <MemberSignature Language="VB.NET" Value="Sub ExportPolicy (exporter As MetadataExporter, context As PolicyConversionContext) Implements IPolicyExportExtension.ExportPolicy" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.ServiceModel.Description.IPolicyExportExtension.ExportPolicy(System::ServiceModel::Description::MetadataExporter ^ exporter, System::ServiceModel::Description::PolicyConversionContext ^ context) = System::ServiceModel::Description::IPolicyExportExtension::ExportPolicy;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Description.IPolicyExportExtension.ExportPolicy(System.ServiceModel.Description.MetadataExporter,System.ServiceModel.Description.PolicyConversionContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

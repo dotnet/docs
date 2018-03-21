@@ -1,7 +1,9 @@
-<Type Name="WebBodyFormatMessageProperty" FullName="System.ServiceModel.Channels.WebBodyFormatMessageProperty">
+﻿<Type Name="WebBodyFormatMessageProperty" FullName="System.ServiceModel.Channels.WebBodyFormatMessageProperty">
   <TypeSignature Language="C#" Value="public sealed class WebBodyFormatMessageProperty : System.ServiceModel.Channels.IMessageProperty" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WebBodyFormatMessageProperty extends System.Object implements class System.ServiceModel.Channels.IMessageProperty" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.WebBodyFormatMessageProperty" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WebBodyFormatMessageProperty&#xA;Implements IMessageProperty" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WebBodyFormatMessageProperty sealed : System::ServiceModel::Channels::IMessageProperty" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Web</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -31,6 +33,8 @@
       <MemberSignature Language="C#" Value="public WebBodyFormatMessageProperty (System.ServiceModel.Channels.WebContentFormat format);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.ServiceModel.Channels.WebContentFormat format) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.WebBodyFormatMessageProperty.#ctor(System.ServiceModel.Channels.WebContentFormat)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (format As WebContentFormat)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebBodyFormatMessageProperty(System::ServiceModel::Channels::WebContentFormat format);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -51,7 +55,12 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.IMessageProperty CreateCopy ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.IMessageProperty CreateCopy() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.WebBodyFormatMessageProperty.CreateCopy" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateCopy () As IMessageProperty" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ServiceModel::Channels::IMessageProperty ^ CreateCopy();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Channels.IMessageProperty.CreateCopy</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -71,6 +80,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.WebContentFormat Format { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.Channels.WebContentFormat Format" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.WebBodyFormatMessageProperty.Format" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Format As WebContentFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Channels::WebContentFormat Format { System::ServiceModel::Channels::WebContentFormat get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -90,6 +101,8 @@
       <MemberSignature Language="C#" Value="public const string Name;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string Name" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.WebBodyFormatMessageProperty.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Const Name As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ Name;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -115,6 +128,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.WebBodyFormatMessageProperty.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>

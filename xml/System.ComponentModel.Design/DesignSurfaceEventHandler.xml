@@ -1,7 +1,9 @@
-<Type Name="DesignSurfaceEventHandler" FullName="System.ComponentModel.Design.DesignSurfaceEventHandler">
+﻿<Type Name="DesignSurfaceEventHandler" FullName="System.ComponentModel.Design.DesignSurfaceEventHandler">
   <TypeSignature Language="C#" Value="public delegate void DesignSurfaceEventHandler(object sender, DesignSurfaceEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DesignSurfaceEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.DesignSurfaceEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub DesignSurfaceEventHandler(sender As Object, e As DesignSurfaceEventArgs)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void DesignSurfaceEventHandler(System::Object ^ sender, DesignSurfaceEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

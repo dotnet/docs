@@ -1,7 +1,9 @@
-<Type Name="UdpBindingElement" FullName="System.ServiceModel.Configuration.UdpBindingElement">
+﻿<Type Name="UdpBindingElement" FullName="System.ServiceModel.Configuration.UdpBindingElement">
   <TypeSignature Language="C#" Value="public class UdpBindingElement : System.ServiceModel.Configuration.StandardBindingElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit UdpBindingElement extends System.ServiceModel.Configuration.StandardBindingElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.UdpBindingElement" />
+  <TypeSignature Language="VB.NET" Value="Public Class UdpBindingElement&#xA;Inherits StandardBindingElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class UdpBindingElement : System::ServiceModel::Configuration::StandardBindingElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Channels</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,10 +17,21 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Channels</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.UdpBindingElement" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public UdpBindingElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.UdpBindingElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UdpBindingElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Channels</AssemblyName>
@@ -34,6 +47,8 @@
       <MemberSignature Language="C#" Value="public UdpBindingElement (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.UdpBindingElement.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UdpBindingElement(System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Channels</AssemblyName>
@@ -52,6 +67,8 @@
       <MemberSignature Language="C#" Value="protected override Type BindingElementType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type BindingElementType" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.UdpBindingElement.BindingElementType" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property BindingElementType As Type" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property Type ^ BindingElementType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Channels</AssemblyName>
@@ -70,6 +87,8 @@
       <MemberSignature Language="C#" Value="public int DuplicateMessageHistoryLength { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 DuplicateMessageHistoryLength" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.UdpBindingElement.DuplicateMessageHistoryLength" />
+      <MemberSignature Language="VB.NET" Value="Public Property DuplicateMessageHistoryLength As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int DuplicateMessageHistoryLength { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Channels</AssemblyName>
@@ -93,9 +112,10 @@
       </Docs>
     </Member>
     <Member MemberName="InitializeFrom">
-      <MemberSignature Language="C#" Value="protected override void InitializeFrom (System.ServiceModel.Channels.Binding binding);" />
+      <MemberSignature Language="C#" Value="protected internal override void InitializeFrom (System.ServiceModel.Channels.Binding binding);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void InitializeFrom(class System.ServiceModel.Channels.Binding binding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.UdpBindingElement.InitializeFrom(System.ServiceModel.Channels.Binding)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void InitializeFrom(System::ServiceModel::Channels::Binding ^ binding);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Channels</AssemblyName>
@@ -117,6 +137,8 @@
       <MemberSignature Language="C#" Value="public long MaxBufferPoolSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 MaxBufferPoolSize" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.UdpBindingElement.MaxBufferPoolSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxBufferPoolSize As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long MaxBufferPoolSize { long get(); void set(long value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Channels</AssemblyName>
@@ -143,6 +165,8 @@
       <MemberSignature Language="C#" Value="public long MaxPendingMessagesTotalSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 MaxPendingMessagesTotalSize" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.UdpBindingElement.MaxPendingMessagesTotalSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxPendingMessagesTotalSize As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long MaxPendingMessagesTotalSize { long get(); void set(long value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Channels</AssemblyName>
@@ -169,6 +193,8 @@
       <MemberSignature Language="C#" Value="public long MaxReceivedMessageSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 MaxReceivedMessageSize" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.UdpBindingElement.MaxReceivedMessageSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxReceivedMessageSize As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long MaxReceivedMessageSize { long get(); void set(long value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Channels</AssemblyName>
@@ -195,6 +221,8 @@
       <MemberSignature Language="C#" Value="public int MaxRetransmitCount { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxRetransmitCount" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.UdpBindingElement.MaxRetransmitCount" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxRetransmitCount As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxRetransmitCount { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Channels</AssemblyName>
@@ -221,6 +249,8 @@
       <MemberSignature Language="C#" Value="public string MulticastInterfaceId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MulticastInterfaceId" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.UdpBindingElement.MulticastInterfaceId" />
+      <MemberSignature Language="VB.NET" Value="Public Property MulticastInterfaceId As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MulticastInterfaceId { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Channels</AssemblyName>
@@ -247,6 +277,7 @@
       <MemberSignature Language="C#" Value="protected override void OnApplyConfiguration (System.ServiceModel.Channels.Binding binding);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnApplyConfiguration(class System.ServiceModel.Channels.Binding binding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.UdpBindingElement.OnApplyConfiguration(System.ServiceModel.Channels.Binding)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnApplyConfiguration(System::ServiceModel::Channels::Binding ^ binding);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Channels</AssemblyName>
@@ -268,6 +299,8 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.UdpBindingElement.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Channels</AssemblyName>
@@ -286,6 +319,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement ReaderQuotas { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement ReaderQuotas" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.UdpBindingElement.ReaderQuotas" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReaderQuotas As XmlDictionaryReaderQuotasElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::XmlDictionaryReaderQuotasElement ^ ReaderQuotas { System::ServiceModel::Configuration::XmlDictionaryReaderQuotasElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Channels</AssemblyName>
@@ -309,6 +344,8 @@
       <MemberSignature Language="C#" Value="public System.Text.Encoding TextEncoding { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Text.Encoding TextEncoding" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.UdpBindingElement.TextEncoding" />
+      <MemberSignature Language="VB.NET" Value="Public Property TextEncoding As Encoding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Text::Encoding ^ TextEncoding { System::Text::Encoding ^ get(); void set(System::Text::Encoding ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Channels</AssemblyName>
@@ -335,6 +372,8 @@
       <MemberSignature Language="C#" Value="public int TimeToLive { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 TimeToLive" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.UdpBindingElement.TimeToLive" />
+      <MemberSignature Language="VB.NET" Value="Public Property TimeToLive As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int TimeToLive { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Channels</AssemblyName>
@@ -357,14 +396,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Channels</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.UdpBindingElement" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

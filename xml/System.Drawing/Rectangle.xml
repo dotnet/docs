@@ -1,7 +1,9 @@
-<Type Name="Rectangle" FullName="System.Drawing.Rectangle">
+﻿<Type Name="Rectangle" FullName="System.Drawing.Rectangle">
   <TypeSignature Language="C#" Value="public struct Rectangle" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit Rectangle extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Rectangle" />
+  <TypeSignature Language="VB.NET" Value="Public Structure Rectangle" />
+  <TypeSignature Language="C++ CLI" Value="public value class Rectangle" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing.Primitives</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -18,8 +20,7 @@
   <Base>
     <BaseTypeName>System.ValueType</BaseTypeName>
   </Base>
-  <Interfaces>
-  </Interfaces>
+  <Interfaces></Interfaces>
   <Docs>
     <summary>Stores a set of four integers that represent the location and size of a rectangle</summary>
     <remarks>
@@ -54,10 +55,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Rectangle" /> class with the specified location and size.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public Rectangle (System.Drawing.Point location, System.Drawing.Size size);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Drawing.Point location, valuetype System.Drawing.Size size) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Rectangle.#ctor(System.Drawing.Point,System.Drawing.Size)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Rectangle(System::Drawing::Point location, System::Drawing::Size size);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -87,6 +99,8 @@
       <MemberSignature Language="C#" Value="public Rectangle (int x, int y, int width, int height);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 x, int32 y, int32 width, int32 height) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Rectangle.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (x As Integer, y As Integer, width As Integer, height As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Rectangle(int x, int y, int width, int height);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -131,6 +145,8 @@
       <MemberSignature Language="C#" Value="public int Bottom { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Bottom" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Rectangle.Bottom" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Bottom As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Bottom { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -165,6 +181,8 @@
       <MemberSignature Language="C#" Value="public static System.Drawing.Rectangle Ceiling (System.Drawing.RectangleF value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Drawing.Rectangle Ceiling(valuetype System.Drawing.RectangleF value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Rectangle.Ceiling(System.Drawing.RectangleF)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Ceiling (value As RectangleF) As Rectangle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Rectangle Ceiling(System::Drawing::RectangleF value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -192,10 +210,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Contains">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines if the specified point is contained within the rectangular region defined by this <see cref="T:System.Drawing.Rectangle" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Contains">
       <MemberSignature Language="C#" Value="public bool Contains (System.Drawing.Point pt);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(valuetype System.Drawing.Point pt) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Rectangle.Contains(System.Drawing.Point)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (pt As Point) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Drawing::Point pt);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -234,6 +264,8 @@
       <MemberSignature Language="C#" Value="public bool Contains (System.Drawing.Rectangle rect);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(valuetype System.Drawing.Rectangle rect) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Rectangle.Contains(System.Drawing.Rectangle)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (rect As Rectangle) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Drawing::Rectangle rect);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -281,6 +313,8 @@
       <MemberSignature Language="C#" Value="public bool Contains (int x, int y);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(int32 x, int32 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Rectangle.Contains(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (x As Integer, y As Integer) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(int x, int y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -321,6 +355,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Drawing.Rectangle Empty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Drawing.Rectangle Empty" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Rectangle.Empty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Empty As Rectangle " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Drawing::Rectangle Empty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -354,7 +390,12 @@
       <MemberSignature Language="C#" Value="public bool Equals (System.Drawing.Rectangle other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(valuetype System.Drawing.Rectangle other) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Rectangle.Equals(System.Drawing.Rectangle)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (other As Rectangle) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Drawing::Rectangle other);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -376,6 +417,8 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Rectangle.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -407,6 +450,8 @@
       <MemberSignature Language="C#" Value="public static System.Drawing.Rectangle FromLTRB (int left, int top, int right, int bottom);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Drawing.Rectangle FromLTRB(int32 left, int32 top, int32 right, int32 bottom) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Rectangle.FromLTRB(System.Int32,System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromLTRB (left As Integer, top As Integer, right As Integer, bottom As Integer) As Rectangle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Rectangle FromLTRB(int left, int top, int right, int bottom);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -460,6 +505,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Rectangle.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -488,6 +535,8 @@
       <MemberSignature Language="C#" Value="public int Height { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Height" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Rectangle.Height" />
+      <MemberSignature Language="VB.NET" Value="Public Property Height As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Height { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -518,10 +567,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Inflate">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Enlarges a <see cref="T:System.Drawing.Rectangle" /> structure by the specified amount.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Inflate">
       <MemberSignature Language="C#" Value="public void Inflate (System.Drawing.Size size);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Inflate(valuetype System.Drawing.Size size) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Rectangle.Inflate(System.Drawing.Size)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Inflate(System::Drawing::Size size);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -568,6 +628,8 @@
       <MemberSignature Language="C#" Value="public void Inflate (int width, int height);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Inflate(int32 width, int32 height) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Rectangle.Inflate(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Inflate (width As Integer, height As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Inflate(int width, int height);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -618,6 +680,8 @@
       <MemberSignature Language="C#" Value="public static System.Drawing.Rectangle Inflate (System.Drawing.Rectangle rect, int x, int y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Drawing.Rectangle Inflate(valuetype System.Drawing.Rectangle rect, int32 x, int32 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Rectangle.Inflate(System.Drawing.Rectangle,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Inflate (rect As Rectangle, x As Integer, y As Integer) As Rectangle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Rectangle Inflate(System::Drawing::Rectangle rect, int x, int y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -665,10 +729,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Intersect">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines the <see cref="T:System.Drawing.Rectangle" /> structure that represents the intersection of two rectangles.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Intersect">
       <MemberSignature Language="C#" Value="public void Intersect (System.Drawing.Rectangle rect);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Intersect(valuetype System.Drawing.Rectangle rect) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Rectangle.Intersect(System.Drawing.Rectangle)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Intersect (rect As Rectangle)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Intersect(System::Drawing::Rectangle rect);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -710,6 +786,8 @@
       <MemberSignature Language="C#" Value="public static System.Drawing.Rectangle Intersect (System.Drawing.Rectangle a, System.Drawing.Rectangle b);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Drawing.Rectangle Intersect(valuetype System.Drawing.Rectangle a, valuetype System.Drawing.Rectangle b) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Rectangle.Intersect(System.Drawing.Rectangle,System.Drawing.Rectangle)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Intersect (a As Rectangle, b As Rectangle) As Rectangle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Rectangle Intersect(System::Drawing::Rectangle a, System::Drawing::Rectangle b);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -754,6 +832,8 @@
       <MemberSignature Language="C#" Value="public bool IntersectsWith (System.Drawing.Rectangle rect);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IntersectsWith(valuetype System.Drawing.Rectangle rect) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Rectangle.IntersectsWith(System.Drawing.Rectangle)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IntersectsWith (rect As Rectangle) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IntersectsWith(System::Drawing::Rectangle rect);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -796,6 +876,8 @@
       <MemberSignature Language="C#" Value="public bool IsEmpty { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsEmpty" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Rectangle.IsEmpty" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsEmpty As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsEmpty { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -834,6 +916,8 @@
       <MemberSignature Language="C#" Value="public int Left { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Left" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Rectangle.Left" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Left As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Left { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -861,6 +945,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Point Location { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Point Location" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Rectangle.Location" />
+      <MemberSignature Language="VB.NET" Value="Public Property Location As Point" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Point Location { System::Drawing::Point get(); void set(System::Drawing::Point value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -884,10 +970,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Offset">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adjusts the location of this rectangle by the specified amount.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Offset">
       <MemberSignature Language="C#" Value="public void Offset (System.Drawing.Point pos);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Offset(valuetype System.Drawing.Point pos) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Rectangle.Offset(System.Drawing.Point)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Offset (pos As Point)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Offset(System::Drawing::Point pos);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -934,6 +1032,8 @@
       <MemberSignature Language="C#" Value="public void Offset (int x, int y);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Offset(int32 x, int32 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Rectangle.Offset(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Offset (x As Integer, y As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Offset(int x, int y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -966,6 +1066,8 @@
       <MemberSignature Language="C#" Value="public static bool operator == (System.Drawing.Rectangle left, System.Drawing.Rectangle right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Drawing.Rectangle left, valuetype System.Drawing.Rectangle right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Rectangle.op_Equality(System.Drawing.Rectangle,System.Drawing.Rectangle)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As Rectangle, right As Rectangle) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Drawing::Rectangle left, System::Drawing::Rectangle right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -999,6 +1101,8 @@
       <MemberSignature Language="C#" Value="public static bool operator != (System.Drawing.Rectangle left, System.Drawing.Rectangle right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Drawing.Rectangle left, valuetype System.Drawing.Rectangle right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Rectangle.op_Inequality(System.Drawing.Rectangle,System.Drawing.Rectangle)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As Rectangle, right As Rectangle) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Drawing::Rectangle left, System::Drawing::Rectangle right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -1032,6 +1136,8 @@
       <MemberSignature Language="C#" Value="public int Right { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Right" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Rectangle.Right" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Right As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Right { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -1066,6 +1172,8 @@
       <MemberSignature Language="C#" Value="public static System.Drawing.Rectangle Round (System.Drawing.RectangleF value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Drawing.Rectangle Round(valuetype System.Drawing.RectangleF value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Rectangle.Round(System.Drawing.RectangleF)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Round (value As RectangleF) As Rectangle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Rectangle Round(System::Drawing::RectangleF value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -1108,6 +1216,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Size Size { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Size Size" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Rectangle.Size" />
+      <MemberSignature Language="VB.NET" Value="Public Property Size As Size" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Size Size { System::Drawing::Size get(); void set(System::Drawing::Size value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -1135,6 +1245,8 @@
       <MemberSignature Language="C#" Value="public int Top { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Top" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Rectangle.Top" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Top As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Top { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -1162,6 +1274,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Rectangle.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -1190,6 +1304,8 @@
       <MemberSignature Language="C#" Value="public static System.Drawing.Rectangle Truncate (System.Drawing.RectangleF value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Drawing.Rectangle Truncate(valuetype System.Drawing.RectangleF value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Rectangle.Truncate(System.Drawing.RectangleF)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Truncate (value As RectangleF) As Rectangle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Rectangle Truncate(System::Drawing::RectangleF value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -1232,6 +1348,8 @@
       <MemberSignature Language="C#" Value="public static System.Drawing.Rectangle Union (System.Drawing.Rectangle a, System.Drawing.Rectangle b);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Drawing.Rectangle Union(valuetype System.Drawing.Rectangle a, valuetype System.Drawing.Rectangle b) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Rectangle.Union(System.Drawing.Rectangle,System.Drawing.Rectangle)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Union (a As Rectangle, b As Rectangle) As Rectangle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Rectangle Union(System::Drawing::Rectangle a, System::Drawing::Rectangle b);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -1281,6 +1399,8 @@
       <MemberSignature Language="C#" Value="public int Width { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Width" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Rectangle.Width" />
+      <MemberSignature Language="VB.NET" Value="Public Property Width As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Width { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -1315,6 +1435,8 @@
       <MemberSignature Language="C#" Value="public int X { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 X" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Rectangle.X" />
+      <MemberSignature Language="VB.NET" Value="Public Property X As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int X { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -1349,6 +1471,8 @@
       <MemberSignature Language="C#" Value="public int Y { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Y" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Rectangle.Y" />
+      <MemberSignature Language="VB.NET" Value="Public Property Y As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Y { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -1379,55 +1503,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Drawing.Primitives</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Rectangle" /> class with the specified location and size.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Contains">
-      <AssemblyInfo>
-        <AssemblyName>System.Drawing.Primitives</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Determines if the specified point is contained within the rectangular region defined by this <see cref="T:System.Drawing.Rectangle" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Inflate">
-      <AssemblyInfo>
-        <AssemblyName>System.Drawing.Primitives</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Enlarges a <see cref="T:System.Drawing.Rectangle" /> structure by the specified amount.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Intersect">
-      <AssemblyInfo>
-        <AssemblyName>System.Drawing.Primitives</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Determines the <see cref="T:System.Drawing.Rectangle" /> structure that represents the intersection of two rectangles.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Offset">
-      <AssemblyInfo>
-        <AssemblyName>System.Drawing.Primitives</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adjusts the location of this rectangle by the specified amount.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

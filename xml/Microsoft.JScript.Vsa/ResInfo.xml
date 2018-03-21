@@ -1,7 +1,9 @@
-<Type Name="ResInfo" FullName="Microsoft.JScript.Vsa.ResInfo">
+﻿<Type Name="ResInfo" FullName="Microsoft.JScript.Vsa.ResInfo">
   <TypeSignature Language="C#" Value="public class ResInfo" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ResInfo extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.Vsa.ResInfo" />
+  <TypeSignature Language="VB.NET" Value="Public Class ResInfo" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ResInfo" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -21,10 +23,21 @@
     <forInternalUseOnly />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>This class, member, or property is internal to the script engine and should not be called from your code.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ResInfo (string resinfo, bool isLinked);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string resinfo, bool isLinked) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.ResInfo.#ctor(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (resinfo As String, isLinked As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ResInfo(System::String ^ resinfo, bool isLinked);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -46,6 +59,8 @@
       <MemberSignature Language="C#" Value="public ResInfo (string filename, string name, bool isPublic, bool isLinked);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string filename, string name, bool isPublic, bool isLinked) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.ResInfo.#ctor(System.String,System.String,System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (filename As String, name As String, isPublic As Boolean, isLinked As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ResInfo(System::String ^ filename, System::String ^ name, bool isPublic, bool isLinked);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -71,6 +86,8 @@
       <MemberSignature Language="C#" Value="public string filename;" />
       <MemberSignature Language="ILAsm" Value=".field public string filename" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.ResInfo.filename" />
+      <MemberSignature Language="VB.NET" Value="Public filename As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ filename;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -89,6 +106,8 @@
       <MemberSignature Language="C#" Value="public string fullpath;" />
       <MemberSignature Language="ILAsm" Value=".field public string fullpath" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.ResInfo.fullpath" />
+      <MemberSignature Language="VB.NET" Value="Public fullpath As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ fullpath;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -107,6 +126,8 @@
       <MemberSignature Language="C#" Value="public bool isLinked;" />
       <MemberSignature Language="ILAsm" Value=".field public bool isLinked" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.ResInfo.isLinked" />
+      <MemberSignature Language="VB.NET" Value="Public isLinked As Boolean " />
+      <MemberSignature Language="C++ CLI" Value="public: bool isLinked;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -125,6 +146,8 @@
       <MemberSignature Language="C#" Value="public bool isPublic;" />
       <MemberSignature Language="ILAsm" Value=".field public bool isPublic" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.ResInfo.isPublic" />
+      <MemberSignature Language="VB.NET" Value="Public isPublic As Boolean " />
+      <MemberSignature Language="C++ CLI" Value="public: bool isPublic;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -143,6 +166,8 @@
       <MemberSignature Language="C#" Value="public string name;" />
       <MemberSignature Language="ILAsm" Value=".field public string name" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.ResInfo.name" />
+      <MemberSignature Language="VB.NET" Value="Public name As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ name;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -157,14 +182,5 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>This class, member, or property is internal to the script engine and should not be called from your code.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

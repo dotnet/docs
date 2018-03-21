@@ -1,7 +1,9 @@
-<Type Name="KnownColor" FullName="System.Drawing.KnownColor">
+﻿<Type Name="KnownColor" FullName="System.Drawing.KnownColor">
   <TypeSignature Language="C#" Value="public enum KnownColor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed KnownColor extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.KnownColor" />
+  <TypeSignature Language="VB.NET" Value="Public Enum KnownColor" />
+  <TypeSignature Language="C++ CLI" Value="public enum class KnownColor" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +35,8 @@
       <MemberSignature Language="C#" Value="ActiveBorder" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor ActiveBorder = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.ActiveBorder" />
+      <MemberSignature Language="VB.NET" Value="ActiveBorder" />
+      <MemberSignature Language="C++ CLI" Value="ActiveBorder" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -45,6 +49,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The system-defined color of the active window's border.</summary>
       </Docs>
@@ -53,6 +58,8 @@
       <MemberSignature Language="C#" Value="ActiveCaption" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor ActiveCaption = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.ActiveCaption" />
+      <MemberSignature Language="VB.NET" Value="ActiveCaption" />
+      <MemberSignature Language="C++ CLI" Value="ActiveCaption" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -65,6 +72,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The system-defined color of the background of the active window's title bar.</summary>
       </Docs>
@@ -73,6 +81,8 @@
       <MemberSignature Language="C#" Value="ActiveCaptionText" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor ActiveCaptionText = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.ActiveCaptionText" />
+      <MemberSignature Language="VB.NET" Value="ActiveCaptionText" />
+      <MemberSignature Language="C++ CLI" Value="ActiveCaptionText" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -85,6 +95,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The system-defined color of the text in the active window's title bar.</summary>
       </Docs>
@@ -93,6 +104,8 @@
       <MemberSignature Language="C#" Value="AliceBlue" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor AliceBlue = int32(28)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.AliceBlue" />
+      <MemberSignature Language="VB.NET" Value="AliceBlue" />
+      <MemberSignature Language="C++ CLI" Value="AliceBlue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -105,6 +118,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>28</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -113,6 +127,8 @@
       <MemberSignature Language="C#" Value="AntiqueWhite" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor AntiqueWhite = int32(29)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.AntiqueWhite" />
+      <MemberSignature Language="VB.NET" Value="AntiqueWhite" />
+      <MemberSignature Language="C++ CLI" Value="AntiqueWhite" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -125,6 +141,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>29</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -133,6 +150,8 @@
       <MemberSignature Language="C#" Value="AppWorkspace" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor AppWorkspace = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.AppWorkspace" />
+      <MemberSignature Language="VB.NET" Value="AppWorkspace" />
+      <MemberSignature Language="C++ CLI" Value="AppWorkspace" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -145,6 +164,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The system-defined color of the application workspace. The application workspace is the area in a multiple-document view that is not being occupied by documents.</summary>
       </Docs>
@@ -153,6 +173,8 @@
       <MemberSignature Language="C#" Value="Aqua" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Aqua = int32(30)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Aqua" />
+      <MemberSignature Language="VB.NET" Value="Aqua" />
+      <MemberSignature Language="C++ CLI" Value="Aqua" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -165,6 +187,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>30</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -173,6 +196,8 @@
       <MemberSignature Language="C#" Value="Aquamarine" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Aquamarine = int32(31)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Aquamarine" />
+      <MemberSignature Language="VB.NET" Value="Aquamarine" />
+      <MemberSignature Language="C++ CLI" Value="Aquamarine" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -185,6 +210,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>31</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -193,6 +219,8 @@
       <MemberSignature Language="C#" Value="Azure" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Azure = int32(32)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Azure" />
+      <MemberSignature Language="VB.NET" Value="Azure" />
+      <MemberSignature Language="C++ CLI" Value="Azure" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -205,6 +233,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>32</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -213,6 +242,8 @@
       <MemberSignature Language="C#" Value="Beige" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Beige = int32(33)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Beige" />
+      <MemberSignature Language="VB.NET" Value="Beige" />
+      <MemberSignature Language="C++ CLI" Value="Beige" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -225,6 +256,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>33</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -233,6 +265,8 @@
       <MemberSignature Language="C#" Value="Bisque" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Bisque = int32(34)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Bisque" />
+      <MemberSignature Language="VB.NET" Value="Bisque" />
+      <MemberSignature Language="C++ CLI" Value="Bisque" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -245,6 +279,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>34</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -253,6 +288,8 @@
       <MemberSignature Language="C#" Value="Black" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Black = int32(35)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Black" />
+      <MemberSignature Language="VB.NET" Value="Black" />
+      <MemberSignature Language="C++ CLI" Value="Black" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -265,6 +302,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>35</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -273,6 +311,8 @@
       <MemberSignature Language="C#" Value="BlanchedAlmond" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor BlanchedAlmond = int32(36)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.BlanchedAlmond" />
+      <MemberSignature Language="VB.NET" Value="BlanchedAlmond" />
+      <MemberSignature Language="C++ CLI" Value="BlanchedAlmond" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -285,6 +325,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>36</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -293,6 +334,8 @@
       <MemberSignature Language="C#" Value="Blue" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Blue = int32(37)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Blue" />
+      <MemberSignature Language="VB.NET" Value="Blue" />
+      <MemberSignature Language="C++ CLI" Value="Blue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -305,6 +348,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>37</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -313,6 +357,8 @@
       <MemberSignature Language="C#" Value="BlueViolet" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor BlueViolet = int32(38)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.BlueViolet" />
+      <MemberSignature Language="VB.NET" Value="BlueViolet" />
+      <MemberSignature Language="C++ CLI" Value="BlueViolet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -325,6 +371,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>38</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -333,6 +380,8 @@
       <MemberSignature Language="C#" Value="Brown" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Brown = int32(39)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Brown" />
+      <MemberSignature Language="VB.NET" Value="Brown" />
+      <MemberSignature Language="C++ CLI" Value="Brown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -345,6 +394,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>39</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -353,6 +403,8 @@
       <MemberSignature Language="C#" Value="BurlyWood" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor BurlyWood = int32(40)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.BurlyWood" />
+      <MemberSignature Language="VB.NET" Value="BurlyWood" />
+      <MemberSignature Language="C++ CLI" Value="BurlyWood" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -365,6 +417,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>40</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -373,6 +426,8 @@
       <MemberSignature Language="C#" Value="ButtonFace" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor ButtonFace = int32(168)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.ButtonFace" />
+      <MemberSignature Language="VB.NET" Value="ButtonFace" />
+      <MemberSignature Language="C++ CLI" Value="ButtonFace" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -385,6 +440,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>168</MemberValue>
       <Docs>
         <summary>The system-defined face color of a 3-D element.</summary>
       </Docs>
@@ -393,6 +449,8 @@
       <MemberSignature Language="C#" Value="ButtonHighlight" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor ButtonHighlight = int32(169)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.ButtonHighlight" />
+      <MemberSignature Language="VB.NET" Value="ButtonHighlight" />
+      <MemberSignature Language="C++ CLI" Value="ButtonHighlight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -405,6 +463,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>169</MemberValue>
       <Docs>
         <summary>The system-defined color that is the highlight color of a 3-D element. This color is applied to parts of a 3-D element that face the light source.</summary>
       </Docs>
@@ -413,6 +472,8 @@
       <MemberSignature Language="C#" Value="ButtonShadow" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor ButtonShadow = int32(170)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.ButtonShadow" />
+      <MemberSignature Language="VB.NET" Value="ButtonShadow" />
+      <MemberSignature Language="C++ CLI" Value="ButtonShadow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -425,6 +486,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>170</MemberValue>
       <Docs>
         <summary>The system-defined color that is the shadow color of a 3-D element. This color is applied to parts of a 3-D element that face away from the light source.</summary>
       </Docs>
@@ -433,6 +495,8 @@
       <MemberSignature Language="C#" Value="CadetBlue" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor CadetBlue = int32(41)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.CadetBlue" />
+      <MemberSignature Language="VB.NET" Value="CadetBlue" />
+      <MemberSignature Language="C++ CLI" Value="CadetBlue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -445,6 +509,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>41</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -453,6 +518,8 @@
       <MemberSignature Language="C#" Value="Chartreuse" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Chartreuse = int32(42)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Chartreuse" />
+      <MemberSignature Language="VB.NET" Value="Chartreuse" />
+      <MemberSignature Language="C++ CLI" Value="Chartreuse" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -465,6 +532,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>42</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -473,6 +541,8 @@
       <MemberSignature Language="C#" Value="Chocolate" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Chocolate = int32(43)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Chocolate" />
+      <MemberSignature Language="VB.NET" Value="Chocolate" />
+      <MemberSignature Language="C++ CLI" Value="Chocolate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -485,6 +555,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>43</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -493,6 +564,8 @@
       <MemberSignature Language="C#" Value="Control" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Control = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Control" />
+      <MemberSignature Language="VB.NET" Value="Control" />
+      <MemberSignature Language="C++ CLI" Value="Control" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -505,6 +578,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>The system-defined face color of a 3-D element.</summary>
       </Docs>
@@ -513,6 +587,8 @@
       <MemberSignature Language="C#" Value="ControlDark" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor ControlDark = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.ControlDark" />
+      <MemberSignature Language="VB.NET" Value="ControlDark" />
+      <MemberSignature Language="C++ CLI" Value="ControlDark" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -525,6 +601,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>The system-defined shadow color of a 3-D element. The shadow color is applied to parts of a 3-D element that face away from the light source.</summary>
       </Docs>
@@ -533,6 +610,8 @@
       <MemberSignature Language="C#" Value="ControlDarkDark" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor ControlDarkDark = int32(7)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.ControlDarkDark" />
+      <MemberSignature Language="VB.NET" Value="ControlDarkDark" />
+      <MemberSignature Language="C++ CLI" Value="ControlDarkDark" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -545,6 +624,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>The system-defined color that is the dark shadow color of a 3-D element. The dark shadow color is applied to the parts of a 3-D element that are the darkest color.</summary>
       </Docs>
@@ -553,6 +633,8 @@
       <MemberSignature Language="C#" Value="ControlLight" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor ControlLight = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.ControlLight" />
+      <MemberSignature Language="VB.NET" Value="ControlLight" />
+      <MemberSignature Language="C++ CLI" Value="ControlLight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -565,6 +647,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>The system-defined color that is the light color of a 3-D element. The light color is applied to parts of a 3-D element that face the light source.</summary>
       </Docs>
@@ -573,6 +656,8 @@
       <MemberSignature Language="C#" Value="ControlLightLight" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor ControlLightLight = int32(9)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.ControlLightLight" />
+      <MemberSignature Language="VB.NET" Value="ControlLightLight" />
+      <MemberSignature Language="C++ CLI" Value="ControlLightLight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -585,6 +670,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>9</MemberValue>
       <Docs>
         <summary>The system-defined highlight color of a 3-D element. The highlight color is applied to the parts of a 3-D element that are the lightest color.</summary>
       </Docs>
@@ -593,6 +679,8 @@
       <MemberSignature Language="C#" Value="ControlText" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor ControlText = int32(10)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.ControlText" />
+      <MemberSignature Language="VB.NET" Value="ControlText" />
+      <MemberSignature Language="C++ CLI" Value="ControlText" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -605,6 +693,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>10</MemberValue>
       <Docs>
         <summary>The system-defined color of text in a 3-D element.</summary>
       </Docs>
@@ -613,6 +702,8 @@
       <MemberSignature Language="C#" Value="Coral" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Coral = int32(44)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Coral" />
+      <MemberSignature Language="VB.NET" Value="Coral" />
+      <MemberSignature Language="C++ CLI" Value="Coral" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -625,6 +716,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>44</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -633,6 +725,8 @@
       <MemberSignature Language="C#" Value="CornflowerBlue" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor CornflowerBlue = int32(45)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.CornflowerBlue" />
+      <MemberSignature Language="VB.NET" Value="CornflowerBlue" />
+      <MemberSignature Language="C++ CLI" Value="CornflowerBlue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -645,6 +739,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>45</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -653,6 +748,8 @@
       <MemberSignature Language="C#" Value="Cornsilk" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Cornsilk = int32(46)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Cornsilk" />
+      <MemberSignature Language="VB.NET" Value="Cornsilk" />
+      <MemberSignature Language="C++ CLI" Value="Cornsilk" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -665,6 +762,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>46</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -673,6 +771,8 @@
       <MemberSignature Language="C#" Value="Crimson" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Crimson = int32(47)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Crimson" />
+      <MemberSignature Language="VB.NET" Value="Crimson" />
+      <MemberSignature Language="C++ CLI" Value="Crimson" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -685,6 +785,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>47</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -693,6 +794,8 @@
       <MemberSignature Language="C#" Value="Cyan" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Cyan = int32(48)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Cyan" />
+      <MemberSignature Language="VB.NET" Value="Cyan" />
+      <MemberSignature Language="C++ CLI" Value="Cyan" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -705,6 +808,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>48</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -713,6 +817,8 @@
       <MemberSignature Language="C#" Value="DarkBlue" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor DarkBlue = int32(49)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.DarkBlue" />
+      <MemberSignature Language="VB.NET" Value="DarkBlue" />
+      <MemberSignature Language="C++ CLI" Value="DarkBlue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -725,6 +831,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>49</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -733,6 +840,8 @@
       <MemberSignature Language="C#" Value="DarkCyan" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor DarkCyan = int32(50)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.DarkCyan" />
+      <MemberSignature Language="VB.NET" Value="DarkCyan" />
+      <MemberSignature Language="C++ CLI" Value="DarkCyan" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -745,6 +854,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>50</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -753,6 +863,8 @@
       <MemberSignature Language="C#" Value="DarkGoldenrod" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor DarkGoldenrod = int32(51)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.DarkGoldenrod" />
+      <MemberSignature Language="VB.NET" Value="DarkGoldenrod" />
+      <MemberSignature Language="C++ CLI" Value="DarkGoldenrod" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -765,6 +877,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>51</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -773,6 +886,8 @@
       <MemberSignature Language="C#" Value="DarkGray" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor DarkGray = int32(52)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.DarkGray" />
+      <MemberSignature Language="VB.NET" Value="DarkGray" />
+      <MemberSignature Language="C++ CLI" Value="DarkGray" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -785,6 +900,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>52</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -793,6 +909,8 @@
       <MemberSignature Language="C#" Value="DarkGreen" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor DarkGreen = int32(53)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.DarkGreen" />
+      <MemberSignature Language="VB.NET" Value="DarkGreen" />
+      <MemberSignature Language="C++ CLI" Value="DarkGreen" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -805,6 +923,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>53</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -813,6 +932,8 @@
       <MemberSignature Language="C#" Value="DarkKhaki" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor DarkKhaki = int32(54)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.DarkKhaki" />
+      <MemberSignature Language="VB.NET" Value="DarkKhaki" />
+      <MemberSignature Language="C++ CLI" Value="DarkKhaki" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -825,6 +946,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>54</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -833,6 +955,8 @@
       <MemberSignature Language="C#" Value="DarkMagenta" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor DarkMagenta = int32(55)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.DarkMagenta" />
+      <MemberSignature Language="VB.NET" Value="DarkMagenta" />
+      <MemberSignature Language="C++ CLI" Value="DarkMagenta" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -845,6 +969,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>55</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -853,6 +978,8 @@
       <MemberSignature Language="C#" Value="DarkOliveGreen" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor DarkOliveGreen = int32(56)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.DarkOliveGreen" />
+      <MemberSignature Language="VB.NET" Value="DarkOliveGreen" />
+      <MemberSignature Language="C++ CLI" Value="DarkOliveGreen" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -865,6 +992,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>56</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -873,6 +1001,8 @@
       <MemberSignature Language="C#" Value="DarkOrange" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor DarkOrange = int32(57)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.DarkOrange" />
+      <MemberSignature Language="VB.NET" Value="DarkOrange" />
+      <MemberSignature Language="C++ CLI" Value="DarkOrange" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -885,6 +1015,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>57</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -893,6 +1024,8 @@
       <MemberSignature Language="C#" Value="DarkOrchid" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor DarkOrchid = int32(58)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.DarkOrchid" />
+      <MemberSignature Language="VB.NET" Value="DarkOrchid" />
+      <MemberSignature Language="C++ CLI" Value="DarkOrchid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -905,6 +1038,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>58</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -913,6 +1047,8 @@
       <MemberSignature Language="C#" Value="DarkRed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor DarkRed = int32(59)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.DarkRed" />
+      <MemberSignature Language="VB.NET" Value="DarkRed" />
+      <MemberSignature Language="C++ CLI" Value="DarkRed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -925,6 +1061,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>59</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -933,6 +1070,8 @@
       <MemberSignature Language="C#" Value="DarkSalmon" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor DarkSalmon = int32(60)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.DarkSalmon" />
+      <MemberSignature Language="VB.NET" Value="DarkSalmon" />
+      <MemberSignature Language="C++ CLI" Value="DarkSalmon" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -945,6 +1084,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>60</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -953,6 +1093,8 @@
       <MemberSignature Language="C#" Value="DarkSeaGreen" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor DarkSeaGreen = int32(61)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.DarkSeaGreen" />
+      <MemberSignature Language="VB.NET" Value="DarkSeaGreen" />
+      <MemberSignature Language="C++ CLI" Value="DarkSeaGreen" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -965,6 +1107,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>61</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -973,6 +1116,8 @@
       <MemberSignature Language="C#" Value="DarkSlateBlue" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor DarkSlateBlue = int32(62)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.DarkSlateBlue" />
+      <MemberSignature Language="VB.NET" Value="DarkSlateBlue" />
+      <MemberSignature Language="C++ CLI" Value="DarkSlateBlue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -985,6 +1130,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>62</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -993,6 +1139,8 @@
       <MemberSignature Language="C#" Value="DarkSlateGray" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor DarkSlateGray = int32(63)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.DarkSlateGray" />
+      <MemberSignature Language="VB.NET" Value="DarkSlateGray" />
+      <MemberSignature Language="C++ CLI" Value="DarkSlateGray" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1005,6 +1153,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>63</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -1013,6 +1162,8 @@
       <MemberSignature Language="C#" Value="DarkTurquoise" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor DarkTurquoise = int32(64)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.DarkTurquoise" />
+      <MemberSignature Language="VB.NET" Value="DarkTurquoise" />
+      <MemberSignature Language="C++ CLI" Value="DarkTurquoise" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1025,6 +1176,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>64</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -1033,6 +1185,8 @@
       <MemberSignature Language="C#" Value="DarkViolet" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor DarkViolet = int32(65)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.DarkViolet" />
+      <MemberSignature Language="VB.NET" Value="DarkViolet" />
+      <MemberSignature Language="C++ CLI" Value="DarkViolet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1045,6 +1199,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>65</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -1053,6 +1208,8 @@
       <MemberSignature Language="C#" Value="DeepPink" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor DeepPink = int32(66)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.DeepPink" />
+      <MemberSignature Language="VB.NET" Value="DeepPink" />
+      <MemberSignature Language="C++ CLI" Value="DeepPink" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1065,6 +1222,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>66</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -1073,6 +1231,8 @@
       <MemberSignature Language="C#" Value="DeepSkyBlue" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor DeepSkyBlue = int32(67)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.DeepSkyBlue" />
+      <MemberSignature Language="VB.NET" Value="DeepSkyBlue" />
+      <MemberSignature Language="C++ CLI" Value="DeepSkyBlue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1085,6 +1245,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>67</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -1093,6 +1254,8 @@
       <MemberSignature Language="C#" Value="Desktop" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Desktop = int32(11)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Desktop" />
+      <MemberSignature Language="VB.NET" Value="Desktop" />
+      <MemberSignature Language="C++ CLI" Value="Desktop" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1105,6 +1268,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>11</MemberValue>
       <Docs>
         <summary>The system-defined color of the desktop.</summary>
       </Docs>
@@ -1113,6 +1277,8 @@
       <MemberSignature Language="C#" Value="DimGray" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor DimGray = int32(68)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.DimGray" />
+      <MemberSignature Language="VB.NET" Value="DimGray" />
+      <MemberSignature Language="C++ CLI" Value="DimGray" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1125,6 +1291,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>68</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -1133,6 +1300,8 @@
       <MemberSignature Language="C#" Value="DodgerBlue" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor DodgerBlue = int32(69)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.DodgerBlue" />
+      <MemberSignature Language="VB.NET" Value="DodgerBlue" />
+      <MemberSignature Language="C++ CLI" Value="DodgerBlue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1145,6 +1314,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>69</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -1153,6 +1323,8 @@
       <MemberSignature Language="C#" Value="Firebrick" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Firebrick = int32(70)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Firebrick" />
+      <MemberSignature Language="VB.NET" Value="Firebrick" />
+      <MemberSignature Language="C++ CLI" Value="Firebrick" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1165,6 +1337,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>70</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -1173,6 +1346,8 @@
       <MemberSignature Language="C#" Value="FloralWhite" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor FloralWhite = int32(71)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.FloralWhite" />
+      <MemberSignature Language="VB.NET" Value="FloralWhite" />
+      <MemberSignature Language="C++ CLI" Value="FloralWhite" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1185,6 +1360,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>71</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -1193,6 +1369,8 @@
       <MemberSignature Language="C#" Value="ForestGreen" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor ForestGreen = int32(72)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.ForestGreen" />
+      <MemberSignature Language="VB.NET" Value="ForestGreen" />
+      <MemberSignature Language="C++ CLI" Value="ForestGreen" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1205,6 +1383,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>72</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -1213,6 +1392,8 @@
       <MemberSignature Language="C#" Value="Fuchsia" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Fuchsia = int32(73)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Fuchsia" />
+      <MemberSignature Language="VB.NET" Value="Fuchsia" />
+      <MemberSignature Language="C++ CLI" Value="Fuchsia" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1225,6 +1406,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>73</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -1233,6 +1415,8 @@
       <MemberSignature Language="C#" Value="Gainsboro" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Gainsboro = int32(74)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Gainsboro" />
+      <MemberSignature Language="VB.NET" Value="Gainsboro" />
+      <MemberSignature Language="C++ CLI" Value="Gainsboro" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1245,6 +1429,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>74</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -1253,6 +1438,8 @@
       <MemberSignature Language="C#" Value="GhostWhite" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor GhostWhite = int32(75)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.GhostWhite" />
+      <MemberSignature Language="VB.NET" Value="GhostWhite" />
+      <MemberSignature Language="C++ CLI" Value="GhostWhite" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1265,6 +1452,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>75</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -1273,6 +1461,8 @@
       <MemberSignature Language="C#" Value="Gold" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Gold = int32(76)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Gold" />
+      <MemberSignature Language="VB.NET" Value="Gold" />
+      <MemberSignature Language="C++ CLI" Value="Gold" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1285,6 +1475,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>76</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -1293,6 +1484,8 @@
       <MemberSignature Language="C#" Value="Goldenrod" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Goldenrod = int32(77)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Goldenrod" />
+      <MemberSignature Language="VB.NET" Value="Goldenrod" />
+      <MemberSignature Language="C++ CLI" Value="Goldenrod" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1305,6 +1498,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>77</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -1313,6 +1507,8 @@
       <MemberSignature Language="C#" Value="GradientActiveCaption" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor GradientActiveCaption = int32(171)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.GradientActiveCaption" />
+      <MemberSignature Language="VB.NET" Value="GradientActiveCaption" />
+      <MemberSignature Language="C++ CLI" Value="GradientActiveCaption" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1325,6 +1521,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>171</MemberValue>
       <Docs>
         <summary>The system-defined color of the lightest color in the color gradient of an active window's title bar.</summary>
       </Docs>
@@ -1333,6 +1530,8 @@
       <MemberSignature Language="C#" Value="GradientInactiveCaption" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor GradientInactiveCaption = int32(172)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.GradientInactiveCaption" />
+      <MemberSignature Language="VB.NET" Value="GradientInactiveCaption" />
+      <MemberSignature Language="C++ CLI" Value="GradientInactiveCaption" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1345,6 +1544,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>172</MemberValue>
       <Docs>
         <summary>The system-defined color of the lightest color in the color gradient of an inactive window's title bar.</summary>
       </Docs>
@@ -1353,6 +1553,8 @@
       <MemberSignature Language="C#" Value="Gray" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Gray = int32(78)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Gray" />
+      <MemberSignature Language="VB.NET" Value="Gray" />
+      <MemberSignature Language="C++ CLI" Value="Gray" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1365,6 +1567,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>78</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -1373,6 +1576,8 @@
       <MemberSignature Language="C#" Value="GrayText" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor GrayText = int32(12)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.GrayText" />
+      <MemberSignature Language="VB.NET" Value="GrayText" />
+      <MemberSignature Language="C++ CLI" Value="GrayText" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1385,6 +1590,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>12</MemberValue>
       <Docs>
         <summary>The system-defined color of dimmed text. Items in a list that are disabled are displayed in dimmed text.</summary>
       </Docs>
@@ -1393,6 +1599,8 @@
       <MemberSignature Language="C#" Value="Green" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Green = int32(79)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Green" />
+      <MemberSignature Language="VB.NET" Value="Green" />
+      <MemberSignature Language="C++ CLI" Value="Green" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1405,6 +1613,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>79</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -1413,6 +1622,8 @@
       <MemberSignature Language="C#" Value="GreenYellow" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor GreenYellow = int32(80)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.GreenYellow" />
+      <MemberSignature Language="VB.NET" Value="GreenYellow" />
+      <MemberSignature Language="C++ CLI" Value="GreenYellow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1425,6 +1636,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>80</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -1433,6 +1645,8 @@
       <MemberSignature Language="C#" Value="Highlight" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Highlight = int32(13)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Highlight" />
+      <MemberSignature Language="VB.NET" Value="Highlight" />
+      <MemberSignature Language="C++ CLI" Value="Highlight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1445,6 +1659,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>13</MemberValue>
       <Docs>
         <summary>The system-defined color of the background of selected items. This includes selected menu items as well as selected text.</summary>
       </Docs>
@@ -1453,6 +1668,8 @@
       <MemberSignature Language="C#" Value="HighlightText" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor HighlightText = int32(14)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.HighlightText" />
+      <MemberSignature Language="VB.NET" Value="HighlightText" />
+      <MemberSignature Language="C++ CLI" Value="HighlightText" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1465,6 +1682,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>14</MemberValue>
       <Docs>
         <summary>The system-defined color of the text of selected items.</summary>
       </Docs>
@@ -1473,6 +1691,8 @@
       <MemberSignature Language="C#" Value="Honeydew" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Honeydew = int32(81)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Honeydew" />
+      <MemberSignature Language="VB.NET" Value="Honeydew" />
+      <MemberSignature Language="C++ CLI" Value="Honeydew" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1485,6 +1705,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>81</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -1493,6 +1714,8 @@
       <MemberSignature Language="C#" Value="HotPink" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor HotPink = int32(82)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.HotPink" />
+      <MemberSignature Language="VB.NET" Value="HotPink" />
+      <MemberSignature Language="C++ CLI" Value="HotPink" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1505,6 +1728,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>82</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -1513,6 +1737,8 @@
       <MemberSignature Language="C#" Value="HotTrack" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor HotTrack = int32(15)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.HotTrack" />
+      <MemberSignature Language="VB.NET" Value="HotTrack" />
+      <MemberSignature Language="C++ CLI" Value="HotTrack" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1525,6 +1751,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>15</MemberValue>
       <Docs>
         <summary>The system-defined color used to designate a hot-tracked item. Single-clicking a hot-tracked item executes the item.</summary>
       </Docs>
@@ -1533,6 +1760,8 @@
       <MemberSignature Language="C#" Value="InactiveBorder" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor InactiveBorder = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.InactiveBorder" />
+      <MemberSignature Language="VB.NET" Value="InactiveBorder" />
+      <MemberSignature Language="C++ CLI" Value="InactiveBorder" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1545,6 +1774,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>The system-defined color of an inactive window's border.</summary>
       </Docs>
@@ -1553,6 +1783,8 @@
       <MemberSignature Language="C#" Value="InactiveCaption" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor InactiveCaption = int32(17)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.InactiveCaption" />
+      <MemberSignature Language="VB.NET" Value="InactiveCaption" />
+      <MemberSignature Language="C++ CLI" Value="InactiveCaption" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1565,6 +1797,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>17</MemberValue>
       <Docs>
         <summary>The system-defined color of the background of an inactive window's title bar.</summary>
       </Docs>
@@ -1573,6 +1806,8 @@
       <MemberSignature Language="C#" Value="InactiveCaptionText" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor InactiveCaptionText = int32(18)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.InactiveCaptionText" />
+      <MemberSignature Language="VB.NET" Value="InactiveCaptionText" />
+      <MemberSignature Language="C++ CLI" Value="InactiveCaptionText" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1585,6 +1820,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>18</MemberValue>
       <Docs>
         <summary>The system-defined color of the text in an inactive window's title bar.</summary>
       </Docs>
@@ -1593,6 +1829,8 @@
       <MemberSignature Language="C#" Value="IndianRed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor IndianRed = int32(83)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.IndianRed" />
+      <MemberSignature Language="VB.NET" Value="IndianRed" />
+      <MemberSignature Language="C++ CLI" Value="IndianRed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1605,6 +1843,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>83</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -1613,6 +1852,8 @@
       <MemberSignature Language="C#" Value="Indigo" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Indigo = int32(84)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Indigo" />
+      <MemberSignature Language="VB.NET" Value="Indigo" />
+      <MemberSignature Language="C++ CLI" Value="Indigo" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1625,6 +1866,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>84</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -1633,6 +1875,8 @@
       <MemberSignature Language="C#" Value="Info" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Info = int32(19)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Info" />
+      <MemberSignature Language="VB.NET" Value="Info" />
+      <MemberSignature Language="C++ CLI" Value="Info" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1645,6 +1889,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>19</MemberValue>
       <Docs>
         <summary>The system-defined color of the background of a ToolTip.</summary>
       </Docs>
@@ -1653,6 +1898,8 @@
       <MemberSignature Language="C#" Value="InfoText" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor InfoText = int32(20)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.InfoText" />
+      <MemberSignature Language="VB.NET" Value="InfoText" />
+      <MemberSignature Language="C++ CLI" Value="InfoText" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1665,6 +1912,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>20</MemberValue>
       <Docs>
         <summary>The system-defined color of the text of a ToolTip.</summary>
       </Docs>
@@ -1673,6 +1921,8 @@
       <MemberSignature Language="C#" Value="Ivory" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Ivory = int32(85)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Ivory" />
+      <MemberSignature Language="VB.NET" Value="Ivory" />
+      <MemberSignature Language="C++ CLI" Value="Ivory" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1685,6 +1935,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>85</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -1693,6 +1944,8 @@
       <MemberSignature Language="C#" Value="Khaki" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Khaki = int32(86)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Khaki" />
+      <MemberSignature Language="VB.NET" Value="Khaki" />
+      <MemberSignature Language="C++ CLI" Value="Khaki" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1705,6 +1958,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>86</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -1713,6 +1967,8 @@
       <MemberSignature Language="C#" Value="Lavender" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Lavender = int32(87)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Lavender" />
+      <MemberSignature Language="VB.NET" Value="Lavender" />
+      <MemberSignature Language="C++ CLI" Value="Lavender" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1725,6 +1981,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>87</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -1733,6 +1990,8 @@
       <MemberSignature Language="C#" Value="LavenderBlush" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor LavenderBlush = int32(88)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.LavenderBlush" />
+      <MemberSignature Language="VB.NET" Value="LavenderBlush" />
+      <MemberSignature Language="C++ CLI" Value="LavenderBlush" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1745,6 +2004,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>88</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -1753,6 +2013,8 @@
       <MemberSignature Language="C#" Value="LawnGreen" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor LawnGreen = int32(89)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.LawnGreen" />
+      <MemberSignature Language="VB.NET" Value="LawnGreen" />
+      <MemberSignature Language="C++ CLI" Value="LawnGreen" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1765,6 +2027,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>89</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -1773,6 +2036,8 @@
       <MemberSignature Language="C#" Value="LemonChiffon" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor LemonChiffon = int32(90)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.LemonChiffon" />
+      <MemberSignature Language="VB.NET" Value="LemonChiffon" />
+      <MemberSignature Language="C++ CLI" Value="LemonChiffon" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1785,6 +2050,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>90</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -1793,6 +2059,8 @@
       <MemberSignature Language="C#" Value="LightBlue" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor LightBlue = int32(91)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.LightBlue" />
+      <MemberSignature Language="VB.NET" Value="LightBlue" />
+      <MemberSignature Language="C++ CLI" Value="LightBlue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1805,6 +2073,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>91</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -1813,6 +2082,8 @@
       <MemberSignature Language="C#" Value="LightCoral" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor LightCoral = int32(92)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.LightCoral" />
+      <MemberSignature Language="VB.NET" Value="LightCoral" />
+      <MemberSignature Language="C++ CLI" Value="LightCoral" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1825,6 +2096,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>92</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -1833,6 +2105,8 @@
       <MemberSignature Language="C#" Value="LightCyan" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor LightCyan = int32(93)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.LightCyan" />
+      <MemberSignature Language="VB.NET" Value="LightCyan" />
+      <MemberSignature Language="C++ CLI" Value="LightCyan" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1845,6 +2119,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>93</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -1853,6 +2128,8 @@
       <MemberSignature Language="C#" Value="LightGoldenrodYellow" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor LightGoldenrodYellow = int32(94)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.LightGoldenrodYellow" />
+      <MemberSignature Language="VB.NET" Value="LightGoldenrodYellow" />
+      <MemberSignature Language="C++ CLI" Value="LightGoldenrodYellow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1865,6 +2142,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>94</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -1873,6 +2151,8 @@
       <MemberSignature Language="C#" Value="LightGray" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor LightGray = int32(95)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.LightGray" />
+      <MemberSignature Language="VB.NET" Value="LightGray" />
+      <MemberSignature Language="C++ CLI" Value="LightGray" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1885,6 +2165,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>95</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -1893,6 +2174,8 @@
       <MemberSignature Language="C#" Value="LightGreen" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor LightGreen = int32(96)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.LightGreen" />
+      <MemberSignature Language="VB.NET" Value="LightGreen" />
+      <MemberSignature Language="C++ CLI" Value="LightGreen" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1905,6 +2188,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>96</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -1913,6 +2197,8 @@
       <MemberSignature Language="C#" Value="LightPink" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor LightPink = int32(97)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.LightPink" />
+      <MemberSignature Language="VB.NET" Value="LightPink" />
+      <MemberSignature Language="C++ CLI" Value="LightPink" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1925,6 +2211,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>97</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -1933,6 +2220,8 @@
       <MemberSignature Language="C#" Value="LightSalmon" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor LightSalmon = int32(98)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.LightSalmon" />
+      <MemberSignature Language="VB.NET" Value="LightSalmon" />
+      <MemberSignature Language="C++ CLI" Value="LightSalmon" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1945,6 +2234,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>98</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -1953,6 +2243,8 @@
       <MemberSignature Language="C#" Value="LightSeaGreen" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor LightSeaGreen = int32(99)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.LightSeaGreen" />
+      <MemberSignature Language="VB.NET" Value="LightSeaGreen" />
+      <MemberSignature Language="C++ CLI" Value="LightSeaGreen" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1965,6 +2257,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>99</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -1973,6 +2266,8 @@
       <MemberSignature Language="C#" Value="LightSkyBlue" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor LightSkyBlue = int32(100)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.LightSkyBlue" />
+      <MemberSignature Language="VB.NET" Value="LightSkyBlue" />
+      <MemberSignature Language="C++ CLI" Value="LightSkyBlue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1985,6 +2280,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>100</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -1993,6 +2289,8 @@
       <MemberSignature Language="C#" Value="LightSlateGray" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor LightSlateGray = int32(101)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.LightSlateGray" />
+      <MemberSignature Language="VB.NET" Value="LightSlateGray" />
+      <MemberSignature Language="C++ CLI" Value="LightSlateGray" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2005,6 +2303,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>101</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -2013,6 +2312,8 @@
       <MemberSignature Language="C#" Value="LightSteelBlue" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor LightSteelBlue = int32(102)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.LightSteelBlue" />
+      <MemberSignature Language="VB.NET" Value="LightSteelBlue" />
+      <MemberSignature Language="C++ CLI" Value="LightSteelBlue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2025,6 +2326,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>102</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -2033,6 +2335,8 @@
       <MemberSignature Language="C#" Value="LightYellow" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor LightYellow = int32(103)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.LightYellow" />
+      <MemberSignature Language="VB.NET" Value="LightYellow" />
+      <MemberSignature Language="C++ CLI" Value="LightYellow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2045,6 +2349,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>103</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -2053,6 +2358,8 @@
       <MemberSignature Language="C#" Value="Lime" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Lime = int32(104)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Lime" />
+      <MemberSignature Language="VB.NET" Value="Lime" />
+      <MemberSignature Language="C++ CLI" Value="Lime" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2065,6 +2372,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>104</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -2073,6 +2381,8 @@
       <MemberSignature Language="C#" Value="LimeGreen" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor LimeGreen = int32(105)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.LimeGreen" />
+      <MemberSignature Language="VB.NET" Value="LimeGreen" />
+      <MemberSignature Language="C++ CLI" Value="LimeGreen" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2085,6 +2395,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>105</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -2093,6 +2404,8 @@
       <MemberSignature Language="C#" Value="Linen" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Linen = int32(106)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Linen" />
+      <MemberSignature Language="VB.NET" Value="Linen" />
+      <MemberSignature Language="C++ CLI" Value="Linen" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2105,6 +2418,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>106</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -2113,6 +2427,8 @@
       <MemberSignature Language="C#" Value="Magenta" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Magenta = int32(107)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Magenta" />
+      <MemberSignature Language="VB.NET" Value="Magenta" />
+      <MemberSignature Language="C++ CLI" Value="Magenta" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2125,6 +2441,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>107</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -2133,6 +2450,8 @@
       <MemberSignature Language="C#" Value="Maroon" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Maroon = int32(108)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Maroon" />
+      <MemberSignature Language="VB.NET" Value="Maroon" />
+      <MemberSignature Language="C++ CLI" Value="Maroon" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2145,6 +2464,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>108</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -2153,6 +2473,8 @@
       <MemberSignature Language="C#" Value="MediumAquamarine" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor MediumAquamarine = int32(109)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.MediumAquamarine" />
+      <MemberSignature Language="VB.NET" Value="MediumAquamarine" />
+      <MemberSignature Language="C++ CLI" Value="MediumAquamarine" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2165,6 +2487,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>109</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -2173,6 +2496,8 @@
       <MemberSignature Language="C#" Value="MediumBlue" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor MediumBlue = int32(110)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.MediumBlue" />
+      <MemberSignature Language="VB.NET" Value="MediumBlue" />
+      <MemberSignature Language="C++ CLI" Value="MediumBlue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2185,6 +2510,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>110</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -2193,6 +2519,8 @@
       <MemberSignature Language="C#" Value="MediumOrchid" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor MediumOrchid = int32(111)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.MediumOrchid" />
+      <MemberSignature Language="VB.NET" Value="MediumOrchid" />
+      <MemberSignature Language="C++ CLI" Value="MediumOrchid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2205,6 +2533,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>111</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -2213,6 +2542,8 @@
       <MemberSignature Language="C#" Value="MediumPurple" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor MediumPurple = int32(112)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.MediumPurple" />
+      <MemberSignature Language="VB.NET" Value="MediumPurple" />
+      <MemberSignature Language="C++ CLI" Value="MediumPurple" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2225,6 +2556,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>112</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -2233,6 +2565,8 @@
       <MemberSignature Language="C#" Value="MediumSeaGreen" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor MediumSeaGreen = int32(113)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.MediumSeaGreen" />
+      <MemberSignature Language="VB.NET" Value="MediumSeaGreen" />
+      <MemberSignature Language="C++ CLI" Value="MediumSeaGreen" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2245,6 +2579,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>113</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -2253,6 +2588,8 @@
       <MemberSignature Language="C#" Value="MediumSlateBlue" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor MediumSlateBlue = int32(114)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.MediumSlateBlue" />
+      <MemberSignature Language="VB.NET" Value="MediumSlateBlue" />
+      <MemberSignature Language="C++ CLI" Value="MediumSlateBlue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2265,6 +2602,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>114</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -2273,6 +2611,8 @@
       <MemberSignature Language="C#" Value="MediumSpringGreen" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor MediumSpringGreen = int32(115)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.MediumSpringGreen" />
+      <MemberSignature Language="VB.NET" Value="MediumSpringGreen" />
+      <MemberSignature Language="C++ CLI" Value="MediumSpringGreen" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2285,6 +2625,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>115</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -2293,6 +2634,8 @@
       <MemberSignature Language="C#" Value="MediumTurquoise" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor MediumTurquoise = int32(116)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.MediumTurquoise" />
+      <MemberSignature Language="VB.NET" Value="MediumTurquoise" />
+      <MemberSignature Language="C++ CLI" Value="MediumTurquoise" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2305,6 +2648,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>116</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -2313,6 +2657,8 @@
       <MemberSignature Language="C#" Value="MediumVioletRed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor MediumVioletRed = int32(117)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.MediumVioletRed" />
+      <MemberSignature Language="VB.NET" Value="MediumVioletRed" />
+      <MemberSignature Language="C++ CLI" Value="MediumVioletRed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2325,6 +2671,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>117</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -2333,6 +2680,8 @@
       <MemberSignature Language="C#" Value="Menu" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Menu = int32(21)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Menu" />
+      <MemberSignature Language="VB.NET" Value="Menu" />
+      <MemberSignature Language="C++ CLI" Value="Menu" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2345,6 +2694,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>21</MemberValue>
       <Docs>
         <summary>The system-defined color of a menu's background.</summary>
       </Docs>
@@ -2353,6 +2703,8 @@
       <MemberSignature Language="C#" Value="MenuBar" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor MenuBar = int32(173)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.MenuBar" />
+      <MemberSignature Language="VB.NET" Value="MenuBar" />
+      <MemberSignature Language="C++ CLI" Value="MenuBar" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2365,6 +2717,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>173</MemberValue>
       <Docs>
         <summary>The system-defined color of the background of a menu bar.</summary>
       </Docs>
@@ -2373,6 +2726,8 @@
       <MemberSignature Language="C#" Value="MenuHighlight" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor MenuHighlight = int32(174)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.MenuHighlight" />
+      <MemberSignature Language="VB.NET" Value="MenuHighlight" />
+      <MemberSignature Language="C++ CLI" Value="MenuHighlight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2385,6 +2740,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>174</MemberValue>
       <Docs>
         <summary>The system-defined color used to highlight menu items when the menu appears as a flat menu.</summary>
       </Docs>
@@ -2393,6 +2749,8 @@
       <MemberSignature Language="C#" Value="MenuText" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor MenuText = int32(22)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.MenuText" />
+      <MemberSignature Language="VB.NET" Value="MenuText" />
+      <MemberSignature Language="C++ CLI" Value="MenuText" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2405,6 +2763,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>22</MemberValue>
       <Docs>
         <summary>The system-defined color of a menu's text.</summary>
       </Docs>
@@ -2413,6 +2772,8 @@
       <MemberSignature Language="C#" Value="MidnightBlue" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor MidnightBlue = int32(118)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.MidnightBlue" />
+      <MemberSignature Language="VB.NET" Value="MidnightBlue" />
+      <MemberSignature Language="C++ CLI" Value="MidnightBlue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2425,6 +2786,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>118</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -2433,6 +2795,8 @@
       <MemberSignature Language="C#" Value="MintCream" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor MintCream = int32(119)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.MintCream" />
+      <MemberSignature Language="VB.NET" Value="MintCream" />
+      <MemberSignature Language="C++ CLI" Value="MintCream" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2445,6 +2809,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>119</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -2453,6 +2818,8 @@
       <MemberSignature Language="C#" Value="MistyRose" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor MistyRose = int32(120)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.MistyRose" />
+      <MemberSignature Language="VB.NET" Value="MistyRose" />
+      <MemberSignature Language="C++ CLI" Value="MistyRose" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2465,6 +2832,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>120</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -2473,6 +2841,8 @@
       <MemberSignature Language="C#" Value="Moccasin" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Moccasin = int32(121)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Moccasin" />
+      <MemberSignature Language="VB.NET" Value="Moccasin" />
+      <MemberSignature Language="C++ CLI" Value="Moccasin" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2485,6 +2855,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>121</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -2493,6 +2864,8 @@
       <MemberSignature Language="C#" Value="NavajoWhite" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor NavajoWhite = int32(122)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.NavajoWhite" />
+      <MemberSignature Language="VB.NET" Value="NavajoWhite" />
+      <MemberSignature Language="C++ CLI" Value="NavajoWhite" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2505,6 +2878,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>122</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -2513,6 +2887,8 @@
       <MemberSignature Language="C#" Value="Navy" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Navy = int32(123)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Navy" />
+      <MemberSignature Language="VB.NET" Value="Navy" />
+      <MemberSignature Language="C++ CLI" Value="Navy" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2525,6 +2901,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>123</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -2533,6 +2910,8 @@
       <MemberSignature Language="C#" Value="OldLace" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor OldLace = int32(124)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.OldLace" />
+      <MemberSignature Language="VB.NET" Value="OldLace" />
+      <MemberSignature Language="C++ CLI" Value="OldLace" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2545,6 +2924,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>124</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -2553,6 +2933,8 @@
       <MemberSignature Language="C#" Value="Olive" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Olive = int32(125)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Olive" />
+      <MemberSignature Language="VB.NET" Value="Olive" />
+      <MemberSignature Language="C++ CLI" Value="Olive" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2565,6 +2947,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>125</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -2573,6 +2956,8 @@
       <MemberSignature Language="C#" Value="OliveDrab" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor OliveDrab = int32(126)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.OliveDrab" />
+      <MemberSignature Language="VB.NET" Value="OliveDrab" />
+      <MemberSignature Language="C++ CLI" Value="OliveDrab" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2585,6 +2970,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>126</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -2593,6 +2979,8 @@
       <MemberSignature Language="C#" Value="Orange" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Orange = int32(127)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Orange" />
+      <MemberSignature Language="VB.NET" Value="Orange" />
+      <MemberSignature Language="C++ CLI" Value="Orange" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2605,6 +2993,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>127</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -2613,6 +3002,8 @@
       <MemberSignature Language="C#" Value="OrangeRed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor OrangeRed = int32(128)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.OrangeRed" />
+      <MemberSignature Language="VB.NET" Value="OrangeRed" />
+      <MemberSignature Language="C++ CLI" Value="OrangeRed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2625,6 +3016,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>128</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -2633,6 +3025,8 @@
       <MemberSignature Language="C#" Value="Orchid" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Orchid = int32(129)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Orchid" />
+      <MemberSignature Language="VB.NET" Value="Orchid" />
+      <MemberSignature Language="C++ CLI" Value="Orchid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2645,6 +3039,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>129</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -2653,6 +3048,8 @@
       <MemberSignature Language="C#" Value="PaleGoldenrod" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor PaleGoldenrod = int32(130)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.PaleGoldenrod" />
+      <MemberSignature Language="VB.NET" Value="PaleGoldenrod" />
+      <MemberSignature Language="C++ CLI" Value="PaleGoldenrod" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2665,6 +3062,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>130</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -2673,6 +3071,8 @@
       <MemberSignature Language="C#" Value="PaleGreen" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor PaleGreen = int32(131)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.PaleGreen" />
+      <MemberSignature Language="VB.NET" Value="PaleGreen" />
+      <MemberSignature Language="C++ CLI" Value="PaleGreen" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2685,6 +3085,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>131</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -2693,6 +3094,8 @@
       <MemberSignature Language="C#" Value="PaleTurquoise" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor PaleTurquoise = int32(132)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.PaleTurquoise" />
+      <MemberSignature Language="VB.NET" Value="PaleTurquoise" />
+      <MemberSignature Language="C++ CLI" Value="PaleTurquoise" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2705,6 +3108,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>132</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -2713,6 +3117,8 @@
       <MemberSignature Language="C#" Value="PaleVioletRed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor PaleVioletRed = int32(133)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.PaleVioletRed" />
+      <MemberSignature Language="VB.NET" Value="PaleVioletRed" />
+      <MemberSignature Language="C++ CLI" Value="PaleVioletRed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2725,6 +3131,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>133</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -2733,6 +3140,8 @@
       <MemberSignature Language="C#" Value="PapayaWhip" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor PapayaWhip = int32(134)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.PapayaWhip" />
+      <MemberSignature Language="VB.NET" Value="PapayaWhip" />
+      <MemberSignature Language="C++ CLI" Value="PapayaWhip" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2745,6 +3154,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>134</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -2753,6 +3163,8 @@
       <MemberSignature Language="C#" Value="PeachPuff" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor PeachPuff = int32(135)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.PeachPuff" />
+      <MemberSignature Language="VB.NET" Value="PeachPuff" />
+      <MemberSignature Language="C++ CLI" Value="PeachPuff" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2765,6 +3177,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>135</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -2773,6 +3186,8 @@
       <MemberSignature Language="C#" Value="Peru" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Peru = int32(136)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Peru" />
+      <MemberSignature Language="VB.NET" Value="Peru" />
+      <MemberSignature Language="C++ CLI" Value="Peru" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2785,6 +3200,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>136</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -2793,6 +3209,8 @@
       <MemberSignature Language="C#" Value="Pink" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Pink = int32(137)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Pink" />
+      <MemberSignature Language="VB.NET" Value="Pink" />
+      <MemberSignature Language="C++ CLI" Value="Pink" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2805,6 +3223,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>137</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -2813,6 +3232,8 @@
       <MemberSignature Language="C#" Value="Plum" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Plum = int32(138)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Plum" />
+      <MemberSignature Language="VB.NET" Value="Plum" />
+      <MemberSignature Language="C++ CLI" Value="Plum" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2825,6 +3246,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>138</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -2833,6 +3255,8 @@
       <MemberSignature Language="C#" Value="PowderBlue" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor PowderBlue = int32(139)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.PowderBlue" />
+      <MemberSignature Language="VB.NET" Value="PowderBlue" />
+      <MemberSignature Language="C++ CLI" Value="PowderBlue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2845,6 +3269,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>139</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -2853,6 +3278,8 @@
       <MemberSignature Language="C#" Value="Purple" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Purple = int32(140)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Purple" />
+      <MemberSignature Language="VB.NET" Value="Purple" />
+      <MemberSignature Language="C++ CLI" Value="Purple" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2865,6 +3292,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>140</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -2873,6 +3301,8 @@
       <MemberSignature Language="C#" Value="Red" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Red = int32(141)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Red" />
+      <MemberSignature Language="VB.NET" Value="Red" />
+      <MemberSignature Language="C++ CLI" Value="Red" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2885,6 +3315,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>141</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -2893,6 +3324,8 @@
       <MemberSignature Language="C#" Value="RosyBrown" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor RosyBrown = int32(142)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.RosyBrown" />
+      <MemberSignature Language="VB.NET" Value="RosyBrown" />
+      <MemberSignature Language="C++ CLI" Value="RosyBrown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2905,6 +3338,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>142</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -2913,6 +3347,8 @@
       <MemberSignature Language="C#" Value="RoyalBlue" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor RoyalBlue = int32(143)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.RoyalBlue" />
+      <MemberSignature Language="VB.NET" Value="RoyalBlue" />
+      <MemberSignature Language="C++ CLI" Value="RoyalBlue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2925,6 +3361,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>143</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -2933,6 +3370,8 @@
       <MemberSignature Language="C#" Value="SaddleBrown" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor SaddleBrown = int32(144)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.SaddleBrown" />
+      <MemberSignature Language="VB.NET" Value="SaddleBrown" />
+      <MemberSignature Language="C++ CLI" Value="SaddleBrown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2945,6 +3384,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>144</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -2953,6 +3393,8 @@
       <MemberSignature Language="C#" Value="Salmon" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Salmon = int32(145)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Salmon" />
+      <MemberSignature Language="VB.NET" Value="Salmon" />
+      <MemberSignature Language="C++ CLI" Value="Salmon" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2965,6 +3407,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>145</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -2973,6 +3416,8 @@
       <MemberSignature Language="C#" Value="SandyBrown" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor SandyBrown = int32(146)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.SandyBrown" />
+      <MemberSignature Language="VB.NET" Value="SandyBrown" />
+      <MemberSignature Language="C++ CLI" Value="SandyBrown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2985,6 +3430,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>146</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -2993,6 +3439,8 @@
       <MemberSignature Language="C#" Value="ScrollBar" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor ScrollBar = int32(23)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.ScrollBar" />
+      <MemberSignature Language="VB.NET" Value="ScrollBar" />
+      <MemberSignature Language="C++ CLI" Value="ScrollBar" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3005,6 +3453,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>23</MemberValue>
       <Docs>
         <summary>The system-defined color of the background of a scroll bar.</summary>
       </Docs>
@@ -3013,6 +3462,8 @@
       <MemberSignature Language="C#" Value="SeaGreen" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor SeaGreen = int32(147)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.SeaGreen" />
+      <MemberSignature Language="VB.NET" Value="SeaGreen" />
+      <MemberSignature Language="C++ CLI" Value="SeaGreen" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3025,6 +3476,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>147</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -3033,6 +3485,8 @@
       <MemberSignature Language="C#" Value="SeaShell" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor SeaShell = int32(148)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.SeaShell" />
+      <MemberSignature Language="VB.NET" Value="SeaShell" />
+      <MemberSignature Language="C++ CLI" Value="SeaShell" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3045,6 +3499,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>148</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -3053,6 +3508,8 @@
       <MemberSignature Language="C#" Value="Sienna" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Sienna = int32(149)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Sienna" />
+      <MemberSignature Language="VB.NET" Value="Sienna" />
+      <MemberSignature Language="C++ CLI" Value="Sienna" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3065,6 +3522,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>149</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -3073,6 +3531,8 @@
       <MemberSignature Language="C#" Value="Silver" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Silver = int32(150)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Silver" />
+      <MemberSignature Language="VB.NET" Value="Silver" />
+      <MemberSignature Language="C++ CLI" Value="Silver" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3085,6 +3545,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>150</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -3093,6 +3554,8 @@
       <MemberSignature Language="C#" Value="SkyBlue" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor SkyBlue = int32(151)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.SkyBlue" />
+      <MemberSignature Language="VB.NET" Value="SkyBlue" />
+      <MemberSignature Language="C++ CLI" Value="SkyBlue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3105,6 +3568,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>151</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -3113,6 +3577,8 @@
       <MemberSignature Language="C#" Value="SlateBlue" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor SlateBlue = int32(152)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.SlateBlue" />
+      <MemberSignature Language="VB.NET" Value="SlateBlue" />
+      <MemberSignature Language="C++ CLI" Value="SlateBlue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3125,6 +3591,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>152</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -3133,6 +3600,8 @@
       <MemberSignature Language="C#" Value="SlateGray" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor SlateGray = int32(153)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.SlateGray" />
+      <MemberSignature Language="VB.NET" Value="SlateGray" />
+      <MemberSignature Language="C++ CLI" Value="SlateGray" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3145,6 +3614,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>153</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -3153,6 +3623,8 @@
       <MemberSignature Language="C#" Value="Snow" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Snow = int32(154)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Snow" />
+      <MemberSignature Language="VB.NET" Value="Snow" />
+      <MemberSignature Language="C++ CLI" Value="Snow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3165,6 +3637,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>154</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -3173,6 +3646,8 @@
       <MemberSignature Language="C#" Value="SpringGreen" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor SpringGreen = int32(155)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.SpringGreen" />
+      <MemberSignature Language="VB.NET" Value="SpringGreen" />
+      <MemberSignature Language="C++ CLI" Value="SpringGreen" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3185,6 +3660,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>155</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -3193,6 +3669,8 @@
       <MemberSignature Language="C#" Value="SteelBlue" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor SteelBlue = int32(156)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.SteelBlue" />
+      <MemberSignature Language="VB.NET" Value="SteelBlue" />
+      <MemberSignature Language="C++ CLI" Value="SteelBlue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3205,6 +3683,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>156</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -3213,6 +3692,8 @@
       <MemberSignature Language="C#" Value="Tan" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Tan = int32(157)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Tan" />
+      <MemberSignature Language="VB.NET" Value="Tan" />
+      <MemberSignature Language="C++ CLI" Value="Tan" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3225,6 +3706,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>157</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -3233,6 +3715,8 @@
       <MemberSignature Language="C#" Value="Teal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Teal = int32(158)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Teal" />
+      <MemberSignature Language="VB.NET" Value="Teal" />
+      <MemberSignature Language="C++ CLI" Value="Teal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3245,6 +3729,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>158</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -3253,6 +3738,8 @@
       <MemberSignature Language="C#" Value="Thistle" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Thistle = int32(159)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Thistle" />
+      <MemberSignature Language="VB.NET" Value="Thistle" />
+      <MemberSignature Language="C++ CLI" Value="Thistle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3265,6 +3752,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>159</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -3273,6 +3761,8 @@
       <MemberSignature Language="C#" Value="Tomato" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Tomato = int32(160)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Tomato" />
+      <MemberSignature Language="VB.NET" Value="Tomato" />
+      <MemberSignature Language="C++ CLI" Value="Tomato" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3285,6 +3775,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>160</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -3293,6 +3784,8 @@
       <MemberSignature Language="C#" Value="Transparent" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Transparent = int32(27)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Transparent" />
+      <MemberSignature Language="VB.NET" Value="Transparent" />
+      <MemberSignature Language="C++ CLI" Value="Transparent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3305,6 +3798,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>27</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -3313,6 +3807,8 @@
       <MemberSignature Language="C#" Value="Turquoise" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Turquoise = int32(161)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Turquoise" />
+      <MemberSignature Language="VB.NET" Value="Turquoise" />
+      <MemberSignature Language="C++ CLI" Value="Turquoise" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3325,6 +3821,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>161</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -3333,6 +3830,8 @@
       <MemberSignature Language="C#" Value="Violet" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Violet = int32(162)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Violet" />
+      <MemberSignature Language="VB.NET" Value="Violet" />
+      <MemberSignature Language="C++ CLI" Value="Violet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3345,6 +3844,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>162</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -3353,6 +3853,8 @@
       <MemberSignature Language="C#" Value="Wheat" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Wheat = int32(163)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Wheat" />
+      <MemberSignature Language="VB.NET" Value="Wheat" />
+      <MemberSignature Language="C++ CLI" Value="Wheat" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3365,6 +3867,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>163</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -3373,6 +3876,8 @@
       <MemberSignature Language="C#" Value="White" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor White = int32(164)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.White" />
+      <MemberSignature Language="VB.NET" Value="White" />
+      <MemberSignature Language="C++ CLI" Value="White" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3385,6 +3890,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>164</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -3393,6 +3899,8 @@
       <MemberSignature Language="C#" Value="WhiteSmoke" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor WhiteSmoke = int32(165)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.WhiteSmoke" />
+      <MemberSignature Language="VB.NET" Value="WhiteSmoke" />
+      <MemberSignature Language="C++ CLI" Value="WhiteSmoke" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3405,6 +3913,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>165</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -3413,6 +3922,8 @@
       <MemberSignature Language="C#" Value="Window" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Window = int32(24)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Window" />
+      <MemberSignature Language="VB.NET" Value="Window" />
+      <MemberSignature Language="C++ CLI" Value="Window" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3425,6 +3936,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>24</MemberValue>
       <Docs>
         <summary>The system-defined color of the background in the client area of a window.</summary>
       </Docs>
@@ -3433,6 +3945,8 @@
       <MemberSignature Language="C#" Value="WindowFrame" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor WindowFrame = int32(25)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.WindowFrame" />
+      <MemberSignature Language="VB.NET" Value="WindowFrame" />
+      <MemberSignature Language="C++ CLI" Value="WindowFrame" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3445,6 +3959,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>25</MemberValue>
       <Docs>
         <summary>The system-defined color of a window frame.</summary>
       </Docs>
@@ -3453,6 +3968,8 @@
       <MemberSignature Language="C#" Value="WindowText" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor WindowText = int32(26)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.WindowText" />
+      <MemberSignature Language="VB.NET" Value="WindowText" />
+      <MemberSignature Language="C++ CLI" Value="WindowText" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3465,6 +3982,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>26</MemberValue>
       <Docs>
         <summary>The system-defined color of the text in the client area of a window.</summary>
       </Docs>
@@ -3473,6 +3991,8 @@
       <MemberSignature Language="C#" Value="Yellow" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Yellow = int32(166)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Yellow" />
+      <MemberSignature Language="VB.NET" Value="Yellow" />
+      <MemberSignature Language="C++ CLI" Value="Yellow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3485,6 +4005,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>166</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>
@@ -3493,6 +4014,8 @@
       <MemberSignature Language="C#" Value="YellowGreen" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor YellowGreen = int32(167)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.YellowGreen" />
+      <MemberSignature Language="VB.NET" Value="YellowGreen" />
+      <MemberSignature Language="C++ CLI" Value="YellowGreen" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3505,6 +4028,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.KnownColor</ReturnType>
       </ReturnValue>
+      <MemberValue>167</MemberValue>
       <Docs>
         <summary>A system-defined color.</summary>
       </Docs>

@@ -1,7 +1,9 @@
-<Type Name="PageSettings" FullName="System.Drawing.Printing.PageSettings">
+﻿<Type Name="PageSettings" FullName="System.Drawing.Printing.PageSettings">
   <TypeSignature Language="C#" Value="public class PageSettings : ICloneable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit PageSettings extends System.Object implements class System.ICloneable" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Printing.PageSettings" />
+  <TypeSignature Language="VB.NET" Value="Public Class PageSettings&#xA;Implements ICloneable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PageSettings : ICloneable" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,10 +40,21 @@
     <altmember cref="T:System.Drawing.Printing.PrinterSettings" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Printing.PageSettings" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public PageSettings ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PageSettings.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PageSettings();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -66,6 +79,7 @@
       <MemberSignature Language="C#" Value="public PageSettings (System.Drawing.Printing.PrinterSettings printerSettings);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Printing.PrinterSettings printerSettings) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PageSettings.#ctor(System.Drawing.Printing.PrinterSettings)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PageSettings(System::Drawing::Printing::PrinterSettings ^ printerSettings);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -91,6 +105,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Rectangle Bounds { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Rectangle Bounds" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PageSettings.Bounds" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Bounds As Rectangle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Rectangle Bounds { System::Drawing::Rectangle get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -119,7 +135,12 @@
       <MemberSignature Language="C#" Value="public object Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PageSettings.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Clone();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -138,6 +159,8 @@
       <MemberSignature Language="C#" Value="public bool Color { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Color" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PageSettings.Color" />
+      <MemberSignature Language="VB.NET" Value="Public Property Color As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Color { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -177,6 +200,8 @@
       <MemberSignature Language="C#" Value="public void CopyToHdevmode (IntPtr hdevmode);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyToHdevmode(native int hdevmode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PageSettings.CopyToHdevmode(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyToHdevmode (hdevmode As IntPtr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyToHdevmode(IntPtr hdevmode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -210,6 +235,8 @@
       <MemberSignature Language="C#" Value="public float HardMarginX { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float32 HardMarginX" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PageSettings.HardMarginX" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HardMarginX As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float HardMarginX { float get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -237,6 +264,8 @@
       <MemberSignature Language="C#" Value="public float HardMarginY { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float32 HardMarginY" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PageSettings.HardMarginY" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HardMarginY As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float HardMarginY { float get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -264,6 +293,8 @@
       <MemberSignature Language="C#" Value="public bool Landscape { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Landscape" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PageSettings.Landscape" />
+      <MemberSignature Language="VB.NET" Value="Public Property Landscape As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Landscape { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -311,6 +342,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Printing.Margins Margins { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Printing.Margins Margins" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PageSettings.Margins" />
+      <MemberSignature Language="VB.NET" Value="Public Property Margins As Margins" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Printing::Margins ^ Margins { System::Drawing::Printing::Margins ^ get(); void set(System::Drawing::Printing::Margins ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -355,6 +388,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Printing.PaperSize PaperSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Printing.PaperSize PaperSize" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PageSettings.PaperSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property PaperSize As PaperSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Printing::PaperSize ^ PaperSize { System::Drawing::Printing::PaperSize ^ get(); void set(System::Drawing::Printing::PaperSize ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -407,6 +442,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Printing.PaperSource PaperSource { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Printing.PaperSource PaperSource" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PageSettings.PaperSource" />
+      <MemberSignature Language="VB.NET" Value="Public Property PaperSource As PaperSource" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Printing::PaperSource ^ PaperSource { System::Drawing::Printing::PaperSource ^ get(); void set(System::Drawing::Printing::PaperSource ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -457,6 +494,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.RectangleF PrintableArea { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.RectangleF PrintableArea" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PageSettings.PrintableArea" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PrintableArea As RectangleF" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::RectangleF PrintableArea { System::Drawing::RectangleF get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -484,6 +523,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Printing.PrinterResolution PrinterResolution { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Printing.PrinterResolution PrinterResolution" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PageSettings.PrinterResolution" />
+      <MemberSignature Language="VB.NET" Value="Public Property PrinterResolution As PrinterResolution" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Printing::PrinterResolution ^ PrinterResolution { System::Drawing::Printing::PrinterResolution ^ get(); void set(System::Drawing::Printing::PrinterResolution ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -525,6 +566,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Printing.PrinterSettings PrinterSettings { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Printing.PrinterSettings PrinterSettings" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PageSettings.PrinterSettings" />
+      <MemberSignature Language="VB.NET" Value="Public Property PrinterSettings As PrinterSettings" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Printing::PrinterSettings ^ PrinterSettings { System::Drawing::Printing::PrinterSettings ^ get(); void set(System::Drawing::Printing::PrinterSettings ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -551,6 +594,8 @@
       <MemberSignature Language="C#" Value="public void SetHdevmode (IntPtr hdevmode);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetHdevmode(native int hdevmode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PageSettings.SetHdevmode(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetHdevmode (hdevmode As IntPtr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetHdevmode(IntPtr hdevmode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -585,6 +630,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PageSettings.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -600,14 +647,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Printing.PageSettings" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

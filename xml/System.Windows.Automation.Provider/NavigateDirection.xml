@@ -1,7 +1,9 @@
-<Type Name="NavigateDirection" FullName="System.Windows.Automation.Provider.NavigateDirection">
+﻿<Type Name="NavigateDirection" FullName="System.Windows.Automation.Provider.NavigateDirection">
   <TypeSignature Language="C#" Value="public enum NavigateDirection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed NavigateDirection extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Provider.NavigateDirection" />
+  <TypeSignature Language="VB.NET" Value="Public Enum NavigateDirection" />
+  <TypeSignature Language="C++ CLI" Value="public enum class NavigateDirection" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationProvider</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +29,8 @@
       <MemberSignature Language="C#" Value="FirstChild" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Provider.NavigateDirection FirstChild = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Provider.NavigateDirection.FirstChild" />
+      <MemberSignature Language="VB.NET" Value="FirstChild" />
+      <MemberSignature Language="C++ CLI" Value="FirstChild" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -35,6 +39,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Provider.NavigateDirection</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The navigation direction is to the first child.</summary>
       </Docs>
@@ -43,6 +48,8 @@
       <MemberSignature Language="C#" Value="LastChild" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Provider.NavigateDirection LastChild = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Provider.NavigateDirection.LastChild" />
+      <MemberSignature Language="VB.NET" Value="LastChild" />
+      <MemberSignature Language="C++ CLI" Value="LastChild" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -51,6 +58,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Provider.NavigateDirection</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The navigation direction is to the last child.</summary>
       </Docs>
@@ -59,6 +67,8 @@
       <MemberSignature Language="C#" Value="NextSibling" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Provider.NavigateDirection NextSibling = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Provider.NavigateDirection.NextSibling" />
+      <MemberSignature Language="VB.NET" Value="NextSibling" />
+      <MemberSignature Language="C++ CLI" Value="NextSibling" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -67,6 +77,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Provider.NavigateDirection</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The navigation direction is to the next sibling.</summary>
       </Docs>
@@ -75,6 +86,8 @@
       <MemberSignature Language="C#" Value="Parent" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Provider.NavigateDirection Parent = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Provider.NavigateDirection.Parent" />
+      <MemberSignature Language="VB.NET" Value="Parent" />
+      <MemberSignature Language="C++ CLI" Value="Parent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -83,6 +96,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Provider.NavigateDirection</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The navigation direction is toward the parent.</summary>
       </Docs>
@@ -91,6 +105,8 @@
       <MemberSignature Language="C#" Value="PreviousSibling" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Provider.NavigateDirection PreviousSibling = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Provider.NavigateDirection.PreviousSibling" />
+      <MemberSignature Language="VB.NET" Value="PreviousSibling" />
+      <MemberSignature Language="C++ CLI" Value="PreviousSibling" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -99,6 +115,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Provider.NavigateDirection</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The navigation direction is to the previous sibling.</summary>
       </Docs>

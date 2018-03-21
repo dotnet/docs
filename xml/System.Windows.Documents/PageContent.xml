@@ -1,7 +1,9 @@
-<Type Name="PageContent" FullName="System.Windows.Documents.PageContent">
+﻿<Type Name="PageContent" FullName="System.Windows.Documents.PageContent">
   <TypeSignature Language="C#" Value="public sealed class PageContent : System.Windows.FrameworkElement, System.Windows.Markup.IUriContext" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PageContent extends System.Windows.FrameworkElement implements class System.Windows.Markup.IAddChild, class System.Windows.Markup.IUriContext" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.PageContent" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PageContent&#xA;Inherits FrameworkElement&#xA;Implements IUriContext" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PageContent sealed : System::Windows::FrameworkElement, System::Windows::Markup::IUriContext" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +51,8 @@
       <MemberSignature Language="C#" Value="public PageContent ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.PageContent.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PageContent();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -74,6 +78,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Documents.FixedPage Child { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Documents.FixedPage Child" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.PageContent.Child" />
+      <MemberSignature Language="VB.NET" Value="Public Property Child As FixedPage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Documents::FixedPage ^ Child { System::Windows::Documents::FixedPage ^ get(); void set(System::Windows::Documents::FixedPage ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -84,7 +90,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -122,6 +128,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Documents.FixedPage GetPageRoot (bool forceReload);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Documents.FixedPage GetPageRoot(bool forceReload) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.PageContent.GetPageRoot(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetPageRoot (forceReload As Boolean) As FixedPage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Documents::FixedPage ^ GetPageRoot(bool forceReload);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -155,6 +163,8 @@
       <MemberSignature Language="C#" Value="public void GetPageRootAsync (bool forceReload);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GetPageRootAsync(bool forceReload) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.PageContent.GetPageRootAsync(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetPageRootAsync (forceReload As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetPageRootAsync(bool forceReload);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -199,6 +209,8 @@
       <MemberSignature Language="C#" Value="public void GetPageRootAsyncCancel ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GetPageRootAsyncCancel() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.PageContent.GetPageRootAsyncCancel" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetPageRootAsyncCancel ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetPageRootAsyncCancel();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -229,6 +241,8 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Documents.GetPageRootCompletedEventHandler GetPageRootCompleted;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Documents.GetPageRootCompletedEventHandler GetPageRootCompleted" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Documents.PageContent.GetPageRootCompleted" />
+      <MemberSignature Language="VB.NET" Value="Public Event GetPageRootCompleted As GetPageRootCompletedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Documents::GetPageRootCompletedEventHandler ^ GetPageRootCompleted;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -257,6 +271,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Documents.LinkTargetCollection LinkTargets { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Documents.LinkTargetCollection LinkTargets" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.PageContent.LinkTargets" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LinkTargets As LinkTargetCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Documents::LinkTargetCollection ^ LinkTargets { System::Windows::Documents::LinkTargetCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -282,9 +298,11 @@
       </Docs>
     </Member>
     <Member MemberName="LogicalChildren">
-      <MemberSignature Language="C#" Value="protected override System.Collections.IEnumerator LogicalChildren { get; }" />
+      <MemberSignature Language="C#" Value="protected internal override System.Collections.IEnumerator LogicalChildren { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IEnumerator LogicalChildren" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.PageContent.LogicalChildren" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property LogicalChildren As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property System::Collections::IEnumerator ^ LogicalChildren { System::Collections::IEnumerator ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -303,6 +321,8 @@
       <MemberSignature Language="C#" Value="public bool ShouldSerializeChild (System.Windows.Markup.XamlDesignerSerializationManager manager);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeChild(class System.Windows.Markup.XamlDesignerSerializationManager manager) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.PageContent.ShouldSerializeChild(System.Windows.Markup.XamlDesignerSerializationManager)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeChild (manager As XamlDesignerSerializationManager) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeChild(System::Windows::Markup::XamlDesignerSerializationManager ^ manager);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -331,6 +351,8 @@
       <MemberSignature Language="C#" Value="public Uri Source { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri Source" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.PageContent.Source" />
+      <MemberSignature Language="VB.NET" Value="Public Property Source As Uri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Source { Uri ^ get(); void set(Uri ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -365,6 +387,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty SourceProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty SourceProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.PageContent.SourceProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SourceProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ SourceProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -382,7 +406,12 @@
       <MemberSignature Language="C#" Value="void IAddChild.AddChild (object value);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Markup.IAddChild.AddChild(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.PageContent.System#Windows#Markup#IAddChild#AddChild(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Sub AddChild (value As Object) Implements IAddChild.AddChild" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.Markup.IAddChild.AddChild(System::Object ^ value) = System::Windows::Markup::IAddChild::AddChild;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Markup.IAddChild.AddChild(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -410,7 +439,12 @@
       <MemberSignature Language="C#" Value="void IAddChild.AddText (string text);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Markup.IAddChild.AddText(string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.PageContent.System#Windows#Markup#IAddChild#AddText(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Sub AddText (text As String) Implements IAddChild.AddText" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.Markup.IAddChild.AddText(System::String ^ text) = System::Windows::Markup::IAddChild::AddText;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Markup.IAddChild.AddText(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -438,7 +472,12 @@
       <MemberSignature Language="C#" Value="Uri System.Windows.Markup.IUriContext.BaseUri { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri System.Windows.Markup.IUriContext.BaseUri" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.PageContent.System#Windows#Markup#IUriContext#BaseUri" />
+      <MemberSignature Language="VB.NET" Value=" Property BaseUri As Uri Implements IUriContext.BaseUri" />
+      <MemberSignature Language="C++ CLI" Value="property Uri ^ System.Windows.Markup.IUriContext.BaseUri { Uri ^ get(); void set(Uri ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Windows.Markup.IUriContext.BaseUri</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

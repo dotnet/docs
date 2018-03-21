@@ -1,7 +1,9 @@
-<Type Name="IItemContainerProvider" FullName="System.Windows.Automation.Provider.IItemContainerProvider">
+﻿<Type Name="IItemContainerProvider" FullName="System.Windows.Automation.Provider.IItemContainerProvider">
   <TypeSignature Language="C#" Value="public interface IItemContainerProvider" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IItemContainerProvider" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Provider.IItemContainerProvider" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IItemContainerProvider" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IItemContainerProvider" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationProvider</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,7 +17,7 @@
       <AttributeName>System.Runtime.InteropServices.Guid("e747770b-39ce-4382-ab30-d8fb3f336f24")</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -34,6 +36,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Automation.Provider.IRawElementProviderSimple FindItemByProperty (System.Windows.Automation.Provider.IRawElementProviderSimple startAfter, int propertyId, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Automation.Provider.IRawElementProviderSimple FindItemByProperty(class System.Windows.Automation.Provider.IRawElementProviderSimple startAfter, int32 propertyId, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.IItemContainerProvider.FindItemByProperty(System.Windows.Automation.Provider.IRawElementProviderSimple,System.Int32,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function FindItemByProperty (startAfter As IRawElementProviderSimple, propertyId As Integer, value As Object) As IRawElementProviderSimple" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Automation::Provider::IRawElementProviderSimple ^ FindItemByProperty(System::Windows::Automation::Provider::IRawElementProviderSimple ^ startAfter, int propertyId, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>

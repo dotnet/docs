@@ -1,7 +1,9 @@
-<Type Name="HtmlTableCell" FullName="System.Web.UI.HtmlControls.HtmlTableCell">
+﻿<Type Name="HtmlTableCell" FullName="System.Web.UI.HtmlControls.HtmlTableCell">
   <TypeSignature Language="C#" Value="public class HtmlTableCell : System.Web.UI.HtmlControls.HtmlContainerControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HtmlTableCell extends System.Web.UI.HtmlControls.HtmlContainerControl" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.HtmlControls.HtmlTableCell" />
+  <TypeSignature Language="VB.NET" Value="Public Class HtmlTableCell&#xA;Inherits HtmlContainerControl" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HtmlTableCell : System::Web::UI::HtmlControls::HtmlContainerControl" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -59,10 +61,21 @@
     <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableCell.Width" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.HtmlControls.HtmlTableCell" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public HtmlTableCell ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlTableCell.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HtmlTableCell();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -102,6 +115,8 @@
       <MemberSignature Language="C#" Value="public HtmlTableCell (string tagName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string tagName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlTableCell.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (tagName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HtmlTableCell(System::String ^ tagName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -145,6 +160,8 @@
       <MemberSignature Language="C#" Value="public string Align { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Align" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlTableCell.Align" />
+      <MemberSignature Language="VB.NET" Value="Public Property Align As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Align { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -155,7 +172,7 @@
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -206,6 +223,8 @@
       <MemberSignature Language="C#" Value="public string BgColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string BgColor" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlTableCell.BgColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property BgColor As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ BgColor { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -216,7 +235,7 @@
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -277,6 +296,8 @@
       <MemberSignature Language="C#" Value="public string BorderColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string BorderColor" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlTableCell.BorderColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property BorderColor As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ BorderColor { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -287,7 +308,7 @@
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -348,6 +369,8 @@
       <MemberSignature Language="C#" Value="public int ColSpan { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ColSpan" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlTableCell.ColSpan" />
+      <MemberSignature Language="VB.NET" Value="Public Property ColSpan As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ColSpan { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -358,7 +381,7 @@
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -396,6 +419,8 @@
       <MemberSignature Language="C#" Value="public string Height { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Height" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlTableCell.Height" />
+      <MemberSignature Language="VB.NET" Value="Public Property Height As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Height { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -406,7 +431,7 @@
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -443,6 +468,8 @@
       <MemberSignature Language="C#" Value="public bool NoWrap { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool NoWrap" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlTableCell.NoWrap" />
+      <MemberSignature Language="VB.NET" Value="Public Property NoWrap As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool NoWrap { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -453,7 +480,7 @@
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Web.UI.MinimizableAttributeTypeConverter))</AttributeName>
@@ -492,6 +519,8 @@
       <MemberSignature Language="C#" Value="protected override void RenderEndTag (System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RenderEndTag(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlTableCell.RenderEndTag(System.Web.UI.HtmlTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RenderEndTag (writer As HtmlTextWriter)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RenderEndTag(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -524,6 +553,8 @@
       <MemberSignature Language="C#" Value="public int RowSpan { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 RowSpan" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlTableCell.RowSpan" />
+      <MemberSignature Language="VB.NET" Value="Public Property RowSpan As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int RowSpan { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -534,7 +565,7 @@
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -572,6 +603,8 @@
       <MemberSignature Language="C#" Value="public string VAlign { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string VAlign" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlTableCell.VAlign" />
+      <MemberSignature Language="VB.NET" Value="Public Property VAlign As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ VAlign { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -582,7 +615,7 @@
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -631,6 +664,8 @@
       <MemberSignature Language="C#" Value="public string Width { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Width" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlTableCell.Width" />
+      <MemberSignature Language="VB.NET" Value="Public Property Width As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Width { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -641,7 +676,7 @@
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -674,14 +709,5 @@
         <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableCell.Height" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.HtmlControls.HtmlTableCell" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

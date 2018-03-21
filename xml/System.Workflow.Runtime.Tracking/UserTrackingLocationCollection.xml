@@ -1,7 +1,9 @@
-<Type Name="UserTrackingLocationCollection" FullName="System.Workflow.Runtime.Tracking.UserTrackingLocationCollection">
+﻿<Type Name="UserTrackingLocationCollection" FullName="System.Workflow.Runtime.Tracking.UserTrackingLocationCollection">
   <TypeSignature Language="C#" Value="public class UserTrackingLocationCollection : System.Collections.Generic.List&lt;System.Workflow.Runtime.Tracking.UserTrackingLocation&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit UserTrackingLocationCollection extends System.Collections.Generic.List`1&lt;class System.Workflow.Runtime.Tracking.UserTrackingLocation&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Tracking.UserTrackingLocationCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class UserTrackingLocationCollection&#xA;Inherits List(Of UserTrackingLocation)" />
+  <TypeSignature Language="C++ CLI" Value="public ref class UserTrackingLocationCollection : System::Collections::Generic::List&lt;System::Workflow::Runtime::Tracking::UserTrackingLocation ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,10 +36,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.UserTrackingLocationCollection" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public UserTrackingLocationCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.UserTrackingLocationCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UserTrackingLocationCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -60,6 +73,8 @@
       <MemberSignature Language="C#" Value="public UserTrackingLocationCollection (System.Collections.Generic.IEnumerable&lt;System.Workflow.Runtime.Tracking.UserTrackingLocation&gt; locations);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;class System.Workflow.Runtime.Tracking.UserTrackingLocation&gt; locations) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.UserTrackingLocationCollection.#ctor(System.Collections.Generic.IEnumerable{System.Workflow.Runtime.Tracking.UserTrackingLocation})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (locations As IEnumerable(Of UserTrackingLocation))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UserTrackingLocationCollection(System::Collections::Generic::IEnumerable&lt;System::Workflow::Runtime::Tracking::UserTrackingLocation ^&gt; ^ locations);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -83,14 +98,5 @@
           <paramref name="locations" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Workflow.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.UserTrackingLocationCollection" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

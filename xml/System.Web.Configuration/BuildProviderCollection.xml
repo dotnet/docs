@@ -1,7 +1,9 @@
-<Type Name="BuildProviderCollection" FullName="System.Web.Configuration.BuildProviderCollection">
+﻿<Type Name="BuildProviderCollection" FullName="System.Web.Configuration.BuildProviderCollection">
   <TypeSignature Language="C#" Value="public sealed class BuildProviderCollection : System.Configuration.ConfigurationElementCollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BuildProviderCollection extends System.Configuration.ConfigurationElementCollection" />
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.BuildProviderCollection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BuildProviderCollection&#xA;Inherits ConfigurationElementCollection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BuildProviderCollection sealed : System::Configuration::ConfigurationElementCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -87,6 +89,8 @@
       <MemberSignature Language="C#" Value="public BuildProviderCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.BuildProviderCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BuildProviderCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -102,6 +106,7 @@
       <MemberSignature Language="C#" Value="public void Add (System.Web.Configuration.BuildProvider buildProvider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Web.Configuration.BuildProvider buildProvider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.BuildProviderCollection.Add(System.Web.Configuration.BuildProvider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Web::Configuration::BuildProvider ^ buildProvider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -138,6 +143,8 @@
       <MemberSignature Language="C#" Value="public void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.BuildProviderCollection.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -156,6 +163,8 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationElement CreateNewElement ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Configuration.ConfigurationElement CreateNewElement() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.BuildProviderCollection.CreateNewElement" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateNewElement () As ConfigurationElement" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Configuration::ConfigurationElement ^ CreateNewElement();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -175,6 +184,8 @@
       <MemberSignature Language="C#" Value="protected override object GetElementKey (System.Configuration.ConfigurationElement element);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object GetElementKey(class System.Configuration.ConfigurationElement element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.BuildProviderCollection.GetElementKey(System.Configuration.ConfigurationElement)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetElementKey (element As ConfigurationElement) As Object" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetElementKey(System::Configuration::ConfigurationElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -193,10 +204,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the specified <see cref="T:System.Web.Configuration.BuildProvider" /> collection item.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Item">
       <MemberSignature Language="C#" Value="public System.Web.Configuration.BuildProvider this[int index] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.BuildProvider Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.BuildProviderCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As BuildProvider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::BuildProvider ^ default[int] { System::Web::Configuration::BuildProvider ^ get(int index); void set(int index, System::Web::Configuration::BuildProvider ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -219,6 +241,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Configuration.BuildProvider this[string name] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.BuildProvider Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.BuildProviderCollection.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(name As String) As BuildProvider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::BuildProvider ^ default[System::String ^] { System::Web::Configuration::BuildProvider ^ get(System::String ^ name); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -241,6 +265,8 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.BuildProviderCollection.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -259,6 +285,8 @@
       <MemberSignature Language="C#" Value="public void Remove (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.BuildProviderCollection.Remove(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (name As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -295,6 +323,8 @@
       <MemberSignature Language="C#" Value="public void RemoveAt (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAt(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.BuildProviderCollection.RemoveAt(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -327,14 +357,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Item">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets the specified <see cref="T:System.Web.Configuration.BuildProvider" /> collection item.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

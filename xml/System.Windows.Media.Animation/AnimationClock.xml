@@ -1,7 +1,9 @@
-<Type Name="AnimationClock" FullName="System.Windows.Media.Animation.AnimationClock">
+﻿<Type Name="AnimationClock" FullName="System.Windows.Media.Animation.AnimationClock">
   <TypeSignature Language="C#" Value="public class AnimationClock : System.Windows.Media.Animation.Clock" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AnimationClock extends System.Windows.Media.Animation.Clock" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.AnimationClock" />
+  <TypeSignature Language="VB.NET" Value="Public Class AnimationClock&#xA;Inherits Clock" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AnimationClock : System::Windows::Media::Animation::Clock" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,9 +27,11 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="protected AnimationClock (System.Windows.Media.Animation.AnimationTimeline animation);" />
+      <MemberSignature Language="C#" Value="protected internal AnimationClock (System.Windows.Media.Animation.AnimationTimeline animation);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig specialname rtspecialname instance void .ctor(class System.Windows.Media.Animation.AnimationTimeline animation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.AnimationClock.#ctor(System.Windows.Media.Animation.AnimationTimeline)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Sub New (animation As AnimationTimeline)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; AnimationClock(System::Windows::Media::Animation::AnimationTimeline ^ animation);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -46,6 +50,8 @@
       <MemberSignature Language="C#" Value="public object GetCurrentValue (object defaultOriginValue, object defaultDestinationValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetCurrentValue(object defaultOriginValue, object defaultDestinationValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.AnimationClock.GetCurrentValue(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetCurrentValue (defaultOriginValue As Object, defaultDestinationValue As Object) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetCurrentValue(System::Object ^ defaultOriginValue, System::Object ^ defaultDestinationValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -71,6 +77,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Animation.AnimationTimeline Timeline { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Animation.AnimationTimeline Timeline" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.AnimationClock.Timeline" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Timeline As AnimationTimeline" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Animation::AnimationTimeline ^ Timeline { System::Windows::Media::Animation::AnimationTimeline ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

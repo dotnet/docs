@@ -1,7 +1,9 @@
-<Type Name="MessageEnumerator" FullName="System.Messaging.MessageEnumerator">
+﻿<Type Name="MessageEnumerator" FullName="System.Messaging.MessageEnumerator">
   <TypeSignature Language="C#" Value="public class MessageEnumerator : MarshalByRefObject, IDisposable, System.Collections.IEnumerator" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MessageEnumerator extends System.MarshalByRefObject implements class System.Collections.IEnumerator, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Messaging.MessageEnumerator" />
+  <TypeSignature Language="VB.NET" Value="Public Class MessageEnumerator&#xA;Inherits MarshalByRefObject&#xA;Implements IDisposable, IEnumerator" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MessageEnumerator : MarshalByRefObject, IDisposable, System::Collections::IEnumerator" />
   <AssemblyInfo>
     <AssemblyName>System.Messaging</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -57,6 +59,8 @@
       <MemberSignature Language="C#" Value="public void Close ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Close() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageEnumerator.Close" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Close ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Close();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -83,6 +87,8 @@
       <MemberSignature Language="C#" Value="public System.Messaging.Message Current { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Messaging.Message Current" />
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageEnumerator.Current" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Current As Message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Messaging::Message ^ Current { System::Messaging::Message ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -117,6 +123,8 @@
       <MemberSignature Language="C#" Value="public IntPtr CursorHandle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance native int CursorHandle" />
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageEnumerator.CursorHandle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CursorHandle As IntPtr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property IntPtr CursorHandle { IntPtr get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -140,11 +148,25 @@
         <altmember cref="P:System.Messaging.MessageEnumerator.Current" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the resources used by the <see cref="T:System.Messaging.MessageEnumerator" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Dispose">
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageEnumerator.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -169,6 +191,8 @@
       <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageEnumerator.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -206,6 +230,8 @@
       <MemberSignature Language="C#" Value="~MessageEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageEnumerator.Finalize" />
+      <MemberSignature Language="VB.NET" Value="Finalize ()" />
+      <MemberSignature Language="C++ CLI" Value="!MessageEnumerator ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -220,11 +246,25 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="MoveNext">
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Advances the enumerator to the next message in the queue.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="MoveNext">
       <MemberSignature Language="C#" Value="public bool MoveNext ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool MoveNext() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageEnumerator.MoveNext" />
+      <MemberSignature Language="VB.NET" Value="Public Function MoveNext () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool MoveNext();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerator.MoveNext</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -259,6 +299,8 @@
       <MemberSignature Language="C#" Value="public bool MoveNext (TimeSpan timeout);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool MoveNext(valuetype System.TimeSpan timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageEnumerator.MoveNext(System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Function MoveNext (timeout As TimeSpan) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool MoveNext(TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -319,6 +361,8 @@
       <MemberSignature Language="C#" Value="public System.Messaging.Message RemoveCurrent ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Messaging.Message RemoveCurrent() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageEnumerator.RemoveCurrent" />
+      <MemberSignature Language="VB.NET" Value="Public Function RemoveCurrent () As Message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ RemoveCurrent();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -353,6 +397,8 @@
       <MemberSignature Language="C#" Value="public System.Messaging.Message RemoveCurrent (System.Messaging.MessageQueueTransaction transaction);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Messaging.Message RemoveCurrent(class System.Messaging.MessageQueueTransaction transaction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageEnumerator.RemoveCurrent(System.Messaging.MessageQueueTransaction)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RemoveCurrent (transaction As MessageQueueTransaction) As Message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ RemoveCurrent(System::Messaging::MessageQueueTransaction ^ transaction);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -392,6 +438,8 @@
       <MemberSignature Language="C#" Value="public System.Messaging.Message RemoveCurrent (System.Messaging.MessageQueueTransactionType transactionType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Messaging.Message RemoveCurrent(valuetype System.Messaging.MessageQueueTransactionType transactionType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageEnumerator.RemoveCurrent(System.Messaging.MessageQueueTransactionType)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RemoveCurrent (transactionType As MessageQueueTransactionType) As Message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ RemoveCurrent(System::Messaging::MessageQueueTransactionType transactionType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -433,6 +481,8 @@
       <MemberSignature Language="C#" Value="public System.Messaging.Message RemoveCurrent (TimeSpan timeout);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Messaging.Message RemoveCurrent(valuetype System.TimeSpan timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageEnumerator.RemoveCurrent(System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RemoveCurrent (timeout As TimeSpan) As Message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ RemoveCurrent(TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -472,6 +522,8 @@
       <MemberSignature Language="C#" Value="public System.Messaging.Message RemoveCurrent (TimeSpan timeout, System.Messaging.MessageQueueTransaction transaction);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Messaging.Message RemoveCurrent(valuetype System.TimeSpan timeout, class System.Messaging.MessageQueueTransaction transaction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageEnumerator.RemoveCurrent(System.TimeSpan,System.Messaging.MessageQueueTransaction)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RemoveCurrent (timeout As TimeSpan, transaction As MessageQueueTransaction) As Message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ RemoveCurrent(TimeSpan timeout, System::Messaging::MessageQueueTransaction ^ transaction);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -515,6 +567,8 @@
       <MemberSignature Language="C#" Value="public System.Messaging.Message RemoveCurrent (TimeSpan timeout, System.Messaging.MessageQueueTransactionType transactionType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Messaging.Message RemoveCurrent(valuetype System.TimeSpan timeout, valuetype System.Messaging.MessageQueueTransactionType transactionType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageEnumerator.RemoveCurrent(System.TimeSpan,System.Messaging.MessageQueueTransactionType)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RemoveCurrent (timeout As TimeSpan, transactionType As MessageQueueTransactionType) As Message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ RemoveCurrent(TimeSpan timeout, System::Messaging::MessageQueueTransactionType transactionType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -560,7 +614,12 @@
       <MemberSignature Language="C#" Value="public void Reset ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Reset() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageEnumerator.Reset" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Reset ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Reset();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerator.Reset</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -589,7 +648,12 @@
       <MemberSignature Language="C#" Value="object System.Collections.IEnumerator.Current { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.IEnumerator.Current" />
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageEnumerator.System#Collections#IEnumerator#Current" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property Current As Object Implements IEnumerator.Current" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IEnumerator.Current { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.IEnumerator.Current</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -603,23 +667,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="MoveNext">
-      <AssemblyInfo>
-        <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Advances the enumerator to the next message in the queue.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Dispose">
-      <AssemblyInfo>
-        <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Releases the resources used by the <see cref="T:System.Messaging.MessageEnumerator" />.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

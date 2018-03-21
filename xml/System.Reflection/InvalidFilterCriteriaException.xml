@@ -1,7 +1,9 @@
-<Type Name="InvalidFilterCriteriaException" FullName="System.Reflection.InvalidFilterCriteriaException">
+﻿<Type Name="InvalidFilterCriteriaException" FullName="System.Reflection.InvalidFilterCriteriaException">
   <TypeSignature Language="C#" Value="public class InvalidFilterCriteriaException : ApplicationException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit InvalidFilterCriteriaException extends System.ApplicationException" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.InvalidFilterCriteriaException" />
+  <TypeSignature Language="VB.NET" Value="Public Class InvalidFilterCriteriaException&#xA;Inherits ApplicationException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class InvalidFilterCriteriaException : ApplicationException" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -44,10 +46,21 @@
     <altmember cref="T:System.Exception" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes an instance of the <see langword="InvalidFilterCriteriaException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public InvalidFilterCriteriaException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.InvalidFilterCriteriaException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InvalidFilterCriteriaException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -90,6 +103,8 @@
       <MemberSignature Language="C#" Value="public InvalidFilterCriteriaException (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.InvalidFilterCriteriaException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InvalidFilterCriteriaException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -135,6 +150,8 @@
       <MemberSignature Language="C#" Value="protected InvalidFilterCriteriaException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.InvalidFilterCriteriaException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; InvalidFilterCriteriaException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -164,6 +181,8 @@
       <MemberSignature Language="C#" Value="public InvalidFilterCriteriaException (string message, Exception inner);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception inner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.InvalidFilterCriteriaException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, inner As Exception)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InvalidFilterCriteriaException(System::String ^ message, Exception ^ inner);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -208,14 +227,5 @@
         <altmember cref="T:System.Exception" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Reflection</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes an instance of the <see langword="InvalidFilterCriteriaException" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,9 @@
-<Type Name="ReadOnlyObservableCollection&lt;T&gt;" FullName="System.Collections.ObjectModel.ReadOnlyObservableCollection&lt;T&gt;">
+﻿<Type Name="ReadOnlyObservableCollection&lt;T&gt;" FullName="System.Collections.ObjectModel.ReadOnlyObservableCollection&lt;T&gt;">
   <TypeSignature Language="C#" Value="public class ReadOnlyObservableCollection&lt;T&gt; : System.Collections.ObjectModel.ReadOnlyCollection&lt;T&gt;, System.Collections.Specialized.INotifyCollectionChanged, System.ComponentModel.INotifyPropertyChanged" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ReadOnlyObservableCollection`1&lt;T&gt; extends System.Collections.ObjectModel.ReadOnlyCollection`1&lt;!T&gt; implements class System.Collections.Specialized.INotifyCollectionChanged, class System.ComponentModel.INotifyPropertyChanged" />
   <TypeSignature Language="DocId" Value="T:System.Collections.ObjectModel.ReadOnlyObservableCollection`1" />
+  <TypeSignature Language="VB.NET" Value="Public Class ReadOnlyObservableCollection(Of T)&#xA;Inherits ReadOnlyCollection(Of T)&#xA;Implements INotifyCollectionChanged, INotifyPropertyChanged" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class ReadOnlyObservableCollection : System::Collections::ObjectModel::ReadOnlyCollection&lt;T&gt;, System::Collections::Specialized::INotifyCollectionChanged, System::ComponentModel::INotifyPropertyChanged" />
   <AssemblyInfo>
     <AssemblyName>System.ObjectModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +58,8 @@
       <MemberSignature Language="C#" Value="public ReadOnlyObservableCollection (System.Collections.ObjectModel.ObservableCollection&lt;T&gt; list);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.ObjectModel.ObservableCollection`1&lt;!T&gt; list) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.ObjectModel.ReadOnlyObservableCollection`1.#ctor(System.Collections.ObjectModel.ObservableCollection{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (list As ObservableCollection(Of T))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ReadOnlyObservableCollection(System::Collections::ObjectModel::ObservableCollection&lt;T&gt; ^ list);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -87,7 +91,12 @@
       <MemberSignature Language="C#" Value="protected virtual event System.Collections.Specialized.NotifyCollectionChangedEventHandler CollectionChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Collections.Specialized.NotifyCollectionChangedEventHandler CollectionChanged" />
       <MemberSignature Language="DocId" Value="E:System.Collections.ObjectModel.ReadOnlyObservableCollection`1.CollectionChanged" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Custom Event CollectionChanged As NotifyCollectionChangedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual event System::Collections::Specialized::NotifyCollectionChangedEventHandler ^ CollectionChanged;" />
       <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -122,6 +131,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnCollectionChanged (System.Collections.Specialized.NotifyCollectionChangedEventArgs args);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnCollectionChanged(class System.Collections.Specialized.NotifyCollectionChangedEventArgs args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.ObjectModel.ReadOnlyObservableCollection`1.OnCollectionChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnCollectionChanged (args As NotifyCollectionChangedEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnCollectionChanged(System::Collections::Specialized::NotifyCollectionChangedEventArgs ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -154,6 +165,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnPropertyChanged (System.ComponentModel.PropertyChangedEventArgs args);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnPropertyChanged(class System.ComponentModel.PropertyChangedEventArgs args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.ObjectModel.ReadOnlyObservableCollection`1.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnPropertyChanged (args As PropertyChangedEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnPropertyChanged(System::ComponentModel::PropertyChangedEventArgs ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -186,7 +199,12 @@
       <MemberSignature Language="C#" Value="protected virtual event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.PropertyChangedEventHandler PropertyChanged" />
       <MemberSignature Language="DocId" Value="E:System.Collections.ObjectModel.ReadOnlyObservableCollection`1.PropertyChanged" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Custom Event PropertyChanged As PropertyChangedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual event System::ComponentModel::PropertyChangedEventHandler ^ PropertyChanged;" />
       <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -215,6 +233,70 @@
   
  ]]></format>
         </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged">
+      <MemberSignature Language="C#" Value="event System.Collections.Specialized.NotifyCollectionChangedEventHandler System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Collections.Specialized.NotifyCollectionChangedEventHandler System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Collections.ObjectModel.ReadOnlyObservableCollection`1.System#Collections#Specialized#INotifyCollectionChanged#CollectionChanged" />
+      <MemberSignature Language="VB.NET" Value="Custom Event CollectionChanged As NotifyCollectionChangedEventHandler Implements System.Collections.Specialized.INotifyCollectionChanged" />
+      <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.ObjectModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.NotifyCollectionChangedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ComponentModel.INotifyPropertyChanged.PropertyChanged">
+      <MemberSignature Language="C#" Value="event System.ComponentModel.PropertyChangedEventHandler System.ComponentModel.INotifyPropertyChanged.PropertyChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.PropertyChangedEventHandler System.ComponentModel.INotifyPropertyChanged.PropertyChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Collections.ObjectModel.ReadOnlyObservableCollection`1.System#ComponentModel#INotifyPropertyChanged#PropertyChanged" />
+      <MemberSignature Language="VB.NET" Value="Custom Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged" />
+      <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.ObjectModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.PropertyChangedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

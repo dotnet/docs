@@ -1,7 +1,9 @@
-<Type Name="WebServiceProtocols" FullName="System.Web.Services.Configuration.WebServiceProtocols">
+﻿<Type Name="WebServiceProtocols" FullName="System.Web.Services.Configuration.WebServiceProtocols">
   <TypeSignature Language="C#" Value="public enum WebServiceProtocols" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WebServiceProtocols extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Configuration.WebServiceProtocols" />
+  <TypeSignature Language="VB.NET" Value="Public Enum WebServiceProtocols" />
+  <TypeSignature Language="C++ CLI" Value="public enum class WebServiceProtocols" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +34,8 @@
       <MemberSignature Language="C#" Value="AnyHttpSoap" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Services.Configuration.WebServiceProtocols AnyHttpSoap = int32(33)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Services.Configuration.WebServiceProtocols.AnyHttpSoap" />
+      <MemberSignature Language="VB.NET" Value="AnyHttpSoap" />
+      <MemberSignature Language="C++ CLI" Value="AnyHttpSoap" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -40,6 +44,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Services.Configuration.WebServiceProtocols</ReturnType>
       </ReturnValue>
+      <MemberValue>33</MemberValue>
       <Docs>
         <summary>Any version of the HTTP SOAP protocol.</summary>
       </Docs>
@@ -48,6 +53,8 @@
       <MemberSignature Language="C#" Value="Documentation" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Services.Configuration.WebServiceProtocols Documentation = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Services.Configuration.WebServiceProtocols.Documentation" />
+      <MemberSignature Language="VB.NET" Value="Documentation" />
+      <MemberSignature Language="C++ CLI" Value="Documentation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -56,6 +63,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Services.Configuration.WebServiceProtocols</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>The Web Services Documentation protocol.</summary>
       </Docs>
@@ -64,6 +72,8 @@
       <MemberSignature Language="C#" Value="HttpGet" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Services.Configuration.WebServiceProtocols HttpGet = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Services.Configuration.WebServiceProtocols.HttpGet" />
+      <MemberSignature Language="VB.NET" Value="HttpGet" />
+      <MemberSignature Language="C++ CLI" Value="HttpGet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -72,6 +82,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Services.Configuration.WebServiceProtocols</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The HTTP GET protocol.</summary>
       </Docs>
@@ -80,6 +91,8 @@
       <MemberSignature Language="C#" Value="HttpPost" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Services.Configuration.WebServiceProtocols HttpPost = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Services.Configuration.WebServiceProtocols.HttpPost" />
+      <MemberSignature Language="VB.NET" Value="HttpPost" />
+      <MemberSignature Language="C++ CLI" Value="HttpPost" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -88,6 +101,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Services.Configuration.WebServiceProtocols</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The HTTP POST protocol.</summary>
       </Docs>
@@ -96,6 +110,8 @@
       <MemberSignature Language="C#" Value="HttpPostLocalhost" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Services.Configuration.WebServiceProtocols HttpPostLocalhost = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Services.Configuration.WebServiceProtocols.HttpPostLocalhost" />
+      <MemberSignature Language="VB.NET" Value="HttpPostLocalhost" />
+      <MemberSignature Language="C++ CLI" Value="HttpPostLocalhost" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -104,6 +120,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Services.Configuration.WebServiceProtocols</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>The HTTP POST LOCALHOST protocol.</summary>
         <remarks>
@@ -122,6 +139,8 @@
       <MemberSignature Language="C#" Value="HttpSoap" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Services.Configuration.WebServiceProtocols HttpSoap = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Services.Configuration.WebServiceProtocols.HttpSoap" />
+      <MemberSignature Language="VB.NET" Value="HttpSoap" />
+      <MemberSignature Language="C++ CLI" Value="HttpSoap" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -130,6 +149,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Services.Configuration.WebServiceProtocols</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The HTTP SOAP protocol.</summary>
       </Docs>
@@ -138,6 +158,8 @@
       <MemberSignature Language="C#" Value="HttpSoap12" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Services.Configuration.WebServiceProtocols HttpSoap12 = int32(32)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Services.Configuration.WebServiceProtocols.HttpSoap12" />
+      <MemberSignature Language="VB.NET" Value="HttpSoap12" />
+      <MemberSignature Language="C++ CLI" Value="HttpSoap12" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -146,6 +168,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Services.Configuration.WebServiceProtocols</ReturnType>
       </ReturnValue>
+      <MemberValue>32</MemberValue>
       <Docs>
         <summary>The HTTP SOAP version 1.2 protocol.</summary>
       </Docs>
@@ -154,6 +177,8 @@
       <MemberSignature Language="C#" Value="Unknown" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Services.Configuration.WebServiceProtocols Unknown = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Services.Configuration.WebServiceProtocols.Unknown" />
+      <MemberSignature Language="VB.NET" Value="Unknown" />
+      <MemberSignature Language="C++ CLI" Value="Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -162,6 +187,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Services.Configuration.WebServiceProtocols</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Unknown protocol.</summary>
       </Docs>

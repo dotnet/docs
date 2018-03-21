@@ -1,7 +1,9 @@
-<Type Name="SemanticResultKey" FullName="System.Speech.Recognition.SemanticResultKey">
+﻿<Type Name="SemanticResultKey" FullName="System.Speech.Recognition.SemanticResultKey">
   <TypeSignature Language="C#" Value="public class SemanticResultKey" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SemanticResultKey extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Speech.Recognition.SemanticResultKey" />
+  <TypeSignature Language="VB.NET" Value="Public Class SemanticResultKey" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SemanticResultKey" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -111,6 +113,8 @@ private void pwdGrammar()
       <MemberSignature Language="C#" Value="public SemanticResultKey (string semanticResultKey, params System.Speech.Recognition.GrammarBuilder[] builders);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string semanticResultKey, class System.Speech.Recognition.GrammarBuilder[] builders) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SemanticResultKey.#ctor(System.String,System.Speech.Recognition.GrammarBuilder[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (semanticResultKey As String, ParamArray builders As GrammarBuilder())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SemanticResultKey(System::String ^ semanticResultKey, ... cli::array &lt;System::Speech::Recognition::GrammarBuilder ^&gt; ^ builders);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -221,6 +225,8 @@ private void pwdGrammar()
       <MemberSignature Language="C#" Value="public SemanticResultKey (string semanticResultKey, params string[] phrases);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string semanticResultKey, string[] phrases) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SemanticResultKey.#ctor(System.String,System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (semanticResultKey As String, ParamArray phrases As String())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SemanticResultKey(System::String ^ semanticResultKey, ... cli::array &lt;System::String ^&gt; ^ phrases);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -290,6 +296,8 @@ private void keyTest()
       <MemberSignature Language="C#" Value="public System.Speech.Recognition.GrammarBuilder ToGrammarBuilder ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Speech.Recognition.GrammarBuilder ToGrammarBuilder() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SemanticResultKey.ToGrammarBuilder" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToGrammarBuilder () As GrammarBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Speech::Recognition::GrammarBuilder ^ ToGrammarBuilder();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="MultiPartWriter" FullName="System.Web.UI.MobileControls.Adapters.MultiPartWriter">
+﻿<Type Name="MultiPartWriter" FullName="System.Web.UI.MobileControls.Adapters.MultiPartWriter">
   <TypeSignature Language="C#" Value="public abstract class MultiPartWriter : System.Web.UI.HtmlTextWriter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit MultiPartWriter extends System.Web.UI.HtmlTextWriter" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.Adapters.MultiPartWriter" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class MultiPartWriter&#xA;Inherits HtmlTextWriter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MultiPartWriter abstract : System::Web::UI::HtmlTextWriter" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +36,8 @@
       <MemberSignature Language="C#" Value="protected MultiPartWriter (System.IO.TextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.IO.TextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.MultiPartWriter.#ctor(System.IO.TextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (writer As TextWriter)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; MultiPartWriter(System::IO::TextWriter ^ writer);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -55,10 +59,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddResource">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a resource reference to the given URL, with the optional MIME type for the specified content. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AddResource">
       <MemberSignature Language="C#" Value="public void AddResource (string url);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddResource(string url) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.MultiPartWriter.AddResource(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddResource (url As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddResource(System::String ^ url);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -87,6 +102,8 @@
       <MemberSignature Language="C#" Value="public abstract void AddResource (string url, string contentType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddResource(string url, string contentType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.MultiPartWriter.AddResource(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub AddResource (url As String, contentType As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void AddResource(System::String ^ url, System::String ^ contentType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -117,6 +134,8 @@
       <MemberSignature Language="C#" Value="public abstract void BeginFile (string url, string contentType, string charset);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void BeginFile(string url, string contentType, string charset) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.MultiPartWriter.BeginFile(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub BeginFile (url As String, contentType As String, charset As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void BeginFile(System::String ^ url, System::String ^ contentType, System::String ^ charset);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -149,6 +168,8 @@
       <MemberSignature Language="C#" Value="public abstract void BeginResponse ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void BeginResponse() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.MultiPartWriter.BeginResponse" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub BeginResponse ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void BeginResponse();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -174,6 +195,8 @@
       <MemberSignature Language="C#" Value="public abstract void EndFile ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndFile() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.MultiPartWriter.EndFile" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub EndFile ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void EndFile();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -199,6 +222,8 @@
       <MemberSignature Language="C#" Value="public abstract void EndResponse ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndResponse() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.MultiPartWriter.EndResponse" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub EndResponse ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void EndResponse();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -224,6 +249,8 @@
       <MemberSignature Language="C#" Value="public virtual string NewUrl (string filetype);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string NewUrl(string filetype) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.MultiPartWriter.NewUrl(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function NewUrl (filetype As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ NewUrl(System::String ^ filetype);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -253,6 +280,8 @@
       <MemberSignature Language="C#" Value="public virtual bool SupportsMultiPart { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SupportsMultiPart" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.MultiPartWriter.SupportsMultiPart" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SupportsMultiPart As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsMultiPart { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -268,14 +297,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="AddResource">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds a resource reference to the given URL, with the optional MIME type for the specified content. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

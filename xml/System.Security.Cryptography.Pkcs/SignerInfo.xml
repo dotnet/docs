@@ -1,7 +1,9 @@
-<Type Name="SignerInfo" FullName="System.Security.Cryptography.Pkcs.SignerInfo">
+﻿<Type Name="SignerInfo" FullName="System.Security.Cryptography.Pkcs.SignerInfo">
   <TypeSignature Language="C#" Value="public sealed class SignerInfo" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SignerInfo extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Pkcs.SignerInfo" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SignerInfo" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SignerInfo sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Security</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +32,8 @@
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.X509Certificates.X509Certificate2 Certificate { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.X509Certificates.X509Certificate2 Certificate" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Pkcs.SignerInfo.Certificate" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Certificate As X509Certificate2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::X509Certificates::X509Certificate2 ^ Certificate { System::Security::Cryptography::X509Certificates::X509Certificate2 ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -61,6 +65,8 @@
       <MemberSignature Language="C#" Value="public void CheckHash ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CheckHash() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.SignerInfo.CheckHash" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CheckHash ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CheckHash();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -86,10 +92,21 @@
         <altmember cref="T:System.Security.Cryptography.Pkcs.SubjectIdentifierType" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="CheckSignature">
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Verifies the digital signature of the message.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CheckSignature">
       <MemberSignature Language="C#" Value="public void CheckSignature (bool verifySignatureOnly);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CheckSignature(bool verifySignatureOnly) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.SignerInfo.CheckSignature(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CheckSignature (verifySignatureOnly As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CheckSignature(bool verifySignatureOnly);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -123,6 +140,8 @@
       <MemberSignature Language="C#" Value="public void CheckSignature (System.Security.Cryptography.X509Certificates.X509Certificate2Collection extraStore, bool verifySignatureOnly);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CheckSignature(class System.Security.Cryptography.X509Certificates.X509Certificate2Collection extraStore, bool verifySignatureOnly) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.SignerInfo.CheckSignature(System.Security.Cryptography.X509Certificates.X509Certificate2Collection,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CheckSignature (extraStore As X509Certificate2Collection, verifySignatureOnly As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CheckSignature(System::Security::Cryptography::X509Certificates::X509Certificate2Collection ^ extraStore, bool verifySignatureOnly);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -154,10 +173,21 @@
         <exception cref="T:System.InvalidOperationException">A method call was invalid for the object's current state.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ComputeCounterSignature">
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a countersignature and adds the signature to the CMS/PKCS #7 message.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ComputeCounterSignature">
       <MemberSignature Language="C#" Value="public void ComputeCounterSignature ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ComputeCounterSignature() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.SignerInfo.ComputeCounterSignature" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ComputeCounterSignature ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ComputeCounterSignature();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -208,6 +238,8 @@
       <MemberSignature Language="C#" Value="public void ComputeCounterSignature (System.Security.Cryptography.Pkcs.CmsSigner signer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ComputeCounterSignature(class System.Security.Cryptography.Pkcs.CmsSigner signer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.SignerInfo.ComputeCounterSignature(System.Security.Cryptography.Pkcs.CmsSigner)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ComputeCounterSignature (signer As CmsSigner)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ComputeCounterSignature(System::Security::Cryptography::Pkcs::CmsSigner ^ signer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -245,6 +277,8 @@
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.Pkcs.SignerInfoCollection CounterSignerInfos { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.Pkcs.SignerInfoCollection CounterSignerInfos" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Pkcs.SignerInfo.CounterSignerInfos" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CounterSignerInfos As SignerInfoCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::Pkcs::SignerInfoCollection ^ CounterSignerInfos { System::Security::Cryptography::Pkcs::SignerInfoCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -276,6 +310,8 @@
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.Oid DigestAlgorithm { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.Oid DigestAlgorithm" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Pkcs.SignerInfo.DigestAlgorithm" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DigestAlgorithm As Oid" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::Oid ^ DigestAlgorithm { System::Security::Cryptography::Oid ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -296,10 +332,21 @@
         <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.Version" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="RemoveCounterSignature">
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes the specified countersignature from the <see cref="P:System.Security.Cryptography.Pkcs.SignerInfo.CounterSignerInfos" /> collection.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="RemoveCounterSignature">
       <MemberSignature Language="C#" Value="public void RemoveCounterSignature (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveCounterSignature(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.SignerInfo.RemoveCounterSignature(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveCounterSignature (index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveCounterSignature(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -322,6 +369,8 @@
       <MemberSignature Language="C#" Value="public void RemoveCounterSignature (System.Security.Cryptography.Pkcs.SignerInfo counterSignerInfo);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveCounterSignature(class System.Security.Cryptography.Pkcs.SignerInfo counterSignerInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.SignerInfo.RemoveCounterSignature(System.Security.Cryptography.Pkcs.SignerInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveCounterSignature (counterSignerInfo As SignerInfo)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveCounterSignature(System::Security::Cryptography::Pkcs::SignerInfo ^ counterSignerInfo);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -346,6 +395,8 @@
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.CryptographicAttributeObjectCollection SignedAttributes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.CryptographicAttributeObjectCollection SignedAttributes" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Pkcs.SignerInfo.SignedAttributes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SignedAttributes As CryptographicAttributeObjectCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::CryptographicAttributeObjectCollection ^ SignedAttributes { System::Security::Cryptography::CryptographicAttributeObjectCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -382,6 +433,8 @@
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.Pkcs.SubjectIdentifier SignerIdentifier { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.Pkcs.SubjectIdentifier SignerIdentifier" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Pkcs.SignerInfo.SignerIdentifier" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SignerIdentifier As SubjectIdentifier" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::Pkcs::SubjectIdentifier ^ SignerIdentifier { System::Security::Cryptography::Pkcs::SubjectIdentifier ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -406,6 +459,8 @@
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.CryptographicAttributeObjectCollection UnsignedAttributes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.CryptographicAttributeObjectCollection UnsignedAttributes" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Pkcs.SignerInfo.UnsignedAttributes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UnsignedAttributes As CryptographicAttributeObjectCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::CryptographicAttributeObjectCollection ^ UnsignedAttributes { System::Security::Cryptography::CryptographicAttributeObjectCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -439,6 +494,8 @@
       <MemberSignature Language="C#" Value="public int Version { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Version" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Pkcs.SignerInfo.Version" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Version As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Version { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -466,32 +523,5 @@
         <altmember cref="P:System.Security.Cryptography.Pkcs.SignerInfo.UnsignedAttributes" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="CheckSignature">
-      <AssemblyInfo>
-        <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Verifies the digital signature of the message.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ComputeCounterSignature">
-      <AssemblyInfo>
-        <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a countersignature and adds the signature to the CMS/PKCS #7 message.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="RemoveCounterSignature">
-      <AssemblyInfo>
-        <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Removes the specified countersignature from the <see cref="P:System.Security.Cryptography.Pkcs.SignerInfo.CounterSignerInfos" /> collection.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

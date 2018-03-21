@@ -1,7 +1,9 @@
-<Type Name="DataGridViewAdvancedCellBorderStyle" FullName="System.Windows.Forms.DataGridViewAdvancedCellBorderStyle">
+﻿<Type Name="DataGridViewAdvancedCellBorderStyle" FullName="System.Windows.Forms.DataGridViewAdvancedCellBorderStyle">
   <TypeSignature Language="C#" Value="public enum DataGridViewAdvancedCellBorderStyle" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataGridViewAdvancedCellBorderStyle extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewAdvancedCellBorderStyle" />
+  <TypeSignature Language="VB.NET" Value="Public Enum DataGridViewAdvancedCellBorderStyle" />
+  <TypeSignature Language="C++ CLI" Value="public enum class DataGridViewAdvancedCellBorderStyle" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +38,8 @@
       <MemberSignature Language="C#" Value="Inset" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewAdvancedCellBorderStyle Inset = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewAdvancedCellBorderStyle.Inset" />
+      <MemberSignature Language="VB.NET" Value="Inset" />
+      <MemberSignature Language="C++ CLI" Value="Inset" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -44,6 +48,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewAdvancedCellBorderStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>A single-line sunken border.</summary>
       </Docs>
@@ -52,6 +57,8 @@
       <MemberSignature Language="C#" Value="InsetDouble" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewAdvancedCellBorderStyle InsetDouble = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewAdvancedCellBorderStyle.InsetDouble" />
+      <MemberSignature Language="VB.NET" Value="InsetDouble" />
+      <MemberSignature Language="C++ CLI" Value="InsetDouble" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -60,6 +67,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewAdvancedCellBorderStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>A double-line sunken border.</summary>
       </Docs>
@@ -68,6 +76,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewAdvancedCellBorderStyle None = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewAdvancedCellBorderStyle.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -76,6 +86,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewAdvancedCellBorderStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>No borders.</summary>
       </Docs>
@@ -84,6 +95,8 @@
       <MemberSignature Language="C#" Value="NotSet" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewAdvancedCellBorderStyle NotSet = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewAdvancedCellBorderStyle.NotSet" />
+      <MemberSignature Language="VB.NET" Value="NotSet" />
+      <MemberSignature Language="C++ CLI" Value="NotSet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -92,6 +105,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewAdvancedCellBorderStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The border is not set.</summary>
       </Docs>
@@ -100,6 +114,8 @@
       <MemberSignature Language="C#" Value="Outset" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewAdvancedCellBorderStyle Outset = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewAdvancedCellBorderStyle.Outset" />
+      <MemberSignature Language="VB.NET" Value="Outset" />
+      <MemberSignature Language="C++ CLI" Value="Outset" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -108,6 +124,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewAdvancedCellBorderStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>A single-line raised border.</summary>
       </Docs>
@@ -116,6 +133,8 @@
       <MemberSignature Language="C#" Value="OutsetDouble" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewAdvancedCellBorderStyle OutsetDouble = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewAdvancedCellBorderStyle.OutsetDouble" />
+      <MemberSignature Language="VB.NET" Value="OutsetDouble" />
+      <MemberSignature Language="C++ CLI" Value="OutsetDouble" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -124,6 +143,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewAdvancedCellBorderStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>A double-line raised border.</summary>
       </Docs>
@@ -132,6 +152,8 @@
       <MemberSignature Language="C#" Value="OutsetPartial" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewAdvancedCellBorderStyle OutsetPartial = int32(7)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewAdvancedCellBorderStyle.OutsetPartial" />
+      <MemberSignature Language="VB.NET" Value="OutsetPartial" />
+      <MemberSignature Language="C++ CLI" Value="OutsetPartial" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -140,6 +162,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewAdvancedCellBorderStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>A single-line border containing a raised portion.</summary>
       </Docs>
@@ -148,6 +171,8 @@
       <MemberSignature Language="C#" Value="Single" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewAdvancedCellBorderStyle Single = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewAdvancedCellBorderStyle.Single" />
+      <MemberSignature Language="VB.NET" Value="Single" />
+      <MemberSignature Language="C++ CLI" Value="Single" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -156,6 +181,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewAdvancedCellBorderStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>A single-line border.</summary>
       </Docs>

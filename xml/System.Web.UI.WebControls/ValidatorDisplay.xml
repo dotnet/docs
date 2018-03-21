@@ -1,7 +1,9 @@
-<Type Name="ValidatorDisplay" FullName="System.Web.UI.WebControls.ValidatorDisplay">
+﻿<Type Name="ValidatorDisplay" FullName="System.Web.UI.WebControls.ValidatorDisplay">
   <TypeSignature Language="C#" Value="public enum ValidatorDisplay" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ValidatorDisplay extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ValidatorDisplay" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ValidatorDisplay" />
+  <TypeSignature Language="C++ CLI" Value="public enum class ValidatorDisplay" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +39,8 @@
       <MemberSignature Language="C#" Value="Dynamic" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.ValidatorDisplay Dynamic = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ValidatorDisplay.Dynamic" />
+      <MemberSignature Language="VB.NET" Value="Dynamic" />
+      <MemberSignature Language="C++ CLI" Value="Dynamic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -45,6 +49,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.ValidatorDisplay</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Validator content dynamically added to the page when validation fails.</summary>
       </Docs>
@@ -53,6 +58,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.ValidatorDisplay None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ValidatorDisplay.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -61,6 +68,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.ValidatorDisplay</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Validator content never displayed inline.</summary>
       </Docs>
@@ -69,6 +77,8 @@
       <MemberSignature Language="C#" Value="Static" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.ValidatorDisplay Static = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ValidatorDisplay.Static" />
+      <MemberSignature Language="VB.NET" Value="Static" />
+      <MemberSignature Language="C++ CLI" Value="Static" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -77,6 +87,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.ValidatorDisplay</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Validator content physically part of the page layout.</summary>
       </Docs>

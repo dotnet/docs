@@ -1,7 +1,9 @@
-<Type Name="SignatureAttributes" FullName="System.Reflection.Metadata.SignatureAttributes">
+﻿<Type Name="SignatureAttributes" FullName="System.Reflection.Metadata.SignatureAttributes">
   <TypeSignature Language="C#" Value="public enum SignatureAttributes" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SignatureAttributes extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.SignatureAttributes" />
+  <TypeSignature Language="VB.NET" Value="Public Enum SignatureAttributes" />
+  <TypeSignature Language="C++ CLI" Value="public enum class SignatureAttributes" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -18,14 +20,15 @@
   </Attributes>
   <Docs>
     <summary>Specifies additional flags that can be applied to method signatures. The underlying values of the fields in this type correspond to the representation in the leading signature byte represented by a <see cref="T:System.Reflection.Metadata.SignatureHeader" /> structure.</summary>
-    <remarks>
-    </remarks>
+    <remarks></remarks>
   </Docs>
   <Members>
     <Member MemberName="ExplicitThis">
       <MemberSignature Language="C#" Value="ExplicitThis" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.SignatureAttributes ExplicitThis = unsigned int8(64)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.SignatureAttributes.ExplicitThis" />
+      <MemberSignature Language="VB.NET" Value="ExplicitThis" />
+      <MemberSignature Language="C++ CLI" Value="ExplicitThis" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -36,6 +39,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.SignatureAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>64</MemberValue>
       <Docs>
         <summary>Indicates the first explicitly declared parameter that represents the instance pointer.</summary>
       </Docs>
@@ -44,6 +48,8 @@
       <MemberSignature Language="C#" Value="Generic" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.SignatureAttributes Generic = unsigned int8(16)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.SignatureAttributes.Generic" />
+      <MemberSignature Language="VB.NET" Value="Generic" />
+      <MemberSignature Language="C++ CLI" Value="Generic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -54,6 +60,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.SignatureAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>A generic method.</summary>
       </Docs>
@@ -62,6 +69,8 @@
       <MemberSignature Language="C#" Value="Instance" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.SignatureAttributes Instance = unsigned int8(32)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.SignatureAttributes.Instance" />
+      <MemberSignature Language="VB.NET" Value="Instance" />
+      <MemberSignature Language="C++ CLI" Value="Instance" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -72,6 +81,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.SignatureAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>32</MemberValue>
       <Docs>
         <summary>An instance method.</summary>
       </Docs>
@@ -80,6 +90,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.SignatureAttributes None = unsigned int8(0)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.SignatureAttributes.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -90,6 +102,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.SignatureAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>No flags.</summary>
       </Docs>

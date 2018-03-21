@@ -1,7 +1,9 @@
-<Type Name="AccessControlList" FullName="System.Messaging.AccessControlList">
+﻿<Type Name="AccessControlList" FullName="System.Messaging.AccessControlList">
   <TypeSignature Language="C#" Value="public class AccessControlList : System.Collections.CollectionBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AccessControlList extends System.Collections.CollectionBase" />
   <TypeSignature Language="DocId" Value="T:System.Messaging.AccessControlList" />
+  <TypeSignature Language="VB.NET" Value="Public Class AccessControlList&#xA;Inherits CollectionBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AccessControlList : System::Collections::CollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.Messaging</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +42,8 @@
       <MemberSignature Language="C#" Value="public AccessControlList ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.AccessControlList.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AccessControlList();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -55,6 +59,8 @@
       <MemberSignature Language="C#" Value="public int Add (System.Messaging.AccessControlEntry entry);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Add(class System.Messaging.AccessControlEntry entry) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.AccessControlList.Add(System.Messaging.AccessControlEntry)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (entry As AccessControlEntry) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::Messaging::AccessControlEntry ^ entry);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -80,6 +86,8 @@
       <MemberSignature Language="C#" Value="public bool Contains (System.Messaging.AccessControlEntry entry);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.Messaging.AccessControlEntry entry) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.AccessControlList.Contains(System.Messaging.AccessControlEntry)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (entry As AccessControlEntry) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Messaging::AccessControlEntry ^ entry);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -104,6 +112,8 @@
       <MemberSignature Language="C#" Value="public void CopyTo (System.Messaging.AccessControlEntry[] array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.Messaging.AccessControlEntry[] array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.AccessControlList.CopyTo(System.Messaging.AccessControlEntry[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As AccessControlEntry(), index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Messaging::AccessControlEntry ^&gt; ^ array, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -136,6 +146,8 @@
       <MemberSignature Language="C#" Value="public int IndexOf (System.Messaging.AccessControlEntry entry);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.Messaging.AccessControlEntry entry) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.AccessControlList.IndexOf(System.Messaging.AccessControlEntry)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOf (entry As AccessControlEntry) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Messaging::AccessControlEntry ^ entry);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -159,6 +171,8 @@
       <MemberSignature Language="C#" Value="public void Insert (int index, System.Messaging.AccessControlEntry entry);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(int32 index, class System.Messaging.AccessControlEntry entry) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.AccessControlList.Insert(System.Int32,System.Messaging.AccessControlEntry)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, entry As AccessControlEntry)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::Messaging::AccessControlEntry ^ entry);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -193,6 +207,8 @@
       <MemberSignature Language="C#" Value="public void Remove (System.Messaging.AccessControlEntry entry);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Messaging.AccessControlEntry entry) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.AccessControlList.Remove(System.Messaging.AccessControlEntry)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (entry As AccessControlEntry)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Messaging::AccessControlEntry ^ entry);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="ComponentResourceManager" FullName="System.ComponentModel.ComponentResourceManager">
+﻿<Type Name="ComponentResourceManager" FullName="System.ComponentModel.ComponentResourceManager">
   <TypeSignature Language="C#" Value="public class ComponentResourceManager : System.Resources.ResourceManager" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ComponentResourceManager extends System.Resources.ResourceManager" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.ComponentResourceManager" />
+  <TypeSignature Language="VB.NET" Value="Public Class ComponentResourceManager&#xA;Inherits ResourceManager" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ComponentResourceManager : System::Resources::ResourceManager" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -34,10 +36,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.ComponentResourceManager" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ComponentResourceManager ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ComponentResourceManager.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ComponentResourceManager();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -62,6 +76,8 @@
       <MemberSignature Language="C#" Value="public ComponentResourceManager (Type t);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type t) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ComponentResourceManager.#ctor(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (t As Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ComponentResourceManager(Type ^ t);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -95,10 +111,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ApplyResources">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Apply a resource's value to the corresponding property of the object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ApplyResources">
       <MemberSignature Language="C#" Value="public void ApplyResources (object value, string objectName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ApplyResources(object value, string objectName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ComponentResourceManager.ApplyResources(System.Object,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ApplyResources (value As Object, objectName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ApplyResources(System::Object ^ value, System::String ^ objectName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -140,6 +168,8 @@
       <MemberSignature Language="C#" Value="public virtual void ApplyResources (object value, string objectName, System.Globalization.CultureInfo culture);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ApplyResources(object value, string objectName, class System.Globalization.CultureInfo culture) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ComponentResourceManager.ApplyResources(System.Object,System.String,System.Globalization.CultureInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub ApplyResources (value As Object, objectName As String, culture As CultureInfo)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ApplyResources(System::Object ^ value, System::String ^ objectName, System::Globalization::CultureInfo ^ culture);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -181,25 +211,5 @@
           <paramref name="value" /> or <paramref name="objectName" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="ApplyResources">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Apply a resource's value to the corresponding property of the object.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.ComponentResourceManager" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

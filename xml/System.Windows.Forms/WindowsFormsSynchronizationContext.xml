@@ -1,7 +1,9 @@
-<Type Name="WindowsFormsSynchronizationContext" FullName="System.Windows.Forms.WindowsFormsSynchronizationContext">
+﻿<Type Name="WindowsFormsSynchronizationContext" FullName="System.Windows.Forms.WindowsFormsSynchronizationContext">
   <TypeSignature Language="C#" Value="public sealed class WindowsFormsSynchronizationContext : System.Threading.SynchronizationContext, IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WindowsFormsSynchronizationContext extends System.Threading.SynchronizationContext implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.WindowsFormsSynchronizationContext" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WindowsFormsSynchronizationContext&#xA;Inherits SynchronizationContext&#xA;Implements IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WindowsFormsSynchronizationContext sealed : System::Threading::SynchronizationContext, IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +26,8 @@
       <MemberSignature Language="C#" Value="public WindowsFormsSynchronizationContext ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WindowsFormsSynchronizationContext.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WindowsFormsSynchronizationContext();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -40,6 +44,8 @@
       <MemberSignature Language="C#" Value="public static bool AutoInstall { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property bool AutoInstall" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.WindowsFormsSynchronizationContext.AutoInstall" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property AutoInstall As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool AutoInstall { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -72,6 +78,8 @@
       <MemberSignature Language="C#" Value="public override System.Threading.SynchronizationContext CreateCopy ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.SynchronizationContext CreateCopy() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WindowsFormsSynchronizationContext.CreateCopy" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateCopy () As SynchronizationContext" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::SynchronizationContext ^ CreateCopy();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -92,7 +100,12 @@
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WindowsFormsSynchronizationContext.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -120,6 +133,8 @@
       <MemberSignature Language="C#" Value="public override void Post (System.Threading.SendOrPostCallback d, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Post(class System.Threading.SendOrPostCallback d, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WindowsFormsSynchronizationContext.Post(System.Threading.SendOrPostCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Post (d As SendOrPostCallback, state As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Post(System::Threading::SendOrPostCallback ^ d, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -151,6 +166,8 @@
       <MemberSignature Language="C#" Value="public override void Send (System.Threading.SendOrPostCallback d, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Send(class System.Threading.SendOrPostCallback d, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WindowsFormsSynchronizationContext.Send(System.Threading.SendOrPostCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Send (d As SendOrPostCallback, state As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Send(System::Threading::SendOrPostCallback ^ d, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -183,6 +200,8 @@
       <MemberSignature Language="C#" Value="public static void Uninstall ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Uninstall() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WindowsFormsSynchronizationContext.Uninstall" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Uninstall ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Uninstall();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

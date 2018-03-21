@@ -1,7 +1,9 @@
-<Type Name="RuleReevaluationBehavior" FullName="System.Workflow.Activities.Rules.RuleReevaluationBehavior">
+﻿<Type Name="RuleReevaluationBehavior" FullName="System.Workflow.Activities.Rules.RuleReevaluationBehavior">
   <TypeSignature Language="C#" Value="public enum RuleReevaluationBehavior" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RuleReevaluationBehavior extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.Rules.RuleReevaluationBehavior" />
+  <TypeSignature Language="VB.NET" Value="Public Enum RuleReevaluationBehavior" />
+  <TypeSignature Language="C++ CLI" Value="public enum class RuleReevaluationBehavior" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +27,8 @@
       <MemberSignature Language="C#" Value="Always" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.Activities.Rules.RuleReevaluationBehavior Always = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.Rules.RuleReevaluationBehavior.Always" />
+      <MemberSignature Language="VB.NET" Value="Always" />
+      <MemberSignature Language="C++ CLI" Value="Always" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -33,6 +37,7 @@
       <ReturnValue>
         <ReturnType>System.Workflow.Activities.Rules.RuleReevaluationBehavior</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Indicates that the <see cref="T:System.Workflow.Activities.Rules.Rule" /> can be reevaluated multiple times. <see cref="F:System.Workflow.Activities.Rules.RuleReevaluationBehavior.Always" /> is the default value.</summary>
       </Docs>
@@ -41,6 +46,8 @@
       <MemberSignature Language="C#" Value="Never" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.Activities.Rules.RuleReevaluationBehavior Never = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.Rules.RuleReevaluationBehavior.Never" />
+      <MemberSignature Language="VB.NET" Value="Never" />
+      <MemberSignature Language="C++ CLI" Value="Never" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -49,6 +56,7 @@
       <ReturnValue>
         <ReturnType>System.Workflow.Activities.Rules.RuleReevaluationBehavior</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Indicates that the <see cref="T:System.Workflow.Activities.Rules.Rule" /> is executed once.  A condition may be evaluated several times until the rule executes actions, but the rule will never be evaluated again.</summary>
       </Docs>

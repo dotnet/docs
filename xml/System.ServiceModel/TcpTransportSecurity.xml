@@ -1,7 +1,9 @@
-<Type Name="TcpTransportSecurity" FullName="System.ServiceModel.TcpTransportSecurity">
+﻿<Type Name="TcpTransportSecurity" FullName="System.ServiceModel.TcpTransportSecurity">
   <TypeSignature Language="C#" Value="public sealed class TcpTransportSecurity" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TcpTransportSecurity extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.TcpTransportSecurity" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TcpTransportSecurity" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TcpTransportSecurity sealed" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -33,6 +35,8 @@
       <MemberSignature Language="C#" Value="public TcpTransportSecurity ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.TcpTransportSecurity.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TcpTransportSecurity();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -55,6 +59,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.TcpClientCredentialType ClientCredentialType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.TcpClientCredentialType ClientCredentialType" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.TcpTransportSecurity.ClientCredentialType" />
+      <MemberSignature Language="VB.NET" Value="Public Property ClientCredentialType As TcpClientCredentialType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::TcpClientCredentialType ClientCredentialType { System::ServiceModel::TcpClientCredentialType get(); void set(System::ServiceModel::TcpClientCredentialType value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -107,6 +113,8 @@
       <MemberSignature Language="C#" Value="public System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy ExtendedProtectionPolicy { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy ExtendedProtectionPolicy" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.TcpTransportSecurity.ExtendedProtectionPolicy" />
+      <MemberSignature Language="VB.NET" Value="Public Property ExtendedProtectionPolicy As ExtendedProtectionPolicy" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Authentication::ExtendedProtection::ExtendedProtectionPolicy ^ ExtendedProtectionPolicy { System::Security::Authentication::ExtendedProtection::ExtendedProtectionPolicy ^ get(); void set(System::Security::Authentication::ExtendedProtection::ExtendedProtectionPolicy ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -125,6 +133,8 @@
       <MemberSignature Language="C#" Value="public System.Net.Security.ProtectionLevel ProtectionLevel { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Net.Security.ProtectionLevel ProtectionLevel" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.TcpTransportSecurity.ProtectionLevel" />
+      <MemberSignature Language="VB.NET" Value="Public Property ProtectionLevel As ProtectionLevel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Security::ProtectionLevel ProtectionLevel { System::Net::Security::ProtectionLevel get(); void set(System::Net::Security::ProtectionLevel value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -144,6 +154,8 @@
       <MemberSignature Language="C#" Value="public bool ShouldSerializeExtendedProtectionPolicy ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeExtendedProtectionPolicy() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.TcpTransportSecurity.ShouldSerializeExtendedProtectionPolicy" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeExtendedProtectionPolicy () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeExtendedProtectionPolicy();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -169,6 +181,8 @@
       <MemberSignature Language="C#" Value="public System.Security.Authentication.SslProtocols SslProtocols { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.Authentication.SslProtocols SslProtocols" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.TcpTransportSecurity.SslProtocols" />
+      <MemberSignature Language="VB.NET" Value="Public Property SslProtocols As SslProtocols" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Authentication::SslProtocols SslProtocols { System::Security::Authentication::SslProtocols get(); void set(System::Security::Authentication::SslProtocols value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

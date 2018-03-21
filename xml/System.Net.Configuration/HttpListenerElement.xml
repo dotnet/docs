@@ -1,7 +1,9 @@
-<Type Name="HttpListenerElement" FullName="System.Net.Configuration.HttpListenerElement">
+﻿<Type Name="HttpListenerElement" FullName="System.Net.Configuration.HttpListenerElement">
   <TypeSignature Language="C#" Value="public sealed class HttpListenerElement : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HttpListenerElement extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.Net.Configuration.HttpListenerElement" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HttpListenerElement&#xA;Inherits ConfigurationElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HttpListenerElement sealed : System::Configuration::ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -91,6 +93,8 @@
       <MemberSignature Language="C#" Value="public HttpListenerElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.HttpListenerElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpListenerElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -106,6 +110,8 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.HttpListenerElement.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -124,6 +130,8 @@
       <MemberSignature Language="C#" Value="public System.Net.Configuration.HttpListenerTimeoutsElement Timeouts { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Configuration.HttpListenerTimeoutsElement Timeouts" />
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.HttpListenerElement.Timeouts" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Timeouts As HttpListenerTimeoutsElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Configuration::HttpListenerTimeoutsElement ^ Timeouts { System::Net::Configuration::HttpListenerTimeoutsElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -152,6 +160,8 @@
       <MemberSignature Language="C#" Value="public bool UnescapeRequestUrl { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UnescapeRequestUrl" />
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.HttpListenerElement.UnescapeRequestUrl" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UnescapeRequestUrl As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UnescapeRequestUrl { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

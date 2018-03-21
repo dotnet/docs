@@ -1,7 +1,9 @@
-<Type Name="DataTableMapping" FullName="System.Data.Common.DataTableMapping">
+﻿<Type Name="DataTableMapping" FullName="System.Data.Common.DataTableMapping">
   <TypeSignature Language="C#" Value="public sealed class DataTableMapping : MarshalByRefObject, ICloneable, System.Data.ITableMapping" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DataTableMapping extends System.MarshalByRefObject implements class System.Data.ITableMapping, class System.ICloneable" />
   <TypeSignature Language="DocId" Value="T:System.Data.Common.DataTableMapping" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DataTableMapping&#xA;Inherits MarshalByRefObject&#xA;Implements ICloneable, ITableMapping" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataTableMapping sealed : MarshalByRefObject, ICloneable, System::Data::ITableMapping" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -51,10 +53,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Common.DataTableMapping" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DataTableMapping ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataTableMapping.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataTableMapping();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -89,6 +103,8 @@
       <MemberSignature Language="C#" Value="public DataTableMapping (string sourceTable, string dataSetTable);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string sourceTable, string dataSetTable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataTableMapping.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (sourceTable As String, dataSetTable As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataTableMapping(System::String ^ sourceTable, System::String ^ dataSetTable);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -128,6 +144,8 @@
       <MemberSignature Language="C#" Value="public DataTableMapping (string sourceTable, string dataSetTable, System.Data.Common.DataColumnMapping[] columnMappings);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string sourceTable, string dataSetTable, class System.Data.Common.DataColumnMapping[] columnMappings) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataTableMapping.#ctor(System.String,System.String,System.Data.Common.DataColumnMapping[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (sourceTable As String, dataSetTable As String, columnMappings As DataColumnMapping())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataTableMapping(System::String ^ sourceTable, System::String ^ dataSetTable, cli::array &lt;System::Data::Common::DataColumnMapping ^&gt; ^ columnMappings);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -169,6 +187,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Common.DataColumnMappingCollection ColumnMappings { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Common.DataColumnMappingCollection ColumnMappings" />
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DataTableMapping.ColumnMappings" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ColumnMappings As DataColumnMappingCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Common::DataColumnMappingCollection ^ ColumnMappings { System::Data::Common::DataColumnMappingCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -185,7 +205,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -211,7 +231,12 @@
       <MemberSignature Language="C#" Value="public string DataSetTable { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DataSetTable" />
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DataTableMapping.DataSetTable" />
+      <MemberSignature Language="VB.NET" Value="Public Property DataSetTable As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DataSetTable { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Data.ITableMapping.DataSetTable</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -253,6 +278,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Common.DataColumnMapping GetColumnMappingBySchemaAction (string sourceColumn, System.Data.MissingMappingAction mappingAction);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Common.DataColumnMapping GetColumnMappingBySchemaAction(string sourceColumn, valuetype System.Data.MissingMappingAction mappingAction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataTableMapping.GetColumnMappingBySchemaAction(System.String,System.Data.MissingMappingAction)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetColumnMappingBySchemaAction (sourceColumn As String, mappingAction As MissingMappingAction) As DataColumnMapping" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Common::DataColumnMapping ^ GetColumnMappingBySchemaAction(System::String ^ sourceColumn, System::Data::MissingMappingAction mappingAction);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -307,6 +334,7 @@
       <MemberSignature Language="C#" Value="public System.Data.DataColumn GetDataColumn (string sourceColumn, Type dataType, System.Data.DataTable dataTable, System.Data.MissingMappingAction mappingAction, System.Data.MissingSchemaAction schemaAction);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.DataColumn GetDataColumn(string sourceColumn, class System.Type dataType, class System.Data.DataTable dataTable, valuetype System.Data.MissingMappingAction mappingAction, valuetype System.Data.MissingSchemaAction schemaAction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataTableMapping.GetDataColumn(System.String,System.Type,System.Data.DataTable,System.Data.MissingMappingAction,System.Data.MissingSchemaAction)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::DataColumn ^ GetDataColumn(System::String ^ sourceColumn, Type ^ dataType, System::Data::DataTable ^ dataTable, System::Data::MissingMappingAction mappingAction, System::Data::MissingSchemaAction schemaAction);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -351,6 +379,7 @@
       <MemberSignature Language="C#" Value="public System.Data.DataTable GetDataTableBySchemaAction (System.Data.DataSet dataSet, System.Data.MissingSchemaAction schemaAction);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.DataTable GetDataTableBySchemaAction(class System.Data.DataSet dataSet, valuetype System.Data.MissingSchemaAction schemaAction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataTableMapping.GetDataTableBySchemaAction(System.Data.DataSet,System.Data.MissingSchemaAction)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::DataTable ^ GetDataTableBySchemaAction(System::Data::DataSet ^ dataSet, System::Data::MissingSchemaAction schemaAction);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -404,7 +433,12 @@
       <MemberSignature Language="C#" Value="public string SourceTable { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SourceTable" />
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DataTableMapping.SourceTable" />
+      <MemberSignature Language="VB.NET" Value="Public Property SourceTable As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SourceTable { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Data.ITableMapping.SourceTable</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -446,7 +480,12 @@
       <MemberSignature Language="C#" Value="System.Data.IColumnMappingCollection System.Data.ITableMapping.ColumnMappings { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.IColumnMappingCollection System.Data.ITableMapping.ColumnMappings" />
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DataTableMapping.System#Data#ITableMapping#ColumnMappings" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property ColumnMappings As IColumnMappingCollection Implements ITableMapping.ColumnMappings" />
+      <MemberSignature Language="C++ CLI" Value="property System::Data::IColumnMappingCollection ^ System.Data.ITableMapping.ColumnMappings { System::Data::IColumnMappingCollection ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Data.ITableMapping.ColumnMappings</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -482,7 +521,12 @@
       <MemberSignature Language="C#" Value="object ICloneable.Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.ICloneable.Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataTableMapping.System#ICloneable#Clone" />
+      <MemberSignature Language="VB.NET" Value="Function Clone () As Object Implements ICloneable.Clone" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.ICloneable.Clone() = ICloneable::Clone;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -519,6 +563,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataTableMapping.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -553,15 +599,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.Common.DataTableMapping" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

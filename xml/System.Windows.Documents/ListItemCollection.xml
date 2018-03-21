@@ -1,7 +1,9 @@
-<Type Name="ListItemCollection" FullName="System.Windows.Documents.ListItemCollection">
+﻿<Type Name="ListItemCollection" FullName="System.Windows.Documents.ListItemCollection">
   <TypeSignature Language="C#" Value="public class ListItemCollection : System.Windows.Documents.TextElementCollection&lt;System.Windows.Documents.ListItem&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ListItemCollection extends System.Windows.Documents.TextElementCollection`1&lt;class System.Windows.Documents.ListItem&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.ListItemCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class ListItemCollection&#xA;Inherits TextElementCollection(Of ListItem)" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ListItemCollection : System::Windows::Documents::TextElementCollection&lt;System::Windows::Documents::ListItem ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +33,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Documents.ListItem FirstListItem { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Documents.ListItem FirstListItem" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.ListItemCollection.FirstListItem" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FirstListItem As ListItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Documents::ListItem ^ FirstListItem { System::Windows::Documents::ListItem ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -49,6 +53,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Documents.ListItem LastListItem { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Documents.ListItem LastListItem" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.ListItemCollection.LastListItem" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LastListItem As ListItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Documents::ListItem ^ LastListItem { System::Windows::Documents::ListItem ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

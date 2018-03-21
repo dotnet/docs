@@ -1,7 +1,9 @@
-<Type Name="MachineKeyValidation" FullName="System.Web.Configuration.MachineKeyValidation">
+﻿<Type Name="MachineKeyValidation" FullName="System.Web.Configuration.MachineKeyValidation">
   <TypeSignature Language="C#" Value="public enum MachineKeyValidation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MachineKeyValidation extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.MachineKeyValidation" />
+  <TypeSignature Language="VB.NET" Value="Public Enum MachineKeyValidation" />
+  <TypeSignature Language="C++ CLI" Value="public enum class MachineKeyValidation" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +42,8 @@
       <MemberSignature Language="C#" Value="AES" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Configuration.MachineKeyValidation AES = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.MachineKeyValidation.AES" />
+      <MemberSignature Language="VB.NET" Value="AES" />
+      <MemberSignature Language="C++ CLI" Value="AES" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -48,6 +52,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Configuration.MachineKeyValidation</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Specifies that ASP.NET uses the <see langword="AES" /> (Rijndael) encryption algorithm.</summary>
         <remarks>
@@ -65,6 +70,8 @@
       <MemberSignature Language="C#" Value="Custom" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Configuration.MachineKeyValidation Custom = int32(7)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.MachineKeyValidation.Custom" />
+      <MemberSignature Language="VB.NET" Value="Custom" />
+      <MemberSignature Language="C++ CLI" Value="Custom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -73,6 +80,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Configuration.MachineKeyValidation</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>Specifies that ASP.NET uses a custom hashing algorithm.</summary>
         <remarks>
@@ -92,6 +100,8 @@
       <MemberSignature Language="C#" Value="HMACSHA256" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Configuration.MachineKeyValidation HMACSHA256 = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.MachineKeyValidation.HMACSHA256" />
+      <MemberSignature Language="VB.NET" Value="HMACSHA256" />
+      <MemberSignature Language="C++ CLI" Value="HMACSHA256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -100,6 +110,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Configuration.MachineKeyValidation</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Specifies that ASP.NET uses the <see langword="HMACSHA256" /> hashing algorithm.  This is the default value.</summary>
         <remarks>
@@ -117,6 +128,8 @@
       <MemberSignature Language="C#" Value="HMACSHA384" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Configuration.MachineKeyValidation HMACSHA384 = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.MachineKeyValidation.HMACSHA384" />
+      <MemberSignature Language="VB.NET" Value="HMACSHA384" />
+      <MemberSignature Language="C++ CLI" Value="HMACSHA384" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -125,6 +138,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Configuration.MachineKeyValidation</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>Specifies that ASP.NET uses the <see langword="HMACSHA384" /> hashing algorithm.</summary>
         <remarks>
@@ -142,6 +156,8 @@
       <MemberSignature Language="C#" Value="HMACSHA512" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Configuration.MachineKeyValidation HMACSHA512 = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.MachineKeyValidation.HMACSHA512" />
+      <MemberSignature Language="VB.NET" Value="HMACSHA512" />
+      <MemberSignature Language="C++ CLI" Value="HMACSHA512" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -150,6 +166,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Configuration.MachineKeyValidation</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>Specifies that ASP.NET uses the <see langword="HMACSHA512" /> hashing algorithm.</summary>
         <remarks>
@@ -167,6 +184,8 @@
       <MemberSignature Language="C#" Value="MD5" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Configuration.MachineKeyValidation MD5 = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.MachineKeyValidation.MD5" />
+      <MemberSignature Language="VB.NET" Value="MD5" />
+      <MemberSignature Language="C++ CLI" Value="MD5" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -175,6 +194,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Configuration.MachineKeyValidation</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Specifies that ASP.NET uses the Message Digest 5 (<see langword="MD5" />) hashing algorithm.</summary>
         <remarks>
@@ -192,6 +212,8 @@
       <MemberSignature Language="C#" Value="SHA1" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Configuration.MachineKeyValidation SHA1 = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.MachineKeyValidation.SHA1" />
+      <MemberSignature Language="VB.NET" Value="SHA1" />
+      <MemberSignature Language="C++ CLI" Value="SHA1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -200,6 +222,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Configuration.MachineKeyValidation</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Specifies that ASP.NET uses the <see langword="HMACSHA1" /> hash algorithm.</summary>
         <remarks>
@@ -217,6 +240,8 @@
       <MemberSignature Language="C#" Value="TripleDES" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Configuration.MachineKeyValidation TripleDES = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.MachineKeyValidation.TripleDES" />
+      <MemberSignature Language="VB.NET" Value="TripleDES" />
+      <MemberSignature Language="C++ CLI" Value="TripleDES" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -225,6 +250,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Configuration.MachineKeyValidation</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Specifies that ASP.NET uses the TripleDES (<see langword="3DES" />) encryption algorithm.</summary>
         <remarks>

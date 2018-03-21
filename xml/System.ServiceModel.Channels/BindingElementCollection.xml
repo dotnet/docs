@@ -1,7 +1,9 @@
-<Type Name="BindingElementCollection" FullName="System.ServiceModel.Channels.BindingElementCollection">
+﻿<Type Name="BindingElementCollection" FullName="System.ServiceModel.Channels.BindingElementCollection">
   <TypeSignature Language="C#" Value="public class BindingElementCollection : System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Channels.BindingElement&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BindingElementCollection extends System.Collections.ObjectModel.Collection`1&lt;class System.ServiceModel.Channels.BindingElement&gt;" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.BindingElementCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class BindingElementCollection&#xA;Inherits Collection(Of BindingElement)" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BindingElementCollection : System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Channels::BindingElement ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -25,10 +27,22 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.BindingElementCollection" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public BindingElementCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BindingElementCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BindingElementCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -51,6 +65,8 @@
       <MemberSignature Language="C#" Value="public BindingElementCollection (System.Collections.Generic.IEnumerable&lt;System.ServiceModel.Channels.BindingElement&gt; elements);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;class System.ServiceModel.Channels.BindingElement&gt; elements) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BindingElementCollection.#ctor(System.Collections.Generic.IEnumerable{System.ServiceModel.Channels.BindingElement})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (elements As IEnumerable(Of BindingElement))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BindingElementCollection(System::Collections::Generic::IEnumerable&lt;System::ServiceModel::Channels::BindingElement ^&gt; ^ elements);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -78,6 +94,8 @@
       <MemberSignature Language="C#" Value="public BindingElementCollection (System.ServiceModel.Channels.BindingElement[] elements);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Channels.BindingElement[] elements) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BindingElementCollection.#ctor(System.ServiceModel.Channels.BindingElement[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (elements As BindingElement())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BindingElementCollection(cli::array &lt;System::ServiceModel::Channels::BindingElement ^&gt; ^ elements);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -105,6 +123,8 @@
       <MemberSignature Language="C#" Value="public void AddRange (params System.ServiceModel.Channels.BindingElement[] elements);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddRange(class System.ServiceModel.Channels.BindingElement[] elements) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BindingElementCollection.AddRange(System.ServiceModel.Channels.BindingElement[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddRange (ParamArray elements As BindingElement())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(... cli::array &lt;System::ServiceModel::Channels::BindingElement ^&gt; ^ elements);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -141,6 +161,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.BindingElementCollection Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ServiceModel.Channels.BindingElementCollection Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BindingElementCollection.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As BindingElementCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Channels::BindingElementCollection ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -167,6 +189,8 @@
       <MemberSignature Language="C#" Value="public bool Contains (Type bindingElementType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.Type bindingElementType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BindingElementCollection.Contains(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (bindingElementType As Type) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(Type ^ bindingElementType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -199,6 +223,8 @@
       <MemberSignature Language="C#" Value="public T Find&lt;T&gt; ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T Find&lt;T&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BindingElementCollection.Find``1" />
+      <MemberSignature Language="VB.NET" Value="Public Function Find(Of T) () As T" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; T Find();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -229,6 +255,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;T&gt; FindAll&lt;T&gt; ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.ObjectModel.Collection`1&lt;!!T&gt; FindAll&lt;T&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BindingElementCollection.FindAll``1" />
+      <MemberSignature Language="VB.NET" Value="Public Function FindAll(Of T) () As Collection(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; System::Collections::ObjectModel::Collection&lt;T&gt; ^ FindAll();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -259,6 +287,8 @@
       <MemberSignature Language="C#" Value="protected override void InsertItem (int index, System.ServiceModel.Channels.BindingElement item);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InsertItem(int32 index, class System.ServiceModel.Channels.BindingElement item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BindingElementCollection.InsertItem(System.Int32,System.ServiceModel.Channels.BindingElement)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InsertItem (index As Integer, item As BindingElement)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InsertItem(int index, System::ServiceModel::Channels::BindingElement ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -291,6 +321,8 @@
       <MemberSignature Language="C#" Value="public T Remove&lt;T&gt; ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T Remove&lt;T&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BindingElementCollection.Remove``1" />
+      <MemberSignature Language="VB.NET" Value="Public Function Remove(Of T) () As T" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; T Remove();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -321,6 +353,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;T&gt; RemoveAll&lt;T&gt; ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.ObjectModel.Collection`1&lt;!!T&gt; RemoveAll&lt;T&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BindingElementCollection.RemoveAll``1" />
+      <MemberSignature Language="VB.NET" Value="Public Function RemoveAll(Of T) () As Collection(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; System::Collections::ObjectModel::Collection&lt;T&gt; ^ RemoveAll();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -351,6 +385,8 @@
       <MemberSignature Language="C#" Value="protected override void SetItem (int index, System.ServiceModel.Channels.BindingElement item);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetItem(int32 index, class System.ServiceModel.Channels.BindingElement item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BindingElementCollection.SetItem(System.Int32,System.ServiceModel.Channels.BindingElement)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetItem (index As Integer, item As BindingElement)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetItem(int index, System::ServiceModel::Channels::BindingElement ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -379,15 +415,5 @@
           <paramref name="item" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.BindingElementCollection" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

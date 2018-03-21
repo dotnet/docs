@@ -1,7 +1,9 @@
-<Type Name="AuthorizationContext" FullName="System.IdentityModel.Policy.AuthorizationContext">
+﻿<Type Name="AuthorizationContext" FullName="System.IdentityModel.Policy.AuthorizationContext">
   <TypeSignature Language="C#" Value="public abstract class AuthorizationContext : System.IdentityModel.Policy.IAuthorizationComponent" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit AuthorizationContext extends System.Object implements class System.IdentityModel.Policy.IAuthorizationComponent" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Policy.AuthorizationContext" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class AuthorizationContext&#xA;Implements IAuthorizationComponent" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AuthorizationContext abstract : System::IdentityModel::Policy::IAuthorizationComponent" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +42,8 @@
       <MemberSignature Language="C#" Value="protected AuthorizationContext ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Policy.AuthorizationContext.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; AuthorizationContext();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -62,6 +66,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Claims.ClaimSet&gt; ClaimSets { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.IdentityModel.Claims.ClaimSet&gt; ClaimSets" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Policy.AuthorizationContext.ClaimSets" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ClaimSets As ReadOnlyCollection(Of ClaimSet)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::IdentityModel::Claims::ClaimSet ^&gt; ^ ClaimSets { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::IdentityModel::Claims::ClaimSet ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -90,9 +96,16 @@
       </Docs>
     </Member>
     <Member MemberName="CreateDefaultAuthorizationContext">
-      <MemberSignature Language="C#" Value="public static System.IdentityModel.Policy.AuthorizationContext CreateDefaultAuthorizationContext (System.Collections.Generic.IList&lt;System.IdentityModel.Policy.IAuthorizationPolicy&gt; policies);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IdentityModel.Policy.AuthorizationContext CreateDefaultAuthorizationContext(class System.Collections.Generic.IList`1&lt;class System.IdentityModel.Policy.IAuthorizationPolicy&gt; policies) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Policy.AuthorizationContext.CreateDefaultAuthorizationContext(System.Collections.Generic.IList{System.IdentityModel.Policy.IAuthorizationPolicy})" />
+      <MemberSignature Language="C#" Value="public static System.IdentityModel.Policy.AuthorizationContext CreateDefaultAuthorizationContext (System.Collections.Generic.IList&lt;System.IdentityModel.Policy.IAuthorizationPolicy&gt; authorizationPolicies);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IdentityModel.Policy.AuthorizationContext CreateDefaultAuthorizationContext(class System.Collections.Generic.IList`1&lt;class System.IdentityModel.Policy.IAuthorizationPolicy&gt; authorizationPolicies) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Policy.AuthorizationContext.CreateDefaultAuthorizationContext(System.Collections.Generic.IList{System.IdentityModel.Policy.IAuthorizationPolicy})" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateDefaultAuthorizationContext (authorizationPolicies As IList(Of IAuthorizationPolicy)) As AuthorizationContext" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IdentityModel::Policy::AuthorizationContext ^ CreateDefaultAuthorizationContext(System::Collections::Generic::IList&lt;System::IdentityModel::Policy::IAuthorizationPolicy ^&gt; ^ authorizationPolicies);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public static System.IdentityModel.Policy.AuthorizationContext CreateDefaultAuthorizationContext (System.Collections.Generic.IList&lt;System.IdentityModel.Policy.IAuthorizationPolicy&gt; policies);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IdentityModel.Policy.AuthorizationContext CreateDefaultAuthorizationContext(class System.Collections.Generic.IList`1&lt;class System.IdentityModel.Policy.IAuthorizationPolicy&gt; policies) cil managed" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Policy.AuthorizationContext.CreateDefaultAuthorizationContext(System.Collections.Generic.IList{System.IdentityModel.Policy.IAuthorizationPolicy})" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateDefaultAuthorizationContext (policies As IList(Of IAuthorizationPolicy)) As AuthorizationContext" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IdentityModel::Policy::AuthorizationContext ^ CreateDefaultAuthorizationContext(System::Collections::Generic::IList&lt;System::IdentityModel::Policy::IAuthorizationPolicy ^&gt; ^ policies);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -102,7 +115,8 @@
         <ReturnType>System.IdentityModel.Policy.AuthorizationContext</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="authorizationPolicies" Type="System.Collections.Generic.IList&lt;System.IdentityModel.Policy.IAuthorizationPolicy&gt;" />
+        <Parameter Name="authorizationPolicies" Type="System.Collections.Generic.IList&lt;System.IdentityModel.Policy.IAuthorizationPolicy&gt;" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="policies" Type="System.Collections.Generic.IList&lt;System.IdentityModel.Policy.IAuthorizationPolicy&gt;" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="policies">To be added.</param>
@@ -122,6 +136,8 @@
       <MemberSignature Language="C#" Value="public abstract DateTime ExpirationTime { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime ExpirationTime" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Policy.AuthorizationContext.ExpirationTime" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ExpirationTime As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property DateTime ExpirationTime { DateTime get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -150,7 +166,12 @@
       <MemberSignature Language="C#" Value="public abstract string Id { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Id" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Policy.AuthorizationContext.Id" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Id As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ Id { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.IdentityModel.Policy.IAuthorizationComponent.Id</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -175,6 +196,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Collections.Generic.IDictionary&lt;string,object&gt; Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, object&gt; Properties" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Policy.AuthorizationContext.Properties" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Properties As IDictionary(Of String, Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ Properties { System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

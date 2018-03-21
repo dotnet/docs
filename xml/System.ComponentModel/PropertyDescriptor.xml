@@ -1,7 +1,9 @@
-<Type Name="PropertyDescriptor" FullName="System.ComponentModel.PropertyDescriptor">
+﻿<Type Name="PropertyDescriptor" FullName="System.ComponentModel.PropertyDescriptor">
   <TypeSignature Language="C#" Value="public abstract class PropertyDescriptor : System.ComponentModel.MemberDescriptor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit PropertyDescriptor extends System.ComponentModel.MemberDescriptor" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.PropertyDescriptor" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class PropertyDescriptor&#xA;Inherits MemberDescriptor" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PropertyDescriptor abstract : System::ComponentModel::MemberDescriptor" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -89,10 +91,22 @@
     <altmember cref="T:System.ComponentModel.DefaultValueAttribute" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.PropertyDescriptor" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected PropertyDescriptor (System.ComponentModel.MemberDescriptor descr);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ComponentModel.MemberDescriptor descr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyDescriptor.#ctor(System.ComponentModel.MemberDescriptor)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (descr As MemberDescriptor)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; PropertyDescriptor(System::ComponentModel::MemberDescriptor ^ descr);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -122,6 +136,8 @@
       <MemberSignature Language="C#" Value="protected PropertyDescriptor (System.ComponentModel.MemberDescriptor descr, Attribute[] attrs);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ComponentModel.MemberDescriptor descr, class System.Attribute[] attrs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyDescriptor.#ctor(System.ComponentModel.MemberDescriptor,System.Attribute[])" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (descr As MemberDescriptor, attrs As Attribute())" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; PropertyDescriptor(System::ComponentModel::MemberDescriptor ^ descr, cli::array &lt;Attribute ^&gt; ^ attrs);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -161,6 +177,8 @@
       <MemberSignature Language="C#" Value="protected PropertyDescriptor (string name, Attribute[] attrs);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(string name, class System.Attribute[] attrs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyDescriptor.#ctor(System.String,System.Attribute[])" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (name As String, attrs As Attribute())" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; PropertyDescriptor(System::String ^ name, cli::array &lt;Attribute ^&gt; ^ attrs);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -192,6 +210,8 @@
       <MemberSignature Language="C#" Value="public virtual void AddValueChanged (object component, EventHandler handler);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddValueChanged(object component, class System.EventHandler handler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyDescriptor.AddValueChanged(System.Object,System.EventHandler)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub AddValueChanged (component As Object, handler As EventHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddValueChanged(System::Object ^ component, EventHandler ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -227,6 +247,8 @@
       <MemberSignature Language="C#" Value="public abstract bool CanResetValue (object component);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanResetValue(object component) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyDescriptor.CanResetValue(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function CanResetValue (component As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool CanResetValue(System::Object ^ component);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -271,6 +293,8 @@
       <MemberSignature Language="C#" Value="public abstract Type ComponentType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type ComponentType" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.PropertyDescriptor.ComponentType" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ComponentType As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property Type ^ ComponentType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -306,6 +330,8 @@
       <MemberSignature Language="C#" Value="public virtual System.ComponentModel.TypeConverter Converter { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.TypeConverter Converter" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.PropertyDescriptor.Converter" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Converter As TypeConverter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::TypeConverter ^ Converter { System::ComponentModel::TypeConverter ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -335,6 +361,7 @@
       <MemberSignature Language="C#" Value="protected object CreateInstance (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance object CreateInstance(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyDescriptor.CreateInstance(System.Type)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Object ^ CreateInstance(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -379,6 +406,8 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyDescriptor.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -412,6 +441,8 @@
       <MemberSignature Language="C#" Value="protected override void FillAttributes (System.Collections.IList attributeList);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void FillAttributes(class System.Collections.IList attributeList) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyDescriptor.FillAttributes(System.Collections.IList)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub FillAttributes (attributeList As IList)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void FillAttributes(System::Collections::IList ^ attributeList);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -446,10 +477,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetChildProperties">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a <see cref="T:System.ComponentModel.PropertyDescriptorCollection" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetChildProperties">
       <MemberSignature Language="C#" Value="public System.ComponentModel.PropertyDescriptorCollection GetChildProperties ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ComponentModel.PropertyDescriptorCollection GetChildProperties() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyDescriptor.GetChildProperties" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetChildProperties () As PropertyDescriptorCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::PropertyDescriptorCollection ^ GetChildProperties();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -503,6 +546,8 @@
       <MemberSignature Language="C#" Value="public System.ComponentModel.PropertyDescriptorCollection GetChildProperties (Attribute[] filter);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ComponentModel.PropertyDescriptorCollection GetChildProperties(class System.Attribute[] filter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyDescriptor.GetChildProperties(System.Attribute[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetChildProperties (filter As Attribute()) As PropertyDescriptorCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::PropertyDescriptorCollection ^ GetChildProperties(cli::array &lt;Attribute ^&gt; ^ filter);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -559,6 +604,8 @@
       <MemberSignature Language="C#" Value="public System.ComponentModel.PropertyDescriptorCollection GetChildProperties (object instance);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ComponentModel.PropertyDescriptorCollection GetChildProperties(object instance) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyDescriptor.GetChildProperties(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetChildProperties (instance As Object) As PropertyDescriptorCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::PropertyDescriptorCollection ^ GetChildProperties(System::Object ^ instance);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -615,6 +662,8 @@
       <MemberSignature Language="C#" Value="public virtual System.ComponentModel.PropertyDescriptorCollection GetChildProperties (object instance, Attribute[] filter);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ComponentModel.PropertyDescriptorCollection GetChildProperties(object instance, class System.Attribute[] filter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyDescriptor.GetChildProperties(System.Object,System.Attribute[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetChildProperties (instance As Object, filter As Attribute()) As PropertyDescriptorCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ComponentModel::PropertyDescriptorCollection ^ GetChildProperties(System::Object ^ instance, cli::array &lt;Attribute ^&gt; ^ filter);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -673,6 +722,8 @@
       <MemberSignature Language="C#" Value="public virtual object GetEditor (Type editorBaseType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetEditor(class System.Type editorBaseType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyDescriptor.GetEditor(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEditor (editorBaseType As Type) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ GetEditor(Type ^ editorBaseType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -705,6 +756,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyDescriptor.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -734,6 +787,7 @@
       <MemberSignature Language="C#" Value="protected override object GetInvocationTarget (Type type, object instance);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object GetInvocationTarget(class System.Type type, object instance) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyDescriptor.GetInvocationTarget(System.Type,System.Object)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetInvocationTarget(Type ^ type, System::Object ^ instance);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -775,6 +829,8 @@
       <MemberSignature Language="C#" Value="protected Type GetTypeFromName (string typeName);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Type GetTypeFromName(string typeName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyDescriptor.GetTypeFromName(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function GetTypeFromName (typeName As String) As Type" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; Type ^ GetTypeFromName(System::String ^ typeName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -814,6 +870,8 @@
       <MemberSignature Language="C#" Value="public abstract object GetValue (object component);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetValue(object component) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyDescriptor.GetValue(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetValue (component As Object) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Object ^ GetValue(System::Object ^ component);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -855,9 +913,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetValueChangedHandler">
-      <MemberSignature Language="C#" Value="protected EventHandler GetValueChangedHandler (object component);" />
+      <MemberSignature Language="C#" Value="protected internal EventHandler GetValueChangedHandler (object component);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance class System.EventHandler GetValueChangedHandler(object component) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyDescriptor.GetValueChangedHandler(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Function GetValueChangedHandler (component As Object) As EventHandler" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; EventHandler ^ GetValueChangedHandler(System::Object ^ component);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -890,6 +950,8 @@
       <MemberSignature Language="C#" Value="public virtual bool IsLocalizable { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsLocalizable" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.PropertyDescriptor.IsLocalizable" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsLocalizable As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsLocalizable { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -927,6 +989,8 @@
       <MemberSignature Language="C#" Value="public abstract bool IsReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.PropertyDescriptor.IsReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property IsReadOnly As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -957,6 +1021,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnValueChanged (object component, EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnValueChanged(object component, class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyDescriptor.OnValueChanged(System.Object,System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnValueChanged (component As Object, e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnValueChanged(System::Object ^ component, EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -997,6 +1063,8 @@
       <MemberSignature Language="C#" Value="public abstract Type PropertyType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type PropertyType" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.PropertyDescriptor.PropertyType" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property PropertyType As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property Type ^ PropertyType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -1032,6 +1100,8 @@
       <MemberSignature Language="C#" Value="public virtual void RemoveValueChanged (object component, EventHandler handler);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveValueChanged(object component, class System.EventHandler handler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyDescriptor.RemoveValueChanged(System.Object,System.EventHandler)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub RemoveValueChanged (component As Object, handler As EventHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveValueChanged(System::Object ^ component, EventHandler ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -1067,6 +1137,8 @@
       <MemberSignature Language="C#" Value="public abstract void ResetValue (object component);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ResetValue(object component) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyDescriptor.ResetValue(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub ResetValue (component As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void ResetValue(System::Object ^ component);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -1131,6 +1203,8 @@
       <MemberSignature Language="C#" Value="public System.ComponentModel.DesignerSerializationVisibility SerializationVisibility { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ComponentModel.DesignerSerializationVisibility SerializationVisibility" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.PropertyDescriptor.SerializationVisibility" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SerializationVisibility As DesignerSerializationVisibility" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::DesignerSerializationVisibility SerializationVisibility { System::ComponentModel::DesignerSerializationVisibility get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -1161,6 +1235,8 @@
       <MemberSignature Language="C#" Value="public abstract void SetValue (object component, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetValue(object component, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyDescriptor.SetValue(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub SetValue (component As Object, value As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void SetValue(System::Object ^ component, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -1219,6 +1295,8 @@
       <MemberSignature Language="C#" Value="public abstract bool ShouldSerializeValue (object component);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ShouldSerializeValue(object component) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyDescriptor.ShouldSerializeValue(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function ShouldSerializeValue (component As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool ShouldSerializeValue(System::Object ^ component);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -1266,6 +1344,8 @@
       <MemberSignature Language="C#" Value="public virtual bool SupportsChangeEvents { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SupportsChangeEvents" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.PropertyDescriptor.SupportsChangeEvents" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SupportsChangeEvents As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsChangeEvents { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -1298,25 +1378,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.PropertyDescriptor" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetChildProperties">
-      <AssemblyInfo>
-        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a <see cref="T:System.ComponentModel.PropertyDescriptorCollection" />.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

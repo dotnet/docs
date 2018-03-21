@@ -1,7 +1,9 @@
-<Type Name="Runtime" FullName="Mono.Runtime">
+﻿<Type Name="Runtime" FullName="Mono.Runtime">
   <TypeSignature Language="C#" Value="public static class Runtime" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Runtime extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Mono.Runtime" />
+  <TypeSignature Language="VB.NET" Value="Public Class Runtime" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Runtime abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -20,6 +22,8 @@
       <MemberSignature Language="C#" Value="public static string GetDisplayName ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetDisplayName() cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.Runtime.GetDisplayName" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetDisplayName () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetDisplayName();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -40,6 +44,8 @@
       <MemberSignature Language="C#" Value="public static void InstallSignalHandlers ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void InstallSignalHandlers() cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.Runtime.InstallSignalHandlers" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub InstallSignalHandlers ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void InstallSignalHandlers();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -59,6 +65,8 @@
       <MemberSignature Language="C#" Value="public static void RemoveSignalHandlers ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RemoveSignalHandlers() cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.Runtime.RemoveSignalHandlers" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveSignalHandlers ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveSignalHandlers();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -78,6 +86,8 @@
       <MemberSignature Language="C#" Value="public static bool SetGCAllowSynchronousMajor (bool flag);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool SetGCAllowSynchronousMajor(bool flag) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.Runtime.SetGCAllowSynchronousMajor(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SetGCAllowSynchronousMajor (flag As Boolean) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool SetGCAllowSynchronousMajor(bool flag);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

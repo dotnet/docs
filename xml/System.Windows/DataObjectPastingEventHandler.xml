@@ -1,7 +1,9 @@
-<Type Name="DataObjectPastingEventHandler" FullName="System.Windows.DataObjectPastingEventHandler">
+﻿<Type Name="DataObjectPastingEventHandler" FullName="System.Windows.DataObjectPastingEventHandler">
   <TypeSignature Language="C#" Value="public delegate void DataObjectPastingEventHandler(object sender, DataObjectPastingEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataObjectPastingEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.DataObjectPastingEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub DataObjectPastingEventHandler(sender As Object, e As DataObjectPastingEventArgs)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void DataObjectPastingEventHandler(System::Object ^ sender, DataObjectPastingEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

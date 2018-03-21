@@ -1,7 +1,9 @@
-<Type Name="InstanceOwnerQueryResult" FullName="System.Runtime.DurableInstancing.InstanceOwnerQueryResult">
+﻿<Type Name="InstanceOwnerQueryResult" FullName="System.Runtime.DurableInstancing.InstanceOwnerQueryResult">
   <TypeSignature Language="C#" Value="public sealed class InstanceOwnerQueryResult : System.Runtime.DurableInstancing.InstanceStoreQueryResult" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit InstanceOwnerQueryResult extends System.Runtime.DurableInstancing.InstanceStoreQueryResult" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.DurableInstancing.InstanceOwnerQueryResult" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class InstanceOwnerQueryResult&#xA;Inherits InstanceStoreQueryResult" />
+  <TypeSignature Language="C++ CLI" Value="public ref class InstanceOwnerQueryResult sealed : System::Runtime::DurableInstancing::InstanceStoreQueryResult" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,10 +17,21 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes an instance of the <see cref="T:System.Runtime.DurableInstancing.InstanceOwnerQueryResult" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public InstanceOwnerQueryResult ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstanceOwnerQueryResult.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InstanceOwnerQueryResult();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -34,6 +47,8 @@
       <MemberSignature Language="C#" Value="public InstanceOwnerQueryResult (System.Collections.Generic.IDictionary&lt;Guid,System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName,System.Runtime.DurableInstancing.InstanceValue&gt;&gt; instanceOwners);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IDictionary`2&lt;valuetype System.Guid, class System.Collections.Generic.IDictionary`2&lt;class System.Xml.Linq.XName, class System.Runtime.DurableInstancing.InstanceValue&gt;&gt; instanceOwners) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstanceOwnerQueryResult.#ctor(System.Collections.Generic.IDictionary{System.Guid,System.Collections.Generic.IDictionary{System.Xml.Linq.XName,System.Runtime.DurableInstancing.InstanceValue}})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (instanceOwners As IDictionary(Of Guid, IDictionary(Of XName, InstanceValue)))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InstanceOwnerQueryResult(System::Collections::Generic::IDictionary&lt;Guid, System::Collections::Generic::IDictionary&lt;System::Xml::Linq::XName ^, System::Runtime::DurableInstancing::InstanceValue ^&gt; ^&gt; ^ instanceOwners);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -52,6 +67,8 @@
       <MemberSignature Language="C#" Value="public InstanceOwnerQueryResult (Guid instanceOwnerId, System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName,System.Runtime.DurableInstancing.InstanceValue&gt; metadata);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Guid instanceOwnerId, class System.Collections.Generic.IDictionary`2&lt;class System.Xml.Linq.XName, class System.Runtime.DurableInstancing.InstanceValue&gt; metadata) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstanceOwnerQueryResult.#ctor(System.Guid,System.Collections.Generic.IDictionary{System.Xml.Linq.XName,System.Runtime.DurableInstancing.InstanceValue})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (instanceOwnerId As Guid, metadata As IDictionary(Of XName, InstanceValue))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InstanceOwnerQueryResult(Guid instanceOwnerId, System::Collections::Generic::IDictionary&lt;System::Xml::Linq::XName ^, System::Runtime::DurableInstancing::InstanceValue ^&gt; ^ metadata);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -72,6 +89,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;Guid,System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName,System.Runtime.DurableInstancing.InstanceValue&gt;&gt; InstanceOwners { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;valuetype System.Guid, class System.Collections.Generic.IDictionary`2&lt;class System.Xml.Linq.XName, class System.Runtime.DurableInstancing.InstanceValue&gt;&gt; InstanceOwners" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.DurableInstancing.InstanceOwnerQueryResult.InstanceOwners" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InstanceOwners As IDictionary(Of Guid, IDictionary(Of XName, InstanceValue))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;Guid, System::Collections::Generic::IDictionary&lt;System::Xml::Linq::XName ^, System::Runtime::DurableInstancing::InstanceValue ^&gt; ^&gt; ^ InstanceOwners { System::Collections::Generic::IDictionary&lt;Guid, System::Collections::Generic::IDictionary&lt;System::Xml::Linq::XName ^, System::Runtime::DurableInstancing::InstanceValue ^&gt; ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -86,14 +105,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes an instance of the <see cref="T:System.Runtime.DurableInstancing.InstanceOwnerQueryResult" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

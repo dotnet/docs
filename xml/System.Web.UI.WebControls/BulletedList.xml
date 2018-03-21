@@ -1,7 +1,9 @@
-<Type Name="BulletedList" FullName="System.Web.UI.WebControls.BulletedList">
+﻿<Type Name="BulletedList" FullName="System.Web.UI.WebControls.BulletedList">
   <TypeSignature Language="C#" Value="public class BulletedList : System.Web.UI.WebControls.ListControl, System.Web.UI.IPostBackEventHandler" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BulletedList extends System.Web.UI.WebControls.ListControl implements class System.Web.UI.IPostBackEventHandler" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.BulletedList" />
+  <TypeSignature Language="VB.NET" Value="Public Class BulletedList&#xA;Inherits ListControl&#xA;Implements IPostBackEventHandler" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BulletedList : System::Web::UI::WebControls::ListControl, System::Web::UI::IPostBackEventHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -174,6 +176,8 @@
       <MemberSignature Language="C#" Value="public BulletedList ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.BulletedList.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BulletedList();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -204,6 +208,8 @@
       <MemberSignature Language="C#" Value="protected override void AddAttributesToRender (System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void AddAttributesToRender(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.BulletedList.AddAttributesToRender(System.Web.UI.HtmlTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub AddAttributesToRender (writer As HtmlTextWriter)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void AddAttributesToRender(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -236,6 +242,8 @@
       <MemberSignature Language="C#" Value="public override bool AutoPostBack { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AutoPostBack" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.BulletedList.AutoPostBack" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property AutoPostBack As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AutoPostBack { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -281,6 +289,8 @@
       <MemberSignature Language="C#" Value="public virtual string BulletImageUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string BulletImageUrl" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.BulletedList.BulletImageUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property BulletImageUrl As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ BulletImageUrl { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -353,6 +363,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.BulletStyle BulletStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.BulletStyle BulletStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.BulletedList.BulletStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property BulletStyle As BulletStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::BulletStyle BulletStyle { System::Web::UI::WebControls::BulletStyle get(); void set(System::Web::UI::WebControls::BulletStyle value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -414,6 +426,8 @@
       <MemberSignature Language="C#" Value="public event System.Web.UI.WebControls.BulletedListEventHandler Click;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Web.UI.WebControls.BulletedListEventHandler Click" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.BulletedList.Click" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Click As BulletedListEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::BulletedListEventHandler ^ Click;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -449,6 +463,8 @@
       <MemberSignature Language="C#" Value="public override System.Web.UI.ControlCollection Controls { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.ControlCollection Controls" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.BulletedList.Controls" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Controls As ControlCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ControlCollection ^ Controls { System::Web::UI::ControlCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -476,6 +492,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.BulletedListDisplayMode DisplayMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.BulletedListDisplayMode DisplayMode" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.BulletedList.DisplayMode" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property DisplayMode As BulletedListDisplayMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::BulletedListDisplayMode DisplayMode { System::Web::UI::WebControls::BulletedListDisplayMode get(); void set(System::Web::UI::WebControls::BulletedListDisplayMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -530,6 +548,8 @@
       <MemberSignature Language="C#" Value="public virtual int FirstBulletNumber { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 FirstBulletNumber" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.BulletedList.FirstBulletNumber" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property FirstBulletNumber As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int FirstBulletNumber { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -574,6 +594,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnClick (System.Web.UI.WebControls.BulletedListEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnClick(class System.Web.UI.WebControls.BulletedListEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.BulletedList.OnClick(System.Web.UI.WebControls.BulletedListEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnClick (e As BulletedListEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnClick(System::Web::UI::WebControls::BulletedListEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -618,7 +640,12 @@
       <MemberSignature Language="C#" Value="protected virtual void RaisePostBackEvent (string eventArgument);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RaisePostBackEvent(string eventArgument) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.BulletedList.RaisePostBackEvent(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RaisePostBackEvent (eventArgument As String)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RaisePostBackEvent(System::String ^ eventArgument);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -648,9 +675,11 @@
       </Docs>
     </Member>
     <Member MemberName="Render">
-      <MemberSignature Language="C#" Value="protected override void Render (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="C#" Value="protected internal override void Render (System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void Render(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.BulletedList.Render(System.Web.UI.HtmlTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Render (writer As HtmlTextWriter)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Render(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -683,6 +712,8 @@
       <MemberSignature Language="C#" Value="protected virtual void RenderBulletText (System.Web.UI.WebControls.ListItem item, int index, System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RenderBulletText(class System.Web.UI.WebControls.ListItem item, int32 index, class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.BulletedList.RenderBulletText(System.Web.UI.WebControls.ListItem,System.Int32,System.Web.UI.HtmlTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RenderBulletText (item As ListItem, index As Integer, writer As HtmlTextWriter)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RenderBulletText(System::Web::UI::WebControls::ListItem ^ item, int index, System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -714,9 +745,11 @@
       </Docs>
     </Member>
     <Member MemberName="RenderContents">
-      <MemberSignature Language="C#" Value="protected override void RenderContents (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="C#" Value="protected internal override void RenderContents (System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void RenderContents(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.BulletedList.RenderContents(System.Web.UI.HtmlTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub RenderContents (writer As HtmlTextWriter)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void RenderContents(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -747,6 +780,8 @@
       <MemberSignature Language="C#" Value="public virtual bool RenderWhenDataEmpty { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool RenderWhenDataEmpty" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.BulletedList.RenderWhenDataEmpty" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property RenderWhenDataEmpty As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool RenderWhenDataEmpty { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -774,6 +809,8 @@
       <MemberSignature Language="C#" Value="public override int SelectedIndex { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 SelectedIndex" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.BulletedList.SelectedIndex" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property SelectedIndex As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int SelectedIndex { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -815,6 +852,8 @@
       <MemberSignature Language="C#" Value="public override System.Web.UI.WebControls.ListItem SelectedItem { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.ListItem SelectedItem" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.BulletedList.SelectedItem" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property SelectedItem As ListItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::ListItem ^ SelectedItem { System::Web::UI::WebControls::ListItem ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -852,6 +891,8 @@
       <MemberSignature Language="C#" Value="public override string SelectedValue { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SelectedValue" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.BulletedList.SelectedValue" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property SelectedValue As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ SelectedValue { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -892,7 +933,12 @@
       <MemberSignature Language="C#" Value="void IPostBackEventHandler.RaisePostBackEvent (string eventArgument);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(string eventArgument) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.BulletedList.System#Web#UI#IPostBackEventHandler#RaisePostBackEvent(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Sub RaisePostBackEvent (eventArgument As String) Implements IPostBackEventHandler.RaisePostBackEvent" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(System::String ^ eventArgument) = System::Web::UI::IPostBackEventHandler::RaisePostBackEvent;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -921,6 +967,8 @@
       <MemberSignature Language="C#" Value="protected override System.Web.UI.HtmlTextWriterTag TagKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.HtmlTextWriterTag TagKey" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.BulletedList.TagKey" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property TagKey As HtmlTextWriterTag" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Web::UI::HtmlTextWriterTag TagKey { System::Web::UI::HtmlTextWriterTag get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -947,6 +995,8 @@
       <MemberSignature Language="C#" Value="public virtual string Target { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Target" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.BulletedList.Target" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Target As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Target { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1011,6 +1061,8 @@
       <MemberSignature Language="C#" Value="public override string Text { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Text" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.BulletedList.Text" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Text As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

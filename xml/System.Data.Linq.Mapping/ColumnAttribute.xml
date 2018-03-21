@@ -1,7 +1,9 @@
-<Type Name="ColumnAttribute" FullName="System.Data.Linq.Mapping.ColumnAttribute">
+﻿<Type Name="ColumnAttribute" FullName="System.Data.Linq.Mapping.ColumnAttribute">
   <TypeSignature Language="C#" Value="public sealed class ColumnAttribute : System.Data.Linq.Mapping.DataAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ColumnAttribute extends System.Data.Linq.Mapping.DataAttribute" />
   <TypeSignature Language="DocId" Value="T:System.Data.Linq.Mapping.ColumnAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ColumnAttribute&#xA;Inherits DataAttribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ColumnAttribute sealed : System::Data::Linq::Mapping::DataAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Linq</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -12,7 +14,7 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.AttributeUsage(System.AttributeTargets.Property | System.AttributeTargets.Field, AllowMultiple=false)</AttributeName>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Field | System.AttributeTargets.Property, AllowMultiple=false)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -89,6 +91,8 @@ public class Employees
       <MemberSignature Language="C#" Value="public ColumnAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.Mapping.ColumnAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ColumnAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -104,6 +108,8 @@ public class Employees
       <MemberSignature Language="C#" Value="public System.Data.Linq.Mapping.AutoSync AutoSync { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.Linq.Mapping.AutoSync AutoSync" />
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.ColumnAttribute.AutoSync" />
+      <MemberSignature Language="VB.NET" Value="Public Property AutoSync As AutoSync" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Linq::Mapping::AutoSync AutoSync { System::Data::Linq::Mapping::AutoSync get(); void set(System::Data::Linq::Mapping::AutoSync value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -130,6 +136,8 @@ public class Employees
       <MemberSignature Language="C#" Value="public bool CanBeNull { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanBeNull" />
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.ColumnAttribute.CanBeNull" />
+      <MemberSignature Language="VB.NET" Value="Public Property CanBeNull As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanBeNull { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -164,6 +172,8 @@ public class Employees
       <MemberSignature Language="C#" Value="public string DbType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DbType" />
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.ColumnAttribute.DbType" />
+      <MemberSignature Language="VB.NET" Value="Public Property DbType As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DbType { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -197,6 +207,8 @@ public class Employees
       <MemberSignature Language="C#" Value="public string Expression { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Expression" />
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.ColumnAttribute.Expression" />
+      <MemberSignature Language="VB.NET" Value="Public Property Expression As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Expression { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -233,6 +245,8 @@ public class Employees
       <MemberSignature Language="C#" Value="public bool IsDbGenerated { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsDbGenerated" />
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsDbGenerated As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDbGenerated { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -267,6 +281,8 @@ public class Employees
       <MemberSignature Language="C#" Value="public bool IsDiscriminator { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsDiscriminator" />
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.ColumnAttribute.IsDiscriminator" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsDiscriminator As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDiscriminator { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -300,6 +316,8 @@ public class Employees
       <MemberSignature Language="C#" Value="public bool IsPrimaryKey { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsPrimaryKey" />
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.ColumnAttribute.IsPrimaryKey" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsPrimaryKey As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsPrimaryKey { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -336,6 +354,8 @@ public class Employees
       <MemberSignature Language="C#" Value="public bool IsVersion { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsVersion" />
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.ColumnAttribute.IsVersion" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsVersion As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsVersion { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -373,6 +393,8 @@ public class Employees
       <MemberSignature Language="C#" Value="public System.Data.Linq.Mapping.UpdateCheck UpdateCheck { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.Linq.Mapping.UpdateCheck UpdateCheck" />
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.ColumnAttribute.UpdateCheck" />
+      <MemberSignature Language="VB.NET" Value="Public Property UpdateCheck As UpdateCheck" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Linq::Mapping::UpdateCheck UpdateCheck { System::Data::Linq::Mapping::UpdateCheck get(); void set(System::Data::Linq::Mapping::UpdateCheck value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>

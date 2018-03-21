@@ -1,7 +1,9 @@
-<Type Name="MenuCommandsChangedType" FullName="System.ComponentModel.Design.MenuCommandsChangedType">
+﻿<Type Name="MenuCommandsChangedType" FullName="System.ComponentModel.Design.MenuCommandsChangedType">
   <TypeSignature Language="C#" Value="public enum MenuCommandsChangedType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MenuCommandsChangedType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.MenuCommandsChangedType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum MenuCommandsChangedType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class MenuCommandsChangedType" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +25,8 @@
       <MemberSignature Language="C#" Value="CommandAdded" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.Design.MenuCommandsChangedType CommandAdded = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.MenuCommandsChangedType.CommandAdded" />
+      <MemberSignature Language="VB.NET" Value="CommandAdded" />
+      <MemberSignature Language="C++ CLI" Value="CommandAdded" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -31,6 +35,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.Design.MenuCommandsChangedType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Specifies that one or more command objects were added.</summary>
       </Docs>
@@ -39,6 +44,8 @@
       <MemberSignature Language="C#" Value="CommandChanged" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.Design.MenuCommandsChangedType CommandChanged = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.MenuCommandsChangedType.CommandChanged" />
+      <MemberSignature Language="VB.NET" Value="CommandChanged" />
+      <MemberSignature Language="C++ CLI" Value="CommandChanged" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -47,6 +54,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.Design.MenuCommandsChangedType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Specifies that one or more commands have changed their status.</summary>
       </Docs>
@@ -55,6 +63,8 @@
       <MemberSignature Language="C#" Value="CommandRemoved" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.Design.MenuCommandsChangedType CommandRemoved = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.MenuCommandsChangedType.CommandRemoved" />
+      <MemberSignature Language="VB.NET" Value="CommandRemoved" />
+      <MemberSignature Language="C++ CLI" Value="CommandRemoved" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -63,6 +73,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.Design.MenuCommandsChangedType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Specifies that one or more commands were removed.</summary>
       </Docs>

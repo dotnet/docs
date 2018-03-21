@@ -1,7 +1,9 @@
-<Type Name="DataContractSerializerMessageContractImporter" FullName="System.ServiceModel.Description.DataContractSerializerMessageContractImporter">
+﻿<Type Name="DataContractSerializerMessageContractImporter" FullName="System.ServiceModel.Description.DataContractSerializerMessageContractImporter">
   <TypeSignature Language="C#" Value="public class DataContractSerializerMessageContractImporter : System.ServiceModel.Description.IWsdlImportExtension" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataContractSerializerMessageContractImporter extends System.Object implements class System.ServiceModel.Description.IWsdlImportExtension" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.DataContractSerializerMessageContractImporter" />
+  <TypeSignature Language="VB.NET" Value="Public Class DataContractSerializerMessageContractImporter&#xA;Implements IWsdlImportExtension" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataContractSerializerMessageContractImporter : System::ServiceModel::Description::IWsdlImportExtension" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +33,8 @@
       <MemberSignature Language="C#" Value="public DataContractSerializerMessageContractImporter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.DataContractSerializerMessageContractImporter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataContractSerializerMessageContractImporter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -46,6 +50,8 @@
       <MemberSignature Language="C#" Value="public bool Enabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Enabled" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.DataContractSerializerMessageContractImporter.Enabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property Enabled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Enabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -65,7 +71,12 @@
       <MemberSignature Language="C#" Value="void IWsdlImportExtension.BeforeImport (System.Web.Services.Description.ServiceDescriptionCollection wsdlDocuments, System.Xml.Schema.XmlSchemaSet xmlSchemas, System.Collections.Generic.ICollection&lt;System.Xml.XmlElement&gt; policy);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.Description.IWsdlImportExtension.BeforeImport(class System.Web.Services.Description.ServiceDescriptionCollection wsdlDocuments, class System.Xml.Schema.XmlSchemaSet xmlSchemas, class System.Collections.Generic.ICollection`1&lt;class System.Xml.XmlElement&gt; policy) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.DataContractSerializerMessageContractImporter.System#ServiceModel#Description#IWsdlImportExtension#BeforeImport(System.Web.Services.Description.ServiceDescriptionCollection,System.Xml.Schema.XmlSchemaSet,System.Collections.Generic.ICollection{System.Xml.XmlElement})" />
+      <MemberSignature Language="VB.NET" Value="Sub BeforeImport (wsdlDocuments As ServiceDescriptionCollection, xmlSchemas As XmlSchemaSet, policy As ICollection(Of XmlElement)) Implements IWsdlImportExtension.BeforeImport" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.ServiceModel.Description.IWsdlImportExtension.BeforeImport(System::Web::Services::Description::ServiceDescriptionCollection ^ wsdlDocuments, System::Xml::Schema::XmlSchemaSet ^ xmlSchemas, System::Collections::Generic::ICollection&lt;System::Xml::XmlElement ^&gt; ^ policy) = System::ServiceModel::Description::IWsdlImportExtension::BeforeImport;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Description.IWsdlImportExtension.BeforeImport(System.Web.Services.Description.ServiceDescriptionCollection,System.Xml.Schema.XmlSchemaSet,System.Collections.Generic.ICollection{System.Xml.XmlElement})</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -97,7 +108,12 @@
       <MemberSignature Language="C#" Value="void IWsdlImportExtension.ImportContract (System.ServiceModel.Description.WsdlImporter importer, System.ServiceModel.Description.WsdlContractConversionContext contractContext);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.Description.IWsdlImportExtension.ImportContract(class System.ServiceModel.Description.WsdlImporter importer, class System.ServiceModel.Description.WsdlContractConversionContext contractContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.DataContractSerializerMessageContractImporter.System#ServiceModel#Description#IWsdlImportExtension#ImportContract(System.ServiceModel.Description.WsdlImporter,System.ServiceModel.Description.WsdlContractConversionContext)" />
+      <MemberSignature Language="VB.NET" Value="Sub ImportContract (importer As WsdlImporter, contractContext As WsdlContractConversionContext) Implements IWsdlImportExtension.ImportContract" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.ServiceModel.Description.IWsdlImportExtension.ImportContract(System::ServiceModel::Description::WsdlImporter ^ importer, System::ServiceModel::Description::WsdlContractConversionContext ^ contractContext) = System::ServiceModel::Description::IWsdlImportExtension::ImportContract;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Description.IWsdlImportExtension.ImportContract(System.ServiceModel.Description.WsdlImporter,System.ServiceModel.Description.WsdlContractConversionContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -127,7 +143,12 @@
       <MemberSignature Language="C#" Value="void IWsdlImportExtension.ImportEndpoint (System.ServiceModel.Description.WsdlImporter importer, System.ServiceModel.Description.WsdlEndpointConversionContext endpointContext);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.Description.IWsdlImportExtension.ImportEndpoint(class System.ServiceModel.Description.WsdlImporter importer, class System.ServiceModel.Description.WsdlEndpointConversionContext endpointContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.DataContractSerializerMessageContractImporter.System#ServiceModel#Description#IWsdlImportExtension#ImportEndpoint(System.ServiceModel.Description.WsdlImporter,System.ServiceModel.Description.WsdlEndpointConversionContext)" />
+      <MemberSignature Language="VB.NET" Value="Sub ImportEndpoint (importer As WsdlImporter, endpointContext As WsdlEndpointConversionContext) Implements IWsdlImportExtension.ImportEndpoint" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.ServiceModel.Description.IWsdlImportExtension.ImportEndpoint(System::ServiceModel::Description::WsdlImporter ^ importer, System::ServiceModel::Description::WsdlEndpointConversionContext ^ endpointContext) = System::ServiceModel::Description::IWsdlImportExtension::ImportEndpoint;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Description.IWsdlImportExtension.ImportEndpoint(System.ServiceModel.Description.WsdlImporter,System.ServiceModel.Description.WsdlEndpointConversionContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

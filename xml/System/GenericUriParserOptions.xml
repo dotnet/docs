@@ -1,7 +1,9 @@
-<Type Name="GenericUriParserOptions" FullName="System.GenericUriParserOptions">
+﻿<Type Name="GenericUriParserOptions" FullName="System.GenericUriParserOptions">
   <TypeSignature Language="C#" Value="public enum GenericUriParserOptions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed GenericUriParserOptions extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.GenericUriParserOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Enum GenericUriParserOptions" />
+  <TypeSignature Language="C++ CLI" Value="public enum class GenericUriParserOptions" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -50,6 +52,8 @@
       <MemberSignature Language="C#" Value="AllowEmptyAuthority" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.GenericUriParserOptions AllowEmptyAuthority = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.GenericUriParserOptions.AllowEmptyAuthority" />
+      <MemberSignature Language="VB.NET" Value="AllowEmptyAuthority" />
+      <MemberSignature Language="C++ CLI" Value="AllowEmptyAuthority" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -67,6 +71,7 @@
       <ReturnValue>
         <ReturnType>System.GenericUriParserOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The parser allows a URI with no authority.</summary>
       </Docs>
@@ -75,6 +80,8 @@
       <MemberSignature Language="C#" Value="Default" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.GenericUriParserOptions Default = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.GenericUriParserOptions.Default" />
+      <MemberSignature Language="VB.NET" Value="Default" />
+      <MemberSignature Language="C++ CLI" Value="Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -92,6 +99,7 @@
       <ReturnValue>
         <ReturnType>System.GenericUriParserOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The parser:</summary>
         <remarks>
@@ -113,6 +121,8 @@
       <MemberSignature Language="C#" Value="DontCompressPath" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.GenericUriParserOptions DontCompressPath = int32(128)" />
       <MemberSignature Language="DocId" Value="F:System.GenericUriParserOptions.DontCompressPath" />
+      <MemberSignature Language="VB.NET" Value="DontCompressPath" />
+      <MemberSignature Language="C++ CLI" Value="DontCompressPath" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -130,6 +140,7 @@
       <ReturnValue>
         <ReturnType>System.GenericUriParserOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>128</MemberValue>
       <Docs>
         <summary>The parser does not canonicalize the URI.</summary>
       </Docs>
@@ -138,6 +149,8 @@
       <MemberSignature Language="C#" Value="DontConvertPathBackslashes" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.GenericUriParserOptions DontConvertPathBackslashes = int32(64)" />
       <MemberSignature Language="DocId" Value="F:System.GenericUriParserOptions.DontConvertPathBackslashes" />
+      <MemberSignature Language="VB.NET" Value="DontConvertPathBackslashes" />
+      <MemberSignature Language="C++ CLI" Value="DontConvertPathBackslashes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -155,6 +168,7 @@
       <ReturnValue>
         <ReturnType>System.GenericUriParserOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>64</MemberValue>
       <Docs>
         <summary>The parser does not convert back slashes into forward slashes.</summary>
       </Docs>
@@ -163,6 +177,8 @@
       <MemberSignature Language="C#" Value="DontUnescapePathDotsAndSlashes" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.GenericUriParserOptions DontUnescapePathDotsAndSlashes = int32(256)" />
       <MemberSignature Language="DocId" Value="F:System.GenericUriParserOptions.DontUnescapePathDotsAndSlashes" />
+      <MemberSignature Language="VB.NET" Value="DontUnescapePathDotsAndSlashes" />
+      <MemberSignature Language="C++ CLI" Value="DontUnescapePathDotsAndSlashes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -180,6 +196,7 @@
       <ReturnValue>
         <ReturnType>System.GenericUriParserOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>256</MemberValue>
       <Docs>
         <summary>The parser does not unescape path dots, forward slashes, or back slashes.</summary>
       </Docs>
@@ -188,6 +205,8 @@
       <MemberSignature Language="C#" Value="GenericAuthority" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.GenericUriParserOptions GenericAuthority = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.GenericUriParserOptions.GenericAuthority" />
+      <MemberSignature Language="VB.NET" Value="GenericAuthority" />
+      <MemberSignature Language="C++ CLI" Value="GenericAuthority" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -205,6 +224,7 @@
       <ReturnValue>
         <ReturnType>System.GenericUriParserOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The parser allows a registry-based authority.</summary>
       </Docs>
@@ -213,6 +233,8 @@
       <MemberSignature Language="C#" Value="Idn" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.GenericUriParserOptions Idn = int32(512)" />
       <MemberSignature Language="DocId" Value="F:System.GenericUriParserOptions.Idn" />
+      <MemberSignature Language="VB.NET" Value="Idn" />
+      <MemberSignature Language="C++ CLI" Value="Idn" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -230,6 +252,7 @@
       <ReturnValue>
         <ReturnType>System.GenericUriParserOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>512</MemberValue>
       <Docs>
         <summary>The parser supports Internationalized Domain Name (IDN) parsing (IDN) of host names. Whether IDN is used is dictated by configuration values.</summary>
       </Docs>
@@ -238,6 +261,8 @@
       <MemberSignature Language="C#" Value="IriParsing" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.GenericUriParserOptions IriParsing = int32(1024)" />
       <MemberSignature Language="DocId" Value="F:System.GenericUriParserOptions.IriParsing" />
+      <MemberSignature Language="VB.NET" Value="IriParsing" />
+      <MemberSignature Language="C++ CLI" Value="IriParsing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -255,6 +280,7 @@
       <ReturnValue>
         <ReturnType>System.GenericUriParserOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>1024</MemberValue>
       <Docs>
         <summary>The parser supports the parsing rules specified in RFC 3987 for International Resource Identifiers (IRI). Whether IRI is used is dictated by configuration values.</summary>
       </Docs>
@@ -263,6 +289,8 @@
       <MemberSignature Language="C#" Value="NoFragment" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.GenericUriParserOptions NoFragment = int32(32)" />
       <MemberSignature Language="DocId" Value="F:System.GenericUriParserOptions.NoFragment" />
+      <MemberSignature Language="VB.NET" Value="NoFragment" />
+      <MemberSignature Language="C++ CLI" Value="NoFragment" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -280,6 +308,7 @@
       <ReturnValue>
         <ReturnType>System.GenericUriParserOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>32</MemberValue>
       <Docs>
         <summary>The scheme does not define a fragment part.</summary>
       </Docs>
@@ -288,6 +317,8 @@
       <MemberSignature Language="C#" Value="NoPort" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.GenericUriParserOptions NoPort = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.GenericUriParserOptions.NoPort" />
+      <MemberSignature Language="VB.NET" Value="NoPort" />
+      <MemberSignature Language="C++ CLI" Value="NoPort" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -305,6 +336,7 @@
       <ReturnValue>
         <ReturnType>System.GenericUriParserOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>The scheme does not define a port.</summary>
       </Docs>
@@ -313,6 +345,8 @@
       <MemberSignature Language="C#" Value="NoQuery" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.GenericUriParserOptions NoQuery = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.GenericUriParserOptions.NoQuery" />
+      <MemberSignature Language="VB.NET" Value="NoQuery" />
+      <MemberSignature Language="C++ CLI" Value="NoQuery" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -330,6 +364,7 @@
       <ReturnValue>
         <ReturnType>System.GenericUriParserOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>The scheme does not define a query part.</summary>
       </Docs>
@@ -338,6 +373,8 @@
       <MemberSignature Language="C#" Value="NoUserInfo" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.GenericUriParserOptions NoUserInfo = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.GenericUriParserOptions.NoUserInfo" />
+      <MemberSignature Language="VB.NET" Value="NoUserInfo" />
+      <MemberSignature Language="C++ CLI" Value="NoUserInfo" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -355,6 +392,7 @@
       <ReturnValue>
         <ReturnType>System.GenericUriParserOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The scheme does not define a user information part.</summary>
       </Docs>

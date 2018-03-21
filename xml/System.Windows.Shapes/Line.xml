@@ -1,7 +1,9 @@
-<Type Name="Line" FullName="System.Windows.Shapes.Line">
+﻿<Type Name="Line" FullName="System.Windows.Shapes.Line">
   <TypeSignature Language="C#" Value="public sealed class Line : System.Windows.Shapes.Shape" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Line extends System.Windows.Shapes.Shape" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Shapes.Line" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Line&#xA;Inherits Shape" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Line sealed : System::Windows::Shapes::Shape" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +32,8 @@
       <MemberSignature Language="C#" Value="public Line ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Shapes.Line.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Line();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -45,6 +49,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Media.Geometry DefiningGeometry { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Geometry DefiningGeometry" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Shapes.Line.DefiningGeometry" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DefiningGeometry As Geometry" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Windows::Media::Geometry ^ DefiningGeometry { System::Windows::Media::Geometry ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -63,6 +69,8 @@
       <MemberSignature Language="C#" Value="public double X1 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 X1" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Shapes.Line.X1" />
+      <MemberSignature Language="VB.NET" Value="Public Property X1 As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double X1 { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -109,6 +117,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty X1Property;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty X1Property" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Shapes.Line.X1Property" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly X1Property As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ X1Property;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -127,6 +137,8 @@
       <MemberSignature Language="C#" Value="public double X2 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 X2" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Shapes.Line.X2" />
+      <MemberSignature Language="VB.NET" Value="Public Property X2 As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double X2 { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -173,6 +185,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty X2Property;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty X2Property" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Shapes.Line.X2Property" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly X2Property As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ X2Property;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -191,6 +205,8 @@
       <MemberSignature Language="C#" Value="public double Y1 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 Y1" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Shapes.Line.Y1" />
+      <MemberSignature Language="VB.NET" Value="Public Property Y1 As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Y1 { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -237,6 +253,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty Y1Property;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty Y1Property" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Shapes.Line.Y1Property" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Y1Property As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ Y1Property;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -255,6 +273,8 @@
       <MemberSignature Language="C#" Value="public double Y2 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 Y2" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Shapes.Line.Y2" />
+      <MemberSignature Language="VB.NET" Value="Public Property Y2 As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Y2 { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -301,6 +321,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty Y2Property;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty Y2Property" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Shapes.Line.Y2Property" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Y2Property As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ Y2Property;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

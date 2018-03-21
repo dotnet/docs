@@ -1,7 +1,9 @@
-<Type Name="PrimitiveTypeKind" FullName="System.Data.Metadata.Edm.PrimitiveTypeKind">
+﻿<Type Name="PrimitiveTypeKind" FullName="System.Data.Metadata.Edm.PrimitiveTypeKind">
   <TypeSignature Language="C#" Value="public enum PrimitiveTypeKind" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PrimitiveTypeKind extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.PrimitiveTypeKind" />
+  <TypeSignature Language="VB.NET" Value="Public Enum PrimitiveTypeKind" />
+  <TypeSignature Language="C++ CLI" Value="public enum class PrimitiveTypeKind" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +27,8 @@
       <MemberSignature Language="C#" Value="Binary" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.PrimitiveTypeKind Binary = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.Binary" />
+      <MemberSignature Language="VB.NET" Value="Binary" />
+      <MemberSignature Language="C++ CLI" Value="Binary" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -33,6 +37,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The Binary type.</summary>
       </Docs>
@@ -41,6 +46,8 @@
       <MemberSignature Language="C#" Value="Boolean" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.PrimitiveTypeKind Boolean = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.Boolean" />
+      <MemberSignature Language="VB.NET" Value="Boolean" />
+      <MemberSignature Language="C++ CLI" Value="Boolean" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -49,6 +56,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The Boolean type.</summary>
       </Docs>
@@ -57,6 +65,8 @@
       <MemberSignature Language="C#" Value="Byte" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.PrimitiveTypeKind Byte = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.Byte" />
+      <MemberSignature Language="VB.NET" Value="Byte" />
+      <MemberSignature Language="C++ CLI" Value="Byte" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -65,6 +75,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The Byte type.</summary>
       </Docs>
@@ -73,6 +84,8 @@
       <MemberSignature Language="C#" Value="DateTime" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.PrimitiveTypeKind DateTime = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.DateTime" />
+      <MemberSignature Language="VB.NET" Value="DateTime" />
+      <MemberSignature Language="C++ CLI" Value="DateTime" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -81,6 +94,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The DateTime type.</summary>
       </Docs>
@@ -89,6 +103,8 @@
       <MemberSignature Language="C#" Value="DateTimeOffset" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.PrimitiveTypeKind DateTimeOffset = int32(14)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.DateTimeOffset" />
+      <MemberSignature Language="VB.NET" Value="DateTimeOffset" />
+      <MemberSignature Language="C++ CLI" Value="DateTimeOffset" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -97,6 +113,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
+      <MemberValue>14</MemberValue>
       <Docs>
         <summary>The DateTimeOffset type.</summary>
       </Docs>
@@ -105,6 +122,8 @@
       <MemberSignature Language="C#" Value="Decimal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.PrimitiveTypeKind Decimal = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.Decimal" />
+      <MemberSignature Language="VB.NET" Value="Decimal" />
+      <MemberSignature Language="C++ CLI" Value="Decimal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -113,6 +132,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The Decimal type.</summary>
       </Docs>
@@ -121,6 +141,8 @@
       <MemberSignature Language="C#" Value="Double" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.PrimitiveTypeKind Double = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.Double" />
+      <MemberSignature Language="VB.NET" Value="Double" />
+      <MemberSignature Language="C++ CLI" Value="Double" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -129,6 +151,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>The Double type.</summary>
       </Docs>
@@ -137,6 +160,8 @@
       <MemberSignature Language="C#" Value="Geography" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.PrimitiveTypeKind Geography = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.Geography" />
+      <MemberSignature Language="VB.NET" Value="Geography" />
+      <MemberSignature Language="C++ CLI" Value="Geography" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -145,6 +170,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>The Geography type.</summary>
       </Docs>
@@ -153,6 +179,8 @@
       <MemberSignature Language="C#" Value="GeographyCollection" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.PrimitiveTypeKind GeographyCollection = int32(30)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.GeographyCollection" />
+      <MemberSignature Language="VB.NET" Value="GeographyCollection" />
+      <MemberSignature Language="C++ CLI" Value="GeographyCollection" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -161,6 +189,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
+      <MemberValue>30</MemberValue>
       <Docs>
         <summary>The Geographic collection type.</summary>
       </Docs>
@@ -169,6 +198,8 @@
       <MemberSignature Language="C#" Value="GeographyLineString" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.PrimitiveTypeKind GeographyLineString = int32(25)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.GeographyLineString" />
+      <MemberSignature Language="VB.NET" Value="GeographyLineString" />
+      <MemberSignature Language="C++ CLI" Value="GeographyLineString" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -177,6 +208,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
+      <MemberValue>25</MemberValue>
       <Docs>
         <summary>The Geographic line string type.</summary>
       </Docs>
@@ -185,6 +217,8 @@
       <MemberSignature Language="C#" Value="GeographyMultiLineString" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.PrimitiveTypeKind GeographyMultiLineString = int32(28)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.GeographyMultiLineString" />
+      <MemberSignature Language="VB.NET" Value="GeographyMultiLineString" />
+      <MemberSignature Language="C++ CLI" Value="GeographyMultiLineString" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -193,6 +227,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
+      <MemberValue>28</MemberValue>
       <Docs>
         <summary>The Geographic multi-line string type.</summary>
       </Docs>
@@ -201,6 +236,8 @@
       <MemberSignature Language="C#" Value="GeographyMultiPoint" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.PrimitiveTypeKind GeographyMultiPoint = int32(27)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.GeographyMultiPoint" />
+      <MemberSignature Language="VB.NET" Value="GeographyMultiPoint" />
+      <MemberSignature Language="C++ CLI" Value="GeographyMultiPoint" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -209,6 +246,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
+      <MemberValue>27</MemberValue>
       <Docs>
         <summary>The Geographic multi-point type.</summary>
       </Docs>
@@ -217,6 +255,8 @@
       <MemberSignature Language="C#" Value="GeographyMultiPolygon" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.PrimitiveTypeKind GeographyMultiPolygon = int32(29)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.GeographyMultiPolygon" />
+      <MemberSignature Language="VB.NET" Value="GeographyMultiPolygon" />
+      <MemberSignature Language="C++ CLI" Value="GeographyMultiPolygon" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -225,6 +265,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
+      <MemberValue>29</MemberValue>
       <Docs>
         <summary>The Geographic multi-polygon type.</summary>
       </Docs>
@@ -233,6 +274,8 @@
       <MemberSignature Language="C#" Value="GeographyPoint" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.PrimitiveTypeKind GeographyPoint = int32(24)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.GeographyPoint" />
+      <MemberSignature Language="VB.NET" Value="GeographyPoint" />
+      <MemberSignature Language="C++ CLI" Value="GeographyPoint" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -241,6 +284,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
+      <MemberValue>24</MemberValue>
       <Docs>
         <summary>The Geographic point type.</summary>
       </Docs>
@@ -249,6 +293,8 @@
       <MemberSignature Language="C#" Value="GeographyPolygon" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.PrimitiveTypeKind GeographyPolygon = int32(26)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.GeographyPolygon" />
+      <MemberSignature Language="VB.NET" Value="GeographyPolygon" />
+      <MemberSignature Language="C++ CLI" Value="GeographyPolygon" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -257,6 +303,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
+      <MemberValue>26</MemberValue>
       <Docs>
         <summary>The Geographic polygon type.</summary>
       </Docs>
@@ -265,6 +312,8 @@
       <MemberSignature Language="C#" Value="Geometry" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.PrimitiveTypeKind Geometry = int32(15)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.Geometry" />
+      <MemberSignature Language="VB.NET" Value="Geometry" />
+      <MemberSignature Language="C++ CLI" Value="Geometry" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -273,6 +322,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
+      <MemberValue>15</MemberValue>
       <Docs>
         <summary>The Geometry Type.</summary>
       </Docs>
@@ -281,6 +331,8 @@
       <MemberSignature Language="C#" Value="GeometryCollection" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.PrimitiveTypeKind GeometryCollection = int32(23)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.GeometryCollection" />
+      <MemberSignature Language="VB.NET" Value="GeometryCollection" />
+      <MemberSignature Language="C++ CLI" Value="GeometryCollection" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -289,6 +341,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
+      <MemberValue>23</MemberValue>
       <Docs>
         <summary>The Geometric collection type.</summary>
       </Docs>
@@ -297,6 +350,8 @@
       <MemberSignature Language="C#" Value="GeometryLineString" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.PrimitiveTypeKind GeometryLineString = int32(18)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.GeometryLineString" />
+      <MemberSignature Language="VB.NET" Value="GeometryLineString" />
+      <MemberSignature Language="C++ CLI" Value="GeometryLineString" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -305,6 +360,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
+      <MemberValue>18</MemberValue>
       <Docs>
         <summary>The Geometric line string type.</summary>
       </Docs>
@@ -313,6 +369,8 @@
       <MemberSignature Language="C#" Value="GeometryMultiLineString" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.PrimitiveTypeKind GeometryMultiLineString = int32(21)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.GeometryMultiLineString" />
+      <MemberSignature Language="VB.NET" Value="GeometryMultiLineString" />
+      <MemberSignature Language="C++ CLI" Value="GeometryMultiLineString" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -321,6 +379,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
+      <MemberValue>21</MemberValue>
       <Docs>
         <summary>The Geometric multi-line string type.</summary>
       </Docs>
@@ -329,6 +388,8 @@
       <MemberSignature Language="C#" Value="GeometryMultiPoint" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.PrimitiveTypeKind GeometryMultiPoint = int32(20)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.GeometryMultiPoint" />
+      <MemberSignature Language="VB.NET" Value="GeometryMultiPoint" />
+      <MemberSignature Language="C++ CLI" Value="GeometryMultiPoint" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -337,6 +398,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
+      <MemberValue>20</MemberValue>
       <Docs>
         <summary>The Geometric multi-point type.</summary>
       </Docs>
@@ -345,6 +407,8 @@
       <MemberSignature Language="C#" Value="GeometryMultiPolygon" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.PrimitiveTypeKind GeometryMultiPolygon = int32(22)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.GeometryMultiPolygon" />
+      <MemberSignature Language="VB.NET" Value="GeometryMultiPolygon" />
+      <MemberSignature Language="C++ CLI" Value="GeometryMultiPolygon" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -353,6 +417,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
+      <MemberValue>22</MemberValue>
       <Docs>
         <summary>The Geometric multi-polygon type.</summary>
       </Docs>
@@ -361,6 +426,8 @@
       <MemberSignature Language="C#" Value="GeometryPoint" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.PrimitiveTypeKind GeometryPoint = int32(17)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.GeometryPoint" />
+      <MemberSignature Language="VB.NET" Value="GeometryPoint" />
+      <MemberSignature Language="C++ CLI" Value="GeometryPoint" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -369,6 +436,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
+      <MemberValue>17</MemberValue>
       <Docs>
         <summary>The Geometric point type.</summary>
       </Docs>
@@ -377,6 +445,8 @@
       <MemberSignature Language="C#" Value="GeometryPolygon" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.PrimitiveTypeKind GeometryPolygon = int32(19)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.GeometryPolygon" />
+      <MemberSignature Language="VB.NET" Value="GeometryPolygon" />
+      <MemberSignature Language="C++ CLI" Value="GeometryPolygon" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -385,6 +455,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
+      <MemberValue>19</MemberValue>
       <Docs>
         <summary>The Geometric polygon type.</summary>
       </Docs>
@@ -393,6 +464,8 @@
       <MemberSignature Language="C#" Value="Guid" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.PrimitiveTypeKind Guid = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.Guid" />
+      <MemberSignature Language="VB.NET" Value="Guid" />
+      <MemberSignature Language="C++ CLI" Value="Guid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -401,6 +474,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>The Guid type.</summary>
       </Docs>
@@ -409,6 +483,8 @@
       <MemberSignature Language="C#" Value="Int16" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.PrimitiveTypeKind Int16 = int32(9)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.Int16" />
+      <MemberSignature Language="VB.NET" Value="Int16" />
+      <MemberSignature Language="C++ CLI" Value="Int16" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -417,6 +493,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
+      <MemberValue>9</MemberValue>
       <Docs>
         <summary>The Int16 type.</summary>
       </Docs>
@@ -425,6 +502,8 @@
       <MemberSignature Language="C#" Value="Int32" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.PrimitiveTypeKind Int32 = int32(10)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.Int32" />
+      <MemberSignature Language="VB.NET" Value="Int32" />
+      <MemberSignature Language="C++ CLI" Value="Int32" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -433,6 +512,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
+      <MemberValue>10</MemberValue>
       <Docs>
         <summary>The Int32 type.</summary>
       </Docs>
@@ -441,6 +521,8 @@
       <MemberSignature Language="C#" Value="Int64" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.PrimitiveTypeKind Int64 = int32(11)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.Int64" />
+      <MemberSignature Language="VB.NET" Value="Int64" />
+      <MemberSignature Language="C++ CLI" Value="Int64" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -449,6 +531,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
+      <MemberValue>11</MemberValue>
       <Docs>
         <summary>The Int64 type.</summary>
       </Docs>
@@ -457,6 +540,8 @@
       <MemberSignature Language="C#" Value="SByte" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.PrimitiveTypeKind SByte = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.SByte" />
+      <MemberSignature Language="VB.NET" Value="SByte" />
+      <MemberSignature Language="C++ CLI" Value="SByte" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -465,6 +550,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>The SByte type.</summary>
       </Docs>
@@ -473,6 +559,8 @@
       <MemberSignature Language="C#" Value="Single" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.PrimitiveTypeKind Single = int32(7)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.Single" />
+      <MemberSignature Language="VB.NET" Value="Single" />
+      <MemberSignature Language="C++ CLI" Value="Single" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -481,6 +569,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>The Single type.</summary>
       </Docs>
@@ -489,6 +578,8 @@
       <MemberSignature Language="C#" Value="String" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.PrimitiveTypeKind String = int32(12)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.String" />
+      <MemberSignature Language="VB.NET" Value="String" />
+      <MemberSignature Language="C++ CLI" Value="String" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -497,6 +588,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
+      <MemberValue>12</MemberValue>
       <Docs>
         <summary>The String type.</summary>
       </Docs>
@@ -505,6 +597,8 @@
       <MemberSignature Language="C#" Value="Time" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.PrimitiveTypeKind Time = int32(13)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.Time" />
+      <MemberSignature Language="VB.NET" Value="Time" />
+      <MemberSignature Language="C++ CLI" Value="Time" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -513,6 +607,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
       </ReturnValue>
+      <MemberValue>13</MemberValue>
       <Docs>
         <summary>The Time type.</summary>
       </Docs>

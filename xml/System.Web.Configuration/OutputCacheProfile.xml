@@ -1,7 +1,9 @@
-<Type Name="OutputCacheProfile" FullName="System.Web.Configuration.OutputCacheProfile">
+﻿<Type Name="OutputCacheProfile" FullName="System.Web.Configuration.OutputCacheProfile">
   <TypeSignature Language="C#" Value="public sealed class OutputCacheProfile : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed OutputCacheProfile extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.OutputCacheProfile" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OutputCacheProfile&#xA;Inherits ConfigurationElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class OutputCacheProfile sealed : System::Configuration::ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +47,8 @@
       <MemberSignature Language="C#" Value="public OutputCacheProfile (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.OutputCacheProfile.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OutputCacheProfile(System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -63,6 +67,8 @@
       <MemberSignature Language="C#" Value="public int Duration { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Duration" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.OutputCacheProfile.Duration" />
+      <MemberSignature Language="VB.NET" Value="Public Property Duration As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Duration { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -105,6 +111,8 @@
       <MemberSignature Language="C#" Value="public bool Enabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Enabled" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.OutputCacheProfile.Enabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property Enabled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Enabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -144,6 +152,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.OutputCacheLocation Location { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.OutputCacheLocation Location" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.OutputCacheProfile.Location" />
+      <MemberSignature Language="VB.NET" Value="Public Property Location As OutputCacheLocation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::OutputCacheLocation Location { System::Web::UI::OutputCacheLocation get(); void set(System::Web::UI::OutputCacheLocation value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -183,6 +193,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.OutputCacheProfile.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -227,6 +239,8 @@
       <MemberSignature Language="C#" Value="public bool NoStore { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool NoStore" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.OutputCacheProfile.NoStore" />
+      <MemberSignature Language="VB.NET" Value="Public Property NoStore As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool NoStore { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -269,6 +283,8 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.OutputCacheProfile.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -287,6 +303,8 @@
       <MemberSignature Language="C#" Value="public string SqlDependency { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SqlDependency" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.OutputCacheProfile.SqlDependency" />
+      <MemberSignature Language="VB.NET" Value="Public Property SqlDependency As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SqlDependency { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -329,6 +347,8 @@
       <MemberSignature Language="C#" Value="public string VaryByContentEncoding { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string VaryByContentEncoding" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.OutputCacheProfile.VaryByContentEncoding" />
+      <MemberSignature Language="VB.NET" Value="Public Property VaryByContentEncoding As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ VaryByContentEncoding { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -362,6 +382,8 @@
       <MemberSignature Language="C#" Value="public string VaryByControl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string VaryByControl" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.OutputCacheProfile.VaryByControl" />
+      <MemberSignature Language="VB.NET" Value="Public Property VaryByControl As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ VaryByControl { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -405,6 +427,8 @@
       <MemberSignature Language="C#" Value="public string VaryByCustom { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string VaryByCustom" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.OutputCacheProfile.VaryByCustom" />
+      <MemberSignature Language="VB.NET" Value="Public Property VaryByCustom As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ VaryByCustom { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -447,6 +471,8 @@
       <MemberSignature Language="C#" Value="public string VaryByHeader { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string VaryByHeader" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.OutputCacheProfile.VaryByHeader" />
+      <MemberSignature Language="VB.NET" Value="Public Property VaryByHeader As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ VaryByHeader { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -488,6 +514,8 @@
       <MemberSignature Language="C#" Value="public string VaryByParam { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string VaryByParam" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.OutputCacheProfile.VaryByParam" />
+      <MemberSignature Language="VB.NET" Value="Public Property VaryByParam As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ VaryByParam { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

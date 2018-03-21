@@ -1,7 +1,9 @@
-<Type Name="LiteralTextControlBuilder" FullName="System.Web.UI.MobileControls.LiteralTextControlBuilder">
+﻿<Type Name="LiteralTextControlBuilder" FullName="System.Web.UI.MobileControls.LiteralTextControlBuilder">
   <TypeSignature Language="C#" Value="public class LiteralTextControlBuilder : System.Web.UI.MobileControls.MobileControlBuilder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LiteralTextControlBuilder extends System.Web.UI.MobileControls.MobileControlBuilder" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.LiteralTextControlBuilder" />
+  <TypeSignature Language="VB.NET" Value="Public Class LiteralTextControlBuilder&#xA;Inherits MobileControlBuilder" />
+  <TypeSignature Language="C++ CLI" Value="public ref class LiteralTextControlBuilder : System::Web::UI::MobileControls::MobileControlBuilder" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +36,8 @@
       <MemberSignature Language="C#" Value="public LiteralTextControlBuilder ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.LiteralTextControlBuilder.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LiteralTextControlBuilder();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -49,6 +53,8 @@
       <MemberSignature Language="C#" Value="public override bool AllowWhitespaceLiterals ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool AllowWhitespaceLiterals() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.LiteralTextControlBuilder.AllowWhitespaceLiterals" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function AllowWhitespaceLiterals () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool AllowWhitespaceLiterals();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

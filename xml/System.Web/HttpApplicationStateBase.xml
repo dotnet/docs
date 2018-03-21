@@ -1,7 +1,9 @@
-<Type Name="HttpApplicationStateBase" FullName="System.Web.HttpApplicationStateBase">
+﻿<Type Name="HttpApplicationStateBase" FullName="System.Web.HttpApplicationStateBase">
   <TypeSignature Language="C#" Value="public abstract class HttpApplicationStateBase : System.Collections.Specialized.NameObjectCollectionBase, System.Collections.ICollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit HttpApplicationStateBase extends System.Collections.Specialized.NameObjectCollectionBase implements class System.Collections.ICollection, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.Web.HttpApplicationStateBase" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class HttpApplicationStateBase&#xA;Inherits NameObjectCollectionBase&#xA;Implements ICollection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HttpApplicationStateBase abstract : System::Collections::Specialized::NameObjectCollectionBase, System::Collections::ICollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +39,8 @@
       <MemberSignature Language="C#" Value="protected HttpApplicationStateBase ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpApplicationStateBase.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; HttpApplicationStateBase();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -52,6 +56,8 @@
       <MemberSignature Language="C#" Value="public virtual void Add (string name, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Add(string name, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpApplicationStateBase.Add(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Add (name As String, value As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Add(System::String ^ name, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -76,6 +82,8 @@
       <MemberSignature Language="C#" Value="public virtual string[] AllKeys { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string[] AllKeys" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpApplicationStateBase.AllKeys" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property AllKeys As String()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property cli::array &lt;System::String ^&gt; ^ AllKeys { cli::array &lt;System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -95,6 +103,8 @@
       <MemberSignature Language="C#" Value="public virtual void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpApplicationStateBase.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Clear ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -114,6 +124,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.HttpApplicationStateBase Contents { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.HttpApplicationStateBase Contents" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpApplicationStateBase.Contents" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Contents As HttpApplicationStateBase" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::HttpApplicationStateBase ^ Contents { System::Web::HttpApplicationStateBase ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -140,7 +152,11 @@
       <MemberSignature Language="C#" Value="public virtual void CopyTo (Array array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.Array array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpApplicationStateBase.CopyTo(System.Array,System.Int32)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(Array ^ array, int index);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -164,7 +180,12 @@
       <MemberSignature Language="C#" Value="public override int Count { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpApplicationStateBase.Count" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Count { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -179,10 +200,21 @@
         <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Get">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, gets a state object by name or index.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Get">
       <MemberSignature Language="C#" Value="public virtual object Get (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Get(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpApplicationStateBase.Get(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Get (index As Integer) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Get(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -206,6 +238,8 @@
       <MemberSignature Language="C#" Value="public virtual object Get (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Get(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpApplicationStateBase.Get(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Get (name As String) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Get(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -229,7 +263,12 @@
       <MemberSignature Language="C#" Value="public override System.Collections.IEnumerator GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpApplicationStateBase.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Collections::IEnumerator ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -249,6 +288,8 @@
       <MemberSignature Language="C#" Value="public virtual string GetKey (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetKey(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpApplicationStateBase.GetKey(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetKey (index As Integer) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetKey(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -272,7 +313,12 @@
       <MemberSignature Language="C#" Value="public virtual bool IsSynchronized { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsSynchronized" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpApplicationStateBase.IsSynchronized" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsSynchronized As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsSynchronized { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -288,10 +334,21 @@
         <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, gets an object in an <see cref="T:System.Web.HttpApplicationState" /> collection by name or index.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Item">
       <MemberSignature Language="C#" Value="public virtual object this[int index] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpApplicationStateBase.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Overridable ReadOnly Property Item(index As Integer) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ default[int] { System::Object ^ get(int index); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -315,6 +372,8 @@
       <MemberSignature Language="C#" Value="public virtual object this[string name] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpApplicationStateBase.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Overridable Property Item(name As String) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ default[System::String ^] { System::Object ^ get(System::String ^ name); void set(System::String ^ name, System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -338,6 +397,8 @@
       <MemberSignature Language="C#" Value="public virtual void Lock ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Lock() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpApplicationStateBase.Lock" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Lock ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Lock();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -357,6 +418,8 @@
       <MemberSignature Language="C#" Value="public virtual void Remove (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Remove(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpApplicationStateBase.Remove(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Remove (name As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Remove(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -379,6 +442,8 @@
       <MemberSignature Language="C#" Value="public virtual void RemoveAll ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveAll() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpApplicationStateBase.RemoveAll" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub RemoveAll ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveAll();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -398,6 +463,8 @@
       <MemberSignature Language="C#" Value="public virtual void RemoveAt (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveAt(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpApplicationStateBase.RemoveAt(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub RemoveAt (index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveAt(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -420,6 +487,8 @@
       <MemberSignature Language="C#" Value="public virtual void Set (string name, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Set(string name, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpApplicationStateBase.Set(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Set (name As String, value As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Set(System::String ^ name, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -444,6 +513,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.HttpStaticObjectsCollectionBase StaticObjects { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.HttpStaticObjectsCollectionBase StaticObjects" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpApplicationStateBase.StaticObjects" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property StaticObjects As HttpStaticObjectsCollectionBase" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::HttpStaticObjectsCollectionBase ^ StaticObjects { System::Web::HttpStaticObjectsCollectionBase ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -472,7 +543,12 @@
       <MemberSignature Language="C#" Value="public virtual object SyncRoot { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object SyncRoot" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpApplicationStateBase.SyncRoot" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SyncRoot As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ SyncRoot { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -491,6 +567,8 @@
       <MemberSignature Language="C#" Value="public virtual void UnLock ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void UnLock() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpApplicationStateBase.UnLock" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub UnLock ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void UnLock();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -506,23 +584,5 @@
         <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Item">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>When overridden in a derived class, gets an object in an <see cref="T:System.Web.HttpApplicationState" /> collection by name or index.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Get">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>When overridden in a derived class, gets a state object by name or index.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

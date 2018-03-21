@@ -1,7 +1,9 @@
-<Type Name="CodeTypeDelegate" FullName="System.CodeDom.CodeTypeDelegate">
+﻿<Type Name="CodeTypeDelegate" FullName="System.CodeDom.CodeTypeDelegate">
   <TypeSignature Language="C#" Value="public class CodeTypeDelegate : System.CodeDom.CodeTypeDeclaration" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CodeTypeDelegate extends System.CodeDom.CodeTypeDeclaration" />
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeTypeDelegate" />
+  <TypeSignature Language="VB.NET" Value="Public Class CodeTypeDelegate&#xA;Inherits CodeTypeDeclaration" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CodeTypeDelegate : System::CodeDom::CodeTypeDeclaration" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -16,7 +18,7 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
@@ -50,10 +52,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeTypeDelegate" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public CodeTypeDelegate ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTypeDelegate.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeTypeDelegate();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -73,6 +86,8 @@
       <MemberSignature Language="C#" Value="public CodeTypeDelegate (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTypeDelegate.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeTypeDelegate(System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -95,6 +110,8 @@
       <MemberSignature Language="C#" Value="public System.CodeDom.CodeParameterDeclarationExpressionCollection Parameters { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeParameterDeclarationExpressionCollection Parameters" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeTypeDelegate.Parameters" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parameters As CodeParameterDeclarationExpressionCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeParameterDeclarationExpressionCollection ^ Parameters { System::CodeDom::CodeParameterDeclarationExpressionCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -118,6 +135,8 @@
       <MemberSignature Language="C#" Value="public System.CodeDom.CodeTypeReference ReturnType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeTypeReference ReturnType" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeTypeDelegate.ReturnType" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReturnType As CodeTypeReference" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeTypeReference ^ ReturnType { System::CodeDom::CodeTypeReference ^ get(); void set(System::CodeDom::CodeTypeReference ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -136,14 +155,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeTypeDelegate" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

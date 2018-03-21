@@ -3,7 +3,7 @@ title: dotnet new command - .NET Core CLI
 description: The dotnet new command creates new .NET Core projects based on the specified template.
 author: mairaw
 ms.author: mairaw
-ms.date: 03/19/2018
+ms.date: 03/21/2018
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -317,7 +317,7 @@ List all templates available for MVC:
 
 `dotnet new mvc -l`
 
-Install version 2.0 of the Single Page Application templates for ASP.NET Core (command option available for .NET Core SDK 2.0 and later versions only):
+Install version 2.0 of the Single Page Application templates for ASP.NET Core (command option available for .NET Core SDK 1.1 and later versions only):
 
 `dotnet new -i Microsoft.DotNet.Web.Spa.ProjectTemplates::2.0.0`
 

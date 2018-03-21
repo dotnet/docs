@@ -21,7 +21,7 @@ The `in` keyword causes arguments to be passed by reference. It is like the [ref
 The preceding example demonstrates the `in` modifier is usually unnecessary at the call site. It is only required in the method declaration.
 
 > [!NOTE] 
-> The `in` keyword can also be used with a generic type parameter to specify that the type parameter is contravariant, as part of a `foreach` statement, or as part of a `join` clause in a LINQ query. For more information on the use of the `in` keyword in these contexts, see [in](in.md) which provides links to all those uses.
+> The `in` keyword can also be used with a generic type parameter to specify that the type parameter is contravariant, as part of a `foreach` statement, or as part of a `join` clause in a LINQ query. For more information on the use of the `in` keyword in these contexts, see [in](in.md), which provides links to all those uses.
   
  Variables passed as `in` arguments must be initialized before being passed in a method call. However, the called method may not assign a value or modify the argument.  
   
@@ -51,17 +51,19 @@ class InOverloads
 
 You can understand the overload resolution rules for methods with by value vs. `in` arguments through understanding the motivation for `in` arguments. Defining methods using `in` parameters is a potential performance optimization. Some `struct` type arguments may be large in size, and when methods are called in tight loops or critical code paths, the cost of copying those structures is critical. Methods declare `in` parameters to specify that arguments may be passed by reference safely because the called method does not modify the state of that argument. Passing those arguments by reference avoids the (potentially) expensive copy. 
 
-Specifying `in` on arguments at the call site is typically optional because the `in` modifier doesn't allow the value of the argument to be modified. You would explicitly add the `in` modifier at the callsite to ensure the argument is passed by reference, not by value. Explicitly using `in` has two effects:
+Specifying `in` on arguments at the call site is typically optional. There is no semantic difference between passing arguments by value and passing them by reference using the `in` modifier. The `in` modifier at the call site is optional because you don't need to indicate that the argument's value might be changed. You explicitly add the `in` modifier at the call site to ensure the argument is passed by reference, not by value. Explicitly using `in` has two effects:
 
-First, specifying `in` at the call site forces selection of a method defined with a matching `in` parameter. Otherwise, when two methods differ only in the presence of `in`, the by value overload is a better match.
+First, specifying `in` at the call site forces the compiler to select a method defined with a matching `in` parameter. Otherwise, when two methods differ only in the presence of `in`, the by value overload is a better match.
 
-Second, specifying `in` declares your intent to pass an argument by reference. The argument used with `in` must represent a location that can be directly referred to. The same general rules for `out` and `ref` arguments apply: You cannot use constants, ordinary properties, or other expressions that produce values. Omitting `in` at the callsite informs the compiler that you will allow the compiler to create a temporary variable to pass by read-only reference to the method. Enabling the compiler to create a temporary has several implications:
+Second, specifying `in` declares your intent to pass an argument by reference. The argument used with `in` must represent a location that can be directly referred to. The same general rules for `out` and `ref` arguments apply: You cannot use constants, ordinary properties, or other expressions that produce values. Omitting `in` at the call site informs the compiler that you will allow the compiler to create a temporary variable to pass by read-only reference to the method. The compiler creates a temporary variable to overcome several restrictions with `in` arguments:
 
-- You can pass compile-time constants as `in` parameters.
-- You can pass properties, or other expressions for `in` parameters.
-- You can pass arguments where there is an implicit conversion from the argument to the parameter type.
+- A temporary variable allows compile-time constants as `in` parameters.
+- A temporary variable allows properties, or other expressions for `in` parameters.
+- A temporary variable allows arguments where there is an implicit conversion from the argument type to the parameter type.
 
-The following code illustrates these rules using this method:
+In all the preceding instances, the compiler creates a temporary variable that stores the value of the constant, property, or other expression.
+
+The following code illustrates these rules:
 
 ```csharp
 static void Method(in int argument)
@@ -79,7 +81,7 @@ Method(i); // passed by readonly reference
 Method(in i); // passed by readonly reference, explicitly using `in`
 ```
 
-Now, suppose another method using by value arguments was available, the results change as shown in the following code:
+Now, suppose another method using by value arguments was available. The results change as shown in the following code:
 
 ```csharp
 static void Method(int argument)
@@ -102,7 +104,7 @@ Method(i); // Calls overload passed by value
 Method(in i); // passed by readonly reference, explicitly using `in`
 ```
 
-The only method call where the argument is passed by reference is the final argument.
+The only method call where the argument is passed by reference is the final one.
 
 > [!NOTE]
 > The preceding code uses `int` as the argument type for simplicity. Because `int` is no larger than a reference in most modern machines, there is no benefit to passing a single `int` as a readonly reference. 

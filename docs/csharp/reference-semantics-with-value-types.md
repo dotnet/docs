@@ -40,12 +40,12 @@ You can use either "7.2" or "latest" for the value.
 C# 7.2 adds the `in` keyword to complement the existing `ref`
 and `out` keywords to pass arguments
 by reference. The `in` keyword specifies passing
-the parameter by reference and the called method does not modify
+the argument by reference but, the called method does not modify
 the value. 
 
 This addition provides a full vocabulary to express your design intent. 
 Value types are copied when passed to a called method when you don't
-specify any of the following modifiers. Each of these modifiers specifies
+specify any of the following modifiers in the method signature. Each of these modifiers specifies
 that a value type is passed by reference, avoiding the copy. Each modifier
 expresses a different intent:
 
@@ -90,15 +90,15 @@ nature of an `in` argument is enforced.  First of all, the called method
 can't directly assign to an `in` parameter. It can't directly assign
 to any field of an `in` parameter when that value is a `struct` type. In addition, you cannot pass
 an `in` parameter to any method using the `ref` or `out` modifier.
-These rules apply to any field of an `in` parameter provided the
+These rules apply to any field of an `in` parameter, provided the
 field is a `struct` type and the parameter is also a `struct` type. In fact, these rules
 apply for multiple layers of member access provided the types at all levels
 of member access are `structs`.
 The compiler enforces that `struct` types passed as  `in` arguments and their
-`struct` members are readonly variables.
+`struct` members are read only variables.
 
-The use of `in` parameters is to avoid the potential performance costs
-of copies. It does not change the semantics of any method call. Therefore,
+The use of `in` parameters avoids the potential performance costs
+of making copies. It does not change the semantics of any method call. Therefore,
 you do not need to specify the `in` modifier at the call site. However,
 omitting the `in` modifier at the call site informs the compiler that it is
 allowed to make a copy of the argument for the following reasons:
@@ -107,23 +107,22 @@ allowed to make a copy of the argument for the following reasons:
 - The argument is an expression but does not have a known storage variable.
 - An overload exists that differs by the presence or absence of `in`. In that case, the by value overload is a better match.
 
-These rules are useful as you update existing code to use readonly
+These rules are useful as you update existing code to use read only
 reference arguments. Inside the called method, you can call any instance
 method that uses by value parameters. In
 those instances, a copy of the `in` parameter is created. Because the compiler
 can create a temporary variable for any `in` parameter, you can also specify default
-values for any `in` parameter. The following code uses that to specify the origin
+values for any `in` parameter. The following code specifies the origin
 (point 0,0) as the default value for the second point:
 
 [!code-csharp[InArgumentDefault](../../samples/csharp/reference-semantics/Program.cs#InArgumentDefault "Specifying defaults for an in parameter")]
 
-To force the compiler to pass readonly arguments by reference, specify the `in` modifer
-on the arguments at the callsite, as shown in the following code:
+To force the compiler to pass read only arguments by reference, specify the `in` modifer
+on the arguments at the call site, as shown in the following code:
 
 [!code-csharp[UseInArgument](../../samples/csharp/reference-semantics/Program.cs#ExplicitInArgument "Specifying an In argument")]
 
-The `in` parameter designation can also be used with reference types or built in
-numeric values. However, the benefits in both cases are minimal, if any.
+The `in` parameter designation can also be used with reference types or numeric values. However, the benefits in both cases are minimal, if any.
 
 ## `ref readonly` returns
 
@@ -137,7 +136,7 @@ The compiler enforces that the caller cannot modify the reference. Attempts
 to assign the value directly generate a compile-time error. However, the compiler cannot know if any member method modifies the state of the struct.
 To ensure that the object is not modified, the compiler creates a copy and
 calls member references using that copy. Any modifications are to that
-defensive copy. 
+defensive copy. <<Review this based on Ron's comment "This contradicts line 90 and following" after merging #4770>>
 
 It's likely that the library using `Point3D` would often use the origin
 throughout the code. Every instance creates a new object on the stack. It may
@@ -154,7 +153,7 @@ not declared with the `ref readonly` modifier. The compiler generates code
 to copy the object as part of the assignment. 
 
 When you assign a variable to a `ref readonly return`, you can specify either a `ref readonly`
-variable, or a by-value copy of the readonly reference:
+variable, or a by-value copy of the read only reference:
 
 [!code-csharp[AssignRefReadonly](../../samples/csharp/reference-semantics/Program.cs#AssignRefReadonly "Assigning a ref readonly")]
 
@@ -167,7 +166,7 @@ can't be modified. Attempts to do so result in a compile-time error.
 
 Applying `ref readonly` to high-traffic uses of a struct may be sufficient.
 Other times, you may want to create an immutable struct. Then you can
-always pass by readonly reference. That practice 
+always pass by read only reference. That practice 
 removes the defensive copies
 that take place when you access methods of a struct used as an `in` parameter.
 
@@ -195,7 +194,7 @@ Another related language feature is the ability to declare a value type that
 must be stack allocated. In other words, these types can never be created on the
 heap as a member of another class. The primary motivation for this feature
 was <xref:System.Span%601> and related structures. <xref:System.Span%601> may contain a managed pointer as one of its members, the other being
-the length of the span. It's implemented a bit different because C#
+the length of the span. It's implemented a bit differently because C#
 doesn't support pointers to managed memory outside of an unsafe context. Any
 write that changes the pointer and the length is not atomic. That means a
 <xref:System.Span%601> would be subject to out of range errors or other type safety violations

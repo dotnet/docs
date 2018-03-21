@@ -213,6 +213,8 @@ readonly ref struct ReadOnlyRefPoint2D
 {
     public int X { get; }
     public int Y { get; }
+    
+    ReadOnlyRefPoint2D(int x, int y) => (X, Y) = (x, y);
 }
 ```
 

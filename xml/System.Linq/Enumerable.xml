@@ -1683,7 +1683,30 @@
   
  The <xref:System.Linq.Enumerable.Cast%60%601%28System.Collections.IEnumerable%29> method enables the standard query operators to be invoked on non-generic collections by supplying the necessary type information. For example, <xref:System.Collections.ArrayList> does not implement <xref:System.Collections.Generic.IEnumerable%601>, but by calling <xref:System.Linq.Enumerable.Cast%60%601%28System.Collections.IEnumerable%29> on the <xref:System.Collections.ArrayList> object, the standard query operators can then be used to query the sequence.  
   
- If an element cannot be cast to type `TResult`, this method will throw an exception. To obtain only those elements that can be cast to type `TResult`, use the <xref:System.Linq.Enumerable.OfType%2A> method instead of <xref:System.Linq.Enumerable.Cast%60%601%28System.Collections.IEnumerable%29>.  
+ If an element cannot be cast to type `TResult`, this method will throw an exception.
+ 
+ Only certain types of implicit conversions are performed by this method:
+
+ - **Identity conversions**: from a type to the same type.
+ - **Implicit enumeration conversions** to the enum type: conversions from a numeric type to an enum type. 
+ - **Implicit reference conversions**: There are several sub-types in this category that can be applied:
+     - from any reference type to `object` or `dynamic`
+     - from any reference type to any of its base types
+     - from any reference type to any interface type it implements
+ - **Boxing conversions**: from a value type to `object`, `dynamic` or an interface it implements.
+
+ In addition, the following explicit conversions are performed by this method:
+
+ - **Explicit reference conversions**: There are several sub-types in this category that can be applied:
+     - from `object` to `dynamic` to any other reference type.
+     - from any base class type to a derived class type.
+     - from any unsealed class to any interface it does not implement.
+     - from any interface to a class that is not sealed, or implemments that interface.
+ - **Explicit unboxing conversions**: from `object`, `dynamic`, `System.ValueType`, or any interface type to any value type or enum type.
+
+Implicit numeric conversions are never performed using this method. No user defined conversions, either implicit or explicit, will be performed by this method.
+
+ To obtain only those elements that can be cast to type `TResult`, use the <xref:System.Linq.Enumerable.OfType%2A> method instead of <xref:System.Linq.Enumerable.Cast%60%601%28System.Collections.IEnumerable%29>.  
   
  In a query expression, an explicitly typed iteration variable translates to an invocation of <xref:System.Linq.Enumerable.Cast%60%601%28System.Collections.IEnumerable%29>. This example shows the syntax for an explicitly typed range variable.  
   

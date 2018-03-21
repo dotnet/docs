@@ -192,8 +192,8 @@
         <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Security.Cryptography.X509Certificates.X509Extension&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the X.509 Certificate Extensions to include in the certificate or certificate request.</summary>
-        <value>The X.509 Certificate Extensions to include in the certificate or certificate request.</value>
+        <summary>Gets the X.509 Certificate Extensions colletion, which is a mutable collection, to include in the certificate or certificate request.</summary>
+        <value>The X.509 Certificate Extensions collection to include in the certificate or certificate request.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -233,7 +233,7 @@ The type of signing key represented by <paramref name="issuerCertificate"/> coul
 
  -or-
 
-<paramref name="notAfter"/> represents a date and time that happens before than <paramref name="notBefore"/>.
+<paramref name="notAfter"/> represents a date and time that happens earlier than <paramref name="notBefore"/>.
 
  -or-
 
@@ -266,13 +266,13 @@ The type of signing key represented by <paramref name="issuerCertificate"/> coul
         <Parameter Name="serialNumber" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="issuerName">The X500DistinguishedName for the Issuer.</param>
+        <param name="issuerName">The <see cref="T:System.Security.Cryptography.X509Certificates.X500DistinguishedName"/> for the issuer.</param>
         <param name="generator">An <see cref="T:System.Security.Cryptography.X509Certificates.X509SignatureGenerator"/> object representing the issuing certificate authority.</param>
         <param name="notBefore">The oldest date and time when this certificate is considered valid. Typically <see cref="P:System.DateTimeOffset.UtcNow"/>, plus or minus a few seconds.</param>
         <param name="notAfter">The date and time when this certificate is no longer considered valid.</param>
-        <param name="serialNumber">The serial number to use for the new certificate. This value should be unique per issuer. The value is interpreted as an unsigned (big) integer in big-endian byte ordering.</param>
+        <param name="serialNumber">The serial number to use for the new certificate. This value should be unique per issuer. The value is interpreted as an unsigned integer of arbitrary size in big-endian byte ordering. <see href="https://tools.ietf.org/html/rfc3280#section-4.1.2.2">RFC 3280</see> recommends confining it to 20 bytes or less. </param>
         <summary>Signs the current certificate request to create a chain-signed or self-signed certificate.</summary>
-        <returns>The ASN.1 DER-encoded certificate, suitable to be passed to the <see cref="M:System.Security.Cryptography.X509Certificates.X509Certificate2.#ctor(System.Byte[])"/> constructor.</returns>
+        <returns>An <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2"/> object with the specified values. The returned object won't assert <see cref="P:System.Security.Cryptography.X509Certificates.X509Certificate2.HasPrivateKey" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="issuerCertificate" /> is <see langword="null" />.
@@ -281,7 +281,7 @@ The type of signing key represented by <paramref name="issuerCertificate"/> coul
 
 <paramref name="generator" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="notAfter"/> represents a date and time that happens before than <paramref name="notBefore"/>.
+          <paramref name="notAfter"/> represents a date and time that happens earlier than <paramref name="notBefore"/>.
 
  -or-
 
@@ -311,7 +311,7 @@ The type of signing key represented by <paramref name="issuerCertificate"/> coul
         <summary>Creates a self-signed certificate using the established subject, key, and optional extensions.</summary>
         <returns>An <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2"/> object with the specified values. The returned object will assert <see cref="P:System.Security.Cryptography.X509Certificates.X509Certificate2.HasPrivateKey" />.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException"><paramref name="notAfter"/> represents a date and time that happens before than <paramref name="notBefore"/>.</exception>
+        <exception cref="T:System.ArgumentException"><paramref name="notAfter"/> represents a date and time that happens earlier than <paramref name="notBefore"/>.</exception>
         <exception cref="T:System.InvalidOperationException">The current object was created using a constructor that doesn't accept a signing key.</exception>
         <exception cref="T:System.Security.Cryptography.CryptographicException">An error occurs during the certificate creation process.</exception>
       </Docs>
@@ -330,14 +330,14 @@ The type of signing key represented by <paramref name="issuerCertificate"/> coul
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates an ASN.1 DER-encoded PKCS#10 CertificationRequest object representing the state of the current object.</summary>
+        <summary>Creates an ASN.1 DER-encoded PKCS#10 CertificationRequest value representing the state of the current object.</summary>
         <returns>A DER-encoded certificate signing request.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
               When submitting a certificate signing request via a web browser, or other graphical or textual
-              interface, the input is frequently expected to be in the PEM (Privacy Enhanced Mail) format,
+              interface, the input is frequently expected to be in the Privacy Enhanced Mail (PEM) format,
               instead of the DER binary format. To convert the return value to PEM format, make a string
               consisting of `-----BEGIN CERTIFICATE REQUEST-----`, a newline, the Base-64-encoded
               representation of the request (by convention, linewrapped at 64 characters), a newline,

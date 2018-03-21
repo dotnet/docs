@@ -3,7 +3,7 @@ title: dotnet command - .NET Core CLI
 description: Learn about the dotnet command (the generic driver for the .NET Core CLI tools) and its usage.
 author: mairaw
 ms.author: mairaw
-ms.date: 02/21/2018
+ms.date: 03/20/2018
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -28,7 +28,7 @@ dotnet [command] [arguments] [--additional-deps] [--additionalprobingpath] [-d|-
 # [.NET Core 1.x](#tab/netcore1x)
 ```
 dotnet [command] [arguments] [--additionalprobingpath] [-d|--diagnostics] [--fx-version]
-    [-h|--help] [--info] [-v|--verbose] [--version]
+    [-h|--help] [--info] [-v|--verbosity] [--version]
 ```
 ---
 
@@ -102,7 +102,7 @@ Prints out a short help for the command. If using with `dotnet`, it also prints 
 
 Prints out detailed information about the CLI tooling and the environment, such as the current operating system, commit SHA for the version, and other information.
 
-`-v|--verbose <LEVEL>`
+`-v|--verbosity <LEVEL>`
 
 Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. Not supported in every command; see specific command page to determine if this option is available.
 

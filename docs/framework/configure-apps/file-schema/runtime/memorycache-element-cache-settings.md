@@ -31,11 +31,11 @@ Defines an element that is used to configure a cache that is based on the <xref:
 ## Syntax  
   
 ```xml  
-<memoryCache   
+<memoryCache>   
     <namedCaches>  
         <!-- child elements -->  
     </namedCaches>   
-< memoryCache />  
+</memoryCache>  
 ```  
   
 ## Type  

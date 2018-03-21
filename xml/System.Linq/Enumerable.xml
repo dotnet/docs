@@ -1704,7 +1704,8 @@
      - from any interface to a class that is not sealed, or implemments that interface.
  - **Explicit unboxing conversions**: from `object`, `dynamic`, `System.ValueType`, or any interface type to any value type or enum type.
 
-Implicit numeric conversions are never performed using this method. No user defined conversions, either implicit or explicit, will be performed by this method.
+Implicit numeric conversions are never performed using this method. No user defined conversions, either implicit or explicit, will be performed by this method. If you need other categories of conversions performed, consider performing those conversions in the `select` clause of your LINQ query.
+
 
  To obtain only those elements that can be cast to type `TResult`, use the <xref:System.Linq.Enumerable.OfType%2A> method instead of <xref:System.Linq.Enumerable.Cast%60%601%28System.Collections.IEnumerable%29>.  
   

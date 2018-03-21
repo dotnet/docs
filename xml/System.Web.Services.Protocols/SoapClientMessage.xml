@@ -1,7 +1,9 @@
-<Type Name="SoapClientMessage" FullName="System.Web.Services.Protocols.SoapClientMessage">
+﻿<Type Name="SoapClientMessage" FullName="System.Web.Services.Protocols.SoapClientMessage">
   <TypeSignature Language="C#" Value="public sealed class SoapClientMessage : System.Web.Services.Protocols.SoapMessage" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SoapClientMessage extends System.Web.Services.Protocols.SoapMessage" />
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Protocols.SoapClientMessage" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SoapClientMessage&#xA;Inherits SoapMessage" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SoapClientMessage sealed : System::Web::Services::Protocols::SoapMessage" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -31,6 +33,8 @@
       <MemberSignature Language="C#" Value="public override string Action { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Action" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapClientMessage.Action" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Action As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Action { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -66,6 +70,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Services.Protocols.SoapHttpClientProtocol Client { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Protocols.SoapHttpClientProtocol Client" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapClientMessage.Client" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Client As SoapHttpClientProtocol" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Protocols::SoapHttpClientProtocol ^ Client { System::Web::Services::Protocols::SoapHttpClientProtocol ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -101,6 +107,8 @@
       <MemberSignature Language="C#" Value="protected override void EnsureInStage ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void EnsureInStage() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapClientMessage.EnsureInStage" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub EnsureInStage ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void EnsureInStage();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -120,6 +128,8 @@
       <MemberSignature Language="C#" Value="protected override void EnsureOutStage ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void EnsureOutStage() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapClientMessage.EnsureOutStage" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub EnsureOutStage ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void EnsureOutStage();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -139,6 +149,8 @@
       <MemberSignature Language="C#" Value="public override System.Web.Services.Protocols.LogicalMethodInfo MethodInfo { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Protocols.LogicalMethodInfo MethodInfo" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapClientMessage.MethodInfo" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property MethodInfo As LogicalMethodInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::Services::Protocols::LogicalMethodInfo ^ MethodInfo { System::Web::Services::Protocols::LogicalMethodInfo ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -174,6 +186,8 @@
       <MemberSignature Language="C#" Value="public override bool OneWay { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool OneWay" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapClientMessage.OneWay" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property OneWay As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool OneWay { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -213,6 +227,8 @@
       <MemberSignature Language="C#" Value="public override System.Web.Services.Protocols.SoapProtocolVersion SoapVersion { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.Services.Protocols.SoapProtocolVersion SoapVersion" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapClientMessage.SoapVersion" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property SoapVersion As SoapProtocolVersion" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::Services::Protocols::SoapProtocolVersion SoapVersion { System::Web::Services::Protocols::SoapProtocolVersion get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -245,6 +261,8 @@
       <MemberSignature Language="C#" Value="public override string Url { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Url" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapClientMessage.Url" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Url As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Url { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="Try" FullName="Microsoft.JScript.Try">
+﻿<Type Name="Try" FullName="Microsoft.JScript.Try">
   <TypeSignature Language="C#" Value="public sealed class Try : Microsoft.JScript.AST" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Try extends Microsoft.JScript.AST" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.Try" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Try&#xA;Inherits AST" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Try sealed : Microsoft::JScript::AST" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -20,6 +22,8 @@
       <MemberSignature Language="C#" Value="public static object JScriptExceptionValue (object e, Microsoft.JScript.Vsa.VsaEngine engine);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object JScriptExceptionValue(object e, class Microsoft.JScript.Vsa.VsaEngine engine) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Try.JScriptExceptionValue(System.Object,Microsoft.JScript.Vsa.VsaEngine)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function JScriptExceptionValue (e As Object, engine As VsaEngine) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ JScriptExceptionValue(System::Object ^ e, Microsoft::JScript::Vsa::VsaEngine ^ engine);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -47,6 +51,8 @@
       <MemberSignature Language="C#" Value="public static void PushHandlerScope (Microsoft.JScript.Vsa.VsaEngine engine, string id, int scopeId);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void PushHandlerScope(class Microsoft.JScript.Vsa.VsaEngine engine, string id, int32 scopeId) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Try.PushHandlerScope(Microsoft.JScript.Vsa.VsaEngine,System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub PushHandlerScope (engine As VsaEngine, id As String, scopeId As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void PushHandlerScope(Microsoft::JScript::Vsa::VsaEngine ^ engine, System::String ^ id, int scopeId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

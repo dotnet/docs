@@ -1,7 +1,9 @@
-<Type Name="LabelOutsidePlotAreaStyle" FullName="System.Web.UI.DataVisualization.Charting.LabelOutsidePlotAreaStyle">
+﻿<Type Name="LabelOutsidePlotAreaStyle" FullName="System.Web.UI.DataVisualization.Charting.LabelOutsidePlotAreaStyle">
   <TypeSignature Language="C#" Value="public enum LabelOutsidePlotAreaStyle" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LabelOutsidePlotAreaStyle extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.LabelOutsidePlotAreaStyle" />
+  <TypeSignature Language="VB.NET" Value="Public Enum LabelOutsidePlotAreaStyle" />
+  <TypeSignature Language="C++ CLI" Value="public enum class LabelOutsidePlotAreaStyle" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +29,8 @@
       <MemberSignature Language="C#" Value="No" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.LabelOutsidePlotAreaStyle No = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.LabelOutsidePlotAreaStyle.No" />
+      <MemberSignature Language="VB.NET" Value="No" />
+      <MemberSignature Language="C++ CLI" Value="No" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -35,6 +39,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.LabelOutsidePlotAreaStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Labels cannot de drawn outside the plotting area.</summary>
       </Docs>
@@ -43,6 +48,8 @@
       <MemberSignature Language="C#" Value="Partial" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.LabelOutsidePlotAreaStyle Partial = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.LabelOutsidePlotAreaStyle.Partial" />
+      <MemberSignature Language="VB.NET" Value="Partial" />
+      <MemberSignature Language="C++ CLI" Value="Partial" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -51,6 +58,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.LabelOutsidePlotAreaStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Labels can be drawn partially outside the plotting area.</summary>
       </Docs>
@@ -59,6 +67,8 @@
       <MemberSignature Language="C#" Value="Yes" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.LabelOutsidePlotAreaStyle Yes = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.LabelOutsidePlotAreaStyle.Yes" />
+      <MemberSignature Language="VB.NET" Value="Yes" />
+      <MemberSignature Language="C++ CLI" Value="Yes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -67,6 +77,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.LabelOutsidePlotAreaStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Labels can be drawn outside the plotting area.</summary>
       </Docs>

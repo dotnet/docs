@@ -1,7 +1,9 @@
-<Type Name="AssemblyNameProxy" FullName="System.Reflection.AssemblyNameProxy">
+﻿<Type Name="AssemblyNameProxy" FullName="System.Reflection.AssemblyNameProxy">
   <TypeSignature Language="C#" Value="public class AssemblyNameProxy : MarshalByRefObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AssemblyNameProxy extends System.MarshalByRefObject" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.AssemblyNameProxy" />
+  <TypeSignature Language="VB.NET" Value="Public Class AssemblyNameProxy&#xA;Inherits MarshalByRefObject" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AssemblyNameProxy : MarshalByRefObject" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -33,6 +35,8 @@
       <MemberSignature Language="C#" Value="public AssemblyNameProxy ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.AssemblyNameProxy.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AssemblyNameProxy();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -57,6 +61,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.AssemblyName GetAssemblyName (string assemblyFile);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Reflection.AssemblyName GetAssemblyName(string assemblyFile) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.AssemblyNameProxy.GetAssemblyName(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAssemblyName (assemblyFile As String) As AssemblyName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::AssemblyName ^ GetAssemblyName(System::String ^ assemblyFile);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

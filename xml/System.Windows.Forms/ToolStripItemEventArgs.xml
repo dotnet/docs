@@ -1,7 +1,9 @@
-<Type Name="ToolStripItemEventArgs" FullName="System.Windows.Forms.ToolStripItemEventArgs">
+﻿<Type Name="ToolStripItemEventArgs" FullName="System.Windows.Forms.ToolStripItemEventArgs">
   <TypeSignature Language="C#" Value="public class ToolStripItemEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ToolStripItemEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripItemEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class ToolStripItemEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ToolStripItemEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +33,8 @@
       <MemberSignature Language="C#" Value="public ToolStripItemEventArgs (System.Windows.Forms.ToolStripItem item);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.ToolStripItem item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripItemEventArgs.#ctor(System.Windows.Forms.ToolStripItem)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (item As ToolStripItem)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ToolStripItemEventArgs(System::Windows::Forms::ToolStripItem ^ item);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -49,6 +53,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ToolStripItem Item { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ToolStripItem Item" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripItemEventArgs.Item" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Item As ToolStripItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ToolStripItem ^ Item { System::Windows::Forms::ToolStripItem ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="StreamUpgradeInitiator" FullName="System.ServiceModel.Channels.StreamUpgradeInitiator">
+﻿<Type Name="StreamUpgradeInitiator" FullName="System.ServiceModel.Channels.StreamUpgradeInitiator">
   <TypeSignature Language="C#" Value="public abstract class StreamUpgradeInitiator" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit StreamUpgradeInitiator extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.StreamUpgradeInitiator" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class StreamUpgradeInitiator" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StreamUpgradeInitiator abstract" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +30,8 @@
       <MemberSignature Language="C#" Value="protected StreamUpgradeInitiator ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.StreamUpgradeInitiator.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; StreamUpgradeInitiator();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -43,6 +47,7 @@
       <MemberSignature Language="C#" Value="public abstract IAsyncResult BeginInitiateUpgrade (System.IO.Stream stream, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginInitiateUpgrade(class System.IO.Stream stream, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.StreamUpgradeInitiator.BeginInitiateUpgrade(System.IO.Stream,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract IAsyncResult ^ BeginInitiateUpgrade(System::IO::Stream ^ stream, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -76,6 +81,8 @@
       <MemberSignature Language="C#" Value="public abstract System.IO.Stream EndInitiateUpgrade (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IO.Stream EndInitiateUpgrade(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.StreamUpgradeInitiator.EndInitiateUpgrade(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function EndInitiateUpgrade (result As IAsyncResult) As Stream" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::IO::Stream ^ EndInitiateUpgrade(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -105,6 +112,8 @@
       <MemberSignature Language="C#" Value="public abstract string GetNextUpgrade ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetNextUpgrade() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.StreamUpgradeInitiator.GetNextUpgrade" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetNextUpgrade () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::String ^ GetNextUpgrade();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -131,6 +140,7 @@
       <MemberSignature Language="C#" Value="public abstract System.IO.Stream InitiateUpgrade (System.IO.Stream stream);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IO.Stream InitiateUpgrade(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.StreamUpgradeInitiator.InitiateUpgrade(System.IO.Stream)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::IO::Stream ^ InitiateUpgrade(System::IO::Stream ^ stream);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

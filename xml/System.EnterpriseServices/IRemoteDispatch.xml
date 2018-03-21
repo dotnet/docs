@@ -1,7 +1,9 @@
-<Type Name="IRemoteDispatch" FullName="System.EnterpriseServices.IRemoteDispatch">
+﻿<Type Name="IRemoteDispatch" FullName="System.EnterpriseServices.IRemoteDispatch">
   <TypeSignature Language="C#" Value="public interface IRemoteDispatch" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRemoteDispatch" />
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.IRemoteDispatch" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IRemoteDispatch" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IRemoteDispatch" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +37,8 @@
       <MemberSignature Language="C#" Value="public string RemoteDispatchAutoDone (string s);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string RemoteDispatchAutoDone(string s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.IRemoteDispatch.RemoteDispatchAutoDone(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RemoteDispatchAutoDone (s As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ RemoteDispatchAutoDone(System::String ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -70,6 +74,8 @@
       <MemberSignature Language="C#" Value="public string RemoteDispatchNotAutoDone (string s);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string RemoteDispatchNotAutoDone(string s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.IRemoteDispatch.RemoteDispatchNotAutoDone(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RemoteDispatchNotAutoDone (s As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ RemoteDispatchNotAutoDone(System::String ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

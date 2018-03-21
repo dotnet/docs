@@ -1,7 +1,9 @@
-<Type Name="BinaryReader" FullName="System.IO.BinaryReader">
+﻿<Type Name="BinaryReader" FullName="System.IO.BinaryReader">
   <TypeSignature Language="C#" Value="public class BinaryReader : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BinaryReader extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.IO.BinaryReader" />
+  <TypeSignature Language="VB.NET" Value="Public Class BinaryReader&#xA;Implements IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BinaryReader : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.IO</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -59,10 +61,23 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IO.BinaryReader" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public BinaryReader (System.IO.Stream input);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream input) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.#ctor(System.IO.Stream)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (input As Stream)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BinaryReader(System::IO::Stream ^ input);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -113,6 +128,7 @@
       <MemberSignature Language="C#" Value="public BinaryReader (System.IO.Stream input, System.Text.Encoding encoding);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream input, class System.Text.Encoding encoding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.#ctor(System.IO.Stream,System.Text.Encoding)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BinaryReader(System::IO::Stream ^ input, System::Text::Encoding ^ encoding);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -158,6 +174,7 @@
       <MemberSignature Language="C#" Value="public BinaryReader (System.IO.Stream input, System.Text.Encoding encoding, bool leaveOpen);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream input, class System.Text.Encoding encoding, bool leaveOpen) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.#ctor(System.IO.Stream,System.Text.Encoding,System.Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BinaryReader(System::IO::Stream ^ input, System::Text::Encoding ^ encoding, bool leaveOpen);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -199,6 +216,8 @@
       <MemberSignature Language="C#" Value="public virtual System.IO.Stream BaseStream { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IO.Stream BaseStream" />
       <MemberSignature Language="DocId" Value="P:System.IO.BinaryReader.BaseStream" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property BaseStream As Stream" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::IO::Stream ^ BaseStream { System::IO::Stream ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -252,6 +271,8 @@
       <MemberSignature Language="C#" Value="public virtual void Close ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Close() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.Close" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Close ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Close();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -284,11 +305,27 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the resources used by the <see cref="T:System.IO.BinaryReader" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Dispose">
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -333,6 +370,8 @@
       <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -385,6 +424,8 @@
       <MemberSignature Language="C#" Value="protected virtual void FillBuffer (int numBytes);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void FillBuffer(int32 numBytes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.FillBuffer(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub FillBuffer (numBytes As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void FillBuffer(int numBytes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -433,6 +474,8 @@
       <MemberSignature Language="C#" Value="public virtual int PeekChar ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 PeekChar() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.PeekChar" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function PeekChar () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int PeekChar();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -474,10 +517,23 @@
         <exception cref="T:System.ArgumentException">The current character cannot be decoded into the internal character buffer by using the <see cref="T:System.Text.Encoding" /> selected for the stream.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Read">
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reads bytes from the underlying stream and advances the current position of the stream.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Read">
       <MemberSignature Language="C#" Value="public virtual int Read ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Read() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.Read" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Read () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int Read();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -533,6 +589,8 @@
       <MemberSignature Language="C#" Value="public virtual int Read (byte[] buffer, int index, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Read(unsigned int8[] buffer, int32 index, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.Read(System.Byte[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Read (buffer As Byte(), index As Integer, count As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int Read(cli::array &lt;System::Byte&gt; ^ buffer, int index, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -607,6 +665,8 @@
       <MemberSignature Language="C#" Value="public virtual int Read (char[] buffer, int index, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Read(char[] buffer, int32 index, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.Read(System.Char[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Read (buffer As Char(), index As Integer, count As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int Read(cli::array &lt;char&gt; ^ buffer, int index, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -679,9 +739,11 @@
       </Docs>
     </Member>
     <Member MemberName="Read7BitEncodedInt">
-      <MemberSignature Language="C#" Value="protected int Read7BitEncodedInt ();" />
+      <MemberSignature Language="C#" Value="protected internal int Read7BitEncodedInt ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance int32 Read7BitEncodedInt() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.Read7BitEncodedInt" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Function Read7BitEncodedInt () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; int Read7BitEncodedInt();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -731,6 +793,8 @@
       <MemberSignature Language="C#" Value="public virtual bool ReadBoolean ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ReadBoolean() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.ReadBoolean" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadBoolean () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool ReadBoolean();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -786,6 +850,8 @@
       <MemberSignature Language="C#" Value="public virtual byte ReadByte ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance unsigned int8 ReadByte() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.ReadByte" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadByte () As Byte" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Byte ReadByte();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -849,6 +915,8 @@
       <MemberSignature Language="C#" Value="public virtual byte[] ReadBytes (int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance unsigned int8[] ReadBytes(int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.ReadBytes(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadBytes (count As Integer) As Byte()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Byte&gt; ^ ReadBytes(int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -914,6 +982,8 @@
       <MemberSignature Language="C#" Value="public virtual char ReadChar ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance char ReadChar() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.ReadChar" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadChar () As Char" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual char ReadChar();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -979,6 +1049,8 @@
       <MemberSignature Language="C#" Value="public virtual char[] ReadChars (int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance char[] ReadChars(int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.ReadChars(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadChars (count As Integer) As Char()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;char&gt; ^ ReadChars(int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1045,6 +1117,8 @@
       <MemberSignature Language="C#" Value="public virtual decimal ReadDecimal ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Decimal ReadDecimal() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.ReadDecimal" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadDecimal () As Decimal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Decimal ReadDecimal();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1091,6 +1165,8 @@
       <MemberSignature Language="C#" Value="public virtual double ReadDouble ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance float64 ReadDouble() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.ReadDouble" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadDouble () As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual double ReadDouble();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1153,6 +1229,8 @@
       <MemberSignature Language="C#" Value="public virtual short ReadInt16 ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int16 ReadInt16() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.ReadInt16" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadInt16 () As Short" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual short ReadInt16();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1201,6 +1279,8 @@
       <MemberSignature Language="C#" Value="public virtual int ReadInt32 ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 ReadInt32() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.ReadInt32" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadInt32 () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int ReadInt32();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1257,6 +1337,8 @@
       <MemberSignature Language="C#" Value="public virtual long ReadInt64 ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int64 ReadInt64() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.ReadInt64" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadInt64 () As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual long ReadInt64();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1305,6 +1387,8 @@
       <MemberSignature Language="C#" Value="public virtual sbyte ReadSByte ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int8 ReadSByte() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.ReadSByte" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadSByte () As SByte" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::SByte ReadSByte();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1356,6 +1440,8 @@
       <MemberSignature Language="C#" Value="public virtual float ReadSingle ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance float32 ReadSingle() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.ReadSingle" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadSingle () As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual float ReadSingle();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1417,6 +1503,8 @@
       <MemberSignature Language="C#" Value="public virtual string ReadString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string ReadString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.ReadString" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ ReadString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1471,6 +1559,8 @@
       <MemberSignature Language="C#" Value="public virtual ushort ReadUInt16 ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance unsigned int16 ReadUInt16() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.ReadUInt16" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadUInt16 () As UShort" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::UInt16 ReadUInt16();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1524,6 +1614,8 @@
       <MemberSignature Language="C#" Value="public virtual uint ReadUInt32 ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance unsigned int32 ReadUInt32() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.ReadUInt32" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadUInt32 () As UInteger" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::UInt32 ReadUInt32();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1577,6 +1669,8 @@
       <MemberSignature Language="C#" Value="public virtual ulong ReadUInt64 ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance unsigned int64 ReadUInt64() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryReader.ReadUInt64" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadUInt64 () As ULong" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::UInt64 ReadUInt64();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1626,38 +1720,5 @@
         <exception cref="T:System.ObjectDisposedException">The stream is closed.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Dispose">
-      <AssemblyInfo>
-        <AssemblyName>System.IO</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Releases the resources used by the <see cref="T:System.IO.BinaryReader" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.IO</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IO.BinaryReader" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Read">
-      <AssemblyInfo>
-        <AssemblyName>System.IO</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Reads bytes from the underlying stream and advances the current position of the stream.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

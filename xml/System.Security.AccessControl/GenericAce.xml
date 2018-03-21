@@ -1,7 +1,9 @@
-<Type Name="GenericAce" FullName="System.Security.AccessControl.GenericAce">
+﻿<Type Name="GenericAce" FullName="System.Security.AccessControl.GenericAce">
   <TypeSignature Language="C#" Value="public abstract class GenericAce" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit GenericAce extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.GenericAce" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class GenericAce" />
+  <TypeSignature Language="C++ CLI" Value="public ref class GenericAce abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Security.AccessControl</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +34,8 @@
       <MemberSignature Language="C#" Value="public System.Security.AccessControl.AceFlags AceFlags { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.AccessControl.AceFlags AceFlags" />
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.GenericAce.AceFlags" />
+      <MemberSignature Language="VB.NET" Value="Public Property AceFlags As AceFlags" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::AccessControl::AceFlags AceFlags { System::Security::AccessControl::AceFlags get(); void set(System::Security::AccessControl::AceFlags value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -63,6 +67,8 @@
       <MemberSignature Language="C#" Value="public System.Security.AccessControl.AceType AceType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.AccessControl.AceType AceType" />
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.GenericAce.AceType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AceType As AceType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::AccessControl::AceType AceType { System::Security::AccessControl::AceType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -87,6 +93,8 @@
       <MemberSignature Language="C#" Value="public System.Security.AccessControl.AuditFlags AuditFlags { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.AccessControl.AuditFlags AuditFlags" />
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.GenericAce.AuditFlags" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AuditFlags As AuditFlags" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::AccessControl::AuditFlags AuditFlags { System::Security::AccessControl::AuditFlags get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -111,6 +119,8 @@
       <MemberSignature Language="C#" Value="public abstract int BinaryLength { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 BinaryLength" />
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.GenericAce.BinaryLength" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property BinaryLength As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property int BinaryLength { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -135,6 +145,8 @@
       <MemberSignature Language="C#" Value="public System.Security.AccessControl.GenericAce Copy ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Security.AccessControl.GenericAce Copy() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.GenericAce.Copy" />
+      <MemberSignature Language="VB.NET" Value="Public Function Copy () As GenericAce" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::AccessControl::GenericAce ^ Copy();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -160,6 +172,8 @@
       <MemberSignature Language="C#" Value="public static System.Security.AccessControl.GenericAce CreateFromBinaryForm (byte[] binaryForm, int offset);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.AccessControl.GenericAce CreateFromBinaryForm(unsigned int8[] binaryForm, int32 offset) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.GenericAce.CreateFromBinaryForm(System.Byte[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateFromBinaryForm (binaryForm As Byte(), offset As Integer) As GenericAce" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::AccessControl::GenericAce ^ CreateFromBinaryForm(cli::array &lt;System::Byte&gt; ^ binaryForm, int offset);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -190,6 +204,8 @@
       <MemberSignature Language="C#" Value="public override sealed bool Equals (object o);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object o) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.GenericAce.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Function Equals (o As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -219,6 +235,8 @@
       <MemberSignature Language="C#" Value="public abstract void GetBinaryForm (byte[] binaryForm, int offset);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetBinaryForm(unsigned int8[] binaryForm, int32 offset) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.GenericAce.GetBinaryForm(System.Byte[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub GetBinaryForm (binaryForm As Byte(), offset As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void GetBinaryForm(cli::array &lt;System::Byte&gt; ^ binaryForm, int offset);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -250,6 +268,8 @@
       <MemberSignature Language="C#" Value="public override sealed int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.GenericAce.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -275,6 +295,8 @@
       <MemberSignature Language="C#" Value="public System.Security.AccessControl.InheritanceFlags InheritanceFlags { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.AccessControl.InheritanceFlags InheritanceFlags" />
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.GenericAce.InheritanceFlags" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InheritanceFlags As InheritanceFlags" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::AccessControl::InheritanceFlags InheritanceFlags { System::Security::AccessControl::InheritanceFlags get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -299,6 +321,8 @@
       <MemberSignature Language="C#" Value="public bool IsInherited { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsInherited" />
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.GenericAce.IsInherited" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsInherited As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsInherited { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -324,6 +348,8 @@
       <MemberSignature Language="C#" Value="public static bool operator == (System.Security.AccessControl.GenericAce left, System.Security.AccessControl.GenericAce right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(class System.Security.AccessControl.GenericAce left, class System.Security.AccessControl.GenericAce right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.GenericAce.op_Equality(System.Security.AccessControl.GenericAce,System.Security.AccessControl.GenericAce)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As GenericAce, right As GenericAce) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Security::AccessControl::GenericAce ^ left, System::Security::AccessControl::GenericAce ^ right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -357,6 +383,8 @@
       <MemberSignature Language="C#" Value="public static bool operator != (System.Security.AccessControl.GenericAce left, System.Security.AccessControl.GenericAce right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class System.Security.AccessControl.GenericAce left, class System.Security.AccessControl.GenericAce right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.GenericAce.op_Inequality(System.Security.AccessControl.GenericAce,System.Security.AccessControl.GenericAce)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As GenericAce, right As GenericAce) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Security::AccessControl::GenericAce ^ left, System::Security::AccessControl::GenericAce ^ right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -390,6 +418,8 @@
       <MemberSignature Language="C#" Value="public System.Security.AccessControl.PropagationFlags PropagationFlags { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.AccessControl.PropagationFlags PropagationFlags" />
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.GenericAce.PropagationFlags" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PropagationFlags As PropagationFlags" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::AccessControl::PropagationFlags PropagationFlags { System::Security::AccessControl::PropagationFlags get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>

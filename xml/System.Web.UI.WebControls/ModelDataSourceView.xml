@@ -1,7 +1,9 @@
-<Type Name="ModelDataSourceView" FullName="System.Web.UI.WebControls.ModelDataSourceView">
+﻿<Type Name="ModelDataSourceView" FullName="System.Web.UI.WebControls.ModelDataSourceView">
   <TypeSignature Language="C#" Value="public class ModelDataSourceView : System.Web.UI.DataSourceView, System.Web.UI.IStateManager" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ModelDataSourceView extends System.Web.UI.DataSourceView implements class System.Web.UI.IStateManager" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ModelDataSourceView" />
+  <TypeSignature Language="VB.NET" Value="Public Class ModelDataSourceView&#xA;Inherits DataSourceView&#xA;Implements IStateManager" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ModelDataSourceView : System::Web::UI::DataSourceView, System::Web::UI::IStateManager" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +32,8 @@
       <MemberSignature Language="C#" Value="public ModelDataSourceView (System.Web.UI.WebControls.ModelDataSource owner);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.WebControls.ModelDataSource owner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ModelDataSourceView.#ctor(System.Web.UI.WebControls.ModelDataSource)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (owner As ModelDataSource)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ModelDataSourceView(System::Web::UI::WebControls::ModelDataSource ^ owner);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -49,6 +53,8 @@
       <MemberSignature Language="C#" Value="public event System.Web.UI.WebControls.CallingDataMethodsEventHandler CallingDataMethods;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Web.UI.WebControls.CallingDataMethodsEventHandler CallingDataMethods" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.ModelDataSourceView.CallingDataMethods" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event CallingDataMethods As CallingDataMethodsEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::CallingDataMethodsEventHandler ^ CallingDataMethods;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -66,6 +72,8 @@
       <MemberSignature Language="C#" Value="public override bool CanDelete { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanDelete" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ModelDataSourceView.CanDelete" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanDelete As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanDelete { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -92,6 +100,8 @@
       <MemberSignature Language="C#" Value="public override bool CanInsert { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanInsert" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ModelDataSourceView.CanInsert" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanInsert As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanInsert { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -118,6 +128,8 @@
       <MemberSignature Language="C#" Value="public override bool CanPage { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanPage" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ModelDataSourceView.CanPage" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanPage As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanPage { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -137,6 +149,8 @@
       <MemberSignature Language="C#" Value="public override bool CanRetrieveTotalRowCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanRetrieveTotalRowCount" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ModelDataSourceView.CanRetrieveTotalRowCount" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanRetrieveTotalRowCount As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanRetrieveTotalRowCount { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -156,6 +170,8 @@
       <MemberSignature Language="C#" Value="public override bool CanSort { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanSort" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ModelDataSourceView.CanSort" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanSort As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanSort { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -175,6 +191,8 @@
       <MemberSignature Language="C#" Value="public override bool CanUpdate { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanUpdate" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ModelDataSourceView.CanUpdate" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanUpdate As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanUpdate { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -201,6 +219,8 @@
       <MemberSignature Language="C#" Value="protected virtual System.Collections.IEnumerable CreateSelectResult (object result);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Collections.IEnumerable CreateSelectResult(object result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ModelDataSourceView.CreateSelectResult(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateSelectResult (result As Object) As IEnumerable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Collections::IEnumerable ^ CreateSelectResult(System::Object ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -224,6 +244,8 @@
       <MemberSignature Language="C#" Value="public string DataKeyName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DataKeyName" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ModelDataSourceView.DataKeyName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataKeyName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DataKeyName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -242,6 +264,8 @@
       <MemberSignature Language="C#" Value="public override void Delete (System.Collections.IDictionary keys, System.Collections.IDictionary oldValues, System.Web.UI.DataSourceViewOperationCallback callback);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Delete(class System.Collections.IDictionary keys, class System.Collections.IDictionary oldValues, class System.Web.UI.DataSourceViewOperationCallback callback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ModelDataSourceView.Delete(System.Collections.IDictionary,System.Collections.IDictionary,System.Web.UI.DataSourceViewOperationCallback)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Delete (keys As IDictionary, oldValues As IDictionary, callback As DataSourceViewOperationCallback)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Delete(System::Collections::IDictionary ^ keys, System::Collections::IDictionary ^ oldValues, System::Web::UI::DataSourceViewOperationCallback ^ callback);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -267,6 +291,8 @@
       <MemberSignature Language="C#" Value="public string DeleteMethod { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DeleteMethod" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ModelDataSourceView.DeleteMethod" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DeleteMethod As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DeleteMethod { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -285,6 +311,8 @@
       <MemberSignature Language="C#" Value="protected virtual System.Web.UI.WebControls.ModelDataSourceMethod EvaluateDeleteMethodParameters (System.Collections.IDictionary keys, System.Collections.IDictionary oldValues);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Web.UI.WebControls.ModelDataSourceMethod EvaluateDeleteMethodParameters(class System.Collections.IDictionary keys, class System.Collections.IDictionary oldValues) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ModelDataSourceView.EvaluateDeleteMethodParameters(System.Collections.IDictionary,System.Collections.IDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function EvaluateDeleteMethodParameters (keys As IDictionary, oldValues As IDictionary) As ModelDataSourceMethod" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Web::UI::WebControls::ModelDataSourceMethod ^ EvaluateDeleteMethodParameters(System::Collections::IDictionary ^ keys, System::Collections::IDictionary ^ oldValues);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -309,6 +337,8 @@
       <MemberSignature Language="C#" Value="protected virtual System.Web.UI.WebControls.ModelDataSourceMethod EvaluateInsertMethodParameters (System.Collections.IDictionary values);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Web.UI.WebControls.ModelDataSourceMethod EvaluateInsertMethodParameters(class System.Collections.IDictionary values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ModelDataSourceView.EvaluateInsertMethodParameters(System.Collections.IDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function EvaluateInsertMethodParameters (values As IDictionary) As ModelDataSourceMethod" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Web::UI::WebControls::ModelDataSourceMethod ^ EvaluateInsertMethodParameters(System::Collections::IDictionary ^ values);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -327,10 +357,20 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="EvaluateMethodParameters">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Evaluates the method parameters for model binding.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="EvaluateMethodParameters">
       <MemberSignature Language="C#" Value="protected virtual void EvaluateMethodParameters (System.Web.UI.DataSourceOperation dataSourceOperation, System.Web.UI.WebControls.ModelDataSourceMethod modelDataSourceMethod, System.Collections.IDictionary controlValues);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void EvaluateMethodParameters(valuetype System.Web.UI.DataSourceOperation dataSourceOperation, class System.Web.UI.WebControls.ModelDataSourceMethod modelDataSourceMethod, class System.Collections.IDictionary controlValues) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ModelDataSourceView.EvaluateMethodParameters(System.Web.UI.DataSourceOperation,System.Web.UI.WebControls.ModelDataSourceMethod,System.Collections.IDictionary)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void EvaluateMethodParameters(System::Web::UI::DataSourceOperation dataSourceOperation, System::Web::UI::WebControls::ModelDataSourceMethod ^ modelDataSourceMethod, System::Collections::IDictionary ^ controlValues);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -363,6 +403,7 @@
       <MemberSignature Language="C#" Value="protected virtual void EvaluateMethodParameters (System.Web.UI.DataSourceOperation dataSourceOperation, System.Web.UI.WebControls.ModelDataSourceMethod modelDataSourceMethod, System.Collections.IDictionary controlValues, bool isPageLoadComplete);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void EvaluateMethodParameters(valuetype System.Web.UI.DataSourceOperation dataSourceOperation, class System.Web.UI.WebControls.ModelDataSourceMethod modelDataSourceMethod, class System.Collections.IDictionary controlValues, bool isPageLoadComplete) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ModelDataSourceView.EvaluateMethodParameters(System.Web.UI.DataSourceOperation,System.Web.UI.WebControls.ModelDataSourceMethod,System.Collections.IDictionary,System.Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void EvaluateMethodParameters(System::Web::UI::DataSourceOperation dataSourceOperation, System::Web::UI::WebControls::ModelDataSourceMethod ^ modelDataSourceMethod, System::Collections::IDictionary ^ controlValues, bool isPageLoadComplete);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -390,6 +431,8 @@
       <MemberSignature Language="C#" Value="protected virtual System.Web.UI.WebControls.ModelDataSourceMethod EvaluateSelectMethodParameters (System.Web.UI.DataSourceSelectArguments arguments, out System.Web.UI.WebControls.DataSourceSelectResultProcessingOptions selectResultProcessingOptions);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Web.UI.WebControls.ModelDataSourceMethod EvaluateSelectMethodParameters(class System.Web.UI.DataSourceSelectArguments arguments, [out] class System.Web.UI.WebControls.DataSourceSelectResultProcessingOptions&amp; selectResultProcessingOptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ModelDataSourceView.EvaluateSelectMethodParameters(System.Web.UI.DataSourceSelectArguments,System.Web.UI.WebControls.DataSourceSelectResultProcessingOptions@)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function EvaluateSelectMethodParameters (arguments As DataSourceSelectArguments, ByRef selectResultProcessingOptions As DataSourceSelectResultProcessingOptions) As ModelDataSourceMethod" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Web::UI::WebControls::ModelDataSourceMethod ^ EvaluateSelectMethodParameters(System::Web::UI::DataSourceSelectArguments ^ arguments, [Runtime::InteropServices::Out] System::Web::UI::WebControls::DataSourceSelectResultProcessingOptions ^ % selectResultProcessingOptions);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -414,6 +457,8 @@
       <MemberSignature Language="C#" Value="protected virtual System.Web.UI.WebControls.ModelDataSourceMethod EvaluateUpdateMethodParameters (System.Collections.IDictionary keys, System.Collections.IDictionary values, System.Collections.IDictionary oldValues);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Web.UI.WebControls.ModelDataSourceMethod EvaluateUpdateMethodParameters(class System.Collections.IDictionary keys, class System.Collections.IDictionary values, class System.Collections.IDictionary oldValues) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ModelDataSourceView.EvaluateUpdateMethodParameters(System.Collections.IDictionary,System.Collections.IDictionary,System.Collections.IDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function EvaluateUpdateMethodParameters (keys As IDictionary, values As IDictionary, oldValues As IDictionary) As ModelDataSourceMethod" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Web::UI::WebControls::ModelDataSourceMethod ^ EvaluateUpdateMethodParameters(System::Collections::IDictionary ^ keys, System::Collections::IDictionary ^ values, System::Collections::IDictionary ^ oldValues);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -440,6 +485,8 @@
       <MemberSignature Language="C#" Value="protected override int ExecuteDelete (System.Collections.IDictionary keys, System.Collections.IDictionary oldValues);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance int32 ExecuteDelete(class System.Collections.IDictionary keys, class System.Collections.IDictionary oldValues) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ModelDataSourceView.ExecuteDelete(System.Collections.IDictionary,System.Collections.IDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function ExecuteDelete (keys As IDictionary, oldValues As IDictionary) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override int ExecuteDelete(System::Collections::IDictionary ^ keys, System::Collections::IDictionary ^ oldValues);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -464,6 +511,8 @@
       <MemberSignature Language="C#" Value="protected override int ExecuteInsert (System.Collections.IDictionary values);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance int32 ExecuteInsert(class System.Collections.IDictionary values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ModelDataSourceView.ExecuteInsert(System.Collections.IDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function ExecuteInsert (values As IDictionary) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override int ExecuteInsert(System::Collections::IDictionary ^ values);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -483,9 +532,11 @@
       </Docs>
     </Member>
     <Member MemberName="ExecuteSelect">
-      <MemberSignature Language="C#" Value="protected override System.Collections.IEnumerable ExecuteSelect (System.Web.UI.DataSourceSelectArguments arguments);" />
+      <MemberSignature Language="C#" Value="protected internal override System.Collections.IEnumerable ExecuteSelect (System.Web.UI.DataSourceSelectArguments arguments);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance class System.Collections.IEnumerable ExecuteSelect(class System.Web.UI.DataSourceSelectArguments arguments) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ModelDataSourceView.ExecuteSelect(System.Web.UI.DataSourceSelectArguments)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function ExecuteSelect (arguments As DataSourceSelectArguments) As IEnumerable" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Collections::IEnumerable ^ ExecuteSelect(System::Web::UI::DataSourceSelectArguments ^ arguments);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -508,6 +559,8 @@
       <MemberSignature Language="C#" Value="protected override int ExecuteUpdate (System.Collections.IDictionary keys, System.Collections.IDictionary values, System.Collections.IDictionary oldValues);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance int32 ExecuteUpdate(class System.Collections.IDictionary keys, class System.Collections.IDictionary values, class System.Collections.IDictionary oldValues) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ModelDataSourceView.ExecuteUpdate(System.Collections.IDictionary,System.Collections.IDictionary,System.Collections.IDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function ExecuteUpdate (keys As IDictionary, values As IDictionary, oldValues As IDictionary) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override int ExecuteUpdate(System::Collections::IDictionary ^ keys, System::Collections::IDictionary ^ values, System::Collections::IDictionary ^ oldValues);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -534,6 +587,8 @@
       <MemberSignature Language="C#" Value="protected virtual System.Web.UI.WebControls.ModelDataSourceMethod FindMethod (string methodName);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Web.UI.WebControls.ModelDataSourceMethod FindMethod(string methodName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ModelDataSourceView.FindMethod(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function FindMethod (methodName As String) As ModelDataSourceMethod" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Web::UI::WebControls::ModelDataSourceMethod ^ FindMethod(System::String ^ methodName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -557,6 +612,8 @@
       <MemberSignature Language="C#" Value="protected virtual object GetDeleteMethodResult (System.Collections.IDictionary keys, System.Collections.IDictionary oldValues);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance object GetDeleteMethodResult(class System.Collections.IDictionary keys, class System.Collections.IDictionary oldValues) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ModelDataSourceView.GetDeleteMethodResult(System.Collections.IDictionary,System.Collections.IDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetDeleteMethodResult (keys As IDictionary, oldValues As IDictionary) As Object" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Object ^ GetDeleteMethodResult(System::Collections::IDictionary ^ keys, System::Collections::IDictionary ^ oldValues);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -582,6 +639,8 @@
       <MemberSignature Language="C#" Value="protected virtual object GetInsertMethodResult (System.Collections.IDictionary values);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance object GetInsertMethodResult(class System.Collections.IDictionary values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ModelDataSourceView.GetInsertMethodResult(System.Collections.IDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetInsertMethodResult (values As IDictionary) As Object" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Object ^ GetInsertMethodResult(System::Collections::IDictionary ^ values);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -605,6 +664,8 @@
       <MemberSignature Language="C#" Value="protected virtual object GetSelectMethodResult (System.Web.UI.DataSourceSelectArguments arguments);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance object GetSelectMethodResult(class System.Web.UI.DataSourceSelectArguments arguments) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ModelDataSourceView.GetSelectMethodResult(System.Web.UI.DataSourceSelectArguments)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetSelectMethodResult (arguments As DataSourceSelectArguments) As Object" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Object ^ GetSelectMethodResult(System::Web::UI::DataSourceSelectArguments ^ arguments);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -628,6 +689,8 @@
       <MemberSignature Language="C#" Value="protected virtual object GetUpdateMethodResult (System.Collections.IDictionary keys, System.Collections.IDictionary values, System.Collections.IDictionary oldValues);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance object GetUpdateMethodResult(class System.Collections.IDictionary keys, class System.Collections.IDictionary values, class System.Collections.IDictionary oldValues) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ModelDataSourceView.GetUpdateMethodResult(System.Collections.IDictionary,System.Collections.IDictionary,System.Collections.IDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetUpdateMethodResult (keys As IDictionary, values As IDictionary, oldValues As IDictionary) As Object" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Object ^ GetUpdateMethodResult(System::Collections::IDictionary ^ keys, System::Collections::IDictionary ^ values, System::Collections::IDictionary ^ oldValues);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -655,6 +718,8 @@
       <MemberSignature Language="C#" Value="public override void Insert (System.Collections.IDictionary values, System.Web.UI.DataSourceViewOperationCallback callback);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Insert(class System.Collections.IDictionary values, class System.Web.UI.DataSourceViewOperationCallback callback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ModelDataSourceView.Insert(System.Collections.IDictionary,System.Web.UI.DataSourceViewOperationCallback)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Insert (values As IDictionary, callback As DataSourceViewOperationCallback)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Insert(System::Collections::IDictionary ^ values, System::Web::UI::DataSourceViewOperationCallback ^ callback);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -678,6 +743,8 @@
       <MemberSignature Language="C#" Value="public string InsertMethod { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string InsertMethod" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ModelDataSourceView.InsertMethod" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InsertMethod As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ InsertMethod { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -696,6 +763,8 @@
       <MemberSignature Language="C#" Value="protected virtual System.Web.UI.WebControls.ModelDataMethodResult InvokeMethod (System.Web.UI.WebControls.ModelDataSourceMethod method);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Web.UI.WebControls.ModelDataMethodResult InvokeMethod(class System.Web.UI.WebControls.ModelDataSourceMethod method) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ModelDataSourceView.InvokeMethod(System.Web.UI.WebControls.ModelDataSourceMethod)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function InvokeMethod (method As ModelDataSourceMethod) As ModelDataMethodResult" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Web::UI::WebControls::ModelDataMethodResult ^ InvokeMethod(System::Web::UI::WebControls::ModelDataSourceMethod ^ method);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -718,6 +787,8 @@
       <MemberSignature Language="C#" Value="protected virtual bool IsTrackingViewState ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool IsTrackingViewState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ModelDataSourceView.IsTrackingViewState" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function IsTrackingViewState () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool IsTrackingViewState();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -738,7 +809,12 @@
       <MemberSignature Language="C#" Value="protected virtual void LoadViewState (object savedState);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void LoadViewState(object savedState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ModelDataSourceView.LoadViewState(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub LoadViewState (savedState As Object)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void LoadViewState(System::Object ^ savedState);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IStateManager.LoadViewState(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -759,6 +835,8 @@
       <MemberSignature Language="C#" Value="public string ModelTypeName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ModelTypeName" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ModelDataSourceView.ModelTypeName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ModelTypeName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ModelTypeName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -777,6 +855,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnCallingDataMethods (System.Web.UI.WebControls.CallingDataMethodsEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnCallingDataMethods(class System.Web.UI.WebControls.CallingDataMethodsEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ModelDataSourceView.OnCallingDataMethods(System.Web.UI.WebControls.CallingDataMethodsEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnCallingDataMethods (e As CallingDataMethodsEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnCallingDataMethods(System::Web::UI::WebControls::CallingDataMethodsEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -805,6 +885,8 @@
       <MemberSignature Language="C#" Value="protected virtual object ProcessSelectMethodResult (System.Web.UI.DataSourceSelectArguments arguments, System.Web.UI.WebControls.DataSourceSelectResultProcessingOptions selectResultProcessingOptions, System.Web.UI.WebControls.ModelDataMethodResult result);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance object ProcessSelectMethodResult(class System.Web.UI.DataSourceSelectArguments arguments, class System.Web.UI.WebControls.DataSourceSelectResultProcessingOptions selectResultProcessingOptions, class System.Web.UI.WebControls.ModelDataMethodResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ModelDataSourceView.ProcessSelectMethodResult(System.Web.UI.DataSourceSelectArguments,System.Web.UI.WebControls.DataSourceSelectResultProcessingOptions,System.Web.UI.WebControls.ModelDataMethodResult)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function ProcessSelectMethodResult (arguments As DataSourceSelectArguments, selectResultProcessingOptions As DataSourceSelectResultProcessingOptions, result As ModelDataMethodResult) As Object" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Object ^ ProcessSelectMethodResult(System::Web::UI::DataSourceSelectArguments ^ arguments, System::Web::UI::WebControls::DataSourceSelectResultProcessingOptions ^ selectResultProcessingOptions, System::Web::UI::WebControls::ModelDataMethodResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -831,7 +913,12 @@
       <MemberSignature Language="C#" Value="protected virtual object SaveViewState ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance object SaveViewState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ModelDataSourceView.SaveViewState" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function SaveViewState () As Object" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Object ^ SaveViewState();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IStateManager.SaveViewState</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -850,6 +937,8 @@
       <MemberSignature Language="C#" Value="public override void Select (System.Web.UI.DataSourceSelectArguments arguments, System.Web.UI.DataSourceViewSelectCallback callback);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Select(class System.Web.UI.DataSourceSelectArguments arguments, class System.Web.UI.DataSourceViewSelectCallback callback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ModelDataSourceView.Select(System.Web.UI.DataSourceSelectArguments,System.Web.UI.DataSourceViewSelectCallback)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Select (arguments As DataSourceSelectArguments, callback As DataSourceViewSelectCallback)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Select(System::Web::UI::DataSourceSelectArguments ^ arguments, System::Web::UI::DataSourceViewSelectCallback ^ callback);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -873,6 +962,8 @@
       <MemberSignature Language="C#" Value="public string SelectMethod { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SelectMethod" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ModelDataSourceView.SelectMethod" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SelectMethod As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SelectMethod { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -891,7 +982,12 @@
       <MemberSignature Language="C#" Value="bool System.Web.UI.IStateManager.IsTrackingViewState { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Web.UI.IStateManager.IsTrackingViewState" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ModelDataSourceView.System#Web#UI#IStateManager#IsTrackingViewState" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsTrackingViewState As Boolean Implements IStateManager.IsTrackingViewState" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Web.UI.IStateManager.IsTrackingViewState { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.UI.IStateManager.IsTrackingViewState</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -917,7 +1013,12 @@
       <MemberSignature Language="C#" Value="void IStateManager.LoadViewState (object savedState);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IStateManager.LoadViewState(object savedState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ModelDataSourceView.System#Web#UI#IStateManager#LoadViewState(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Sub LoadViewState (savedState As Object) Implements IStateManager.LoadViewState" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IStateManager.LoadViewState(System::Object ^ savedState) = System::Web::UI::IStateManager::LoadViewState;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IStateManager.LoadViewState(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -945,7 +1046,12 @@
       <MemberSignature Language="C#" Value="object IStateManager.SaveViewState ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.Web.UI.IStateManager.SaveViewState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ModelDataSourceView.System#Web#UI#IStateManager#SaveViewState" />
+      <MemberSignature Language="VB.NET" Value="Function SaveViewState () As Object Implements IStateManager.SaveViewState" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.Web.UI.IStateManager.SaveViewState() = System::Web::UI::IStateManager::SaveViewState;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IStateManager.SaveViewState</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -971,7 +1077,12 @@
       <MemberSignature Language="C#" Value="void IStateManager.TrackViewState ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IStateManager.TrackViewState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ModelDataSourceView.System#Web#UI#IStateManager#TrackViewState" />
+      <MemberSignature Language="VB.NET" Value="Sub TrackViewState () Implements IStateManager.TrackViewState" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IStateManager.TrackViewState() = System::Web::UI::IStateManager::TrackViewState;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IStateManager.TrackViewState</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -996,7 +1107,12 @@
       <MemberSignature Language="C#" Value="protected virtual void TrackViewState ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void TrackViewState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ModelDataSourceView.TrackViewState" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub TrackViewState ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void TrackViewState();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IStateManager.TrackViewState</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1021,6 +1137,8 @@
       <MemberSignature Language="C#" Value="public override void Update (System.Collections.IDictionary keys, System.Collections.IDictionary values, System.Collections.IDictionary oldValues, System.Web.UI.DataSourceViewOperationCallback callback);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Update(class System.Collections.IDictionary keys, class System.Collections.IDictionary values, class System.Collections.IDictionary oldValues, class System.Web.UI.DataSourceViewOperationCallback callback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ModelDataSourceView.Update(System.Collections.IDictionary,System.Collections.IDictionary,System.Collections.IDictionary,System.Web.UI.DataSourceViewOperationCallback)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Update (keys As IDictionary, values As IDictionary, oldValues As IDictionary, callback As DataSourceViewOperationCallback)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Update(System::Collections::IDictionary ^ keys, System::Collections::IDictionary ^ values, System::Collections::IDictionary ^ oldValues, System::Web::UI::DataSourceViewOperationCallback ^ callback);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1048,6 +1166,8 @@
       <MemberSignature Language="C#" Value="public string UpdateMethod { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string UpdateMethod" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ModelDataSourceView.UpdateMethod" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UpdateMethod As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ UpdateMethod { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1066,6 +1186,8 @@
       <MemberSignature Language="C#" Value="public void UpdateProperties (string modelTypeName, string selectMethod, string updateMethod, string insertMethod, string deleteMethod, string dataKeyName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void UpdateProperties(string modelTypeName, string selectMethod, string updateMethod, string insertMethod, string deleteMethod, string dataKeyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ModelDataSourceView.UpdateProperties(System.String,System.String,System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub UpdateProperties (modelTypeName As String, selectMethod As String, updateMethod As String, insertMethod As String, deleteMethod As String, dataKeyName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void UpdateProperties(System::String ^ modelTypeName, System::String ^ selectMethod, System::String ^ updateMethod, System::String ^ insertMethod, System::String ^ deleteMethod, System::String ^ dataKeyName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1093,14 +1215,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="EvaluateMethodParameters">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Evaluates the method parameters for model binding.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

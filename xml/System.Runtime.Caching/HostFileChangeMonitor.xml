@@ -1,7 +1,9 @@
-<Type Name="HostFileChangeMonitor" FullName="System.Runtime.Caching.HostFileChangeMonitor">
+﻿<Type Name="HostFileChangeMonitor" FullName="System.Runtime.Caching.HostFileChangeMonitor">
   <TypeSignature Language="C#" Value="public sealed class HostFileChangeMonitor : System.Runtime.Caching.FileChangeMonitor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit HostFileChangeMonitor extends System.Runtime.Caching.FileChangeMonitor" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Caching.HostFileChangeMonitor" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HostFileChangeMonitor&#xA;Inherits FileChangeMonitor" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HostFileChangeMonitor sealed : System::Runtime::Caching::FileChangeMonitor" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Caching</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -67,6 +69,8 @@
       <MemberSignature Language="C#" Value="public HostFileChangeMonitor (System.Collections.Generic.IList&lt;string&gt; filePaths);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IList`1&lt;string&gt; filePaths) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.HostFileChangeMonitor.#ctor(System.Collections.Generic.IList{System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (filePaths As IList(Of String))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HostFileChangeMonitor(System::Collections::Generic::IList&lt;System::String ^&gt; ^ filePaths);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -103,6 +107,8 @@
       <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.HostFileChangeMonitor.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -124,6 +130,8 @@
       <MemberSignature Language="C#" Value="public override System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt; FilePaths { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;string&gt; FilePaths" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Caching.HostFileChangeMonitor.FilePaths" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property FilePaths As ReadOnlyCollection(Of String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ FilePaths { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -142,6 +150,8 @@
       <MemberSignature Language="C#" Value="public override DateTimeOffset LastModified { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTimeOffset LastModified" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Caching.HostFileChangeMonitor.LastModified" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property LastModified As DateTimeOffset" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property DateTimeOffset LastModified { DateTimeOffset get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -167,6 +177,8 @@
       <MemberSignature Language="C#" Value="public override string UniqueId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string UniqueId" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Caching.HostFileChangeMonitor.UniqueId" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property UniqueId As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ UniqueId { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>

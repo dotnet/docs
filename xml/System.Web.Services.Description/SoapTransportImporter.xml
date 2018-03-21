@@ -1,7 +1,9 @@
-<Type Name="SoapTransportImporter" FullName="System.Web.Services.Description.SoapTransportImporter">
+﻿<Type Name="SoapTransportImporter" FullName="System.Web.Services.Description.SoapTransportImporter">
   <TypeSignature Language="C#" Value="public abstract class SoapTransportImporter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit SoapTransportImporter extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.SoapTransportImporter" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class SoapTransportImporter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SoapTransportImporter abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +37,8 @@
       <MemberSignature Language="C#" Value="protected SoapTransportImporter ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.SoapTransportImporter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; SoapTransportImporter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -50,6 +54,8 @@
       <MemberSignature Language="C#" Value="public abstract void ImportClass ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ImportClass() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.SoapTransportImporter.ImportClass" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub ImportClass ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void ImportClass();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -68,6 +74,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Services.Description.SoapProtocolImporter ImportContext { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Description.SoapProtocolImporter ImportContext" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.SoapTransportImporter.ImportContext" />
+      <MemberSignature Language="VB.NET" Value="Public Property ImportContext As SoapProtocolImporter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Description::SoapProtocolImporter ^ ImportContext { System::Web::Services::Description::SoapProtocolImporter ^ get(); void set(System::Web::Services::Description::SoapProtocolImporter ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -93,6 +101,8 @@
       <MemberSignature Language="C#" Value="public abstract bool IsSupportedTransport (string transport);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsSupportedTransport(string transport) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.SoapTransportImporter.IsSupportedTransport(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function IsSupportedTransport (transport As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool IsSupportedTransport(System::String ^ transport);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

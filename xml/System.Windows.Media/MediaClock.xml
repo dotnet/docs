@@ -1,7 +1,9 @@
-<Type Name="MediaClock" FullName="System.Windows.Media.MediaClock">
+﻿<Type Name="MediaClock" FullName="System.Windows.Media.MediaClock">
   <TypeSignature Language="C#" Value="public class MediaClock : System.Windows.Media.Animation.Clock" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MediaClock extends System.Windows.Media.Animation.Clock" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.MediaClock" />
+  <TypeSignature Language="VB.NET" Value="Public Class MediaClock&#xA;Inherits Clock" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MediaClock : System::Windows::Media::Animation::Clock" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -18,9 +20,11 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="protected MediaClock (System.Windows.Media.MediaTimeline media);" />
+      <MemberSignature Language="C#" Value="protected internal MediaClock (System.Windows.Media.MediaTimeline media);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig specialname rtspecialname instance void .ctor(class System.Windows.Media.MediaTimeline media) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.MediaClock.#ctor(System.Windows.Media.MediaTimeline)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Sub New (media As MediaTimeline)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; MediaClock(System::Windows::Media::MediaTimeline ^ media);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -39,6 +43,8 @@
       <MemberSignature Language="C#" Value="protected override void DiscontinuousTimeMovement ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DiscontinuousTimeMovement() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.MediaClock.DiscontinuousTimeMovement" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DiscontinuousTimeMovement ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void DiscontinuousTimeMovement();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -57,6 +63,8 @@
       <MemberSignature Language="C#" Value="protected override bool GetCanSlip ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool GetCanSlip() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.MediaClock.GetCanSlip" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetCanSlip () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool GetCanSlip();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -77,6 +85,8 @@
       <MemberSignature Language="C#" Value="protected override TimeSpan GetCurrentTimeCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.TimeSpan GetCurrentTimeCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.MediaClock.GetCurrentTimeCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetCurrentTimeCore () As TimeSpan" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override TimeSpan GetCurrentTimeCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -96,6 +106,8 @@
       <MemberSignature Language="C#" Value="protected override void SpeedChanged ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SpeedChanged() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.MediaClock.SpeedChanged" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SpeedChanged ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SpeedChanged();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -114,6 +126,8 @@
       <MemberSignature Language="C#" Value="protected override void Stopped ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Stopped() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.MediaClock.Stopped" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Stopped ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Stopped();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -132,6 +146,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.MediaTimeline Timeline { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.MediaTimeline Timeline" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.MediaClock.Timeline" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Timeline As MediaTimeline" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::MediaTimeline ^ Timeline { System::Windows::Media::MediaTimeline ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

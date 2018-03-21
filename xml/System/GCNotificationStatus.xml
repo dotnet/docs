@@ -1,7 +1,9 @@
-<Type Name="GCNotificationStatus" FullName="System.GCNotificationStatus">
+﻿<Type Name="GCNotificationStatus" FullName="System.GCNotificationStatus">
   <TypeSignature Language="C#" Value="public enum GCNotificationStatus" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed GCNotificationStatus extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.GCNotificationStatus" />
+  <TypeSignature Language="VB.NET" Value="Public Enum GCNotificationStatus" />
+  <TypeSignature Language="C++ CLI" Value="public enum class GCNotificationStatus" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -43,6 +45,8 @@
       <MemberSignature Language="C#" Value="Canceled" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.GCNotificationStatus Canceled = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.GCNotificationStatus.Canceled" />
+      <MemberSignature Language="VB.NET" Value="Canceled" />
+      <MemberSignature Language="C++ CLI" Value="Canceled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -60,6 +64,7 @@
       <ReturnValue>
         <ReturnType>System.GCNotificationStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The current registration was canceled by the user.</summary>
       </Docs>
@@ -68,6 +73,8 @@
       <MemberSignature Language="C#" Value="Failed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.GCNotificationStatus Failed = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.GCNotificationStatus.Failed" />
+      <MemberSignature Language="VB.NET" Value="Failed" />
+      <MemberSignature Language="C++ CLI" Value="Failed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -85,6 +92,7 @@
       <ReturnValue>
         <ReturnType>System.GCNotificationStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The notification failed for any reason.</summary>
       </Docs>
@@ -93,6 +101,8 @@
       <MemberSignature Language="C#" Value="NotApplicable" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.GCNotificationStatus NotApplicable = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.GCNotificationStatus.NotApplicable" />
+      <MemberSignature Language="VB.NET" Value="NotApplicable" />
+      <MemberSignature Language="C++ CLI" Value="NotApplicable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -110,6 +120,7 @@
       <ReturnValue>
         <ReturnType>System.GCNotificationStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>This result can be caused by the following: there is no current registration for a garbage collection notification, concurrent garbage collection is enabled, or the time specified for the <paramref name="millisecondsTimeout" /> parameter has expired and no garbage collection notification was obtained. (See the [&lt;gcConcurrent&gt;](~/docs/framework/configure-apps/file-schema/runtime/gcconcurrent-element.md) runtime setting for information about how to disable concurrent garbage collection.)</summary>
       </Docs>
@@ -118,6 +129,8 @@
       <MemberSignature Language="C#" Value="Succeeded" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.GCNotificationStatus Succeeded = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.GCNotificationStatus.Succeeded" />
+      <MemberSignature Language="VB.NET" Value="Succeeded" />
+      <MemberSignature Language="C++ CLI" Value="Succeeded" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -135,6 +148,7 @@
       <ReturnValue>
         <ReturnType>System.GCNotificationStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The notification was successful and the registration was not canceled.</summary>
       </Docs>
@@ -143,6 +157,8 @@
       <MemberSignature Language="C#" Value="Timeout" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.GCNotificationStatus Timeout = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.GCNotificationStatus.Timeout" />
+      <MemberSignature Language="VB.NET" Value="Timeout" />
+      <MemberSignature Language="C++ CLI" Value="Timeout" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -160,6 +176,7 @@
       <ReturnValue>
         <ReturnType>System.GCNotificationStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The time specified by the <paramref name="millisecondsTimeout" /> parameter for either <see cref="M:System.GC.WaitForFullGCApproach(System.Int32)" /> or <see cref="M:System.GC.WaitForFullGCComplete(System.Int32)" /> has elapsed.</summary>
       </Docs>

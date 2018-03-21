@@ -1,7 +1,9 @@
-<Type Name="X509IssuerSerial" FullName="System.Security.Cryptography.Xml.X509IssuerSerial">
+﻿<Type Name="X509IssuerSerial" FullName="System.Security.Cryptography.Xml.X509IssuerSerial">
   <TypeSignature Language="C#" Value="public struct X509IssuerSerial" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit X509IssuerSerial extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Xml.X509IssuerSerial" />
+  <TypeSignature Language="VB.NET" Value="Public Structure X509IssuerSerial" />
+  <TypeSignature Language="C++ CLI" Value="public value class X509IssuerSerial" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +48,8 @@
       <MemberSignature Language="C#" Value="public string IssuerName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string IssuerName" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.X509IssuerSerial.IssuerName" />
+      <MemberSignature Language="VB.NET" Value="Public Property IssuerName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ IssuerName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
@@ -87,6 +91,8 @@
       <MemberSignature Language="C#" Value="public string SerialNumber { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SerialNumber" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.X509IssuerSerial.SerialNumber" />
+      <MemberSignature Language="VB.NET" Value="Public Property SerialNumber As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SerialNumber { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>

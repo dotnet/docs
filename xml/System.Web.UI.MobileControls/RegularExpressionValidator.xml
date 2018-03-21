@@ -1,7 +1,9 @@
-<Type Name="RegularExpressionValidator" FullName="System.Web.UI.MobileControls.RegularExpressionValidator">
+﻿<Type Name="RegularExpressionValidator" FullName="System.Web.UI.MobileControls.RegularExpressionValidator">
   <TypeSignature Language="C#" Value="public class RegularExpressionValidator : System.Web.UI.MobileControls.BaseValidator" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RegularExpressionValidator extends System.Web.UI.MobileControls.BaseValidator" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.RegularExpressionValidator" />
+  <TypeSignature Language="VB.NET" Value="Public Class RegularExpressionValidator&#xA;Inherits BaseValidator" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RegularExpressionValidator : System::Web::UI::MobileControls::BaseValidator" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -57,6 +59,8 @@
       <MemberSignature Language="C#" Value="public RegularExpressionValidator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.RegularExpressionValidator.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RegularExpressionValidator();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -72,6 +76,8 @@
       <MemberSignature Language="C#" Value="protected override System.Web.UI.WebControls.BaseValidator CreateWebValidator ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Web.UI.WebControls.BaseValidator CreateWebValidator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.RegularExpressionValidator.CreateWebValidator" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateWebValidator () As BaseValidator" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Web::UI::WebControls::BaseValidator ^ CreateWebValidator();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -92,6 +98,8 @@
       <MemberSignature Language="C#" Value="protected override bool EvaluateIsValid ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool EvaluateIsValid() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.RegularExpressionValidator.EvaluateIsValid" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function EvaluateIsValid () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool EvaluateIsValid();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -113,6 +121,8 @@
       <MemberSignature Language="C#" Value="public string ValidationExpression { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ValidationExpression" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.RegularExpressionValidator.ValidationExpression" />
+      <MemberSignature Language="VB.NET" Value="Public Property ValidationExpression As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ValidationExpression { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

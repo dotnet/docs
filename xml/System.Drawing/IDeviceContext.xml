@@ -1,7 +1,9 @@
-<Type Name="IDeviceContext" FullName="System.Drawing.IDeviceContext">
+﻿<Type Name="IDeviceContext" FullName="System.Drawing.IDeviceContext">
   <TypeSignature Language="C#" Value="public interface IDeviceContext : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDeviceContext implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.IDeviceContext" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IDeviceContext&#xA;Implements IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IDeviceContext : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +29,8 @@
       <MemberSignature Language="C#" Value="public IntPtr GetHdc ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance native int GetHdc() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.IDeviceContext.GetHdc" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetHdc () As IntPtr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IntPtr GetHdc();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -55,6 +59,8 @@
       <MemberSignature Language="C#" Value="public void ReleaseHdc ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ReleaseHdc() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.IDeviceContext.ReleaseHdc" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ReleaseHdc ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReleaseHdc();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

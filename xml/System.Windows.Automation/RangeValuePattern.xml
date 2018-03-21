@@ -1,7 +1,9 @@
-<Type Name="RangeValuePattern" FullName="System.Windows.Automation.RangeValuePattern">
+﻿<Type Name="RangeValuePattern" FullName="System.Windows.Automation.RangeValuePattern">
   <TypeSignature Language="C#" Value="public class RangeValuePattern : System.Windows.Automation.BasePattern" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RangeValuePattern extends System.Windows.Automation.BasePattern" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.RangeValuePattern" />
+  <TypeSignature Language="VB.NET" Value="Public Class RangeValuePattern&#xA;Inherits BasePattern" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RangeValuePattern : System::Windows::Automation::BasePattern" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationClient</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +29,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Automation.RangeValuePattern.RangeValuePatternInformation Cached { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Automation.RangeValuePattern/RangeValuePatternInformation Cached" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.RangeValuePattern.Cached" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Cached As RangeValuePattern.RangeValuePatternInformation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Automation::RangeValuePattern::RangeValuePatternInformation Cached { System::Windows::Automation::RangeValuePattern::RangeValuePatternInformation get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -55,6 +59,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Automation.RangeValuePattern.RangeValuePatternInformation Current { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Automation.RangeValuePattern/RangeValuePatternInformation Current" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.RangeValuePattern.Current" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Current As RangeValuePattern.RangeValuePatternInformation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Automation::RangeValuePattern::RangeValuePatternInformation Current { System::Windows::Automation::RangeValuePattern::RangeValuePatternInformation get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -82,6 +88,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty IsReadOnlyProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty IsReadOnlyProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.RangeValuePattern.IsReadOnlyProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsReadOnlyProperty As AutomationProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ IsReadOnlyProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -114,6 +122,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty LargeChangeProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty LargeChangeProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.RangeValuePattern.LargeChangeProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly LargeChangeProperty As AutomationProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ LargeChangeProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -147,6 +157,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty MaximumProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty MaximumProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.RangeValuePattern.MaximumProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MaximumProperty As AutomationProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ MaximumProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -180,6 +192,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty MinimumProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty MinimumProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.RangeValuePattern.MinimumProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MinimumProperty As AutomationProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ MinimumProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -213,6 +227,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationPattern Pattern;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationPattern Pattern" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.RangeValuePattern.Pattern" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Pattern As AutomationPattern " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationPattern ^ Pattern;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -247,6 +263,8 @@
       <MemberSignature Language="C#" Value="public void SetValue (double value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetValue(float64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.RangeValuePattern.SetValue(System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetValue (value As Double)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetValue(double value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -290,6 +308,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty SmallChangeProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty SmallChangeProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.RangeValuePattern.SmallChangeProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SmallChangeProperty As AutomationProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ SmallChangeProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -323,6 +343,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty ValueProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty ValueProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.RangeValuePattern.ValueProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ValueProperty As AutomationProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ ValueProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="ScriptFunction" FullName="Microsoft.JScript.ScriptFunction">
+﻿<Type Name="ScriptFunction" FullName="Microsoft.JScript.ScriptFunction">
   <TypeSignature Language="C#" Value="public abstract class ScriptFunction : Microsoft.JScript.JSObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ScriptFunction extends Microsoft.JScript.JSObject" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.ScriptFunction" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ScriptFunction&#xA;Inherits JSObject" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ScriptFunction abstract : Microsoft::JScript::JSObject" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -20,6 +22,8 @@
       <MemberSignature Language="C#" Value="protected ScriptFunction (Microsoft.JScript.ScriptObject parent, string name);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class Microsoft.JScript.ScriptObject parent, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ScriptFunction.#ctor(Microsoft.JScript.ScriptObject,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (parent As ScriptObject, name As String)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ScriptFunction(Microsoft::JScript::ScriptObject ^ parent, System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -48,6 +52,8 @@
       <MemberSignature Language="C#" Value="public object CreateInstance (params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object CreateInstance(object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ScriptFunction.CreateInstance(System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateInstance (ParamArray args As Object()) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ CreateInstance(... cli::array &lt;System::Object ^&gt; ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -85,6 +91,8 @@
       <MemberSignature Language="C#" Value="protected Microsoft.JScript.ScriptObject GetPrototypeForConstructedObject ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class Microsoft.JScript.ScriptObject GetPrototypeForConstructedObject() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ScriptFunction.GetPrototypeForConstructedObject" />
+      <MemberSignature Language="VB.NET" Value="Protected Function GetPrototypeForConstructedObject () As ScriptObject" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; Microsoft::JScript::ScriptObject ^ GetPrototypeForConstructedObject();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -112,6 +120,8 @@
       <MemberSignature Language="C#" Value="protected int ilength;" />
       <MemberSignature Language="ILAsm" Value=".field family int32 ilength" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.ScriptFunction.ilength" />
+      <MemberSignature Language="VB.NET" Value="Protected ilength As Integer " />
+      <MemberSignature Language="C++ CLI" Value="protected: int ilength;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -130,6 +140,8 @@
       <MemberSignature Language="C#" Value="public object Invoke (object thisob, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object Invoke(object thisob, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ScriptFunction.Invoke(System.Object,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function Invoke (thisob As Object, ParamArray args As Object()) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Invoke(System::Object ^ thisob, ... cli::array &lt;System::Object ^&gt; ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -176,6 +188,7 @@
       <MemberSignature Language="C#" Value="public override object InvokeMember (string name, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, object target, object[] args, System.Reflection.ParameterModifier[] modifiers, System.Globalization.CultureInfo culture, string[] namedParameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object InvokeMember(string name, valuetype System.Reflection.BindingFlags invokeAttr, class System.Reflection.Binder binder, object target, object[] args, valuetype System.Reflection.ParameterModifier[] modifiers, class System.Globalization.CultureInfo culture, string[] namedParameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ScriptFunction.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ InvokeMember(System::String ^ name, System::Reflection::BindingFlags invokeAttr, System::Reflection::Binder ^ binder, System::Object ^ target, cli::array &lt;System::Object ^&gt; ^ args, cli::array &lt;System::Reflection::ParameterModifier&gt; ^ modifiers, System::Globalization::CultureInfo ^ culture, cli::array &lt;System::String ^&gt; ^ namedParameters);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -218,6 +231,8 @@
       <MemberSignature Language="C#" Value="public virtual int length { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 length" />
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.ScriptFunction.length" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property length As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int length { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -237,6 +252,8 @@
       <MemberSignature Language="C#" Value="public object prototype { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object prototype" />
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.ScriptFunction.prototype" />
+      <MemberSignature Language="VB.NET" Value="Public Property prototype As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ prototype { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -263,6 +280,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ScriptFunction.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

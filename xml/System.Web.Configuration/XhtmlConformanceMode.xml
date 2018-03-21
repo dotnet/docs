@@ -1,7 +1,9 @@
-<Type Name="XhtmlConformanceMode" FullName="System.Web.Configuration.XhtmlConformanceMode">
+﻿<Type Name="XhtmlConformanceMode" FullName="System.Web.Configuration.XhtmlConformanceMode">
   <TypeSignature Language="C#" Value="public enum XhtmlConformanceMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XhtmlConformanceMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.XhtmlConformanceMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum XhtmlConformanceMode" />
+  <TypeSignature Language="C++ CLI" Value="public enum class XhtmlConformanceMode" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +27,8 @@
       <MemberSignature Language="C#" Value="Legacy" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Configuration.XhtmlConformanceMode Legacy = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.XhtmlConformanceMode.Legacy" />
+      <MemberSignature Language="VB.NET" Value="Legacy" />
+      <MemberSignature Language="C++ CLI" Value="Legacy" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -33,6 +37,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Configuration.XhtmlConformanceMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>XHTML 1.0 Transitional</summary>
       </Docs>
@@ -41,6 +46,8 @@
       <MemberSignature Language="C#" Value="Strict" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Configuration.XhtmlConformanceMode Strict = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.XhtmlConformanceMode.Strict" />
+      <MemberSignature Language="VB.NET" Value="Strict" />
+      <MemberSignature Language="C++ CLI" Value="Strict" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -49,6 +56,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Configuration.XhtmlConformanceMode</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>XHTML 1.0 Strict conformance</summary>
       </Docs>
@@ -57,6 +65,8 @@
       <MemberSignature Language="C#" Value="Transitional" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Configuration.XhtmlConformanceMode Transitional = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.XhtmlConformanceMode.Transitional" />
+      <MemberSignature Language="VB.NET" Value="Transitional" />
+      <MemberSignature Language="C++ CLI" Value="Transitional" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -65,6 +75,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Configuration.XhtmlConformanceMode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Reverts a number of rendering changes made for conformance to the v1.1 rendering behavior.</summary>
       </Docs>

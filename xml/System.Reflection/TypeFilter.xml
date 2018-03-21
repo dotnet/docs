@@ -1,7 +1,9 @@
-<Type Name="TypeFilter" FullName="System.Reflection.TypeFilter">
+﻿<Type Name="TypeFilter" FullName="System.Reflection.TypeFilter">
   <TypeSignature Language="C#" Value="public delegate bool TypeFilter(Type m, object filterCriteria);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed TypeFilter extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.TypeFilter" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Function TypeFilter(m As Type, filterCriteria As Object) As Boolean " />
+  <TypeSignature Language="C++ CLI" Value="public delegate bool TypeFilter(Type ^ m, System::Object ^ filterCriteria);" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>

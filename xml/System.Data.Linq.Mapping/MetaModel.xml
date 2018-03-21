@@ -1,7 +1,9 @@
-<Type Name="MetaModel" FullName="System.Data.Linq.Mapping.MetaModel">
+﻿<Type Name="MetaModel" FullName="System.Data.Linq.Mapping.MetaModel">
   <TypeSignature Language="C#" Value="public abstract class MetaModel" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit MetaModel extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Data.Linq.Mapping.MetaModel" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class MetaModel" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MetaModel abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Linq</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="protected MetaModel ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.Mapping.MetaModel.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; MetaModel();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -34,6 +38,8 @@
       <MemberSignature Language="C#" Value="public abstract Type ContextType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type ContextType" />
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.MetaModel.ContextType" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ContextType As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property Type ^ ContextType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -52,6 +58,8 @@
       <MemberSignature Language="C#" Value="public abstract string DatabaseName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DatabaseName" />
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.MetaModel.DatabaseName" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property DatabaseName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ DatabaseName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -70,6 +78,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Data.Linq.Mapping.MetaFunction GetFunction (System.Reflection.MethodInfo method);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Linq.Mapping.MetaFunction GetFunction(class System.Reflection.MethodInfo method) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.Mapping.MetaModel.GetFunction(System.Reflection.MethodInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetFunction (method As MethodInfo) As MetaFunction" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Data::Linq::Mapping::MetaFunction ^ GetFunction(System::Reflection::MethodInfo ^ method);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -99,6 +109,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Collections.Generic.IEnumerable&lt;System.Data.Linq.Mapping.MetaFunction&gt; GetFunctions ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class System.Data.Linq.Mapping.MetaFunction&gt; GetFunctions() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.Mapping.MetaModel.GetFunctions" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetFunctions () As IEnumerable(Of MetaFunction)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Collections::Generic::IEnumerable&lt;System::Data::Linq::Mapping::MetaFunction ^&gt; ^ GetFunctions();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -118,6 +130,7 @@
       <MemberSignature Language="C#" Value="public abstract System.Data.Linq.Mapping.MetaType GetMetaType (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Linq.Mapping.MetaType GetMetaType(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.Mapping.MetaModel.GetMetaType(System.Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Data::Linq::Mapping::MetaType ^ GetMetaType(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -140,6 +153,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Data.Linq.Mapping.MetaTable GetTable (Type rowType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Linq.Mapping.MetaTable GetTable(class System.Type rowType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.Mapping.MetaModel.GetTable(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetTable (rowType As Type) As MetaTable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Data::Linq::Mapping::MetaTable ^ GetTable(Type ^ rowType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -162,6 +177,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Collections.Generic.IEnumerable&lt;System.Data.Linq.Mapping.MetaTable&gt; GetTables ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class System.Data.Linq.Mapping.MetaTable&gt; GetTables() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.Mapping.MetaModel.GetTables" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetTables () As IEnumerable(Of MetaTable)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Collections::Generic::IEnumerable&lt;System::Data::Linq::Mapping::MetaTable ^&gt; ^ GetTables();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -181,6 +198,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Data.Linq.Mapping.MappingSource MappingSource { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Linq.Mapping.MappingSource MappingSource" />
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.MetaModel.MappingSource" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property MappingSource As MappingSource" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Data::Linq::Mapping::MappingSource ^ MappingSource { System::Data::Linq::Mapping::MappingSource ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -199,6 +218,8 @@
       <MemberSignature Language="C#" Value="public abstract Type ProviderType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type ProviderType" />
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.MetaModel.ProviderType" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ProviderType As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property Type ^ ProviderType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>

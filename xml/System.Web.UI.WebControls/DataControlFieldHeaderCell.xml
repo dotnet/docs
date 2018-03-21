@@ -1,7 +1,9 @@
-<Type Name="DataControlFieldHeaderCell" FullName="System.Web.UI.WebControls.DataControlFieldHeaderCell">
+﻿<Type Name="DataControlFieldHeaderCell" FullName="System.Web.UI.WebControls.DataControlFieldHeaderCell">
   <TypeSignature Language="C#" Value="public class DataControlFieldHeaderCell : System.Web.UI.WebControls.DataControlFieldCell" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataControlFieldHeaderCell extends System.Web.UI.WebControls.DataControlFieldCell" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DataControlFieldHeaderCell" />
+  <TypeSignature Language="VB.NET" Value="Public Class DataControlFieldHeaderCell&#xA;Inherits DataControlFieldCell" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataControlFieldHeaderCell : System::Web::UI::WebControls::DataControlFieldCell" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +39,8 @@
       <MemberSignature Language="C#" Value="public DataControlFieldHeaderCell (System.Web.UI.WebControls.DataControlField containingField);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.WebControls.DataControlField containingField) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataControlFieldHeaderCell.#ctor(System.Web.UI.WebControls.DataControlField)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (containingField As DataControlField)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataControlFieldHeaderCell(System::Web::UI::WebControls::DataControlField ^ containingField);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -63,6 +67,8 @@
       <MemberSignature Language="C#" Value="public virtual string AbbreviatedText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string AbbreviatedText" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataControlFieldHeaderCell.AbbreviatedText" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property AbbreviatedText As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ AbbreviatedText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -88,6 +94,8 @@
       <MemberSignature Language="C#" Value="protected override void AddAttributesToRender (System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void AddAttributesToRender(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataControlFieldHeaderCell.AddAttributesToRender(System.Web.UI.HtmlTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub AddAttributesToRender (writer As HtmlTextWriter)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void AddAttributesToRender(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -117,6 +125,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.TableHeaderScope Scope { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.TableHeaderScope Scope" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataControlFieldHeaderCell.Scope" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Scope As TableHeaderScope" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::TableHeaderScope Scope { System::Web::UI::WebControls::TableHeaderScope get(); void set(System::Web::UI::WebControls::TableHeaderScope value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="IDefineEvent" FullName="Microsoft.JScript.IDefineEvent">
+﻿<Type Name="IDefineEvent" FullName="Microsoft.JScript.IDefineEvent">
   <TypeSignature Language="C#" Value="public interface IDefineEvent" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDefineEvent" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.IDefineEvent" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IDefineEvent" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IDefineEvent" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -25,6 +27,8 @@
       <MemberSignature Language="C#" Value="public object AddEvent (string code, int startLine);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object AddEvent(string code, int32 startLine) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IDefineEvent.AddEvent(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddEvent (code As String, startLine As Integer) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ AddEvent(System::String ^ code, int startLine);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

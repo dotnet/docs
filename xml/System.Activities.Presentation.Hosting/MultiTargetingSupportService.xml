@@ -1,7 +1,9 @@
-<Type Name="MultiTargetingSupportService" FullName="System.Activities.Presentation.Hosting.MultiTargetingSupportService">
+﻿<Type Name="MultiTargetingSupportService" FullName="System.Activities.Presentation.Hosting.MultiTargetingSupportService">
   <TypeSignature Language="C#" Value="public abstract class MultiTargetingSupportService : System.Activities.Presentation.Hosting.IMultiTargetingSupportService" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit MultiTargetingSupportService extends System.Object implements class System.Activities.Presentation.Hosting.IMultiTargetingSupportService" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Hosting.MultiTargetingSupportService" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class MultiTargetingSupportService&#xA;Implements IMultiTargetingSupportService" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MultiTargetingSupportService abstract : System::Activities::Presentation::Hosting::IMultiTargetingSupportService" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +25,8 @@
       <MemberSignature Language="C#" Value="protected MultiTargetingSupportService ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Hosting.MultiTargetingSupportService.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; MultiTargetingSupportService();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -38,7 +42,12 @@
       <MemberSignature Language="C#" Value="public abstract System.Reflection.Assembly GetReflectionAssembly (System.Reflection.AssemblyName targetAssemblyName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.Assembly GetReflectionAssembly(class System.Reflection.AssemblyName targetAssemblyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Hosting.MultiTargetingSupportService.GetReflectionAssembly(System.Reflection.AssemblyName)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetReflectionAssembly (targetAssemblyName As AssemblyName) As Assembly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Reflection::Assembly ^ GetReflectionAssembly(System::Reflection::AssemblyName ^ targetAssemblyName);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Activities.Presentation.Hosting.IMultiTargetingSupportService.GetReflectionAssembly(System.Reflection.AssemblyName)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -60,6 +69,8 @@
       <MemberSignature Language="C#" Value="public abstract Type GetReflectionType (Type objectType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type GetReflectionType(class System.Type objectType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Hosting.MultiTargetingSupportService.GetReflectionType(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetReflectionType (objectType As Type) As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract Type ^ GetReflectionType(Type ^ objectType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -82,7 +93,12 @@
       <MemberSignature Language="C#" Value="public abstract Type GetRuntimeType (Type reflectionType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type GetRuntimeType(class System.Type reflectionType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Hosting.MultiTargetingSupportService.GetRuntimeType(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetRuntimeType (reflectionType As Type) As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract Type ^ GetRuntimeType(Type ^ reflectionType);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Activities.Presentation.Hosting.IMultiTargetingSupportService.GetRuntimeType(System.Type)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -104,7 +120,11 @@
       <MemberSignature Language="C#" Value="public abstract bool IsSupportedType (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsSupportedType(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Hosting.MultiTargetingSupportService.IsSupportedType(System.Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool IsSupportedType(Type ^ type);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Activities.Presentation.Hosting.IMultiTargetingSupportService.IsSupportedType(System.Type)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

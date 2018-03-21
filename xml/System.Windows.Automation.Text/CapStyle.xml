@@ -1,7 +1,9 @@
-<Type Name="CapStyle" FullName="System.Windows.Automation.Text.CapStyle">
+﻿<Type Name="CapStyle" FullName="System.Windows.Automation.Text.CapStyle">
   <TypeSignature Language="C#" Value="public enum CapStyle" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CapStyle extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Text.CapStyle" />
+  <TypeSignature Language="VB.NET" Value="Public Enum CapStyle" />
+  <TypeSignature Language="C++ CLI" Value="public enum class CapStyle" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationTypes</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +28,8 @@
       <MemberSignature Language="C#" Value="AllCap" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Text.CapStyle AllCap = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.CapStyle.AllCap" />
+      <MemberSignature Language="VB.NET" Value="AllCap" />
+      <MemberSignature Language="C++ CLI" Value="AllCap" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -34,6 +38,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Text.CapStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Indicates that the capitalization style is all caps; all lowercase letters are replaced with uppercase letters.</summary>
       </Docs>
@@ -42,6 +47,8 @@
       <MemberSignature Language="C#" Value="AllPetiteCaps" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Text.CapStyle AllPetiteCaps = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.CapStyle.AllPetiteCaps" />
+      <MemberSignature Language="VB.NET" Value="AllPetiteCaps" />
+      <MemberSignature Language="C++ CLI" Value="AllPetiteCaps" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -50,6 +57,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Text.CapStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Indicates that the capitalization style is all petite caps; uppercase and lowercase letters are replaced with uppercase letters slightly smaller than small caps.</summary>
       </Docs>
@@ -58,6 +66,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Text.CapStyle None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.CapStyle.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -66,6 +76,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Text.CapStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Indicates that there is no capitalization style; uppercase and lowercase letters render normally.</summary>
       </Docs>
@@ -74,6 +85,8 @@
       <MemberSignature Language="C#" Value="Other" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Text.CapStyle Other = int32(-1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.CapStyle.Other" />
+      <MemberSignature Language="VB.NET" Value="Other" />
+      <MemberSignature Language="C++ CLI" Value="Other" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -82,6 +95,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Text.CapStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>-1</MemberValue>
       <Docs>
         <summary>Indicates that the capitalization style is a style not explicitly specified in the <see cref="T:System.Windows.Automation.Text.CapStyle" /> enumeration.</summary>
       </Docs>
@@ -90,6 +104,8 @@
       <MemberSignature Language="C#" Value="PetiteCaps" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Text.CapStyle PetiteCaps = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.CapStyle.PetiteCaps" />
+      <MemberSignature Language="VB.NET" Value="PetiteCaps" />
+      <MemberSignature Language="C++ CLI" Value="PetiteCaps" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -98,6 +114,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Text.CapStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Indicates that the capitalization style is petite caps; lowercase letters are replaced with uppercase letters slightly smaller than small caps.</summary>
       </Docs>
@@ -106,6 +123,8 @@
       <MemberSignature Language="C#" Value="SmallCap" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Text.CapStyle SmallCap = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.CapStyle.SmallCap" />
+      <MemberSignature Language="VB.NET" Value="SmallCap" />
+      <MemberSignature Language="C++ CLI" Value="SmallCap" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -114,6 +133,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Text.CapStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Indicates that the capitalization style is small caps; lowercase letters are replaced with uppercase letters of the same approximate height as the font's x-height.</summary>
       </Docs>
@@ -122,6 +142,8 @@
       <MemberSignature Language="C#" Value="Titling" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Text.CapStyle Titling = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.CapStyle.Titling" />
+      <MemberSignature Language="VB.NET" Value="Titling" />
+      <MemberSignature Language="C++ CLI" Value="Titling" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -130,6 +152,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Text.CapStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>Indicates that the capitalization style is title case; uppercase and lowercase letters are rendered with letters specifically designed for titles.</summary>
       </Docs>
@@ -138,6 +161,8 @@
       <MemberSignature Language="C#" Value="Unicase" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Text.CapStyle Unicase = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.CapStyle.Unicase" />
+      <MemberSignature Language="VB.NET" Value="Unicase" />
+      <MemberSignature Language="C++ CLI" Value="Unicase" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -146,6 +171,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Text.CapStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>Indicates that the capitalization style is unicase; uppercase and lowercase letters are rendered in a way determined by the type designer. A unicase alphabet is one that does not specify case for its letters.</summary>
       </Docs>

@@ -1,7 +1,9 @@
-<Type Name="SamlSecurityTokenAuthenticator" FullName="System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator">
+﻿<Type Name="SamlSecurityTokenAuthenticator" FullName="System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator">
   <TypeSignature Language="C#" Value="public class SamlSecurityTokenAuthenticator : System.IdentityModel.Selectors.SecurityTokenAuthenticator" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SamlSecurityTokenAuthenticator extends System.IdentityModel.Selectors.SecurityTokenAuthenticator" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator" />
+  <TypeSignature Language="VB.NET" Value="Public Class SamlSecurityTokenAuthenticator&#xA;Inherits SecurityTokenAuthenticator" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SamlSecurityTokenAuthenticator : System::IdentityModel::Selectors::SecurityTokenAuthenticator" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,10 +24,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SamlSecurityTokenAuthenticator (System.Collections.Generic.IList&lt;System.IdentityModel.Selectors.SecurityTokenAuthenticator&gt; supportingAuthenticators);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IList`1&lt;class System.IdentityModel.Selectors.SecurityTokenAuthenticator&gt; supportingAuthenticators) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.#ctor(System.Collections.Generic.IList{System.IdentityModel.Selectors.SecurityTokenAuthenticator})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (supportingAuthenticators As IList(Of SecurityTokenAuthenticator))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SamlSecurityTokenAuthenticator(System::Collections::Generic::IList&lt;System::IdentityModel::Selectors::SecurityTokenAuthenticator ^&gt; ^ supportingAuthenticators);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -44,6 +57,8 @@
       <MemberSignature Language="C#" Value="public SamlSecurityTokenAuthenticator (System.Collections.Generic.IList&lt;System.IdentityModel.Selectors.SecurityTokenAuthenticator&gt; supportingAuthenticators, TimeSpan maxClockSkew);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IList`1&lt;class System.IdentityModel.Selectors.SecurityTokenAuthenticator&gt; supportingAuthenticators, valuetype System.TimeSpan maxClockSkew) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.#ctor(System.Collections.Generic.IList{System.IdentityModel.Selectors.SecurityTokenAuthenticator},System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (supportingAuthenticators As IList(Of SecurityTokenAuthenticator), maxClockSkew As TimeSpan)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SamlSecurityTokenAuthenticator(System::Collections::Generic::IList&lt;System::IdentityModel::Selectors::SecurityTokenAuthenticator ^&gt; ^ supportingAuthenticators, TimeSpan maxClockSkew);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -64,6 +79,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;string&gt; AllowedAudienceUris { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;string&gt; AllowedAudienceUris" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.AllowedAudienceUris" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AllowedAudienceUris As IList(Of String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::String ^&gt; ^ AllowedAudienceUris { System::Collections::Generic::IList&lt;System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -95,6 +112,8 @@
       <MemberSignature Language="C#" Value="public System.IdentityModel.Selectors.AudienceUriMode AudienceUriMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.IdentityModel.Selectors.AudienceUriMode AudienceUriMode" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.AudienceUriMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property AudienceUriMode As AudienceUriMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Selectors::AudienceUriMode AudienceUriMode { System::IdentityModel::Selectors::AudienceUriMode get(); void set(System::IdentityModel::Selectors::AudienceUriMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -129,6 +148,8 @@
       <MemberSignature Language="C#" Value="protected override bool CanValidateTokenCore (System.IdentityModel.Tokens.SecurityToken token);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool CanValidateTokenCore(class System.IdentityModel.Tokens.SecurityToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.CanValidateTokenCore(System.IdentityModel.Tokens.SecurityToken)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CanValidateTokenCore (token As SecurityToken) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool CanValidateTokenCore(System::IdentityModel::Tokens::SecurityToken ^ token);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -155,10 +176,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ResolveClaimSet">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Resolves the identity associated with the specified security token or key identifier and returns it as a <see cref="T:System.IdentityModel.Claims.ClaimSet" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ResolveClaimSet">
       <MemberSignature Language="C#" Value="public virtual System.IdentityModel.Claims.ClaimSet ResolveClaimSet (System.IdentityModel.Tokens.SecurityKeyIdentifier keyIdentifier);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IdentityModel.Claims.ClaimSet ResolveClaimSet(class System.IdentityModel.Tokens.SecurityKeyIdentifier keyIdentifier) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.ResolveClaimSet(System.IdentityModel.Tokens.SecurityKeyIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ResolveClaimSet (keyIdentifier As SecurityKeyIdentifier) As ClaimSet" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::IdentityModel::Claims::ClaimSet ^ ResolveClaimSet(System::IdentityModel::Tokens::SecurityKeyIdentifier ^ keyIdentifier);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -181,6 +213,8 @@
       <MemberSignature Language="C#" Value="public virtual System.IdentityModel.Claims.ClaimSet ResolveClaimSet (System.IdentityModel.Tokens.SecurityToken token);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IdentityModel.Claims.ClaimSet ResolveClaimSet(class System.IdentityModel.Tokens.SecurityToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.ResolveClaimSet(System.IdentityModel.Tokens.SecurityToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ResolveClaimSet (token As SecurityToken) As ClaimSet" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::IdentityModel::Claims::ClaimSet ^ ResolveClaimSet(System::IdentityModel::Tokens::SecurityToken ^ token);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -199,10 +233,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ResolveIdentity">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Resolves the identity associated with the passed in security token or the security key identifier using the supporting token authenticators specified when the <see cref="T:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator" /> instance was created and returns it as an <see cref="T:System.Security.Principal.IIdentity" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ResolveIdentity">
       <MemberSignature Language="C#" Value="public virtual System.Security.Principal.IIdentity ResolveIdentity (System.IdentityModel.Tokens.SecurityKeyIdentifier keyIdentifier);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Security.Principal.IIdentity ResolveIdentity(class System.IdentityModel.Tokens.SecurityKeyIdentifier keyIdentifier) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.ResolveIdentity(System.IdentityModel.Tokens.SecurityKeyIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ResolveIdentity (keyIdentifier As SecurityKeyIdentifier) As IIdentity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::Principal::IIdentity ^ ResolveIdentity(System::IdentityModel::Tokens::SecurityKeyIdentifier ^ keyIdentifier);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -232,6 +277,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Security.Principal.IIdentity ResolveIdentity (System.IdentityModel.Tokens.SecurityToken token);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Security.Principal.IIdentity ResolveIdentity(class System.IdentityModel.Tokens.SecurityToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.ResolveIdentity(System.IdentityModel.Tokens.SecurityToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ResolveIdentity (token As SecurityToken) As IIdentity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::Principal::IIdentity ^ ResolveIdentity(System::IdentityModel::Tokens::SecurityToken ^ token);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -254,6 +301,8 @@
       <MemberSignature Language="C#" Value="protected virtual bool ValidateAudienceRestriction (System.IdentityModel.Tokens.SamlAudienceRestrictionCondition audienceRestrictionCondition);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool ValidateAudienceRestriction(class System.IdentityModel.Tokens.SamlAudienceRestrictionCondition audienceRestrictionCondition) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.ValidateAudienceRestriction(System.IdentityModel.Tokens.SamlAudienceRestrictionCondition)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function ValidateAudienceRestriction (audienceRestrictionCondition As SamlAudienceRestrictionCondition) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool ValidateAudienceRestriction(System::IdentityModel::Tokens::SamlAudienceRestrictionCondition ^ audienceRestrictionCondition);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -284,6 +333,8 @@
       <MemberSignature Language="C#" Value="protected override System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Policy.IAuthorizationPolicy&gt; ValidateTokenCore (System.IdentityModel.Tokens.SecurityToken token);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.IdentityModel.Policy.IAuthorizationPolicy&gt; ValidateTokenCore(class System.IdentityModel.Tokens.SecurityToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.ValidateTokenCore(System.IdentityModel.Tokens.SecurityToken)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function ValidateTokenCore (token As SecurityToken) As ReadOnlyCollection(Of IAuthorizationPolicy)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Collections::ObjectModel::ReadOnlyCollection&lt;System::IdentityModel::Policy::IAuthorizationPolicy ^&gt; ^ ValidateTokenCore(System::IdentityModel::Tokens::SecurityToken ^ token);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -302,32 +353,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="ResolveIdentity">
-      <AssemblyInfo>
-        <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Resolves the identity associated with the passed in security token or the security key identifier using the supporting token authenticators specified when the <see cref="T:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator" /> instance was created and returns it as an <see cref="T:System.Security.Principal.IIdentity" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ResolveClaimSet">
-      <AssemblyInfo>
-        <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Resolves the identity associated with the specified security token or key identifier and returns it as a <see cref="T:System.IdentityModel.Claims.ClaimSet" />.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

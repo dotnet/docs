@@ -1,7 +1,9 @@
-<Type Name="IntProperty" FullName="Microsoft.Build.Framework.XamlTypes.IntProperty">
+﻿<Type Name="IntProperty" FullName="Microsoft.Build.Framework.XamlTypes.IntProperty">
   <TypeSignature Language="C#" Value="public sealed class IntProperty : Microsoft.Build.Framework.XamlTypes.BaseProperty" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit IntProperty extends Microsoft.Build.Framework.XamlTypes.BaseProperty" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.XamlTypes.IntProperty" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class IntProperty&#xA;Inherits BaseProperty" />
+  <TypeSignature Language="C++ CLI" Value="public ref class IntProperty sealed : Microsoft::Build::Framework::XamlTypes::BaseProperty" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public IntProperty ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.XamlTypes.IntProperty.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IntProperty();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -34,6 +38,8 @@
       <MemberSignature Language="C#" Value="public override void EndInit ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void EndInit() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.XamlTypes.IntProperty.EndInit" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub EndInit ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void EndInit();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -52,6 +58,8 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; MaxValue { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; MaxValue" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.IntProperty.MaxValue" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxValue As Nullable(Of Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;int&gt; MaxValue { Nullable&lt;int&gt; get(); void set(Nullable&lt;int&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -79,6 +87,8 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; MinValue { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; MinValue" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.IntProperty.MinValue" />
+      <MemberSignature Language="VB.NET" Value="Public Property MinValue As Nullable(Of Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;int&gt; MinValue { Nullable&lt;int&gt; get(); void set(Nullable&lt;int&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>

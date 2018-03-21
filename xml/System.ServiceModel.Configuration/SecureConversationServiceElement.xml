@@ -1,7 +1,9 @@
-<Type Name="SecureConversationServiceElement" FullName="System.ServiceModel.Configuration.SecureConversationServiceElement">
+﻿<Type Name="SecureConversationServiceElement" FullName="System.ServiceModel.Configuration.SecureConversationServiceElement">
   <TypeSignature Language="C#" Value="public sealed class SecureConversationServiceElement : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SecureConversationServiceElement extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.SecureConversationServiceElement" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SecureConversationServiceElement&#xA;Inherits ConfigurationElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SecureConversationServiceElement sealed : System::Configuration::ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +22,8 @@
       <MemberSignature Language="C#" Value="public SecureConversationServiceElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.SecureConversationServiceElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SecureConversationServiceElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -35,6 +39,8 @@
       <MemberSignature Language="C#" Value="public void Copy (System.ServiceModel.Configuration.SecureConversationServiceElement from);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Copy(class System.ServiceModel.Configuration.SecureConversationServiceElement from) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.SecureConversationServiceElement.Copy(System.ServiceModel.Configuration.SecureConversationServiceElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Copy (from As SecureConversationServiceElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Copy(System::ServiceModel::Configuration::SecureConversationServiceElement ^ from);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -59,6 +65,8 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.SecureConversationServiceElement.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -77,6 +85,8 @@
       <MemberSignature Language="C#" Value="public string SecurityStateEncoderType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SecurityStateEncoderType" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.SecureConversationServiceElement.SecurityStateEncoderType" />
+      <MemberSignature Language="VB.NET" Value="Public Property SecurityStateEncoderType As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SecurityStateEncoderType { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="VisualStyleElement+ExplorerBar+HeaderPin" FullName="System.Windows.Forms.VisualStyles.VisualStyleElement+ExplorerBar+HeaderPin">
+﻿<Type Name="VisualStyleElement+ExplorerBar+HeaderPin" FullName="System.Windows.Forms.VisualStyles.VisualStyleElement+ExplorerBar+HeaderPin">
   <TypeSignature Language="C#" Value="public static class VisualStyleElement.ExplorerBar.HeaderPin" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi abstract sealed beforefieldinit VisualStyleElement/ExplorerBar/HeaderPin extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.VisualStyleElement.ExplorerBar.HeaderPin" />
+  <TypeSignature Language="VB.NET" Value="Public Class VisualStyleElement.ExplorerBar.HeaderPin" />
+  <TypeSignature Language="C++ CLI" Value="public: ref class VisualStyleElement::ExplorerBar::HeaderPin abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +38,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Forms.VisualStyles.VisualStyleElement Hot { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.VisualStyles.VisualStyleElement Hot" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.VisualStyleElement.ExplorerBar.HeaderPin.Hot" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Hot As VisualStyleElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::VisualStyles::VisualStyleElement ^ Hot { System::Windows::Forms::VisualStyles::VisualStyleElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -69,6 +73,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Forms.VisualStyles.VisualStyleElement Normal { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.VisualStyles.VisualStyleElement Normal" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.VisualStyleElement.ExplorerBar.HeaderPin.Normal" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Normal As VisualStyleElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::VisualStyles::VisualStyleElement ^ Normal { System::Windows::Forms::VisualStyles::VisualStyleElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -102,6 +108,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Forms.VisualStyles.VisualStyleElement Pressed { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.VisualStyles.VisualStyleElement Pressed" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.VisualStyleElement.ExplorerBar.HeaderPin.Pressed" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Pressed As VisualStyleElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::VisualStyles::VisualStyleElement ^ Pressed { System::Windows::Forms::VisualStyles::VisualStyleElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -135,6 +143,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Forms.VisualStyles.VisualStyleElement SelectedHot { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.VisualStyles.VisualStyleElement SelectedHot" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.VisualStyleElement.ExplorerBar.HeaderPin.SelectedHot" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SelectedHot As VisualStyleElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::VisualStyles::VisualStyleElement ^ SelectedHot { System::Windows::Forms::VisualStyles::VisualStyleElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -168,6 +178,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Forms.VisualStyles.VisualStyleElement SelectedNormal { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.VisualStyles.VisualStyleElement SelectedNormal" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.VisualStyleElement.ExplorerBar.HeaderPin.SelectedNormal" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SelectedNormal As VisualStyleElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::VisualStyles::VisualStyleElement ^ SelectedNormal { System::Windows::Forms::VisualStyles::VisualStyleElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -201,6 +213,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Forms.VisualStyles.VisualStyleElement SelectedPressed { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.VisualStyles.VisualStyleElement SelectedPressed" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.VisualStyleElement.ExplorerBar.HeaderPin.SelectedPressed" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SelectedPressed As VisualStyleElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::VisualStyles::VisualStyleElement ^ SelectedPressed { System::Windows::Forms::VisualStyles::VisualStyleElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

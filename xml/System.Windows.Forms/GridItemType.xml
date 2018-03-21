@@ -1,7 +1,9 @@
-<Type Name="GridItemType" FullName="System.Windows.Forms.GridItemType">
+﻿<Type Name="GridItemType" FullName="System.Windows.Forms.GridItemType">
   <TypeSignature Language="C#" Value="public enum GridItemType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed GridItemType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.GridItemType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum GridItemType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class GridItemType" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -18,6 +20,8 @@
       <MemberSignature Language="C#" Value="ArrayValue" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.GridItemType ArrayValue = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.GridItemType.ArrayValue" />
+      <MemberSignature Language="VB.NET" Value="ArrayValue" />
+      <MemberSignature Language="C++ CLI" Value="ArrayValue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -26,6 +30,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.GridItemType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Windows.Forms.GridItem" /> is an element of an array.</summary>
       </Docs>
@@ -34,6 +39,8 @@
       <MemberSignature Language="C#" Value="Category" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.GridItemType Category = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.GridItemType.Category" />
+      <MemberSignature Language="VB.NET" Value="Category" />
+      <MemberSignature Language="C++ CLI" Value="Category" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -42,6 +49,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.GridItemType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>A grid entry that is a category name. A category is a descriptive grouping for groups of <see cref="T:System.Windows.Forms.GridItem" /> rows. Typical categories include the following Behavior, Layout, Data, and Appearance.</summary>
       </Docs>
@@ -50,6 +58,8 @@
       <MemberSignature Language="C#" Value="Property" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.GridItemType Property = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.GridItemType.Property" />
+      <MemberSignature Language="VB.NET" Value="Property" />
+      <MemberSignature Language="C++ CLI" Value="Property" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -58,6 +68,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.GridItemType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>A grid entry that corresponds to a property.</summary>
       </Docs>
@@ -66,6 +77,8 @@
       <MemberSignature Language="C#" Value="Root" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.GridItemType Root = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.GridItemType.Root" />
+      <MemberSignature Language="VB.NET" Value="Root" />
+      <MemberSignature Language="C++ CLI" Value="Root" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -74,6 +87,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.GridItemType</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>A root item in the grid hierarchy.</summary>
       </Docs>

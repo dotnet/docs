@@ -1,7 +1,9 @@
-<Type Name="BindingListCollectionView" FullName="System.Windows.Data.BindingListCollectionView">
+﻿<Type Name="BindingListCollectionView" FullName="System.Windows.Data.BindingListCollectionView">
   <TypeSignature Language="C#" Value="public sealed class BindingListCollectionView : System.Windows.Data.CollectionView, System.Collections.IComparer, System.ComponentModel.ICollectionViewLiveShaping, System.ComponentModel.IEditableCollectionView, System.ComponentModel.IItemProperties" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit BindingListCollectionView extends System.Windows.Data.CollectionView implements class System.Collections.IComparer, class System.ComponentModel.ICollectionViewLiveShaping, class System.ComponentModel.IEditableCollectionView, class System.ComponentModel.IItemProperties" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Data.BindingListCollectionView" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BindingListCollectionView&#xA;Inherits CollectionView&#xA;Implements ICollectionViewLiveShaping, IComparer, IEditableCollectionView, IItemProperties" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BindingListCollectionView sealed : System::Windows::Data::CollectionView, System::Collections::IComparer, System::ComponentModel::ICollectionViewLiveShaping, System::ComponentModel::IEditableCollectionView, System::ComponentModel::IItemProperties" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +45,8 @@
       <MemberSignature Language="C#" Value="public BindingListCollectionView (System.ComponentModel.IBindingList list);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ComponentModel.IBindingList list) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingListCollectionView.#ctor(System.ComponentModel.IBindingList)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (list As IBindingList)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BindingListCollectionView(System::ComponentModel::IBindingList ^ list);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -61,6 +65,8 @@
       <MemberSignature Language="C#" Value="public object AddNew ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object AddNew() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingListCollectionView.AddNew" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddNew () As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ AddNew();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -88,6 +94,8 @@
       <MemberSignature Language="C#" Value="public bool CanAddNew { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanAddNew" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.BindingListCollectionView.CanAddNew" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanAddNew As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanAddNew { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -115,6 +123,8 @@
       <MemberSignature Language="C#" Value="public bool CanCancelEdit { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanCancelEdit" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.BindingListCollectionView.CanCancelEdit" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanCancelEdit As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanCancelEdit { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -142,6 +152,8 @@
       <MemberSignature Language="C#" Value="public void CancelEdit ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CancelEdit() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingListCollectionView.CancelEdit" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CancelEdit ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CancelEdit();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -168,6 +180,8 @@
       <MemberSignature Language="C#" Value="public void CancelNew ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CancelNew() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingListCollectionView.CancelNew" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CancelNew ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CancelNew();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -187,6 +201,8 @@
       <MemberSignature Language="C#" Value="public bool CanChangeLiveFiltering { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanChangeLiveFiltering" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.BindingListCollectionView.CanChangeLiveFiltering" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanChangeLiveFiltering As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanChangeLiveFiltering { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -206,6 +222,8 @@
       <MemberSignature Language="C#" Value="public bool CanChangeLiveGrouping { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanChangeLiveGrouping" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.BindingListCollectionView.CanChangeLiveGrouping" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanChangeLiveGrouping As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanChangeLiveGrouping { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -225,6 +243,8 @@
       <MemberSignature Language="C#" Value="public bool CanChangeLiveSorting { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanChangeLiveSorting" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.BindingListCollectionView.CanChangeLiveSorting" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanChangeLiveSorting As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanChangeLiveSorting { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -244,6 +264,8 @@
       <MemberSignature Language="C#" Value="public bool CanCustomFilter { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanCustomFilter" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.BindingListCollectionView.CanCustomFilter" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanCustomFilter As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanCustomFilter { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -271,6 +293,8 @@
       <MemberSignature Language="C#" Value="public override bool CanFilter { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanFilter" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.BindingListCollectionView.CanFilter" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanFilter As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanFilter { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -296,6 +320,8 @@
       <MemberSignature Language="C#" Value="public override bool CanGroup { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanGroup" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.BindingListCollectionView.CanGroup" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanGroup As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanGroup { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -314,6 +340,8 @@
       <MemberSignature Language="C#" Value="public bool CanRemove { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanRemove" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.BindingListCollectionView.CanRemove" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanRemove As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanRemove { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -341,6 +369,8 @@
       <MemberSignature Language="C#" Value="public override bool CanSort { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanSort" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.BindingListCollectionView.CanSort" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanSort As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanSort { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -359,6 +389,8 @@
       <MemberSignature Language="C#" Value="public void CommitEdit ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CommitEdit() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingListCollectionView.CommitEdit" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CommitEdit ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CommitEdit();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -378,6 +410,8 @@
       <MemberSignature Language="C#" Value="public void CommitNew ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CommitNew() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingListCollectionView.CommitNew" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CommitNew ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CommitNew();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -404,6 +438,8 @@
       <MemberSignature Language="C#" Value="public override bool Contains (object item);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Contains(object item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingListCollectionView.Contains(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Contains (item As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Contains(System::Object ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -434,6 +470,8 @@
       <MemberSignature Language="C#" Value="public override int Count { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.BindingListCollectionView.Count" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Count { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -473,6 +511,8 @@
       <MemberSignature Language="C#" Value="public object CurrentAddItem { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object CurrentAddItem" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.BindingListCollectionView.CurrentAddItem" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentAddItem As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ CurrentAddItem { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -492,6 +532,8 @@
       <MemberSignature Language="C#" Value="public object CurrentEditItem { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object CurrentEditItem" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.BindingListCollectionView.CurrentEditItem" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentEditItem As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ CurrentEditItem { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -511,6 +553,8 @@
       <MemberSignature Language="C#" Value="public string CustomFilter { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CustomFilter" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.BindingListCollectionView.CustomFilter" />
+      <MemberSignature Language="VB.NET" Value="Public Property CustomFilter As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CustomFilter { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -540,6 +584,8 @@
       <MemberSignature Language="C#" Value="public override void DetachFromSourceCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void DetachFromSourceCollection() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingListCollectionView.DetachFromSourceCollection" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub DetachFromSourceCollection ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void DetachFromSourceCollection();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -558,6 +604,8 @@
       <MemberSignature Language="C#" Value="public void EditItem (object item);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EditItem(object item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingListCollectionView.EditItem(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EditItem (item As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EditItem(System::Object ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -580,6 +628,8 @@
       <MemberSignature Language="C#" Value="protected override System.Collections.IEnumerator GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingListCollectionView.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Collections::IEnumerator ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -599,6 +649,8 @@
       <MemberSignature Language="C#" Value="public override object GetItemAt (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetItemAt(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingListCollectionView.GetItemAt(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetItemAt (index As Integer) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetItemAt(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -629,6 +681,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Data.GroupDescriptionSelectorCallback GroupBySelector { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Data.GroupDescriptionSelectorCallback GroupBySelector" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.BindingListCollectionView.GroupBySelector" />
+      <MemberSignature Language="VB.NET" Value="Public Property GroupBySelector As GroupDescriptionSelectorCallback" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Data::GroupDescriptionSelectorCallback ^ GroupBySelector { System::Windows::Data::GroupDescriptionSelectorCallback ^ get(); void set(System::Windows::Data::GroupDescriptionSelectorCallback ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -653,6 +707,8 @@
       <MemberSignature Language="C#" Value="public override System.Collections.ObjectModel.ObservableCollection&lt;System.ComponentModel.GroupDescription&gt; GroupDescriptions { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ObservableCollection`1&lt;class System.ComponentModel.GroupDescription&gt; GroupDescriptions" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.BindingListCollectionView.GroupDescriptions" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property GroupDescriptions As ObservableCollection(Of GroupDescription)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::ObjectModel::ObservableCollection&lt;System::ComponentModel::GroupDescription ^&gt; ^ GroupDescriptions { System::Collections::ObjectModel::ObservableCollection&lt;System::ComponentModel::GroupDescription ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -691,6 +747,8 @@
       <MemberSignature Language="C#" Value="public override System.Collections.ObjectModel.ReadOnlyObservableCollection&lt;object&gt; Groups { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyObservableCollection`1&lt;object&gt; Groups" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.BindingListCollectionView.Groups" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Groups As ReadOnlyObservableCollection(Of Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::ObjectModel::ReadOnlyObservableCollection&lt;System::Object ^&gt; ^ Groups { System::Collections::ObjectModel::ReadOnlyObservableCollection&lt;System::Object ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -718,6 +776,8 @@
       <MemberSignature Language="C#" Value="public override int IndexOf (object item);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 IndexOf(object item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingListCollectionView.IndexOf(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function IndexOf (item As Object) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int IndexOf(System::Object ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -749,6 +809,8 @@
       <MemberSignature Language="C#" Value="public bool IsAddingNew { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsAddingNew" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.BindingListCollectionView.IsAddingNew" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsAddingNew As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAddingNew { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -776,6 +838,8 @@
       <MemberSignature Language="C#" Value="public bool IsDataInGroupOrder { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsDataInGroupOrder" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.BindingListCollectionView.IsDataInGroupOrder" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsDataInGroupOrder As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDataInGroupOrder { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -806,6 +870,8 @@
       <MemberSignature Language="C#" Value="public bool IsEditingItem { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsEditingItem" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.BindingListCollectionView.IsEditingItem" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsEditingItem As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsEditingItem { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -833,6 +899,8 @@
       <MemberSignature Language="C#" Value="public override bool IsEmpty { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsEmpty" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.BindingListCollectionView.IsEmpty" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsEmpty As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsEmpty { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -852,6 +920,8 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; IsLiveFiltering { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; IsLiveFiltering" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.BindingListCollectionView.IsLiveFiltering" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsLiveFiltering As Nullable(Of Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;bool&gt; IsLiveFiltering { Nullable&lt;bool&gt; get(); void set(Nullable&lt;bool&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -873,6 +943,8 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; IsLiveGrouping { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; IsLiveGrouping" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.BindingListCollectionView.IsLiveGrouping" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsLiveGrouping As Nullable(Of Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;bool&gt; IsLiveGrouping { Nullable&lt;bool&gt; get(); void set(Nullable&lt;bool&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -894,6 +966,8 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; IsLiveSorting { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; IsLiveSorting" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.BindingListCollectionView.IsLiveSorting" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsLiveSorting As Nullable(Of Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;bool&gt; IsLiveSorting { Nullable&lt;bool&gt; get(); void set(Nullable&lt;bool&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -915,6 +989,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.ComponentModel.ItemPropertyInfo&gt; ItemProperties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.ComponentModel.ItemPropertyInfo&gt; ItemProperties" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.BindingListCollectionView.ItemProperties" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ItemProperties As ReadOnlyCollection(Of ItemPropertyInfo)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::ComponentModel::ItemPropertyInfo ^&gt; ^ ItemProperties { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::ComponentModel::ItemPropertyInfo ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -933,6 +1009,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ObservableCollection&lt;string&gt; LiveFilteringProperties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ObservableCollection`1&lt;string&gt; LiveFilteringProperties" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.BindingListCollectionView.LiveFilteringProperties" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LiveFilteringProperties As ObservableCollection(Of String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ObservableCollection&lt;System::String ^&gt; ^ LiveFilteringProperties { System::Collections::ObjectModel::ObservableCollection&lt;System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -951,6 +1029,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ObservableCollection&lt;string&gt; LiveGroupingProperties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ObservableCollection`1&lt;string&gt; LiveGroupingProperties" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.BindingListCollectionView.LiveGroupingProperties" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LiveGroupingProperties As ObservableCollection(Of String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ObservableCollection&lt;System::String ^&gt; ^ LiveGroupingProperties { System::Collections::ObjectModel::ObservableCollection&lt;System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -969,6 +1049,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ObservableCollection&lt;string&gt; LiveSortingProperties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ObservableCollection`1&lt;string&gt; LiveSortingProperties" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.BindingListCollectionView.LiveSortingProperties" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LiveSortingProperties As ObservableCollection(Of String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ObservableCollection&lt;System::String ^&gt; ^ LiveSortingProperties { System::Collections::ObjectModel::ObservableCollection&lt;System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -987,6 +1069,8 @@
       <MemberSignature Language="C#" Value="public override bool MoveCurrentToPosition (int position);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool MoveCurrentToPosition(int32 position) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingListCollectionView.MoveCurrentToPosition(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function MoveCurrentToPosition (position As Integer) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool MoveCurrentToPosition(int position);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1011,6 +1095,8 @@
       <MemberSignature Language="C#" Value="public System.ComponentModel.NewItemPlaceholderPosition NewItemPlaceholderPosition { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ComponentModel.NewItemPlaceholderPosition NewItemPlaceholderPosition" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.BindingListCollectionView.NewItemPlaceholderPosition" />
+      <MemberSignature Language="VB.NET" Value="Public Property NewItemPlaceholderPosition As NewItemPlaceholderPosition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::NewItemPlaceholderPosition NewItemPlaceholderPosition { System::ComponentModel::NewItemPlaceholderPosition get(); void set(System::ComponentModel::NewItemPlaceholderPosition value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1029,6 +1115,8 @@
       <MemberSignature Language="C#" Value="protected override void OnAllowsCrossThreadChangesChanged ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnAllowsCrossThreadChangesChanged() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingListCollectionView.OnAllowsCrossThreadChangesChanged" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnAllowsCrossThreadChangesChanged ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnAllowsCrossThreadChangesChanged();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1047,6 +1135,8 @@
       <MemberSignature Language="C#" Value="protected override void OnBeginChangeLogging (System.Collections.Specialized.NotifyCollectionChangedEventArgs args);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnBeginChangeLogging(class System.Collections.Specialized.NotifyCollectionChangedEventArgs args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingListCollectionView.OnBeginChangeLogging(System.Collections.Specialized.NotifyCollectionChangedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnBeginChangeLogging (args As NotifyCollectionChangedEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnBeginChangeLogging(System::Collections::Specialized::NotifyCollectionChangedEventArgs ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1073,6 +1163,8 @@
       <MemberSignature Language="C#" Value="public override bool PassesFilter (object item);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool PassesFilter(object item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingListCollectionView.PassesFilter(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function PassesFilter (item As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool PassesFilter(System::Object ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1103,6 +1195,8 @@
       <MemberSignature Language="C#" Value="protected override void ProcessCollectionChanged (System.Collections.Specialized.NotifyCollectionChangedEventArgs args);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void ProcessCollectionChanged(class System.Collections.Specialized.NotifyCollectionChangedEventArgs args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingListCollectionView.ProcessCollectionChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub ProcessCollectionChanged (args As NotifyCollectionChangedEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ProcessCollectionChanged(System::Collections::Specialized::NotifyCollectionChangedEventArgs ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1124,6 +1218,8 @@
       <MemberSignature Language="C#" Value="protected override void RefreshOverride ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RefreshOverride() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingListCollectionView.RefreshOverride" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RefreshOverride ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RefreshOverride();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1142,6 +1238,8 @@
       <MemberSignature Language="C#" Value="public void Remove (object item);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Remove(object item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingListCollectionView.Remove(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (item As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Remove(System::Object ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1171,6 +1269,8 @@
       <MemberSignature Language="C#" Value="public void RemoveAt (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveAt(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingListCollectionView.RemoveAt(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveAt(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1202,6 +1302,8 @@
       <MemberSignature Language="C#" Value="public override System.ComponentModel.SortDescriptionCollection SortDescriptions { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.SortDescriptionCollection SortDescriptions" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.BindingListCollectionView.SortDescriptions" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property SortDescriptions As SortDescriptionCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::SortDescriptionCollection ^ SortDescriptions { System::ComponentModel::SortDescriptionCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1230,7 +1332,12 @@
       <MemberSignature Language="C#" Value="int IComparer.Compare (object o1, object o2);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.IComparer.Compare(object o1, object o2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingListCollectionView.System#Collections#IComparer#Compare(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Function Compare (o1 As Object, o2 As Object) As Integer Implements IComparer.Compare" />
+      <MemberSignature Language="C++ CLI" Value=" virtual int System.Collections.IComparer.Compare(System::Object ^ o1, System::Object ^ o2) = System::Collections::IComparer::Compare;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IComparer.Compare(System.Object,System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

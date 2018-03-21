@@ -1,7 +1,9 @@
-<Type Name="TrustRelationshipInformationCollection" FullName="System.DirectoryServices.ActiveDirectory.TrustRelationshipInformationCollection">
+﻿<Type Name="TrustRelationshipInformationCollection" FullName="System.DirectoryServices.ActiveDirectory.TrustRelationshipInformationCollection">
   <TypeSignature Language="C#" Value="public class TrustRelationshipInformationCollection : System.Collections.ReadOnlyCollectionBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TrustRelationshipInformationCollection extends System.Collections.ReadOnlyCollectionBase" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.TrustRelationshipInformationCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class TrustRelationshipInformationCollection&#xA;Inherits ReadOnlyCollectionBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TrustRelationshipInformationCollection : System::Collections::ReadOnlyCollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +25,8 @@
       <MemberSignature Language="C#" Value="public bool Contains (System.DirectoryServices.ActiveDirectory.TrustRelationshipInformation information);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.DirectoryServices.ActiveDirectory.TrustRelationshipInformation information) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.TrustRelationshipInformationCollection.Contains(System.DirectoryServices.ActiveDirectory.TrustRelationshipInformation)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (information As TrustRelationshipInformation) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::DirectoryServices::ActiveDirectory::TrustRelationshipInformation ^ information);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -50,6 +54,8 @@
       <MemberSignature Language="C#" Value="public void CopyTo (System.DirectoryServices.ActiveDirectory.TrustRelationshipInformation[] array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.DirectoryServices.ActiveDirectory.TrustRelationshipInformation[] array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.TrustRelationshipInformationCollection.CopyTo(System.DirectoryServices.ActiveDirectory.TrustRelationshipInformation[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As TrustRelationshipInformation(), index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::DirectoryServices::ActiveDirectory::TrustRelationshipInformation ^&gt; ^ array, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -80,6 +86,8 @@
       <MemberSignature Language="C#" Value="public int IndexOf (System.DirectoryServices.ActiveDirectory.TrustRelationshipInformation information);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.DirectoryServices.ActiveDirectory.TrustRelationshipInformation information) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.TrustRelationshipInformationCollection.IndexOf(System.DirectoryServices.ActiveDirectory.TrustRelationshipInformation)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOf (information As TrustRelationshipInformation) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::DirectoryServices::ActiveDirectory::TrustRelationshipInformation ^ information);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -107,6 +115,8 @@
       <MemberSignature Language="C#" Value="public System.DirectoryServices.ActiveDirectory.TrustRelationshipInformation this[int index] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.DirectoryServices.ActiveDirectory.TrustRelationshipInformation Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.TrustRelationshipInformationCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As TrustRelationshipInformation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::ActiveDirectory::TrustRelationshipInformation ^ default[int] { System::DirectoryServices::ActiveDirectory::TrustRelationshipInformation ^ get(int index); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>

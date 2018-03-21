@@ -1,7 +1,9 @@
-<Type Name="ICustomIdentityConfiguration" FullName="System.IdentityModel.Configuration.ICustomIdentityConfiguration">
+﻿<Type Name="ICustomIdentityConfiguration" FullName="System.IdentityModel.Configuration.ICustomIdentityConfiguration">
   <TypeSignature Language="C#" Value="public interface ICustomIdentityConfiguration" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ICustomIdentityConfiguration" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Configuration.ICustomIdentityConfiguration" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ICustomIdentityConfiguration" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ICustomIdentityConfiguration" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +27,8 @@
       <MemberSignature Language="C#" Value="public void LoadCustomConfiguration (System.Xml.XmlNodeList nodeList);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void LoadCustomConfiguration(class System.Xml.XmlNodeList nodeList) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Configuration.ICustomIdentityConfiguration.LoadCustomConfiguration(System.Xml.XmlNodeList)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub LoadCustomConfiguration (nodeList As XmlNodeList)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void LoadCustomConfiguration(System::Xml::XmlNodeList ^ nodeList);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

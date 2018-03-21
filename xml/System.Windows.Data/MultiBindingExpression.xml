@@ -1,7 +1,9 @@
-<Type Name="MultiBindingExpression" FullName="System.Windows.Data.MultiBindingExpression">
+﻿<Type Name="MultiBindingExpression" FullName="System.Windows.Data.MultiBindingExpression">
   <TypeSignature Language="C#" Value="public sealed class MultiBindingExpression : System.Windows.Data.BindingExpressionBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MultiBindingExpression extends System.Windows.Data.BindingExpressionBase" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Data.MultiBindingExpression" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MultiBindingExpression&#xA;Inherits BindingExpressionBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MultiBindingExpression sealed : System::Windows::Data::BindingExpressionBase" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +33,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Windows.Data.BindingExpressionBase&gt; BindingExpressions { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Windows.Data.BindingExpressionBase&gt; BindingExpressions" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.MultiBindingExpression.BindingExpressions" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BindingExpressions As ReadOnlyCollection(Of BindingExpressionBase)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Windows::Data::BindingExpressionBase ^&gt; ^ BindingExpressions { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Windows::Data::BindingExpressionBase ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -49,6 +53,8 @@
       <MemberSignature Language="C#" Value="public override bool HasError { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasError" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.MultiBindingExpression.HasError" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property HasError As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool HasError { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -75,6 +81,8 @@
       <MemberSignature Language="C#" Value="public override bool HasValidationError { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasValidationError" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.MultiBindingExpression.HasValidationError" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property HasValidationError As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool HasValidationError { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -101,6 +109,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Data.MultiBinding ParentMultiBinding { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Data.MultiBinding ParentMultiBinding" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.MultiBindingExpression.ParentMultiBinding" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ParentMultiBinding As MultiBinding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Data::MultiBinding ^ ParentMultiBinding { System::Windows::Data::MultiBinding ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -119,6 +129,8 @@
       <MemberSignature Language="C#" Value="public override void UpdateSource ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void UpdateSource() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.MultiBindingExpression.UpdateSource" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub UpdateSource ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void UpdateSource();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -138,6 +150,8 @@
       <MemberSignature Language="C#" Value="public override void UpdateTarget ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void UpdateTarget() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.MultiBindingExpression.UpdateTarget" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub UpdateTarget ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void UpdateTarget();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -157,6 +171,8 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Controls.ValidationError ValidationError { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Controls.ValidationError ValidationError" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.MultiBindingExpression.ValidationError" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ValidationError As ValidationError" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Controls::ValidationError ^ ValidationError { System::Windows::Controls::ValidationError ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="SecureConversationVersion" FullName="System.ServiceModel.Security.SecureConversationVersion">
+﻿<Type Name="SecureConversationVersion" FullName="System.ServiceModel.Security.SecureConversationVersion">
   <TypeSignature Language="C#" Value="public abstract class SecureConversationVersion" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract SecureConversationVersion extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.SecureConversationVersion" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class SecureConversationVersion" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SecureConversationVersion abstract" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -26,6 +28,8 @@
       <MemberSignature Language="C#" Value="protected SecureConversationVersion ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.SecureConversationVersion.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; SecureConversationVersion();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -42,6 +46,8 @@
       <MemberSignature Language="C#" Value="public static System.ServiceModel.Security.SecureConversationVersion Default { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.Security.SecureConversationVersion Default" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecureConversationVersion.Default" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Default As SecureConversationVersion" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::Security::SecureConversationVersion ^ Default { System::ServiceModel::Security::SecureConversationVersion ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -67,6 +73,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.XmlDictionaryString Namespace { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlDictionaryString Namespace" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecureConversationVersion.Namespace" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Namespace As XmlDictionaryString" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlDictionaryString ^ Namespace { System::Xml::XmlDictionaryString ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -92,6 +100,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.XmlDictionaryString Prefix { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlDictionaryString Prefix" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecureConversationVersion.Prefix" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Prefix As XmlDictionaryString" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlDictionaryString ^ Prefix { System::Xml::XmlDictionaryString ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -117,6 +127,8 @@
       <MemberSignature Language="C#" Value="public static System.ServiceModel.Security.SecureConversationVersion WSSecureConversation13 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.Security.SecureConversationVersion WSSecureConversation13" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecureConversationVersion.WSSecureConversation13" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property WSSecureConversation13 As SecureConversationVersion" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::Security::SecureConversationVersion ^ WSSecureConversation13 { System::ServiceModel::Security::SecureConversationVersion ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -136,6 +148,8 @@
       <MemberSignature Language="C#" Value="public static System.ServiceModel.Security.SecureConversationVersion WSSecureConversationFeb2005 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.Security.SecureConversationVersion WSSecureConversationFeb2005" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecureConversationVersion.WSSecureConversationFeb2005" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property WSSecureConversationFeb2005 As SecureConversationVersion" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::Security::SecureConversationVersion ^ WSSecureConversationFeb2005 { System::ServiceModel::Security::SecureConversationVersion ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

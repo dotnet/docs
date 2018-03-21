@@ -1,7 +1,9 @@
-<Type Name="WorkflowPageSetupDialog" FullName="System.Workflow.ComponentModel.Design.WorkflowPageSetupDialog">
+﻿<Type Name="WorkflowPageSetupDialog" FullName="System.Workflow.ComponentModel.Design.WorkflowPageSetupDialog">
   <TypeSignature Language="C#" Value="public sealed class WorkflowPageSetupDialog : System.Windows.Forms.Form" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WorkflowPageSetupDialog extends System.Windows.Forms.Form" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.WorkflowPageSetupDialog" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WorkflowPageSetupDialog&#xA;Inherits Form" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WorkflowPageSetupDialog sealed : System::Windows::Forms::Form" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +37,8 @@
       <MemberSignature Language="C#" Value="public WorkflowPageSetupDialog (IServiceProvider serviceProvider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IServiceProvider serviceProvider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowPageSetupDialog.#ctor(System.IServiceProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (serviceProvider As IServiceProvider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowPageSetupDialog(IServiceProvider ^ serviceProvider);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -53,6 +57,8 @@
       <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowPageSetupDialog.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -74,6 +80,8 @@
       <MemberSignature Language="C#" Value="protected override void OnHelpRequested (System.Windows.Forms.HelpEventArgs hlpevent);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnHelpRequested(class System.Windows.Forms.HelpEventArgs hlpevent) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowPageSetupDialog.OnHelpRequested(System.Windows.Forms.HelpEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnHelpRequested (hlpevent As HelpEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnHelpRequested(System::Windows::Forms::HelpEventArgs ^ hlpevent);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

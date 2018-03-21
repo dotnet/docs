@@ -1,7 +1,9 @@
-<Type Name="OdbcParameterCollection" FullName="System.Data.Odbc.OdbcParameterCollection">
+﻿<Type Name="OdbcParameterCollection" FullName="System.Data.Odbc.OdbcParameterCollection">
   <TypeSignature Language="C#" Value="public sealed class OdbcParameterCollection : System.Data.Common.DbParameterCollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit OdbcParameterCollection extends System.Data.Common.DbParameterCollection" />
   <TypeSignature Language="DocId" Value="T:System.Data.Odbc.OdbcParameterCollection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OdbcParameterCollection&#xA;Inherits DbParameterCollection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class OdbcParameterCollection sealed : System::Data::Common::DbParameterCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,10 +55,21 @@ INSERT INTO MyTable VALUES (@p1, @p2, @p3);
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds an <see cref="T:System.Data.Odbc.OdbcParameter" /> to the <see cref="T:System.Data.Odbc.OdbcParameterCollection" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Add">
       <MemberSignature Language="C#" Value="public System.Data.Odbc.OdbcParameter Add (System.Data.Odbc.OdbcParameter value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Odbc.OdbcParameter Add(class System.Data.Odbc.OdbcParameter value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcParameterCollection.Add(System.Data.Odbc.OdbcParameter)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (value As OdbcParameter) As OdbcParameter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Odbc::OdbcParameter ^ Add(System::Data::Odbc::OdbcParameter ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -85,6 +98,8 @@ INSERT INTO MyTable VALUES (@p1, @p2, @p3);
       <MemberSignature Language="C#" Value="public override int Add (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 Add(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcParameterCollection.Add(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Add (value As Object) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int Add(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -116,6 +131,7 @@ INSERT INTO MyTable VALUES (@p1, @p2, @p3);
       <MemberSignature Language="C#" Value="public System.Data.Odbc.OdbcParameter Add (string parameterName, System.Data.Odbc.OdbcType odbcType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Odbc.OdbcParameter Add(string parameterName, valuetype System.Data.Odbc.OdbcType odbcType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcParameterCollection.Add(System.String,System.Data.Odbc.OdbcType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Odbc::OdbcParameter ^ Add(System::String ^ parameterName, System::Data::Odbc::OdbcType odbcType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -154,6 +170,8 @@ INSERT INTO MyTable VALUES (@p1, @p2, @p3);
       <MemberSignature Language="C#" Value="public System.Data.Odbc.OdbcParameter Add (string parameterName, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Odbc.OdbcParameter Add(string parameterName, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcParameterCollection.Add(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (parameterName As String, value As Object) As OdbcParameter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Odbc::OdbcParameter ^ Add(System::String ^ parameterName, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -204,6 +222,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="C#" Value="public System.Data.Odbc.OdbcParameter Add (string parameterName, System.Data.Odbc.OdbcType odbcType, int size);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Odbc.OdbcParameter Add(string parameterName, valuetype System.Data.Odbc.OdbcType odbcType, int32 size) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcParameterCollection.Add(System.String,System.Data.Odbc.OdbcType,System.Int32)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Odbc::OdbcParameter ^ Add(System::String ^ parameterName, System::Data::Odbc::OdbcType odbcType, int size);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -244,6 +263,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="C#" Value="public System.Data.Odbc.OdbcParameter Add (string parameterName, System.Data.Odbc.OdbcType odbcType, int size, string sourceColumn);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Odbc.OdbcParameter Add(string parameterName, valuetype System.Data.Odbc.OdbcType odbcType, int32 size, string sourceColumn) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcParameterCollection.Add(System.String,System.Data.Odbc.OdbcType,System.Int32,System.String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Odbc::OdbcParameter ^ Add(System::String ^ parameterName, System::Data::Odbc::OdbcType odbcType, int size, System::String ^ sourceColumn);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -282,10 +302,21 @@ parameters.Add("@pname", Convert.ToInt32(0));
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddRange">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds elements to the end of the <see cref="T:System.Data.Odbc.OdbcParameterCollection" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AddRange">
       <MemberSignature Language="C#" Value="public override void AddRange (Array values);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void AddRange(class System.Array values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcParameterCollection.AddRange(System.Array)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub AddRange (values As Array)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void AddRange(Array ^ values);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -311,6 +342,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="C#" Value="public void AddRange (System.Data.Odbc.OdbcParameter[] values);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddRange(class System.Data.Odbc.OdbcParameter[] values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcParameterCollection.AddRange(System.Data.Odbc.OdbcParameter[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddRange (values As OdbcParameter())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(cli::array &lt;System::Data::Odbc::OdbcParameter ^&gt; ^ values);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -336,6 +369,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="C#" Value="public System.Data.Odbc.OdbcParameter AddWithValue (string parameterName, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Odbc.OdbcParameter AddWithValue(string parameterName, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcParameterCollection.AddWithValue(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddWithValue (parameterName As String, value As Object) As OdbcParameter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Odbc::OdbcParameter ^ AddWithValue(System::String ^ parameterName, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -364,6 +399,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="C#" Value="public override void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcParameterCollection.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Clear ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -382,10 +419,21 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Contains">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a value indicating whether an <see cref="T:System.Data.Odbc.OdbcParameter" /> object exists in the collection.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Contains">
       <MemberSignature Language="C#" Value="public bool Contains (System.Data.Odbc.OdbcParameter value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.Data.Odbc.OdbcParameter value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcParameterCollection.Contains(System.Data.Odbc.OdbcParameter)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (value As OdbcParameter) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Data::Odbc::OdbcParameter ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -413,6 +461,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="C#" Value="public override bool Contains (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Contains(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcParameterCollection.Contains(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Contains (value As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Contains(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -440,6 +490,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="C#" Value="public override bool Contains (string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Contains(string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcParameterCollection.Contains(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Contains (value As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Contains(System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -473,10 +525,20 @@ parameters.Add("@pname", Convert.ToInt32(0));
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CopyTo">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Copies all the elements of the current <see cref="T:System.Data.Odbc.OdbcParameterCollection" /> to the specified object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CopyTo">
       <MemberSignature Language="C#" Value="public override void CopyTo (Array array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void CopyTo(class System.Array array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcParameterCollection.CopyTo(System.Array,System.Int32)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void CopyTo(Array ^ array, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -504,6 +566,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="C#" Value="public void CopyTo (System.Data.Odbc.OdbcParameter[] array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.Data.Odbc.OdbcParameter[] array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcParameterCollection.CopyTo(System.Data.Odbc.OdbcParameter[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As OdbcParameter(), index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Data::Odbc::OdbcParameter ^&gt; ^ array, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -531,6 +595,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="C#" Value="public override int Count { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
       <MemberSignature Language="DocId" Value="P:System.Data.Odbc.OdbcParameterCollection.Count" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Count { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -553,6 +619,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="C#" Value="public override System.Collections.IEnumerator GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcParameterCollection.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Collections::IEnumerator ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -576,6 +644,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="C#" Value="protected override System.Data.Common.DbParameter GetParameter (int index);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Data.Common.DbParameter GetParameter(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcParameterCollection.GetParameter(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetParameter (index As Integer) As DbParameter" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Data::Common::DbParameter ^ GetParameter(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -602,6 +672,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="C#" Value="protected override System.Data.Common.DbParameter GetParameter (string parameterName);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Data.Common.DbParameter GetParameter(string parameterName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcParameterCollection.GetParameter(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetParameter (parameterName As String) As DbParameter" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Data::Common::DbParameter ^ GetParameter(System::String ^ parameterName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -624,10 +696,21 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="IndexOf">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the location of the specified <see cref="T:System.Data.Odbc.OdbcParameter" /> within the collection.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="IndexOf">
       <MemberSignature Language="C#" Value="public int IndexOf (System.Data.Odbc.OdbcParameter value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.Data.Odbc.OdbcParameter value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcParameterCollection.IndexOf(System.Data.Odbc.OdbcParameter)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As OdbcParameter) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Data::Odbc::OdbcParameter ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -654,6 +737,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="C#" Value="public override int IndexOf (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 IndexOf(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcParameterCollection.IndexOf(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function IndexOf (value As Object) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int IndexOf(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -680,6 +765,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="C#" Value="public override int IndexOf (string parameterName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 IndexOf(string parameterName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcParameterCollection.IndexOf(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function IndexOf (parameterName As String) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int IndexOf(System::String ^ parameterName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -702,10 +789,21 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Insert">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Inserts a <see cref="T:System.Data.Odbc.OdbcParameter" /> object into the <see cref="T:System.Data.Odbc.OdbcParameterCollection" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Insert">
       <MemberSignature Language="C#" Value="public void Insert (int index, System.Data.Odbc.OdbcParameter value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(int32 index, class System.Data.Odbc.OdbcParameter value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcParameterCollection.Insert(System.Int32,System.Data.Odbc.OdbcParameter)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, value As OdbcParameter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::Data::Odbc::OdbcParameter ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -733,6 +831,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="C#" Value="public override void Insert (int index, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Insert(int32 index, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcParameterCollection.Insert(System.Int32,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Insert (index As Integer, value As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Insert(int index, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -760,6 +860,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="C#" Value="public override bool IsFixedSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsFixedSize" />
       <MemberSignature Language="DocId" Value="P:System.Data.Odbc.OdbcParameterCollection.IsFixedSize" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsFixedSize As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsFixedSize { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -783,6 +885,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="C#" Value="public override bool IsReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Data.Odbc.OdbcParameterCollection.IsReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsReadOnly As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -806,6 +910,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="C#" Value="public override bool IsSynchronized { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsSynchronized" />
       <MemberSignature Language="DocId" Value="P:System.Data.Odbc.OdbcParameterCollection.IsSynchronized" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsSynchronized As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsSynchronized { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -825,10 +931,21 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Data.Odbc.OdbcParameter" /> with a specified attribute.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Item">
       <MemberSignature Language="C#" Value="public System.Data.Odbc.OdbcParameter this[int index] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Odbc.OdbcParameter Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Data.Odbc.OdbcParameterCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As OdbcParameter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Odbc::OdbcParameter ^ default[int] { System::Data::Odbc::OdbcParameter ^ get(int index); void set(int index, System::Data::Odbc::OdbcParameter ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -843,7 +960,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -874,6 +991,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="C#" Value="public System.Data.Odbc.OdbcParameter this[string parameterName] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Odbc.OdbcParameter Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.Data.Odbc.OdbcParameterCollection.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(parameterName As String) As OdbcParameter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Odbc::OdbcParameter ^ default[System::String ^] { System::Data::Odbc::OdbcParameter ^ get(System::String ^ parameterName); void set(System::String ^ parameterName, System::Data::Odbc::OdbcParameter ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -888,7 +1007,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -915,10 +1034,21 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <exception cref="T:System.IndexOutOfRangeException">The name specified does not exist.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Remove">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes the <see cref="T:System.Data.Odbc.OdbcParameter" /> object from the <see cref="T:System.Data.Odbc.OdbcParameterCollection" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Remove">
       <MemberSignature Language="C#" Value="public void Remove (System.Data.Odbc.OdbcParameter value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Data.Odbc.OdbcParameter value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcParameterCollection.Remove(System.Data.Odbc.OdbcParameter)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (value As OdbcParameter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Data::Odbc::OdbcParameter ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -946,6 +1076,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="C#" Value="public override void Remove (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Remove(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcParameterCollection.Remove(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Remove (value As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Remove(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -967,10 +1099,21 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="RemoveAt">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes the <see cref="T:System.Data.Odbc.OdbcParameter" /> object from the <see cref="T:System.Data.Odbc.OdbcParameterCollection" /> at the specified index.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="RemoveAt">
       <MemberSignature Language="C#" Value="public override void RemoveAt (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void RemoveAt(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcParameterCollection.RemoveAt(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub RemoveAt (index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void RemoveAt(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -996,6 +1139,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="C#" Value="public override void RemoveAt (string parameterName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void RemoveAt(string parameterName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcParameterCollection.RemoveAt(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub RemoveAt (parameterName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void RemoveAt(System::String ^ parameterName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1021,6 +1166,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="C#" Value="protected override void SetParameter (int index, System.Data.Common.DbParameter value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetParameter(int32 index, class System.Data.Common.DbParameter value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcParameterCollection.SetParameter(System.Int32,System.Data.Common.DbParameter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetParameter (index As Integer, value As DbParameter)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetParameter(int index, System::Data::Common::DbParameter ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1048,6 +1195,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="C#" Value="protected override void SetParameter (string parameterName, System.Data.Common.DbParameter value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetParameter(string parameterName, class System.Data.Common.DbParameter value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcParameterCollection.SetParameter(System.String,System.Data.Common.DbParameter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetParameter (parameterName As String, value As DbParameter)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetParameter(System::String ^ parameterName, System::Data::Common::DbParameter ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1075,6 +1224,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="C#" Value="public override object SyncRoot { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object SyncRoot" />
       <MemberSignature Language="DocId" Value="P:System.Data.Odbc.OdbcParameterCollection.SyncRoot" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property SyncRoot As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ SyncRoot { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1093,86 +1244,5 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="RemoveAt">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Removes the <see cref="T:System.Data.Odbc.OdbcParameter" /> object from the <see cref="T:System.Data.Odbc.OdbcParameterCollection" /> at the specified index.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Insert">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Inserts a <see cref="T:System.Data.Odbc.OdbcParameter" /> object into the <see cref="T:System.Data.Odbc.OdbcParameterCollection" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="IndexOf">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets the location of the specified <see cref="T:System.Data.Odbc.OdbcParameter" /> within the collection.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Remove">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Removes the <see cref="T:System.Data.Odbc.OdbcParameter" /> object from the <see cref="T:System.Data.Odbc.OdbcParameterCollection" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="AddRange">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds elements to the end of the <see cref="T:System.Data.Odbc.OdbcParameterCollection" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Item">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets or sets the <see cref="T:System.Data.Odbc.OdbcParameter" /> with a specified attribute.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Add">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds an <see cref="T:System.Data.Odbc.OdbcParameter" /> to the <see cref="T:System.Data.Odbc.OdbcParameterCollection" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Contains">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets a value indicating whether an <see cref="T:System.Data.Odbc.OdbcParameter" /> object exists in the collection.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="CopyTo">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Copies all the elements of the current <see cref="T:System.Data.Odbc.OdbcParameterCollection" /> to the specified object.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,9 @@
-<Type Name="UpdateMapMetadata" FullName="System.Activities.DynamicUpdate.UpdateMapMetadata">
+﻿<Type Name="UpdateMapMetadata" FullName="System.Activities.DynamicUpdate.UpdateMapMetadata">
   <TypeSignature Language="C#" Value="public class UpdateMapMetadata" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit UpdateMapMetadata extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Activities.DynamicUpdate.UpdateMapMetadata" />
+  <TypeSignature Language="VB.NET" Value="Public Class UpdateMapMetadata" />
+  <TypeSignature Language="C++ CLI" Value="public ref class UpdateMapMetadata" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,10 +42,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName="AddMatch">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a match for <see cref="T:System.Activities.DynamicUpdate.UpdateMapMetadata" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AddMatch">
       <MemberSignature Language="C#" Value="public void AddMatch (System.Activities.Activity updatedChild, System.Activities.Activity originalChild);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddMatch(class System.Activities.Activity updatedChild, class System.Activities.Activity originalChild) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.UpdateMapMetadata.AddMatch(System.Activities.Activity,System.Activities.Activity)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddMatch (updatedChild As Activity, originalChild As Activity)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddMatch(System::Activities::Activity ^ updatedChild, System::Activities::Activity ^ originalChild);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -67,6 +80,8 @@
       <MemberSignature Language="C#" Value="public void AddMatch (System.Activities.Variable updatedVariable, System.Activities.Variable originalVariable);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddMatch(class System.Activities.Variable updatedVariable, class System.Activities.Variable originalVariable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.UpdateMapMetadata.AddMatch(System.Activities.Variable,System.Activities.Variable)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddMatch (updatedVariable As Variable, originalVariable As Variable)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddMatch(System::Activities::Variable ^ updatedVariable, System::Activities::Variable ^ originalVariable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -90,6 +105,8 @@
       <MemberSignature Language="C#" Value="public void AllowUpdateInsideThisActivity ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AllowUpdateInsideThisActivity() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.UpdateMapMetadata.AllowUpdateInsideThisActivity" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AllowUpdateInsideThisActivity ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AllowUpdateInsideThisActivity();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -108,6 +125,8 @@
       <MemberSignature Language="C#" Value="public void DisallowUpdateInsideThisActivity (string reason);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DisallowUpdateInsideThisActivity(string reason) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.UpdateMapMetadata.DisallowUpdateInsideThisActivity(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DisallowUpdateInsideThisActivity (reason As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DisallowUpdateInsideThisActivity(System::String ^ reason);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -125,10 +144,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetMatch">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a match for <see cref="T:System.Activities.DynamicUpdate.UpdateMapMetadata" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetMatch">
       <MemberSignature Language="C#" Value="public System.Activities.Activity GetMatch (System.Activities.Activity updatedChild);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Activities.Activity GetMatch(class System.Activities.Activity updatedChild) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.UpdateMapMetadata.GetMatch(System.Activities.Activity)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetMatch (updatedChild As Activity) As Activity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Activities::Activity ^ GetMatch(System::Activities::Activity ^ updatedChild);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -151,6 +181,8 @@
       <MemberSignature Language="C#" Value="public System.Activities.Variable GetMatch (System.Activities.Variable updatedVariable);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Activities.Variable GetMatch(class System.Activities.Variable updatedVariable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.UpdateMapMetadata.GetMatch(System.Activities.Variable)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetMatch (updatedVariable As Variable) As Variable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Activities::Variable ^ GetMatch(System::Activities::Variable ^ updatedVariable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -173,6 +205,8 @@
       <MemberSignature Language="C#" Value="public bool IsReferenceToImportedChild (System.Activities.Activity childActivity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsReferenceToImportedChild(class System.Activities.Activity childActivity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.UpdateMapMetadata.IsReferenceToImportedChild(System.Activities.Activity)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsReferenceToImportedChild (childActivity As Activity) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsReferenceToImportedChild(System::Activities::Activity ^ childActivity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -192,23 +226,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="AddMatch">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds a match for <see cref="T:System.Activities.DynamicUpdate.UpdateMapMetadata" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetMatch">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets a match for <see cref="T:System.Activities.DynamicUpdate.UpdateMapMetadata" />.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,9 @@
-<Type Name="CultureInfo" FullName="System.Globalization.CultureInfo">
+﻿<Type Name="CultureInfo" FullName="System.Globalization.CultureInfo">
   <TypeSignature Language="C#" Value="public class CultureInfo : ICloneable, IFormatProvider" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable beforefieldinit CultureInfo extends System.Object implements class System.ICloneable, class System.IFormatProvider" />
   <TypeSignature Language="DocId" Value="T:System.Globalization.CultureInfo" />
+  <TypeSignature Language="VB.NET" Value="Public Class CultureInfo&#xA;Implements ICloneable, IFormatProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CultureInfo : ICloneable, IFormatProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Globalization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -326,10 +328,22 @@ In .NET Framework and .NET Core apps, the current culture is a per-thread settin
     <altmember cref="T:System.Globalization.RegionInfo" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Globalization.CultureInfo" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public CultureInfo (int culture);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 culture) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CultureInfo.#ctor(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (culture As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CultureInfo(int culture);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -394,6 +408,8 @@ In .NET Framework and .NET Core apps, the current culture is a per-thread settin
       <MemberSignature Language="C#" Value="public CultureInfo (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CultureInfo.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CultureInfo(System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -469,6 +485,8 @@ In .NET Framework and .NET Core apps, the current culture is a per-thread settin
       <MemberSignature Language="C#" Value="public CultureInfo (int culture, bool useUserOverride);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 culture, bool useUserOverride) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CultureInfo.#ctor(System.Int32,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (culture As Integer, useUserOverride As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CultureInfo(int culture, bool useUserOverride);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -543,6 +561,8 @@ In .NET Framework and .NET Core apps, the current culture is a per-thread settin
       <MemberSignature Language="C#" Value="public CultureInfo (string name, bool useUserOverride);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, bool useUserOverride) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CultureInfo.#ctor(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, useUserOverride As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CultureInfo(System::String ^ name, bool useUserOverride);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -615,6 +635,8 @@ In .NET Framework and .NET Core apps, the current culture is a per-thread settin
       <MemberSignature Language="C#" Value="public virtual System.Globalization.Calendar Calendar { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Globalization.Calendar Calendar" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.CultureInfo.Calendar" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Calendar As Calendar" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Globalization::Calendar ^ Calendar { System::Globalization::Calendar ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -663,6 +685,8 @@ In .NET Framework and .NET Core apps, the current culture is a per-thread settin
       <MemberSignature Language="C#" Value="public void ClearCachedData ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ClearCachedData() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CultureInfo.ClearCachedData" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ClearCachedData ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ClearCachedData();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -701,7 +725,12 @@ In .NET Framework and .NET Core apps, the current culture is a per-thread settin
       <MemberSignature Language="C#" Value="public virtual object Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CultureInfo.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Clone () As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Clone();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -755,6 +784,8 @@ In .NET Framework and .NET Core apps, the current culture is a per-thread settin
       <MemberSignature Language="C#" Value="public virtual System.Globalization.CompareInfo CompareInfo { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Globalization.CompareInfo CompareInfo" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.CultureInfo.CompareInfo" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CompareInfo As CompareInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Globalization::CompareInfo ^ CompareInfo { System::Globalization::CompareInfo ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -808,6 +839,8 @@ In .NET Framework and .NET Core apps, the current culture is a per-thread settin
       <MemberSignature Language="C#" Value="public static System.Globalization.CultureInfo CreateSpecificCulture (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Globalization.CultureInfo CreateSpecificCulture(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CultureInfo.CreateSpecificCulture(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateSpecificCulture (name As String) As CultureInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Globalization::CultureInfo ^ CreateSpecificCulture(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -891,6 +924,8 @@ In .NET Framework and .NET Core apps, the current culture is a per-thread settin
       <MemberSignature Language="C#" Value="public System.Globalization.CultureTypes CultureTypes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Globalization.CultureTypes CultureTypes" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.CultureInfo.CultureTypes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CultureTypes As CultureTypes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Globalization::CultureTypes CultureTypes { System::Globalization::CultureTypes get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -935,6 +970,8 @@ In .NET Framework and .NET Core apps, the current culture is a per-thread settin
       <MemberSignature Language="C#" Value="public static System.Globalization.CultureInfo CurrentCulture { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Globalization.CultureInfo CurrentCulture" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.CultureInfo.CurrentCulture" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property CurrentCulture As CultureInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Globalization::CultureInfo ^ CurrentCulture { System::Globalization::CultureInfo ^ get(); void set(System::Globalization::CultureInfo ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -1076,6 +1113,8 @@ In .NET Framework and .NET Core apps, the current culture is a per-thread settin
       <MemberSignature Language="C#" Value="public static System.Globalization.CultureInfo CurrentUICulture { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Globalization.CultureInfo CurrentUICulture" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.CultureInfo.CurrentUICulture" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property CurrentUICulture As CultureInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Globalization::CultureInfo ^ CurrentUICulture { System::Globalization::CultureInfo ^ get(); void set(System::Globalization::CultureInfo ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -1201,6 +1240,8 @@ In .NET Framework and .NET Core apps, the current UI culture is a per-thread set
       <MemberSignature Language="C#" Value="public virtual System.Globalization.DateTimeFormatInfo DateTimeFormat { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Globalization.DateTimeFormatInfo DateTimeFormat" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.CultureInfo.DateTimeFormat" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property DateTimeFormat As DateTimeFormatInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Globalization::DateTimeFormatInfo ^ DateTimeFormat { System::Globalization::DateTimeFormatInfo ^ get(); void set(System::Globalization::DateTimeFormatInfo ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -1263,6 +1304,8 @@ In .NET Framework and .NET Core apps, the current UI culture is a per-thread set
       <MemberSignature Language="C#" Value="public static System.Globalization.CultureInfo DefaultThreadCurrentCulture { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Globalization.CultureInfo DefaultThreadCurrentCulture" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.CultureInfo.DefaultThreadCurrentCulture" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property DefaultThreadCurrentCulture As CultureInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Globalization::CultureInfo ^ DefaultThreadCurrentCulture { System::Globalization::CultureInfo ^ get(); void set(System::Globalization::CultureInfo ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -1328,6 +1371,8 @@ In .NET Framework and .NET Core apps, the current UI culture is a per-thread set
       <MemberSignature Language="C#" Value="public static System.Globalization.CultureInfo DefaultThreadCurrentUICulture { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Globalization.CultureInfo DefaultThreadCurrentUICulture" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.CultureInfo.DefaultThreadCurrentUICulture" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property DefaultThreadCurrentUICulture As CultureInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Globalization::CultureInfo ^ DefaultThreadCurrentUICulture { System::Globalization::CultureInfo ^ get(); void set(System::Globalization::CultureInfo ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -1442,6 +1487,8 @@ csc /resource:GreetingStrings.resources Example1.cs
       <MemberSignature Language="C#" Value="public virtual string DisplayName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DisplayName" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.CultureInfo.DisplayName" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DisplayName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DisplayName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -1503,6 +1550,8 @@ csc /resource:GreetingStrings.resources Example1.cs
       <MemberSignature Language="C#" Value="public virtual string EnglishName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string EnglishName" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.CultureInfo.EnglishName" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property EnglishName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ EnglishName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -1562,6 +1611,8 @@ csc /resource:GreetingStrings.resources Example1.cs
       <MemberSignature Language="C#" Value="public override bool Equals (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CultureInfo.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (value As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -1609,6 +1660,8 @@ csc /resource:GreetingStrings.resources Example1.cs
       <MemberSignature Language="C#" Value="public System.Globalization.CultureInfo GetConsoleFallbackUICulture ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Globalization.CultureInfo GetConsoleFallbackUICulture() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CultureInfo.GetConsoleFallbackUICulture" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetConsoleFallbackUICulture () As CultureInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Globalization::CultureInfo ^ GetConsoleFallbackUICulture();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1746,10 +1799,22 @@ csc /resource:GreetingStrings.resources Example1.cs
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetCultureInfo">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves a cached, read-only instance of a culture.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetCultureInfo">
       <MemberSignature Language="C#" Value="public static System.Globalization.CultureInfo GetCultureInfo (int culture);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Globalization.CultureInfo GetCultureInfo(int32 culture) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CultureInfo.GetCultureInfo(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetCultureInfo (culture As Integer) As CultureInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Globalization::CultureInfo ^ GetCultureInfo(int culture);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1799,6 +1864,8 @@ csc /resource:GreetingStrings.resources Example1.cs
       <MemberSignature Language="C#" Value="public static System.Globalization.CultureInfo GetCultureInfo (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Globalization.CultureInfo GetCultureInfo(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CultureInfo.GetCultureInfo(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetCultureInfo (name As String) As CultureInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Globalization::CultureInfo ^ GetCultureInfo(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1851,6 +1918,8 @@ csc /resource:GreetingStrings.resources Example1.cs
       <MemberSignature Language="C#" Value="public static System.Globalization.CultureInfo GetCultureInfo (string name, string altName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Globalization.CultureInfo GetCultureInfo(string name, string altName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CultureInfo.GetCultureInfo(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetCultureInfo (name As String, altName As String) As CultureInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Globalization::CultureInfo ^ GetCultureInfo(System::String ^ name, System::String ^ altName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1904,6 +1973,8 @@ csc /resource:GreetingStrings.resources Example1.cs
       <MemberSignature Language="C#" Value="public static System.Globalization.CultureInfo GetCultureInfoByIetfLanguageTag (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Globalization.CultureInfo GetCultureInfoByIetfLanguageTag(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CultureInfo.GetCultureInfoByIetfLanguageTag(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetCultureInfoByIetfLanguageTag (name As String) As CultureInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Globalization::CultureInfo ^ GetCultureInfoByIetfLanguageTag(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1962,6 +2033,8 @@ csc /resource:GreetingStrings.resources Example1.cs
       <MemberSignature Language="C#" Value="public static System.Globalization.CultureInfo[] GetCultures (System.Globalization.CultureTypes types);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Globalization.CultureInfo[] GetCultures(valuetype System.Globalization.CultureTypes types) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CultureInfo.GetCultures(System.Globalization.CultureTypes)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetCultures (types As CultureTypes) As CultureInfo()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Globalization::CultureInfo ^&gt; ^ GetCultures(System::Globalization::CultureTypes types);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2026,7 +2099,12 @@ csc /resource:GreetingStrings.resources Example1.cs
       <MemberSignature Language="C#" Value="public virtual object GetFormat (Type formatType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetFormat(class System.Type formatType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CultureInfo.GetFormat(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetFormat (formatType As Type) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ GetFormat(Type ^ formatType);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IFormatProvider.GetFormat(System.Type)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -2084,6 +2162,8 @@ csc /resource:GreetingStrings.resources Example1.cs
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CultureInfo.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -2129,6 +2209,8 @@ csc /resource:GreetingStrings.resources Example1.cs
       <MemberSignature Language="C#" Value="public string IetfLanguageTag { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string IetfLanguageTag" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.CultureInfo.IetfLanguageTag" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IetfLanguageTag As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ IetfLanguageTag { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2178,6 +2260,8 @@ csc /resource:GreetingStrings.resources Example1.cs
       <MemberSignature Language="C#" Value="public static System.Globalization.CultureInfo InstalledUICulture { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Globalization.CultureInfo InstalledUICulture" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.CultureInfo.InstalledUICulture" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property InstalledUICulture As CultureInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Globalization::CultureInfo ^ InstalledUICulture { System::Globalization::CultureInfo ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2217,6 +2301,8 @@ csc /resource:GreetingStrings.resources Example1.cs
       <MemberSignature Language="C#" Value="public static System.Globalization.CultureInfo InvariantCulture { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Globalization.CultureInfo InvariantCulture" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.CultureInfo.InvariantCulture" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property InvariantCulture As CultureInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Globalization::CultureInfo ^ InvariantCulture { System::Globalization::CultureInfo ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -2279,6 +2365,8 @@ csc /resource:GreetingStrings.resources Example1.cs
       <MemberSignature Language="C#" Value="public virtual bool IsNeutralCulture { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsNeutralCulture" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.CultureInfo.IsNeutralCulture" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsNeutralCulture As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsNeutralCulture { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -2334,6 +2422,8 @@ csc /resource:GreetingStrings.resources Example1.cs
       <MemberSignature Language="C#" Value="public bool IsReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.CultureInfo.IsReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -2384,6 +2474,8 @@ csc /resource:GreetingStrings.resources Example1.cs
       <MemberSignature Language="C#" Value="public virtual int KeyboardLayoutId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 KeyboardLayoutId" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.CultureInfo.KeyboardLayoutId" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property KeyboardLayoutId As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int KeyboardLayoutId { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2423,6 +2515,8 @@ csc /resource:GreetingStrings.resources Example1.cs
       <MemberSignature Language="C#" Value="public virtual int LCID { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 LCID" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.CultureInfo.LCID" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property LCID As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int LCID { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2468,6 +2562,8 @@ csc /resource:GreetingStrings.resources Example1.cs
       <MemberSignature Language="C#" Value="public virtual string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.CultureInfo.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -2529,6 +2625,8 @@ csc /resource:GreetingStrings.resources Example1.cs
       <MemberSignature Language="C#" Value="public virtual string NativeName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string NativeName" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.CultureInfo.NativeName" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property NativeName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ NativeName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -2574,6 +2672,8 @@ csc /resource:GreetingStrings.resources Example1.cs
       <MemberSignature Language="C#" Value="public virtual System.Globalization.NumberFormatInfo NumberFormat { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Globalization.NumberFormatInfo NumberFormat" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.CultureInfo.NumberFormat" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property NumberFormat As NumberFormatInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Globalization::NumberFormatInfo ^ NumberFormat { System::Globalization::NumberFormatInfo ^ get(); void set(System::Globalization::NumberFormatInfo ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -2633,6 +2733,8 @@ csc /resource:GreetingStrings.resources Example1.cs
       <MemberSignature Language="C#" Value="public virtual System.Globalization.Calendar[] OptionalCalendars { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Globalization.Calendar[] OptionalCalendars" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.CultureInfo.OptionalCalendars" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property OptionalCalendars As Calendar()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property cli::array &lt;System::Globalization::Calendar ^&gt; ^ OptionalCalendars { cli::array &lt;System::Globalization::Calendar ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -2684,6 +2786,8 @@ csc /resource:GreetingStrings.resources Example1.cs
       <MemberSignature Language="C#" Value="public virtual System.Globalization.CultureInfo Parent { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Globalization.CultureInfo Parent" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.CultureInfo.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Parent As CultureInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Globalization::CultureInfo ^ Parent { System::Globalization::CultureInfo ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -2743,6 +2847,8 @@ csc /resource:GreetingStrings.resources Example1.cs
       <MemberSignature Language="C#" Value="public static System.Globalization.CultureInfo ReadOnly (System.Globalization.CultureInfo ci);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Globalization.CultureInfo ReadOnly(class System.Globalization.CultureInfo ci) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CultureInfo.ReadOnly(System.Globalization.CultureInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ReadOnly (ci As CultureInfo) As CultureInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Globalization::CultureInfo ^ ReadOnly(System::Globalization::CultureInfo ^ ci);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -2798,6 +2904,8 @@ csc /resource:GreetingStrings.resources Example1.cs
       <MemberSignature Language="C#" Value="public virtual System.Globalization.TextInfo TextInfo { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Globalization.TextInfo TextInfo" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.CultureInfo.TextInfo" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property TextInfo As TextInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Globalization::TextInfo ^ TextInfo { System::Globalization::TextInfo ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -2847,6 +2955,8 @@ csc /resource:GreetingStrings.resources Example1.cs
       <MemberSignature Language="C#" Value="public virtual string ThreeLetterISOLanguageName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ThreeLetterISOLanguageName" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.CultureInfo.ThreeLetterISOLanguageName" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ThreeLetterISOLanguageName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ThreeLetterISOLanguageName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2902,6 +3012,8 @@ csc /resource:GreetingStrings.resources Example1.cs
       <MemberSignature Language="C#" Value="public virtual string ThreeLetterWindowsLanguageName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ThreeLetterWindowsLanguageName" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.CultureInfo.ThreeLetterWindowsLanguageName" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ThreeLetterWindowsLanguageName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ThreeLetterWindowsLanguageName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2957,6 +3069,8 @@ csc /resource:GreetingStrings.resources Example1.cs
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CultureInfo.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -3001,6 +3115,8 @@ csc /resource:GreetingStrings.resources Example1.cs
       <MemberSignature Language="C#" Value="public virtual string TwoLetterISOLanguageName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TwoLetterISOLanguageName" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.CultureInfo.TwoLetterISOLanguageName" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property TwoLetterISOLanguageName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ TwoLetterISOLanguageName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -3059,6 +3175,8 @@ csc /resource:GreetingStrings.resources Example1.cs
       <MemberSignature Language="C#" Value="public bool UseUserOverride { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UseUserOverride" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.CultureInfo.UseUserOverride" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UseUserOverride As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseUserOverride { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3094,25 +3212,5 @@ csc /resource:GreetingStrings.resources Example1.cs
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Globalization.CultureInfo" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetCultureInfo">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Retrieves a cached, read-only instance of a culture.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

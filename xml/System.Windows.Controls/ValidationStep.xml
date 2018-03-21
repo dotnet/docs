@@ -1,7 +1,9 @@
-<Type Name="ValidationStep" FullName="System.Windows.Controls.ValidationStep">
+﻿<Type Name="ValidationStep" FullName="System.Windows.Controls.ValidationStep">
   <TypeSignature Language="C#" Value="public enum ValidationStep" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ValidationStep extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.ValidationStep" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ValidationStep" />
+  <TypeSignature Language="C++ CLI" Value="public enum class ValidationStep" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +36,8 @@
       <MemberSignature Language="C#" Value="CommittedValue" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.ValidationStep CommittedValue = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ValidationStep.CommittedValue" />
+      <MemberSignature Language="VB.NET" Value="CommittedValue" />
+      <MemberSignature Language="C++ CLI" Value="CommittedValue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -42,6 +46,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.ValidationStep</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Runs the <see cref="T:System.Windows.Controls.ValidationRule" /> after the value has been committed to the source.</summary>
       </Docs>
@@ -50,6 +55,8 @@
       <MemberSignature Language="C#" Value="ConvertedProposedValue" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.ValidationStep ConvertedProposedValue = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ValidationStep.ConvertedProposedValue" />
+      <MemberSignature Language="VB.NET" Value="ConvertedProposedValue" />
+      <MemberSignature Language="C++ CLI" Value="ConvertedProposedValue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -58,6 +65,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.ValidationStep</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Runs the <see cref="T:System.Windows.Controls.ValidationRule" /> after the value is converted.</summary>
       </Docs>
@@ -66,6 +74,8 @@
       <MemberSignature Language="C#" Value="RawProposedValue" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.ValidationStep RawProposedValue = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ValidationStep.RawProposedValue" />
+      <MemberSignature Language="VB.NET" Value="RawProposedValue" />
+      <MemberSignature Language="C++ CLI" Value="RawProposedValue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -74,6 +84,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.ValidationStep</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Runs the <see cref="T:System.Windows.Controls.ValidationRule" /> before any conversion occurs.</summary>
       </Docs>
@@ -82,6 +93,8 @@
       <MemberSignature Language="C#" Value="UpdatedValue" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.ValidationStep UpdatedValue = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ValidationStep.UpdatedValue" />
+      <MemberSignature Language="VB.NET" Value="UpdatedValue" />
+      <MemberSignature Language="C++ CLI" Value="UpdatedValue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -90,6 +103,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.ValidationStep</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Runs the <see cref="T:System.Windows.Controls.ValidationRule" /> after the source is updated.</summary>
       </Docs>

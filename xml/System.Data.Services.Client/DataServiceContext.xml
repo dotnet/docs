@@ -1,7 +1,9 @@
-<Type Name="DataServiceContext" FullName="System.Data.Services.Client.DataServiceContext">
+﻿<Type Name="DataServiceContext" FullName="System.Data.Services.Client.DataServiceContext">
   <TypeSignature Language="C#" Value="public class DataServiceContext" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataServiceContext extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Data.Services.Client.DataServiceContext" />
+  <TypeSignature Language="VB.NET" Value="Public Class DataServiceContext" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataServiceContext" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services.Client</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -35,6 +37,8 @@
       <MemberSignature Language="C#" Value="public DataServiceContext (Uri serviceRoot);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri serviceRoot) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceContext.#ctor(System.Uri)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (serviceRoot As Uri)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataServiceContext(Uri ^ serviceRoot);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -69,6 +73,8 @@
       <MemberSignature Language="C#" Value="public void AddLink (object source, string sourceProperty, object target);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddLink(object source, string sourceProperty, object target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceContext.AddLink(System.Object,System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddLink (source As Object, sourceProperty As String, target As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddLink(System::Object ^ source, System::String ^ sourceProperty, System::Object ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -124,6 +130,8 @@
       <MemberSignature Language="C#" Value="public void AddObject (string entitySetName, object entity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddObject(string entitySetName, object entity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceContext.AddObject(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddObject (entitySetName As String, entity As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddObject(System::String ^ entitySetName, System::Object ^ entity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -164,6 +172,8 @@
       <MemberSignature Language="C#" Value="public void AddRelatedObject (object source, string sourceProperty, object target);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddRelatedObject(object source, string sourceProperty, object target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceContext.AddRelatedObject(System.Object,System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddRelatedObject (source As Object, sourceProperty As String, target As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRelatedObject(System::Object ^ source, System::String ^ sourceProperty, System::Object ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -197,6 +207,8 @@
       <MemberSignature Language="C#" Value="public bool ApplyingChanges { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ApplyingChanges" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.DataServiceContext.ApplyingChanges" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ApplyingChanges As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ApplyingChanges { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -216,6 +228,8 @@
       <MemberSignature Language="C#" Value="public void AttachLink (object source, string sourceProperty, object target);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AttachLink(object source, string sourceProperty, object target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceContext.AttachLink(System.Object,System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AttachLink (source As Object, sourceProperty As String, target As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AttachLink(System::Object ^ source, System::String ^ sourceProperty, System::Object ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -244,10 +258,22 @@
  When <paramref name="source" /> or <paramref name="target" /> is in an <see cref="F:System.Data.Services.Client.EntityStates.Added" /> or <see cref="F:System.Data.Services.Client.EntityStates.Deleted" /> state.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AttachTo">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Notifies the <see cref="T:System.Data.Services.Client.DataServiceContext" /> to start tracking the specified resource and supplies the location of the resource in the specified resource set.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AttachTo">
       <MemberSignature Language="C#" Value="public void AttachTo (string entitySetName, object entity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AttachTo(string entitySetName, object entity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceContext.AttachTo(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AttachTo (entitySetName As String, entity As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AttachTo(System::String ^ entitySetName, System::Object ^ entity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -288,6 +314,8 @@
       <MemberSignature Language="C#" Value="public void AttachTo (string entitySetName, object entity, string etag);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AttachTo(string entitySetName, object entity, string etag) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceContext.AttachTo(System.String,System.Object,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AttachTo (entitySetName As String, entity As Object, etag As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AttachTo(System::String ^ entitySetName, System::Object ^ entity, System::String ^ etag);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -336,6 +364,8 @@
       <MemberSignature Language="C#" Value="public Uri BaseUri { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri BaseUri" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.DataServiceContext.BaseUri" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BaseUri As Uri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ BaseUri { Uri ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -358,10 +388,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="BeginExecute&lt;T&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Asynchronously sends a request to the data service to execute a specific URI.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="BeginExecute&lt;T&gt;">
       <MemberSignature Language="C#" Value="public IAsyncResult BeginExecute&lt;T&gt; (System.Data.Services.Client.DataServiceQueryContinuation&lt;T&gt; continuation, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginExecute&lt;T&gt;(class System.Data.Services.Client.DataServiceQueryContinuation`1&lt;!!T&gt; continuation, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceContext.BeginExecute``1(System.Data.Services.Client.DataServiceQueryContinuation{``0},System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginExecute(Of T) (continuation As DataServiceQueryContinuation(Of T), callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; IAsyncResult ^ BeginExecute(System::Data::Services::Client::DataServiceQueryContinuation&lt;T&gt; ^ continuation, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -400,6 +442,8 @@
       <MemberSignature Language="C#" Value="public IAsyncResult BeginExecute&lt;TElement&gt; (Uri requestUri, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginExecute&lt;TElement&gt;(class System.Uri requestUri, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceContext.BeginExecute``1(System.Uri,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginExecute(Of TElement) (requestUri As Uri, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TElement&gt;&#xA; IAsyncResult ^ BeginExecute(Uri ^ requestUri, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -448,6 +492,8 @@
       <MemberSignature Language="C#" Value="public IAsyncResult BeginExecuteBatch (AsyncCallback callback, object state, params System.Data.Services.Client.DataServiceRequest[] queries);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginExecuteBatch(class System.AsyncCallback callback, object state, class System.Data.Services.Client.DataServiceRequest[] queries) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceContext.BeginExecuteBatch(System.AsyncCallback,System.Object,System.Data.Services.Client.DataServiceRequest[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginExecuteBatch (callback As AsyncCallback, state As Object, ParamArray queries As DataServiceRequest()) As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginExecuteBatch(AsyncCallback ^ callback, System::Object ^ state, ... cli::array &lt;System::Data::Services::Client::DataServiceRequest ^&gt; ^ queries);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -492,6 +538,8 @@
       <MemberSignature Language="C#" Value="public IAsyncResult BeginGetReadStream (object entity, System.Data.Services.Client.DataServiceRequestArgs args, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginGetReadStream(object entity, class System.Data.Services.Client.DataServiceRequestArgs args, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceContext.BeginGetReadStream(System.Object,System.Data.Services.Client.DataServiceRequestArgs,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginGetReadStream (entity As Object, args As DataServiceRequestArgs, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginGetReadStream(System::Object ^ entity, System::Data::Services::Client::DataServiceRequestArgs ^ args, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -538,10 +586,22 @@
  The <paramref name="entity" /> is not a Media Link Entry and does not have a binary property.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="BeginLoadProperty">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Begins the operation to load the value of the specified property from the data service.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="BeginLoadProperty">
       <MemberSignature Language="C#" Value="public IAsyncResult BeginLoadProperty (object entity, string propertyName, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginLoadProperty(object entity, string propertyName, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceContext.BeginLoadProperty(System.Object,System.String,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginLoadProperty (entity As Object, propertyName As String, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginLoadProperty(System::Object ^ entity, System::String ^ propertyName, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -580,6 +640,8 @@
       <MemberSignature Language="C#" Value="public IAsyncResult BeginLoadProperty (object entity, string propertyName, System.Data.Services.Client.DataServiceQueryContinuation continuation, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginLoadProperty(object entity, string propertyName, class System.Data.Services.Client.DataServiceQueryContinuation continuation, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceContext.BeginLoadProperty(System.Object,System.String,System.Data.Services.Client.DataServiceQueryContinuation,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginLoadProperty (entity As Object, propertyName As String, continuation As DataServiceQueryContinuation, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginLoadProperty(System::Object ^ entity, System::String ^ propertyName, System::Data::Services::Client::DataServiceQueryContinuation ^ continuation, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -618,6 +680,8 @@
       <MemberSignature Language="C#" Value="public IAsyncResult BeginLoadProperty (object entity, string propertyName, Uri nextLinkUri, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginLoadProperty(object entity, string propertyName, class System.Uri nextLinkUri, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceContext.BeginLoadProperty(System.Object,System.String,System.Uri,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginLoadProperty (entity As Object, propertyName As String, nextLinkUri As Uri, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginLoadProperty(System::Object ^ entity, System::String ^ propertyName, Uri ^ nextLinkUri, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -654,10 +718,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="BeginSaveChanges">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Submits the pending changes to the data service collected by the <see cref="T:System.Data.Services.Client.DataServiceContext" /> since the last time changes were saved.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="BeginSaveChanges">
       <MemberSignature Language="C#" Value="public IAsyncResult BeginSaveChanges (AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginSaveChanges(class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceContext.BeginSaveChanges(System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginSaveChanges (callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginSaveChanges(AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -694,6 +770,8 @@
       <MemberSignature Language="C#" Value="public IAsyncResult BeginSaveChanges (System.Data.Services.Client.SaveChangesOptions options, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginSaveChanges(valuetype System.Data.Services.Client.SaveChangesOptions options, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceContext.BeginSaveChanges(System.Data.Services.Client.SaveChangesOptions,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginSaveChanges (options As SaveChangesOptions, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginSaveChanges(System::Data::Services::Client::SaveChangesOptions options, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -750,6 +828,8 @@
       <MemberSignature Language="C#" Value="public void CancelRequest (IAsyncResult asyncResult);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CancelRequest(class System.IAsyncResult asyncResult) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceContext.CancelRequest(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CancelRequest (asyncResult As IAsyncResult)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CancelRequest(IAsyncResult ^ asyncResult);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -779,6 +859,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Services.Client.DataServiceQuery&lt;T&gt; CreateQuery&lt;T&gt; (string entitySetName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Services.Client.DataServiceQuery`1&lt;!!T&gt; CreateQuery&lt;T&gt;(string entitySetName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceContext.CreateQuery``1(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateQuery(Of T) (entitySetName As String) As DataServiceQuery(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; System::Data::Services::Client::DataServiceQuery&lt;T&gt; ^ CreateQuery(System::String ^ entitySetName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -806,6 +888,8 @@
       <MemberSignature Language="C#" Value="public System.Net.ICredentials Credentials { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.ICredentials Credentials" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.DataServiceContext.Credentials" />
+      <MemberSignature Language="VB.NET" Value="Public Property Credentials As ICredentials" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::ICredentials ^ Credentials { System::Net::ICredentials ^ get(); void set(System::Net::ICredentials ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -825,6 +909,8 @@
       <MemberSignature Language="C#" Value="public string DataNamespace { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DataNamespace" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.DataServiceContext.DataNamespace" />
+      <MemberSignature Language="VB.NET" Value="Public Property DataNamespace As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DataNamespace { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -853,6 +939,8 @@
       <MemberSignature Language="C#" Value="public void DeleteLink (object source, string sourceProperty, object target);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DeleteLink(object source, string sourceProperty, object target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceContext.DeleteLink(System.Object,System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DeleteLink (source As Object, sourceProperty As String, target As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DeleteLink(System::Object ^ source, System::String ^ sourceProperty, System::Object ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -892,6 +980,8 @@
       <MemberSignature Language="C#" Value="public void DeleteObject (object entity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DeleteObject(object entity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceContext.DeleteObject(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DeleteObject (entity As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DeleteObject(System::Object ^ entity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -923,6 +1013,8 @@
       <MemberSignature Language="C#" Value="public bool Detach (object entity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Detach(object entity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceContext.Detach(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Detach (entity As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Detach(System::Object ^ entity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -958,6 +1050,8 @@
       <MemberSignature Language="C#" Value="public bool DetachLink (object source, string sourceProperty, object target);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool DetachLink(object source, string sourceProperty, object target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceContext.DetachLink(System.Object,System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function DetachLink (source As Object, sourceProperty As String, target As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool DetachLink(System::Object ^ source, System::String ^ sourceProperty, System::Object ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -994,6 +1088,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;TElement&gt; EndExecute&lt;TElement&gt; (IAsyncResult asyncResult);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;!!TElement&gt; EndExecute&lt;TElement&gt;(class System.IAsyncResult asyncResult) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceContext.EndExecute``1(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EndExecute(Of TElement) (asyncResult As IAsyncResult) As IEnumerable(Of TElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TElement&gt;&#xA; System::Collections::Generic::IEnumerable&lt;TElement&gt; ^ EndExecute(IAsyncResult ^ asyncResult);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -1046,6 +1142,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Services.Client.DataServiceResponse EndExecuteBatch (IAsyncResult asyncResult);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Services.Client.DataServiceResponse EndExecuteBatch(class System.IAsyncResult asyncResult) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceContext.EndExecuteBatch(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EndExecuteBatch (asyncResult As IAsyncResult) As DataServiceResponse" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Services::Client::DataServiceResponse ^ EndExecuteBatch(IAsyncResult ^ asyncResult);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -1076,6 +1174,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Services.Client.DataServiceStreamResponse EndGetReadStream (IAsyncResult asyncResult);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Services.Client.DataServiceStreamResponse EndGetReadStream(class System.IAsyncResult asyncResult) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceContext.EndGetReadStream(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EndGetReadStream (asyncResult As IAsyncResult) As DataServiceStreamResponse" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Services::Client::DataServiceStreamResponse ^ EndGetReadStream(IAsyncResult ^ asyncResult);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -1108,6 +1208,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Services.Client.QueryOperationResponse EndLoadProperty (IAsyncResult asyncResult);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Services.Client.QueryOperationResponse EndLoadProperty(class System.IAsyncResult asyncResult) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceContext.EndLoadProperty(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EndLoadProperty (asyncResult As IAsyncResult) As QueryOperationResponse" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Services::Client::QueryOperationResponse ^ EndLoadProperty(IAsyncResult ^ asyncResult);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -1138,6 +1240,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Services.Client.DataServiceResponse EndSaveChanges (IAsyncResult asyncResult);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Services.Client.DataServiceResponse EndSaveChanges(class System.IAsyncResult asyncResult) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceContext.EndSaveChanges(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EndSaveChanges (asyncResult As IAsyncResult) As DataServiceResponse" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Services::Client::DataServiceResponse ^ EndSaveChanges(IAsyncResult ^ asyncResult);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -1168,6 +1272,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Services.Client.EntityDescriptor&gt; Entities { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Data.Services.Client.EntityDescriptor&gt; Entities" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.DataServiceContext.Entities" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Entities As ReadOnlyCollection(Of EntityDescriptor)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Data::Services::Client::EntityDescriptor ^&gt; ^ Entities { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Data::Services::Client::EntityDescriptor ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -1190,10 +1296,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Execute&lt;T&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sends a request to the data service to execute a specific URI.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Execute&lt;T&gt;">
       <MemberSignature Language="C#" Value="public System.Data.Services.Client.QueryOperationResponse&lt;T&gt; Execute&lt;T&gt; (System.Data.Services.Client.DataServiceQueryContinuation&lt;T&gt; continuation);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Services.Client.QueryOperationResponse`1&lt;!!T&gt; Execute&lt;T&gt;(class System.Data.Services.Client.DataServiceQueryContinuation`1&lt;!!T&gt; continuation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceContext.Execute``1(System.Data.Services.Client.DataServiceQueryContinuation{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Function Execute(Of T) (continuation As DataServiceQueryContinuation(Of T)) As QueryOperationResponse(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; System::Data::Services::Client::QueryOperationResponse&lt;T&gt; ^ Execute(System::Data::Services::Client::DataServiceQueryContinuation&lt;T&gt; ^ continuation);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -1229,6 +1347,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;TElement&gt; Execute&lt;TElement&gt; (Uri requestUri);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;!!TElement&gt; Execute&lt;TElement&gt;(class System.Uri requestUri) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceContext.Execute``1(System.Uri)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Execute(Of TElement) (requestUri As Uri) As IEnumerable(Of TElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TElement&gt;&#xA; System::Collections::Generic::IEnumerable&lt;TElement&gt; ^ Execute(Uri ^ requestUri);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -1280,6 +1400,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Services.Client.DataServiceResponse ExecuteBatch (params System.Data.Services.Client.DataServiceRequest[] queries);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Services.Client.DataServiceResponse ExecuteBatch(class System.Data.Services.Client.DataServiceRequest[] queries) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceContext.ExecuteBatch(System.Data.Services.Client.DataServiceRequest[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function ExecuteBatch (ParamArray queries As DataServiceRequest()) As DataServiceResponse" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Services::Client::DataServiceResponse ^ ExecuteBatch(... cli::array &lt;System::Data::Services::Client::DataServiceRequest ^&gt; ^ queries);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -1326,6 +1448,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Services.Client.EntityDescriptor GetEntityDescriptor (object entity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Services.Client.EntityDescriptor GetEntityDescriptor(object entity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceContext.GetEntityDescriptor(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEntityDescriptor (entity As Object) As EntityDescriptor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Services::Client::EntityDescriptor ^ GetEntityDescriptor(System::Object ^ entity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -1349,6 +1473,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Services.Client.LinkDescriptor GetLinkDescriptor (object source, string sourceProperty, object target);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Services.Client.LinkDescriptor GetLinkDescriptor(object source, string sourceProperty, object target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceContext.GetLinkDescriptor(System.Object,System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetLinkDescriptor (source As Object, sourceProperty As String, target As Object) As LinkDescriptor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Services::Client::LinkDescriptor ^ GetLinkDescriptor(System::Object ^ source, System::String ^ sourceProperty, System::Object ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -1376,6 +1502,8 @@
       <MemberSignature Language="C#" Value="public Uri GetMetadataUri ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Uri GetMetadataUri() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceContext.GetMetadataUri" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetMetadataUri () As Uri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Uri ^ GetMetadataUri();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -1399,10 +1527,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetReadStream">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets binary property data for the specified entity as a data stream.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetReadStream">
       <MemberSignature Language="C#" Value="public System.Data.Services.Client.DataServiceStreamResponse GetReadStream (object entity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Services.Client.DataServiceStreamResponse GetReadStream(object entity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceContext.GetReadStream(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetReadStream (entity As Object) As DataServiceStreamResponse" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Services::Client::DataServiceStreamResponse ^ GetReadStream(System::Object ^ entity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -1445,6 +1585,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Services.Client.DataServiceStreamResponse GetReadStream (object entity, System.Data.Services.Client.DataServiceRequestArgs args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Services.Client.DataServiceStreamResponse GetReadStream(object entity, class System.Data.Services.Client.DataServiceRequestArgs args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceContext.GetReadStream(System.Object,System.Data.Services.Client.DataServiceRequestArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetReadStream (entity As Object, args As DataServiceRequestArgs) As DataServiceStreamResponse" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Services::Client::DataServiceStreamResponse ^ GetReadStream(System::Object ^ entity, System::Data::Services::Client::DataServiceRequestArgs ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -1496,6 +1638,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Services.Client.DataServiceStreamResponse GetReadStream (object entity, string acceptContentType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Services.Client.DataServiceStreamResponse GetReadStream(object entity, string acceptContentType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceContext.GetReadStream(System.Object,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetReadStream (entity As Object, acceptContentType As String) As DataServiceStreamResponse" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Services::Client::DataServiceStreamResponse ^ GetReadStream(System::Object ^ entity, System::String ^ acceptContentType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -1549,6 +1693,8 @@
       <MemberSignature Language="C#" Value="public Uri GetReadStreamUri (object entity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Uri GetReadStreamUri(object entity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceContext.GetReadStreamUri(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetReadStreamUri (entity As Object) As Uri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Uri ^ GetReadStreamUri(System::Object ^ entity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -1583,6 +1729,8 @@
       <MemberSignature Language="C#" Value="public bool IgnoreMissingProperties { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreMissingProperties" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.DataServiceContext.IgnoreMissingProperties" />
+      <MemberSignature Language="VB.NET" Value="Public Property IgnoreMissingProperties As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IgnoreMissingProperties { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -1609,6 +1757,8 @@
       <MemberSignature Language="C#" Value="public bool IgnoreResourceNotFoundException { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreResourceNotFoundException" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.DataServiceContext.IgnoreResourceNotFoundException" />
+      <MemberSignature Language="VB.NET" Value="Public Property IgnoreResourceNotFoundException As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IgnoreResourceNotFoundException { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -1628,6 +1778,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Services.Client.LinkDescriptor&gt; Links { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Data.Services.Client.LinkDescriptor&gt; Links" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.DataServiceContext.Links" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Links As ReadOnlyCollection(Of LinkDescriptor)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Data::Services::Client::LinkDescriptor ^&gt; ^ Links { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Data::Services::Client::LinkDescriptor ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -1650,10 +1802,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="LoadProperty">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Loads deferred content from the data service.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="LoadProperty">
       <MemberSignature Language="C#" Value="public System.Data.Services.Client.QueryOperationResponse LoadProperty (object entity, string propertyName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Services.Client.QueryOperationResponse LoadProperty(object entity, string propertyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceContext.LoadProperty(System.Object,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function LoadProperty (entity As Object, propertyName As String) As QueryOperationResponse" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Services::Client::QueryOperationResponse ^ LoadProperty(System::Object ^ entity, System::String ^ propertyName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -1700,6 +1864,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Services.Client.QueryOperationResponse LoadProperty (object entity, string propertyName, System.Data.Services.Client.DataServiceQueryContinuation continuation);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Services.Client.QueryOperationResponse LoadProperty(object entity, string propertyName, class System.Data.Services.Client.DataServiceQueryContinuation continuation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceContext.LoadProperty(System.Object,System.String,System.Data.Services.Client.DataServiceQueryContinuation)" />
+      <MemberSignature Language="VB.NET" Value="Public Function LoadProperty (entity As Object, propertyName As String, continuation As DataServiceQueryContinuation) As QueryOperationResponse" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Services::Client::QueryOperationResponse ^ LoadProperty(System::Object ^ entity, System::String ^ propertyName, System::Data::Services::Client::DataServiceQueryContinuation ^ continuation);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -1737,6 +1903,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Services.Client.QueryOperationResponse LoadProperty (object entity, string propertyName, Uri nextLinkUri);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Services.Client.QueryOperationResponse LoadProperty(object entity, string propertyName, class System.Uri nextLinkUri) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceContext.LoadProperty(System.Object,System.String,System.Uri)" />
+      <MemberSignature Language="VB.NET" Value="Public Function LoadProperty (entity As Object, propertyName As String, nextLinkUri As Uri) As QueryOperationResponse" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Services::Client::QueryOperationResponse ^ LoadProperty(System::Object ^ entity, System::String ^ propertyName, Uri ^ nextLinkUri);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -1782,6 +1950,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Services.Client.QueryOperationResponse&lt;T&gt; LoadProperty&lt;T&gt; (object entity, string propertyName, System.Data.Services.Client.DataServiceQueryContinuation&lt;T&gt; continuation);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Services.Client.QueryOperationResponse`1&lt;!!T&gt; LoadProperty&lt;T&gt;(object entity, string propertyName, class System.Data.Services.Client.DataServiceQueryContinuation`1&lt;!!T&gt; continuation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceContext.LoadProperty``1(System.Object,System.String,System.Data.Services.Client.DataServiceQueryContinuation{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Function LoadProperty(Of T) (entity As Object, propertyName As String, continuation As DataServiceQueryContinuation(Of T)) As QueryOperationResponse(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; System::Data::Services::Client::QueryOperationResponse&lt;T&gt; ^ LoadProperty(System::Object ^ entity, System::String ^ propertyName, System::Data::Services::Client::DataServiceQueryContinuation&lt;T&gt; ^ continuation);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -1823,6 +1993,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Services.Client.MergeOption MergeOption { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.Services.Client.MergeOption MergeOption" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.DataServiceContext.MergeOption" />
+      <MemberSignature Language="VB.NET" Value="Public Property MergeOption As MergeOption" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Services::Client::MergeOption MergeOption { System::Data::Services::Client::MergeOption get(); void set(System::Data::Services::Client::MergeOption value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -1849,6 +2021,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Data.Services.Client.ReadingWritingEntityEventArgs&gt; ReadingEntity;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Data.Services.Client.ReadingWritingEntityEventArgs&gt; ReadingEntity" />
       <MemberSignature Language="DocId" Value="E:System.Data.Services.Client.DataServiceContext.ReadingEntity" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ReadingEntity As EventHandler(Of ReadingWritingEntityEventArgs) " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Data::Services::Client::ReadingWritingEntityEventArgs ^&gt; ^ ReadingEntity;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -1874,6 +2048,8 @@
       <MemberSignature Language="C#" Value="public Func&lt;Type,string&gt; ResolveName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Func`2&lt;class System.Type, string&gt; ResolveName" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.DataServiceContext.ResolveName" />
+      <MemberSignature Language="VB.NET" Value="Public Property ResolveName As Func(Of Type, String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Func&lt;Type ^, System::String ^&gt; ^ ResolveName { Func&lt;Type ^, System::String ^&gt; ^ get(); void set(Func&lt;Type ^, System::String ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -1903,6 +2079,8 @@
       <MemberSignature Language="C#" Value="public Func&lt;string,Type&gt; ResolveType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Func`2&lt;string, class System.Type&gt; ResolveType" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.DataServiceContext.ResolveType" />
+      <MemberSignature Language="VB.NET" Value="Public Property ResolveType As Func(Of String, Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Func&lt;System::String ^, Type ^&gt; ^ ResolveType { Func&lt;System::String ^, Type ^&gt; ^ get(); void set(Func&lt;System::String ^, Type ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -1949,6 +2127,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Services.Client.DataServiceResponse SaveChanges ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Services.Client.DataServiceResponse SaveChanges() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceContext.SaveChanges" />
+      <MemberSignature Language="VB.NET" Value="Public Function SaveChanges () As DataServiceResponse" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Services::Client::DataServiceResponse ^ SaveChanges();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -1969,6 +2149,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Services.Client.DataServiceResponse SaveChanges (System.Data.Services.Client.SaveChangesOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Services.Client.DataServiceResponse SaveChanges(valuetype System.Data.Services.Client.SaveChangesOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceContext.SaveChanges(System.Data.Services.Client.SaveChangesOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SaveChanges (options As SaveChangesOptions) As DataServiceResponse" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Services::Client::DataServiceResponse ^ SaveChanges(System::Data::Services::Client::SaveChangesOptions options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -2009,6 +2191,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Services.Client.SaveChangesOptions SaveChangesDefaultOptions { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.Services.Client.SaveChangesOptions SaveChangesDefaultOptions" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.DataServiceContext.SaveChangesDefaultOptions" />
+      <MemberSignature Language="VB.NET" Value="Public Property SaveChangesDefaultOptions As SaveChangesOptions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Services::Client::SaveChangesOptions SaveChangesDefaultOptions { System::Data::Services::Client::SaveChangesOptions get(); void set(System::Data::Services::Client::SaveChangesOptions value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -2035,6 +2219,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Data.Services.Client.SendingRequestEventArgs&gt; SendingRequest;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Data.Services.Client.SendingRequestEventArgs&gt; SendingRequest" />
       <MemberSignature Language="DocId" Value="E:System.Data.Services.Client.DataServiceContext.SendingRequest" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event SendingRequest As EventHandler(Of SendingRequestEventArgs) " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Data::Services::Client::SendingRequestEventArgs ^&gt; ^ SendingRequest;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -2060,6 +2246,8 @@
       <MemberSignature Language="C#" Value="public void SetLink (object source, string sourceProperty, object target);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetLink(object source, string sourceProperty, object target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceContext.SetLink(System.Object,System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetLink (source As Object, sourceProperty As String, target As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetLink(System::Object ^ source, System::String ^ sourceProperty, System::Object ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -2113,10 +2301,21 @@
  When <paramref name="sourceProperty" /> is not a navigation property that defines a reference to a single related object.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetSaveStream">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets a new data stream as the binary property of an entity.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="SetSaveStream">
       <MemberSignature Language="C#" Value="public void SetSaveStream (object entity, System.IO.Stream stream, bool closeStream, System.Data.Services.Client.DataServiceRequestArgs args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetSaveStream(object entity, class System.IO.Stream stream, bool closeStream, class System.Data.Services.Client.DataServiceRequestArgs args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceContext.SetSaveStream(System.Object,System.IO.Stream,System.Boolean,System.Data.Services.Client.DataServiceRequestArgs)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetSaveStream(System::Object ^ entity, System::IO::Stream ^ stream, bool closeStream, System::Data::Services::Client::DataServiceRequestArgs ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -2168,6 +2367,7 @@
       <MemberSignature Language="C#" Value="public void SetSaveStream (object entity, System.IO.Stream stream, bool closeStream, string contentType, string slug);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetSaveStream(object entity, class System.IO.Stream stream, bool closeStream, string contentType, string slug) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceContext.SetSaveStream(System.Object,System.IO.Stream,System.Boolean,System.String,System.String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetSaveStream(System::Object ^ entity, System::IO::Stream ^ stream, bool closeStream, System::String ^ contentType, System::String ^ slug);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -2221,6 +2421,8 @@
       <MemberSignature Language="C#" Value="public int Timeout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Timeout" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.DataServiceContext.Timeout" />
+      <MemberSignature Language="VB.NET" Value="Public Property Timeout As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Timeout { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -2247,6 +2449,8 @@
       <MemberSignature Language="C#" Value="public bool TryGetEntity&lt;TEntity&gt; (Uri identity, out TEntity entity) where TEntity : class;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetEntity&lt;class TEntity&gt;(class System.Uri identity, [out] !!TEntity&amp; entity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceContext.TryGetEntity``1(System.Uri,``0@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryGetEntity(Of TEntity As Class) (identity As Uri, ByRef entity As TEntity) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TEntity&gt;&#xA; where TEntity : class bool TryGetEntity(Uri ^ identity, [Runtime::InteropServices::Out] TEntity % entity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -2288,6 +2492,8 @@
       <MemberSignature Language="C#" Value="public bool TryGetUri (object entity, out Uri identity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetUri(object entity, [out] class System.Uri&amp; identity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceContext.TryGetUri(System.Object,System.Uri@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryGetUri (entity As Object, ByRef identity As Uri) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryGetUri(System::Object ^ entity, [Runtime::InteropServices::Out] Uri ^ % identity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -2321,6 +2527,8 @@
       <MemberSignature Language="C#" Value="public Uri TypeScheme { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri TypeScheme" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.DataServiceContext.TypeScheme" />
+      <MemberSignature Language="VB.NET" Value="Public Property TypeScheme As Uri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ TypeScheme { Uri ^ get(); void set(Uri ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -2347,6 +2555,8 @@
       <MemberSignature Language="C#" Value="public void UpdateObject (object entity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void UpdateObject(object entity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceContext.UpdateObject(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub UpdateObject (entity As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void UpdateObject(System::Object ^ entity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -2381,6 +2591,8 @@
       <MemberSignature Language="C#" Value="public bool UsePostTunneling { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UsePostTunneling" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.DataServiceContext.UsePostTunneling" />
+      <MemberSignature Language="VB.NET" Value="Public Property UsePostTunneling As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UsePostTunneling { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -2409,6 +2621,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Data.Services.Client.ReadingWritingEntityEventArgs&gt; WritingEntity;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Data.Services.Client.ReadingWritingEntityEventArgs&gt; WritingEntity" />
       <MemberSignature Language="DocId" Value="E:System.Data.Services.Client.DataServiceContext.WritingEntity" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event WritingEntity As EventHandler(Of ReadingWritingEntityEventArgs) " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Data::Services::Client::ReadingWritingEntityEventArgs ^&gt; ^ WritingEntity;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -2432,85 +2646,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetReadStream">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Services.Client</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets binary property data for the specified entity as a data stream.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Execute&lt;T&gt;">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Services.Client</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Sends a request to the data service to execute a specific URI.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="BeginLoadProperty">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Services.Client</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Begins the operation to load the value of the specified property from the data service.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="AttachTo">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Services.Client</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Notifies the <see cref="T:System.Data.Services.Client.DataServiceContext" /> to start tracking the specified resource and supplies the location of the resource in the specified resource set.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="SetSaveStream">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Services.Client</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Sets a new data stream as the binary property of an entity.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="BeginSaveChanges">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Services.Client</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Submits the pending changes to the data service collected by the <see cref="T:System.Data.Services.Client.DataServiceContext" /> since the last time changes were saved.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="BeginExecute&lt;T&gt;">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Services.Client</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Asynchronously sends a request to the data service to execute a specific URI.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="LoadProperty">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Services.Client</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Loads deferred content from the data service.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,9 @@
-<Type Name="StaticLocalInitFlag" FullName="Microsoft.VisualBasic.CompilerServices.StaticLocalInitFlag">
+﻿<Type Name="StaticLocalInitFlag" FullName="Microsoft.VisualBasic.CompilerServices.StaticLocalInitFlag">
   <TypeSignature Language="C#" Value="public sealed class StaticLocalInitFlag" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed StaticLocalInitFlag extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.CompilerServices.StaticLocalInitFlag" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class StaticLocalInitFlag" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StaticLocalInitFlag sealed" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -25,6 +27,8 @@
       <MemberSignature Language="C#" Value="public StaticLocalInitFlag ();" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.StaticLocalInitFlag.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StaticLocalInitFlag();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -41,6 +45,8 @@
       <MemberSignature Language="C#" Value="public short State;" />
       <MemberSignature Language="ILAsm" Value=".field public int16 State" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.CompilerServices.StaticLocalInitFlag.State" />
+      <MemberSignature Language="VB.NET" Value="Public State As Short " />
+      <MemberSignature Language="C++ CLI" Value="public: short State;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

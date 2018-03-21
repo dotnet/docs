@@ -1,7 +1,9 @@
-<Type Name="MediaPermission" FullName="System.Security.Permissions.MediaPermission">
+﻿<Type Name="MediaPermission" FullName="System.Security.Permissions.MediaPermission">
   <TypeSignature Language="C#" Value="public sealed class MediaPermission : System.Security.CodeAccessPermission, System.Security.Permissions.IUnrestrictedPermission" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit MediaPermission extends System.Security.CodeAccessPermission implements class System.Security.Permissions.IUnrestrictedPermission" />
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.MediaPermission" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MediaPermission&#xA;Inherits CodeAccessPermission&#xA;Implements IUnrestrictedPermission" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MediaPermission sealed : System::Security::CodeAccessPermission, System::Security::Permissions::IUnrestrictedPermission" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,10 +28,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Permissions.MediaPermission" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public MediaPermission ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.MediaPermission.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MediaPermission();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -45,6 +58,8 @@
       <MemberSignature Language="C#" Value="public MediaPermission (System.Security.Permissions.MediaPermissionAudio permissionAudio);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Permissions.MediaPermissionAudio permissionAudio) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.MediaPermission.#ctor(System.Security.Permissions.MediaPermissionAudio)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (permissionAudio As MediaPermissionAudio)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MediaPermission(System::Security::Permissions::MediaPermissionAudio permissionAudio);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -78,6 +93,8 @@
       <MemberSignature Language="C#" Value="public MediaPermission (System.Security.Permissions.MediaPermissionImage permissionImage);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Permissions.MediaPermissionImage permissionImage) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.MediaPermission.#ctor(System.Security.Permissions.MediaPermissionImage)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (permissionImage As MediaPermissionImage)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MediaPermission(System::Security::Permissions::MediaPermissionImage permissionImage);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -111,6 +128,8 @@
       <MemberSignature Language="C#" Value="public MediaPermission (System.Security.Permissions.MediaPermissionVideo permissionVideo);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Permissions.MediaPermissionVideo permissionVideo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.MediaPermission.#ctor(System.Security.Permissions.MediaPermissionVideo)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (permissionVideo As MediaPermissionVideo)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MediaPermission(System::Security::Permissions::MediaPermissionVideo permissionVideo);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -144,6 +163,8 @@
       <MemberSignature Language="C#" Value="public MediaPermission (System.Security.Permissions.PermissionState state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Permissions.PermissionState state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.MediaPermission.#ctor(System.Security.Permissions.PermissionState)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (state As PermissionState)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MediaPermission(System::Security::Permissions::PermissionState state);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -177,6 +198,8 @@
       <MemberSignature Language="C#" Value="public MediaPermission (System.Security.Permissions.MediaPermissionAudio permissionAudio, System.Security.Permissions.MediaPermissionVideo permissionVideo, System.Security.Permissions.MediaPermissionImage permissionImage);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Permissions.MediaPermissionAudio permissionAudio, valuetype System.Security.Permissions.MediaPermissionVideo permissionVideo, valuetype System.Security.Permissions.MediaPermissionImage permissionImage) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.MediaPermission.#ctor(System.Security.Permissions.MediaPermissionAudio,System.Security.Permissions.MediaPermissionVideo,System.Security.Permissions.MediaPermissionImage)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (permissionAudio As MediaPermissionAudio, permissionVideo As MediaPermissionVideo, permissionImage As MediaPermissionImage)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MediaPermission(System::Security::Permissions::MediaPermissionAudio permissionAudio, System::Security::Permissions::MediaPermissionVideo permissionVideo, System::Security::Permissions::MediaPermissionImage permissionImage);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -209,6 +232,8 @@
       <MemberSignature Language="C#" Value="public System.Security.Permissions.MediaPermissionAudio Audio { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.Permissions.MediaPermissionAudio Audio" />
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.MediaPermission.Audio" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Audio As MediaPermissionAudio" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Permissions::MediaPermissionAudio Audio { System::Security::Permissions::MediaPermissionAudio get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -237,6 +262,8 @@
       <MemberSignature Language="C#" Value="public override System.Security.IPermission Copy ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission Copy() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.MediaPermission.Copy" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Copy () As IPermission" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Copy();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -263,6 +290,7 @@
       <MemberSignature Language="C#" Value="public override void FromXml (System.Security.SecurityElement securityElement);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void FromXml(class System.Security.SecurityElement securityElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.MediaPermission.FromXml(System.Security.SecurityElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void FromXml(System::Security::SecurityElement ^ securityElement);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -284,6 +312,8 @@
       <MemberSignature Language="C#" Value="public System.Security.Permissions.MediaPermissionImage Image { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.Permissions.MediaPermissionImage Image" />
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.MediaPermission.Image" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Image As MediaPermissionImage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Permissions::MediaPermissionImage Image { System::Security::Permissions::MediaPermissionImage get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -312,6 +342,8 @@
       <MemberSignature Language="C#" Value="public override System.Security.IPermission Intersect (System.Security.IPermission target);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission Intersect(class System.Security.IPermission target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.MediaPermission.Intersect(System.Security.IPermission)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Intersect (target As IPermission) As IPermission" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Intersect(System::Security::IPermission ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -334,6 +366,8 @@
       <MemberSignature Language="C#" Value="public override bool IsSubsetOf (System.Security.IPermission target);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsSubsetOf(class System.Security.IPermission target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.MediaPermission.IsSubsetOf(System.Security.IPermission)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function IsSubsetOf (target As IPermission) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsSubsetOf(System::Security::IPermission ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -366,6 +400,8 @@
       <MemberSignature Language="C#" Value="public bool IsUnrestricted ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsUnrestricted() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.MediaPermission.IsUnrestricted" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsUnrestricted () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsUnrestricted();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -401,6 +437,8 @@
       <MemberSignature Language="C#" Value="public override System.Security.SecurityElement ToXml ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.SecurityElement ToXml() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.MediaPermission.ToXml" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToXml () As SecurityElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::SecurityElement ^ ToXml();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -420,6 +458,8 @@
       <MemberSignature Language="C#" Value="public override System.Security.IPermission Union (System.Security.IPermission target);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission Union(class System.Security.IPermission target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.MediaPermission.Union(System.Security.IPermission)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Union (target As IPermission) As IPermission" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Union(System::Security::IPermission ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -442,6 +482,8 @@
       <MemberSignature Language="C#" Value="public System.Security.Permissions.MediaPermissionVideo Video { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.Permissions.MediaPermissionVideo Video" />
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.MediaPermission.Video" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Video As MediaPermissionVideo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Permissions::MediaPermissionVideo Video { System::Security::Permissions::MediaPermissionVideo get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -466,14 +508,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.Permissions.MediaPermission" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

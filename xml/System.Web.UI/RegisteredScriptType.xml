@@ -1,7 +1,9 @@
-<Type Name="RegisteredScriptType" FullName="System.Web.UI.RegisteredScriptType">
+﻿<Type Name="RegisteredScriptType" FullName="System.Web.UI.RegisteredScriptType">
   <TypeSignature Language="C#" Value="public enum RegisteredScriptType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RegisteredScriptType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.RegisteredScriptType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum RegisteredScriptType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class RegisteredScriptType" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +27,8 @@
       <MemberSignature Language="C#" Value="ClientScriptBlock" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.RegisteredScriptType ClientScriptBlock = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.RegisteredScriptType.ClientScriptBlock" />
+      <MemberSignature Language="VB.NET" Value="ClientScriptBlock" />
+      <MemberSignature Language="C++ CLI" Value="ClientScriptBlock" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -33,6 +37,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.RegisteredScriptType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>A block of client code that executes one time during initial page rendering. A client script block of this type does not execute during partial-page updates.</summary>
       </Docs>
@@ -41,6 +46,8 @@
       <MemberSignature Language="C#" Value="ClientScriptInclude" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.RegisteredScriptType ClientScriptInclude = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.RegisteredScriptType.ClientScriptInclude" />
+      <MemberSignature Language="VB.NET" Value="ClientScriptInclude" />
+      <MemberSignature Language="C++ CLI" Value="ClientScriptInclude" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -49,6 +56,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.RegisteredScriptType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>A client script that executes every time that an asynchronous postback occurs.</summary>
       </Docs>
@@ -57,6 +65,8 @@
       <MemberSignature Language="C#" Value="ClientStartupScript" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.RegisteredScriptType ClientStartupScript = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.RegisteredScriptType.ClientStartupScript" />
+      <MemberSignature Language="VB.NET" Value="ClientStartupScript" />
+      <MemberSignature Language="C++ CLI" Value="ClientStartupScript" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -65,6 +75,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.RegisteredScriptType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>A client script that is associated with a control that executes when the control starts.</summary>
       </Docs>
@@ -73,6 +84,8 @@
       <MemberSignature Language="C#" Value="OnSubmitStatement" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.RegisteredScriptType OnSubmitStatement = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.RegisteredScriptType.OnSubmitStatement" />
+      <MemberSignature Language="VB.NET" Value="OnSubmitStatement" />
+      <MemberSignature Language="C++ CLI" Value="OnSubmitStatement" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -81,6 +94,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.RegisteredScriptType</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>A client script that executes when a page is submitted.</summary>
       </Docs>

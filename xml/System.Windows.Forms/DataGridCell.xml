@@ -1,7 +1,9 @@
-<Type Name="DataGridCell" FullName="System.Windows.Forms.DataGridCell">
+﻿<Type Name="DataGridCell" FullName="System.Windows.Forms.DataGridCell">
   <TypeSignature Language="C#" Value="public struct DataGridCell" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit DataGridCell extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridCell" />
+  <TypeSignature Language="VB.NET" Value="Public Structure DataGridCell" />
+  <TypeSignature Language="C++ CLI" Value="public value class DataGridCell" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +43,8 @@
       <MemberSignature Language="C#" Value="public DataGridCell (int r, int c);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 r, int32 c) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridCell.#ctor(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (r As Integer, c As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridCell(int r, int c);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -78,6 +82,8 @@
       <MemberSignature Language="C#" Value="public int ColumnNumber { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ColumnNumber" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridCell.ColumnNumber" />
+      <MemberSignature Language="VB.NET" Value="Public Property ColumnNumber As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ColumnNumber { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -116,6 +122,8 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object o);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object o) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridCell.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (o As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -148,6 +156,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridCell.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -180,6 +190,8 @@
       <MemberSignature Language="C#" Value="public int RowNumber { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 RowNumber" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridCell.RowNumber" />
+      <MemberSignature Language="VB.NET" Value="Public Property RowNumber As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int RowNumber { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -214,6 +226,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridCell.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

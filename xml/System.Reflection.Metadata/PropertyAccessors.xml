@@ -1,7 +1,9 @@
-<Type Name="PropertyAccessors" FullName="System.Reflection.Metadata.PropertyAccessors">
+﻿<Type Name="PropertyAccessors" FullName="System.Reflection.Metadata.PropertyAccessors">
   <TypeSignature Language="C#" Value="public struct PropertyAccessors" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit PropertyAccessors extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.PropertyAccessors" />
+  <TypeSignature Language="VB.NET" Value="Public Structure PropertyAccessors" />
+  <TypeSignature Language="C++ CLI" Value="public value class PropertyAccessors" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -21,6 +23,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Metadata.MethodDefinitionHandle Getter { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.Metadata.MethodDefinitionHandle Getter" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.PropertyAccessors.Getter" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Getter As MethodDefinitionHandle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::MethodDefinitionHandle Getter { System::Reflection::Metadata::MethodDefinitionHandle get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -41,6 +45,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Metadata.MethodDefinitionHandle Setter { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.Metadata.MethodDefinitionHandle Setter" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.PropertyAccessors.Setter" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Setter As MethodDefinitionHandle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::MethodDefinitionHandle Setter { System::Reflection::Metadata::MethodDefinitionHandle get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

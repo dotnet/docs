@@ -1,7 +1,9 @@
-<Type Name="IPGlobalStatistics" FullName="System.Net.NetworkInformation.IPGlobalStatistics">
+﻿<Type Name="IPGlobalStatistics" FullName="System.Net.NetworkInformation.IPGlobalStatistics">
   <TypeSignature Language="C#" Value="public abstract class IPGlobalStatistics" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit IPGlobalStatistics extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Net.NetworkInformation.IPGlobalStatistics" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class IPGlobalStatistics" />
+  <TypeSignature Language="C++ CLI" Value="public ref class IPGlobalStatistics abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Net.NetworkInformation</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -48,6 +50,8 @@
       <MemberSignature Language="C#" Value="protected IPGlobalStatistics ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.IPGlobalStatistics.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; IPGlobalStatistics();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -80,6 +84,8 @@
       <MemberSignature Language="C#" Value="public abstract int DefaultTtl { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 DefaultTtl" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IPGlobalStatistics.DefaultTtl" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property DefaultTtl As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property int DefaultTtl { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -124,6 +130,8 @@
       <MemberSignature Language="C#" Value="public abstract bool ForwardingEnabled { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ForwardingEnabled" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IPGlobalStatistics.ForwardingEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ForwardingEnabled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool ForwardingEnabled { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -168,6 +176,8 @@
       <MemberSignature Language="C#" Value="public abstract int NumberOfInterfaces { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 NumberOfInterfaces" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IPGlobalStatistics.NumberOfInterfaces" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property NumberOfInterfaces As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property int NumberOfInterfaces { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -205,6 +215,8 @@
       <MemberSignature Language="C#" Value="public abstract int NumberOfIPAddresses { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 NumberOfIPAddresses" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IPGlobalStatistics.NumberOfIPAddresses" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property NumberOfIPAddresses As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property int NumberOfIPAddresses { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -242,6 +254,8 @@
       <MemberSignature Language="C#" Value="public abstract int NumberOfRoutes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 NumberOfRoutes" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IPGlobalStatistics.NumberOfRoutes" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property NumberOfRoutes As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property int NumberOfRoutes { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -270,6 +284,8 @@
       <MemberSignature Language="C#" Value="public abstract long OutputPacketRequests { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 OutputPacketRequests" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IPGlobalStatistics.OutputPacketRequests" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property OutputPacketRequests As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long OutputPacketRequests { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -314,6 +330,8 @@
       <MemberSignature Language="C#" Value="public abstract long OutputPacketRoutingDiscards { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 OutputPacketRoutingDiscards" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IPGlobalStatistics.OutputPacketRoutingDiscards" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property OutputPacketRoutingDiscards As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long OutputPacketRoutingDiscards { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -358,6 +376,8 @@
       <MemberSignature Language="C#" Value="public abstract long OutputPacketsDiscarded { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 OutputPacketsDiscarded" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IPGlobalStatistics.OutputPacketsDiscarded" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property OutputPacketsDiscarded As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long OutputPacketsDiscarded { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -402,6 +422,8 @@
       <MemberSignature Language="C#" Value="public abstract long OutputPacketsWithNoRoute { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 OutputPacketsWithNoRoute" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IPGlobalStatistics.OutputPacketsWithNoRoute" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property OutputPacketsWithNoRoute As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long OutputPacketsWithNoRoute { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -446,6 +468,8 @@
       <MemberSignature Language="C#" Value="public abstract long PacketFragmentFailures { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 PacketFragmentFailures" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IPGlobalStatistics.PacketFragmentFailures" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property PacketFragmentFailures As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long PacketFragmentFailures { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -490,6 +514,8 @@
       <MemberSignature Language="C#" Value="public abstract long PacketReassembliesRequired { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 PacketReassembliesRequired" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IPGlobalStatistics.PacketReassembliesRequired" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property PacketReassembliesRequired As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long PacketReassembliesRequired { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -534,6 +560,8 @@
       <MemberSignature Language="C#" Value="public abstract long PacketReassemblyFailures { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 PacketReassemblyFailures" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IPGlobalStatistics.PacketReassemblyFailures" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property PacketReassemblyFailures As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long PacketReassemblyFailures { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -578,6 +606,8 @@
       <MemberSignature Language="C#" Value="public abstract long PacketReassemblyTimeout { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 PacketReassemblyTimeout" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IPGlobalStatistics.PacketReassemblyTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property PacketReassemblyTimeout As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long PacketReassemblyTimeout { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -622,6 +652,8 @@
       <MemberSignature Language="C#" Value="public abstract long PacketsFragmented { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 PacketsFragmented" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IPGlobalStatistics.PacketsFragmented" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property PacketsFragmented As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long PacketsFragmented { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -666,6 +698,8 @@
       <MemberSignature Language="C#" Value="public abstract long PacketsReassembled { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 PacketsReassembled" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IPGlobalStatistics.PacketsReassembled" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property PacketsReassembled As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long PacketsReassembled { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -710,6 +744,8 @@
       <MemberSignature Language="C#" Value="public abstract long ReceivedPackets { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 ReceivedPackets" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IPGlobalStatistics.ReceivedPackets" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ReceivedPackets As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long ReceivedPackets { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -754,6 +790,8 @@
       <MemberSignature Language="C#" Value="public abstract long ReceivedPacketsDelivered { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 ReceivedPacketsDelivered" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IPGlobalStatistics.ReceivedPacketsDelivered" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ReceivedPacketsDelivered As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long ReceivedPacketsDelivered { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -798,6 +836,8 @@
       <MemberSignature Language="C#" Value="public abstract long ReceivedPacketsDiscarded { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 ReceivedPacketsDiscarded" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IPGlobalStatistics.ReceivedPacketsDiscarded" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ReceivedPacketsDiscarded As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long ReceivedPacketsDiscarded { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -842,6 +882,8 @@
       <MemberSignature Language="C#" Value="public abstract long ReceivedPacketsForwarded { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 ReceivedPacketsForwarded" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IPGlobalStatistics.ReceivedPacketsForwarded" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ReceivedPacketsForwarded As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long ReceivedPacketsForwarded { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -886,6 +928,8 @@
       <MemberSignature Language="C#" Value="public abstract long ReceivedPacketsWithAddressErrors { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 ReceivedPacketsWithAddressErrors" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IPGlobalStatistics.ReceivedPacketsWithAddressErrors" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ReceivedPacketsWithAddressErrors As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long ReceivedPacketsWithAddressErrors { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -930,6 +974,8 @@
       <MemberSignature Language="C#" Value="public abstract long ReceivedPacketsWithHeadersErrors { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 ReceivedPacketsWithHeadersErrors" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IPGlobalStatistics.ReceivedPacketsWithHeadersErrors" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ReceivedPacketsWithHeadersErrors As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long ReceivedPacketsWithHeadersErrors { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -974,6 +1020,8 @@
       <MemberSignature Language="C#" Value="public abstract long ReceivedPacketsWithUnknownProtocol { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 ReceivedPacketsWithUnknownProtocol" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IPGlobalStatistics.ReceivedPacketsWithUnknownProtocol" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ReceivedPacketsWithUnknownProtocol As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long ReceivedPacketsWithUnknownProtocol { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>

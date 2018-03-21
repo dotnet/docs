@@ -1,7 +1,9 @@
-<Type Name="SayAs" FullName="System.Speech.Synthesis.TtsEngine.SayAs">
+﻿<Type Name="SayAs" FullName="System.Speech.Synthesis.TtsEngine.SayAs">
   <TypeSignature Language="C#" Value="public class SayAs" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi beforefieldinit SayAs extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Speech.Synthesis.TtsEngine.SayAs" />
+  <TypeSignature Language="VB.NET" Value="Public Class SayAs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SayAs" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public SayAs ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.TtsEngine.SayAs.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SayAs();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -41,6 +45,8 @@
       <MemberSignature Language="C#" Value="public string Detail { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Detail" />
       <MemberSignature Language="DocId" Value="P:System.Speech.Synthesis.TtsEngine.SayAs.Detail" />
+      <MemberSignature Language="VB.NET" Value="Public Property Detail As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Detail { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -66,6 +72,8 @@
       <MemberSignature Language="C#" Value="public string Format { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Format" />
       <MemberSignature Language="DocId" Value="P:System.Speech.Synthesis.TtsEngine.SayAs.Format" />
+      <MemberSignature Language="VB.NET" Value="Public Property Format As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Format { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -93,6 +101,8 @@
       <MemberSignature Language="C#" Value="public string InterpretAs { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string InterpretAs" />
       <MemberSignature Language="DocId" Value="P:System.Speech.Synthesis.TtsEngine.SayAs.InterpretAs" />
+      <MemberSignature Language="VB.NET" Value="Public Property InterpretAs As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ InterpretAs { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>

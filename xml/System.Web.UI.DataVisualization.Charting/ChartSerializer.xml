@@ -1,7 +1,9 @@
-<Type Name="ChartSerializer" FullName="System.Web.UI.DataVisualization.Charting.ChartSerializer">
+﻿<Type Name="ChartSerializer" FullName="System.Web.UI.DataVisualization.Charting.ChartSerializer">
   <TypeSignature Language="C#" Value="public class ChartSerializer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ChartSerializer extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.ChartSerializer" />
+  <TypeSignature Language="VB.NET" Value="Public Class ChartSerializer" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ChartSerializer" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +56,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.SerializationContents Content { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.DataVisualization.Charting.SerializationContents Content" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ChartSerializer.Content" />
+      <MemberSignature Language="VB.NET" Value="Public Property Content As SerializationContents" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::DataVisualization::Charting::SerializationContents Content { System::Web::UI::DataVisualization::Charting::SerializationContents get(); void set(System::Web::UI::DataVisualization::Charting::SerializationContents value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -90,6 +94,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.SerializationFormat Format { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.DataVisualization.Charting.SerializationFormat Format" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ChartSerializer.Format" />
+      <MemberSignature Language="VB.NET" Value="Public Property Format As SerializationFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::DataVisualization::Charting::SerializationFormat Format { System::Web::UI::DataVisualization::Charting::SerializationFormat get(); void set(System::Web::UI::DataVisualization::Charting::SerializationFormat value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -122,6 +128,8 @@
       <MemberSignature Language="C#" Value="protected string GetContentString (System.Web.UI.DataVisualization.Charting.SerializationContents content, bool serializable);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance string GetContentString(valuetype System.Web.UI.DataVisualization.Charting.SerializationContents content, bool serializable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.ChartSerializer.GetContentString(System.Web.UI.DataVisualization.Charting.SerializationContents,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function GetContentString (content As SerializationContents, serializable As Boolean) As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::String ^ GetContentString(System::Web::UI::DataVisualization::Charting::SerializationContents content, bool serializable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -147,6 +155,8 @@
       <MemberSignature Language="C#" Value="public bool IsResetWhenLoading { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsResetWhenLoading" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ChartSerializer.IsResetWhenLoading" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsResetWhenLoading As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsResetWhenLoading { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -171,6 +181,8 @@
       <MemberSignature Language="C#" Value="public bool IsTemplateMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsTemplateMode" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ChartSerializer.IsTemplateMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsTemplateMode As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsTemplateMode { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -195,6 +207,8 @@
       <MemberSignature Language="C#" Value="public bool IsUnknownAttributeIgnored { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsUnknownAttributeIgnored" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ChartSerializer.IsUnknownAttributeIgnored" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsUnknownAttributeIgnored As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsUnknownAttributeIgnored { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -215,10 +229,20 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Load">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Loads serialized data into the <see cref="T:System.Web.UI.DataVisualization.Charting.Chart" /> control.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Load">
       <MemberSignature Language="C#" Value="public void Load (System.IO.Stream stream);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Load(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.ChartSerializer.Load(System.IO.Stream)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Load(System::IO::Stream ^ stream);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -253,6 +277,8 @@
       <MemberSignature Language="C#" Value="public void Load (System.IO.TextReader reader);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Load(class System.IO.TextReader reader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.ChartSerializer.Load(System.IO.TextReader)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Load (reader As TextReader)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Load(System::IO::TextReader ^ reader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -289,6 +315,8 @@
       <MemberSignature Language="C#" Value="public void Load (string fileName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Load(string fileName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.ChartSerializer.Load(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Load (fileName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Load(System::String ^ fileName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -323,6 +351,8 @@
       <MemberSignature Language="C#" Value="public void Load (System.Xml.XmlReader reader);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Load(class System.Xml.XmlReader reader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.ChartSerializer.Load(System.Xml.XmlReader)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Load (reader As XmlReader)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Load(System::Xml::XmlReader ^ reader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -359,6 +389,8 @@
       <MemberSignature Language="C#" Value="public string NonSerializableContent { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string NonSerializableContent" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ChartSerializer.NonSerializableContent" />
+      <MemberSignature Language="VB.NET" Value="Public Property NonSerializableContent As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NonSerializableContent { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -397,6 +429,8 @@
       <MemberSignature Language="C#" Value="public void Reset ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Reset() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.ChartSerializer.Reset" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Reset ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Reset();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -422,10 +456,20 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Save">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Saves chart properties that have non-default values. All chart properties can be serialized; this includes data.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Save">
       <MemberSignature Language="C#" Value="public void Save (System.IO.Stream stream);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Save(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.ChartSerializer.Save(System.IO.Stream)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save(System::IO::Stream ^ stream);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -462,6 +506,8 @@
       <MemberSignature Language="C#" Value="public void Save (System.IO.TextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Save(class System.IO.TextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.ChartSerializer.Save(System.IO.TextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Save (writer As TextWriter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save(System::IO::TextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -494,6 +540,8 @@
       <MemberSignature Language="C#" Value="public void Save (string fileName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Save(string fileName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.ChartSerializer.Save(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Save (fileName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save(System::String ^ fileName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -534,6 +582,8 @@
       <MemberSignature Language="C#" Value="public void Save (System.Xml.XmlWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Save(class System.Xml.XmlWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.ChartSerializer.Save(System.Xml.XmlWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Save (writer As XmlWriter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save(System::Xml::XmlWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -566,6 +616,8 @@
       <MemberSignature Language="C#" Value="public string SerializableContent { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SerializableContent" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ChartSerializer.SerializableContent" />
+      <MemberSignature Language="VB.NET" Value="Public Property SerializableContent As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SerializableContent { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -602,23 +654,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Load">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.DataVisualization</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Loads serialized data into the <see cref="T:System.Web.UI.DataVisualization.Charting.Chart" /> control.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Save">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.DataVisualization</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Saves chart properties that have non-default values. All chart properties can be serialized; this includes data.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

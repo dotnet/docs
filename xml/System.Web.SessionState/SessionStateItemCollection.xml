@@ -1,7 +1,9 @@
-<Type Name="SessionStateItemCollection" FullName="System.Web.SessionState.SessionStateItemCollection">
+﻿<Type Name="SessionStateItemCollection" FullName="System.Web.SessionState.SessionStateItemCollection">
   <TypeSignature Language="C#" Value="public sealed class SessionStateItemCollection : System.Collections.Specialized.NameObjectCollectionBase, System.Collections.ICollection, System.Web.SessionState.ISessionStateItemCollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SessionStateItemCollection extends System.Collections.Specialized.NameObjectCollectionBase implements class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Web.SessionState.ISessionStateItemCollection" />
   <TypeSignature Language="DocId" Value="T:System.Web.SessionState.SessionStateItemCollection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SessionStateItemCollection&#xA;Inherits NameObjectCollectionBase&#xA;Implements ICollection, ISessionStateItemCollection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SessionStateItemCollection sealed : System::Collections::Specialized::NameObjectCollectionBase, System::Collections::ICollection, System::Web::SessionState::ISessionStateItemCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +46,8 @@
       <MemberSignature Language="C#" Value="public SessionStateItemCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.SessionStateItemCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SessionStateItemCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -74,7 +78,12 @@
       <MemberSignature Language="C#" Value="public void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.SessionStateItemCollection.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.SessionState.ISessionStateItemCollection.Clear</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -92,6 +101,8 @@
       <MemberSignature Language="C#" Value="public static System.Web.SessionState.SessionStateItemCollection Deserialize (System.IO.BinaryReader reader);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.SessionState.SessionStateItemCollection Deserialize(class System.IO.BinaryReader reader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.SessionStateItemCollection.Deserialize(System.IO.BinaryReader)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Deserialize (reader As BinaryReader) As SessionStateItemCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::SessionState::SessionStateItemCollection ^ Deserialize(System::IO::BinaryReader ^ reader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -132,7 +143,12 @@
       <MemberSignature Language="C#" Value="public bool Dirty { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Dirty" />
       <MemberSignature Language="DocId" Value="P:System.Web.SessionState.SessionStateItemCollection.Dirty" />
+      <MemberSignature Language="VB.NET" Value="Public Property Dirty As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Dirty { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.SessionState.ISessionStateItemCollection.Dirty</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -164,7 +180,12 @@
       <MemberSignature Language="C#" Value="public override System.Collections.IEnumerator GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.SessionStateItemCollection.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Collections::IEnumerator ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -189,11 +210,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets or sets a value in the collection.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Item">
       <MemberSignature Language="C#" Value="public object this[int index] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Web.SessionState.SessionStateItemCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[int] { System::Object ^ get(int index); void set(int index, System::Object ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.SessionState.ISessionStateItemCollection.Item(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -225,7 +260,12 @@
       <MemberSignature Language="C#" Value="public object this[string name] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.Web.SessionState.SessionStateItemCollection.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(name As String) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[System::String ^] { System::Object ^ get(System::String ^ name); void set(System::String ^ name, System::Object ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.SessionState.ISessionStateItemCollection.Item(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -257,7 +297,12 @@
       <MemberSignature Language="C#" Value="public override System.Collections.Specialized.NameObjectCollectionBase.KeysCollection Keys { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.NameObjectCollectionBase/KeysCollection Keys" />
       <MemberSignature Language="DocId" Value="P:System.Web.SessionState.SessionStateItemCollection.Keys" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Keys As NameObjectCollectionBase.KeysCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::Specialized::NameObjectCollectionBase::KeysCollection ^ Keys { System::Collections::Specialized::NameObjectCollectionBase::KeysCollection ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.SessionState.ISessionStateItemCollection.Keys</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -290,7 +335,12 @@
       <MemberSignature Language="C#" Value="public void Remove (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Remove(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.SessionStateItemCollection.Remove(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (name As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Remove(System::String ^ name);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.SessionState.ISessionStateItemCollection.Remove(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -318,7 +368,12 @@
       <MemberSignature Language="C#" Value="public void RemoveAt (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveAt(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.SessionStateItemCollection.RemoveAt(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveAt(int index);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.SessionState.ISessionStateItemCollection.RemoveAt(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -352,6 +407,8 @@
       <MemberSignature Language="C#" Value="public void Serialize (System.IO.BinaryWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Serialize(class System.IO.BinaryWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.SessionStateItemCollection.Serialize(System.IO.BinaryWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Serialize (writer As BinaryWriter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Serialize(System::IO::BinaryWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -386,14 +443,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Item">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets or sets a value in the collection.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

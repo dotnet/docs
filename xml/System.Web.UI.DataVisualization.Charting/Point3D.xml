@@ -1,7 +1,9 @@
-<Type Name="Point3D" FullName="System.Web.UI.DataVisualization.Charting.Point3D">
+﻿<Type Name="Point3D" FullName="System.Web.UI.DataVisualization.Charting.Point3D">
   <TypeSignature Language="C#" Value="public class Point3D" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Point3D extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.Point3D" />
+  <TypeSignature Language="VB.NET" Value="Public Class Point3D" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Point3D" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,10 +30,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.DataVisualization.Charting.Point3D" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public Point3D ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.Point3D.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Point3D();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -47,6 +60,8 @@
       <MemberSignature Language="C#" Value="public Point3D (float x, float y, float z);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float32 x, float32 y, float32 z) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.Point3D.#ctor(System.Single,System.Single,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (x As Single, y As Single, z As Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Point3D(float x, float y, float z);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -69,6 +84,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.PointF PointF { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.PointF PointF" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.Point3D.PointF" />
+      <MemberSignature Language="VB.NET" Value="Public Property PointF As PointF" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::PointF PointF { System::Drawing::PointF get(); void set(System::Drawing::PointF value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -104,6 +121,8 @@
       <MemberSignature Language="C#" Value="public float X { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float32 X" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.Point3D.X" />
+      <MemberSignature Language="VB.NET" Value="Public Property X As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float X { float get(); void set(float value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -141,6 +160,8 @@
       <MemberSignature Language="C#" Value="public float Y { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float32 Y" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.Point3D.Y" />
+      <MemberSignature Language="VB.NET" Value="Public Property Y As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Y { float get(); void set(float value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -178,6 +199,8 @@
       <MemberSignature Language="C#" Value="public float Z { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float32 Z" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.Point3D.Z" />
+      <MemberSignature Language="VB.NET" Value="Public Property Z As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Z { float get(); void set(float value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -215,14 +238,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.DataVisualization</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.DataVisualization.Charting.Point3D" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

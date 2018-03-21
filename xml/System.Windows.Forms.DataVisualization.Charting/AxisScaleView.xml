@@ -1,7 +1,9 @@
-<Type Name="AxisScaleView" FullName="System.Windows.Forms.DataVisualization.Charting.AxisScaleView">
+﻿<Type Name="AxisScaleView" FullName="System.Windows.Forms.DataVisualization.Charting.AxisScaleView">
   <TypeSignature Language="C#" Value="public class AxisScaleView" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AxisScaleView extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.AxisScaleView" />
+  <TypeSignature Language="VB.NET" Value="Public Class AxisScaleView" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AxisScaleView" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +26,8 @@
       <MemberSignature Language="C#" Value="public AxisScaleView ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.AxisScaleView.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AxisScaleView();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -39,6 +43,8 @@
       <MemberSignature Language="C#" Value="public bool IsZoomed { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsZoomed" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.AxisScaleView.IsZoomed" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsZoomed As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsZoomed { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -52,7 +58,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -69,6 +75,8 @@
       <MemberSignature Language="C#" Value="public double MinSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 MinSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.AxisScaleView.MinSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property MinSize As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double MinSize { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -98,6 +106,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType MinSizeType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType MinSizeType" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.AxisScaleView.MinSizeType" />
+      <MemberSignature Language="VB.NET" Value="Public Property MinSizeType As DateTimeIntervalType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataVisualization::Charting::DateTimeIntervalType MinSizeType { System::Windows::Forms::DataVisualization::Charting::DateTimeIntervalType get(); void set(System::Windows::Forms::DataVisualization::Charting::DateTimeIntervalType value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -124,6 +134,8 @@
       <MemberSignature Language="C#" Value="public double Position { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 Position" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.AxisScaleView.Position" />
+      <MemberSignature Language="VB.NET" Value="Public Property Position As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Position { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -152,10 +164,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Scroll">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Scrolls to a position along an axis using the specified parameters.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Scroll">
       <MemberSignature Language="C#" Value="public void Scroll (DateTime newPosition);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Scroll(valuetype System.DateTime newPosition) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.AxisScaleView.Scroll(System.DateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Scroll (newPosition As DateTime)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Scroll(DateTime newPosition);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -177,6 +200,8 @@
       <MemberSignature Language="C#" Value="public void Scroll (double newPosition);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Scroll(float64 newPosition) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.AxisScaleView.Scroll(System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Scroll (newPosition As Double)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Scroll(double newPosition);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -198,6 +223,7 @@
       <MemberSignature Language="C#" Value="public void Scroll (System.Windows.Forms.DataVisualization.Charting.ScrollType scrollType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Scroll(valuetype System.Windows.Forms.DataVisualization.Charting.ScrollType scrollType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.AxisScaleView.Scroll(System.Windows.Forms.DataVisualization.Charting.ScrollType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Scroll(System::Windows::Forms::DataVisualization::Charting::ScrollType scrollType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -219,6 +245,8 @@
       <MemberSignature Language="C#" Value="public double Size { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 Size" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.AxisScaleView.Size" />
+      <MemberSignature Language="VB.NET" Value="Public Property Size As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Size { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -251,6 +279,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType SizeType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType SizeType" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.AxisScaleView.SizeType" />
+      <MemberSignature Language="VB.NET" Value="Public Property SizeType As DateTimeIntervalType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataVisualization::Charting::DateTimeIntervalType SizeType { System::Windows::Forms::DataVisualization::Charting::DateTimeIntervalType get(); void set(System::Windows::Forms::DataVisualization::Charting::DateTimeIntervalType value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -280,6 +310,8 @@
       <MemberSignature Language="C#" Value="public double SmallScrollMinSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 SmallScrollMinSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.AxisScaleView.SmallScrollMinSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property SmallScrollMinSize As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double SmallScrollMinSize { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -306,6 +338,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType SmallScrollMinSizeType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType SmallScrollMinSizeType" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.AxisScaleView.SmallScrollMinSizeType" />
+      <MemberSignature Language="VB.NET" Value="Public Property SmallScrollMinSizeType As DateTimeIntervalType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataVisualization::Charting::DateTimeIntervalType SmallScrollMinSizeType { System::Windows::Forms::DataVisualization::Charting::DateTimeIntervalType get(); void set(System::Windows::Forms::DataVisualization::Charting::DateTimeIntervalType value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -332,6 +366,8 @@
       <MemberSignature Language="C#" Value="public double SmallScrollSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 SmallScrollSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.AxisScaleView.SmallScrollSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property SmallScrollSize As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double SmallScrollSize { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -361,6 +397,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType SmallScrollSizeType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType SmallScrollSizeType" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.AxisScaleView.SmallScrollSizeType" />
+      <MemberSignature Language="VB.NET" Value="Public Property SmallScrollSizeType As DateTimeIntervalType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataVisualization::Charting::DateTimeIntervalType SmallScrollSizeType { System::Windows::Forms::DataVisualization::Charting::DateTimeIntervalType get(); void set(System::Windows::Forms::DataVisualization::Charting::DateTimeIntervalType value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -387,6 +425,8 @@
       <MemberSignature Language="C#" Value="public double ViewMaximum { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 ViewMaximum" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.AxisScaleView.ViewMaximum" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ViewMaximum As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double ViewMaximum { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -410,6 +450,8 @@
       <MemberSignature Language="C#" Value="public double ViewMinimum { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 ViewMinimum" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.AxisScaleView.ViewMinimum" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ViewMinimum As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double ViewMinimum { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -429,10 +471,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Zoom">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets a new axis data view and/or position</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Zoom">
       <MemberSignature Language="C#" Value="public void Zoom (double viewStart, double viewEnd);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Zoom(float64 viewStart, float64 viewEnd) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.AxisScaleView.Zoom(System.Double,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Zoom (viewStart As Double, viewEnd As Double)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Zoom(double viewStart, double viewEnd);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -456,6 +509,8 @@
       <MemberSignature Language="C#" Value="public void Zoom (double viewPosition, double viewSize, System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType viewSizeType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Zoom(float64 viewPosition, float64 viewSize, valuetype System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType viewSizeType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.AxisScaleView.Zoom(System.Double,System.Double,System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Zoom (viewPosition As Double, viewSize As Double, viewSizeType As DateTimeIntervalType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Zoom(double viewPosition, double viewSize, System::Windows::Forms::DataVisualization::Charting::DateTimeIntervalType viewSizeType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -481,6 +536,8 @@
       <MemberSignature Language="C#" Value="public void Zoom (double viewPosition, double viewSize, System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType viewSizeType, bool saveState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Zoom(float64 viewPosition, float64 viewSize, valuetype System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType viewSizeType, bool saveState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.AxisScaleView.Zoom(System.Double,System.Double,System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Zoom (viewPosition As Double, viewSize As Double, viewSizeType As DateTimeIntervalType, saveState As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Zoom(double viewPosition, double viewSize, System::Windows::Forms::DataVisualization::Charting::DateTimeIntervalType viewSizeType, bool saveState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -508,6 +565,8 @@
       <MemberSignature Language="C#" Value="public bool Zoomable { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Zoomable" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.AxisScaleView.Zoomable" />
+      <MemberSignature Language="VB.NET" Value="Public Property Zoomable As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Zoomable { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -531,10 +590,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ZoomReset">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Resets the zoom operations by restoring the axis data view.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ZoomReset">
       <MemberSignature Language="C#" Value="public void ZoomReset ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ZoomReset() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.AxisScaleView.ZoomReset" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ZoomReset ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ZoomReset();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -553,6 +623,8 @@
       <MemberSignature Language="C#" Value="public void ZoomReset (int numberOfViews);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ZoomReset(int32 numberOfViews) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.AxisScaleView.ZoomReset(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ZoomReset (numberOfViews As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ZoomReset(int numberOfViews);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -577,32 +649,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Zoom">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Sets a new axis data view and/or position</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Scroll">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Scrolls to a position along an axis using the specified parameters.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ZoomReset">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Resets the zoom operations by restoring the axis data view.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

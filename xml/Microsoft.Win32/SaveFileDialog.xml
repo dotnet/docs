@@ -1,7 +1,9 @@
-<Type Name="SaveFileDialog" FullName="Microsoft.Win32.SaveFileDialog">
+﻿<Type Name="SaveFileDialog" FullName="Microsoft.Win32.SaveFileDialog">
   <TypeSignature Language="C#" Value="public sealed class SaveFileDialog : Microsoft.Win32.FileDialog" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SaveFileDialog extends Microsoft.Win32.FileDialog" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Win32.SaveFileDialog" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SaveFileDialog&#xA;Inherits FileDialog" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SaveFileDialog sealed : Microsoft::Win32::FileDialog" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +45,8 @@
       <MemberSignature Language="C#" Value="public SaveFileDialog ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.SaveFileDialog.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SaveFileDialog();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -63,6 +67,8 @@
       <MemberSignature Language="C#" Value="public bool CreatePrompt { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CreatePrompt" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Win32.SaveFileDialog.CreatePrompt" />
+      <MemberSignature Language="VB.NET" Value="Public Property CreatePrompt As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CreatePrompt { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -88,6 +94,8 @@
       <MemberSignature Language="C#" Value="public System.IO.Stream OpenFile ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.Stream OpenFile() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.SaveFileDialog.OpenFile" />
+      <MemberSignature Language="VB.NET" Value="Public Function OpenFile () As Stream" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Stream ^ OpenFile();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -122,6 +130,8 @@
       <MemberSignature Language="C#" Value="public bool OverwritePrompt { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool OverwritePrompt" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Win32.SaveFileDialog.OverwritePrompt" />
+      <MemberSignature Language="VB.NET" Value="Public Property OverwritePrompt As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool OverwritePrompt { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -147,6 +157,8 @@
       <MemberSignature Language="C#" Value="public override void Reset ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Reset() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.SaveFileDialog.Reset" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Reset ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Reset();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

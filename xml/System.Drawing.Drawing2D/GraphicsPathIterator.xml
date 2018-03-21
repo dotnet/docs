@@ -1,7 +1,9 @@
-<Type Name="GraphicsPathIterator" FullName="System.Drawing.Drawing2D.GraphicsPathIterator">
+﻿<Type Name="GraphicsPathIterator" FullName="System.Drawing.Drawing2D.GraphicsPathIterator">
   <TypeSignature Language="C#" Value="public sealed class GraphicsPathIterator : MarshalByRefObject, IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit GraphicsPathIterator extends System.MarshalByRefObject implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Drawing2D.GraphicsPathIterator" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class GraphicsPathIterator&#xA;Inherits MarshalByRefObject&#xA;Implements IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class GraphicsPathIterator sealed : MarshalByRefObject, IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +25,8 @@
       <MemberSignature Language="C#" Value="public GraphicsPathIterator (System.Drawing.Drawing2D.GraphicsPath path);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Drawing2D.GraphicsPath path) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPathIterator.#ctor(System.Drawing.Drawing2D.GraphicsPath)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (path As GraphicsPath)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; GraphicsPathIterator(System::Drawing::Drawing2D::GraphicsPath ^ path);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -41,6 +45,8 @@
       <MemberSignature Language="C#" Value="public int CopyData (ref System.Drawing.PointF[] points, ref byte[] types, int startIndex, int endIndex);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 CopyData(valuetype System.Drawing.PointF[]&amp; points, unsigned int8[]&amp; types, int32 startIndex, int32 endIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPathIterator.CopyData(System.Drawing.PointF[]@,System.Byte[]@,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CopyData (ByRef points As PointF(), ByRef types As Byte(), startIndex As Integer, endIndex As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int CopyData(cli::array &lt;System::Drawing::PointF&gt; ^ % points, cli::array &lt;System::Byte&gt; ^ % types, int startIndex, int endIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -99,6 +105,8 @@
       <MemberSignature Language="C#" Value="public int Count { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Drawing2D.GraphicsPathIterator.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -117,7 +125,12 @@
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPathIterator.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -142,6 +155,8 @@
       <MemberSignature Language="C#" Value="public int Enumerate (ref System.Drawing.PointF[] points, ref byte[] types);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Enumerate(valuetype System.Drawing.PointF[]&amp; points, unsigned int8[]&amp; types) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPathIterator.Enumerate(System.Drawing.PointF[]@,System.Byte[]@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Enumerate (ByRef points As PointF(), ByRef types As Byte()) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Enumerate(cli::array &lt;System::Drawing::PointF&gt; ^ % points, cli::array &lt;System::Byte&gt; ^ % types);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -191,6 +206,8 @@
       <MemberSignature Language="C#" Value="~GraphicsPathIterator ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPathIterator.Finalize" />
+      <MemberSignature Language="VB.NET" Value="Finalize ()" />
+      <MemberSignature Language="C++ CLI" Value="!GraphicsPathIterator ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -209,6 +226,8 @@
       <MemberSignature Language="C#" Value="public bool HasCurve ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool HasCurve() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPathIterator.HasCurve" />
+      <MemberSignature Language="VB.NET" Value="Public Function HasCurve () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool HasCurve();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -254,10 +273,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="NextMarker">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Moves the iterator to the next marker in the path.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="NextMarker">
       <MemberSignature Language="C#" Value="public int NextMarker (System.Drawing.Drawing2D.GraphicsPath path);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 NextMarker(class System.Drawing.Drawing2D.GraphicsPath path) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPathIterator.NextMarker(System.Drawing.Drawing2D.GraphicsPath)" />
+      <MemberSignature Language="VB.NET" Value="Public Function NextMarker (path As GraphicsPath) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int NextMarker(System::Drawing::Drawing2D::GraphicsPath ^ path);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -312,6 +342,8 @@
       <MemberSignature Language="C#" Value="public int NextMarker (out int startIndex, out int endIndex);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 NextMarker([out] int32&amp; startIndex, [out] int32&amp; endIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPathIterator.NextMarker(System.Int32@,System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function NextMarker (ByRef startIndex As Integer, ByRef endIndex As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int NextMarker([Runtime::InteropServices::Out] int % startIndex, [Runtime::InteropServices::Out] int % endIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -366,6 +398,8 @@
       <MemberSignature Language="C#" Value="public int NextPathType (out byte pathType, out int startIndex, out int endIndex);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 NextPathType([out] unsigned int8&amp; pathType, [out] int32&amp; startIndex, [out] int32&amp; endIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPathIterator.NextPathType(System.Byte@,System.Int32@,System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function NextPathType (ByRef pathType As Byte, ByRef startIndex As Integer, ByRef endIndex As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int NextPathType([Runtime::InteropServices::Out] System::Byte % pathType, [Runtime::InteropServices::Out] int % startIndex, [Runtime::InteropServices::Out] int % endIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -415,10 +449,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="NextSubpath">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Moves the subpath to the next subpath in the specified <see cref="T:System.Drawing.Drawing2D.GraphicsPath" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="NextSubpath">
       <MemberSignature Language="C#" Value="public int NextSubpath (System.Drawing.Drawing2D.GraphicsPath path, out bool isClosed);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 NextSubpath(class System.Drawing.Drawing2D.GraphicsPath path, [out] bool&amp; isClosed) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPathIterator.NextSubpath(System.Drawing.Drawing2D.GraphicsPath,System.Boolean@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function NextSubpath (path As GraphicsPath, ByRef isClosed As Boolean) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int NextSubpath(System::Drawing::Drawing2D::GraphicsPath ^ path, [Runtime::InteropServices::Out] bool % isClosed);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -468,6 +513,8 @@
       <MemberSignature Language="C#" Value="public int NextSubpath (out int startIndex, out int endIndex, out bool isClosed);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 NextSubpath([out] int32&amp; startIndex, [out] int32&amp; endIndex, [out] bool&amp; isClosed) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPathIterator.NextSubpath(System.Int32@,System.Int32@,System.Boolean@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function NextSubpath (ByRef startIndex As Integer, ByRef endIndex As Integer, ByRef isClosed As Boolean) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int NextSubpath([Runtime::InteropServices::Out] int % startIndex, [Runtime::InteropServices::Out] int % endIndex, [Runtime::InteropServices::Out] bool % isClosed);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -519,6 +566,8 @@
       <MemberSignature Language="C#" Value="public void Rewind ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Rewind() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPathIterator.Rewind" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Rewind ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Rewind();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -544,6 +593,8 @@
       <MemberSignature Language="C#" Value="public int SubpathCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 SubpathCount" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Drawing2D.GraphicsPathIterator.SubpathCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SubpathCount As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SubpathCount { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -558,23 +609,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="NextMarker">
-      <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Moves the iterator to the next marker in the path.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="NextSubpath">
-      <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Moves the subpath to the next subpath in the specified <see cref="T:System.Drawing.Drawing2D.GraphicsPath" />.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

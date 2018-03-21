@@ -1,7 +1,9 @@
-<Type Name="MulticastNotSupportedException" FullName="System.MulticastNotSupportedException">
+﻿<Type Name="MulticastNotSupportedException" FullName="System.MulticastNotSupportedException">
   <TypeSignature Language="C#" Value="public sealed class MulticastNotSupportedException : SystemException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit MulticastNotSupportedException extends System.SystemException" />
   <TypeSignature Language="DocId" Value="T:System.MulticastNotSupportedException" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MulticastNotSupportedException&#xA;Inherits SystemException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MulticastNotSupportedException sealed : SystemException" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -42,10 +44,22 @@
     <altmember cref="T:System.MulticastDelegate" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.MulticastNotSupportedException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public MulticastNotSupportedException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.MulticastNotSupportedException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MulticastNotSupportedException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -84,6 +98,8 @@
       <MemberSignature Language="C#" Value="public MulticastNotSupportedException (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.MulticastNotSupportedException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MulticastNotSupportedException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -125,6 +141,8 @@
       <MemberSignature Language="C#" Value="public MulticastNotSupportedException (string message, Exception inner);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception inner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.MulticastNotSupportedException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, inner As Exception)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MulticastNotSupportedException(System::String ^ message, Exception ^ inner);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -165,15 +183,5 @@
         <altmember cref="T:System.Exception" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.MulticastNotSupportedException" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

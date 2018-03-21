@@ -1,7 +1,9 @@
-<Type Name="IndentedTextWriter" FullName="System.CodeDom.Compiler.IndentedTextWriter">
+﻿<Type Name="IndentedTextWriter" FullName="System.CodeDom.Compiler.IndentedTextWriter">
   <TypeSignature Language="C#" Value="public class IndentedTextWriter : System.IO.TextWriter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit IndentedTextWriter extends System.IO.TextWriter" />
   <TypeSignature Language="DocId" Value="T:System.CodeDom.Compiler.IndentedTextWriter" />
+  <TypeSignature Language="VB.NET" Value="Public Class IndentedTextWriter&#xA;Inherits TextWriter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class IndentedTextWriter : System::IO::TextWriter" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -47,10 +49,22 @@
     <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for full trust for inheritors. This class cannot be inherited by partially trusted code.</permission>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.Compiler.IndentedTextWriter" /> class using the specified text writer and default tab string.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public IndentedTextWriter (System.IO.TextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.TextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.#ctor(System.IO.TextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (writer As TextWriter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IndentedTextWriter(System::IO::TextWriter ^ writer);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -80,6 +94,8 @@
       <MemberSignature Language="C#" Value="public IndentedTextWriter (System.IO.TextWriter writer, string tabString);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.TextWriter writer, string tabString) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.#ctor(System.IO.TextWriter,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (writer As TextWriter, tabString As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IndentedTextWriter(System::IO::TextWriter ^ writer, System::String ^ tabString);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -122,6 +138,8 @@
       <MemberSignature Language="C#" Value="public override void Close ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Close() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.Close" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Close ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Close();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -149,6 +167,8 @@
       <MemberSignature Language="C#" Value="public const string DefaultTabString;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string DefaultTabString" />
       <MemberSignature Language="DocId" Value="F:System.CodeDom.Compiler.IndentedTextWriter.DefaultTabString" />
+      <MemberSignature Language="VB.NET" Value="Public Const DefaultTabString As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ DefaultTabString;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -183,6 +203,8 @@
       <MemberSignature Language="C#" Value="public override System.Text.Encoding Encoding { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Text.Encoding Encoding" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.IndentedTextWriter.Encoding" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Encoding As Encoding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Text::Encoding ^ Encoding { System::Text::Encoding ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -210,6 +232,8 @@
       <MemberSignature Language="C#" Value="public override void Flush ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Flush() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.Flush" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Flush ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Flush();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -244,6 +268,8 @@
       <MemberSignature Language="C#" Value="public int Indent { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Indent" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.IndentedTextWriter.Indent" />
+      <MemberSignature Language="VB.NET" Value="Public Property Indent As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Indent { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -282,6 +308,8 @@
       <MemberSignature Language="C#" Value="public System.IO.TextWriter InnerWriter { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IO.TextWriter InnerWriter" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.IndentedTextWriter.InnerWriter" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InnerWriter As TextWriter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::TextWriter ^ InnerWriter { System::IO::TextWriter ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -309,6 +337,8 @@
       <MemberSignature Language="C#" Value="public override string NewLine { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string NewLine" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.IndentedTextWriter.NewLine" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property NewLine As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ NewLine { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -336,6 +366,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OutputTabs ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OutputTabs() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.OutputTabs" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OutputTabs ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OutputTabs();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -359,10 +391,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Write">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes the specified string to the text stream.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Write">
       <MemberSignature Language="C#" Value="public override void Write (bool value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(bool value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.Write(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (value As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -393,6 +437,8 @@
       <MemberSignature Language="C#" Value="public override void Write (char value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(char value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.Write(System.Char)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (value As Char)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(char value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -423,6 +469,8 @@
       <MemberSignature Language="C#" Value="public override void Write (char[] buffer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(char[] buffer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.Write(System.Char[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (buffer As Char())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(cli::array &lt;char&gt; ^ buffer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -453,6 +501,8 @@
       <MemberSignature Language="C#" Value="public override void Write (double value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(float64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.Write(System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (value As Double)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(double value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -483,6 +533,8 @@
       <MemberSignature Language="C#" Value="public override void Write (int value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(int32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.Write(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (value As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(int value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -513,6 +565,8 @@
       <MemberSignature Language="C#" Value="public override void Write (long value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(int64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.Write(System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (value As Long)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(long value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -543,6 +597,8 @@
       <MemberSignature Language="C#" Value="public override void Write (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.Write(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (value As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -573,6 +629,8 @@
       <MemberSignature Language="C#" Value="public override void Write (float value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(float32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.Write(System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (value As Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(float value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -603,6 +661,8 @@
       <MemberSignature Language="C#" Value="public override void Write (string s);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(string s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.Write(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (s As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::String ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -633,6 +693,8 @@
       <MemberSignature Language="C#" Value="public override void Write (string format, object arg0);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(string format, object arg0) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.Write(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (format As String, arg0 As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::String ^ format, System::Object ^ arg0);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -665,6 +727,8 @@
       <MemberSignature Language="C#" Value="public override void Write (string format, params object[] arg);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(string format, object[] arg) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.Write(System.String,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (format As String, ParamArray arg As Object())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::String ^ format, ... cli::array &lt;System::Object ^&gt; ^ arg);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -703,6 +767,8 @@
       <MemberSignature Language="C#" Value="public override void Write (char[] buffer, int index, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(char[] buffer, int32 index, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.Write(System.Char[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (buffer As Char(), index As Integer, count As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(cli::array &lt;char&gt; ^ buffer, int index, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -737,6 +803,8 @@
       <MemberSignature Language="C#" Value="public override void Write (string format, object arg0, object arg1);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(string format, object arg0, object arg1) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.Write(System.String,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (format As String, arg0 As Object, arg1 As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::String ^ format, System::Object ^ arg0, System::Object ^ arg1);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -767,10 +835,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteLine">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes the specified string, followed by a line terminator, to the text stream.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="WriteLine">
       <MemberSignature Language="C#" Value="public override void WriteLine ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteLine() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.WriteLine" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -798,6 +878,8 @@
       <MemberSignature Language="C#" Value="public override void WriteLine (bool value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteLine(bool value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.WriteLine(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (value As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -828,6 +910,8 @@
       <MemberSignature Language="C#" Value="public override void WriteLine (char value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteLine(char value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.WriteLine(System.Char)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (value As Char)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(char value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -858,6 +942,8 @@
       <MemberSignature Language="C#" Value="public override void WriteLine (char[] buffer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteLine(char[] buffer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.WriteLine(System.Char[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (buffer As Char())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(cli::array &lt;char&gt; ^ buffer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -888,6 +974,8 @@
       <MemberSignature Language="C#" Value="public override void WriteLine (double value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteLine(float64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.WriteLine(System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (value As Double)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(double value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -918,6 +1006,8 @@
       <MemberSignature Language="C#" Value="public override void WriteLine (int value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteLine(int32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.WriteLine(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (value As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(int value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -948,6 +1038,8 @@
       <MemberSignature Language="C#" Value="public override void WriteLine (long value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteLine(int64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.WriteLine(System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (value As Long)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(long value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -978,6 +1070,8 @@
       <MemberSignature Language="C#" Value="public override void WriteLine (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteLine(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.WriteLine(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (value As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1008,6 +1102,8 @@
       <MemberSignature Language="C#" Value="public override void WriteLine (float value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteLine(float32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.WriteLine(System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (value As Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(float value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1038,6 +1134,8 @@
       <MemberSignature Language="C#" Value="public override void WriteLine (string s);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteLine(string s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.WriteLine(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (s As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(System::String ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1068,6 +1166,8 @@
       <MemberSignature Language="C#" Value="public override void WriteLine (uint value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteLine(unsigned int32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.WriteLine(System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (value As UInteger)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(System::UInt32 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1103,6 +1203,8 @@
       <MemberSignature Language="C#" Value="public override void WriteLine (string format, object arg0);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteLine(string format, object arg0) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.WriteLine(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (format As String, arg0 As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(System::String ^ format, System::Object ^ arg0);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1135,6 +1237,8 @@
       <MemberSignature Language="C#" Value="public override void WriteLine (string format, params object[] arg);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteLine(string format, object[] arg) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.WriteLine(System.String,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (format As String, ParamArray arg As Object())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(System::String ^ format, ... cli::array &lt;System::Object ^&gt; ^ arg);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1173,6 +1277,8 @@
       <MemberSignature Language="C#" Value="public override void WriteLine (char[] buffer, int index, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteLine(char[] buffer, int32 index, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.WriteLine(System.Char[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (buffer As Char(), index As Integer, count As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(cli::array &lt;char&gt; ^ buffer, int index, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1207,6 +1313,8 @@
       <MemberSignature Language="C#" Value="public override void WriteLine (string format, object arg0, object arg1);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteLine(string format, object arg0, object arg1) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.WriteLine(System.String,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (format As String, arg0 As Object, arg1 As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(System::String ^ format, System::Object ^ arg0, System::Object ^ arg1);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1241,6 +1349,8 @@
       <MemberSignature Language="C#" Value="public void WriteLineNoTabs (string s);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteLineNoTabs(string s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.WriteLineNoTabs(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteLineNoTabs (s As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteLineNoTabs(System::String ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1278,35 +1388,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Write">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes the specified string to the text stream.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="WriteLine">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes the specified string, followed by a line terminator, to the text stream.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.Compiler.IndentedTextWriter" /> class using the specified text writer and default tab string.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

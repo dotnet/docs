@@ -1,7 +1,9 @@
-<Type Name="AddInToken" FullName="System.AddIn.Hosting.AddInToken">
+﻿<Type Name="AddInToken" FullName="System.AddIn.Hosting.AddInToken">
   <TypeSignature Language="C#" Value="public sealed class AddInToken : System.Collections.Generic.IEnumerable&lt;System.AddIn.Hosting.QualificationDataItem&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit AddInToken extends System.Object implements class System.Collections.Generic.IEnumerable`1&lt;valuetype System.AddIn.Hosting.QualificationDataItem&gt;, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.AddIn.Hosting.AddInToken" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AddInToken&#xA;Implements IEnumerable(Of QualificationDataItem)" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AddInToken sealed : System::Collections::Generic::IEnumerable&lt;System::AddIn::Hosting::QualificationDataItem&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.AddIn</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,10 +55,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName="Activate&lt;T&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Activates an add-in.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Activate&lt;T&gt;">
       <MemberSignature Language="C#" Value="public T Activate&lt;T&gt; (System.AddIn.Hosting.AddInEnvironment environment);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T Activate&lt;T&gt;(class System.AddIn.Hosting.AddInEnvironment environment) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Hosting.AddInToken.Activate``1(System.AddIn.Hosting.AddInEnvironment)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Activate(Of T) (environment As AddInEnvironment) As T" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; T Activate(System::AddIn::Hosting::AddInEnvironment ^ environment);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -98,6 +111,8 @@
       <MemberSignature Language="C#" Value="public T Activate&lt;T&gt; (System.AddIn.Hosting.AddInSecurityLevel trustLevel);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T Activate&lt;T&gt;(valuetype System.AddIn.Hosting.AddInSecurityLevel trustLevel) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Hosting.AddInToken.Activate``1(System.AddIn.Hosting.AddInSecurityLevel)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Activate(Of T) (trustLevel As AddInSecurityLevel) As T" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; T Activate(System::AddIn::Hosting::AddInSecurityLevel trustLevel);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -141,6 +156,8 @@
       <MemberSignature Language="C#" Value="public T Activate&lt;T&gt; (AppDomain target);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T Activate&lt;T&gt;(class System.AppDomain target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Hosting.AddInToken.Activate``1(System.AppDomain)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Activate(Of T) (target As AppDomain) As T" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; T Activate(AppDomain ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -183,6 +200,8 @@
       <MemberSignature Language="C#" Value="public T Activate&lt;T&gt; (System.Security.PermissionSet permissions);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T Activate&lt;T&gt;(class System.Security.PermissionSet permissions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Hosting.AddInToken.Activate``1(System.Security.PermissionSet)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Activate(Of T) (permissions As PermissionSet) As T" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; T Activate(System::Security::PermissionSet ^ permissions);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -218,6 +237,8 @@
       <MemberSignature Language="C#" Value="public T Activate&lt;T&gt; (System.AddIn.Hosting.AddInProcess process, System.AddIn.Hosting.AddInSecurityLevel level);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T Activate&lt;T&gt;(class System.AddIn.Hosting.AddInProcess process, valuetype System.AddIn.Hosting.AddInSecurityLevel level) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Hosting.AddInToken.Activate``1(System.AddIn.Hosting.AddInProcess,System.AddIn.Hosting.AddInSecurityLevel)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Activate(Of T) (process As AddInProcess, level As AddInSecurityLevel) As T" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; T Activate(System::AddIn::Hosting::AddInProcess ^ process, System::AddIn::Hosting::AddInSecurityLevel level);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -267,6 +288,7 @@
       <MemberSignature Language="C#" Value="public T Activate&lt;T&gt; (System.AddIn.Hosting.AddInProcess process, System.Security.PermissionSet permissionSet);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T Activate&lt;T&gt;(class System.AddIn.Hosting.AddInProcess process, class System.Security.PermissionSet permissionSet) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Hosting.AddInToken.Activate``1(System.AddIn.Hosting.AddInProcess,System.Security.PermissionSet)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; T Activate(System::AddIn::Hosting::AddInProcess ^ process, System::Security::PermissionSet ^ permissionSet);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -308,6 +330,8 @@
       <MemberSignature Language="C#" Value="public T Activate&lt;T&gt; (System.AddIn.Hosting.AddInSecurityLevel trustLevel, string appDomainName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T Activate&lt;T&gt;(valuetype System.AddIn.Hosting.AddInSecurityLevel trustLevel, string appDomainName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Hosting.AddInToken.Activate``1(System.AddIn.Hosting.AddInSecurityLevel,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Activate(Of T) (trustLevel As AddInSecurityLevel, appDomainName As String) As T" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; T Activate(System::AddIn::Hosting::AddInSecurityLevel trustLevel, System::String ^ appDomainName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -345,6 +369,8 @@
       <MemberSignature Language="C#" Value="public string AddInFullName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string AddInFullName" />
       <MemberSignature Language="DocId" Value="P:System.AddIn.Hosting.AddInToken.AddInFullName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AddInFullName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AddInFullName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -378,6 +404,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.AssemblyName AssemblyName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Reflection.AssemblyName AssemblyName" />
       <MemberSignature Language="DocId" Value="P:System.AddIn.Hosting.AddInToken.AssemblyName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AssemblyName As AssemblyName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::AssemblyName ^ AssemblyName { System::Reflection::AssemblyName ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -411,6 +439,8 @@
       <MemberSignature Language="C#" Value="public string Description { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Description" />
       <MemberSignature Language="DocId" Value="P:System.AddIn.Hosting.AddInToken.Description" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Description As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Description { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -444,6 +474,8 @@
       <MemberSignature Language="C#" Value="public static bool EnableDirectConnect { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property bool EnableDirectConnect" />
       <MemberSignature Language="DocId" Value="P:System.AddIn.Hosting.AddInToken.EnableDirectConnect" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property EnableDirectConnect As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool EnableDirectConnect { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -480,6 +512,8 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Hosting.AddInToken.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -503,7 +537,12 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerator&lt;System.AddIn.Hosting.QualificationDataItem&gt; GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerator`1&lt;valuetype System.AddIn.Hosting.QualificationDataItem&gt; GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Hosting.AddInToken.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator(Of QualificationDataItem)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IEnumerator&lt;System::AddIn::Hosting::QualificationDataItem&gt; ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -544,6 +583,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Hosting.AddInToken.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -563,6 +604,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.AddIn.Hosting.AddInToken.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -596,6 +639,8 @@
       <MemberSignature Language="C#" Value="public string Publisher { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Publisher" />
       <MemberSignature Language="DocId" Value="P:System.AddIn.Hosting.AddInToken.Publisher" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Publisher As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Publisher { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -629,6 +674,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;System.AddIn.Hosting.AddInSegmentType,System.Collections.Generic.IDictionary&lt;string,string&gt;&gt; QualificationData { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;valuetype System.AddIn.Hosting.AddInSegmentType, class System.Collections.Generic.IDictionary`2&lt;string, string&gt;&gt; QualificationData" />
       <MemberSignature Language="DocId" Value="P:System.AddIn.Hosting.AddInToken.QualificationData" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property QualificationData As IDictionary(Of AddInSegmentType, IDictionary(Of String, String))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::AddIn::Hosting::AddInSegmentType, System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^&gt; ^ QualificationData { System::Collections::Generic::IDictionary&lt;System::AddIn::Hosting::AddInSegmentType, System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -671,7 +718,12 @@
       <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Hosting.AddInToken.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator Implements IEnumerable.GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IEnumerator ^ System.Collections.IEnumerable.GetEnumerator() = System::Collections::IEnumerable::GetEnumerator;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -704,6 +756,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Hosting.AddInToken.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -723,6 +777,8 @@
       <MemberSignature Language="C#" Value="public string Version { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Version" />
       <MemberSignature Language="DocId" Value="P:System.AddIn.Hosting.AddInToken.Version" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Version As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Version { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -752,14 +808,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Activate&lt;T&gt;">
-      <AssemblyInfo>
-        <AssemblyName>System.AddIn</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Activates an add-in.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

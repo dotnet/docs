@@ -1,7 +1,9 @@
-<Type Name="GridViewEditEventArgs" FullName="System.Web.UI.WebControls.GridViewEditEventArgs">
+﻿<Type Name="GridViewEditEventArgs" FullName="System.Web.UI.WebControls.GridViewEditEventArgs">
   <TypeSignature Language="C#" Value="public class GridViewEditEventArgs : System.ComponentModel.CancelEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GridViewEditEventArgs extends System.ComponentModel.CancelEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.GridViewEditEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class GridViewEditEventArgs&#xA;Inherits CancelEventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class GridViewEditEventArgs : System::ComponentModel::CancelEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +45,8 @@
       <MemberSignature Language="C#" Value="public GridViewEditEventArgs (int newEditIndex);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 newEditIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.GridViewEditEventArgs.#ctor(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (newEditIndex As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; GridViewEditEventArgs(int newEditIndex);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -78,6 +82,8 @@
       <MemberSignature Language="C#" Value="public int NewEditIndex { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 NewEditIndex" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridViewEditEventArgs.NewEditIndex" />
+      <MemberSignature Language="VB.NET" Value="Public Property NewEditIndex As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int NewEditIndex { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

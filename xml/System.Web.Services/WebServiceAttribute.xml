@@ -1,7 +1,9 @@
-<Type Name="WebServiceAttribute" FullName="System.Web.Services.WebServiceAttribute">
+﻿<Type Name="WebServiceAttribute" FullName="System.Web.Services.WebServiceAttribute">
   <TypeSignature Language="C#" Value="public sealed class WebServiceAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WebServiceAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Web.Services.WebServiceAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WebServiceAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WebServiceAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -51,6 +53,8 @@
       <MemberSignature Language="C#" Value="public WebServiceAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.WebServiceAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebServiceAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -67,6 +71,8 @@
       <MemberSignature Language="C#" Value="public const string DefaultNamespace;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string DefaultNamespace" />
       <MemberSignature Language="DocId" Value="F:System.Web.Services.WebServiceAttribute.DefaultNamespace" />
+      <MemberSignature Language="VB.NET" Value="Public Const DefaultNamespace As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ DefaultNamespace;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -85,6 +91,8 @@
       <MemberSignature Language="C#" Value="public string Description { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Description" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.WebServiceAttribute.Description" />
+      <MemberSignature Language="VB.NET" Value="Public Property Description As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Description { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -119,6 +127,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.WebServiceAttribute.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -159,6 +169,8 @@
       <MemberSignature Language="C#" Value="public string Namespace { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Namespace" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.WebServiceAttribute.Namespace" />
+      <MemberSignature Language="VB.NET" Value="Public Property Namespace As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Namespace { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

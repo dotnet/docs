@@ -1,7 +1,9 @@
-<Type Name="UserPreferenceCategory" FullName="Microsoft.Win32.UserPreferenceCategory">
+﻿<Type Name="UserPreferenceCategory" FullName="Microsoft.Win32.UserPreferenceCategory">
   <TypeSignature Language="C#" Value="public enum UserPreferenceCategory" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed UserPreferenceCategory extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Win32.UserPreferenceCategory" />
+  <TypeSignature Language="VB.NET" Value="Public Enum UserPreferenceCategory" />
+  <TypeSignature Language="C++ CLI" Value="public enum class UserPreferenceCategory" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +36,8 @@
       <MemberSignature Language="C#" Value="Accessibility" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Win32.UserPreferenceCategory Accessibility = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Win32.UserPreferenceCategory.Accessibility" />
+      <MemberSignature Language="VB.NET" Value="Accessibility" />
+      <MemberSignature Language="C++ CLI" Value="Accessibility" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -42,6 +46,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Win32.UserPreferenceCategory</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Indicates user preferences associated with accessibility features of the system for users with disabilities.</summary>
       </Docs>
@@ -50,6 +55,8 @@
       <MemberSignature Language="C#" Value="Color" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Win32.UserPreferenceCategory Color = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Win32.UserPreferenceCategory.Color" />
+      <MemberSignature Language="VB.NET" Value="Color" />
+      <MemberSignature Language="C++ CLI" Value="Color" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -58,6 +65,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Win32.UserPreferenceCategory</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Indicates user preferences associated with system colors. This category includes such as the default color of windows or menus.</summary>
       </Docs>
@@ -66,6 +74,8 @@
       <MemberSignature Language="C#" Value="Desktop" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Win32.UserPreferenceCategory Desktop = int32(3)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Win32.UserPreferenceCategory.Desktop" />
+      <MemberSignature Language="VB.NET" Value="Desktop" />
+      <MemberSignature Language="C++ CLI" Value="Desktop" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -74,6 +84,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Win32.UserPreferenceCategory</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Indicates user preferences associated with the system desktop. This category includes the background image or background image layout of the desktop.</summary>
       </Docs>
@@ -82,6 +93,8 @@
       <MemberSignature Language="C#" Value="General" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Win32.UserPreferenceCategory General = int32(4)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Win32.UserPreferenceCategory.General" />
+      <MemberSignature Language="VB.NET" Value="General" />
+      <MemberSignature Language="C++ CLI" Value="General" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -90,6 +103,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Win32.UserPreferenceCategory</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Indicates user preferences that are not associated with any other category.</summary>
       </Docs>
@@ -98,6 +112,8 @@
       <MemberSignature Language="C#" Value="Icon" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Win32.UserPreferenceCategory Icon = int32(5)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Win32.UserPreferenceCategory.Icon" />
+      <MemberSignature Language="VB.NET" Value="Icon" />
+      <MemberSignature Language="C++ CLI" Value="Icon" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -106,6 +122,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Win32.UserPreferenceCategory</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>Indicates user preferences for icon settings, including icon height and spacing.</summary>
       </Docs>
@@ -114,6 +131,8 @@
       <MemberSignature Language="C#" Value="Keyboard" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Win32.UserPreferenceCategory Keyboard = int32(6)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Win32.UserPreferenceCategory.Keyboard" />
+      <MemberSignature Language="VB.NET" Value="Keyboard" />
+      <MemberSignature Language="C++ CLI" Value="Keyboard" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -122,6 +141,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Win32.UserPreferenceCategory</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>Indicates user preferences for keyboard settings, such as the key down repeat rate and delay.</summary>
       </Docs>
@@ -130,6 +150,8 @@
       <MemberSignature Language="C#" Value="Locale" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Win32.UserPreferenceCategory Locale = int32(13)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Win32.UserPreferenceCategory.Locale" />
+      <MemberSignature Language="VB.NET" Value="Locale" />
+      <MemberSignature Language="C++ CLI" Value="Locale" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -138,6 +160,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Win32.UserPreferenceCategory</ReturnType>
       </ReturnValue>
+      <MemberValue>13</MemberValue>
       <Docs>
         <summary>Indicates changes in user preferences for regional settings, such as the character encoding and culture strings.</summary>
       </Docs>
@@ -146,6 +169,8 @@
       <MemberSignature Language="C#" Value="Menu" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Win32.UserPreferenceCategory Menu = int32(7)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Win32.UserPreferenceCategory.Menu" />
+      <MemberSignature Language="VB.NET" Value="Menu" />
+      <MemberSignature Language="C++ CLI" Value="Menu" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -154,6 +179,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Win32.UserPreferenceCategory</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>Indicates user preferences for menu settings, such as menu delays and text alignment.</summary>
       </Docs>
@@ -162,6 +188,8 @@
       <MemberSignature Language="C#" Value="Mouse" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Win32.UserPreferenceCategory Mouse = int32(8)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Win32.UserPreferenceCategory.Mouse" />
+      <MemberSignature Language="VB.NET" Value="Mouse" />
+      <MemberSignature Language="C++ CLI" Value="Mouse" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -170,6 +198,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Win32.UserPreferenceCategory</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>Indicates user preferences for mouse settings, such as double-click time and mouse sensitivity.</summary>
       </Docs>
@@ -178,6 +207,8 @@
       <MemberSignature Language="C#" Value="Policy" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Win32.UserPreferenceCategory Policy = int32(9)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Win32.UserPreferenceCategory.Policy" />
+      <MemberSignature Language="VB.NET" Value="Policy" />
+      <MemberSignature Language="C++ CLI" Value="Policy" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -186,6 +217,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Win32.UserPreferenceCategory</ReturnType>
       </ReturnValue>
+      <MemberValue>9</MemberValue>
       <Docs>
         <summary>Indicates user preferences for policy settings, such as user rights and access levels.</summary>
       </Docs>
@@ -194,6 +226,8 @@
       <MemberSignature Language="C#" Value="Power" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Win32.UserPreferenceCategory Power = int32(10)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Win32.UserPreferenceCategory.Power" />
+      <MemberSignature Language="VB.NET" Value="Power" />
+      <MemberSignature Language="C++ CLI" Value="Power" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -202,6 +236,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Win32.UserPreferenceCategory</ReturnType>
       </ReturnValue>
+      <MemberValue>10</MemberValue>
       <Docs>
         <summary>Indicates the user preferences for system power settings. This category includes power feature settings, such as the idle time before the system automatically enters low power mode.</summary>
       </Docs>
@@ -210,6 +245,8 @@
       <MemberSignature Language="C#" Value="Screensaver" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Win32.UserPreferenceCategory Screensaver = int32(11)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Win32.UserPreferenceCategory.Screensaver" />
+      <MemberSignature Language="VB.NET" Value="Screensaver" />
+      <MemberSignature Language="C++ CLI" Value="Screensaver" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -218,6 +255,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Win32.UserPreferenceCategory</ReturnType>
       </ReturnValue>
+      <MemberValue>11</MemberValue>
       <Docs>
         <summary>Indicates user preferences associated with the screensaver.</summary>
       </Docs>
@@ -226,6 +264,8 @@
       <MemberSignature Language="C#" Value="VisualStyle" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Win32.UserPreferenceCategory VisualStyle = int32(14)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Win32.UserPreferenceCategory.VisualStyle" />
+      <MemberSignature Language="VB.NET" Value="VisualStyle" />
+      <MemberSignature Language="C++ CLI" Value="VisualStyle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -234,6 +274,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Win32.UserPreferenceCategory</ReturnType>
       </ReturnValue>
+      <MemberValue>14</MemberValue>
       <Docs>
         <summary>Indicates user preferences associated with visual styles, such as enabling or disabling visual styles and switching from one visual style to another.</summary>
       </Docs>
@@ -242,6 +283,8 @@
       <MemberSignature Language="C#" Value="Window" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Win32.UserPreferenceCategory Window = int32(12)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Win32.UserPreferenceCategory.Window" />
+      <MemberSignature Language="VB.NET" Value="Window" />
+      <MemberSignature Language="C++ CLI" Value="Window" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -250,6 +293,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Win32.UserPreferenceCategory</ReturnType>
       </ReturnValue>
+      <MemberValue>12</MemberValue>
       <Docs>
         <summary>Indicates user preferences associated with the dimensions and characteristics of windows on the system.</summary>
       </Docs>

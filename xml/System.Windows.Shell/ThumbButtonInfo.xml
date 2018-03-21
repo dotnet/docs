@@ -1,7 +1,9 @@
-<Type Name="ThumbButtonInfo" FullName="System.Windows.Shell.ThumbButtonInfo">
+﻿<Type Name="ThumbButtonInfo" FullName="System.Windows.Shell.ThumbButtonInfo">
   <TypeSignature Language="C#" Value="public sealed class ThumbButtonInfo : System.Windows.Freezable, System.Windows.Input.ICommandSource" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ThumbButtonInfo extends System.Windows.Freezable implements class System.Windows.Input.ICommandSource" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Shell.ThumbButtonInfo" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ThumbButtonInfo&#xA;Inherits Freezable&#xA;Implements ICommandSource" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ThumbButtonInfo sealed : System::Windows::Freezable, System::Windows::Input::ICommandSource" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +49,8 @@ Windows Taskbar Thumb Buttons
       <MemberSignature Language="C#" Value="public ThumbButtonInfo ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Shell.ThumbButtonInfo.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ThumbButtonInfo();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -62,6 +66,8 @@ Windows Taskbar Thumb Buttons
       <MemberSignature Language="C#" Value="public event EventHandler Click;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Click" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Shell.ThumbButtonInfo.Click" />
+      <MemberSignature Language="VB.NET" Value="Public Event Click As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Click;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -87,6 +93,8 @@ Windows Taskbar Thumb Buttons
       <MemberSignature Language="C#" Value="public System.Windows.Input.ICommand Command { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Input.ICommand Command" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Shell.ThumbButtonInfo.Command" />
+      <MemberSignature Language="VB.NET" Value="Public Property Command As ICommand" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::ICommand ^ Command { System::Windows::Input::ICommand ^ get(); void set(System::Windows::Input::ICommand ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -124,6 +132,8 @@ Windows Taskbar Thumb Buttons
       <MemberSignature Language="C#" Value="public object CommandParameter { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object CommandParameter" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Shell.ThumbButtonInfo.CommandParameter" />
+      <MemberSignature Language="VB.NET" Value="Public Property CommandParameter As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ CommandParameter { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -143,6 +153,8 @@ Windows Taskbar Thumb Buttons
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty CommandParameterProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty CommandParameterProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Shell.ThumbButtonInfo.CommandParameterProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CommandParameterProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CommandParameterProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -160,6 +172,8 @@ Windows Taskbar Thumb Buttons
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty CommandProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty CommandProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Shell.ThumbButtonInfo.CommandProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CommandProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CommandProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -177,6 +191,8 @@ Windows Taskbar Thumb Buttons
       <MemberSignature Language="C#" Value="public System.Windows.IInputElement CommandTarget { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.IInputElement CommandTarget" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Shell.ThumbButtonInfo.CommandTarget" />
+      <MemberSignature Language="VB.NET" Value="Public Property CommandTarget As IInputElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::IInputElement ^ CommandTarget { System::Windows::IInputElement ^ get(); void set(System::Windows::IInputElement ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -203,6 +219,8 @@ Windows Taskbar Thumb Buttons
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty CommandTargetProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty CommandTargetProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Shell.ThumbButtonInfo.CommandTargetProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CommandTargetProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CommandTargetProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -220,6 +238,8 @@ Windows Taskbar Thumb Buttons
       <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Shell.ThumbButtonInfo.CreateInstanceCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -239,6 +259,8 @@ Windows Taskbar Thumb Buttons
       <MemberSignature Language="C#" Value="public string Description { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Description" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Shell.ThumbButtonInfo.Description" />
+      <MemberSignature Language="VB.NET" Value="Public Property Description As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Description { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -272,6 +294,8 @@ Windows Taskbar Thumb Buttons
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty DescriptionProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty DescriptionProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Shell.ThumbButtonInfo.DescriptionProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DescriptionProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ DescriptionProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -289,6 +313,8 @@ Windows Taskbar Thumb Buttons
       <MemberSignature Language="C#" Value="public bool DismissWhenClicked { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool DismissWhenClicked" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Shell.ThumbButtonInfo.DismissWhenClicked" />
+      <MemberSignature Language="VB.NET" Value="Public Property DismissWhenClicked As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DismissWhenClicked { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -322,6 +348,8 @@ Windows Taskbar Thumb Buttons
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty DismissWhenClickedProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty DismissWhenClickedProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Shell.ThumbButtonInfo.DismissWhenClickedProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DismissWhenClickedProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ DismissWhenClickedProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -339,6 +367,8 @@ Windows Taskbar Thumb Buttons
       <MemberSignature Language="C#" Value="public System.Windows.Media.ImageSource ImageSource { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.ImageSource ImageSource" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Shell.ThumbButtonInfo.ImageSource" />
+      <MemberSignature Language="VB.NET" Value="Public Property ImageSource As ImageSource" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::ImageSource ^ ImageSource { System::Windows::Media::ImageSource ^ get(); void set(System::Windows::Media::ImageSource ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -374,6 +404,8 @@ Windows Taskbar Thumb Buttons
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ImageSourceProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ImageSourceProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Shell.ThumbButtonInfo.ImageSourceProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ImageSourceProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ImageSourceProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -391,6 +423,8 @@ Windows Taskbar Thumb Buttons
       <MemberSignature Language="C#" Value="public bool IsBackgroundVisible { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsBackgroundVisible" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Shell.ThumbButtonInfo.IsBackgroundVisible" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsBackgroundVisible As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsBackgroundVisible { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -417,6 +451,8 @@ Windows Taskbar Thumb Buttons
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty IsBackgroundVisibleProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty IsBackgroundVisibleProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Shell.ThumbButtonInfo.IsBackgroundVisibleProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsBackgroundVisibleProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsBackgroundVisibleProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -434,6 +470,8 @@ Windows Taskbar Thumb Buttons
       <MemberSignature Language="C#" Value="public bool IsEnabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsEnabled" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Shell.ThumbButtonInfo.IsEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsEnabled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsEnabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -461,6 +499,8 @@ Windows Taskbar Thumb Buttons
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty IsEnabledProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty IsEnabledProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Shell.ThumbButtonInfo.IsEnabledProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsEnabledProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsEnabledProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -478,6 +518,8 @@ Windows Taskbar Thumb Buttons
       <MemberSignature Language="C#" Value="public bool IsInteractive { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsInteractive" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Shell.ThumbButtonInfo.IsInteractive" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsInteractive As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsInteractive { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -507,6 +549,8 @@ Windows Taskbar Thumb Buttons
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty IsInteractiveProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty IsInteractiveProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Shell.ThumbButtonInfo.IsInteractiveProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsInteractiveProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsInteractiveProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -524,6 +568,8 @@ Windows Taskbar Thumb Buttons
       <MemberSignature Language="C#" Value="public System.Windows.Visibility Visibility { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Visibility Visibility" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Shell.ThumbButtonInfo.Visibility" />
+      <MemberSignature Language="VB.NET" Value="Public Property Visibility As Visibility" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Visibility Visibility { System::Windows::Visibility get(); void set(System::Windows::Visibility value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -550,6 +596,8 @@ Windows Taskbar Thumb Buttons
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty VisibilityProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty VisibilityProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Shell.ThumbButtonInfo.VisibilityProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly VisibilityProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ VisibilityProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

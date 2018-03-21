@@ -1,7 +1,9 @@
-<Type Name="TraceMode" FullName="System.Web.TraceMode">
+﻿<Type Name="TraceMode" FullName="System.Web.TraceMode">
   <TypeSignature Language="C#" Value="public enum TraceMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TraceMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.TraceMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum TraceMode" />
+  <TypeSignature Language="C++ CLI" Value="public enum class TraceMode" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -18,6 +20,8 @@
       <MemberSignature Language="C#" Value="Default" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.TraceMode Default = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.TraceMode.Default" />
+      <MemberSignature Language="VB.NET" Value="Default" />
+      <MemberSignature Language="C++ CLI" Value="Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -26,6 +30,7 @@
       <ReturnValue>
         <ReturnType>System.Web.TraceMode</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Specifies the default value of the <see cref="P:System.Web.TraceContext.TraceMode" /> enumeration, which is <see cref="F:System.Web.TraceMode.SortByTime" />.</summary>
       </Docs>
@@ -34,6 +39,8 @@
       <MemberSignature Language="C#" Value="SortByCategory" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.TraceMode SortByCategory = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.TraceMode.SortByCategory" />
+      <MemberSignature Language="VB.NET" Value="SortByCategory" />
+      <MemberSignature Language="C++ CLI" Value="SortByCategory" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -42,6 +49,7 @@
       <ReturnValue>
         <ReturnType>System.Web.TraceMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Emit trace messages alphabetically by category.</summary>
       </Docs>
@@ -50,6 +58,8 @@
       <MemberSignature Language="C#" Value="SortByTime" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.TraceMode SortByTime = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.TraceMode.SortByTime" />
+      <MemberSignature Language="VB.NET" Value="SortByTime" />
+      <MemberSignature Language="C++ CLI" Value="SortByTime" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -58,6 +68,7 @@
       <ReturnValue>
         <ReturnType>System.Web.TraceMode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Emit trace messages in the order they were processed.</summary>
       </Docs>

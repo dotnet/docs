@@ -1,7 +1,9 @@
-<Type Name="FormBorderStyle" FullName="System.Windows.Forms.FormBorderStyle">
+﻿<Type Name="FormBorderStyle" FullName="System.Windows.Forms.FormBorderStyle">
   <TypeSignature Language="C#" Value="public enum FormBorderStyle" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FormBorderStyle extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.FormBorderStyle" />
+  <TypeSignature Language="VB.NET" Value="Public Enum FormBorderStyle" />
+  <TypeSignature Language="C++ CLI" Value="public enum class FormBorderStyle" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +42,8 @@
       <MemberSignature Language="C#" Value="Fixed3D" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.FormBorderStyle Fixed3D = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.FormBorderStyle.Fixed3D" />
+      <MemberSignature Language="VB.NET" Value="Fixed3D" />
+      <MemberSignature Language="C++ CLI" Value="Fixed3D" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -48,6 +52,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.FormBorderStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>A fixed, three-dimensional border.</summary>
       </Docs>
@@ -56,6 +61,8 @@
       <MemberSignature Language="C#" Value="FixedDialog" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.FormBorderStyle FixedDialog = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.FormBorderStyle.FixedDialog" />
+      <MemberSignature Language="VB.NET" Value="FixedDialog" />
+      <MemberSignature Language="C++ CLI" Value="FixedDialog" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -64,6 +71,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.FormBorderStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>A thick, fixed dialog-style border.</summary>
       </Docs>
@@ -72,6 +80,8 @@
       <MemberSignature Language="C#" Value="FixedSingle" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.FormBorderStyle FixedSingle = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.FormBorderStyle.FixedSingle" />
+      <MemberSignature Language="VB.NET" Value="FixedSingle" />
+      <MemberSignature Language="C++ CLI" Value="FixedSingle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -80,6 +90,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.FormBorderStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>A fixed, single-line border.</summary>
       </Docs>
@@ -88,6 +99,8 @@
       <MemberSignature Language="C#" Value="FixedToolWindow" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.FormBorderStyle FixedToolWindow = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.FormBorderStyle.FixedToolWindow" />
+      <MemberSignature Language="VB.NET" Value="FixedToolWindow" />
+      <MemberSignature Language="C++ CLI" Value="FixedToolWindow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -96,6 +109,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.FormBorderStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>A tool window border that is not resizable. A tool window does not appear in the taskbar or in the window that appears when the user presses ALT+TAB. Although forms that specify <see cref="F:System.Windows.Forms.FormBorderStyle.FixedToolWindow" /> typically are not shown in the taskbar, you must also ensure that the <see cref="P:System.Windows.Forms.Form.ShowInTaskbar" /> property is set to <see langword="false" />, since its default value is <see langword="true" />.</summary>
       </Docs>
@@ -104,6 +118,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.FormBorderStyle None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.FormBorderStyle.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -112,6 +128,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.FormBorderStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>No border.</summary>
       </Docs>
@@ -120,6 +137,8 @@
       <MemberSignature Language="C#" Value="Sizable" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.FormBorderStyle Sizable = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.FormBorderStyle.Sizable" />
+      <MemberSignature Language="VB.NET" Value="Sizable" />
+      <MemberSignature Language="C++ CLI" Value="Sizable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -128,6 +147,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.FormBorderStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>A resizable border.</summary>
       </Docs>
@@ -136,6 +156,8 @@
       <MemberSignature Language="C#" Value="SizableToolWindow" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.FormBorderStyle SizableToolWindow = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.FormBorderStyle.SizableToolWindow" />
+      <MemberSignature Language="VB.NET" Value="SizableToolWindow" />
+      <MemberSignature Language="C++ CLI" Value="SizableToolWindow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -144,6 +166,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.FormBorderStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>A resizable tool window border. A tool window does not appear in the taskbar or in the window that appears when the user presses ALT+TAB.</summary>
       </Docs>

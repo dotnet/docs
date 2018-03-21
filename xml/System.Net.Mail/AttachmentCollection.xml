@@ -1,7 +1,9 @@
-<Type Name="AttachmentCollection" FullName="System.Net.Mail.AttachmentCollection">
+﻿<Type Name="AttachmentCollection" FullName="System.Net.Mail.AttachmentCollection">
   <TypeSignature Language="C#" Value="public sealed class AttachmentCollection : System.Collections.ObjectModel.Collection&lt;System.Net.Mail.Attachment&gt;, IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AttachmentCollection extends System.Collections.ObjectModel.Collection`1&lt;class System.Net.Mail.Attachment&gt; implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Net.Mail.AttachmentCollection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AttachmentCollection&#xA;Inherits Collection(Of Attachment)&#xA;Implements IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AttachmentCollection sealed : System::Collections::ObjectModel::Collection&lt;System::Net::Mail::Attachment ^&gt;, IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -55,6 +57,8 @@
       <MemberSignature Language="C#" Value="protected override void ClearItems ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void ClearItems() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.AttachmentCollection.ClearItems" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub ClearItems ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ClearItems();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -82,7 +86,12 @@
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.AttachmentCollection.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -116,6 +125,8 @@
       <MemberSignature Language="C#" Value="protected override void InsertItem (int index, System.Net.Mail.Attachment item);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InsertItem(int32 index, class System.Net.Mail.Attachment item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.AttachmentCollection.InsertItem(System.Int32,System.Net.Mail.Attachment)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InsertItem (index As Integer, item As Attachment)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InsertItem(int index, System::Net::Mail::Attachment ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -148,6 +159,8 @@
       <MemberSignature Language="C#" Value="protected override void RemoveItem (int index);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RemoveItem(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.AttachmentCollection.RemoveItem(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RemoveItem (index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RemoveItem(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -178,6 +191,8 @@
       <MemberSignature Language="C#" Value="protected override void SetItem (int index, System.Net.Mail.Attachment item);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetItem(int32 index, class System.Net.Mail.Attachment item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.AttachmentCollection.SetItem(System.Int32,System.Net.Mail.Attachment)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetItem (index As Integer, item As Attachment)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetItem(int index, System::Net::Mail::Attachment ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

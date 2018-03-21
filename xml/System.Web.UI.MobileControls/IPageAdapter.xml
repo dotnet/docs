@@ -1,7 +1,9 @@
-<Type Name="IPageAdapter" FullName="System.Web.UI.MobileControls.IPageAdapter">
+﻿<Type Name="IPageAdapter" FullName="System.Web.UI.MobileControls.IPageAdapter">
   <TypeSignature Language="C#" Value="public interface IPageAdapter : System.Web.UI.MobileControls.IControlAdapter" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IPageAdapter implements class System.Web.UI.MobileControls.IControlAdapter" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.IPageAdapter" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IPageAdapter&#xA;Implements IControlAdapter" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IPageAdapter : System::Web::UI::MobileControls::IControlAdapter" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +35,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.IList CacheVaryByHeaders { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IList CacheVaryByHeaders" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.IPageAdapter.CacheVaryByHeaders" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CacheVaryByHeaders As IList" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IList ^ CacheVaryByHeaders { System::Collections::IList ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -58,6 +62,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.IDictionary CookielessDataDictionary { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IDictionary CookielessDataDictionary" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.IPageAdapter.CookielessDataDictionary" />
+      <MemberSignature Language="VB.NET" Value="Public Property CookielessDataDictionary As IDictionary" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IDictionary ^ CookielessDataDictionary { System::Collections::IDictionary ^ get(); void set(System::Collections::IDictionary ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -83,6 +89,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.HtmlTextWriter CreateTextWriter (System.IO.TextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.UI.HtmlTextWriter CreateTextWriter(class System.IO.TextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.IPageAdapter.CreateTextWriter(System.IO.TextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateTextWriter (writer As TextWriter) As HtmlTextWriter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::HtmlTextWriter ^ CreateTextWriter(System::IO::TextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -105,6 +113,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Specialized.NameValueCollection DeterminePostBackMode (System.Web.HttpRequest request, string postEventSourceID, string postEventArgumentID, System.Collections.Specialized.NameValueCollection baseCollection);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Specialized.NameValueCollection DeterminePostBackMode(class System.Web.HttpRequest request, string postEventSourceID, string postEventArgumentID, class System.Collections.Specialized.NameValueCollection baseCollection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.IPageAdapter.DeterminePostBackMode(System.Web.HttpRequest,System.String,System.String,System.Collections.Specialized.NameValueCollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Function DeterminePostBackMode (request As HttpRequest, postEventSourceID As String, postEventArgumentID As String, baseCollection As NameValueCollection) As NameValueCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Specialized::NameValueCollection ^ DeterminePostBackMode(System::Web::HttpRequest ^ request, System::String ^ postEventSourceID, System::String ^ postEventArgumentID, System::Collections::Specialized::NameValueCollection ^ baseCollection);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -141,6 +151,8 @@
       <MemberSignature Language="C#" Value="public bool HandleError (Exception e, System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool HandleError(class System.Exception e, class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.IPageAdapter.HandleError(System.Exception,System.Web.UI.HtmlTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Function HandleError (e As Exception, writer As HtmlTextWriter) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool HandleError(Exception ^ e, System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -173,6 +185,8 @@
       <MemberSignature Language="C#" Value="public bool HandlePagePostBackEvent (string eventSource, string eventArgument);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool HandlePagePostBackEvent(string eventSource, string eventArgument) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.IPageAdapter.HandlePagePostBackEvent(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function HandlePagePostBackEvent (eventSource As String, eventArgument As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool HandlePagePostBackEvent(System::String ^ eventSource, System::String ^ eventArgument);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -205,6 +219,8 @@
       <MemberSignature Language="C#" Value="public int OptimumPageWeight { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 OptimumPageWeight" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.IPageAdapter.OptimumPageWeight" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OptimumPageWeight As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int OptimumPageWeight { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -223,6 +239,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.MobileControls.MobilePage Page { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.MobileControls.MobilePage Page" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.IPageAdapter.Page" />
+      <MemberSignature Language="VB.NET" Value="Public Property Page As MobilePage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::MobileControls::MobilePage ^ Page { System::Web::UI::MobileControls::MobilePage ^ get(); void set(System::Web::UI::MobileControls::MobilePage ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -241,6 +259,8 @@
       <MemberSignature Language="C#" Value="public bool PersistCookielessData { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool PersistCookielessData" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.IPageAdapter.PersistCookielessData" />
+      <MemberSignature Language="VB.NET" Value="Public Property PersistCookielessData As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PersistCookielessData { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

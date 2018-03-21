@@ -1,7 +1,9 @@
-<Type Name="SymWriter" FullName="System.Diagnostics.SymbolStore.SymWriter">
+﻿<Type Name="SymWriter" FullName="System.Diagnostics.SymbolStore.SymWriter">
   <TypeSignature Language="C#" Value="public class SymWriter : System.Diagnostics.SymbolStore.SymWriterBase, IDisposable, System.Diagnostics.SymbolStore.ISymbolWriter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SymWriter extends System.Diagnostics.SymbolStore.SymWriterBase implements class System.Diagnostics.SymbolStore.ISymbolWriter, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.SymbolStore.SymWriter" />
+  <TypeSignature Language="VB.NET" Value="Public Class SymWriter&#xA;Inherits SymWriterBase&#xA;Implements IDisposable, ISymbolWriter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SymWriter : System::Diagnostics::SymbolStore::SymWriterBase, IDisposable, System::Diagnostics::SymbolStore::ISymbolWriter" />
   <AssemblyInfo>
     <AssemblyName>ISymWrapper</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +40,8 @@
       <MemberSignature Language="C#" Value="public SymWriter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymWriter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SymWriter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
@@ -54,6 +58,8 @@
       <MemberSignature Language="C#" Value="public SymWriter (bool noUnderlyingWriter);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool noUnderlyingWriter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymWriter.#ctor(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (noUnderlyingWriter As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SymWriter(bool noUnderlyingWriter);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
@@ -73,6 +79,8 @@
       <MemberSignature Language="C#" Value="public virtual void Close ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Close() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymWriter.Close" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Close ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Close();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
@@ -98,6 +106,8 @@
       <MemberSignature Language="C#" Value="public virtual void CloseMethod ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CloseMethod() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymWriter.CloseMethod" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub CloseMethod ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CloseMethod();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
@@ -123,6 +133,8 @@
       <MemberSignature Language="C#" Value="public virtual void CloseNamespace ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CloseNamespace() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymWriter.CloseNamespace" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub CloseNamespace ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CloseNamespace();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
@@ -141,6 +153,8 @@
       <MemberSignature Language="C#" Value="public virtual void CloseScope (int endOffset);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CloseScope(int32 endOffset) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymWriter.CloseScope(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub CloseScope (endOffset As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CloseScope(int endOffset);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
@@ -169,6 +183,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Diagnostics.SymbolStore.ISymbolDocumentWriter DefineDocument (string url, Guid language, Guid languageVendor, Guid documentType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Diagnostics.SymbolStore.ISymbolDocumentWriter DefineDocument(string url, valuetype System.Guid language, valuetype System.Guid languageVendor, valuetype System.Guid documentType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymWriter.DefineDocument(System.String,System.Guid,System.Guid,System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DefineDocument (url As String, language As Guid, languageVendor As Guid, documentType As Guid) As ISymbolDocumentWriter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Diagnostics::SymbolStore::ISymbolDocumentWriter ^ DefineDocument(System::String ^ url, Guid language, Guid languageVendor, Guid documentType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
@@ -197,6 +213,8 @@
       <MemberSignature Language="C#" Value="public virtual void DefineField (System.Diagnostics.SymbolStore.SymbolToken parent, string name, System.Reflection.FieldAttributes attributes, byte[] signature, System.Diagnostics.SymbolStore.SymAddressKind addrKind, int addr1, int addr2, int addr3);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DefineField(valuetype System.Diagnostics.SymbolStore.SymbolToken parent, string name, valuetype System.Reflection.FieldAttributes attributes, unsigned int8[] signature, valuetype System.Diagnostics.SymbolStore.SymAddressKind addrKind, int32 addr1, int32 addr2, int32 addr3) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymWriter.DefineField(System.Diagnostics.SymbolStore.SymbolToken,System.String,System.Reflection.FieldAttributes,System.Byte[],System.Diagnostics.SymbolStore.SymAddressKind,System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub DefineField (parent As SymbolToken, name As String, attributes As FieldAttributes, signature As Byte(), addrKind As SymAddressKind, addr1 As Integer, addr2 As Integer, addr3 As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void DefineField(System::Diagnostics::SymbolStore::SymbolToken parent, System::String ^ name, System::Reflection::FieldAttributes attributes, cli::array &lt;System::Byte&gt; ^ signature, System::Diagnostics::SymbolStore::SymAddressKind addrKind, int addr1, int addr2, int addr3);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
@@ -233,6 +251,8 @@
       <MemberSignature Language="C#" Value="public virtual void DefineGlobalVariable (string name, System.Reflection.FieldAttributes attributes, byte[] signature, System.Diagnostics.SymbolStore.SymAddressKind addrKind, int addr1, int addr2, int addr3);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DefineGlobalVariable(string name, valuetype System.Reflection.FieldAttributes attributes, unsigned int8[] signature, valuetype System.Diagnostics.SymbolStore.SymAddressKind addrKind, int32 addr1, int32 addr2, int32 addr3) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymWriter.DefineGlobalVariable(System.String,System.Reflection.FieldAttributes,System.Byte[],System.Diagnostics.SymbolStore.SymAddressKind,System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub DefineGlobalVariable (name As String, attributes As FieldAttributes, signature As Byte(), addrKind As SymAddressKind, addr1 As Integer, addr2 As Integer, addr3 As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void DefineGlobalVariable(System::String ^ name, System::Reflection::FieldAttributes attributes, cli::array &lt;System::Byte&gt; ^ signature, System::Diagnostics::SymbolStore::SymAddressKind addrKind, int addr1, int addr2, int addr3);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
@@ -267,6 +287,8 @@
       <MemberSignature Language="C#" Value="public virtual void DefineLocalVariable (string name, System.Reflection.FieldAttributes attributes, byte[] signature, System.Diagnostics.SymbolStore.SymAddressKind addrKind, int addr1, int addr2, int addr3, int startOffset, int endOffset);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DefineLocalVariable(string name, valuetype System.Reflection.FieldAttributes attributes, unsigned int8[] signature, valuetype System.Diagnostics.SymbolStore.SymAddressKind addrKind, int32 addr1, int32 addr2, int32 addr3, int32 startOffset, int32 endOffset) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymWriter.DefineLocalVariable(System.String,System.Reflection.FieldAttributes,System.Byte[],System.Diagnostics.SymbolStore.SymAddressKind,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub DefineLocalVariable (name As String, attributes As FieldAttributes, signature As Byte(), addrKind As SymAddressKind, addr1 As Integer, addr2 As Integer, addr3 As Integer, startOffset As Integer, endOffset As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void DefineLocalVariable(System::String ^ name, System::Reflection::FieldAttributes attributes, cli::array &lt;System::Byte&gt; ^ signature, System::Diagnostics::SymbolStore::SymAddressKind addrKind, int addr1, int addr2, int addr3, int startOffset, int endOffset);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
@@ -313,6 +335,8 @@
       <MemberSignature Language="C#" Value="public virtual void DefineParameter (string name, System.Reflection.ParameterAttributes attributes, int sequence, System.Diagnostics.SymbolStore.SymAddressKind addrKind, int addr1, int addr2, int addr3);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DefineParameter(string name, valuetype System.Reflection.ParameterAttributes attributes, int32 sequence, valuetype System.Diagnostics.SymbolStore.SymAddressKind addrKind, int32 addr1, int32 addr2, int32 addr3) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymWriter.DefineParameter(System.String,System.Reflection.ParameterAttributes,System.Int32,System.Diagnostics.SymbolStore.SymAddressKind,System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub DefineParameter (name As String, attributes As ParameterAttributes, sequence As Integer, addrKind As SymAddressKind, addr1 As Integer, addr2 As Integer, addr3 As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void DefineParameter(System::String ^ name, System::Reflection::ParameterAttributes attributes, int sequence, System::Diagnostics::SymbolStore::SymAddressKind addrKind, int addr1, int addr2, int addr3);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
@@ -347,6 +371,8 @@
       <MemberSignature Language="C#" Value="public virtual void DefineSequencePoints (System.Diagnostics.SymbolStore.ISymbolDocumentWriter document, int[] offsets, int[] lines, int[] columns, int[] endLines, int[] endColumns);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DefineSequencePoints(class System.Diagnostics.SymbolStore.ISymbolDocumentWriter document, int32[] offsets, int32[] lines, int32[] columns, int32[] endLines, int32[] endColumns) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymWriter.DefineSequencePoints(System.Diagnostics.SymbolStore.ISymbolDocumentWriter,System.Int32[],System.Int32[],System.Int32[],System.Int32[],System.Int32[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub DefineSequencePoints (document As ISymbolDocumentWriter, offsets As Integer(), lines As Integer(), columns As Integer(), endLines As Integer(), endColumns As Integer())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void DefineSequencePoints(System::Diagnostics::SymbolStore::ISymbolDocumentWriter ^ document, cli::array &lt;int&gt; ^ offsets, cli::array &lt;int&gt; ^ lines, cli::array &lt;int&gt; ^ columns, cli::array &lt;int&gt; ^ endLines, cli::array &lt;int&gt; ^ endColumns);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
@@ -385,7 +411,12 @@
       <MemberSignature Language="C#" Value="public override sealed void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymWriter.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Sub Dispose ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -403,6 +434,8 @@
       <MemberSignature Language="C#" Value="protected virtual void Dispose (bool A_0);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool A_0) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymWriter.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (A_0 As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool A_0);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
@@ -437,6 +470,8 @@
       <MemberSignature Language="C#" Value="~SymWriter ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymWriter.Finalize" />
+      <MemberSignature Language="VB.NET" Value="Finalize ()" />
+      <MemberSignature Language="C++ CLI" Value="!SymWriter ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
@@ -462,6 +497,7 @@
       <MemberSignature Language="C#" Value="public System.Diagnostics.SymbolStore.Private.ISymUnmanagedWriter* GetWriter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Diagnostics.SymbolStore.Private.ISymUnmanagedWriter* GetWriter() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymWriter.GetWriter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Diagnostics::SymbolStore::Private::ISymUnmanagedWriter* GetWriter();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
@@ -481,6 +517,8 @@
       <MemberSignature Language="C#" Value="public virtual void Initialize (IntPtr emitter, string filename, bool fFullBuild);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Initialize(native int emitter, string filename, bool fFullBuild) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymWriter.Initialize(System.IntPtr,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Initialize (emitter As IntPtr, filename As String, fFullBuild As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Initialize(IntPtr emitter, System::String ^ filename, bool fFullBuild);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
@@ -515,6 +553,8 @@
       <MemberSignature Language="C#" Value="public void InitWriter (bool noUnderlyingWriter);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void InitWriter(bool noUnderlyingWriter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymWriter.InitWriter(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub InitWriter (noUnderlyingWriter As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void InitWriter(bool noUnderlyingWriter);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
@@ -538,6 +578,8 @@
       <MemberSignature Language="C#" Value="public virtual void OpenMethod (System.Diagnostics.SymbolStore.SymbolToken method);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OpenMethod(valuetype System.Diagnostics.SymbolStore.SymbolToken method) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymWriter.OpenMethod(System.Diagnostics.SymbolStore.SymbolToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub OpenMethod (method As SymbolToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OpenMethod(System::Diagnostics::SymbolStore::SymbolToken method);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
@@ -566,6 +608,8 @@
       <MemberSignature Language="C#" Value="public virtual void OpenNamespace (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OpenNamespace(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymWriter.OpenNamespace(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub OpenNamespace (name As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OpenNamespace(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
@@ -594,6 +638,8 @@
       <MemberSignature Language="C#" Value="public virtual int OpenScope (int startOffset);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 OpenScope(int32 startOffset) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymWriter.OpenScope(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function OpenScope (startOffset As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int OpenScope(int startOffset);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
@@ -625,6 +671,8 @@
       <MemberSignature Language="C#" Value="public virtual void SetMethodSourceRange (System.Diagnostics.SymbolStore.ISymbolDocumentWriter startDoc, int startLine, int startColumn, System.Diagnostics.SymbolStore.ISymbolDocumentWriter endDoc, int endLine, int endColumn);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetMethodSourceRange(class System.Diagnostics.SymbolStore.ISymbolDocumentWriter startDoc, int32 startLine, int32 startColumn, class System.Diagnostics.SymbolStore.ISymbolDocumentWriter endDoc, int32 endLine, int32 endColumn) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymWriter.SetMethodSourceRange(System.Diagnostics.SymbolStore.ISymbolDocumentWriter,System.Int32,System.Int32,System.Diagnostics.SymbolStore.ISymbolDocumentWriter,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetMethodSourceRange (startDoc As ISymbolDocumentWriter, startLine As Integer, startColumn As Integer, endDoc As ISymbolDocumentWriter, endLine As Integer, endColumn As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetMethodSourceRange(System::Diagnostics::SymbolStore::ISymbolDocumentWriter ^ startDoc, int startLine, int startColumn, System::Diagnostics::SymbolStore::ISymbolDocumentWriter ^ endDoc, int endLine, int endColumn);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
@@ -657,6 +705,8 @@
       <MemberSignature Language="C#" Value="public virtual void SetScopeRange (int scopeID, int startOffset, int endOffset);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetScopeRange(int32 scopeID, int32 startOffset, int32 endOffset) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymWriter.SetScopeRange(System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetScopeRange (scopeID As Integer, startOffset As Integer, endOffset As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetScopeRange(int scopeID, int startOffset, int endOffset);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
@@ -682,6 +732,8 @@
       <MemberSignature Language="C#" Value="public virtual void SetSymAttribute (System.Diagnostics.SymbolStore.SymbolToken parent, string name, byte[] data);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetSymAttribute(valuetype System.Diagnostics.SymbolStore.SymbolToken parent, string name, unsigned int8[] data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymWriter.SetSymAttribute(System.Diagnostics.SymbolStore.SymbolToken,System.String,System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetSymAttribute (parent As SymbolToken, name As String, data As Byte())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetSymAttribute(System::Diagnostics::SymbolStore::SymbolToken parent, System::String ^ name, cli::array &lt;System::Byte&gt; ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
@@ -714,6 +766,8 @@
       <MemberSignature Language="C#" Value="public virtual void SetUnderlyingWriter (IntPtr underlyingWriter);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetUnderlyingWriter(native int underlyingWriter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymWriter.SetUnderlyingWriter(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetUnderlyingWriter (underlyingWriter As IntPtr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetUnderlyingWriter(IntPtr underlyingWriter);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
@@ -743,6 +797,8 @@
       <MemberSignature Language="C#" Value="public virtual void SetUserEntryPoint (System.Diagnostics.SymbolStore.SymbolToken entryMethod);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetUserEntryPoint(valuetype System.Diagnostics.SymbolStore.SymbolToken entryMethod) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymWriter.SetUserEntryPoint(System.Diagnostics.SymbolStore.SymbolToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetUserEntryPoint (entryMethod As SymbolToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetUserEntryPoint(System::Diagnostics::SymbolStore::SymbolToken entryMethod);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
@@ -771,6 +827,8 @@
       <MemberSignature Language="C#" Value="public virtual void UsingNamespace (string fullName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void UsingNamespace(string fullName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymWriter.UsingNamespace(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub UsingNamespace (fullName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void UsingNamespace(System::String ^ fullName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>

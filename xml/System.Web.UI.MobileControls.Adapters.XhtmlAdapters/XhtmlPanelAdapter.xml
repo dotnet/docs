@@ -1,7 +1,9 @@
-<Type Name="XhtmlPanelAdapter" FullName="System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPanelAdapter">
+﻿<Type Name="XhtmlPanelAdapter" FullName="System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPanelAdapter">
   <TypeSignature Language="C#" Value="public class XhtmlPanelAdapter : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XhtmlPanelAdapter extends System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPanelAdapter" />
+  <TypeSignature Language="VB.NET" Value="Public Class XhtmlPanelAdapter&#xA;Inherits XhtmlControlAdapter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XhtmlPanelAdapter : System::Web::UI::MobileControls::Adapters::XhtmlAdapters::XhtmlControlAdapter" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +35,8 @@
       <MemberSignature Language="C#" Value="public XhtmlPanelAdapter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPanelAdapter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XhtmlPanelAdapter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -48,6 +52,8 @@
       <MemberSignature Language="C#" Value="protected System.Web.UI.MobileControls.Panel Control { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.MobileControls.Panel Control" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPanelAdapter.Control" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Control As Panel" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Web::UI::MobileControls::Panel ^ Control { System::Web::UI::MobileControls::Panel ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -66,6 +72,8 @@
       <MemberSignature Language="C#" Value="public override void Render (System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Render(class System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPanelAdapter.Render(System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Render (writer As XhtmlMobileTextWriter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Render(System::Web::UI::MobileControls::Adapters::XhtmlAdapters::XhtmlMobileTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

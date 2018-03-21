@@ -1,7 +1,9 @@
-<Type Name="DictionaryEntry" FullName="System.Collections.DictionaryEntry">
+﻿<Type Name="DictionaryEntry" FullName="System.Collections.DictionaryEntry">
   <TypeSignature Language="C#" Value="public struct DictionaryEntry" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable sealed beforefieldinit DictionaryEntry extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Collections.DictionaryEntry" />
+  <TypeSignature Language="VB.NET" Value="Public Structure DictionaryEntry" />
+  <TypeSignature Language="C++ CLI" Value="public value class DictionaryEntry" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -64,6 +66,8 @@
       <MemberSignature Language="C#" Value="public DictionaryEntry (object key, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object key, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.DictionaryEntry.#ctor(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (key As Object, value As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DictionaryEntry(System::Object ^ key, System::Object ^ value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -106,6 +110,8 @@
       <MemberSignature Language="C#" Value="public void Deconstruct (out object key, out object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Deconstruct([out] object&amp; key, [out] object&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.DictionaryEntry.Deconstruct(System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Deconstruct (ByRef key As Object, ByRef value As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Deconstruct([Runtime::InteropServices::Out] System::Object ^ % key, [Runtime::InteropServices::Out] System::Object ^ % value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -134,6 +140,8 @@
       <MemberSignature Language="C#" Value="public object Key { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Key" />
       <MemberSignature Language="DocId" Value="P:System.Collections.DictionaryEntry.Key" />
+      <MemberSignature Language="VB.NET" Value="Public Property Key As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Key { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -176,6 +184,8 @@
       <MemberSignature Language="C#" Value="public object Value { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Value" />
       <MemberSignature Language="DocId" Value="P:System.Collections.DictionaryEntry.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Property Value As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Value { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

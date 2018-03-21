@@ -1,7 +1,9 @@
-<Type Name="DataPointCollection" FullName="System.Web.UI.DataVisualization.Charting.DataPointCollection">
+﻿<Type Name="DataPointCollection" FullName="System.Web.UI.DataVisualization.Charting.DataPointCollection">
   <TypeSignature Language="C#" Value="public class DataPointCollection : System.Web.UI.DataVisualization.Charting.ChartElementCollection&lt;System.Web.UI.DataVisualization.Charting.DataPoint&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataPointCollection extends System.Web.UI.DataVisualization.Charting.ChartElementCollection`1&lt;class System.Web.UI.DataVisualization.Charting.DataPoint&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.DataPointCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class DataPointCollection&#xA;Inherits ChartElementCollection(Of DataPoint)" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataPointCollection : System::Web::UI::DataVisualization::Charting::ChartElementCollection&lt;System::Web::UI::DataVisualization::Charting::DataPoint ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +46,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.DataPoint Add (params double[] y);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.UI.DataVisualization.Charting.DataPoint Add(float64[] y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataPointCollection.Add(System.Double[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (ParamArray y As Double()) As DataPoint" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::DataVisualization::Charting::DataPoint ^ Add(... cli::array &lt;double&gt; ^ y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -68,10 +72,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddXY">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a <see cref="T:System.Web.UI.DataVisualization.Charting.DataPoint" /> object to the end of the collection, with the specified X-value and Y-value(s).</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AddXY">
       <MemberSignature Language="C#" Value="public int AddXY (double xValue, double yValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 AddXY(float64 xValue, float64 yValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataPointCollection.AddXY(System.Double,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddXY (xValue As Double, yValue As Double) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int AddXY(double xValue, double yValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -107,6 +122,8 @@
       <MemberSignature Language="C#" Value="public int AddXY (object xValue, params object[] yValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 AddXY(object xValue, object[] yValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataPointCollection.AddXY(System.Object,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddXY (xValue As Object, ParamArray yValue As Object()) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int AddXY(System::Object ^ xValue, ... cli::array &lt;System::Object ^&gt; ^ yValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -146,10 +163,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddY">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a <see cref="T:System.Web.UI.DataVisualization.Charting.DataPoint" /> object to the end of the collection, with the specified Y-value(s).</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AddY">
       <MemberSignature Language="C#" Value="public int AddY (double yValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 AddY(float64 yValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataPointCollection.AddY(System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddY (yValue As Double) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int AddY(double yValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -183,6 +211,8 @@
       <MemberSignature Language="C#" Value="public int AddY (params object[] yValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 AddY(object[] yValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataPointCollection.AddY(System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddY (ParamArray yValue As Object()) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int AddY(... cli::array &lt;System::Object ^&gt; ^ yValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -232,6 +262,8 @@
       <MemberSignature Language="C#" Value="public void DataBind (System.Collections.IEnumerable dataSource, string xField, string yFields, string otherFields);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DataBind(class System.Collections.IEnumerable dataSource, string xField, string yFields, string otherFields) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataPointCollection.DataBind(System.Collections.IEnumerable,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DataBind (dataSource As IEnumerable, xField As String, yFields As String, otherFields As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DataBind(System::Collections::IEnumerable ^ dataSource, System::String ^ xField, System::String ^ yFields, System::String ^ otherFields);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -264,10 +296,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="DataBindXY">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Data binds the X-value and Y-values of the collection's data points to the first columns of the specified data source.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="DataBindXY">
       <MemberSignature Language="C#" Value="public void DataBindXY (System.Collections.IEnumerable xValue, params System.Collections.IEnumerable[] yValues);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DataBindXY(class System.Collections.IEnumerable xValue, class System.Collections.IEnumerable[] yValues) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataPointCollection.DataBindXY(System.Collections.IEnumerable,System.Collections.IEnumerable[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DataBindXY (xValue As IEnumerable, ParamArray yValues As IEnumerable())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DataBindXY(System::Collections::IEnumerable ^ xValue, ... cli::array &lt;System::Collections::IEnumerable ^&gt; ^ yValues);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -324,6 +367,8 @@
       <MemberSignature Language="C#" Value="public void DataBindXY (System.Collections.IEnumerable xValue, string xField, System.Collections.IEnumerable yValue, string yFields);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DataBindXY(class System.Collections.IEnumerable xValue, string xField, class System.Collections.IEnumerable yValue, string yFields) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataPointCollection.DataBindXY(System.Collections.IEnumerable,System.String,System.Collections.IEnumerable,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DataBindXY (xValue As IEnumerable, xField As String, yValue As IEnumerable, yFields As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DataBindXY(System::Collections::IEnumerable ^ xValue, System::String ^ xField, System::Collections::IEnumerable ^ yValue, System::String ^ yFields);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -372,10 +417,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="DataBindY">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Data binds the Y-value(s) of the collection's data points to the first column of the specified data source(s).</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="DataBindY">
       <MemberSignature Language="C#" Value="public void DataBindY (params System.Collections.IEnumerable[] yValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DataBindY(class System.Collections.IEnumerable[] yValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataPointCollection.DataBindY(System.Collections.IEnumerable[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DataBindY (ParamArray yValue As IEnumerable())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DataBindY(... cli::array &lt;System::Collections::IEnumerable ^&gt; ^ yValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -430,6 +486,8 @@
       <MemberSignature Language="C#" Value="public void DataBindY (System.Collections.IEnumerable yValue, string yFields);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DataBindY(class System.Collections.IEnumerable yValue, string yFields) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataPointCollection.DataBindY(System.Collections.IEnumerable,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DataBindY (yValue As IEnumerable, yFields As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DataBindY(System::Collections::IEnumerable ^ yValue, System::String ^ yFields);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -474,10 +532,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="FindAllByValue">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Find all the data points that are equal to the specified value.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="FindAllByValue">
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;System.Web.UI.DataVisualization.Charting.DataPoint&gt; FindAllByValue (double valueToFind);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class System.Web.UI.DataVisualization.Charting.DataPoint&gt; FindAllByValue(float64 valueToFind) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataPointCollection.FindAllByValue(System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Function FindAllByValue (valueToFind As Double) As IEnumerable(Of DataPoint)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::Web::UI::DataVisualization::Charting::DataPoint ^&gt; ^ FindAllByValue(double valueToFind);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -500,6 +569,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;System.Web.UI.DataVisualization.Charting.DataPoint&gt; FindAllByValue (double valueToFind, string useValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class System.Web.UI.DataVisualization.Charting.DataPoint&gt; FindAllByValue(float64 valueToFind, string useValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataPointCollection.FindAllByValue(System.Double,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Iterator Function FindAllByValue (valueToFind As Double, useValue As String) As IEnumerable(Of DataPoint)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::Web::UI::DataVisualization::Charting::DataPoint ^&gt; ^ FindAllByValue(double valueToFind, System::String ^ useValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -529,6 +600,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;System.Web.UI.DataVisualization.Charting.DataPoint&gt; FindAllByValue (double valueToFind, string useValue, int startIndex);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class System.Web.UI.DataVisualization.Charting.DataPoint&gt; FindAllByValue(float64 valueToFind, string useValue, int32 startIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataPointCollection.FindAllByValue(System.Double,System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Iterator Function FindAllByValue (valueToFind As Double, useValue As String, startIndex As Integer) As IEnumerable(Of DataPoint)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::Web::UI::DataVisualization::Charting::DataPoint ^&gt; ^ FindAllByValue(double valueToFind, System::String ^ useValue, int startIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -556,10 +629,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="FindByValue">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Finds the first data point that is equal to the specified value.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="FindByValue">
       <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.DataPoint FindByValue (double valueToFind);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.UI.DataVisualization.Charting.DataPoint FindByValue(float64 valueToFind) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataPointCollection.FindByValue(System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Function FindByValue (valueToFind As Double) As DataPoint" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::DataVisualization::Charting::DataPoint ^ FindByValue(double valueToFind);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -582,6 +666,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.DataPoint FindByValue (double valueToFind, string useValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.UI.DataVisualization.Charting.DataPoint FindByValue(float64 valueToFind, string useValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataPointCollection.FindByValue(System.Double,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function FindByValue (valueToFind As Double, useValue As String) As DataPoint" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::DataVisualization::Charting::DataPoint ^ FindByValue(double valueToFind, System::String ^ useValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -606,6 +692,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.DataPoint FindByValue (double valueToFind, string useValue, int startIndex);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.UI.DataVisualization.Charting.DataPoint FindByValue(float64 valueToFind, string useValue, int32 startIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataPointCollection.FindByValue(System.Double,System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function FindByValue (valueToFind As Double, useValue As String, startIndex As Integer) As DataPoint" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::DataVisualization::Charting::DataPoint ^ FindByValue(double valueToFind, System::String ^ useValue, int startIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -628,10 +716,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="FindMaxByValue">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Finds the data point with the maximum value.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="FindMaxByValue">
       <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.DataPoint FindMaxByValue ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.UI.DataVisualization.Charting.DataPoint FindMaxByValue() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataPointCollection.FindMaxByValue" />
+      <MemberSignature Language="VB.NET" Value="Public Function FindMaxByValue () As DataPoint" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::DataVisualization::Charting::DataPoint ^ FindMaxByValue();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -651,6 +750,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.DataPoint FindMaxByValue (string useValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.UI.DataVisualization.Charting.DataPoint FindMaxByValue(string useValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataPointCollection.FindMaxByValue(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function FindMaxByValue (useValue As String) As DataPoint" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::DataVisualization::Charting::DataPoint ^ FindMaxByValue(System::String ^ useValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -673,6 +774,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.DataPoint FindMaxByValue (string useValue, int startIndex);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.UI.DataVisualization.Charting.DataPoint FindMaxByValue(string useValue, int32 startIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataPointCollection.FindMaxByValue(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function FindMaxByValue (useValue As String, startIndex As Integer) As DataPoint" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::DataVisualization::Charting::DataPoint ^ FindMaxByValue(System::String ^ useValue, int startIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -693,10 +796,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="FindMinByValue">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Finds the data point with the minimum value.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="FindMinByValue">
       <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.DataPoint FindMinByValue ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.UI.DataVisualization.Charting.DataPoint FindMinByValue() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataPointCollection.FindMinByValue" />
+      <MemberSignature Language="VB.NET" Value="Public Function FindMinByValue () As DataPoint" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::DataVisualization::Charting::DataPoint ^ FindMinByValue();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -716,6 +830,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.DataPoint FindMinByValue (string useValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.UI.DataVisualization.Charting.DataPoint FindMinByValue(string useValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataPointCollection.FindMinByValue(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function FindMinByValue (useValue As String) As DataPoint" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::DataVisualization::Charting::DataPoint ^ FindMinByValue(System::String ^ useValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -738,6 +854,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.DataPoint FindMinByValue (string useValue, int startIndex);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.UI.DataVisualization.Charting.DataPoint FindMinByValue(string useValue, int32 startIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataPointCollection.FindMinByValue(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function FindMinByValue (useValue As String, startIndex As Integer) As DataPoint" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::DataVisualization::Charting::DataPoint ^ FindMinByValue(System::String ^ useValue, int startIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -762,6 +880,8 @@
       <MemberSignature Language="C#" Value="public void InsertXY (int index, object xValue, params object[] yValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void InsertXY(int32 index, object xValue, object[] yValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataPointCollection.InsertXY(System.Int32,System.Object,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub InsertXY (index As Integer, xValue As Object, ParamArray yValue As Object())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void InsertXY(int index, System::Object ^ xValue, ... cli::array &lt;System::Object ^&gt; ^ yValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -793,6 +913,8 @@
       <MemberSignature Language="C#" Value="public void InsertY (int index, params object[] yValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void InsertY(int32 index, object[] yValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataPointCollection.InsertY(System.Int32,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub InsertY (index As Integer, ParamArray yValue As Object())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void InsertY(int index, ... cli::array &lt;System::Object ^&gt; ^ yValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -818,77 +940,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="AddY">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.DataVisualization</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds a <see cref="T:System.Web.UI.DataVisualization.Charting.DataPoint" /> object to the end of the collection, with the specified Y-value(s).</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="FindMaxByValue">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.DataVisualization</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Finds the data point with the maximum value.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="FindMinByValue">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.DataVisualization</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Finds the data point with the minimum value.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="AddXY">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.DataVisualization</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds a <see cref="T:System.Web.UI.DataVisualization.Charting.DataPoint" /> object to the end of the collection, with the specified X-value and Y-value(s).</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="FindByValue">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.DataVisualization</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Finds the first data point that is equal to the specified value.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="DataBindXY">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.DataVisualization</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Data binds the X-value and Y-values of the collection's data points to the first columns of the specified data source.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="DataBindY">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.DataVisualization</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Data binds the Y-value(s) of the collection's data points to the first column of the specified data source(s).</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="FindAllByValue">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.DataVisualization</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Find all the data points that are equal to the specified value.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

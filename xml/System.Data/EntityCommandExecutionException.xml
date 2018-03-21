@@ -1,7 +1,9 @@
-<Type Name="EntityCommandExecutionException" FullName="System.Data.EntityCommandExecutionException">
+﻿<Type Name="EntityCommandExecutionException" FullName="System.Data.EntityCommandExecutionException">
   <TypeSignature Language="C#" Value="public sealed class EntityCommandExecutionException : System.Data.EntityException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit EntityCommandExecutionException extends System.Data.EntityException" />
   <TypeSignature Language="DocId" Value="T:System.Data.EntityCommandExecutionException" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EntityCommandExecutionException&#xA;Inherits EntityException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EntityCommandExecutionException sealed : System::Data::EntityException" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +45,8 @@
       <MemberSignature Language="C#" Value="public EntityCommandExecutionException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.EntityCommandExecutionException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EntityCommandExecutionException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -65,6 +69,8 @@
       <MemberSignature Language="C#" Value="public EntityCommandExecutionException (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.EntityCommandExecutionException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EntityCommandExecutionException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -90,6 +96,8 @@
       <MemberSignature Language="C#" Value="public EntityCommandExecutionException (string message, Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.EntityCommandExecutionException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EntityCommandExecutionException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

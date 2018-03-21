@@ -1,7 +1,9 @@
-<Type Name="SqlCommand" FullName="System.Data.SqlClient.SqlCommand">
+﻿<Type Name="SqlCommand" FullName="System.Data.SqlClient.SqlCommand">
   <TypeSignature Language="C#" Value="public sealed class SqlCommand : System.Data.Common.DbCommand, ICloneable, IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SqlCommand extends System.Data.Common.DbCommand implements class System.Data.IDbCommand, class System.ICloneable, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Data.SqlClient.SqlCommand" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SqlCommand&#xA;Inherits DbCommand&#xA;Implements ICloneable, IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SqlCommand sealed : System::Data::Common::DbCommand, ICloneable, IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Data.SqlClient</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -397,10 +399,22 @@ class Program {
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.SqlClient.SqlCommand" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SqlCommand ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlCommand.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlCommand();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -450,6 +464,8 @@ class Program {
       <MemberSignature Language="C#" Value="public SqlCommand (string cmdText);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string cmdText) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlCommand.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (cmdText As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlCommand(System::String ^ cmdText);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -502,6 +518,8 @@ class Program {
       <MemberSignature Language="C#" Value="public SqlCommand (string cmdText, System.Data.SqlClient.SqlConnection connection);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string cmdText, class System.Data.SqlClient.SqlConnection connection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlCommand.#ctor(System.String,System.Data.SqlClient.SqlConnection)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (cmdText As String, connection As SqlConnection)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlCommand(System::String ^ cmdText, System::Data::SqlClient::SqlConnection ^ connection);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -556,6 +574,8 @@ class Program {
       <MemberSignature Language="C#" Value="public SqlCommand (string cmdText, System.Data.SqlClient.SqlConnection connection, System.Data.SqlClient.SqlTransaction transaction);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string cmdText, class System.Data.SqlClient.SqlConnection connection, class System.Data.SqlClient.SqlTransaction transaction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlCommand.#ctor(System.String,System.Data.SqlClient.SqlConnection,System.Data.SqlClient.SqlTransaction)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (cmdText As String, connection As SqlConnection, transaction As SqlTransaction)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlCommand(System::String ^ cmdText, System::Data::SqlClient::SqlConnection ^ connection, System::Data::SqlClient::SqlTransaction ^ transaction);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -604,6 +624,8 @@ class Program {
       <MemberSignature Language="C#" Value="public SqlCommand (string cmdText, System.Data.SqlClient.SqlConnection connection, System.Data.SqlClient.SqlTransaction transaction, System.Data.SqlClient.SqlCommandColumnEncryptionSetting columnEncryptionSetting);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string cmdText, class System.Data.SqlClient.SqlConnection connection, class System.Data.SqlClient.SqlTransaction transaction, valuetype System.Data.SqlClient.SqlCommandColumnEncryptionSetting columnEncryptionSetting) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlCommand.#ctor(System.String,System.Data.SqlClient.SqlConnection,System.Data.SqlClient.SqlTransaction,System.Data.SqlClient.SqlCommandColumnEncryptionSetting)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (cmdText As String, connection As SqlConnection, transaction As SqlTransaction, columnEncryptionSetting As SqlCommandColumnEncryptionSetting)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlCommand(System::String ^ cmdText, System::Data::SqlClient::SqlConnection ^ connection, System::Data::SqlClient::SqlTransaction ^ transaction, System::Data::SqlClient::SqlCommandColumnEncryptionSetting columnEncryptionSetting);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -624,10 +646,22 @@ class Program {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="BeginExecuteNonQuery">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initiates the asynchronous execution of the Transact-SQL statement or stored procedure that is described by this <see cref="T:System.Data.SqlClient.SqlCommand" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="BeginExecuteNonQuery">
       <MemberSignature Language="C#" Value="public IAsyncResult BeginExecuteNonQuery ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginExecuteNonQuery() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlCommand.BeginExecuteNonQuery" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginExecuteNonQuery () As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginExecuteNonQuery();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -680,6 +714,8 @@ class Program {
       <MemberSignature Language="C#" Value="public IAsyncResult BeginExecuteNonQuery (AsyncCallback callback, object stateObject);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginExecuteNonQuery(class System.AsyncCallback callback, object stateObject) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlCommand.BeginExecuteNonQuery(System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginExecuteNonQuery (callback As AsyncCallback, stateObject As Object) As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginExecuteNonQuery(AsyncCallback ^ callback, System::Object ^ stateObject);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -741,10 +777,22 @@ class Program {
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.IO.Stream" />, <see cref="T:System.Xml.XmlReader" /> or <see cref="T:System.IO.TextReader" /> object was closed during a streaming operation.  For more information about streaming, see [SqlClient Streaming Support](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="BeginExecuteReader">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initiates the asynchronous execution of the Transact-SQL statement or stored procedure that is described by this <see cref="T:System.Data.SqlClient.SqlCommand" />, and retrieves one or more result sets from the server.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="BeginExecuteReader">
       <MemberSignature Language="C#" Value="public IAsyncResult BeginExecuteReader ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginExecuteReader() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlCommand.BeginExecuteReader" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginExecuteReader () As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginExecuteReader();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -799,6 +847,8 @@ class Program {
       <MemberSignature Language="C#" Value="public IAsyncResult BeginExecuteReader (System.Data.CommandBehavior behavior);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginExecuteReader(valuetype System.Data.CommandBehavior behavior) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlCommand.BeginExecuteReader(System.Data.CommandBehavior)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginExecuteReader (behavior As CommandBehavior) As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginExecuteReader(System::Data::CommandBehavior behavior);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -860,6 +910,8 @@ class Program {
       <MemberSignature Language="C#" Value="public IAsyncResult BeginExecuteReader (AsyncCallback callback, object stateObject);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginExecuteReader(class System.AsyncCallback callback, object stateObject) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlCommand.BeginExecuteReader(System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginExecuteReader (callback As AsyncCallback, stateObject As Object) As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginExecuteReader(AsyncCallback ^ callback, System::Object ^ stateObject);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -927,6 +979,8 @@ class Program {
       <MemberSignature Language="C#" Value="public IAsyncResult BeginExecuteReader (AsyncCallback callback, object stateObject, System.Data.CommandBehavior behavior);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginExecuteReader(class System.AsyncCallback callback, object stateObject, valuetype System.Data.CommandBehavior behavior) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlCommand.BeginExecuteReader(System.AsyncCallback,System.Object,System.Data.CommandBehavior)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginExecuteReader (callback As AsyncCallback, stateObject As Object, behavior As CommandBehavior) As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginExecuteReader(AsyncCallback ^ callback, System::Object ^ stateObject, System::Data::CommandBehavior behavior);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -996,10 +1050,22 @@ class Program {
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.IO.Stream" />, <see cref="T:System.Xml.XmlReader" /> or <see cref="T:System.IO.TextReader" /> object was closed during a streaming operation.  For more information about streaming, see [SqlClient Streaming Support](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="BeginExecuteXmlReader">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initiates the asynchronous execution of the Transact-SQL statement or stored procedure that is described by this <see cref="T:System.Data.SqlClient.SqlCommand" /> and returns results as an <see cref="T:System.Xml.XmlReader" /> object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="BeginExecuteXmlReader">
       <MemberSignature Language="C#" Value="public IAsyncResult BeginExecuteXmlReader ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginExecuteXmlReader() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlCommand.BeginExecuteXmlReader" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginExecuteXmlReader () As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginExecuteXmlReader();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1066,6 +1132,8 @@ SqlCommand command = new SqlCommand("SELECT ContactID, FirstName, LastName FROM 
       <MemberSignature Language="C#" Value="public IAsyncResult BeginExecuteXmlReader (AsyncCallback callback, object stateObject);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginExecuteXmlReader(class System.AsyncCallback callback, object stateObject) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlCommand.BeginExecuteXmlReader(System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginExecuteXmlReader (callback As AsyncCallback, stateObject As Object) As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginExecuteXmlReader(AsyncCallback ^ callback, System::Object ^ stateObject);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1145,7 +1213,12 @@ SqlCommand command = new SqlCommand("SELECT ContactID, FirstName, LastName FROM 
       <MemberSignature Language="C#" Value="public override void Cancel ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Cancel() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlCommand.Cancel" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Cancel ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Cancel();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDbCommand.Cancel</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -1190,6 +1263,8 @@ SqlCommand command = new SqlCommand("SELECT ContactID, FirstName, LastName FROM 
       <MemberSignature Language="C#" Value="public System.Data.SqlClient.SqlCommand Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.SqlClient.SqlCommand Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlCommand.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As SqlCommand" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlClient::SqlCommand ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1214,6 +1289,8 @@ SqlCommand command = new SqlCommand("SELECT ContactID, FirstName, LastName FROM 
       <MemberSignature Language="C#" Value="public System.Data.SqlClient.SqlCommandColumnEncryptionSetting ColumnEncryptionSetting { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.SqlClient.SqlCommandColumnEncryptionSetting ColumnEncryptionSetting" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlCommand.ColumnEncryptionSetting" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ColumnEncryptionSetting As SqlCommandColumnEncryptionSetting" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::SqlClient::SqlCommandColumnEncryptionSetting ColumnEncryptionSetting { System::Data::SqlClient::SqlCommandColumnEncryptionSetting get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1224,7 +1301,7 @@ SqlCommand command = new SqlCommand("SELECT ContactID, FirstName, LastName FROM 
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1240,7 +1317,12 @@ SqlCommand command = new SqlCommand("SELECT ContactID, FirstName, LastName FROM 
       <MemberSignature Language="C#" Value="public override string CommandText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CommandText" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlCommand.CommandText" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property CommandText As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ CommandText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Data.IDbCommand.CommandText</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -1263,7 +1345,7 @@ SqlCommand command = new SqlCommand("SELECT ContactID, FirstName, LastName FROM 
           <AttributeName>System.ComponentModel.Editor("Microsoft.VSDesigner.Data.SQL.Design.SqlCommandTextEditor, Microsoft.VSDesigner, Version=0.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1302,7 +1384,12 @@ SELECT * FROM dbo.Customers WHERE CustomerID = @CustomerID
       <MemberSignature Language="C#" Value="public override int CommandTimeout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 CommandTimeout" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlCommand.CommandTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property CommandTimeout As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int CommandTimeout { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Data.IDbCommand.CommandTimeout</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -1374,7 +1461,12 @@ public class A {
       <MemberSignature Language="C#" Value="public override System.Data.CommandType CommandType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.CommandType CommandType" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlCommand.CommandType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property CommandType As CommandType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Data::CommandType CommandType { System::Data::CommandType get(); void set(System::Data::CommandType value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Data.IDbCommand.CommandType</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -1394,7 +1486,7 @@ public class A {
           <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1432,6 +1524,8 @@ public class A {
       <MemberSignature Language="C#" Value="public System.Data.SqlClient.SqlConnection Connection { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.SqlClient.SqlConnection Connection" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlCommand.Connection" />
+      <MemberSignature Language="VB.NET" Value="Public Property Connection As SqlConnection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::SqlClient::SqlConnection ^ Connection { System::Data::SqlClient::SqlConnection ^ get(); void set(System::Data::SqlClient::SqlConnection ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1489,6 +1583,8 @@ public class A {
       <MemberSignature Language="C#" Value="protected override System.Data.Common.DbParameter CreateDbParameter ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Data.Common.DbParameter CreateDbParameter() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlCommand.CreateDbParameter" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateDbParameter () As DbParameter" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Data::Common::DbParameter ^ CreateDbParameter();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1518,6 +1614,8 @@ public class A {
       <MemberSignature Language="C#" Value="public System.Data.SqlClient.SqlParameter CreateParameter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.SqlClient.SqlParameter CreateParameter() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlCommand.CreateParameter" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateParameter () As SqlParameter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlClient::SqlParameter ^ CreateParameter();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1554,6 +1652,8 @@ public class A {
       <MemberSignature Language="C#" Value="protected override System.Data.Common.DbConnection DbConnection { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Common.DbConnection DbConnection" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlCommand.DbConnection" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Property DbConnection As DbConnection" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Data::Common::DbConnection ^ DbConnection { System::Data::Common::DbConnection ^ get(); void set(System::Data::Common::DbConnection ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1582,6 +1682,8 @@ public class A {
       <MemberSignature Language="C#" Value="protected override System.Data.Common.DbParameterCollection DbParameterCollection { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Common.DbParameterCollection DbParameterCollection" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlCommand.DbParameterCollection" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DbParameterCollection As DbParameterCollection" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Data::Common::DbParameterCollection ^ DbParameterCollection { System::Data::Common::DbParameterCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1610,6 +1712,8 @@ public class A {
       <MemberSignature Language="C#" Value="protected override System.Data.Common.DbTransaction DbTransaction { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Common.DbTransaction DbTransaction" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlCommand.DbTransaction" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Property DbTransaction As DbTransaction" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Data::Common::DbTransaction ^ DbTransaction { System::Data::Common::DbTransaction ^ get(); void set(System::Data::Common::DbTransaction ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1638,6 +1742,8 @@ public class A {
       <MemberSignature Language="C#" Value="public override bool DesignTimeVisible { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool DesignTimeVisible" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlCommand.DesignTimeVisible" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property DesignTimeVisible As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool DesignTimeVisible { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1680,6 +1786,8 @@ public class A {
       <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlCommand.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1711,6 +1819,8 @@ public class A {
       <MemberSignature Language="C#" Value="public int EndExecuteNonQuery (IAsyncResult asyncResult);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 EndExecuteNonQuery(class System.IAsyncResult asyncResult) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlCommand.EndExecuteNonQuery(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EndExecuteNonQuery (asyncResult As IAsyncResult) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int EndExecuteNonQuery(IAsyncResult ^ asyncResult);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1753,6 +1863,8 @@ public class A {
       <MemberSignature Language="C#" Value="public System.Data.SqlClient.SqlDataReader EndExecuteReader (IAsyncResult asyncResult);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.SqlClient.SqlDataReader EndExecuteReader(class System.IAsyncResult asyncResult) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlCommand.EndExecuteReader(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EndExecuteReader (asyncResult As IAsyncResult) As SqlDataReader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlClient::SqlDataReader ^ EndExecuteReader(IAsyncResult ^ asyncResult);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1792,6 +1904,8 @@ public class A {
       <MemberSignature Language="C#" Value="public System.Xml.XmlReader EndExecuteXmlReader (IAsyncResult asyncResult);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlReader EndExecuteXmlReader(class System.IAsyncResult asyncResult) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlCommand.EndExecuteXmlReader(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EndExecuteXmlReader (asyncResult As IAsyncResult) As XmlReader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::XmlReader ^ EndExecuteXmlReader(IAsyncResult ^ asyncResult);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1831,6 +1945,8 @@ public class A {
       <MemberSignature Language="C#" Value="protected override System.Data.Common.DbDataReader ExecuteDbDataReader (System.Data.CommandBehavior behavior);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Data.Common.DbDataReader ExecuteDbDataReader(valuetype System.Data.CommandBehavior behavior) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(System.Data.CommandBehavior)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function ExecuteDbDataReader (behavior As CommandBehavior) As DbDataReader" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Data::Common::DbDataReader ^ ExecuteDbDataReader(System::Data::CommandBehavior behavior);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1863,6 +1979,7 @@ public class A {
       <MemberSignature Language="C#" Value="protected override System.Threading.Tasks.Task&lt;System.Data.Common.DbDataReader&gt; ExecuteDbDataReaderAsync (System.Data.CommandBehavior behavior, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Threading.Tasks.Task`1&lt;class System.Data.Common.DbDataReader&gt; ExecuteDbDataReaderAsync(valuetype System.Data.CommandBehavior behavior, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlCommand.ExecuteDbDataReaderAsync(System.Data.CommandBehavior,System.Threading.CancellationToken)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Threading::Tasks::Task&lt;System::Data::Common::DbDataReader ^&gt; ^ ExecuteDbDataReaderAsync(System::Data::CommandBehavior behavior, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1896,7 +2013,12 @@ public class A {
       <MemberSignature Language="C#" Value="public override int ExecuteNonQuery ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 ExecuteNonQuery() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlCommand.ExecuteNonQuery" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ExecuteNonQuery () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int ExecuteNonQuery();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDbCommand.ExecuteNonQuery</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -1955,6 +2077,7 @@ public class A {
       <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task&lt;int&gt; ExecuteNonQueryAsync (System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task`1&lt;int32&gt; ExecuteNonQueryAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlCommand.ExecuteNonQueryAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task&lt;int&gt; ^ ExecuteNonQueryAsync(System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2004,10 +2127,22 @@ public class A {
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.IO.Stream" />, <see cref="T:System.Xml.XmlReader" /> or <see cref="T:System.IO.TextReader" /> object was closed during a streaming operation.  For more information about streaming, see [SqlClient Streaming Support](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ExecuteReader">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sends the <see cref="P:System.Data.SqlClient.SqlCommand.CommandText" /> to the <see cref="P:System.Data.SqlClient.SqlCommand.Connection" /> and builds a <see cref="T:System.Data.SqlClient.SqlDataReader" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ExecuteReader">
       <MemberSignature Language="C#" Value="public System.Data.SqlClient.SqlDataReader ExecuteReader ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.SqlClient.SqlDataReader ExecuteReader() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlCommand.ExecuteReader" />
+      <MemberSignature Language="VB.NET" Value="Public Function ExecuteReader () As SqlDataReader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlClient::SqlDataReader ^ ExecuteReader();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2072,6 +2207,8 @@ public class A {
       <MemberSignature Language="C#" Value="public System.Data.SqlClient.SqlDataReader ExecuteReader (System.Data.CommandBehavior behavior);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.SqlClient.SqlDataReader ExecuteReader(valuetype System.Data.CommandBehavior behavior) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlCommand.ExecuteReader(System.Data.CommandBehavior)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ExecuteReader (behavior As CommandBehavior) As SqlDataReader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlClient::SqlDataReader ^ ExecuteReader(System::Data::CommandBehavior behavior);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2152,6 +2289,8 @@ public class A {
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Data.SqlClient.SqlDataReader&gt; ExecuteReaderAsync ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Data.SqlClient.SqlDataReader&gt; ExecuteReaderAsync() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlCommand.ExecuteReaderAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Function ExecuteReaderAsync () As Task(Of SqlDataReader)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;System::Data::SqlClient::SqlDataReader ^&gt; ^ ExecuteReaderAsync();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2204,6 +2343,8 @@ public class A {
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Data.SqlClient.SqlDataReader&gt; ExecuteReaderAsync (System.Data.CommandBehavior behavior);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Data.SqlClient.SqlDataReader&gt; ExecuteReaderAsync(valuetype System.Data.CommandBehavior behavior) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlCommand.ExecuteReaderAsync(System.Data.CommandBehavior)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ExecuteReaderAsync (behavior As CommandBehavior) As Task(Of SqlDataReader)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;System::Data::SqlClient::SqlDataReader ^&gt; ^ ExecuteReaderAsync(System::Data::CommandBehavior behavior);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2259,6 +2400,7 @@ public class A {
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Data.SqlClient.SqlDataReader&gt; ExecuteReaderAsync (System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Data.SqlClient.SqlDataReader&gt; ExecuteReaderAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlCommand.ExecuteReaderAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;System::Data::SqlClient::SqlDataReader ^&gt; ^ ExecuteReaderAsync(System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2316,6 +2458,7 @@ public class A {
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Data.SqlClient.SqlDataReader&gt; ExecuteReaderAsync (System.Data.CommandBehavior behavior, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Data.SqlClient.SqlDataReader&gt; ExecuteReaderAsync(valuetype System.Data.CommandBehavior behavior, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlCommand.ExecuteReaderAsync(System.Data.CommandBehavior,System.Threading.CancellationToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;System::Data::SqlClient::SqlDataReader ^&gt; ^ ExecuteReaderAsync(System::Data::CommandBehavior behavior, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2375,7 +2518,12 @@ public class A {
       <MemberSignature Language="C#" Value="public override object ExecuteScalar ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ExecuteScalar() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlCommand.ExecuteScalar" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ExecuteScalar () As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ ExecuteScalar();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDbCommand.ExecuteScalar</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -2437,6 +2585,7 @@ Int32 count = (Int32) cmd.ExecuteScalar();
       <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task&lt;object&gt; ExecuteScalarAsync (System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task`1&lt;object&gt; ExecuteScalarAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlCommand.ExecuteScalarAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task&lt;System::Object ^&gt; ^ ExecuteScalarAsync(System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2492,6 +2641,8 @@ Int32 count = (Int32) cmd.ExecuteScalar();
       <MemberSignature Language="C#" Value="public System.Xml.XmlReader ExecuteXmlReader ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlReader ExecuteXmlReader() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlCommand.ExecuteXmlReader" />
+      <MemberSignature Language="VB.NET" Value="Public Function ExecuteXmlReader () As XmlReader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::XmlReader ^ ExecuteXmlReader();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2555,10 +2706,22 @@ SqlCommand command = new SqlCommand("SELECT * FROM dbo.Customers FOR XML AUTO, X
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.IO.Stream" />, <see cref="T:System.Xml.XmlReader" /> or <see cref="T:System.IO.TextReader" /> object was closed during a streaming operation.  For more information about streaming, see [SqlClient Streaming Support](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ExecuteXmlReaderAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initiates the asynchronous execution of the Transact-SQL statement or stored procedure that is described by this <see cref="T:System.Data.SqlClient.SqlCommand" /> and returns results as an <see cref="T:System.Xml.XmlReader" /> object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ExecuteXmlReaderAsync">
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Xml.XmlReader&gt; ExecuteXmlReaderAsync ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Xml.XmlReader&gt; ExecuteXmlReaderAsync() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlCommand.ExecuteXmlReaderAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Function ExecuteXmlReaderAsync () As Task(Of XmlReader)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;System::Xml::XmlReader ^&gt; ^ ExecuteXmlReaderAsync();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2612,6 +2775,7 @@ SqlCommand command = new SqlCommand("SELECT * FROM dbo.Customers FOR XML AUTO, X
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Xml.XmlReader&gt; ExecuteXmlReaderAsync (System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Xml.XmlReader&gt; ExecuteXmlReaderAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlCommand.ExecuteXmlReaderAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;System::Xml::XmlReader ^&gt; ^ ExecuteXmlReaderAsync(System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2668,6 +2832,8 @@ SqlCommand command = new SqlCommand("SELECT * FROM dbo.Customers FOR XML AUTO, X
       <MemberSignature Language="C#" Value="public System.Data.Sql.SqlNotificationRequest Notification { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Sql.SqlNotificationRequest Notification" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlCommand.Notification" />
+      <MemberSignature Language="VB.NET" Value="Public Property Notification As SqlNotificationRequest" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Sql::SqlNotificationRequest ^ Notification { System::Data::Sql::SqlNotificationRequest ^ get(); void set(System::Data::Sql::SqlNotificationRequest ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -2679,7 +2845,7 @@ SqlCommand command = new SqlCommand("SELECT * FROM dbo.Customers FOR XML AUTO, X
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2702,6 +2868,8 @@ SqlCommand command = new SqlCommand("SELECT * FROM dbo.Customers FOR XML AUTO, X
       <MemberSignature Language="C#" Value="public bool NotificationAutoEnlist { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool NotificationAutoEnlist" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlCommand.NotificationAutoEnlist" />
+      <MemberSignature Language="VB.NET" Value="Public Property NotificationAutoEnlist As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool NotificationAutoEnlist { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -2735,6 +2903,8 @@ SqlCommand command = new SqlCommand("SELECT * FROM dbo.Customers FOR XML AUTO, X
       <MemberSignature Language="C#" Value="public System.Data.SqlClient.SqlParameterCollection Parameters { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.SqlClient.SqlParameterCollection Parameters" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlCommand.Parameters" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parameters As SqlParameterCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::SqlClient::SqlParameterCollection ^ Parameters { System::Data::SqlClient::SqlParameterCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2752,7 +2922,7 @@ SqlCommand command = new SqlCommand("SELECT * FROM dbo.Customers FOR XML AUTO, X
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2790,7 +2960,12 @@ SqlCommand command = new SqlCommand("SELECT * FROM dbo.Customers FOR XML AUTO, X
       <MemberSignature Language="C#" Value="public override void Prepare ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Prepare() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlCommand.Prepare" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Prepare ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Prepare();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDbCommand.Prepare</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -2844,6 +3019,8 @@ SqlCommand command = new SqlCommand("SELECT * FROM dbo.Customers FOR XML AUTO, X
       <MemberSignature Language="C#" Value="public void ResetCommandTimeout ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ResetCommandTimeout() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlCommand.ResetCommandTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ResetCommandTimeout ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetCommandTimeout();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -2870,6 +3047,8 @@ SqlCommand command = new SqlCommand("SELECT * FROM dbo.Customers FOR XML AUTO, X
       <MemberSignature Language="C#" Value="public event System.Data.StatementCompletedEventHandler StatementCompleted;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Data.StatementCompletedEventHandler StatementCompleted" />
       <MemberSignature Language="DocId" Value="E:System.Data.SqlClient.SqlCommand.StatementCompleted" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event StatementCompleted As StatementCompletedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Data::StatementCompletedEventHandler ^ StatementCompleted;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2897,7 +3076,12 @@ SqlCommand command = new SqlCommand("SELECT * FROM dbo.Customers FOR XML AUTO, X
       <MemberSignature Language="C#" Value="object ICloneable.Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.ICloneable.Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlCommand.System#ICloneable#Clone" />
+      <MemberSignature Language="VB.NET" Value="Function Clone () As Object Implements ICloneable.Clone" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.ICloneable.Clone() = ICloneable::Clone;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -2921,6 +3105,8 @@ SqlCommand command = new SqlCommand("SELECT * FROM dbo.Customers FOR XML AUTO, X
       <MemberSignature Language="C#" Value="public System.Data.SqlClient.SqlTransaction Transaction { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.SqlClient.SqlTransaction Transaction" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlCommand.Transaction" />
+      <MemberSignature Language="VB.NET" Value="Public Property Transaction As SqlTransaction" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::SqlClient::SqlTransaction ^ Transaction { System::Data::SqlClient::SqlTransaction ^ get(); void set(System::Data::SqlClient::SqlTransaction ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2941,7 +3127,7 @@ SqlCommand command = new SqlCommand("SELECT * FROM dbo.Customers FOR XML AUTO, X
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2964,7 +3150,12 @@ SqlCommand command = new SqlCommand("SELECT * FROM dbo.Customers FOR XML AUTO, X
       <MemberSignature Language="C#" Value="public override System.Data.UpdateRowSource UpdatedRowSource { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.UpdateRowSource UpdatedRowSource" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlCommand.UpdatedRowSource" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property UpdatedRowSource As UpdateRowSource" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Data::UpdateRowSource UpdatedRowSource { System::Data::UpdateRowSource get(); void set(System::Data::UpdateRowSource value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Data.IDbCommand.UpdatedRowSource</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -3002,65 +3193,5 @@ SqlCommand command = new SqlCommand("SELECT * FROM dbo.Customers FOR XML AUTO, X
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="BeginExecuteReader">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initiates the asynchronous execution of the Transact-SQL statement or stored procedure that is described by this <see cref="T:System.Data.SqlClient.SqlCommand" />, and retrieves one or more result sets from the server.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="BeginExecuteXmlReader">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initiates the asynchronous execution of the Transact-SQL statement or stored procedure that is described by this <see cref="T:System.Data.SqlClient.SqlCommand" /> and returns results as an <see cref="T:System.Xml.XmlReader" /> object.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="BeginExecuteNonQuery">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initiates the asynchronous execution of the Transact-SQL statement or stored procedure that is described by this <see cref="T:System.Data.SqlClient.SqlCommand" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ExecuteXmlReaderAsync">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initiates the asynchronous execution of the Transact-SQL statement or stored procedure that is described by this <see cref="T:System.Data.SqlClient.SqlCommand" /> and returns results as an <see cref="T:System.Xml.XmlReader" /> object.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ExecuteReader">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Sends the <see cref="P:System.Data.SqlClient.SqlCommand.CommandText" /> to the <see cref="P:System.Data.SqlClient.SqlCommand.Connection" /> and builds a <see cref="T:System.Data.SqlClient.SqlDataReader" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.SqlClient.SqlCommand" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,9 @@
-<Type Name="DataContractResolver" FullName="System.Runtime.Serialization.DataContractResolver">
+﻿<Type Name="DataContractResolver" FullName="System.Runtime.Serialization.DataContractResolver">
   <TypeSignature Language="C#" Value="public abstract class DataContractResolver" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DataContractResolver extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.DataContractResolver" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class DataContractResolver" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataContractResolver abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
@@ -46,6 +48,8 @@
       <MemberSignature Language="C#" Value="protected DataContractResolver ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.DataContractResolver.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; DataContractResolver();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
@@ -71,6 +75,8 @@
       <MemberSignature Language="C#" Value="public abstract Type ResolveName (string typeName, string typeNamespace, Type declaredType, System.Runtime.Serialization.DataContractResolver knownTypeResolver);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type ResolveName(string typeName, string typeNamespace, class System.Type declaredType, class System.Runtime.Serialization.DataContractResolver knownTypeResolver) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.DataContractResolver.ResolveName(System.String,System.String,System.Type,System.Runtime.Serialization.DataContractResolver)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function ResolveName (typeName As String, typeNamespace As String, declaredType As Type, knownTypeResolver As DataContractResolver) As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract Type ^ ResolveName(System::String ^ typeName, System::String ^ typeNamespace, Type ^ declaredType, System::Runtime::Serialization::DataContractResolver ^ knownTypeResolver);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
@@ -123,6 +129,7 @@
       <MemberSignature Language="C#" Value="public abstract bool TryResolveType (Type type, Type declaredType, System.Runtime.Serialization.DataContractResolver knownTypeResolver, out System.Xml.XmlDictionaryString typeName, out System.Xml.XmlDictionaryString typeNamespace);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryResolveType(class System.Type type, class System.Type declaredType, class System.Runtime.Serialization.DataContractResolver knownTypeResolver, [out] class System.Xml.XmlDictionaryString&amp; typeName, [out] class System.Xml.XmlDictionaryString&amp; typeNamespace) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.DataContractResolver.TryResolveType(System.Type,System.Type,System.Runtime.Serialization.DataContractResolver,System.Xml.XmlDictionaryString@,System.Xml.XmlDictionaryString@)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool TryResolveType(Type ^ type, Type ^ declaredType, System::Runtime::Serialization::DataContractResolver ^ knownTypeResolver, [Runtime::InteropServices::Out] System::Xml::XmlDictionaryString ^ % typeName, [Runtime::InteropServices::Out] System::Xml::XmlDictionaryString ^ % typeNamespace);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="ISelectionProvider" FullName="System.Windows.Automation.Provider.ISelectionProvider">
+﻿<Type Name="ISelectionProvider" FullName="System.Windows.Automation.Provider.ISelectionProvider">
   <TypeSignature Language="C#" Value="public interface ISelectionProvider" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISelectionProvider" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Provider.ISelectionProvider" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ISelectionProvider" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ISelectionProvider" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationProvider</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,7 +17,7 @@
       <AttributeName>System.Runtime.InteropServices.Guid("fb8b03af-3bdf-48d4-bd36-1a65793be168")</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -35,6 +37,8 @@
       <MemberSignature Language="C#" Value="public bool CanSelectMultiple { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanSelectMultiple" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Provider.ISelectionProvider.CanSelectMultiple" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanSelectMultiple As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanSelectMultiple { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -69,6 +73,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Automation.Provider.IRawElementProviderSimple[] GetSelection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Automation.Provider.IRawElementProviderSimple[] GetSelection() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.ISelectionProvider.GetSelection" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSelection () As IRawElementProviderSimple()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Windows::Automation::Provider::IRawElementProviderSimple ^&gt; ^ GetSelection();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -103,6 +109,8 @@
       <MemberSignature Language="C#" Value="public bool IsSelectionRequired { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsSelectionRequired" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Provider.ISelectionProvider.IsSelectionRequired" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSelectionRequired As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSelectionRequired { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>

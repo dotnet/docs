@@ -1,7 +1,9 @@
-<Type Name="CustomError" FullName="System.Web.Configuration.CustomError">
+﻿<Type Name="CustomError" FullName="System.Web.Configuration.CustomError">
   <TypeSignature Language="C#" Value="public sealed class CustomError : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CustomError extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.CustomError" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CustomError&#xA;Inherits ConfigurationElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CustomError sealed : System::Configuration::ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +52,8 @@
       <MemberSignature Language="C#" Value="public CustomError (int statusCode, string redirect);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 statusCode, string redirect) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.CustomError.#ctor(System.Int32,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (statusCode As Integer, redirect As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CustomError(int statusCode, System::String ^ redirect);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -77,6 +81,8 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object customError);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object customError) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.CustomError.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (customError As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ customError);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -107,6 +113,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.CustomError.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -126,6 +134,8 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.CustomError.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -144,6 +154,8 @@
       <MemberSignature Language="C#" Value="public string Redirect { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Redirect" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.CustomError.Redirect" />
+      <MemberSignature Language="VB.NET" Value="Public Property Redirect As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Redirect { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -185,6 +197,8 @@
       <MemberSignature Language="C#" Value="public int StatusCode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 StatusCode" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.CustomError.StatusCode" />
+      <MemberSignature Language="VB.NET" Value="Public Property StatusCode As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int StatusCode { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="LinkArea" FullName="System.Windows.Forms.LinkArea">
+﻿<Type Name="LinkArea" FullName="System.Windows.Forms.LinkArea">
   <TypeSignature Language="C#" Value="public struct LinkArea" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable sealed beforefieldinit LinkArea extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.LinkArea" />
+  <TypeSignature Language="VB.NET" Value="Public Structure LinkArea" />
+  <TypeSignature Language="C++ CLI" Value="public value class LinkArea" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +47,8 @@
       <MemberSignature Language="C#" Value="public LinkArea (int start, int length);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 start, int32 length) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.LinkArea.#ctor(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (start As Integer, length As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LinkArea(int start, int length);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -65,6 +69,8 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object o);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object o) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.LinkArea.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (o As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -88,6 +94,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.LinkArea.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -108,6 +116,8 @@
       <MemberSignature Language="C#" Value="public bool IsEmpty { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsEmpty" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.LinkArea.IsEmpty" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsEmpty As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsEmpty { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -118,7 +128,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -142,6 +152,8 @@
       <MemberSignature Language="C#" Value="public int Length { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Length" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.LinkArea.Length" />
+      <MemberSignature Language="VB.NET" Value="Public Property Length As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Length { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -168,6 +180,8 @@
       <MemberSignature Language="C#" Value="public static bool operator == (System.Windows.Forms.LinkArea linkArea1, System.Windows.Forms.LinkArea linkArea2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Windows.Forms.LinkArea linkArea1, valuetype System.Windows.Forms.LinkArea linkArea2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.LinkArea.op_Equality(System.Windows.Forms.LinkArea,System.Windows.Forms.LinkArea)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (linkArea1 As LinkArea, linkArea2 As LinkArea) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Windows::Forms::LinkArea linkArea1, System::Windows::Forms::LinkArea linkArea2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -195,6 +209,8 @@
       <MemberSignature Language="C#" Value="public static bool operator != (System.Windows.Forms.LinkArea linkArea1, System.Windows.Forms.LinkArea linkArea2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Windows.Forms.LinkArea linkArea1, valuetype System.Windows.Forms.LinkArea linkArea2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.LinkArea.op_Inequality(System.Windows.Forms.LinkArea,System.Windows.Forms.LinkArea)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (linkArea1 As LinkArea, linkArea2 As LinkArea) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Windows::Forms::LinkArea linkArea1, System::Windows::Forms::LinkArea linkArea2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -220,6 +236,8 @@
       <MemberSignature Language="C#" Value="public int Start { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Start" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.LinkArea.Start" />
+      <MemberSignature Language="VB.NET" Value="Public Property Start As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Start { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -246,6 +264,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.LinkArea.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="TypeFilterLevel" FullName="System.Runtime.Serialization.Formatters.TypeFilterLevel">
+﻿<Type Name="TypeFilterLevel" FullName="System.Runtime.Serialization.Formatters.TypeFilterLevel">
   <TypeSignature Language="C#" Value="public enum TypeFilterLevel" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TypeFilterLevel extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.Formatters.TypeFilterLevel" />
+  <TypeSignature Language="VB.NET" Value="Public Enum TypeFilterLevel" />
+  <TypeSignature Language="C++ CLI" Value="public enum class TypeFilterLevel" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -49,6 +51,8 @@
       <MemberSignature Language="C#" Value="Full" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Serialization.Formatters.TypeFilterLevel Full = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.Serialization.Formatters.TypeFilterLevel.Full" />
+      <MemberSignature Language="VB.NET" Value="Full" />
+      <MemberSignature Language="C++ CLI" Value="Full" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -66,6 +70,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.Serialization.Formatters.TypeFilterLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The full deserialization level for .NET Framework remoting. It supports all types that remoting supports in all situations.</summary>
       </Docs>
@@ -74,6 +79,8 @@
       <MemberSignature Language="C#" Value="Low" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Serialization.Formatters.TypeFilterLevel Low = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.Serialization.Formatters.TypeFilterLevel.Low" />
+      <MemberSignature Language="VB.NET" Value="Low" />
+      <MemberSignature Language="C++ CLI" Value="Low" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -91,6 +98,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.Serialization.Formatters.TypeFilterLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The low deserialization level for .NET Framework remoting. It supports types associated with basic remoting functionality.</summary>
       </Docs>

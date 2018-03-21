@@ -1,7 +1,9 @@
-<Type Name="IBuildEngine" FullName="Microsoft.Build.Framework.IBuildEngine">
+﻿<Type Name="IBuildEngine" FullName="Microsoft.Build.Framework.IBuildEngine">
   <TypeSignature Language="C#" Value="public interface IBuildEngine" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IBuildEngine" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.IBuildEngine" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IBuildEngine" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IBuildEngine" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -16,6 +18,8 @@
       <MemberSignature Language="C#" Value="public bool BuildProjectFile (string projectFileName, string[] targetNames, System.Collections.IDictionary globalProperties, System.Collections.IDictionary targetOutputs);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool BuildProjectFile(string projectFileName, string[] targetNames, class System.Collections.IDictionary globalProperties, class System.Collections.IDictionary targetOutputs) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.IBuildEngine.BuildProjectFile(System.String,System.String[],System.Collections.IDictionary,System.Collections.IDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BuildProjectFile (projectFileName As String, targetNames As String(), globalProperties As IDictionary, targetOutputs As IDictionary) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool BuildProjectFile(System::String ^ projectFileName, cli::array &lt;System::String ^&gt; ^ targetNames, System::Collections::IDictionary ^ globalProperties, System::Collections::IDictionary ^ targetOutputs);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -56,6 +60,8 @@
       <MemberSignature Language="C#" Value="public int ColumnNumberOfTaskNode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ColumnNumberOfTaskNode" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.IBuildEngine.ColumnNumberOfTaskNode" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ColumnNumberOfTaskNode As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ColumnNumberOfTaskNode { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -74,6 +80,8 @@
       <MemberSignature Language="C#" Value="public bool ContinueOnError { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ContinueOnError" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.IBuildEngine.ContinueOnError" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContinueOnError As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ContinueOnError { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -93,6 +101,8 @@
       <MemberSignature Language="C#" Value="public int LineNumberOfTaskNode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 LineNumberOfTaskNode" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.IBuildEngine.LineNumberOfTaskNode" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LineNumberOfTaskNode As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LineNumberOfTaskNode { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -111,6 +121,8 @@
       <MemberSignature Language="C#" Value="public void LogCustomEvent (Microsoft.Build.Framework.CustomBuildEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void LogCustomEvent(class Microsoft.Build.Framework.CustomBuildEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.IBuildEngine.LogCustomEvent(Microsoft.Build.Framework.CustomBuildEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub LogCustomEvent (e As CustomBuildEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void LogCustomEvent(Microsoft::Build::Framework::CustomBuildEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -132,6 +144,8 @@
       <MemberSignature Language="C#" Value="public void LogErrorEvent (Microsoft.Build.Framework.BuildErrorEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void LogErrorEvent(class Microsoft.Build.Framework.BuildErrorEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.IBuildEngine.LogErrorEvent(Microsoft.Build.Framework.BuildErrorEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub LogErrorEvent (e As BuildErrorEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void LogErrorEvent(Microsoft::Build::Framework::BuildErrorEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -153,6 +167,8 @@
       <MemberSignature Language="C#" Value="public void LogMessageEvent (Microsoft.Build.Framework.BuildMessageEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void LogMessageEvent(class Microsoft.Build.Framework.BuildMessageEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.IBuildEngine.LogMessageEvent(Microsoft.Build.Framework.BuildMessageEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub LogMessageEvent (e As BuildMessageEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void LogMessageEvent(Microsoft::Build::Framework::BuildMessageEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -174,6 +190,8 @@
       <MemberSignature Language="C#" Value="public void LogWarningEvent (Microsoft.Build.Framework.BuildWarningEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void LogWarningEvent(class Microsoft.Build.Framework.BuildWarningEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.IBuildEngine.LogWarningEvent(Microsoft.Build.Framework.BuildWarningEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub LogWarningEvent (e As BuildWarningEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void LogWarningEvent(Microsoft::Build::Framework::BuildWarningEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -195,6 +213,8 @@
       <MemberSignature Language="C#" Value="public string ProjectFileOfTaskNode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ProjectFileOfTaskNode" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.IBuildEngine.ProjectFileOfTaskNode" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProjectFileOfTaskNode As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ProjectFileOfTaskNode { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>

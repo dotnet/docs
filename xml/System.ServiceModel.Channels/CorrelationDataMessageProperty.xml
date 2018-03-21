@@ -1,7 +1,9 @@
-<Type Name="CorrelationDataMessageProperty" FullName="System.ServiceModel.Channels.CorrelationDataMessageProperty">
+﻿<Type Name="CorrelationDataMessageProperty" FullName="System.ServiceModel.Channels.CorrelationDataMessageProperty">
   <TypeSignature Language="C#" Value="public class CorrelationDataMessageProperty : System.ServiceModel.Channels.IMessageProperty" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CorrelationDataMessageProperty extends System.Object implements class System.ServiceModel.Channels.IMessageProperty" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.CorrelationDataMessageProperty" />
+  <TypeSignature Language="VB.NET" Value="Public Class CorrelationDataMessageProperty&#xA;Implements IMessageProperty" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CorrelationDataMessageProperty : System::ServiceModel::Channels::IMessageProperty" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +32,8 @@
       <MemberSignature Language="C#" Value="public CorrelationDataMessageProperty ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CorrelationDataMessageProperty.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CorrelationDataMessageProperty();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -45,6 +49,8 @@
       <MemberSignature Language="C#" Value="public void Add (string name, Func&lt;string&gt; dataProvider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(string name, class System.Func`1&lt;string&gt; dataProvider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CorrelationDataMessageProperty.Add(System.String,System.Func{System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (name As String, dataProvider As Func(Of String))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::String ^ name, Func&lt;System::String ^&gt; ^ dataProvider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -68,6 +74,7 @@
       <MemberSignature Language="C#" Value="public static void AddData (System.ServiceModel.Channels.Message message, string name, Func&lt;string&gt; dataProvider);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AddData(class System.ServiceModel.Channels.Message message, string name, class System.Func`1&lt;string&gt; dataProvider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CorrelationDataMessageProperty.AddData(System.ServiceModel.Channels.Message,System.String,System.Func{System.String})" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddData(System::ServiceModel::Channels::Message ^ message, System::String ^ name, Func&lt;System::String ^&gt; ^ dataProvider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -100,7 +107,12 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.IMessageProperty CreateCopy ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.IMessageProperty CreateCopy() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CorrelationDataMessageProperty.CreateCopy" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateCopy () As IMessageProperty" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ServiceModel::Channels::IMessageProperty ^ CreateCopy();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Channels.IMessageProperty.CreateCopy</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -119,6 +131,8 @@
       <MemberSignature Language="C#" Value="public static string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string Name" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.CorrelationDataMessageProperty.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -137,6 +151,8 @@
       <MemberSignature Language="C#" Value="public bool Remove (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Remove(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CorrelationDataMessageProperty.Remove(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Remove (name As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Remove(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -156,10 +172,20 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="TryGet">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Attempts to get the attached <see cref="T:System.ServiceModel.Channels.CorrelationDataMessageProperty" /> from a message or a collection of message properties.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="TryGet">
       <MemberSignature Language="C#" Value="public static bool TryGet (System.ServiceModel.Channels.Message message, out System.ServiceModel.Channels.CorrelationDataMessageProperty property);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGet(class System.ServiceModel.Channels.Message message, [out] class System.ServiceModel.Channels.CorrelationDataMessageProperty&amp; property) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CorrelationDataMessageProperty.TryGet(System.ServiceModel.Channels.Message,System.ServiceModel.Channels.CorrelationDataMessageProperty@)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryGet(System::ServiceModel::Channels::Message ^ message, [Runtime::InteropServices::Out] System::ServiceModel::Channels::CorrelationDataMessageProperty ^ % property);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -185,6 +211,8 @@
       <MemberSignature Language="C#" Value="public static bool TryGet (System.ServiceModel.Channels.MessageProperties properties, out System.ServiceModel.Channels.CorrelationDataMessageProperty property);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGet(class System.ServiceModel.Channels.MessageProperties properties, [out] class System.ServiceModel.Channels.CorrelationDataMessageProperty&amp; property) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CorrelationDataMessageProperty.TryGet(System.ServiceModel.Channels.MessageProperties,System.ServiceModel.Channels.CorrelationDataMessageProperty@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryGet (properties As MessageProperties, ByRef property As CorrelationDataMessageProperty) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryGet(System::ServiceModel::Channels::MessageProperties ^ properties, [Runtime::InteropServices::Out] System::ServiceModel::Channels::CorrelationDataMessageProperty ^ % property);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -210,6 +238,8 @@
       <MemberSignature Language="C#" Value="public bool TryGetValue (string name, out string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetValue(string name, [out] string&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CorrelationDataMessageProperty.TryGetValue(System.String,System.String@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryGetValue (name As String, ByRef value As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryGetValue(System::String ^ name, [Runtime::InteropServices::Out] System::String ^ % value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -231,14 +261,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="TryGet">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Attempts to get the attached <see cref="T:System.ServiceModel.Channels.CorrelationDataMessageProperty" /> from a message or a collection of message properties.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

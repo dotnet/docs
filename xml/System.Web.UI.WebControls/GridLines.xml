@@ -1,7 +1,9 @@
-<Type Name="GridLines" FullName="System.Web.UI.WebControls.GridLines">
+﻿<Type Name="GridLines" FullName="System.Web.UI.WebControls.GridLines">
   <TypeSignature Language="C#" Value="public enum GridLines" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed GridLines extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.GridLines" />
+  <TypeSignature Language="VB.NET" Value="Public Enum GridLines" />
+  <TypeSignature Language="C++ CLI" Value="public enum class GridLines" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +49,8 @@
       <MemberSignature Language="C#" Value="Both" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.GridLines Both = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.GridLines.Both" />
+      <MemberSignature Language="VB.NET" Value="Both" />
+      <MemberSignature Language="C++ CLI" Value="Both" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -55,6 +59,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.GridLines</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Both horizontal and vertical gridlines are rendered.</summary>
       </Docs>
@@ -63,6 +68,8 @@
       <MemberSignature Language="C#" Value="Horizontal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.GridLines Horizontal = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.GridLines.Horizontal" />
+      <MemberSignature Language="VB.NET" Value="Horizontal" />
+      <MemberSignature Language="C++ CLI" Value="Horizontal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -71,6 +78,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.GridLines</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Only horizontal gridlines are rendered.</summary>
       </Docs>
@@ -79,6 +87,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.GridLines None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.GridLines.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -87,6 +97,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.GridLines</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>No gridlines are rendered.</summary>
       </Docs>
@@ -95,6 +106,8 @@
       <MemberSignature Language="C#" Value="Vertical" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.GridLines Vertical = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.GridLines.Vertical" />
+      <MemberSignature Language="VB.NET" Value="Vertical" />
+      <MemberSignature Language="C++ CLI" Value="Vertical" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -103,6 +116,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.GridLines</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Only vertical gridlines are rendered.</summary>
       </Docs>

@@ -1,7 +1,9 @@
-<Type Name="ProcessPriorityClass" FullName="System.Diagnostics.ProcessPriorityClass">
+﻿<Type Name="ProcessPriorityClass" FullName="System.Diagnostics.ProcessPriorityClass">
   <TypeSignature Language="C#" Value="public enum ProcessPriorityClass" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ProcessPriorityClass extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.ProcessPriorityClass" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ProcessPriorityClass" />
+  <TypeSignature Language="C++ CLI" Value="public enum class ProcessPriorityClass" />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.Process</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -38,6 +40,8 @@
       <MemberSignature Language="C#" Value="AboveNormal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.ProcessPriorityClass AboveNormal = int32(32768)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.ProcessPriorityClass.AboveNormal" />
+      <MemberSignature Language="VB.NET" Value="AboveNormal" />
+      <MemberSignature Language="C++ CLI" Value="AboveNormal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -56,6 +60,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.ProcessPriorityClass</ReturnType>
       </ReturnValue>
+      <MemberValue>32768</MemberValue>
       <Docs>
         <summary>Specifies that the process has priority above <see langword="Normal" /> but below <see cref="F:System.Diagnostics.ProcessPriorityClass.High" />.</summary>
       </Docs>
@@ -64,6 +69,8 @@
       <MemberSignature Language="C#" Value="BelowNormal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.ProcessPriorityClass BelowNormal = int32(16384)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.ProcessPriorityClass.BelowNormal" />
+      <MemberSignature Language="VB.NET" Value="BelowNormal" />
+      <MemberSignature Language="C++ CLI" Value="BelowNormal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -82,6 +89,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.ProcessPriorityClass</ReturnType>
       </ReturnValue>
+      <MemberValue>16384</MemberValue>
       <Docs>
         <summary>Specifies that the process has priority above <see langword="Idle" /> but below <see langword="Normal" />.</summary>
       </Docs>
@@ -90,6 +98,8 @@
       <MemberSignature Language="C#" Value="High" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.ProcessPriorityClass High = int32(128)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.ProcessPriorityClass.High" />
+      <MemberSignature Language="VB.NET" Value="High" />
+      <MemberSignature Language="C++ CLI" Value="High" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -108,6 +118,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.ProcessPriorityClass</ReturnType>
       </ReturnValue>
+      <MemberValue>128</MemberValue>
       <Docs>
         <summary>Specifies that the process performs time-critical tasks that must be executed immediately, such as the <see langword="Task List" /> dialog, which must respond quickly when called by the user, regardless of the load on the operating system. The threads of the process preempt the threads of normal or idle priority class processes.</summary>
         <remarks>
@@ -126,6 +137,8 @@
       <MemberSignature Language="C#" Value="Idle" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.ProcessPriorityClass Idle = int32(64)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.ProcessPriorityClass.Idle" />
+      <MemberSignature Language="VB.NET" Value="Idle" />
+      <MemberSignature Language="C++ CLI" Value="Idle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -144,6 +157,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.ProcessPriorityClass</ReturnType>
       </ReturnValue>
+      <MemberValue>64</MemberValue>
       <Docs>
         <summary>Specifies that the threads of this process run only when the system is idle, such as a screen saver. The threads of the process are preempted by the threads of any process running in a higher priority class.</summary>
         <remarks>
@@ -162,6 +176,8 @@
       <MemberSignature Language="C#" Value="Normal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.ProcessPriorityClass Normal = int32(32)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.ProcessPriorityClass.Normal" />
+      <MemberSignature Language="VB.NET" Value="Normal" />
+      <MemberSignature Language="C++ CLI" Value="Normal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -180,6 +196,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.ProcessPriorityClass</ReturnType>
       </ReturnValue>
+      <MemberValue>32</MemberValue>
       <Docs>
         <summary>Specifies that the process has no special scheduling needs.</summary>
       </Docs>
@@ -188,6 +205,8 @@
       <MemberSignature Language="C#" Value="RealTime" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.ProcessPriorityClass RealTime = int32(256)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.ProcessPriorityClass.RealTime" />
+      <MemberSignature Language="VB.NET" Value="RealTime" />
+      <MemberSignature Language="C++ CLI" Value="RealTime" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -206,6 +225,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.ProcessPriorityClass</ReturnType>
       </ReturnValue>
+      <MemberValue>256</MemberValue>
       <Docs>
         <summary>Specifies that the process has the highest possible priority.</summary>
         <remarks>

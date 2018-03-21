@@ -1,7 +1,9 @@
-<Type Name="StringConcat" FullName="System.Xml.Xsl.Runtime.StringConcat">
+﻿<Type Name="StringConcat" FullName="System.Xml.Xsl.Runtime.StringConcat">
   <TypeSignature Language="C#" Value="public struct StringConcat" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit StringConcat extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Xsl.Runtime.StringConcat" />
+  <TypeSignature Language="VB.NET" Value="Public Structure StringConcat" />
+  <TypeSignature Language="C++ CLI" Value="public value class StringConcat" />
   <AssemblyInfo>
     <AssemblyName>System.Data.SqlXml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +32,8 @@
       <MemberSignature Language="C#" Value="public void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.StringConcat.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -54,6 +58,8 @@
       <MemberSignature Language="C#" Value="public void Concat (string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Concat(string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.StringConcat.Concat(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Concat (value As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Concat(System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -81,6 +87,8 @@
       <MemberSignature Language="C#" Value="public string Delimiter { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Delimiter" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Xsl.Runtime.StringConcat.Delimiter" />
+      <MemberSignature Language="VB.NET" Value="Public Property Delimiter As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Delimiter { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -105,6 +113,8 @@
       <MemberSignature Language="C#" Value="public string GetResult ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetResult() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.StringConcat.GetResult" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetResult () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetResult();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>

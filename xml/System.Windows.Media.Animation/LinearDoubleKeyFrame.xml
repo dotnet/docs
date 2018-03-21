@@ -1,7 +1,9 @@
-<Type Name="LinearDoubleKeyFrame" FullName="System.Windows.Media.Animation.LinearDoubleKeyFrame">
+﻿<Type Name="LinearDoubleKeyFrame" FullName="System.Windows.Media.Animation.LinearDoubleKeyFrame">
   <TypeSignature Language="C#" Value="public class LinearDoubleKeyFrame : System.Windows.Media.Animation.DoubleKeyFrame" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LinearDoubleKeyFrame extends System.Windows.Media.Animation.DoubleKeyFrame" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.LinearDoubleKeyFrame" />
+  <TypeSignature Language="VB.NET" Value="Public Class LinearDoubleKeyFrame&#xA;Inherits DoubleKeyFrame" />
+  <TypeSignature Language="C++ CLI" Value="public ref class LinearDoubleKeyFrame : System::Windows::Media::Animation::DoubleKeyFrame" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,10 +30,21 @@
     <altmember cref="T:System.Windows.Media.Animation.DoubleKeyFrameCollection" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.LinearDoubleKeyFrame" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public LinearDoubleKeyFrame ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.LinearDoubleKeyFrame.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LinearDoubleKeyFrame();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -47,6 +60,8 @@
       <MemberSignature Language="C#" Value="public LinearDoubleKeyFrame (double value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.LinearDoubleKeyFrame.#ctor(System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As Double)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LinearDoubleKeyFrame(double value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -65,6 +80,7 @@
       <MemberSignature Language="C#" Value="public LinearDoubleKeyFrame (double value, System.Windows.Media.Animation.KeyTime keyTime);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 value, valuetype System.Windows.Media.Animation.KeyTime keyTime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.LinearDoubleKeyFrame.#ctor(System.Double,System.Windows.Media.Animation.KeyTime)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LinearDoubleKeyFrame(double value, System::Windows::Media::Animation::KeyTime keyTime);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -85,6 +101,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.LinearDoubleKeyFrame.CreateInstanceCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -105,6 +123,8 @@
       <MemberSignature Language="C#" Value="protected override double InterpolateValueCore (double baseValue, double keyFrameProgress);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance float64 InterpolateValueCore(float64 baseValue, float64 keyFrameProgress) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.LinearDoubleKeyFrame.InterpolateValueCore(System.Double,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function InterpolateValueCore (baseValue As Double, keyFrameProgress As Double) As Double" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override double InterpolateValueCore(double baseValue, double keyFrameProgress);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -125,14 +145,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.LinearDoubleKeyFrame" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,9 @@
-<Type Name="LoginView" FullName="System.Web.UI.WebControls.LoginView">
+﻿<Type Name="LoginView" FullName="System.Web.UI.WebControls.LoginView">
   <TypeSignature Language="C#" Value="public class LoginView : System.Web.UI.Control, System.Web.UI.INamingContainer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LoginView extends System.Web.UI.Control implements class System.Web.UI.INamingContainer" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.LoginView" />
+  <TypeSignature Language="VB.NET" Value="Public Class LoginView&#xA;Inherits Control&#xA;Implements INamingContainer" />
+  <TypeSignature Language="C++ CLI" Value="public ref class LoginView : System::Web::UI::Control, System::Web::UI::INamingContainer" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -140,6 +142,8 @@
       <MemberSignature Language="C#" Value="public LoginView ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.LoginView.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LoginView();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -155,6 +159,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.ITemplate AnonymousTemplate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.ITemplate AnonymousTemplate" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LoginView.AnonymousTemplate" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property AnonymousTemplate As ITemplate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ITemplate ^ AnonymousTemplate { System::Web::UI::ITemplate ^ get(); void set(System::Web::UI::ITemplate ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -204,6 +210,8 @@
       <MemberSignature Language="C#" Value="public override System.Web.UI.ControlCollection Controls { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.ControlCollection Controls" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LoginView.Controls" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Controls As ControlCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ControlCollection ^ Controls { System::Web::UI::ControlCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -219,9 +227,11 @@
       </Docs>
     </Member>
     <Member MemberName="CreateChildControls">
-      <MemberSignature Language="C#" Value="protected override void CreateChildControls ();" />
+      <MemberSignature Language="C#" Value="protected internal override void CreateChildControls ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void CreateChildControls() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.LoginView.CreateChildControls" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub CreateChildControls ()" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void CreateChildControls();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -247,6 +257,8 @@
       <MemberSignature Language="C#" Value="public override void DataBind ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void DataBind() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.LoginView.DataBind" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub DataBind ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void DataBind();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -272,6 +284,8 @@
       <MemberSignature Language="C#" Value="public override bool EnableTheming { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool EnableTheming" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LoginView.EnableTheming" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property EnableTheming As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool EnableTheming { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -306,6 +320,8 @@
       <MemberSignature Language="C#" Value="public override void Focus ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Focus() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.LoginView.Focus" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Focus ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Focus();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -334,9 +350,11 @@
       </Docs>
     </Member>
     <Member MemberName="LoadControlState">
-      <MemberSignature Language="C#" Value="protected override void LoadControlState (object savedState);" />
+      <MemberSignature Language="C#" Value="protected internal override void LoadControlState (object savedState);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void LoadControlState(object savedState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.LoginView.LoadControlState(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub LoadControlState (savedState As Object)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void LoadControlState(System::Object ^ savedState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -358,6 +376,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.ITemplate LoggedInTemplate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.ITemplate LoggedInTemplate" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LoginView.LoggedInTemplate" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property LoggedInTemplate As ITemplate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ITemplate ^ LoggedInTemplate { System::Web::UI::ITemplate ^ get(); void set(System::Web::UI::ITemplate ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -409,9 +429,11 @@
       </Docs>
     </Member>
     <Member MemberName="OnInit">
-      <MemberSignature Language="C#" Value="protected override void OnInit (EventArgs e);" />
+      <MemberSignature Language="C#" Value="protected internal override void OnInit (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnInit(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.LoginView.OnInit(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnInit (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnInit(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -444,9 +466,11 @@
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
-      <MemberSignature Language="C#" Value="protected override void OnPreRender (EventArgs e);" />
+      <MemberSignature Language="C#" Value="protected internal override void OnPreRender (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnPreRender(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.LoginView.OnPreRender(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnPreRender (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnPreRender(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -482,6 +506,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnViewChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnViewChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.LoginView.OnViewChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnViewChanged (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnViewChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -521,6 +547,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnViewChanging (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnViewChanging(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.LoginView.OnViewChanging(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnViewChanging (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnViewChanging(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -557,9 +585,11 @@
       </Docs>
     </Member>
     <Member MemberName="Render">
-      <MemberSignature Language="C#" Value="protected override void Render (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="C#" Value="protected internal override void Render (System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void Render(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.LoginView.Render(System.Web.UI.HtmlTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Render (writer As HtmlTextWriter)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Render(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -591,6 +621,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.RoleGroupCollection RoleGroups { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.RoleGroupCollection RoleGroups" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LoginView.RoleGroups" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property RoleGroups As RoleGroupCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::RoleGroupCollection ^ RoleGroups { System::Web::UI::WebControls::RoleGroupCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -642,9 +674,11 @@
       </Docs>
     </Member>
     <Member MemberName="SaveControlState">
-      <MemberSignature Language="C#" Value="protected override object SaveControlState ();" />
+      <MemberSignature Language="C#" Value="protected internal override object SaveControlState ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance object SaveControlState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.LoginView.SaveControlState" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function SaveControlState () As Object" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Object ^ SaveControlState();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -665,6 +699,8 @@
       <MemberSignature Language="C#" Value="protected override void SetDesignModeState (System.Collections.IDictionary data);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetDesignModeState(class System.Collections.IDictionary data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.LoginView.SetDesignModeState(System.Collections.IDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetDesignModeState (data As IDictionary)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetDesignModeState(System::Collections::IDictionary ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -687,6 +723,8 @@
       <MemberSignature Language="C#" Value="public override string SkinID { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SkinID" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LoginView.SkinID" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property SkinID As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ SkinID { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -723,6 +761,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler ViewChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ViewChanged" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.LoginView.ViewChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ViewChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ViewChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -756,6 +796,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler ViewChanging;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ViewChanging" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.LoginView.ViewChanging" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ViewChanging As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ViewChanging;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

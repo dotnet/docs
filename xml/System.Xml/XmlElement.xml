@@ -1,7 +1,9 @@
-<Type Name="XmlElement" FullName="System.Xml.XmlElement">
+﻿<Type Name="XmlElement" FullName="System.Xml.XmlElement">
   <TypeSignature Language="C#" Value="public class XmlElement : System.Xml.XmlLinkedNode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlElement extends System.Xml.XmlLinkedNode" />
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlElement" />
+  <TypeSignature Language="VB.NET" Value="Public Class XmlElement&#xA;Inherits XmlLinkedNode" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlElement : System::Xml::XmlLinkedNode" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.XmlDocument</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -39,9 +41,11 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="protected XmlElement (string prefix, string localName, string namespaceURI, System.Xml.XmlDocument doc);" />
+      <MemberSignature Language="C#" Value="protected internal XmlElement (string prefix, string localName, string namespaceURI, System.Xml.XmlDocument doc);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig specialname rtspecialname instance void .ctor(string prefix, string localName, string namespaceURI, class System.Xml.XmlDocument doc) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlElement.#ctor(System.String,System.String,System.String,System.Xml.XmlDocument)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Sub New (prefix As String, localName As String, namespaceURI As String, doc As XmlDocument)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; XmlElement(System::String ^ prefix, System::String ^ localName, System::String ^ namespaceURI, System::Xml::XmlDocument ^ doc);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -86,6 +90,8 @@
       <MemberSignature Language="C#" Value="public override System.Xml.XmlAttributeCollection Attributes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlAttributeCollection Attributes" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlElement.Attributes" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Attributes As XmlAttributeCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xml::XmlAttributeCollection ^ Attributes { System::Xml::XmlAttributeCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -129,6 +135,8 @@
       <MemberSignature Language="C#" Value="public override System.Xml.XmlNode CloneNode (bool deep);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Xml.XmlNode CloneNode(bool deep) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlElement.CloneNode(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CloneNode (deep As Boolean) As XmlNode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Xml::XmlNode ^ CloneNode(bool deep);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -177,10 +185,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetAttribute">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the attribute value for the specified attribute.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetAttribute">
       <MemberSignature Language="C#" Value="public virtual string GetAttribute (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetAttribute(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlElement.GetAttribute(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAttribute (name As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetAttribute(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -227,6 +246,8 @@
       <MemberSignature Language="C#" Value="public virtual string GetAttribute (string localName, string namespaceURI);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetAttribute(string localName, string namespaceURI) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlElement.GetAttribute(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAttribute (localName As String, namespaceURI As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetAttribute(System::String ^ localName, System::String ^ namespaceURI);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -260,10 +281,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetAttributeNode">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Return the specified <see cref="T:System.Xml.XmlAttribute" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetAttributeNode">
       <MemberSignature Language="C#" Value="public virtual System.Xml.XmlAttribute GetAttributeNode (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Xml.XmlAttribute GetAttributeNode(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlElement.GetAttributeNode(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAttributeNode (name As String) As XmlAttribute" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Xml::XmlAttribute ^ GetAttributeNode(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -310,6 +342,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Xml.XmlAttribute GetAttributeNode (string localName, string namespaceURI);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Xml.XmlAttribute GetAttributeNode(string localName, string namespaceURI) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlElement.GetAttributeNode(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAttributeNode (localName As String, namespaceURI As String) As XmlAttribute" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Xml::XmlAttribute ^ GetAttributeNode(System::String ^ localName, System::String ^ namespaceURI);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -343,10 +377,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetElementsByTagName">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an <see cref="T:System.Xml.XmlNodeList" /> containing a list of all descendant elements that match the specified name.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetElementsByTagName">
       <MemberSignature Language="C#" Value="public virtual System.Xml.XmlNodeList GetElementsByTagName (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Xml.XmlNodeList GetElementsByTagName(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlElement.GetElementsByTagName(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetElementsByTagName (name As String) As XmlNodeList" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Xml::XmlNodeList ^ GetElementsByTagName(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -405,6 +450,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Xml.XmlNodeList GetElementsByTagName (string localName, string namespaceURI);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Xml.XmlNodeList GetElementsByTagName(string localName, string namespaceURI) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlElement.GetElementsByTagName(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetElementsByTagName (localName As String, namespaceURI As String) As XmlNodeList" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Xml::XmlNodeList ^ GetElementsByTagName(System::String ^ localName, System::String ^ namespaceURI);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -448,10 +495,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="HasAttribute">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether the current node has the specified attribute.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="HasAttribute">
       <MemberSignature Language="C#" Value="public virtual bool HasAttribute (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool HasAttribute(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlElement.HasAttribute(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function HasAttribute (name As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool HasAttribute(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -499,6 +557,8 @@
       <MemberSignature Language="C#" Value="public virtual bool HasAttribute (string localName, string namespaceURI);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool HasAttribute(string localName, string namespaceURI) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlElement.HasAttribute(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function HasAttribute (localName As String, namespaceURI As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool HasAttribute(System::String ^ localName, System::String ^ namespaceURI);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -537,6 +597,8 @@
       <MemberSignature Language="C#" Value="public virtual bool HasAttributes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasAttributes" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlElement.HasAttributes" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property HasAttributes As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool HasAttributes { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -585,6 +647,8 @@
       <MemberSignature Language="C#" Value="public override string InnerText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string InnerText" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlElement.InnerText" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property InnerText As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ InnerText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -634,6 +698,8 @@
       <MemberSignature Language="C#" Value="public override string InnerXml { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string InnerXml" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlElement.InnerXml" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property InnerXml As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ InnerXml { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -684,6 +750,8 @@
       <MemberSignature Language="C#" Value="public bool IsEmpty { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsEmpty" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlElement.IsEmpty" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsEmpty As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsEmpty { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -735,6 +803,8 @@
       <MemberSignature Language="C#" Value="public override string LocalName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string LocalName" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlElement.LocalName" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property LocalName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ LocalName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -782,6 +852,8 @@
       <MemberSignature Language="C#" Value="public override string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlElement.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -825,6 +897,8 @@
       <MemberSignature Language="C#" Value="public override string NamespaceURI { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string NamespaceURI" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlElement.NamespaceURI" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property NamespaceURI As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ NamespaceURI { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -872,6 +946,8 @@
       <MemberSignature Language="C#" Value="public override System.Xml.XmlNode NextSibling { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlNode NextSibling" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlElement.NextSibling" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property NextSibling As XmlNode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xml::XmlNode ^ NextSibling { System::Xml::XmlNode ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -903,6 +979,8 @@
       <MemberSignature Language="C#" Value="public override System.Xml.XmlNodeType NodeType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Xml.XmlNodeType NodeType" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlElement.NodeType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property NodeType As XmlNodeType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xml::XmlNodeType NodeType { System::Xml::XmlNodeType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -935,6 +1013,8 @@
       <MemberSignature Language="C#" Value="public override System.Xml.XmlDocument OwnerDocument { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlDocument OwnerDocument" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlElement.OwnerDocument" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property OwnerDocument As XmlDocument" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xml::XmlDocument ^ OwnerDocument { System::Xml::XmlDocument ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -982,6 +1062,8 @@
       <MemberSignature Language="C#" Value="public override System.Xml.XmlNode ParentNode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlNode ParentNode" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlElement.ParentNode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ParentNode As XmlNode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xml::XmlNode ^ ParentNode { System::Xml::XmlNode ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -1013,6 +1095,8 @@
       <MemberSignature Language="C#" Value="public override string Prefix { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Prefix" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlElement.Prefix" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Prefix As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Prefix { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -1068,6 +1152,8 @@
       <MemberSignature Language="C#" Value="public override void RemoveAll ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void RemoveAll() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlElement.RemoveAll" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub RemoveAll ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void RemoveAll();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -1110,6 +1196,8 @@
       <MemberSignature Language="C#" Value="public virtual void RemoveAllAttributes ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveAllAttributes() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlElement.RemoveAllAttributes" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub RemoveAllAttributes ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveAllAttributes();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -1153,10 +1241,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="RemoveAttribute">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes the specified attribute. (If the removed attribute has a default value, it is immediately replaced).</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="RemoveAttribute">
       <MemberSignature Language="C#" Value="public virtual void RemoveAttribute (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveAttribute(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlElement.RemoveAttribute(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub RemoveAttribute (name As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveAttribute(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -1208,6 +1307,8 @@
       <MemberSignature Language="C#" Value="public virtual void RemoveAttribute (string localName, string namespaceURI);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveAttribute(string localName, string namespaceURI) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlElement.RemoveAttribute(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub RemoveAttribute (localName As String, namespaceURI As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveAttribute(System::String ^ localName, System::String ^ namespaceURI);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -1261,6 +1362,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Xml.XmlNode RemoveAttributeAt (int i);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Xml.XmlNode RemoveAttributeAt(int32 i) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlElement.RemoveAttributeAt(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function RemoveAttributeAt (i As Integer) As XmlNode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Xml::XmlNode ^ RemoveAttributeAt(int i);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -1308,10 +1411,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="RemoveAttributeNode">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes an <see cref="T:System.Xml.XmlAttribute" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="RemoveAttributeNode">
       <MemberSignature Language="C#" Value="public virtual System.Xml.XmlAttribute RemoveAttributeNode (System.Xml.XmlAttribute oldAttr);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Xml.XmlAttribute RemoveAttributeNode(class System.Xml.XmlAttribute oldAttr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlElement.RemoveAttributeNode(System.Xml.XmlAttribute)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function RemoveAttributeNode (oldAttr As XmlAttribute) As XmlAttribute" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Xml::XmlAttribute ^ RemoveAttributeNode(System::Xml::XmlAttribute ^ oldAttr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -1348,6 +1462,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Xml.XmlAttribute RemoveAttributeNode (string localName, string namespaceURI);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Xml.XmlAttribute RemoveAttributeNode(string localName, string namespaceURI) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlElement.RemoveAttributeNode(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function RemoveAttributeNode (localName As String, namespaceURI As String) As XmlAttribute" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Xml::XmlAttribute ^ RemoveAttributeNode(System::String ^ localName, System::String ^ namespaceURI);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -1397,6 +1513,8 @@
       <MemberSignature Language="C#" Value="public override System.Xml.Schema.IXmlSchemaInfo SchemaInfo { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Schema.IXmlSchemaInfo SchemaInfo" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlElement.SchemaInfo" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property SchemaInfo As IXmlSchemaInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xml::Schema::IXmlSchemaInfo ^ SchemaInfo { System::Xml::Schema::IXmlSchemaInfo ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1427,10 +1545,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetAttribute">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets the value of the specified attribute.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="SetAttribute">
       <MemberSignature Language="C#" Value="public virtual void SetAttribute (string name, string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetAttribute(string name, string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlElement.SetAttribute(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetAttribute (name As String, value As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetAttribute(System::String ^ name, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -1476,6 +1605,8 @@
       <MemberSignature Language="C#" Value="public virtual string SetAttribute (string localName, string namespaceURI, string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string SetAttribute(string localName, string namespaceURI, string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlElement.SetAttribute(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function SetAttribute (localName As String, namespaceURI As String, value As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ SetAttribute(System::String ^ localName, System::String ^ namespaceURI, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -1511,10 +1642,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetAttributeNode">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a new <see cref="T:System.Xml.XmlAttribute" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="SetAttributeNode">
       <MemberSignature Language="C#" Value="public virtual System.Xml.XmlAttribute SetAttributeNode (System.Xml.XmlAttribute newAttr);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Xml.XmlAttribute SetAttributeNode(class System.Xml.XmlAttribute newAttr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlElement.SetAttributeNode(System.Xml.XmlAttribute)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function SetAttributeNode (newAttr As XmlAttribute) As XmlAttribute" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Xml::XmlAttribute ^ SetAttributeNode(System::Xml::XmlAttribute ^ newAttr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -1559,6 +1701,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Xml.XmlAttribute SetAttributeNode (string localName, string namespaceURI);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Xml.XmlAttribute SetAttributeNode(string localName, string namespaceURI) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlElement.SetAttributeNode(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function SetAttributeNode (localName As String, namespaceURI As String) As XmlAttribute" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Xml::XmlAttribute ^ SetAttributeNode(System::String ^ localName, System::String ^ namespaceURI);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -1612,6 +1756,8 @@
       <MemberSignature Language="C#" Value="public override void WriteContentTo (System.Xml.XmlWriter w);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteContentTo(class System.Xml.XmlWriter w) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlElement.WriteContentTo(System.Xml.XmlWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteContentTo (w As XmlWriter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteContentTo(System::Xml::XmlWriter ^ w);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -1663,6 +1809,8 @@
       <MemberSignature Language="C#" Value="public override void WriteTo (System.Xml.XmlWriter w);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteTo(class System.Xml.XmlWriter w) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlElement.WriteTo(System.Xml.XmlWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteTo (w As XmlWriter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteTo(System::Xml::XmlWriter ^ w);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -1709,77 +1857,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="HasAttribute">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Determines whether the current node has the specified attribute.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetAttributeNode">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Return the specified <see cref="T:System.Xml.XmlAttribute" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="RemoveAttribute">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Removes the specified attribute. (If the removed attribute has a default value, it is immediately replaced).</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="SetAttributeNode">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds a new <see cref="T:System.Xml.XmlAttribute" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetAttribute">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns the attribute value for the specified attribute.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="SetAttribute">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Sets the value of the specified attribute.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="RemoveAttributeNode">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Removes an <see cref="T:System.Xml.XmlAttribute" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetElementsByTagName">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns an <see cref="T:System.Xml.XmlNodeList" /> containing a list of all descendant elements that match the specified name.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,9 @@
-<Type Name="PersistOnCloseAttribute" FullName="System.Workflow.ComponentModel.PersistOnCloseAttribute">
+﻿<Type Name="PersistOnCloseAttribute" FullName="System.Workflow.ComponentModel.PersistOnCloseAttribute">
   <TypeSignature Language="C#" Value="public sealed class PersistOnCloseAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PersistOnCloseAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.PersistOnCloseAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PersistOnCloseAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PersistOnCloseAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +38,8 @@
       <MemberSignature Language="C#" Value="public PersistOnCloseAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.PersistOnCloseAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PersistOnCloseAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

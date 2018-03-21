@@ -1,7 +1,9 @@
-<Type Name="DataSourceOperation" FullName="System.Web.UI.DataSourceOperation">
+﻿<Type Name="DataSourceOperation" FullName="System.Web.UI.DataSourceOperation">
   <TypeSignature Language="C#" Value="public enum DataSourceOperation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataSourceOperation extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataSourceOperation" />
+  <TypeSignature Language="VB.NET" Value="Public Enum DataSourceOperation" />
+  <TypeSignature Language="C++ CLI" Value="public enum class DataSourceOperation" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +29,8 @@
       <MemberSignature Language="C#" Value="Delete" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataSourceOperation Delete = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataSourceOperation.Delete" />
+      <MemberSignature Language="VB.NET" Value="Delete" />
+      <MemberSignature Language="C++ CLI" Value="Delete" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -35,6 +39,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataSourceOperation</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The operation deletes records from a data source.</summary>
       </Docs>
@@ -43,6 +48,8 @@
       <MemberSignature Language="C#" Value="Insert" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataSourceOperation Insert = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataSourceOperation.Insert" />
+      <MemberSignature Language="VB.NET" Value="Insert" />
+      <MemberSignature Language="C++ CLI" Value="Insert" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -51,6 +58,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataSourceOperation</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The operation inserts one or more records into a data source.</summary>
       </Docs>
@@ -59,6 +67,8 @@
       <MemberSignature Language="C#" Value="Select" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataSourceOperation Select = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataSourceOperation.Select" />
+      <MemberSignature Language="VB.NET" Value="Select" />
+      <MemberSignature Language="C++ CLI" Value="Select" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -67,6 +77,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataSourceOperation</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The operation retrieves records from a data source.</summary>
       </Docs>
@@ -75,6 +86,8 @@
       <MemberSignature Language="C#" Value="SelectCount" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataSourceOperation SelectCount = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataSourceOperation.SelectCount" />
+      <MemberSignature Language="VB.NET" Value="SelectCount" />
+      <MemberSignature Language="C++ CLI" Value="SelectCount" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -83,6 +96,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataSourceOperation</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The operation retrieves the total number of records for a query from the data source.</summary>
       </Docs>
@@ -91,6 +105,8 @@
       <MemberSignature Language="C#" Value="Update" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataSourceOperation Update = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataSourceOperation.Update" />
+      <MemberSignature Language="VB.NET" Value="Update" />
+      <MemberSignature Language="C++ CLI" Value="Update" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -99,6 +115,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataSourceOperation</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The operation updates records in a data source.</summary>
       </Docs>

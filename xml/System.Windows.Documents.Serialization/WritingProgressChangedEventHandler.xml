@@ -1,7 +1,9 @@
-<Type Name="WritingProgressChangedEventHandler" FullName="System.Windows.Documents.Serialization.WritingProgressChangedEventHandler">
+﻿<Type Name="WritingProgressChangedEventHandler" FullName="System.Windows.Documents.Serialization.WritingProgressChangedEventHandler">
   <TypeSignature Language="C#" Value="public delegate void WritingProgressChangedEventHandler(object sender, WritingProgressChangedEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WritingProgressChangedEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.Serialization.WritingProgressChangedEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub WritingProgressChangedEventHandler(sender As Object, e As WritingProgressChangedEventArgs)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void WritingProgressChangedEventHandler(System::Object ^ sender, WritingProgressChangedEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

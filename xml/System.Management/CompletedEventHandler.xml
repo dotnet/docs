@@ -1,7 +1,9 @@
-<Type Name="CompletedEventHandler" FullName="System.Management.CompletedEventHandler">
+﻿<Type Name="CompletedEventHandler" FullName="System.Management.CompletedEventHandler">
   <TypeSignature Language="C#" Value="public delegate void CompletedEventHandler(object sender, CompletedEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CompletedEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Management.CompletedEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub CompletedEventHandler(sender As Object, e As CompletedEventArgs)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void CompletedEventHandler(System::Object ^ sender, CompletedEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

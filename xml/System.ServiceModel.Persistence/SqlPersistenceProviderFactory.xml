@@ -1,7 +1,9 @@
-<Type Name="SqlPersistenceProviderFactory" FullName="System.ServiceModel.Persistence.SqlPersistenceProviderFactory">
+﻿<Type Name="SqlPersistenceProviderFactory" FullName="System.ServiceModel.Persistence.SqlPersistenceProviderFactory">
   <TypeSignature Language="C#" Value="public class SqlPersistenceProviderFactory : System.ServiceModel.Persistence.PersistenceProviderFactory" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SqlPersistenceProviderFactory extends System.ServiceModel.Persistence.PersistenceProviderFactory" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Persistence.SqlPersistenceProviderFactory" />
+  <TypeSignature Language="VB.NET" Value="Public Class SqlPersistenceProviderFactory&#xA;Inherits PersistenceProviderFactory" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SqlPersistenceProviderFactory : System::ServiceModel::Persistence::PersistenceProviderFactory" />
   <AssemblyInfo>
     <AssemblyName>System.WorkflowServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +64,8 @@
       <MemberSignature Language="C#" Value="public SqlPersistenceProviderFactory (System.Collections.Specialized.NameValueCollection parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Specialized.NameValueCollection parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.SqlPersistenceProviderFactory.#ctor(System.Collections.Specialized.NameValueCollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (parameters As NameValueCollection)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlPersistenceProviderFactory(System::Collections::Specialized::NameValueCollection ^ parameters);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -94,6 +98,8 @@
       <MemberSignature Language="C#" Value="public SqlPersistenceProviderFactory (string connectionString);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string connectionString) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.SqlPersistenceProviderFactory.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (connectionString As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlPersistenceProviderFactory(System::String ^ connectionString);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -121,6 +127,8 @@
       <MemberSignature Language="C#" Value="public SqlPersistenceProviderFactory (string connectionString, bool serializeAsText);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string connectionString, bool serializeAsText) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.SqlPersistenceProviderFactory.#ctor(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (connectionString As String, serializeAsText As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlPersistenceProviderFactory(System::String ^ connectionString, bool serializeAsText);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -155,6 +163,8 @@
       <MemberSignature Language="C#" Value="public SqlPersistenceProviderFactory (string connectionString, bool serializeAsText, TimeSpan lockTimeout);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string connectionString, bool serializeAsText, valuetype System.TimeSpan lockTimeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.SqlPersistenceProviderFactory.#ctor(System.String,System.Boolean,System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (connectionString As String, serializeAsText As Boolean, lockTimeout As TimeSpan)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlPersistenceProviderFactory(System::String ^ connectionString, bool serializeAsText, TimeSpan lockTimeout);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -193,6 +203,8 @@
       <MemberSignature Language="C#" Value="public string ConnectionString { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ConnectionString" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Persistence.SqlPersistenceProviderFactory.ConnectionString" />
+      <MemberSignature Language="VB.NET" Value="Public Property ConnectionString As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ConnectionString { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -220,6 +232,8 @@
       <MemberSignature Language="C#" Value="public override System.ServiceModel.Persistence.PersistenceProvider CreateProvider (Guid id);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ServiceModel.Persistence.PersistenceProvider CreateProvider(valuetype System.Guid id) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.SqlPersistenceProviderFactory.CreateProvider(System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateProvider (id As Guid) As PersistenceProvider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ServiceModel::Persistence::PersistenceProvider ^ CreateProvider(Guid id);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -256,6 +270,8 @@
       <MemberSignature Language="C#" Value="protected override TimeSpan DefaultCloseTimeout { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan DefaultCloseTimeout" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Persistence.SqlPersistenceProviderFactory.DefaultCloseTimeout" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DefaultCloseTimeout As TimeSpan" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property TimeSpan DefaultCloseTimeout { TimeSpan get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -281,6 +297,8 @@
       <MemberSignature Language="C#" Value="protected override TimeSpan DefaultOpenTimeout { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan DefaultOpenTimeout" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Persistence.SqlPersistenceProviderFactory.DefaultOpenTimeout" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DefaultOpenTimeout As TimeSpan" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property TimeSpan DefaultOpenTimeout { TimeSpan get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -306,6 +324,8 @@
       <MemberSignature Language="C#" Value="public TimeSpan LockTimeout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan LockTimeout" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Persistence.SqlPersistenceProviderFactory.LockTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public Property LockTimeout As TimeSpan" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan LockTimeout { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -338,6 +358,8 @@
       <MemberSignature Language="C#" Value="protected override void OnAbort ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnAbort() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.SqlPersistenceProviderFactory.OnAbort" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnAbort ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnAbort();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -363,6 +385,8 @@
       <MemberSignature Language="C#" Value="protected override IAsyncResult OnBeginClose (TimeSpan timeout, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.IAsyncResult OnBeginClose(valuetype System.TimeSpan timeout, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.SqlPersistenceProviderFactory.OnBeginClose(System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnBeginClose (timeout As TimeSpan, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override IAsyncResult ^ OnBeginClose(TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -396,6 +420,8 @@
       <MemberSignature Language="C#" Value="protected override IAsyncResult OnBeginOpen (TimeSpan timeout, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.IAsyncResult OnBeginOpen(valuetype System.TimeSpan timeout, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.SqlPersistenceProviderFactory.OnBeginOpen(System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnBeginOpen (timeout As TimeSpan, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override IAsyncResult ^ OnBeginOpen(TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -429,6 +455,8 @@
       <MemberSignature Language="C#" Value="protected override void OnClose (TimeSpan timeout);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnClose(valuetype System.TimeSpan timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.SqlPersistenceProviderFactory.OnClose(System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnClose (timeout As TimeSpan)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnClose(TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -457,6 +485,8 @@
       <MemberSignature Language="C#" Value="protected override void OnEndClose (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnEndClose(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.SqlPersistenceProviderFactory.OnEndClose(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnEndClose (result As IAsyncResult)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnEndClose(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -485,6 +515,8 @@
       <MemberSignature Language="C#" Value="protected override void OnEndOpen (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnEndOpen(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.SqlPersistenceProviderFactory.OnEndOpen(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnEndOpen (result As IAsyncResult)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnEndOpen(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -513,6 +545,8 @@
       <MemberSignature Language="C#" Value="protected override void OnOpen (TimeSpan timeout);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnOpen(valuetype System.TimeSpan timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.SqlPersistenceProviderFactory.OnOpen(System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnOpen (timeout As TimeSpan)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnOpen(TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -541,6 +575,8 @@
       <MemberSignature Language="C#" Value="public bool SerializeAsText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SerializeAsText" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Persistence.SqlPersistenceProviderFactory.SerializeAsText" />
+      <MemberSignature Language="VB.NET" Value="Public Property SerializeAsText As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SerializeAsText { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>

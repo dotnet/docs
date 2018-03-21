@@ -1,7 +1,9 @@
-<Type Name="AuthorizationContext" FullName="System.Security.Claims.AuthorizationContext">
+﻿<Type Name="AuthorizationContext" FullName="System.Security.Claims.AuthorizationContext">
   <TypeSignature Language="C#" Value="public class AuthorizationContext" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AuthorizationContext extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Security.Claims.AuthorizationContext" />
+  <TypeSignature Language="VB.NET" Value="Public Class AuthorizationContext" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AuthorizationContext" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -66,10 +68,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Claims.AuthorizationContext" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public AuthorizationContext (System.Security.Claims.ClaimsPrincipal principal, System.Collections.ObjectModel.Collection&lt;System.Security.Claims.Claim&gt; resource, System.Collections.ObjectModel.Collection&lt;System.Security.Claims.Claim&gt; action);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Claims.ClaimsPrincipal principal, class System.Collections.ObjectModel.Collection`1&lt;class System.Security.Claims.Claim&gt; resource, class System.Collections.ObjectModel.Collection`1&lt;class System.Security.Claims.Claim&gt; action) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Claims.AuthorizationContext.#ctor(System.Security.Claims.ClaimsPrincipal,System.Collections.ObjectModel.Collection{System.Security.Claims.Claim},System.Collections.ObjectModel.Collection{System.Security.Claims.Claim})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (principal As ClaimsPrincipal, resource As Collection(Of Claim), action As Collection(Of Claim))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AuthorizationContext(System::Security::Claims::ClaimsPrincipal ^ principal, System::Collections::ObjectModel::Collection&lt;System::Security::Claims::Claim ^&gt; ^ resource, System::Collections::ObjectModel::Collection&lt;System::Security::Claims::Claim ^&gt; ^ action);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -102,6 +115,8 @@
       <MemberSignature Language="C#" Value="public AuthorizationContext (System.Security.Claims.ClaimsPrincipal principal, string resource, string action);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Claims.ClaimsPrincipal principal, string resource, string action) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Claims.AuthorizationContext.#ctor(System.Security.Claims.ClaimsPrincipal,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (principal As ClaimsPrincipal, resource As String, action As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AuthorizationContext(System::Security::Claims::ClaimsPrincipal ^ principal, System::String ^ resource, System::String ^ action);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -141,6 +156,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.Security.Claims.Claim&gt; Action { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.Security.Claims.Claim&gt; Action" />
       <MemberSignature Language="DocId" Value="P:System.Security.Claims.AuthorizationContext.Action" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Action As Collection(Of Claim)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::Security::Claims::Claim ^&gt; ^ Action { System::Collections::ObjectModel::Collection&lt;System::Security::Claims::Claim ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -166,6 +183,8 @@
       <MemberSignature Language="C#" Value="public System.Security.Claims.ClaimsPrincipal Principal { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Claims.ClaimsPrincipal Principal" />
       <MemberSignature Language="DocId" Value="P:System.Security.Claims.AuthorizationContext.Principal" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Principal As ClaimsPrincipal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Claims::ClaimsPrincipal ^ Principal { System::Security::Claims::ClaimsPrincipal ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -184,6 +203,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.Security.Claims.Claim&gt; Resource { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.Security.Claims.Claim&gt; Resource" />
       <MemberSignature Language="DocId" Value="P:System.Security.Claims.AuthorizationContext.Resource" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Resource As Collection(Of Claim)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::Security::Claims::Claim ^&gt; ^ Resource { System::Collections::ObjectModel::Collection&lt;System::Security::Claims::Claim ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -205,14 +226,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.Claims.AuthorizationContext" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

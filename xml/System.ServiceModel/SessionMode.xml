@@ -1,7 +1,9 @@
-<Type Name="SessionMode" FullName="System.ServiceModel.SessionMode">
+﻿<Type Name="SessionMode" FullName="System.ServiceModel.SessionMode">
   <TypeSignature Language="C#" Value="public enum SessionMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SessionMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.SessionMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum SessionMode" />
+  <TypeSignature Language="C++ CLI" Value="public enum class SessionMode" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -52,6 +54,8 @@
       <MemberSignature Language="C#" Value="Allowed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.SessionMode Allowed = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.SessionMode.Allowed" />
+      <MemberSignature Language="VB.NET" Value="Allowed" />
+      <MemberSignature Language="C++ CLI" Value="Allowed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -65,6 +69,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.SessionMode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Specifies that the contract supports sessions if the incoming binding supports them.</summary>
       </Docs>
@@ -73,6 +78,8 @@
       <MemberSignature Language="C#" Value="NotAllowed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.SessionMode NotAllowed = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.SessionMode.NotAllowed" />
+      <MemberSignature Language="VB.NET" Value="NotAllowed" />
+      <MemberSignature Language="C++ CLI" Value="NotAllowed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -86,6 +93,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.SessionMode</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Specifies that the contract never supports bindings that initiate sessions.</summary>
       </Docs>
@@ -94,6 +102,8 @@
       <MemberSignature Language="C#" Value="Required" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.SessionMode Required = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.SessionMode.Required" />
+      <MemberSignature Language="VB.NET" Value="Required" />
+      <MemberSignature Language="C++ CLI" Value="Required" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -107,6 +117,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.SessionMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Specifies that the contract requires a sessionful binding. An exception is thrown if the binding is not configured to support session.</summary>
       </Docs>

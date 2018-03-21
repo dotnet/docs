@@ -1,7 +1,9 @@
-<Type Name="MenuMerge" FullName="System.Windows.Forms.MenuMerge">
+﻿<Type Name="MenuMerge" FullName="System.Windows.Forms.MenuMerge">
   <TypeSignature Language="C#" Value="public enum MenuMerge" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MenuMerge extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.MenuMerge" />
+  <TypeSignature Language="VB.NET" Value="Public Enum MenuMerge" />
+  <TypeSignature Language="C++ CLI" Value="public enum class MenuMerge" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +36,8 @@
       <MemberSignature Language="C#" Value="Add" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.MenuMerge Add = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MenuMerge.Add" />
+      <MemberSignature Language="VB.NET" Value="Add" />
+      <MemberSignature Language="C++ CLI" Value="Add" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -42,6 +46,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.MenuMerge</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Windows.Forms.MenuItem" /> is added to the collection of existing <see cref="T:System.Windows.Forms.MenuItem" /> objects in a merged menu.</summary>
       </Docs>
@@ -50,6 +55,8 @@
       <MemberSignature Language="C#" Value="MergeItems" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.MenuMerge MergeItems = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MenuMerge.MergeItems" />
+      <MemberSignature Language="VB.NET" Value="MergeItems" />
+      <MemberSignature Language="C++ CLI" Value="MergeItems" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -58,6 +65,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.MenuMerge</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>All submenu items of this <see cref="T:System.Windows.Forms.MenuItem" /> are merged with those of existing <see cref="T:System.Windows.Forms.MenuItem" /> objects at the same position in a merged menu.</summary>
       </Docs>
@@ -66,6 +74,8 @@
       <MemberSignature Language="C#" Value="Remove" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.MenuMerge Remove = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MenuMerge.Remove" />
+      <MemberSignature Language="VB.NET" Value="Remove" />
+      <MemberSignature Language="C++ CLI" Value="Remove" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -74,6 +84,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.MenuMerge</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Windows.Forms.MenuItem" /> is not included in a merged menu.</summary>
       </Docs>
@@ -82,6 +93,8 @@
       <MemberSignature Language="C#" Value="Replace" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.MenuMerge Replace = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MenuMerge.Replace" />
+      <MemberSignature Language="VB.NET" Value="Replace" />
+      <MemberSignature Language="C++ CLI" Value="Replace" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -90,6 +103,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.MenuMerge</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Windows.Forms.MenuItem" /> replaces an existing <see cref="T:System.Windows.Forms.MenuItem" /> at the same position in a merged menu.</summary>
       </Docs>

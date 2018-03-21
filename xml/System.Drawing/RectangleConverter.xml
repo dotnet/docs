@@ -1,7 +1,9 @@
-<Type Name="RectangleConverter" FullName="System.Drawing.RectangleConverter">
+﻿<Type Name="RectangleConverter" FullName="System.Drawing.RectangleConverter">
   <TypeSignature Language="C#" Value="public class RectangleConverter : System.ComponentModel.TypeConverter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RectangleConverter extends System.ComponentModel.TypeConverter" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.RectangleConverter" />
+  <TypeSignature Language="VB.NET" Value="Public Class RectangleConverter&#xA;Inherits TypeConverter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RectangleConverter : System::ComponentModel::TypeConverter" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +25,8 @@
       <MemberSignature Language="C#" Value="public RectangleConverter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.RectangleConverter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RectangleConverter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -42,6 +46,8 @@
       <MemberSignature Language="C#" Value="public override bool CanConvertFrom (System.ComponentModel.ITypeDescriptorContext context, Type sourceType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanConvertFrom(class System.ComponentModel.ITypeDescriptorContext context, class System.Type sourceType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.RectangleConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CanConvertFrom (context As ITypeDescriptorContext, sourceType As Type) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool CanConvertFrom(System::ComponentModel::ITypeDescriptorContext ^ context, Type ^ sourceType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -70,6 +76,8 @@
       <MemberSignature Language="C#" Value="public override bool CanConvertTo (System.ComponentModel.ITypeDescriptorContext context, Type destinationType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanConvertTo(class System.ComponentModel.ITypeDescriptorContext context, class System.Type destinationType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.RectangleConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CanConvertTo (context As ITypeDescriptorContext, destinationType As Type) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool CanConvertTo(System::ComponentModel::ITypeDescriptorContext ^ context, Type ^ destinationType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -105,6 +113,8 @@
       <MemberSignature Language="C#" Value="public override object ConvertFrom (System.ComponentModel.ITypeDescriptorContext context, System.Globalization.CultureInfo culture, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ConvertFrom(class System.ComponentModel.ITypeDescriptorContext context, class System.Globalization.CultureInfo culture, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.RectangleConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ConvertFrom (context As ITypeDescriptorContext, culture As CultureInfo, value As Object) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ ConvertFrom(System::ComponentModel::ITypeDescriptorContext ^ context, System::Globalization::CultureInfo ^ culture, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -136,6 +146,8 @@
       <MemberSignature Language="C#" Value="public override object ConvertTo (System.ComponentModel.ITypeDescriptorContext context, System.Globalization.CultureInfo culture, object value, Type destinationType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ConvertTo(class System.ComponentModel.ITypeDescriptorContext context, class System.Globalization.CultureInfo culture, object value, class System.Type destinationType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.RectangleConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ConvertTo (context As ITypeDescriptorContext, culture As CultureInfo, value As Object, destinationType As Type) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ ConvertTo(System::ComponentModel::ITypeDescriptorContext ^ context, System::Globalization::CultureInfo ^ culture, System::Object ^ value, Type ^ destinationType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -176,6 +188,8 @@
       <MemberSignature Language="C#" Value="public override object CreateInstance (System.ComponentModel.ITypeDescriptorContext context, System.Collections.IDictionary propertyValues);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object CreateInstance(class System.ComponentModel.ITypeDescriptorContext context, class System.Collections.IDictionary propertyValues) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.RectangleConverter.CreateInstance(System.ComponentModel.ITypeDescriptorContext,System.Collections.IDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateInstance (context As ITypeDescriptorContext, propertyValues As IDictionary) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ CreateInstance(System::ComponentModel::ITypeDescriptorContext ^ context, System::Collections::IDictionary ^ propertyValues);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -204,6 +218,8 @@
       <MemberSignature Language="C#" Value="public override bool GetCreateInstanceSupported (System.ComponentModel.ITypeDescriptorContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool GetCreateInstanceSupported(class System.ComponentModel.ITypeDescriptorContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.RectangleConverter.GetCreateInstanceSupported(System.ComponentModel.ITypeDescriptorContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetCreateInstanceSupported (context As ITypeDescriptorContext) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool GetCreateInstanceSupported(System::ComponentModel::ITypeDescriptorContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -230,6 +246,8 @@
       <MemberSignature Language="C#" Value="public override System.ComponentModel.PropertyDescriptorCollection GetProperties (System.ComponentModel.ITypeDescriptorContext context, object value, Attribute[] attributes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ComponentModel.PropertyDescriptorCollection GetProperties(class System.ComponentModel.ITypeDescriptorContext context, object value, class System.Attribute[] attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.RectangleConverter.GetProperties(System.ComponentModel.ITypeDescriptorContext,System.Object,System.Attribute[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetProperties (context As ITypeDescriptorContext, value As Object, attributes As Attribute()) As PropertyDescriptorCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ComponentModel::PropertyDescriptorCollection ^ GetProperties(System::ComponentModel::ITypeDescriptorContext ^ context, System::Object ^ value, cli::array &lt;Attribute ^&gt; ^ attributes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -267,6 +285,8 @@
       <MemberSignature Language="C#" Value="public override bool GetPropertiesSupported (System.ComponentModel.ITypeDescriptorContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool GetPropertiesSupported(class System.ComponentModel.ITypeDescriptorContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.RectangleConverter.GetPropertiesSupported(System.ComponentModel.ITypeDescriptorContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetPropertiesSupported (context As ITypeDescriptorContext) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool GetPropertiesSupported(System::ComponentModel::ITypeDescriptorContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

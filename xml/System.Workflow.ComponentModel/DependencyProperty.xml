@@ -1,7 +1,9 @@
-<Type Name="DependencyProperty" FullName="System.Workflow.ComponentModel.DependencyProperty">
+﻿<Type Name="DependencyProperty" FullName="System.Workflow.ComponentModel.DependencyProperty">
   <TypeSignature Language="C#" Value="public sealed class DependencyProperty : System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit DependencyProperty extends System.Object implements class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.DependencyProperty" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DependencyProperty&#xA;Implements ISerializable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DependencyProperty sealed : System::Runtime::Serialization::ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +49,8 @@
       <MemberSignature Language="C#" Value="public System.Workflow.ComponentModel.PropertyMetadata DefaultMetadata { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.ComponentModel.PropertyMetadata DefaultMetadata" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.DependencyProperty.DefaultMetadata" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DefaultMetadata As PropertyMetadata" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::ComponentModel::PropertyMetadata ^ DefaultMetadata { System::Workflow::ComponentModel::PropertyMetadata ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -65,6 +69,8 @@
       <MemberSignature Language="C#" Value="public static System.Workflow.ComponentModel.DependencyProperty FromName (string propertyName, Type ownerType);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Workflow.ComponentModel.DependencyProperty FromName(string propertyName, class System.Type ownerType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.DependencyProperty.FromName(System.String,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromName (propertyName As String, ownerType As Type) As DependencyProperty" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Workflow::ComponentModel::DependencyProperty ^ FromName(System::String ^ propertyName, Type ^ ownerType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -89,6 +95,8 @@
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IList&lt;System.Workflow.ComponentModel.DependencyProperty&gt; FromType (Type ownerType);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IList`1&lt;class System.Workflow.ComponentModel.DependencyProperty&gt; FromType(class System.Type ownerType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.DependencyProperty.FromType(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromType (ownerType As Type) As IList(Of DependencyProperty)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Generic::IList&lt;System::Workflow::ComponentModel::DependencyProperty ^&gt; ^ FromType(Type ^ ownerType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -112,6 +120,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.DependencyProperty.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -138,6 +148,8 @@
       <MemberSignature Language="C#" Value="public bool IsAttached { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsAttached" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.DependencyProperty.IsAttached" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsAttached As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAttached { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -164,6 +176,8 @@
       <MemberSignature Language="C#" Value="public bool IsEvent { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsEvent" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.DependencyProperty.IsEvent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsEvent As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsEvent { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -183,6 +197,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.DependencyProperty.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -201,6 +217,8 @@
       <MemberSignature Language="C#" Value="public Type OwnerType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type OwnerType" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.DependencyProperty.OwnerType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OwnerType As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ OwnerType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -219,6 +237,8 @@
       <MemberSignature Language="C#" Value="public Type PropertyType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type PropertyType" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.DependencyProperty.PropertyType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PropertyType As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ PropertyType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -233,10 +253,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Register">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates new instances of the <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> possessing specific initialization conditions.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Register">
       <MemberSignature Language="C#" Value="public static System.Workflow.ComponentModel.DependencyProperty Register (string name, Type propertyType, Type ownerType);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Workflow.ComponentModel.DependencyProperty Register(string name, class System.Type propertyType, class System.Type ownerType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.DependencyProperty.Register(System.String,System.Type,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Register (name As String, propertyType As Type, ownerType As Type) As DependencyProperty" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Workflow::ComponentModel::DependencyProperty ^ Register(System::String ^ name, Type ^ propertyType, Type ^ ownerType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -274,6 +305,8 @@
       <MemberSignature Language="C#" Value="public static System.Workflow.ComponentModel.DependencyProperty Register (string name, Type propertyType, Type ownerType, System.Workflow.ComponentModel.PropertyMetadata defaultMetadata);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Workflow.ComponentModel.DependencyProperty Register(string name, class System.Type propertyType, class System.Type ownerType, class System.Workflow.ComponentModel.PropertyMetadata defaultMetadata) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.DependencyProperty.Register(System.String,System.Type,System.Type,System.Workflow.ComponentModel.PropertyMetadata)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Register (name As String, propertyType As Type, ownerType As Type, defaultMetadata As PropertyMetadata) As DependencyProperty" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Workflow::ComponentModel::DependencyProperty ^ Register(System::String ^ name, Type ^ propertyType, Type ^ ownerType, System::Workflow::ComponentModel::PropertyMetadata ^ defaultMetadata);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -299,10 +332,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="RegisterAttached">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> class that has the properties parameterized according to the input parameters.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="RegisterAttached">
       <MemberSignature Language="C#" Value="public static System.Workflow.ComponentModel.DependencyProperty RegisterAttached (string name, Type propertyType, Type ownerType);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Workflow.ComponentModel.DependencyProperty RegisterAttached(string name, class System.Type propertyType, class System.Type ownerType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.DependencyProperty.RegisterAttached(System.String,System.Type,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function RegisterAttached (name As String, propertyType As Type, ownerType As Type) As DependencyProperty" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Workflow::ComponentModel::DependencyProperty ^ RegisterAttached(System::String ^ name, Type ^ propertyType, Type ^ ownerType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -330,6 +374,8 @@
       <MemberSignature Language="C#" Value="public static System.Workflow.ComponentModel.DependencyProperty RegisterAttached (string name, Type propertyType, Type ownerType, System.Workflow.ComponentModel.PropertyMetadata defaultMetadata);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Workflow.ComponentModel.DependencyProperty RegisterAttached(string name, class System.Type propertyType, class System.Type ownerType, class System.Workflow.ComponentModel.PropertyMetadata defaultMetadata) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.DependencyProperty.RegisterAttached(System.String,System.Type,System.Type,System.Workflow.ComponentModel.PropertyMetadata)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function RegisterAttached (name As String, propertyType As Type, ownerType As Type, defaultMetadata As PropertyMetadata) As DependencyProperty" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Workflow::ComponentModel::DependencyProperty ^ RegisterAttached(System::String ^ name, Type ^ propertyType, Type ^ ownerType, System::Workflow::ComponentModel::PropertyMetadata ^ defaultMetadata);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -359,6 +405,8 @@
       <MemberSignature Language="C#" Value="public static System.Workflow.ComponentModel.DependencyProperty RegisterAttached (string name, Type propertyType, Type ownerType, System.Workflow.ComponentModel.PropertyMetadata defaultMetadata, Type validatorType);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Workflow.ComponentModel.DependencyProperty RegisterAttached(string name, class System.Type propertyType, class System.Type ownerType, class System.Workflow.ComponentModel.PropertyMetadata defaultMetadata, class System.Type validatorType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.DependencyProperty.RegisterAttached(System.String,System.Type,System.Type,System.Workflow.ComponentModel.PropertyMetadata,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function RegisterAttached (name As String, propertyType As Type, ownerType As Type, defaultMetadata As PropertyMetadata, validatorType As Type) As DependencyProperty" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Workflow::ComponentModel::DependencyProperty ^ RegisterAttached(System::String ^ name, Type ^ propertyType, Type ^ ownerType, System::Workflow::ComponentModel::PropertyMetadata ^ defaultMetadata, Type ^ validatorType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -391,7 +439,12 @@
       <MemberSignature Language="C#" Value="void ISerializable.GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.Serialization.ISerializable.GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.DependencyProperty.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Sub GetObjectData (info As SerializationInfo, context As StreamingContext) Implements ISerializable.GetObjectData" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.Serialization.ISerializable.GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context) = System::Runtime::Serialization::ISerializable::GetObjectData;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -414,6 +467,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.DependencyProperty.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -440,6 +495,8 @@
       <MemberSignature Language="C#" Value="public Type ValidatorType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type ValidatorType" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.DependencyProperty.ValidatorType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ValidatorType As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ValidatorType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -454,23 +511,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="RegisterAttached">
-      <AssemblyInfo>
-        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> class that has the properties parameterized according to the input parameters.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Register">
-      <AssemblyInfo>
-        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates new instances of the <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> possessing specific initialization conditions.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

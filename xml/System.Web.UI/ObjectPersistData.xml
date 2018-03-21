@@ -1,7 +1,9 @@
-<Type Name="ObjectPersistData" FullName="System.Web.UI.ObjectPersistData">
+﻿<Type Name="ObjectPersistData" FullName="System.Web.UI.ObjectPersistData">
   <TypeSignature Language="C#" Value="public class ObjectPersistData" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ObjectPersistData extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ObjectPersistData" />
+  <TypeSignature Language="VB.NET" Value="Public Class ObjectPersistData" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ObjectPersistData" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +22,8 @@
       <MemberSignature Language="C#" Value="public ObjectPersistData (System.Web.UI.ControlBuilder builder, System.Collections.IDictionary builtObjects);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.ControlBuilder builder, class System.Collections.IDictionary builtObjects) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ObjectPersistData.#ctor(System.Web.UI.ControlBuilder,System.Collections.IDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (builder As ControlBuilder, builtObjects As IDictionary)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ObjectPersistData(System::Web::UI::ControlBuilder ^ builder, System::Collections::IDictionary ^ builtObjects);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -41,6 +45,8 @@
       <MemberSignature Language="C#" Value="public void AddToObjectControlBuilderTable (System.Collections.IDictionary table);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddToObjectControlBuilderTable(class System.Collections.IDictionary table) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ObjectPersistData.AddToObjectControlBuilderTable(System.Collections.IDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddToObjectControlBuilderTable (table As IDictionary)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddToObjectControlBuilderTable(System::Collections::IDictionary ^ table);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -63,6 +69,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.ICollection AllPropertyEntries { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ICollection AllPropertyEntries" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ObjectPersistData.AllPropertyEntries" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AllPropertyEntries As ICollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ICollection ^ AllPropertyEntries { System::Collections::ICollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -82,6 +90,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.IDictionary BuiltObjects { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IDictionary BuiltObjects" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ObjectPersistData.BuiltObjects" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BuiltObjects As IDictionary" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IDictionary ^ BuiltObjects { System::Collections::IDictionary ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -101,6 +111,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.ICollection CollectionItems { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ICollection CollectionItems" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ObjectPersistData.CollectionItems" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CollectionItems As ICollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ICollection ^ CollectionItems { System::Collections::ICollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -120,6 +132,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.ICollection EventEntries { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ICollection EventEntries" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ObjectPersistData.EventEntries" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EventEntries As ICollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ICollection ^ EventEntries { System::Collections::ICollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -139,6 +153,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.IDictionary GetFilteredProperties (string filter);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.IDictionary GetFilteredProperties(string filter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ObjectPersistData.GetFilteredProperties(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetFilteredProperties (filter As String) As IDictionary" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IDictionary ^ GetFilteredProperties(System::String ^ filter);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -162,6 +178,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.PropertyEntry GetFilteredProperty (string filter, string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.UI.PropertyEntry GetFilteredProperty(string filter, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ObjectPersistData.GetFilteredProperty(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetFilteredProperty (filter As String, name As String) As PropertyEntry" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::PropertyEntry ^ GetFilteredProperty(System::String ^ filter, System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -187,6 +205,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.ICollection GetPropertyAllFilters (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.ICollection GetPropertyAllFilters(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ObjectPersistData.GetPropertyAllFilters(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetPropertyAllFilters (name As String) As ICollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ICollection ^ GetPropertyAllFilters(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -210,6 +230,8 @@
       <MemberSignature Language="C#" Value="public bool IsCollection { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsCollection" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ObjectPersistData.IsCollection" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsCollection As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCollection { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -230,6 +252,8 @@
       <MemberSignature Language="C#" Value="public bool Localize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Localize" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ObjectPersistData.Localize" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Localize As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Localize { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -250,6 +274,8 @@
       <MemberSignature Language="C#" Value="public Type ObjectType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type ObjectType" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ObjectPersistData.ObjectType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ObjectType As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ObjectType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -269,6 +295,8 @@
       <MemberSignature Language="C#" Value="public string ResourceKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ResourceKey" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ObjectPersistData.ResourceKey" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResourceKey As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ResourceKey { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="PartNotDiscoverableAttribute" FullName="System.Composition.PartNotDiscoverableAttribute">
+﻿<Type Name="PartNotDiscoverableAttribute" FullName="System.Composition.PartNotDiscoverableAttribute">
   <TypeSignature Language="C#" Value="public sealed class PartNotDiscoverableAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PartNotDiscoverableAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Composition.PartNotDiscoverableAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PartNotDiscoverableAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PartNotDiscoverableAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Composition.AttributedModel</AssemblyName>
     <AssemblyVersion>1.0.31.0</AssemblyVersion>
@@ -18,14 +20,15 @@
   </Attributes>
   <Docs>
     <summary>Specifies that this type’s exports won’t be included in a catalog.</summary>
-    <remarks>
-    </remarks>
+    <remarks></remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public PartNotDiscoverableAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Composition.PartNotDiscoverableAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PartNotDiscoverableAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.AttributedModel</AssemblyName>
@@ -35,8 +38,7 @@
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Composition.PartNotDiscoverableAttribute" /> class.</summary>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
   </Members>

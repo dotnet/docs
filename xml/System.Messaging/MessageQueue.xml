@@ -1,7 +1,9 @@
-<Type Name="MessageQueue" FullName="System.Messaging.MessageQueue">
+﻿<Type Name="MessageQueue" FullName="System.Messaging.MessageQueue">
   <TypeSignature Language="C#" Value="public class MessageQueue : System.ComponentModel.Component, System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MessageQueue extends System.ComponentModel.Component implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.Messaging.MessageQueue" />
+  <TypeSignature Language="VB.NET" Value="Public Class MessageQueue&#xA;Inherits Component&#xA;Implements IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MessageQueue : System::ComponentModel::Component, System::Collections::IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Messaging</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -83,10 +85,21 @@
     <altmember cref="P:System.Messaging.MessageQueue.MachineName" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Messaging.MessageQueue" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public MessageQueue ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MessageQueue();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -131,6 +144,8 @@
       <MemberSignature Language="C#" Value="public MessageQueue (string path);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string path) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (path As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MessageQueue(System::String ^ path);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -212,6 +227,8 @@
       <MemberSignature Language="C#" Value="public MessageQueue (string path, bool sharedModeDenyReceive);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string path, bool sharedModeDenyReceive) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.#ctor(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (path As String, sharedModeDenyReceive As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MessageQueue(System::String ^ path, bool sharedModeDenyReceive);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -301,6 +318,8 @@
       <MemberSignature Language="C#" Value="public MessageQueue (string path, System.Messaging.QueueAccessMode accessMode);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string path, valuetype System.Messaging.QueueAccessMode accessMode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.#ctor(System.String,System.Messaging.QueueAccessMode)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (path As String, accessMode As QueueAccessMode)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MessageQueue(System::String ^ path, System::Messaging::QueueAccessMode accessMode);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -321,6 +340,8 @@
       <MemberSignature Language="C#" Value="public MessageQueue (string path, bool sharedModeDenyReceive, bool enableCache);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string path, bool sharedModeDenyReceive, bool enableCache) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.#ctor(System.String,System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (path As String, sharedModeDenyReceive As Boolean, enableCache As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MessageQueue(System::String ^ path, bool sharedModeDenyReceive, bool enableCache);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -355,6 +376,8 @@
       <MemberSignature Language="C#" Value="public MessageQueue (string path, bool sharedModeDenyReceive, bool enableCache, System.Messaging.QueueAccessMode accessMode);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string path, bool sharedModeDenyReceive, bool enableCache, valuetype System.Messaging.QueueAccessMode accessMode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.#ctor(System.String,System.Boolean,System.Boolean,System.Messaging.QueueAccessMode)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (path As String, sharedModeDenyReceive As Boolean, enableCache As Boolean, accessMode As QueueAccessMode)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MessageQueue(System::String ^ path, bool sharedModeDenyReceive, bool enableCache, System::Messaging::QueueAccessMode accessMode);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -381,6 +404,8 @@
       <MemberSignature Language="C#" Value="public System.Messaging.QueueAccessMode AccessMode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Messaging.QueueAccessMode AccessMode" />
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueue.AccessMode" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AccessMode As QueueAccessMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Messaging::QueueAccessMode AccessMode { System::Messaging::QueueAccessMode get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -406,6 +431,8 @@
       <MemberSignature Language="C#" Value="public bool Authenticate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Authenticate" />
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueue.Authenticate" />
+      <MemberSignature Language="VB.NET" Value="Public Property Authenticate As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Authenticate { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -413,7 +440,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.Messaging.MessagingDescription("MQ_Authenticate")</AttributeName>
@@ -463,6 +490,8 @@
       <MemberSignature Language="C#" Value="public short BasePriority { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int16 BasePriority" />
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueue.BasePriority" />
+      <MemberSignature Language="VB.NET" Value="Public Property BasePriority As Short" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property short BasePriority { short get(); void set(short value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -470,7 +499,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.Messaging.MessagingDescription("MQ_BasePriority")</AttributeName>
@@ -515,10 +544,22 @@
         <altmember cref="P:System.Messaging.MessageQueue.FormatName" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="BeginPeek">
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <threadsafe>The method is not thread safe.</threadsafe>
+        <summary>Initiates an asynchronous peek operation by telling Message Queuing to begin peeking a message and notify the event handler when finished.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="BeginPeek">
       <MemberSignature Language="C#" Value="public IAsyncResult BeginPeek ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginPeek() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.BeginPeek" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginPeek () As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginPeek();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -583,6 +624,8 @@
       <MemberSignature Language="C#" Value="public IAsyncResult BeginPeek (TimeSpan timeout);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginPeek(valuetype System.TimeSpan timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.BeginPeek(System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginPeek (timeout As TimeSpan) As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginPeek(TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -654,6 +697,8 @@
       <MemberSignature Language="C#" Value="public IAsyncResult BeginPeek (TimeSpan timeout, object stateObject);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginPeek(valuetype System.TimeSpan timeout, object stateObject) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.BeginPeek(System.TimeSpan,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginPeek (timeout As TimeSpan, stateObject As Object) As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginPeek(TimeSpan timeout, System::Object ^ stateObject);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -733,6 +778,8 @@
       <MemberSignature Language="C#" Value="public IAsyncResult BeginPeek (TimeSpan timeout, object stateObject, AsyncCallback callback);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginPeek(valuetype System.TimeSpan timeout, object stateObject, class System.AsyncCallback callback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.BeginPeek(System.TimeSpan,System.Object,System.AsyncCallback)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginPeek (timeout As TimeSpan, stateObject As Object, callback As AsyncCallback) As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginPeek(TimeSpan timeout, System::Object ^ stateObject, AsyncCallback ^ callback);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -804,6 +851,7 @@
       <MemberSignature Language="C#" Value="public IAsyncResult BeginPeek (TimeSpan timeout, System.Messaging.Cursor cursor, System.Messaging.PeekAction action, object state, AsyncCallback callback);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginPeek(valuetype System.TimeSpan timeout, class System.Messaging.Cursor cursor, valuetype System.Messaging.PeekAction action, object state, class System.AsyncCallback callback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.BeginPeek(System.TimeSpan,System.Messaging.Cursor,System.Messaging.PeekAction,System.Object,System.AsyncCallback)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginPeek(TimeSpan timeout, System::Messaging::Cursor ^ cursor, System::Messaging::PeekAction action, System::Object ^ state, AsyncCallback ^ callback);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -869,10 +917,22 @@
         <altmember cref="T:System.TimeSpan" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="BeginReceive">
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <threadsafe>The method is not thread safe.</threadsafe>
+        <summary>Initiates an asynchronous receive operation by telling Message Queuing to begin receiving a message and notify the event handler when finished.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="BeginReceive">
       <MemberSignature Language="C#" Value="public IAsyncResult BeginReceive ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginReceive() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.BeginReceive" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginReceive () As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginReceive();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -951,6 +1011,8 @@ myMessageQueue.BeginTransaction();
       <MemberSignature Language="C#" Value="public IAsyncResult BeginReceive (TimeSpan timeout);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginReceive(valuetype System.TimeSpan timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.BeginReceive(System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginReceive (timeout As TimeSpan) As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginReceive(TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -1029,6 +1091,8 @@ myMessageQueue.BeginTransaction();
       <MemberSignature Language="C#" Value="public IAsyncResult BeginReceive (TimeSpan timeout, object stateObject);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginReceive(valuetype System.TimeSpan timeout, object stateObject) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.BeginReceive(System.TimeSpan,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginReceive (timeout As TimeSpan, stateObject As Object) As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginReceive(TimeSpan timeout, System::Object ^ stateObject);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -1113,6 +1177,8 @@ myMessageQueue.BeginTransaction();
       <MemberSignature Language="C#" Value="public IAsyncResult BeginReceive (TimeSpan timeout, object stateObject, AsyncCallback callback);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginReceive(valuetype System.TimeSpan timeout, object stateObject, class System.AsyncCallback callback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.BeginReceive(System.TimeSpan,System.Object,System.AsyncCallback)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginReceive (timeout As TimeSpan, stateObject As Object, callback As AsyncCallback) As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginReceive(TimeSpan timeout, System::Object ^ stateObject, AsyncCallback ^ callback);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -1196,6 +1262,7 @@ myMessageQueue.BeginTransaction();
       <MemberSignature Language="C#" Value="public IAsyncResult BeginReceive (TimeSpan timeout, System.Messaging.Cursor cursor, object state, AsyncCallback callback);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginReceive(valuetype System.TimeSpan timeout, class System.Messaging.Cursor cursor, object state, class System.AsyncCallback callback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.BeginReceive(System.TimeSpan,System.Messaging.Cursor,System.Object,System.AsyncCallback)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginReceive(TimeSpan timeout, System::Messaging::Cursor ^ cursor, System::Object ^ state, AsyncCallback ^ callback);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -1275,6 +1342,8 @@ myMessageQueue.BeginTransaction();
       <MemberSignature Language="C#" Value="public bool CanRead { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanRead" />
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueue.CanRead" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanRead As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanRead { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -1285,7 +1354,7 @@ myMessageQueue.BeginTransaction();
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.Messaging.MessagingDescription("MQ_CanRead")</AttributeName>
@@ -1332,6 +1401,8 @@ myMessageQueue.BeginTransaction();
       <MemberSignature Language="C#" Value="public bool CanWrite { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanWrite" />
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueue.CanWrite" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanWrite As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanWrite { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -1342,7 +1413,7 @@ myMessageQueue.BeginTransaction();
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.Messaging.MessagingDescription("MQ_CanWrite")</AttributeName>
@@ -1389,6 +1460,8 @@ myMessageQueue.BeginTransaction();
       <MemberSignature Language="C#" Value="public Guid Category { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid Category" />
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueue.Category" />
+      <MemberSignature Language="VB.NET" Value="Public Property Category As Guid" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid Category { Guid get(); void set(Guid value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -1396,7 +1469,7 @@ myMessageQueue.BeginTransaction();
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.Messaging.MessagingDescription("MQ_Category")</AttributeName>
@@ -1449,6 +1522,8 @@ myMessageQueue.BeginTransaction();
       <MemberSignature Language="C#" Value="public static void ClearConnectionCache ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ClearConnectionCache() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.ClearConnectionCache" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub ClearConnectionCache ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ClearConnectionCache();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -1490,6 +1565,8 @@ myMessageQueue.BeginTransaction();
       <MemberSignature Language="C#" Value="public void Close ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Close() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.Close" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Close ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Close();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -1547,10 +1624,21 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Create">
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new queue at the specified path on a Message Queuing server.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Create">
       <MemberSignature Language="C#" Value="public static System.Messaging.MessageQueue Create (string path);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Messaging.MessageQueue Create(string path) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.Create(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (path As String) As MessageQueue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Messaging::MessageQueue ^ Create(System::String ^ path);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -1617,6 +1705,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public static System.Messaging.MessageQueue Create (string path, bool transactional);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Messaging.MessageQueue Create(string path, bool transactional) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.Create(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (path As String, transactional As Boolean) As MessageQueue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Messaging::MessageQueue ^ Create(System::String ^ path, bool transactional);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -1687,6 +1777,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public System.Messaging.Cursor CreateCursor ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Messaging.Cursor CreateCursor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.CreateCursor" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateCursor () As Cursor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Cursor ^ CreateCursor();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -1707,6 +1799,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public DateTime CreateTime { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime CreateTime" />
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueue.CreateTime" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CreateTime As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime CreateTime { DateTime get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -1714,7 +1808,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.Messaging.MessagingDescription("MQ_CreateTime")</AttributeName>
@@ -1760,6 +1854,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public System.Messaging.DefaultPropertiesToSend DefaultPropertiesToSend { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Messaging.DefaultPropertiesToSend DefaultPropertiesToSend" />
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueue.DefaultPropertiesToSend" />
+      <MemberSignature Language="VB.NET" Value="Public Property DefaultPropertiesToSend As DefaultPropertiesToSend" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Messaging::DefaultPropertiesToSend ^ DefaultPropertiesToSend { System::Messaging::DefaultPropertiesToSend ^ get(); void set(System::Messaging::DefaultPropertiesToSend ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -1770,7 +1866,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.Messaging.MessagingDescription("MQ_DefaultPropertiesToSend")</AttributeName>
@@ -1846,6 +1942,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public static void Delete (string path);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Delete(string path) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.Delete(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Delete (path As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Delete(System::String ^ path);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -1914,6 +2012,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public bool DenySharedReceive { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool DenySharedReceive" />
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueue.DenySharedReceive" />
+      <MemberSignature Language="VB.NET" Value="Public Property DenySharedReceive As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DenySharedReceive { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -1971,6 +2071,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -2003,6 +2105,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public static bool EnableConnectionCache { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property bool EnableConnectionCache" />
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueue.EnableConnectionCache" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property EnableConnectionCache As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool EnableConnectionCache { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -2053,6 +2157,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public System.Messaging.EncryptionRequired EncryptionRequired { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Messaging.EncryptionRequired EncryptionRequired" />
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueue.EncryptionRequired" />
+      <MemberSignature Language="VB.NET" Value="Public Property EncryptionRequired As EncryptionRequired" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Messaging::EncryptionRequired EncryptionRequired { System::Messaging::EncryptionRequired get(); void set(System::Messaging::EncryptionRequired value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -2060,7 +2166,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.Messaging.MessagingDescription("MQ_EncryptionRequired")</AttributeName>
@@ -2109,6 +2215,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public System.Messaging.Message EndPeek (IAsyncResult asyncResult);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Messaging.Message EndPeek(class System.IAsyncResult asyncResult) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.EndPeek(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EndPeek (asyncResult As IAsyncResult) As Message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ EndPeek(IAsyncResult ^ asyncResult);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -2167,6 +2275,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public System.Messaging.Message EndReceive (IAsyncResult asyncResult);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Messaging.Message EndReceive(class System.IAsyncResult asyncResult) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.EndReceive(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EndReceive (asyncResult As IAsyncResult) As Message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ EndReceive(IAsyncResult ^ asyncResult);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -2225,6 +2335,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public static bool Exists (string path);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Exists(string path) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.Exists(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Exists (path As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool Exists(System::String ^ path);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -2302,6 +2414,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public string FormatName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string FormatName" />
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueue.FormatName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FormatName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FormatName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -2309,7 +2423,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.Messaging.MessagingDescription("MQ_FormatName")</AttributeName>
@@ -2361,6 +2475,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public System.Messaging.IMessageFormatter Formatter { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Messaging.IMessageFormatter Formatter" />
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueue.Formatter" />
+      <MemberSignature Language="VB.NET" Value="Public Property Formatter As IMessageFormatter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Messaging::IMessageFormatter ^ Formatter { System::Messaging::IMessageFormatter ^ get(); void set(System::Messaging::IMessageFormatter ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -2438,6 +2554,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public System.Messaging.Message[] GetAllMessages ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Messaging.Message[] GetAllMessages() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.GetAllMessages" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAllMessages () As Message()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Messaging::Message ^&gt; ^ GetAllMessages();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -2488,7 +2606,12 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -2535,6 +2658,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public static Guid GetMachineId (string machineName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Guid GetMachineId(string machineName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.GetMachineId(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetMachineId (machineName As String) As Guid" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Guid GetMachineId(System::String ^ machineName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -2591,6 +2716,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public System.Messaging.MessageEnumerator GetMessageEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Messaging.MessageEnumerator GetMessageEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.GetMessageEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetMessageEnumerator () As MessageEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::MessageEnumerator ^ GetMessageEnumerator();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -2649,6 +2776,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public System.Messaging.MessageEnumerator GetMessageEnumerator2 ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Messaging.MessageEnumerator GetMessageEnumerator2() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.GetMessageEnumerator2" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetMessageEnumerator2 () As MessageEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::MessageEnumerator ^ GetMessageEnumerator2();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -2688,10 +2817,21 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
         <altmember cref="M:System.Messaging.MessageQueue.GetMessageQueueEnumerator" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetMessageQueueEnumerator">
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an enumerator object for a dynamic listing of the public queues on the network.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetMessageQueueEnumerator">
       <MemberSignature Language="C#" Value="public static System.Messaging.MessageQueueEnumerator GetMessageQueueEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Messaging.MessageQueueEnumerator GetMessageQueueEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.GetMessageQueueEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetMessageQueueEnumerator () As MessageQueueEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Messaging::MessageQueueEnumerator ^ GetMessageQueueEnumerator();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -2744,6 +2884,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public static System.Messaging.MessageQueueEnumerator GetMessageQueueEnumerator (System.Messaging.MessageQueueCriteria criteria);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Messaging.MessageQueueEnumerator GetMessageQueueEnumerator(class System.Messaging.MessageQueueCriteria criteria) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.GetMessageQueueEnumerator(System.Messaging.MessageQueueCriteria)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetMessageQueueEnumerator (criteria As MessageQueueCriteria) As MessageQueueEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Messaging::MessageQueueEnumerator ^ GetMessageQueueEnumerator(System::Messaging::MessageQueueCriteria ^ criteria);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -2799,6 +2941,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public static System.Messaging.MessageQueue[] GetPrivateQueuesByMachine (string machineName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Messaging.MessageQueue[] GetPrivateQueuesByMachine(string machineName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.GetPrivateQueuesByMachine(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetPrivateQueuesByMachine (machineName As String) As MessageQueue()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Messaging::MessageQueue ^&gt; ^ GetPrivateQueuesByMachine(System::String ^ machineName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -2847,10 +2991,21 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
         <altmember cref="M:System.Messaging.MessageQueue.GetMessageQueueEnumerator" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetPublicQueues">
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves all the public queues on the network.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetPublicQueues">
       <MemberSignature Language="C#" Value="public static System.Messaging.MessageQueue[] GetPublicQueues ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Messaging.MessageQueue[] GetPublicQueues() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.GetPublicQueues" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetPublicQueues () As MessageQueue()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Messaging::MessageQueue ^&gt; ^ GetPublicQueues();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -2899,6 +3054,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public static System.Messaging.MessageQueue[] GetPublicQueues (System.Messaging.MessageQueueCriteria criteria);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Messaging.MessageQueue[] GetPublicQueues(class System.Messaging.MessageQueueCriteria criteria) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.GetPublicQueues(System.Messaging.MessageQueueCriteria)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetPublicQueues (criteria As MessageQueueCriteria) As MessageQueue()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Messaging::MessageQueue ^&gt; ^ GetPublicQueues(System::Messaging::MessageQueueCriteria ^ criteria);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -2951,6 +3108,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public static System.Messaging.MessageQueue[] GetPublicQueuesByCategory (Guid category);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Messaging.MessageQueue[] GetPublicQueuesByCategory(valuetype System.Guid category) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.GetPublicQueuesByCategory(System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetPublicQueuesByCategory (category As Guid) As MessageQueue()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Messaging::MessageQueue ^&gt; ^ GetPublicQueuesByCategory(Guid category);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -3004,6 +3163,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public static System.Messaging.MessageQueue[] GetPublicQueuesByLabel (string label);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Messaging.MessageQueue[] GetPublicQueuesByLabel(string label) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.GetPublicQueuesByLabel(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetPublicQueuesByLabel (label As String) As MessageQueue()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Messaging::MessageQueue ^&gt; ^ GetPublicQueuesByLabel(System::String ^ label);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -3058,6 +3219,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public static System.Messaging.MessageQueue[] GetPublicQueuesByMachine (string machineName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Messaging.MessageQueue[] GetPublicQueuesByMachine(string machineName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.GetPublicQueuesByMachine(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetPublicQueuesByMachine (machineName As String) As MessageQueue()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Messaging::MessageQueue ^&gt; ^ GetPublicQueuesByMachine(System::String ^ machineName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -3112,6 +3275,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public static System.Messaging.SecurityContext GetSecurityContext ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Messaging.SecurityContext GetSecurityContext() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.GetSecurityContext" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetSecurityContext () As SecurityContext" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Messaging::SecurityContext ^ GetSecurityContext();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -3132,6 +3297,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public Guid Id { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid Id" />
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueue.Id" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Id As Guid" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid Id { Guid get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -3139,7 +3306,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.Messaging.MessagingDescription("MQ_GuidId")</AttributeName>
@@ -3183,6 +3350,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public static readonly long InfiniteQueueSize;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly int64 InfiniteQueueSize" />
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueue.InfiniteQueueSize" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly InfiniteQueueSize As Long " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly long InfiniteQueueSize;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -3216,6 +3385,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public static readonly TimeSpan InfiniteTimeout;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.TimeSpan InfiniteTimeout" />
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueue.InfiniteTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly InfiniteTimeout As TimeSpan " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly TimeSpan InfiniteTimeout;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -3251,6 +3422,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public string Label { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Label" />
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueue.Label" />
+      <MemberSignature Language="VB.NET" Value="Public Property Label As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Label { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -3258,7 +3431,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.Messaging.MessagingDescription("MQ_Label")</AttributeName>
@@ -3308,6 +3481,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public DateTime LastModifyTime { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime LastModifyTime" />
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueue.LastModifyTime" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LastModifyTime As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime LastModifyTime { DateTime get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -3315,7 +3490,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.Messaging.MessagingDescription("MQ_LastModifyTime")</AttributeName>
@@ -3362,6 +3537,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public string MachineName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MachineName" />
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueue.MachineName" />
+      <MemberSignature Language="VB.NET" Value="Public Property MachineName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MachineName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -3372,7 +3549,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.Messaging.MessagingDescription("MQ_MachineName")</AttributeName>
@@ -3436,6 +3613,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public long MaximumJournalSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 MaximumJournalSize" />
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueue.MaximumJournalSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaximumJournalSize As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long MaximumJournalSize { long get(); void set(long value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -3443,7 +3622,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.Messaging.MessagingDescription("MQ_MaximumJournalSize")</AttributeName>
@@ -3492,6 +3671,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public long MaximumQueueSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 MaximumQueueSize" />
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueue.MaximumQueueSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaximumQueueSize As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long MaximumQueueSize { long get(); void set(long value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -3499,7 +3680,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.Messaging.MessagingDescription("MQ_MaximumQueueSize")</AttributeName>
@@ -3549,6 +3730,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public System.Messaging.MessagePropertyFilter MessageReadPropertyFilter { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Messaging.MessagePropertyFilter MessageReadPropertyFilter" />
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueue.MessageReadPropertyFilter" />
+      <MemberSignature Language="VB.NET" Value="Public Property MessageReadPropertyFilter As MessagePropertyFilter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Messaging::MessagePropertyFilter ^ MessageReadPropertyFilter { System::Messaging::MessagePropertyFilter ^ get(); void set(System::Messaging::MessagePropertyFilter ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -3559,7 +3742,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.Messaging.MessagingDescription("MQ_MessageReadPropertyFilter")</AttributeName>
@@ -3656,6 +3839,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public string MulticastAddress { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MulticastAddress" />
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueue.MulticastAddress" />
+      <MemberSignature Language="VB.NET" Value="Public Property MulticastAddress As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MulticastAddress { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -3666,7 +3851,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.Messaging.MessagingDescription("MQ_MulticastAddress")</AttributeName>
@@ -3712,6 +3897,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public string Path { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Path" />
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueue.Path" />
+      <MemberSignature Language="VB.NET" Value="Public Property Path As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Path { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -3804,10 +3991,22 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
         <altmember cref="M:System.Messaging.MessageQueue.Close" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Peek">
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <threadsafe>The method is not thread safe.</threadsafe>
+        <summary>Returns a copy of the first message in the queue without removing the message from the queue.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Peek">
       <MemberSignature Language="C#" Value="public System.Messaging.Message Peek ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Messaging.Message Peek() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.Peek" />
+      <MemberSignature Language="VB.NET" Value="Public Function Peek () As Message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ Peek();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -3866,6 +4065,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public System.Messaging.Message Peek (TimeSpan timeout);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Messaging.Message Peek(valuetype System.TimeSpan timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.Peek(System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Peek (timeout As TimeSpan) As Message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ Peek(TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -3925,6 +4126,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public System.Messaging.Message Peek (TimeSpan timeout, System.Messaging.Cursor cursor, System.Messaging.PeekAction action);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Messaging.Message Peek(valuetype System.TimeSpan timeout, class System.Messaging.Cursor cursor, valuetype System.Messaging.PeekAction action) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.Peek(System.TimeSpan,System.Messaging.Cursor,System.Messaging.PeekAction)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ Peek(TimeSpan timeout, System::Messaging::Cursor ^ cursor, System::Messaging::PeekAction action);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -3977,10 +4179,21 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
         <altmember cref="M:System.Messaging.MessageQueue.BeginPeek" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="PeekByCorrelationId">
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Peeks a message that matches a given correlation identifier.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="PeekByCorrelationId">
       <MemberSignature Language="C#" Value="public System.Messaging.Message PeekByCorrelationId (string correlationId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Messaging.Message PeekByCorrelationId(string correlationId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.PeekByCorrelationId(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function PeekByCorrelationId (correlationId As String) As Message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ PeekByCorrelationId(System::String ^ correlationId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -4038,6 +4251,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public System.Messaging.Message PeekByCorrelationId (string correlationId, TimeSpan timeout);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Messaging.Message PeekByCorrelationId(string correlationId, valuetype System.TimeSpan timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.PeekByCorrelationId(System.String,System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Function PeekByCorrelationId (correlationId As String, timeout As TimeSpan) As Message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ PeekByCorrelationId(System::String ^ correlationId, TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -4100,10 +4315,21 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
         <altmember cref="M:System.Messaging.MessageQueue.BeginPeek" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="PeekById">
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a copy of the message that has the specified message identifier without removing the message from the queue.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="PeekById">
       <MemberSignature Language="C#" Value="public System.Messaging.Message PeekById (string id);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Messaging.Message PeekById(string id) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.PeekById(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function PeekById (id As String) As Message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ PeekById(System::String ^ id);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -4158,6 +4384,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public System.Messaging.Message PeekById (string id, TimeSpan timeout);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Messaging.Message PeekById(string id, valuetype System.TimeSpan timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.PeekById(System.String,System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Function PeekById (id As String, timeout As TimeSpan) As Message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ PeekById(System::String ^ id, TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -4214,10 +4442,21 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
         <altmember cref="M:System.Messaging.MessageQueue.BeginPeek" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="PeekByLookupId">
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Introduced in MSMQ 3.0. Peeks at a specific message from the queue. The message can be specified by a lookup identifier or by its position at the front or end of the queue.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="PeekByLookupId">
       <MemberSignature Language="C#" Value="public System.Messaging.Message PeekByLookupId (long lookupId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Messaging.Message PeekByLookupId(int64 lookupId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.PeekByLookupId(System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Function PeekByLookupId (lookupId As Long) As Message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ PeekByLookupId(long lookupId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -4265,6 +4504,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public System.Messaging.Message PeekByLookupId (System.Messaging.MessageLookupAction action, long lookupId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Messaging.Message PeekByLookupId(valuetype System.Messaging.MessageLookupAction action, int64 lookupId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.PeekByLookupId(System.Messaging.MessageLookupAction,System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Function PeekByLookupId (action As MessageLookupAction, lookupId As Long) As Message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ PeekByLookupId(System::Messaging::MessageLookupAction action, long lookupId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -4325,6 +4566,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public event System.Messaging.PeekCompletedEventHandler PeekCompleted;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Messaging.PeekCompletedEventHandler PeekCompleted" />
       <MemberSignature Language="DocId" Value="E:System.Messaging.MessageQueue.PeekCompleted" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event PeekCompleted As PeekCompletedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Messaging::PeekCompletedEventHandler ^ PeekCompleted;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -4372,6 +4615,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public void Purge ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Purge() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.Purge" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Purge ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Purge();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -4417,6 +4662,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public string QueueName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string QueueName" />
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueue.QueueName" />
+      <MemberSignature Language="VB.NET" Value="Public Property QueueName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ QueueName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -4427,7 +4674,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.Messaging.MessagingDescription("MQ_QueueName")</AttributeName>
@@ -4482,6 +4729,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public IntPtr ReadHandle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance native int ReadHandle" />
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueue.ReadHandle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReadHandle As IntPtr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property IntPtr ReadHandle { IntPtr get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -4492,7 +4741,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.Messaging.MessagingDescription("MQ_ReadHandle")</AttributeName>
@@ -4526,10 +4775,22 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
         <altmember cref="P:System.Messaging.MessageQueue.WriteHandle" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Receive">
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <threadsafe>The method is not thread safe.</threadsafe>
+        <summary>Receives the first message in the queue, removing it from the queue.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Receive">
       <MemberSignature Language="C#" Value="public System.Messaging.Message Receive ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Messaging.Message Receive() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.Receive" />
+      <MemberSignature Language="VB.NET" Value="Public Function Receive () As Message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ Receive();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -4583,6 +4844,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public System.Messaging.Message Receive (System.Messaging.MessageQueueTransaction transaction);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Messaging.Message Receive(class System.Messaging.MessageQueueTransaction transaction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.Receive(System.Messaging.MessageQueueTransaction)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Receive (transaction As MessageQueueTransaction) As Message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ Receive(System::Messaging::MessageQueueTransaction ^ transaction);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -4648,6 +4911,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public System.Messaging.Message Receive (System.Messaging.MessageQueueTransactionType transactionType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Messaging.Message Receive(valuetype System.Messaging.MessageQueueTransactionType transactionType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.Receive(System.Messaging.MessageQueueTransactionType)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Receive (transactionType As MessageQueueTransactionType) As Message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ Receive(System::Messaging::MessageQueueTransactionType transactionType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -4711,6 +4976,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public System.Messaging.Message Receive (TimeSpan timeout);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Messaging.Message Receive(valuetype System.TimeSpan timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.Receive(System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Receive (timeout As TimeSpan) As Message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ Receive(TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -4774,6 +5041,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public System.Messaging.Message Receive (TimeSpan timeout, System.Messaging.Cursor cursor);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Messaging.Message Receive(valuetype System.TimeSpan timeout, class System.Messaging.Cursor cursor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.Receive(System.TimeSpan,System.Messaging.Cursor)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ Receive(TimeSpan timeout, System::Messaging::Cursor ^ cursor);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -4807,6 +5075,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public System.Messaging.Message Receive (TimeSpan timeout, System.Messaging.MessageQueueTransaction transaction);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Messaging.Message Receive(valuetype System.TimeSpan timeout, class System.Messaging.MessageQueueTransaction transaction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.Receive(System.TimeSpan,System.Messaging.MessageQueueTransaction)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Receive (timeout As TimeSpan, transaction As MessageQueueTransaction) As Message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ Receive(TimeSpan timeout, System::Messaging::MessageQueueTransaction ^ transaction);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -4880,6 +5150,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public System.Messaging.Message Receive (TimeSpan timeout, System.Messaging.MessageQueueTransactionType transactionType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Messaging.Message Receive(valuetype System.TimeSpan timeout, valuetype System.Messaging.MessageQueueTransactionType transactionType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.Receive(System.TimeSpan,System.Messaging.MessageQueueTransactionType)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Receive (timeout As TimeSpan, transactionType As MessageQueueTransactionType) As Message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ Receive(TimeSpan timeout, System::Messaging::MessageQueueTransactionType transactionType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -4950,6 +5222,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public System.Messaging.Message Receive (TimeSpan timeout, System.Messaging.Cursor cursor, System.Messaging.MessageQueueTransaction transaction);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Messaging.Message Receive(valuetype System.TimeSpan timeout, class System.Messaging.Cursor cursor, class System.Messaging.MessageQueueTransaction transaction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.Receive(System.TimeSpan,System.Messaging.Cursor,System.Messaging.MessageQueueTransaction)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ Receive(TimeSpan timeout, System::Messaging::Cursor ^ cursor, System::Messaging::MessageQueueTransaction ^ transaction);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -5022,6 +5295,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public System.Messaging.Message Receive (TimeSpan timeout, System.Messaging.Cursor cursor, System.Messaging.MessageQueueTransactionType transactionType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Messaging.Message Receive(valuetype System.TimeSpan timeout, class System.Messaging.Cursor cursor, valuetype System.Messaging.MessageQueueTransactionType transactionType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.Receive(System.TimeSpan,System.Messaging.Cursor,System.Messaging.MessageQueueTransactionType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ Receive(TimeSpan timeout, System::Messaging::Cursor ^ cursor, System::Messaging::MessageQueueTransactionType transactionType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -5084,10 +5358,21 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
         <altmember cref="M:System.Messaging.MessageQueue.BeginReceive" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ReceiveByCorrelationId">
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Receives a message that matches a given correlation identifier.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ReceiveByCorrelationId">
       <MemberSignature Language="C#" Value="public System.Messaging.Message ReceiveByCorrelationId (string correlationId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Messaging.Message ReceiveByCorrelationId(string correlationId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.ReceiveByCorrelationId(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ReceiveByCorrelationId (correlationId As String) As Message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ ReceiveByCorrelationId(System::String ^ correlationId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -5147,6 +5432,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public System.Messaging.Message ReceiveByCorrelationId (string correlationId, System.Messaging.MessageQueueTransaction transaction);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Messaging.Message ReceiveByCorrelationId(string correlationId, class System.Messaging.MessageQueueTransaction transaction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.ReceiveByCorrelationId(System.String,System.Messaging.MessageQueueTransaction)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ReceiveByCorrelationId (correlationId As String, transaction As MessageQueueTransaction) As Message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ ReceiveByCorrelationId(System::String ^ correlationId, System::Messaging::MessageQueueTransaction ^ transaction);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -5219,6 +5506,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public System.Messaging.Message ReceiveByCorrelationId (string correlationId, System.Messaging.MessageQueueTransactionType transactionType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Messaging.Message ReceiveByCorrelationId(string correlationId, valuetype System.Messaging.MessageQueueTransactionType transactionType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.ReceiveByCorrelationId(System.String,System.Messaging.MessageQueueTransactionType)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ReceiveByCorrelationId (correlationId As String, transactionType As MessageQueueTransactionType) As Message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ ReceiveByCorrelationId(System::String ^ correlationId, System::Messaging::MessageQueueTransactionType transactionType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -5286,6 +5575,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public System.Messaging.Message ReceiveByCorrelationId (string correlationId, TimeSpan timeout);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Messaging.Message ReceiveByCorrelationId(string correlationId, valuetype System.TimeSpan timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.ReceiveByCorrelationId(System.String,System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ReceiveByCorrelationId (correlationId As String, timeout As TimeSpan) As Message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ ReceiveByCorrelationId(System::String ^ correlationId, TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -5353,6 +5644,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public System.Messaging.Message ReceiveByCorrelationId (string correlationId, TimeSpan timeout, System.Messaging.MessageQueueTransaction transaction);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Messaging.Message ReceiveByCorrelationId(string correlationId, valuetype System.TimeSpan timeout, class System.Messaging.MessageQueueTransaction transaction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.ReceiveByCorrelationId(System.String,System.TimeSpan,System.Messaging.MessageQueueTransaction)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ReceiveByCorrelationId (correlationId As String, timeout As TimeSpan, transaction As MessageQueueTransaction) As Message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ ReceiveByCorrelationId(System::String ^ correlationId, TimeSpan timeout, System::Messaging::MessageQueueTransaction ^ transaction);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -5434,6 +5727,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public System.Messaging.Message ReceiveByCorrelationId (string correlationId, TimeSpan timeout, System.Messaging.MessageQueueTransactionType transactionType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Messaging.Message ReceiveByCorrelationId(string correlationId, valuetype System.TimeSpan timeout, valuetype System.Messaging.MessageQueueTransactionType transactionType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.ReceiveByCorrelationId(System.String,System.TimeSpan,System.Messaging.MessageQueueTransactionType)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ReceiveByCorrelationId (correlationId As String, timeout As TimeSpan, transactionType As MessageQueueTransactionType) As Message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ ReceiveByCorrelationId(System::String ^ correlationId, TimeSpan timeout, System::Messaging::MessageQueueTransactionType transactionType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -5504,10 +5799,21 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
         <altmember cref="M:System.Messaging.MessageQueue.BeginReceive" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ReceiveById">
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Receives the message that matches the given identifier, removing it from the queue.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ReceiveById">
       <MemberSignature Language="C#" Value="public System.Messaging.Message ReceiveById (string id);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Messaging.Message ReceiveById(string id) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.ReceiveById(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ReceiveById (id As String) As Message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ ReceiveById(System::String ^ id);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -5566,6 +5872,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public System.Messaging.Message ReceiveById (string id, System.Messaging.MessageQueueTransaction transaction);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Messaging.Message ReceiveById(string id, class System.Messaging.MessageQueueTransaction transaction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.ReceiveById(System.String,System.Messaging.MessageQueueTransaction)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ReceiveById (id As String, transaction As MessageQueueTransaction) As Message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ ReceiveById(System::String ^ id, System::Messaging::MessageQueueTransaction ^ transaction);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -5638,6 +5946,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public System.Messaging.Message ReceiveById (string id, System.Messaging.MessageQueueTransactionType transactionType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Messaging.Message ReceiveById(string id, valuetype System.Messaging.MessageQueueTransactionType transactionType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.ReceiveById(System.String,System.Messaging.MessageQueueTransactionType)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ReceiveById (id As String, transactionType As MessageQueueTransactionType) As Message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ ReceiveById(System::String ^ id, System::Messaging::MessageQueueTransactionType transactionType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -5705,6 +6015,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public System.Messaging.Message ReceiveById (string id, TimeSpan timeout);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Messaging.Message ReceiveById(string id, valuetype System.TimeSpan timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.ReceiveById(System.String,System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ReceiveById (id As String, timeout As TimeSpan) As Message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ ReceiveById(System::String ^ id, TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -5774,6 +6086,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public System.Messaging.Message ReceiveById (string id, TimeSpan timeout, System.Messaging.MessageQueueTransaction transaction);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Messaging.Message ReceiveById(string id, valuetype System.TimeSpan timeout, class System.Messaging.MessageQueueTransaction transaction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.ReceiveById(System.String,System.TimeSpan,System.Messaging.MessageQueueTransaction)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ReceiveById (id As String, timeout As TimeSpan, transaction As MessageQueueTransaction) As Message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ ReceiveById(System::String ^ id, TimeSpan timeout, System::Messaging::MessageQueueTransaction ^ transaction);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -5857,6 +6171,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public System.Messaging.Message ReceiveById (string id, TimeSpan timeout, System.Messaging.MessageQueueTransactionType transactionType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Messaging.Message ReceiveById(string id, valuetype System.TimeSpan timeout, valuetype System.Messaging.MessageQueueTransactionType transactionType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.ReceiveById(System.String,System.TimeSpan,System.Messaging.MessageQueueTransactionType)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ReceiveById (id As String, timeout As TimeSpan, transactionType As MessageQueueTransactionType) As Message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ ReceiveById(System::String ^ id, TimeSpan timeout, System::Messaging::MessageQueueTransactionType transactionType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -5930,10 +6246,21 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
         <altmember cref="M:System.Messaging.MessageQueue.BeginReceive" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ReceiveByLookupId">
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Introduced in MSMQ 3.0. Receives a specific message from the queue. The message can be specified by a lookup identifier or by its position at the front or end of the queue.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ReceiveByLookupId">
       <MemberSignature Language="C#" Value="public System.Messaging.Message ReceiveByLookupId (long lookupId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Messaging.Message ReceiveByLookupId(int64 lookupId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.ReceiveByLookupId(System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ReceiveByLookupId (lookupId As Long) As Message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ ReceiveByLookupId(long lookupId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -5981,6 +6308,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public System.Messaging.Message ReceiveByLookupId (System.Messaging.MessageLookupAction action, long lookupId, System.Messaging.MessageQueueTransaction transaction);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Messaging.Message ReceiveByLookupId(valuetype System.Messaging.MessageLookupAction action, int64 lookupId, class System.Messaging.MessageQueueTransaction transaction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.ReceiveByLookupId(System.Messaging.MessageLookupAction,System.Int64,System.Messaging.MessageQueueTransaction)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ReceiveByLookupId (action As MessageLookupAction, lookupId As Long, transaction As MessageQueueTransaction) As Message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ ReceiveByLookupId(System::Messaging::MessageLookupAction action, long lookupId, System::Messaging::MessageQueueTransaction ^ transaction);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -6049,6 +6378,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public System.Messaging.Message ReceiveByLookupId (System.Messaging.MessageLookupAction action, long lookupId, System.Messaging.MessageQueueTransactionType transactionType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Messaging.Message ReceiveByLookupId(valuetype System.Messaging.MessageLookupAction action, int64 lookupId, valuetype System.Messaging.MessageQueueTransactionType transactionType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.ReceiveByLookupId(System.Messaging.MessageLookupAction,System.Int64,System.Messaging.MessageQueueTransactionType)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ReceiveByLookupId (action As MessageLookupAction, lookupId As Long, transactionType As MessageQueueTransactionType) As Message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Messaging::Message ^ ReceiveByLookupId(System::Messaging::MessageLookupAction action, long lookupId, System::Messaging::MessageQueueTransactionType transactionType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -6119,6 +6450,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public event System.Messaging.ReceiveCompletedEventHandler ReceiveCompleted;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Messaging.ReceiveCompletedEventHandler ReceiveCompleted" />
       <MemberSignature Language="DocId" Value="E:System.Messaging.MessageQueue.ReceiveCompleted" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ReceiveCompleted As ReceiveCompletedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Messaging::ReceiveCompletedEventHandler ^ ReceiveCompleted;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -6166,6 +6499,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public void Refresh ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Refresh() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.Refresh" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Refresh ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Refresh();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -6209,6 +6544,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public void ResetPermissions ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ResetPermissions() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.ResetPermissions" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ResetPermissions ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetPermissions();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -6255,10 +6592,21 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
         <altmember cref="M:System.Messaging.MessageQueue.SetPermissions(System.String,System.Messaging.MessageQueueAccessRights)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Send">
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sends an object to a queue.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Send">
       <MemberSignature Language="C#" Value="public void Send (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Send(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.Send(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Send (obj As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Send(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -6325,6 +6673,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public void Send (object obj, System.Messaging.MessageQueueTransaction transaction);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Send(object obj, class System.Messaging.MessageQueueTransaction transaction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.Send(System.Object,System.Messaging.MessageQueueTransaction)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Send (obj As Object, transaction As MessageQueueTransaction)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Send(System::Object ^ obj, System::Messaging::MessageQueueTransaction ^ transaction);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -6404,6 +6754,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public void Send (object obj, System.Messaging.MessageQueueTransactionType transactionType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Send(object obj, valuetype System.Messaging.MessageQueueTransactionType transactionType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.Send(System.Object,System.Messaging.MessageQueueTransactionType)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Send (obj As Object, transactionType As MessageQueueTransactionType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Send(System::Object ^ obj, System::Messaging::MessageQueueTransactionType transactionType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -6471,6 +6823,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public void Send (object obj, string label);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Send(object obj, string label) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.Send(System.Object,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Send (obj As Object, label As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Send(System::Object ^ obj, System::String ^ label);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -6539,6 +6893,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public void Send (object obj, string label, System.Messaging.MessageQueueTransaction transaction);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Send(object obj, string label, class System.Messaging.MessageQueueTransaction transaction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.Send(System.Object,System.String,System.Messaging.MessageQueueTransaction)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Send (obj As Object, label As String, transaction As MessageQueueTransaction)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Send(System::Object ^ obj, System::String ^ label, System::Messaging::MessageQueueTransaction ^ transaction);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -6626,6 +6982,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public void Send (object obj, string label, System.Messaging.MessageQueueTransactionType transactionType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Send(object obj, string label, valuetype System.Messaging.MessageQueueTransactionType transactionType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.Send(System.Object,System.String,System.Messaging.MessageQueueTransactionType)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Send (obj As Object, label As String, transactionType As MessageQueueTransactionType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Send(System::Object ^ obj, System::String ^ label, System::Messaging::MessageQueueTransactionType transactionType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -6696,10 +7054,21 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
         <altmember cref="M:System.Messaging.MessageQueue.BeginReceive" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetPermissions">
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds permissions to the current set. This controls who has access rights to queue properties and messages in the queue.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="SetPermissions">
       <MemberSignature Language="C#" Value="public void SetPermissions (System.Messaging.AccessControlList dacl);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetPermissions(class System.Messaging.AccessControlList dacl) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.SetPermissions(System.Messaging.AccessControlList)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetPermissions (dacl As AccessControlList)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetPermissions(System::Messaging::AccessControlList ^ dacl);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -6809,6 +7178,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public void SetPermissions (System.Messaging.MessageQueueAccessControlEntry ace);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetPermissions(class System.Messaging.MessageQueueAccessControlEntry ace) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.SetPermissions(System.Messaging.MessageQueueAccessControlEntry)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetPermissions (ace As MessageQueueAccessControlEntry)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetPermissions(System::Messaging::MessageQueueAccessControlEntry ^ ace);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -6897,6 +7268,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public void SetPermissions (string user, System.Messaging.MessageQueueAccessRights rights);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetPermissions(string user, valuetype System.Messaging.MessageQueueAccessRights rights) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.SetPermissions(System.String,System.Messaging.MessageQueueAccessRights)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetPermissions (user As String, rights As MessageQueueAccessRights)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetPermissions(System::String ^ user, System::Messaging::MessageQueueAccessRights rights);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -6987,6 +7360,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public void SetPermissions (string user, System.Messaging.MessageQueueAccessRights rights, System.Messaging.AccessControlEntryType entryType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetPermissions(string user, valuetype System.Messaging.MessageQueueAccessRights rights, valuetype System.Messaging.AccessControlEntryType entryType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueue.SetPermissions(System.String,System.Messaging.MessageQueueAccessRights,System.Messaging.AccessControlEntryType)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetPermissions (user As String, rights As MessageQueueAccessRights, entryType As AccessControlEntryType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetPermissions(System::String ^ user, System::Messaging::MessageQueueAccessRights rights, System::Messaging::AccessControlEntryType entryType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -7077,6 +7452,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public System.ComponentModel.ISynchronizeInvoke SynchronizingObject { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.ISynchronizeInvoke SynchronizingObject" />
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueue.SynchronizingObject" />
+      <MemberSignature Language="VB.NET" Value="Public Property SynchronizingObject As ISynchronizeInvoke" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::ISynchronizeInvoke ^ SynchronizingObject { System::ComponentModel::ISynchronizeInvoke ^ get(); void set(System::ComponentModel::ISynchronizeInvoke ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -7117,6 +7494,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public bool Transactional { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Transactional" />
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueue.Transactional" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Transactional As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Transactional { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -7124,7 +7503,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.Messaging.MessagingDescription("MQ_Transactional")</AttributeName>
@@ -7185,6 +7564,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public bool UseJournalQueue { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UseJournalQueue" />
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueue.UseJournalQueue" />
+      <MemberSignature Language="VB.NET" Value="Public Property UseJournalQueue As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseJournalQueue { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -7192,7 +7573,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.Messaging.MessagingDescription("MQ_WriteHandle")</AttributeName>
@@ -7241,6 +7622,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <MemberSignature Language="C#" Value="public IntPtr WriteHandle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance native int WriteHandle" />
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueue.WriteHandle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WriteHandle As IntPtr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property IntPtr WriteHandle { IntPtr get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -7251,7 +7634,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.Messaging.MessagingDescription("MQ_WriteHandle")</AttributeName>
@@ -7285,153 +7668,5 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
         <altmember cref="P:System.Messaging.MessageQueue.ReadHandle" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="PeekById">
-      <AssemblyInfo>
-        <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a copy of the message that has the specified message identifier without removing the message from the queue.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetMessageQueueEnumerator">
-      <AssemblyInfo>
-        <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates an enumerator object for a dynamic listing of the public queues on the network.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetPublicQueues">
-      <AssemblyInfo>
-        <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Retrieves all the public queues on the network.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Send">
-      <AssemblyInfo>
-        <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Sends an object to a queue.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ReceiveByLookupId">
-      <AssemblyInfo>
-        <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Introduced in MSMQ 3.0. Receives a specific message from the queue. The message can be specified by a lookup identifier or by its position at the front or end of the queue.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Peek">
-      <AssemblyInfo>
-        <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <threadsafe>The method is not thread safe.</threadsafe>
-        <summary>Returns a copy of the first message in the queue without removing the message from the queue.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="BeginReceive">
-      <AssemblyInfo>
-        <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <threadsafe>The method is not thread safe.</threadsafe>
-        <summary>Initiates an asynchronous receive operation by telling Message Queuing to begin receiving a message and notify the event handler when finished.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="BeginPeek">
-      <AssemblyInfo>
-        <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <threadsafe>The method is not thread safe.</threadsafe>
-        <summary>Initiates an asynchronous peek operation by telling Message Queuing to begin peeking a message and notify the event handler when finished.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ReceiveByCorrelationId">
-      <AssemblyInfo>
-        <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Receives a message that matches a given correlation identifier.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Receive">
-      <AssemblyInfo>
-        <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <threadsafe>The method is not thread safe.</threadsafe>
-        <summary>Receives the first message in the queue, removing it from the queue.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Create">
-      <AssemblyInfo>
-        <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a new queue at the specified path on a Message Queuing server.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="SetPermissions">
-      <AssemblyInfo>
-        <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds permissions to the current set. This controls who has access rights to queue properties and messages in the queue.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Messaging.MessageQueue" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="PeekByLookupId">
-      <AssemblyInfo>
-        <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Introduced in MSMQ 3.0. Peeks at a specific message from the queue. The message can be specified by a lookup identifier or by its position at the front or end of the queue.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="PeekByCorrelationId">
-      <AssemblyInfo>
-        <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Peeks a message that matches a given correlation identifier.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ReceiveById">
-      <AssemblyInfo>
-        <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Receives the message that matches the given identifier, removing it from the queue.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

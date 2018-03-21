@@ -1,7 +1,9 @@
-<Type Name="TimerElapsedEventHandler" FullName="Microsoft.Win32.TimerElapsedEventHandler">
+﻿<Type Name="TimerElapsedEventHandler" FullName="Microsoft.Win32.TimerElapsedEventHandler">
   <TypeSignature Language="C#" Value="public delegate void TimerElapsedEventHandler(object sender, TimerElapsedEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TimerElapsedEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Win32.TimerElapsedEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub TimerElapsedEventHandler(sender As Object, e As TimerElapsedEventArgs)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void TimerElapsedEventHandler(System::Object ^ sender, TimerElapsedEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

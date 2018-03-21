@@ -1,7 +1,9 @@
-<Type Name="EditingContext" FullName="System.Activities.Presentation.EditingContext">
+﻿<Type Name="EditingContext" FullName="System.Activities.Presentation.EditingContext">
   <TypeSignature Language="C#" Value="public class EditingContext : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EditingContext extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.EditingContext" />
+  <TypeSignature Language="VB.NET" Value="Public Class EditingContext&#xA;Implements IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EditingContext : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +32,8 @@
       <MemberSignature Language="C#" Value="public EditingContext ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.EditingContext.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EditingContext();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -45,6 +49,8 @@
       <MemberSignature Language="C#" Value="protected virtual System.Activities.Presentation.ContextItemManager CreateContextItemManager ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Activities.Presentation.ContextItemManager CreateContextItemManager() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.EditingContext.CreateContextItemManager" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateContextItemManager () As ContextItemManager" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Activities::Presentation::ContextItemManager ^ CreateContextItemManager();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -72,6 +78,8 @@
       <MemberSignature Language="C#" Value="protected virtual System.Activities.Presentation.ServiceManager CreateServiceManager ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Activities.Presentation.ServiceManager CreateServiceManager() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.EditingContext.CreateServiceManager" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateServiceManager () As ServiceManager" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Activities::Presentation::ServiceManager ^ CreateServiceManager();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -94,11 +102,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Immediately releases any unmanaged resources used by the object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Dispose">
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.EditingContext.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -116,6 +138,8 @@
       <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.EditingContext.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -138,6 +162,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler Disposing;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Disposing" />
       <MemberSignature Language="DocId" Value="E:System.Activities.Presentation.EditingContext.Disposing" />
+      <MemberSignature Language="VB.NET" Value="Public Event Disposing As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Disposing;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -155,6 +181,8 @@
       <MemberSignature Language="C#" Value="public System.Activities.Presentation.ContextItemManager Items { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Presentation.ContextItemManager Items" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.EditingContext.Items" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Items As ContextItemManager" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::Presentation::ContextItemManager ^ Items { System::Activities::Presentation::ContextItemManager ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -180,6 +208,8 @@
       <MemberSignature Language="C#" Value="public System.Activities.Presentation.ServiceManager Services { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Presentation.ServiceManager Services" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.EditingContext.Services" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Services As ServiceManager" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::Presentation::ServiceManager ^ Services { System::Activities::Presentation::ServiceManager ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -201,14 +231,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Dispose">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities.Presentation</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Immediately releases any unmanaged resources used by the object.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

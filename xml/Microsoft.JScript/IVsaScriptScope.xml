@@ -1,7 +1,9 @@
-<Type Name="IVsaScriptScope" FullName="Microsoft.JScript.IVsaScriptScope">
+﻿<Type Name="IVsaScriptScope" FullName="Microsoft.JScript.IVsaScriptScope">
   <TypeSignature Language="C#" Value="public interface IVsaScriptScope : Microsoft.JScript.Vsa.IJSVsaItem" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IVsaScriptScope implements class Microsoft.JScript.Vsa.IJSVsaItem" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.IVsaScriptScope" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IVsaScriptScope&#xA;Implements IJSVsaItem" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IVsaScriptScope : Microsoft::JScript::Vsa::IJSVsaItem" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -31,6 +33,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.JScript.Vsa.IJSVsaItem AddItem (string itemName, Microsoft.JScript.Vsa.JSVsaItemType type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.JScript.Vsa.IJSVsaItem AddItem(string itemName, valuetype Microsoft.JScript.Vsa.JSVsaItemType type) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IVsaScriptScope.AddItem(System.String,Microsoft.JScript.Vsa.JSVsaItemType)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddItem (itemName As String, type As JSVsaItemType) As IJSVsaItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::JScript::Vsa::IJSVsaItem ^ AddItem(System::String ^ itemName, Microsoft::JScript::Vsa::JSVsaItemType type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -58,6 +62,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.JScript.Vsa.IJSVsaItem CreateDynamicItem (string itemName, Microsoft.JScript.Vsa.JSVsaItemType type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.JScript.Vsa.IJSVsaItem CreateDynamicItem(string itemName, valuetype Microsoft.JScript.Vsa.JSVsaItemType type) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IVsaScriptScope.CreateDynamicItem(System.String,Microsoft.JScript.Vsa.JSVsaItemType)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateDynamicItem (itemName As String, type As JSVsaItemType) As IJSVsaItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::JScript::Vsa::IJSVsaItem ^ CreateDynamicItem(System::String ^ itemName, Microsoft::JScript::Vsa::JSVsaItemType type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -84,6 +90,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.JScript.Vsa.IJSVsaItem GetItem (string itemName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.JScript.Vsa.IJSVsaItem GetItem(string itemName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IVsaScriptScope.GetItem(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetItem (itemName As String) As IJSVsaItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::JScript::Vsa::IJSVsaItem ^ GetItem(System::String ^ itemName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -110,6 +118,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.JScript.Vsa.IJSVsaItem GetItemAtIndex (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.JScript.Vsa.IJSVsaItem GetItemAtIndex(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IVsaScriptScope.GetItemAtIndex(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetItemAtIndex (index As Integer) As IJSVsaItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::JScript::Vsa::IJSVsaItem ^ GetItemAtIndex(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -136,6 +146,8 @@
       <MemberSignature Language="C#" Value="public int GetItemCount ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetItemCount() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IVsaScriptScope.GetItemCount" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetItemCount () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetItemCount();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -160,6 +172,8 @@
       <MemberSignature Language="C#" Value="public object GetObject ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetObject() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IVsaScriptScope.GetObject" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetObject () As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetObject();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -184,6 +198,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.JScript.IVsaScriptScope Parent { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.JScript.IVsaScriptScope Parent" />
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.IVsaScriptScope.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As IVsaScriptScope" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::JScript::IVsaScriptScope ^ Parent { Microsoft::JScript::IVsaScriptScope ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -203,10 +219,25 @@
         <altmember cref="T:Microsoft.JScript.Vsa.VsaEngine" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="RemoveItem">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When implemented in a class, removes an item from the scope.</summary>
+        <altmember cref="T:Microsoft.Vsa.IVsaItem" />
+        <altmember cref="T:Microsoft.Vsa.VsaItemType" />
+        <altmember cref="T:Microsoft.JScript.VSAITEMTYPE2" />
+        <altmember cref="T:Microsoft.JScript.Vsa.VsaEngine" />
+      </Docs>
+    </MemberGroup>
     <Member MemberName="RemoveItem">
       <MemberSignature Language="C#" Value="public void RemoveItem (Microsoft.JScript.Vsa.IJSVsaItem item);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveItem(class Microsoft.JScript.Vsa.IJSVsaItem item) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IVsaScriptScope.RemoveItem(Microsoft.JScript.Vsa.IJSVsaItem)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveItem (item As IJSVsaItem)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveItem(Microsoft::JScript::Vsa::IJSVsaItem ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -232,6 +263,8 @@
       <MemberSignature Language="C#" Value="public void RemoveItem (string itemName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveItem(string itemName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IVsaScriptScope.RemoveItem(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveItem (itemName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveItem(System::String ^ itemName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -258,6 +291,8 @@
       <MemberSignature Language="C#" Value="public void RemoveItemAtIndex (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveItemAtIndex(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IVsaScriptScope.RemoveItemAtIndex(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveItemAtIndex (index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveItemAtIndex(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -280,18 +315,5 @@
         <altmember cref="T:Microsoft.JScript.Vsa.VsaEngine" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="RemoveItem">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>When implemented in a class, removes an item from the scope.</summary>
-        <altmember cref="T:Microsoft.Vsa.IVsaItem" />
-        <altmember cref="T:Microsoft.Vsa.VsaItemType" />
-        <altmember cref="T:Microsoft.JScript.VSAITEMTYPE2" />
-        <altmember cref="T:Microsoft.JScript.Vsa.VsaEngine" />
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

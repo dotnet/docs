@@ -1,7 +1,9 @@
-<Type Name="ToolStripItemRenderEventArgs" FullName="System.Windows.Forms.ToolStripItemRenderEventArgs">
+﻿<Type Name="ToolStripItemRenderEventArgs" FullName="System.Windows.Forms.ToolStripItemRenderEventArgs">
   <TypeSignature Language="C#" Value="public class ToolStripItemRenderEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ToolStripItemRenderEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripItemRenderEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class ToolStripItemRenderEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ToolStripItemRenderEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -67,6 +69,8 @@
       <MemberSignature Language="C#" Value="public ToolStripItemRenderEventArgs (System.Drawing.Graphics g, System.Windows.Forms.ToolStripItem item);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Graphics g, class System.Windows.Forms.ToolStripItem item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripItemRenderEventArgs.#ctor(System.Drawing.Graphics,System.Windows.Forms.ToolStripItem)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (g As Graphics, item As ToolStripItem)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ToolStripItemRenderEventArgs(System::Drawing::Graphics ^ g, System::Windows::Forms::ToolStripItem ^ item);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -87,6 +91,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Graphics Graphics { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Graphics Graphics" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripItemRenderEventArgs.Graphics" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Graphics As Graphics" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Graphics ^ Graphics { System::Drawing::Graphics ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -118,6 +124,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ToolStripItem Item { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ToolStripItem Item" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripItemRenderEventArgs.Item" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Item As ToolStripItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ToolStripItem ^ Item { System::Windows::Forms::ToolStripItem ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -149,6 +157,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ToolStrip ToolStrip { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ToolStrip ToolStrip" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripItemRenderEventArgs.ToolStrip" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ToolStrip As ToolStrip" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ToolStrip ^ ToolStrip { System::Windows::Forms::ToolStrip ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

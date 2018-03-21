@@ -1,7 +1,9 @@
-<Type Name="TemplateContainerAttribute" FullName="System.Web.UI.TemplateContainerAttribute">
+﻿<Type Name="TemplateContainerAttribute" FullName="System.Web.UI.TemplateContainerAttribute">
   <TypeSignature Language="C#" Value="public sealed class TemplateContainerAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TemplateContainerAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.TemplateContainerAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TemplateContainerAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TemplateContainerAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,10 +49,21 @@
     <altmember cref="T:System.Attribute" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.TemplateContainerAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public TemplateContainerAttribute (Type containerType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type containerType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateContainerAttribute.#ctor(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (containerType As Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TemplateContainerAttribute(Type ^ containerType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -81,6 +94,7 @@
       <MemberSignature Language="C#" Value="public TemplateContainerAttribute (Type containerType, System.ComponentModel.BindingDirection bindingDirection);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type containerType, valuetype System.ComponentModel.BindingDirection bindingDirection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateContainerAttribute.#ctor(System.Type,System.ComponentModel.BindingDirection)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TemplateContainerAttribute(Type ^ containerType, System::ComponentModel::BindingDirection bindingDirection);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -102,6 +116,8 @@
       <MemberSignature Language="C#" Value="public System.ComponentModel.BindingDirection BindingDirection { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ComponentModel.BindingDirection BindingDirection" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.TemplateContainerAttribute.BindingDirection" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BindingDirection As BindingDirection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::BindingDirection BindingDirection { System::ComponentModel::BindingDirection get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -142,6 +158,8 @@
       <MemberSignature Language="C#" Value="public Type ContainerType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type ContainerType" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.TemplateContainerAttribute.ContainerType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContainerType As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ContainerType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -167,14 +185,5 @@
         <altmember cref="P:System.Web.UI.TemplateContainerAttribute.BindingDirection" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.TemplateContainerAttribute" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

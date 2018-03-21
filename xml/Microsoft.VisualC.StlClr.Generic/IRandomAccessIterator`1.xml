@@ -1,7 +1,9 @@
-<Type Name="IRandomAccessIterator&lt;TValue&gt;" FullName="Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator&lt;TValue&gt;">
+﻿<Type Name="IRandomAccessIterator&lt;TValue&gt;" FullName="Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator&lt;TValue&gt;">
   <TypeSignature Language="C#" Value="public interface IRandomAccessIterator&lt;TValue&gt; : Microsoft.VisualC.StlClr.Generic.IBidirectionalIterator&lt;TValue&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract beforefieldinit IRandomAccessIterator`1&lt;TValue&gt; implements class Microsoft.VisualC.StlClr.Generic.IBidirectionalIterator`1&lt;!TValue&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator`1" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IRandomAccessIterator(Of TValue)&#xA;Implements IBidirectionalIterator(Of TValue)" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename TValue&gt;&#xA;public interface class IRandomAccessIterator : Microsoft::VisualC::StlClr::Generic::IBidirectionalIterator&lt;TValue&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -24,6 +26,8 @@
       <MemberSignature Language="C#" Value="public int distance (Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator&lt;TValue&gt; _Right);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 distance(class Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator`1&lt;!TValue&gt; _Right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator`1.distance(Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Function distance (_Right As IRandomAccessIterator(Of TValue)) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int distance(Microsoft::VisualC::StlClr::Generic::IRandomAccessIterator&lt;TValue&gt; ^ _Right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -46,6 +50,8 @@
       <MemberSignature Language="C#" Value="public bool less_than (Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator&lt;TValue&gt; _Right);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool less_than(class Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator`1&lt;!TValue&gt; _Right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator`1.less_than(Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Function less_than (_Right As IRandomAccessIterator(Of TValue)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool less_than(Microsoft::VisualC::StlClr::Generic::IRandomAccessIterator&lt;TValue&gt; ^ _Right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -69,6 +75,8 @@
       <MemberSignature Language="C#" Value="public int move (int _Offset);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 move(int32 _Offset) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator`1.move(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function move (_Offset As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int move(int _Offset);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>

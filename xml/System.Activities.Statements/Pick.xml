@@ -1,7 +1,9 @@
-<Type Name="Pick" FullName="System.Activities.Statements.Pick">
+﻿<Type Name="Pick" FullName="System.Activities.Statements.Pick">
   <TypeSignature Language="C#" Value="public sealed class Pick : System.Activities.NativeActivity" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Pick extends System.Activities.NativeActivity" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Statements.Pick" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Pick&#xA;Inherits NativeActivity" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Pick sealed : System::Activities::NativeActivity" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +38,8 @@
       <MemberSignature Language="C#" Value="public Pick ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.Pick.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Pick();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -60,6 +64,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.Activities.Statements.PickBranch&gt; Branches { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.Activities.Statements.PickBranch&gt; Branches" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.Pick.Branches" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Branches As Collection(Of PickBranch)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::Activities::Statements::PickBranch ^&gt; ^ Branches { System::Collections::ObjectModel::Collection&lt;System::Activities::Statements::PickBranch ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -87,6 +93,8 @@
       <MemberSignature Language="C#" Value="protected override void CacheMetadata (System.Activities.NativeActivityMetadata metadata);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CacheMetadata(valuetype System.Activities.NativeActivityMetadata metadata) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.Pick.CacheMetadata(System.Activities.NativeActivityMetadata)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CacheMetadata (metadata As NativeActivityMetadata)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CacheMetadata(System::Activities::NativeActivityMetadata metadata);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -108,6 +116,8 @@
       <MemberSignature Language="C#" Value="protected override void Cancel (System.Activities.NativeActivityContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Cancel(class System.Activities.NativeActivityContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.Pick.Cancel(System.Activities.NativeActivityContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Cancel (context As NativeActivityContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Cancel(System::Activities::NativeActivityContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -129,6 +139,8 @@
       <MemberSignature Language="C#" Value="protected override bool CanInduceIdle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanInduceIdle" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.Pick.CanInduceIdle" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property CanInduceIdle As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool CanInduceIdle { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -147,6 +159,8 @@
       <MemberSignature Language="C#" Value="protected override void Execute (System.Activities.NativeActivityContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Execute(class System.Activities.NativeActivityContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.Pick.Execute(System.Activities.NativeActivityContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Execute (context As NativeActivityContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Execute(System::Activities::NativeActivityContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -168,6 +182,8 @@
       <MemberSignature Language="C#" Value="protected override void OnCreateDynamicUpdateMap (System.Activities.DynamicUpdate.NativeActivityUpdateMapMetadata metadata, System.Activities.Activity originalActivity);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnCreateDynamicUpdateMap(class System.Activities.DynamicUpdate.NativeActivityUpdateMapMetadata metadata, class System.Activities.Activity originalActivity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.Pick.OnCreateDynamicUpdateMap(System.Activities.DynamicUpdate.NativeActivityUpdateMapMetadata,System.Activities.Activity)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnCreateDynamicUpdateMap (metadata As NativeActivityUpdateMapMetadata, originalActivity As Activity)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnCreateDynamicUpdateMap(System::Activities::DynamicUpdate::NativeActivityUpdateMapMetadata ^ metadata, System::Activities::Activity ^ originalActivity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -191,6 +207,8 @@
       <MemberSignature Language="C#" Value="protected override void UpdateInstance (System.Activities.DynamicUpdate.NativeActivityUpdateContext updateContext);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void UpdateInstance(class System.Activities.DynamicUpdate.NativeActivityUpdateContext updateContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.Pick.UpdateInstance(System.Activities.DynamicUpdate.NativeActivityUpdateContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub UpdateInstance (updateContext As NativeActivityUpdateContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void UpdateInstance(System::Activities::DynamicUpdate::NativeActivityUpdateContext ^ updateContext);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

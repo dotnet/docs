@@ -1,7 +1,9 @@
-<Type Name="Saml2SecurityToken" FullName="System.IdentityModel.Tokens.Saml2SecurityToken">
+﻿<Type Name="Saml2SecurityToken" FullName="System.IdentityModel.Tokens.Saml2SecurityToken">
   <TypeSignature Language="C#" Value="public class Saml2SecurityToken : System.IdentityModel.Tokens.SecurityToken" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Saml2SecurityToken extends System.IdentityModel.Tokens.SecurityToken" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.Saml2SecurityToken" />
+  <TypeSignature Language="VB.NET" Value="Public Class Saml2SecurityToken&#xA;Inherits SecurityToken" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Saml2SecurityToken : System::IdentityModel::Tokens::SecurityToken" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,10 +26,21 @@
     <altmember cref="T:System.IdentityModel.Tokens.Saml2Statement" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.Saml2SecurityToken" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public Saml2SecurityToken (System.IdentityModel.Tokens.Saml2Assertion assertion);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Tokens.Saml2Assertion assertion) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityToken.#ctor(System.IdentityModel.Tokens.Saml2Assertion)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (assertion As Saml2Assertion)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Saml2SecurityToken(System::IdentityModel::Tokens::Saml2Assertion ^ assertion);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -53,6 +66,8 @@
       <MemberSignature Language="C#" Value="public Saml2SecurityToken (System.IdentityModel.Tokens.Saml2Assertion assertion, System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Tokens.SecurityKey&gt; keys, System.IdentityModel.Tokens.SecurityToken issuerToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Tokens.Saml2Assertion assertion, class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.IdentityModel.Tokens.SecurityKey&gt; keys, class System.IdentityModel.Tokens.SecurityToken issuerToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityToken.#ctor(System.IdentityModel.Tokens.Saml2Assertion,System.Collections.ObjectModel.ReadOnlyCollection{System.IdentityModel.Tokens.SecurityKey},System.IdentityModel.Tokens.SecurityToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (assertion As Saml2Assertion, keys As ReadOnlyCollection(Of SecurityKey), issuerToken As SecurityToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Saml2SecurityToken(System::IdentityModel::Tokens::Saml2Assertion ^ assertion, System::Collections::ObjectModel::ReadOnlyCollection&lt;System::IdentityModel::Tokens::SecurityKey ^&gt; ^ keys, System::IdentityModel::Tokens::SecurityToken ^ issuerToken);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -82,6 +97,8 @@
       <MemberSignature Language="C#" Value="public System.IdentityModel.Tokens.Saml2Assertion Assertion { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Tokens.Saml2Assertion Assertion" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2SecurityToken.Assertion" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Assertion As Saml2Assertion" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Tokens::Saml2Assertion ^ Assertion { System::IdentityModel::Tokens::Saml2Assertion ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -109,6 +126,8 @@
       <MemberSignature Language="C#" Value="public override bool CanCreateKeyIdentifierClause&lt;T&gt; () where T : System.IdentityModel.Tokens.SecurityKeyIdentifierClause;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanCreateKeyIdentifierClause&lt;(class System.IdentityModel.Tokens.SecurityKeyIdentifierClause) T&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityToken.CanCreateKeyIdentifierClause``1" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CanCreateKeyIdentifierClause(Of T As SecurityKeyIdentifierClause) () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : System::IdentityModel::Tokens::SecurityKeyIdentifierClause override bool CanCreateKeyIdentifierClause();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -144,6 +163,8 @@
       <MemberSignature Language="C#" Value="public override T CreateKeyIdentifierClause&lt;T&gt; () where T : System.IdentityModel.Tokens.SecurityKeyIdentifierClause;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance !!T CreateKeyIdentifierClause&lt;(class System.IdentityModel.Tokens.SecurityKeyIdentifierClause) T&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityToken.CreateKeyIdentifierClause``1" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateKeyIdentifierClause(Of T As SecurityKeyIdentifierClause) () As T" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : System::IdentityModel::Tokens::SecurityKeyIdentifierClause override T CreateKeyIdentifierClause();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -180,6 +201,8 @@
       <MemberSignature Language="C#" Value="public override string Id { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Id" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2SecurityToken.Id" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Id As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Id { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -205,6 +228,8 @@
       <MemberSignature Language="C#" Value="public System.IdentityModel.Tokens.SecurityToken IssuerToken { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Tokens.SecurityToken IssuerToken" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2SecurityToken.IssuerToken" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IssuerToken As SecurityToken" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Tokens::SecurityToken ^ IssuerToken { System::IdentityModel::Tokens::SecurityToken ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -223,6 +248,8 @@
       <MemberSignature Language="C#" Value="public override bool MatchesKeyIdentifierClause (System.IdentityModel.Tokens.SecurityKeyIdentifierClause keyIdentifierClause);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool MatchesKeyIdentifierClause(class System.IdentityModel.Tokens.SecurityKeyIdentifierClause keyIdentifierClause) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityToken.MatchesKeyIdentifierClause(System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function MatchesKeyIdentifierClause (keyIdentifierClause As SecurityKeyIdentifierClause) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool MatchesKeyIdentifierClause(System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ keyIdentifierClause);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -246,6 +273,8 @@
       <MemberSignature Language="C#" Value="public override System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Tokens.SecurityKey&gt; SecurityKeys { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.IdentityModel.Tokens.SecurityKey&gt; SecurityKeys" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2SecurityToken.SecurityKeys" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property SecurityKeys As ReadOnlyCollection(Of SecurityKey)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::IdentityModel::Tokens::SecurityKey ^&gt; ^ SecurityKeys { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::IdentityModel::Tokens::SecurityKey ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -271,6 +300,8 @@
       <MemberSignature Language="C#" Value="public override DateTime ValidFrom { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime ValidFrom" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2SecurityToken.ValidFrom" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ValidFrom As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property DateTime ValidFrom { DateTime get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -303,6 +334,8 @@
       <MemberSignature Language="C#" Value="public override DateTime ValidTo { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime ValidTo" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2SecurityToken.ValidTo" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ValidTo As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property DateTime ValidTo { DateTime get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -331,14 +364,5 @@
         <altmember cref="P:System.IdentityModel.Tokens.Saml2Assertion.Conditions" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.Saml2SecurityToken" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

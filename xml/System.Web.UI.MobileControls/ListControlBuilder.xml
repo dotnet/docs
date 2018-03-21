@@ -1,7 +1,9 @@
-<Type Name="ListControlBuilder" FullName="System.Web.UI.MobileControls.ListControlBuilder">
+﻿<Type Name="ListControlBuilder" FullName="System.Web.UI.MobileControls.ListControlBuilder">
   <TypeSignature Language="C#" Value="public class ListControlBuilder : System.Web.UI.MobileControls.MobileControlBuilder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ListControlBuilder extends System.Web.UI.MobileControls.MobileControlBuilder" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.ListControlBuilder" />
+  <TypeSignature Language="VB.NET" Value="Public Class ListControlBuilder&#xA;Inherits MobileControlBuilder" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ListControlBuilder : System::Web::UI::MobileControls::MobileControlBuilder" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +36,8 @@
       <MemberSignature Language="C#" Value="public ListControlBuilder ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ListControlBuilder.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ListControlBuilder();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -51,6 +55,8 @@
       <MemberSignature Language="C#" Value="public override Type GetChildControlType (string tagName, System.Collections.IDictionary attributes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Type GetChildControlType(string tagName, class System.Collections.IDictionary attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ListControlBuilder.GetChildControlType(System.String,System.Collections.IDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetChildControlType (tagName As String, attributes As IDictionary) As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override Type ^ GetChildControlType(System::String ^ tagName, System::Collections::IDictionary ^ attributes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

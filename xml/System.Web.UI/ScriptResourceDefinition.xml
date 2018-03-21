@@ -1,7 +1,9 @@
-<Type Name="ScriptResourceDefinition" FullName="System.Web.UI.ScriptResourceDefinition">
-  <TypeSignature Language="C#" Value="public class ScriptResourceDefinition" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ScriptResourceDefinition extends System.Object" />
+﻿<Type Name="ScriptResourceDefinition" FullName="System.Web.UI.ScriptResourceDefinition">
+  <TypeSignature Language="C#" Value="public class ScriptResourceDefinition : System.Web.UI.IScriptResourceDefinition" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ScriptResourceDefinition extends System.Object implements class System.Web.UI.IScriptResourceDefinition" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ScriptResourceDefinition" />
+  <TypeSignature Language="VB.NET" Value="Public Class ScriptResourceDefinition&#xA;Implements IScriptResourceDefinition" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ScriptResourceDefinition : System::Web::UI::IScriptResourceDefinition" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -9,7 +11,11 @@
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
-  <Interfaces />
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Web.UI.IScriptResourceDefinition</InterfaceName>
+    </Interface>
+  </Interfaces>
   <Docs>
     <summary>Defines the location of a script resource.</summary>
     <remarks>
@@ -26,6 +32,8 @@
       <MemberSignature Language="C#" Value="public ScriptResourceDefinition ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptResourceDefinition.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ScriptResourceDefinition();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -41,6 +49,8 @@
       <MemberSignature Language="C#" Value="public string CdnDebugPath { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CdnDebugPath" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptResourceDefinition.CdnDebugPath" />
+      <MemberSignature Language="VB.NET" Value="Public Property CdnDebugPath As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CdnDebugPath { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -66,6 +76,8 @@
       <MemberSignature Language="C#" Value="public string CdnPath { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CdnPath" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptResourceDefinition.CdnPath" />
+      <MemberSignature Language="VB.NET" Value="Public Property CdnPath As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CdnPath { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -91,6 +103,8 @@
       <MemberSignature Language="C#" Value="public bool CdnSupportsSecureConnection { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CdnSupportsSecureConnection" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptResourceDefinition.CdnSupportsSecureConnection" />
+      <MemberSignature Language="VB.NET" Value="Public Property CdnSupportsSecureConnection As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CdnSupportsSecureConnection { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -117,6 +131,8 @@
       <MemberSignature Language="C#" Value="public string DebugPath { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DebugPath" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptResourceDefinition.DebugPath" />
+      <MemberSignature Language="VB.NET" Value="Public Property DebugPath As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DebugPath { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -135,6 +151,8 @@
       <MemberSignature Language="C#" Value="public string LoadSuccessExpression { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string LoadSuccessExpression" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptResourceDefinition.LoadSuccessExpression" />
+      <MemberSignature Language="VB.NET" Value="Public Property LoadSuccessExpression As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LoadSuccessExpression { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -164,6 +182,8 @@
       <MemberSignature Language="C#" Value="public string Path { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Path" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptResourceDefinition.Path" />
+      <MemberSignature Language="VB.NET" Value="Public Property Path As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Path { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -182,6 +202,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Assembly ResourceAssembly { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Reflection.Assembly ResourceAssembly" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptResourceDefinition.ResourceAssembly" />
+      <MemberSignature Language="VB.NET" Value="Public Property ResourceAssembly As Assembly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Assembly ^ ResourceAssembly { System::Reflection::Assembly ^ get(); void set(System::Reflection::Assembly ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -200,6 +222,8 @@
       <MemberSignature Language="C#" Value="public string ResourceName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ResourceName" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptResourceDefinition.ResourceName" />
+      <MemberSignature Language="VB.NET" Value="Public Property ResourceName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ResourceName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -211,6 +235,46 @@
       <Docs>
         <summary>Gets or sets the name of the script resource in the specified resource assembly.</summary>
         <value>The name of a script resource.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.IScriptResourceDefinition.CdnDebugPathSecureConnection">
+      <MemberSignature Language="C#" Value="string System.Web.UI.IScriptResourceDefinition.CdnDebugPathSecureConnection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string System.Web.UI.IScriptResourceDefinition.CdnDebugPathSecureConnection" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptResourceDefinition.System#Web#UI#IScriptResourceDefinition#CdnDebugPathSecureConnection" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property CdnDebugPathSecureConnection As String Implements IScriptResourceDefinition.CdnDebugPathSecureConnection" />
+      <MemberSignature Language="C++ CLI" Value="property System::String ^ System.Web.UI.IScriptResourceDefinition.CdnDebugPathSecureConnection { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.IScriptResourceDefinition.CdnPathSecureConnection">
+      <MemberSignature Language="C#" Value="string System.Web.UI.IScriptResourceDefinition.CdnPathSecureConnection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string System.Web.UI.IScriptResourceDefinition.CdnPathSecureConnection" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptResourceDefinition.System#Web#UI#IScriptResourceDefinition#CdnPathSecureConnection" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property CdnPathSecureConnection As String Implements IScriptResourceDefinition.CdnPathSecureConnection" />
+      <MemberSignature Language="C++ CLI" Value="property System::String ^ System.Web.UI.IScriptResourceDefinition.CdnPathSecureConnection { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

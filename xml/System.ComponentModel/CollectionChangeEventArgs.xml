@@ -1,7 +1,9 @@
-<Type Name="CollectionChangeEventArgs" FullName="System.ComponentModel.CollectionChangeEventArgs">
+﻿<Type Name="CollectionChangeEventArgs" FullName="System.ComponentModel.CollectionChangeEventArgs">
   <TypeSignature Language="C#" Value="public class CollectionChangeEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CollectionChangeEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.CollectionChangeEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class CollectionChangeEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CollectionChangeEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -49,6 +51,8 @@
       <MemberSignature Language="C#" Value="public CollectionChangeEventArgs (System.ComponentModel.CollectionChangeAction action, object element);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.ComponentModel.CollectionChangeAction action, object element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.CollectionChangeEventArgs.#ctor(System.ComponentModel.CollectionChangeAction,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (action As CollectionChangeAction, element As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CollectionChangeEventArgs(System::ComponentModel::CollectionChangeAction action, System::Object ^ element);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -81,6 +85,8 @@
       <MemberSignature Language="C#" Value="public virtual System.ComponentModel.CollectionChangeAction Action { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ComponentModel.CollectionChangeAction Action" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.CollectionChangeEventArgs.Action" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Action As CollectionChangeAction" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::CollectionChangeAction Action { System::ComponentModel::CollectionChangeAction get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -134,6 +140,8 @@
       <MemberSignature Language="C#" Value="public virtual object Element { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Element" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.CollectionChangeEventArgs.Element" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Element As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ Element { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>

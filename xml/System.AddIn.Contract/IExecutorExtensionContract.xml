@@ -1,7 +1,9 @@
-<Type Name="IExecutorExtensionContract" FullName="System.AddIn.Contract.IExecutorExtensionContract">
+﻿<Type Name="IExecutorExtensionContract" FullName="System.AddIn.Contract.IExecutorExtensionContract">
   <TypeSignature Language="C#" Value="public interface IExecutorExtensionContract : System.AddIn.Contract.IContract" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IExecutorExtensionContract implements class System.AddIn.Contract.IContract" />
   <TypeSignature Language="DocId" Value="T:System.AddIn.Contract.IExecutorExtensionContract" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IExecutorExtensionContract&#xA;Implements IContract" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IExecutorExtensionContract : System::AddIn::Contract::IContract" />
   <AssemblyInfo>
     <AssemblyName>System.AddIn.Contract</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +31,8 @@
       <MemberSignature Language="C#" Value="public void AssemblyLoaded (string assemblyName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AssemblyLoaded(string assemblyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.IExecutorExtensionContract.AssemblyLoaded(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AssemblyLoaded (assemblyName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AssemblyLoaded(System::String ^ assemblyName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -59,6 +63,8 @@
       <MemberSignature Language="C#" Value="public void AssemblyLoadedFrom (string assemblyFile);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AssemblyLoadedFrom(string assemblyFile) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.IExecutorExtensionContract.AssemblyLoadedFrom(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AssemblyLoadedFrom (assemblyFile As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AssemblyLoadedFrom(System::String ^ assemblyFile);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -89,6 +95,8 @@
       <MemberSignature Language="C#" Value="public void AssemblyLoading (string assemblyName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AssemblyLoading(string assemblyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.IExecutorExtensionContract.AssemblyLoading(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AssemblyLoading (assemblyName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AssemblyLoading(System::String ^ assemblyName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -119,6 +127,8 @@
       <MemberSignature Language="C#" Value="public void AssemblyLoadingFrom (string assemblyFile);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AssemblyLoadingFrom(string assemblyFile) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.IExecutorExtensionContract.AssemblyLoadingFrom(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AssemblyLoadingFrom (assemblyFile As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AssemblyLoadingFrom(System::String ^ assemblyFile);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -149,6 +159,8 @@
       <MemberSignature Language="C#" Value="public void EntryPointStarted (System.AddIn.Contract.IContract entryPoint);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EntryPointStarted(class System.AddIn.Contract.IContract entryPoint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.IExecutorExtensionContract.EntryPointStarted(System.AddIn.Contract.IContract)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EntryPointStarted (entryPoint As IContract)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EntryPointStarted(System::AddIn::Contract::IContract ^ entryPoint);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -179,6 +191,8 @@
       <MemberSignature Language="C#" Value="public void EntryPointStarting (string assemblyName, string startupClass, System.AddIn.Contract.Collections.IRemoteArgumentArrayContract initArgs);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EntryPointStarting(string assemblyName, string startupClass, class System.AddIn.Contract.Collections.IRemoteArgumentArrayContract initArgs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.IExecutorExtensionContract.EntryPointStarting(System.String,System.String,System.AddIn.Contract.Collections.IRemoteArgumentArrayContract)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EntryPointStarting (assemblyName As String, startupClass As String, initArgs As IRemoteArgumentArrayContract)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EntryPointStarting(System::String ^ assemblyName, System::String ^ startupClass, System::AddIn::Contract::Collections::IRemoteArgumentArrayContract ^ initArgs);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -213,6 +227,8 @@
       <MemberSignature Language="C#" Value="public void ExecutorCreated ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExecutorCreated() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.IExecutorExtensionContract.ExecutorCreated" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ExecutorCreated ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ExecutorCreated();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>

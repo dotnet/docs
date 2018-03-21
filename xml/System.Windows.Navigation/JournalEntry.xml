@@ -1,7 +1,9 @@
-<Type Name="JournalEntry" FullName="System.Windows.Navigation.JournalEntry">
+﻿<Type Name="JournalEntry" FullName="System.Windows.Navigation.JournalEntry">
   <TypeSignature Language="C#" Value="public class JournalEntry : System.Windows.DependencyObject, System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit JournalEntry extends System.Windows.DependencyObject implements class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Navigation.JournalEntry" />
+  <TypeSignature Language="VB.NET" Value="Public Class JournalEntry&#xA;Inherits DependencyObject&#xA;Implements ISerializable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class JournalEntry : System::Windows::DependencyObject, System::Runtime::Serialization::ISerializable" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +64,8 @@
       <MemberSignature Language="C#" Value="protected JournalEntry (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Navigation.JournalEntry.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; JournalEntry(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -82,6 +86,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Navigation.CustomContentState CustomContentState { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Navigation.CustomContentState CustomContentState" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Navigation.JournalEntry.CustomContentState" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CustomContentState As CustomContentState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Navigation::CustomContentState ^ CustomContentState { System::Windows::Navigation::CustomContentState ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -100,6 +106,7 @@
       <MemberSignature Language="C#" Value="public static bool GetKeepAlive (System.Windows.DependencyObject dependencyObject);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetKeepAlive(class System.Windows.DependencyObject dependencyObject) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Navigation.JournalEntry.GetKeepAlive(System.Windows.DependencyObject)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetKeepAlive(System::Windows::DependencyObject ^ dependencyObject);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -123,6 +130,7 @@
       <MemberSignature Language="C#" Value="public static string GetName (System.Windows.DependencyObject dependencyObject);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetName(class System.Windows.DependencyObject dependencyObject) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Navigation.JournalEntry.GetName(System.Windows.DependencyObject)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetName(System::Windows::DependencyObject ^ dependencyObject);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -146,7 +154,12 @@
       <MemberSignature Language="C#" Value="public virtual void GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Navigation.JournalEntry.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -171,10 +184,27 @@
         <altmember cref="T:System.Runtime.Serialization.ISerializable" />
       </Docs>
     </Member>
+    <Member MemberName="KeepAlive">
+      <MemberSignature Language="C#" Value="see GetKeepAlive, and SetKeepAlive" />
+      <MemberSignature Language="ILAsm" Value="see GetKeepAlive, and SetKeepAlive" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Navigation.JournalEntry.KeepAlive" />
+      <MemberSignature Language="VB.NET" Value="see GetKeepAlive, and SetKeepAlive" />
+      <MemberType>AttachedProperty</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="KeepAliveProperty">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty KeepAliveProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty KeepAliveProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Navigation.JournalEntry.KeepAliveProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly KeepAliveProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ KeepAliveProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -192,6 +222,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Navigation.JournalEntry.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -244,6 +276,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty NameProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty NameProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Navigation.JournalEntry.NameProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly NameProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ NameProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -261,6 +295,7 @@
       <MemberSignature Language="C#" Value="public static void SetKeepAlive (System.Windows.DependencyObject dependencyObject, bool keepAlive);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetKeepAlive(class System.Windows.DependencyObject dependencyObject, bool keepAlive) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Navigation.JournalEntry.SetKeepAlive(System.Windows.DependencyObject,System.Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetKeepAlive(System::Windows::DependencyObject ^ dependencyObject, bool keepAlive);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -286,6 +321,7 @@
       <MemberSignature Language="C#" Value="public static void SetName (System.Windows.DependencyObject dependencyObject, string name);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetName(class System.Windows.DependencyObject dependencyObject, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Navigation.JournalEntry.SetName(System.Windows.DependencyObject,System.String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetName(System::Windows::DependencyObject ^ dependencyObject, System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -310,6 +346,8 @@
       <MemberSignature Language="C#" Value="public Uri Source { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri Source" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Navigation.JournalEntry.Source" />
+      <MemberSignature Language="VB.NET" Value="Public Property Source As Uri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Source { Uri ^ get(); void set(Uri ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

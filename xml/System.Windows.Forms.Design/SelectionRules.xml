@@ -1,7 +1,9 @@
-<Type Name="SelectionRules" FullName="System.Windows.Forms.Design.SelectionRules">
+﻿<Type Name="SelectionRules" FullName="System.Windows.Forms.Design.SelectionRules">
   <TypeSignature Language="C#" Value="public enum SelectionRules" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SelectionRules extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.SelectionRules" />
+  <TypeSignature Language="VB.NET" Value="Public Enum SelectionRules" />
+  <TypeSignature Language="C++ CLI" Value="public enum class SelectionRules" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +32,8 @@
       <MemberSignature Language="C#" Value="AllSizeable" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Design.SelectionRules AllSizeable = int32(15)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.SelectionRules.AllSizeable" />
+      <MemberSignature Language="VB.NET" Value="AllSizeable" />
+      <MemberSignature Language="C++ CLI" Value="AllSizeable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -38,6 +42,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Design.SelectionRules</ReturnType>
       </ReturnValue>
+      <MemberValue>15</MemberValue>
       <Docs>
         <summary>Indicates the component supports sizing in all directions.</summary>
       </Docs>
@@ -46,6 +51,8 @@
       <MemberSignature Language="C#" Value="BottomSizeable" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Design.SelectionRules BottomSizeable = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.SelectionRules.BottomSizeable" />
+      <MemberSignature Language="VB.NET" Value="BottomSizeable" />
+      <MemberSignature Language="C++ CLI" Value="BottomSizeable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -54,6 +61,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Design.SelectionRules</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Indicates the component supports resize from the bottom.</summary>
       </Docs>
@@ -62,6 +70,8 @@
       <MemberSignature Language="C#" Value="LeftSizeable" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Design.SelectionRules LeftSizeable = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.SelectionRules.LeftSizeable" />
+      <MemberSignature Language="VB.NET" Value="LeftSizeable" />
+      <MemberSignature Language="C++ CLI" Value="LeftSizeable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -70,6 +80,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Design.SelectionRules</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Indicates the component supports resize from the left.</summary>
       </Docs>
@@ -78,6 +89,8 @@
       <MemberSignature Language="C#" Value="Locked" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Design.SelectionRules Locked = int32(-2147483648)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.SelectionRules.Locked" />
+      <MemberSignature Language="VB.NET" Value="Locked" />
+      <MemberSignature Language="C++ CLI" Value="Locked" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -86,6 +99,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Design.SelectionRules</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147483648</MemberValue>
       <Docs>
         <summary>Indicates the component is locked to its container. Overrides the <see cref="F:System.Windows.Forms.Design.SelectionRules.Moveable" />, <see cref="F:System.Windows.Forms.Design.SelectionRules.AllSizeable" />, <see cref="F:System.Windows.Forms.Design.SelectionRules.BottomSizeable" />, <see cref="F:System.Windows.Forms.Design.SelectionRules.LeftSizeable" />, <see cref="F:System.Windows.Forms.Design.SelectionRules.RightSizeable" />, and <see cref="F:System.Windows.Forms.Design.SelectionRules.TopSizeable" /> bit flags of this enumeration.</summary>
       </Docs>
@@ -94,6 +108,8 @@
       <MemberSignature Language="C#" Value="Moveable" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Design.SelectionRules Moveable = int32(268435456)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.SelectionRules.Moveable" />
+      <MemberSignature Language="VB.NET" Value="Moveable" />
+      <MemberSignature Language="C++ CLI" Value="Moveable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -102,6 +118,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Design.SelectionRules</ReturnType>
       </ReturnValue>
+      <MemberValue>268435456</MemberValue>
       <Docs>
         <summary>Indicates the component supports a location property that allows it to be moved on the screen.</summary>
       </Docs>
@@ -110,6 +127,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Design.SelectionRules None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.SelectionRules.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -118,6 +137,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Design.SelectionRules</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Indicates no special selection attributes.</summary>
       </Docs>
@@ -126,6 +146,8 @@
       <MemberSignature Language="C#" Value="RightSizeable" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Design.SelectionRules RightSizeable = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.SelectionRules.RightSizeable" />
+      <MemberSignature Language="VB.NET" Value="RightSizeable" />
+      <MemberSignature Language="C++ CLI" Value="RightSizeable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -134,6 +156,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Design.SelectionRules</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>Indicates the component supports resize from the right.</summary>
       </Docs>
@@ -142,6 +165,8 @@
       <MemberSignature Language="C#" Value="TopSizeable" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Design.SelectionRules TopSizeable = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.SelectionRules.TopSizeable" />
+      <MemberSignature Language="VB.NET" Value="TopSizeable" />
+      <MemberSignature Language="C++ CLI" Value="TopSizeable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -150,6 +175,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Design.SelectionRules</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Indicates the component supports resize from the top.</summary>
       </Docs>
@@ -158,6 +184,8 @@
       <MemberSignature Language="C#" Value="Visible" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Design.SelectionRules Visible = int32(1073741824)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.SelectionRules.Visible" />
+      <MemberSignature Language="VB.NET" Value="Visible" />
+      <MemberSignature Language="C++ CLI" Value="Visible" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -166,6 +194,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Design.SelectionRules</ReturnType>
       </ReturnValue>
+      <MemberValue>1073741824</MemberValue>
       <Docs>
         <summary>Indicates the component has some form of visible user interface and the selection service is drawing a selection border around this user interface. If a selected component has this rule set, you can assume that the component implements <see cref="T:System.ComponentModel.IComponent" /> and that it is associated with a corresponding designer instance.</summary>
       </Docs>

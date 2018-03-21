@@ -1,7 +1,9 @@
-<Type Name="WorkflowDesigner" FullName="System.Activities.Presentation.WorkflowDesigner">
+﻿<Type Name="WorkflowDesigner" FullName="System.Activities.Presentation.WorkflowDesigner">
   <TypeSignature Language="C#" Value="public class WorkflowDesigner" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi WorkflowDesigner extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.WorkflowDesigner" />
+  <TypeSignature Language="VB.NET" Value="Public Class WorkflowDesigner" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WorkflowDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public WorkflowDesigner ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowDesigner.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowDesigner();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -34,6 +38,8 @@
       <MemberSignature Language="C#" Value="public System.Activities.Presentation.EditingContext Context { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Presentation.EditingContext Context" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesigner.Context" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Context As EditingContext" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::Presentation::EditingContext ^ Context { System::Activities::Presentation::EditingContext ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -63,6 +69,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Controls.ContextMenu ContextMenu { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Controls.ContextMenu ContextMenu" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesigner.ContextMenu" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContextMenu As ContextMenu" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::ContextMenu ^ ContextMenu { System::Windows::Controls::ContextMenu ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -81,6 +89,8 @@
       <MemberSignature Language="C#" Value="public System.Activities.Presentation.Debug.IDesignerDebugView DebugManagerView { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Presentation.Debug.IDesignerDebugView DebugManagerView" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesigner.DebugManagerView" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DebugManagerView As IDesignerDebugView" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::Presentation::Debug::IDesignerDebugView ^ DebugManagerView { System::Activities::Presentation::Debug::IDesignerDebugView ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -99,6 +109,8 @@
       <MemberSignature Language="C#" Value="public void Flush ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Flush() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowDesigner.Flush" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Flush ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Flush();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -117,6 +129,8 @@
       <MemberSignature Language="C#" Value="public bool IsInErrorState ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsInErrorState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowDesigner.IsInErrorState" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsInErrorState () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsInErrorState();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -133,10 +147,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Load">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Loads a workflow.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Load">
       <MemberSignature Language="C#" Value="public void Load ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Load() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowDesigner.Load" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Load ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Load();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -155,6 +180,8 @@
       <MemberSignature Language="C#" Value="public void Load (object instance);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Load(object instance) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowDesigner.Load(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Load (instance As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Load(System::Object ^ instance);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -176,6 +203,8 @@
       <MemberSignature Language="C#" Value="public void Load (string fileName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Load(string fileName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowDesigner.Load(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Load (fileName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Load(System::String ^ fileName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -197,6 +226,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler ModelChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ModelChanged" />
       <MemberSignature Language="DocId" Value="E:System.Activities.Presentation.WorkflowDesigner.ModelChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event ModelChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ModelChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -214,6 +245,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.UIElement OutlineView { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.UIElement OutlineView" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesigner.OutlineView" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OutlineView As UIElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::UIElement ^ OutlineView { System::Windows::UIElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -232,6 +265,8 @@
       <MemberSignature Language="C#" Value="public string PropertyInspectorFontAndColorData { set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PropertyInspectorFontAndColorData" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesigner.PropertyInspectorFontAndColorData" />
+      <MemberSignature Language="VB.NET" Value="Public Property PropertyInspectorFontAndColorData As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PropertyInspectorFontAndColorData {  void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -257,6 +292,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.UIElement PropertyInspectorView { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.UIElement PropertyInspectorView" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesigner.PropertyInspectorView" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PropertyInspectorView As UIElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::UIElement ^ PropertyInspectorView { System::Windows::UIElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -275,6 +312,8 @@
       <MemberSignature Language="C#" Value="public void Save (string fileName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Save(string fileName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowDesigner.Save(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Save (fileName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save(System::String ^ fileName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -296,6 +335,8 @@
       <MemberSignature Language="C#" Value="public string Text { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Text" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesigner.Text" />
+      <MemberSignature Language="VB.NET" Value="Public Property Text As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -321,6 +362,8 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Controls.TextChangedEventHandler TextChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Controls.TextChangedEventHandler TextChanged" />
       <MemberSignature Language="DocId" Value="E:System.Activities.Presentation.WorkflowDesigner.TextChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event TextChanged As TextChangedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Controls::TextChangedEventHandler ^ TextChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -338,6 +381,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.UIElement View { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.UIElement View" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesigner.View" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property View As UIElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::UIElement ^ View { System::Windows::UIElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -352,14 +397,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Load">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities.Presentation</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Loads a workflow.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

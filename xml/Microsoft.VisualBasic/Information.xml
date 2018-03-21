@@ -1,7 +1,9 @@
-<Type Name="Information" FullName="Microsoft.VisualBasic.Information">
+﻿<Type Name="Information" FullName="Microsoft.VisualBasic.Information">
   <TypeSignature Language="C#" Value="public sealed class Information" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Information extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Information" />
+  <TypeSignature Language="VB.NET" Value="Public Module Information" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Information sealed" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -49,6 +51,8 @@ testVbName = VbTypeName(sysBadName)
       <MemberSignature Language="C#" Value="public static int Erl ();" />
       <MemberSignature Language="ILAsm" Value=".method public static int32 Erl() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Information.Erl" />
+      <MemberSignature Language="VB.NET" Value="Public Function Erl () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Erl();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -89,6 +93,8 @@ testVbName = VbTypeName(sysBadName)
       <MemberSignature Language="C#" Value="public static Microsoft.VisualBasic.ErrObject Err ();" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.VisualBasic.ErrObject Err() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Information.Err" />
+      <MemberSignature Language="VB.NET" Value="Public Function Err () As ErrObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Microsoft::VisualBasic::ErrObject ^ Err();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -130,6 +136,8 @@ testVbName = VbTypeName(sysBadName)
       <MemberSignature Language="C#" Value="public static bool IsArray (object VarName);" />
       <MemberSignature Language="ILAsm" Value=".method public static bool IsArray(object VarName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Information.IsArray(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsArray (VarName As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsArray(System::Object ^ VarName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -174,6 +182,8 @@ testVbName = VbTypeName(sysBadName)
       <MemberSignature Language="C#" Value="public static bool IsDate (object Expression);" />
       <MemberSignature Language="ILAsm" Value=".method public static bool IsDate(object Expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Information.IsDate(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsDate (Expression As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsDate(System::Object ^ Expression);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -223,6 +233,8 @@ testVbName = VbTypeName(sysBadName)
       <MemberSignature Language="C#" Value="public static bool IsDBNull (object Expression);" />
       <MemberSignature Language="ILAsm" Value=".method public static bool IsDBNull(object Expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Information.IsDBNull(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsDBNull (Expression As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsDBNull(System::Object ^ Expression);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -270,6 +282,8 @@ testVbName = VbTypeName(sysBadName)
       <MemberSignature Language="C#" Value="public static bool IsError (object Expression);" />
       <MemberSignature Language="ILAsm" Value=".method public static bool IsError(object Expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Information.IsError(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsError (Expression As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsError(System::Object ^ Expression);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -316,6 +330,8 @@ testVbName = VbTypeName(sysBadName)
       <MemberSignature Language="C#" Value="public static bool IsNothing (object Expression);" />
       <MemberSignature Language="ILAsm" Value=".method public static bool IsNothing(object Expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Information.IsNothing(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsNothing (Expression As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsNothing(System::Object ^ Expression);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -362,6 +378,8 @@ testVbName = VbTypeName(sysBadName)
       <MemberSignature Language="C#" Value="public static bool IsNumeric (object Expression);" />
       <MemberSignature Language="ILAsm" Value=".method public static bool IsNumeric(object Expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Information.IsNumeric(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsNumeric (Expression As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsNumeric(System::Object ^ Expression);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -408,6 +426,8 @@ testVbName = VbTypeName(sysBadName)
       <MemberSignature Language="C#" Value="public static bool IsReference (object Expression);" />
       <MemberSignature Language="ILAsm" Value=".method public static bool IsReference(object Expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Information.IsReference(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsReference (Expression As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsReference(System::Object ^ Expression);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -514,6 +534,8 @@ Dim a(100, 5, 4) As Byte
       <MemberSignature Language="C#" Value="public static int QBColor (int Color);" />
       <MemberSignature Language="ILAsm" Value=".method public static int32 QBColor(int32 Color) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Information.QBColor(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function QBColor (Color As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int QBColor(int Color);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -567,6 +589,8 @@ Dim a(100, 5, 4) As Byte
       <MemberSignature Language="C#" Value="public static int RGB (int Red, int Green, int Blue);" />
       <MemberSignature Language="ILAsm" Value=".method public static int32 RGB(int32 Red, int32 Green, int32 Blue) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Information.RGB(System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RGB (Red As Integer, Green As Integer, Blue As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int RGB(int Red, int Green, int Blue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -626,6 +650,8 @@ Dim a(100, 5, 4) As Byte
       <MemberSignature Language="C#" Value="public static string SystemTypeName (string VbName);" />
       <MemberSignature Language="ILAsm" Value=".method public static string SystemTypeName(string VbName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Information.SystemTypeName(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SystemTypeName (VbName As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ SystemTypeName(System::String ^ VbName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -664,6 +690,8 @@ Dim a(100, 5, 4) As Byte
       <MemberSignature Language="C#" Value="public static string TypeName (object VarName);" />
       <MemberSignature Language="ILAsm" Value=".method public static string TypeName(object VarName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Information.TypeName(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TypeName (VarName As Object) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ TypeName(System::Object ^ VarName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -800,6 +828,8 @@ total = (UBound(A, 1) + 1) * (UBound(A, 2) + 1) * (UBound(A, 3) + 1)
       <MemberSignature Language="C#" Value="public static Microsoft.VisualBasic.VariantType VarType (object VarName);" />
       <MemberSignature Language="ILAsm" Value=".method public static valuetype Microsoft.VisualBasic.VariantType VarType(object VarName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Information.VarType(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VarType (VarName As Object) As VariantType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Microsoft::VisualBasic::VariantType VarType(System::Object ^ VarName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -851,6 +881,8 @@ total = (UBound(A, 1) + 1) * (UBound(A, 2) + 1) * (UBound(A, 3) + 1)
       <MemberSignature Language="C#" Value="public static string VbTypeName (string UrtName);" />
       <MemberSignature Language="ILAsm" Value=".method public static string VbTypeName(string UrtName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Information.VbTypeName(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VbTypeName (UrtName As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ VbTypeName(System::String ^ UrtName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

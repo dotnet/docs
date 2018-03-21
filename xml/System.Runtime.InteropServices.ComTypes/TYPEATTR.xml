@@ -1,7 +1,9 @@
-<Type Name="TYPEATTR" FullName="System.Runtime.InteropServices.ComTypes.TYPEATTR">
+﻿<Type Name="TYPEATTR" FullName="System.Runtime.InteropServices.ComTypes.TYPEATTR">
   <TypeSignature Language="C#" Value="public struct TYPEATTR" />
   <TypeSignature Language="ILAsm" Value=".class public sequential sealed beforefieldinit TYPEATTR extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComTypes.TYPEATTR" />
+  <TypeSignature Language="VB.NET" Value="Public Structure TYPEATTR" />
+  <TypeSignature Language="C++ CLI" Value="public value class TYPEATTR" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +44,8 @@
       <MemberSignature Language="C#" Value="public short cbAlignment;" />
       <MemberSignature Language="ILAsm" Value=".field public int16 cbAlignment" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.TYPEATTR.cbAlignment" />
+      <MemberSignature Language="VB.NET" Value="Public cbAlignment As Short " />
+      <MemberSignature Language="C++ CLI" Value="public: short cbAlignment;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -80,6 +84,8 @@
       <MemberSignature Language="C#" Value="public int cbSizeInstance;" />
       <MemberSignature Language="ILAsm" Value=".field public int32 cbSizeInstance" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.TYPEATTR.cbSizeInstance" />
+      <MemberSignature Language="VB.NET" Value="Public cbSizeInstance As Integer " />
+      <MemberSignature Language="C++ CLI" Value="public: int cbSizeInstance;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -118,6 +124,8 @@
       <MemberSignature Language="C#" Value="public short cbSizeVft;" />
       <MemberSignature Language="ILAsm" Value=".field public int16 cbSizeVft" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.TYPEATTR.cbSizeVft" />
+      <MemberSignature Language="VB.NET" Value="Public cbSizeVft As Short " />
+      <MemberSignature Language="C++ CLI" Value="public: short cbSizeVft;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -156,6 +164,8 @@
       <MemberSignature Language="C#" Value="public short cFuncs;" />
       <MemberSignature Language="ILAsm" Value=".field public int16 cFuncs" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.TYPEATTR.cFuncs" />
+      <MemberSignature Language="VB.NET" Value="Public cFuncs As Short " />
+      <MemberSignature Language="C++ CLI" Value="public: short cFuncs;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -194,6 +204,8 @@
       <MemberSignature Language="C#" Value="public short cImplTypes;" />
       <MemberSignature Language="ILAsm" Value=".field public int16 cImplTypes" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.TYPEATTR.cImplTypes" />
+      <MemberSignature Language="VB.NET" Value="Public cImplTypes As Short " />
+      <MemberSignature Language="C++ CLI" Value="public: short cImplTypes;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -232,6 +244,8 @@
       <MemberSignature Language="C#" Value="public short cVars;" />
       <MemberSignature Language="ILAsm" Value=".field public int16 cVars" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.TYPEATTR.cVars" />
+      <MemberSignature Language="VB.NET" Value="Public cVars As Short " />
+      <MemberSignature Language="C++ CLI" Value="public: short cVars;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -270,6 +284,8 @@
       <MemberSignature Language="C#" Value="public int dwReserved;" />
       <MemberSignature Language="ILAsm" Value=".field public int32 dwReserved" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.TYPEATTR.dwReserved" />
+      <MemberSignature Language="VB.NET" Value="Public dwReserved As Integer " />
+      <MemberSignature Language="C++ CLI" Value="public: int dwReserved;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -308,6 +324,8 @@
       <MemberSignature Language="C#" Value="public Guid guid;" />
       <MemberSignature Language="ILAsm" Value=".field public valuetype System.Guid guid" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.TYPEATTR.guid" />
+      <MemberSignature Language="VB.NET" Value="Public guid As Guid " />
+      <MemberSignature Language="C++ CLI" Value="public: Guid guid;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -346,6 +364,8 @@
       <MemberSignature Language="C#" Value="public System.Runtime.InteropServices.ComTypes.IDLDESC idldescType;" />
       <MemberSignature Language="ILAsm" Value=".field public valuetype System.Runtime.InteropServices.ComTypes.IDLDESC idldescType" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.TYPEATTR.idldescType" />
+      <MemberSignature Language="VB.NET" Value="Public idldescType As IDLDESC " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Runtime::InteropServices::ComTypes::IDLDESC idldescType;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -384,6 +404,8 @@
       <MemberSignature Language="C#" Value="public int lcid;" />
       <MemberSignature Language="ILAsm" Value=".field public int32 lcid" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.TYPEATTR.lcid" />
+      <MemberSignature Language="VB.NET" Value="Public lcid As Integer " />
+      <MemberSignature Language="C++ CLI" Value="public: int lcid;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -422,6 +444,8 @@
       <MemberSignature Language="C#" Value="public IntPtr lpstrSchema;" />
       <MemberSignature Language="ILAsm" Value=".field public native int lpstrSchema" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.TYPEATTR.lpstrSchema" />
+      <MemberSignature Language="VB.NET" Value="Public lpstrSchema As IntPtr " />
+      <MemberSignature Language="C++ CLI" Value="public: IntPtr lpstrSchema;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -460,6 +484,8 @@
       <MemberSignature Language="C#" Value="public const int MEMBER_ID_NIL = -1;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal int32 MEMBER_ID_NIL = (-1)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.TYPEATTR.MEMBER_ID_NIL" />
+      <MemberSignature Language="VB.NET" Value="Public Const MEMBER_ID_NIL As Integer  = -1" />
+      <MemberSignature Language="C++ CLI" Value="public: int MEMBER_ID_NIL = -1;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -499,6 +525,8 @@
       <MemberSignature Language="C#" Value="public int memidConstructor;" />
       <MemberSignature Language="ILAsm" Value=".field public int32 memidConstructor" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.TYPEATTR.memidConstructor" />
+      <MemberSignature Language="VB.NET" Value="Public memidConstructor As Integer " />
+      <MemberSignature Language="C++ CLI" Value="public: int memidConstructor;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -537,6 +565,8 @@
       <MemberSignature Language="C#" Value="public int memidDestructor;" />
       <MemberSignature Language="ILAsm" Value=".field public int32 memidDestructor" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.TYPEATTR.memidDestructor" />
+      <MemberSignature Language="VB.NET" Value="Public memidDestructor As Integer " />
+      <MemberSignature Language="C++ CLI" Value="public: int memidDestructor;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -575,6 +605,8 @@
       <MemberSignature Language="C#" Value="public System.Runtime.InteropServices.ComTypes.TYPEDESC tdescAlias;" />
       <MemberSignature Language="ILAsm" Value=".field public valuetype System.Runtime.InteropServices.ComTypes.TYPEDESC tdescAlias" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.TYPEATTR.tdescAlias" />
+      <MemberSignature Language="VB.NET" Value="Public tdescAlias As TYPEDESC " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Runtime::InteropServices::ComTypes::TYPEDESC tdescAlias;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -613,6 +645,8 @@
       <MemberSignature Language="C#" Value="public System.Runtime.InteropServices.ComTypes.TYPEKIND typekind;" />
       <MemberSignature Language="ILAsm" Value=".field public valuetype System.Runtime.InteropServices.ComTypes.TYPEKIND typekind" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.TYPEATTR.typekind" />
+      <MemberSignature Language="VB.NET" Value="Public typekind As TYPEKIND " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Runtime::InteropServices::ComTypes::TYPEKIND typekind;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -651,6 +685,8 @@
       <MemberSignature Language="C#" Value="public short wMajorVerNum;" />
       <MemberSignature Language="ILAsm" Value=".field public int16 wMajorVerNum" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.TYPEATTR.wMajorVerNum" />
+      <MemberSignature Language="VB.NET" Value="Public wMajorVerNum As Short " />
+      <MemberSignature Language="C++ CLI" Value="public: short wMajorVerNum;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -689,6 +725,8 @@
       <MemberSignature Language="C#" Value="public short wMinorVerNum;" />
       <MemberSignature Language="ILAsm" Value=".field public int16 wMinorVerNum" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.TYPEATTR.wMinorVerNum" />
+      <MemberSignature Language="VB.NET" Value="Public wMinorVerNum As Short " />
+      <MemberSignature Language="C++ CLI" Value="public: short wMinorVerNum;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -727,6 +765,8 @@
       <MemberSignature Language="C#" Value="public System.Runtime.InteropServices.ComTypes.TYPEFLAGS wTypeFlags;" />
       <MemberSignature Language="ILAsm" Value=".field public valuetype System.Runtime.InteropServices.ComTypes.TYPEFLAGS wTypeFlags" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.TYPEATTR.wTypeFlags" />
+      <MemberSignature Language="VB.NET" Value="Public wTypeFlags As TYPEFLAGS " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Runtime::InteropServices::ComTypes::TYPEFLAGS wTypeFlags;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

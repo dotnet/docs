@@ -1,7 +1,9 @@
-<Type Name="DebugSymbol" FullName="System.Activities.Debugger.Symbol.DebugSymbol">
+﻿<Type Name="DebugSymbol" FullName="System.Activities.Debugger.Symbol.DebugSymbol">
   <TypeSignature Language="C#" Value="public static class DebugSymbol" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit DebugSymbol extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Debugger.Symbol.DebugSymbol" />
+  <TypeSignature Language="VB.NET" Value="Public Class DebugSymbol" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DebugSymbol abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public static object GetSymbol (object instance);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetSymbol(object instance) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.Symbol.DebugSymbol.GetSymbol(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetSymbol (instance As Object) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetSymbol(System::Object ^ instance);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -41,6 +45,8 @@
       <MemberSignature Language="C#" Value="public static void SetSymbol (object instance, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetSymbol(object instance, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.Symbol.DebugSymbol.SetSymbol(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetSymbol (instance As Object, value As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetSymbol(System::Object ^ instance, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -64,6 +70,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Xaml.AttachableMemberIdentifier SymbolName;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Xaml.AttachableMemberIdentifier SymbolName" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Debugger.Symbol.DebugSymbol.SymbolName" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SymbolName As AttachableMemberIdentifier " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Xaml::AttachableMemberIdentifier ^ SymbolName;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

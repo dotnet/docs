@@ -1,7 +1,9 @@
-<Type Name="ArraySegment&lt;T&gt;" FullName="System.ArraySegment&lt;T&gt;">
+﻿<Type Name="ArraySegment&lt;T&gt;" FullName="System.ArraySegment&lt;T&gt;">
   <TypeSignature Language="C#" Value="public struct ArraySegment&lt;T&gt; : System.Collections.Generic.ICollection&lt;T&gt;, System.Collections.Generic.IEnumerable&lt;T&gt;, System.Collections.Generic.IList&lt;T&gt;, System.Collections.Generic.IReadOnlyCollection&lt;T&gt;, System.Collections.Generic.IReadOnlyList&lt;T&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable sealed beforefieldinit ArraySegment`1&lt;T&gt; extends System.ValueType implements class System.Collections.Generic.ICollection`1&lt;!T&gt;, class System.Collections.Generic.IEnumerable`1&lt;!T&gt;, class System.Collections.Generic.IList`1&lt;!T&gt;, class System.Collections.Generic.IReadOnlyCollection`1&lt;!T&gt;, class System.Collections.Generic.IReadOnlyList`1&lt;!T&gt;, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.ArraySegment`1" />
+  <TypeSignature Language="VB.NET" Value="Public Structure ArraySegment(Of T)&#xA;Implements ICollection(Of T), IEnumerable(Of T), IList(Of T), IReadOnlyCollection(Of T), IReadOnlyList(Of T)" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public value class ArraySegment : System::Collections::Generic::ICollection&lt;T&gt;, System::Collections::Generic::IEnumerable&lt;T&gt;, System::Collections::Generic::IList&lt;T&gt;, System::Collections::Generic::IReadOnlyCollection&lt;T&gt;, System::Collections::Generic::IReadOnlyList&lt;T&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -94,10 +96,25 @@
     <altmember cref="T:System.Array" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ArraySegment`1" /> structure.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ArraySegment (T[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ArraySegment`1.#ctor(`0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (array As T())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ArraySegment(cli::array &lt;T&gt; ^ array);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -152,6 +169,8 @@
       <MemberSignature Language="C#" Value="public ArraySegment (T[] array, int offset, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(!T[] array, int32 offset, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ArraySegment`1.#ctor(`0[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (array As T(), offset As Integer, count As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ArraySegment(cli::array &lt;T&gt; ^ array, int offset, int count);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -212,6 +231,8 @@
       <MemberSignature Language="C#" Value="public T[] Array { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance !T[] Array" />
       <MemberSignature Language="DocId" Value="P:System.ArraySegment`1.Array" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Array As T()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;T&gt; ^ Array { cli::array &lt;T&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -260,6 +281,8 @@
       <MemberSignature Language="C#" Value="public void CopyTo (ArraySegment&lt;T&gt; destination);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(valuetype System.ArraySegment`1&lt;!T&gt; destination) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ArraySegment`1.CopyTo(System.ArraySegment{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (destination As ArraySegment(Of T))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(ArraySegment&lt;T&gt; destination);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -281,6 +304,8 @@
       <MemberSignature Language="C#" Value="public void CopyTo (T[] destination);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(!T[] destination) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ArraySegment`1.CopyTo(`0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (destination As T())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;T&gt; ^ destination);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -302,7 +327,12 @@
       <MemberSignature Language="C#" Value="public void CopyTo (T[] destination, int destinationIndex);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(!T[] destination, int32 destinationIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ArraySegment`1.CopyTo(`0[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (destination As T(), destinationIndex As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;T&gt; ^ destination, int destinationIndex);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
@@ -325,7 +355,13 @@
       <MemberSignature Language="C#" Value="public int Count { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
       <MemberSignature Language="DocId" Value="P:System.ArraySegment`1.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.Generic.ICollection`1.Count</InterfaceMember>
+        <InterfaceMember>P:System.Collections.Generic.IReadOnlyCollection`1.Count</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -369,6 +405,8 @@
       <MemberSignature Language="C#" Value="public static ArraySegment&lt;T&gt; Empty { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.ArraySegment`1&lt;!T&gt; Empty" />
       <MemberSignature Language="DocId" Value="P:System.ArraySegment`1.Empty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Empty As ArraySegment(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property ArraySegment&lt;T&gt; Empty { ArraySegment&lt;T&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -383,10 +421,25 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether two objects are equal.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Equals">
       <MemberSignature Language="C#" Value="public bool Equals (ArraySegment&lt;T&gt; obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Equals(valuetype System.ArraySegment`1&lt;!T&gt; obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ArraySegment`1.Equals(System.ArraySegment{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (obj As ArraySegment(Of T)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(ArraySegment&lt;T&gt; obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -436,6 +489,8 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ArraySegment`1.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -485,6 +540,8 @@
       <MemberSignature Language="C#" Value="public ArraySegment&lt;T&gt;.Enumerator GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.ArraySegment`1/Enumerator&lt;!T&gt; GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ArraySegment`1.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As ArraySegment(Of T).Enumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ArraySegment&lt;T&gt;::Enumerator GetEnumerator();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -504,6 +561,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ArraySegment`1.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -536,7 +595,12 @@
       <MemberSignature Language="C#" Value="public T this[int index] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance !T Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.ArraySegment`1.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As T" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property T default[int] { T get(int index); void set(int index, T value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.Generic.IList`1.Item(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
@@ -558,6 +622,8 @@
       <MemberSignature Language="C#" Value="public int Offset { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Offset" />
       <MemberSignature Language="DocId" Value="P:System.ArraySegment`1.Offset" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Offset As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Offset { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -602,6 +668,8 @@
       <MemberSignature Language="C#" Value="public static bool operator == (ArraySegment&lt;T&gt; a, ArraySegment&lt;T&gt; b);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.ArraySegment`1&lt;!T&gt; a, valuetype System.ArraySegment`1&lt;!T&gt; b) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ArraySegment`1.op_Equality(System.ArraySegment{`0},System.ArraySegment{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (a As ArraySegment(Of T), b As ArraySegment(Of T)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(ArraySegment&lt;T&gt; a, ArraySegment&lt;T&gt; b);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -653,6 +721,8 @@
       <MemberSignature Language="C#" Value="public static implicit operator ArraySegment&lt;T&gt; (T[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.ArraySegment`1&lt;!T&gt; op_Implicit(!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ArraySegment`1.op_Implicit(`0[])~System.ArraySegment{`0}" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (array As T()) As ArraySegment(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator ArraySegment&lt;T&gt;(cli::array &lt;T&gt; ^ array);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -675,6 +745,8 @@
       <MemberSignature Language="C#" Value="public static bool operator != (ArraySegment&lt;T&gt; a, ArraySegment&lt;T&gt; b);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.ArraySegment`1&lt;!T&gt; a, valuetype System.ArraySegment`1&lt;!T&gt; b) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ArraySegment`1.op_Inequality(System.ArraySegment{`0},System.ArraySegment{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (a As ArraySegment(Of T), b As ArraySegment(Of T)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(ArraySegment&lt;T&gt; a, ArraySegment&lt;T&gt; b);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -726,6 +798,8 @@
       <MemberSignature Language="C#" Value="public ArraySegment&lt;T&gt; Slice (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.ArraySegment`1&lt;!T&gt; Slice(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ArraySegment`1.Slice(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Slice (index As Integer) As ArraySegment(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ArraySegment&lt;T&gt; Slice(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -748,6 +822,8 @@
       <MemberSignature Language="C#" Value="public ArraySegment&lt;T&gt; Slice (int index, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.ArraySegment`1&lt;!T&gt; Slice(int32 index, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ArraySegment`1.Slice(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Slice (index As Integer, count As Integer) As ArraySegment(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ArraySegment&lt;T&gt; Slice(int index, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -772,7 +848,12 @@
       <MemberSignature Language="C#" Value="void ICollection&lt;T&gt;.Add (T item);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.Generic.ICollection&lt;T&gt;.Add(!T item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ArraySegment`1.System#Collections#Generic#ICollection&lt;T&gt;#Add(`0)" />
+      <MemberSignature Language="VB.NET" Value="Sub Add (item As T) Implements ICollection(Of T).Add" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.Generic.ICollection&lt;T&gt;.Add(T item) = System::Collections::Generic::ICollection&lt;T&gt;::Add;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Add(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -814,7 +895,12 @@
       <MemberSignature Language="C#" Value="void ICollection&lt;T&gt;.Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.Generic.ICollection&lt;T&gt;.Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ArraySegment`1.System#Collections#Generic#ICollection&lt;T&gt;#Clear" />
+      <MemberSignature Language="VB.NET" Value="Sub Clear () Implements ICollection(Of T).Clear" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.Generic.ICollection&lt;T&gt;.Clear() = System::Collections::Generic::ICollection&lt;T&gt;::Clear;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Clear</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -853,7 +939,12 @@
       <MemberSignature Language="C#" Value="bool ICollection&lt;T&gt;.Contains (T item);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.Generic.ICollection&lt;T&gt;.Contains(!T item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ArraySegment`1.System#Collections#Generic#ICollection&lt;T&gt;#Contains(`0)" />
+      <MemberSignature Language="VB.NET" Value="Function Contains (item As T) As Boolean Implements ICollection(Of T).Contains" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.Collections.Generic.ICollection&lt;T&gt;.Contains(T item) = System::Collections::Generic::ICollection&lt;T&gt;::Contains;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Contains(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -896,7 +987,12 @@
       <MemberSignature Language="C#" Value="void ICollection&lt;T&gt;.CopyTo (T[] array, int arrayIndex);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.Generic.ICollection&lt;T&gt;.CopyTo(!T[] array, int32 arrayIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ArraySegment`1.System#Collections#Generic#ICollection&lt;T&gt;#CopyTo(`0[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Sub CopyTo (array As T(), arrayIndex As Integer) Implements ICollection(Of T).CopyTo" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.Generic.ICollection&lt;T&gt;.CopyTo(cli::array &lt;T&gt; ^ array, int arrayIndex) = System::Collections::Generic::ICollection&lt;T&gt;::CopyTo;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -953,7 +1049,12 @@
       <MemberSignature Language="C#" Value="bool System.Collections.Generic.ICollection&lt;T&gt;.IsReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.Generic.ICollection&lt;T&gt;.IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.ArraySegment`1.System#Collections#Generic#ICollection&lt;T&gt;#IsReadOnly" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements ICollection(Of T).IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.Generic.ICollection&lt;T&gt;.IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.Generic.ICollection`1.IsReadOnly</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -992,7 +1093,12 @@
       <MemberSignature Language="C#" Value="bool ICollection&lt;T&gt;.Remove (T item);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.Generic.ICollection&lt;T&gt;.Remove(!T item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ArraySegment`1.System#Collections#Generic#ICollection&lt;T&gt;#Remove(`0)" />
+      <MemberSignature Language="VB.NET" Value="Function Remove (item As T) As Boolean Implements ICollection(Of T).Remove" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.Collections.Generic.ICollection&lt;T&gt;.Remove(T item) = System::Collections::Generic::ICollection&lt;T&gt;::Remove;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Remove(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1036,7 +1142,12 @@
       <MemberSignature Language="C#" Value="System.Collections.Generic.IEnumerator&lt;T&gt; IEnumerable&lt;T&gt;.GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.Generic.IEnumerator`1&lt;!T&gt; System.Collections.Generic.IEnumerable&lt;T&gt;.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ArraySegment`1.System#Collections#Generic#IEnumerable&lt;T&gt;#GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator(Of T) Implements IEnumerable(Of T).GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::Generic::IEnumerator&lt;T&gt; ^ System.Collections.Generic.IEnumerable&lt;T&gt;.GetEnumerator() = System::Collections::Generic::IEnumerable&lt;T&gt;::GetEnumerator;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1075,7 +1186,12 @@
       <MemberSignature Language="C#" Value="int IList&lt;T&gt;.IndexOf (T item);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.Generic.IList&lt;T&gt;.IndexOf(!T item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ArraySegment`1.System#Collections#Generic#IList&lt;T&gt;#IndexOf(`0)" />
+      <MemberSignature Language="VB.NET" Value="Function IndexOf (item As T) As Integer Implements IList(Of T).IndexOf" />
+      <MemberSignature Language="C++ CLI" Value=" virtual int System.Collections.Generic.IList&lt;T&gt;.IndexOf(T item) = System::Collections::Generic::IList&lt;T&gt;::IndexOf;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IList`1.IndexOf(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1117,7 +1233,12 @@
       <MemberSignature Language="C#" Value="void IList&lt;T&gt;.Insert (int index, T item);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.Generic.IList&lt;T&gt;.Insert(int32 index, !T item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ArraySegment`1.System#Collections#Generic#IList&lt;T&gt;#Insert(System.Int32,`0)" />
+      <MemberSignature Language="VB.NET" Value="Sub Insert (index As Integer, item As T) Implements IList(Of T).Insert" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.Generic.IList&lt;T&gt;.Insert(int index, T item) = System::Collections::Generic::IList&lt;T&gt;::Insert;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IList`1.Insert(System.Int32,`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1163,7 +1284,12 @@
       <MemberSignature Language="C#" Value="T System.Collections.Generic.IList&lt;T&gt;.Item[int index] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance !T System.Collections.Generic.IList&lt;T&gt;.Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.ArraySegment`1.System#Collections#Generic#IList&lt;T&gt;#Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value=" Property Item(index As Integer) As T Implements IList(Of T).Item" />
+      <MemberSignature Language="C++ CLI" Value="property T System.Collections.Generic.IList&lt;T&gt;.Item[int] { T get(int index); void set(int index, T value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.Generic.IList`1.Item(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1211,7 +1337,12 @@
       <MemberSignature Language="C#" Value="void IList&lt;T&gt;.RemoveAt (int index);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.Generic.IList&lt;T&gt;.RemoveAt(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ArraySegment`1.System#Collections#Generic#IList&lt;T&gt;#RemoveAt(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Sub RemoveAt (index As Integer) Implements IList(Of T).RemoveAt" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.Generic.IList&lt;T&gt;.RemoveAt(int index) = System::Collections::Generic::IList&lt;T&gt;::RemoveAt;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IList`1.RemoveAt(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1255,7 +1386,12 @@
       <MemberSignature Language="C#" Value="T System.Collections.Generic.IReadOnlyList&lt;T&gt;.Item[int index] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance !T System.Collections.Generic.IReadOnlyList&lt;T&gt;.Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.ArraySegment`1.System#Collections#Generic#IReadOnlyList&lt;T&gt;#Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property Item(index As Integer) As T Implements IReadOnlyList(Of T).Item" />
+      <MemberSignature Language="C++ CLI" Value="property T System.Collections.Generic.IReadOnlyList&lt;T&gt;.Item[int] { T get(int index); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.Generic.IReadOnlyList`1.Item(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1300,7 +1436,12 @@
       <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ArraySegment`1.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator Implements IEnumerable.GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IEnumerator ^ System.Collections.IEnumerable.GetEnumerator() = System::Collections::IEnumerable::GetEnumerator;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1339,6 +1480,8 @@
       <MemberSignature Language="C#" Value="public T[] ToArray ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !T[] ToArray() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ArraySegment`1.ToArray" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToArray () As T()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;T&gt; ^ ToArray();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1354,31 +1497,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ArraySegment`1" /> structure.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Equals">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Determines whether two objects are equal.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,9 @@
-<Type Name="ClientSponsor" FullName="System.Runtime.Remoting.Lifetime.ClientSponsor">
+﻿<Type Name="ClientSponsor" FullName="System.Runtime.Remoting.Lifetime.ClientSponsor">
   <TypeSignature Language="C#" Value="public class ClientSponsor : MarshalByRefObject, System.Runtime.Remoting.Lifetime.ISponsor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ClientSponsor extends System.MarshalByRefObject implements class System.Runtime.Remoting.Lifetime.ISponsor" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Lifetime.ClientSponsor" />
+  <TypeSignature Language="VB.NET" Value="Public Class ClientSponsor&#xA;Inherits MarshalByRefObject&#xA;Implements ISponsor" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ClientSponsor : MarshalByRefObject, System::Runtime::Remoting::Lifetime::ISponsor" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -45,10 +47,22 @@
     <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission Value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.Lifetime.ClientSponsor" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ClientSponsor ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Lifetime.ClientSponsor.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ClientSponsor();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -72,6 +86,8 @@
       <MemberSignature Language="C#" Value="public ClientSponsor (TimeSpan renewalTime);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.TimeSpan renewalTime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Lifetime.ClientSponsor.#ctor(System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (renewalTime As TimeSpan)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ClientSponsor(TimeSpan renewalTime);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -91,6 +107,8 @@
       <MemberSignature Language="C#" Value="public void Close ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Close() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Lifetime.ClientSponsor.Close" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Close ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Close();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -119,6 +137,8 @@
       <MemberSignature Language="C#" Value="~ClientSponsor ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Lifetime.ClientSponsor.Finalize" />
+      <MemberSignature Language="VB.NET" Value="Finalize ()" />
+      <MemberSignature Language="C++ CLI" Value="!ClientSponsor ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -138,6 +158,8 @@
       <MemberSignature Language="C#" Value="public override object InitializeLifetimeService ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object InitializeLifetimeService() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Lifetime.ClientSponsor.InitializeLifetimeService" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function InitializeLifetimeService () As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ InitializeLifetimeService();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -173,6 +195,8 @@
       <MemberSignature Language="C#" Value="public bool Register (MarshalByRefObject obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Register(class System.MarshalByRefObject obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Lifetime.ClientSponsor.Register(System.MarshalByRefObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Register (obj As MarshalByRefObject) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Register(MarshalByRefObject ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -206,7 +230,12 @@
       <MemberSignature Language="C#" Value="public TimeSpan Renewal (System.Runtime.Remoting.Lifetime.ILease lease);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.TimeSpan Renewal(class System.Runtime.Remoting.Lifetime.ILease lease) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Lifetime.ClientSponsor.Renewal(System.Runtime.Remoting.Lifetime.ILease)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Renewal (lease As ILease) As TimeSpan" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual TimeSpan Renewal(System::Runtime::Remoting::Lifetime::ILease ^ lease);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Remoting.Lifetime.ISponsor.Renewal(System.Runtime.Remoting.Lifetime.ILease)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -243,6 +272,8 @@
       <MemberSignature Language="C#" Value="public TimeSpan RenewalTime { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan RenewalTime" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Lifetime.ClientSponsor.RenewalTime" />
+      <MemberSignature Language="VB.NET" Value="Public Property RenewalTime As TimeSpan" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan RenewalTime { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -271,6 +302,8 @@
       <MemberSignature Language="C#" Value="public void Unregister (MarshalByRefObject obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Unregister(class System.MarshalByRefObject obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Lifetime.ClientSponsor.Unregister(System.MarshalByRefObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Unregister (obj As MarshalByRefObject)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Unregister(MarshalByRefObject ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -298,15 +331,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.Lifetime.ClientSponsor" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

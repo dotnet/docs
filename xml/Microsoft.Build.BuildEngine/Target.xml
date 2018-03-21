@@ -1,7 +1,9 @@
-<Type Name="Target" FullName="Microsoft.Build.BuildEngine.Target">
+﻿<Type Name="Target" FullName="Microsoft.Build.BuildEngine.Target">
   <TypeSignature Language="C#" Value="public class Target : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Target extends System.Object implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.BuildEngine.Target" />
+  <TypeSignature Language="VB.NET" Value="Public Class Target&#xA;Implements IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Target : System::Collections::IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Engine</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +30,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.BuildEngine.BuildTask AddNewTask (string taskName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Build.BuildEngine.BuildTask AddNewTask(string taskName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Target.AddNewTask(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddNewTask (taskName As String) As BuildTask" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Build::BuildEngine::BuildTask ^ AddNewTask(System::String ^ taskName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -50,6 +54,8 @@
       <MemberSignature Language="C#" Value="public string Condition { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Condition" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.Target.Condition" />
+      <MemberSignature Language="VB.NET" Value="Public Property Condition As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Condition { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -68,6 +74,8 @@
       <MemberSignature Language="C#" Value="public string DependsOnTargets { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DependsOnTargets" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.Target.DependsOnTargets" />
+      <MemberSignature Language="VB.NET" Value="Public Property DependsOnTargets As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DependsOnTargets { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -86,7 +94,12 @@
       <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Target.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -114,6 +127,8 @@
       <MemberSignature Language="C#" Value="public string Inputs { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Inputs" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.Target.Inputs" />
+      <MemberSignature Language="VB.NET" Value="Public Property Inputs As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Inputs { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -139,6 +154,8 @@
       <MemberSignature Language="C#" Value="public bool IsImported { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsImported" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.Target.IsImported" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsImported As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsImported { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -158,6 +175,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.Target.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -176,6 +195,8 @@
       <MemberSignature Language="C#" Value="public string Outputs { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Outputs" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.Target.Outputs" />
+      <MemberSignature Language="VB.NET" Value="Public Property Outputs As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Outputs { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -201,6 +222,8 @@
       <MemberSignature Language="C#" Value="public void RemoveTask (Microsoft.Build.BuildEngine.BuildTask taskElement);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveTask(class Microsoft.Build.BuildEngine.BuildTask taskElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Target.RemoveTask(Microsoft.Build.BuildEngine.BuildTask)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveTask (taskElement As BuildTask)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveTask(Microsoft::Build::BuildEngine::BuildTask ^ taskElement);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>

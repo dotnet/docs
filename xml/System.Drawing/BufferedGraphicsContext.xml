@@ -1,7 +1,9 @@
-<Type Name="BufferedGraphicsContext" FullName="System.Drawing.BufferedGraphicsContext">
+﻿<Type Name="BufferedGraphicsContext" FullName="System.Drawing.BufferedGraphicsContext">
   <TypeSignature Language="C#" Value="public sealed class BufferedGraphicsContext : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit BufferedGraphicsContext extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.BufferedGraphicsContext" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BufferedGraphicsContext&#xA;Implements IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BufferedGraphicsContext sealed : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +53,8 @@
       <MemberSignature Language="C#" Value="public BufferedGraphicsContext ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.BufferedGraphicsContext.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BufferedGraphicsContext();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -74,10 +78,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Allocate">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a graphics buffer.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Allocate">
       <MemberSignature Language="C#" Value="public System.Drawing.BufferedGraphics Allocate (System.Drawing.Graphics targetGraphics, System.Drawing.Rectangle targetRectangle);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Drawing.BufferedGraphics Allocate(class System.Drawing.Graphics targetGraphics, valuetype System.Drawing.Rectangle targetRectangle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.BufferedGraphicsContext.Allocate(System.Drawing.Graphics,System.Drawing.Rectangle)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Allocate (targetGraphics As Graphics, targetRectangle As Rectangle) As BufferedGraphics" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::BufferedGraphics ^ Allocate(System::Drawing::Graphics ^ targetGraphics, System::Drawing::Rectangle targetRectangle);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -121,6 +136,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.BufferedGraphics Allocate (IntPtr targetDC, System.Drawing.Rectangle targetRectangle);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Drawing.BufferedGraphics Allocate(native int targetDC, valuetype System.Drawing.Rectangle targetRectangle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.BufferedGraphicsContext.Allocate(System.IntPtr,System.Drawing.Rectangle)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Allocate (targetDC As IntPtr, targetRectangle As Rectangle) As BufferedGraphics" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::BufferedGraphics ^ Allocate(IntPtr targetDC, System::Drawing::Rectangle targetRectangle);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -165,7 +182,12 @@
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.BufferedGraphicsContext.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -193,6 +215,8 @@
       <MemberSignature Language="C#" Value="~BufferedGraphicsContext ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.BufferedGraphicsContext.Finalize" />
+      <MemberSignature Language="VB.NET" Value="Finalize ()" />
+      <MemberSignature Language="C++ CLI" Value="!BufferedGraphicsContext ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -211,6 +235,8 @@
       <MemberSignature Language="C#" Value="public void Invalidate ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Invalidate() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.BufferedGraphicsContext.Invalidate" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Invalidate ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Invalidate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -236,6 +262,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Size MaximumBuffer { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Size MaximumBuffer" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.BufferedGraphicsContext.MaximumBuffer" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaximumBuffer As Size" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Size MaximumBuffer { System::Drawing::Size get(); void set(System::Drawing::Size value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -268,14 +296,5 @@
         <permission cref="T:System.Security.Permissions.UIPermission">for allowing user access to all windows. Related enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Allocate">
-      <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a graphics buffer.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

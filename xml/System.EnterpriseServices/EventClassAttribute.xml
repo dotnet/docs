@@ -1,7 +1,9 @@
-<Type Name="EventClassAttribute" FullName="System.EnterpriseServices.EventClassAttribute">
+﻿<Type Name="EventClassAttribute" FullName="System.EnterpriseServices.EventClassAttribute">
   <TypeSignature Language="C#" Value="public sealed class EventClassAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EventClassAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.EventClassAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EventClassAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EventClassAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +42,8 @@
       <MemberSignature Language="C#" Value="public EventClassAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.EventClassAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EventClassAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -68,6 +72,8 @@
       <MemberSignature Language="C#" Value="public bool AllowInprocSubscribers { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AllowInprocSubscribers" />
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.EventClassAttribute.AllowInprocSubscribers" />
+      <MemberSignature Language="VB.NET" Value="Public Property AllowInprocSubscribers As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowInprocSubscribers { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -87,6 +93,8 @@
       <MemberSignature Language="C#" Value="public bool FireInParallel { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool FireInParallel" />
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.EventClassAttribute.FireInParallel" />
+      <MemberSignature Language="VB.NET" Value="Public Property FireInParallel As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool FireInParallel { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -106,6 +114,8 @@
       <MemberSignature Language="C#" Value="public string PublisherFilter { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PublisherFilter" />
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.EventClassAttribute.PublisherFilter" />
+      <MemberSignature Language="VB.NET" Value="Public Property PublisherFilter As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PublisherFilter { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

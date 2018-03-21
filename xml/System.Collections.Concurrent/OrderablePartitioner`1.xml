@@ -1,7 +1,9 @@
-<Type Name="OrderablePartitioner&lt;TSource&gt;" FullName="System.Collections.Concurrent.OrderablePartitioner&lt;TSource&gt;">
+﻿<Type Name="OrderablePartitioner&lt;TSource&gt;" FullName="System.Collections.Concurrent.OrderablePartitioner&lt;TSource&gt;">
   <TypeSignature Language="C#" Value="public abstract class OrderablePartitioner&lt;TSource&gt; : System.Collections.Concurrent.Partitioner&lt;TSource&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit OrderablePartitioner`1&lt;TSource&gt; extends System.Collections.Concurrent.Partitioner`1&lt;!TSource&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Collections.Concurrent.OrderablePartitioner`1" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class OrderablePartitioner(Of TSource)&#xA;Inherits Partitioner(Of TSource)" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename TSource&gt;&#xA;public ref class OrderablePartitioner abstract : System::Collections::Concurrent::Partitioner&lt;TSource&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Collections.Concurrent</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,6 +55,8 @@
       <MemberSignature Language="C#" Value="protected OrderablePartitioner (bool keysOrderedInEachPartition, bool keysOrderedAcrossPartitions, bool keysNormalized);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(bool keysOrderedInEachPartition, bool keysOrderedAcrossPartitions, bool keysNormalized) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.OrderablePartitioner`1.#ctor(System.Boolean,System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (keysOrderedInEachPartition As Boolean, keysOrderedAcrossPartitions As Boolean, keysNormalized As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; OrderablePartitioner(bool keysOrderedInEachPartition, bool keysOrderedAcrossPartitions, bool keysNormalized);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -93,6 +97,8 @@
       <MemberSignature Language="C#" Value="public override System.Collections.Generic.IEnumerable&lt;TSource&gt; GetDynamicPartitions ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Collections.Generic.IEnumerable`1&lt;!TSource&gt; GetDynamicPartitions() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.OrderablePartitioner`1.GetDynamicPartitions" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDynamicPartitions () As IEnumerable(Of TSource)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Collections::Generic::IEnumerable&lt;TSource&gt; ^ GetDynamicPartitions();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -137,6 +143,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;long,TSource&gt;&gt; GetOrderableDynamicPartitions ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;int64, !TSource&gt;&gt; GetOrderableDynamicPartitions() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.OrderablePartitioner`1.GetOrderableDynamicPartitions" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetOrderableDynamicPartitions () As IEnumerable(Of KeyValuePair(Of Long, TSource))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;long, TSource&gt;&gt; ^ GetOrderableDynamicPartitions();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -181,6 +189,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Collections.Generic.IList&lt;System.Collections.Generic.IEnumerator&lt;System.Collections.Generic.KeyValuePair&lt;long,TSource&gt;&gt;&gt; GetOrderablePartitions (int partitionCount);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IList`1&lt;class System.Collections.Generic.IEnumerator`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;int64, !TSource&gt;&gt;&gt; GetOrderablePartitions(int32 partitionCount) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.OrderablePartitioner`1.GetOrderablePartitions(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetOrderablePartitions (partitionCount As Integer) As IList(Of IEnumerator(Of KeyValuePair(Of Long, TSource)))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Collections::Generic::IList&lt;System::Collections::Generic::IEnumerator&lt;System::Collections::Generic::KeyValuePair&lt;long, TSource&gt;&gt; ^&gt; ^ GetOrderablePartitions(int partitionCount);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -225,6 +235,8 @@
       <MemberSignature Language="C#" Value="public override System.Collections.Generic.IList&lt;System.Collections.Generic.IEnumerator&lt;TSource&gt;&gt; GetPartitions (int partitionCount);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Collections.Generic.IList`1&lt;class System.Collections.Generic.IEnumerator`1&lt;!TSource&gt;&gt; GetPartitions(int32 partitionCount) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.OrderablePartitioner`1.GetPartitions(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetPartitions (partitionCount As Integer) As IList(Of IEnumerator(Of TSource))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Collections::Generic::IList&lt;System::Collections::Generic::IEnumerator&lt;TSource&gt; ^&gt; ^ GetPartitions(int partitionCount);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -267,6 +279,8 @@
       <MemberSignature Language="C#" Value="public bool KeysNormalized { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool KeysNormalized" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Concurrent.OrderablePartitioner`1.KeysNormalized" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property KeysNormalized As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool KeysNormalized { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -305,6 +319,8 @@
       <MemberSignature Language="C#" Value="public bool KeysOrderedAcrossPartitions { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool KeysOrderedAcrossPartitions" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Concurrent.OrderablePartitioner`1.KeysOrderedAcrossPartitions" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property KeysOrderedAcrossPartitions As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool KeysOrderedAcrossPartitions { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -343,6 +359,8 @@
       <MemberSignature Language="C#" Value="public bool KeysOrderedInEachPartition { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool KeysOrderedInEachPartition" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Concurrent.OrderablePartitioner`1.KeysOrderedInEachPartition" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property KeysOrderedInEachPartition As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool KeysOrderedInEachPartition { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>

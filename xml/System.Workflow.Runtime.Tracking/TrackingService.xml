@@ -1,7 +1,9 @@
-<Type Name="TrackingService" FullName="System.Workflow.Runtime.Tracking.TrackingService">
+﻿<Type Name="TrackingService" FullName="System.Workflow.Runtime.Tracking.TrackingService">
   <TypeSignature Language="C#" Value="public abstract class TrackingService : System.Workflow.Runtime.Hosting.WorkflowRuntimeService" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit TrackingService extends System.Workflow.Runtime.Hosting.WorkflowRuntimeService" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Tracking.TrackingService" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class TrackingService&#xA;Inherits WorkflowRuntimeService" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TrackingService abstract : System::Workflow::Runtime::Hosting::WorkflowRuntimeService" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -63,6 +65,8 @@
       <MemberSignature Language="C#" Value="protected TrackingService ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.TrackingService.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; TrackingService();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -102,9 +106,11 @@
       </Docs>
     </MemberGroup>
     <Member MemberName="GetProfile">
-      <MemberSignature Language="C#" Value="protected abstract System.Workflow.Runtime.Tracking.TrackingProfile GetProfile (Guid workflowInstanceId);" />
+      <MemberSignature Language="C#" Value="protected internal abstract System.Workflow.Runtime.Tracking.TrackingProfile GetProfile (Guid workflowInstanceId);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.Workflow.Runtime.Tracking.TrackingProfile GetProfile(valuetype System.Guid workflowInstanceId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.TrackingService.GetProfile(System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride Function GetProfile (workflowInstanceId As Guid) As TrackingProfile" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract System::Workflow::Runtime::Tracking::TrackingProfile ^ GetProfile(Guid workflowInstanceId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -139,9 +145,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetProfile">
-      <MemberSignature Language="C#" Value="protected abstract System.Workflow.Runtime.Tracking.TrackingProfile GetProfile (Type workflowType, Version profileVersionId);" />
+      <MemberSignature Language="C#" Value="protected internal abstract System.Workflow.Runtime.Tracking.TrackingProfile GetProfile (Type workflowType, Version profileVersionId);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.Workflow.Runtime.Tracking.TrackingProfile GetProfile(class System.Type workflowType, class System.Version profileVersionId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.TrackingService.GetProfile(System.Type,System.Version)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride Function GetProfile (workflowType As Type, profileVersionId As Version) As TrackingProfile" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract System::Workflow::Runtime::Tracking::TrackingProfile ^ GetProfile(Type ^ workflowType, Version ^ profileVersionId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -170,9 +178,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetTrackingChannel">
-      <MemberSignature Language="C#" Value="protected abstract System.Workflow.Runtime.Tracking.TrackingChannel GetTrackingChannel (System.Workflow.Runtime.Tracking.TrackingParameters parameters);" />
+      <MemberSignature Language="C#" Value="protected internal abstract System.Workflow.Runtime.Tracking.TrackingChannel GetTrackingChannel (System.Workflow.Runtime.Tracking.TrackingParameters parameters);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.Workflow.Runtime.Tracking.TrackingChannel GetTrackingChannel(class System.Workflow.Runtime.Tracking.TrackingParameters parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.TrackingService.GetTrackingChannel(System.Workflow.Runtime.Tracking.TrackingParameters)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride Function GetTrackingChannel (parameters As TrackingParameters) As TrackingChannel" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract System::Workflow::Runtime::Tracking::TrackingChannel ^ GetTrackingChannel(System::Workflow::Runtime::Tracking::TrackingParameters ^ parameters);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -207,9 +217,11 @@
       </Docs>
     </Member>
     <Member MemberName="TryGetProfile">
-      <MemberSignature Language="C#" Value="protected abstract bool TryGetProfile (Type workflowType, out System.Workflow.Runtime.Tracking.TrackingProfile profile);" />
+      <MemberSignature Language="C#" Value="protected internal abstract bool TryGetProfile (Type workflowType, out System.Workflow.Runtime.Tracking.TrackingProfile profile);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance bool TryGetProfile(class System.Type workflowType, [out] class System.Workflow.Runtime.Tracking.TrackingProfile&amp; profile) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.TrackingService.TryGetProfile(System.Type,System.Workflow.Runtime.Tracking.TrackingProfile@)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride Function TryGetProfile (workflowType As Type, ByRef profile As TrackingProfile) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract bool TryGetProfile(Type ^ workflowType, [Runtime::InteropServices::Out] System::Workflow::Runtime::Tracking::TrackingProfile ^ % profile);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -247,9 +259,11 @@
       </Docs>
     </Member>
     <Member MemberName="TryReloadProfile">
-      <MemberSignature Language="C#" Value="protected abstract bool TryReloadProfile (Type workflowType, Guid workflowInstanceId, out System.Workflow.Runtime.Tracking.TrackingProfile profile);" />
+      <MemberSignature Language="C#" Value="protected internal abstract bool TryReloadProfile (Type workflowType, Guid workflowInstanceId, out System.Workflow.Runtime.Tracking.TrackingProfile profile);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance bool TryReloadProfile(class System.Type workflowType, valuetype System.Guid workflowInstanceId, [out] class System.Workflow.Runtime.Tracking.TrackingProfile&amp; profile) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.TrackingService.TryReloadProfile(System.Type,System.Guid,System.Workflow.Runtime.Tracking.TrackingProfile@)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride Function TryReloadProfile (workflowType As Type, workflowInstanceId As Guid, ByRef profile As TrackingProfile) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract bool TryReloadProfile(Type ^ workflowType, Guid workflowInstanceId, [Runtime::InteropServices::Out] System::Workflow::Runtime::Tracking::TrackingProfile ^ % profile);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>

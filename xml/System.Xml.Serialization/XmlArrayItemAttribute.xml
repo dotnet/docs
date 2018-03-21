@@ -1,7 +1,9 @@
-<Type Name="XmlArrayItemAttribute" FullName="System.Xml.Serialization.XmlArrayItemAttribute">
+﻿<Type Name="XmlArrayItemAttribute" FullName="System.Xml.Serialization.XmlArrayItemAttribute">
   <TypeSignature Language="C#" Value="public class XmlArrayItemAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlArrayItemAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.XmlArrayItemAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public Class XmlArrayItemAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlArrayItemAttribute : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -22,7 +24,7 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.AttributeUsage(System.AttributeTargets.Property | System.AttributeTargets.Field | System.AttributeTargets.Parameter | System.AttributeTargets.ReturnValue, AllowMultiple=true)</AttributeName>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Field | System.AttributeTargets.Parameter | System.AttributeTargets.Property | System.AttributeTargets.ReturnValue, AllowMultiple=true)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -66,10 +68,22 @@
     <altmember cref="T:System.Xml.Serialization.XmlAttributes" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Serialization.XmlArrayItemAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public XmlArrayItemAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlArrayItemAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlArrayItemAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -106,6 +120,8 @@
       <MemberSignature Language="C#" Value="public XmlArrayItemAttribute (string elementName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string elementName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlArrayItemAttribute.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (elementName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlArrayItemAttribute(System::String ^ elementName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -154,6 +170,7 @@
       <MemberSignature Language="C#" Value="public XmlArrayItemAttribute (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlArrayItemAttribute.#ctor(System.Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlArrayItemAttribute(Type ^ type);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -193,6 +210,7 @@
       <MemberSignature Language="C#" Value="public XmlArrayItemAttribute (string elementName, Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string elementName, class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlArrayItemAttribute.#ctor(System.String,System.Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlArrayItemAttribute(System::String ^ elementName, Type ^ type);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -243,6 +261,8 @@
       <MemberSignature Language="C#" Value="public string DataType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DataType" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlArrayItemAttribute.DataType" />
+      <MemberSignature Language="VB.NET" Value="Public Property DataType As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DataType { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -346,6 +366,8 @@
       <MemberSignature Language="C#" Value="public string ElementName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ElementName" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlArrayItemAttribute.ElementName" />
+      <MemberSignature Language="VB.NET" Value="Public Property ElementName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ElementName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -392,6 +414,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.Schema.XmlSchemaForm Form { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Xml.Schema.XmlSchemaForm Form" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlArrayItemAttribute.Form" />
+      <MemberSignature Language="VB.NET" Value="Public Property Form As XmlSchemaForm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSchemaForm Form { System::Xml::Schema::XmlSchemaForm get(); void set(System::Xml::Schema::XmlSchemaForm value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -449,6 +473,8 @@ attributeFormDefault="unqualified">
       <MemberSignature Language="C#" Value="public bool IsNullable { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsNullable" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlArrayItemAttribute.IsNullable" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsNullable As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNullable { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -505,6 +531,8 @@ attributeFormDefault="unqualified">
       <MemberSignature Language="C#" Value="public string Namespace { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Namespace" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlArrayItemAttribute.Namespace" />
+      <MemberSignature Language="VB.NET" Value="Public Property Namespace As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Namespace { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -551,6 +579,8 @@ attributeFormDefault="unqualified">
       <MemberSignature Language="C#" Value="public int NestingLevel { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 NestingLevel" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlArrayItemAttribute.NestingLevel" />
+      <MemberSignature Language="VB.NET" Value="Public Property NestingLevel As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int NestingLevel { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -596,6 +626,8 @@ attributeFormDefault="unqualified">
       <MemberSignature Language="C#" Value="public Type Type { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type Type" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlArrayItemAttribute.Type" />
+      <MemberSignature Language="VB.NET" Value="Public Property Type As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ Type { Type ^ get(); void set(Type ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -697,15 +729,5 @@ public class Arrays{
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Xml.Serialization.XmlArrayItemAttribute" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

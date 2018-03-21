@@ -1,7 +1,9 @@
-<Type Name="RichTextBox" FullName="System.Windows.Controls.RichTextBox">
+﻿<Type Name="RichTextBox" FullName="System.Windows.Controls.RichTextBox">
   <TypeSignature Language="C#" Value="public class RichTextBox : System.Windows.Controls.Primitives.TextBoxBase, System.Windows.Markup.IAddChild" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi RichTextBox extends System.Windows.Controls.Primitives.TextBoxBase implements class System.Windows.Markup.IAddChild" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.RichTextBox" />
+  <TypeSignature Language="VB.NET" Value="Public Class RichTextBox&#xA;Inherits TextBoxBase&#xA;Implements IAddChild" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RichTextBox : System::Windows::Controls::Primitives::TextBoxBase, System::Windows::Markup::IAddChild" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -70,10 +72,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.RichTextBox" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public RichTextBox ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.RichTextBox.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RichTextBox();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -96,6 +109,8 @@
       <MemberSignature Language="C#" Value="public RichTextBox (System.Windows.Documents.FlowDocument document);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Documents.FlowDocument document) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.RichTextBox.#ctor(System.Windows.Documents.FlowDocument)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (document As FlowDocument)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RichTextBox(System::Windows::Documents::FlowDocument ^ document);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -124,6 +139,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Documents.TextPointer CaretPosition { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Documents.TextPointer CaretPosition" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.RichTextBox.CaretPosition" />
+      <MemberSignature Language="VB.NET" Value="Public Property CaretPosition As TextPointer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Documents::TextPointer ^ CaretPosition { System::Windows::Documents::TextPointer ^ get(); void set(System::Windows::Documents::TextPointer ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -131,7 +148,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -162,6 +179,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Documents.FlowDocument Document { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Documents.FlowDocument Document" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.RichTextBox.Document" />
+      <MemberSignature Language="VB.NET" Value="Public Property Document As FlowDocument" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Documents::FlowDocument ^ Document { System::Windows::Documents::FlowDocument ^ get(); void set(System::Windows::Documents::FlowDocument ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -200,6 +219,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Documents.TextPointer GetNextSpellingErrorPosition (System.Windows.Documents.TextPointer position, System.Windows.Documents.LogicalDirection direction);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Documents.TextPointer GetNextSpellingErrorPosition(class System.Windows.Documents.TextPointer position, valuetype System.Windows.Documents.LogicalDirection direction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.RichTextBox.GetNextSpellingErrorPosition(System.Windows.Documents.TextPointer,System.Windows.Documents.LogicalDirection)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetNextSpellingErrorPosition (position As TextPointer, direction As LogicalDirection) As TextPointer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Documents::TextPointer ^ GetNextSpellingErrorPosition(System::Windows::Documents::TextPointer ^ position, System::Windows::Documents::LogicalDirection direction);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -226,6 +247,7 @@
       <MemberSignature Language="C#" Value="public System.Windows.Documents.TextPointer GetPositionFromPoint (System.Windows.Point point, bool snapToText);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Documents.TextPointer GetPositionFromPoint(valuetype System.Windows.Point point, bool snapToText) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.RichTextBox.GetPositionFromPoint(System.Windows.Point,System.Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Documents::TextPointer ^ GetPositionFromPoint(System::Windows::Point point, bool snapToText);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -260,6 +282,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Controls.SpellingError GetSpellingError (System.Windows.Documents.TextPointer position);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Controls.SpellingError GetSpellingError(class System.Windows.Documents.TextPointer position) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.RichTextBox.GetSpellingError(System.Windows.Documents.TextPointer)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSpellingError (position As TextPointer) As SpellingError" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Controls::SpellingError ^ GetSpellingError(System::Windows::Documents::TextPointer ^ position);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -291,6 +315,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Documents.TextRange GetSpellingErrorRange (System.Windows.Documents.TextPointer position);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Documents.TextRange GetSpellingErrorRange(class System.Windows.Documents.TextPointer position) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.RichTextBox.GetSpellingErrorRange(System.Windows.Documents.TextPointer)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSpellingErrorRange (position As TextPointer) As TextRange" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Documents::TextRange ^ GetSpellingErrorRange(System::Windows::Documents::TextPointer ^ position);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -322,6 +348,8 @@
       <MemberSignature Language="C#" Value="public bool IsDocumentEnabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsDocumentEnabled" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.RichTextBox.IsDocumentEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsDocumentEnabled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDocumentEnabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -355,6 +383,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty IsDocumentEnabledProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty IsDocumentEnabledProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.RichTextBox.IsDocumentEnabledProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsDocumentEnabledProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsDocumentEnabledProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -369,9 +399,11 @@
       </Docs>
     </Member>
     <Member MemberName="LogicalChildren">
-      <MemberSignature Language="C#" Value="protected override System.Collections.IEnumerator LogicalChildren { get; }" />
+      <MemberSignature Language="C#" Value="protected internal override System.Collections.IEnumerator LogicalChildren { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IEnumerator LogicalChildren" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.RichTextBox.LogicalChildren" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property LogicalChildren As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property System::Collections::IEnumerator ^ LogicalChildren { System::Collections::IEnumerator ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -390,6 +422,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Size MeasureOverride (System.Windows.Size constraint);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Size MeasureOverride(valuetype System.Windows.Size constraint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.RichTextBox.MeasureOverride(System.Windows.Size)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function MeasureOverride (constraint As Size) As Size" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size MeasureOverride(System::Windows::Size constraint);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -419,6 +453,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.RichTextBox.OnCreateAutomationPeer" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnCreateAutomationPeer () As AutomationPeer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationPeer ^ OnCreateAutomationPeer();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -445,6 +481,8 @@
       <MemberSignature Language="C#" Value="protected override void OnDpiChanged (System.Windows.DpiScale oldDpiScaleInfo, System.Windows.DpiScale newDpiScaleInfo);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnDpiChanged(valuetype System.Windows.DpiScale oldDpiScaleInfo, valuetype System.Windows.DpiScale newDpiScaleInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.RichTextBox.OnDpiChanged(System.Windows.DpiScale,System.Windows.DpiScale)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnDpiChanged (oldDpiScaleInfo As DpiScale, newDpiScaleInfo As DpiScale)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnDpiChanged(System::Windows::DpiScale oldDpiScaleInfo, System::Windows::DpiScale newDpiScaleInfo);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -468,6 +506,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Documents.TextSelection Selection { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Documents.TextSelection Selection" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.RichTextBox.Selection" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Selection As TextSelection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Documents::TextSelection ^ Selection { System::Windows::Documents::TextSelection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -503,6 +543,8 @@
       <MemberSignature Language="C#" Value="public bool ShouldSerializeDocument ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeDocument() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.RichTextBox.ShouldSerializeDocument" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeDocument () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeDocument();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -528,7 +570,12 @@
       <MemberSignature Language="C#" Value="void IAddChild.AddChild (object value);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Markup.IAddChild.AddChild(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.RichTextBox.System#Windows#Markup#IAddChild#AddChild(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Sub AddChild (value As Object) Implements IAddChild.AddChild" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.Markup.IAddChild.AddChild(System::Object ^ value) = System::Windows::Markup::IAddChild::AddChild;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Markup.IAddChild.AddChild(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -549,7 +596,12 @@
       <MemberSignature Language="C#" Value="void IAddChild.AddText (string text);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Markup.IAddChild.AddText(string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.RichTextBox.System#Windows#Markup#IAddChild#AddText(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Sub AddText (text As String) Implements IAddChild.AddText" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.Markup.IAddChild.AddText(System::String ^ text) = System::Windows::Markup::IAddChild::AddText;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Markup.IAddChild.AddText(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -566,14 +618,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.RichTextBox" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

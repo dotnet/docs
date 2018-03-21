@@ -1,7 +1,9 @@
-<Type Name="PropertyValueChangedEventHandler" FullName="System.Windows.Forms.PropertyValueChangedEventHandler">
+﻿<Type Name="PropertyValueChangedEventHandler" FullName="System.Windows.Forms.PropertyValueChangedEventHandler">
   <TypeSignature Language="C#" Value="public delegate void PropertyValueChangedEventHandler(object s, PropertyValueChangedEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PropertyValueChangedEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.PropertyValueChangedEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub PropertyValueChangedEventHandler(s As Object, e As PropertyValueChangedEventArgs)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void PropertyValueChangedEventHandler(System::Object ^ s, PropertyValueChangedEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

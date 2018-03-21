@@ -1,7 +1,9 @@
-<Type Name="XComment" FullName="System.Xml.Linq.XComment">
+﻿<Type Name="XComment" FullName="System.Xml.Linq.XComment">
   <TypeSignature Language="C#" Value="public class XComment : System.Xml.Linq.XNode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XComment extends System.Xml.Linq.XNode" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Linq.XComment" />
+  <TypeSignature Language="VB.NET" Value="Public Class XComment&#xA;Inherits XNode" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XComment : System::Xml::Linq::XNode" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.XDocument</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,10 +36,23 @@
     <altmember cref="T:System.Xml.Linq.XElement" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Linq.XComment" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public XComment (string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XComment.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XComment(System::String ^ value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -97,6 +112,8 @@ Console.WriteLine(root)
       <MemberSignature Language="C#" Value="public XComment (System.Xml.Linq.XComment other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.Linq.XComment other) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XComment.#ctor(System.Xml.Linq.XComment)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (other As XComment)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XComment(System::Xml::Linq::XComment ^ other);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -134,6 +151,8 @@ Console.WriteLine(root)
       <MemberSignature Language="C#" Value="public override System.Xml.XmlNodeType NodeType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Xml.XmlNodeType NodeType" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Linq.XComment.NodeType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property NodeType As XmlNodeType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xml::XmlNodeType NodeType { System::Xml::XmlNodeType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -194,6 +213,8 @@ Comment
       <MemberSignature Language="C#" Value="public string Value { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Value" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Linq.XComment.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Property Value As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Value { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -255,6 +276,8 @@ This is a comment
       <MemberSignature Language="C#" Value="public override void WriteTo (System.Xml.XmlWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteTo(class System.Xml.XmlWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XComment.WriteTo(System.Xml.XmlWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteTo (writer As XmlWriter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteTo(System::Xml::XmlWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -295,6 +318,7 @@ This is a comment
       <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task WriteToAsync (System.Xml.XmlWriter writer, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task WriteToAsync(class System.Xml.XmlWriter writer, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XComment.WriteToAsync(System.Xml.XmlWriter,System.Threading.CancellationToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task ^ WriteToAsync(System::Xml::XmlWriter ^ writer, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -315,16 +339,5 @@ This is a comment
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml.XDocument</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Xml.Linq.XComment" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

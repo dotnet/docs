@@ -1,7 +1,9 @@
-<Type Name="PanelArray" FullName="Microsoft.VisualBasic.Compatibility.VB6.PanelArray">
+﻿<Type Name="PanelArray" FullName="Microsoft.VisualBasic.Compatibility.VB6.PanelArray">
   <TypeSignature Language="C#" Value="public class PanelArray : Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray, System.ComponentModel.IExtenderProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi PanelArray extends Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray implements class System.ComponentModel.IExtenderProvider" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.PanelArray" />
+  <TypeSignature Language="VB.NET" Value="Public Class PanelArray&#xA;Inherits BaseControlArray&#xA;Implements IExtenderProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PanelArray : Microsoft::VisualBasic::Compatibility::VB6::BaseControlArray, System::ComponentModel::IExtenderProvider" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -37,10 +39,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.PanelArray" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public PanelArray ();" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.PanelArray.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PanelArray();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -66,6 +79,8 @@
       <MemberSignature Language="C#" Value="public PanelArray (System.ComponentModel.IContainer Container);" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor(class System.ComponentModel.IContainer Container) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.PanelArray.#ctor(System.ComponentModel.IContainer)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Container As IContainer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PanelArray(System::ComponentModel::IContainer ^ Container);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -94,6 +109,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler AutoSizeChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler AutoSizeChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.PanelArray.AutoSizeChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event AutoSizeChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ AutoSizeChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -123,6 +140,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler BackColorChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler BackColorChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.PanelArray.BackColorChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event BackColorChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ BackColorChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -152,6 +171,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler BackgroundImageChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler BackgroundImageChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.PanelArray.BackgroundImageChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event BackgroundImageChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ BackgroundImageChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -181,6 +202,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler BackgroundImageLayoutChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler BackgroundImageLayoutChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.PanelArray.BackgroundImageLayoutChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event BackgroundImageLayoutChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ BackgroundImageLayoutChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -210,6 +233,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler BindingContextChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler BindingContextChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.PanelArray.BindingContextChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event BindingContextChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ BindingContextChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -239,6 +264,8 @@
       <MemberSignature Language="C#" Value="public bool CanExtend (object target);" />
       <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance bool CanExtend(object target) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.PanelArray.CanExtend(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CanExtend (target As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool CanExtend(System::Object ^ target) = System::ComponentModel::IExtenderProvider::CanExtend;" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -277,6 +304,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler CausesValidationChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler CausesValidationChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.PanelArray.CausesValidationChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event CausesValidationChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ CausesValidationChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -306,6 +335,8 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.UICuesEventHandler ChangeUICues;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.UICuesEventHandler ChangeUICues" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.PanelArray.ChangeUICues" />
+      <MemberSignature Language="VB.NET" Value="Public Event ChangeUICues As UICuesEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::UICuesEventHandler ^ ChangeUICues;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -333,6 +364,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler Click;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Click" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.PanelArray.Click" />
+      <MemberSignature Language="VB.NET" Value="Public Event Click As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Click;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -364,6 +397,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler ClientSizeChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ClientSizeChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.PanelArray.ClientSizeChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event ClientSizeChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ClientSizeChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -393,6 +428,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler ContextMenuChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ContextMenuChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.PanelArray.ContextMenuChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event ContextMenuChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ContextMenuChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -427,6 +464,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler ContextMenuStripChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ContextMenuStripChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.PanelArray.ContextMenuStripChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event ContextMenuStripChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ContextMenuStripChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -456,6 +495,8 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.ControlEventHandler ControlAdded;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.ControlEventHandler ControlAdded" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.PanelArray.ControlAdded" />
+      <MemberSignature Language="VB.NET" Value="Public Event ControlAdded As ControlEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::ControlEventHandler ^ ControlAdded;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -483,6 +524,8 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.ControlEventHandler ControlRemoved;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.ControlEventHandler ControlRemoved" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.PanelArray.ControlRemoved" />
+      <MemberSignature Language="VB.NET" Value="Public Event ControlRemoved As ControlEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::ControlEventHandler ^ ControlRemoved;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -510,6 +553,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler CursorChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler CursorChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.PanelArray.CursorChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event CursorChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ CursorChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -539,6 +584,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler DockChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler DockChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.PanelArray.DockChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event DockChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ DockChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -568,6 +615,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler DoubleClick;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler DoubleClick" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.PanelArray.DoubleClick" />
+      <MemberSignature Language="VB.NET" Value="Public Event DoubleClick As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ DoubleClick;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -595,6 +644,8 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.DragEventHandler DragDrop;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.DragEventHandler DragDrop" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.PanelArray.DragDrop" />
+      <MemberSignature Language="VB.NET" Value="Public Event DragDrop As DragEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::DragEventHandler ^ DragDrop;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -623,6 +674,8 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.DragEventHandler DragEnter;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.DragEventHandler DragEnter" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.PanelArray.DragEnter" />
+      <MemberSignature Language="VB.NET" Value="Public Event DragEnter As DragEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::DragEventHandler ^ DragEnter;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -653,6 +706,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler DragLeave;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler DragLeave" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.PanelArray.DragLeave" />
+      <MemberSignature Language="VB.NET" Value="Public Event DragLeave As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ DragLeave;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -683,6 +738,8 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.DragEventHandler DragOver;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.DragEventHandler DragOver" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.PanelArray.DragOver" />
+      <MemberSignature Language="VB.NET" Value="Public Event DragOver As DragEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::DragEventHandler ^ DragOver;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -713,6 +770,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler EnabledChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler EnabledChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.PanelArray.EnabledChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event EnabledChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ EnabledChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -742,6 +801,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler Enter;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Enter" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.PanelArray.Enter" />
+      <MemberSignature Language="VB.NET" Value="Public Event Enter As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Enter;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -789,6 +850,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler FontChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler FontChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.PanelArray.FontChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event FontChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ FontChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -818,6 +881,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler ForeColorChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ForeColorChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.PanelArray.ForeColorChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event ForeColorChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ForeColorChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -847,6 +912,8 @@
       <MemberSignature Language="C#" Value="protected override Type GetControlInstanceType ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Type GetControlInstanceType() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.PanelArray.GetControlInstanceType" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetControlInstanceType () As Type" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override Type ^ GetControlInstanceType();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -876,6 +943,8 @@
       <MemberSignature Language="C#" Value="public short GetIndex (System.Windows.Forms.Panel o);" />
       <MemberSignature Language="ILAsm" Value=".method public instance int16 GetIndex(class System.Windows.Forms.Panel o) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.PanelArray.GetIndex(System.Windows.Forms.Panel)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetIndex (o As Panel) As Short" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; short GetIndex(System::Windows::Forms::Panel ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -908,6 +977,8 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.GiveFeedbackEventHandler GiveFeedback;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.GiveFeedbackEventHandler GiveFeedback" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.PanelArray.GiveFeedback" />
+      <MemberSignature Language="VB.NET" Value="Public Event GiveFeedback As GiveFeedbackEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::GiveFeedbackEventHandler ^ GiveFeedback;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -938,6 +1009,8 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.HelpEventHandler HelpRequested;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.HelpEventHandler HelpRequested" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.PanelArray.HelpRequested" />
+      <MemberSignature Language="VB.NET" Value="Public Event HelpRequested As HelpEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::HelpEventHandler ^ HelpRequested;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -968,6 +1041,8 @@
       <MemberSignature Language="C#" Value="protected override void HookUpControlEvents (object o);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void HookUpControlEvents(object o) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.PanelArray.HookUpControlEvents(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub HookUpControlEvents (o As Object)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void HookUpControlEvents(System::Object ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -999,6 +1074,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler ImeModeChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ImeModeChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.PanelArray.ImeModeChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event ImeModeChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ImeModeChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1028,6 +1105,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.Panel this[short Index] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.Panel Item(int16)" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.PanelArray.Item(System.Int16)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Short) As Panel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Panel ^ default[short] { System::Windows::Forms::Panel ^ get(short Index); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1065,6 +1144,8 @@ MsgBox(CStr(PanelArray(1).Text))
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.LayoutEventHandler Layout;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.LayoutEventHandler Layout" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.PanelArray.Layout" />
+      <MemberSignature Language="VB.NET" Value="Public Event Layout As LayoutEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::LayoutEventHandler ^ Layout;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1095,6 +1176,8 @@ MsgBox(CStr(PanelArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler Leave;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Leave" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.PanelArray.Leave" />
+      <MemberSignature Language="VB.NET" Value="Public Event Leave As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Leave;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1143,6 +1226,8 @@ MsgBox(CStr(PanelArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler LocationChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler LocationChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.PanelArray.LocationChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event LocationChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ LocationChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1172,6 +1257,8 @@ MsgBox(CStr(PanelArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler MarginChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler MarginChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.PanelArray.MarginChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event MarginChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ MarginChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1201,6 +1288,8 @@ MsgBox(CStr(PanelArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler MouseCaptureChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler MouseCaptureChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.PanelArray.MouseCaptureChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event MouseCaptureChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ MouseCaptureChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1229,6 +1318,8 @@ MsgBox(CStr(PanelArray(1).Text))
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.MouseEventHandler MouseClick;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.MouseEventHandler MouseClick" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.PanelArray.MouseClick" />
+      <MemberSignature Language="VB.NET" Value="Public Event MouseClick As MouseEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::MouseEventHandler ^ MouseClick;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1270,6 +1361,8 @@ MsgBox(CStr(PanelArray(1).Text))
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.MouseEventHandler MouseDoubleClick;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.MouseEventHandler MouseDoubleClick" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.PanelArray.MouseDoubleClick" />
+      <MemberSignature Language="VB.NET" Value="Public Event MouseDoubleClick As MouseEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::MouseEventHandler ^ MouseDoubleClick;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1313,6 +1406,8 @@ MsgBox(CStr(PanelArray(1).Text))
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.MouseEventHandler MouseDown;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.MouseEventHandler MouseDown" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.PanelArray.MouseDown" />
+      <MemberSignature Language="VB.NET" Value="Public Event MouseDown As MouseEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::MouseEventHandler ^ MouseDown;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1353,6 +1448,8 @@ MsgBox(CStr(PanelArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler MouseEnter;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler MouseEnter" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.PanelArray.MouseEnter" />
+      <MemberSignature Language="VB.NET" Value="Public Event MouseEnter As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ MouseEnter;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1393,6 +1490,8 @@ MsgBox(CStr(PanelArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler MouseHover;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler MouseHover" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.PanelArray.MouseHover" />
+      <MemberSignature Language="VB.NET" Value="Public Event MouseHover As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ MouseHover;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1437,6 +1536,8 @@ MsgBox(CStr(PanelArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler MouseLeave;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler MouseLeave" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.PanelArray.MouseLeave" />
+      <MemberSignature Language="VB.NET" Value="Public Event MouseLeave As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ MouseLeave;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1477,6 +1578,8 @@ MsgBox(CStr(PanelArray(1).Text))
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.MouseEventHandler MouseMove;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.MouseEventHandler MouseMove" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.PanelArray.MouseMove" />
+      <MemberSignature Language="VB.NET" Value="Public Event MouseMove As MouseEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::MouseEventHandler ^ MouseMove;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1517,6 +1620,8 @@ MsgBox(CStr(PanelArray(1).Text))
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.MouseEventHandler MouseUp;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.MouseEventHandler MouseUp" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.PanelArray.MouseUp" />
+      <MemberSignature Language="VB.NET" Value="Public Event MouseUp As MouseEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::MouseEventHandler ^ MouseUp;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1557,6 +1662,8 @@ MsgBox(CStr(PanelArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler Move;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Move" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.PanelArray.Move" />
+      <MemberSignature Language="VB.NET" Value="Public Event Move As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Move;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1585,6 +1692,8 @@ MsgBox(CStr(PanelArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler PaddingChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler PaddingChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.PanelArray.PaddingChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event PaddingChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ PaddingChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1614,6 +1723,8 @@ MsgBox(CStr(PanelArray(1).Text))
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.PaintEventHandler Paint;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.PaintEventHandler Paint" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.PanelArray.Paint" />
+      <MemberSignature Language="VB.NET" Value="Public Event Paint As PaintEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::PaintEventHandler ^ Paint;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1644,6 +1755,8 @@ MsgBox(CStr(PanelArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler ParentChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ParentChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.PanelArray.ParentChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event ParentChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ParentChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1673,6 +1786,8 @@ MsgBox(CStr(PanelArray(1).Text))
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.QueryAccessibilityHelpEventHandler QueryAccessibilityHelp;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.QueryAccessibilityHelpEventHandler QueryAccessibilityHelp" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.PanelArray.QueryAccessibilityHelp" />
+      <MemberSignature Language="VB.NET" Value="Public Event QueryAccessibilityHelp As QueryAccessibilityHelpEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::QueryAccessibilityHelpEventHandler ^ QueryAccessibilityHelp;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1703,6 +1818,8 @@ MsgBox(CStr(PanelArray(1).Text))
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.QueryContinueDragEventHandler QueryContinueDrag;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.QueryContinueDragEventHandler QueryContinueDrag" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.PanelArray.QueryContinueDrag" />
+      <MemberSignature Language="VB.NET" Value="Public Event QueryContinueDrag As QueryContinueDragEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::QueryContinueDragEventHandler ^ QueryContinueDrag;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1731,6 +1848,8 @@ MsgBox(CStr(PanelArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler RegionChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler RegionChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.PanelArray.RegionChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event RegionChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ RegionChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1760,6 +1879,8 @@ MsgBox(CStr(PanelArray(1).Text))
       <MemberSignature Language="C#" Value="public void ResetIndex (System.Windows.Forms.Panel o);" />
       <MemberSignature Language="ILAsm" Value=".method public instance void ResetIndex(class System.Windows.Forms.Panel o) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.PanelArray.ResetIndex(System.Windows.Forms.Panel)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ResetIndex (o As Panel)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetIndex(System::Windows::Forms::Panel ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1796,6 +1917,8 @@ MsgBox(CStr(PanelArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler Resize;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Resize" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.PanelArray.Resize" />
+      <MemberSignature Language="VB.NET" Value="Public Event Resize As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Resize;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1828,6 +1951,8 @@ MsgBox(CStr(PanelArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler RightToLeftChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler RightToLeftChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.PanelArray.RightToLeftChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event RightToLeftChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ RightToLeftChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1857,6 +1982,8 @@ MsgBox(CStr(PanelArray(1).Text))
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.ScrollEventHandler Scroll;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.ScrollEventHandler Scroll" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.PanelArray.Scroll" />
+      <MemberSignature Language="VB.NET" Value="Public Event Scroll As ScrollEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::ScrollEventHandler ^ Scroll;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1884,6 +2011,8 @@ MsgBox(CStr(PanelArray(1).Text))
       <MemberSignature Language="C#" Value="public void SetIndex (System.Windows.Forms.Panel o, short Index);" />
       <MemberSignature Language="ILAsm" Value=".method public instance void SetIndex(class System.Windows.Forms.Panel o, int16 Index) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.PanelArray.SetIndex(System.Windows.Forms.Panel,System.Int16)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetIndex (o As Panel, Index As Short)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetIndex(System::Windows::Forms::Panel ^ o, short Index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1922,6 +2051,8 @@ MsgBox(CStr(PanelArray(1).Text))
       <MemberSignature Language="C#" Value="public bool ShouldSerializeIndex (System.Windows.Forms.Panel o);" />
       <MemberSignature Language="ILAsm" Value=".method public instance bool ShouldSerializeIndex(class System.Windows.Forms.Panel o) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.PanelArray.ShouldSerializeIndex(System.Windows.Forms.Panel)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeIndex (o As Panel) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeIndex(System::Windows::Forms::Panel ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1960,6 +2091,8 @@ MsgBox(CStr(PanelArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler SizeChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler SizeChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.PanelArray.SizeChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event SizeChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ SizeChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1989,6 +2122,8 @@ MsgBox(CStr(PanelArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler StyleChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler StyleChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.PanelArray.StyleChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event StyleChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ StyleChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2020,6 +2155,8 @@ MsgBox(CStr(PanelArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler SystemColorsChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler SystemColorsChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.PanelArray.SystemColorsChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event SystemColorsChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ SystemColorsChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2050,6 +2187,8 @@ MsgBox(CStr(PanelArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler TabIndexChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler TabIndexChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.PanelArray.TabIndexChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event TabIndexChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ TabIndexChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2079,6 +2218,8 @@ MsgBox(CStr(PanelArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler TabStopChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler TabStopChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.PanelArray.TabStopChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event TabStopChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ TabStopChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2108,6 +2249,8 @@ MsgBox(CStr(PanelArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler Validated;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Validated" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.PanelArray.Validated" />
+      <MemberSignature Language="VB.NET" Value="Public Event Validated As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Validated;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2168,6 +2311,8 @@ MsgBox(CStr(PanelArray(1).Text))
       <MemberSignature Language="C#" Value="public event System.ComponentModel.CancelEventHandler Validating;" />
       <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.CancelEventHandler Validating" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.PanelArray.Validating" />
+      <MemberSignature Language="VB.NET" Value="Public Event Validating As CancelEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::ComponentModel::CancelEventHandler ^ Validating;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2228,6 +2373,8 @@ MsgBox(CStr(PanelArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler VisibleChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler VisibleChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.PanelArray.VisibleChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event VisibleChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ VisibleChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2253,14 +2400,5 @@ MsgBox(CStr(PanelArray(1).Text))
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.PanelArray" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

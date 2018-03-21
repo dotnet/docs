@@ -1,7 +1,9 @@
-<Type Name="SymbolResolver" FullName="System.Activities.Hosting.SymbolResolver">
+﻿<Type Name="SymbolResolver" FullName="System.Activities.Hosting.SymbolResolver">
   <TypeSignature Language="C#" Value="public sealed class SymbolResolver : System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;string,object&gt;&gt;, System.Collections.Generic.IDictionary&lt;string,object&gt;, System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;string,object&gt;&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SymbolResolver extends System.Object implements class System.Collections.Generic.ICollection`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, object&gt;&gt;, class System.Collections.Generic.IDictionary`2&lt;string, object&gt;, class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, object&gt;&gt;, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Hosting.SymbolResolver" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SymbolResolver&#xA;Implements ICollection(Of KeyValuePair(Of String, Object)), IDictionary(Of String, Object), IEnumerable(Of KeyValuePair(Of String, Object))" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SymbolResolver sealed : System::Collections::Generic::ICollection&lt;System::Collections::Generic::KeyValuePair&lt;System::String ^, System::Object ^&gt;&gt;, System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt;, System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;System::String ^, System::Object ^&gt;&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +32,8 @@
       <MemberSignature Language="C#" Value="public SymbolResolver ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.SymbolResolver.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SymbolResolver();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -41,11 +45,25 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds an object reference to the dictionary of symbols keyed by string name.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Add">
       <MemberSignature Language="C#" Value="public void Add (System.Collections.Generic.KeyValuePair&lt;string,object&gt; item);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Add(valuetype System.Collections.Generic.KeyValuePair`2&lt;string, object&gt; item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.SymbolResolver.Add(System.Collections.Generic.KeyValuePair{System.String,System.Object})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (item As KeyValuePair(Of String, Object))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Add(System::Collections::Generic::KeyValuePair&lt;System::String ^, System::Object ^&gt; item);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Add(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -66,7 +84,12 @@
       <MemberSignature Language="C#" Value="public void Add (string key, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Add(string key, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.SymbolResolver.Add(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (key As String, value As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Add(System::String ^ key, System::Object ^ value);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IDictionary`2.Add(`0,`1)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -89,6 +112,7 @@
       <MemberSignature Language="C#" Value="public void Add (string key, Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(string key, class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.SymbolResolver.Add(System.String,System.Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::String ^ key, Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -119,6 +143,7 @@
       <MemberSignature Language="C#" Value="public void Add (string key, object value, Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(string key, object value, class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.SymbolResolver.Add(System.String,System.Object,System.Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::String ^ key, System::Object ^ value, Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -144,6 +169,8 @@
       <MemberSignature Language="C#" Value="public System.Activities.LocationReferenceEnvironment AsLocationReferenceEnvironment ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Activities.LocationReferenceEnvironment AsLocationReferenceEnvironment() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.SymbolResolver.AsLocationReferenceEnvironment" />
+      <MemberSignature Language="VB.NET" Value="Public Function AsLocationReferenceEnvironment () As LocationReferenceEnvironment" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Activities::LocationReferenceEnvironment ^ AsLocationReferenceEnvironment();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -163,7 +190,12 @@
       <MemberSignature Language="C#" Value="public void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.SymbolResolver.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Clear</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -181,7 +213,12 @@
       <MemberSignature Language="C#" Value="public bool Contains (System.Collections.Generic.KeyValuePair&lt;string,object&gt; item);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Contains(valuetype System.Collections.Generic.KeyValuePair`2&lt;string, object&gt; item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.SymbolResolver.Contains(System.Collections.Generic.KeyValuePair{System.String,System.Object})" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (item As KeyValuePair(Of String, Object)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Contains(System::Collections::Generic::KeyValuePair&lt;System::String ^, System::Object ^&gt; item);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Contains(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -204,7 +241,12 @@
       <MemberSignature Language="C#" Value="public bool ContainsKey (string key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ContainsKey(string key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.SymbolResolver.ContainsKey(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ContainsKey (key As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool ContainsKey(System::String ^ key);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IDictionary`2.ContainsKey(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -227,6 +269,8 @@
       <MemberSignature Language="C#" Value="public void CopyTo (System.Collections.Generic.KeyValuePair&lt;string,object&gt;[] array, int arrayIndex);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(valuetype System.Collections.Generic.KeyValuePair`2&lt;string, object&gt;[] array, int32 arrayIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.SymbolResolver.CopyTo(System.Collections.Generic.KeyValuePair{System.String,System.Object}[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As KeyValuePair(Of String, Object)(), arrayIndex As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(cli::array &lt;System::Collections::Generic::KeyValuePair&lt;System::String ^, System::Object ^&gt;&gt; ^ array, int arrayIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -250,7 +294,12 @@
       <MemberSignature Language="C#" Value="public int Count { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Hosting.SymbolResolver.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.Generic.ICollection`1.Count</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -268,7 +317,12 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerator&lt;System.Collections.Generic.KeyValuePair&lt;string,object&gt;&gt; GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerator`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, object&gt;&gt; GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.SymbolResolver.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Iterator Overridable NotOverridable Function GetEnumerator () As IEnumerator(Of KeyValuePair(Of String, Object))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IEnumerator&lt;System::Collections::Generic::KeyValuePair&lt;System::String ^, System::Object ^&gt;&gt; ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -292,7 +346,12 @@
       <MemberSignature Language="C#" Value="public bool IsReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Hosting.SymbolResolver.IsReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.Generic.ICollection`1.IsReadOnly</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -318,7 +377,12 @@
       <MemberSignature Language="C#" Value="public object this[string key] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Hosting.SymbolResolver.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(key As String) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[System::String ^] { System::Object ^ get(System::String ^ key); void set(System::String ^ key, System::Object ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.Generic.IDictionary`2.Item(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -340,7 +404,12 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.ICollection&lt;string&gt; Keys { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;string&gt; Keys" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Hosting.SymbolResolver.Keys" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Keys As ICollection(Of String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;System::String ^&gt; ^ Keys { System::Collections::Generic::ICollection&lt;System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.Generic.IDictionary`2.Keys</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -354,11 +423,25 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Remove">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes the specified symbol from the <see cref="T:System.Activities.Hosting.SymbolResolver" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Remove">
       <MemberSignature Language="C#" Value="public bool Remove (System.Collections.Generic.KeyValuePair&lt;string,object&gt; item);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Remove(valuetype System.Collections.Generic.KeyValuePair`2&lt;string, object&gt; item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.SymbolResolver.Remove(System.Collections.Generic.KeyValuePair{System.String,System.Object})" />
+      <MemberSignature Language="VB.NET" Value="Public Function Remove (item As KeyValuePair(Of String, Object)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Remove(System::Collections::Generic::KeyValuePair&lt;System::String ^, System::Object ^&gt; item);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Remove(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -381,7 +464,12 @@
       <MemberSignature Language="C#" Value="public bool Remove (string key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Remove(string key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.SymbolResolver.Remove(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Remove (key As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Remove(System::String ^ key);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IDictionary`2.Remove(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -404,7 +492,12 @@
       <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.SymbolResolver.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator Implements IEnumerable.GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IEnumerator ^ System.Collections.IEnumerable.GetEnumerator() = System::Collections::IEnumerable::GetEnumerator;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -430,6 +523,8 @@
       <MemberSignature Language="C#" Value="public bool TryGetValue (string key, out object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetValue(string key, [out] object&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.SymbolResolver.TryGetValue(System.String,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryGetValue (key As String, ByRef value As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool TryGetValue(System::String ^ key, [Runtime::InteropServices::Out] System::Object ^ % value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -455,7 +550,12 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.ICollection&lt;object&gt; Values { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;object&gt; Values" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Hosting.SymbolResolver.Values" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Values As ICollection(Of Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;System::Object ^&gt; ^ Values { System::Collections::Generic::ICollection&lt;System::Object ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.Generic.IDictionary`2.Values</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -469,23 +569,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Add">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds an object reference to the dictionary of symbols keyed by string name.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Remove">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Removes the specified symbol from the <see cref="T:System.Activities.Hosting.SymbolResolver" />.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

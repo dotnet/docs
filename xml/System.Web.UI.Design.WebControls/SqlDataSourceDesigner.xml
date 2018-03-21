@@ -1,7 +1,9 @@
-<Type Name="SqlDataSourceDesigner" FullName="System.Web.UI.Design.WebControls.SqlDataSourceDesigner">
+﻿<Type Name="SqlDataSourceDesigner" FullName="System.Web.UI.Design.WebControls.SqlDataSourceDesigner">
   <TypeSignature Language="C#" Value="public class SqlDataSourceDesigner : System.Web.UI.Design.DataSourceDesigner" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SqlDataSourceDesigner extends System.Web.UI.Design.DataSourceDesigner" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.SqlDataSourceDesigner" />
+  <TypeSignature Language="VB.NET" Value="Public Class SqlDataSourceDesigner&#xA;Inherits DataSourceDesigner" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SqlDataSourceDesigner : System::Web::UI::Design::DataSourceDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +27,8 @@
       <MemberSignature Language="C#" Value="public SqlDataSourceDesigner ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlDataSourceDesigner();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -41,6 +45,8 @@
       <MemberSignature Language="C#" Value="public override bool CanConfigure { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanConfigure" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.CanConfigure" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanConfigure As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanConfigure { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -63,6 +69,8 @@
       <MemberSignature Language="C#" Value="public override bool CanRefreshSchema { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanRefreshSchema" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.CanRefreshSchema" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanRefreshSchema As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanRefreshSchema { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -83,6 +91,8 @@
       <MemberSignature Language="C#" Value="public override void Configure ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Configure() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.Configure" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Configure ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Configure();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -101,6 +111,8 @@
       <MemberSignature Language="C#" Value="public string ConnectionString { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ConnectionString" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.ConnectionString" />
+      <MemberSignature Language="VB.NET" Value="Public Property ConnectionString As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ConnectionString { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -126,6 +138,8 @@
       <MemberSignature Language="C#" Value="protected virtual System.Web.UI.Design.WebControls.SqlDesignerDataSourceView CreateView (string viewName);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Web.UI.Design.WebControls.SqlDesignerDataSourceView CreateView(string viewName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.CreateView(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateView (viewName As String) As SqlDesignerDataSourceView" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Web::UI::Design::WebControls::SqlDesignerDataSourceView ^ CreateView(System::String ^ viewName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -155,6 +169,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.DataSourceOperation DeleteQuery { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.DataSourceOperation DeleteQuery" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.DeleteQuery" />
+      <MemberSignature Language="VB.NET" Value="Public Property DeleteQuery As DataSourceOperation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::DataSourceOperation DeleteQuery { System::Web::UI::DataSourceOperation get(); void set(System::Web::UI::DataSourceOperation value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -165,10 +181,10 @@
           <AttributeName>System.ComponentModel.Category("Data")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+          <AttributeName>System.ComponentModel.DefaultValue</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.Editor(typeof(System.Web.UI.Design.WebControls.SqlDataSourceQueryEditor), typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
@@ -201,6 +217,8 @@
       <MemberSignature Language="C#" Value="protected virtual void DeriveParameters (string providerName, System.Data.Common.DbCommand command);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void DeriveParameters(string providerName, class System.Data.Common.DbCommand command) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.DeriveParameters(System.String,System.Data.Common.DbCommand)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub DeriveParameters (providerName As String, command As DbCommand)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void DeriveParameters(System::String ^ providerName, System::Data::Common::DbCommand ^ command);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -224,6 +242,8 @@
       <MemberSignature Language="C#" Value="protected virtual string GetConnectionString ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance string GetConnectionString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.GetConnectionString" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetConnectionString () As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::String ^ GetConnectionString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -243,6 +263,8 @@
       <MemberSignature Language="C#" Value="public override System.Web.UI.Design.DesignerDataSourceView GetView (string viewName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.UI.Design.DesignerDataSourceView GetView(string viewName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.GetView(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetView (viewName As String) As DesignerDataSourceView" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::UI::Design::DesignerDataSourceView ^ GetView(System::String ^ viewName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -265,6 +287,8 @@
       <MemberSignature Language="C#" Value="public override string[] GetViewNames ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string[] GetViewNames() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.GetViewNames" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetViewNames () As String()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::String ^&gt; ^ GetViewNames();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -281,9 +305,11 @@
       </Docs>
     </Member>
     <Member MemberName="InferParameterNames">
-      <MemberSignature Language="C#" Value="protected virtual System.Web.UI.WebControls.Parameter[] InferParameterNames (System.ComponentModel.Design.Data.DesignerDataConnection connection, string commandText, System.Web.UI.WebControls.SqlDataSourceCommandType commandType);" />
+      <MemberSignature Language="C#" Value="protected internal virtual System.Web.UI.WebControls.Parameter[] InferParameterNames (System.ComponentModel.Design.Data.DesignerDataConnection connection, string commandText, System.Web.UI.WebControls.SqlDataSourceCommandType commandType);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.Web.UI.WebControls.Parameter[] InferParameterNames(class System.ComponentModel.Design.Data.DesignerDataConnection connection, string commandText, valuetype System.Web.UI.WebControls.SqlDataSourceCommandType commandType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.InferParameterNames(System.ComponentModel.Design.Data.DesignerDataConnection,System.String,System.Web.UI.WebControls.SqlDataSourceCommandType)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function InferParameterNames (connection As DesignerDataConnection, commandText As String, commandType As SqlDataSourceCommandType) As Parameter()" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual cli::array &lt;System::Web::UI::WebControls::Parameter ^&gt; ^ InferParameterNames(System::ComponentModel::Design::Data::DesignerDataConnection ^ connection, System::String ^ commandText, System::Web::UI::WebControls::SqlDataSourceCommandType commandType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -312,6 +338,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.DataSourceOperation InsertQuery { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.DataSourceOperation InsertQuery" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.InsertQuery" />
+      <MemberSignature Language="VB.NET" Value="Public Property InsertQuery As DataSourceOperation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::DataSourceOperation InsertQuery { System::Web::UI::DataSourceOperation get(); void set(System::Web::UI::DataSourceOperation value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -322,10 +350,10 @@
           <AttributeName>System.ComponentModel.Category("Data")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+          <AttributeName>System.ComponentModel.DefaultValue</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.Editor(typeof(System.Web.UI.Design.WebControls.SqlDataSourceQueryEditor), typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
@@ -358,6 +386,8 @@
       <MemberSignature Language="C#" Value="protected override void PreFilterProperties (System.Collections.IDictionary properties);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void PreFilterProperties(class System.Collections.IDictionary properties) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.PreFilterProperties(System.Collections.IDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PreFilterProperties (properties As IDictionary)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PreFilterProperties(System::Collections::IDictionary ^ properties);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -379,6 +409,8 @@
       <MemberSignature Language="C#" Value="public string ProviderName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ProviderName" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.ProviderName" />
+      <MemberSignature Language="VB.NET" Value="Public Property ProviderName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ProviderName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -405,6 +437,8 @@
       <MemberSignature Language="C#" Value="public override void RefreshSchema (bool preferSilent);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void RefreshSchema(bool preferSilent) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.RefreshSchema(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub RefreshSchema (preferSilent As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void RefreshSchema(bool preferSilent);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -435,6 +469,8 @@
       <MemberSignature Language="C#" Value="public string SelectCommand { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SelectCommand" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.SelectCommand" />
+      <MemberSignature Language="VB.NET" Value="Public Property SelectCommand As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SelectCommand { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -461,6 +497,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.DataSourceOperation SelectQuery { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.DataSourceOperation SelectQuery" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.SelectQuery" />
+      <MemberSignature Language="VB.NET" Value="Public Property SelectQuery As DataSourceOperation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::DataSourceOperation SelectQuery { System::Web::UI::DataSourceOperation get(); void set(System::Web::UI::DataSourceOperation value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -471,10 +509,10 @@
           <AttributeName>System.ComponentModel.Category("Data")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+          <AttributeName>System.ComponentModel.DefaultValue</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.Editor(typeof(System.Web.UI.Design.WebControls.SqlDataSourceQueryEditor), typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
@@ -507,6 +545,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.DataSourceOperation UpdateQuery { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.DataSourceOperation UpdateQuery" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.UpdateQuery" />
+      <MemberSignature Language="VB.NET" Value="Public Property UpdateQuery As DataSourceOperation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::DataSourceOperation UpdateQuery { System::Web::UI::DataSourceOperation get(); void set(System::Web::UI::DataSourceOperation value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -517,10 +557,10 @@
           <AttributeName>System.ComponentModel.Category("Data")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+          <AttributeName>System.ComponentModel.DefaultValue</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.Editor(typeof(System.Web.UI.Design.WebControls.SqlDataSourceQueryEditor), typeof(System.Drawing.Design.UITypeEditor))</AttributeName>

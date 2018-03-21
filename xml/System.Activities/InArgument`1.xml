@@ -1,7 +1,9 @@
-<Type Name="InArgument&lt;T&gt;" FullName="System.Activities.InArgument&lt;T&gt;">
+﻿<Type Name="InArgument&lt;T&gt;" FullName="System.Activities.InArgument&lt;T&gt;">
   <TypeSignature Language="C#" Value="public sealed class InArgument&lt;T&gt; : System.Activities.InArgument" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit InArgument`1&lt;T&gt; extends System.Activities.InArgument" />
   <TypeSignature Language="DocId" Value="T:System.Activities.InArgument`1" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class InArgument(Of T)&#xA;Inherits InArgument" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class InArgument sealed : System::Activities::InArgument" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,10 +49,21 @@ WorkflowInvoker.Invoke(wf, wfParams);
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.InArgument`1" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public InArgument ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.InArgument`1.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InArgument();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -66,6 +79,8 @@ WorkflowInvoker.Invoke(wf, wfParams);
       <MemberSignature Language="C#" Value="public InArgument (System.Activities.Activity&lt;T&gt; expression);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Activities.Activity`1&lt;!T&gt; expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.InArgument`1.#ctor(System.Activities.Activity{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (expression As Activity(Of T))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InArgument(System::Activities::Activity&lt;T&gt; ^ expression);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -84,6 +99,7 @@ WorkflowInvoker.Invoke(wf, wfParams);
       <MemberSignature Language="C#" Value="public InArgument (System.Activities.DelegateArgument delegateArgument);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Activities.DelegateArgument delegateArgument) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.InArgument`1.#ctor(System.Activities.DelegateArgument)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InArgument(System::Activities::DelegateArgument ^ delegateArgument);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -102,6 +118,7 @@ WorkflowInvoker.Invoke(wf, wfParams);
       <MemberSignature Language="C#" Value="public InArgument (System.Activities.Variable variable);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Activities.Variable variable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.InArgument`1.#ctor(System.Activities.Variable)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InArgument(System::Activities::Variable ^ variable);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -120,6 +137,8 @@ WorkflowInvoker.Invoke(wf, wfParams);
       <MemberSignature Language="C#" Value="public InArgument (System.Linq.Expressions.Expression&lt;Func&lt;System.Activities.ActivityContext,T&gt;&gt; expression);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Linq.Expressions.Expression`1&lt;class System.Func`2&lt;class System.Activities.ActivityContext, !T&gt;&gt; expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.InArgument`1.#ctor(System.Linq.Expressions.Expression{System.Func{System.Activities.ActivityContext,`0}})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (expression As Expression(Of Func(Of ActivityContext, T)))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InArgument(System::Linq::Expressions::Expression&lt;Func&lt;System::Activities::ActivityContext ^, T&gt; ^&gt; ^ expression);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -138,6 +157,8 @@ WorkflowInvoker.Invoke(wf, wfParams);
       <MemberSignature Language="C#" Value="public InArgument (T constValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(!T constValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.InArgument`1.#ctor(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (constValue As T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InArgument(T constValue);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -163,6 +184,8 @@ WorkflowInvoker.Invoke(wf, wfParams);
       <MemberSignature Language="C#" Value="public System.Activities.Activity&lt;T&gt; Expression { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Activity`1&lt;!T&gt; Expression" />
       <MemberSignature Language="DocId" Value="P:System.Activities.InArgument`1.Expression" />
+      <MemberSignature Language="VB.NET" Value="Public Property Expression As Activity(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::Activity&lt;T&gt; ^ Expression { System::Activities::Activity&lt;T&gt; ^ get(); void set(System::Activities::Activity&lt;T&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -186,6 +209,7 @@ WorkflowInvoker.Invoke(wf, wfParams);
       <MemberSignature Language="C#" Value="public static System.Activities.InArgument&lt;T&gt; FromDelegateArgument (System.Activities.DelegateArgument delegateArgument);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Activities.InArgument`1&lt;!T&gt; FromDelegateArgument(class System.Activities.DelegateArgument delegateArgument) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.InArgument`1.FromDelegateArgument(System.Activities.DelegateArgument)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Activities::InArgument&lt;T&gt; ^ FromDelegateArgument(System::Activities::DelegateArgument ^ delegateArgument);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -208,6 +232,8 @@ WorkflowInvoker.Invoke(wf, wfParams);
       <MemberSignature Language="C#" Value="public static System.Activities.InArgument&lt;T&gt; FromExpression (System.Activities.Activity&lt;T&gt; expression);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Activities.InArgument`1&lt;!T&gt; FromExpression(class System.Activities.Activity`1&lt;!T&gt; expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.InArgument`1.FromExpression(System.Activities.Activity{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromExpression (expression As Activity(Of T)) As InArgument(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Activities::InArgument&lt;T&gt; ^ FromExpression(System::Activities::Activity&lt;T&gt; ^ expression);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -230,6 +256,8 @@ WorkflowInvoker.Invoke(wf, wfParams);
       <MemberSignature Language="C#" Value="public static System.Activities.InArgument&lt;T&gt; FromValue (T constValue);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Activities.InArgument`1&lt;!T&gt; FromValue(!T constValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.InArgument`1.FromValue(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromValue (constValue As T) As InArgument(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Activities::InArgument&lt;T&gt; ^ FromValue(T constValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -252,6 +280,7 @@ WorkflowInvoker.Invoke(wf, wfParams);
       <MemberSignature Language="C#" Value="public static System.Activities.InArgument&lt;T&gt; FromVariable (System.Activities.Variable variable);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Activities.InArgument`1&lt;!T&gt; FromVariable(class System.Activities.Variable variable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.InArgument`1.FromVariable(System.Activities.Variable)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Activities::InArgument&lt;T&gt; ^ FromVariable(System::Activities::Variable ^ variable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -274,6 +303,8 @@ WorkflowInvoker.Invoke(wf, wfParams);
       <MemberSignature Language="C#" Value="public T Get (System.Activities.ActivityContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !T Get(class System.Activities.ActivityContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.InArgument`1.Get(System.Activities.ActivityContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Get (context As ActivityContext) As T" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; T Get(System::Activities::ActivityContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -296,6 +327,8 @@ WorkflowInvoker.Invoke(wf, wfParams);
       <MemberSignature Language="C#" Value="public static implicit operator System.Activities.InArgument&lt;T&gt; (System.Activities.Activity&lt;T&gt; expression);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Activities.InArgument`1&lt;!T&gt; op_Implicit(class System.Activities.Activity`1&lt;!T&gt; expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.InArgument`1.op_Implicit(System.Activities.Activity{`0})~System.Activities.InArgument{`0}" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (expression As Activity(Of T)) As InArgument(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Activities::InArgument&lt;T&gt; ^(System::Activities::Activity&lt;T&gt; ^ expression);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -318,6 +351,7 @@ WorkflowInvoker.Invoke(wf, wfParams);
       <MemberSignature Language="C#" Value="public static implicit operator System.Activities.InArgument&lt;T&gt; (System.Activities.DelegateArgument delegateArgument);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Activities.InArgument`1&lt;!T&gt; op_Implicit(class System.Activities.DelegateArgument delegateArgument) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.InArgument`1.op_Implicit(System.Activities.DelegateArgument)~System.Activities.InArgument{`0}" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Activities::InArgument&lt;T&gt; ^(System::Activities::DelegateArgument ^ delegateArgument);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -340,6 +374,7 @@ WorkflowInvoker.Invoke(wf, wfParams);
       <MemberSignature Language="C#" Value="public static implicit operator System.Activities.InArgument&lt;T&gt; (System.Activities.Variable variable);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Activities.InArgument`1&lt;!T&gt; op_Implicit(class System.Activities.Variable variable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.InArgument`1.op_Implicit(System.Activities.Variable)~System.Activities.InArgument{`0}" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Activities::InArgument&lt;T&gt; ^(System::Activities::Variable ^ variable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -362,6 +397,8 @@ WorkflowInvoker.Invoke(wf, wfParams);
       <MemberSignature Language="C#" Value="public static implicit operator System.Activities.InArgument&lt;T&gt; (T constValue);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Activities.InArgument`1&lt;!T&gt; op_Implicit(!T constValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.InArgument`1.op_Implicit(`0)~System.Activities.InArgument{`0}" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (constValue As T) As InArgument(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Activities::InArgument&lt;T&gt; ^(T constValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -384,6 +421,8 @@ WorkflowInvoker.Invoke(wf, wfParams);
       <MemberSignature Language="C#" Value="public void Set (System.Activities.ActivityContext context, T value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Set(class System.Activities.ActivityContext context, !T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.InArgument`1.Set(System.Activities.ActivityContext,`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Set (context As ActivityContext, value As T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Set(System::Activities::ActivityContext ^ context, T value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -403,14 +442,5 @@ WorkflowInvoker.Invoke(wf, wfParams);
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Activities.InArgument`1" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

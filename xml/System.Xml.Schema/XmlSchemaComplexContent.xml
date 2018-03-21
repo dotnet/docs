@@ -1,7 +1,9 @@
-<Type Name="XmlSchemaComplexContent" FullName="System.Xml.Schema.XmlSchemaComplexContent">
+﻿<Type Name="XmlSchemaComplexContent" FullName="System.Xml.Schema.XmlSchemaComplexContent">
   <TypeSignature Language="C#" Value="public class XmlSchemaComplexContent : System.Xml.Schema.XmlSchemaContentModel" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlSchemaComplexContent extends System.Xml.Schema.XmlSchemaContentModel" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaComplexContent" />
+  <TypeSignature Language="VB.NET" Value="Public Class XmlSchemaComplexContent&#xA;Inherits XmlSchemaContentModel" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlSchemaComplexContent : System::Xml::Schema::XmlSchemaContentModel" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -43,6 +45,8 @@
       <MemberSignature Language="C#" Value="public XmlSchemaComplexContent ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaComplexContent.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlSchemaComplexContent();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -67,6 +71,8 @@
       <MemberSignature Language="C#" Value="public override System.Xml.Schema.XmlSchemaContent Content { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Schema.XmlSchemaContent Content" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaComplexContent.Content" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Content As XmlSchemaContent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xml::Schema::XmlSchemaContent ^ Content { System::Xml::Schema::XmlSchemaContent ^ get(); void set(System::Xml::Schema::XmlSchemaContent ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -102,6 +108,8 @@
       <MemberSignature Language="C#" Value="public bool IsMixed { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsMixed" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaComplexContent.IsMixed" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsMixed As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsMixed { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

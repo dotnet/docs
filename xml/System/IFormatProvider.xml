@@ -1,7 +1,9 @@
-<Type Name="IFormatProvider" FullName="System.IFormatProvider">
+﻿<Type Name="IFormatProvider" FullName="System.IFormatProvider">
   <TypeSignature Language="C#" Value="public interface IFormatProvider" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IFormatProvider" />
   <TypeSignature Language="DocId" Value="T:System.IFormatProvider" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IFormatProvider" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IFormatProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -75,6 +77,8 @@
       <MemberSignature Language="C#" Value="public object GetFormat (Type formatType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetFormat(class System.Type formatType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IFormatProvider.GetFormat(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetFormat (formatType As Type) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetFormat(Type ^ formatType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

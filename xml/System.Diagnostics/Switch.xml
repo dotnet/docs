@@ -1,7 +1,9 @@
-<Type Name="Switch" FullName="System.Diagnostics.Switch">
+﻿<Type Name="Switch" FullName="System.Diagnostics.Switch">
   <TypeSignature Language="C#" Value="public abstract class Switch" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Switch extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Switch" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class Switch" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Switch abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -87,10 +89,22 @@
     <altmember cref="T:System.Diagnostics.Trace" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.Switch" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected Switch (string displayName, string description);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(string displayName, string description) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Switch.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (displayName As String, description As String)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; Switch(System::String ^ displayName, System::String ^ description);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -152,6 +166,8 @@
       <MemberSignature Language="C#" Value="protected Switch (string displayName, string description, string defaultSwitchValue);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(string displayName, string description, string defaultSwitchValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Switch.#ctor(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (displayName As String, description As String, defaultSwitchValue As String)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; Switch(System::String ^ displayName, System::String ^ description, System::String ^ defaultSwitchValue);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -191,6 +207,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Specialized.StringDictionary Attributes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.StringDictionary Attributes" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Switch.Attributes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Attributes As StringDictionary" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Specialized::StringDictionary ^ Attributes { System::Collections::Specialized::StringDictionary ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -238,6 +256,8 @@
       <MemberSignature Language="C#" Value="public string Description { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Description" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Switch.Description" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Description As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Description { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -278,6 +298,8 @@
       <MemberSignature Language="C#" Value="public string DisplayName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DisplayName" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Switch.DisplayName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DisplayName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DisplayName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -323,9 +345,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetSupportedAttributes">
-      <MemberSignature Language="C#" Value="protected virtual string[] GetSupportedAttributes ();" />
+      <MemberSignature Language="C#" Value="protected internal virtual string[] GetSupportedAttributes ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance string[] GetSupportedAttributes() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Switch.GetSupportedAttributes" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function GetSupportedAttributes () As String()" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual cli::array &lt;System::String ^&gt; ^ GetSupportedAttributes();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -372,6 +396,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnSwitchSettingChanged ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnSwitchSettingChanged() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Switch.OnSwitchSettingChanged" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSwitchSettingChanged ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSwitchSettingChanged();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -407,6 +433,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnValueChanged ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnValueChanged() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Switch.OnValueChanged" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnValueChanged ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnValueChanged();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -445,6 +473,8 @@
       <MemberSignature Language="C#" Value="protected int SwitchSetting { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 SwitchSetting" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Switch.SwitchSetting" />
+      <MemberSignature Language="VB.NET" Value="Protected Property SwitchSetting As Integer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property int SwitchSetting { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -478,6 +508,8 @@
       <MemberSignature Language="C#" Value="protected string Value { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Value" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Switch.Value" />
+      <MemberSignature Language="VB.NET" Value="Protected Property Value As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::String ^ Value { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -521,15 +553,5 @@
         </block>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.Switch" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

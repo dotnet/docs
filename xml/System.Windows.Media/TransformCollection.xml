@@ -1,7 +1,9 @@
-<Type Name="TransformCollection" FullName="System.Windows.Media.TransformCollection">
+﻿<Type Name="TransformCollection" FullName="System.Windows.Media.TransformCollection">
   <TypeSignature Language="C#" Value="public sealed class TransformCollection : System.Windows.Media.Animation.Animatable, System.Collections.Generic.ICollection&lt;System.Windows.Media.Transform&gt;, System.Collections.Generic.IEnumerable&lt;System.Windows.Media.Transform&gt;, System.Collections.Generic.IList&lt;System.Windows.Media.Transform&gt;, System.Collections.IList" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TransformCollection extends System.Windows.Media.Animation.Animatable implements class System.Collections.Generic.ICollection`1&lt;class System.Windows.Media.Transform&gt;, class System.Collections.Generic.IEnumerable`1&lt;class System.Windows.Media.Transform&gt;, class System.Collections.Generic.IList`1&lt;class System.Windows.Media.Transform&gt;, class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Collections.IList" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.TransformCollection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TransformCollection&#xA;Inherits Animatable&#xA;Implements ICollection(Of Transform), IEnumerable(Of Transform), IList, IList(Of Transform)" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TransformCollection sealed : System::Windows::Media::Animation::Animatable, System::Collections::Generic::ICollection&lt;System::Windows::Media::Transform ^&gt;, System::Collections::Generic::IEnumerable&lt;System::Windows::Media::Transform ^&gt;, System::Collections::Generic::IList&lt;System::Windows::Media::Transform ^&gt;, System::Collections::IList" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,10 +58,21 @@
     <altmember cref="T:System.Collections.Generic.IEnumerable`1" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.TransformCollection" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public TransformCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TransformCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TransformCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -75,6 +88,8 @@
       <MemberSignature Language="C#" Value="public TransformCollection (System.Collections.Generic.IEnumerable&lt;System.Windows.Media.Transform&gt; collection);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;class System.Windows.Media.Transform&gt; collection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TransformCollection.#ctor(System.Collections.Generic.IEnumerable{System.Windows.Media.Transform})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (collection As IEnumerable(Of Transform))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TransformCollection(System::Collections::Generic::IEnumerable&lt;System::Windows::Media::Transform ^&gt; ^ collection);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -95,6 +110,8 @@
       <MemberSignature Language="C#" Value="public TransformCollection (int capacity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 capacity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TransformCollection.#ctor(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (capacity As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TransformCollection(int capacity);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -113,7 +130,12 @@
       <MemberSignature Language="C#" Value="public void Add (System.Windows.Media.Transform value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Add(class System.Windows.Media.Transform value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TransformCollection.Add(System.Windows.Media.Transform)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (value As Transform)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Add(System::Windows::Media::Transform ^ value);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Add(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -149,7 +171,13 @@
       <MemberSignature Language="C#" Value="public void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TransformCollection.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.Clear</InterfaceMember>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Clear</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -176,6 +204,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.TransformCollection Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.TransformCollection Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TransformCollection.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As TransformCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::TransformCollection ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -204,6 +234,8 @@
       <MemberSignature Language="C#" Value="protected override void CloneCore (System.Windows.Freezable source);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CloneCore(class System.Windows.Freezable source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TransformCollection.CloneCore(System.Windows.Freezable)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CloneCore (source As Freezable)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CloneCore(System::Windows::Freezable ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -225,6 +257,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.TransformCollection CloneCurrentValue ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.TransformCollection CloneCurrentValue() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TransformCollection.CloneCurrentValue" />
+      <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As TransformCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::TransformCollection ^ CloneCurrentValue();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -253,6 +287,8 @@
       <MemberSignature Language="C#" Value="protected override void CloneCurrentValueCore (System.Windows.Freezable source);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CloneCurrentValueCore(class System.Windows.Freezable source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TransformCollection.CloneCurrentValueCore(System.Windows.Freezable)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CloneCurrentValueCore (source As Freezable)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CloneCurrentValueCore(System::Windows::Freezable ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -274,7 +310,12 @@
       <MemberSignature Language="C#" Value="public bool Contains (System.Windows.Media.Transform value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Contains(class System.Windows.Media.Transform value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TransformCollection.Contains(System.Windows.Media.Transform)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (value As Transform) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Contains(System::Windows::Media::Transform ^ value);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Contains(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -298,6 +339,8 @@
       <MemberSignature Language="C#" Value="public void CopyTo (System.Windows.Media.Transform[] array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.Windows.Media.Transform[] array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TransformCollection.CopyTo(System.Windows.Media.Transform[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As Transform(), index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(cli::array &lt;System::Windows::Media::Transform ^&gt; ^ array, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -332,7 +375,13 @@
       <MemberSignature Language="C#" Value="public int Count { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TransformCollection.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
+        <InterfaceMember>P:System.Collections.Generic.ICollection`1.Count</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -350,6 +399,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TransformCollection.CreateInstanceCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -369,6 +420,8 @@
       <MemberSignature Language="C#" Value="protected override bool FreezeCore (bool isChecking);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool FreezeCore(bool isChecking) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TransformCollection.FreezeCore(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function FreezeCore (isChecking As Boolean) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool FreezeCore(bool isChecking);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -391,6 +444,8 @@
       <MemberSignature Language="C#" Value="protected override void GetAsFrozenCore (System.Windows.Freezable source);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void GetAsFrozenCore(class System.Windows.Freezable source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TransformCollection.GetAsFrozenCore(System.Windows.Freezable)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetAsFrozenCore (source As Freezable)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetAsFrozenCore(System::Windows::Freezable ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -412,6 +467,8 @@
       <MemberSignature Language="C#" Value="protected override void GetCurrentValueAsFrozenCore (System.Windows.Freezable source);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void GetCurrentValueAsFrozenCore(class System.Windows.Freezable source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TransformCollection.GetCurrentValueAsFrozenCore(System.Windows.Freezable)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetCurrentValueAsFrozenCore (source As Freezable)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetCurrentValueAsFrozenCore(System::Windows::Freezable ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -433,6 +490,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.TransformCollection.Enumerator GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Windows.Media.TransformCollection/Enumerator GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TransformCollection.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As TransformCollection.Enumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::TransformCollection::Enumerator GetEnumerator();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -453,7 +512,12 @@
       <MemberSignature Language="C#" Value="public int IndexOf (System.Windows.Media.Transform value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 IndexOf(class System.Windows.Media.Transform value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TransformCollection.IndexOf(System.Windows.Media.Transform)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As Transform) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int IndexOf(System::Windows::Media::Transform ^ value);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IList`1.IndexOf(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -476,7 +540,12 @@
       <MemberSignature Language="C#" Value="public void Insert (int index, System.Windows.Media.Transform value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Insert(int32 index, class System.Windows.Media.Transform value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TransformCollection.Insert(System.Int32,System.Windows.Media.Transform)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, value As Transform)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Insert(int index, System::Windows::Media::Transform ^ value);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IList`1.Insert(System.Int32,`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -516,7 +585,12 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Transform this[int index] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Transform Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TransformCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As Transform" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Transform ^ default[int] { System::Windows::Media::Transform ^ get(int index); void set(int index, System::Windows::Media::Transform ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.Generic.IList`1.Item(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -555,7 +629,12 @@
       <MemberSignature Language="C#" Value="public bool Remove (System.Windows.Media.Transform value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Remove(class System.Windows.Media.Transform value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TransformCollection.Remove(System.Windows.Media.Transform)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Remove (value As Transform) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Remove(System::Windows::Media::Transform ^ value);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Remove(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -584,7 +663,13 @@
       <MemberSignature Language="C#" Value="public void RemoveAt (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveAt(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TransformCollection.RemoveAt(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveAt(int index);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.RemoveAt(System.Int32)</InterfaceMember>
+        <InterfaceMember>M:System.Collections.Generic.IList`1.RemoveAt(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -606,7 +691,12 @@
       <MemberSignature Language="C#" Value="bool System.Collections.Generic.ICollection&lt;System.Windows.Media.Transform&gt;.IsReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.Generic.ICollection&lt;System.Windows.Media.Transform&gt;.IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TransformCollection.System#Collections#Generic#ICollection&lt;System#Windows#Media#Transform&gt;#IsReadOnly" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements ICollection(Of Transform).IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.Generic.ICollection&lt;System.Windows.Media.Transform&gt;.IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.Generic.ICollection`1.IsReadOnly</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -633,7 +723,12 @@
       <MemberSignature Language="C#" Value="System.Collections.Generic.IEnumerator&lt;System.Windows.Media.Transform&gt; IEnumerable&lt;Transform&gt;.GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.Generic.IEnumerator`1&lt;class System.Windows.Media.Transform&gt; System.Collections.Generic.IEnumerable&lt;System.Windows.Media.Transform&gt;.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TransformCollection.System#Collections#Generic#IEnumerable&lt;System#Windows#Media#Transform&gt;#GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator(Of Transform) Implements IEnumerable(Of Transform).GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::Generic::IEnumerator&lt;System::Windows::Media::Transform ^&gt; ^ System.Collections.Generic.IEnumerable&lt;System.Windows.Media.Transform&gt;.GetEnumerator() = System::Collections::Generic::IEnumerable&lt;System::Windows::Media::Transform ^&gt;::GetEnumerator;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -660,7 +755,11 @@
       <MemberSignature Language="C#" Value="void ICollection.CopyTo (Array array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.ICollection.CopyTo(class System.Array array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TransformCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.ICollection.CopyTo(Array ^ array, int index) = System::Collections::ICollection::CopyTo;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -691,7 +790,12 @@
       <MemberSignature Language="C#" Value="bool System.Collections.ICollection.IsSynchronized { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.ICollection.IsSynchronized" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TransformCollection.System#Collections#ICollection#IsSynchronized" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -717,7 +821,12 @@
       <MemberSignature Language="C#" Value="object System.Collections.ICollection.SyncRoot { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.ICollection.SyncRoot" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TransformCollection.System#Collections#ICollection#SyncRoot" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -742,7 +851,12 @@
       <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TransformCollection.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator Implements IEnumerable.GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IEnumerator ^ System.Collections.IEnumerable.GetEnumerator() = System::Collections::IEnumerable::GetEnumerator;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -769,7 +883,12 @@
       <MemberSignature Language="C#" Value="int IList.Add (object value);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.IList.Add(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TransformCollection.System#Collections#IList#Add(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Function Add (value As Object) As Integer Implements IList.Add" />
+      <MemberSignature Language="C++ CLI" Value=" virtual int System.Collections.IList.Add(System::Object ^ value) = System::Collections::IList::Add;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.Add(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -799,7 +918,12 @@
       <MemberSignature Language="C#" Value="bool IList.Contains (object value);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.IList.Contains(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TransformCollection.System#Collections#IList#Contains(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Function Contains (value As Object) As Boolean Implements IList.Contains" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.Collections.IList.Contains(System::Object ^ value) = System::Collections::IList::Contains;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.Contains(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -830,7 +954,12 @@
       <MemberSignature Language="C#" Value="int IList.IndexOf (object value);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.IList.IndexOf(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TransformCollection.System#Collections#IList#IndexOf(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Function IndexOf (value As Object) As Integer Implements IList.IndexOf" />
+      <MemberSignature Language="C++ CLI" Value=" virtual int System.Collections.IList.IndexOf(System::Object ^ value) = System::Collections::IList::IndexOf;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.IndexOf(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -860,7 +989,12 @@
       <MemberSignature Language="C#" Value="void IList.Insert (int index, object value);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.Insert(int32 index, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TransformCollection.System#Collections#IList#Insert(System.Int32,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Sub Insert (index As Integer, value As Object) Implements IList.Insert" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.IList.Insert(int index, System::Object ^ value) = System::Collections::IList::Insert;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.Insert(System.Int32,System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -891,7 +1025,12 @@
       <MemberSignature Language="C#" Value="bool System.Collections.IList.IsFixedSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.IList.IsFixedSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TransformCollection.System#Collections#IList#IsFixedSize" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsFixedSize As Boolean Implements IList.IsFixedSize" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsFixedSize { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.IList.IsFixedSize</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -918,7 +1057,12 @@
       <MemberSignature Language="C#" Value="bool System.Collections.IList.IsReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.IList.IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TransformCollection.System#Collections#IList#IsReadOnly" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements IList.IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.IList.IsReadOnly</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -945,7 +1089,12 @@
       <MemberSignature Language="C#" Value="object System.Collections.IList.Item[int index] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.IList.Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TransformCollection.System#Collections#IList#Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value=" Property Item(index As Integer) As Object Implements IList.Item" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IList.Item[int] { System::Object ^ get(int index); void set(int index, System::Object ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.IList.Item(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -975,7 +1124,12 @@
       <MemberSignature Language="C#" Value="void IList.Remove (object value);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.Remove(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TransformCollection.System#Collections#IList#Remove(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Sub Remove (value As Object) Implements IList.Remove" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.IList.Remove(System::Object ^ value) = System::Collections::IList::Remove;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.Remove(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1000,14 +1154,5 @@
         <altmember cref="M:System.Windows.Media.TransformCollection.Remove(System.Windows.Media.Transform)" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.TransformCollection" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

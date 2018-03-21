@@ -1,7 +1,9 @@
-<Type Name="AssemblyDefinition" FullName="System.Reflection.Metadata.AssemblyDefinition">
+﻿<Type Name="AssemblyDefinition" FullName="System.Reflection.Metadata.AssemblyDefinition">
   <TypeSignature Language="C#" Value="public struct AssemblyDefinition" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit AssemblyDefinition extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.AssemblyDefinition" />
+  <TypeSignature Language="VB.NET" Value="Public Structure AssemblyDefinition" />
+  <TypeSignature Language="C++ CLI" Value="public value class AssemblyDefinition" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -21,6 +23,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Metadata.StringHandle Culture { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.Metadata.StringHandle Culture" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.AssemblyDefinition.Culture" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Culture As StringHandle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::StringHandle Culture { System::Reflection::Metadata::StringHandle get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -41,6 +45,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.AssemblyFlags Flags { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.AssemblyFlags Flags" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.AssemblyDefinition.Flags" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Flags As AssemblyFlags" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::AssemblyFlags Flags { System::Reflection::AssemblyFlags get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -61,6 +67,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Metadata.CustomAttributeHandleCollection GetCustomAttributes ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.CustomAttributeHandleCollection GetCustomAttributes() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.AssemblyDefinition.GetCustomAttributes" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetCustomAttributes () As CustomAttributeHandleCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::CustomAttributeHandleCollection GetCustomAttributes();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -82,6 +90,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Metadata.DeclarativeSecurityAttributeHandleCollection GetDeclarativeSecurityAttributes ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.DeclarativeSecurityAttributeHandleCollection GetDeclarativeSecurityAttributes() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.AssemblyDefinition.GetDeclarativeSecurityAttributes" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetDeclarativeSecurityAttributes () As DeclarativeSecurityAttributeHandleCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::DeclarativeSecurityAttributeHandleCollection GetDeclarativeSecurityAttributes();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -103,6 +113,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.AssemblyHashAlgorithm HashAlgorithm { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.AssemblyHashAlgorithm HashAlgorithm" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.AssemblyDefinition.HashAlgorithm" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HashAlgorithm As AssemblyHashAlgorithm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::AssemblyHashAlgorithm HashAlgorithm { System::Reflection::AssemblyHashAlgorithm get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -123,6 +135,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Metadata.StringHandle Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.Metadata.StringHandle Name" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.AssemblyDefinition.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As StringHandle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::StringHandle Name { System::Reflection::Metadata::StringHandle get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -143,6 +157,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Metadata.BlobHandle PublicKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.Metadata.BlobHandle PublicKey" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.AssemblyDefinition.PublicKey" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PublicKey As BlobHandle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::BlobHandle PublicKey { System::Reflection::Metadata::BlobHandle get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -163,6 +179,8 @@
       <MemberSignature Language="C#" Value="public Version Version { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Version Version" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.AssemblyDefinition.Version" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Version As Version" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Version ^ Version { Version ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

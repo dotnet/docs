@@ -1,7 +1,9 @@
-<Type Name="GradientStopCollection" FullName="System.Windows.Media.GradientStopCollection">
+﻿<Type Name="GradientStopCollection" FullName="System.Windows.Media.GradientStopCollection">
   <TypeSignature Language="C#" Value="public sealed class GradientStopCollection : System.Windows.Media.Animation.Animatable, IFormattable, System.Collections.Generic.ICollection&lt;System.Windows.Media.GradientStop&gt;, System.Collections.Generic.IEnumerable&lt;System.Windows.Media.GradientStop&gt;, System.Collections.Generic.IList&lt;System.Windows.Media.GradientStop&gt;, System.Collections.IList" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit GradientStopCollection extends System.Windows.Media.Animation.Animatable implements class System.Collections.Generic.ICollection`1&lt;class System.Windows.Media.GradientStop&gt;, class System.Collections.Generic.IEnumerable`1&lt;class System.Windows.Media.GradientStop&gt;, class System.Collections.Generic.IList`1&lt;class System.Windows.Media.GradientStop&gt;, class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Collections.IList, class System.IFormattable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.GradientStopCollection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class GradientStopCollection&#xA;Inherits Animatable&#xA;Implements ICollection(Of GradientStop), IEnumerable(Of GradientStop), IFormattable, IList, IList(Of GradientStop)" />
+  <TypeSignature Language="C++ CLI" Value="public ref class GradientStopCollection sealed : System::Windows::Media::Animation::Animatable, IFormattable, System::Collections::Generic::ICollection&lt;System::Windows::Media::GradientStop ^&gt;, System::Collections::Generic::IEnumerable&lt;System::Windows::Media::GradientStop ^&gt;, System::Collections::Generic::IList&lt;System::Windows::Media::GradientStop ^&gt;, System::Collections::IList" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -64,10 +66,21 @@
     <altmember cref="T:System.Collections.Generic.IEnumerable`1" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.GradientStopCollection" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public GradientStopCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GradientStopCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; GradientStopCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -83,6 +96,8 @@
       <MemberSignature Language="C#" Value="public GradientStopCollection (System.Collections.Generic.IEnumerable&lt;System.Windows.Media.GradientStop&gt; collection);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;class System.Windows.Media.GradientStop&gt; collection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GradientStopCollection.#ctor(System.Collections.Generic.IEnumerable{System.Windows.Media.GradientStop})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (collection As IEnumerable(Of GradientStop))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; GradientStopCollection(System::Collections::Generic::IEnumerable&lt;System::Windows::Media::GradientStop ^&gt; ^ collection);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -103,6 +118,8 @@
       <MemberSignature Language="C#" Value="public GradientStopCollection (int capacity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 capacity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GradientStopCollection.#ctor(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (capacity As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; GradientStopCollection(int capacity);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -121,7 +138,12 @@
       <MemberSignature Language="C#" Value="public void Add (System.Windows.Media.GradientStop value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Add(class System.Windows.Media.GradientStop value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GradientStopCollection.Add(System.Windows.Media.GradientStop)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (value As GradientStop)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Add(System::Windows::Media::GradientStop ^ value);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Add(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -157,7 +179,13 @@
       <MemberSignature Language="C#" Value="public void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GradientStopCollection.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.Clear</InterfaceMember>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Clear</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -184,6 +212,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.GradientStopCollection Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.GradientStopCollection Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GradientStopCollection.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As GradientStopCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::GradientStopCollection ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -212,6 +242,8 @@
       <MemberSignature Language="C#" Value="protected override void CloneCore (System.Windows.Freezable source);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CloneCore(class System.Windows.Freezable source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GradientStopCollection.CloneCore(System.Windows.Freezable)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CloneCore (source As Freezable)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CloneCore(System::Windows::Freezable ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -233,6 +265,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.GradientStopCollection CloneCurrentValue ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.GradientStopCollection CloneCurrentValue() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GradientStopCollection.CloneCurrentValue" />
+      <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As GradientStopCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::GradientStopCollection ^ CloneCurrentValue();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -261,6 +295,8 @@
       <MemberSignature Language="C#" Value="protected override void CloneCurrentValueCore (System.Windows.Freezable source);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CloneCurrentValueCore(class System.Windows.Freezable source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GradientStopCollection.CloneCurrentValueCore(System.Windows.Freezable)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CloneCurrentValueCore (source As Freezable)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CloneCurrentValueCore(System::Windows::Freezable ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -282,7 +318,12 @@
       <MemberSignature Language="C#" Value="public bool Contains (System.Windows.Media.GradientStop value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Contains(class System.Windows.Media.GradientStop value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GradientStopCollection.Contains(System.Windows.Media.GradientStop)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (value As GradientStop) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Contains(System::Windows::Media::GradientStop ^ value);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Contains(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -306,6 +347,8 @@
       <MemberSignature Language="C#" Value="public void CopyTo (System.Windows.Media.GradientStop[] array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.Windows.Media.GradientStop[] array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GradientStopCollection.CopyTo(System.Windows.Media.GradientStop[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As GradientStop(), index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(cli::array &lt;System::Windows::Media::GradientStop ^&gt; ^ array, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -340,7 +383,13 @@
       <MemberSignature Language="C#" Value="public int Count { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.GradientStopCollection.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
+        <InterfaceMember>P:System.Collections.Generic.ICollection`1.Count</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -365,6 +414,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GradientStopCollection.CreateInstanceCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -384,6 +435,8 @@
       <MemberSignature Language="C#" Value="protected override bool FreezeCore (bool isChecking);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool FreezeCore(bool isChecking) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GradientStopCollection.FreezeCore(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function FreezeCore (isChecking As Boolean) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool FreezeCore(bool isChecking);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -406,6 +459,8 @@
       <MemberSignature Language="C#" Value="protected override void GetAsFrozenCore (System.Windows.Freezable source);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void GetAsFrozenCore(class System.Windows.Freezable source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GradientStopCollection.GetAsFrozenCore(System.Windows.Freezable)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetAsFrozenCore (source As Freezable)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetAsFrozenCore(System::Windows::Freezable ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -427,6 +482,8 @@
       <MemberSignature Language="C#" Value="protected override void GetCurrentValueAsFrozenCore (System.Windows.Freezable source);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void GetCurrentValueAsFrozenCore(class System.Windows.Freezable source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GradientStopCollection.GetCurrentValueAsFrozenCore(System.Windows.Freezable)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetCurrentValueAsFrozenCore (source As Freezable)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetCurrentValueAsFrozenCore(System::Windows::Freezable ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -448,6 +505,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.GradientStopCollection.Enumerator GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Windows.Media.GradientStopCollection/Enumerator GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GradientStopCollection.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As GradientStopCollection.Enumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::GradientStopCollection::Enumerator GetEnumerator();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -484,7 +543,12 @@
       <MemberSignature Language="C#" Value="public int IndexOf (System.Windows.Media.GradientStop value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 IndexOf(class System.Windows.Media.GradientStop value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GradientStopCollection.IndexOf(System.Windows.Media.GradientStop)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As GradientStop) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int IndexOf(System::Windows::Media::GradientStop ^ value);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IList`1.IndexOf(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -506,7 +570,12 @@
       <MemberSignature Language="C#" Value="public void Insert (int index, System.Windows.Media.GradientStop value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Insert(int32 index, class System.Windows.Media.GradientStop value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GradientStopCollection.Insert(System.Int32,System.Windows.Media.GradientStop)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, value As GradientStop)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Insert(int index, System::Windows::Media::GradientStop ^ value);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IList`1.Insert(System.Int32,`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -546,7 +615,12 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.GradientStop this[int index] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.GradientStop Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.GradientStopCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As GradientStop" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::GradientStop ^ default[int] { System::Windows::Media::GradientStop ^ get(int index); void set(int index, System::Windows::Media::GradientStop ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.Generic.IList`1.Item(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -584,6 +658,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.GradientStopCollection Parse (string source);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Media.GradientStopCollection Parse(string source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GradientStopCollection.Parse(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (source As String) As GradientStopCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::GradientStopCollection ^ Parse(System::String ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -606,7 +682,12 @@
       <MemberSignature Language="C#" Value="public bool Remove (System.Windows.Media.GradientStop value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Remove(class System.Windows.Media.GradientStop value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GradientStopCollection.Remove(System.Windows.Media.GradientStop)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Remove (value As GradientStop) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Remove(System::Windows::Media::GradientStop ^ value);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Remove(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -635,7 +716,13 @@
       <MemberSignature Language="C#" Value="public void RemoveAt (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveAt(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GradientStopCollection.RemoveAt(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveAt(int index);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.RemoveAt(System.Int32)</InterfaceMember>
+        <InterfaceMember>M:System.Collections.Generic.IList`1.RemoveAt(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -657,7 +744,12 @@
       <MemberSignature Language="C#" Value="bool System.Collections.Generic.ICollection&lt;System.Windows.Media.GradientStop&gt;.IsReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.Generic.ICollection&lt;System.Windows.Media.GradientStop&gt;.IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.GradientStopCollection.System#Collections#Generic#ICollection&lt;System#Windows#Media#GradientStop&gt;#IsReadOnly" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements ICollection(Of GradientStop).IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.Generic.ICollection&lt;System.Windows.Media.GradientStop&gt;.IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.Generic.ICollection`1.IsReadOnly</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -683,7 +775,12 @@
       <MemberSignature Language="C#" Value="System.Collections.Generic.IEnumerator&lt;System.Windows.Media.GradientStop&gt; IEnumerable&lt;GradientStop&gt;.GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.Generic.IEnumerator`1&lt;class System.Windows.Media.GradientStop&gt; System.Collections.Generic.IEnumerable&lt;System.Windows.Media.GradientStop&gt;.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GradientStopCollection.System#Collections#Generic#IEnumerable&lt;System#Windows#Media#GradientStop&gt;#GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator(Of GradientStop) Implements IEnumerable(Of GradientStop).GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::Generic::IEnumerator&lt;System::Windows::Media::GradientStop ^&gt; ^ System.Collections.Generic.IEnumerable&lt;System.Windows.Media.GradientStop&gt;.GetEnumerator() = System::Collections::Generic::IEnumerable&lt;System::Windows::Media::GradientStop ^&gt;::GetEnumerator;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -709,7 +806,11 @@
       <MemberSignature Language="C#" Value="void ICollection.CopyTo (Array array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.ICollection.CopyTo(class System.Array array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GradientStopCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.ICollection.CopyTo(Array ^ array, int index) = System::Collections::ICollection::CopyTo;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -739,7 +840,12 @@
       <MemberSignature Language="C#" Value="bool System.Collections.ICollection.IsSynchronized { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.ICollection.IsSynchronized" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.GradientStopCollection.System#Collections#ICollection#IsSynchronized" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -765,7 +871,12 @@
       <MemberSignature Language="C#" Value="object System.Collections.ICollection.SyncRoot { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.ICollection.SyncRoot" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.GradientStopCollection.System#Collections#ICollection#SyncRoot" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -792,7 +903,12 @@
       <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GradientStopCollection.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator Implements IEnumerable.GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IEnumerator ^ System.Collections.IEnumerable.GetEnumerator() = System::Collections::IEnumerable::GetEnumerator;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -820,7 +936,12 @@
       <MemberSignature Language="C#" Value="int IList.Add (object value);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.IList.Add(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GradientStopCollection.System#Collections#IList#Add(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Function Add (value As Object) As Integer Implements IList.Add" />
+      <MemberSignature Language="C++ CLI" Value=" virtual int System.Collections.IList.Add(System::Object ^ value) = System::Collections::IList::Add;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.Add(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -849,7 +970,12 @@
       <MemberSignature Language="C#" Value="bool IList.Contains (object value);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.IList.Contains(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GradientStopCollection.System#Collections#IList#Contains(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Function Contains (value As Object) As Boolean Implements IList.Contains" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.Collections.IList.Contains(System::Object ^ value) = System::Collections::IList::Contains;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.Contains(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -879,7 +1005,12 @@
       <MemberSignature Language="C#" Value="int IList.IndexOf (object value);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.IList.IndexOf(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GradientStopCollection.System#Collections#IList#IndexOf(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Function IndexOf (value As Object) As Integer Implements IList.IndexOf" />
+      <MemberSignature Language="C++ CLI" Value=" virtual int System.Collections.IList.IndexOf(System::Object ^ value) = System::Collections::IList::IndexOf;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.IndexOf(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -908,7 +1039,12 @@
       <MemberSignature Language="C#" Value="void IList.Insert (int index, object value);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.Insert(int32 index, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GradientStopCollection.System#Collections#IList#Insert(System.Int32,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Sub Insert (index As Integer, value As Object) Implements IList.Insert" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.IList.Insert(int index, System::Object ^ value) = System::Collections::IList::Insert;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.Insert(System.Int32,System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -938,7 +1074,12 @@
       <MemberSignature Language="C#" Value="bool System.Collections.IList.IsFixedSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.IList.IsFixedSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.GradientStopCollection.System#Collections#IList#IsFixedSize" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsFixedSize As Boolean Implements IList.IsFixedSize" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsFixedSize { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.IList.IsFixedSize</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -964,7 +1105,12 @@
       <MemberSignature Language="C#" Value="bool System.Collections.IList.IsReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.IList.IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.GradientStopCollection.System#Collections#IList#IsReadOnly" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements IList.IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.IList.IsReadOnly</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -990,7 +1136,12 @@
       <MemberSignature Language="C#" Value="object System.Collections.IList.Item[int index] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.IList.Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.GradientStopCollection.System#Collections#IList#Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value=" Property Item(index As Integer) As Object Implements IList.Item" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IList.Item[int] { System::Object ^ get(int index); void set(int index, System::Object ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.IList.Item(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1019,7 +1170,12 @@
       <MemberSignature Language="C#" Value="void IList.Remove (object value);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.Remove(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GradientStopCollection.System#Collections#IList#Remove(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Sub Remove (value As Object) Implements IList.Remove" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.IList.Remove(System::Object ^ value) = System::Collections::IList::Remove;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.Remove(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1047,7 +1203,12 @@
       <MemberSignature Language="C#" Value="string IFormattable.ToString (string format, IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string System.IFormattable.ToString(string format, class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GradientStopCollection.System#IFormattable#ToString(System.String,System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToString (format As String, provider As IFormatProvider) As String Implements IFormattable.ToString" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::String ^ System.IFormattable.ToString(System::String ^ format, IFormatProvider ^ provider) = IFormattable::ToString;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IFormattable.ToString(System.String,System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1082,10 +1243,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.String" /> representation of this <see cref="T:System.Windows.Media.GradientStopCollection" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ToString">
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GradientStopCollection.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1105,6 +1277,8 @@
       <MemberSignature Language="C#" Value="public string ToString (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string ToString(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GradientStopCollection.ToString(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToString (provider As IFormatProvider) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToString(IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1123,23 +1297,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="ToString">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a <see cref="T:System.String" /> representation of this <see cref="T:System.Windows.Media.GradientStopCollection" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.GradientStopCollection" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

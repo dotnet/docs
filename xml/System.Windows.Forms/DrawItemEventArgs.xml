@@ -1,7 +1,9 @@
-<Type Name="DrawItemEventArgs" FullName="System.Windows.Forms.DrawItemEventArgs">
+﻿<Type Name="DrawItemEventArgs" FullName="System.Windows.Forms.DrawItemEventArgs">
   <TypeSignature Language="C#" Value="public class DrawItemEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DrawItemEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DrawItemEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class DrawItemEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DrawItemEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,10 +37,20 @@
     <altmember cref="T:System.Windows.Forms.TabControl" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DrawItemEventArgs" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DrawItemEventArgs (System.Drawing.Graphics graphics, System.Drawing.Font font, System.Drawing.Rectangle rect, int index, System.Windows.Forms.DrawItemState state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Graphics graphics, class System.Drawing.Font font, valuetype System.Drawing.Rectangle rect, int32 index, valuetype System.Windows.Forms.DrawItemState state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DrawItemEventArgs.#ctor(System.Drawing.Graphics,System.Drawing.Font,System.Drawing.Rectangle,System.Int32,System.Windows.Forms.DrawItemState)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DrawItemEventArgs(System::Drawing::Graphics ^ graphics, System::Drawing::Font ^ font, System::Drawing::Rectangle rect, int index, System::Windows::Forms::DrawItemState state);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -65,6 +77,7 @@
       <MemberSignature Language="C#" Value="public DrawItemEventArgs (System.Drawing.Graphics graphics, System.Drawing.Font font, System.Drawing.Rectangle rect, int index, System.Windows.Forms.DrawItemState state, System.Drawing.Color foreColor, System.Drawing.Color backColor);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Graphics graphics, class System.Drawing.Font font, valuetype System.Drawing.Rectangle rect, int32 index, valuetype System.Windows.Forms.DrawItemState state, valuetype System.Drawing.Color foreColor, valuetype System.Drawing.Color backColor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DrawItemEventArgs.#ctor(System.Drawing.Graphics,System.Drawing.Font,System.Drawing.Rectangle,System.Int32,System.Windows.Forms.DrawItemState,System.Drawing.Color,System.Drawing.Color)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DrawItemEventArgs(System::Drawing::Graphics ^ graphics, System::Drawing::Font ^ font, System::Drawing::Rectangle rect, int index, System::Windows::Forms::DrawItemState state, System::Drawing::Color foreColor, System::Drawing::Color backColor);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -95,6 +108,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color BackColor { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BackColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DrawItemEventArgs.BackColor" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BackColor As Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color BackColor { System::Drawing::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -131,6 +146,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Rectangle Bounds { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Rectangle Bounds" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DrawItemEventArgs.Bounds" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Bounds As Rectangle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Rectangle Bounds { System::Drawing::Rectangle get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -160,6 +177,8 @@
       <MemberSignature Language="C#" Value="public virtual void DrawBackground ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DrawBackground() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DrawItemEventArgs.DrawBackground" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub DrawBackground ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void DrawBackground();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -197,6 +216,8 @@
       <MemberSignature Language="C#" Value="public virtual void DrawFocusRectangle ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DrawFocusRectangle() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DrawItemEventArgs.DrawFocusRectangle" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub DrawFocusRectangle ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void DrawFocusRectangle();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -234,6 +255,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Font Font { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Font Font" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DrawItemEventArgs.Font" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Font As Font" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Font ^ Font { System::Drawing::Font ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -269,6 +292,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color ForeColor { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ForeColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DrawItemEventArgs.ForeColor" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ForeColor As Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color ForeColor { System::Drawing::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -305,6 +330,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Graphics Graphics { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Graphics Graphics" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DrawItemEventArgs.Graphics" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Graphics As Graphics" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Graphics ^ Graphics { System::Drawing::Graphics ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -334,6 +361,8 @@
       <MemberSignature Language="C#" Value="public int Index { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Index" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DrawItemEventArgs.Index" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Index As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Index { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -368,6 +397,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DrawItemState State { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DrawItemState State" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DrawItemEventArgs.State" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property State As DrawItemState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DrawItemState State { System::Windows::Forms::DrawItemState get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -400,14 +431,5 @@
         <altmember cref="T:System.Windows.Forms.DrawItemState" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DrawItemEventArgs" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

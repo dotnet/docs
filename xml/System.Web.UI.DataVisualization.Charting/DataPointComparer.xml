@@ -1,7 +1,9 @@
-<Type Name="DataPointComparer" FullName="System.Web.UI.DataVisualization.Charting.DataPointComparer">
+﻿<Type Name="DataPointComparer" FullName="System.Web.UI.DataVisualization.Charting.DataPointComparer">
   <TypeSignature Language="C#" Value="public class DataPointComparer : System.Collections.Generic.IComparer&lt;System.Web.UI.DataVisualization.Charting.DataPoint&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataPointComparer extends System.Object implements class System.Collections.Generic.IComparer`1&lt;class System.Web.UI.DataVisualization.Charting.DataPoint&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.DataPointComparer" />
+  <TypeSignature Language="VB.NET" Value="Public Class DataPointComparer&#xA;Implements IComparer(Of DataPoint)" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataPointComparer : System::Collections::Generic::IComparer&lt;System::Web::UI::DataVisualization::Charting::DataPoint ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +25,7 @@
       <MemberSignature Language="C#" Value="public DataPointComparer (System.Web.UI.DataVisualization.Charting.Series series, System.Web.UI.DataVisualization.Charting.PointSortOrder sortOrder, string sortBy);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.DataVisualization.Charting.Series series, valuetype System.Web.UI.DataVisualization.Charting.PointSortOrder sortOrder, string sortBy) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataPointComparer.#ctor(System.Web.UI.DataVisualization.Charting.Series,System.Web.UI.DataVisualization.Charting.PointSortOrder,System.String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataPointComparer(System::Web::UI::DataVisualization::Charting::Series ^ series, System::Web::UI::DataVisualization::Charting::PointSortOrder sortOrder, System::String ^ sortBy);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -45,7 +48,12 @@
       <MemberSignature Language="C#" Value="public int Compare (System.Web.UI.DataVisualization.Charting.DataPoint x, System.Web.UI.DataVisualization.Charting.DataPoint y);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Compare(class System.Web.UI.DataVisualization.Charting.DataPoint x, class System.Web.UI.DataVisualization.Charting.DataPoint y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataPointComparer.Compare(System.Web.UI.DataVisualization.Charting.DataPoint,System.Web.UI.DataVisualization.Charting.DataPoint)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Compare (x As DataPoint, y As DataPoint) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int Compare(System::Web::UI::DataVisualization::Charting::DataPoint ^ x, System::Web::UI::DataVisualization::Charting::DataPoint ^ y);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IComparer`1.Compare(`0,`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

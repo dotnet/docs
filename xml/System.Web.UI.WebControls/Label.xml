@@ -1,7 +1,9 @@
-<Type Name="Label" FullName="System.Web.UI.WebControls.Label">
+﻿<Type Name="Label" FullName="System.Web.UI.WebControls.Label">
   <TypeSignature Language="C#" Value="public class Label : System.Web.UI.WebControls.WebControl, System.Web.UI.ITextControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Label extends System.Web.UI.WebControls.WebControl implements class System.Web.UI.ITextControl" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.Label" />
+  <TypeSignature Language="VB.NET" Value="Public Class Label&#xA;Inherits WebControl&#xA;Implements ITextControl" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Label : System::Web::UI::WebControls::WebControl, System::Web::UI::ITextControl" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -131,6 +133,8 @@
       <MemberSignature Language="C#" Value="public Label ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Label.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Label();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -164,6 +168,8 @@
       <MemberSignature Language="C#" Value="protected override void AddAttributesToRender (System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void AddAttributesToRender(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Label.AddAttributesToRender(System.Web.UI.HtmlTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub AddAttributesToRender (writer As HtmlTextWriter)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void AddAttributesToRender(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -195,6 +201,8 @@
       <MemberSignature Language="C#" Value="protected override void AddParsedSubObject (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void AddParsedSubObject(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Label.AddParsedSubObject(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub AddParsedSubObject (obj As Object)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void AddParsedSubObject(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -235,6 +243,8 @@
       <MemberSignature Language="C#" Value="public virtual string AssociatedControlID { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string AssociatedControlID" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Label.AssociatedControlID" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property AssociatedControlID As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ AssociatedControlID { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -280,6 +290,8 @@
       <MemberSignature Language="C#" Value="protected override void LoadViewState (object savedState);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void LoadViewState(object savedState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Label.LoadViewState(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub LoadViewState (savedState As Object)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void LoadViewState(System::Object ^ savedState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -307,9 +319,11 @@
       </Docs>
     </Member>
     <Member MemberName="RenderContents">
-      <MemberSignature Language="C#" Value="protected override void RenderContents (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="C#" Value="protected internal override void RenderContents (System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void RenderContents(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Label.RenderContents(System.Web.UI.HtmlTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub RenderContents (writer As HtmlTextWriter)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void RenderContents(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -343,6 +357,8 @@
       <MemberSignature Language="C#" Value="public override bool SupportsDisabledAttribute { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SupportsDisabledAttribute" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Label.SupportsDisabledAttribute" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property SupportsDisabledAttribute As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsDisabledAttribute { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -372,6 +388,8 @@
       <MemberSignature Language="C#" Value="protected override System.Web.UI.HtmlTextWriterTag TagKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.HtmlTextWriterTag TagKey" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Label.TagKey" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property TagKey As HtmlTextWriterTag" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Web::UI::HtmlTextWriterTag TagKey { System::Web::UI::HtmlTextWriterTag get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -397,7 +415,12 @@
       <MemberSignature Language="C#" Value="public virtual string Text { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Text" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Label.Text" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Text As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.UI.ITextControl.Text</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

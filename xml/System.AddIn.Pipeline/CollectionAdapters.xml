@@ -1,7 +1,9 @@
-<Type Name="CollectionAdapters" FullName="System.AddIn.Pipeline.CollectionAdapters">
+﻿<Type Name="CollectionAdapters" FullName="System.AddIn.Pipeline.CollectionAdapters">
   <TypeSignature Language="C#" Value="public static class CollectionAdapters" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit CollectionAdapters extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.AddIn.Pipeline.CollectionAdapters" />
+  <TypeSignature Language="VB.NET" Value="Public Class CollectionAdapters" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CollectionAdapters abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.AddIn</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +30,8 @@
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IList&lt;T&gt; ToIList&lt;T&gt; (System.AddIn.Contract.IListContract&lt;T&gt; collection);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IList`1&lt;!!T&gt; ToIList&lt;T&gt;(class System.AddIn.Contract.IListContract`1&lt;!!T&gt; collection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Pipeline.CollectionAdapters.ToIList``1(System.AddIn.Contract.IListContract{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToIList(Of T) (collection As IListContract(Of T)) As IList(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static System::Collections::Generic::IList&lt;T&gt; ^ ToIList(System::AddIn::Contract::IListContract&lt;T&gt; ^ collection);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -71,6 +75,8 @@
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IList&lt;TView&gt; ToIList&lt;TContract,TView&gt; (System.AddIn.Contract.IListContract&lt;TContract&gt; collection, Converter&lt;TContract,TView&gt; contractViewAdapter, Converter&lt;TView,TContract&gt; viewContractAdapter);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IList`1&lt;!!TView&gt; ToIList&lt;TContract, TView&gt;(class System.AddIn.Contract.IListContract`1&lt;!!TContract&gt; collection, class System.Converter`2&lt;!!TContract, !!TView&gt; contractViewAdapter, class System.Converter`2&lt;!!TView, !!TContract&gt; viewContractAdapter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Pipeline.CollectionAdapters.ToIList``2(System.AddIn.Contract.IListContract{``0},System.Converter{``0,``1},System.Converter{``1,``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToIList(Of TContract, TView) (collection As IListContract(Of TContract), contractViewAdapter As Converter(Of TContract, TView), viewContractAdapter As Converter(Of TView, TContract)) As IList(Of TView)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TContract, typename TView&gt;&#xA; static System::Collections::Generic::IList&lt;TView&gt; ^ ToIList(System::AddIn::Contract::IListContract&lt;TContract&gt; ^ collection, Converter&lt;TContract, TView&gt; ^ contractViewAdapter, Converter&lt;TView, TContract&gt; ^ viewContractAdapter);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -110,6 +116,8 @@
       <MemberSignature Language="C#" Value="public static System.AddIn.Contract.IListContract&lt;T&gt; ToIListContract&lt;T&gt; (System.Collections.Generic.IList&lt;T&gt; collection);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.AddIn.Contract.IListContract`1&lt;!!T&gt; ToIListContract&lt;T&gt;(class System.Collections.Generic.IList`1&lt;!!T&gt; collection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Pipeline.CollectionAdapters.ToIListContract``1(System.Collections.Generic.IList{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToIListContract(Of T) (collection As IList(Of T)) As IListContract(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static System::AddIn::Contract::IListContract&lt;T&gt; ^ ToIListContract(System::Collections::Generic::IList&lt;T&gt; ^ collection);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -153,6 +161,8 @@
       <MemberSignature Language="C#" Value="public static System.AddIn.Contract.IListContract&lt;TContract&gt; ToIListContract&lt;TView,TContract&gt; (System.Collections.Generic.IList&lt;TView&gt; collection, Converter&lt;TView,TContract&gt; viewContractAdapter, Converter&lt;TContract,TView&gt; contractViewAdapter);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.AddIn.Contract.IListContract`1&lt;!!TContract&gt; ToIListContract&lt;TView, TContract&gt;(class System.Collections.Generic.IList`1&lt;!!TView&gt; collection, class System.Converter`2&lt;!!TView, !!TContract&gt; viewContractAdapter, class System.Converter`2&lt;!!TContract, !!TView&gt; contractViewAdapter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Pipeline.CollectionAdapters.ToIListContract``2(System.Collections.Generic.IList{``0},System.Converter{``0,``1},System.Converter{``1,``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToIListContract(Of TView, TContract) (collection As IList(Of TView), viewContractAdapter As Converter(Of TView, TContract), contractViewAdapter As Converter(Of TContract, TView)) As IListContract(Of TContract)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TView, typename TContract&gt;&#xA; static System::AddIn::Contract::IListContract&lt;TContract&gt; ^ ToIListContract(System::Collections::Generic::IList&lt;TView&gt; ^ collection, Converter&lt;TView, TContract&gt; ^ viewContractAdapter, Converter&lt;TContract, TView&gt; ^ contractViewAdapter);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>

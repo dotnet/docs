@@ -1,7 +1,9 @@
-<Type Name="InkPresenter" FullName="System.Windows.Controls.InkPresenter">
+﻿<Type Name="InkPresenter" FullName="System.Windows.Controls.InkPresenter">
   <TypeSignature Language="C#" Value="public class InkPresenter : System.Windows.Controls.Decorator" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit InkPresenter extends System.Windows.Controls.Decorator" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.InkPresenter" />
+  <TypeSignature Language="VB.NET" Value="Public Class InkPresenter&#xA;Inherits Decorator" />
+  <TypeSignature Language="C++ CLI" Value="public ref class InkPresenter : System::Windows::Controls::Decorator" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +38,8 @@
       <MemberSignature Language="C#" Value="public InkPresenter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.InkPresenter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InkPresenter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -51,6 +55,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Size ArrangeOverride (System.Windows.Size arrangeSize);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Size ArrangeOverride(valuetype System.Windows.Size arrangeSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.InkPresenter.ArrangeOverride(System.Windows.Size)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function ArrangeOverride (arrangeSize As Size) As Size" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size ArrangeOverride(System::Windows::Size arrangeSize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -74,6 +80,7 @@
       <MemberSignature Language="C#" Value="public void AttachVisuals (System.Windows.Media.Visual visual, System.Windows.Ink.DrawingAttributes drawingAttributes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AttachVisuals(class System.Windows.Media.Visual visual, class System.Windows.Ink.DrawingAttributes drawingAttributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.InkPresenter.AttachVisuals(System.Windows.Media.Visual,System.Windows.Ink.DrawingAttributes)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AttachVisuals(System::Windows::Media::Visual ^ visual, System::Windows::Ink::DrawingAttributes ^ drawingAttributes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -114,6 +121,7 @@
       <MemberSignature Language="C#" Value="public void DetachVisuals (System.Windows.Media.Visual visual);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DetachVisuals(class System.Windows.Media.Visual visual) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.InkPresenter.DetachVisuals(System.Windows.Media.Visual)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DetachVisuals(System::Windows::Media::Visual ^ visual);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -152,6 +160,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Media.Geometry GetLayoutClip (System.Windows.Size layoutSlotSize);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Media.Geometry GetLayoutClip(valuetype System.Windows.Size layoutSlotSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.InkPresenter.GetLayoutClip(System.Windows.Size)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetLayoutClip (layoutSlotSize As Size) As Geometry" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Media::Geometry ^ GetLayoutClip(System::Windows::Size layoutSlotSize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -174,6 +184,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Media.Visual GetVisualChild (int index);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Media.Visual GetVisualChild(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.InkPresenter.GetVisualChild(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetVisualChild (index As Integer) As Visual" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Media::Visual ^ GetVisualChild(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -197,6 +209,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Size MeasureOverride (System.Windows.Size constraint);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Size MeasureOverride(valuetype System.Windows.Size constraint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.InkPresenter.MeasureOverride(System.Windows.Size)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function MeasureOverride (constraint As Size) As Size" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size MeasureOverride(System::Windows::Size constraint);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -220,6 +234,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.InkPresenter.OnCreateAutomationPeer" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnCreateAutomationPeer () As AutomationPeer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationPeer ^ OnCreateAutomationPeer();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -239,6 +255,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Ink.StrokeCollection Strokes { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Ink.StrokeCollection Strokes" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.InkPresenter.Strokes" />
+      <MemberSignature Language="VB.NET" Value="Public Property Strokes As StrokeCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Ink::StrokeCollection ^ Strokes { System::Windows::Ink::StrokeCollection ^ get(); void set(System::Windows::Ink::StrokeCollection ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -279,6 +297,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty StrokesProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty StrokesProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.InkPresenter.StrokesProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StrokesProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ StrokesProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -296,6 +316,8 @@
       <MemberSignature Language="C#" Value="protected override int VisualChildrenCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 VisualChildrenCount" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.InkPresenter.VisualChildrenCount" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property VisualChildrenCount As Integer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property int VisualChildrenCount { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

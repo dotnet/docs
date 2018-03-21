@@ -1,7 +1,9 @@
-<Type Name="DynamicILInfo" FullName="System.Reflection.Emit.DynamicILInfo">
+﻿<Type Name="DynamicILInfo" FullName="System.Reflection.Emit.DynamicILInfo">
   <TypeSignature Language="C#" Value="public class DynamicILInfo" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DynamicILInfo extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.Emit.DynamicILInfo" />
+  <TypeSignature Language="VB.NET" Value="Public Class DynamicILInfo" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DynamicILInfo" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -41,6 +43,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Emit.DynamicMethod DynamicMethod { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Reflection.Emit.DynamicMethod DynamicMethod" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.DynamicILInfo.DynamicMethod" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DynamicMethod As DynamicMethod" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Emit::DynamicMethod ^ DynamicMethod { System::Reflection::Emit::DynamicMethod ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -63,10 +67,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetTokenFor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a token, valid in the scope of the current <see cref="T:System.Reflection.Emit.DynamicILInfo" />, representing a string, field, method, type, or signature in the MSIL stream for the associated dynamic method.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetTokenFor">
       <MemberSignature Language="C#" Value="public int GetTokenFor (byte[] signature);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 GetTokenFor(unsigned int8[] signature) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.DynamicILInfo.GetTokenFor(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetTokenFor (signature As Byte()) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetTokenFor(cli::array &lt;System::Byte&gt; ^ signature);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -97,6 +113,8 @@
       <MemberSignature Language="C#" Value="public int GetTokenFor (System.Reflection.Emit.DynamicMethod method);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 GetTokenFor(class System.Reflection.Emit.DynamicMethod method) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.DynamicILInfo.GetTokenFor(System.Reflection.Emit.DynamicMethod)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetTokenFor (method As DynamicMethod) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetTokenFor(System::Reflection::Emit::DynamicMethod ^ method);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -127,6 +145,8 @@
       <MemberSignature Language="C#" Value="public int GetTokenFor (RuntimeFieldHandle field);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 GetTokenFor(valuetype System.RuntimeFieldHandle field) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.DynamicILInfo.GetTokenFor(System.RuntimeFieldHandle)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetTokenFor (field As RuntimeFieldHandle) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetTokenFor(RuntimeFieldHandle field);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -157,6 +177,8 @@
       <MemberSignature Language="C#" Value="public int GetTokenFor (RuntimeMethodHandle method);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 GetTokenFor(valuetype System.RuntimeMethodHandle method) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.DynamicILInfo.GetTokenFor(System.RuntimeMethodHandle)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetTokenFor (method As RuntimeMethodHandle) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetTokenFor(RuntimeMethodHandle method);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -190,6 +212,8 @@
       <MemberSignature Language="C#" Value="public int GetTokenFor (RuntimeTypeHandle type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 GetTokenFor(valuetype System.RuntimeTypeHandle type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.DynamicILInfo.GetTokenFor(System.RuntimeTypeHandle)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetTokenFor (type As RuntimeTypeHandle) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetTokenFor(RuntimeTypeHandle type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -222,6 +246,8 @@
       <MemberSignature Language="C#" Value="public int GetTokenFor (string literal);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 GetTokenFor(string literal) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.DynamicILInfo.GetTokenFor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetTokenFor (literal As String) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetTokenFor(System::String ^ literal);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -245,6 +271,8 @@
       <MemberSignature Language="C#" Value="public int GetTokenFor (RuntimeFieldHandle field, RuntimeTypeHandle contextType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 GetTokenFor(valuetype System.RuntimeFieldHandle field, valuetype System.RuntimeTypeHandle contextType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.DynamicILInfo.GetTokenFor(System.RuntimeFieldHandle,System.RuntimeTypeHandle)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetTokenFor (field As RuntimeFieldHandle, contextType As RuntimeTypeHandle) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetTokenFor(RuntimeFieldHandle field, RuntimeTypeHandle contextType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -277,6 +305,8 @@
       <MemberSignature Language="C#" Value="public int GetTokenFor (RuntimeMethodHandle method, RuntimeTypeHandle contextType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 GetTokenFor(valuetype System.RuntimeMethodHandle method, valuetype System.RuntimeTypeHandle contextType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.DynamicILInfo.GetTokenFor(System.RuntimeMethodHandle,System.RuntimeTypeHandle)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetTokenFor (method As RuntimeMethodHandle, contextType As RuntimeTypeHandle) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetTokenFor(RuntimeMethodHandle method, RuntimeTypeHandle contextType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -305,10 +335,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetCode">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets the code body of the associated dynamic method.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="SetCode">
       <MemberSignature Language="C#" Value="public void SetCode (byte[] code, int maxStackSize);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetCode(unsigned int8[] code, int32 maxStackSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.DynamicILInfo.SetCode(System.Byte[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetCode (code As Byte(), maxStackSize As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetCode(cli::array &lt;System::Byte&gt; ^ code, int maxStackSize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -344,6 +386,7 @@
       <MemberSignature Language="C#" Value="public void SetCode (byte* code, int codeSize, int maxStackSize);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetCode(unsigned int8* code, int32 codeSize, int32 maxStackSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.DynamicILInfo.SetCode(System.Byte*,System.Int32,System.Int32)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetCode(System::Byte* code, int codeSize, int maxStackSize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -388,10 +431,22 @@
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetExceptions">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets the exception metadata for the associated dynamic method.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="SetExceptions">
       <MemberSignature Language="C#" Value="public void SetExceptions (byte[] exceptions);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetExceptions(unsigned int8[] exceptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.DynamicILInfo.SetExceptions(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetExceptions (exceptions As Byte())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetExceptions(cli::array &lt;System::Byte&gt; ^ exceptions);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -421,6 +476,7 @@
       <MemberSignature Language="C#" Value="public void SetExceptions (byte* exceptions, int exceptionsSize);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetExceptions(unsigned int8* exceptions, int32 exceptionsSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.DynamicILInfo.SetExceptions(System.Byte*,System.Int32)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetExceptions(System::Byte* exceptions, int exceptionsSize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -459,10 +515,22 @@
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetLocalSignature">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets the local variable signature that describes the layout of local variables for the associated dynamic method.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="SetLocalSignature">
       <MemberSignature Language="C#" Value="public void SetLocalSignature (byte[] localSignature);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetLocalSignature(unsigned int8[] localSignature) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.DynamicILInfo.SetLocalSignature(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetLocalSignature (localSignature As Byte())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetLocalSignature(cli::array &lt;System::Byte&gt; ^ localSignature);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -494,6 +562,7 @@
       <MemberSignature Language="C#" Value="public void SetLocalSignature (byte* localSignature, int signatureSize);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetLocalSignature(unsigned int8* localSignature, int32 signatureSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.DynamicILInfo.SetLocalSignature(System.Byte*,System.Int32)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetLocalSignature(System::Byte* localSignature, int signatureSize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -534,45 +603,5 @@
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
       </Docs>
     </Member>
-    <MemberGroup MemberName="SetCode">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Sets the code body of the associated dynamic method.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="SetExceptions">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Sets the exception metadata for the associated dynamic method.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetTokenFor">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets a token, valid in the scope of the current <see cref="T:System.Reflection.Emit.DynamicILInfo" />, representing a string, field, method, type, or signature in the MSIL stream for the associated dynamic method.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="SetLocalSignature">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Sets the local variable signature that describes the layout of local variables for the associated dynamic method.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

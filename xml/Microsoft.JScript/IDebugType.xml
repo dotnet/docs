@@ -1,7 +1,9 @@
-<Type Name="IDebugType" FullName="Microsoft.JScript.IDebugType">
+﻿<Type Name="IDebugType" FullName="Microsoft.JScript.IDebugType">
   <TypeSignature Language="C#" Value="public interface IDebugType" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDebugType" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.IDebugType" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IDebugType" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IDebugType" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -27,6 +29,8 @@
       <MemberSignature Language="C#" Value="public bool HasInstance (object o);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool HasInstance(object o) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IDebugType.HasInstance(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function HasInstance (o As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool HasInstance(System::Object ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

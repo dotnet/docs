@@ -1,7 +1,9 @@
-<Type Name="RemovedRuleSetAction" FullName="System.Workflow.Activities.Rules.RemovedRuleSetAction">
+﻿<Type Name="RemovedRuleSetAction" FullName="System.Workflow.Activities.Rules.RemovedRuleSetAction">
   <TypeSignature Language="C#" Value="public sealed class RemovedRuleSetAction : System.Workflow.Activities.Rules.RuleSetChangeAction" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RemovedRuleSetAction extends System.Workflow.Activities.Rules.RuleSetChangeAction" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.Rules.RemovedRuleSetAction" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RemovedRuleSetAction&#xA;Inherits RuleSetChangeAction" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RemovedRuleSetAction sealed : System::Workflow::Activities::Rules::RuleSetChangeAction" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,10 +25,21 @@
     <altmember cref="T:System.Workflow.Runtime.Tracking.TrackingWorkflowChangedEventArgs" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.RemovedRuleSetAction" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public RemovedRuleSetAction ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RemovedRuleSetAction.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RemovedRuleSetAction();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -42,6 +55,8 @@
       <MemberSignature Language="C#" Value="public RemovedRuleSetAction (System.Workflow.Activities.Rules.RuleSet removedRuleSetDefinition);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Workflow.Activities.Rules.RuleSet removedRuleSetDefinition) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RemovedRuleSetAction.#ctor(System.Workflow.Activities.Rules.RuleSet)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (removedRuleSetDefinition As RuleSet)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RemovedRuleSetAction(System::Workflow::Activities::Rules::RuleSet ^ removedRuleSetDefinition);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -62,6 +77,8 @@
       <MemberSignature Language="C#" Value="protected override bool ApplyTo (System.Workflow.ComponentModel.Activity rootActivity);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ApplyTo(class System.Workflow.ComponentModel.Activity rootActivity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RemovedRuleSetAction.ApplyTo(System.Workflow.ComponentModel.Activity)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function ApplyTo (rootActivity As Activity) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool ApplyTo(System::Workflow::ComponentModel::Activity ^ rootActivity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -84,6 +101,8 @@
       <MemberSignature Language="C#" Value="public System.Workflow.Activities.Rules.RuleSet RuleSetDefinition { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.Activities.Rules.RuleSet RuleSetDefinition" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Rules.RemovedRuleSetAction.RuleSetDefinition" />
+      <MemberSignature Language="VB.NET" Value="Public Property RuleSetDefinition As RuleSet" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::Activities::Rules::RuleSet ^ RuleSetDefinition { System::Workflow::Activities::Rules::RuleSet ^ get(); void set(System::Workflow::Activities::Rules::RuleSet ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -91,7 +110,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -108,6 +127,8 @@
       <MemberSignature Language="C#" Value="public override string RuleSetName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string RuleSetName" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Rules.RemovedRuleSetAction.RuleSetName" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property RuleSetName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ RuleSetName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -122,14 +143,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.RemovedRuleSetAction" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

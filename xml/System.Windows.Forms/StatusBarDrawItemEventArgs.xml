@@ -1,7 +1,9 @@
-<Type Name="StatusBarDrawItemEventArgs" FullName="System.Windows.Forms.StatusBarDrawItemEventArgs">
+﻿<Type Name="StatusBarDrawItemEventArgs" FullName="System.Windows.Forms.StatusBarDrawItemEventArgs">
   <TypeSignature Language="C#" Value="public class StatusBarDrawItemEventArgs : System.Windows.Forms.DrawItemEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StatusBarDrawItemEventArgs extends System.Windows.Forms.DrawItemEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.StatusBarDrawItemEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class StatusBarDrawItemEventArgs&#xA;Inherits DrawItemEventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StatusBarDrawItemEventArgs : System::Windows::Forms::DrawItemEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,10 +37,20 @@
     <altmember cref="T:System.Drawing.Rectangle" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.StatusBarDrawItemEventArgs" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public StatusBarDrawItemEventArgs (System.Drawing.Graphics g, System.Drawing.Font font, System.Drawing.Rectangle r, int itemId, System.Windows.Forms.DrawItemState itemState, System.Windows.Forms.StatusBarPanel panel);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Graphics g, class System.Drawing.Font font, valuetype System.Drawing.Rectangle r, int32 itemId, valuetype System.Windows.Forms.DrawItemState itemState, class System.Windows.Forms.StatusBarPanel panel) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.StatusBarDrawItemEventArgs.#ctor(System.Drawing.Graphics,System.Drawing.Font,System.Drawing.Rectangle,System.Int32,System.Windows.Forms.DrawItemState,System.Windows.Forms.StatusBarPanel)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StatusBarDrawItemEventArgs(System::Drawing::Graphics ^ g, System::Drawing::Font ^ font, System::Drawing::Rectangle r, int itemId, System::Windows::Forms::DrawItemState itemState, System::Windows::Forms::StatusBarPanel ^ panel);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -72,6 +84,7 @@
       <MemberSignature Language="C#" Value="public StatusBarDrawItemEventArgs (System.Drawing.Graphics g, System.Drawing.Font font, System.Drawing.Rectangle r, int itemId, System.Windows.Forms.DrawItemState itemState, System.Windows.Forms.StatusBarPanel panel, System.Drawing.Color foreColor, System.Drawing.Color backColor);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Graphics g, class System.Drawing.Font font, valuetype System.Drawing.Rectangle r, int32 itemId, valuetype System.Windows.Forms.DrawItemState itemState, class System.Windows.Forms.StatusBarPanel panel, valuetype System.Drawing.Color foreColor, valuetype System.Drawing.Color backColor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.StatusBarDrawItemEventArgs.#ctor(System.Drawing.Graphics,System.Drawing.Font,System.Drawing.Rectangle,System.Int32,System.Windows.Forms.DrawItemState,System.Windows.Forms.StatusBarPanel,System.Drawing.Color,System.Drawing.Color)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StatusBarDrawItemEventArgs(System::Drawing::Graphics ^ g, System::Drawing::Font ^ font, System::Drawing::Rectangle r, int itemId, System::Windows::Forms::DrawItemState itemState, System::Windows::Forms::StatusBarPanel ^ panel, System::Drawing::Color foreColor, System::Drawing::Color backColor);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -104,6 +117,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.StatusBarPanel Panel { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.StatusBarPanel Panel" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.StatusBarDrawItemEventArgs.Panel" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Panel As StatusBarPanel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::StatusBarPanel ^ Panel { System::Windows::Forms::StatusBarPanel ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -136,14 +151,5 @@
         <altmember cref="E:System.Windows.Forms.StatusBar.DrawItem" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.StatusBarDrawItemEventArgs" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

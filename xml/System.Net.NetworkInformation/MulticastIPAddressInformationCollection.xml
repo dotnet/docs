@@ -1,7 +1,9 @@
-<Type Name="MulticastIPAddressInformationCollection" FullName="System.Net.NetworkInformation.MulticastIPAddressInformationCollection">
+﻿<Type Name="MulticastIPAddressInformationCollection" FullName="System.Net.NetworkInformation.MulticastIPAddressInformationCollection">
   <TypeSignature Language="C#" Value="public class MulticastIPAddressInformationCollection : System.Collections.Generic.ICollection&lt;System.Net.NetworkInformation.MulticastIPAddressInformation&gt;, System.Collections.Generic.IEnumerable&lt;System.Net.NetworkInformation.MulticastIPAddressInformation&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MulticastIPAddressInformationCollection extends System.Object implements class System.Collections.Generic.ICollection`1&lt;class System.Net.NetworkInformation.MulticastIPAddressInformation&gt;, class System.Collections.Generic.IEnumerable`1&lt;class System.Net.NetworkInformation.MulticastIPAddressInformation&gt;, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.Net.NetworkInformation.MulticastIPAddressInformationCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class MulticastIPAddressInformationCollection&#xA;Implements ICollection(Of MulticastIPAddressInformation), IEnumerable(Of MulticastIPAddressInformation)" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MulticastIPAddressInformationCollection : System::Collections::Generic::ICollection&lt;System::Net::NetworkInformation::MulticastIPAddressInformation ^&gt;, System::Collections::Generic::IEnumerable&lt;System::Net::NetworkInformation::MulticastIPAddressInformation ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Net.NetworkInformation</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -33,9 +35,11 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="protected MulticastIPAddressInformationCollection ();" />
+      <MemberSignature Language="C#" Value="protected internal MulticastIPAddressInformationCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.MulticastIPAddressInformationCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; MulticastIPAddressInformationCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -61,7 +65,12 @@
       <MemberSignature Language="C#" Value="public virtual void Add (System.Net.NetworkInformation.MulticastIPAddressInformation address);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Add(class System.Net.NetworkInformation.MulticastIPAddressInformation address) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.MulticastIPAddressInformationCollection.Add(System.Net.NetworkInformation.MulticastIPAddressInformation)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Add (address As MulticastIPAddressInformation)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Add(System::Net::NetworkInformation::MulticastIPAddressInformation ^ address);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Add(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -92,7 +101,12 @@
       <MemberSignature Language="C#" Value="public virtual void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.MulticastIPAddressInformationCollection.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Clear ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Clear</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -120,7 +134,12 @@
       <MemberSignature Language="C#" Value="public virtual bool Contains (System.Net.NetworkInformation.MulticastIPAddressInformation address);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Contains(class System.Net.NetworkInformation.MulticastIPAddressInformation address) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.MulticastIPAddressInformationCollection.Contains(System.Net.NetworkInformation.MulticastIPAddressInformation)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Contains (address As MulticastIPAddressInformation) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Contains(System::Net::NetworkInformation::MulticastIPAddressInformation ^ address);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Contains(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -153,6 +172,8 @@
       <MemberSignature Language="C#" Value="public virtual void CopyTo (System.Net.NetworkInformation.MulticastIPAddressInformation[] array, int offset);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.Net.NetworkInformation.MulticastIPAddressInformation[] array, int32 offset) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.MulticastIPAddressInformationCollection.CopyTo(System.Net.NetworkInformation.MulticastIPAddressInformation[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub CopyTo (array As MulticastIPAddressInformation(), offset As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(cli::array &lt;System::Net::NetworkInformation::MulticastIPAddressInformation ^&gt; ^ array, int offset);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -204,7 +225,12 @@
       <MemberSignature Language="C#" Value="public virtual int Count { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.MulticastIPAddressInformationCollection.Count" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Count { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.Generic.ICollection`1.Count</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -232,7 +258,12 @@
       <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerator&lt;System.Net.NetworkInformation.MulticastIPAddressInformation&gt; GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerator`1&lt;class System.Net.NetworkInformation.MulticastIPAddressInformation&gt; GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.MulticastIPAddressInformationCollection.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEnumerator () As IEnumerator(Of MulticastIPAddressInformation)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IEnumerator&lt;System::Net::NetworkInformation::MulticastIPAddressInformation ^&gt; ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -272,7 +303,12 @@
       <MemberSignature Language="C#" Value="public virtual bool IsReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.MulticastIPAddressInformationCollection.IsReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsReadOnly As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.Generic.ICollection`1.IsReadOnly</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -301,6 +337,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Net.NetworkInformation.MulticastIPAddressInformation this[int index] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.NetworkInformation.MulticastIPAddressInformation Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.MulticastIPAddressInformationCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Overridable ReadOnly Property Item(index As Integer) As MulticastIPAddressInformation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Net::NetworkInformation::MulticastIPAddressInformation ^ default[int] { System::Net::NetworkInformation::MulticastIPAddressInformation ^ get(int index); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -333,7 +371,12 @@
       <MemberSignature Language="C#" Value="public virtual bool Remove (System.Net.NetworkInformation.MulticastIPAddressInformation address);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Remove(class System.Net.NetworkInformation.MulticastIPAddressInformation address) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.MulticastIPAddressInformationCollection.Remove(System.Net.NetworkInformation.MulticastIPAddressInformation)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Remove (address As MulticastIPAddressInformation) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Remove(System::Net::NetworkInformation::MulticastIPAddressInformation ^ address);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Remove(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -365,7 +408,12 @@
       <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.MulticastIPAddressInformationCollection.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator Implements IEnumerable.GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IEnumerator ^ System.Collections.IEnumerable.GetEnumerator() = System::Collections::IEnumerable::GetEnumerator;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>

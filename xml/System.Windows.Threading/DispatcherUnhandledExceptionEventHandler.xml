@@ -1,7 +1,9 @@
-<Type Name="DispatcherUnhandledExceptionEventHandler" FullName="System.Windows.Threading.DispatcherUnhandledExceptionEventHandler">
+﻿<Type Name="DispatcherUnhandledExceptionEventHandler" FullName="System.Windows.Threading.DispatcherUnhandledExceptionEventHandler">
   <TypeSignature Language="C#" Value="public delegate void DispatcherUnhandledExceptionEventHandler(object sender, DispatcherUnhandledExceptionEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DispatcherUnhandledExceptionEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Threading.DispatcherUnhandledExceptionEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub DispatcherUnhandledExceptionEventHandler(sender As Object, e As DispatcherUnhandledExceptionEventArgs)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void DispatcherUnhandledExceptionEventHandler(System::Object ^ sender, DispatcherUnhandledExceptionEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -1,7 +1,9 @@
-<Type Name="RecognizeMode" FullName="System.Speech.Recognition.RecognizeMode">
+﻿<Type Name="RecognizeMode" FullName="System.Speech.Recognition.RecognizeMode">
   <TypeSignature Language="C#" Value="public enum RecognizeMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RecognizeMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Speech.Recognition.RecognizeMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum RecognizeMode" />
+  <TypeSignature Language="C++ CLI" Value="public enum class RecognizeMode" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -69,6 +71,8 @@ private void _startRecogButton_Click(object sender, EventArgs eventArgs)
       <MemberSignature Language="C#" Value="Multiple" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Recognition.RecognizeMode Multiple = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Speech.Recognition.RecognizeMode.Multiple" />
+      <MemberSignature Language="VB.NET" Value="Multiple" />
+      <MemberSignature Language="C++ CLI" Value="Multiple" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -77,6 +81,7 @@ private void _startRecogButton_Click(object sender, EventArgs eventArgs)
       <ReturnValue>
         <ReturnType>System.Speech.Recognition.RecognizeMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Specifies that recognition does not terminate after completion.</summary>
       </Docs>
@@ -85,6 +90,8 @@ private void _startRecogButton_Click(object sender, EventArgs eventArgs)
       <MemberSignature Language="C#" Value="Single" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Recognition.RecognizeMode Single = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Speech.Recognition.RecognizeMode.Single" />
+      <MemberSignature Language="VB.NET" Value="Single" />
+      <MemberSignature Language="C++ CLI" Value="Single" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -93,6 +100,7 @@ private void _startRecogButton_Click(object sender, EventArgs eventArgs)
       <ReturnValue>
         <ReturnType>System.Speech.Recognition.RecognizeMode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Specifies that recognition terminates after completion.</summary>
       </Docs>

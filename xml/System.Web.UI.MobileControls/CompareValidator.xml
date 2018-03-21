@@ -1,7 +1,9 @@
-<Type Name="CompareValidator" FullName="System.Web.UI.MobileControls.CompareValidator">
+﻿<Type Name="CompareValidator" FullName="System.Web.UI.MobileControls.CompareValidator">
   <TypeSignature Language="C#" Value="public class CompareValidator : System.Web.UI.MobileControls.BaseValidator" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CompareValidator extends System.Web.UI.MobileControls.BaseValidator" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.CompareValidator" />
+  <TypeSignature Language="VB.NET" Value="Public Class CompareValidator&#xA;Inherits BaseValidator" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CompareValidator : System::Web::UI::MobileControls::BaseValidator" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,6 +57,8 @@
       <MemberSignature Language="C#" Value="public CompareValidator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.CompareValidator.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CompareValidator();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -70,6 +74,8 @@
       <MemberSignature Language="C#" Value="protected override bool ControlPropertiesValid ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ControlPropertiesValid() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.CompareValidator.ControlPropertiesValid" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function ControlPropertiesValid () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool ControlPropertiesValid();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -104,6 +110,8 @@
       <MemberSignature Language="C#" Value="public string ControlToCompare { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ControlToCompare" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.CompareValidator.ControlToCompare" />
+      <MemberSignature Language="VB.NET" Value="Public Property ControlToCompare As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ControlToCompare { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -141,6 +149,8 @@
       <MemberSignature Language="C#" Value="protected override System.Web.UI.WebControls.BaseValidator CreateWebValidator ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Web.UI.WebControls.BaseValidator CreateWebValidator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.CompareValidator.CreateWebValidator" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateWebValidator () As BaseValidator" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Web::UI::WebControls::BaseValidator ^ CreateWebValidator();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -160,6 +170,8 @@
       <MemberSignature Language="C#" Value="protected override bool EvaluateIsValid ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool EvaluateIsValid() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.CompareValidator.EvaluateIsValid" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function EvaluateIsValid () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool EvaluateIsValid();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -179,6 +191,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.ValidationCompareOperator Operator { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.ValidationCompareOperator Operator" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.CompareValidator.Operator" />
+      <MemberSignature Language="VB.NET" Value="Public Property Operator As ValidationCompareOperator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::ValidationCompareOperator Operator { System::Web::UI::WebControls::ValidationCompareOperator get(); void set(System::Web::UI::WebControls::ValidationCompareOperator value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -189,7 +203,7 @@
           <AttributeName>System.ComponentModel.Bindable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+          <AttributeName>System.ComponentModel.DefaultValue</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -235,6 +249,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.ValidationDataType Type { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.ValidationDataType Type" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.CompareValidator.Type" />
+      <MemberSignature Language="VB.NET" Value="Public Property Type As ValidationDataType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::ValidationDataType Type { System::Web::UI::WebControls::ValidationDataType get(); void set(System::Web::UI::WebControls::ValidationDataType value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -245,7 +261,7 @@
           <AttributeName>System.ComponentModel.Bindable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+          <AttributeName>System.ComponentModel.DefaultValue</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -277,6 +293,8 @@
       <MemberSignature Language="C#" Value="public string ValueToCompare { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ValueToCompare" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.CompareValidator.ValueToCompare" />
+      <MemberSignature Language="VB.NET" Value="Public Property ValueToCompare As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ValueToCompare { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

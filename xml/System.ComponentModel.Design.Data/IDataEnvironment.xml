@@ -1,7 +1,9 @@
-<Type Name="IDataEnvironment" FullName="System.ComponentModel.Design.Data.IDataEnvironment">
+﻿<Type Name="IDataEnvironment" FullName="System.ComponentModel.Design.Data.IDataEnvironment">
   <TypeSignature Language="C#" Value="public interface IDataEnvironment" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDataEnvironment" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Data.IDataEnvironment" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IDataEnvironment" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IDataEnvironment" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +27,8 @@
       <MemberSignature Language="C#" Value="public System.ComponentModel.Design.Data.DesignerDataConnection BuildConnection (System.Windows.Forms.IWin32Window owner, System.ComponentModel.Design.Data.DesignerDataConnection initialConnection);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ComponentModel.Design.Data.DesignerDataConnection BuildConnection(class System.Windows.Forms.IWin32Window owner, class System.ComponentModel.Design.Data.DesignerDataConnection initialConnection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Data.IDataEnvironment.BuildConnection(System.Windows.Forms.IWin32Window,System.ComponentModel.Design.Data.DesignerDataConnection)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BuildConnection (owner As IWin32Window, initialConnection As DesignerDataConnection) As DesignerDataConnection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::Design::Data::DesignerDataConnection ^ BuildConnection(System::Windows::Forms::IWin32Window ^ owner, System::ComponentModel::Design::Data::DesignerDataConnection ^ initialConnection);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -62,6 +66,8 @@
       <MemberSignature Language="C#" Value="public string BuildQuery (System.Windows.Forms.IWin32Window owner, System.ComponentModel.Design.Data.DesignerDataConnection connection, System.ComponentModel.Design.Data.QueryBuilderMode mode, string initialQueryText);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string BuildQuery(class System.Windows.Forms.IWin32Window owner, class System.ComponentModel.Design.Data.DesignerDataConnection connection, valuetype System.ComponentModel.Design.Data.QueryBuilderMode mode, string initialQueryText) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Data.IDataEnvironment.BuildQuery(System.Windows.Forms.IWin32Window,System.ComponentModel.Design.Data.DesignerDataConnection,System.ComponentModel.Design.Data.QueryBuilderMode,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BuildQuery (owner As IWin32Window, connection As DesignerDataConnection, mode As QueryBuilderMode, initialQueryText As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ BuildQuery(System::Windows::Forms::IWin32Window ^ owner, System::ComponentModel::Design::Data::DesignerDataConnection ^ connection, System::ComponentModel::Design::Data::QueryBuilderMode mode, System::String ^ initialQueryText);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -99,6 +105,8 @@
       <MemberSignature Language="C#" Value="public System.ComponentModel.Design.Data.DesignerDataConnection ConfigureConnection (System.Windows.Forms.IWin32Window owner, System.ComponentModel.Design.Data.DesignerDataConnection connection, string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ComponentModel.Design.Data.DesignerDataConnection ConfigureConnection(class System.Windows.Forms.IWin32Window owner, class System.ComponentModel.Design.Data.DesignerDataConnection connection, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Data.IDataEnvironment.ConfigureConnection(System.Windows.Forms.IWin32Window,System.ComponentModel.Design.Data.DesignerDataConnection,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ConfigureConnection (owner As IWin32Window, connection As DesignerDataConnection, name As String) As DesignerDataConnection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::Design::Data::DesignerDataConnection ^ ConfigureConnection(System::Windows::Forms::IWin32Window ^ owner, System::ComponentModel::Design::Data::DesignerDataConnection ^ connection, System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -142,6 +150,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.ICollection Connections { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ICollection Connections" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Data.IDataEnvironment.Connections" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Connections As ICollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ICollection ^ Connections { System::Collections::ICollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -169,6 +179,8 @@
       <MemberSignature Language="C#" Value="public System.CodeDom.CodeExpression GetCodeExpression (System.ComponentModel.Design.Data.DesignerDataConnection connection);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.CodeDom.CodeExpression GetCodeExpression(class System.ComponentModel.Design.Data.DesignerDataConnection connection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Data.IDataEnvironment.GetCodeExpression(System.ComponentModel.Design.Data.DesignerDataConnection)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetCodeExpression (connection As DesignerDataConnection) As CodeExpression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::CodeDom::CodeExpression ^ GetCodeExpression(System::ComponentModel::Design::Data::DesignerDataConnection ^ connection);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -191,6 +203,8 @@
       <MemberSignature Language="C#" Value="public System.ComponentModel.Design.Data.IDesignerDataSchema GetConnectionSchema (System.ComponentModel.Design.Data.DesignerDataConnection connection);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ComponentModel.Design.Data.IDesignerDataSchema GetConnectionSchema(class System.ComponentModel.Design.Data.DesignerDataConnection connection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Data.IDataEnvironment.GetConnectionSchema(System.ComponentModel.Design.Data.DesignerDataConnection)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetConnectionSchema (connection As DesignerDataConnection) As IDesignerDataSchema" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::Design::Data::IDesignerDataSchema ^ GetConnectionSchema(System::ComponentModel::Design::Data::DesignerDataConnection ^ connection);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -220,6 +234,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Common.DbConnection GetDesignTimeConnection (System.ComponentModel.Design.Data.DesignerDataConnection connection);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Common.DbConnection GetDesignTimeConnection(class System.ComponentModel.Design.Data.DesignerDataConnection connection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Data.IDataEnvironment.GetDesignTimeConnection(System.ComponentModel.Design.Data.DesignerDataConnection)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetDesignTimeConnection (connection As DesignerDataConnection) As DbConnection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Common::DbConnection ^ GetDesignTimeConnection(System::ComponentModel::Design::Data::DesignerDataConnection ^ connection);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

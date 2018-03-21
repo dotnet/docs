@@ -1,7 +1,9 @@
-<Type Name="KeyTipControl" FullName="System.Windows.Controls.KeyTipControl">
+﻿<Type Name="KeyTipControl" FullName="System.Windows.Controls.KeyTipControl">
   <TypeSignature Language="C#" Value="public class KeyTipControl : System.Windows.Controls.Control" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi KeyTipControl extends System.Windows.Controls.Control" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.KeyTipControl" />
+  <TypeSignature Language="VB.NET" Value="Public Class KeyTipControl&#xA;Inherits Control" />
+  <TypeSignature Language="C++ CLI" Value="public ref class KeyTipControl : System::Windows::Controls::Control" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public KeyTipControl ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.KeyTipControl.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; KeyTipControl();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -34,6 +38,8 @@
       <MemberSignature Language="C#" Value="public string Text { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Text" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.KeyTipControl.Text" />
+      <MemberSignature Language="VB.NET" Value="Public Property Text As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -68,6 +74,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty TextProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty TextProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.KeyTipControl.TextProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TextProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ TextProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>

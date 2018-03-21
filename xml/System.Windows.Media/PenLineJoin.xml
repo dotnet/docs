@@ -1,7 +1,9 @@
-<Type Name="PenLineJoin" FullName="System.Windows.Media.PenLineJoin">
+﻿<Type Name="PenLineJoin" FullName="System.Windows.Media.PenLineJoin">
   <TypeSignature Language="C#" Value="public enum PenLineJoin" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PenLineJoin extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.PenLineJoin" />
+  <TypeSignature Language="VB.NET" Value="Public Enum PenLineJoin" />
+  <TypeSignature Language="C++ CLI" Value="public enum class PenLineJoin" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +35,8 @@
       <MemberSignature Language="C#" Value="Bevel" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.PenLineJoin Bevel = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.PenLineJoin.Bevel" />
+      <MemberSignature Language="VB.NET" Value="Bevel" />
+      <MemberSignature Language="C++ CLI" Value="Bevel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -41,6 +45,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Media.PenLineJoin</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Beveled vertices.</summary>
       </Docs>
@@ -49,6 +54,8 @@
       <MemberSignature Language="C#" Value="Miter" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.PenLineJoin Miter = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.PenLineJoin.Miter" />
+      <MemberSignature Language="VB.NET" Value="Miter" />
+      <MemberSignature Language="C++ CLI" Value="Miter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -57,6 +64,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Media.PenLineJoin</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Regular angular vertices.</summary>
       </Docs>
@@ -65,6 +73,8 @@
       <MemberSignature Language="C#" Value="Round" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.PenLineJoin Round = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.PenLineJoin.Round" />
+      <MemberSignature Language="VB.NET" Value="Round" />
+      <MemberSignature Language="C++ CLI" Value="Round" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -73,6 +83,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Media.PenLineJoin</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Rounded vertices.</summary>
       </Docs>

@@ -1,7 +1,9 @@
-<Type Name="IExpressionEvaluationFrame" FullName="System.Workflow.Runtime.DebugEngine.IExpressionEvaluationFrame">
+﻿<Type Name="IExpressionEvaluationFrame" FullName="System.Workflow.Runtime.DebugEngine.IExpressionEvaluationFrame">
   <TypeSignature Language="C#" Value="public interface IExpressionEvaluationFrame" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IExpressionEvaluationFrame" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.DebugEngine.IExpressionEvaluationFrame" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IExpressionEvaluationFrame" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IExpressionEvaluationFrame" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +32,8 @@
       <MemberSignature Language="C#" Value="public void CreateEvaluationFrame (System.Workflow.Runtime.DebugEngine.IInstanceTable instanceTable, System.Workflow.Runtime.DebugEngine.DebugEngineCallback callback);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CreateEvaluationFrame(class System.Workflow.Runtime.DebugEngine.IInstanceTable instanceTable, class System.Workflow.Runtime.DebugEngine.DebugEngineCallback callback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.DebugEngine.IExpressionEvaluationFrame.CreateEvaluationFrame(System.Workflow.Runtime.DebugEngine.IInstanceTable,System.Workflow.Runtime.DebugEngine.DebugEngineCallback)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CreateEvaluationFrame (instanceTable As IInstanceTable, callback As DebugEngineCallback)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CreateEvaluationFrame(System::Workflow::Runtime::DebugEngine::IInstanceTable ^ instanceTable, System::Workflow::Runtime::DebugEngine::DebugEngineCallback ^ callback);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>

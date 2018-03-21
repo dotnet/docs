@@ -1,7 +1,9 @@
-<Type Name="WorkflowSymbol" FullName="System.Activities.Debugger.Symbol.WorkflowSymbol">
+﻿<Type Name="WorkflowSymbol" FullName="System.Activities.Debugger.Symbol.WorkflowSymbol">
   <TypeSignature Language="C#" Value="public class WorkflowSymbol" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WorkflowSymbol extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Debugger.Symbol.WorkflowSymbol" />
+  <TypeSignature Language="VB.NET" Value="Public Class WorkflowSymbol" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WorkflowSymbol" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public WorkflowSymbol ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.Symbol.WorkflowSymbol.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowSymbol();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -34,6 +38,8 @@
       <MemberSignature Language="C#" Value="public bool CalculateChecksum ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool CalculateChecksum() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.Symbol.WorkflowSymbol.CalculateChecksum" />
+      <MemberSignature Language="VB.NET" Value="Public Function CalculateChecksum () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool CalculateChecksum();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -54,6 +60,8 @@
       <MemberSignature Language="C#" Value="public static System.Activities.Debugger.Symbol.WorkflowSymbol Decode (string symbolString);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Activities.Debugger.Symbol.WorkflowSymbol Decode(string symbolString) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.Symbol.WorkflowSymbol.Decode(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Decode (symbolString As String) As WorkflowSymbol" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Activities::Debugger::Symbol::WorkflowSymbol ^ Decode(System::String ^ symbolString);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -76,6 +84,8 @@
       <MemberSignature Language="C#" Value="public string Encode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string Encode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.Symbol.WorkflowSymbol.Encode" />
+      <MemberSignature Language="VB.NET" Value="Public Function Encode () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ Encode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -95,6 +105,8 @@
       <MemberSignature Language="C#" Value="public string FileName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string FileName" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Debugger.Symbol.WorkflowSymbol.FileName" />
+      <MemberSignature Language="VB.NET" Value="Public Property FileName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FileName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -113,6 +125,8 @@
       <MemberSignature Language="C#" Value="public byte[] GetChecksum ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] GetChecksum() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.Symbol.WorkflowSymbol.GetChecksum" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetChecksum () As Byte()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ GetChecksum();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -132,6 +146,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.ICollection&lt;System.Activities.Debugger.Symbol.ActivitySymbol&gt; Symbols { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;class System.Activities.Debugger.Symbol.ActivitySymbol&gt; Symbols" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Debugger.Symbol.WorkflowSymbol.Symbols" />
+      <MemberSignature Language="VB.NET" Value="Public Property Symbols As ICollection(Of ActivitySymbol)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;System::Activities::Debugger::Symbol::ActivitySymbol ^&gt; ^ Symbols { System::Collections::Generic::ICollection&lt;System::Activities::Debugger::Symbol::ActivitySymbol ^&gt; ^ get(); void set(System::Collections::Generic::ICollection&lt;System::Activities::Debugger::Symbol::ActivitySymbol ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -150,6 +166,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.Symbol.WorkflowSymbol.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

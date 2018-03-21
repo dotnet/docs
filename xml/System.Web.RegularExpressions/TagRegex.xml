@@ -1,7 +1,9 @@
-<Type Name="TagRegex" FullName="System.Web.RegularExpressions.TagRegex">
+﻿<Type Name="TagRegex" FullName="System.Web.RegularExpressions.TagRegex">
   <TypeSignature Language="C#" Value="public class TagRegex : System.Text.RegularExpressions.Regex" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi TagRegex extends System.Text.RegularExpressions.Regex" />
   <TypeSignature Language="DocId" Value="T:System.Web.RegularExpressions.TagRegex" />
+  <TypeSignature Language="VB.NET" Value="Public Class TagRegex&#xA;Inherits Regex" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TagRegex : System::Text::RegularExpressions::Regex" />
   <AssemblyInfo>
     <AssemblyName>System.Web.RegularExpressions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,10 +30,21 @@
     <altmember cref="T:System.Web.RegularExpressions.TagRegex35" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.RegularExpressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.RegularExpressions.TagRegex" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public TagRegex ();" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.RegularExpressions.TagRegex.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TagRegex();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.RegularExpressions</AssemblyName>
@@ -48,6 +61,8 @@
       <MemberSignature Language="C#" Value="public TagRegex (TimeSpan A_1);" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor(valuetype System.TimeSpan A_1) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.RegularExpressions.TagRegex.#ctor(System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (A_1 As TimeSpan)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TagRegex(TimeSpan A_1);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.RegularExpressions</AssemblyName>
@@ -70,14 +85,5 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.RegularExpressions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.RegularExpressions.TagRegex" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

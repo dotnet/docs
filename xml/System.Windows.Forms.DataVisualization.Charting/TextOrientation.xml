@@ -1,7 +1,9 @@
-<Type Name="TextOrientation" FullName="System.Windows.Forms.DataVisualization.Charting.TextOrientation">
+﻿<Type Name="TextOrientation" FullName="System.Windows.Forms.DataVisualization.Charting.TextOrientation">
   <TypeSignature Language="C#" Value="public enum TextOrientation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TextOrientation extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.TextOrientation" />
+  <TypeSignature Language="VB.NET" Value="Public Enum TextOrientation" />
+  <TypeSignature Language="C++ CLI" Value="public enum class TextOrientation" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -18,6 +20,8 @@
       <MemberSignature Language="C#" Value="Auto" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.TextOrientation Auto = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.TextOrientation.Auto" />
+      <MemberSignature Language="VB.NET" Value="Auto" />
+      <MemberSignature Language="C++ CLI" Value="Auto" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -26,6 +30,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.TextOrientation</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Text orientation is automatically determined, based on the type of chart element in which the text appears.</summary>
       </Docs>
@@ -34,6 +39,8 @@
       <MemberSignature Language="C#" Value="Horizontal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.TextOrientation Horizontal = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.TextOrientation.Horizontal" />
+      <MemberSignature Language="VB.NET" Value="Horizontal" />
+      <MemberSignature Language="C++ CLI" Value="Horizontal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -42,6 +49,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.TextOrientation</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Text is horizontal.</summary>
       </Docs>
@@ -50,6 +58,8 @@
       <MemberSignature Language="C#" Value="Rotated270" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.TextOrientation Rotated270 = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.TextOrientation.Rotated270" />
+      <MemberSignature Language="VB.NET" Value="Rotated270" />
+      <MemberSignature Language="C++ CLI" Value="Rotated270" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -58,6 +68,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.TextOrientation</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Text is rotated 270 degrees and oriented from bottom to top.</summary>
       </Docs>
@@ -66,6 +77,8 @@
       <MemberSignature Language="C#" Value="Rotated90" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.TextOrientation Rotated90 = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.TextOrientation.Rotated90" />
+      <MemberSignature Language="VB.NET" Value="Rotated90" />
+      <MemberSignature Language="C++ CLI" Value="Rotated90" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -74,6 +87,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.TextOrientation</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Text is rotated 90 degrees and oriented from top to bottom.</summary>
       </Docs>
@@ -82,6 +96,8 @@
       <MemberSignature Language="C#" Value="Stacked" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.TextOrientation Stacked = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.TextOrientation.Stacked" />
+      <MemberSignature Language="VB.NET" Value="Stacked" />
+      <MemberSignature Language="C++ CLI" Value="Stacked" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -90,6 +106,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.TextOrientation</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Text characters are not rotated and are positioned one below the other.</summary>
       </Docs>

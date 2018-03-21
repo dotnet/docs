@@ -1,7 +1,9 @@
-<Type Name="TypeDescriptor" FullName="System.ComponentModel.TypeDescriptor">
+﻿<Type Name="TypeDescriptor" FullName="System.ComponentModel.TypeDescriptor">
   <TypeSignature Language="C#" Value="public sealed class TypeDescriptor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TypeDescriptor extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.TypeDescriptor" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TypeDescriptor" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TypeDescriptor sealed" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -55,10 +57,22 @@
     <altmember cref="T:System.ComponentModel.ISite" />
   </Docs>
   <Members>
+    <MemberGroup MemberName="AddAttributes">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds class-level attributes to the target component.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AddAttributes">
       <MemberSignature Language="C#" Value="public static System.ComponentModel.TypeDescriptionProvider AddAttributes (object instance, params Attribute[] attributes);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ComponentModel.TypeDescriptionProvider AddAttributes(object instance, class System.Attribute[] attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptor.AddAttributes(System.Object,System.Attribute[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AddAttributes (instance As Object, ParamArray attributes As Attribute()) As TypeDescriptionProvider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ComponentModel::TypeDescriptionProvider ^ AddAttributes(System::Object ^ instance, ... cli::array &lt;Attribute ^&gt; ^ attributes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -114,6 +128,7 @@
       <MemberSignature Language="C#" Value="public static System.ComponentModel.TypeDescriptionProvider AddAttributes (Type type, params Attribute[] attributes);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ComponentModel.TypeDescriptionProvider AddAttributes(class System.Type type, class System.Attribute[] attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptor.AddAttributes(System.Type,System.Attribute[])" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ComponentModel::TypeDescriptionProvider ^ AddAttributes(Type ^ type, ... cli::array &lt;Attribute ^&gt; ^ attributes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -169,6 +184,8 @@
       <MemberSignature Language="C#" Value="public static void AddEditorTable (Type editorBaseType, System.Collections.Hashtable table);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AddEditorTable(class System.Type editorBaseType, class System.Collections.Hashtable table) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptor.AddEditorTable(System.Type,System.Collections.Hashtable)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub AddEditorTable (editorBaseType As Type, table As Hashtable)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddEditorTable(Type ^ editorBaseType, System::Collections::Hashtable ^ table);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -214,10 +231,22 @@
         <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetEditor" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddProvider">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a type description provider to the list of providers for this type descriptor.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AddProvider">
       <MemberSignature Language="C#" Value="public static void AddProvider (System.ComponentModel.TypeDescriptionProvider provider, object instance);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AddProvider(class System.ComponentModel.TypeDescriptionProvider provider, object instance) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptor.AddProvider(System.ComponentModel.TypeDescriptionProvider,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub AddProvider (provider As TypeDescriptionProvider, instance As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddProvider(System::ComponentModel::TypeDescriptionProvider ^ provider, System::Object ^ instance);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -279,6 +308,7 @@
       <MemberSignature Language="C#" Value="public static void AddProvider (System.ComponentModel.TypeDescriptionProvider provider, Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AddProvider(class System.ComponentModel.TypeDescriptionProvider provider, class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptor.AddProvider(System.ComponentModel.TypeDescriptionProvider,System.Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddProvider(System::ComponentModel::TypeDescriptionProvider ^ provider, Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -338,10 +368,22 @@
         <altmember cref="M:System.ComponentModel.TypeDescriptor.CreateInstance(System.IServiceProvider,System.Type,System.Type[],System.Object[])" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddProviderTransparent">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a type description provider to the list of providers for this type descriptor.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AddProviderTransparent">
       <MemberSignature Language="C#" Value="public static void AddProviderTransparent (System.ComponentModel.TypeDescriptionProvider provider, object instance);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AddProviderTransparent(class System.ComponentModel.TypeDescriptionProvider provider, object instance) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptor.AddProviderTransparent(System.ComponentModel.TypeDescriptionProvider,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub AddProviderTransparent (provider As TypeDescriptionProvider, instance As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddProviderTransparent(System::ComponentModel::TypeDescriptionProvider ^ provider, System::Object ^ instance);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -392,6 +434,7 @@
       <MemberSignature Language="C#" Value="public static void AddProviderTransparent (System.ComponentModel.TypeDescriptionProvider provider, Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AddProviderTransparent(class System.ComponentModel.TypeDescriptionProvider provider, class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptor.AddProviderTransparent(System.ComponentModel.TypeDescriptionProvider,System.Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddProviderTransparent(System::ComponentModel::TypeDescriptionProvider ^ provider, Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -442,6 +485,8 @@
       <MemberSignature Language="C#" Value="public static System.ComponentModel.IComNativeDescriptorHandler ComNativeDescriptorHandler { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.ComponentModel.IComNativeDescriptorHandler ComNativeDescriptorHandler" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.TypeDescriptor.ComNativeDescriptorHandler" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property ComNativeDescriptorHandler As IComNativeDescriptorHandler" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ComponentModel::IComNativeDescriptorHandler ^ ComNativeDescriptorHandler { System::ComponentModel::IComNativeDescriptorHandler ^ get(); void set(System::ComponentModel::IComNativeDescriptorHandler ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -483,6 +528,8 @@
       <MemberSignature Language="C#" Value="public static Type ComObjectType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Type ComObjectType" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.TypeDescriptor.ComObjectType" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ComObjectType As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Type ^ ComObjectType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -525,6 +572,8 @@
       <MemberSignature Language="C#" Value="public static void CreateAssociation (object primary, object secondary);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void CreateAssociation(object primary, object secondary) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptor.CreateAssociation(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub CreateAssociation (primary As Object, secondary As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void CreateAssociation(System::Object ^ primary, System::Object ^ secondary);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -578,6 +627,8 @@
       <MemberSignature Language="C#" Value="public static System.ComponentModel.Design.IDesigner CreateDesigner (System.ComponentModel.IComponent component, Type designerBaseType);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ComponentModel.Design.IDesigner CreateDesigner(class System.ComponentModel.IComponent component, class System.Type designerBaseType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptor.CreateDesigner(System.ComponentModel.IComponent,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateDesigner (component As IComponent, designerBaseType As Type) As IDesigner" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ComponentModel::Design::IDesigner ^ CreateDesigner(System::ComponentModel::IComponent ^ component, Type ^ designerBaseType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -619,10 +670,22 @@
         <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetEditor" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateEvent">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new event descriptor that is identical to an existing event descriptor.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateEvent">
       <MemberSignature Language="C#" Value="public static System.ComponentModel.EventDescriptor CreateEvent (Type componentType, System.ComponentModel.EventDescriptor oldEventDescriptor, params Attribute[] attributes);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ComponentModel.EventDescriptor CreateEvent(class System.Type componentType, class System.ComponentModel.EventDescriptor oldEventDescriptor, class System.Attribute[] attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptor.CreateEvent(System.Type,System.ComponentModel.EventDescriptor,System.Attribute[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateEvent (componentType As Type, oldEventDescriptor As EventDescriptor, ParamArray attributes As Attribute()) As EventDescriptor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ComponentModel::EventDescriptor ^ CreateEvent(Type ^ componentType, System::ComponentModel::EventDescriptor ^ oldEventDescriptor, ... cli::array &lt;Attribute ^&gt; ^ attributes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -669,6 +732,7 @@
       <MemberSignature Language="C#" Value="public static System.ComponentModel.EventDescriptor CreateEvent (Type componentType, string name, Type type, params Attribute[] attributes);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ComponentModel.EventDescriptor CreateEvent(class System.Type componentType, string name, class System.Type type, class System.Attribute[] attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptor.CreateEvent(System.Type,System.String,System.Type,System.Attribute[])" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ComponentModel::EventDescriptor ^ CreateEvent(Type ^ componentType, System::String ^ name, Type ^ type, ... cli::array &lt;Attribute ^&gt; ^ attributes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -717,6 +781,8 @@
       <MemberSignature Language="C#" Value="public static object CreateInstance (IServiceProvider provider, Type objectType, Type[] argTypes, object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object CreateInstance(class System.IServiceProvider provider, class System.Type objectType, class System.Type[] argTypes, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptor.CreateInstance(System.IServiceProvider,System.Type,System.Type[],System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateInstance (provider As IServiceProvider, objectType As Type, argTypes As Type(), args As Object()) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ CreateInstance(IServiceProvider ^ provider, Type ^ objectType, cli::array &lt;Type ^&gt; ^ argTypes, cli::array &lt;System::Object ^&gt; ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -770,10 +836,22 @@
         <altmember cref="Overload:System.ComponentModel.TypeDescriptor.AddProvider" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateProperty">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new property descriptor for an existing property of a component.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateProperty">
       <MemberSignature Language="C#" Value="public static System.ComponentModel.PropertyDescriptor CreateProperty (Type componentType, System.ComponentModel.PropertyDescriptor oldPropertyDescriptor, params Attribute[] attributes);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ComponentModel.PropertyDescriptor CreateProperty(class System.Type componentType, class System.ComponentModel.PropertyDescriptor oldPropertyDescriptor, class System.Attribute[] attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptor.CreateProperty(System.Type,System.ComponentModel.PropertyDescriptor,System.Attribute[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateProperty (componentType As Type, oldPropertyDescriptor As PropertyDescriptor, ParamArray attributes As Attribute()) As PropertyDescriptor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ComponentModel::PropertyDescriptor ^ CreateProperty(Type ^ componentType, System::ComponentModel::PropertyDescriptor ^ oldPropertyDescriptor, ... cli::array &lt;Attribute ^&gt; ^ attributes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -821,6 +899,7 @@
       <MemberSignature Language="C#" Value="public static System.ComponentModel.PropertyDescriptor CreateProperty (Type componentType, string name, Type type, params Attribute[] attributes);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ComponentModel.PropertyDescriptor CreateProperty(class System.Type componentType, string name, class System.Type type, class System.Attribute[] attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptor.CreateProperty(System.Type,System.String,System.Type,System.Attribute[])" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ComponentModel::PropertyDescriptor ^ CreateProperty(Type ^ componentType, System::String ^ name, Type ^ type, ... cli::array &lt;Attribute ^&gt; ^ attributes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -870,6 +949,7 @@
       <MemberSignature Language="C#" Value="public static object GetAssociation (Type type, object primary);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetAssociation(class System.Type type, object primary) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptor.GetAssociation(System.Type,System.Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetAssociation(Type ^ type, System::Object ^ primary);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -918,10 +998,22 @@
         <altmember cref="M:System.ComponentModel.TypeDescriptor.RemoveAssociation(System.Object,System.Object)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetAttributes">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the collection of attributes for a component or a type.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetAttributes">
       <MemberSignature Language="C#" Value="public static System.ComponentModel.AttributeCollection GetAttributes (object component);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ComponentModel.AttributeCollection GetAttributes(object component) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptor.GetAttributes(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetAttributes (component As Object) As AttributeCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ComponentModel::AttributeCollection ^ GetAttributes(System::Object ^ component);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -977,6 +1069,8 @@
       <MemberSignature Language="C#" Value="public static System.ComponentModel.AttributeCollection GetAttributes (Type componentType);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ComponentModel.AttributeCollection GetAttributes(class System.Type componentType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptor.GetAttributes(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetAttributes (componentType As Type) As AttributeCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ComponentModel::AttributeCollection ^ GetAttributes(Type ^ componentType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -1029,6 +1123,8 @@
       <MemberSignature Language="C#" Value="public static System.ComponentModel.AttributeCollection GetAttributes (object component, bool noCustomTypeDesc);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ComponentModel.AttributeCollection GetAttributes(object component, bool noCustomTypeDesc) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptor.GetAttributes(System.Object,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetAttributes (component As Object, noCustomTypeDesc As Boolean) As AttributeCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ComponentModel::AttributeCollection ^ GetAttributes(System::Object ^ component, bool noCustomTypeDesc);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -1084,10 +1180,22 @@
         <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetProperties" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetClassName">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the name of the class for the specified component.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetClassName">
       <MemberSignature Language="C#" Value="public static string GetClassName (object component);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetClassName(object component) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptor.GetClassName(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetClassName (component As Object) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetClassName(System::Object ^ component);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -1136,6 +1244,8 @@
       <MemberSignature Language="C#" Value="public static string GetClassName (Type componentType);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetClassName(class System.Type componentType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptor.GetClassName(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetClassName (componentType As Type) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetClassName(Type ^ componentType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -1182,6 +1292,8 @@
       <MemberSignature Language="C#" Value="public static string GetClassName (object component, bool noCustomTypeDesc);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetClassName(object component, bool noCustomTypeDesc) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptor.GetClassName(System.Object,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetClassName (component As Object, noCustomTypeDesc As Boolean) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetClassName(System::Object ^ component, bool noCustomTypeDesc);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -1235,10 +1347,22 @@
         <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetReflectionType" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetComponentName">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the name of the specified component.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetComponentName">
       <MemberSignature Language="C#" Value="public static string GetComponentName (object component);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetComponentName(object component) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptor.GetComponentName(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetComponentName (component As Object) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetComponentName(System::Object ^ component);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -1291,6 +1415,8 @@
       <MemberSignature Language="C#" Value="public static string GetComponentName (object component, bool noCustomTypeDesc);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetComponentName(object component, bool noCustomTypeDesc) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptor.GetComponentName(System.Object,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetComponentName (component As Object, noCustomTypeDesc As Boolean) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetComponentName(System::Object ^ component, bool noCustomTypeDesc);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -1344,10 +1470,22 @@
         <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetReflectionType" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetConverter">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a type converter for a component or a type.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetConverter">
       <MemberSignature Language="C#" Value="public static System.ComponentModel.TypeConverter GetConverter (object component);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ComponentModel.TypeConverter GetConverter(object component) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptor.GetConverter(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetConverter (component As Object) As TypeConverter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ComponentModel::TypeConverter ^ GetConverter(System::Object ^ component);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -1402,6 +1540,7 @@
       <MemberSignature Language="C#" Value="public static System.ComponentModel.TypeConverter GetConverter (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ComponentModel.TypeConverter GetConverter(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptor.GetConverter(System.Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ComponentModel::TypeConverter ^ GetConverter(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -1449,6 +1588,8 @@
       <MemberSignature Language="C#" Value="public static System.ComponentModel.TypeConverter GetConverter (object component, bool noCustomTypeDesc);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ComponentModel.TypeConverter GetConverter(object component, bool noCustomTypeDesc) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptor.GetConverter(System.Object,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetConverter (component As Object, noCustomTypeDesc As Boolean) As TypeConverter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ComponentModel::TypeConverter ^ GetConverter(System::Object ^ component, bool noCustomTypeDesc);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -1501,10 +1642,22 @@
         <altmember cref="M:System.ComponentModel.TypeDescriptor.CreateDesigner(System.ComponentModel.IComponent,System.Type)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetDefaultEvent">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the default event for a component or type.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetDefaultEvent">
       <MemberSignature Language="C#" Value="public static System.ComponentModel.EventDescriptor GetDefaultEvent (object component);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ComponentModel.EventDescriptor GetDefaultEvent(object component) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptor.GetDefaultEvent(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetDefaultEvent (component As Object) As EventDescriptor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ComponentModel::EventDescriptor ^ GetDefaultEvent(System::Object ^ component);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -1556,6 +1709,8 @@
       <MemberSignature Language="C#" Value="public static System.ComponentModel.EventDescriptor GetDefaultEvent (Type componentType);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ComponentModel.EventDescriptor GetDefaultEvent(class System.Type componentType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptor.GetDefaultEvent(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetDefaultEvent (componentType As Type) As EventDescriptor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ComponentModel::EventDescriptor ^ GetDefaultEvent(Type ^ componentType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -1605,6 +1760,8 @@
       <MemberSignature Language="C#" Value="public static System.ComponentModel.EventDescriptor GetDefaultEvent (object component, bool noCustomTypeDesc);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ComponentModel.EventDescriptor GetDefaultEvent(object component, bool noCustomTypeDesc) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptor.GetDefaultEvent(System.Object,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetDefaultEvent (component As Object, noCustomTypeDesc As Boolean) As EventDescriptor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ComponentModel::EventDescriptor ^ GetDefaultEvent(System::Object ^ component, bool noCustomTypeDesc);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -1654,10 +1811,22 @@
         <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetDefaultProperty" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetDefaultProperty">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the default property for a component.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetDefaultProperty">
       <MemberSignature Language="C#" Value="public static System.ComponentModel.PropertyDescriptor GetDefaultProperty (object component);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ComponentModel.PropertyDescriptor GetDefaultProperty(object component) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptor.GetDefaultProperty(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetDefaultProperty (component As Object) As PropertyDescriptor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ComponentModel::PropertyDescriptor ^ GetDefaultProperty(System::Object ^ component);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -1704,6 +1873,8 @@
       <MemberSignature Language="C#" Value="public static System.ComponentModel.PropertyDescriptor GetDefaultProperty (Type componentType);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ComponentModel.PropertyDescriptor GetDefaultProperty(class System.Type componentType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptor.GetDefaultProperty(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetDefaultProperty (componentType As Type) As PropertyDescriptor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ComponentModel::PropertyDescriptor ^ GetDefaultProperty(Type ^ componentType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -1750,6 +1921,8 @@
       <MemberSignature Language="C#" Value="public static System.ComponentModel.PropertyDescriptor GetDefaultProperty (object component, bool noCustomTypeDesc);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ComponentModel.PropertyDescriptor GetDefaultProperty(object component, bool noCustomTypeDesc) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptor.GetDefaultProperty(System.Object,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetDefaultProperty (component As Object, noCustomTypeDesc As Boolean) As PropertyDescriptor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ComponentModel::PropertyDescriptor ^ GetDefaultProperty(System::Object ^ component, bool noCustomTypeDesc);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -1801,10 +1974,22 @@
         <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetDefaultEvent" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetEditor">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an editor with the specified base type.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetEditor">
       <MemberSignature Language="C#" Value="public static object GetEditor (object component, Type editorBaseType);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetEditor(object component, class System.Type editorBaseType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptor.GetEditor(System.Object,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetEditor (component As Object, editorBaseType As Type) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetEditor(System::Object ^ component, Type ^ editorBaseType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -1854,6 +2039,7 @@
       <MemberSignature Language="C#" Value="public static object GetEditor (Type type, Type editorBaseType);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetEditor(class System.Type type, class System.Type editorBaseType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptor.GetEditor(System.Type,System.Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetEditor(Type ^ type, Type ^ editorBaseType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -1903,6 +2089,8 @@
       <MemberSignature Language="C#" Value="public static object GetEditor (object component, Type editorBaseType, bool noCustomTypeDesc);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetEditor(object component, class System.Type editorBaseType, bool noCustomTypeDesc) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptor.GetEditor(System.Object,System.Type,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetEditor (component As Object, editorBaseType As Type, noCustomTypeDesc As Boolean) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetEditor(System::Object ^ component, Type ^ editorBaseType, bool noCustomTypeDesc);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -1956,10 +2144,22 @@
         <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetConverter" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetEvents">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the collection of events for a component or type.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetEvents">
       <MemberSignature Language="C#" Value="public static System.ComponentModel.EventDescriptorCollection GetEvents (object component);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ComponentModel.EventDescriptorCollection GetEvents(object component) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptor.GetEvents(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetEvents (component As Object) As EventDescriptorCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ComponentModel::EventDescriptorCollection ^ GetEvents(System::Object ^ component);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -2017,6 +2217,8 @@
       <MemberSignature Language="C#" Value="public static System.ComponentModel.EventDescriptorCollection GetEvents (Type componentType);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ComponentModel.EventDescriptorCollection GetEvents(class System.Type componentType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptor.GetEvents(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetEvents (componentType As Type) As EventDescriptorCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ComponentModel::EventDescriptorCollection ^ GetEvents(Type ^ componentType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -2067,6 +2269,8 @@
       <MemberSignature Language="C#" Value="public static System.ComponentModel.EventDescriptorCollection GetEvents (object component, Attribute[] attributes);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ComponentModel.EventDescriptorCollection GetEvents(object component, class System.Attribute[] attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptor.GetEvents(System.Object,System.Attribute[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetEvents (component As Object, attributes As Attribute()) As EventDescriptorCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ComponentModel::EventDescriptorCollection ^ GetEvents(System::Object ^ component, cli::array &lt;Attribute ^&gt; ^ attributes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -2131,6 +2335,8 @@
       <MemberSignature Language="C#" Value="public static System.ComponentModel.EventDescriptorCollection GetEvents (object component, bool noCustomTypeDesc);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ComponentModel.EventDescriptorCollection GetEvents(object component, bool noCustomTypeDesc) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptor.GetEvents(System.Object,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetEvents (component As Object, noCustomTypeDesc As Boolean) As EventDescriptorCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ComponentModel::EventDescriptorCollection ^ GetEvents(System::Object ^ component, bool noCustomTypeDesc);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -2192,6 +2398,8 @@
       <MemberSignature Language="C#" Value="public static System.ComponentModel.EventDescriptorCollection GetEvents (Type componentType, Attribute[] attributes);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ComponentModel.EventDescriptorCollection GetEvents(class System.Type componentType, class System.Attribute[] attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptor.GetEvents(System.Type,System.Attribute[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetEvents (componentType As Type, attributes As Attribute()) As EventDescriptorCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ComponentModel::EventDescriptorCollection ^ GetEvents(Type ^ componentType, cli::array &lt;Attribute ^&gt; ^ attributes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -2254,6 +2462,8 @@
       <MemberSignature Language="C#" Value="public static System.ComponentModel.EventDescriptorCollection GetEvents (object component, Attribute[] attributes, bool noCustomTypeDesc);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ComponentModel.EventDescriptorCollection GetEvents(object component, class System.Attribute[] attributes, bool noCustomTypeDesc) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptor.GetEvents(System.Object,System.Attribute[],System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetEvents (component As Object, attributes As Attribute(), noCustomTypeDesc As Boolean) As EventDescriptorCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ComponentModel::EventDescriptorCollection ^ GetEvents(System::Object ^ component, cli::array &lt;Attribute ^&gt; ^ attributes, bool noCustomTypeDesc);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -2327,6 +2537,8 @@
       <MemberSignature Language="C#" Value="public static string GetFullComponentName (object component);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetFullComponentName(object component) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptor.GetFullComponentName(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetFullComponentName (component As Object) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetFullComponentName(System::Object ^ component);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -2367,10 +2579,22 @@
         <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetClassName" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetProperties">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the collection of properties on a component or type.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetProperties">
       <MemberSignature Language="C#" Value="public static System.ComponentModel.PropertyDescriptorCollection GetProperties (object component);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ComponentModel.PropertyDescriptorCollection GetProperties(object component) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptor.GetProperties(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetProperties (component As Object) As PropertyDescriptorCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ComponentModel::PropertyDescriptorCollection ^ GetProperties(System::Object ^ component);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -2431,6 +2655,8 @@
       <MemberSignature Language="C#" Value="public static System.ComponentModel.PropertyDescriptorCollection GetProperties (Type componentType);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ComponentModel.PropertyDescriptorCollection GetProperties(class System.Type componentType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptor.GetProperties(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetProperties (componentType As Type) As PropertyDescriptorCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ComponentModel::PropertyDescriptorCollection ^ GetProperties(Type ^ componentType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -2481,6 +2707,8 @@
       <MemberSignature Language="C#" Value="public static System.ComponentModel.PropertyDescriptorCollection GetProperties (object component, Attribute[] attributes);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ComponentModel.PropertyDescriptorCollection GetProperties(object component, class System.Attribute[] attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptor.GetProperties(System.Object,System.Attribute[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetProperties (component As Object, attributes As Attribute()) As PropertyDescriptorCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ComponentModel::PropertyDescriptorCollection ^ GetProperties(System::Object ^ component, cli::array &lt;Attribute ^&gt; ^ attributes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -2554,6 +2782,8 @@
       <MemberSignature Language="C#" Value="public static System.ComponentModel.PropertyDescriptorCollection GetProperties (object component, bool noCustomTypeDesc);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ComponentModel.PropertyDescriptorCollection GetProperties(object component, bool noCustomTypeDesc) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptor.GetProperties(System.Object,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetProperties (component As Object, noCustomTypeDesc As Boolean) As PropertyDescriptorCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ComponentModel::PropertyDescriptorCollection ^ GetProperties(System::Object ^ component, bool noCustomTypeDesc);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -2615,6 +2845,8 @@
       <MemberSignature Language="C#" Value="public static System.ComponentModel.PropertyDescriptorCollection GetProperties (Type componentType, Attribute[] attributes);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ComponentModel.PropertyDescriptorCollection GetProperties(class System.Type componentType, class System.Attribute[] attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptor.GetProperties(System.Type,System.Attribute[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetProperties (componentType As Type, attributes As Attribute()) As PropertyDescriptorCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ComponentModel::PropertyDescriptorCollection ^ GetProperties(Type ^ componentType, cli::array &lt;Attribute ^&gt; ^ attributes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -2686,6 +2918,8 @@
       <MemberSignature Language="C#" Value="public static System.ComponentModel.PropertyDescriptorCollection GetProperties (object component, Attribute[] attributes, bool noCustomTypeDesc);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ComponentModel.PropertyDescriptorCollection GetProperties(object component, class System.Attribute[] attributes, bool noCustomTypeDesc) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptor.GetProperties(System.Object,System.Attribute[],System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetProperties (component As Object, attributes As Attribute(), noCustomTypeDesc As Boolean) As PropertyDescriptorCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ComponentModel::PropertyDescriptorCollection ^ GetProperties(System::Object ^ component, cli::array &lt;Attribute ^&gt; ^ attributes, bool noCustomTypeDesc);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -2750,10 +2984,22 @@
         <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetEvents" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetProvider">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the type description provider for the component or type.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetProvider">
       <MemberSignature Language="C#" Value="public static System.ComponentModel.TypeDescriptionProvider GetProvider (object instance);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ComponentModel.TypeDescriptionProvider GetProvider(object instance) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptor.GetProvider(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetProvider (instance As Object) As TypeDescriptionProvider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ComponentModel::TypeDescriptionProvider ^ GetProvider(System::Object ^ instance);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -2806,6 +3052,7 @@
       <MemberSignature Language="C#" Value="public static System.ComponentModel.TypeDescriptionProvider GetProvider (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ComponentModel.TypeDescriptionProvider GetProvider(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptor.GetProvider(System.Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ComponentModel::TypeDescriptionProvider ^ GetProvider(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -2854,10 +3101,22 @@
         <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetConverter" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetReflectionType">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a <see cref="T:System.Type" /> that can be used to perform reflection.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetReflectionType">
       <MemberSignature Language="C#" Value="public static Type GetReflectionType (object instance);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Type GetReflectionType(object instance) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptor.GetReflectionType(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetReflectionType (instance As Object) As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Type ^ GetReflectionType(System::Object ^ instance);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -2908,6 +3167,7 @@
       <MemberSignature Language="C#" Value="public static Type GetReflectionType (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Type GetReflectionType(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptor.GetReflectionType(System.Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Type ^ GetReflectionType(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -2958,6 +3218,8 @@
       <MemberSignature Language="C#" Value="public static Type InterfaceType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Type InterfaceType" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.TypeDescriptor.InterfaceType" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property InterfaceType As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Type ^ InterfaceType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -2994,10 +3256,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Refresh">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Clears the properties and events from the cache.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Refresh">
       <MemberSignature Language="C#" Value="public static void Refresh (object component);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Refresh(object component) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptor.Refresh(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Refresh (component As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Refresh(System::Object ^ component);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -3046,6 +3320,7 @@
       <MemberSignature Language="C#" Value="public static void Refresh (System.Reflection.Assembly assembly);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Refresh(class System.Reflection.Assembly assembly) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptor.Refresh(System.Reflection.Assembly)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Refresh(System::Reflection::Assembly ^ assembly);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -3094,6 +3369,7 @@
       <MemberSignature Language="C#" Value="public static void Refresh (System.Reflection.Module module);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Refresh(class System.Reflection.Module module) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptor.Refresh(System.Reflection.Module)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Refresh(System::Reflection::Module ^ module);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -3142,6 +3418,7 @@
       <MemberSignature Language="C#" Value="public static void Refresh (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Refresh(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptor.Refresh(System.Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Refresh(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -3189,6 +3466,8 @@
       <MemberSignature Language="C#" Value="public static event System.ComponentModel.RefreshEventHandler Refreshed;" />
       <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.RefreshEventHandler Refreshed" />
       <MemberSignature Language="DocId" Value="E:System.ComponentModel.TypeDescriptor.Refreshed" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Custom Event Refreshed As RefreshEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static event System::ComponentModel::RefreshEventHandler ^ Refreshed;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -3229,6 +3508,8 @@
       <MemberSignature Language="C#" Value="public static void RemoveAssociation (object primary, object secondary);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RemoveAssociation(object primary, object secondary) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptor.RemoveAssociation(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveAssociation (primary As Object, secondary As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveAssociation(System::Object ^ primary, System::Object ^ secondary);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -3280,6 +3561,8 @@
       <MemberSignature Language="C#" Value="public static void RemoveAssociations (object primary);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RemoveAssociations(object primary) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptor.RemoveAssociations(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveAssociations (primary As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveAssociations(System::Object ^ primary);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -3326,10 +3609,22 @@
         <altmember cref="M:System.ComponentModel.TypeDescriptor.GetAssociation(System.Type,System.Object)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="RemoveProvider">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes a previously added type description provider.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="RemoveProvider">
       <MemberSignature Language="C#" Value="public static void RemoveProvider (System.ComponentModel.TypeDescriptionProvider provider, object instance);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RemoveProvider(class System.ComponentModel.TypeDescriptionProvider provider, object instance) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptor.RemoveProvider(System.ComponentModel.TypeDescriptionProvider,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveProvider (provider As TypeDescriptionProvider, instance As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveProvider(System::ComponentModel::TypeDescriptionProvider ^ provider, System::Object ^ instance);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -3382,6 +3677,7 @@
       <MemberSignature Language="C#" Value="public static void RemoveProvider (System.ComponentModel.TypeDescriptionProvider provider, Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RemoveProvider(class System.ComponentModel.TypeDescriptionProvider provider, class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptor.RemoveProvider(System.ComponentModel.TypeDescriptionProvider,System.Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveProvider(System::ComponentModel::TypeDescriptionProvider ^ provider, Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -3430,10 +3726,22 @@
         <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetProvider" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="RemoveProviderTransparent">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes a previously added type description provider.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="RemoveProviderTransparent">
       <MemberSignature Language="C#" Value="public static void RemoveProviderTransparent (System.ComponentModel.TypeDescriptionProvider provider, object instance);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RemoveProviderTransparent(class System.ComponentModel.TypeDescriptionProvider provider, object instance) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptor.RemoveProviderTransparent(System.ComponentModel.TypeDescriptionProvider,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveProviderTransparent (provider As TypeDescriptionProvider, instance As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveProviderTransparent(System::ComponentModel::TypeDescriptionProvider ^ provider, System::Object ^ instance);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -3486,6 +3794,7 @@
       <MemberSignature Language="C#" Value="public static void RemoveProviderTransparent (System.ComponentModel.TypeDescriptionProvider provider, Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RemoveProviderTransparent(class System.ComponentModel.TypeDescriptionProvider provider, class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptor.RemoveProviderTransparent(System.ComponentModel.TypeDescriptionProvider,System.Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveProviderTransparent(System::ComponentModel::TypeDescriptionProvider ^ provider, Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -3538,6 +3847,8 @@
       <MemberSignature Language="C#" Value="public static void SortDescriptorArray (System.Collections.IList infos);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SortDescriptorArray(class System.Collections.IList infos) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptor.SortDescriptorArray(System.Collections.IList)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SortDescriptorArray (infos As IList)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SortDescriptorArray(System::Collections::IList ^ infos);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -3571,195 +3882,5 @@
         <altmember cref="Overload:System.ComponentModel.TypeDescriptor.Refresh" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetConverter">
-      <AssemblyInfo>
-        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a type converter for a component or a type.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetProvider">
-      <AssemblyInfo>
-        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns the type description provider for the component or type.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetProperties">
-      <AssemblyInfo>
-        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns the collection of properties on a component or type.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="CreateProperty">
-      <AssemblyInfo>
-        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a new property descriptor for an existing property of a component.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="AddAttributes">
-      <AssemblyInfo>
-        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds class-level attributes to the target component.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetReflectionType">
-      <AssemblyInfo>
-        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a <see cref="T:System.Type" /> that can be used to perform reflection.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="AddProvider">
-      <AssemblyInfo>
-        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds a type description provider to the list of providers for this type descriptor.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="AddProviderTransparent">
-      <AssemblyInfo>
-        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds a type description provider to the list of providers for this type descriptor.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetClassName">
-      <AssemblyInfo>
-        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns the name of the class for the specified component.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetAttributes">
-      <AssemblyInfo>
-        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns the collection of attributes for a component or a type.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetDefaultProperty">
-      <AssemblyInfo>
-        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns the default property for a component.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetDefaultEvent">
-      <AssemblyInfo>
-        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns the default event for a component or type.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Refresh">
-      <AssemblyInfo>
-        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Clears the properties and events from the cache.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="RemoveProvider">
-      <AssemblyInfo>
-        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Removes a previously added type description provider.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetEvents">
-      <AssemblyInfo>
-        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns the collection of events for a component or type.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="RemoveProviderTransparent">
-      <AssemblyInfo>
-        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Removes a previously added type description provider.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetComponentName">
-      <AssemblyInfo>
-        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns the name of the specified component.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="CreateEvent">
-      <AssemblyInfo>
-        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a new event descriptor that is identical to an existing event descriptor.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetEditor">
-      <AssemblyInfo>
-        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns an editor with the specified base type.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

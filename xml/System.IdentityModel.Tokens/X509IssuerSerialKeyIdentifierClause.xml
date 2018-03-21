@@ -1,7 +1,9 @@
-<Type Name="X509IssuerSerialKeyIdentifierClause" FullName="System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause">
+﻿<Type Name="X509IssuerSerialKeyIdentifierClause" FullName="System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause">
   <TypeSignature Language="C#" Value="public class X509IssuerSerialKeyIdentifierClause : System.IdentityModel.Tokens.SecurityKeyIdentifierClause" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit X509IssuerSerialKeyIdentifierClause extends System.IdentityModel.Tokens.SecurityKeyIdentifierClause" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause" />
+  <TypeSignature Language="VB.NET" Value="Public Class X509IssuerSerialKeyIdentifierClause&#xA;Inherits SecurityKeyIdentifierClause" />
+  <TypeSignature Language="C++ CLI" Value="public ref class X509IssuerSerialKeyIdentifierClause : System::IdentityModel::Tokens::SecurityKeyIdentifierClause" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,10 +34,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public X509IssuerSerialKeyIdentifierClause (System.Security.Cryptography.X509Certificates.X509Certificate2 certificate);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Cryptography.X509Certificates.X509Certificate2 certificate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause.#ctor(System.Security.Cryptography.X509Certificates.X509Certificate2)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (certificate As X509Certificate2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; X509IssuerSerialKeyIdentifierClause(System::Security::Cryptography::X509Certificates::X509Certificate2 ^ certificate);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -63,6 +76,8 @@
       <MemberSignature Language="C#" Value="public X509IssuerSerialKeyIdentifierClause (string issuerName, string issuerSerialNumber);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string issuerName, string issuerSerialNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (issuerName As String, issuerSerialNumber As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; X509IssuerSerialKeyIdentifierClause(System::String ^ issuerName, System::String ^ issuerSerialNumber);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -96,6 +111,8 @@
       <MemberSignature Language="C#" Value="public string IssuerName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string IssuerName" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause.IssuerName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IssuerName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ IssuerName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -123,6 +140,8 @@
       <MemberSignature Language="C#" Value="public string IssuerSerialNumber { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string IssuerSerialNumber" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause.IssuerSerialNumber" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IssuerSerialNumber As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ IssuerSerialNumber { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -144,40 +163,21 @@
         </remarks>
       </Docs>
     </Member>
-    <Member MemberName="Matches">
-      <MemberSignature Language="C#" Value="public override bool Matches (System.IdentityModel.Tokens.SecurityKeyIdentifierClause clause);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Matches(class System.IdentityModel.Tokens.SecurityKeyIdentifierClause clause) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause.Matches(System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" />
-      <MemberType>Method</MemberType>
+    <MemberGroup MemberName="Matches">
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="keyIdentifierClause" Type="System.IdentityModel.Tokens.SecurityKeyIdentifierClause" />
-      </Parameters>
       <Docs>
-        <param name="clause">To be added.</param>
-        <summary>Returns a value that indicates whether the key identifier for this instance matches the specified key identifier.</summary>
-        <returns>
-          <see langword="true" /> if <paramref name="clause" /> is a <see cref="T:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause" /> type and the key identifier clauses match; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For the <xref:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause> class, the values of the key identifier clauses that are compared to determine if there is a match are the values of the <xref:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause.IssuerName%2A> and <xref:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause.IssuerSerialNumber%2A> properties.  
-  
- ]]></format>
-        </remarks>
+        <summary>Returns a value that indicates whether the key identifier for this instance matches the specified object.</summary>
       </Docs>
-    </Member>
+    </MemberGroup>
     <Member MemberName="Matches">
       <MemberSignature Language="C#" Value="public bool Matches (System.Security.Cryptography.X509Certificates.X509Certificate2 certificate);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Matches(class System.Security.Cryptography.X509Certificates.X509Certificate2 certificate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause.Matches(System.Security.Cryptography.X509Certificates.X509Certificate2)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Matches (certificate As X509Certificate2) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Matches(System::Security::Cryptography::X509Certificates::X509Certificate2 ^ certificate);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -205,9 +205,49 @@
       </Docs>
     </Member>
     <Member MemberName="Matches">
+      <MemberSignature Language="C#" Value="public override bool Matches (System.IdentityModel.Tokens.SecurityKeyIdentifierClause keyIdentifierClause);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Matches(class System.IdentityModel.Tokens.SecurityKeyIdentifierClause keyIdentifierClause) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause.Matches(System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Matches (keyIdentifierClause As SecurityKeyIdentifierClause) As Boolean" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Matches(System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ keyIdentifierClause);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public override bool Matches (System.IdentityModel.Tokens.SecurityKeyIdentifierClause clause);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Matches(class System.IdentityModel.Tokens.SecurityKeyIdentifierClause clause) cil managed" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause.Matches(System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Matches (clause As SecurityKeyIdentifierClause) As Boolean" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Matches(System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ clause);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="keyIdentifierClause" Type="System.IdentityModel.Tokens.SecurityKeyIdentifierClause" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="clause" Type="System.IdentityModel.Tokens.SecurityKeyIdentifierClause" Index="0" FrameworkAlternate="xamarinmac-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="clause">To be added.</param>
+        <summary>Returns a value that indicates whether the key identifier for this instance matches the specified key identifier.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="clause" /> is a <see cref="T:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause" /> type and the key identifier clauses match; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For the <xref:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause> class, the values of the key identifier clauses that are compared to determine if there is a match are the values of the <xref:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause.IssuerName%2A> and <xref:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause.IssuerSerialNumber%2A> properties.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Matches">
       <MemberSignature Language="C#" Value="public bool Matches (string issuerName, string issuerSerialNumber);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Matches(string issuerName, string issuerSerialNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause.Matches(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Matches (issuerName As String, issuerSerialNumber As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Matches(System::String ^ issuerName, System::String ^ issuerSerialNumber);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -233,6 +273,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -255,23 +297,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Matches">
-      <AssemblyInfo>
-        <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a value that indicates whether the key identifier for this instance matches the specified object.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,9 @@
-<Type Name="TableIndex" FullName="System.Reflection.Metadata.Ecma335.TableIndex">
+﻿<Type Name="TableIndex" FullName="System.Reflection.Metadata.Ecma335.TableIndex">
   <TypeSignature Language="C#" Value="public enum TableIndex" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TableIndex extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.Ecma335.TableIndex" />
+  <TypeSignature Language="VB.NET" Value="Public Enum TableIndex" />
+  <TypeSignature Language="C++ CLI" Value="public enum class TableIndex" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -20,6 +22,8 @@
       <MemberSignature Language="C#" Value="Assembly" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.Ecma335.TableIndex Assembly = unsigned int8(32)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.Assembly" />
+      <MemberSignature Language="VB.NET" Value="Assembly" />
+      <MemberSignature Language="C++ CLI" Value="Assembly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -30,6 +34,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.Ecma335.TableIndex</ReturnType>
       </ReturnValue>
+      <MemberValue>32</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -38,6 +43,8 @@
       <MemberSignature Language="C#" Value="AssemblyOS" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.Ecma335.TableIndex AssemblyOS = unsigned int8(34)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.AssemblyOS" />
+      <MemberSignature Language="VB.NET" Value="AssemblyOS" />
+      <MemberSignature Language="C++ CLI" Value="AssemblyOS" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -48,6 +55,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.Ecma335.TableIndex</ReturnType>
       </ReturnValue>
+      <MemberValue>34</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -56,6 +64,8 @@
       <MemberSignature Language="C#" Value="AssemblyProcessor" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.Ecma335.TableIndex AssemblyProcessor = unsigned int8(33)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.AssemblyProcessor" />
+      <MemberSignature Language="VB.NET" Value="AssemblyProcessor" />
+      <MemberSignature Language="C++ CLI" Value="AssemblyProcessor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -66,6 +76,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.Ecma335.TableIndex</ReturnType>
       </ReturnValue>
+      <MemberValue>33</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -74,6 +85,8 @@
       <MemberSignature Language="C#" Value="AssemblyRef" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.Ecma335.TableIndex AssemblyRef = unsigned int8(35)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.AssemblyRef" />
+      <MemberSignature Language="VB.NET" Value="AssemblyRef" />
+      <MemberSignature Language="C++ CLI" Value="AssemblyRef" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -84,6 +97,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.Ecma335.TableIndex</ReturnType>
       </ReturnValue>
+      <MemberValue>35</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -92,6 +106,8 @@
       <MemberSignature Language="C#" Value="AssemblyRefOS" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.Ecma335.TableIndex AssemblyRefOS = unsigned int8(37)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.AssemblyRefOS" />
+      <MemberSignature Language="VB.NET" Value="AssemblyRefOS" />
+      <MemberSignature Language="C++ CLI" Value="AssemblyRefOS" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -102,6 +118,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.Ecma335.TableIndex</ReturnType>
       </ReturnValue>
+      <MemberValue>37</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -110,6 +127,8 @@
       <MemberSignature Language="C#" Value="AssemblyRefProcessor" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.Ecma335.TableIndex AssemblyRefProcessor = unsigned int8(36)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.AssemblyRefProcessor" />
+      <MemberSignature Language="VB.NET" Value="AssemblyRefProcessor" />
+      <MemberSignature Language="C++ CLI" Value="AssemblyRefProcessor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -120,6 +139,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.Ecma335.TableIndex</ReturnType>
       </ReturnValue>
+      <MemberValue>36</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -128,6 +148,8 @@
       <MemberSignature Language="C#" Value="ClassLayout" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.Ecma335.TableIndex ClassLayout = unsigned int8(15)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.ClassLayout" />
+      <MemberSignature Language="VB.NET" Value="ClassLayout" />
+      <MemberSignature Language="C++ CLI" Value="ClassLayout" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -138,6 +160,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.Ecma335.TableIndex</ReturnType>
       </ReturnValue>
+      <MemberValue>15</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -146,6 +169,8 @@
       <MemberSignature Language="C#" Value="Constant" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.Ecma335.TableIndex Constant = unsigned int8(11)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.Constant" />
+      <MemberSignature Language="VB.NET" Value="Constant" />
+      <MemberSignature Language="C++ CLI" Value="Constant" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -156,6 +181,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.Ecma335.TableIndex</ReturnType>
       </ReturnValue>
+      <MemberValue>11</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -164,6 +190,8 @@
       <MemberSignature Language="C#" Value="CustomAttribute" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.Ecma335.TableIndex CustomAttribute = unsigned int8(12)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.CustomAttribute" />
+      <MemberSignature Language="VB.NET" Value="CustomAttribute" />
+      <MemberSignature Language="C++ CLI" Value="CustomAttribute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -174,6 +202,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.Ecma335.TableIndex</ReturnType>
       </ReturnValue>
+      <MemberValue>12</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -182,6 +211,8 @@
       <MemberSignature Language="C#" Value="CustomDebugInformation" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.Ecma335.TableIndex CustomDebugInformation = unsigned int8(55)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.CustomDebugInformation" />
+      <MemberSignature Language="VB.NET" Value="CustomDebugInformation" />
+      <MemberSignature Language="C++ CLI" Value="CustomDebugInformation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -192,6 +223,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.Ecma335.TableIndex</ReturnType>
       </ReturnValue>
+      <MemberValue>55</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -200,6 +232,8 @@
       <MemberSignature Language="C#" Value="DeclSecurity" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.Ecma335.TableIndex DeclSecurity = unsigned int8(14)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.DeclSecurity" />
+      <MemberSignature Language="VB.NET" Value="DeclSecurity" />
+      <MemberSignature Language="C++ CLI" Value="DeclSecurity" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -210,6 +244,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.Ecma335.TableIndex</ReturnType>
       </ReturnValue>
+      <MemberValue>14</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -218,6 +253,8 @@
       <MemberSignature Language="C#" Value="Document" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.Ecma335.TableIndex Document = unsigned int8(48)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.Document" />
+      <MemberSignature Language="VB.NET" Value="Document" />
+      <MemberSignature Language="C++ CLI" Value="Document" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -228,6 +265,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.Ecma335.TableIndex</ReturnType>
       </ReturnValue>
+      <MemberValue>48</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -236,6 +274,8 @@
       <MemberSignature Language="C#" Value="EncLog" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.Ecma335.TableIndex EncLog = unsigned int8(30)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.EncLog" />
+      <MemberSignature Language="VB.NET" Value="EncLog" />
+      <MemberSignature Language="C++ CLI" Value="EncLog" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -246,6 +286,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.Ecma335.TableIndex</ReturnType>
       </ReturnValue>
+      <MemberValue>30</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -254,6 +295,8 @@
       <MemberSignature Language="C#" Value="EncMap" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.Ecma335.TableIndex EncMap = unsigned int8(31)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.EncMap" />
+      <MemberSignature Language="VB.NET" Value="EncMap" />
+      <MemberSignature Language="C++ CLI" Value="EncMap" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -264,6 +307,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.Ecma335.TableIndex</ReturnType>
       </ReturnValue>
+      <MemberValue>31</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -272,6 +316,8 @@
       <MemberSignature Language="C#" Value="Event" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.Ecma335.TableIndex Event = unsigned int8(20)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.Event" />
+      <MemberSignature Language="VB.NET" Value="Event" />
+      <MemberSignature Language="C++ CLI" Value="Event" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -282,6 +328,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.Ecma335.TableIndex</ReturnType>
       </ReturnValue>
+      <MemberValue>20</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -290,6 +337,8 @@
       <MemberSignature Language="C#" Value="EventMap" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.Ecma335.TableIndex EventMap = unsigned int8(18)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.EventMap" />
+      <MemberSignature Language="VB.NET" Value="EventMap" />
+      <MemberSignature Language="C++ CLI" Value="EventMap" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -300,6 +349,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.Ecma335.TableIndex</ReturnType>
       </ReturnValue>
+      <MemberValue>18</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -308,6 +358,8 @@
       <MemberSignature Language="C#" Value="EventPtr" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.Ecma335.TableIndex EventPtr = unsigned int8(19)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.EventPtr" />
+      <MemberSignature Language="VB.NET" Value="EventPtr" />
+      <MemberSignature Language="C++ CLI" Value="EventPtr" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -318,6 +370,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.Ecma335.TableIndex</ReturnType>
       </ReturnValue>
+      <MemberValue>19</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -326,6 +379,8 @@
       <MemberSignature Language="C#" Value="ExportedType" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.Ecma335.TableIndex ExportedType = unsigned int8(39)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.ExportedType" />
+      <MemberSignature Language="VB.NET" Value="ExportedType" />
+      <MemberSignature Language="C++ CLI" Value="ExportedType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -336,6 +391,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.Ecma335.TableIndex</ReturnType>
       </ReturnValue>
+      <MemberValue>39</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -344,6 +400,8 @@
       <MemberSignature Language="C#" Value="Field" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.Ecma335.TableIndex Field = unsigned int8(4)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.Field" />
+      <MemberSignature Language="VB.NET" Value="Field" />
+      <MemberSignature Language="C++ CLI" Value="Field" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -354,6 +412,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.Ecma335.TableIndex</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -362,6 +421,8 @@
       <MemberSignature Language="C#" Value="FieldLayout" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.Ecma335.TableIndex FieldLayout = unsigned int8(16)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.FieldLayout" />
+      <MemberSignature Language="VB.NET" Value="FieldLayout" />
+      <MemberSignature Language="C++ CLI" Value="FieldLayout" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -372,6 +433,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.Ecma335.TableIndex</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -380,6 +442,8 @@
       <MemberSignature Language="C#" Value="FieldMarshal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.Ecma335.TableIndex FieldMarshal = unsigned int8(13)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.FieldMarshal" />
+      <MemberSignature Language="VB.NET" Value="FieldMarshal" />
+      <MemberSignature Language="C++ CLI" Value="FieldMarshal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -390,6 +454,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.Ecma335.TableIndex</ReturnType>
       </ReturnValue>
+      <MemberValue>13</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -398,6 +463,8 @@
       <MemberSignature Language="C#" Value="FieldPtr" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.Ecma335.TableIndex FieldPtr = unsigned int8(3)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.FieldPtr" />
+      <MemberSignature Language="VB.NET" Value="FieldPtr" />
+      <MemberSignature Language="C++ CLI" Value="FieldPtr" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -408,6 +475,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.Ecma335.TableIndex</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -416,6 +484,8 @@
       <MemberSignature Language="C#" Value="FieldRva" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.Ecma335.TableIndex FieldRva = unsigned int8(29)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.FieldRva" />
+      <MemberSignature Language="VB.NET" Value="FieldRva" />
+      <MemberSignature Language="C++ CLI" Value="FieldRva" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -426,6 +496,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.Ecma335.TableIndex</ReturnType>
       </ReturnValue>
+      <MemberValue>29</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -434,6 +505,8 @@
       <MemberSignature Language="C#" Value="File" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.Ecma335.TableIndex File = unsigned int8(38)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.File" />
+      <MemberSignature Language="VB.NET" Value="File" />
+      <MemberSignature Language="C++ CLI" Value="File" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -444,6 +517,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.Ecma335.TableIndex</ReturnType>
       </ReturnValue>
+      <MemberValue>38</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -452,6 +526,8 @@
       <MemberSignature Language="C#" Value="GenericParam" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.Ecma335.TableIndex GenericParam = unsigned int8(42)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.GenericParam" />
+      <MemberSignature Language="VB.NET" Value="GenericParam" />
+      <MemberSignature Language="C++ CLI" Value="GenericParam" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -462,6 +538,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.Ecma335.TableIndex</ReturnType>
       </ReturnValue>
+      <MemberValue>42</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -470,6 +547,8 @@
       <MemberSignature Language="C#" Value="GenericParamConstraint" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.Ecma335.TableIndex GenericParamConstraint = unsigned int8(44)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.GenericParamConstraint" />
+      <MemberSignature Language="VB.NET" Value="GenericParamConstraint" />
+      <MemberSignature Language="C++ CLI" Value="GenericParamConstraint" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -480,6 +559,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.Ecma335.TableIndex</ReturnType>
       </ReturnValue>
+      <MemberValue>44</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -488,6 +568,8 @@
       <MemberSignature Language="C#" Value="ImplMap" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.Ecma335.TableIndex ImplMap = unsigned int8(28)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.ImplMap" />
+      <MemberSignature Language="VB.NET" Value="ImplMap" />
+      <MemberSignature Language="C++ CLI" Value="ImplMap" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -498,6 +580,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.Ecma335.TableIndex</ReturnType>
       </ReturnValue>
+      <MemberValue>28</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -506,6 +589,8 @@
       <MemberSignature Language="C#" Value="ImportScope" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.Ecma335.TableIndex ImportScope = unsigned int8(53)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.ImportScope" />
+      <MemberSignature Language="VB.NET" Value="ImportScope" />
+      <MemberSignature Language="C++ CLI" Value="ImportScope" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -516,6 +601,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.Ecma335.TableIndex</ReturnType>
       </ReturnValue>
+      <MemberValue>53</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -524,6 +610,8 @@
       <MemberSignature Language="C#" Value="InterfaceImpl" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.Ecma335.TableIndex InterfaceImpl = unsigned int8(9)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.InterfaceImpl" />
+      <MemberSignature Language="VB.NET" Value="InterfaceImpl" />
+      <MemberSignature Language="C++ CLI" Value="InterfaceImpl" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -534,6 +622,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.Ecma335.TableIndex</ReturnType>
       </ReturnValue>
+      <MemberValue>9</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -542,6 +631,8 @@
       <MemberSignature Language="C#" Value="LocalConstant" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.Ecma335.TableIndex LocalConstant = unsigned int8(52)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.LocalConstant" />
+      <MemberSignature Language="VB.NET" Value="LocalConstant" />
+      <MemberSignature Language="C++ CLI" Value="LocalConstant" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -552,6 +643,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.Ecma335.TableIndex</ReturnType>
       </ReturnValue>
+      <MemberValue>52</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -560,6 +652,8 @@
       <MemberSignature Language="C#" Value="LocalScope" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.Ecma335.TableIndex LocalScope = unsigned int8(50)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.LocalScope" />
+      <MemberSignature Language="VB.NET" Value="LocalScope" />
+      <MemberSignature Language="C++ CLI" Value="LocalScope" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -570,6 +664,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.Ecma335.TableIndex</ReturnType>
       </ReturnValue>
+      <MemberValue>50</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -578,6 +673,8 @@
       <MemberSignature Language="C#" Value="LocalVariable" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.Ecma335.TableIndex LocalVariable = unsigned int8(51)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.LocalVariable" />
+      <MemberSignature Language="VB.NET" Value="LocalVariable" />
+      <MemberSignature Language="C++ CLI" Value="LocalVariable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -588,6 +685,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.Ecma335.TableIndex</ReturnType>
       </ReturnValue>
+      <MemberValue>51</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -596,6 +694,8 @@
       <MemberSignature Language="C#" Value="ManifestResource" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.Ecma335.TableIndex ManifestResource = unsigned int8(40)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.ManifestResource" />
+      <MemberSignature Language="VB.NET" Value="ManifestResource" />
+      <MemberSignature Language="C++ CLI" Value="ManifestResource" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -606,6 +706,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.Ecma335.TableIndex</ReturnType>
       </ReturnValue>
+      <MemberValue>40</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -614,6 +715,8 @@
       <MemberSignature Language="C#" Value="MemberRef" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.Ecma335.TableIndex MemberRef = unsigned int8(10)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.MemberRef" />
+      <MemberSignature Language="VB.NET" Value="MemberRef" />
+      <MemberSignature Language="C++ CLI" Value="MemberRef" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -624,6 +727,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.Ecma335.TableIndex</ReturnType>
       </ReturnValue>
+      <MemberValue>10</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -632,6 +736,8 @@
       <MemberSignature Language="C#" Value="MethodDebugInformation" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.Ecma335.TableIndex MethodDebugInformation = unsigned int8(49)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.MethodDebugInformation" />
+      <MemberSignature Language="VB.NET" Value="MethodDebugInformation" />
+      <MemberSignature Language="C++ CLI" Value="MethodDebugInformation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -642,6 +748,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.Ecma335.TableIndex</ReturnType>
       </ReturnValue>
+      <MemberValue>49</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -650,6 +757,8 @@
       <MemberSignature Language="C#" Value="MethodDef" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.Ecma335.TableIndex MethodDef = unsigned int8(6)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.MethodDef" />
+      <MemberSignature Language="VB.NET" Value="MethodDef" />
+      <MemberSignature Language="C++ CLI" Value="MethodDef" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -660,6 +769,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.Ecma335.TableIndex</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -668,6 +778,8 @@
       <MemberSignature Language="C#" Value="MethodImpl" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.Ecma335.TableIndex MethodImpl = unsigned int8(25)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.MethodImpl" />
+      <MemberSignature Language="VB.NET" Value="MethodImpl" />
+      <MemberSignature Language="C++ CLI" Value="MethodImpl" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -678,6 +790,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.Ecma335.TableIndex</ReturnType>
       </ReturnValue>
+      <MemberValue>25</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -686,6 +799,8 @@
       <MemberSignature Language="C#" Value="MethodPtr" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.Ecma335.TableIndex MethodPtr = unsigned int8(5)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.MethodPtr" />
+      <MemberSignature Language="VB.NET" Value="MethodPtr" />
+      <MemberSignature Language="C++ CLI" Value="MethodPtr" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -696,6 +811,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.Ecma335.TableIndex</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -704,6 +820,8 @@
       <MemberSignature Language="C#" Value="MethodSemantics" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.Ecma335.TableIndex MethodSemantics = unsigned int8(24)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.MethodSemantics" />
+      <MemberSignature Language="VB.NET" Value="MethodSemantics" />
+      <MemberSignature Language="C++ CLI" Value="MethodSemantics" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -714,6 +832,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.Ecma335.TableIndex</ReturnType>
       </ReturnValue>
+      <MemberValue>24</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -722,6 +841,8 @@
       <MemberSignature Language="C#" Value="MethodSpec" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.Ecma335.TableIndex MethodSpec = unsigned int8(43)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.MethodSpec" />
+      <MemberSignature Language="VB.NET" Value="MethodSpec" />
+      <MemberSignature Language="C++ CLI" Value="MethodSpec" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -732,6 +853,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.Ecma335.TableIndex</ReturnType>
       </ReturnValue>
+      <MemberValue>43</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -740,6 +862,8 @@
       <MemberSignature Language="C#" Value="Module" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.Ecma335.TableIndex Module = unsigned int8(0)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.Module" />
+      <MemberSignature Language="VB.NET" Value="Module" />
+      <MemberSignature Language="C++ CLI" Value="Module" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -750,6 +874,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.Ecma335.TableIndex</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -758,6 +883,8 @@
       <MemberSignature Language="C#" Value="ModuleRef" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.Ecma335.TableIndex ModuleRef = unsigned int8(26)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.ModuleRef" />
+      <MemberSignature Language="VB.NET" Value="ModuleRef" />
+      <MemberSignature Language="C++ CLI" Value="ModuleRef" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -768,6 +895,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.Ecma335.TableIndex</ReturnType>
       </ReturnValue>
+      <MemberValue>26</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -776,6 +904,8 @@
       <MemberSignature Language="C#" Value="NestedClass" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.Ecma335.TableIndex NestedClass = unsigned int8(41)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.NestedClass" />
+      <MemberSignature Language="VB.NET" Value="NestedClass" />
+      <MemberSignature Language="C++ CLI" Value="NestedClass" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -786,6 +916,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.Ecma335.TableIndex</ReturnType>
       </ReturnValue>
+      <MemberValue>41</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -794,6 +925,8 @@
       <MemberSignature Language="C#" Value="Param" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.Ecma335.TableIndex Param = unsigned int8(8)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.Param" />
+      <MemberSignature Language="VB.NET" Value="Param" />
+      <MemberSignature Language="C++ CLI" Value="Param" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -804,6 +937,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.Ecma335.TableIndex</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -812,6 +946,8 @@
       <MemberSignature Language="C#" Value="ParamPtr" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.Ecma335.TableIndex ParamPtr = unsigned int8(7)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.ParamPtr" />
+      <MemberSignature Language="VB.NET" Value="ParamPtr" />
+      <MemberSignature Language="C++ CLI" Value="ParamPtr" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -822,6 +958,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.Ecma335.TableIndex</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -830,6 +967,8 @@
       <MemberSignature Language="C#" Value="Property" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.Ecma335.TableIndex Property = unsigned int8(23)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.Property" />
+      <MemberSignature Language="VB.NET" Value="Property" />
+      <MemberSignature Language="C++ CLI" Value="Property" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -840,6 +979,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.Ecma335.TableIndex</ReturnType>
       </ReturnValue>
+      <MemberValue>23</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -848,6 +988,8 @@
       <MemberSignature Language="C#" Value="PropertyMap" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.Ecma335.TableIndex PropertyMap = unsigned int8(21)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.PropertyMap" />
+      <MemberSignature Language="VB.NET" Value="PropertyMap" />
+      <MemberSignature Language="C++ CLI" Value="PropertyMap" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -858,6 +1000,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.Ecma335.TableIndex</ReturnType>
       </ReturnValue>
+      <MemberValue>21</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -866,6 +1009,8 @@
       <MemberSignature Language="C#" Value="PropertyPtr" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.Ecma335.TableIndex PropertyPtr = unsigned int8(22)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.PropertyPtr" />
+      <MemberSignature Language="VB.NET" Value="PropertyPtr" />
+      <MemberSignature Language="C++ CLI" Value="PropertyPtr" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -876,6 +1021,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.Ecma335.TableIndex</ReturnType>
       </ReturnValue>
+      <MemberValue>22</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -884,6 +1030,8 @@
       <MemberSignature Language="C#" Value="StandAloneSig" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.Ecma335.TableIndex StandAloneSig = unsigned int8(17)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.StandAloneSig" />
+      <MemberSignature Language="VB.NET" Value="StandAloneSig" />
+      <MemberSignature Language="C++ CLI" Value="StandAloneSig" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -894,6 +1042,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.Ecma335.TableIndex</ReturnType>
       </ReturnValue>
+      <MemberValue>17</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -902,6 +1051,8 @@
       <MemberSignature Language="C#" Value="StateMachineMethod" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.Ecma335.TableIndex StateMachineMethod = unsigned int8(54)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.StateMachineMethod" />
+      <MemberSignature Language="VB.NET" Value="StateMachineMethod" />
+      <MemberSignature Language="C++ CLI" Value="StateMachineMethod" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -912,6 +1063,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.Ecma335.TableIndex</ReturnType>
       </ReturnValue>
+      <MemberValue>54</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -920,6 +1072,8 @@
       <MemberSignature Language="C#" Value="TypeDef" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.Ecma335.TableIndex TypeDef = unsigned int8(2)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.TypeDef" />
+      <MemberSignature Language="VB.NET" Value="TypeDef" />
+      <MemberSignature Language="C++ CLI" Value="TypeDef" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -930,6 +1084,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.Ecma335.TableIndex</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -938,6 +1093,8 @@
       <MemberSignature Language="C#" Value="TypeRef" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.Ecma335.TableIndex TypeRef = unsigned int8(1)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.TypeRef" />
+      <MemberSignature Language="VB.NET" Value="TypeRef" />
+      <MemberSignature Language="C++ CLI" Value="TypeRef" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -948,6 +1105,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.Ecma335.TableIndex</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -956,6 +1114,8 @@
       <MemberSignature Language="C#" Value="TypeSpec" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.Ecma335.TableIndex TypeSpec = unsigned int8(27)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.TableIndex.TypeSpec" />
+      <MemberSignature Language="VB.NET" Value="TypeSpec" />
+      <MemberSignature Language="C++ CLI" Value="TypeSpec" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -966,6 +1126,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.Ecma335.TableIndex</ReturnType>
       </ReturnValue>
+      <MemberValue>27</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>

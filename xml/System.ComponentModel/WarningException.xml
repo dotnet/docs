@@ -1,7 +1,9 @@
-<Type Name="WarningException" FullName="System.ComponentModel.WarningException">
+﻿<Type Name="WarningException" FullName="System.ComponentModel.WarningException">
   <TypeSignature Language="C#" Value="public class WarningException : SystemException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit WarningException extends System.SystemException" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.WarningException" />
+  <TypeSignature Language="VB.NET" Value="Public Class WarningException&#xA;Inherits SystemException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WarningException : SystemException" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -40,10 +42,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.WarningException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public WarningException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.WarningException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WarningException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -68,6 +82,8 @@
       <MemberSignature Language="C#" Value="public WarningException (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.WarningException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WarningException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -95,6 +111,8 @@
       <MemberSignature Language="C#" Value="protected WarningException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.WarningException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; WarningException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -124,6 +142,8 @@
       <MemberSignature Language="C#" Value="public WarningException (string message, Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.WarningException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WarningException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -153,6 +173,8 @@
       <MemberSignature Language="C#" Value="public WarningException (string message, string helpUrl);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, string helpUrl) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.WarningException.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, helpUrl As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WarningException(System::String ^ message, System::String ^ helpUrl);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -182,6 +204,8 @@
       <MemberSignature Language="C#" Value="public WarningException (string message, string helpUrl, string helpTopic);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, string helpUrl, string helpTopic) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.WarningException.#ctor(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, helpUrl As String, helpTopic As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WarningException(System::String ^ message, System::String ^ helpUrl, System::String ^ helpTopic);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -213,6 +237,8 @@
       <MemberSignature Language="C#" Value="public override void GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.WarningException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -247,6 +273,8 @@
       <MemberSignature Language="C#" Value="public string HelpTopic { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string HelpTopic" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.WarningException.HelpTopic" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HelpTopic As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ HelpTopic { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -274,6 +302,8 @@
       <MemberSignature Language="C#" Value="public string HelpUrl { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string HelpUrl" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.WarningException.HelpUrl" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HelpUrl As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ HelpUrl { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -297,15 +327,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.WarningException" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

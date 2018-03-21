@@ -1,7 +1,9 @@
-<Type Name="HashAlgorithm" FullName="System.Security.Cryptography.HashAlgorithm">
+﻿<Type Name="HashAlgorithm" FullName="System.Security.Cryptography.HashAlgorithm">
   <TypeSignature Language="C#" Value="public abstract class HashAlgorithm : System.Security.Cryptography.ICryptoTransform" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit HashAlgorithm extends System.Object implements class System.IDisposable, class System.Security.Cryptography.ICryptoTransform" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.HashAlgorithm" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class HashAlgorithm&#xA;Implements ICryptoTransform" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HashAlgorithm abstract : System::Security::Cryptography::ICryptoTransform" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -59,6 +61,8 @@
       <MemberSignature Language="C#" Value="protected HashAlgorithm ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.HashAlgorithm.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; HashAlgorithm();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -91,7 +95,12 @@
       <MemberSignature Language="C#" Value="public virtual bool CanReuseTransform { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanReuseTransform" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.HashAlgorithm.CanReuseTransform" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CanReuseTransform As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanReuseTransform { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Security.Cryptography.ICryptoTransform.CanReuseTransform</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -118,7 +127,12 @@
       <MemberSignature Language="C#" Value="public virtual bool CanTransformMultipleBlocks { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanTransformMultipleBlocks" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.HashAlgorithm.CanTransformMultipleBlocks" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CanTransformMultipleBlocks As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanTransformMultipleBlocks { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Security.Cryptography.ICryptoTransform.CanTransformMultipleBlocks</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -146,6 +160,8 @@
       <MemberSignature Language="C#" Value="public void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.HashAlgorithm.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -178,10 +194,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ComputeHash">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Computes the hash value for the input data.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ComputeHash">
       <MemberSignature Language="C#" Value="public byte[] ComputeHash (byte[] buffer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] ComputeHash(unsigned int8[] buffer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.HashAlgorithm.ComputeHash(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function ComputeHash (buffer As Byte()) As Byte()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ ComputeHash(cli::array &lt;System::Byte&gt; ^ buffer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -227,6 +255,8 @@
       <MemberSignature Language="C#" Value="public byte[] ComputeHash (System.IO.Stream inputStream);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] ComputeHash(class System.IO.Stream inputStream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.HashAlgorithm.ComputeHash(System.IO.Stream)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ComputeHash (inputStream As Stream) As Byte()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ ComputeHash(System::IO::Stream ^ inputStream);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -271,6 +301,8 @@
       <MemberSignature Language="C#" Value="public byte[] ComputeHash (byte[] buffer, int offset, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] ComputeHash(unsigned int8[] buffer, int32 offset, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.HashAlgorithm.ComputeHash(System.Byte[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ComputeHash (buffer As Byte(), offset As Integer, count As Integer) As Byte()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ ComputeHash(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -314,10 +346,22 @@
         <exception cref="T:System.ObjectDisposedException">The object has already been disposed.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Create">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an instance of an implementation of a hash algorithm.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Create">
       <MemberSignature Language="C#" Value="public static System.Security.Cryptography.HashAlgorithm Create ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Cryptography.HashAlgorithm Create() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.HashAlgorithm.Create" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create () As HashAlgorithm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::HashAlgorithm ^ Create();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -353,6 +397,8 @@
       <MemberSignature Language="C#" Value="public static System.Security.Cryptography.HashAlgorithm Create (string hashName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Cryptography.HashAlgorithm Create(string hashName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.HashAlgorithm.Create(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (hashName As String) As HashAlgorithm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::HashAlgorithm ^ Create(System::String ^ hashName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -416,11 +462,26 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases all resources used by the current instance of the <see cref="T:System.Security.Cryptography.HashAlgorithm" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Dispose">
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.HashAlgorithm.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -460,6 +521,8 @@
       <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.HashAlgorithm.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -507,6 +570,8 @@
       <MemberSignature Language="C#" Value="public virtual byte[] Hash { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] Hash" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.HashAlgorithm.Hash" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Hash As Byte()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property cli::array &lt;System::Byte&gt; ^ Hash { cli::array &lt;System::Byte&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -544,6 +609,8 @@
       <MemberSignature Language="C#" Value="protected abstract void HashCore (byte[] array, int ibStart, int cbSize);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void HashCore(unsigned int8[] array, int32 ibStart, int32 cbSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.HashAlgorithm.HashCore(System.Byte[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub HashCore (array As Byte(), ibStart As Integer, cbSize As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void HashCore(cli::array &lt;System::Byte&gt; ^ array, int ibStart, int cbSize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -588,6 +655,8 @@
       <MemberSignature Language="C#" Value="protected abstract byte[] HashFinal ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance unsigned int8[] HashFinal() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.HashAlgorithm.HashFinal" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Function HashFinal () As Byte()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract cli::array &lt;System::Byte&gt; ^ HashFinal();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -624,6 +693,8 @@
       <MemberSignature Language="C#" Value="public virtual int HashSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 HashSize" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.HashAlgorithm.HashSize" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property HashSize As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int HashSize { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -652,6 +723,8 @@
       <MemberSignature Language="C#" Value="protected int HashSizeValue;" />
       <MemberSignature Language="ILAsm" Value=".field family int32 HashSizeValue" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.HashAlgorithm.HashSizeValue" />
+      <MemberSignature Language="VB.NET" Value="Protected HashSizeValue As Integer " />
+      <MemberSignature Language="C++ CLI" Value="protected: int HashSizeValue;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -684,9 +757,11 @@
       </Docs>
     </Member>
     <Member MemberName="HashValue">
-      <MemberSignature Language="C#" Value="protected byte[] HashValue;" />
+      <MemberSignature Language="C#" Value="protected internal byte[] HashValue;" />
       <MemberSignature Language="ILAsm" Value=".field familyorassembly unsigned int8[] HashValue" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.HashAlgorithm.HashValue" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend HashValue As Byte() " />
+      <MemberSignature Language="C++ CLI" Value="protected public: cli::array &lt;System::Byte&gt; ^ HashValue;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -720,6 +795,8 @@
       <MemberSignature Language="C#" Value="public abstract void Initialize ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Initialize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.HashAlgorithm.Initialize" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Initialize ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Initialize();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -748,7 +825,12 @@
       <MemberSignature Language="C#" Value="public virtual int InputBlockSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 InputBlockSize" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.HashAlgorithm.InputBlockSize" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property InputBlockSize As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int InputBlockSize { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Security.Cryptography.ICryptoTransform.InputBlockSize</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -782,7 +864,12 @@
       <MemberSignature Language="C#" Value="public virtual int OutputBlockSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 OutputBlockSize" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.HashAlgorithm.OutputBlockSize" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property OutputBlockSize As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int OutputBlockSize { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Security.Cryptography.ICryptoTransform.OutputBlockSize</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -816,6 +903,8 @@
       <MemberSignature Language="C#" Value="protected int State;" />
       <MemberSignature Language="ILAsm" Value=".field family int32 State" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.HashAlgorithm.State" />
+      <MemberSignature Language="VB.NET" Value="Protected State As Integer " />
+      <MemberSignature Language="C++ CLI" Value="protected: int State;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -849,7 +938,12 @@
       <MemberSignature Language="C#" Value="public int TransformBlock (byte[] inputBuffer, int inputOffset, int inputCount, byte[] outputBuffer, int outputOffset);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 TransformBlock(unsigned int8[] inputBuffer, int32 inputOffset, int32 inputCount, unsigned int8[] outputBuffer, int32 outputOffset) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.HashAlgorithm.TransformBlock(System.Byte[],System.Int32,System.Int32,System.Byte[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TransformBlock (inputBuffer As Byte(), inputOffset As Integer, inputCount As Integer, outputBuffer As Byte(), outputOffset As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int TransformBlock(cli::array &lt;System::Byte&gt; ^ inputBuffer, int inputOffset, int inputCount, cli::array &lt;System::Byte&gt; ^ outputBuffer, int outputOffset);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Security.Cryptography.ICryptoTransform.TransformBlock(System.Byte[],System.Int32,System.Int32,System.Byte[],System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -918,7 +1012,12 @@
       <MemberSignature Language="C#" Value="public byte[] TransformFinalBlock (byte[] inputBuffer, int inputOffset, int inputCount);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance unsigned int8[] TransformFinalBlock(unsigned int8[] inputBuffer, int32 inputOffset, int32 inputCount) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.HashAlgorithm.TransformFinalBlock(System.Byte[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TransformFinalBlock (inputBuffer As Byte(), inputOffset As Integer, inputCount As Integer) As Byte()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Byte&gt; ^ TransformFinalBlock(cli::array &lt;System::Byte&gt; ^ inputBuffer, int inputOffset, int inputCount);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Security.Cryptography.ICryptoTransform.TransformFinalBlock(System.Byte[],System.Int32,System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -977,35 +1076,5 @@
         <exception cref="T:System.ObjectDisposedException">The object has already been disposed.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Dispose">
-      <AssemblyInfo>
-        <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Releases all resources used by the current instance of the <see cref="T:System.Security.Cryptography.HashAlgorithm" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Create">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates an instance of an implementation of a hash algorithm.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ComputeHash">
-      <AssemblyInfo>
-        <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Computes the hash value for the input data.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

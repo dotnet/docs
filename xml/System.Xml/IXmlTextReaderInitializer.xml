@@ -1,7 +1,9 @@
-<Type Name="IXmlTextReaderInitializer" FullName="System.Xml.IXmlTextReaderInitializer">
+﻿<Type Name="IXmlTextReaderInitializer" FullName="System.Xml.IXmlTextReaderInitializer">
   <TypeSignature Language="C#" Value="public interface IXmlTextReaderInitializer" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IXmlTextReaderInitializer" />
   <TypeSignature Language="DocId" Value="T:System.Xml.IXmlTextReaderInitializer" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IXmlTextReaderInitializer" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IXmlTextReaderInitializer" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Serialization</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -21,10 +23,21 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName="SetInput">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Specifies initialization requirements for XML text readers that implement this method.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="SetInput">
       <MemberSignature Language="C#" Value="public void SetInput (System.IO.Stream stream, System.Text.Encoding encoding, System.Xml.XmlDictionaryReaderQuotas quotas, System.Xml.OnXmlDictionaryReaderClose onClose);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetInput(class System.IO.Stream stream, class System.Text.Encoding encoding, class System.Xml.XmlDictionaryReaderQuotas quotas, class System.Xml.OnXmlDictionaryReaderClose onClose) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.IXmlTextReaderInitializer.SetInput(System.IO.Stream,System.Text.Encoding,System.Xml.XmlDictionaryReaderQuotas,System.Xml.OnXmlDictionaryReaderClose)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetInput(System::IO::Stream ^ stream, System::Text::Encoding ^ encoding, System::Xml::XmlDictionaryReaderQuotas ^ quotas, System::Xml::OnXmlDictionaryReaderClose ^ onClose);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -61,6 +74,7 @@
       <MemberSignature Language="C#" Value="public void SetInput (byte[] buffer, int offset, int count, System.Text.Encoding encoding, System.Xml.XmlDictionaryReaderQuotas quotas, System.Xml.OnXmlDictionaryReaderClose onClose);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetInput(unsigned int8[] buffer, int32 offset, int32 count, class System.Text.Encoding encoding, class System.Xml.XmlDictionaryReaderQuotas quotas, class System.Xml.OnXmlDictionaryReaderClose onClose) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.IXmlTextReaderInitializer.SetInput(System.Byte[],System.Int32,System.Int32,System.Text.Encoding,System.Xml.XmlDictionaryReaderQuotas,System.Xml.OnXmlDictionaryReaderClose)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetInput(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count, System::Text::Encoding ^ encoding, System::Xml::XmlDictionaryReaderQuotas ^ quotas, System::Xml::OnXmlDictionaryReaderClose ^ onClose);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -97,15 +111,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="SetInput">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.Serialization</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Specifies initialization requirements for XML text readers that implement this method.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

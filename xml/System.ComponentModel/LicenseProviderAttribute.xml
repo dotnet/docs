@@ -1,7 +1,9 @@
-<Type Name="LicenseProviderAttribute" FullName="System.ComponentModel.LicenseProviderAttribute">
+﻿<Type Name="LicenseProviderAttribute" FullName="System.ComponentModel.LicenseProviderAttribute">
   <TypeSignature Language="C#" Value="public sealed class LicenseProviderAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit LicenseProviderAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.LicenseProviderAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class LicenseProviderAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class LicenseProviderAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -65,10 +67,22 @@
     <altmember cref="T:System.ComponentModel.LicenseUsageMode" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.LicenseProviderAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public LicenseProviderAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.LicenseProviderAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LicenseProviderAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -93,6 +107,8 @@
       <MemberSignature Language="C#" Value="public LicenseProviderAttribute (string typeName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string typeName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.LicenseProviderAttribute.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (typeName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LicenseProviderAttribute(System::String ^ typeName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -120,6 +136,7 @@
       <MemberSignature Language="C#" Value="public LicenseProviderAttribute (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.LicenseProviderAttribute.#ctor(System.Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LicenseProviderAttribute(Type ^ type);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -147,6 +164,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.LicenseProviderAttribute Default;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.LicenseProviderAttribute Default" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.LicenseProviderAttribute.Default" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Default As LicenseProviderAttribute " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::LicenseProviderAttribute ^ Default;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -173,6 +192,8 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.LicenseProviderAttribute.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (value As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -205,6 +226,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.LicenseProviderAttribute.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -233,6 +256,8 @@
       <MemberSignature Language="C#" Value="public Type LicenseProvider { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type LicenseProvider" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.LicenseProviderAttribute.LicenseProvider" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LicenseProvider As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ LicenseProvider { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -260,6 +285,8 @@
       <MemberSignature Language="C#" Value="public override object TypeId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object TypeId" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.LicenseProviderAttribute.TypeId" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property TypeId As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ TypeId { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -283,15 +310,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.LicenseProviderAttribute" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

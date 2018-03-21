@@ -1,7 +1,9 @@
-<Type Name="DataTableClearEventArgs" FullName="System.Data.DataTableClearEventArgs">
+﻿<Type Name="DataTableClearEventArgs" FullName="System.Data.DataTableClearEventArgs">
   <TypeSignature Language="C#" Value="public sealed class DataTableClearEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DataTableClearEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Data.DataTableClearEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DataTableClearEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataTableClearEventArgs sealed : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -28,6 +30,7 @@
       <MemberSignature Language="C#" Value="public DataTableClearEventArgs (System.Data.DataTable dataTable);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Data.DataTable dataTable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataTableClearEventArgs.#ctor(System.Data.DataTable)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataTableClearEventArgs(System::Data::DataTable ^ dataTable);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -55,6 +58,8 @@
       <MemberSignature Language="C#" Value="public System.Data.DataTable Table { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.DataTable Table" />
       <MemberSignature Language="DocId" Value="P:System.Data.DataTableClearEventArgs.Table" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Table As DataTable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::DataTable ^ Table { System::Data::DataTable ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -82,6 +87,8 @@
       <MemberSignature Language="C#" Value="public string TableName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TableName" />
       <MemberSignature Language="DocId" Value="P:System.Data.DataTableClearEventArgs.TableName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TableName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TableName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -109,6 +116,8 @@
       <MemberSignature Language="C#" Value="public string TableNamespace { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TableNamespace" />
       <MemberSignature Language="DocId" Value="P:System.Data.DataTableClearEventArgs.TableNamespace" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TableNamespace As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TableNamespace { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

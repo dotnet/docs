@@ -1,7 +1,9 @@
-<Type Name="WorkflowParameterBindingCollection" FullName="System.Workflow.ComponentModel.WorkflowParameterBindingCollection">
+﻿<Type Name="WorkflowParameterBindingCollection" FullName="System.Workflow.ComponentModel.WorkflowParameterBindingCollection">
   <TypeSignature Language="C#" Value="public sealed class WorkflowParameterBindingCollection : System.Collections.ObjectModel.KeyedCollection&lt;string,System.Workflow.ComponentModel.WorkflowParameterBinding&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit WorkflowParameterBindingCollection extends System.Collections.ObjectModel.KeyedCollection`2&lt;string, class System.Workflow.ComponentModel.WorkflowParameterBinding&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.WorkflowParameterBindingCollection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WorkflowParameterBindingCollection&#xA;Inherits KeyedCollection(Of String, WorkflowParameterBinding)" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WorkflowParameterBindingCollection sealed : System::Collections::ObjectModel::KeyedCollection&lt;System::String ^, System::Workflow::ComponentModel::WorkflowParameterBinding ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +39,8 @@
       <MemberSignature Language="C#" Value="public WorkflowParameterBindingCollection (System.Workflow.ComponentModel.Activity ownerActivity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Workflow.ComponentModel.Activity ownerActivity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.WorkflowParameterBindingCollection.#ctor(System.Workflow.ComponentModel.Activity)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (ownerActivity As Activity)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowParameterBindingCollection(System::Workflow::ComponentModel::Activity ^ ownerActivity);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -57,6 +61,8 @@
       <MemberSignature Language="C#" Value="protected override void ClearItems ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void ClearItems() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.WorkflowParameterBindingCollection.ClearItems" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub ClearItems ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ClearItems();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -75,6 +81,8 @@
       <MemberSignature Language="C#" Value="public System.Workflow.ComponentModel.WorkflowParameterBinding GetItem (string key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Workflow.ComponentModel.WorkflowParameterBinding GetItem(string key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.WorkflowParameterBindingCollection.GetItem(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetItem (key As String) As WorkflowParameterBinding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Workflow::ComponentModel::WorkflowParameterBinding ^ GetItem(System::String ^ key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -97,6 +105,8 @@
       <MemberSignature Language="C#" Value="protected override string GetKeyForItem (System.Workflow.ComponentModel.WorkflowParameterBinding item);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetKeyForItem(class System.Workflow.ComponentModel.WorkflowParameterBinding item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.WorkflowParameterBindingCollection.GetKeyForItem(System.Workflow.ComponentModel.WorkflowParameterBinding)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetKeyForItem (item As WorkflowParameterBinding) As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetKeyForItem(System::Workflow::ComponentModel::WorkflowParameterBinding ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -119,6 +129,8 @@
       <MemberSignature Language="C#" Value="protected override void InsertItem (int index, System.Workflow.ComponentModel.WorkflowParameterBinding item);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InsertItem(int32 index, class System.Workflow.ComponentModel.WorkflowParameterBinding item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.WorkflowParameterBindingCollection.InsertItem(System.Int32,System.Workflow.ComponentModel.WorkflowParameterBinding)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InsertItem (index As Integer, item As WorkflowParameterBinding)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InsertItem(int index, System::Workflow::ComponentModel::WorkflowParameterBinding ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -142,6 +154,8 @@
       <MemberSignature Language="C#" Value="protected override void RemoveItem (int index);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RemoveItem(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.WorkflowParameterBindingCollection.RemoveItem(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RemoveItem (index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RemoveItem(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -163,6 +177,8 @@
       <MemberSignature Language="C#" Value="protected override void SetItem (int index, System.Workflow.ComponentModel.WorkflowParameterBinding item);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetItem(int32 index, class System.Workflow.ComponentModel.WorkflowParameterBinding item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.WorkflowParameterBindingCollection.SetItem(System.Int32,System.Workflow.ComponentModel.WorkflowParameterBinding)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetItem (index As Integer, item As WorkflowParameterBinding)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetItem(int index, System::Workflow::ComponentModel::WorkflowParameterBinding ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

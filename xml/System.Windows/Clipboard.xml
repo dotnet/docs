@@ -1,7 +1,9 @@
-<Type Name="Clipboard" FullName="System.Windows.Clipboard">
+﻿<Type Name="Clipboard" FullName="System.Windows.Clipboard">
   <TypeSignature Language="C#" Value="public static class Clipboard" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Clipboard extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Clipboard" />
+  <TypeSignature Language="VB.NET" Value="Public Class Clipboard" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Clipboard abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +58,8 @@
       <MemberSignature Language="C#" Value="public static void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Clipboard.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Clear ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -86,6 +90,8 @@
       <MemberSignature Language="C#" Value="public static bool ContainsAudio ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool ContainsAudio() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Clipboard.ContainsAudio" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ContainsAudio () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool ContainsAudio();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -118,6 +124,8 @@
       <MemberSignature Language="C#" Value="public static bool ContainsData (string format);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool ContainsData(string format) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Clipboard.ContainsData(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ContainsData (format As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool ContainsData(System::String ^ format);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -165,6 +173,8 @@
       <MemberSignature Language="C#" Value="public static bool ContainsFileDropList ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool ContainsFileDropList() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Clipboard.ContainsFileDropList" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ContainsFileDropList () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool ContainsFileDropList();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -198,6 +208,8 @@
       <MemberSignature Language="C#" Value="public static bool ContainsImage ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool ContainsImage() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Clipboard.ContainsImage" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ContainsImage () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool ContainsImage();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -228,10 +240,21 @@
         <altmember cref="T:System.Windows.DataFormats" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ContainsText">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Queries the Clipboard for the presence of data in a valid text data format.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ContainsText">
       <MemberSignature Language="C#" Value="public static bool ContainsText ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool ContainsText() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Clipboard.ContainsText" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ContainsText () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool ContainsText();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -269,6 +292,8 @@
       <MemberSignature Language="C#" Value="public static bool ContainsText (System.Windows.TextDataFormat format);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool ContainsText(valuetype System.Windows.TextDataFormat format) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Clipboard.ContainsText(System.Windows.TextDataFormat)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ContainsText (format As TextDataFormat) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool ContainsText(System::Windows::TextDataFormat format);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -308,6 +333,8 @@
       <MemberSignature Language="C#" Value="public static void Flush ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Flush() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Clipboard.Flush" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Flush ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Flush();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -326,6 +353,8 @@
       <MemberSignature Language="C#" Value="public static System.IO.Stream GetAudioStream ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.Stream GetAudioStream() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Clipboard.GetAudioStream" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetAudioStream () As Stream" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::Stream ^ GetAudioStream();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -360,6 +389,8 @@
       <MemberSignature Language="C#" Value="public static object GetData (string format);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetData(string format) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Clipboard.GetData(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetData (format As String) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetData(System::String ^ format);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -402,6 +433,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.IDataObject GetDataObject ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.IDataObject GetDataObject() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Clipboard.GetDataObject" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetDataObject () As IDataObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::IDataObject ^ GetDataObject();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -439,6 +472,8 @@
       <MemberSignature Language="C#" Value="public static System.Collections.Specialized.StringCollection GetFileDropList ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Specialized.StringCollection GetFileDropList() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Clipboard.GetFileDropList" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetFileDropList () As StringCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Specialized::StringCollection ^ GetFileDropList();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -466,6 +501,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Imaging.BitmapSource GetImage ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Media.Imaging.BitmapSource GetImage() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Clipboard.GetImage" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetImage () As BitmapSource" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Imaging::BitmapSource ^ GetImage();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -498,10 +535,21 @@
         <altmember cref="T:System.Windows.DataFormats" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetText">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a string containing the text data on the Clipboard.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetText">
       <MemberSignature Language="C#" Value="public static string GetText ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetText() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Clipboard.GetText" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetText () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetText();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -536,6 +584,8 @@
       <MemberSignature Language="C#" Value="public static string GetText (System.Windows.TextDataFormat format);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetText(valuetype System.Windows.TextDataFormat format) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Clipboard.GetText(System.Windows.TextDataFormat)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetText (format As TextDataFormat) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetText(System::Windows::TextDataFormat format);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -566,6 +616,8 @@
       <MemberSignature Language="C#" Value="public static bool IsCurrent (System.Windows.IDataObject data);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsCurrent(class System.Windows.IDataObject data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Clipboard.IsCurrent(System.Windows.IDataObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsCurrent (data As IDataObject) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsCurrent(System::Windows::IDataObject ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -603,10 +655,21 @@
         <exception cref="T:System.Runtime.InteropServices.ExternalException">An error occurred when accessing the Clipboard. The exception details will include an <see langword="HResult" /> that identifies the specific error; see <see cref="P:System.Runtime.InteropServices.ErrorWrapper.ErrorCode" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetAudio">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Stores audio data (<see cref="F:System.Windows.DataFormats.WaveAudio" /> data format) on the Clipboard.  The audio data can be a byte array or a stream.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="SetAudio">
       <MemberSignature Language="C#" Value="public static void SetAudio (byte[] audioBytes);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetAudio(unsigned int8[] audioBytes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Clipboard.SetAudio(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetAudio (audioBytes As Byte())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetAudio(cli::array &lt;System::Byte&gt; ^ audioBytes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -645,6 +708,8 @@
       <MemberSignature Language="C#" Value="public static void SetAudio (System.IO.Stream audioStream);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetAudio(class System.IO.Stream audioStream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Clipboard.SetAudio(System.IO.Stream)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetAudio (audioStream As Stream)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetAudio(System::IO::Stream ^ audioStream);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -683,6 +748,8 @@
       <MemberSignature Language="C#" Value="public static void SetData (string format, object data);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetData(string format, object data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Clipboard.SetData(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetData (format As String, data As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetData(System::String ^ format, System::Object ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -719,10 +786,21 @@
         <altmember cref="M:System.Windows.Clipboard.GetData(System.String)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetDataObject">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Stores a specified data object on the system Clipboard.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="SetDataObject">
       <MemberSignature Language="C#" Value="public static void SetDataObject (object data);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetDataObject(object data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Clipboard.SetDataObject(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetDataObject (data As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetDataObject(System::Object ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -766,6 +844,8 @@
       <MemberSignature Language="C#" Value="public static void SetDataObject (object data, bool copy);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetDataObject(object data, bool copy) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Clipboard.SetDataObject(System.Object,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetDataObject (data As Object, copy As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetDataObject(System::Object ^ data, bool copy);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -815,6 +895,8 @@
       <MemberSignature Language="C#" Value="public static void SetFileDropList (System.Collections.Specialized.StringCollection fileDropList);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetFileDropList(class System.Collections.Specialized.StringCollection fileDropList) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Clipboard.SetFileDropList(System.Collections.Specialized.StringCollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetFileDropList (fileDropList As StringCollection)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetFileDropList(System::Collections::Specialized::StringCollection ^ fileDropList);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -855,6 +937,8 @@
       <MemberSignature Language="C#" Value="public static void SetImage (System.Windows.Media.Imaging.BitmapSource image);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetImage(class System.Windows.Media.Imaging.BitmapSource image) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Clipboard.SetImage(System.Windows.Media.Imaging.BitmapSource)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetImage (image As BitmapSource)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetImage(System::Windows::Media::Imaging::BitmapSource ^ image);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -889,10 +973,21 @@
         <altmember cref="T:System.Windows.DataFormats" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetText">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Stores text data on the Clipboard.  The text data to store is specified as a string.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="SetText">
       <MemberSignature Language="C#" Value="public static void SetText (string text);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetText(string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Clipboard.SetText(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetText (text As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetText(System::String ^ text);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -933,6 +1028,8 @@
       <MemberSignature Language="C#" Value="public static void SetText (string text, System.Windows.TextDataFormat format);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetText(string text, valuetype System.Windows.TextDataFormat format) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Clipboard.SetText(System.String,System.Windows.TextDataFormat)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetText (text As String, format As TextDataFormat)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetText(System::String ^ text, System::Windows::TextDataFormat format);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -969,50 +1066,5 @@
         <altmember cref="T:System.Windows.DataFormats" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="ContainsText">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Queries the Clipboard for the presence of data in a valid text data format.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="SetText">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Stores text data on the Clipboard.  The text data to store is specified as a string.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetText">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a string containing the text data on the Clipboard.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="SetAudio">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Stores audio data (<see cref="F:System.Windows.DataFormats.WaveAudio" /> data format) on the Clipboard.  The audio data can be a byte array or a stream.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="SetDataObject">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Stores a specified data object on the system Clipboard.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

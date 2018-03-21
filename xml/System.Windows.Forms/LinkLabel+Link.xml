@@ -1,7 +1,9 @@
-<Type Name="LinkLabel+Link" FullName="System.Windows.Forms.LinkLabel+Link">
+﻿<Type Name="LinkLabel+Link" FullName="System.Windows.Forms.LinkLabel+Link">
   <TypeSignature Language="C#" Value="public class LinkLabel.Link" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi beforefieldinit LinkLabel/Link extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.LinkLabel.Link" />
+  <TypeSignature Language="VB.NET" Value="Public Class LinkLabel.Link" />
+  <TypeSignature Language="C++ CLI" Value="public: ref class LinkLabel::Link" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,10 +44,21 @@
     <altmember cref="P:System.Windows.Forms.LinkLabel.Links" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.LinkLabel.Link" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public Link ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.LinkLabel.Link.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Link();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -61,6 +74,8 @@
       <MemberSignature Language="C#" Value="public Link (int start, int length);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 start, int32 length) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.LinkLabel.Link.#ctor(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (start As Integer, length As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Link(int start, int length);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -81,6 +96,8 @@
       <MemberSignature Language="C#" Value="public Link (int start, int length, object linkData);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 start, int32 length, object linkData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.LinkLabel.Link.#ctor(System.Int32,System.Int32,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (start As Integer, length As Integer, linkData As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Link(int start, int length, System::Object ^ linkData);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -103,6 +120,8 @@
       <MemberSignature Language="C#" Value="public string Description { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Description" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.LinkLabel.Link.Description" />
+      <MemberSignature Language="VB.NET" Value="Public Property Description As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Description { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -121,6 +140,8 @@
       <MemberSignature Language="C#" Value="public bool Enabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Enabled" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.LinkLabel.Link.Enabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property Enabled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Enabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -153,6 +174,8 @@
       <MemberSignature Language="C#" Value="public int Length { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Length" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.LinkLabel.Link.Length" />
+      <MemberSignature Language="VB.NET" Value="Public Property Length As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Length { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -178,6 +201,8 @@
       <MemberSignature Language="C#" Value="public object LinkData { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object LinkData" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.LinkLabel.Link.LinkData" />
+      <MemberSignature Language="VB.NET" Value="Public Property LinkData As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ LinkData { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -218,6 +243,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.LinkLabel.Link.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -248,6 +275,8 @@
       <MemberSignature Language="C#" Value="public int Start { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Start" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.LinkLabel.Link.Start" />
+      <MemberSignature Language="VB.NET" Value="Public Property Start As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Start { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -273,6 +302,8 @@
       <MemberSignature Language="C#" Value="public object Tag { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Tag" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.LinkLabel.Link.Tag" />
+      <MemberSignature Language="VB.NET" Value="Public Property Tag As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Tag { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -305,6 +336,8 @@
       <MemberSignature Language="C#" Value="public bool Visited { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Visited" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.LinkLabel.Link.Visited" />
+      <MemberSignature Language="VB.NET" Value="Public Property Visited As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Visited { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -346,14 +379,5 @@
         <altmember cref="P:System.Windows.Forms.LinkLabel.VisitedLinkColor" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.LinkLabel.Link" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

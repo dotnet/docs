@@ -1,7 +1,9 @@
-<Type Name="Form" FullName="System.Web.UI.MobileControls.Form">
+﻿<Type Name="Form" FullName="System.Web.UI.MobileControls.Form">
   <TypeSignature Language="C#" Value="public class Form : System.Web.UI.MobileControls.Panel, System.Web.UI.IPostBackEventHandler" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Form extends System.Web.UI.MobileControls.Panel implements class System.Web.UI.IPostBackEventHandler, class System.Web.UI.MobileControls.ITemplateable" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.Form" />
+  <TypeSignature Language="VB.NET" Value="Public Class Form&#xA;Inherits Panel&#xA;Implements IPostBackEventHandler" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Form : System::Web::UI::MobileControls::Panel, System::Web::UI::IPostBackEventHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -70,6 +72,8 @@
       <MemberSignature Language="C#" Value="public Form ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Form.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Form();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -85,6 +89,8 @@
       <MemberSignature Language="C#" Value="public string Action { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Action" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Form.Action" />
+      <MemberSignature Language="VB.NET" Value="Public Property Action As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Action { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -125,6 +131,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler Activate;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Activate" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.MobileControls.Form.Activate" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Activate As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Activate;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -170,6 +178,8 @@
       <MemberSignature Language="C#" Value="public override bool BreakAfter { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool BreakAfter" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Form.BreakAfter" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property BreakAfter As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool BreakAfter { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -183,7 +193,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -215,6 +225,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.Control ControlToPaginate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.Control ControlToPaginate" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Form.ControlToPaginate" />
+      <MemberSignature Language="VB.NET" Value="Public Property ControlToPaginate As Control" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::Control ^ ControlToPaginate { System::Web::UI::Control ^ get(); void set(System::Web::UI::Control ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -228,7 +240,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -265,6 +277,8 @@
       <MemberSignature Language="C#" Value="public override void CreateDefaultTemplatedUI (bool doDataBind);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void CreateDefaultTemplatedUI(bool doDataBind) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Form.CreateDefaultTemplatedUI(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub CreateDefaultTemplatedUI (doDataBind As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void CreateDefaultTemplatedUI(bool doDataBind);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -286,6 +300,8 @@
       <MemberSignature Language="C#" Value="public int CurrentPage { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 CurrentPage" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Form.CurrentPage" />
+      <MemberSignature Language="VB.NET" Value="Public Property CurrentPage As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int CurrentPage { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -299,7 +315,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -322,6 +338,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler Deactivate;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Deactivate" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.MobileControls.Form.Deactivate" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Deactivate As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Deactivate;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -360,6 +378,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.MobileControls.Panel Footer { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.MobileControls.Panel Footer" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Form.Footer" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Footer As Panel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::MobileControls::Panel ^ Footer { System::Web::UI::MobileControls::Panel ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -373,7 +393,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -406,6 +426,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.IList GetLinkedForms (int optimumPageWeight);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.IList GetLinkedForms(int32 optimumPageWeight) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Form.GetLinkedForms(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetLinkedForms (optimumPageWeight As Integer) As IList" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IList ^ GetLinkedForms(int optimumPageWeight);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -443,6 +465,8 @@
       <MemberSignature Language="C#" Value="public virtual bool HasActivateHandler ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool HasActivateHandler() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Form.HasActivateHandler" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function HasActivateHandler () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool HasActivateHandler();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -463,6 +487,8 @@
       <MemberSignature Language="C#" Value="public virtual bool HasDeactivateHandler ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool HasDeactivateHandler() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Form.HasDeactivateHandler" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function HasDeactivateHandler () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool HasDeactivateHandler();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -483,6 +509,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.MobileControls.Panel Header { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.MobileControls.Panel Header" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Form.Header" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Header As Panel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::MobileControls::Panel ^ Header { System::Web::UI::MobileControls::Panel ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -496,7 +524,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -519,6 +547,8 @@
       <MemberSignature Language="C#" Value="protected override void LoadPrivateViewState (object state);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void LoadPrivateViewState(object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Form.LoadPrivateViewState(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub LoadPrivateViewState (state As Object)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void LoadPrivateViewState(System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -540,6 +570,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.MobileControls.FormMethod Method { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.MobileControls.FormMethod Method" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Form.Method" />
+      <MemberSignature Language="VB.NET" Value="Public Property Method As FormMethod" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::MobileControls::FormMethod Method { System::Web::UI::MobileControls::FormMethod get(); void set(System::Web::UI::MobileControls::FormMethod value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -574,6 +606,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnActivate (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnActivate(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Form.OnActivate(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnActivate (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnActivate(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -608,6 +642,8 @@
       <MemberSignature Language="C#" Value="protected override void OnDataBinding (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnDataBinding(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Form.OnDataBinding(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnDataBinding (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnDataBinding(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -629,6 +665,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnDeactivate (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnDeactivate(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Form.OnDeactivate(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnDeactivate (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnDeactivate(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -663,6 +701,8 @@
       <MemberSignature Language="C#" Value="protected override void OnInit (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnInit(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Form.OnInit(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnInit (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnInit(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -693,6 +733,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnPaginated (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnPaginated(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Form.OnPaginated(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnPaginated (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnPaginated(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -721,6 +763,8 @@
       <MemberSignature Language="C#" Value="protected override void OnPreRender (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnPreRender(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Form.OnPreRender(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPreRender (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPreRender(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -742,6 +786,8 @@
       <MemberSignature Language="C#" Value="public int PageCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 PageCount" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Form.PageCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PageCount As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PageCount { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -755,7 +801,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -791,6 +837,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.MobileControls.PagerStyle PagerStyle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.MobileControls.PagerStyle PagerStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Form.PagerStyle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PagerStyle As PagerStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::MobileControls::PagerStyle ^ PagerStyle { System::Web::UI::MobileControls::PagerStyle ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -801,7 +849,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
@@ -835,6 +883,8 @@
       <MemberSignature Language="C#" Value="protected override bool PaginateChildren { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool PaginateChildren" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Form.PaginateChildren" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property PaginateChildren As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool PaginateChildren { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -854,6 +904,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler Paginated;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Paginated" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.MobileControls.Form.Paginated" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Paginated As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Paginated;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -884,6 +936,8 @@
       <MemberSignature Language="C#" Value="public override void PaginateRecursive (System.Web.UI.MobileControls.ControlPager pager);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void PaginateRecursive(class System.Web.UI.MobileControls.ControlPager pager) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Form.PaginateRecursive(System.Web.UI.MobileControls.ControlPager)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub PaginateRecursive (pager As ControlPager)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void PaginateRecursive(System::Web::UI::MobileControls::ControlPager ^ pager);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -905,6 +959,8 @@
       <MemberSignature Language="C#" Value="protected void RaisePostBackEvent (string eventArgument);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void RaisePostBackEvent(string eventArgument) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Form.RaisePostBackEvent(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub RaisePostBackEvent (eventArgument As String)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RaisePostBackEvent(System::String ^ eventArgument);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -926,6 +982,8 @@
       <MemberSignature Language="C#" Value="protected override void Render (System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Render(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Form.Render(System.Web.UI.HtmlTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Render (writer As HtmlTextWriter)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Render(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -947,6 +1005,8 @@
       <MemberSignature Language="C#" Value="protected override object SavePrivateViewState ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object SavePrivateViewState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Form.SavePrivateViewState" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function SavePrivateViewState () As Object" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ SavePrivateViewState();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -967,6 +1027,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.MobileControls.Panel Script { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.MobileControls.Panel Script" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Form.Script" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Script As Panel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::MobileControls::Panel ^ Script { System::Web::UI::MobileControls::Panel ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -980,7 +1042,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -996,6 +1058,8 @@
       <MemberSignature Language="C#" Value="void IPostBackEventHandler.RaisePostBackEvent (string eventArgument);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(string eventArgument) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Form.System#Web#UI#IPostBackEventHandler#RaisePostBackEvent(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Sub RaisePostBackEvent (eventArgument As String) Implements IPostBackEventHandler.RaisePostBackEvent" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(System::String ^ eventArgument) = System::Web::UI::IPostBackEventHandler::RaisePostBackEvent;" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1024,6 +1088,8 @@
       <MemberSignature Language="C#" Value="public string Title { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Title" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Form.Title" />
+      <MemberSignature Language="VB.NET" Value="Public Property Title As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Title { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

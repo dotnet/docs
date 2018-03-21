@@ -1,7 +1,9 @@
-<Type Name="WebHeartbeatEvent" FullName="System.Web.Management.WebHeartbeatEvent">
+﻿<Type Name="WebHeartbeatEvent" FullName="System.Web.Management.WebHeartbeatEvent">
   <TypeSignature Language="C#" Value="public class WebHeartbeatEvent : System.Web.Management.WebManagementEvent" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WebHeartbeatEvent extends System.Web.Management.WebManagementEvent" />
   <TypeSignature Language="DocId" Value="T:System.Web.Management.WebHeartbeatEvent" />
+  <TypeSignature Language="VB.NET" Value="Public Class WebHeartbeatEvent&#xA;Inherits WebManagementEvent" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WebHeartbeatEvent : System::Web::Management::WebManagementEvent" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,9 +52,11 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="protected WebHeartbeatEvent (string message, int eventCode);" />
+      <MemberSignature Language="C#" Value="protected internal WebHeartbeatEvent (string message, int eventCode);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig specialname rtspecialname instance void .ctor(string message, int32 eventCode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Management.WebHeartbeatEvent.#ctor(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Sub New (message As String, eventCode As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; WebHeartbeatEvent(System::String ^ message, int eventCode);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -73,6 +77,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Management.WebProcessStatistics ProcessStatistics { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Management.WebProcessStatistics ProcessStatistics" />
       <MemberSignature Language="DocId" Value="P:System.Web.Management.WebHeartbeatEvent.ProcessStatistics" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProcessStatistics As WebProcessStatistics" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Management::WebProcessStatistics ^ ProcessStatistics { System::Web::Management::WebProcessStatistics ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

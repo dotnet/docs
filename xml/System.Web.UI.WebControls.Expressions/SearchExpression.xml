@@ -1,7 +1,9 @@
-<Type Name="SearchExpression" FullName="System.Web.UI.WebControls.Expressions.SearchExpression">
+﻿<Type Name="SearchExpression" FullName="System.Web.UI.WebControls.Expressions.SearchExpression">
   <TypeSignature Language="C#" Value="public class SearchExpression : System.Web.UI.WebControls.Expressions.ParameterDataSourceExpression" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SearchExpression extends System.Web.UI.WebControls.Expressions.ParameterDataSourceExpression" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.Expressions.SearchExpression" />
+  <TypeSignature Language="VB.NET" Value="Public Class SearchExpression&#xA;Inherits ParameterDataSourceExpression" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SearchExpression : System::Web::UI::WebControls::Expressions::ParameterDataSourceExpression" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +41,8 @@
       <MemberSignature Language="C#" Value="public SearchExpression ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Expressions.SearchExpression.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SearchExpression();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -54,6 +58,8 @@
       <MemberSignature Language="C#" Value="public StringComparison ComparisonType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.StringComparison ComparisonType" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Expressions.SearchExpression.ComparisonType" />
+      <MemberSignature Language="VB.NET" Value="Public Property ComparisonType As StringComparison" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property StringComparison ComparisonType { StringComparison get(); void set(StringComparison value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -80,6 +86,8 @@
       <MemberSignature Language="C#" Value="public string DataFields { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DataFields" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Expressions.SearchExpression.DataFields" />
+      <MemberSignature Language="VB.NET" Value="Public Property DataFields As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DataFields { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -118,6 +126,8 @@
       <MemberSignature Language="C#" Value="public override System.Linq.IQueryable GetQueryable (System.Linq.IQueryable source);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Linq.IQueryable GetQueryable(class System.Linq.IQueryable source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Expressions.SearchExpression.GetQueryable(System.Linq.IQueryable)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetQueryable (source As IQueryable) As IQueryable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Linq::IQueryable ^ GetQueryable(System::Linq::IQueryable ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -148,6 +158,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.Expressions.SearchType SearchType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.Expressions.SearchType SearchType" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Expressions.SearchExpression.SearchType" />
+      <MemberSignature Language="VB.NET" Value="Public Property SearchType As SearchType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::Expressions::SearchType SearchType { System::Web::UI::WebControls::Expressions::SearchType get(); void set(System::Web::UI::WebControls::Expressions::SearchType value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

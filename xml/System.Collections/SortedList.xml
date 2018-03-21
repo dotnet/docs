@@ -1,7 +1,9 @@
-<Type Name="SortedList" FullName="System.Collections.SortedList">
+﻿<Type Name="SortedList" FullName="System.Collections.SortedList">
   <TypeSignature Language="C#" Value="public class SortedList : ICloneable, System.Collections.IDictionary" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit SortedList extends System.Object implements class System.Collections.ICollection, class System.Collections.IDictionary, class System.Collections.IEnumerable, class System.ICloneable" />
   <TypeSignature Language="DocId" Value="T:System.Collections.SortedList" />
+  <TypeSignature Language="VB.NET" Value="Public Class SortedList&#xA;Implements ICloneable, IDictionary" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SortedList : ICloneable, System::Collections::IDictionary" />
   <AssemblyInfo>
     <AssemblyName>System.Collections.NonGeneric</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -93,10 +95,22 @@
     <altmember cref="T:System.Collections.Generic.SortedList`2" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.SortedList" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SortedList ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.SortedList.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SortedList();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -146,6 +160,8 @@
       <MemberSignature Language="C#" Value="public SortedList (System.Collections.IComparer comparer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.IComparer comparer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.SortedList.#ctor(System.Collections.IComparer)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (comparer As IComparer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SortedList(System::Collections::IComparer ^ comparer);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -203,6 +219,8 @@
       <MemberSignature Language="C#" Value="public SortedList (System.Collections.IDictionary d);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.IDictionary d) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.SortedList.#ctor(System.Collections.IDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (d As IDictionary)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SortedList(System::Collections::IDictionary ^ d);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -262,6 +280,8 @@
       <MemberSignature Language="C#" Value="public SortedList (int initialCapacity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 initialCapacity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.SortedList.#ctor(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (initialCapacity As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SortedList(int initialCapacity);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -317,6 +337,8 @@
       <MemberSignature Language="C#" Value="public SortedList (System.Collections.IComparer comparer, int capacity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.IComparer comparer, int32 capacity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.SortedList.#ctor(System.Collections.IComparer,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (comparer As IComparer, capacity As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SortedList(System::Collections::IComparer ^ comparer, int capacity);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -379,6 +401,8 @@
       <MemberSignature Language="C#" Value="public SortedList (System.Collections.IDictionary d, System.Collections.IComparer comparer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.IDictionary d, class System.Collections.IComparer comparer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.SortedList.#ctor(System.Collections.IDictionary,System.Collections.IComparer)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (d As IDictionary, comparer As IComparer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SortedList(System::Collections::IDictionary ^ d, System::Collections::IComparer ^ comparer);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -446,7 +470,12 @@
       <MemberSignature Language="C#" Value="public virtual void Add (object key, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Add(object key, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.SortedList.Add(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Add (key As Object, value As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Add(System::Object ^ key, System::Object ^ value);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IDictionary.Add(System.Object,System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -523,6 +552,8 @@
       <MemberSignature Language="C#" Value="public virtual int Capacity { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Capacity" />
       <MemberSignature Language="DocId" Value="P:System.Collections.SortedList.Capacity" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Capacity As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Capacity { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -567,7 +598,12 @@
       <MemberSignature Language="C#" Value="public virtual void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.SortedList.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Clear ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IDictionary.Clear</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -623,7 +659,12 @@
       <MemberSignature Language="C#" Value="public virtual object Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.SortedList.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Clone () As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Clone();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -664,7 +705,12 @@
       <MemberSignature Language="C#" Value="public virtual bool Contains (object key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Contains(object key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.SortedList.Contains(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Contains (key As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Contains(System::Object ^ key);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IDictionary.Contains(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -724,6 +770,8 @@
       <MemberSignature Language="C#" Value="public virtual bool ContainsKey (object key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ContainsKey(object key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.SortedList.ContainsKey(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ContainsKey (key As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool ContainsKey(System::Object ^ key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -785,6 +833,8 @@
       <MemberSignature Language="C#" Value="public virtual bool ContainsValue (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ContainsValue(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.SortedList.ContainsValue(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ContainsValue (value As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool ContainsValue(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -840,7 +890,11 @@
       <MemberSignature Language="C#" Value="public virtual void CopyTo (Array array, int arrayIndex);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.Array array, int32 arrayIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.SortedList.CopyTo(System.Array,System.Int32)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(Array ^ array, int arrayIndex);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -909,7 +963,12 @@
       <MemberSignature Language="C#" Value="public virtual int Count { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
       <MemberSignature Language="DocId" Value="P:System.Collections.SortedList.Count" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Count { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -951,6 +1010,8 @@
       <MemberSignature Language="C#" Value="public virtual object GetByIndex (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetByIndex(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.SortedList.GetByIndex(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetByIndex (index As Integer) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ GetByIndex(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -1005,7 +1066,12 @@
       <MemberSignature Language="C#" Value="public virtual System.Collections.IDictionaryEnumerator GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IDictionaryEnumerator GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.SortedList.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEnumerator () As IDictionaryEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IDictionaryEnumerator ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IDictionary.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -1057,6 +1123,8 @@
       <MemberSignature Language="C#" Value="public virtual object GetKey (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetKey(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.SortedList.GetKey(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetKey (index As Integer) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ GetKey(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -1109,6 +1177,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Collections.IList GetKeyList ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IList GetKeyList() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.SortedList.GetKeyList" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetKeyList () As IList" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IList ^ GetKeyList();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -1163,6 +1233,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Collections.IList GetValueList ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IList GetValueList() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.SortedList.GetValueList" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetValueList () As IList" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IList ^ GetValueList();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -1217,6 +1289,8 @@
       <MemberSignature Language="C#" Value="public virtual int IndexOfKey (object key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 IndexOfKey(object key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.SortedList.IndexOfKey(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function IndexOfKey (key As Object) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int IndexOfKey(System::Object ^ key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -1276,6 +1350,8 @@
       <MemberSignature Language="C#" Value="public virtual int IndexOfValue (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 IndexOfValue(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.SortedList.IndexOfValue(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function IndexOfValue (value As Object) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int IndexOfValue(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -1332,7 +1408,12 @@
       <MemberSignature Language="C#" Value="public virtual bool IsFixedSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsFixedSize" />
       <MemberSignature Language="DocId" Value="P:System.Collections.SortedList.IsFixedSize" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsFixedSize As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsFixedSize { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.IDictionary.IsFixedSize</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -1372,7 +1453,12 @@
       <MemberSignature Language="C#" Value="public virtual bool IsReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Collections.SortedList.IsReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsReadOnly As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.IDictionary.IsReadOnly</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -1412,7 +1498,12 @@
       <MemberSignature Language="C#" Value="public virtual bool IsSynchronized { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsSynchronized" />
       <MemberSignature Language="DocId" Value="P:System.Collections.SortedList.IsSynchronized" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsSynchronized As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsSynchronized { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -1469,7 +1560,12 @@
       <MemberSignature Language="C#" Value="public virtual object this[object key] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Item(object)" />
       <MemberSignature Language="DocId" Value="P:System.Collections.SortedList.Item(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Overridable Property Item(key As Object) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ default[System::Object ^] { System::Object ^ get(System::Object ^ key); void set(System::Object ^ key, System::Object ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.IDictionary.Item(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -1530,7 +1626,12 @@
       <MemberSignature Language="C#" Value="public virtual System.Collections.ICollection Keys { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ICollection Keys" />
       <MemberSignature Language="DocId" Value="P:System.Collections.SortedList.Keys" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Keys As ICollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::ICollection ^ Keys { System::Collections::ICollection ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.IDictionary.Keys</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -1574,7 +1675,12 @@
       <MemberSignature Language="C#" Value="public virtual void Remove (object key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Remove(object key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.SortedList.Remove(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Remove (key As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Remove(System::Object ^ key);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IDictionary.Remove(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -1633,6 +1739,8 @@
       <MemberSignature Language="C#" Value="public virtual void RemoveAt (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveAt(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.SortedList.RemoveAt(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub RemoveAt (index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveAt(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -1692,6 +1800,8 @@
       <MemberSignature Language="C#" Value="public virtual void SetByIndex (int index, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetByIndex(int32 index, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.SortedList.SetByIndex(System.Int32,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetByIndex (index As Integer, value As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetByIndex(int index, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -1747,6 +1857,8 @@
       <MemberSignature Language="C#" Value="public static System.Collections.SortedList Synchronized (System.Collections.SortedList list);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.SortedList Synchronized(class System.Collections.SortedList list) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.SortedList.Synchronized(System.Collections.SortedList)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Synchronized (list As SortedList) As SortedList" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::SortedList ^ Synchronized(System::Collections::SortedList ^ list);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -1809,7 +1921,12 @@
       <MemberSignature Language="C#" Value="public virtual object SyncRoot { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object SyncRoot" />
       <MemberSignature Language="DocId" Value="P:System.Collections.SortedList.SyncRoot" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SyncRoot As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ SyncRoot { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -1859,7 +1976,12 @@
       <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.SortedList.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator Implements IEnumerable.GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IEnumerator ^ System.Collections.IEnumerable.GetEnumerator() = System::Collections::IEnumerable::GetEnumerator;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -1913,6 +2035,8 @@
       <MemberSignature Language="C#" Value="public virtual void TrimToSize ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void TrimToSize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.SortedList.TrimToSize" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub TrimToSize ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void TrimToSize();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -1969,7 +2093,12 @@
       <MemberSignature Language="C#" Value="public virtual System.Collections.ICollection Values { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ICollection Values" />
       <MemberSignature Language="DocId" Value="P:System.Collections.SortedList.Values" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Values As ICollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::ICollection ^ Values { System::Collections::ICollection ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.IDictionary.Values</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -2009,15 +2138,5 @@
         <altmember cref="M:System.Collections.SortedList.GetValueList" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Collections.SortedList" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

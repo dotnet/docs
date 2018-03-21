@@ -1,7 +1,9 @@
-<Type Name="RichTextBox" FullName="System.Windows.Forms.RichTextBox">
+﻿<Type Name="RichTextBox" FullName="System.Windows.Forms.RichTextBox">
   <TypeSignature Language="C#" Value="public class RichTextBox : System.Windows.Forms.TextBoxBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RichTextBox extends System.Windows.Forms.TextBoxBase" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.RichTextBox" />
+  <TypeSignature Language="VB.NET" Value="Public Class RichTextBox&#xA;Inherits TextBoxBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RichTextBox : System::Windows::Forms::TextBoxBase" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,7 +17,7 @@
       <AttributeName>System.ComponentModel.Designer("System.Windows.Forms.Design.RichTextBoxDesigner, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
@@ -64,6 +66,8 @@
       <MemberSignature Language="C#" Value="public RichTextBox ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.RichTextBox.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RichTextBox();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -96,6 +100,8 @@
       <MemberSignature Language="C#" Value="public override bool AllowDrop { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AllowDrop" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.RichTextBox.AllowDrop" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property AllowDrop As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AllowDrop { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -131,6 +137,8 @@
       <MemberSignature Language="C#" Value="public override bool AutoSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AutoSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.RichTextBox.AutoSize" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property AutoSize As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AutoSize { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -144,13 +152,13 @@
           <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Visible)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -175,6 +183,8 @@
       <MemberSignature Language="C#" Value="public bool AutoWordSelection { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AutoWordSelection" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.RichTextBox.AutoWordSelection" />
+      <MemberSignature Language="VB.NET" Value="Public Property AutoWordSelection As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutoWordSelection { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -215,6 +225,8 @@
       <MemberSignature Language="C#" Value="public override System.Drawing.Image BackgroundImage { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Image BackgroundImage" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.RichTextBox.BackgroundImage" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property BackgroundImage As Image" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Image ^ BackgroundImage { System::Drawing::Image ^ get(); void set(System::Drawing::Image ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -248,6 +260,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler BackgroundImageChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler BackgroundImageChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.RichTextBox.BackgroundImageChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event BackgroundImageChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ BackgroundImageChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -280,6 +294,8 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.ImageLayout BackgroundImageLayout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.ImageLayout BackgroundImageLayout" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.RichTextBox.BackgroundImageLayout" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property BackgroundImageLayout As ImageLayout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::ImageLayout BackgroundImageLayout { System::Windows::Forms::ImageLayout get(); void set(System::Windows::Forms::ImageLayout value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -313,6 +329,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler BackgroundImageLayoutChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler BackgroundImageLayoutChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.RichTextBox.BackgroundImageLayoutChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event BackgroundImageLayoutChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ BackgroundImageLayoutChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -345,6 +363,8 @@
       <MemberSignature Language="C#" Value="public int BulletIndent { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 BulletIndent" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.RichTextBox.BulletIndent" />
+      <MemberSignature Language="VB.NET" Value="Public Property BulletIndent As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int BulletIndent { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -389,6 +409,8 @@
       <MemberSignature Language="C#" Value="public bool CanPaste (System.Windows.Forms.DataFormats.Format clipFormat);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool CanPaste(class System.Windows.Forms.DataFormats/Format clipFormat) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.RichTextBox.CanPaste(System.Windows.Forms.DataFormats.Format)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CanPaste (clipFormat As DataFormats.Format) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool CanPaste(System::Windows::Forms::DataFormats::Format ^ clipFormat);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -430,6 +452,8 @@
       <MemberSignature Language="C#" Value="public bool CanRedo { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanRedo" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.RichTextBox.CanRedo" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanRedo As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanRedo { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -440,7 +464,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -474,6 +498,8 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.ContentsResizedEventHandler ContentsResized;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.ContentsResizedEventHandler ContentsResized" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.RichTextBox.ContentsResized" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ContentsResized As ContentsResizedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::ContentsResizedEventHandler ^ ContentsResized;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -509,6 +535,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Forms.CreateParams CreateParams { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.CreateParams CreateParams" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.RichTextBox.CreateParams" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property CreateParams As CreateParams" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Windows::Forms::CreateParams ^ CreateParams { System::Windows::Forms::CreateParams ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -527,6 +555,8 @@
       <MemberSignature Language="C#" Value="protected virtual object CreateRichEditOleCallback ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance object CreateRichEditOleCallback() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.RichTextBox.CreateRichEditOleCallback" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateRichEditOleCallback () As Object" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Object ^ CreateRichEditOleCallback();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -550,6 +580,8 @@
       <MemberSignature Language="C#" Value="protected override System.Drawing.Size DefaultSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Size DefaultSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.RichTextBox.DefaultSize" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DefaultSize As Size" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Drawing::Size DefaultSize { System::Drawing::Size get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -569,6 +601,8 @@
       <MemberSignature Language="C#" Value="public bool DetectUrls { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool DetectUrls" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.RichTextBox.DetectUrls" />
+      <MemberSignature Language="VB.NET" Value="Public Property DetectUrls As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DetectUrls { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -611,6 +645,8 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.DragEventHandler DragDrop;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.DragEventHandler DragDrop" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.RichTextBox.DragDrop" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event DragDrop As DragEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::DragEventHandler ^ DragDrop;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -633,6 +669,8 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.DragEventHandler DragEnter;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.DragEventHandler DragEnter" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.RichTextBox.DragEnter" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event DragEnter As DragEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::DragEventHandler ^ DragEnter;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -672,6 +710,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler DragLeave;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler DragLeave" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.RichTextBox.DragLeave" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event DragLeave As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ DragLeave;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -704,6 +744,8 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.DragEventHandler DragOver;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.DragEventHandler DragOver" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.RichTextBox.DragOver" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event DragOver As DragEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::DragEventHandler ^ DragOver;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -736,6 +778,7 @@
       <MemberSignature Language="C#" Value="public void DrawToBitmap (System.Drawing.Bitmap bitmap, System.Drawing.Rectangle targetBounds);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DrawToBitmap(class System.Drawing.Bitmap bitmap, valuetype System.Drawing.Rectangle targetBounds) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.RichTextBox.DrawToBitmap(System.Drawing.Bitmap,System.Drawing.Rectangle)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DrawToBitmap(System::Drawing::Bitmap ^ bitmap, System::Drawing::Rectangle targetBounds);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -771,6 +814,8 @@
       <MemberSignature Language="C#" Value="public bool EnableAutoDragDrop { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool EnableAutoDragDrop" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.RichTextBox.EnableAutoDragDrop" />
+      <MemberSignature Language="VB.NET" Value="Public Property EnableAutoDragDrop As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableAutoDragDrop { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -791,10 +836,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Find">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Searches for text within the contents of the <see cref="T:System.Windows.Forms.RichTextBox" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Find">
       <MemberSignature Language="C#" Value="public int Find (char[] characterSet);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Find(char[] characterSet) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.RichTextBox.Find(System.Char[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function Find (characterSet As Char()) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Find(cli::array &lt;char&gt; ^ characterSet);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -835,6 +891,8 @@
       <MemberSignature Language="C#" Value="public int Find (string str);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Find(string str) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.RichTextBox.Find(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Find (str As String) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Find(System::String ^ str);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -876,6 +934,8 @@
       <MemberSignature Language="C#" Value="public int Find (char[] characterSet, int start);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Find(char[] characterSet, int32 start) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.RichTextBox.Find(System.Char[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Find (characterSet As Char(), start As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Find(cli::array &lt;char&gt; ^ characterSet, int start);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -920,6 +980,8 @@
       <MemberSignature Language="C#" Value="public int Find (string str, System.Windows.Forms.RichTextBoxFinds options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Find(string str, valuetype System.Windows.Forms.RichTextBoxFinds options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.RichTextBox.Find(System.String,System.Windows.Forms.RichTextBoxFinds)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Find (str As String, options As RichTextBoxFinds) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Find(System::String ^ str, System::Windows::Forms::RichTextBoxFinds options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -965,6 +1027,8 @@
       <MemberSignature Language="C#" Value="public int Find (char[] characterSet, int start, int end);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Find(char[] characterSet, int32 start, int32 end) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.RichTextBox.Find(System.Char[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Find (characterSet As Char(), start As Integer, end As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Find(cli::array &lt;char&gt; ^ characterSet, int start, int end);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1006,6 +1070,8 @@
       <MemberSignature Language="C#" Value="public int Find (string str, int start, System.Windows.Forms.RichTextBoxFinds options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Find(string str, int32 start, valuetype System.Windows.Forms.RichTextBoxFinds options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.RichTextBox.Find(System.String,System.Int32,System.Windows.Forms.RichTextBoxFinds)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Find (str As String, start As Integer, options As RichTextBoxFinds) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Find(System::String ^ str, int start, System::Windows::Forms::RichTextBoxFinds options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1053,6 +1119,8 @@
       <MemberSignature Language="C#" Value="public int Find (string str, int start, int end, System.Windows.Forms.RichTextBoxFinds options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Find(string str, int32 start, int32 end, valuetype System.Windows.Forms.RichTextBoxFinds options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.RichTextBox.Find(System.String,System.Int32,System.Int32,System.Windows.Forms.RichTextBoxFinds)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Find (str As String, start As Integer, end As Integer, options As RichTextBoxFinds) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Find(System::String ^ str, int start, int end, System::Windows::Forms::RichTextBoxFinds options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1104,6 +1172,8 @@
       <MemberSignature Language="C#" Value="public override System.Drawing.Font Font { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Font Font" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.RichTextBox.Font" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Font As Font" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Font ^ Font { System::Drawing::Font ^ get(); void set(System::Drawing::Font ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1123,6 +1193,8 @@
       <MemberSignature Language="C#" Value="public override System.Drawing.Color ForeColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ForeColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.RichTextBox.ForeColor" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property ForeColor As Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color ForeColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1142,6 +1214,8 @@
       <MemberSignature Language="C#" Value="public override int GetCharIndexFromPosition (System.Drawing.Point pt);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetCharIndexFromPosition(valuetype System.Drawing.Point pt) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.RichTextBox.GetCharIndexFromPosition(System.Drawing.Point)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetCharIndexFromPosition (pt As Point) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetCharIndexFromPosition(System::Drawing::Point pt);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1182,6 +1256,8 @@
       <MemberSignature Language="C#" Value="public override int GetLineFromCharIndex (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetLineFromCharIndex(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.RichTextBox.GetLineFromCharIndex(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetLineFromCharIndex (index As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetLineFromCharIndex(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1233,6 +1309,8 @@
       <MemberSignature Language="C#" Value="public override System.Drawing.Point GetPositionFromCharIndex (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype System.Drawing.Point GetPositionFromCharIndex(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.RichTextBox.GetPositionFromCharIndex(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetPositionFromCharIndex (index As Integer) As Point" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Drawing::Point GetPositionFromCharIndex(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1264,6 +1342,8 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.GiveFeedbackEventHandler GiveFeedback;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.GiveFeedbackEventHandler GiveFeedback" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.RichTextBox.GiveFeedback" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event GiveFeedback As GiveFeedbackEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::GiveFeedbackEventHandler ^ GiveFeedback;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1296,6 +1376,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler HScroll;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler HScroll" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.RichTextBox.HScroll" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event HScroll As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ HScroll;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1330,6 +1412,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler ImeChange;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ImeChange" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.RichTextBox.ImeChange" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ImeChange As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ImeChange;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1364,6 +1448,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.RichTextBoxLanguageOptions LanguageOption { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.RichTextBoxLanguageOptions LanguageOption" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.RichTextBox.LanguageOption" />
+      <MemberSignature Language="VB.NET" Value="Public Property LanguageOption As RichTextBoxLanguageOptions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::RichTextBoxLanguageOptions LanguageOption { System::Windows::Forms::RichTextBoxLanguageOptions get(); void set(System::Windows::Forms::RichTextBoxLanguageOptions value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1374,7 +1460,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1390,6 +1476,8 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.LinkClickedEventHandler LinkClicked;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.LinkClickedEventHandler LinkClicked" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.RichTextBox.LinkClicked" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event LinkClicked As LinkClickedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::LinkClickedEventHandler ^ LinkClicked;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1425,10 +1513,21 @@
         <altmember cref="P:System.Windows.Forms.RichTextBox.DetectUrls" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="LoadFile">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Loads the contents of a file into the <see cref="T:System.Windows.Forms.RichTextBox" /> control.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="LoadFile">
       <MemberSignature Language="C#" Value="public void LoadFile (string path);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void LoadFile(string path) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.RichTextBox.LoadFile(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub LoadFile (path As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void LoadFile(System::String ^ path);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1476,6 +1575,8 @@
       <MemberSignature Language="C#" Value="public void LoadFile (System.IO.Stream data, System.Windows.Forms.RichTextBoxStreamType fileType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void LoadFile(class System.IO.Stream data, valuetype System.Windows.Forms.RichTextBoxStreamType fileType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.RichTextBox.LoadFile(System.IO.Stream,System.Windows.Forms.RichTextBoxStreamType)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub LoadFile (data As Stream, fileType As RichTextBoxStreamType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void LoadFile(System::IO::Stream ^ data, System::Windows::Forms::RichTextBoxStreamType fileType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1527,6 +1628,8 @@
       <MemberSignature Language="C#" Value="public void LoadFile (string path, System.Windows.Forms.RichTextBoxStreamType fileType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void LoadFile(string path, valuetype System.Windows.Forms.RichTextBoxStreamType fileType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.RichTextBox.LoadFile(System.String,System.Windows.Forms.RichTextBoxStreamType)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub LoadFile (path As String, fileType As RichTextBoxStreamType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void LoadFile(System::String ^ path, System::Windows::Forms::RichTextBoxStreamType fileType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1576,6 +1679,8 @@
       <MemberSignature Language="C#" Value="public override int MaxLength { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxLength" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.RichTextBox.MaxLength" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property MaxLength As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int MaxLength { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1620,6 +1725,8 @@
       <MemberSignature Language="C#" Value="public override bool Multiline { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Multiline" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.RichTextBox.Multiline" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Multiline As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Multiline { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1644,6 +1751,8 @@
       <MemberSignature Language="C#" Value="protected override void OnBackColorChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnBackColorChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.RichTextBox.OnBackColorChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnBackColorChanged (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnBackColorChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1665,6 +1774,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnContentsResized (System.Windows.Forms.ContentsResizedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnContentsResized(class System.Windows.Forms.ContentsResizedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.RichTextBox.OnContentsResized(System.Windows.Forms.ContentsResizedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnContentsResized (e As ContentsResizedEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnContentsResized(System::Windows::Forms::ContentsResizedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1699,6 +1810,8 @@
       <MemberSignature Language="C#" Value="protected override void OnContextMenuChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnContextMenuChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.RichTextBox.OnContextMenuChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnContextMenuChanged (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnContextMenuChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1720,6 +1833,8 @@
       <MemberSignature Language="C#" Value="protected override void OnHandleCreated (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnHandleCreated(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.RichTextBox.OnHandleCreated(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnHandleCreated (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnHandleCreated(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1741,6 +1856,8 @@
       <MemberSignature Language="C#" Value="protected override void OnHandleDestroyed (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnHandleDestroyed(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.RichTextBox.OnHandleDestroyed(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnHandleDestroyed (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnHandleDestroyed(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1762,6 +1879,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnHScroll (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnHScroll(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.RichTextBox.OnHScroll(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnHScroll (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnHScroll(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1796,6 +1915,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnImeChange (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnImeChange(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.RichTextBox.OnImeChange(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnImeChange (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnImeChange(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1830,6 +1951,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnLinkClicked (System.Windows.Forms.LinkClickedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnLinkClicked(class System.Windows.Forms.LinkClickedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.RichTextBox.OnLinkClicked(System.Windows.Forms.LinkClickedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnLinkClicked (e As LinkClickedEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnLinkClicked(System::Windows::Forms::LinkClickedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1864,6 +1987,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnProtected (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnProtected(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.RichTextBox.OnProtected(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnProtected (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnProtected(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1898,6 +2023,8 @@
       <MemberSignature Language="C#" Value="protected override void OnRightToLeftChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnRightToLeftChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.RichTextBox.OnRightToLeftChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnRightToLeftChanged (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnRightToLeftChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1920,6 +2047,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnSelectionChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnSelectionChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.RichTextBox.OnSelectionChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSelectionChanged (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSelectionChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1954,6 +2083,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnVScroll (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnVScroll(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.RichTextBox.OnVScroll(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnVScroll (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnVScroll(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1988,6 +2119,8 @@
       <MemberSignature Language="C#" Value="public void Paste (System.Windows.Forms.DataFormats.Format clipFormat);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Paste(class System.Windows.Forms.DataFormats/Format clipFormat) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.RichTextBox.Paste(System.Windows.Forms.DataFormats.Format)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Paste (clipFormat As DataFormats.Format)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Paste(System::Windows::Forms::DataFormats::Format ^ clipFormat);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2029,6 +2162,8 @@
       <MemberSignature Language="C#" Value="protected override bool ProcessCmdKey (ref System.Windows.Forms.Message m, System.Windows.Forms.Keys keyData);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ProcessCmdKey(valuetype System.Windows.Forms.Message&amp; m, valuetype System.Windows.Forms.Keys keyData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.RichTextBox.ProcessCmdKey(System.Windows.Forms.Message@,System.Windows.Forms.Keys)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function ProcessCmdKey (ByRef m As Message, keyData As Keys) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool ProcessCmdKey(System::Windows::Forms::Message % m, System::Windows::Forms::Keys keyData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2055,6 +2190,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler Protected;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Protected" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.RichTextBox.Protected" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Protected As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Protected;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2091,6 +2228,8 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.QueryContinueDragEventHandler QueryContinueDrag;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.QueryContinueDragEventHandler QueryContinueDrag" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.RichTextBox.QueryContinueDrag" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event QueryContinueDrag As QueryContinueDragEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::QueryContinueDragEventHandler ^ QueryContinueDrag;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2123,6 +2262,8 @@
       <MemberSignature Language="C#" Value="public void Redo ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Redo() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.RichTextBox.Redo" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Redo ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Redo();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2158,6 +2299,8 @@
       <MemberSignature Language="C#" Value="public string RedoActionName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string RedoActionName" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.RichTextBox.RedoActionName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RedoActionName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RedoActionName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2168,7 +2311,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2202,6 +2345,8 @@
       <MemberSignature Language="C#" Value="public bool RichTextShortcutsEnabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool RichTextShortcutsEnabled" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.RichTextBox.RichTextShortcutsEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property RichTextShortcutsEnabled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RichTextShortcutsEnabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2239,6 +2384,8 @@
       <MemberSignature Language="C#" Value="public int RightMargin { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 RightMargin" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.RichTextBox.RightMargin" />
+      <MemberSignature Language="VB.NET" Value="Public Property RightMargin As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int RightMargin { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2282,6 +2429,8 @@
       <MemberSignature Language="C#" Value="public string Rtf { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Rtf" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.RichTextBox.Rtf" />
+      <MemberSignature Language="VB.NET" Value="Public Property Rtf As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Rtf { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2292,10 +2441,10 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2319,10 +2468,21 @@
         <altmember cref="P:System.Windows.Forms.TextBoxBase.Text" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="SaveFile">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Saves the contents of the <see cref="T:System.Windows.Forms.RichTextBox" /> to a file.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="SaveFile">
       <MemberSignature Language="C#" Value="public void SaveFile (string path);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SaveFile(string path) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.RichTextBox.SaveFile(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SaveFile (path As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SaveFile(System::String ^ path);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2365,6 +2525,8 @@
       <MemberSignature Language="C#" Value="public void SaveFile (System.IO.Stream data, System.Windows.Forms.RichTextBoxStreamType fileType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SaveFile(class System.IO.Stream data, valuetype System.Windows.Forms.RichTextBoxStreamType fileType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.RichTextBox.SaveFile(System.IO.Stream,System.Windows.Forms.RichTextBoxStreamType)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SaveFile (data As Stream, fileType As RichTextBoxStreamType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SaveFile(System::IO::Stream ^ data, System::Windows::Forms::RichTextBoxStreamType fileType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2414,6 +2576,8 @@
       <MemberSignature Language="C#" Value="public void SaveFile (string path, System.Windows.Forms.RichTextBoxStreamType fileType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SaveFile(string path, valuetype System.Windows.Forms.RichTextBoxStreamType fileType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.RichTextBox.SaveFile(System.String,System.Windows.Forms.RichTextBoxStreamType)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SaveFile (path As String, fileType As RichTextBoxStreamType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SaveFile(System::String ^ path, System::Windows::Forms::RichTextBoxStreamType fileType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2460,6 +2624,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.RichTextBoxScrollBars ScrollBars { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.RichTextBoxScrollBars ScrollBars" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.RichTextBox.ScrollBars" />
+      <MemberSignature Language="VB.NET" Value="Public Property ScrollBars As RichTextBoxScrollBars" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::RichTextBoxScrollBars ScrollBars { System::Windows::Forms::RichTextBoxScrollBars get(); void set(System::Windows::Forms::RichTextBoxScrollBars value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2498,6 +2664,8 @@
       <MemberSignature Language="C#" Value="public string SelectedRtf { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SelectedRtf" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.RichTextBox.SelectedRtf" />
+      <MemberSignature Language="VB.NET" Value="Public Property SelectedRtf As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SelectedRtf { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2511,7 +2679,7 @@
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2539,6 +2707,8 @@
       <MemberSignature Language="C#" Value="public override string SelectedText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SelectedText" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.RichTextBox.SelectedText" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property SelectedText As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ SelectedText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2552,7 +2722,7 @@
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2579,6 +2749,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.HorizontalAlignment SelectionAlignment { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.HorizontalAlignment SelectionAlignment" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.RichTextBox.SelectionAlignment" />
+      <MemberSignature Language="VB.NET" Value="Public Property SelectionAlignment As HorizontalAlignment" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::HorizontalAlignment SelectionAlignment { System::Windows::Forms::HorizontalAlignment get(); void set(System::Windows::Forms::HorizontalAlignment value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2592,7 +2764,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2631,6 +2803,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color SelectionBackColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color SelectionBackColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.RichTextBox.SelectionBackColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property SelectionBackColor As Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color SelectionBackColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2641,7 +2815,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2664,6 +2838,8 @@
       <MemberSignature Language="C#" Value="public bool SelectionBullet { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SelectionBullet" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.RichTextBox.SelectionBullet" />
+      <MemberSignature Language="VB.NET" Value="Public Property SelectionBullet As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SelectionBullet { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2677,7 +2853,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2715,6 +2891,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler SelectionChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler SelectionChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.RichTextBox.SelectionChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event SelectionChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ SelectionChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2751,6 +2929,8 @@
       <MemberSignature Language="C#" Value="public int SelectionCharOffset { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 SelectionCharOffset" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.RichTextBox.SelectionCharOffset" />
+      <MemberSignature Language="VB.NET" Value="Public Property SelectionCharOffset As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SelectionCharOffset { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2764,7 +2944,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(0)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2803,6 +2983,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color SelectionColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color SelectionColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.RichTextBox.SelectionColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property SelectionColor As Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color SelectionColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2813,7 +2995,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2851,6 +3033,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Font SelectionFont { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Font SelectionFont" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.RichTextBox.SelectionFont" />
+      <MemberSignature Language="VB.NET" Value="Public Property SelectionFont As Font" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Font ^ SelectionFont { System::Drawing::Font ^ get(); void set(System::Drawing::Font ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2861,7 +3045,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2899,6 +3083,8 @@
       <MemberSignature Language="C#" Value="public int SelectionHangingIndent { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 SelectionHangingIndent" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.RichTextBox.SelectionHangingIndent" />
+      <MemberSignature Language="VB.NET" Value="Public Property SelectionHangingIndent As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SelectionHangingIndent { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2912,7 +3098,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(0)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2949,6 +3135,8 @@
       <MemberSignature Language="C#" Value="public int SelectionIndent { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 SelectionIndent" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.RichTextBox.SelectionIndent" />
+      <MemberSignature Language="VB.NET" Value="Public Property SelectionIndent As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SelectionIndent { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2962,7 +3150,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(0)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -3000,6 +3188,8 @@
       <MemberSignature Language="C#" Value="public override int SelectionLength { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 SelectionLength" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.RichTextBox.SelectionLength" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property SelectionLength As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int SelectionLength { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3010,7 +3200,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -3044,6 +3234,8 @@
       <MemberSignature Language="C#" Value="public bool SelectionProtected { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SelectionProtected" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.RichTextBox.SelectionProtected" />
+      <MemberSignature Language="VB.NET" Value="Public Property SelectionProtected As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SelectionProtected { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3057,7 +3249,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -3098,6 +3290,8 @@
       <MemberSignature Language="C#" Value="public int SelectionRightIndent { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 SelectionRightIndent" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.RichTextBox.SelectionRightIndent" />
+      <MemberSignature Language="VB.NET" Value="Public Property SelectionRightIndent As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SelectionRightIndent { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3111,7 +3305,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(0)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -3147,6 +3341,8 @@
       <MemberSignature Language="C#" Value="public int[] SelectionTabs { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32[] SelectionTabs" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.RichTextBox.SelectionTabs" />
+      <MemberSignature Language="VB.NET" Value="Public Property SelectionTabs As Integer()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;int&gt; ^ SelectionTabs { cli::array &lt;int&gt; ^ get(); void set(cli::array &lt;int&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3157,7 +3353,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -3181,6 +3377,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.RichTextBoxSelectionTypes SelectionType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.RichTextBoxSelectionTypes SelectionType" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.RichTextBox.SelectionType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SelectionType As RichTextBoxSelectionTypes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::RichTextBoxSelectionTypes SelectionType { System::Windows::Forms::RichTextBoxSelectionTypes get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3191,7 +3389,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -3215,6 +3413,8 @@
       <MemberSignature Language="C#" Value="public bool ShowSelectionMargin { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ShowSelectionMargin" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.RichTextBox.ShowSelectionMargin" />
+      <MemberSignature Language="VB.NET" Value="Public Property ShowSelectionMargin As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowSelectionMargin { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3249,6 +3449,8 @@
       <MemberSignature Language="C#" Value="public override string Text { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Text" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.RichTextBox.Text" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Text As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3259,7 +3461,7 @@
           <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -3284,6 +3486,8 @@
       <MemberSignature Language="C#" Value="public override int TextLength { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 TextLength" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.RichTextBox.TextLength" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property TextLength As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int TextLength { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3308,6 +3512,8 @@
       <MemberSignature Language="C#" Value="public string UndoActionName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string UndoActionName" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.RichTextBox.UndoActionName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UndoActionName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ UndoActionName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3318,7 +3524,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -3342,6 +3548,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler VScroll;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler VScroll" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.RichTextBox.VScroll" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event VScroll As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ VScroll;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3376,6 +3584,8 @@
       <MemberSignature Language="C#" Value="protected override void WndProc (ref System.Windows.Forms.Message m);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void WndProc(valuetype System.Windows.Forms.Message&amp; m) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.RichTextBox.WndProc(System.Windows.Forms.Message@)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub WndProc (ByRef m As Message)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void WndProc(System::Windows::Forms::Message % m);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3397,6 +3607,8 @@
       <MemberSignature Language="C#" Value="public float ZoomFactor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float32 ZoomFactor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.RichTextBox.ZoomFactor" />
+      <MemberSignature Language="VB.NET" Value="Public Property ZoomFactor As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float ZoomFactor { float get(); void set(float value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3436,32 +3648,5 @@
         <exception cref="T:System.ArgumentException">The specified zoom factor did not fall within the permissible range.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Find">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Searches for text within the contents of the <see cref="T:System.Windows.Forms.RichTextBox" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="SaveFile">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Saves the contents of the <see cref="T:System.Windows.Forms.RichTextBox" /> to a file.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="LoadFile">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Loads the contents of a file into the <see cref="T:System.Windows.Forms.RichTextBox" /> control.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

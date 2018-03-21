@@ -1,7 +1,9 @@
-<Type Name="UseLicense" FullName="System.Security.RightsManagement.UseLicense">
+﻿<Type Name="UseLicense" FullName="System.Security.RightsManagement.UseLicense">
   <TypeSignature Language="C#" Value="public class UseLicense" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit UseLicense extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Security.RightsManagement.UseLicense" />
+  <TypeSignature Language="VB.NET" Value="Public Class UseLicense" />
+  <TypeSignature Language="C++ CLI" Value="public ref class UseLicense" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +41,8 @@
       <MemberSignature Language="C#" Value="public UseLicense (string useLicense);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string useLicense) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.RightsManagement.UseLicense.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (useLicense As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UseLicense(System::String ^ useLicense);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -61,6 +65,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,string&gt; ApplicationData { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, string&gt; ApplicationData" />
       <MemberSignature Language="DocId" Value="P:System.Security.RightsManagement.UseLicense.ApplicationData" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ApplicationData As IDictionary(Of String, String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ ApplicationData { System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -88,6 +94,7 @@
       <MemberSignature Language="C#" Value="public System.Security.RightsManagement.CryptoProvider Bind (System.Security.RightsManagement.SecureEnvironment secureEnvironment);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Security.RightsManagement.CryptoProvider Bind(class System.Security.RightsManagement.SecureEnvironment secureEnvironment) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.RightsManagement.UseLicense.Bind(System.Security.RightsManagement.SecureEnvironment)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::RightsManagement::CryptoProvider ^ Bind(System::Security::RightsManagement::SecureEnvironment ^ secureEnvironment);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -129,6 +136,8 @@
       <MemberSignature Language="C#" Value="public Guid ContentId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid ContentId" />
       <MemberSignature Language="DocId" Value="P:System.Security.RightsManagement.UseLicense.ContentId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContentId As Guid" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid ContentId { Guid get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -154,6 +163,8 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object x);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.RightsManagement.UseLicense.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (x As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ x);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -185,6 +196,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.RightsManagement.UseLicense.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -211,6 +224,8 @@
       <MemberSignature Language="C#" Value="public System.Security.RightsManagement.ContentUser Owner { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.RightsManagement.ContentUser Owner" />
       <MemberSignature Language="DocId" Value="P:System.Security.RightsManagement.UseLicense.Owner" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Owner As ContentUser" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::RightsManagement::ContentUser ^ Owner { System::Security::RightsManagement::ContentUser ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -236,6 +251,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.RightsManagement.UseLicense.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

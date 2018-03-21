@@ -1,7 +1,9 @@
-<Type Name="INameScopeDictionary" FullName="System.Windows.Markup.INameScopeDictionary">
+﻿<Type Name="INameScopeDictionary" FullName="System.Windows.Markup.INameScopeDictionary">
   <TypeSignature Language="C#" Value="public interface INameScopeDictionary : System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;string,object&gt;&gt;, System.Collections.Generic.IDictionary&lt;string,object&gt;, System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;string,object&gt;&gt;, System.Windows.Markup.INameScope" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract INameScopeDictionary implements class System.Collections.Generic.ICollection`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, object&gt;&gt;, class System.Collections.Generic.IDictionary`2&lt;string, object&gt;, class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, object&gt;&gt;, class System.Collections.IEnumerable, class System.Windows.Markup.INameScope" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.INameScopeDictionary" />
+  <TypeSignature Language="VB.NET" Value="Public Interface INameScopeDictionary&#xA;Implements ICollection(Of KeyValuePair(Of String, Object)), IDictionary(Of String, Object), IEnumerable(Of KeyValuePair(Of String, Object)), INameScope" />
+  <TypeSignature Language="C++ CLI" Value="public interface class INameScopeDictionary : System::Collections::Generic::ICollection&lt;System::Collections::Generic::KeyValuePair&lt;System::String ^, System::Object ^&gt;&gt;, System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt;, System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;System::String ^, System::Object ^&gt;&gt;, System::Windows::Markup::INameScope" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

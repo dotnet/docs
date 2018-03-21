@@ -1,7 +1,9 @@
-<Type Name="ServiceKnownTypeAttribute" FullName="System.ServiceModel.ServiceKnownTypeAttribute">
+﻿<Type Name="ServiceKnownTypeAttribute" FullName="System.ServiceModel.ServiceKnownTypeAttribute">
   <TypeSignature Language="C#" Value="public sealed class ServiceKnownTypeAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ServiceKnownTypeAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.ServiceKnownTypeAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ServiceKnownTypeAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ServiceKnownTypeAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -19,7 +21,7 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class | System.AttributeTargets.Method | System.AttributeTargets.Interface, AllowMultiple=true, Inherited=true)</AttributeName>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class | System.AttributeTargets.Interface | System.AttributeTargets.Method, AllowMultiple=true, Inherited=true)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -56,10 +58,22 @@
     <altmember cref="T:System.Runtime.Serialization.DataMemberAttribute" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.ServiceKnownTypeAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ServiceKnownTypeAttribute (string methodName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string methodName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ServiceKnownTypeAttribute.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (methodName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ServiceKnownTypeAttribute(System::String ^ methodName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -94,6 +108,7 @@
       <MemberSignature Language="C#" Value="public ServiceKnownTypeAttribute (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ServiceKnownTypeAttribute.#ctor(System.Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ServiceKnownTypeAttribute(Type ^ type);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -134,6 +149,8 @@
       <MemberSignature Language="C#" Value="public ServiceKnownTypeAttribute (string methodName, Type declaringType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string methodName, class System.Type declaringType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ServiceKnownTypeAttribute.#ctor(System.String,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (methodName As String, declaringType As Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ServiceKnownTypeAttribute(System::String ^ methodName, Type ^ declaringType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -173,6 +190,8 @@
       <MemberSignature Language="C#" Value="public Type DeclaringType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type DeclaringType" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ServiceKnownTypeAttribute.DeclaringType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DeclaringType As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ DeclaringType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -198,6 +217,8 @@
       <MemberSignature Language="C#" Value="public string MethodName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MethodName" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ServiceKnownTypeAttribute.MethodName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MethodName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MethodName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -230,6 +251,8 @@
       <MemberSignature Language="C#" Value="public Type Type { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type Type" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ServiceKnownTypeAttribute.Type" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ Type { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -251,15 +274,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.ServiceKnownTypeAttribute" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

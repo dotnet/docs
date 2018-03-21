@@ -1,7 +1,9 @@
-<Type Name="Ping" FullName="System.Net.NetworkInformation.Ping">
+﻿<Type Name="Ping" FullName="System.Net.NetworkInformation.Ping">
   <TypeSignature Language="C#" Value="public class Ping : System.ComponentModel.Component, IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi Ping extends System.ComponentModel.Component implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Net.NetworkInformation.Ping" />
+  <TypeSignature Language="VB.NET" Value="Public Class Ping&#xA;Inherits Component&#xA;Implements IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Ping : System::ComponentModel::Component, IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Ping</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -92,6 +94,8 @@
       <MemberSignature Language="C#" Value="public Ping ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.Ping.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Ping();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Ping</AssemblyName>
@@ -127,7 +131,12 @@
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.Ping.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Net.Ping</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -145,6 +154,8 @@
       <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.Ping.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Ping</AssemblyName>
@@ -185,6 +196,8 @@
       <MemberSignature Language="C#" Value="protected void OnPingCompleted (System.Net.NetworkInformation.PingCompletedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void OnPingCompleted(class System.Net.NetworkInformation.PingCompletedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.Ping.OnPingCompleted(System.Net.NetworkInformation.PingCompletedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub OnPingCompleted (e As PingCompletedEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void OnPingCompleted(System::Net::NetworkInformation::PingCompletedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -229,6 +242,8 @@
       <MemberSignature Language="C#" Value="public event System.Net.NetworkInformation.PingCompletedEventHandler PingCompleted;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Net.NetworkInformation.PingCompletedEventHandler PingCompleted" />
       <MemberSignature Language="DocId" Value="E:System.Net.NetworkInformation.Ping.PingCompleted" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event PingCompleted As PingCompletedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Net::NetworkInformation::PingCompletedEventHandler ^ PingCompleted;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -288,6 +303,8 @@
       <MemberSignature Language="C#" Value="public System.Net.NetworkInformation.PingReply Send (System.Net.IPAddress address);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Net.NetworkInformation.PingReply Send(class System.Net.IPAddress address) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.Ping.Send(System.Net.IPAddress)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Send (address As IPAddress) As PingReply" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Net::NetworkInformation::PingReply ^ Send(System::Net::IPAddress ^ address);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -346,6 +363,8 @@
       <MemberSignature Language="C#" Value="public System.Net.NetworkInformation.PingReply Send (string hostNameOrAddress);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Net.NetworkInformation.PingReply Send(string hostNameOrAddress) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.Ping.Send(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Send (hostNameOrAddress As String) As PingReply" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Net::NetworkInformation::PingReply ^ Send(System::String ^ hostNameOrAddress);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -402,6 +421,8 @@
       <MemberSignature Language="C#" Value="public System.Net.NetworkInformation.PingReply Send (System.Net.IPAddress address, int timeout);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Net.NetworkInformation.PingReply Send(class System.Net.IPAddress address, int32 timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.Ping.Send(System.Net.IPAddress,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Send (address As IPAddress, timeout As Integer) As PingReply" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Net::NetworkInformation::PingReply ^ Send(System::Net::IPAddress ^ address, int timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -466,6 +487,8 @@
       <MemberSignature Language="C#" Value="public System.Net.NetworkInformation.PingReply Send (string hostNameOrAddress, int timeout);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Net.NetworkInformation.PingReply Send(string hostNameOrAddress, int32 timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.Ping.Send(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Send (hostNameOrAddress As String, timeout As Integer) As PingReply" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Net::NetworkInformation::PingReply ^ Send(System::String ^ hostNameOrAddress, int timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -526,6 +549,8 @@
       <MemberSignature Language="C#" Value="public System.Net.NetworkInformation.PingReply Send (System.Net.IPAddress address, int timeout, byte[] buffer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Net.NetworkInformation.PingReply Send(class System.Net.IPAddress address, int32 timeout, unsigned int8[] buffer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.Ping.Send(System.Net.IPAddress,System.Int32,System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function Send (address As IPAddress, timeout As Integer, buffer As Byte()) As PingReply" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Net::NetworkInformation::PingReply ^ Send(System::Net::IPAddress ^ address, int timeout, cli::array &lt;System::Byte&gt; ^ buffer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -600,6 +625,8 @@
       <MemberSignature Language="C#" Value="public System.Net.NetworkInformation.PingReply Send (string hostNameOrAddress, int timeout, byte[] buffer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Net.NetworkInformation.PingReply Send(string hostNameOrAddress, int32 timeout, unsigned int8[] buffer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.Ping.Send(System.String,System.Int32,System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function Send (hostNameOrAddress As String, timeout As Integer, buffer As Byte()) As PingReply" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Net::NetworkInformation::PingReply ^ Send(System::String ^ hostNameOrAddress, int timeout, cli::array &lt;System::Byte&gt; ^ buffer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -669,6 +696,8 @@
       <MemberSignature Language="C#" Value="public System.Net.NetworkInformation.PingReply Send (System.Net.IPAddress address, int timeout, byte[] buffer, System.Net.NetworkInformation.PingOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Net.NetworkInformation.PingReply Send(class System.Net.IPAddress address, int32 timeout, unsigned int8[] buffer, class System.Net.NetworkInformation.PingOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.Ping.Send(System.Net.IPAddress,System.Int32,System.Byte[],System.Net.NetworkInformation.PingOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Send (address As IPAddress, timeout As Integer, buffer As Byte(), options As PingOptions) As PingReply" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Net::NetworkInformation::PingReply ^ Send(System::Net::IPAddress ^ address, int timeout, cli::array &lt;System::Byte&gt; ^ buffer, System::Net::NetworkInformation::PingOptions ^ options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -745,6 +774,8 @@
       <MemberSignature Language="C#" Value="public System.Net.NetworkInformation.PingReply Send (string hostNameOrAddress, int timeout, byte[] buffer, System.Net.NetworkInformation.PingOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Net.NetworkInformation.PingReply Send(string hostNameOrAddress, int32 timeout, unsigned int8[] buffer, class System.Net.NetworkInformation.PingOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.Ping.Send(System.String,System.Int32,System.Byte[],System.Net.NetworkInformation.PingOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Send (hostNameOrAddress As String, timeout As Integer, buffer As Byte(), options As PingOptions) As PingReply" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Net::NetworkInformation::PingReply ^ Send(System::String ^ hostNameOrAddress, int timeout, cli::array &lt;System::Byte&gt; ^ buffer, System::Net::NetworkInformation::PingOptions ^ options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -842,6 +873,8 @@
       <MemberSignature Language="C#" Value="public void SendAsync (System.Net.IPAddress address, object userToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SendAsync(class System.Net.IPAddress address, object userToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.Ping.SendAsync(System.Net.IPAddress,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SendAsync (address As IPAddress, userToken As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SendAsync(System::Net::IPAddress ^ address, System::Object ^ userToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -907,6 +940,8 @@
       <MemberSignature Language="C#" Value="public void SendAsync (string hostNameOrAddress, object userToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SendAsync(string hostNameOrAddress, object userToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.Ping.SendAsync(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SendAsync (hostNameOrAddress As String, userToken As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SendAsync(System::String ^ hostNameOrAddress, System::Object ^ userToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -972,6 +1007,8 @@
       <MemberSignature Language="C#" Value="public void SendAsync (System.Net.IPAddress address, int timeout, object userToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SendAsync(class System.Net.IPAddress address, int32 timeout, object userToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.Ping.SendAsync(System.Net.IPAddress,System.Int32,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SendAsync (address As IPAddress, timeout As Integer, userToken As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SendAsync(System::Net::IPAddress ^ address, int timeout, System::Object ^ userToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1041,6 +1078,8 @@
       <MemberSignature Language="C#" Value="public void SendAsync (string hostNameOrAddress, int timeout, object userToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SendAsync(string hostNameOrAddress, int32 timeout, object userToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.Ping.SendAsync(System.String,System.Int32,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SendAsync (hostNameOrAddress As String, timeout As Integer, userToken As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SendAsync(System::String ^ hostNameOrAddress, int timeout, System::Object ^ userToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1110,6 +1149,8 @@
       <MemberSignature Language="C#" Value="public void SendAsync (System.Net.IPAddress address, int timeout, byte[] buffer, object userToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SendAsync(class System.Net.IPAddress address, int32 timeout, unsigned int8[] buffer, object userToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.Ping.SendAsync(System.Net.IPAddress,System.Int32,System.Byte[],System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SendAsync (address As IPAddress, timeout As Integer, buffer As Byte(), userToken As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SendAsync(System::Net::IPAddress ^ address, int timeout, cli::array &lt;System::Byte&gt; ^ buffer, System::Object ^ userToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1187,6 +1228,8 @@
       <MemberSignature Language="C#" Value="public void SendAsync (string hostNameOrAddress, int timeout, byte[] buffer, object userToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SendAsync(string hostNameOrAddress, int32 timeout, unsigned int8[] buffer, object userToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.Ping.SendAsync(System.String,System.Int32,System.Byte[],System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SendAsync (hostNameOrAddress As String, timeout As Integer, buffer As Byte(), userToken As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SendAsync(System::String ^ hostNameOrAddress, int timeout, cli::array &lt;System::Byte&gt; ^ buffer, System::Object ^ userToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1263,6 +1306,8 @@
       <MemberSignature Language="C#" Value="public void SendAsync (System.Net.IPAddress address, int timeout, byte[] buffer, System.Net.NetworkInformation.PingOptions options, object userToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SendAsync(class System.Net.IPAddress address, int32 timeout, unsigned int8[] buffer, class System.Net.NetworkInformation.PingOptions options, object userToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.Ping.SendAsync(System.Net.IPAddress,System.Int32,System.Byte[],System.Net.NetworkInformation.PingOptions,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SendAsync (address As IPAddress, timeout As Integer, buffer As Byte(), options As PingOptions, userToken As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SendAsync(System::Net::IPAddress ^ address, int timeout, cli::array &lt;System::Byte&gt; ^ buffer, System::Net::NetworkInformation::PingOptions ^ options, System::Object ^ userToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1353,6 +1398,8 @@
       <MemberSignature Language="C#" Value="public void SendAsync (string hostNameOrAddress, int timeout, byte[] buffer, System.Net.NetworkInformation.PingOptions options, object userToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SendAsync(string hostNameOrAddress, int32 timeout, unsigned int8[] buffer, class System.Net.NetworkInformation.PingOptions options, object userToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.Ping.SendAsync(System.String,System.Int32,System.Byte[],System.Net.NetworkInformation.PingOptions,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SendAsync (hostNameOrAddress As String, timeout As Integer, buffer As Byte(), options As PingOptions, userToken As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SendAsync(System::String ^ hostNameOrAddress, int timeout, cli::array &lt;System::Byte&gt; ^ buffer, System::Net::NetworkInformation::PingOptions ^ options, System::Object ^ userToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1436,6 +1483,8 @@
       <MemberSignature Language="C#" Value="public void SendAsyncCancel ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SendAsyncCancel() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.Ping.SendAsyncCancel" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SendAsyncCancel ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SendAsyncCancel();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1466,10 +1515,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SendPingAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Ping</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sends an Internet Control Message Protocol (ICMP) echo message to a computer, and receives a corresponding ICMP echo reply message from that computer as an asynchronous operation.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="SendPingAsync">
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Net.NetworkInformation.PingReply&gt; SendPingAsync (System.Net.IPAddress address);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Net.NetworkInformation.PingReply&gt; SendPingAsync(class System.Net.IPAddress address) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.Ping.SendPingAsync(System.Net.IPAddress)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SendPingAsync (address As IPAddress) As Task(Of PingReply)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;System::Net::NetworkInformation::PingReply ^&gt; ^ SendPingAsync(System::Net::IPAddress ^ address);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Ping</AssemblyName>
@@ -1518,6 +1579,8 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Net.NetworkInformation.PingReply&gt; SendPingAsync (string hostNameOrAddress);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Net.NetworkInformation.PingReply&gt; SendPingAsync(string hostNameOrAddress) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.Ping.SendPingAsync(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SendPingAsync (hostNameOrAddress As String) As Task(Of PingReply)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;System::Net::NetworkInformation::PingReply ^&gt; ^ SendPingAsync(System::String ^ hostNameOrAddress);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Ping</AssemblyName>
@@ -1559,6 +1622,8 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Net.NetworkInformation.PingReply&gt; SendPingAsync (System.Net.IPAddress address, int timeout);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Net.NetworkInformation.PingReply&gt; SendPingAsync(class System.Net.IPAddress address, int32 timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.Ping.SendPingAsync(System.Net.IPAddress,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SendPingAsync (address As IPAddress, timeout As Integer) As Task(Of PingReply)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;System::Net::NetworkInformation::PingReply ^&gt; ^ SendPingAsync(System::Net::IPAddress ^ address, int timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Ping</AssemblyName>
@@ -1602,6 +1667,8 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Net.NetworkInformation.PingReply&gt; SendPingAsync (string hostNameOrAddress, int timeout);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Net.NetworkInformation.PingReply&gt; SendPingAsync(string hostNameOrAddress, int32 timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.Ping.SendPingAsync(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SendPingAsync (hostNameOrAddress As String, timeout As Integer) As Task(Of PingReply)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;System::Net::NetworkInformation::PingReply ^&gt; ^ SendPingAsync(System::String ^ hostNameOrAddress, int timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Ping</AssemblyName>
@@ -1645,6 +1712,8 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Net.NetworkInformation.PingReply&gt; SendPingAsync (System.Net.IPAddress address, int timeout, byte[] buffer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Net.NetworkInformation.PingReply&gt; SendPingAsync(class System.Net.IPAddress address, int32 timeout, unsigned int8[] buffer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.Ping.SendPingAsync(System.Net.IPAddress,System.Int32,System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function SendPingAsync (address As IPAddress, timeout As Integer, buffer As Byte()) As Task(Of PingReply)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;System::Net::NetworkInformation::PingReply ^&gt; ^ SendPingAsync(System::Net::IPAddress ^ address, int timeout, cli::array &lt;System::Byte&gt; ^ buffer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Ping</AssemblyName>
@@ -1704,6 +1773,8 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Net.NetworkInformation.PingReply&gt; SendPingAsync (string hostNameOrAddress, int timeout, byte[] buffer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Net.NetworkInformation.PingReply&gt; SendPingAsync(string hostNameOrAddress, int32 timeout, unsigned int8[] buffer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.Ping.SendPingAsync(System.String,System.Int32,System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function SendPingAsync (hostNameOrAddress As String, timeout As Integer, buffer As Byte()) As Task(Of PingReply)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;System::Net::NetworkInformation::PingReply ^&gt; ^ SendPingAsync(System::String ^ hostNameOrAddress, int timeout, cli::array &lt;System::Byte&gt; ^ buffer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Ping</AssemblyName>
@@ -1749,6 +1820,8 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Net.NetworkInformation.PingReply&gt; SendPingAsync (System.Net.IPAddress address, int timeout, byte[] buffer, System.Net.NetworkInformation.PingOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Net.NetworkInformation.PingReply&gt; SendPingAsync(class System.Net.IPAddress address, int32 timeout, unsigned int8[] buffer, class System.Net.NetworkInformation.PingOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.Ping.SendPingAsync(System.Net.IPAddress,System.Int32,System.Byte[],System.Net.NetworkInformation.PingOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SendPingAsync (address As IPAddress, timeout As Integer, buffer As Byte(), options As PingOptions) As Task(Of PingReply)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;System::Net::NetworkInformation::PingReply ^&gt; ^ SendPingAsync(System::Net::IPAddress ^ address, int timeout, cli::array &lt;System::Byte&gt; ^ buffer, System::Net::NetworkInformation::PingOptions ^ options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Ping</AssemblyName>
@@ -1810,6 +1883,8 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Net.NetworkInformation.PingReply&gt; SendPingAsync (string hostNameOrAddress, int timeout, byte[] buffer, System.Net.NetworkInformation.PingOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Net.NetworkInformation.PingReply&gt; SendPingAsync(string hostNameOrAddress, int32 timeout, unsigned int8[] buffer, class System.Net.NetworkInformation.PingOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.Ping.SendPingAsync(System.String,System.Int32,System.Byte[],System.Net.NetworkInformation.PingOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SendPingAsync (hostNameOrAddress As String, timeout As Integer, buffer As Byte(), options As PingOptions) As Task(Of PingReply)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;System::Net::NetworkInformation::PingReply ^&gt; ^ SendPingAsync(System::String ^ hostNameOrAddress, int timeout, cli::array &lt;System::Byte&gt; ^ buffer, System::Net::NetworkInformation::PingOptions ^ options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Ping</AssemblyName>
@@ -1857,7 +1932,12 @@
       <MemberSignature Language="C#" Value="void IDisposable.Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.IDisposable.Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.Ping.System#IDisposable#Dispose" />
+      <MemberSignature Language="VB.NET" Value="Sub Dispose () Implements IDisposable.Dispose" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.IDisposable.Dispose() = IDisposable::Dispose;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -1872,15 +1952,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="SendPingAsync">
-      <AssemblyInfo>
-        <AssemblyName>System.Net.Ping</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Sends an Internet Control Message Protocol (ICMP) echo message to a computer, and receives a corresponding ICMP echo reply message from that computer as an asynchronous operation.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

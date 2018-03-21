@@ -1,7 +1,9 @@
-<Type Name="Location&lt;T&gt;" FullName="System.Activities.Location&lt;T&gt;">
+﻿<Type Name="Location&lt;T&gt;" FullName="System.Activities.Location&lt;T&gt;">
   <TypeSignature Language="C#" Value="public class Location&lt;T&gt; : System.Activities.Location" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Location`1&lt;T&gt; extends System.Activities.Location" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Location`1" />
+  <TypeSignature Language="VB.NET" Value="Public Class Location(Of T)&#xA;Inherits Location" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class Location : System::Activities::Location" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +30,8 @@
       <MemberSignature Language="C#" Value="public Location ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Location`1.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Location();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -43,6 +47,8 @@
       <MemberSignature Language="C#" Value="public override Type LocationType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type LocationType" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Location`1.LocationType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property LocationType As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ LocationType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -61,6 +67,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Location`1.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -87,6 +95,8 @@
       <MemberSignature Language="C#" Value="public virtual T Value { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance !T Value" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Location`1.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Value As T" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property T Value { T get(); void set(T value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -105,6 +115,8 @@
       <MemberSignature Language="C#" Value="protected override sealed object ValueCore { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object ValueCore" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Location`1.ValueCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides NotOverridable Property ValueCore As Object" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Object ^ ValueCore { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

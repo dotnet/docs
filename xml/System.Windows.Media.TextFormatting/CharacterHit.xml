@@ -1,7 +1,9 @@
-<Type Name="CharacterHit" FullName="System.Windows.Media.TextFormatting.CharacterHit">
+﻿<Type Name="CharacterHit" FullName="System.Windows.Media.TextFormatting.CharacterHit">
   <TypeSignature Language="C#" Value="public struct CharacterHit : IEquatable&lt;System.Windows.Media.TextFormatting.CharacterHit&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit CharacterHit extends System.ValueType implements class System.IEquatable`1&lt;valuetype System.Windows.Media.TextFormatting.CharacterHit&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.TextFormatting.CharacterHit" />
+  <TypeSignature Language="VB.NET" Value="Public Structure CharacterHit&#xA;Implements IEquatable(Of CharacterHit)" />
+  <TypeSignature Language="C++ CLI" Value="public value class CharacterHit : IEquatable&lt;System::Windows::Media::TextFormatting::CharacterHit&gt;" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +32,8 @@
       <MemberSignature Language="C#" Value="public CharacterHit (int firstCharacterIndex, int trailingLength);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 firstCharacterIndex, int32 trailingLength) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.CharacterHit.#ctor(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (firstCharacterIndex As Integer, trailingLength As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CharacterHit(int firstCharacterIndex, int trailingLength);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -46,10 +50,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether the specified object is equal to the current <see cref="T:System.Windows.Media.TextFormatting.CharacterBufferReference" /> object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Equals">
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.CharacterHit.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -73,7 +88,12 @@
       <MemberSignature Language="C#" Value="public bool Equals (System.Windows.Media.TextFormatting.CharacterHit obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(valuetype System.Windows.Media.TextFormatting.CharacterHit obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.CharacterHit.Equals(System.Windows.Media.TextFormatting.CharacterHit)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (obj As CharacterHit) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Windows::Media::TextFormatting::CharacterHit obj);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -96,6 +116,8 @@
       <MemberSignature Language="C#" Value="public int FirstCharacterIndex { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 FirstCharacterIndex" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.CharacterHit.FirstCharacterIndex" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FirstCharacterIndex As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int FirstCharacterIndex { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -114,6 +136,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.CharacterHit.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -133,6 +157,8 @@
       <MemberSignature Language="C#" Value="public static bool operator == (System.Windows.Media.TextFormatting.CharacterHit left, System.Windows.Media.TextFormatting.CharacterHit right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Windows.Media.TextFormatting.CharacterHit left, valuetype System.Windows.Media.TextFormatting.CharacterHit right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.CharacterHit.op_Equality(System.Windows.Media.TextFormatting.CharacterHit,System.Windows.Media.TextFormatting.CharacterHit)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As CharacterHit, right As CharacterHit) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Windows::Media::TextFormatting::CharacterHit left, System::Windows::Media::TextFormatting::CharacterHit right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -158,6 +184,8 @@
       <MemberSignature Language="C#" Value="public static bool operator != (System.Windows.Media.TextFormatting.CharacterHit left, System.Windows.Media.TextFormatting.CharacterHit right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Windows.Media.TextFormatting.CharacterHit left, valuetype System.Windows.Media.TextFormatting.CharacterHit right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.CharacterHit.op_Inequality(System.Windows.Media.TextFormatting.CharacterHit,System.Windows.Media.TextFormatting.CharacterHit)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As CharacterHit, right As CharacterHit) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Windows::Media::TextFormatting::CharacterHit left, System::Windows::Media::TextFormatting::CharacterHit right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -183,6 +211,8 @@
       <MemberSignature Language="C#" Value="public int TrailingLength { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 TrailingLength" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.CharacterHit.TrailingLength" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TrailingLength As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int TrailingLength { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -204,14 +234,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Equals">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Determines whether the specified object is equal to the current <see cref="T:System.Windows.Media.TextFormatting.CharacterBufferReference" /> object.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

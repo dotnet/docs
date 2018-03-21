@@ -1,7 +1,9 @@
-<Type Name="RegistryValueKind" FullName="Microsoft.Win32.RegistryValueKind">
+﻿<Type Name="RegistryValueKind" FullName="Microsoft.Win32.RegistryValueKind">
   <TypeSignature Language="C#" Value="public enum RegistryValueKind" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RegistryValueKind extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Win32.RegistryValueKind" />
+  <TypeSignature Language="VB.NET" Value="Public Enum RegistryValueKind" />
+  <TypeSignature Language="C++ CLI" Value="public enum class RegistryValueKind" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +51,8 @@
       <MemberSignature Language="C#" Value="Binary" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Win32.RegistryValueKind Binary = int32(3)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Win32.RegistryValueKind.Binary" />
+      <MemberSignature Language="VB.NET" Value="Binary" />
+      <MemberSignature Language="C++ CLI" Value="Binary" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
@@ -63,6 +67,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Win32.RegistryValueKind</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Binary data in any form. This value is equivalent to the Win32 API registry data type REG_BINARY.</summary>
       </Docs>
@@ -71,6 +76,8 @@
       <MemberSignature Language="C#" Value="DWord" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Win32.RegistryValueKind DWord = int32(4)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Win32.RegistryValueKind.DWord" />
+      <MemberSignature Language="VB.NET" Value="DWord" />
+      <MemberSignature Language="C++ CLI" Value="DWord" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
@@ -85,6 +92,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Win32.RegistryValueKind</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>A 32-bit binary number. This value is equivalent to the Win32 API registry data type REG_DWORD.</summary>
       </Docs>
@@ -93,6 +101,8 @@
       <MemberSignature Language="C#" Value="ExpandString" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Win32.RegistryValueKind ExpandString = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Win32.RegistryValueKind.ExpandString" />
+      <MemberSignature Language="VB.NET" Value="ExpandString" />
+      <MemberSignature Language="C++ CLI" Value="ExpandString" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
@@ -107,6 +117,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Win32.RegistryValueKind</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>A null-terminated string that contains unexpanded references to environment variables, such as %PATH%, that are expanded when the value is retrieved. This value is equivalent to the Win32 API registry data type REG_EXPAND_SZ.</summary>
       </Docs>
@@ -115,6 +126,8 @@
       <MemberSignature Language="C#" Value="MultiString" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Win32.RegistryValueKind MultiString = int32(7)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Win32.RegistryValueKind.MultiString" />
+      <MemberSignature Language="VB.NET" Value="MultiString" />
+      <MemberSignature Language="C++ CLI" Value="MultiString" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
@@ -129,6 +142,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Win32.RegistryValueKind</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>An array of null-terminated strings, terminated by two null characters. This value is equivalent to the Win32 API registry data type REG_MULTI_SZ.</summary>
       </Docs>
@@ -137,6 +151,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Win32.RegistryValueKind None = int32(-1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Win32.RegistryValueKind.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
@@ -151,6 +167,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Win32.RegistryValueKind</ReturnType>
       </ReturnValue>
+      <MemberValue>-1</MemberValue>
       <Docs>
         <summary>No data type.</summary>
       </Docs>
@@ -159,6 +176,8 @@
       <MemberSignature Language="C#" Value="QWord" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Win32.RegistryValueKind QWord = int32(11)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Win32.RegistryValueKind.QWord" />
+      <MemberSignature Language="VB.NET" Value="QWord" />
+      <MemberSignature Language="C++ CLI" Value="QWord" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
@@ -173,6 +192,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Win32.RegistryValueKind</ReturnType>
       </ReturnValue>
+      <MemberValue>11</MemberValue>
       <Docs>
         <summary>A 64-bit binary number. This value is equivalent to the Win32 API registry data type REG_QWORD.</summary>
       </Docs>
@@ -181,6 +201,8 @@
       <MemberSignature Language="C#" Value="String" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Win32.RegistryValueKind String = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Win32.RegistryValueKind.String" />
+      <MemberSignature Language="VB.NET" Value="String" />
+      <MemberSignature Language="C++ CLI" Value="String" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
@@ -195,6 +217,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Win32.RegistryValueKind</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>A null-terminated string. This value is equivalent to the Win32 API registry data type REG_SZ.</summary>
       </Docs>
@@ -203,6 +226,8 @@
       <MemberSignature Language="C#" Value="Unknown" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Win32.RegistryValueKind Unknown = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Win32.RegistryValueKind.Unknown" />
+      <MemberSignature Language="VB.NET" Value="Unknown" />
+      <MemberSignature Language="C++ CLI" Value="Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
@@ -217,6 +242,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Win32.RegistryValueKind</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>An unsupported registry data type. For example, the Microsoft Win32 API registry data type REG_RESOURCE_LIST is unsupported. Use this value to specify that the <see cref="M:Microsoft.Win32.RegistryKey.SetValue(System.String,System.Object)" /> method should determine the appropriate registry data type when storing a name/value pair.</summary>
       </Docs>

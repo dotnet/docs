@@ -1,7 +1,9 @@
-<Type Name="CollectionsUtil" FullName="System.Collections.Specialized.CollectionsUtil">
+﻿<Type Name="CollectionsUtil" FullName="System.Collections.Specialized.CollectionsUtil">
   <TypeSignature Language="C#" Value="public class CollectionsUtil" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CollectionsUtil extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Collections.Specialized.CollectionsUtil" />
+  <TypeSignature Language="VB.NET" Value="Public Class CollectionsUtil" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CollectionsUtil" />
   <AssemblyInfo>
     <AssemblyName>System.Collections.NonGeneric</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -53,6 +55,8 @@
       <MemberSignature Language="C#" Value="public CollectionsUtil ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.CollectionsUtil.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CollectionsUtil();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -74,10 +78,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateCaseInsensitiveHashtable">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.Collections.Hashtable" /> class that ignores the case of strings.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateCaseInsensitiveHashtable">
       <MemberSignature Language="C#" Value="public static System.Collections.Hashtable CreateCaseInsensitiveHashtable ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Hashtable CreateCaseInsensitiveHashtable() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.CollectionsUtil.CreateCaseInsensitiveHashtable" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateCaseInsensitiveHashtable () As Hashtable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Hashtable ^ CreateCaseInsensitiveHashtable();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -117,6 +133,8 @@
       <MemberSignature Language="C#" Value="public static System.Collections.Hashtable CreateCaseInsensitiveHashtable (System.Collections.IDictionary d);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Hashtable CreateCaseInsensitiveHashtable(class System.Collections.IDictionary d) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.CollectionsUtil.CreateCaseInsensitiveHashtable(System.Collections.IDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateCaseInsensitiveHashtable (d As IDictionary) As Hashtable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Hashtable ^ CreateCaseInsensitiveHashtable(System::Collections::IDictionary ^ d);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -162,6 +180,8 @@
       <MemberSignature Language="C#" Value="public static System.Collections.Hashtable CreateCaseInsensitiveHashtable (int capacity);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Hashtable CreateCaseInsensitiveHashtable(int32 capacity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.CollectionsUtil.CreateCaseInsensitiveHashtable(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateCaseInsensitiveHashtable (capacity As Integer) As Hashtable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Hashtable ^ CreateCaseInsensitiveHashtable(int capacity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -206,6 +226,8 @@
       <MemberSignature Language="C#" Value="public static System.Collections.SortedList CreateCaseInsensitiveSortedList ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.SortedList CreateCaseInsensitiveSortedList() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.CollectionsUtil.CreateCaseInsensitiveSortedList" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateCaseInsensitiveSortedList () As SortedList" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::SortedList ^ CreateCaseInsensitiveSortedList();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -240,15 +262,5 @@
         <altmember cref="T:System.Collections.CaseInsensitiveComparer" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="CreateCaseInsensitiveHashtable">
-      <AssemblyInfo>
-        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a new instance of the <see cref="T:System.Collections.Hashtable" /> class that ignores the case of strings.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

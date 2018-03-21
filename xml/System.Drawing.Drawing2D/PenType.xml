@@ -1,7 +1,9 @@
-<Type Name="PenType" FullName="System.Drawing.Drawing2D.PenType">
+﻿<Type Name="PenType" FullName="System.Drawing.Drawing2D.PenType">
   <TypeSignature Language="C#" Value="public enum PenType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PenType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Drawing2D.PenType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum PenType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class PenType" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +27,8 @@
       <MemberSignature Language="C#" Value="HatchFill" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.PenType HatchFill = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.PenType.HatchFill" />
+      <MemberSignature Language="VB.NET" Value="HatchFill" />
+      <MemberSignature Language="C++ CLI" Value="HatchFill" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -33,6 +37,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.PenType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Specifies a hatch fill.</summary>
       </Docs>
@@ -41,6 +46,8 @@
       <MemberSignature Language="C#" Value="LinearGradient" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.PenType LinearGradient = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.PenType.LinearGradient" />
+      <MemberSignature Language="VB.NET" Value="LinearGradient" />
+      <MemberSignature Language="C++ CLI" Value="LinearGradient" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -49,6 +56,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.PenType</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Specifies a linear gradient fill.</summary>
       </Docs>
@@ -57,6 +65,8 @@
       <MemberSignature Language="C#" Value="PathGradient" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.PenType PathGradient = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.PenType.PathGradient" />
+      <MemberSignature Language="VB.NET" Value="PathGradient" />
+      <MemberSignature Language="C++ CLI" Value="PathGradient" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -65,6 +75,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.PenType</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Specifies a path gradient fill.</summary>
       </Docs>
@@ -73,6 +84,8 @@
       <MemberSignature Language="C#" Value="SolidColor" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.PenType SolidColor = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.PenType.SolidColor" />
+      <MemberSignature Language="VB.NET" Value="SolidColor" />
+      <MemberSignature Language="C++ CLI" Value="SolidColor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -81,6 +94,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.PenType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Specifies a solid fill.</summary>
       </Docs>
@@ -89,6 +103,8 @@
       <MemberSignature Language="C#" Value="TextureFill" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.PenType TextureFill = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.PenType.TextureFill" />
+      <MemberSignature Language="VB.NET" Value="TextureFill" />
+      <MemberSignature Language="C++ CLI" Value="TextureFill" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -97,6 +113,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.PenType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Specifies a bitmap texture fill.</summary>
       </Docs>

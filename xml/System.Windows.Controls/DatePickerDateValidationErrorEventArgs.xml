@@ -1,7 +1,9 @@
-<Type Name="DatePickerDateValidationErrorEventArgs" FullName="System.Windows.Controls.DatePickerDateValidationErrorEventArgs">
+﻿<Type Name="DatePickerDateValidationErrorEventArgs" FullName="System.Windows.Controls.DatePickerDateValidationErrorEventArgs">
   <TypeSignature Language="C#" Value="public class DatePickerDateValidationErrorEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DatePickerDateValidationErrorEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.DatePickerDateValidationErrorEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class DatePickerDateValidationErrorEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DatePickerDateValidationErrorEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +47,7 @@
       <MemberSignature Language="C#" Value="public DatePickerDateValidationErrorEventArgs (Exception exception, string text);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Exception exception, string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DatePickerDateValidationErrorEventArgs.#ctor(System.Exception,System.String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DatePickerDateValidationErrorEventArgs(Exception ^ exception, System::String ^ text);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -65,6 +68,8 @@
       <MemberSignature Language="C#" Value="public Exception Exception { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Exception Exception" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DatePickerDateValidationErrorEventArgs.Exception" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Exception As Exception" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Exception ^ Exception { Exception ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -83,6 +88,8 @@
       <MemberSignature Language="C#" Value="public string Text { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Text" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DatePickerDateValidationErrorEventArgs.Text" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Text As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Text { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -101,6 +108,8 @@
       <MemberSignature Language="C#" Value="public bool ThrowException { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ThrowException" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DatePickerDateValidationErrorEventArgs.ThrowException" />
+      <MemberSignature Language="VB.NET" Value="Public Property ThrowException As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ThrowException { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

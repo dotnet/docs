@@ -1,7 +1,9 @@
-<Type Name="ADVF" FullName="System.Runtime.InteropServices.ComTypes.ADVF">
+﻿<Type Name="ADVF" FullName="System.Runtime.InteropServices.ComTypes.ADVF">
   <TypeSignature Language="C#" Value="public enum ADVF" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ADVF extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComTypes.ADVF" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ADVF" />
+  <TypeSignature Language="C++ CLI" Value="public enum class ADVF" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +48,8 @@
       <MemberSignature Language="C#" Value="ADVF_DATAONSTOP" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.ComTypes.ADVF ADVF_DATAONSTOP = int32(64)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.ADVF.ADVF_DATAONSTOP" />
+      <MemberSignature Language="VB.NET" Value="ADVF_DATAONSTOP" />
+      <MemberSignature Language="C++ CLI" Value="ADVF_DATAONSTOP" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -68,6 +72,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.ComTypes.ADVF</ReturnType>
       </ReturnValue>
+      <MemberValue>64</MemberValue>
       <Docs>
         <summary>For data advisory connections, assures accessibility to data.</summary>
       </Docs>
@@ -76,6 +81,8 @@
       <MemberSignature Language="C#" Value="ADVF_NODATA" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.ComTypes.ADVF ADVF_NODATA = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.ADVF.ADVF_NODATA" />
+      <MemberSignature Language="VB.NET" Value="ADVF_NODATA" />
+      <MemberSignature Language="C++ CLI" Value="ADVF_NODATA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -98,6 +105,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.ComTypes.ADVF</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>For data advisory connections (<see cref="M:System.Runtime.InteropServices.ComTypes.IDataObject.DAdvise(System.Runtime.InteropServices.ComTypes.FORMATETC@,System.Runtime.InteropServices.ComTypes.ADVF,System.Runtime.InteropServices.ComTypes.IAdviseSink,System.Int32@)" /> or <see cref="M:System.Runtime.InteropServices.ComTypes.IConnectionPoint.Advise(System.Object,System.Int32@)" />), this flag requests the data object not to send data when it calls <see cref="M:System.Runtime.InteropServices.ComTypes.IAdviseSink.OnDataChange(System.Runtime.InteropServices.ComTypes.FORMATETC@,System.Runtime.InteropServices.ComTypes.STGMEDIUM@)" />.</summary>
       </Docs>
@@ -106,6 +114,8 @@
       <MemberSignature Language="C#" Value="ADVF_ONLYONCE" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.ComTypes.ADVF ADVF_ONLYONCE = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.ADVF.ADVF_ONLYONCE" />
+      <MemberSignature Language="VB.NET" Value="ADVF_ONLYONCE" />
+      <MemberSignature Language="C++ CLI" Value="ADVF_ONLYONCE" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -128,6 +138,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.ComTypes.ADVF</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Requests that the object make only one change notification or cache update before deleting the connection.</summary>
       </Docs>
@@ -136,6 +147,8 @@
       <MemberSignature Language="C#" Value="ADVF_PRIMEFIRST" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.ComTypes.ADVF ADVF_PRIMEFIRST = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.ADVF.ADVF_PRIMEFIRST" />
+      <MemberSignature Language="VB.NET" Value="ADVF_PRIMEFIRST" />
+      <MemberSignature Language="C++ CLI" Value="ADVF_PRIMEFIRST" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -158,6 +171,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.ComTypes.ADVF</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Requests that the object not wait for the data or view to change before making an initial call to <see cref="M:System.Runtime.InteropServices.ComTypes.IAdviseSink.OnDataChange(System.Runtime.InteropServices.ComTypes.FORMATETC@,System.Runtime.InteropServices.ComTypes.STGMEDIUM@)" /> (for data or view advisory connections) or updating the cache (for cache connections).</summary>
       </Docs>
@@ -166,6 +180,8 @@
       <MemberSignature Language="C#" Value="ADVFCACHE_FORCEBUILTIN" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.ComTypes.ADVF ADVFCACHE_FORCEBUILTIN = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.ADVF.ADVFCACHE_FORCEBUILTIN" />
+      <MemberSignature Language="VB.NET" Value="ADVFCACHE_FORCEBUILTIN" />
+      <MemberSignature Language="C++ CLI" Value="ADVFCACHE_FORCEBUILTIN" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -188,6 +204,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.ComTypes.ADVF</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>This value is used by DLL object applications and object handlers that perform the drawing of their objects.</summary>
       </Docs>
@@ -196,6 +213,8 @@
       <MemberSignature Language="C#" Value="ADVFCACHE_NOHANDLER" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.ComTypes.ADVF ADVFCACHE_NOHANDLER = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.ADVF.ADVFCACHE_NOHANDLER" />
+      <MemberSignature Language="VB.NET" Value="ADVFCACHE_NOHANDLER" />
+      <MemberSignature Language="C++ CLI" Value="ADVFCACHE_NOHANDLER" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -218,6 +237,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.ComTypes.ADVF</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>Synonym for <see cref="F:System.Runtime.InteropServices.ComTypes.ADVF.ADVFCACHE_FORCEBUILTIN" />, which is used more often.</summary>
       </Docs>
@@ -226,6 +246,8 @@
       <MemberSignature Language="C#" Value="ADVFCACHE_ONSAVE" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.ComTypes.ADVF ADVFCACHE_ONSAVE = int32(32)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.ADVF.ADVFCACHE_ONSAVE" />
+      <MemberSignature Language="VB.NET" Value="ADVFCACHE_ONSAVE" />
+      <MemberSignature Language="C++ CLI" Value="ADVFCACHE_ONSAVE" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -248,6 +270,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.ComTypes.ADVF</ReturnType>
       </ReturnValue>
+      <MemberValue>32</MemberValue>
       <Docs>
         <summary>For cache connections, this flag updates the cached representation only when the object containing the cache is saved.</summary>
       </Docs>

@@ -1,7 +1,9 @@
-<Type Name="ImportScope" FullName="System.Reflection.Metadata.ImportScope">
+﻿<Type Name="ImportScope" FullName="System.Reflection.Metadata.ImportScope">
   <TypeSignature Language="C#" Value="public struct ImportScope" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit ImportScope extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.ImportScope" />
+  <TypeSignature Language="VB.NET" Value="Public Structure ImportScope" />
+  <TypeSignature Language="C++ CLI" Value="public value class ImportScope" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -21,6 +23,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Metadata.ImportDefinitionCollection GetImports ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.ImportDefinitionCollection GetImports() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.ImportScope.GetImports" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetImports () As ImportDefinitionCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::ImportDefinitionCollection GetImports();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -42,6 +46,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Metadata.BlobHandle ImportsBlob { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.Metadata.BlobHandle ImportsBlob" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.ImportScope.ImportsBlob" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ImportsBlob As BlobHandle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::BlobHandle ImportsBlob { System::Reflection::Metadata::BlobHandle get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -62,6 +68,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Metadata.ImportScopeHandle Parent { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.Metadata.ImportScopeHandle Parent" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.ImportScope.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As ImportScopeHandle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::ImportScopeHandle Parent { System::Reflection::Metadata::ImportScopeHandle get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

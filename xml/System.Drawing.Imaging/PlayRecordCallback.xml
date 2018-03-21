@@ -1,7 +1,9 @@
-<Type Name="PlayRecordCallback" FullName="System.Drawing.Imaging.PlayRecordCallback">
+﻿<Type Name="PlayRecordCallback" FullName="System.Drawing.Imaging.PlayRecordCallback">
   <TypeSignature Language="C#" Value="public delegate void PlayRecordCallback(EmfPlusRecordType recordType, int flags, int dataSize, IntPtr recordData);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PlayRecordCallback extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Imaging.PlayRecordCallback" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub PlayRecordCallback(recordType As EmfPlusRecordType, flags As Integer, dataSize As Integer, recordData As IntPtr)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void PlayRecordCallback(EmfPlusRecordType recordType, int flags, int dataSize, IntPtr recordData);" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

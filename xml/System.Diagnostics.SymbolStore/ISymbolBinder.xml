@@ -1,7 +1,9 @@
-<Type Name="ISymbolBinder" FullName="System.Diagnostics.SymbolStore.ISymbolBinder">
+﻿<Type Name="ISymbolBinder" FullName="System.Diagnostics.SymbolStore.ISymbolBinder">
   <TypeSignature Language="C#" Value="public interface ISymbolBinder" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISymbolBinder" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.SymbolStore.ISymbolBinder" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ISymbolBinder" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ISymbolBinder" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -39,6 +41,8 @@
       <MemberSignature Language="C#" Value="public System.Diagnostics.SymbolStore.ISymbolReader GetReader (int importer, string filename, string searchPath);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Diagnostics.SymbolStore.ISymbolReader GetReader(int32 importer, string filename, string searchPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.ISymbolBinder.GetReader(System.Int32,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetReader (importer As Integer, filename As String, searchPath As String) As ISymbolReader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Diagnostics::SymbolStore::ISymbolReader ^ GetReader(int importer, System::String ^ filename, System::String ^ searchPath);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

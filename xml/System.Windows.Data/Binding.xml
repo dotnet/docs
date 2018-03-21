@@ -1,7 +1,9 @@
-<Type Name="Binding" FullName="System.Windows.Data.Binding">
+﻿<Type Name="Binding" FullName="System.Windows.Data.Binding">
   <TypeSignature Language="C#" Value="public class Binding : System.Windows.Data.BindingBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Binding extends System.Windows.Data.BindingBase" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Data.Binding" />
+  <TypeSignature Language="VB.NET" Value="Public Class Binding&#xA;Inherits BindingBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Binding : System::Windows::Data::BindingBase" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,10 +52,21 @@
     <altmember cref="T:System.Windows.Data.PriorityBinding" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Data.Binding" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public Binding ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.Binding.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Binding();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -69,6 +82,8 @@
       <MemberSignature Language="C#" Value="public Binding (string path);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string path) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.Binding.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (path As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Binding(System::String ^ path);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -87,6 +102,8 @@
       <MemberSignature Language="C#" Value="public static void AddSourceUpdatedHandler (System.Windows.DependencyObject element, EventHandler&lt;System.Windows.Data.DataTransferEventArgs&gt; handler);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AddSourceUpdatedHandler(class System.Windows.DependencyObject element, class System.EventHandler`1&lt;class System.Windows.Data.DataTransferEventArgs&gt; handler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.Binding.AddSourceUpdatedHandler(System.Windows.DependencyObject,System.EventHandler{System.Windows.Data.DataTransferEventArgs})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub AddSourceUpdatedHandler (element As DependencyObject, handler As EventHandler(Of DataTransferEventArgs))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddSourceUpdatedHandler(System::Windows::DependencyObject ^ element, EventHandler&lt;System::Windows::Data::DataTransferEventArgs ^&gt; ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -117,6 +134,8 @@
       <MemberSignature Language="C#" Value="public static void AddTargetUpdatedHandler (System.Windows.DependencyObject element, EventHandler&lt;System.Windows.Data.DataTransferEventArgs&gt; handler);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AddTargetUpdatedHandler(class System.Windows.DependencyObject element, class System.EventHandler`1&lt;class System.Windows.Data.DataTransferEventArgs&gt; handler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.Binding.AddTargetUpdatedHandler(System.Windows.DependencyObject,System.EventHandler{System.Windows.Data.DataTransferEventArgs})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub AddTargetUpdatedHandler (element As DependencyObject, handler As EventHandler(Of DataTransferEventArgs))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddTargetUpdatedHandler(System::Windows::DependencyObject ^ element, EventHandler&lt;System::Windows::Data::DataTransferEventArgs ^&gt; ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -147,6 +166,8 @@
       <MemberSignature Language="C#" Value="public object AsyncState { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object AsyncState" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.Binding.AsyncState" />
+      <MemberSignature Language="VB.NET" Value="Public Property AsyncState As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ AsyncState { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -173,6 +194,8 @@
       <MemberSignature Language="C#" Value="public bool BindsDirectlyToSource { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool BindsDirectlyToSource" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.Binding.BindsDirectlyToSource" />
+      <MemberSignature Language="VB.NET" Value="Public Property BindsDirectlyToSource As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool BindsDirectlyToSource { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -206,6 +229,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Data.IValueConverter Converter { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Data.IValueConverter Converter" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.Binding.Converter" />
+      <MemberSignature Language="VB.NET" Value="Public Property Converter As IValueConverter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Data::IValueConverter ^ Converter { System::Windows::Data::IValueConverter ^ get(); void set(System::Windows::Data::IValueConverter ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -250,6 +275,8 @@
       <MemberSignature Language="C#" Value="public System.Globalization.CultureInfo ConverterCulture { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Globalization.CultureInfo ConverterCulture" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.Binding.ConverterCulture" />
+      <MemberSignature Language="VB.NET" Value="Public Property ConverterCulture As CultureInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Globalization::CultureInfo ^ ConverterCulture { System::Globalization::CultureInfo ^ get(); void set(System::Globalization::CultureInfo ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -285,6 +312,8 @@
       <MemberSignature Language="C#" Value="public object ConverterParameter { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object ConverterParameter" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.Binding.ConverterParameter" />
+      <MemberSignature Language="VB.NET" Value="Public Property ConverterParameter As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ConverterParameter { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -317,6 +346,8 @@
       <MemberSignature Language="C#" Value="public static readonly object DoNothing;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly object DoNothing" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Data.Binding.DoNothing" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DoNothing As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Object ^ DoNothing;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -341,6 +372,8 @@
       <MemberSignature Language="C#" Value="public string ElementName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ElementName" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.Binding.ElementName" />
+      <MemberSignature Language="VB.NET" Value="Public Property ElementName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ElementName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -377,6 +410,8 @@
       <MemberSignature Language="C#" Value="public static System.Xml.XmlNamespaceManager GetXmlNamespaceManager (System.Windows.DependencyObject target);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.XmlNamespaceManager GetXmlNamespaceManager(class System.Windows.DependencyObject target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.Binding.GetXmlNamespaceManager(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetXmlNamespaceManager (target As DependencyObject) As XmlNamespaceManager" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::XmlNamespaceManager ^ GetXmlNamespaceManager(System::Windows::DependencyObject ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -413,6 +448,8 @@
       <MemberSignature Language="C#" Value="public const string IndexerName;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string IndexerName" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Data.Binding.IndexerName" />
+      <MemberSignature Language="VB.NET" Value="Public Const IndexerName As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ IndexerName;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -430,6 +467,8 @@
       <MemberSignature Language="C#" Value="public bool IsAsync { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsAsync" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.Binding.IsAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsAsync As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAsync { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -468,6 +507,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Data.BindingMode Mode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Data.BindingMode Mode" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.Binding.Mode" />
+      <MemberSignature Language="VB.NET" Value="Public Property Mode As BindingMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Data::BindingMode Mode { System::Windows::Data::BindingMode get(); void set(System::Windows::Data::BindingMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -504,6 +545,8 @@
       <MemberSignature Language="C#" Value="public bool NotifyOnSourceUpdated { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool NotifyOnSourceUpdated" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.Binding.NotifyOnSourceUpdated" />
+      <MemberSignature Language="VB.NET" Value="Public Property NotifyOnSourceUpdated As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool NotifyOnSourceUpdated { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -529,6 +572,8 @@
       <MemberSignature Language="C#" Value="public bool NotifyOnTargetUpdated { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool NotifyOnTargetUpdated" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.Binding.NotifyOnTargetUpdated" />
+      <MemberSignature Language="VB.NET" Value="Public Property NotifyOnTargetUpdated As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool NotifyOnTargetUpdated { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -554,6 +599,8 @@
       <MemberSignature Language="C#" Value="public bool NotifyOnValidationError { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool NotifyOnValidationError" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.Binding.NotifyOnValidationError" />
+      <MemberSignature Language="VB.NET" Value="Public Property NotifyOnValidationError As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool NotifyOnValidationError { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -587,6 +634,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.PropertyPath Path { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.PropertyPath Path" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.Binding.Path" />
+      <MemberSignature Language="VB.NET" Value="Public Property Path As PropertyPath" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::PropertyPath ^ Path { System::Windows::PropertyPath ^ get(); void set(System::Windows::PropertyPath ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -645,6 +694,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Data.RelativeSource RelativeSource { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Data.RelativeSource RelativeSource" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.Binding.RelativeSource" />
+      <MemberSignature Language="VB.NET" Value="Public Property RelativeSource As RelativeSource" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Data::RelativeSource ^ RelativeSource { System::Windows::Data::RelativeSource ^ get(); void set(System::Windows::Data::RelativeSource ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -689,6 +740,8 @@
       <MemberSignature Language="C#" Value="public static void RemoveSourceUpdatedHandler (System.Windows.DependencyObject element, EventHandler&lt;System.Windows.Data.DataTransferEventArgs&gt; handler);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RemoveSourceUpdatedHandler(class System.Windows.DependencyObject element, class System.EventHandler`1&lt;class System.Windows.Data.DataTransferEventArgs&gt; handler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.Binding.RemoveSourceUpdatedHandler(System.Windows.DependencyObject,System.EventHandler{System.Windows.Data.DataTransferEventArgs})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveSourceUpdatedHandler (element As DependencyObject, handler As EventHandler(Of DataTransferEventArgs))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveSourceUpdatedHandler(System::Windows::DependencyObject ^ element, EventHandler&lt;System::Windows::Data::DataTransferEventArgs ^&gt; ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -719,6 +772,8 @@
       <MemberSignature Language="C#" Value="public static void RemoveTargetUpdatedHandler (System.Windows.DependencyObject element, EventHandler&lt;System.Windows.Data.DataTransferEventArgs&gt; handler);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RemoveTargetUpdatedHandler(class System.Windows.DependencyObject element, class System.EventHandler`1&lt;class System.Windows.Data.DataTransferEventArgs&gt; handler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.Binding.RemoveTargetUpdatedHandler(System.Windows.DependencyObject,System.EventHandler{System.Windows.Data.DataTransferEventArgs})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveTargetUpdatedHandler (element As DependencyObject, handler As EventHandler(Of DataTransferEventArgs))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveTargetUpdatedHandler(System::Windows::DependencyObject ^ element, EventHandler&lt;System::Windows::Data::DataTransferEventArgs ^&gt; ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -749,6 +804,8 @@
       <MemberSignature Language="C#" Value="public static void SetXmlNamespaceManager (System.Windows.DependencyObject target, System.Xml.XmlNamespaceManager value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetXmlNamespaceManager(class System.Windows.DependencyObject target, class System.Xml.XmlNamespaceManager value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.Binding.SetXmlNamespaceManager(System.Windows.DependencyObject,System.Xml.XmlNamespaceManager)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetXmlNamespaceManager (target As DependencyObject, value As XmlNamespaceManager)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetXmlNamespaceManager(System::Windows::DependencyObject ^ target, System::Xml::XmlNamespaceManager ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -781,6 +838,8 @@
       <MemberSignature Language="C#" Value="public bool ShouldSerializePath ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializePath() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.Binding.ShouldSerializePath" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializePath () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializePath();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -813,6 +872,8 @@
       <MemberSignature Language="C#" Value="public bool ShouldSerializeSource ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeSource() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.Binding.ShouldSerializeSource" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeSource () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeSource();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -845,6 +906,8 @@
       <MemberSignature Language="C#" Value="public bool ShouldSerializeValidationRules ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeValidationRules() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.Binding.ShouldSerializeValidationRules" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeValidationRules () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeValidationRules();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -877,6 +940,8 @@
       <MemberSignature Language="C#" Value="public object Source { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Source" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.Binding.Source" />
+      <MemberSignature Language="VB.NET" Value="Public Property Source As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Source { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -929,10 +994,27 @@
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="SourceUpdated">
+      <MemberSignature Language="C#" Value="see AddSourceUpdatedHandler, and RemoveSourceUpdatedHandler" />
+      <MemberSignature Language="ILAsm" Value="see AddSourceUpdatedHandler, and RemoveSourceUpdatedHandler" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Data.Binding.SourceUpdated" />
+      <MemberSignature Language="VB.NET" Value="see AddSourceUpdatedHandler, and RemoveSourceUpdatedHandler" />
+      <MemberType>AttachedEvent</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="SourceUpdatedEvent">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.RoutedEvent SourceUpdatedEvent;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.RoutedEvent SourceUpdatedEvent" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Data.Binding.SourceUpdatedEvent" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SourceUpdatedEvent As RoutedEvent " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ SourceUpdatedEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -946,10 +1028,27 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="TargetUpdated">
+      <MemberSignature Language="C#" Value="see AddTargetUpdatedHandler, and RemoveTargetUpdatedHandler" />
+      <MemberSignature Language="ILAsm" Value="see AddTargetUpdatedHandler, and RemoveTargetUpdatedHandler" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Data.Binding.TargetUpdated" />
+      <MemberSignature Language="VB.NET" Value="see AddTargetUpdatedHandler, and RemoveTargetUpdatedHandler" />
+      <MemberType>AttachedEvent</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="TargetUpdatedEvent">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.RoutedEvent TargetUpdatedEvent;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.RoutedEvent TargetUpdatedEvent" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Data.Binding.TargetUpdatedEvent" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TargetUpdatedEvent As RoutedEvent " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ TargetUpdatedEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -967,6 +1066,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Data.UpdateSourceExceptionFilterCallback UpdateSourceExceptionFilter { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Data.UpdateSourceExceptionFilterCallback UpdateSourceExceptionFilter" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.Binding.UpdateSourceExceptionFilter" />
+      <MemberSignature Language="VB.NET" Value="Public Property UpdateSourceExceptionFilter As UpdateSourceExceptionFilterCallback" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Data::UpdateSourceExceptionFilterCallback ^ UpdateSourceExceptionFilter { System::Windows::Data::UpdateSourceExceptionFilterCallback ^ get(); void set(System::Windows::Data::UpdateSourceExceptionFilterCallback ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -974,7 +1075,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1016,6 +1117,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Data.UpdateSourceTrigger UpdateSourceTrigger { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Data.UpdateSourceTrigger UpdateSourceTrigger" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.Binding.UpdateSourceTrigger" />
+      <MemberSignature Language="VB.NET" Value="Public Property UpdateSourceTrigger As UpdateSourceTrigger" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Data::UpdateSourceTrigger UpdateSourceTrigger { System::Windows::Data::UpdateSourceTrigger get(); void set(System::Windows::Data::UpdateSourceTrigger value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1051,6 +1154,8 @@
       <MemberSignature Language="C#" Value="public bool ValidatesOnDataErrors { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ValidatesOnDataErrors" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.Binding.ValidatesOnDataErrors" />
+      <MemberSignature Language="VB.NET" Value="Public Property ValidatesOnDataErrors As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ValidatesOnDataErrors { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1097,6 +1202,8 @@
       <MemberSignature Language="C#" Value="public bool ValidatesOnExceptions { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ValidatesOnExceptions" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.Binding.ValidatesOnExceptions" />
+      <MemberSignature Language="VB.NET" Value="Public Property ValidatesOnExceptions As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ValidatesOnExceptions { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1143,6 +1250,8 @@
       <MemberSignature Language="C#" Value="public bool ValidatesOnNotifyDataErrors { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ValidatesOnNotifyDataErrors" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.Binding.ValidatesOnNotifyDataErrors" />
+      <MemberSignature Language="VB.NET" Value="Public Property ValidatesOnNotifyDataErrors As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ValidatesOnNotifyDataErrors { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1174,6 +1283,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.Windows.Controls.ValidationRule&gt; ValidationRules { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.Windows.Controls.ValidationRule&gt; ValidationRules" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.Binding.ValidationRules" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ValidationRules As Collection(Of ValidationRule)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::Windows::Controls::ValidationRule ^&gt; ^ ValidationRules { System::Collections::ObjectModel::Collection&lt;System::Windows::Controls::ValidationRule ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1218,10 +1329,27 @@
         <altmember cref="T:System.Windows.Controls.Validation" />
       </Docs>
     </Member>
+    <Member MemberName="XmlNamespaceManager">
+      <MemberSignature Language="C#" Value="see GetXmlNamespaceManager, and SetXmlNamespaceManager" />
+      <MemberSignature Language="ILAsm" Value="see GetXmlNamespaceManager, and SetXmlNamespaceManager" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Data.Binding.XmlNamespaceManager" />
+      <MemberSignature Language="VB.NET" Value="see GetXmlNamespaceManager, and SetXmlNamespaceManager" />
+      <MemberType>AttachedProperty</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="XmlNamespaceManagerProperty">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty XmlNamespaceManagerProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty XmlNamespaceManagerProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Data.Binding.XmlNamespaceManagerProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly XmlNamespaceManagerProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ XmlNamespaceManagerProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1239,6 +1367,8 @@
       <MemberSignature Language="C#" Value="public string XPath { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XPath" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.Binding.XPath" />
+      <MemberSignature Language="VB.NET" Value="Public Property XPath As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XPath { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1271,14 +1401,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Data.Binding" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

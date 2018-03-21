@@ -1,7 +1,9 @@
-<Type Name="NewArray&lt;TResult&gt;" FullName="System.Activities.Expressions.NewArray&lt;TResult&gt;">
+﻿<Type Name="NewArray&lt;TResult&gt;" FullName="System.Activities.Expressions.NewArray&lt;TResult&gt;">
   <TypeSignature Language="C#" Value="public sealed class NewArray&lt;TResult&gt; : System.Activities.CodeActivity&lt;TResult&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit NewArray`1&lt;TResult&gt; extends System.Activities.CodeActivity`1&lt;!TResult&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Expressions.NewArray`1" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class NewArray(Of TResult)&#xA;Inherits CodeActivity(Of TResult)" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename TResult&gt;&#xA;public ref class NewArray sealed : System::Activities::CodeActivity&lt;TResult&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +33,8 @@
       <MemberSignature Language="C#" Value="public NewArray ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.NewArray`1.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NewArray();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -46,6 +50,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.Activities.Argument&gt; Bounds { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.Activities.Argument&gt; Bounds" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Expressions.NewArray`1.Bounds" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Bounds As Collection(Of Argument)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::Activities::Argument ^&gt; ^ Bounds { System::Collections::ObjectModel::Collection&lt;System::Activities::Argument ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -64,6 +70,8 @@
       <MemberSignature Language="C#" Value="protected override void CacheMetadata (System.Activities.CodeActivityMetadata metadata);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CacheMetadata(valuetype System.Activities.CodeActivityMetadata metadata) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.NewArray`1.CacheMetadata(System.Activities.CodeActivityMetadata)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CacheMetadata (metadata As CodeActivityMetadata)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CacheMetadata(System::Activities::CodeActivityMetadata metadata);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -85,6 +93,8 @@
       <MemberSignature Language="C#" Value="protected override TResult Execute (System.Activities.CodeActivityContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance !TResult Execute(class System.Activities.CodeActivityContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.NewArray`1.Execute(System.Activities.CodeActivityContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function Execute (context As CodeActivityContext) As TResult" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override TResult Execute(System::Activities::CodeActivityContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

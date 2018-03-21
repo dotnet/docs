@@ -1,7 +1,9 @@
-<Type Name="SqlParameter" FullName="System.Data.SqlClient.SqlParameter">
+﻿<Type Name="SqlParameter" FullName="System.Data.SqlClient.SqlParameter">
   <TypeSignature Language="C#" Value="public sealed class SqlParameter : System.Data.Common.DbParameter, ICloneable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SqlParameter extends System.Data.Common.DbParameter implements class System.Data.IDataParameter, class System.Data.IDbDataParameter, class System.ICloneable" />
   <TypeSignature Language="DocId" Value="T:System.Data.SqlClient.SqlParameter" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SqlParameter&#xA;Inherits DbParameter&#xA;Implements ICloneable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SqlParameter sealed : System::Data::Common::DbParameter, ICloneable" />
   <AssemblyInfo>
     <AssemblyName>System.Data.SqlClient</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -56,10 +58,22 @@
     <altmember cref="T:System.Data.SqlClient.SqlCommand" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.SqlClient.SqlParameter" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SqlParameter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlParameter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlParameter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -95,6 +109,8 @@
       <MemberSignature Language="C#" Value="public SqlParameter (string parameterName, System.Data.SqlDbType dbType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string parameterName, valuetype System.Data.SqlDbType dbType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlParameter.#ctor(System.String,System.Data.SqlDbType)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (parameterName As String, dbType As SqlDbType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlParameter(System::String ^ parameterName, System::Data::SqlDbType dbType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -141,6 +157,8 @@
       <MemberSignature Language="C#" Value="public SqlParameter (string parameterName, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string parameterName, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlParameter.#ctor(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (parameterName As String, value As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlParameter(System::String ^ parameterName, System::Object ^ value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -194,6 +212,8 @@ Parameter = new SqlParameter("@pname", (object)0);
       <MemberSignature Language="C#" Value="public SqlParameter (string parameterName, System.Data.SqlDbType dbType, int size);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string parameterName, valuetype System.Data.SqlDbType dbType, int32 size) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlParameter.#ctor(System.String,System.Data.SqlDbType,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (parameterName As String, dbType As SqlDbType, size As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlParameter(System::String ^ parameterName, System::Data::SqlDbType dbType, int size);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -242,6 +262,8 @@ Parameter = new SqlParameter("@pname", (object)0);
       <MemberSignature Language="C#" Value="public SqlParameter (string parameterName, System.Data.SqlDbType dbType, int size, string sourceColumn);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string parameterName, valuetype System.Data.SqlDbType dbType, int32 size, string sourceColumn) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlParameter.#ctor(System.String,System.Data.SqlDbType,System.Int32,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (parameterName As String, dbType As SqlDbType, size As Integer, sourceColumn As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlParameter(System::String ^ parameterName, System::Data::SqlDbType dbType, int size, System::String ^ sourceColumn);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -292,6 +314,8 @@ Parameter = new SqlParameter("@pname", (object)0);
       <MemberSignature Language="C#" Value="public SqlParameter (string parameterName, System.Data.SqlDbType dbType, int size, System.Data.ParameterDirection direction, bool isNullable, byte precision, byte scale, string sourceColumn, System.Data.DataRowVersion sourceVersion, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string parameterName, valuetype System.Data.SqlDbType dbType, int32 size, valuetype System.Data.ParameterDirection direction, bool isNullable, unsigned int8 precision, unsigned int8 scale, string sourceColumn, valuetype System.Data.DataRowVersion sourceVersion, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlParameter.#ctor(System.String,System.Data.SqlDbType,System.Int32,System.Data.ParameterDirection,System.Boolean,System.Byte,System.Byte,System.String,System.Data.DataRowVersion,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (parameterName As String, dbType As SqlDbType, size As Integer, direction As ParameterDirection, isNullable As Boolean, precision As Byte, scale As Byte, sourceColumn As String, sourceVersion As DataRowVersion, value As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlParameter(System::String ^ parameterName, System::Data::SqlDbType dbType, int size, System::Data::ParameterDirection direction, bool isNullable, System::Byte precision, System::Byte scale, System::String ^ sourceColumn, System::Data::DataRowVersion sourceVersion, System::Object ^ value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -351,6 +375,8 @@ Parameter = new SqlParameter("@pname", (object)0);
       <MemberSignature Language="C#" Value="public SqlParameter (string parameterName, System.Data.SqlDbType dbType, int size, System.Data.ParameterDirection direction, byte precision, byte scale, string sourceColumn, System.Data.DataRowVersion sourceVersion, bool sourceColumnNullMapping, object value, string xmlSchemaCollectionDatabase, string xmlSchemaCollectionOwningSchema, string xmlSchemaCollectionName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string parameterName, valuetype System.Data.SqlDbType dbType, int32 size, valuetype System.Data.ParameterDirection direction, unsigned int8 precision, unsigned int8 scale, string sourceColumn, valuetype System.Data.DataRowVersion sourceVersion, bool sourceColumnNullMapping, object value, string xmlSchemaCollectionDatabase, string xmlSchemaCollectionOwningSchema, string xmlSchemaCollectionName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlParameter.#ctor(System.String,System.Data.SqlDbType,System.Int32,System.Data.ParameterDirection,System.Byte,System.Byte,System.String,System.Data.DataRowVersion,System.Boolean,System.Object,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (parameterName As String, dbType As SqlDbType, size As Integer, direction As ParameterDirection, precision As Byte, scale As Byte, sourceColumn As String, sourceVersion As DataRowVersion, sourceColumnNullMapping As Boolean, value As Object, xmlSchemaCollectionDatabase As String, xmlSchemaCollectionOwningSchema As String, xmlSchemaCollectionName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlParameter(System::String ^ parameterName, System::Data::SqlDbType dbType, int size, System::Data::ParameterDirection direction, System::Byte precision, System::Byte scale, System::String ^ sourceColumn, System::Data::DataRowVersion sourceVersion, bool sourceColumnNullMapping, System::Object ^ value, System::String ^ xmlSchemaCollectionDatabase, System::String ^ xmlSchemaCollectionOwningSchema, System::String ^ xmlSchemaCollectionName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -406,6 +432,8 @@ Parameter = new SqlParameter("@pname", (object)0);
       <MemberSignature Language="C#" Value="public System.Data.SqlTypes.SqlCompareOptions CompareInfo { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.SqlTypes.SqlCompareOptions CompareInfo" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlParameter.CompareInfo" />
+      <MemberSignature Language="VB.NET" Value="Public Property CompareInfo As SqlCompareOptions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::SqlTypes::SqlCompareOptions CompareInfo { System::Data::SqlTypes::SqlCompareOptions get(); void set(System::Data::SqlTypes::SqlCompareOptions value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -439,7 +467,12 @@ Parameter = new SqlParameter("@pname", (object)0);
       <MemberSignature Language="C#" Value="public override System.Data.DbType DbType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.DbType DbType" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlParameter.DbType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property DbType As DbType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Data::DbType DbType { System::Data::DbType get(); void set(System::Data::DbType value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Data.IDataParameter.DbType</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -484,7 +517,12 @@ Parameter = new SqlParameter("@pname", (object)0);
       <MemberSignature Language="C#" Value="public override System.Data.ParameterDirection Direction { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.ParameterDirection Direction" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlParameter.Direction" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Direction As ParameterDirection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Data::ParameterDirection Direction { System::Data::ParameterDirection get(); void set(System::Data::ParameterDirection value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Data.IDataParameter.Direction</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -501,7 +539,7 @@ Parameter = new SqlParameter("@pname", (object)0);
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -538,6 +576,8 @@ Parameter = new SqlParameter("@pname", (object)0);
       <MemberSignature Language="C#" Value="public bool ForceColumnEncryption { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ForceColumnEncryption" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlParameter.ForceColumnEncryption" />
+      <MemberSignature Language="VB.NET" Value="Public Property ForceColumnEncryption As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ForceColumnEncryption { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -562,6 +602,8 @@ Parameter = new SqlParameter("@pname", (object)0);
       <MemberSignature Language="C#" Value="public override bool IsNullable { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsNullable" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlParameter.IsNullable" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property IsNullable As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsNullable { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -606,6 +648,8 @@ Parameter = new SqlParameter("@pname", (object)0);
       <MemberSignature Language="C#" Value="public int LocaleId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 LocaleId" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlParameter.LocaleId" />
+      <MemberSignature Language="VB.NET" Value="Public Property LocaleId As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LocaleId { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -653,6 +697,8 @@ static void CreateSqlParameterLocaleId(){
       <MemberSignature Language="C#" Value="public int Offset { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Offset" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlParameter.Offset" />
+      <MemberSignature Language="VB.NET" Value="Public Property Offset As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Offset { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -706,7 +752,12 @@ static void CreateSqlParameterLocaleId(){
       <MemberSignature Language="C#" Value="public override string ParameterName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ParameterName" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlParameter.ParameterName" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property ParameterName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ParameterName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Data.IDataParameter.ParameterName</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -749,7 +800,12 @@ static void CreateSqlParameterLocaleId(){
       <MemberSignature Language="C#" Value="public byte Precision { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int8 Precision" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlParameter.Precision" />
+      <MemberSignature Language="VB.NET" Value="Public Property Precision As Byte" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Byte Precision { System::Byte get(); void set(System::Byte value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Data.IDbDataParameter.Precision</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -805,6 +861,8 @@ static void CreateSqlParameterLocaleId(){
       <MemberSignature Language="C#" Value="public override void ResetDbType ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ResetDbType() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlParameter.ResetDbType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub ResetDbType ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ResetDbType();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -840,6 +898,8 @@ static void CreateSqlParameterLocaleId(){
       <MemberSignature Language="C#" Value="public void ResetSqlDbType ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ResetSqlDbType() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlParameter.ResetSqlDbType" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ResetSqlDbType ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetSqlDbType();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -875,7 +935,12 @@ static void CreateSqlParameterLocaleId(){
       <MemberSignature Language="C#" Value="public byte Scale { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int8 Scale" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlParameter.Scale" />
+      <MemberSignature Language="VB.NET" Value="Public Property Scale As Byte" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Byte Scale { System::Byte get(); void set(System::Byte value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Data.IDbDataParameter.Scale</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -934,7 +999,12 @@ static void CreateSqlParameterLocaleId(){
       <MemberSignature Language="C#" Value="public override int Size { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Size" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlParameter.Size" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Size As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Size { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Data.IDbDataParameter.Size</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -993,7 +1063,12 @@ static void CreateSqlParameterLocaleId(){
       <MemberSignature Language="C#" Value="public override string SourceColumn { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SourceColumn" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlParameter.SourceColumn" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property SourceColumn As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ SourceColumn { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Data.IDataParameter.SourceColumn</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -1038,6 +1113,8 @@ static void CreateSqlParameterLocaleId(){
       <MemberSignature Language="C#" Value="public override bool SourceColumnNullMapping { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SourceColumnNullMapping" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlParameter.SourceColumnNullMapping" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property SourceColumnNullMapping As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SourceColumnNullMapping { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1089,7 +1166,12 @@ FieldName = @OriginalFieldName
       <MemberSignature Language="C#" Value="public override System.Data.DataRowVersion SourceVersion { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.DataRowVersion SourceVersion" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlParameter.SourceVersion" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property SourceVersion As DataRowVersion" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Data::DataRowVersion SourceVersion { System::Data::DataRowVersion get(); void set(System::Data::DataRowVersion value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Data.IDataParameter.SourceVersion</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -1127,6 +1209,8 @@ FieldName = @OriginalFieldName
       <MemberSignature Language="C#" Value="public System.Data.SqlDbType SqlDbType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.SqlDbType SqlDbType" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlParameter.SqlDbType" />
+      <MemberSignature Language="VB.NET" Value="Public Property SqlDbType As SqlDbType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::SqlDbType SqlDbType { System::Data::SqlDbType get(); void set(System::Data::SqlDbType value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1144,7 +1228,7 @@ FieldName = @OriginalFieldName
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.Data.Common.DbProviderSpecificTypeProperty(true)</AttributeName>
@@ -1174,6 +1258,8 @@ FieldName = @OriginalFieldName
       <MemberSignature Language="C#" Value="public object SqlValue { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object SqlValue" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlParameter.SqlValue" />
+      <MemberSignature Language="VB.NET" Value="Public Property SqlValue As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ SqlValue { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1194,7 +1280,7 @@ FieldName = @OriginalFieldName
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1229,7 +1315,12 @@ FieldName = @OriginalFieldName
       <MemberSignature Language="C#" Value="object ICloneable.Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.ICloneable.Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlParameter.System#ICloneable#Clone" />
+      <MemberSignature Language="VB.NET" Value="Function Clone () As Object Implements ICloneable.Clone" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.ICloneable.Clone() = ICloneable::Clone;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -1260,6 +1351,8 @@ FieldName = @OriginalFieldName
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlParameter.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1289,6 +1382,8 @@ FieldName = @OriginalFieldName
       <MemberSignature Language="C#" Value="public string TypeName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TypeName" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlParameter.TypeName" />
+      <MemberSignature Language="VB.NET" Value="Public Property TypeName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TypeName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1322,6 +1417,8 @@ FieldName = @OriginalFieldName
       <MemberSignature Language="C#" Value="public string UdtTypeName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string UdtTypeName" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlParameter.UdtTypeName" />
+      <MemberSignature Language="VB.NET" Value="Public Property UdtTypeName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ UdtTypeName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1353,7 +1450,12 @@ FieldName = @OriginalFieldName
       <MemberSignature Language="C#" Value="public override object Value { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Value" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlParameter.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Value As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ Value { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Data.IDataParameter.Value</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -1370,7 +1472,7 @@ FieldName = @OriginalFieldName
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.TypeConverter(typeof(System.ComponentModel.StringConverter))</AttributeName>
@@ -1416,6 +1518,8 @@ FieldName = @OriginalFieldName
       <MemberSignature Language="C#" Value="public string XmlSchemaCollectionDatabase { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XmlSchemaCollectionDatabase" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlParameter.XmlSchemaCollectionDatabase" />
+      <MemberSignature Language="VB.NET" Value="Public Property XmlSchemaCollectionDatabase As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlSchemaCollectionDatabase { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1451,6 +1555,8 @@ FieldName = @OriginalFieldName
       <MemberSignature Language="C#" Value="public string XmlSchemaCollectionName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XmlSchemaCollectionName" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlParameter.XmlSchemaCollectionName" />
+      <MemberSignature Language="VB.NET" Value="Public Property XmlSchemaCollectionName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlSchemaCollectionName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1486,6 +1592,8 @@ FieldName = @OriginalFieldName
       <MemberSignature Language="C#" Value="public string XmlSchemaCollectionOwningSchema { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XmlSchemaCollectionOwningSchema" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlParameter.XmlSchemaCollectionOwningSchema" />
+      <MemberSignature Language="VB.NET" Value="Public Property XmlSchemaCollectionOwningSchema As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlSchemaCollectionOwningSchema { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1517,15 +1625,5 @@ FieldName = @OriginalFieldName
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.SqlClient.SqlParameter" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

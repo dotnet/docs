@@ -1,7 +1,9 @@
-<Type Name="X509KeyIdentifierClauseType" FullName="System.ServiceModel.Security.Tokens.X509KeyIdentifierClauseType">
+﻿<Type Name="X509KeyIdentifierClauseType" FullName="System.ServiceModel.Security.Tokens.X509KeyIdentifierClauseType">
   <TypeSignature Language="C#" Value="public enum X509KeyIdentifierClauseType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed X509KeyIdentifierClauseType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.Tokens.X509KeyIdentifierClauseType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum X509KeyIdentifierClauseType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class X509KeyIdentifierClauseType" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -29,6 +31,8 @@
       <MemberSignature Language="C#" Value="Any" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Security.Tokens.X509KeyIdentifierClauseType Any = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Security.Tokens.X509KeyIdentifierClauseType.Any" />
+      <MemberSignature Language="VB.NET" Value="Any" />
+      <MemberSignature Language="C++ CLI" Value="Any" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -38,6 +42,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.Security.Tokens.X509KeyIdentifierClauseType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>
           <see cref="F:System.ServiceModel.Security.Tokens.X509KeyIdentifierClauseType.SubjectKeyIdentifier" /> is used if present in the X.509 certificate, otherwise <see cref="F:System.ServiceModel.Security.Tokens.X509KeyIdentifierClauseType.IssuerSerial" /> is used.</summary>
@@ -47,6 +52,8 @@
       <MemberSignature Language="C#" Value="IssuerSerial" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Security.Tokens.X509KeyIdentifierClauseType IssuerSerial = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Security.Tokens.X509KeyIdentifierClauseType.IssuerSerial" />
+      <MemberSignature Language="VB.NET" Value="IssuerSerial" />
+      <MemberSignature Language="C++ CLI" Value="IssuerSerial" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -56,6 +63,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.Security.Tokens.X509KeyIdentifierClauseType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The <see langword="IssuerSerial" /> reference is used: the issuer identifier plus a serial number that is unique for an issuer.</summary>
       </Docs>
@@ -64,6 +72,8 @@
       <MemberSignature Language="C#" Value="RawDataKeyIdentifier" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Security.Tokens.X509KeyIdentifierClauseType RawDataKeyIdentifier = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Security.Tokens.X509KeyIdentifierClauseType.RawDataKeyIdentifier" />
+      <MemberSignature Language="VB.NET" Value="RawDataKeyIdentifier" />
+      <MemberSignature Language="C++ CLI" Value="RawDataKeyIdentifier" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -73,6 +83,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.Security.Tokens.X509KeyIdentifierClauseType</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The reference contains the raw data for the entire X.509 certificate.</summary>
       </Docs>
@@ -81,6 +92,8 @@
       <MemberSignature Language="C#" Value="SubjectKeyIdentifier" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Security.Tokens.X509KeyIdentifierClauseType SubjectKeyIdentifier = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Security.Tokens.X509KeyIdentifierClauseType.SubjectKeyIdentifier" />
+      <MemberSignature Language="VB.NET" Value="SubjectKeyIdentifier" />
+      <MemberSignature Language="C++ CLI" Value="SubjectKeyIdentifier" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -90,6 +103,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.Security.Tokens.X509KeyIdentifierClauseType</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Reference is based on the subject key identifier extension of an X.509 certificate (not all certificates have one, it is an optional property).</summary>
       </Docs>
@@ -98,6 +112,8 @@
       <MemberSignature Language="C#" Value="Thumbprint" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Security.Tokens.X509KeyIdentifierClauseType Thumbprint = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Security.Tokens.X509KeyIdentifierClauseType.Thumbprint" />
+      <MemberSignature Language="VB.NET" Value="Thumbprint" />
+      <MemberSignature Language="C++ CLI" Value="Thumbprint" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -107,6 +123,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.Security.Tokens.X509KeyIdentifierClauseType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The X.509 Thumbprint is used.</summary>
       </Docs>

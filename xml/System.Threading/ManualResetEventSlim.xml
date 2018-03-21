@@ -1,7 +1,9 @@
-<Type Name="ManualResetEventSlim" FullName="System.Threading.ManualResetEventSlim">
+﻿<Type Name="ManualResetEventSlim" FullName="System.Threading.ManualResetEventSlim">
   <TypeSignature Language="C#" Value="public class ManualResetEventSlim : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ManualResetEventSlim extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Threading.ManualResetEventSlim" />
+  <TypeSignature Language="VB.NET" Value="Public Class ManualResetEventSlim&#xA;Implements IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ManualResetEventSlim : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Threading</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,10 +56,23 @@
     <threadsafe>All public and protected members of <see cref="T:System.Threading.ManualResetEventSlim" /> are thread-safe and may be used concurrently from multiple threads, with the exception of Dispose, which must only be used when all other operations on the <see cref="T:System.Threading.ManualResetEventSlim" /> have completed, and Reset, which should only be used when no other threads are accessing the event.</threadsafe>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Threading.ManualResetEventSlim" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ManualResetEventSlim ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ManualResetEventSlim.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ManualResetEventSlim();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -84,6 +99,8 @@
       <MemberSignature Language="C#" Value="public ManualResetEventSlim (bool initialState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool initialState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ManualResetEventSlim.#ctor(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (initialState As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ManualResetEventSlim(bool initialState);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -113,6 +130,8 @@
       <MemberSignature Language="C#" Value="public ManualResetEventSlim (bool initialState, int spinCount);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool initialState, int32 spinCount) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ManualResetEventSlim.#ctor(System.Boolean,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (initialState As Boolean, spinCount As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ManualResetEventSlim(bool initialState, int spinCount);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -142,11 +161,27 @@
           <paramref name="spinCount" /> is less than 0 or greater than the maximum allowed value.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases resources used by the current instance of the <see cref="T:System.Threading.ManualResetEventSlim" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Dispose">
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ManualResetEventSlim.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -187,6 +222,8 @@
       <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ManualResetEventSlim.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -226,6 +263,8 @@
       <MemberSignature Language="C#" Value="public bool IsSet { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsSet" />
       <MemberSignature Language="DocId" Value="P:System.Threading.ManualResetEventSlim.IsSet" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSet As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSet { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -255,6 +294,8 @@
       <MemberSignature Language="C#" Value="public void Reset ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Reset() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ManualResetEventSlim.Reset" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Reset ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Reset();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -292,6 +333,8 @@
       <MemberSignature Language="C#" Value="public void Set ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Set() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ManualResetEventSlim.Set" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Set ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Set();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -321,6 +364,8 @@
       <MemberSignature Language="C#" Value="public int SpinCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 SpinCount" />
       <MemberSignature Language="DocId" Value="P:System.Threading.ManualResetEventSlim.SpinCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SpinCount As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SpinCount { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -346,10 +391,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Wait">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Blocks the current thread until the current <see cref="T:System.Threading.ManualResetEventSlim" /> is set.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Wait">
       <MemberSignature Language="C#" Value="public void Wait ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Wait() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ManualResetEventSlim.Wait" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Wait ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Wait();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -388,6 +446,8 @@
       <MemberSignature Language="C#" Value="public bool Wait (int millisecondsTimeout);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Wait(int32 millisecondsTimeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ManualResetEventSlim.Wait(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Wait (millisecondsTimeout As Integer) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Wait(int millisecondsTimeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -426,6 +486,7 @@
       <MemberSignature Language="C#" Value="public void Wait (System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Wait(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ManualResetEventSlim.Wait(System.Threading.CancellationToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Wait(System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -469,6 +530,8 @@
       <MemberSignature Language="C#" Value="public bool Wait (TimeSpan timeout);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Wait(valuetype System.TimeSpan timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ManualResetEventSlim.Wait(System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Wait (timeout As TimeSpan) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Wait(TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -511,6 +574,7 @@
       <MemberSignature Language="C#" Value="public bool Wait (int millisecondsTimeout, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Wait(int32 millisecondsTimeout, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ManualResetEventSlim.Wait(System.Int32,System.Threading.CancellationToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Wait(int millisecondsTimeout, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -553,6 +617,7 @@
       <MemberSignature Language="C#" Value="public bool Wait (TimeSpan timeout, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Wait(valuetype System.TimeSpan timeout, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ManualResetEventSlim.Wait(System.TimeSpan,System.Threading.CancellationToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Wait(TimeSpan timeout, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -599,6 +664,8 @@
       <MemberSignature Language="C#" Value="public System.Threading.WaitHandle WaitHandle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Threading.WaitHandle WaitHandle" />
       <MemberSignature Language="DocId" Value="P:System.Threading.ManualResetEventSlim.WaitHandle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WaitHandle As WaitHandle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Threading::WaitHandle ^ WaitHandle { System::Threading::WaitHandle ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -631,38 +698,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Threading</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Threading.ManualResetEventSlim" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Dispose">
-      <AssemblyInfo>
-        <AssemblyName>System.Threading</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Releases resources used by the current instance of the <see cref="T:System.Threading.ManualResetEventSlim" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Wait">
-      <AssemblyInfo>
-        <AssemblyName>System.Threading</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Blocks the current thread until the current <see cref="T:System.Threading.ManualResetEventSlim" /> is set.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

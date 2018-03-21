@@ -1,7 +1,9 @@
-<Type Name="IStringLocalizerProvider" FullName="System.Web.Globalization.IStringLocalizerProvider">
+﻿<Type Name="IStringLocalizerProvider" FullName="System.Web.Globalization.IStringLocalizerProvider">
   <TypeSignature Language="C#" Value="public interface IStringLocalizerProvider" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IStringLocalizerProvider" />
   <TypeSignature Language="DocId" Value="T:System.Web.Globalization.IStringLocalizerProvider" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IStringLocalizerProvider" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IStringLocalizerProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -16,6 +18,8 @@
       <MemberSignature Language="C#" Value="public string GetLocalizedString (System.Globalization.CultureInfo culture, string name, params object[] arguments);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetLocalizedString(class System.Globalization.CultureInfo culture, string name, object[] arguments) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Globalization.IStringLocalizerProvider.GetLocalizedString(System.Globalization.CultureInfo,System.String,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetLocalizedString (culture As CultureInfo, name As String, ParamArray arguments As Object()) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetLocalizedString(System::Globalization::CultureInfo ^ culture, System::String ^ name, ... cli::array &lt;System::Object ^&gt; ^ arguments);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

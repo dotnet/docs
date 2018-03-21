@@ -1,7 +1,9 @@
-<Type Name="DATADIR" FullName="System.Runtime.InteropServices.ComTypes.DATADIR">
+﻿<Type Name="DATADIR" FullName="System.Runtime.InteropServices.ComTypes.DATADIR">
   <TypeSignature Language="C#" Value="public enum DATADIR" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DATADIR extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComTypes.DATADIR" />
+  <TypeSignature Language="VB.NET" Value="Public Enum DATADIR" />
+  <TypeSignature Language="C++ CLI" Value="public enum class DATADIR" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +43,8 @@
       <MemberSignature Language="C#" Value="DATADIR_GET" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.ComTypes.DATADIR DATADIR_GET = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.DATADIR.DATADIR_GET" />
+      <MemberSignature Language="VB.NET" Value="DATADIR_GET" />
+      <MemberSignature Language="C++ CLI" Value="DATADIR_GET" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -63,6 +67,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.ComTypes.DATADIR</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Requests that <see cref="M:System.Runtime.InteropServices.ComTypes.IDataObject.EnumFormatEtc(System.Runtime.InteropServices.ComTypes.DATADIR)" /> supply an enumerator for the formats that can be specified in <see cref="M:System.Runtime.InteropServices.ComTypes.IDataObject.GetData(System.Runtime.InteropServices.ComTypes.FORMATETC@,System.Runtime.InteropServices.ComTypes.STGMEDIUM@)" />.</summary>
       </Docs>
@@ -71,6 +76,8 @@
       <MemberSignature Language="C#" Value="DATADIR_SET" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.ComTypes.DATADIR DATADIR_SET = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.DATADIR.DATADIR_SET" />
+      <MemberSignature Language="VB.NET" Value="DATADIR_SET" />
+      <MemberSignature Language="C++ CLI" Value="DATADIR_SET" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -93,6 +100,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.ComTypes.DATADIR</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Requests that <see cref="M:System.Runtime.InteropServices.ComTypes.IDataObject.EnumFormatEtc(System.Runtime.InteropServices.ComTypes.DATADIR)" /> supply an enumerator for the formats that can be specified in <see cref="M:System.Runtime.InteropServices.ComTypes.IDataObject.SetData(System.Runtime.InteropServices.ComTypes.FORMATETC@,System.Runtime.InteropServices.ComTypes.STGMEDIUM@,System.Boolean)" />.</summary>
       </Docs>

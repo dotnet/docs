@@ -1,7 +1,9 @@
-<Type Name="RecognitionConfidence" FullName="System.Windows.Ink.RecognitionConfidence">
+﻿<Type Name="RecognitionConfidence" FullName="System.Windows.Ink.RecognitionConfidence">
   <TypeSignature Language="C#" Value="public enum RecognitionConfidence" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RecognitionConfidence extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Ink.RecognitionConfidence" />
+  <TypeSignature Language="VB.NET" Value="Public Enum RecognitionConfidence" />
+  <TypeSignature Language="C++ CLI" Value="public enum class RecognitionConfidence" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +38,8 @@
       <MemberSignature Language="C#" Value="Intermediate" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Ink.RecognitionConfidence Intermediate = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Ink.RecognitionConfidence.Intermediate" />
+      <MemberSignature Language="VB.NET" Value="Intermediate" />
+      <MemberSignature Language="C++ CLI" Value="Intermediate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -44,6 +48,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Ink.RecognitionConfidence</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Indicates intermediate confidence in the recognition result.</summary>
       </Docs>
@@ -52,6 +57,8 @@
       <MemberSignature Language="C#" Value="Poor" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Ink.RecognitionConfidence Poor = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Ink.RecognitionConfidence.Poor" />
+      <MemberSignature Language="VB.NET" Value="Poor" />
+      <MemberSignature Language="C++ CLI" Value="Poor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -60,6 +67,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Ink.RecognitionConfidence</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Indicates poor confidence in the recognition result.</summary>
       </Docs>
@@ -68,6 +76,8 @@
       <MemberSignature Language="C#" Value="Strong" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Ink.RecognitionConfidence Strong = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Ink.RecognitionConfidence.Strong" />
+      <MemberSignature Language="VB.NET" Value="Strong" />
+      <MemberSignature Language="C++ CLI" Value="Strong" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -76,6 +86,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Ink.RecognitionConfidence</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Indicates strong confidence in the recognition result.</summary>
       </Docs>

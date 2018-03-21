@@ -1,7 +1,9 @@
-<Type Name="MessageContext" FullName="System.ServiceModel.Activities.MessageContext">
+﻿<Type Name="MessageContext" FullName="System.ServiceModel.Activities.MessageContext">
   <TypeSignature Language="C#" Value="public class MessageContext" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MessageContext extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.MessageContext" />
+  <TypeSignature Language="VB.NET" Value="Public Class MessageContext" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MessageContext" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public MessageContext ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.MessageContext.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MessageContext();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -34,6 +38,8 @@
       <MemberSignature Language="C#" Value="public virtual Guid EndToEndTracingId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid EndToEndTracingId" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.MessageContext.EndToEndTracingId" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property EndToEndTracingId As Guid" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Guid EndToEndTracingId { Guid get(); void set(Guid value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -52,6 +58,8 @@
       <MemberSignature Language="C#" Value="public virtual System.ServiceModel.Channels.Message Message { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Channels.Message Message" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.MessageContext.Message" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Message As Message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ServiceModel::Channels::Message ^ Message { System::ServiceModel::Channels::Message ^ get(); void set(System::ServiceModel::Channels::Message ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>

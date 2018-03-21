@@ -1,7 +1,9 @@
-<Type Name="ChannelPoolSettingsElement" FullName="System.ServiceModel.Configuration.ChannelPoolSettingsElement">
+﻿<Type Name="ChannelPoolSettingsElement" FullName="System.ServiceModel.Configuration.ChannelPoolSettingsElement">
   <TypeSignature Language="C#" Value="public sealed class ChannelPoolSettingsElement : System.ServiceModel.Configuration.ServiceModelConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ChannelPoolSettingsElement extends System.ServiceModel.Configuration.ServiceModelConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.ChannelPoolSettingsElement" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ChannelPoolSettingsElement&#xA;Inherits ServiceModelConfigurationElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ChannelPoolSettingsElement sealed : System::ServiceModel::Configuration::ServiceModelConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public ChannelPoolSettingsElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ChannelPoolSettingsElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ChannelPoolSettingsElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -34,6 +38,8 @@
       <MemberSignature Language="C#" Value="public TimeSpan IdleTimeout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan IdleTimeout" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ChannelPoolSettingsElement.IdleTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public Property IdleTimeout As TimeSpan" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan IdleTimeout { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -60,6 +66,8 @@
       <MemberSignature Language="C#" Value="public TimeSpan LeaseTimeout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan LeaseTimeout" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ChannelPoolSettingsElement.LeaseTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public Property LeaseTimeout As TimeSpan" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan LeaseTimeout { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -86,6 +94,8 @@
       <MemberSignature Language="C#" Value="public int MaxOutboundChannelsPerEndpoint { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxOutboundChannelsPerEndpoint" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ChannelPoolSettingsElement.MaxOutboundChannelsPerEndpoint" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxOutboundChannelsPerEndpoint As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxOutboundChannelsPerEndpoint { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -112,6 +122,8 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ChannelPoolSettingsElement.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

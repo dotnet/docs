@@ -1,7 +1,9 @@
-<Type Name="DetailsViewCommandEventArgs" FullName="System.Web.UI.WebControls.DetailsViewCommandEventArgs">
+﻿<Type Name="DetailsViewCommandEventArgs" FullName="System.Web.UI.WebControls.DetailsViewCommandEventArgs">
   <TypeSignature Language="C#" Value="public class DetailsViewCommandEventArgs : System.Web.UI.WebControls.CommandEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DetailsViewCommandEventArgs extends System.Web.UI.WebControls.CommandEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DetailsViewCommandEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class DetailsViewCommandEventArgs&#xA;Inherits CommandEventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DetailsViewCommandEventArgs : System::Web::UI::WebControls::CommandEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -58,6 +60,8 @@
       <MemberSignature Language="C#" Value="public DetailsViewCommandEventArgs (object commandSource, System.Web.UI.WebControls.CommandEventArgs originalArgs);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object commandSource, class System.Web.UI.WebControls.CommandEventArgs originalArgs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DetailsViewCommandEventArgs.#ctor(System.Object,System.Web.UI.WebControls.CommandEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (commandSource As Object, originalArgs As CommandEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DetailsViewCommandEventArgs(System::Object ^ commandSource, System::Web::UI::WebControls::CommandEventArgs ^ originalArgs);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -101,6 +105,8 @@
       <MemberSignature Language="C#" Value="public object CommandSource { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object CommandSource" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DetailsViewCommandEventArgs.CommandSource" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CommandSource As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ CommandSource { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -135,6 +141,8 @@
       <MemberSignature Language="C#" Value="public bool Handled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Handled" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DetailsViewCommandEventArgs.Handled" />
+      <MemberSignature Language="VB.NET" Value="Public Property Handled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Handled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

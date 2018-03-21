@@ -1,7 +1,9 @@
-<Type Name="OpenFileDialog" FullName="Microsoft.Win32.OpenFileDialog">
+﻿<Type Name="OpenFileDialog" FullName="Microsoft.Win32.OpenFileDialog">
   <TypeSignature Language="C#" Value="public sealed class OpenFileDialog : Microsoft.Win32.FileDialog" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit OpenFileDialog extends Microsoft.Win32.FileDialog" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Win32.OpenFileDialog" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OpenFileDialog&#xA;Inherits FileDialog" />
+  <TypeSignature Language="C++ CLI" Value="public ref class OpenFileDialog sealed : Microsoft::Win32::FileDialog" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +45,8 @@
       <MemberSignature Language="C#" Value="public OpenFileDialog ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.OpenFileDialog.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OpenFileDialog();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -63,6 +67,8 @@
       <MemberSignature Language="C#" Value="protected override void CheckPermissionsToShowDialog ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CheckPermissionsToShowDialog() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.OpenFileDialog.CheckPermissionsToShowDialog" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CheckPermissionsToShowDialog ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CheckPermissionsToShowDialog();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -89,6 +95,8 @@
       <MemberSignature Language="C#" Value="public bool Multiselect { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Multiselect" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Win32.OpenFileDialog.Multiselect" />
+      <MemberSignature Language="VB.NET" Value="Public Property Multiselect As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Multiselect { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -114,6 +122,8 @@
       <MemberSignature Language="C#" Value="public System.IO.Stream OpenFile ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.Stream OpenFile() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.OpenFileDialog.OpenFile" />
+      <MemberSignature Language="VB.NET" Value="Public Function OpenFile () As Stream" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Stream ^ OpenFile();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -150,6 +160,8 @@
       <MemberSignature Language="C#" Value="public System.IO.Stream[] OpenFiles ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.Stream[] OpenFiles() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.OpenFileDialog.OpenFiles" />
+      <MemberSignature Language="VB.NET" Value="Public Function OpenFiles () As Stream()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::IO::Stream ^&gt; ^ OpenFiles();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -183,6 +195,8 @@
       <MemberSignature Language="C#" Value="public bool ReadOnlyChecked { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ReadOnlyChecked" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Win32.OpenFileDialog.ReadOnlyChecked" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReadOnlyChecked As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ReadOnlyChecked { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -207,6 +221,8 @@
       <MemberSignature Language="C#" Value="public override void Reset ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Reset() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.OpenFileDialog.Reset" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Reset ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Reset();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -234,6 +250,8 @@
       <MemberSignature Language="C#" Value="public bool ShowReadOnly { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ShowReadOnly" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Win32.OpenFileDialog.ShowReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public Property ShowReadOnly As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowReadOnly { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

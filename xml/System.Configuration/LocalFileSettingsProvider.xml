@@ -1,7 +1,9 @@
-<Type Name="LocalFileSettingsProvider" FullName="System.Configuration.LocalFileSettingsProvider">
+﻿<Type Name="LocalFileSettingsProvider" FullName="System.Configuration.LocalFileSettingsProvider">
   <TypeSignature Language="C#" Value="public class LocalFileSettingsProvider : System.Configuration.SettingsProvider, System.Configuration.IApplicationSettingsProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LocalFileSettingsProvider extends System.Configuration.SettingsProvider implements class System.Configuration.IApplicationSettingsProvider" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.LocalFileSettingsProvider" />
+  <TypeSignature Language="VB.NET" Value="Public Class LocalFileSettingsProvider&#xA;Inherits SettingsProvider&#xA;Implements IApplicationSettingsProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class LocalFileSettingsProvider : System::Configuration::SettingsProvider, System::Configuration::IApplicationSettingsProvider" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +50,8 @@
       <MemberSignature Language="C#" Value="public LocalFileSettingsProvider ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.LocalFileSettingsProvider.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LocalFileSettingsProvider();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -75,6 +79,8 @@
       <MemberSignature Language="C#" Value="public override string ApplicationName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ApplicationName" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.LocalFileSettingsProvider.ApplicationName" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property ApplicationName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ApplicationName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -105,7 +111,12 @@
       <MemberSignature Language="C#" Value="public System.Configuration.SettingsPropertyValue GetPreviousVersion (System.Configuration.SettingsContext context, System.Configuration.SettingsProperty property);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Configuration.SettingsPropertyValue GetPreviousVersion(class System.Configuration.SettingsContext context, class System.Configuration.SettingsProperty property) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.LocalFileSettingsProvider.GetPreviousVersion(System.Configuration.SettingsContext,System.Configuration.SettingsProperty)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetPreviousVersion (context As SettingsContext, property As SettingsProperty) As SettingsPropertyValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Configuration::SettingsPropertyValue ^ GetPreviousVersion(System::Configuration::SettingsContext ^ context, System::Configuration::SettingsProperty ^ property);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Configuration.IApplicationSettingsProvider.GetPreviousVersion(System.Configuration.SettingsContext,System.Configuration.SettingsProperty)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -149,6 +160,8 @@
       <MemberSignature Language="C#" Value="public override System.Configuration.SettingsPropertyValueCollection GetPropertyValues (System.Configuration.SettingsContext context, System.Configuration.SettingsPropertyCollection properties);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Configuration.SettingsPropertyValueCollection GetPropertyValues(class System.Configuration.SettingsContext context, class System.Configuration.SettingsPropertyCollection properties) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.LocalFileSettingsProvider.GetPropertyValues(System.Configuration.SettingsContext,System.Configuration.SettingsPropertyCollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetPropertyValues (context As SettingsContext, properties As SettingsPropertyCollection) As SettingsPropertyValueCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Configuration::SettingsPropertyValueCollection ^ GetPropertyValues(System::Configuration::SettingsContext ^ context, System::Configuration::SettingsPropertyCollection ^ properties);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -196,6 +209,8 @@
       <MemberSignature Language="C#" Value="public override void Initialize (string name, System.Collections.Specialized.NameValueCollection values);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Initialize(string name, class System.Collections.Specialized.NameValueCollection values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.LocalFileSettingsProvider.Initialize(System.String,System.Collections.Specialized.NameValueCollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize (name As String, values As NameValueCollection)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize(System::String ^ name, System::Collections::Specialized::NameValueCollection ^ values);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -224,7 +239,12 @@
       <MemberSignature Language="C#" Value="public void Reset (System.Configuration.SettingsContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Reset(class System.Configuration.SettingsContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.LocalFileSettingsProvider.Reset(System.Configuration.SettingsContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Reset (context As SettingsContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Reset(System::Configuration::SettingsContext ^ context);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Configuration.IApplicationSettingsProvider.Reset(System.Configuration.SettingsContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -273,6 +293,8 @@
       <MemberSignature Language="C#" Value="public override void SetPropertyValues (System.Configuration.SettingsContext context, System.Configuration.SettingsPropertyValueCollection values);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetPropertyValues(class System.Configuration.SettingsContext context, class System.Configuration.SettingsPropertyValueCollection values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.LocalFileSettingsProvider.SetPropertyValues(System.Configuration.SettingsContext,System.Configuration.SettingsPropertyValueCollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetPropertyValues (context As SettingsContext, values As SettingsPropertyValueCollection)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SetPropertyValues(System::Configuration::SettingsContext ^ context, System::Configuration::SettingsPropertyValueCollection ^ values);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -336,7 +358,12 @@
       <MemberSignature Language="C#" Value="public void Upgrade (System.Configuration.SettingsContext context, System.Configuration.SettingsPropertyCollection properties);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Upgrade(class System.Configuration.SettingsContext context, class System.Configuration.SettingsPropertyCollection properties) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.LocalFileSettingsProvider.Upgrade(System.Configuration.SettingsContext,System.Configuration.SettingsPropertyCollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Upgrade (context As SettingsContext, properties As SettingsPropertyCollection)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Upgrade(System::Configuration::SettingsContext ^ context, System::Configuration::SettingsPropertyCollection ^ properties);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Configuration.IApplicationSettingsProvider.Upgrade(System.Configuration.SettingsContext,System.Configuration.SettingsPropertyCollection)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

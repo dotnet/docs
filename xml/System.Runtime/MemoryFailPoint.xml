@@ -1,7 +1,9 @@
-<Type Name="MemoryFailPoint" FullName="System.Runtime.MemoryFailPoint">
+﻿<Type Name="MemoryFailPoint" FullName="System.Runtime.MemoryFailPoint">
   <TypeSignature Language="C#" Value="public sealed class MemoryFailPoint : System.Runtime.ConstrainedExecution.CriticalFinalizerObject, IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MemoryFailPoint extends System.Runtime.ConstrainedExecution.CriticalFinalizerObject implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.MemoryFailPoint" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MemoryFailPoint&#xA;Inherits CriticalFinalizerObject&#xA;Implements IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MemoryFailPoint sealed : System::Runtime::ConstrainedExecution::CriticalFinalizerObject, IDisposable" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -64,6 +66,8 @@
       <MemberSignature Language="C#" Value="public MemoryFailPoint (int sizeInMegabytes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 sizeInMegabytes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.MemoryFailPoint.#ctor(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (sizeInMegabytes As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MemoryFailPoint(int sizeInMegabytes);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -108,7 +112,12 @@
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.MemoryFailPoint.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -145,6 +154,8 @@
       <MemberSignature Language="C#" Value="~MemoryFailPoint ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.MemoryFailPoint.Finalize" />
+      <MemberSignature Language="VB.NET" Value="Finalize ()" />
+      <MemberSignature Language="C++ CLI" Value="!MemoryFailPoint ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="Delay" FullName="System.Activities.Statements.Delay">
+﻿<Type Name="Delay" FullName="System.Activities.Statements.Delay">
   <TypeSignature Language="C#" Value="public sealed class Delay : System.Activities.NativeActivity" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Delay extends System.Activities.NativeActivity" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Statements.Delay" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Delay&#xA;Inherits NativeActivity" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Delay sealed : System::Activities::NativeActivity" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +40,8 @@
       <MemberSignature Language="C#" Value="public Delay ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.Delay.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Delay();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -62,6 +66,8 @@
       <MemberSignature Language="C#" Value="protected override void Abort (System.Activities.NativeActivityAbortContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Abort(class System.Activities.NativeActivityAbortContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.Delay.Abort(System.Activities.NativeActivityAbortContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Abort (context As NativeActivityAbortContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Abort(System::Activities::NativeActivityAbortContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -83,6 +89,8 @@
       <MemberSignature Language="C#" Value="protected override void CacheMetadata (System.Activities.NativeActivityMetadata metadata);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CacheMetadata(valuetype System.Activities.NativeActivityMetadata metadata) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.Delay.CacheMetadata(System.Activities.NativeActivityMetadata)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CacheMetadata (metadata As NativeActivityMetadata)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CacheMetadata(System::Activities::NativeActivityMetadata metadata);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -104,6 +112,8 @@
       <MemberSignature Language="C#" Value="protected override void Cancel (System.Activities.NativeActivityContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Cancel(class System.Activities.NativeActivityContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.Delay.Cancel(System.Activities.NativeActivityContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Cancel (context As NativeActivityContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Cancel(System::Activities::NativeActivityContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -125,6 +135,8 @@
       <MemberSignature Language="C#" Value="protected override bool CanInduceIdle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanInduceIdle" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.Delay.CanInduceIdle" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property CanInduceIdle As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool CanInduceIdle { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -143,6 +155,8 @@
       <MemberSignature Language="C#" Value="public System.Activities.InArgument&lt;TimeSpan&gt; Duration { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.InArgument`1&lt;valuetype System.TimeSpan&gt; Duration" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.Delay.Duration" />
+      <MemberSignature Language="VB.NET" Value="Public Property Duration As InArgument(Of TimeSpan)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::InArgument&lt;TimeSpan&gt; ^ Duration { System::Activities::InArgument&lt;TimeSpan&gt; ^ get(); void set(System::Activities::InArgument&lt;TimeSpan&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -178,6 +192,8 @@
       <MemberSignature Language="C#" Value="protected override void Execute (System.Activities.NativeActivityContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Execute(class System.Activities.NativeActivityContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.Delay.Execute(System.Activities.NativeActivityContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Execute (context As NativeActivityContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Execute(System::Activities::NativeActivityContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

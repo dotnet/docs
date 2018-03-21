@@ -1,7 +1,9 @@
-<Type Name="DateRangeType" FullName="System.Web.UI.DataVisualization.Charting.DateRangeType">
+﻿<Type Name="DateRangeType" FullName="System.Web.UI.DataVisualization.Charting.DateRangeType">
   <TypeSignature Language="C#" Value="public enum DateRangeType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DateRangeType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.DateRangeType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum DateRangeType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class DateRangeType" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +27,8 @@
       <MemberSignature Language="C#" Value="DayOfMonth" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.DateRangeType DayOfMonth = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.DateRangeType.DayOfMonth" />
+      <MemberSignature Language="VB.NET" Value="DayOfMonth" />
+      <MemberSignature Language="C++ CLI" Value="DayOfMonth" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -33,6 +37,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.DateRangeType</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Date/time interval is days of the month.</summary>
       </Docs>
@@ -41,6 +46,8 @@
       <MemberSignature Language="C#" Value="DayOfWeek" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.DateRangeType DayOfWeek = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.DateRangeType.DayOfWeek" />
+      <MemberSignature Language="VB.NET" Value="DayOfWeek" />
+      <MemberSignature Language="C++ CLI" Value="DayOfWeek" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -49,6 +56,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.DateRangeType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Date/time interval is days of the week.</summary>
       </Docs>
@@ -57,6 +65,8 @@
       <MemberSignature Language="C#" Value="Hour" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.DateRangeType Hour = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.DateRangeType.Hour" />
+      <MemberSignature Language="VB.NET" Value="Hour" />
+      <MemberSignature Language="C++ CLI" Value="Hour" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -65,6 +75,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.DateRangeType</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Date/time interval is hours.</summary>
       </Docs>
@@ -73,6 +84,8 @@
       <MemberSignature Language="C#" Value="Minute" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.DateRangeType Minute = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.DateRangeType.Minute" />
+      <MemberSignature Language="VB.NET" Value="Minute" />
+      <MemberSignature Language="C++ CLI" Value="Minute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -81,6 +94,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.DateRangeType</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>Date/time interval is minutes.</summary>
       </Docs>
@@ -89,6 +103,8 @@
       <MemberSignature Language="C#" Value="Month" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.DateRangeType Month = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.DateRangeType.Month" />
+      <MemberSignature Language="VB.NET" Value="Month" />
+      <MemberSignature Language="C++ CLI" Value="Month" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -97,6 +113,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.DateRangeType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Date/time interval is months.</summary>
       </Docs>
@@ -105,6 +122,8 @@
       <MemberSignature Language="C#" Value="Year" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.DateRangeType Year = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.DateRangeType.Year" />
+      <MemberSignature Language="VB.NET" Value="Year" />
+      <MemberSignature Language="C++ CLI" Value="Year" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -113,6 +132,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.DateRangeType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Date/time interval is years.</summary>
       </Docs>

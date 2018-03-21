@@ -1,7 +1,9 @@
-<Type Name="DataGridViewComboBoxColumn" FullName="System.Windows.Forms.DataGridViewComboBoxColumn">
+﻿<Type Name="DataGridViewComboBoxColumn" FullName="System.Windows.Forms.DataGridViewComboBoxColumn">
   <TypeSignature Language="C#" Value="public class DataGridViewComboBoxColumn : System.Windows.Forms.DataGridViewColumn" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataGridViewComboBoxColumn extends System.Windows.Forms.DataGridViewColumn" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewComboBoxColumn" />
+  <TypeSignature Language="VB.NET" Value="Public Class DataGridViewComboBoxColumn&#xA;Inherits DataGridViewColumn" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataGridViewComboBoxColumn : System::Windows::Forms::DataGridViewColumn" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -72,6 +74,8 @@
       <MemberSignature Language="C#" Value="public DataGridViewComboBoxColumn ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewComboBoxColumn.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridViewComboBoxColumn();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -97,6 +101,8 @@
       <MemberSignature Language="C#" Value="public bool AutoComplete { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AutoComplete" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewComboBoxColumn.AutoComplete" />
+      <MemberSignature Language="VB.NET" Value="Public Property AutoComplete As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutoComplete { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -136,6 +142,8 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.DataGridViewCell CellTemplate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataGridViewCell CellTemplate" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewComboBoxColumn.CellTemplate" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property CellTemplate As DataGridViewCell" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::DataGridViewCell ^ CellTemplate { System::Windows::Forms::DataGridViewCell ^ get(); void set(System::Windows::Forms::DataGridViewCell ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -146,7 +154,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -187,6 +195,8 @@
       <MemberSignature Language="C#" Value="public override object Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewComboBoxColumn.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Clone () As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -213,6 +223,8 @@
       <MemberSignature Language="C#" Value="public object DataSource { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object DataSource" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewComboBoxColumn.DataSource" />
+      <MemberSignature Language="VB.NET" Value="Public Property DataSource As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ DataSource { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -226,7 +238,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -270,6 +282,8 @@
       <MemberSignature Language="C#" Value="public string DisplayMember { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DisplayMember" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewComboBoxColumn.DisplayMember" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisplayMember As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DisplayMember { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -329,6 +343,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DataGridViewComboBoxDisplayStyle DisplayStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataGridViewComboBoxDisplayStyle DisplayStyle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewComboBoxColumn.DisplayStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisplayStyle As DataGridViewComboBoxDisplayStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataGridViewComboBoxDisplayStyle DisplayStyle { System::Windows::Forms::DataGridViewComboBoxDisplayStyle get(); void set(System::Windows::Forms::DataGridViewComboBoxDisplayStyle value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -374,6 +390,8 @@
       <MemberSignature Language="C#" Value="public bool DisplayStyleForCurrentCellOnly { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool DisplayStyleForCurrentCellOnly" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewComboBoxColumn.DisplayStyleForCurrentCellOnly" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisplayStyleForCurrentCellOnly As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DisplayStyleForCurrentCellOnly { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -414,6 +432,8 @@
       <MemberSignature Language="C#" Value="public int DropDownWidth { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 DropDownWidth" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewComboBoxColumn.DropDownWidth" />
+      <MemberSignature Language="VB.NET" Value="Public Property DropDownWidth As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int DropDownWidth { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -460,6 +480,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.FlatStyle FlatStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.FlatStyle FlatStyle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewComboBoxColumn.FlatStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property FlatStyle As FlatStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::FlatStyle FlatStyle { System::Windows::Forms::FlatStyle get(); void set(System::Windows::Forms::FlatStyle value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -517,6 +539,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DataGridViewComboBoxCell.ObjectCollection Items { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataGridViewComboBoxCell/ObjectCollection Items" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewComboBoxColumn.Items" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Items As DataGridViewComboBoxCell.ObjectCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataGridViewComboBoxCell::ObjectCollection ^ Items { System::Windows::Forms::DataGridViewComboBoxCell::ObjectCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -524,7 +548,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.StringCollectionEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
@@ -577,6 +601,8 @@
       <MemberSignature Language="C#" Value="public int MaxDropDownItems { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxDropDownItems" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewComboBoxColumn.MaxDropDownItems" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxDropDownItems As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxDropDownItems { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -621,6 +647,8 @@
       <MemberSignature Language="C#" Value="public bool Sorted { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Sorted" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewComboBoxColumn.Sorted" />
+      <MemberSignature Language="VB.NET" Value="Public Property Sorted As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Sorted { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -666,6 +694,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewComboBoxColumn.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -686,6 +716,8 @@
       <MemberSignature Language="C#" Value="public string ValueMember { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ValueMember" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewComboBoxColumn.ValueMember" />
+      <MemberSignature Language="VB.NET" Value="Public Property ValueMember As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ValueMember { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

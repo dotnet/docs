@@ -1,7 +1,9 @@
-<Type Name="RequestBringIntoViewEventHandler" FullName="System.Windows.RequestBringIntoViewEventHandler">
+﻿<Type Name="RequestBringIntoViewEventHandler" FullName="System.Windows.RequestBringIntoViewEventHandler">
   <TypeSignature Language="C#" Value="public delegate void RequestBringIntoViewEventHandler(object sender, RequestBringIntoViewEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RequestBringIntoViewEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.RequestBringIntoViewEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub RequestBringIntoViewEventHandler(sender As Object, e As RequestBringIntoViewEventArgs)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void RequestBringIntoViewEventHandler(System::Object ^ sender, RequestBringIntoViewEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

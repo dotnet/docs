@@ -1,7 +1,9 @@
-<Type Name="Menu" FullName="System.Windows.Forms.Menu">
+﻿<Type Name="Menu" FullName="System.Windows.Forms.Menu">
   <TypeSignature Language="C#" Value="public abstract class Menu : System.ComponentModel.Component" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Menu extends System.ComponentModel.Component" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Menu" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class Menu&#xA;Inherits Component" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Menu abstract : System::ComponentModel::Component" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +54,8 @@
       <MemberSignature Language="C#" Value="protected Menu (System.Windows.Forms.MenuItem[] items);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.MenuItem[] items) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Menu.#ctor(System.Windows.Forms.MenuItem[])" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (items As MenuItem())" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; Menu(cli::array &lt;System::Windows::Forms::MenuItem ^&gt; ^ items);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -74,9 +78,11 @@
       </Docs>
     </Member>
     <Member MemberName="CloneMenu">
-      <MemberSignature Language="C#" Value="protected void CloneMenu (System.Windows.Forms.Menu menuSrc);" />
+      <MemberSignature Language="C#" Value="protected internal void CloneMenu (System.Windows.Forms.Menu menuSrc);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance void CloneMenu(class System.Windows.Forms.Menu menuSrc) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Menu.CloneMenu(System.Windows.Forms.Menu)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Sub CloneMenu (menuSrc As Menu)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; void CloneMenu(System::Windows::Forms::Menu ^ menuSrc);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -116,6 +122,8 @@
       <MemberSignature Language="C#" Value="protected virtual IntPtr CreateMenuHandle ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance native int CreateMenuHandle() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Menu.CreateMenuHandle" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateMenuHandle () As IntPtr" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual IntPtr CreateMenuHandle();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -136,6 +144,8 @@
       <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Menu.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -168,6 +178,8 @@
       <MemberSignature Language="C#" Value="public const int FindHandle = 0;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal int32 FindHandle = (0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Menu.FindHandle" />
+      <MemberSignature Language="VB.NET" Value="Public Const FindHandle As Integer  = 0" />
+      <MemberSignature Language="C++ CLI" Value="public: int FindHandle = 0;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -186,6 +198,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.MenuItem FindMenuItem (int type, IntPtr value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Forms.MenuItem FindMenuItem(int32 type, native int value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Menu.FindMenuItem(System.Int32,System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Function FindMenuItem (type As Integer, value As IntPtr) As MenuItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::MenuItem ^ FindMenuItem(int type, IntPtr value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -220,6 +234,8 @@
       <MemberSignature Language="C#" Value="protected int FindMergePosition (int mergeOrder);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance int32 FindMergePosition(int32 mergeOrder) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Menu.FindMergePosition(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function FindMergePosition (mergeOrder As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; int FindMergePosition(int mergeOrder);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -249,6 +265,8 @@
       <MemberSignature Language="C#" Value="public const int FindShortcut = 1;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal int32 FindShortcut = (1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Menu.FindShortcut" />
+      <MemberSignature Language="VB.NET" Value="Public Const FindShortcut As Integer  = 1" />
+      <MemberSignature Language="C++ CLI" Value="public: int FindShortcut = 1;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -267,6 +285,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ContextMenu GetContextMenu ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Forms.ContextMenu GetContextMenu() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Menu.GetContextMenu" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetContextMenu () As ContextMenu" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::ContextMenu ^ GetContextMenu();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -303,6 +323,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.MainMenu GetMainMenu ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Forms.MainMenu GetMainMenu() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Menu.GetMainMenu" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetMainMenu () As MainMenu" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::MainMenu ^ GetMainMenu();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -339,6 +361,8 @@
       <MemberSignature Language="C#" Value="public IntPtr Handle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance native int Handle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Menu.Handle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Handle As IntPtr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property IntPtr Handle { IntPtr get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -349,7 +373,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
@@ -375,6 +399,8 @@
       <MemberSignature Language="C#" Value="public virtual bool IsParent { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsParent" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Menu.IsParent" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsParent As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsParent { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -385,7 +411,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -420,6 +446,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.MenuItem MdiListItem { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.MenuItem MdiListItem" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Menu.MdiListItem" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MdiListItem As MenuItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::MenuItem ^ MdiListItem { System::Windows::Forms::MenuItem ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -430,7 +458,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -455,6 +483,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.Menu.MenuItemCollection MenuItems { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.Menu/MenuItemCollection MenuItems" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Menu.MenuItems" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MenuItems As Menu.MenuItemCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Menu::MenuItemCollection ^ MenuItems { System::Windows::Forms::Menu::MenuItemCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -465,7 +495,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.MergableProperty(false)</AttributeName>
@@ -504,6 +534,8 @@
       <MemberSignature Language="C#" Value="public virtual void MergeMenu (System.Windows.Forms.Menu menuSrc);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void MergeMenu(class System.Windows.Forms.Menu menuSrc) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Menu.MergeMenu(System.Windows.Forms.Menu)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub MergeMenu (menuSrc As Menu)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void MergeMenu(System::Windows::Forms::Menu ^ menuSrc);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -550,6 +582,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Menu.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -560,7 +594,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -580,9 +614,11 @@
       </Docs>
     </Member>
     <Member MemberName="ProcessCmdKey">
-      <MemberSignature Language="C#" Value="protected virtual bool ProcessCmdKey (ref System.Windows.Forms.Message msg, System.Windows.Forms.Keys keyData);" />
+      <MemberSignature Language="C#" Value="protected internal virtual bool ProcessCmdKey (ref System.Windows.Forms.Message msg, System.Windows.Forms.Keys keyData);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance bool ProcessCmdKey(valuetype System.Windows.Forms.Message&amp; msg, valuetype System.Windows.Forms.Keys keyData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Menu.ProcessCmdKey(System.Windows.Forms.Message@,System.Windows.Forms.Keys)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function ProcessCmdKey (ByRef msg As Message, keyData As Keys) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual bool ProcessCmdKey(System::Windows::Forms::Message % msg, System::Windows::Forms::Keys keyData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -608,6 +644,8 @@
       <MemberSignature Language="C#" Value="public object Tag { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Tag" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Menu.Tag" />
+      <MemberSignature Language="VB.NET" Value="Public Property Tag As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Tag { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -640,6 +678,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Menu.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

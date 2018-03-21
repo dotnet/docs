@@ -1,7 +1,9 @@
-<Type Name="FontSize" FullName="System.Web.UI.WebControls.FontSize">
+﻿<Type Name="FontSize" FullName="System.Web.UI.WebControls.FontSize">
   <TypeSignature Language="C#" Value="public enum FontSize" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FontSize extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.FontSize" />
+  <TypeSignature Language="VB.NET" Value="Public Enum FontSize" />
+  <TypeSignature Language="C++ CLI" Value="public enum class FontSize" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +36,8 @@
       <MemberSignature Language="C#" Value="AsUnit" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.FontSize AsUnit = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.FontSize.AsUnit" />
+      <MemberSignature Language="VB.NET" Value="AsUnit" />
+      <MemberSignature Language="C++ CLI" Value="AsUnit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -42,6 +46,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.FontSize</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The font size is specified by a point value.</summary>
       </Docs>
@@ -50,6 +55,8 @@
       <MemberSignature Language="C#" Value="Large" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.FontSize Large = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.FontSize.Large" />
+      <MemberSignature Language="VB.NET" Value="Large" />
+      <MemberSignature Language="C++ CLI" Value="Large" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -58,6 +65,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.FontSize</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>The font size is two sizes larger than the base font size.</summary>
       </Docs>
@@ -66,6 +74,8 @@
       <MemberSignature Language="C#" Value="Larger" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.FontSize Larger = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.FontSize.Larger" />
+      <MemberSignature Language="VB.NET" Value="Larger" />
+      <MemberSignature Language="C++ CLI" Value="Larger" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -74,6 +84,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.FontSize</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The font size is one size larger than the parent element.</summary>
       </Docs>
@@ -82,6 +93,8 @@
       <MemberSignature Language="C#" Value="Medium" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.FontSize Medium = int32(7)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.FontSize.Medium" />
+      <MemberSignature Language="VB.NET" Value="Medium" />
+      <MemberSignature Language="C++ CLI" Value="Medium" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -90,6 +103,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.FontSize</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>The font size is one size larger than the default font size.</summary>
       </Docs>
@@ -98,6 +112,8 @@
       <MemberSignature Language="C#" Value="NotSet" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.FontSize NotSet = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.FontSize.NotSet" />
+      <MemberSignature Language="VB.NET" Value="NotSet" />
+      <MemberSignature Language="C++ CLI" Value="NotSet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -106,6 +122,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.FontSize</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The font size is not set.</summary>
       </Docs>
@@ -114,6 +131,8 @@
       <MemberSignature Language="C#" Value="Small" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.FontSize Small = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.FontSize.Small" />
+      <MemberSignature Language="VB.NET" Value="Small" />
+      <MemberSignature Language="C++ CLI" Value="Small" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -122,6 +141,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.FontSize</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>The base font size determined by the browser.</summary>
       </Docs>
@@ -130,6 +150,8 @@
       <MemberSignature Language="C#" Value="Smaller" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.FontSize Smaller = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.FontSize.Smaller" />
+      <MemberSignature Language="VB.NET" Value="Smaller" />
+      <MemberSignature Language="C++ CLI" Value="Smaller" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -138,6 +160,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.FontSize</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The font size is one size smaller than the parent element.</summary>
       </Docs>
@@ -146,6 +169,8 @@
       <MemberSignature Language="C#" Value="XLarge" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.FontSize XLarge = int32(9)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.FontSize.XLarge" />
+      <MemberSignature Language="VB.NET" Value="XLarge" />
+      <MemberSignature Language="C++ CLI" Value="XLarge" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -154,6 +179,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.FontSize</ReturnType>
       </ReturnValue>
+      <MemberValue>9</MemberValue>
       <Docs>
         <summary>The font size is three sizes larger than the base font size.</summary>
       </Docs>
@@ -162,6 +188,8 @@
       <MemberSignature Language="C#" Value="XSmall" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.FontSize XSmall = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.FontSize.XSmall" />
+      <MemberSignature Language="VB.NET" Value="XSmall" />
+      <MemberSignature Language="C++ CLI" Value="XSmall" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -170,6 +198,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.FontSize</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>The font size is one size smaller than the base font size.</summary>
       </Docs>
@@ -178,6 +207,8 @@
       <MemberSignature Language="C#" Value="XXLarge" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.FontSize XXLarge = int32(10)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.FontSize.XXLarge" />
+      <MemberSignature Language="VB.NET" Value="XXLarge" />
+      <MemberSignature Language="C++ CLI" Value="XXLarge" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -186,6 +217,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.FontSize</ReturnType>
       </ReturnValue>
+      <MemberValue>10</MemberValue>
       <Docs>
         <summary>The font size is four sizes larger than the base font size.</summary>
       </Docs>
@@ -194,6 +226,8 @@
       <MemberSignature Language="C#" Value="XXSmall" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.FontSize XXSmall = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.FontSize.XXSmall" />
+      <MemberSignature Language="VB.NET" Value="XXSmall" />
+      <MemberSignature Language="C++ CLI" Value="XXSmall" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -202,6 +236,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.FontSize</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The font size is two sizes smaller than the base font size.</summary>
       </Docs>

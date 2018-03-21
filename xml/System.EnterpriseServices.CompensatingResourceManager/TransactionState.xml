@@ -1,7 +1,9 @@
-<Type Name="TransactionState" FullName="System.EnterpriseServices.CompensatingResourceManager.TransactionState">
+﻿<Type Name="TransactionState" FullName="System.EnterpriseServices.CompensatingResourceManager.TransactionState">
   <TypeSignature Language="C#" Value="public enum TransactionState" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed TransactionState extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.CompensatingResourceManager.TransactionState" />
+  <TypeSignature Language="VB.NET" Value="Public Enum TransactionState" />
+  <TypeSignature Language="C++ CLI" Value="public enum class TransactionState" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -18,6 +20,8 @@
       <MemberSignature Language="C#" Value="Aborted" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.EnterpriseServices.CompensatingResourceManager.TransactionState Aborted = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.CompensatingResourceManager.TransactionState.Aborted" />
+      <MemberSignature Language="VB.NET" Value="Aborted" />
+      <MemberSignature Language="C++ CLI" Value="Aborted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -26,6 +30,7 @@
       <ReturnValue>
         <ReturnType>System.EnterpriseServices.CompensatingResourceManager.TransactionState</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The transaction is aborted.</summary>
       </Docs>
@@ -34,6 +39,8 @@
       <MemberSignature Language="C#" Value="Active" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.EnterpriseServices.CompensatingResourceManager.TransactionState Active = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.CompensatingResourceManager.TransactionState.Active" />
+      <MemberSignature Language="VB.NET" Value="Active" />
+      <MemberSignature Language="C++ CLI" Value="Active" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -42,6 +49,7 @@
       <ReturnValue>
         <ReturnType>System.EnterpriseServices.CompensatingResourceManager.TransactionState</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The transaction is active.</summary>
       </Docs>
@@ -50,6 +58,8 @@
       <MemberSignature Language="C#" Value="Committed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.EnterpriseServices.CompensatingResourceManager.TransactionState Committed = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.CompensatingResourceManager.TransactionState.Committed" />
+      <MemberSignature Language="VB.NET" Value="Committed" />
+      <MemberSignature Language="C++ CLI" Value="Committed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -58,6 +68,7 @@
       <ReturnValue>
         <ReturnType>System.EnterpriseServices.CompensatingResourceManager.TransactionState</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The transaction is commited.</summary>
       </Docs>
@@ -66,6 +77,8 @@
       <MemberSignature Language="C#" Value="Indoubt" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.EnterpriseServices.CompensatingResourceManager.TransactionState Indoubt = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.CompensatingResourceManager.TransactionState.Indoubt" />
+      <MemberSignature Language="VB.NET" Value="Indoubt" />
+      <MemberSignature Language="C++ CLI" Value="Indoubt" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -74,6 +87,7 @@
       <ReturnValue>
         <ReturnType>System.EnterpriseServices.CompensatingResourceManager.TransactionState</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The transaction is in-doubt.</summary>
       </Docs>

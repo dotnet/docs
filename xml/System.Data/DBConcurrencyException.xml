@@ -1,7 +1,9 @@
-<Type Name="DBConcurrencyException" FullName="System.Data.DBConcurrencyException">
+﻿<Type Name="DBConcurrencyException" FullName="System.Data.DBConcurrencyException">
   <TypeSignature Language="C#" Value="public sealed class DBConcurrencyException : SystemException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit DBConcurrencyException extends System.SystemException" />
   <TypeSignature Language="DocId" Value="T:System.Data.DBConcurrencyException" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DBConcurrencyException&#xA;Inherits SystemException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DBConcurrencyException sealed : SystemException" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -31,10 +33,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.DBConcurrencyException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DBConcurrencyException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DBConcurrencyException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DBConcurrencyException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -66,6 +80,8 @@
       <MemberSignature Language="C#" Value="public DBConcurrencyException (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DBConcurrencyException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DBConcurrencyException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -93,6 +109,8 @@
       <MemberSignature Language="C#" Value="public DBConcurrencyException (string message, Exception inner);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception inner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DBConcurrencyException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, inner As Exception)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DBConcurrencyException(System::String ^ message, Exception ^ inner);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -129,6 +147,8 @@
       <MemberSignature Language="C#" Value="public DBConcurrencyException (string message, Exception inner, System.Data.DataRow[] dataRows);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception inner, class System.Data.DataRow[] dataRows) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DBConcurrencyException.#ctor(System.String,System.Exception,System.Data.DataRow[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, inner As Exception, dataRows As DataRow())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DBConcurrencyException(System::String ^ message, Exception ^ inner, cli::array &lt;System::Data::DataRow ^&gt; ^ dataRows);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -156,10 +176,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CopyToRows">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Copies the <see cref="T:System.Data.DataRow" /> objects whose update failure generated this exception to the specified array.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CopyToRows">
       <MemberSignature Language="C#" Value="public void CopyToRows (System.Data.DataRow[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyToRows(class System.Data.DataRow[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DBConcurrencyException.CopyToRows(System.Data.DataRow[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyToRows (array As DataRow())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyToRows(cli::array &lt;System::Data::DataRow ^&gt; ^ array);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -197,6 +229,8 @@
       <MemberSignature Language="C#" Value="public void CopyToRows (System.Data.DataRow[] array, int arrayIndex);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyToRows(class System.Data.DataRow[] array, int32 arrayIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DBConcurrencyException.CopyToRows(System.Data.DataRow[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyToRows (array As DataRow(), arrayIndex As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyToRows(cli::array &lt;System::Data::DataRow ^&gt; ^ array, int arrayIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -236,6 +270,8 @@
       <MemberSignature Language="C#" Value="public override void GetObjectData (System.Runtime.Serialization.SerializationInfo si, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo si, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DBConcurrencyException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (si As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ si, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -269,6 +305,8 @@
       <MemberSignature Language="C#" Value="public System.Data.DataRow Row { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.DataRow Row" />
       <MemberSignature Language="DocId" Value="P:System.Data.DBConcurrencyException.Row" />
+      <MemberSignature Language="VB.NET" Value="Public Property Row As DataRow" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::DataRow ^ Row { System::Data::DataRow ^ get(); void set(System::Data::DataRow ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -307,6 +345,8 @@
       <MemberSignature Language="C#" Value="public int RowCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 RowCount" />
       <MemberSignature Language="DocId" Value="P:System.Data.DBConcurrencyException.RowCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RowCount As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int RowCount { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -330,25 +370,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.DBConcurrencyException" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="CopyToRows">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Copies the <see cref="T:System.Data.DataRow" /> objects whose update failure generated this exception to the specified array.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

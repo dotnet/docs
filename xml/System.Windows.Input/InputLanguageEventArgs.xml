@@ -1,7 +1,9 @@
-<Type Name="InputLanguageEventArgs" FullName="System.Windows.Input.InputLanguageEventArgs">
+﻿<Type Name="InputLanguageEventArgs" FullName="System.Windows.Input.InputLanguageEventArgs">
   <TypeSignature Language="C#" Value="public abstract class InputLanguageEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit InputLanguageEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.InputLanguageEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class InputLanguageEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class InputLanguageEventArgs abstract : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +30,8 @@
       <MemberSignature Language="C#" Value="protected InputLanguageEventArgs (System.Globalization.CultureInfo newLanguageId, System.Globalization.CultureInfo previousLanguageId);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Globalization.CultureInfo newLanguageId, class System.Globalization.CultureInfo previousLanguageId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputLanguageEventArgs.#ctor(System.Globalization.CultureInfo,System.Globalization.CultureInfo)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (newLanguageId As CultureInfo, previousLanguageId As CultureInfo)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; InputLanguageEventArgs(System::Globalization::CultureInfo ^ newLanguageId, System::Globalization::CultureInfo ^ previousLanguageId);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -61,6 +65,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Globalization.CultureInfo NewLanguage { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Globalization.CultureInfo NewLanguage" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputLanguageEventArgs.NewLanguage" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property NewLanguage As CultureInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Globalization::CultureInfo ^ NewLanguage { System::Globalization::CultureInfo ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -89,6 +95,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Globalization.CultureInfo PreviousLanguage { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Globalization.CultureInfo PreviousLanguage" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputLanguageEventArgs.PreviousLanguage" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property PreviousLanguage As CultureInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Globalization::CultureInfo ^ PreviousLanguage { System::Globalization::CultureInfo ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="IEntityChangeTracker" FullName="System.Data.Objects.DataClasses.IEntityChangeTracker">
+﻿<Type Name="IEntityChangeTracker" FullName="System.Data.Objects.DataClasses.IEntityChangeTracker">
   <TypeSignature Language="C#" Value="public interface IEntityChangeTracker" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IEntityChangeTracker" />
   <TypeSignature Language="DocId" Value="T:System.Data.Objects.DataClasses.IEntityChangeTracker" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IEntityChangeTracker" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IEntityChangeTracker" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +27,8 @@
       <MemberSignature Language="C#" Value="public void EntityComplexMemberChanged (string entityMemberName, object complexObject, string complexObjectMemberName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EntityComplexMemberChanged(string entityMemberName, object complexObject, string complexObjectMemberName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.IEntityChangeTracker.EntityComplexMemberChanged(System.String,System.Object,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EntityComplexMemberChanged (entityMemberName As String, complexObject As Object, complexObjectMemberName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EntityComplexMemberChanged(System::String ^ entityMemberName, System::Object ^ complexObject, System::String ^ complexObjectMemberName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -59,6 +63,8 @@
       <MemberSignature Language="C#" Value="public void EntityComplexMemberChanging (string entityMemberName, object complexObject, string complexObjectMemberName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EntityComplexMemberChanging(string entityMemberName, object complexObject, string complexObjectMemberName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.IEntityChangeTracker.EntityComplexMemberChanging(System.String,System.Object,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EntityComplexMemberChanging (entityMemberName As String, complexObject As Object, complexObjectMemberName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EntityComplexMemberChanging(System::String ^ entityMemberName, System::Object ^ complexObject, System::String ^ complexObjectMemberName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -93,6 +99,8 @@
       <MemberSignature Language="C#" Value="public void EntityMemberChanged (string entityMemberName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EntityMemberChanged(string entityMemberName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.IEntityChangeTracker.EntityMemberChanged(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EntityMemberChanged (entityMemberName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EntityMemberChanged(System::String ^ entityMemberName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -123,6 +131,8 @@
       <MemberSignature Language="C#" Value="public void EntityMemberChanging (string entityMemberName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EntityMemberChanging(string entityMemberName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.IEntityChangeTracker.EntityMemberChanging(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EntityMemberChanging (entityMemberName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EntityMemberChanging(System::String ^ entityMemberName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -153,6 +163,8 @@
       <MemberSignature Language="C#" Value="public System.Data.EntityState EntityState { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.EntityState EntityState" />
       <MemberSignature Language="DocId" Value="P:System.Data.Objects.DataClasses.IEntityChangeTracker.EntityState" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EntityState As EntityState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::EntityState EntityState { System::Data::EntityState get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

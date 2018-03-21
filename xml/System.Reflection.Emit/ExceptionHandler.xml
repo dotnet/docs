@@ -1,7 +1,9 @@
-<Type Name="ExceptionHandler" FullName="System.Reflection.Emit.ExceptionHandler">
+﻿<Type Name="ExceptionHandler" FullName="System.Reflection.Emit.ExceptionHandler">
   <TypeSignature Language="C#" Value="public struct ExceptionHandler : IEquatable&lt;System.Reflection.Emit.ExceptionHandler&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit ExceptionHandler extends System.ValueType implements class System.IEquatable`1&lt;valuetype System.Reflection.Emit.ExceptionHandler&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.Emit.ExceptionHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Structure ExceptionHandler&#xA;Implements IEquatable(Of ExceptionHandler)" />
+  <TypeSignature Language="C++ CLI" Value="public value class ExceptionHandler : IEquatable&lt;System::Reflection::Emit::ExceptionHandler&gt;" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -29,6 +31,8 @@
       <MemberSignature Language="C#" Value="public ExceptionHandler (int tryOffset, int tryLength, int filterOffset, int handlerOffset, int handlerLength, System.Reflection.ExceptionHandlingClauseOptions kind, int exceptionTypeToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 tryOffset, int32 tryLength, int32 filterOffset, int32 handlerOffset, int32 handlerLength, valuetype System.Reflection.ExceptionHandlingClauseOptions kind, int32 exceptionTypeToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ExceptionHandler.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Reflection.ExceptionHandlingClauseOptions,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (tryOffset As Integer, tryLength As Integer, filterOffset As Integer, handlerOffset As Integer, handlerLength As Integer, kind As ExceptionHandlingClauseOptions, exceptionTypeToken As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ExceptionHandler(int tryOffset, int tryLength, int filterOffset, int handlerOffset, int handlerLength, System::Reflection::ExceptionHandlingClauseOptions kind, int exceptionTypeToken);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -58,10 +62,22 @@
           <paramref name="tryOffset" />, <paramref name="filterOffset" />, <paramref name="handlerOffset" />, <paramref name="tryLength" />, or <paramref name="handlerLength" /> are negative.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Indicates whether this instance of the <see cref="T:System.Reflection.Emit.ExceptionHandler" /> object is equal to a specified object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Equals">
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ExceptionHandler.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -86,7 +102,12 @@
       <MemberSignature Language="C#" Value="public bool Equals (System.Reflection.Emit.ExceptionHandler other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(valuetype System.Reflection.Emit.ExceptionHandler other) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ExceptionHandler.Equals(System.Reflection.Emit.ExceptionHandler)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (other As ExceptionHandler) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Reflection::Emit::ExceptionHandler other);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -110,6 +131,8 @@
       <MemberSignature Language="C#" Value="public int ExceptionTypeToken { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ExceptionTypeToken" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.ExceptionHandler.ExceptionTypeToken" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExceptionTypeToken As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ExceptionTypeToken { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -129,6 +152,8 @@
       <MemberSignature Language="C#" Value="public int FilterOffset { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 FilterOffset" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.ExceptionHandler.FilterOffset" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FilterOffset As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int FilterOffset { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -148,6 +173,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ExceptionHandler.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -168,6 +195,8 @@
       <MemberSignature Language="C#" Value="public int HandlerLength { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 HandlerLength" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.ExceptionHandler.HandlerLength" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HandlerLength As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int HandlerLength { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -187,6 +216,8 @@
       <MemberSignature Language="C#" Value="public int HandlerOffset { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 HandlerOffset" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.ExceptionHandler.HandlerOffset" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HandlerOffset As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int HandlerOffset { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -206,6 +237,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.ExceptionHandlingClauseOptions Kind { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.ExceptionHandlingClauseOptions Kind" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.ExceptionHandler.Kind" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Kind As ExceptionHandlingClauseOptions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::ExceptionHandlingClauseOptions Kind { System::Reflection::ExceptionHandlingClauseOptions get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -225,6 +258,8 @@
       <MemberSignature Language="C#" Value="public static bool operator == (System.Reflection.Emit.ExceptionHandler left, System.Reflection.Emit.ExceptionHandler right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Reflection.Emit.ExceptionHandler left, valuetype System.Reflection.Emit.ExceptionHandler right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ExceptionHandler.op_Equality(System.Reflection.Emit.ExceptionHandler,System.Reflection.Emit.ExceptionHandler)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As ExceptionHandler, right As ExceptionHandler) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Reflection::Emit::ExceptionHandler left, System::Reflection::Emit::ExceptionHandler right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -251,6 +286,8 @@
       <MemberSignature Language="C#" Value="public static bool operator != (System.Reflection.Emit.ExceptionHandler left, System.Reflection.Emit.ExceptionHandler right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Reflection.Emit.ExceptionHandler left, valuetype System.Reflection.Emit.ExceptionHandler right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ExceptionHandler.op_Inequality(System.Reflection.Emit.ExceptionHandler,System.Reflection.Emit.ExceptionHandler)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As ExceptionHandler, right As ExceptionHandler) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Reflection::Emit::ExceptionHandler left, System::Reflection::Emit::ExceptionHandler right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -277,6 +314,8 @@
       <MemberSignature Language="C#" Value="public int TryLength { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 TryLength" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.ExceptionHandler.TryLength" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TryLength As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int TryLength { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -296,6 +335,8 @@
       <MemberSignature Language="C#" Value="public int TryOffset { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 TryOffset" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.ExceptionHandler.TryOffset" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TryOffset As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int TryOffset { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -311,15 +352,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Equals">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Indicates whether this instance of the <see cref="T:System.Reflection.Emit.ExceptionHandler" /> object is equal to a specified object.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

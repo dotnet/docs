@@ -1,7 +1,9 @@
-<Type Name="RNGCryptoServiceProvider" FullName="System.Security.Cryptography.RNGCryptoServiceProvider">
+﻿<Type Name="RNGCryptoServiceProvider" FullName="System.Security.Cryptography.RNGCryptoServiceProvider">
   <TypeSignature Language="C#" Value="public sealed class RNGCryptoServiceProvider : System.Security.Cryptography.RandomNumberGenerator" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RNGCryptoServiceProvider extends System.Security.Cryptography.RandomNumberGenerator" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.RNGCryptoServiceProvider" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RNGCryptoServiceProvider&#xA;Inherits RandomNumberGenerator" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RNGCryptoServiceProvider sealed : System::Security::Cryptography::RandomNumberGenerator" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -48,10 +50,22 @@
     <threadsafe>This type is thread safe.</threadsafe>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.RNGCryptoServiceProvider" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public RNGCryptoServiceProvider ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RNGCryptoServiceProvider.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RNGCryptoServiceProvider();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -87,6 +101,8 @@
       <MemberSignature Language="C#" Value="public RNGCryptoServiceProvider (byte[] rgb);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int8[] rgb) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RNGCryptoServiceProvider.#ctor(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (rgb As Byte())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RNGCryptoServiceProvider(cli::array &lt;System::Byte&gt; ^ rgb);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -121,6 +137,8 @@
       <MemberSignature Language="C#" Value="public RNGCryptoServiceProvider (System.Security.Cryptography.CspParameters cspParams);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Cryptography.CspParameters cspParams) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RNGCryptoServiceProvider.#ctor(System.Security.Cryptography.CspParameters)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (cspParams As CspParameters)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RNGCryptoServiceProvider(System::Security::Cryptography::CspParameters ^ cspParams);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -148,6 +166,8 @@
       <MemberSignature Language="C#" Value="public RNGCryptoServiceProvider (string str);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string str) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RNGCryptoServiceProvider.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (str As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RNGCryptoServiceProvider(System::String ^ str);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -182,6 +202,8 @@
       <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RNGCryptoServiceProvider.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -212,6 +234,8 @@
       <MemberSignature Language="C#" Value="~RNGCryptoServiceProvider ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RNGCryptoServiceProvider.Finalize" />
+      <MemberSignature Language="VB.NET" Value="Finalize ()" />
+      <MemberSignature Language="C++ CLI" Value="!RNGCryptoServiceProvider ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -231,6 +255,8 @@
       <MemberSignature Language="C#" Value="public override void GetBytes (byte[] data);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GetBytes(unsigned int8[] data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RNGCryptoServiceProvider.GetBytes(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetBytes (data As Byte())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetBytes(cli::array &lt;System::Byte&gt; ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -282,6 +308,8 @@
       <MemberSignature Language="C#" Value="public override void GetNonZeroBytes (byte[] data);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GetNonZeroBytes(unsigned int8[] data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RNGCryptoServiceProvider.GetNonZeroBytes(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetNonZeroBytes (data As Byte())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetNonZeroBytes(cli::array &lt;System::Byte&gt; ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -327,15 +355,5 @@
           <paramref name="data" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.RNGCryptoServiceProvider" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

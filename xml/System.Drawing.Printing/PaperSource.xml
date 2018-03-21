@@ -1,7 +1,9 @@
-<Type Name="PaperSource" FullName="System.Drawing.Printing.PaperSource">
+﻿<Type Name="PaperSource" FullName="System.Drawing.Printing.PaperSource">
   <TypeSignature Language="C#" Value="public class PaperSource" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit PaperSource extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Printing.PaperSource" />
+  <TypeSignature Language="VB.NET" Value="Public Class PaperSource" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PaperSource" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +44,8 @@
       <MemberSignature Language="C#" Value="public PaperSource ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PaperSource.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PaperSource();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -69,6 +73,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Printing.PaperSourceKind Kind { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Printing.PaperSourceKind Kind" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PaperSource.Kind" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Kind As PaperSourceKind" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Printing::PaperSourceKind Kind { System::Drawing::Printing::PaperSourceKind get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -88,6 +94,8 @@
       <MemberSignature Language="C#" Value="public int RawKind { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 RawKind" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PaperSource.RawKind" />
+      <MemberSignature Language="VB.NET" Value="Public Property RawKind As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int RawKind { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -130,6 +138,8 @@
       <MemberSignature Language="C#" Value="public string SourceName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SourceName" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PaperSource.SourceName" />
+      <MemberSignature Language="VB.NET" Value="Public Property SourceName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SourceName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -165,6 +175,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PaperSource.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

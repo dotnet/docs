@@ -1,7 +1,9 @@
-<Type Name="HttpListenerContext" FullName="System.Net.HttpListenerContext">
+﻿<Type Name="HttpListenerContext" FullName="System.Net.HttpListenerContext">
   <TypeSignature Language="C#" Value="public sealed class HttpListenerContext" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit HttpListenerContext extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Net.HttpListenerContext" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HttpListenerContext" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HttpListenerContext sealed" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -45,10 +47,22 @@
     <altmember cref="T:System.Net.HttpListenerResponse" />
   </Docs>
   <Members>
+    <MemberGroup MemberName="AcceptWebSocketAsync">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Accept a WebSocket connection as an asynchronous operation.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AcceptWebSocketAsync">
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Net.WebSockets.HttpListenerWebSocketContext&gt; AcceptWebSocketAsync (string subProtocol);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Net.WebSockets.HttpListenerWebSocketContext&gt; AcceptWebSocketAsync(string subProtocol) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.HttpListenerContext.AcceptWebSocketAsync(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AcceptWebSocketAsync (subProtocol As String) As Task(Of HttpListenerWebSocketContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;System::Net::WebSockets::HttpListenerWebSocketContext ^&gt; ^ AcceptWebSocketAsync(System::String ^ subProtocol);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -104,6 +118,8 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Net.WebSockets.HttpListenerWebSocketContext&gt; AcceptWebSocketAsync (string subProtocol, TimeSpan keepAliveInterval);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Net.WebSockets.HttpListenerWebSocketContext&gt; AcceptWebSocketAsync(string subProtocol, valuetype System.TimeSpan keepAliveInterval) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.HttpListenerContext.AcceptWebSocketAsync(System.String,System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AcceptWebSocketAsync (subProtocol As String, keepAliveInterval As TimeSpan) As Task(Of HttpListenerWebSocketContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;System::Net::WebSockets::HttpListenerWebSocketContext ^&gt; ^ AcceptWebSocketAsync(System::String ^ subProtocol, TimeSpan keepAliveInterval);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -163,6 +179,8 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Net.WebSockets.HttpListenerWebSocketContext&gt; AcceptWebSocketAsync (string subProtocol, int receiveBufferSize, TimeSpan keepAliveInterval);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Net.WebSockets.HttpListenerWebSocketContext&gt; AcceptWebSocketAsync(string subProtocol, int32 receiveBufferSize, valuetype System.TimeSpan keepAliveInterval) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.HttpListenerContext.AcceptWebSocketAsync(System.String,System.Int32,System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AcceptWebSocketAsync (subProtocol As String, receiveBufferSize As Integer, keepAliveInterval As TimeSpan) As Task(Of HttpListenerWebSocketContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;System::Net::WebSockets::HttpListenerWebSocketContext ^&gt; ^ AcceptWebSocketAsync(System::String ^ subProtocol, int receiveBufferSize, TimeSpan keepAliveInterval);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -230,6 +248,8 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Net.WebSockets.HttpListenerWebSocketContext&gt; AcceptWebSocketAsync (string subProtocol, int receiveBufferSize, TimeSpan keepAliveInterval, ArraySegment&lt;byte&gt; internalBuffer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Net.WebSockets.HttpListenerWebSocketContext&gt; AcceptWebSocketAsync(string subProtocol, int32 receiveBufferSize, valuetype System.TimeSpan keepAliveInterval, valuetype System.ArraySegment`1&lt;unsigned int8&gt; internalBuffer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.HttpListenerContext.AcceptWebSocketAsync(System.String,System.Int32,System.TimeSpan,System.ArraySegment{System.Byte})" />
+      <MemberSignature Language="VB.NET" Value="Public Function AcceptWebSocketAsync (subProtocol As String, receiveBufferSize As Integer, keepAliveInterval As TimeSpan, internalBuffer As ArraySegment(Of Byte)) As Task(Of HttpListenerWebSocketContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;System::Net::WebSockets::HttpListenerWebSocketContext ^&gt; ^ AcceptWebSocketAsync(System::String ^ subProtocol, int receiveBufferSize, TimeSpan keepAliveInterval, ArraySegment&lt;System::Byte&gt; internalBuffer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -299,6 +319,8 @@
       <MemberSignature Language="C#" Value="public System.Net.HttpListenerRequest Request { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.HttpListenerRequest Request" />
       <MemberSignature Language="DocId" Value="P:System.Net.HttpListenerContext.Request" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Request As HttpListenerRequest" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::HttpListenerRequest ^ Request { System::Net::HttpListenerRequest ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -340,6 +362,8 @@
       <MemberSignature Language="C#" Value="public System.Net.HttpListenerResponse Response { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.HttpListenerResponse Response" />
       <MemberSignature Language="DocId" Value="P:System.Net.HttpListenerContext.Response" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Response As HttpListenerResponse" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::HttpListenerResponse ^ Response { System::Net::HttpListenerResponse ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -384,6 +408,8 @@
       <MemberSignature Language="C#" Value="public System.Security.Principal.IPrincipal User { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Principal.IPrincipal User" />
       <MemberSignature Language="DocId" Value="P:System.Net.HttpListenerContext.User" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property User As IPrincipal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Principal::IPrincipal ^ User { System::Security::Principal::IPrincipal ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -424,15 +450,5 @@
         <permission cref="T:System.Security.Permissions.SecurityPermission">Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlPrincipal" /><see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
       </Docs>
     </Member>
-    <MemberGroup MemberName="AcceptWebSocketAsync">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Accept a WebSocket connection as an asynchronous operation.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

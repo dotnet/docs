@@ -1,7 +1,9 @@
-<Type Name="DeviceFiltersSection" FullName="System.Web.Mobile.DeviceFiltersSection">
+﻿<Type Name="DeviceFiltersSection" FullName="System.Web.Mobile.DeviceFiltersSection">
   <TypeSignature Language="C#" Value="public sealed class DeviceFiltersSection : System.Configuration.ConfigurationSection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DeviceFiltersSection extends System.Configuration.ConfigurationSection" />
   <TypeSignature Language="DocId" Value="T:System.Web.Mobile.DeviceFiltersSection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DeviceFiltersSection&#xA;Inherits ConfigurationSection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DeviceFiltersSection sealed : System::Configuration::ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +33,8 @@
       <MemberSignature Language="C#" Value="public DeviceFiltersSection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Mobile.DeviceFiltersSection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DeviceFiltersSection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -46,6 +50,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Mobile.DeviceFilterElementCollection Filters { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Mobile.DeviceFilterElementCollection Filters" />
       <MemberSignature Language="DocId" Value="P:System.Web.Mobile.DeviceFiltersSection.Filters" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Filters As DeviceFilterElementCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Mobile::DeviceFilterElementCollection ^ Filters { System::Web::Mobile::DeviceFilterElementCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -69,6 +75,8 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.Web.Mobile.DeviceFiltersSection.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="XamlDesignerSerializationManager" FullName="System.Windows.Markup.XamlDesignerSerializationManager">
+﻿<Type Name="XamlDesignerSerializationManager" FullName="System.Windows.Markup.XamlDesignerSerializationManager">
   <TypeSignature Language="C#" Value="public class XamlDesignerSerializationManager : System.Windows.Markup.ServiceProviders" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XamlDesignerSerializationManager extends System.Windows.Markup.ServiceProviders" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.XamlDesignerSerializationManager" />
+  <TypeSignature Language="VB.NET" Value="Public Class XamlDesignerSerializationManager&#xA;Inherits ServiceProviders" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XamlDesignerSerializationManager : System::Windows::Markup::ServiceProviders" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +30,7 @@
       <MemberSignature Language="C#" Value="public XamlDesignerSerializationManager (System.Xml.XmlWriter xmlWriter);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.XmlWriter xmlWriter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XamlDesignerSerializationManager.#ctor(System.Xml.XmlWriter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlDesignerSerializationManager(System::Xml::XmlWriter ^ xmlWriter);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -46,6 +49,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Markup.XamlWriterMode XamlWriterMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Markup.XamlWriterMode XamlWriterMode" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.XamlDesignerSerializationManager.XamlWriterMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property XamlWriterMode As XamlWriterMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Markup::XamlWriterMode XamlWriterMode { System::Windows::Markup::XamlWriterMode get(); void set(System::Windows::Markup::XamlWriterMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

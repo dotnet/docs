@@ -1,7 +1,9 @@
-<Type Name="PublishServiceCallback" FullName="System.Activities.Presentation.PublishServiceCallback">
+﻿<Type Name="PublishServiceCallback" FullName="System.Activities.Presentation.PublishServiceCallback">
   <TypeSignature Language="C#" Value="public delegate object PublishServiceCallback(Type serviceType);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PublishServiceCallback extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.PublishServiceCallback" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Function PublishServiceCallback(serviceType As Type) As Object " />
+  <TypeSignature Language="C++ CLI" Value="public delegate System::Object ^ PublishServiceCallback(Type ^ serviceType);" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

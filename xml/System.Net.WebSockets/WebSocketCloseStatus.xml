@@ -1,7 +1,9 @@
-<Type Name="WebSocketCloseStatus" FullName="System.Net.WebSockets.WebSocketCloseStatus">
+﻿<Type Name="WebSocketCloseStatus" FullName="System.Net.WebSockets.WebSocketCloseStatus">
   <TypeSignature Language="C#" Value="public enum WebSocketCloseStatus" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WebSocketCloseStatus extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Net.WebSockets.WebSocketCloseStatus" />
+  <TypeSignature Language="VB.NET" Value="Public Enum WebSocketCloseStatus" />
+  <TypeSignature Language="C++ CLI" Value="public enum class WebSocketCloseStatus" />
   <AssemblyInfo>
     <AssemblyName>System.Net.WebSockets</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +30,8 @@
       <MemberSignature Language="C#" Value="Empty" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.WebSockets.WebSocketCloseStatus Empty = int32(1005)" />
       <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketCloseStatus.Empty" />
+      <MemberSignature Language="VB.NET" Value="Empty" />
+      <MemberSignature Language="C++ CLI" Value="Empty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>
@@ -46,6 +50,7 @@
       <ReturnValue>
         <ReturnType>System.Net.WebSockets.WebSocketCloseStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>1005</MemberValue>
       <Docs>
         <summary>No error specified.</summary>
       </Docs>
@@ -54,6 +59,8 @@
       <MemberSignature Language="C#" Value="EndpointUnavailable" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.WebSockets.WebSocketCloseStatus EndpointUnavailable = int32(1001)" />
       <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketCloseStatus.EndpointUnavailable" />
+      <MemberSignature Language="VB.NET" Value="EndpointUnavailable" />
+      <MemberSignature Language="C++ CLI" Value="EndpointUnavailable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>
@@ -72,6 +79,7 @@
       <ReturnValue>
         <ReturnType>System.Net.WebSockets.WebSocketCloseStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>1001</MemberValue>
       <Docs>
         <summary>(1001) Indicates an endpoint is being removed. Either the server or client will become unavailable.</summary>
       </Docs>
@@ -80,6 +88,8 @@
       <MemberSignature Language="C#" Value="InternalServerError" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.WebSockets.WebSocketCloseStatus InternalServerError = int32(1011)" />
       <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketCloseStatus.InternalServerError" />
+      <MemberSignature Language="VB.NET" Value="InternalServerError" />
+      <MemberSignature Language="C++ CLI" Value="InternalServerError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>
@@ -98,6 +108,7 @@
       <ReturnValue>
         <ReturnType>System.Net.WebSockets.WebSocketCloseStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>1011</MemberValue>
       <Docs>
         <summary>The connection will be closed by the server because of an error on the server.</summary>
       </Docs>
@@ -106,6 +117,8 @@
       <MemberSignature Language="C#" Value="InvalidMessageType" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.WebSockets.WebSocketCloseStatus InvalidMessageType = int32(1003)" />
       <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketCloseStatus.InvalidMessageType" />
+      <MemberSignature Language="VB.NET" Value="InvalidMessageType" />
+      <MemberSignature Language="C++ CLI" Value="InvalidMessageType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>
@@ -124,6 +137,7 @@
       <ReturnValue>
         <ReturnType>System.Net.WebSockets.WebSocketCloseStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>1003</MemberValue>
       <Docs>
         <summary>(1003) The client or server is terminating the connection because it cannot accept the data type it received.</summary>
       </Docs>
@@ -132,6 +146,8 @@
       <MemberSignature Language="C#" Value="InvalidPayloadData" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.WebSockets.WebSocketCloseStatus InvalidPayloadData = int32(1007)" />
       <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketCloseStatus.InvalidPayloadData" />
+      <MemberSignature Language="VB.NET" Value="InvalidPayloadData" />
+      <MemberSignature Language="C++ CLI" Value="InvalidPayloadData" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>
@@ -150,6 +166,7 @@
       <ReturnValue>
         <ReturnType>System.Net.WebSockets.WebSocketCloseStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>1007</MemberValue>
       <Docs>
         <summary>(1007) The client or server is terminating the connection because it has received data inconsistent with the message type.</summary>
       </Docs>
@@ -158,6 +175,8 @@
       <MemberSignature Language="C#" Value="MandatoryExtension" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.WebSockets.WebSocketCloseStatus MandatoryExtension = int32(1010)" />
       <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketCloseStatus.MandatoryExtension" />
+      <MemberSignature Language="VB.NET" Value="MandatoryExtension" />
+      <MemberSignature Language="C++ CLI" Value="MandatoryExtension" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>
@@ -176,6 +195,7 @@
       <ReturnValue>
         <ReturnType>System.Net.WebSockets.WebSocketCloseStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>1010</MemberValue>
       <Docs>
         <summary>(1010) The client is terminating the connection because it expected the server to negotiate an extension.</summary>
       </Docs>
@@ -184,6 +204,8 @@
       <MemberSignature Language="C#" Value="MessageTooBig" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.WebSockets.WebSocketCloseStatus MessageTooBig = int32(1009)" />
       <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketCloseStatus.MessageTooBig" />
+      <MemberSignature Language="VB.NET" Value="MessageTooBig" />
+      <MemberSignature Language="C++ CLI" Value="MessageTooBig" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>
@@ -202,6 +224,7 @@
       <ReturnValue>
         <ReturnType>System.Net.WebSockets.WebSocketCloseStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>1009</MemberValue>
       <Docs>
         <summary>(1004) Reserved for future use.</summary>
       </Docs>
@@ -210,6 +233,8 @@
       <MemberSignature Language="C#" Value="NormalClosure" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.WebSockets.WebSocketCloseStatus NormalClosure = int32(1000)" />
       <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketCloseStatus.NormalClosure" />
+      <MemberSignature Language="VB.NET" Value="NormalClosure" />
+      <MemberSignature Language="C++ CLI" Value="NormalClosure" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>
@@ -228,6 +253,7 @@
       <ReturnValue>
         <ReturnType>System.Net.WebSockets.WebSocketCloseStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>1000</MemberValue>
       <Docs>
         <summary>(1000) The connection has closed after the request was fulfilled.</summary>
       </Docs>
@@ -236,6 +262,8 @@
       <MemberSignature Language="C#" Value="PolicyViolation" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.WebSockets.WebSocketCloseStatus PolicyViolation = int32(1008)" />
       <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketCloseStatus.PolicyViolation" />
+      <MemberSignature Language="VB.NET" Value="PolicyViolation" />
+      <MemberSignature Language="C++ CLI" Value="PolicyViolation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>
@@ -254,6 +282,7 @@
       <ReturnValue>
         <ReturnType>System.Net.WebSockets.WebSocketCloseStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>1008</MemberValue>
       <Docs>
         <summary>(1008) The connection will be closed because an endpoint has received a message that violates its policy.</summary>
       </Docs>
@@ -262,6 +291,8 @@
       <MemberSignature Language="C#" Value="ProtocolError" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.WebSockets.WebSocketCloseStatus ProtocolError = int32(1002)" />
       <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketCloseStatus.ProtocolError" />
+      <MemberSignature Language="VB.NET" Value="ProtocolError" />
+      <MemberSignature Language="C++ CLI" Value="ProtocolError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>
@@ -280,6 +311,7 @@
       <ReturnValue>
         <ReturnType>System.Net.WebSockets.WebSocketCloseStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>1002</MemberValue>
       <Docs>
         <summary>(1002) The client or server is terminating the connection because of a protocol error.</summary>
       </Docs>

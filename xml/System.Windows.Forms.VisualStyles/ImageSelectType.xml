@@ -1,7 +1,9 @@
-<Type Name="ImageSelectType" FullName="System.Windows.Forms.VisualStyles.ImageSelectType">
+﻿<Type Name="ImageSelectType" FullName="System.Windows.Forms.VisualStyles.ImageSelectType">
   <TypeSignature Language="C#" Value="public enum ImageSelectType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ImageSelectType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.ImageSelectType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ImageSelectType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class ImageSelectType" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +29,8 @@
       <MemberSignature Language="C#" Value="Dpi" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.ImageSelectType Dpi = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.ImageSelectType.Dpi" />
+      <MemberSignature Language="VB.NET" Value="Dpi" />
+      <MemberSignature Language="C++ CLI" Value="Dpi" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -35,6 +39,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.ImageSelectType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Image file changes are based on dots per inch (DPI) settings.</summary>
       </Docs>
@@ -43,6 +48,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.ImageSelectType None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.ImageSelectType.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -51,6 +58,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.ImageSelectType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The image file does not change.</summary>
       </Docs>
@@ -59,6 +67,8 @@
       <MemberSignature Language="C#" Value="Size" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.ImageSelectType Size = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.ImageSelectType.Size" />
+      <MemberSignature Language="VB.NET" Value="Size" />
+      <MemberSignature Language="C++ CLI" Value="Size" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -67,6 +77,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.ImageSelectType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Image file changes are based on size settings.</summary>
       </Docs>

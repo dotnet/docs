@@ -1,7 +1,9 @@
-<Type Name="DirectorySearcher" FullName="System.DirectoryServices.DirectorySearcher">
+﻿<Type Name="DirectorySearcher" FullName="System.DirectoryServices.DirectorySearcher">
   <TypeSignature Language="C#" Value="public class DirectorySearcher : System.ComponentModel.Component" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DirectorySearcher extends System.ComponentModel.Component" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.DirectorySearcher" />
+  <TypeSignature Language="VB.NET" Value="Public Class DirectorySearcher&#xA;Inherits Component" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DirectorySearcher : System::ComponentModel::Component" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -65,10 +67,22 @@
     <altmember cref="N:System.DirectoryServices" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.DirectorySearcher" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DirectorySearcher ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectorySearcher.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DirectorySearcher();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -106,6 +120,8 @@
       <MemberSignature Language="C#" Value="public DirectorySearcher (System.DirectoryServices.DirectoryEntry searchRoot);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.DirectoryServices.DirectoryEntry searchRoot) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectorySearcher.#ctor(System.DirectoryServices.DirectoryEntry)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (searchRoot As DirectoryEntry)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DirectorySearcher(System::DirectoryServices::DirectoryEntry ^ searchRoot);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -145,6 +161,8 @@
       <MemberSignature Language="C#" Value="public DirectorySearcher (string filter);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string filter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectorySearcher.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (filter As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DirectorySearcher(System::String ^ filter);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -184,6 +202,8 @@
       <MemberSignature Language="C#" Value="public DirectorySearcher (System.DirectoryServices.DirectoryEntry searchRoot, string filter);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.DirectoryServices.DirectoryEntry searchRoot, string filter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectorySearcher.#ctor(System.DirectoryServices.DirectoryEntry,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (searchRoot As DirectoryEntry, filter As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DirectorySearcher(System::DirectoryServices::DirectoryEntry ^ searchRoot, System::String ^ filter);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -224,6 +244,8 @@
       <MemberSignature Language="C#" Value="public DirectorySearcher (string filter, string[] propertiesToLoad);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string filter, string[] propertiesToLoad) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectorySearcher.#ctor(System.String,System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (filter As String, propertiesToLoad As String())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DirectorySearcher(System::String ^ filter, cli::array &lt;System::String ^&gt; ^ propertiesToLoad);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -264,6 +286,8 @@
       <MemberSignature Language="C#" Value="public DirectorySearcher (System.DirectoryServices.DirectoryEntry searchRoot, string filter, string[] propertiesToLoad);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.DirectoryServices.DirectoryEntry searchRoot, string filter, string[] propertiesToLoad) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectorySearcher.#ctor(System.DirectoryServices.DirectoryEntry,System.String,System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (searchRoot As DirectoryEntry, filter As String, propertiesToLoad As String())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DirectorySearcher(System::DirectoryServices::DirectoryEntry ^ searchRoot, System::String ^ filter, cli::array &lt;System::String ^&gt; ^ propertiesToLoad);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -305,6 +329,8 @@
       <MemberSignature Language="C#" Value="public DirectorySearcher (string filter, string[] propertiesToLoad, System.DirectoryServices.SearchScope scope);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string filter, string[] propertiesToLoad, valuetype System.DirectoryServices.SearchScope scope) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectorySearcher.#ctor(System.String,System.String[],System.DirectoryServices.SearchScope)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (filter As String, propertiesToLoad As String(), scope As SearchScope)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DirectorySearcher(System::String ^ filter, cli::array &lt;System::String ^&gt; ^ propertiesToLoad, System::DirectoryServices::SearchScope scope);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -346,6 +372,8 @@
       <MemberSignature Language="C#" Value="public DirectorySearcher (System.DirectoryServices.DirectoryEntry searchRoot, string filter, string[] propertiesToLoad, System.DirectoryServices.SearchScope scope);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.DirectoryServices.DirectoryEntry searchRoot, string filter, string[] propertiesToLoad, valuetype System.DirectoryServices.SearchScope scope) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectorySearcher.#ctor(System.DirectoryServices.DirectoryEntry,System.String,System.String[],System.DirectoryServices.SearchScope)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (searchRoot As DirectoryEntry, filter As String, propertiesToLoad As String(), scope As SearchScope)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DirectorySearcher(System::DirectoryServices::DirectoryEntry ^ searchRoot, System::String ^ filter, cli::array &lt;System::String ^&gt; ^ propertiesToLoad, System::DirectoryServices::SearchScope scope);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -378,6 +406,8 @@
       <MemberSignature Language="C#" Value="public bool Asynchronous { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Asynchronous" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.DirectorySearcher.Asynchronous" />
+      <MemberSignature Language="VB.NET" Value="Public Property Asynchronous As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Asynchronous { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -437,6 +467,8 @@ SearchResultCollection res = src.FindAll();
       <MemberSignature Language="C#" Value="public string AttributeScopeQuery { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string AttributeScopeQuery" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.DirectorySearcher.AttributeScopeQuery" />
+      <MemberSignature Language="VB.NET" Value="Public Property AttributeScopeQuery As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AttributeScopeQuery { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -503,6 +535,8 @@ foreach(SearchResult res in src.FindAll())
       <MemberSignature Language="C#" Value="public bool CacheResults { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CacheResults" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.DirectorySearcher.CacheResults" />
+      <MemberSignature Language="VB.NET" Value="Public Property CacheResults As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CacheResults { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -538,6 +572,8 @@ foreach(SearchResult res in src.FindAll())
       <MemberSignature Language="C#" Value="public TimeSpan ClientTimeout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan ClientTimeout" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.DirectorySearcher.ClientTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public Property ClientTimeout As TimeSpan" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan ClientTimeout { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -574,6 +610,8 @@ foreach(SearchResult res in src.FindAll())
       <MemberSignature Language="C#" Value="public System.DirectoryServices.DereferenceAlias DerefAlias { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DirectoryServices.DereferenceAlias DerefAlias" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.DirectorySearcher.DerefAlias" />
+      <MemberSignature Language="VB.NET" Value="Public Property DerefAlias As DereferenceAlias" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::DereferenceAlias DerefAlias { System::DirectoryServices::DereferenceAlias get(); void set(System::DirectoryServices::DereferenceAlias value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -626,6 +664,8 @@ SearchResultCollection res = src.FindAll();
       <MemberSignature Language="C#" Value="public System.DirectoryServices.DirectorySynchronization DirectorySynchronization { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.DirectoryServices.DirectorySynchronization DirectorySynchronization" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.DirectorySearcher.DirectorySynchronization" />
+      <MemberSignature Language="VB.NET" Value="Public Property DirectorySynchronization As DirectorySynchronization" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::DirectorySynchronization ^ DirectorySynchronization { System::DirectoryServices::DirectorySynchronization ^ get(); void set(System::DirectoryServices::DirectorySynchronization ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -668,6 +708,8 @@ SearchResultCollection res = src.FindAll();
       <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectorySearcher.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -691,6 +733,8 @@ SearchResultCollection res = src.FindAll();
       <MemberSignature Language="C#" Value="public System.DirectoryServices.ExtendedDN ExtendedDN { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DirectoryServices.ExtendedDN ExtendedDN" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.DirectorySearcher.ExtendedDN" />
+      <MemberSignature Language="VB.NET" Value="Public Property ExtendedDN As ExtendedDN" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::ExtendedDN ExtendedDN { System::DirectoryServices::ExtendedDN get(); void set(System::DirectoryServices::ExtendedDN value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -738,6 +782,8 @@ SearchResultCollection res = src.FindAll();
       <MemberSignature Language="C#" Value="public string Filter { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Filter" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.DirectorySearcher.Filter" />
+      <MemberSignature Language="VB.NET" Value="Public Property Filter As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Filter { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -790,6 +836,8 @@ SearchResultCollection res = src.FindAll();
       <MemberSignature Language="C#" Value="public System.DirectoryServices.SearchResultCollection FindAll ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.DirectoryServices.SearchResultCollection FindAll() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectorySearcher.FindAll" />
+      <MemberSignature Language="VB.NET" Value="Public Function FindAll () As SearchResultCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::SearchResultCollection ^ FindAll();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -820,6 +868,8 @@ SearchResultCollection res = src.FindAll();
       <MemberSignature Language="C#" Value="public System.DirectoryServices.SearchResult FindOne ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.DirectoryServices.SearchResult FindOne() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectorySearcher.FindOne" />
+      <MemberSignature Language="VB.NET" Value="Public Function FindOne () As SearchResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::SearchResult ^ FindOne();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -848,6 +898,8 @@ SearchResultCollection res = src.FindAll();
       <MemberSignature Language="C#" Value="public int PageSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 PageSize" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.DirectorySearcher.PageSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property PageSize As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PageSize { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -883,6 +935,8 @@ SearchResultCollection res = src.FindAll();
       <MemberSignature Language="C#" Value="public System.Collections.Specialized.StringCollection PropertiesToLoad { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.StringCollection PropertiesToLoad" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.DirectorySearcher.PropertiesToLoad" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PropertiesToLoad As StringCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Specialized::StringCollection ^ PropertiesToLoad { System::Collections::Specialized::StringCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -891,7 +945,7 @@ SearchResultCollection res = src.FindAll();
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.StringCollectionEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
@@ -925,6 +979,8 @@ SearchResultCollection res = src.FindAll();
       <MemberSignature Language="C#" Value="public bool PropertyNamesOnly { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool PropertyNamesOnly" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.DirectorySearcher.PropertyNamesOnly" />
+      <MemberSignature Language="VB.NET" Value="Public Property PropertyNamesOnly As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PropertyNamesOnly { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -953,6 +1009,8 @@ SearchResultCollection res = src.FindAll();
       <MemberSignature Language="C#" Value="public System.DirectoryServices.ReferralChasingOption ReferralChasing { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DirectoryServices.ReferralChasingOption ReferralChasing" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.DirectorySearcher.ReferralChasing" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReferralChasing As ReferralChasingOption" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::ReferralChasingOption ReferralChasing { System::DirectoryServices::ReferralChasingOption get(); void set(System::DirectoryServices::ReferralChasingOption value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -989,6 +1047,8 @@ SearchResultCollection res = src.FindAll();
       <MemberSignature Language="C#" Value="public System.DirectoryServices.DirectoryEntry SearchRoot { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.DirectoryServices.DirectoryEntry SearchRoot" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.DirectorySearcher.SearchRoot" />
+      <MemberSignature Language="VB.NET" Value="Public Property SearchRoot As DirectoryEntry" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::DirectoryEntry ^ SearchRoot { System::DirectoryServices::DirectoryEntry ^ get(); void set(System::DirectoryServices::DirectoryEntry ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -1043,6 +1103,8 @@ SearchResultCollection res = src.FindAll();
       <MemberSignature Language="C#" Value="public System.DirectoryServices.SearchScope SearchScope { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DirectoryServices.SearchScope SearchScope" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.DirectorySearcher.SearchScope" />
+      <MemberSignature Language="VB.NET" Value="Public Property SearchScope As SearchScope" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::SearchScope SearchScope { System::DirectoryServices::SearchScope get(); void set(System::DirectoryServices::SearchScope value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -1075,6 +1137,8 @@ SearchResultCollection res = src.FindAll();
       <MemberSignature Language="C#" Value="public System.DirectoryServices.SecurityMasks SecurityMasks { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DirectoryServices.SecurityMasks SecurityMasks" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.DirectorySearcher.SecurityMasks" />
+      <MemberSignature Language="VB.NET" Value="Public Property SecurityMasks As SecurityMasks" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::SecurityMasks SecurityMasks { System::DirectoryServices::SecurityMasks get(); void set(System::DirectoryServices::SecurityMasks value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -1122,6 +1186,8 @@ SearchResultCollection res = src.FindAll();
       <MemberSignature Language="C#" Value="public TimeSpan ServerPageTimeLimit { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan ServerPageTimeLimit" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.DirectorySearcher.ServerPageTimeLimit" />
+      <MemberSignature Language="VB.NET" Value="Public Property ServerPageTimeLimit As TimeSpan" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan ServerPageTimeLimit { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -1162,6 +1228,8 @@ SearchResultCollection res = src.FindAll();
       <MemberSignature Language="C#" Value="public TimeSpan ServerTimeLimit { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan ServerTimeLimit" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.DirectorySearcher.ServerTimeLimit" />
+      <MemberSignature Language="VB.NET" Value="Public Property ServerTimeLimit As TimeSpan" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan ServerTimeLimit { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -1204,6 +1272,8 @@ SearchResultCollection res = src.FindAll();
       <MemberSignature Language="C#" Value="public int SizeLimit { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 SizeLimit" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.DirectorySearcher.SizeLimit" />
+      <MemberSignature Language="VB.NET" Value="Public Property SizeLimit As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SizeLimit { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -1242,6 +1312,8 @@ SearchResultCollection res = src.FindAll();
       <MemberSignature Language="C#" Value="public System.DirectoryServices.SortOption Sort { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.DirectoryServices.SortOption Sort" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.DirectorySearcher.Sort" />
+      <MemberSignature Language="VB.NET" Value="Public Property Sort As SortOption" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::SortOption ^ Sort { System::DirectoryServices::SortOption ^ get(); void set(System::DirectoryServices::SortOption ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -1250,7 +1322,7 @@ SearchResultCollection res = src.FindAll();
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.TypeConverter(typeof(System.ComponentModel.ExpandableObjectConverter))</AttributeName>
@@ -1274,6 +1346,8 @@ SearchResultCollection res = src.FindAll();
       <MemberSignature Language="C#" Value="public bool Tombstone { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Tombstone" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.DirectorySearcher.Tombstone" />
+      <MemberSignature Language="VB.NET" Value="Public Property Tombstone As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Tombstone { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -1324,6 +1398,8 @@ SearchResultCollection res = src.FindAll();
       <MemberSignature Language="C#" Value="public System.DirectoryServices.DirectoryVirtualListView VirtualListView { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.DirectoryServices.DirectoryVirtualListView VirtualListView" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.DirectorySearcher.VirtualListView" />
+      <MemberSignature Language="VB.NET" Value="Public Property VirtualListView As DirectoryVirtualListView" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::DirectoryVirtualListView ^ VirtualListView { System::DirectoryServices::DirectoryVirtualListView ^ get(); void set(System::DirectoryServices::DirectoryVirtualListView ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -1354,15 +1430,5 @@ SearchResultCollection res = src.FindAll();
         <altmember cref="T:System.DirectoryServices.DirectoryVirtualListView" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.DirectorySearcher" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,9 @@
-<Type Name="FindCriteria" FullName="System.ServiceModel.Discovery.FindCriteria">
+﻿<Type Name="FindCriteria" FullName="System.ServiceModel.Discovery.FindCriteria">
   <TypeSignature Language="C#" Value="public class FindCriteria" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FindCriteria extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Discovery.FindCriteria" />
+  <TypeSignature Language="VB.NET" Value="Public Class FindCriteria" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FindCriteria" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,10 +24,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Discovery.FindCriteria" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public FindCriteria ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.FindCriteria.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FindCriteria();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -41,6 +54,8 @@
       <MemberSignature Language="C#" Value="public FindCriteria (Type contractType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type contractType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.FindCriteria.#ctor(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (contractType As Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FindCriteria(Type ^ contractType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -59,6 +74,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.Xml.XmlQualifiedName&gt; ContractTypeNames { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.Xml.XmlQualifiedName&gt; ContractTypeNames" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.FindCriteria.ContractTypeNames" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContractTypeNames As Collection(Of XmlQualifiedName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::Xml::XmlQualifiedName ^&gt; ^ ContractTypeNames { System::Collections::ObjectModel::Collection&lt;System::Xml::XmlQualifiedName ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -80,10 +97,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateMetadataExchangeEndpointCriteria">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an object that contains metadata exchange endpoint criteria.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateMetadataExchangeEndpointCriteria">
       <MemberSignature Language="C#" Value="public static System.ServiceModel.Discovery.FindCriteria CreateMetadataExchangeEndpointCriteria ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Discovery.FindCriteria CreateMetadataExchangeEndpointCriteria() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.FindCriteria.CreateMetadataExchangeEndpointCriteria" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateMetadataExchangeEndpointCriteria () As FindCriteria" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Discovery::FindCriteria ^ CreateMetadataExchangeEndpointCriteria();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -103,6 +131,8 @@
       <MemberSignature Language="C#" Value="public static System.ServiceModel.Discovery.FindCriteria CreateMetadataExchangeEndpointCriteria (System.Collections.Generic.IEnumerable&lt;System.Xml.XmlQualifiedName&gt; contractTypeNames);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Discovery.FindCriteria CreateMetadataExchangeEndpointCriteria(class System.Collections.Generic.IEnumerable`1&lt;class System.Xml.XmlQualifiedName&gt; contractTypeNames) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.FindCriteria.CreateMetadataExchangeEndpointCriteria(System.Collections.Generic.IEnumerable{System.Xml.XmlQualifiedName})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateMetadataExchangeEndpointCriteria (contractTypeNames As IEnumerable(Of XmlQualifiedName)) As FindCriteria" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Discovery::FindCriteria ^ CreateMetadataExchangeEndpointCriteria(System::Collections::Generic::IEnumerable&lt;System::Xml::XmlQualifiedName ^&gt; ^ contractTypeNames);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -132,6 +162,8 @@
       <MemberSignature Language="C#" Value="public static System.ServiceModel.Discovery.FindCriteria CreateMetadataExchangeEndpointCriteria (Type contractType);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Discovery.FindCriteria CreateMetadataExchangeEndpointCriteria(class System.Type contractType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.FindCriteria.CreateMetadataExchangeEndpointCriteria(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateMetadataExchangeEndpointCriteria (contractType As Type) As FindCriteria" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Discovery::FindCriteria ^ CreateMetadataExchangeEndpointCriteria(Type ^ contractType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -161,6 +193,8 @@
       <MemberSignature Language="C#" Value="public TimeSpan Duration { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan Duration" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.FindCriteria.Duration" />
+      <MemberSignature Language="VB.NET" Value="Public Property Duration As TimeSpan" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan Duration { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -179,6 +213,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.Xml.Linq.XElement&gt; Extensions { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.Xml.Linq.XElement&gt; Extensions" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.FindCriteria.Extensions" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Extensions As Collection(Of XElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::Xml::Linq::XElement ^&gt; ^ Extensions { System::Collections::ObjectModel::Collection&lt;System::Xml::Linq::XElement ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -197,6 +233,7 @@
       <MemberSignature Language="C#" Value="public bool IsMatch (System.ServiceModel.Discovery.EndpointDiscoveryMetadata endpointDiscoveryMetadata);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsMatch(class System.ServiceModel.Discovery.EndpointDiscoveryMetadata endpointDiscoveryMetadata) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.FindCriteria.IsMatch(System.ServiceModel.Discovery.EndpointDiscoveryMetadata)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsMatch(System::ServiceModel::Discovery::EndpointDiscoveryMetadata ^ endpointDiscoveryMetadata);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -220,6 +257,8 @@
       <MemberSignature Language="C#" Value="public int MaxResults { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxResults" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.FindCriteria.MaxResults" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxResults As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxResults { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -238,6 +277,8 @@
       <MemberSignature Language="C#" Value="public Uri ScopeMatchBy { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri ScopeMatchBy" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.FindCriteria.ScopeMatchBy" />
+      <MemberSignature Language="VB.NET" Value="Public Property ScopeMatchBy As Uri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ ScopeMatchBy { Uri ^ get(); void set(Uri ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -256,6 +297,8 @@
       <MemberSignature Language="C#" Value="public static readonly Uri ScopeMatchByExact;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Uri ScopeMatchByExact" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Discovery.FindCriteria.ScopeMatchByExact" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ScopeMatchByExact As Uri " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Uri ^ ScopeMatchByExact;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -273,6 +316,8 @@
       <MemberSignature Language="C#" Value="public static readonly Uri ScopeMatchByLdap;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Uri ScopeMatchByLdap" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Discovery.FindCriteria.ScopeMatchByLdap" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ScopeMatchByLdap As Uri " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Uri ^ ScopeMatchByLdap;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -290,6 +335,8 @@
       <MemberSignature Language="C#" Value="public static readonly Uri ScopeMatchByNone;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Uri ScopeMatchByNone" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Discovery.FindCriteria.ScopeMatchByNone" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ScopeMatchByNone As Uri " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Uri ^ ScopeMatchByNone;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -307,6 +354,8 @@
       <MemberSignature Language="C#" Value="public static readonly Uri ScopeMatchByPrefix;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Uri ScopeMatchByPrefix" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Discovery.FindCriteria.ScopeMatchByPrefix" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ScopeMatchByPrefix As Uri " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Uri ^ ScopeMatchByPrefix;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -324,6 +373,8 @@
       <MemberSignature Language="C#" Value="public static readonly Uri ScopeMatchByUuid;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Uri ScopeMatchByUuid" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Discovery.FindCriteria.ScopeMatchByUuid" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ScopeMatchByUuid As Uri " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Uri ^ ScopeMatchByUuid;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -341,6 +392,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;Uri&gt; Scopes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.Uri&gt; Scopes" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.FindCriteria.Scopes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Scopes As Collection(Of Uri)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;Uri ^&gt; ^ Scopes { System::Collections::ObjectModel::Collection&lt;Uri ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -362,23 +415,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="CreateMetadataExchangeEndpointCriteria">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates an object that contains metadata exchange endpoint criteria.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Discovery.FindCriteria" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

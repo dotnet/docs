@@ -1,7 +1,9 @@
-<Type Name="DatePickerTextBox" FullName="System.Windows.Controls.Primitives.DatePickerTextBox">
+﻿<Type Name="DatePickerTextBox" FullName="System.Windows.Controls.Primitives.DatePickerTextBox">
   <TypeSignature Language="C#" Value="public sealed class DatePickerTextBox : System.Windows.Controls.TextBox" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DatePickerTextBox extends System.Windows.Controls.TextBox" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Primitives.DatePickerTextBox" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DatePickerTextBox&#xA;Inherits TextBox" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DatePickerTextBox sealed : System::Windows::Controls::TextBox" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +41,8 @@
       <MemberSignature Language="C#" Value="public DatePickerTextBox ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DatePickerTextBox.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DatePickerTextBox();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -54,6 +58,8 @@
       <MemberSignature Language="C#" Value="public override void OnApplyTemplate ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void OnApplyTemplate() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DatePickerTextBox.OnApplyTemplate" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnApplyTemplate ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnApplyTemplate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -72,6 +78,8 @@
       <MemberSignature Language="C#" Value="protected override void OnGotFocus (System.Windows.RoutedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnGotFocus(class System.Windows.RoutedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DatePickerTextBox.OnGotFocus(System.Windows.RoutedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnGotFocus (e As RoutedEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnGotFocus(System::Windows::RoutedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

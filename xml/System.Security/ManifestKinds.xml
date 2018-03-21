@@ -1,7 +1,9 @@
-<Type Name="ManifestKinds" FullName="System.Security.ManifestKinds">
+﻿<Type Name="ManifestKinds" FullName="System.Security.ManifestKinds">
   <TypeSignature Language="C#" Value="public enum ManifestKinds" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ManifestKinds extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Security.ManifestKinds" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ManifestKinds" />
+  <TypeSignature Language="C++ CLI" Value="public enum class ManifestKinds" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +36,8 @@
       <MemberSignature Language="C#" Value="Application" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.ManifestKinds Application = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Security.ManifestKinds.Application" />
+      <MemberSignature Language="VB.NET" Value="Application" />
+      <MemberSignature Language="C++ CLI" Value="Application" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -42,6 +46,7 @@
       <ReturnValue>
         <ReturnType>System.Security.ManifestKinds</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The manifest is for an application.</summary>
       </Docs>
@@ -50,6 +55,8 @@
       <MemberSignature Language="C#" Value="ApplicationAndDeployment" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.ManifestKinds ApplicationAndDeployment = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Security.ManifestKinds.ApplicationAndDeployment" />
+      <MemberSignature Language="VB.NET" Value="ApplicationAndDeployment" />
+      <MemberSignature Language="C++ CLI" Value="ApplicationAndDeployment" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -58,6 +65,7 @@
       <ReturnValue>
         <ReturnType>System.Security.ManifestKinds</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The manifest is for deployment and application. The is the default value for verifying signatures.</summary>
       </Docs>
@@ -66,6 +74,8 @@
       <MemberSignature Language="C#" Value="Deployment" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.ManifestKinds Deployment = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Security.ManifestKinds.Deployment" />
+      <MemberSignature Language="VB.NET" Value="Deployment" />
+      <MemberSignature Language="C++ CLI" Value="Deployment" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -74,6 +84,7 @@
       <ReturnValue>
         <ReturnType>System.Security.ManifestKinds</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The manifest is for deployment only.</summary>
       </Docs>
@@ -82,6 +93,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.ManifestKinds None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Security.ManifestKinds.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -90,6 +103,7 @@
       <ReturnValue>
         <ReturnType>System.Security.ManifestKinds</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The manifest is of no particular type.</summary>
       </Docs>

@@ -1,7 +1,9 @@
-<Type Name="WmlMobileTextWriter+WmlLayout" FullName="System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter+WmlLayout">
+﻿<Type Name="WmlMobileTextWriter+WmlLayout" FullName="System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter+WmlLayout">
   <TypeSignature Language="C#" Value="protected class WmlMobileTextWriter.WmlLayout" />
   <TypeSignature Language="ILAsm" Value=".class nested protected auto ansi beforefieldinit WmlMobileTextWriter/WmlLayout extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlLayout" />
+  <TypeSignature Language="VB.NET" Value="Protected Class WmlMobileTextWriter.WmlLayout" />
+  <TypeSignature Language="C++ CLI" Value="protected: ref class WmlMobileTextWriter::WmlLayout" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -16,10 +18,21 @@
     <altmember cref="T:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of <see cref="T:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlLayout" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <altmember cref="T:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter" />
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public WmlLayout (System.Web.UI.MobileControls.Alignment alignment, System.Web.UI.MobileControls.Wrapping wrapping);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Web.UI.MobileControls.Alignment alignment, valuetype System.Web.UI.MobileControls.Wrapping wrapping) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlLayout.#ctor(System.Web.UI.MobileControls.Alignment,System.Web.UI.MobileControls.Wrapping)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WmlLayout(System::Web::UI::MobileControls::Alignment alignment, System::Web::UI::MobileControls::Wrapping wrapping);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -41,6 +54,7 @@
       <MemberSignature Language="C#" Value="public WmlLayout (System.Web.UI.MobileControls.Style style, System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlLayout currentLayout);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.MobileControls.Style style, class System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter/WmlLayout currentLayout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlLayout.#ctor(System.Web.UI.MobileControls.Style,System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlLayout)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WmlLayout(System::Web::UI::MobileControls::Style ^ style, System::Web::UI::MobileControls::Adapters::WmlMobileTextWriter::WmlLayout ^ currentLayout);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -69,6 +83,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.MobileControls.Alignment Align { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.MobileControls.Alignment Align" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlLayout.Align" />
+      <MemberSignature Language="VB.NET" Value="Public Property Align As Alignment" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::MobileControls::Alignment Align { System::Web::UI::MobileControls::Alignment get(); void set(System::Web::UI::MobileControls::Alignment value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -95,6 +111,8 @@
       <MemberSignature Language="C#" Value="public virtual bool Compare (System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlLayout layout);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Compare(class System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter/WmlLayout layout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlLayout.Compare(System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlLayout)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Compare (layout As WmlMobileTextWriter.WmlLayout) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Compare(System::Web::UI::MobileControls::Adapters::WmlMobileTextWriter::WmlLayout ^ layout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -126,6 +144,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.MobileControls.Wrapping Wrap { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.MobileControls.Wrapping Wrap" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlLayout.Wrap" />
+      <MemberSignature Language="VB.NET" Value="Public Property Wrap As Wrapping" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::MobileControls::Wrapping Wrap { System::Web::UI::MobileControls::Wrapping get(); void set(System::Web::UI::MobileControls::Wrapping value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -148,15 +168,5 @@
         <altmember cref="T:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of <see cref="T:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlLayout" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <altmember cref="T:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter" />
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

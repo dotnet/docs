@@ -1,7 +1,9 @@
-<Type Name="XNodeEqualityComparer" FullName="System.Xml.Linq.XNodeEqualityComparer">
+﻿<Type Name="XNodeEqualityComparer" FullName="System.Xml.Linq.XNodeEqualityComparer">
   <TypeSignature Language="C#" Value="public sealed class XNodeEqualityComparer : System.Collections.Generic.IEqualityComparer&lt;System.Xml.Linq.XNode&gt;, System.Collections.IEqualityComparer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit XNodeEqualityComparer extends System.Object implements class System.Collections.Generic.IEqualityComparer`1&lt;class System.Xml.Linq.XNode&gt;, class System.Collections.IEqualityComparer" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Linq.XNodeEqualityComparer" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XNodeEqualityComparer&#xA;Implements IEqualityComparer, IEqualityComparer(Of XNode)" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XNodeEqualityComparer sealed : System::Collections::Generic::IEqualityComparer&lt;System::Xml::Linq::XNode ^&gt;, System::Collections::IEqualityComparer" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.XDocument</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +46,8 @@
       <MemberSignature Language="C#" Value="public XNodeEqualityComparer ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNodeEqualityComparer.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XNodeEqualityComparer();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -103,7 +107,12 @@ False
       <MemberSignature Language="C#" Value="public bool Equals (System.Xml.Linq.XNode x, System.Xml.Linq.XNode y);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(class System.Xml.Linq.XNode x, class System.Xml.Linq.XNode y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNodeEqualityComparer.Equals(System.Xml.Linq.XNode,System.Xml.Linq.XNode)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (x As XNode, y As XNode) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Xml::Linq::XNode ^ x, System::Xml::Linq::XNode ^ y);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IEqualityComparer`1.Equals(`0,`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -192,7 +201,12 @@ False
       <MemberSignature Language="C#" Value="public int GetHashCode (System.Xml.Linq.XNode obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetHashCode(class System.Xml.Linq.XNode obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNodeEqualityComparer.GetHashCode(System.Xml.Linq.XNode)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetHashCode (obj As XNode) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int GetHashCode(System::Xml::Linq::XNode ^ obj);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IEqualityComparer`1.GetHashCode(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -257,7 +271,12 @@ HashCode: AD26516B
       <MemberSignature Language="C#" Value="bool IEqualityComparer.Equals (object x, object y);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.IEqualityComparer.Equals(object x, object y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNodeEqualityComparer.System#Collections#IEqualityComparer#Equals(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Function Equals (x As Object, y As Object) As Boolean Implements IEqualityComparer.Equals" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.Collections.IEqualityComparer.Equals(System::Object ^ x, System::Object ^ y) = System::Collections::IEqualityComparer::Equals;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEqualityComparer.Equals(System.Object,System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -316,7 +335,12 @@ HashCode: AD26516B
       <MemberSignature Language="C#" Value="int IEqualityComparer.GetHashCode (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.IEqualityComparer.GetHashCode(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNodeEqualityComparer.System#Collections#IEqualityComparer#GetHashCode(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Function GetHashCode (obj As Object) As Integer Implements IEqualityComparer.GetHashCode" />
+      <MemberSignature Language="C++ CLI" Value=" virtual int System.Collections.IEqualityComparer.GetHashCode(System::Object ^ obj) = System::Collections::IEqualityComparer::GetHashCode;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEqualityComparer.GetHashCode(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -1,7 +1,9 @@
-<Type Name="MailAttachment" FullName="System.Web.Mail.MailAttachment">
+﻿<Type Name="MailAttachment" FullName="System.Web.Mail.MailAttachment">
   <TypeSignature Language="C#" Value="public class MailAttachment" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MailAttachment extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.Mail.MailAttachment" />
+  <TypeSignature Language="VB.NET" Value="Public Class MailAttachment" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MailAttachment" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,10 +22,21 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Mail.MailAttachment" /> class. Recommended alternative: <see cref="N:System.Net.Mail" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public MailAttachment (string filename);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string filename) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Mail.MailAttachment.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (filename As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MailAttachment(System::String ^ filename);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -55,6 +68,8 @@
       <MemberSignature Language="C#" Value="public MailAttachment (string filename, System.Web.Mail.MailEncoding encoding);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string filename, valuetype System.Web.Mail.MailEncoding encoding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Mail.MailAttachment.#ctor(System.String,System.Web.Mail.MailEncoding)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (filename As String, encoding As MailEncoding)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MailAttachment(System::String ^ filename, System::Web::Mail::MailEncoding encoding);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -75,6 +90,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Mail.MailEncoding Encoding { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.Mail.MailEncoding Encoding" />
       <MemberSignature Language="DocId" Value="P:System.Web.Mail.MailAttachment.Encoding" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Encoding As MailEncoding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Mail::MailEncoding Encoding { System::Web::Mail::MailEncoding get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -93,6 +110,8 @@
       <MemberSignature Language="C#" Value="public string Filename { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Filename" />
       <MemberSignature Language="DocId" Value="P:System.Web.Mail.MailAttachment.Filename" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Filename As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Filename { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -107,14 +126,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Mail.MailAttachment" /> class. Recommended alternative: <see cref="N:System.Net.Mail" />.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

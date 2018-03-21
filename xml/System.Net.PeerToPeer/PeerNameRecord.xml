@@ -1,7 +1,9 @@
-<Type Name="PeerNameRecord" FullName="System.Net.PeerToPeer.PeerNameRecord">
+﻿<Type Name="PeerNameRecord" FullName="System.Net.PeerToPeer.PeerNameRecord">
   <TypeSignature Language="C#" Value="public class PeerNameRecord : System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit PeerNameRecord extends System.Object implements class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.Net.PeerToPeer.PeerNameRecord" />
+  <TypeSignature Language="VB.NET" Value="Public Class PeerNameRecord&#xA;Implements ISerializable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PeerNameRecord : System::Runtime::Serialization::ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.Net</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +53,8 @@
       <MemberSignature Language="C#" Value="public PeerNameRecord ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.PeerNameRecord.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PeerNameRecord();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -67,6 +71,8 @@
       <MemberSignature Language="C#" Value="protected PeerNameRecord (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.PeerNameRecord.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; PeerNameRecord(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -87,6 +93,8 @@
       <MemberSignature Language="C#" Value="public string Comment { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Comment" />
       <MemberSignature Language="DocId" Value="P:System.Net.PeerToPeer.PeerNameRecord.Comment" />
+      <MemberSignature Language="VB.NET" Value="Public Property Comment As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Comment { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -114,6 +122,8 @@
       <MemberSignature Language="C#" Value="public byte[] Data { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] Data" />
       <MemberSignature Language="DocId" Value="P:System.Net.PeerToPeer.PeerNameRecord.Data" />
+      <MemberSignature Language="VB.NET" Value="Public Property Data As Byte()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Byte&gt; ^ Data { cli::array &lt;System::Byte&gt; ^ get(); void set(cli::array &lt;System::Byte&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -141,6 +151,8 @@
       <MemberSignature Language="C#" Value="public System.Net.IPEndPointCollection EndPointCollection { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.IPEndPointCollection EndPointCollection" />
       <MemberSignature Language="DocId" Value="P:System.Net.PeerToPeer.PeerNameRecord.EndPointCollection" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EndPointCollection As IPEndPointCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::IPEndPointCollection ^ EndPointCollection { System::Net::IPEndPointCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -166,7 +178,12 @@
       <MemberSignature Language="C#" Value="protected virtual void GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.PeerNameRecord.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -190,6 +207,8 @@
       <MemberSignature Language="C#" Value="public System.Net.PeerToPeer.PeerName PeerName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.PeerToPeer.PeerName PeerName" />
       <MemberSignature Language="DocId" Value="P:System.Net.PeerToPeer.PeerNameRecord.PeerName" />
+      <MemberSignature Language="VB.NET" Value="Public Property PeerName As PeerName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::PeerToPeer::PeerName ^ PeerName { System::Net::PeerToPeer::PeerName ^ get(); void set(System::Net::PeerToPeer::PeerName ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -209,7 +228,12 @@
       <MemberSignature Language="C#" Value="void ISerializable.GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.Serialization.ISerializable.GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.PeerNameRecord.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Sub GetObjectData (info As SerializationInfo, context As StreamingContext) Implements ISerializable.GetObjectData" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.Serialization.ISerializable.GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context) = System::Runtime::Serialization::ISerializable::GetObjectData;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

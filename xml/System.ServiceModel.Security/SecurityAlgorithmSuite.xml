@@ -1,7 +1,9 @@
-<Type Name="SecurityAlgorithmSuite" FullName="System.ServiceModel.Security.SecurityAlgorithmSuite">
+﻿<Type Name="SecurityAlgorithmSuite" FullName="System.ServiceModel.Security.SecurityAlgorithmSuite">
   <TypeSignature Language="C#" Value="public abstract class SecurityAlgorithmSuite" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract SecurityAlgorithmSuite extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.SecurityAlgorithmSuite" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class SecurityAlgorithmSuite" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SecurityAlgorithmSuite abstract" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +30,8 @@
       <MemberSignature Language="C#" Value="protected SecurityAlgorithmSuite ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.SecurityAlgorithmSuite.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; SecurityAlgorithmSuite();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -50,6 +54,8 @@
       <MemberSignature Language="C#" Value="public static System.ServiceModel.Security.SecurityAlgorithmSuite Basic128 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.Security.SecurityAlgorithmSuite Basic128" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityAlgorithmSuite.Basic128" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Basic128 As SecurityAlgorithmSuite" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::Security::SecurityAlgorithmSuite ^ Basic128 { System::ServiceModel::Security::SecurityAlgorithmSuite ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -75,6 +81,8 @@
       <MemberSignature Language="C#" Value="public static System.ServiceModel.Security.SecurityAlgorithmSuite Basic128Rsa15 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.Security.SecurityAlgorithmSuite Basic128Rsa15" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityAlgorithmSuite.Basic128Rsa15" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Basic128Rsa15 As SecurityAlgorithmSuite" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::Security::SecurityAlgorithmSuite ^ Basic128Rsa15 { System::ServiceModel::Security::SecurityAlgorithmSuite ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -100,6 +108,8 @@
       <MemberSignature Language="C#" Value="public static System.ServiceModel.Security.SecurityAlgorithmSuite Basic128Sha256 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.Security.SecurityAlgorithmSuite Basic128Sha256" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityAlgorithmSuite.Basic128Sha256" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Basic128Sha256 As SecurityAlgorithmSuite" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::Security::SecurityAlgorithmSuite ^ Basic128Sha256 { System::ServiceModel::Security::SecurityAlgorithmSuite ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -125,6 +135,8 @@
       <MemberSignature Language="C#" Value="public static System.ServiceModel.Security.SecurityAlgorithmSuite Basic128Sha256Rsa15 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.Security.SecurityAlgorithmSuite Basic128Sha256Rsa15" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityAlgorithmSuite.Basic128Sha256Rsa15" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Basic128Sha256Rsa15 As SecurityAlgorithmSuite" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::Security::SecurityAlgorithmSuite ^ Basic128Sha256Rsa15 { System::ServiceModel::Security::SecurityAlgorithmSuite ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -150,6 +162,8 @@
       <MemberSignature Language="C#" Value="public static System.ServiceModel.Security.SecurityAlgorithmSuite Basic192 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.Security.SecurityAlgorithmSuite Basic192" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityAlgorithmSuite.Basic192" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Basic192 As SecurityAlgorithmSuite" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::Security::SecurityAlgorithmSuite ^ Basic192 { System::ServiceModel::Security::SecurityAlgorithmSuite ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -175,6 +189,8 @@
       <MemberSignature Language="C#" Value="public static System.ServiceModel.Security.SecurityAlgorithmSuite Basic192Rsa15 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.Security.SecurityAlgorithmSuite Basic192Rsa15" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityAlgorithmSuite.Basic192Rsa15" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Basic192Rsa15 As SecurityAlgorithmSuite" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::Security::SecurityAlgorithmSuite ^ Basic192Rsa15 { System::ServiceModel::Security::SecurityAlgorithmSuite ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -200,6 +216,8 @@
       <MemberSignature Language="C#" Value="public static System.ServiceModel.Security.SecurityAlgorithmSuite Basic192Sha256 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.Security.SecurityAlgorithmSuite Basic192Sha256" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityAlgorithmSuite.Basic192Sha256" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Basic192Sha256 As SecurityAlgorithmSuite" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::Security::SecurityAlgorithmSuite ^ Basic192Sha256 { System::ServiceModel::Security::SecurityAlgorithmSuite ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -225,6 +243,8 @@
       <MemberSignature Language="C#" Value="public static System.ServiceModel.Security.SecurityAlgorithmSuite Basic192Sha256Rsa15 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.Security.SecurityAlgorithmSuite Basic192Sha256Rsa15" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityAlgorithmSuite.Basic192Sha256Rsa15" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Basic192Sha256Rsa15 As SecurityAlgorithmSuite" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::Security::SecurityAlgorithmSuite ^ Basic192Sha256Rsa15 { System::ServiceModel::Security::SecurityAlgorithmSuite ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -250,6 +270,8 @@
       <MemberSignature Language="C#" Value="public static System.ServiceModel.Security.SecurityAlgorithmSuite Basic256 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.Security.SecurityAlgorithmSuite Basic256" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityAlgorithmSuite.Basic256" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Basic256 As SecurityAlgorithmSuite" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::Security::SecurityAlgorithmSuite ^ Basic256 { System::ServiceModel::Security::SecurityAlgorithmSuite ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -283,6 +305,8 @@
       <MemberSignature Language="C#" Value="public static System.ServiceModel.Security.SecurityAlgorithmSuite Basic256Rsa15 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.Security.SecurityAlgorithmSuite Basic256Rsa15" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityAlgorithmSuite.Basic256Rsa15" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Basic256Rsa15 As SecurityAlgorithmSuite" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::Security::SecurityAlgorithmSuite ^ Basic256Rsa15 { System::ServiceModel::Security::SecurityAlgorithmSuite ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -308,6 +332,8 @@
       <MemberSignature Language="C#" Value="public static System.ServiceModel.Security.SecurityAlgorithmSuite Basic256Sha256 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.Security.SecurityAlgorithmSuite Basic256Sha256" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityAlgorithmSuite.Basic256Sha256" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Basic256Sha256 As SecurityAlgorithmSuite" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::Security::SecurityAlgorithmSuite ^ Basic256Sha256 { System::ServiceModel::Security::SecurityAlgorithmSuite ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -333,6 +359,8 @@
       <MemberSignature Language="C#" Value="public static System.ServiceModel.Security.SecurityAlgorithmSuite Basic256Sha256Rsa15 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.Security.SecurityAlgorithmSuite Basic256Sha256Rsa15" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityAlgorithmSuite.Basic256Sha256Rsa15" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Basic256Sha256Rsa15 As SecurityAlgorithmSuite" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::Security::SecurityAlgorithmSuite ^ Basic256Sha256Rsa15 { System::ServiceModel::Security::SecurityAlgorithmSuite ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -358,6 +386,8 @@
       <MemberSignature Language="C#" Value="public static System.ServiceModel.Security.SecurityAlgorithmSuite Default { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.Security.SecurityAlgorithmSuite Default" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityAlgorithmSuite.Default" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Default As SecurityAlgorithmSuite" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::Security::SecurityAlgorithmSuite ^ Default { System::ServiceModel::Security::SecurityAlgorithmSuite ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -383,6 +413,8 @@
       <MemberSignature Language="C#" Value="public abstract string DefaultAsymmetricKeyWrapAlgorithm { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DefaultAsymmetricKeyWrapAlgorithm" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityAlgorithmSuite.DefaultAsymmetricKeyWrapAlgorithm" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property DefaultAsymmetricKeyWrapAlgorithm As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ DefaultAsymmetricKeyWrapAlgorithm { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -408,6 +440,8 @@
       <MemberSignature Language="C#" Value="public abstract string DefaultAsymmetricSignatureAlgorithm { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DefaultAsymmetricSignatureAlgorithm" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityAlgorithmSuite.DefaultAsymmetricSignatureAlgorithm" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property DefaultAsymmetricSignatureAlgorithm As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ DefaultAsymmetricSignatureAlgorithm { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -433,6 +467,8 @@
       <MemberSignature Language="C#" Value="public abstract string DefaultCanonicalizationAlgorithm { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DefaultCanonicalizationAlgorithm" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityAlgorithmSuite.DefaultCanonicalizationAlgorithm" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property DefaultCanonicalizationAlgorithm As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ DefaultCanonicalizationAlgorithm { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -458,6 +494,8 @@
       <MemberSignature Language="C#" Value="public abstract string DefaultDigestAlgorithm { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DefaultDigestAlgorithm" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityAlgorithmSuite.DefaultDigestAlgorithm" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property DefaultDigestAlgorithm As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ DefaultDigestAlgorithm { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -483,6 +521,8 @@
       <MemberSignature Language="C#" Value="public abstract string DefaultEncryptionAlgorithm { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DefaultEncryptionAlgorithm" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityAlgorithmSuite.DefaultEncryptionAlgorithm" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property DefaultEncryptionAlgorithm As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ DefaultEncryptionAlgorithm { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -508,6 +548,8 @@
       <MemberSignature Language="C#" Value="public abstract int DefaultEncryptionKeyDerivationLength { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 DefaultEncryptionKeyDerivationLength" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityAlgorithmSuite.DefaultEncryptionKeyDerivationLength" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property DefaultEncryptionKeyDerivationLength As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property int DefaultEncryptionKeyDerivationLength { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -533,6 +575,8 @@
       <MemberSignature Language="C#" Value="public abstract int DefaultSignatureKeyDerivationLength { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 DefaultSignatureKeyDerivationLength" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityAlgorithmSuite.DefaultSignatureKeyDerivationLength" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property DefaultSignatureKeyDerivationLength As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property int DefaultSignatureKeyDerivationLength { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -558,6 +602,8 @@
       <MemberSignature Language="C#" Value="public abstract int DefaultSymmetricKeyLength { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 DefaultSymmetricKeyLength" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityAlgorithmSuite.DefaultSymmetricKeyLength" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property DefaultSymmetricKeyLength As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property int DefaultSymmetricKeyLength { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -583,6 +629,8 @@
       <MemberSignature Language="C#" Value="public abstract string DefaultSymmetricKeyWrapAlgorithm { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DefaultSymmetricKeyWrapAlgorithm" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityAlgorithmSuite.DefaultSymmetricKeyWrapAlgorithm" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property DefaultSymmetricKeyWrapAlgorithm As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ DefaultSymmetricKeyWrapAlgorithm { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -601,6 +649,8 @@
       <MemberSignature Language="C#" Value="public abstract string DefaultSymmetricSignatureAlgorithm { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DefaultSymmetricSignatureAlgorithm" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityAlgorithmSuite.DefaultSymmetricSignatureAlgorithm" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property DefaultSymmetricSignatureAlgorithm As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ DefaultSymmetricSignatureAlgorithm { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -619,6 +669,8 @@
       <MemberSignature Language="C#" Value="public abstract bool IsAsymmetricKeyLengthSupported (int length);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsAsymmetricKeyLengthSupported(int32 length) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.SecurityAlgorithmSuite.IsAsymmetricKeyLengthSupported(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function IsAsymmetricKeyLengthSupported (length As Integer) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool IsAsymmetricKeyLengthSupported(int length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -649,6 +701,8 @@
       <MemberSignature Language="C#" Value="public virtual bool IsAsymmetricKeyWrapAlgorithmSupported (string algorithm);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsAsymmetricKeyWrapAlgorithmSupported(string algorithm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.SecurityAlgorithmSuite.IsAsymmetricKeyWrapAlgorithmSupported(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function IsAsymmetricKeyWrapAlgorithmSupported (algorithm As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsAsymmetricKeyWrapAlgorithmSupported(System::String ^ algorithm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -679,6 +733,8 @@
       <MemberSignature Language="C#" Value="public virtual bool IsAsymmetricSignatureAlgorithmSupported (string algorithm);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsAsymmetricSignatureAlgorithmSupported(string algorithm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.SecurityAlgorithmSuite.IsAsymmetricSignatureAlgorithmSupported(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function IsAsymmetricSignatureAlgorithmSupported (algorithm As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsAsymmetricSignatureAlgorithmSupported(System::String ^ algorithm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -709,6 +765,8 @@
       <MemberSignature Language="C#" Value="public virtual bool IsCanonicalizationAlgorithmSupported (string algorithm);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsCanonicalizationAlgorithmSupported(string algorithm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.SecurityAlgorithmSuite.IsCanonicalizationAlgorithmSupported(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function IsCanonicalizationAlgorithmSupported (algorithm As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsCanonicalizationAlgorithmSupported(System::String ^ algorithm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -739,6 +797,8 @@
       <MemberSignature Language="C#" Value="public virtual bool IsDigestAlgorithmSupported (string algorithm);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsDigestAlgorithmSupported(string algorithm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.SecurityAlgorithmSuite.IsDigestAlgorithmSupported(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function IsDigestAlgorithmSupported (algorithm As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsDigestAlgorithmSupported(System::String ^ algorithm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -769,6 +829,8 @@
       <MemberSignature Language="C#" Value="public virtual bool IsEncryptionAlgorithmSupported (string algorithm);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsEncryptionAlgorithmSupported(string algorithm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.SecurityAlgorithmSuite.IsEncryptionAlgorithmSupported(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function IsEncryptionAlgorithmSupported (algorithm As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsEncryptionAlgorithmSupported(System::String ^ algorithm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -799,6 +861,8 @@
       <MemberSignature Language="C#" Value="public virtual bool IsEncryptionKeyDerivationAlgorithmSupported (string algorithm);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsEncryptionKeyDerivationAlgorithmSupported(string algorithm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.SecurityAlgorithmSuite.IsEncryptionKeyDerivationAlgorithmSupported(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function IsEncryptionKeyDerivationAlgorithmSupported (algorithm As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsEncryptionKeyDerivationAlgorithmSupported(System::String ^ algorithm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -822,6 +886,8 @@
       <MemberSignature Language="C#" Value="public virtual bool IsSignatureKeyDerivationAlgorithmSupported (string algorithm);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsSignatureKeyDerivationAlgorithmSupported(string algorithm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.SecurityAlgorithmSuite.IsSignatureKeyDerivationAlgorithmSupported(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function IsSignatureKeyDerivationAlgorithmSupported (algorithm As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsSignatureKeyDerivationAlgorithmSupported(System::String ^ algorithm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -845,6 +911,8 @@
       <MemberSignature Language="C#" Value="public abstract bool IsSymmetricKeyLengthSupported (int length);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsSymmetricKeyLengthSupported(int32 length) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.SecurityAlgorithmSuite.IsSymmetricKeyLengthSupported(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function IsSymmetricKeyLengthSupported (length As Integer) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool IsSymmetricKeyLengthSupported(int length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -875,6 +943,8 @@
       <MemberSignature Language="C#" Value="public virtual bool IsSymmetricKeyWrapAlgorithmSupported (string algorithm);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsSymmetricKeyWrapAlgorithmSupported(string algorithm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.SecurityAlgorithmSuite.IsSymmetricKeyWrapAlgorithmSupported(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function IsSymmetricKeyWrapAlgorithmSupported (algorithm As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsSymmetricKeyWrapAlgorithmSupported(System::String ^ algorithm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -898,6 +968,8 @@
       <MemberSignature Language="C#" Value="public virtual bool IsSymmetricSignatureAlgorithmSupported (string algorithm);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsSymmetricSignatureAlgorithmSupported(string algorithm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.SecurityAlgorithmSuite.IsSymmetricSignatureAlgorithmSupported(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function IsSymmetricSignatureAlgorithmSupported (algorithm As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsSymmetricSignatureAlgorithmSupported(System::String ^ algorithm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -921,6 +993,8 @@
       <MemberSignature Language="C#" Value="public static System.ServiceModel.Security.SecurityAlgorithmSuite TripleDes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.Security.SecurityAlgorithmSuite TripleDes" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityAlgorithmSuite.TripleDes" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TripleDes As SecurityAlgorithmSuite" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::Security::SecurityAlgorithmSuite ^ TripleDes { System::ServiceModel::Security::SecurityAlgorithmSuite ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -946,6 +1020,8 @@
       <MemberSignature Language="C#" Value="public static System.ServiceModel.Security.SecurityAlgorithmSuite TripleDesRsa15 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.Security.SecurityAlgorithmSuite TripleDesRsa15" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityAlgorithmSuite.TripleDesRsa15" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TripleDesRsa15 As SecurityAlgorithmSuite" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::Security::SecurityAlgorithmSuite ^ TripleDesRsa15 { System::ServiceModel::Security::SecurityAlgorithmSuite ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -971,6 +1047,8 @@
       <MemberSignature Language="C#" Value="public static System.ServiceModel.Security.SecurityAlgorithmSuite TripleDesSha256 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.Security.SecurityAlgorithmSuite TripleDesSha256" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityAlgorithmSuite.TripleDesSha256" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TripleDesSha256 As SecurityAlgorithmSuite" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::Security::SecurityAlgorithmSuite ^ TripleDesSha256 { System::ServiceModel::Security::SecurityAlgorithmSuite ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -996,6 +1074,8 @@
       <MemberSignature Language="C#" Value="public static System.ServiceModel.Security.SecurityAlgorithmSuite TripleDesSha256Rsa15 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.Security.SecurityAlgorithmSuite TripleDesSha256Rsa15" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityAlgorithmSuite.TripleDesSha256Rsa15" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TripleDesSha256Rsa15 As SecurityAlgorithmSuite" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::Security::SecurityAlgorithmSuite ^ TripleDesSha256Rsa15 { System::ServiceModel::Security::SecurityAlgorithmSuite ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="ExpandSegment" FullName="System.Data.Services.ExpandSegment">
+﻿<Type Name="ExpandSegment" FullName="System.Data.Services.ExpandSegment">
   <TypeSignature Language="C#" Value="public class ExpandSegment" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ExpandSegment extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Data.Services.ExpandSegment" />
+  <TypeSignature Language="VB.NET" Value="Public Class ExpandSegment" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ExpandSegment" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +47,8 @@ http://host/service.svc/Orders?$expand=OrderLines
       <MemberSignature Language="C#" Value="public ExpandSegment (string name, System.Linq.Expressions.Expression filter);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class System.Linq.Expressions.Expression filter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.ExpandSegment.#ctor(System.String,System.Linq.Expressions.Expression)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, filter As Expression)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ExpandSegment(System::String ^ name, System::Linq::Expressions::Expression ^ filter);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -65,6 +69,8 @@ http://host/service.svc/Orders?$expand=OrderLines
       <MemberSignature Language="C#" Value="public System.Data.Services.Providers.ResourceProperty ExpandedProperty { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Services.Providers.ResourceProperty ExpandedProperty" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.ExpandSegment.ExpandedProperty" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExpandedProperty As ResourceProperty" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Services::Providers::ResourceProperty ^ ExpandedProperty { System::Data::Services::Providers::ResourceProperty ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -83,6 +89,8 @@ http://host/service.svc/Orders?$expand=OrderLines
       <MemberSignature Language="C#" Value="public System.Linq.Expressions.Expression Filter { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Linq.Expressions.Expression Filter" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.ExpandSegment.Filter" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Filter As Expression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Linq::Expressions::Expression ^ Filter { System::Linq::Expressions::Expression ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -101,6 +109,8 @@ http://host/service.svc/Orders?$expand=OrderLines
       <MemberSignature Language="C#" Value="public bool HasFilter { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasFilter" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.ExpandSegment.HasFilter" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasFilter As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasFilter { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -119,6 +129,8 @@ http://host/service.svc/Orders?$expand=OrderLines
       <MemberSignature Language="C#" Value="public int MaxResultsExpected { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxResultsExpected" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.ExpandSegment.MaxResultsExpected" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MaxResultsExpected As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxResultsExpected { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -144,6 +156,8 @@ http://host/service.svc/Orders?$expand=OrderLines
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.ExpandSegment.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -162,6 +176,8 @@ http://host/service.svc/Orders?$expand=OrderLines
       <MemberSignature Language="C#" Value="public static bool PathHasFilter (System.Collections.Generic.IEnumerable&lt;System.Data.Services.ExpandSegment&gt; path);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool PathHasFilter(class System.Collections.Generic.IEnumerable`1&lt;class System.Data.Services.ExpandSegment&gt; path) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.ExpandSegment.PathHasFilter(System.Collections.Generic.IEnumerable{System.Data.Services.ExpandSegment})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PathHasFilter (path As IEnumerable(Of ExpandSegment)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool PathHasFilter(System::Collections::Generic::IEnumerable&lt;System::Data::Services::ExpandSegment ^&gt; ^ path);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>

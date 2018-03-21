@@ -1,7 +1,9 @@
-<Type Name="ToolboxItemCollection" FullName="System.Drawing.Design.ToolboxItemCollection">
+﻿<Type Name="ToolboxItemCollection" FullName="System.Drawing.Design.ToolboxItemCollection">
   <TypeSignature Language="C#" Value="public sealed class ToolboxItemCollection : System.Collections.ReadOnlyCollectionBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ToolboxItemCollection extends System.Collections.ReadOnlyCollectionBase" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Design.ToolboxItemCollection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ToolboxItemCollection&#xA;Inherits ReadOnlyCollectionBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ToolboxItemCollection sealed : System::Collections::ReadOnlyCollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,10 +17,21 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Design.ToolboxItemCollection" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ToolboxItemCollection (System.Drawing.Design.ToolboxItem[] value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Design.ToolboxItem[] value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.ToolboxItemCollection.#ctor(System.Drawing.Design.ToolboxItem[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As ToolboxItem())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ToolboxItemCollection(cli::array &lt;System::Drawing::Design::ToolboxItem ^&gt; ^ value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -48,6 +61,8 @@
       <MemberSignature Language="C#" Value="public ToolboxItemCollection (System.Drawing.Design.ToolboxItemCollection value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Design.ToolboxItemCollection value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.ToolboxItemCollection.#ctor(System.Drawing.Design.ToolboxItemCollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As ToolboxItemCollection)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ToolboxItemCollection(System::Drawing::Design::ToolboxItemCollection ^ value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -77,6 +92,8 @@
       <MemberSignature Language="C#" Value="public bool Contains (System.Drawing.Design.ToolboxItem value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.Drawing.Design.ToolboxItem value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.ToolboxItemCollection.Contains(System.Drawing.Design.ToolboxItem)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (value As ToolboxItem) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Drawing::Design::ToolboxItem ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -111,6 +128,8 @@
       <MemberSignature Language="C#" Value="public void CopyTo (System.Drawing.Design.ToolboxItem[] array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.Drawing.Design.ToolboxItem[] array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.ToolboxItemCollection.CopyTo(System.Drawing.Design.ToolboxItem[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As ToolboxItem(), index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Drawing::Design::ToolboxItem ^&gt; ^ array, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -145,6 +164,8 @@
       <MemberSignature Language="C#" Value="public int IndexOf (System.Drawing.Design.ToolboxItem value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.Drawing.Design.ToolboxItem value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.ToolboxItemCollection.IndexOf(System.Drawing.Design.ToolboxItem)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As ToolboxItem) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Drawing::Design::ToolboxItem ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -167,6 +188,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Design.ToolboxItem this[int index] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Design.ToolboxItem Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Design.ToolboxItemCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As ToolboxItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Design::ToolboxItem ^ default[int] { System::Drawing::Design::ToolboxItem ^ get(int index); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -196,14 +219,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Design.ToolboxItemCollection" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

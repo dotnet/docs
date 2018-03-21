@@ -1,7 +1,9 @@
-<Type Name="Saml2SubjectConfirmation" FullName="System.IdentityModel.Tokens.Saml2SubjectConfirmation">
+﻿<Type Name="Saml2SubjectConfirmation" FullName="System.IdentityModel.Tokens.Saml2SubjectConfirmation">
   <TypeSignature Language="C#" Value="public class Saml2SubjectConfirmation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Saml2SubjectConfirmation extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.Saml2SubjectConfirmation" />
+  <TypeSignature Language="VB.NET" Value="Public Class Saml2SubjectConfirmation" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Saml2SubjectConfirmation" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,10 +24,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.Saml2SubjectConfirmation" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public Saml2SubjectConfirmation (Uri method);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri method) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SubjectConfirmation.#ctor(System.Uri)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (method As Uri)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Saml2SubjectConfirmation(Uri ^ method);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -55,6 +68,8 @@
       <MemberSignature Language="C#" Value="public Saml2SubjectConfirmation (Uri method, System.IdentityModel.Tokens.Saml2SubjectConfirmationData data);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri method, class System.IdentityModel.Tokens.Saml2SubjectConfirmationData data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SubjectConfirmation.#ctor(System.Uri,System.IdentityModel.Tokens.Saml2SubjectConfirmationData)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (method As Uri, data As Saml2SubjectConfirmationData)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Saml2SubjectConfirmation(Uri ^ method, System::IdentityModel::Tokens::Saml2SubjectConfirmationData ^ data);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -79,6 +94,8 @@
       <MemberSignature Language="C#" Value="public Uri Method { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri Method" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2SubjectConfirmation.Method" />
+      <MemberSignature Language="VB.NET" Value="Public Property Method As Uri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Method { Uri ^ get(); void set(Uri ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -106,6 +123,8 @@
       <MemberSignature Language="C#" Value="public System.IdentityModel.Tokens.Saml2NameIdentifier NameIdentifier { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Tokens.Saml2NameIdentifier NameIdentifier" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2SubjectConfirmation.NameIdentifier" />
+      <MemberSignature Language="VB.NET" Value="Public Property NameIdentifier As Saml2NameIdentifier" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Tokens::Saml2NameIdentifier ^ NameIdentifier { System::IdentityModel::Tokens::Saml2NameIdentifier ^ get(); void set(System::IdentityModel::Tokens::Saml2NameIdentifier ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -124,6 +143,8 @@
       <MemberSignature Language="C#" Value="public System.IdentityModel.Tokens.Saml2SubjectConfirmationData SubjectConfirmationData { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Tokens.Saml2SubjectConfirmationData SubjectConfirmationData" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2SubjectConfirmation.SubjectConfirmationData" />
+      <MemberSignature Language="VB.NET" Value="Public Property SubjectConfirmationData As Saml2SubjectConfirmationData" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Tokens::Saml2SubjectConfirmationData ^ SubjectConfirmationData { System::IdentityModel::Tokens::Saml2SubjectConfirmationData ^ get(); void set(System::IdentityModel::Tokens::Saml2SubjectConfirmationData ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -145,14 +166,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.Saml2SubjectConfirmation" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

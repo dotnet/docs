@@ -1,7 +1,9 @@
-<Type Name="PermissionState" FullName="System.Security.Permissions.PermissionState">
+﻿<Type Name="PermissionState" FullName="System.Security.Permissions.PermissionState">
   <TypeSignature Language="C#" Value="public enum PermissionState" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed PermissionState extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.PermissionState" />
+  <TypeSignature Language="VB.NET" Value="Public Enum PermissionState" />
+  <TypeSignature Language="C++ CLI" Value="public enum class PermissionState" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -39,6 +41,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.PermissionState None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.PermissionState.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -52,6 +56,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Permissions.PermissionState</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>No access to the resource protected by the permission.</summary>
       </Docs>
@@ -60,6 +65,8 @@
       <MemberSignature Language="C#" Value="Unrestricted" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.PermissionState Unrestricted = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.PermissionState.Unrestricted" />
+      <MemberSignature Language="VB.NET" Value="Unrestricted" />
+      <MemberSignature Language="C++ CLI" Value="Unrestricted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -73,6 +80,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Permissions.PermissionState</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Full access to the resource protected by the permission.</summary>
       </Docs>

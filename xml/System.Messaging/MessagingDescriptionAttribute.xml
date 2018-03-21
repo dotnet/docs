@@ -1,7 +1,9 @@
-<Type Name="MessagingDescriptionAttribute" FullName="System.Messaging.MessagingDescriptionAttribute">
+﻿<Type Name="MessagingDescriptionAttribute" FullName="System.Messaging.MessagingDescriptionAttribute">
   <TypeSignature Language="C#" Value="public class MessagingDescriptionAttribute : System.ComponentModel.DescriptionAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MessagingDescriptionAttribute extends System.ComponentModel.DescriptionAttribute" />
   <TypeSignature Language="DocId" Value="T:System.Messaging.MessagingDescriptionAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public Class MessagingDescriptionAttribute&#xA;Inherits DescriptionAttribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MessagingDescriptionAttribute : System::ComponentModel::DescriptionAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.Messaging</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +36,8 @@
       <MemberSignature Language="C#" Value="public MessagingDescriptionAttribute (string description);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string description) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessagingDescriptionAttribute.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (description As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MessagingDescriptionAttribute(System::String ^ description);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -60,6 +64,8 @@
       <MemberSignature Language="C#" Value="public override string Description { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Description" />
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessagingDescriptionAttribute.Description" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Description As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Description { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>

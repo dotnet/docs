@@ -1,7 +1,9 @@
-<Type Name="SubscribeContextCallback" FullName="System.Activities.Presentation.SubscribeContextCallback">
+﻿<Type Name="SubscribeContextCallback" FullName="System.Activities.Presentation.SubscribeContextCallback">
   <TypeSignature Language="C#" Value="public delegate void SubscribeContextCallback(ContextItem item);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SubscribeContextCallback extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.SubscribeContextCallback" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub SubscribeContextCallback(item As ContextItem)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void SubscribeContextCallback(ContextItem ^ item);" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

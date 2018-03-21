@@ -1,7 +1,9 @@
-<Type Name="KeyInfoX509Data" FullName="System.Security.Cryptography.Xml.KeyInfoX509Data">
+﻿<Type Name="KeyInfoX509Data" FullName="System.Security.Cryptography.Xml.KeyInfoX509Data">
   <TypeSignature Language="C#" Value="public class KeyInfoX509Data : System.Security.Cryptography.Xml.KeyInfoClause" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit KeyInfoX509Data extends System.Security.Cryptography.Xml.KeyInfoClause" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Xml.KeyInfoX509Data" />
+  <TypeSignature Language="VB.NET" Value="Public Class KeyInfoX509Data&#xA;Inherits KeyInfoClause" />
+  <TypeSignature Language="C++ CLI" Value="public ref class KeyInfoX509Data : System::Security::Cryptography::Xml::KeyInfoClause" />
   <AssemblyInfo>
     <AssemblyName>System.Security</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,10 +49,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Xml.KeyInfoX509Data" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public KeyInfoX509Data ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.KeyInfoX509Data.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; KeyInfoX509Data();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -70,6 +83,8 @@
       <MemberSignature Language="C#" Value="public KeyInfoX509Data (byte[] rgbCert);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int8[] rgbCert) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.KeyInfoX509Data.#ctor(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (rgbCert As Byte())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; KeyInfoX509Data(cli::array &lt;System::Byte&gt; ^ rgbCert);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -92,6 +107,8 @@
       <MemberSignature Language="C#" Value="public KeyInfoX509Data (System.Security.Cryptography.X509Certificates.X509Certificate cert);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Cryptography.X509Certificates.X509Certificate cert) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.KeyInfoX509Data.#ctor(System.Security.Cryptography.X509Certificates.X509Certificate)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (cert As X509Certificate)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; KeyInfoX509Data(System::Security::Cryptography::X509Certificates::X509Certificate ^ cert);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -134,6 +151,8 @@
       <MemberSignature Language="C#" Value="public KeyInfoX509Data (System.Security.Cryptography.X509Certificates.X509Certificate cert, System.Security.Cryptography.X509Certificates.X509IncludeOption includeOption);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Cryptography.X509Certificates.X509Certificate cert, valuetype System.Security.Cryptography.X509Certificates.X509IncludeOption includeOption) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.KeyInfoX509Data.#ctor(System.Security.Cryptography.X509Certificates.X509Certificate,System.Security.Cryptography.X509Certificates.X509IncludeOption)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (cert As X509Certificate, includeOption As X509IncludeOption)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; KeyInfoX509Data(System::Security::Cryptography::X509Certificates::X509Certificate ^ cert, System::Security::Cryptography::X509Certificates::X509IncludeOption includeOption);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -170,6 +189,8 @@
       <MemberSignature Language="C#" Value="public void AddCertificate (System.Security.Cryptography.X509Certificates.X509Certificate certificate);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddCertificate(class System.Security.Cryptography.X509Certificates.X509Certificate certificate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.KeyInfoX509Data.AddCertificate(System.Security.Cryptography.X509Certificates.X509Certificate)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddCertificate (certificate As X509Certificate)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddCertificate(System::Security::Cryptography::X509Certificates::X509Certificate ^ certificate);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -196,6 +217,8 @@
       <MemberSignature Language="C#" Value="public void AddIssuerSerial (string issuerName, string serialNumber);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddIssuerSerial(string issuerName, string serialNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.KeyInfoX509Data.AddIssuerSerial(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddIssuerSerial (issuerName As String, serialNumber As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddIssuerSerial(System::String ^ issuerName, System::String ^ serialNumber);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -250,6 +273,8 @@
       <MemberSignature Language="C#" Value="public void AddSubjectKeyId (byte[] subjectKeyId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddSubjectKeyId(unsigned int8[] subjectKeyId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.KeyInfoX509Data.AddSubjectKeyId(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddSubjectKeyId (subjectKeyId As Byte())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddSubjectKeyId(cli::array &lt;System::Byte&gt; ^ subjectKeyId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -282,6 +307,8 @@
       <MemberSignature Language="C#" Value="public void AddSubjectKeyId (string subjectKeyId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddSubjectKeyId(string subjectKeyId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.KeyInfoX509Data.AddSubjectKeyId(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddSubjectKeyId (subjectKeyId As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddSubjectKeyId(System::String ^ subjectKeyId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -319,6 +346,8 @@
       <MemberSignature Language="C#" Value="public void AddSubjectName (string subjectName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddSubjectName(string subjectName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.KeyInfoX509Data.AddSubjectName(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddSubjectName (subjectName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddSubjectName(System::String ^ subjectName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -344,6 +373,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.ArrayList Certificates { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ArrayList Certificates" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.KeyInfoX509Data.Certificates" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Certificates As ArrayList" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ArrayList ^ Certificates { System::Collections::ArrayList ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -366,6 +397,8 @@
       <MemberSignature Language="C#" Value="public byte[] CRL { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] CRL" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.KeyInfoX509Data.CRL" />
+      <MemberSignature Language="VB.NET" Value="Public Property CRL As Byte()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Byte&gt; ^ CRL { cli::array &lt;System::Byte&gt; ^ get(); void set(cli::array &lt;System::Byte&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -388,6 +421,8 @@
       <MemberSignature Language="C#" Value="public override System.Xml.XmlElement GetXml ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Xml.XmlElement GetXml() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.KeyInfoX509Data.GetXml" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetXml () As XmlElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Xml::XmlElement ^ GetXml();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -418,6 +453,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.ArrayList IssuerSerials { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ArrayList IssuerSerials" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.KeyInfoX509Data.IssuerSerials" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IssuerSerials As ArrayList" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ArrayList ^ IssuerSerials { System::Collections::ArrayList ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -451,6 +488,8 @@
       <MemberSignature Language="C#" Value="public override void LoadXml (System.Xml.XmlElement element);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void LoadXml(class System.Xml.XmlElement element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.KeyInfoX509Data.LoadXml(System.Xml.XmlElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub LoadXml (element As XmlElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void LoadXml(System::Xml::XmlElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -489,6 +528,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.ArrayList SubjectKeyIds { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ArrayList SubjectKeyIds" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.KeyInfoX509Data.SubjectKeyIds" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SubjectKeyIds As ArrayList" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ArrayList ^ SubjectKeyIds { System::Collections::ArrayList ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -518,6 +559,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.ArrayList SubjectNames { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ArrayList SubjectNames" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.KeyInfoX509Data.SubjectNames" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SubjectNames As ArrayList" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ArrayList ^ SubjectNames { System::Collections::ArrayList ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -543,14 +586,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Xml.KeyInfoX509Data" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

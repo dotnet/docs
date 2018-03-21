@@ -1,7 +1,9 @@
-<Type Name="Binding" FullName="System.ServiceModel.Channels.Binding">
+﻿<Type Name="Binding" FullName="System.ServiceModel.Channels.Binding">
   <TypeSignature Language="C#" Value="public abstract class Binding : System.ServiceModel.IDefaultCommunicationTimeouts" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Binding extends System.Object implements class System.ServiceModel.IDefaultCommunicationTimeouts" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.Binding" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class Binding&#xA;Implements IDefaultCommunicationTimeouts" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Binding abstract : System::ServiceModel::IDefaultCommunicationTimeouts" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -67,10 +69,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.Binding" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected Binding ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.Binding.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; Binding();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -106,6 +120,8 @@
       <MemberSignature Language="C#" Value="protected Binding (string name, string ns);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(string name, string ns) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.Binding.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (name As String, ns As String)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; Binding(System::String ^ name, System::String ^ ns);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -140,10 +156,22 @@
           <paramref name="ns" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="BuildChannelFactory&lt;TChannel&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Builds the channel factory stack on the client specified by the binding.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="BuildChannelFactory&lt;TChannel&gt;">
       <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.IChannelFactory&lt;TChannel&gt; BuildChannelFactory&lt;TChannel&gt; (params object[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ServiceModel.Channels.IChannelFactory`1&lt;!!TChannel&gt; BuildChannelFactory&lt;TChannel&gt;(object[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.Binding.BuildChannelFactory``1(System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function BuildChannelFactory(Of TChannel) (ParamArray parameters As Object()) As IChannelFactory(Of TChannel)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; System::ServiceModel::Channels::IChannelFactory&lt;TChannel&gt; ^ BuildChannelFactory(... cli::array &lt;System::Object ^&gt; ^ parameters);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -184,6 +212,8 @@
       <MemberSignature Language="C#" Value="public virtual System.ServiceModel.Channels.IChannelFactory&lt;TChannel&gt; BuildChannelFactory&lt;TChannel&gt; (System.ServiceModel.Channels.BindingParameterCollection parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.IChannelFactory`1&lt;!!TChannel&gt; BuildChannelFactory&lt;TChannel&gt;(class System.ServiceModel.Channels.BindingParameterCollection parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.Binding.BuildChannelFactory``1(System.ServiceModel.Channels.BindingParameterCollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function BuildChannelFactory(Of TChannel) (parameters As BindingParameterCollection) As IChannelFactory(Of TChannel)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; virtual System::ServiceModel::Channels::IChannelFactory&lt;TChannel&gt; ^ BuildChannelFactory(System::ServiceModel::Channels::BindingParameterCollection ^ parameters);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -214,10 +244,21 @@
         <exception cref="T:System.InvalidOperationException">Transport element is missing or out of order or scheme is invalid or the message version is not specified.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="BuildChannelListener&lt;TChannel&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Builds the channel listener on the service that accepts a specified type of channel and that satisfies the features specified.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="BuildChannelListener&lt;TChannel&gt;">
       <MemberSignature Language="C#" Value="public virtual System.ServiceModel.Channels.IChannelListener&lt;TChannel&gt; BuildChannelListener&lt;TChannel&gt; (params object[] parameters) where TChannel : class, System.ServiceModel.Channels.IChannel;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.IChannelListener`1&lt;!!TChannel&gt; BuildChannelListener&lt;class (class System.ServiceModel.Channels.IChannel) TChannel&gt;(object[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.Binding.BuildChannelListener``1(System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function BuildChannelListener(Of TChannel As {Class, IChannel}) (ParamArray parameters As Object()) As IChannelListener(Of TChannel)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; where TChannel : class, System::ServiceModel::Channels::IChannel virtual System::ServiceModel::Channels::IChannelListener&lt;TChannel&gt; ^ BuildChannelListener(... cli::array &lt;System::Object ^&gt; ^ parameters);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -256,6 +297,8 @@
       <MemberSignature Language="C#" Value="public virtual System.ServiceModel.Channels.IChannelListener&lt;TChannel&gt; BuildChannelListener&lt;TChannel&gt; (System.ServiceModel.Channels.BindingParameterCollection parameters) where TChannel : class, System.ServiceModel.Channels.IChannel;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.IChannelListener`1&lt;!!TChannel&gt; BuildChannelListener&lt;class (class System.ServiceModel.Channels.IChannel) TChannel&gt;(class System.ServiceModel.Channels.BindingParameterCollection parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.Binding.BuildChannelListener``1(System.ServiceModel.Channels.BindingParameterCollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function BuildChannelListener(Of TChannel As {Class, IChannel}) (parameters As BindingParameterCollection) As IChannelListener(Of TChannel)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; where TChannel : class, System::ServiceModel::Channels::IChannel virtual System::ServiceModel::Channels::IChannelListener&lt;TChannel&gt; ^ BuildChannelListener(System::ServiceModel::Channels::BindingParameterCollection ^ parameters);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -285,83 +328,11 @@
       </Docs>
     </Member>
     <Member MemberName="BuildChannelListener&lt;TChannel&gt;">
-      <MemberSignature Language="C#" Value="public virtual System.ServiceModel.Channels.IChannelListener&lt;TChannel&gt; BuildChannelListener&lt;TChannel&gt; (Uri listenUri, params object[] parameters) where TChannel : class, System.ServiceModel.Channels.IChannel;" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.IChannelListener`1&lt;!!TChannel&gt; BuildChannelListener&lt;class (class System.ServiceModel.Channels.IChannel) TChannel&gt;(class System.Uri listenUri, object[] parameters) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.Binding.BuildChannelListener``1(System.Uri,System.Object[])" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.ServiceModel.Channels.IChannelListener&lt;TChannel&gt;</ReturnType>
-      </ReturnValue>
-      <TypeParameters>
-        <TypeParameter Name="TChannel">
-          <Constraints>
-            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
-            <InterfaceName>System.ServiceModel.Channels.IChannel</InterfaceName>
-          </Constraints>
-        </TypeParameter>
-      </TypeParameters>
-      <Parameters>
-        <Parameter Name="listenUriBaseAddress" Type="System.Uri" />
-        <Parameter Name="parameters" Type="System.Object[]">
-          <Attributes>
-            <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
-            </Attribute>
-          </Attributes>
-        </Parameter>
-      </Parameters>
-      <Docs>
-        <typeparam name="TChannel">The type of channel the channel listener accepts.</typeparam>
-        <param name="listenUri">To be added.</param>
-        <param name="parameters">The object array that specifies requirements for the channel factory that is built.</param>
-        <summary>Builds the channel listener on the service that accepts a specified type of channel and that satisfies the features specified.</summary>
-        <returns>An <see cref="T:System.ServiceModel.Channels.IChannelListener`1" /> of type <paramref name="TChannel" /> that satisfies the features specified.</returns>
-        <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">Transport element is missing or out of order or scheme is invalid or the message version is not specified.</exception>
-      </Docs>
-    </Member>
-    <Member MemberName="BuildChannelListener&lt;TChannel&gt;">
-      <MemberSignature Language="C#" Value="public virtual System.ServiceModel.Channels.IChannelListener&lt;TChannel&gt; BuildChannelListener&lt;TChannel&gt; (Uri listenUri, System.ServiceModel.Channels.BindingParameterCollection parameters) where TChannel : class, System.ServiceModel.Channels.IChannel;" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.IChannelListener`1&lt;!!TChannel&gt; BuildChannelListener&lt;class (class System.ServiceModel.Channels.IChannel) TChannel&gt;(class System.Uri listenUri, class System.ServiceModel.Channels.BindingParameterCollection parameters) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.Binding.BuildChannelListener``1(System.Uri,System.ServiceModel.Channels.BindingParameterCollection)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.ServiceModel.Channels.IChannelListener&lt;TChannel&gt;</ReturnType>
-      </ReturnValue>
-      <TypeParameters>
-        <TypeParameter Name="TChannel">
-          <Constraints>
-            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
-            <InterfaceName>System.ServiceModel.Channels.IChannel</InterfaceName>
-          </Constraints>
-        </TypeParameter>
-      </TypeParameters>
-      <Parameters>
-        <Parameter Name="listenUriBaseAddress" Type="System.Uri" />
-        <Parameter Name="parameters" Type="System.ServiceModel.Channels.BindingParameterCollection" />
-      </Parameters>
-      <Docs>
-        <typeparam name="TChannel">The type of channel the channel listener accepts.</typeparam>
-        <param name="listenUri">To be added.</param>
-        <param name="parameters">The <see cref="T:System.ServiceModel.Channels.BindingParameterCollection" /> that specifies requirements for the channel listener that is built.</param>
-        <summary>Builds the channel listener on the service that accepts a specified type of channel and that satisfies the features specified.</summary>
-        <returns>An <see cref="T:System.ServiceModel.Channels.IChannelListener`1" /> of type <paramref name="TChannel" /> that satisfies the features specified.</returns>
-        <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">Transport element is missing or out of order or scheme is invalid or the message version is not specified.</exception>
-      </Docs>
-    </Member>
-    <Member MemberName="BuildChannelListener&lt;TChannel&gt;">
       <MemberSignature Language="C#" Value="public virtual System.ServiceModel.Channels.IChannelListener&lt;TChannel&gt; BuildChannelListener&lt;TChannel&gt; (Uri listenUriBaseAddress, string listenUriRelativeAddress, params object[] parameters) where TChannel : class, System.ServiceModel.Channels.IChannel;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.IChannelListener`1&lt;!!TChannel&gt; BuildChannelListener&lt;class (class System.ServiceModel.Channels.IChannel) TChannel&gt;(class System.Uri listenUriBaseAddress, string listenUriRelativeAddress, object[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.Binding.BuildChannelListener``1(System.Uri,System.String,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function BuildChannelListener(Of TChannel As {Class, IChannel}) (listenUriBaseAddress As Uri, listenUriRelativeAddress As String, ParamArray parameters As Object()) As IChannelListener(Of TChannel)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; where TChannel : class, System::ServiceModel::Channels::IChannel virtual System::ServiceModel::Channels::IChannelListener&lt;TChannel&gt; ^ BuildChannelListener(Uri ^ listenUriBaseAddress, System::String ^ listenUriRelativeAddress, ... cli::array &lt;System::Object ^&gt; ^ parameters);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -404,6 +375,8 @@
       <MemberSignature Language="C#" Value="public virtual System.ServiceModel.Channels.IChannelListener&lt;TChannel&gt; BuildChannelListener&lt;TChannel&gt; (Uri listenUriBaseAddress, string listenUriRelativeAddress, System.ServiceModel.Channels.BindingParameterCollection parameters) where TChannel : class, System.ServiceModel.Channels.IChannel;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.IChannelListener`1&lt;!!TChannel&gt; BuildChannelListener&lt;class (class System.ServiceModel.Channels.IChannel) TChannel&gt;(class System.Uri listenUriBaseAddress, string listenUriRelativeAddress, class System.ServiceModel.Channels.BindingParameterCollection parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.Binding.BuildChannelListener``1(System.Uri,System.String,System.ServiceModel.Channels.BindingParameterCollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function BuildChannelListener(Of TChannel As {Class, IChannel}) (listenUriBaseAddress As Uri, listenUriRelativeAddress As String, parameters As BindingParameterCollection) As IChannelListener(Of TChannel)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; where TChannel : class, System::ServiceModel::Channels::IChannel virtual System::ServiceModel::Channels::IChannelListener&lt;TChannel&gt; ^ BuildChannelListener(Uri ^ listenUriBaseAddress, System::String ^ listenUriRelativeAddress, System::ServiceModel::Channels::BindingParameterCollection ^ parameters);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -437,9 +410,102 @@
       </Docs>
     </Member>
     <Member MemberName="BuildChannelListener&lt;TChannel&gt;">
+      <MemberSignature Language="C#" Value="public virtual System.ServiceModel.Channels.IChannelListener&lt;TChannel&gt; BuildChannelListener&lt;TChannel&gt; (Uri listenUriBaseAddress, params object[] parameters) where TChannel : class, System.ServiceModel.Channels.IChannel;" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;xamarinandroid-7.1;xamarinios-10.8" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.IChannelListener`1&lt;!!TChannel&gt; BuildChannelListener&lt;class (class System.ServiceModel.Channels.IChannel) TChannel&gt;(class System.Uri listenUriBaseAddress, object[] parameters) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;xamarinandroid-7.1;xamarinios-10.8" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.Binding.BuildChannelListener``1(System.Uri,System.Object[])" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;xamarinandroid-7.1;xamarinios-10.8" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function BuildChannelListener(Of TChannel As {Class, IChannel}) (listenUriBaseAddress As Uri, ParamArray parameters As Object()) As IChannelListener(Of TChannel)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;xamarinandroid-7.1;xamarinios-10.8" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; where TChannel : class, System::ServiceModel::Channels::IChannel virtual System::ServiceModel::Channels::IChannelListener&lt;TChannel&gt; ^ BuildChannelListener(Uri ^ listenUriBaseAddress, ... cli::array &lt;System::Object ^&gt; ^ parameters);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;xamarinandroid-7.1;xamarinios-10.8" />
+      <MemberSignature Language="C#" Value="public virtual System.ServiceModel.Channels.IChannelListener&lt;TChannel&gt; BuildChannelListener&lt;TChannel&gt; (Uri listenUri, params object[] parameters) where TChannel : class, System.ServiceModel.Channels.IChannel;" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.IChannelListener`1&lt;!!TChannel&gt; BuildChannelListener&lt;class (class System.ServiceModel.Channels.IChannel) TChannel&gt;(class System.Uri listenUri, object[] parameters) cil managed" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.Binding.BuildChannelListener``1(System.Uri,System.Object[])" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function BuildChannelListener(Of TChannel As {Class, IChannel}) (listenUri As Uri, ParamArray parameters As Object()) As IChannelListener(Of TChannel)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; where TChannel : class, System::ServiceModel::Channels::IChannel virtual System::ServiceModel::Channels::IChannelListener&lt;TChannel&gt; ^ BuildChannelListener(Uri ^ listenUri, ... cli::array &lt;System::Object ^&gt; ^ parameters);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.IChannelListener&lt;TChannel&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TChannel">
+          <Constraints>
+            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+            <InterfaceName>System.ServiceModel.Channels.IChannel</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="listenUriBaseAddress" Type="System.Uri" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;xamarinandroid-7.1;xamarinios-10.8" />
+        <Parameter Name="listenUri" Type="System.Uri" Index="0" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="parameters" Type="System.Object[]" Index="1">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <typeparam name="TChannel">The type of channel the channel listener accepts.</typeparam>
+        <param name="listenUriBaseAddress">To be added.</param>
+        <param name="listenUri">To be added.</param>
+        <param name="parameters">The object array that specifies requirements for the channel factory that is built.</param>
+        <summary>Builds the channel listener on the service that accepts a specified type of channel and that satisfies the features specified.</summary>
+        <returns>An <see cref="T:System.ServiceModel.Channels.IChannelListener`1" /> of type <paramref name="TChannel" /> that satisfies the features specified.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">Transport element is missing or out of order or scheme is invalid or the message version is not specified.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="BuildChannelListener&lt;TChannel&gt;">
+      <MemberSignature Language="C#" Value="public virtual System.ServiceModel.Channels.IChannelListener&lt;TChannel&gt; BuildChannelListener&lt;TChannel&gt; (Uri listenUriBaseAddress, System.ServiceModel.Channels.BindingParameterCollection parameters) where TChannel : class, System.ServiceModel.Channels.IChannel;" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;xamarinandroid-7.1;xamarinios-10.8" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.IChannelListener`1&lt;!!TChannel&gt; BuildChannelListener&lt;class (class System.ServiceModel.Channels.IChannel) TChannel&gt;(class System.Uri listenUriBaseAddress, class System.ServiceModel.Channels.BindingParameterCollection parameters) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;xamarinandroid-7.1;xamarinios-10.8" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.Binding.BuildChannelListener``1(System.Uri,System.ServiceModel.Channels.BindingParameterCollection)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;xamarinandroid-7.1;xamarinios-10.8" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function BuildChannelListener(Of TChannel As {Class, IChannel}) (listenUriBaseAddress As Uri, parameters As BindingParameterCollection) As IChannelListener(Of TChannel)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;xamarinandroid-7.1;xamarinios-10.8" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; where TChannel : class, System::ServiceModel::Channels::IChannel virtual System::ServiceModel::Channels::IChannelListener&lt;TChannel&gt; ^ BuildChannelListener(Uri ^ listenUriBaseAddress, System::ServiceModel::Channels::BindingParameterCollection ^ parameters);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;xamarinandroid-7.1;xamarinios-10.8" />
+      <MemberSignature Language="C#" Value="public virtual System.ServiceModel.Channels.IChannelListener&lt;TChannel&gt; BuildChannelListener&lt;TChannel&gt; (Uri listenUri, System.ServiceModel.Channels.BindingParameterCollection parameters) where TChannel : class, System.ServiceModel.Channels.IChannel;" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.IChannelListener`1&lt;!!TChannel&gt; BuildChannelListener&lt;class (class System.ServiceModel.Channels.IChannel) TChannel&gt;(class System.Uri listenUri, class System.ServiceModel.Channels.BindingParameterCollection parameters) cil managed" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.Binding.BuildChannelListener``1(System.Uri,System.ServiceModel.Channels.BindingParameterCollection)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function BuildChannelListener(Of TChannel As {Class, IChannel}) (listenUri As Uri, parameters As BindingParameterCollection) As IChannelListener(Of TChannel)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; where TChannel : class, System::ServiceModel::Channels::IChannel virtual System::ServiceModel::Channels::IChannelListener&lt;TChannel&gt; ^ BuildChannelListener(Uri ^ listenUri, System::ServiceModel::Channels::BindingParameterCollection ^ parameters);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.IChannelListener&lt;TChannel&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TChannel">
+          <Constraints>
+            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+            <InterfaceName>System.ServiceModel.Channels.IChannel</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="listenUriBaseAddress" Type="System.Uri" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;xamarinandroid-7.1;xamarinios-10.8" />
+        <Parameter Name="listenUri" Type="System.Uri" Index="0" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="parameters" Type="System.ServiceModel.Channels.BindingParameterCollection" Index="1" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TChannel">The type of channel the channel listener accepts.</typeparam>
+        <param name="listenUriBaseAddress">To be added.</param>
+        <param name="listenUri">To be added.</param>
+        <param name="parameters">The <see cref="T:System.ServiceModel.Channels.BindingParameterCollection" /> that specifies requirements for the channel listener that is built.</param>
+        <summary>Builds the channel listener on the service that accepts a specified type of channel and that satisfies the features specified.</summary>
+        <returns>An <see cref="T:System.ServiceModel.Channels.IChannelListener`1" /> of type <paramref name="TChannel" /> that satisfies the features specified.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">Transport element is missing or out of order or scheme is invalid or the message version is not specified.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="BuildChannelListener&lt;TChannel&gt;">
       <MemberSignature Language="C#" Value="public virtual System.ServiceModel.Channels.IChannelListener&lt;TChannel&gt; BuildChannelListener&lt;TChannel&gt; (Uri listenUriBaseAddress, string listenUriRelativeAddress, System.ServiceModel.Description.ListenUriMode listenUriMode, params object[] parameters) where TChannel : class, System.ServiceModel.Channels.IChannel;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.IChannelListener`1&lt;!!TChannel&gt; BuildChannelListener&lt;class (class System.ServiceModel.Channels.IChannel) TChannel&gt;(class System.Uri listenUriBaseAddress, string listenUriRelativeAddress, valuetype System.ServiceModel.Description.ListenUriMode listenUriMode, object[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.Binding.BuildChannelListener``1(System.Uri,System.String,System.ServiceModel.Description.ListenUriMode,System.Object[])" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; where TChannel : class, System::ServiceModel::Channels::IChannel virtual System::ServiceModel::Channels::IChannelListener&lt;TChannel&gt; ^ BuildChannelListener(Uri ^ listenUriBaseAddress, System::String ^ listenUriRelativeAddress, System::ServiceModel::Description::ListenUriMode listenUriMode, ... cli::array &lt;System::Object ^&gt; ^ parameters);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -484,6 +550,7 @@
       <MemberSignature Language="C#" Value="public virtual System.ServiceModel.Channels.IChannelListener&lt;TChannel&gt; BuildChannelListener&lt;TChannel&gt; (Uri listenUriBaseAddress, string listenUriRelativeAddress, System.ServiceModel.Description.ListenUriMode listenUriMode, System.ServiceModel.Channels.BindingParameterCollection parameters) where TChannel : class, System.ServiceModel.Channels.IChannel;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.IChannelListener`1&lt;!!TChannel&gt; BuildChannelListener&lt;class (class System.ServiceModel.Channels.IChannel) TChannel&gt;(class System.Uri listenUriBaseAddress, string listenUriRelativeAddress, valuetype System.ServiceModel.Description.ListenUriMode listenUriMode, class System.ServiceModel.Channels.BindingParameterCollection parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.Binding.BuildChannelListener``1(System.Uri,System.String,System.ServiceModel.Description.ListenUriMode,System.ServiceModel.Channels.BindingParameterCollection)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; where TChannel : class, System::ServiceModel::Channels::IChannel virtual System::ServiceModel::Channels::IChannelListener&lt;TChannel&gt; ^ BuildChannelListener(Uri ^ listenUriBaseAddress, System::String ^ listenUriRelativeAddress, System::ServiceModel::Description::ListenUriMode listenUriMode, System::ServiceModel::Channels::BindingParameterCollection ^ parameters);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -540,6 +607,8 @@
       <MemberSignature Language="C#" Value="public bool CanBuildChannelFactory&lt;TChannel&gt; (params object[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool CanBuildChannelFactory&lt;TChannel&gt;(object[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.Binding.CanBuildChannelFactory``1(System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function CanBuildChannelFactory(Of TChannel) (ParamArray parameters As Object()) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; bool CanBuildChannelFactory(... cli::array &lt;System::Object ^&gt; ^ parameters);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -587,6 +656,8 @@
       <MemberSignature Language="C#" Value="public virtual bool CanBuildChannelFactory&lt;TChannel&gt; (System.ServiceModel.Channels.BindingParameterCollection parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanBuildChannelFactory&lt;TChannel&gt;(class System.ServiceModel.Channels.BindingParameterCollection parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.Binding.CanBuildChannelFactory``1(System.ServiceModel.Channels.BindingParameterCollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CanBuildChannelFactory(Of TChannel) (parameters As BindingParameterCollection) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; virtual bool CanBuildChannelFactory(System::ServiceModel::Channels::BindingParameterCollection ^ parameters);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -624,10 +695,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CanBuildChannelListener&lt;TChannel&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a value that indicates whether the current binding can build a channel listener stack on the service that satisfies some specified criteria.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CanBuildChannelListener&lt;TChannel&gt;">
       <MemberSignature Language="C#" Value="public bool CanBuildChannelListener&lt;TChannel&gt; (params object[] parameters) where TChannel : class, System.ServiceModel.Channels.IChannel;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool CanBuildChannelListener&lt;class (class System.ServiceModel.Channels.IChannel) TChannel&gt;(object[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.Binding.CanBuildChannelListener``1(System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function CanBuildChannelListener(Of TChannel As {Class, IChannel}) (ParamArray parameters As Object()) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; where TChannel : class, System::ServiceModel::Channels::IChannel bool CanBuildChannelListener(... cli::array &lt;System::Object ^&gt; ^ parameters);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -673,6 +755,8 @@
       <MemberSignature Language="C#" Value="public virtual bool CanBuildChannelListener&lt;TChannel&gt; (System.ServiceModel.Channels.BindingParameterCollection parameters) where TChannel : class, System.ServiceModel.Channels.IChannel;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanBuildChannelListener&lt;class (class System.ServiceModel.Channels.IChannel) TChannel&gt;(class System.ServiceModel.Channels.BindingParameterCollection parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.Binding.CanBuildChannelListener``1(System.ServiceModel.Channels.BindingParameterCollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CanBuildChannelListener(Of TChannel As {Class, IChannel}) (parameters As BindingParameterCollection) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; where TChannel : class, System::ServiceModel::Channels::IChannel virtual bool CanBuildChannelListener(System::ServiceModel::Channels::BindingParameterCollection ^ parameters);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -712,6 +796,8 @@
       <MemberSignature Language="C#" Value="public TimeSpan CloseTimeout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan CloseTimeout" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.Binding.CloseTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public Property CloseTimeout As TimeSpan" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan CloseTimeout { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -745,6 +831,8 @@
       <MemberSignature Language="C#" Value="public abstract System.ServiceModel.Channels.BindingElementCollection CreateBindingElements ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.BindingElementCollection CreateBindingElements() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.Binding.CreateBindingElements" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function CreateBindingElements () As BindingElementCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::ServiceModel::Channels::BindingElementCollection ^ CreateBindingElements();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -778,6 +866,8 @@
       <MemberSignature Language="C#" Value="public T GetProperty&lt;T&gt; (System.ServiceModel.Channels.BindingParameterCollection parameters) where T : class;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T GetProperty&lt;class T&gt;(class System.ServiceModel.Channels.BindingParameterCollection parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.Binding.GetProperty``1(System.ServiceModel.Channels.BindingParameterCollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetProperty(Of T As Class) (parameters As BindingParameterCollection) As T" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : class T GetProperty(System::ServiceModel::Channels::BindingParameterCollection ^ parameters);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -822,6 +912,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.MessageVersion MessageVersion { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Channels.MessageVersion MessageVersion" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.Binding.MessageVersion" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MessageVersion As MessageVersion" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Channels::MessageVersion ^ MessageVersion { System::ServiceModel::Channels::MessageVersion ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -847,6 +939,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.Binding.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -882,6 +976,8 @@
       <MemberSignature Language="C#" Value="public string Namespace { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Namespace" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.Binding.Namespace" />
+      <MemberSignature Language="VB.NET" Value="Public Property Namespace As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Namespace { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -917,6 +1013,8 @@
       <MemberSignature Language="C#" Value="public TimeSpan OpenTimeout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan OpenTimeout" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.Binding.OpenTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public Property OpenTimeout As TimeSpan" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan OpenTimeout { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -950,6 +1048,8 @@
       <MemberSignature Language="C#" Value="public TimeSpan ReceiveTimeout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan ReceiveTimeout" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.Binding.ReceiveTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReceiveTimeout As TimeSpan" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan ReceiveTimeout { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -993,6 +1093,8 @@
       <MemberSignature Language="C#" Value="public abstract string Scheme { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Scheme" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.Binding.Scheme" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Scheme As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ Scheme { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1025,6 +1127,8 @@
       <MemberSignature Language="C#" Value="public TimeSpan SendTimeout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan SendTimeout" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.Binding.SendTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public Property SendTimeout As TimeSpan" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan SendTimeout { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1058,6 +1162,8 @@
       <MemberSignature Language="C#" Value="public bool ShouldSerializeName ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeName() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.Binding.ShouldSerializeName" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeName () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeName();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1083,6 +1189,8 @@
       <MemberSignature Language="C#" Value="public bool ShouldSerializeNamespace ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeNamespace() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.Binding.ShouldSerializeNamespace" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeNamespace () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeNamespace();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1104,43 +1212,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.Binding" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="CanBuildChannelListener&lt;TChannel&gt;">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a value that indicates whether the current binding can build a channel listener stack on the service that satisfies some specified criteria.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="BuildChannelListener&lt;TChannel&gt;">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Builds the channel listener on the service that accepts a specified type of channel and that satisfies the features specified.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="BuildChannelFactory&lt;TChannel&gt;">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Builds the channel factory stack on the client specified by the binding.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

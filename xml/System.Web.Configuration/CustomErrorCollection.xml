@@ -1,7 +1,9 @@
-<Type Name="CustomErrorCollection" FullName="System.Web.Configuration.CustomErrorCollection">
+﻿<Type Name="CustomErrorCollection" FullName="System.Web.Configuration.CustomErrorCollection">
   <TypeSignature Language="C#" Value="public sealed class CustomErrorCollection : System.Configuration.ConfigurationElementCollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CustomErrorCollection extends System.Configuration.ConfigurationElementCollection" />
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.CustomErrorCollection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CustomErrorCollection&#xA;Inherits ConfigurationElementCollection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CustomErrorCollection sealed : System::Configuration::ConfigurationElementCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,6 +57,8 @@
       <MemberSignature Language="C#" Value="public CustomErrorCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.CustomErrorCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CustomErrorCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -77,6 +81,7 @@
       <MemberSignature Language="C#" Value="public void Add (System.Web.Configuration.CustomError customError);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Web.Configuration.CustomError customError) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.CustomErrorCollection.Add(System.Web.Configuration.CustomError)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Web::Configuration::CustomError ^ customError);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -115,6 +120,8 @@
       <MemberSignature Language="C#" Value="public string[] AllKeys { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string[] AllKeys" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.CustomErrorCollection.AllKeys" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AllKeys As String()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ AllKeys { cli::array &lt;System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -133,6 +140,8 @@
       <MemberSignature Language="C#" Value="public void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.CustomErrorCollection.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -184,6 +193,8 @@
       <MemberSignature Language="C#" Value="public override System.Configuration.ConfigurationElementCollectionType CollectionType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Configuration.ConfigurationElementCollectionType CollectionType" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.CustomErrorCollection.CollectionType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CollectionType As ConfigurationElementCollectionType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Configuration::ConfigurationElementCollectionType CollectionType { System::Configuration::ConfigurationElementCollectionType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -202,6 +213,8 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationElement CreateNewElement ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Configuration.ConfigurationElement CreateNewElement() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.CustomErrorCollection.CreateNewElement" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateNewElement () As ConfigurationElement" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Configuration::ConfigurationElement ^ CreateNewElement();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -221,6 +234,8 @@
       <MemberSignature Language="C#" Value="protected override string ElementName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ElementName" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.CustomErrorCollection.ElementName" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ElementName As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::String ^ ElementName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -235,10 +250,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Get">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the specified <see cref="T:System.Web.Configuration.CustomError" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Get">
       <MemberSignature Language="C#" Value="public System.Web.Configuration.CustomError Get (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.Configuration.CustomError Get(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.CustomErrorCollection.Get(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Get (index As Integer) As CustomError" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::Configuration::CustomError ^ Get(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -273,6 +299,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Configuration.CustomError Get (string statusCode);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.Configuration.CustomError Get(string statusCode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.CustomErrorCollection.Get(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Get (statusCode As String) As CustomError" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::Configuration::CustomError ^ Get(System::String ^ statusCode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -307,6 +335,8 @@
       <MemberSignature Language="C#" Value="protected override object GetElementKey (System.Configuration.ConfigurationElement element);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object GetElementKey(class System.Configuration.ConfigurationElement element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.CustomErrorCollection.GetElementKey(System.Configuration.ConfigurationElement)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetElementKey (element As ConfigurationElement) As Object" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetElementKey(System::Configuration::ConfigurationElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -329,6 +359,8 @@
       <MemberSignature Language="C#" Value="public string GetKey (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetKey(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.CustomErrorCollection.GetKey(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetKey (index As Integer) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetKey(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -347,10 +379,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the specified <see cref="T:System.Web.Configuration.CustomError" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Item">
       <MemberSignature Language="C#" Value="public System.Web.Configuration.CustomError this[int index] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.CustomError Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.CustomErrorCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As CustomError" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::CustomError ^ default[int] { System::Web::Configuration::CustomError ^ get(int index); void set(int index, System::Web::Configuration::CustomError ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -373,6 +416,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Configuration.CustomError this[string statusCode] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.CustomError Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.CustomErrorCollection.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(statusCode As String) As CustomError" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::CustomError ^ default[System::String ^] { System::Web::Configuration::CustomError ^ get(System::String ^ statusCode); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -395,6 +440,8 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.CustomErrorCollection.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -413,6 +460,8 @@
       <MemberSignature Language="C#" Value="public void Remove (string statusCode);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(string statusCode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.CustomErrorCollection.Remove(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (statusCode As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::String ^ statusCode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -452,6 +501,8 @@
       <MemberSignature Language="C#" Value="public void RemoveAt (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAt(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.CustomErrorCollection.RemoveAt(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -490,6 +541,7 @@
       <MemberSignature Language="C#" Value="public void Set (System.Web.Configuration.CustomError customError);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Set(class System.Web.Configuration.CustomError customError) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.CustomErrorCollection.Set(System.Web.Configuration.CustomError)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Set(System::Web::Configuration::CustomError ^ customError);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -522,23 +574,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Get">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets the specified <see cref="T:System.Web.Configuration.CustomError" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Item">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets the specified <see cref="T:System.Web.Configuration.CustomError" />.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

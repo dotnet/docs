@@ -1,7 +1,9 @@
-<Type Name="MimeTextMatchCollection" FullName="System.Web.Services.Description.MimeTextMatchCollection">
+﻿<Type Name="MimeTextMatchCollection" FullName="System.Web.Services.Description.MimeTextMatchCollection">
   <TypeSignature Language="C#" Value="public sealed class MimeTextMatchCollection : System.Collections.CollectionBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MimeTextMatchCollection extends System.Collections.CollectionBase" />
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.MimeTextMatchCollection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MimeTextMatchCollection&#xA;Inherits CollectionBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MimeTextMatchCollection sealed : System::Collections::CollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -36,6 +38,8 @@
       <MemberSignature Language="C#" Value="public MimeTextMatchCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.MimeTextMatchCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MimeTextMatchCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -52,6 +56,8 @@
       <MemberSignature Language="C#" Value="public int Add (System.Web.Services.Description.MimeTextMatch match);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Add(class System.Web.Services.Description.MimeTextMatch match) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.MimeTextMatchCollection.Add(System.Web.Services.Description.MimeTextMatch)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (match As MimeTextMatch) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::Web::Services::Description::MimeTextMatch ^ match);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -86,6 +92,8 @@
       <MemberSignature Language="C#" Value="public bool Contains (System.Web.Services.Description.MimeTextMatch match);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.Web.Services.Description.MimeTextMatch match) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.MimeTextMatchCollection.Contains(System.Web.Services.Description.MimeTextMatch)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (match As MimeTextMatch) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Web::Services::Description::MimeTextMatch ^ match);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -121,6 +129,8 @@
       <MemberSignature Language="C#" Value="public void CopyTo (System.Web.Services.Description.MimeTextMatch[] array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.Web.Services.Description.MimeTextMatch[] array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.MimeTextMatchCollection.CopyTo(System.Web.Services.Description.MimeTextMatch[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As MimeTextMatch(), index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Web::Services::Description::MimeTextMatch ^&gt; ^ array, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -156,6 +166,8 @@
       <MemberSignature Language="C#" Value="public int IndexOf (System.Web.Services.Description.MimeTextMatch match);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.Web.Services.Description.MimeTextMatch match) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.MimeTextMatchCollection.IndexOf(System.Web.Services.Description.MimeTextMatch)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOf (match As MimeTextMatch) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Web::Services::Description::MimeTextMatch ^ match);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -190,6 +202,8 @@
       <MemberSignature Language="C#" Value="public void Insert (int index, System.Web.Services.Description.MimeTextMatch match);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(int32 index, class System.Web.Services.Description.MimeTextMatch match) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.MimeTextMatchCollection.Insert(System.Int32,System.Web.Services.Description.MimeTextMatch)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, match As MimeTextMatch)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::Web::Services::Description::MimeTextMatch ^ match);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -239,6 +253,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Services.Description.MimeTextMatch this[int index] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Description.MimeTextMatch Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.MimeTextMatchCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As MimeTextMatch" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Description::MimeTextMatch ^ default[int] { System::Web::Services::Description::MimeTextMatch ^ get(int index); void set(int index, System::Web::Services::Description::MimeTextMatch ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -273,6 +289,8 @@
       <MemberSignature Language="C#" Value="public void Remove (System.Web.Services.Description.MimeTextMatch match);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Web.Services.Description.MimeTextMatch match) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.MimeTextMatchCollection.Remove(System.Web.Services.Description.MimeTextMatch)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (match As MimeTextMatch)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Web::Services::Description::MimeTextMatch ^ match);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

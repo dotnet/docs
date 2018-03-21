@@ -1,7 +1,9 @@
-<Type Name="IDataSourceFieldSchema" FullName="System.Web.UI.Design.IDataSourceFieldSchema">
+﻿<Type Name="IDataSourceFieldSchema" FullName="System.Web.UI.Design.IDataSourceFieldSchema">
   <TypeSignature Language="C#" Value="public interface IDataSourceFieldSchema" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDataSourceFieldSchema" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.IDataSourceFieldSchema" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IDataSourceFieldSchema" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IDataSourceFieldSchema" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +29,8 @@
       <MemberSignature Language="C#" Value="public Type DataType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type DataType" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.IDataSourceFieldSchema.DataType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataType As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ DataType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -46,6 +50,8 @@
       <MemberSignature Language="C#" Value="public bool Identity { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Identity" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.IDataSourceFieldSchema.Identity" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Identity As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Identity { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -75,6 +81,8 @@
       <MemberSignature Language="C#" Value="public bool IsReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.IDataSourceFieldSchema.IsReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -103,6 +111,8 @@
       <MemberSignature Language="C#" Value="public bool IsUnique { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsUnique" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.IDataSourceFieldSchema.IsUnique" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsUnique As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsUnique { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -131,6 +141,8 @@
       <MemberSignature Language="C#" Value="public int Length { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Length" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.IDataSourceFieldSchema.Length" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Length As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Length { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -158,6 +170,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.IDataSourceFieldSchema.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -185,6 +199,8 @@
       <MemberSignature Language="C#" Value="public bool Nullable { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Nullable" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.IDataSourceFieldSchema.Nullable" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Nullable As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Nullable { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -215,6 +231,8 @@
       <MemberSignature Language="C#" Value="public int Precision { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Precision" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.IDataSourceFieldSchema.Precision" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Precision As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Precision { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -234,6 +252,8 @@
       <MemberSignature Language="C#" Value="public bool PrimaryKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool PrimaryKey" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.IDataSourceFieldSchema.PrimaryKey" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PrimaryKey As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PrimaryKey { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -256,6 +276,8 @@
       <MemberSignature Language="C#" Value="public int Scale { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Scale" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.IDataSourceFieldSchema.Scale" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Scale As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Scale { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

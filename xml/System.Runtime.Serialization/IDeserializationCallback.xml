@@ -1,7 +1,9 @@
-<Type Name="IDeserializationCallback" FullName="System.Runtime.Serialization.IDeserializationCallback">
+﻿<Type Name="IDeserializationCallback" FullName="System.Runtime.Serialization.IDeserializationCallback">
   <TypeSignature Language="C#" Value="public interface IDeserializationCallback" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDeserializationCallback" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.IDeserializationCallback" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IDeserializationCallback" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IDeserializationCallback" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +51,8 @@
       <MemberSignature Language="C#" Value="public void OnDeserialization (object sender);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnDeserialization(object sender) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.IDeserializationCallback.OnDeserialization(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub OnDeserialization (sender As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void OnDeserialization(System::Object ^ sender);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>

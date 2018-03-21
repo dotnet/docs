@@ -1,7 +1,9 @@
-<Type Name="WindowsAccountType" FullName="System.Security.Principal.WindowsAccountType">
+﻿<Type Name="WindowsAccountType" FullName="System.Security.Principal.WindowsAccountType">
   <TypeSignature Language="C#" Value="public enum WindowsAccountType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed WindowsAccountType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Security.Principal.WindowsAccountType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum WindowsAccountType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class WindowsAccountType" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -40,6 +42,8 @@
       <MemberSignature Language="C#" Value="Anonymous" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Principal.WindowsAccountType Anonymous = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WindowsAccountType.Anonymous" />
+      <MemberSignature Language="VB.NET" Value="Anonymous" />
+      <MemberSignature Language="C++ CLI" Value="Anonymous" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -49,6 +53,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Principal.WindowsAccountType</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>An anonymous account.</summary>
       </Docs>
@@ -57,6 +62,8 @@
       <MemberSignature Language="C#" Value="Guest" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Principal.WindowsAccountType Guest = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WindowsAccountType.Guest" />
+      <MemberSignature Language="VB.NET" Value="Guest" />
+      <MemberSignature Language="C++ CLI" Value="Guest" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -66,6 +73,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Principal.WindowsAccountType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>A Windows guest account.</summary>
       </Docs>
@@ -74,6 +82,8 @@
       <MemberSignature Language="C#" Value="Normal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Principal.WindowsAccountType Normal = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WindowsAccountType.Normal" />
+      <MemberSignature Language="VB.NET" Value="Normal" />
+      <MemberSignature Language="C++ CLI" Value="Normal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -83,6 +93,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Principal.WindowsAccountType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>A standard user account.</summary>
       </Docs>
@@ -91,6 +102,8 @@
       <MemberSignature Language="C#" Value="System" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Principal.WindowsAccountType System = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WindowsAccountType.System" />
+      <MemberSignature Language="VB.NET" Value="System" />
+      <MemberSignature Language="C++ CLI" Value="System" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -100,6 +113,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Principal.WindowsAccountType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>A Windows system account.</summary>
       </Docs>

@@ -1,7 +1,9 @@
-<Type Name="IVbHost" FullName="Microsoft.VisualBasic.CompilerServices.IVbHost">
+﻿<Type Name="IVbHost" FullName="Microsoft.VisualBasic.CompilerServices.IVbHost">
   <TypeSignature Language="C#" Value="public interface IVbHost" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IVbHost" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.CompilerServices.IVbHost" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IVbHost" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IVbHost" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -29,6 +31,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.IWin32Window GetParentWindow ();" />
       <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance class System.Windows.Forms.IWin32Window GetParentWindow() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.IVbHost.GetParentWindow" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetParentWindow () As IWin32Window" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::IWin32Window ^ GetParentWindow();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -56,6 +60,8 @@
       <MemberSignature Language="C#" Value="public string GetWindowTitle ();" />
       <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance string GetWindowTitle() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.IVbHost.GetWindowTitle" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetWindowTitle () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetWindowTitle();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

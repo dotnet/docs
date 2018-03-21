@@ -1,7 +1,9 @@
-<Type Name="OleDbLiteral" FullName="System.Data.OleDb.OleDbLiteral">
+﻿<Type Name="OleDbLiteral" FullName="System.Data.OleDb.OleDbLiteral">
   <TypeSignature Language="C#" Value="public enum OleDbLiteral" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed OleDbLiteral extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Data.OleDb.OleDbLiteral" />
+  <TypeSignature Language="VB.NET" Value="Public Enum OleDbLiteral" />
+  <TypeSignature Language="C++ CLI" Value="public enum class OleDbLiteral" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +40,8 @@
       <MemberSignature Language="C#" Value="Binary_Literal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbLiteral Binary_Literal = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbLiteral.Binary_Literal" />
+      <MemberSignature Language="VB.NET" Value="Binary_Literal" />
+      <MemberSignature Language="C++ CLI" Value="Binary_Literal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -46,6 +50,7 @@
       <ReturnValue>
         <ReturnType>System.Data.OleDb.OleDbLiteral</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>A binary literal in a text command. Maps to DBLITERAL_BINARY_LITERAL.</summary>
       </Docs>
@@ -54,6 +59,8 @@
       <MemberSignature Language="C#" Value="Catalog_Name" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbLiteral Catalog_Name = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbLiteral.Catalog_Name" />
+      <MemberSignature Language="VB.NET" Value="Catalog_Name" />
+      <MemberSignature Language="C++ CLI" Value="Catalog_Name" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -62,6 +69,7 @@
       <ReturnValue>
         <ReturnType>System.Data.OleDb.OleDbLiteral</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>A catalog name in a text command. Maps to DBLITERAL_CATALOG_NAME.</summary>
       </Docs>
@@ -70,6 +78,8 @@
       <MemberSignature Language="C#" Value="Catalog_Separator" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbLiteral Catalog_Separator = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbLiteral.Catalog_Separator" />
+      <MemberSignature Language="VB.NET" Value="Catalog_Separator" />
+      <MemberSignature Language="C++ CLI" Value="Catalog_Separator" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -78,6 +88,7 @@
       <ReturnValue>
         <ReturnType>System.Data.OleDb.OleDbLiteral</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The character that separates the catalog name from the rest of the identifier in a text command. Maps to DBLITERAL_CATALOG_SEPARATOR.</summary>
       </Docs>
@@ -86,6 +97,8 @@
       <MemberSignature Language="C#" Value="Char_Literal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbLiteral Char_Literal = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbLiteral.Char_Literal" />
+      <MemberSignature Language="VB.NET" Value="Char_Literal" />
+      <MemberSignature Language="C++ CLI" Value="Char_Literal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -94,6 +107,7 @@
       <ReturnValue>
         <ReturnType>System.Data.OleDb.OleDbLiteral</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>A character literal in a text command. Maps to DBLITERAL_CHAR_LITERAL.</summary>
       </Docs>
@@ -102,6 +116,8 @@
       <MemberSignature Language="C#" Value="Column_Alias" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbLiteral Column_Alias = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbLiteral.Column_Alias" />
+      <MemberSignature Language="VB.NET" Value="Column_Alias" />
+      <MemberSignature Language="C++ CLI" Value="Column_Alias" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -110,6 +126,7 @@
       <ReturnValue>
         <ReturnType>System.Data.OleDb.OleDbLiteral</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>A column alias in a text command. Maps to DBLITERAL_COLUMN_ALIAS.</summary>
       </Docs>
@@ -118,6 +135,8 @@
       <MemberSignature Language="C#" Value="Column_Name" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbLiteral Column_Name = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbLiteral.Column_Name" />
+      <MemberSignature Language="VB.NET" Value="Column_Name" />
+      <MemberSignature Language="C++ CLI" Value="Column_Name" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -126,6 +145,7 @@
       <ReturnValue>
         <ReturnType>System.Data.OleDb.OleDbLiteral</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>A column name used in a text command or in a data-definition interface. Maps to DBLITERAL_COLUMN_NAME.</summary>
       </Docs>
@@ -134,6 +154,8 @@
       <MemberSignature Language="C#" Value="Correlation_Name" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbLiteral Correlation_Name = int32(7)" />
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbLiteral.Correlation_Name" />
+      <MemberSignature Language="VB.NET" Value="Correlation_Name" />
+      <MemberSignature Language="C++ CLI" Value="Correlation_Name" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -142,6 +164,7 @@
       <ReturnValue>
         <ReturnType>System.Data.OleDb.OleDbLiteral</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>A correlation name (table alias) in a text command. Maps to DBLITERAL_CORRELATION_NAME.</summary>
       </Docs>
@@ -150,6 +173,8 @@
       <MemberSignature Language="C#" Value="Cube_Name" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbLiteral Cube_Name = int32(21)" />
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbLiteral.Cube_Name" />
+      <MemberSignature Language="VB.NET" Value="Cube_Name" />
+      <MemberSignature Language="C++ CLI" Value="Cube_Name" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -158,6 +183,7 @@
       <ReturnValue>
         <ReturnType>System.Data.OleDb.OleDbLiteral</ReturnType>
       </ReturnValue>
+      <MemberValue>21</MemberValue>
       <Docs>
         <summary>The name of a cube in a schema (or the catalog if the provider does not support schemas).</summary>
       </Docs>
@@ -166,6 +192,8 @@
       <MemberSignature Language="C#" Value="Cursor_Name" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbLiteral Cursor_Name = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbLiteral.Cursor_Name" />
+      <MemberSignature Language="VB.NET" Value="Cursor_Name" />
+      <MemberSignature Language="C++ CLI" Value="Cursor_Name" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -174,6 +202,7 @@
       <ReturnValue>
         <ReturnType>System.Data.OleDb.OleDbLiteral</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>A cursor name in a text command. Maps to DBLITERAL_CURSOR_NAME.</summary>
       </Docs>
@@ -182,6 +211,8 @@
       <MemberSignature Language="C#" Value="Dimension_Name" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbLiteral Dimension_Name = int32(22)" />
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbLiteral.Dimension_Name" />
+      <MemberSignature Language="VB.NET" Value="Dimension_Name" />
+      <MemberSignature Language="C++ CLI" Value="Dimension_Name" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -190,6 +221,7 @@
       <ReturnValue>
         <ReturnType>System.Data.OleDb.OleDbLiteral</ReturnType>
       </ReturnValue>
+      <MemberValue>22</MemberValue>
       <Docs>
         <summary>The name of the dimension. If a dimension is part of more than one cube, there is one row for each cube/dimension combination.</summary>
       </Docs>
@@ -198,6 +230,8 @@
       <MemberSignature Language="C#" Value="Escape_Percent_Prefix" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbLiteral Escape_Percent_Prefix = int32(9)" />
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbLiteral.Escape_Percent_Prefix" />
+      <MemberSignature Language="VB.NET" Value="Escape_Percent_Prefix" />
+      <MemberSignature Language="C++ CLI" Value="Escape_Percent_Prefix" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -206,6 +240,7 @@
       <ReturnValue>
         <ReturnType>System.Data.OleDb.OleDbLiteral</ReturnType>
       </ReturnValue>
+      <MemberValue>9</MemberValue>
       <Docs>
         <summary>The character used in a LIKE clause to escape the character returned for the DBLITERAL_LIKE_PERCENT literal. For example, if a percent sign (%) is used to match zero or more characters and this is a backslash (\\), the characters "abc\\%%" match all character values that start with "abc%". Some SQL dialects support a clause (the ESCAPE clause) that can be used to override this value. Maps to DBLITERAL_ESCAPE_PERCENT_PREFIX.</summary>
       </Docs>
@@ -214,6 +249,8 @@
       <MemberSignature Language="C#" Value="Escape_Percent_Suffix" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbLiteral Escape_Percent_Suffix = int32(29)" />
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbLiteral.Escape_Percent_Suffix" />
+      <MemberSignature Language="VB.NET" Value="Escape_Percent_Suffix" />
+      <MemberSignature Language="C++ CLI" Value="Escape_Percent_Suffix" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -222,6 +259,7 @@
       <ReturnValue>
         <ReturnType>System.Data.OleDb.OleDbLiteral</ReturnType>
       </ReturnValue>
+      <MemberValue>29</MemberValue>
       <Docs>
         <summary>The escape character, if any, used to suffix the character returned for the DBLITERAL_LIKE_PERCENT literal. For example, if a percent sign (%) is used to match zero or more characters and percent signs are escaped by enclosing in open and close square brackets, DBLITERAL_ESCAPE_PERCENT_PREFIX is "[", DBLITERAL_ESCAPE_PERCENT_SUFFIX is "]", and the characters "abc[%]%" match all character values that start with "abc%". Providers that do not use a suffix character to escape the DBLITERAL_ESCAPE_PERCENT character do not return this literal value and can set the lt member of the DBLITERAL structure to DBLITERAL_INVALID if requested. Maps to DBLITERAL_ESCAPE_PERCENT_SUFFIX.</summary>
       </Docs>
@@ -230,6 +268,8 @@
       <MemberSignature Language="C#" Value="Escape_Underscore_Prefix" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbLiteral Escape_Underscore_Prefix = int32(10)" />
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbLiteral.Escape_Underscore_Prefix" />
+      <MemberSignature Language="VB.NET" Value="Escape_Underscore_Prefix" />
+      <MemberSignature Language="C++ CLI" Value="Escape_Underscore_Prefix" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -238,6 +278,7 @@
       <ReturnValue>
         <ReturnType>System.Data.OleDb.OleDbLiteral</ReturnType>
       </ReturnValue>
+      <MemberValue>10</MemberValue>
       <Docs>
         <summary>The character used in a LIKE clause to escape the character returned for the DBLITERAL_LIKE_UNDERSCORE literal. For example, if an underscore (_) is used to match exactly one character and this is a backslash (\\), the characters "abc\\\_ _" match all character values that are five characters long and start with "abc\_". Some SQL dialects support a clause (the ESCAPE clause) that can be used to override this value. Maps to DBLITERAL_ESCAPE_UNDERSCORE_PREFIX.</summary>
       </Docs>
@@ -246,6 +287,8 @@
       <MemberSignature Language="C#" Value="Escape_Underscore_Suffix" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbLiteral Escape_Underscore_Suffix = int32(30)" />
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbLiteral.Escape_Underscore_Suffix" />
+      <MemberSignature Language="VB.NET" Value="Escape_Underscore_Suffix" />
+      <MemberSignature Language="C++ CLI" Value="Escape_Underscore_Suffix" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -254,6 +297,7 @@
       <ReturnValue>
         <ReturnType>System.Data.OleDb.OleDbLiteral</ReturnType>
       </ReturnValue>
+      <MemberValue>30</MemberValue>
       <Docs>
         <summary>The character used in a LIKE clause to escape the character returned for the DBLITERAL_LIKE_UNDERSCORE literal. For example, if an underscore (_) is used to match exactly one character and this is a backslash (\\), the characters "abc\\\_ _" match all character values that are five characters long and start with "abc\_". Some SQL dialects support a clause (the ESCAPE clause) that can be used to override this value. Maps to DBLITERAL_ESCAPE_UNDERSCORE_SUFFIX.</summary>
       </Docs>
@@ -262,6 +306,8 @@
       <MemberSignature Language="C#" Value="Hierarchy_Name" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbLiteral Hierarchy_Name = int32(23)" />
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbLiteral.Hierarchy_Name" />
+      <MemberSignature Language="VB.NET" Value="Hierarchy_Name" />
+      <MemberSignature Language="C++ CLI" Value="Hierarchy_Name" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -270,6 +316,7 @@
       <ReturnValue>
         <ReturnType>System.Data.OleDb.OleDbLiteral</ReturnType>
       </ReturnValue>
+      <MemberValue>23</MemberValue>
       <Docs>
         <summary>The name of the hierarchy. If the dimension does not contain a hierarchy or has only one hierarchy, the current column contains a null value.</summary>
       </Docs>
@@ -278,6 +325,8 @@
       <MemberSignature Language="C#" Value="Index_Name" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbLiteral Index_Name = int32(11)" />
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbLiteral.Index_Name" />
+      <MemberSignature Language="VB.NET" Value="Index_Name" />
+      <MemberSignature Language="C++ CLI" Value="Index_Name" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -286,6 +335,7 @@
       <ReturnValue>
         <ReturnType>System.Data.OleDb.OleDbLiteral</ReturnType>
       </ReturnValue>
+      <MemberValue>11</MemberValue>
       <Docs>
         <summary>An index name used in a text command or in a data-definition interface. Maps to DBLITERAL_INDEX_NAME.</summary>
       </Docs>
@@ -294,6 +344,8 @@
       <MemberSignature Language="C#" Value="Invalid" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbLiteral Invalid = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbLiteral.Invalid" />
+      <MemberSignature Language="VB.NET" Value="Invalid" />
+      <MemberSignature Language="C++ CLI" Value="Invalid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -302,6 +354,7 @@
       <ReturnValue>
         <ReturnType>System.Data.OleDb.OleDbLiteral</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>An invalid value. Maps to DBLITERAL_INVALID.</summary>
       </Docs>
@@ -310,6 +363,8 @@
       <MemberSignature Language="C#" Value="Level_Name" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbLiteral Level_Name = int32(24)" />
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbLiteral.Level_Name" />
+      <MemberSignature Language="VB.NET" Value="Level_Name" />
+      <MemberSignature Language="C++ CLI" Value="Level_Name" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -318,6 +373,7 @@
       <ReturnValue>
         <ReturnType>System.Data.OleDb.OleDbLiteral</ReturnType>
       </ReturnValue>
+      <MemberValue>24</MemberValue>
       <Docs>
         <summary>Name of the cube to which the current level belongs.</summary>
       </Docs>
@@ -326,6 +382,8 @@
       <MemberSignature Language="C#" Value="Like_Percent" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbLiteral Like_Percent = int32(12)" />
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbLiteral.Like_Percent" />
+      <MemberSignature Language="VB.NET" Value="Like_Percent" />
+      <MemberSignature Language="C++ CLI" Value="Like_Percent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -334,6 +392,7 @@
       <ReturnValue>
         <ReturnType>System.Data.OleDb.OleDbLiteral</ReturnType>
       </ReturnValue>
+      <MemberValue>12</MemberValue>
       <Docs>
         <summary>The character used in a LIKE clause to match zero or more characters. For example, if this is a percent sign (%), the characters "abc%" match all character values that start with "abc". Maps to DBLITERAL_LIKE_PERCENT.</summary>
       </Docs>
@@ -342,6 +401,8 @@
       <MemberSignature Language="C#" Value="Like_Underscore" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbLiteral Like_Underscore = int32(13)" />
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbLiteral.Like_Underscore" />
+      <MemberSignature Language="VB.NET" Value="Like_Underscore" />
+      <MemberSignature Language="C++ CLI" Value="Like_Underscore" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -350,6 +411,7 @@
       <ReturnValue>
         <ReturnType>System.Data.OleDb.OleDbLiteral</ReturnType>
       </ReturnValue>
+      <MemberValue>13</MemberValue>
       <Docs>
         <summary>The character used in a LIKE clause to match exactly one character. For example, if this is an underscore (_), the characters "abc\_" match all character values that are four characters long and start with "abc". Maps to DBLITERAL_LIKE_UNDERSCORE.</summary>
       </Docs>
@@ -358,6 +420,8 @@
       <MemberSignature Language="C#" Value="Member_Name" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbLiteral Member_Name = int32(25)" />
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbLiteral.Member_Name" />
+      <MemberSignature Language="VB.NET" Value="Member_Name" />
+      <MemberSignature Language="C++ CLI" Value="Member_Name" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -366,6 +430,7 @@
       <ReturnValue>
         <ReturnType>System.Data.OleDb.OleDbLiteral</ReturnType>
       </ReturnValue>
+      <MemberValue>25</MemberValue>
       <Docs>
         <summary>The name of the member.</summary>
       </Docs>
@@ -374,6 +439,8 @@
       <MemberSignature Language="C#" Value="Procedure_Name" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbLiteral Procedure_Name = int32(14)" />
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbLiteral.Procedure_Name" />
+      <MemberSignature Language="VB.NET" Value="Procedure_Name" />
+      <MemberSignature Language="C++ CLI" Value="Procedure_Name" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -382,6 +449,7 @@
       <ReturnValue>
         <ReturnType>System.Data.OleDb.OleDbLiteral</ReturnType>
       </ReturnValue>
+      <MemberValue>14</MemberValue>
       <Docs>
         <summary>A procedure name in a text command. Maps to DBLITERAL_PROCEDURE_NAME.</summary>
       </Docs>
@@ -390,6 +458,8 @@
       <MemberSignature Language="C#" Value="Property_Name" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbLiteral Property_Name = int32(26)" />
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbLiteral.Property_Name" />
+      <MemberSignature Language="VB.NET" Value="Property_Name" />
+      <MemberSignature Language="C++ CLI" Value="Property_Name" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -398,6 +468,7 @@
       <ReturnValue>
         <ReturnType>System.Data.OleDb.OleDbLiteral</ReturnType>
       </ReturnValue>
+      <MemberValue>26</MemberValue>
       <Docs>
         <summary>The name of the property.</summary>
       </Docs>
@@ -406,6 +477,8 @@
       <MemberSignature Language="C#" Value="Quote_Prefix" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbLiteral Quote_Prefix = int32(15)" />
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbLiteral.Quote_Prefix" />
+      <MemberSignature Language="VB.NET" Value="Quote_Prefix" />
+      <MemberSignature Language="C++ CLI" Value="Quote_Prefix" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -414,6 +487,7 @@
       <ReturnValue>
         <ReturnType>System.Data.OleDb.OleDbLiteral</ReturnType>
       </ReturnValue>
+      <MemberValue>15</MemberValue>
       <Docs>
         <summary>The character used in a text command as the opening quote for quoting identifiers that contain special characters. Maps to DBLITERAL_QUOTE_PREFIX.</summary>
       </Docs>
@@ -422,6 +496,8 @@
       <MemberSignature Language="C#" Value="Quote_Suffix" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbLiteral Quote_Suffix = int32(28)" />
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbLiteral.Quote_Suffix" />
+      <MemberSignature Language="VB.NET" Value="Quote_Suffix" />
+      <MemberSignature Language="C++ CLI" Value="Quote_Suffix" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -430,6 +506,7 @@
       <ReturnValue>
         <ReturnType>System.Data.OleDb.OleDbLiteral</ReturnType>
       </ReturnValue>
+      <MemberValue>28</MemberValue>
       <Docs>
         <summary>The character used in a text command as the closing quote for quoting identifiers that contain special characters. 1.x providers that use the same character as the prefix and suffix may not return this literal value and can set the member of the DBLITERAL structure to DBLITERAL_INVALID if requested. Maps to DBLITERAL_QUOTE_SUFFIX.</summary>
       </Docs>
@@ -438,6 +515,8 @@
       <MemberSignature Language="C#" Value="Schema_Name" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbLiteral Schema_Name = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbLiteral.Schema_Name" />
+      <MemberSignature Language="VB.NET" Value="Schema_Name" />
+      <MemberSignature Language="C++ CLI" Value="Schema_Name" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -446,6 +525,7 @@
       <ReturnValue>
         <ReturnType>System.Data.OleDb.OleDbLiteral</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>A schema name in a text command. Maps to DBLITERAL_SCHEMA_NAME.</summary>
       </Docs>
@@ -454,6 +534,8 @@
       <MemberSignature Language="C#" Value="Schema_Separator" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbLiteral Schema_Separator = int32(27)" />
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbLiteral.Schema_Separator" />
+      <MemberSignature Language="VB.NET" Value="Schema_Separator" />
+      <MemberSignature Language="C++ CLI" Value="Schema_Separator" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -462,6 +544,7 @@
       <ReturnValue>
         <ReturnType>System.Data.OleDb.OleDbLiteral</ReturnType>
       </ReturnValue>
+      <MemberValue>27</MemberValue>
       <Docs>
         <summary>The character that separates the schema name from the rest of the identifier in a text command. Maps to DBLITERAL_SCHEMA_SEPARATOR.</summary>
       </Docs>
@@ -470,6 +553,8 @@
       <MemberSignature Language="C#" Value="Table_Name" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbLiteral Table_Name = int32(17)" />
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbLiteral.Table_Name" />
+      <MemberSignature Language="VB.NET" Value="Table_Name" />
+      <MemberSignature Language="C++ CLI" Value="Table_Name" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -478,6 +563,7 @@
       <ReturnValue>
         <ReturnType>System.Data.OleDb.OleDbLiteral</ReturnType>
       </ReturnValue>
+      <MemberValue>17</MemberValue>
       <Docs>
         <summary>A table name used in a text command or in a data-definition interface. Maps to DBLITERAL_TABLE_NAME.</summary>
       </Docs>
@@ -486,6 +572,8 @@
       <MemberSignature Language="C#" Value="Text_Command" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbLiteral Text_Command = int32(18)" />
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbLiteral.Text_Command" />
+      <MemberSignature Language="VB.NET" Value="Text_Command" />
+      <MemberSignature Language="C++ CLI" Value="Text_Command" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -494,6 +582,7 @@
       <ReturnValue>
         <ReturnType>System.Data.OleDb.OleDbLiteral</ReturnType>
       </ReturnValue>
+      <MemberValue>18</MemberValue>
       <Docs>
         <summary>A text command, such as an SQL statement. Maps to DBLITERAL_TEXT_COMMAND.</summary>
       </Docs>
@@ -502,6 +591,8 @@
       <MemberSignature Language="C#" Value="User_Name" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbLiteral User_Name = int32(19)" />
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbLiteral.User_Name" />
+      <MemberSignature Language="VB.NET" Value="User_Name" />
+      <MemberSignature Language="C++ CLI" Value="User_Name" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -510,6 +601,7 @@
       <ReturnValue>
         <ReturnType>System.Data.OleDb.OleDbLiteral</ReturnType>
       </ReturnValue>
+      <MemberValue>19</MemberValue>
       <Docs>
         <summary>A user name in a text command. Maps to DBLITERAL_USER_NAME.</summary>
       </Docs>
@@ -518,6 +610,8 @@
       <MemberSignature Language="C#" Value="View_Name" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbLiteral View_Name = int32(20)" />
       <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbLiteral.View_Name" />
+      <MemberSignature Language="VB.NET" Value="View_Name" />
+      <MemberSignature Language="C++ CLI" Value="View_Name" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -526,6 +620,7 @@
       <ReturnValue>
         <ReturnType>System.Data.OleDb.OleDbLiteral</ReturnType>
       </ReturnValue>
+      <MemberValue>20</MemberValue>
       <Docs>
         <summary>A view name in a text command. Maps to DBLITERAL_VIEW_NAME.</summary>
       </Docs>

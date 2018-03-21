@@ -1,7 +1,9 @@
-<Type Name="PagerPosition" FullName="System.Web.UI.WebControls.PagerPosition">
+﻿<Type Name="PagerPosition" FullName="System.Web.UI.WebControls.PagerPosition">
   <TypeSignature Language="C#" Value="public enum PagerPosition" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PagerPosition extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.PagerPosition" />
+  <TypeSignature Language="VB.NET" Value="Public Enum PagerPosition" />
+  <TypeSignature Language="C++ CLI" Value="public enum class PagerPosition" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +37,8 @@
       <MemberSignature Language="C#" Value="Bottom" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.PagerPosition Bottom = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.PagerPosition.Bottom" />
+      <MemberSignature Language="VB.NET" Value="Bottom" />
+      <MemberSignature Language="C++ CLI" Value="Bottom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -43,6 +47,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.PagerPosition</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>A pager positioned at the bottom of the control.</summary>
       </Docs>
@@ -51,6 +56,8 @@
       <MemberSignature Language="C#" Value="Top" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.PagerPosition Top = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.PagerPosition.Top" />
+      <MemberSignature Language="VB.NET" Value="Top" />
+      <MemberSignature Language="C++ CLI" Value="Top" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -59,6 +66,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.PagerPosition</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>A pager positioned at the top of the control.</summary>
       </Docs>
@@ -67,6 +75,8 @@
       <MemberSignature Language="C#" Value="TopAndBottom" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.PagerPosition TopAndBottom = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.PagerPosition.TopAndBottom" />
+      <MemberSignature Language="VB.NET" Value="TopAndBottom" />
+      <MemberSignature Language="C++ CLI" Value="TopAndBottom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -75,6 +85,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.PagerPosition</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Pagers positioned at both the top and the bottom of the control.</summary>
       </Docs>

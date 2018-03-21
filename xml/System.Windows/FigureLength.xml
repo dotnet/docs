@@ -1,7 +1,9 @@
-<Type Name="FigureLength" FullName="System.Windows.FigureLength">
+﻿<Type Name="FigureLength" FullName="System.Windows.FigureLength">
   <TypeSignature Language="C#" Value="public struct FigureLength : IEquatable&lt;System.Windows.FigureLength&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit FigureLength extends System.ValueType implements class System.IEquatable`1&lt;valuetype System.Windows.FigureLength&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Windows.FigureLength" />
+  <TypeSignature Language="VB.NET" Value="Public Structure FigureLength&#xA;Implements IEquatable(Of FigureLength)" />
+  <TypeSignature Language="C++ CLI" Value="public value class FigureLength : IEquatable&lt;System::Windows::FigureLength&gt;" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -66,10 +68,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.FigureLength" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public FigureLength (double pixels);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 pixels) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.FigureLength.#ctor(System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (pixels As Double)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FigureLength(double pixels);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -101,6 +114,8 @@
       <MemberSignature Language="C#" Value="public FigureLength (double value, System.Windows.FigureUnitType type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 value, valuetype System.Windows.FigureUnitType type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.FigureLength.#ctor(System.Double,System.Windows.FigureUnitType)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As Double, type As FigureUnitType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FigureLength(double value, System::Windows::FigureUnitType type);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -151,6 +166,8 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object oCompare);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object oCompare) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.FigureLength.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (oCompare As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ oCompare);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -174,7 +191,11 @@
       <MemberSignature Language="C#" Value="public bool Equals (System.Windows.FigureLength figureLength);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(valuetype System.Windows.FigureLength figureLength) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.FigureLength.Equals(System.Windows.FigureLength)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Windows::FigureLength figureLength);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -197,6 +218,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.FigureUnitType FigureUnitType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.FigureUnitType FigureUnitType" />
       <MemberSignature Language="DocId" Value="P:System.Windows.FigureLength.FigureUnitType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FigureUnitType As FigureUnitType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::FigureUnitType FigureUnitType { System::Windows::FigureUnitType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -224,6 +247,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.FigureLength.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -243,6 +268,8 @@
       <MemberSignature Language="C#" Value="public bool IsAbsolute { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsAbsolute" />
       <MemberSignature Language="DocId" Value="P:System.Windows.FigureLength.IsAbsolute" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsAbsolute As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAbsolute { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -261,6 +288,8 @@
       <MemberSignature Language="C#" Value="public bool IsAuto { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsAuto" />
       <MemberSignature Language="DocId" Value="P:System.Windows.FigureLength.IsAuto" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsAuto As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAuto { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -279,6 +308,8 @@
       <MemberSignature Language="C#" Value="public bool IsColumn { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsColumn" />
       <MemberSignature Language="DocId" Value="P:System.Windows.FigureLength.IsColumn" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsColumn As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsColumn { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -297,6 +328,8 @@
       <MemberSignature Language="C#" Value="public bool IsContent { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsContent" />
       <MemberSignature Language="DocId" Value="P:System.Windows.FigureLength.IsContent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsContent As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsContent { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -315,6 +348,8 @@
       <MemberSignature Language="C#" Value="public bool IsPage { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsPage" />
       <MemberSignature Language="DocId" Value="P:System.Windows.FigureLength.IsPage" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsPage As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsPage { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -333,6 +368,8 @@
       <MemberSignature Language="C#" Value="public static bool operator == (System.Windows.FigureLength fl1, System.Windows.FigureLength fl2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Windows.FigureLength fl1, valuetype System.Windows.FigureLength fl2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.FigureLength.op_Equality(System.Windows.FigureLength,System.Windows.FigureLength)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (fl1 As FigureLength, fl2 As FigureLength) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Windows::FigureLength fl1, System::Windows::FigureLength fl2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -360,6 +397,8 @@
       <MemberSignature Language="C#" Value="public static bool operator != (System.Windows.FigureLength fl1, System.Windows.FigureLength fl2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Windows.FigureLength fl1, valuetype System.Windows.FigureLength fl2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.FigureLength.op_Inequality(System.Windows.FigureLength,System.Windows.FigureLength)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (fl1 As FigureLength, fl2 As FigureLength) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Windows::FigureLength fl1, System::Windows::FigureLength fl2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -387,6 +426,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.FigureLength.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -406,6 +447,8 @@
       <MemberSignature Language="C#" Value="public double Value { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 Value" />
       <MemberSignature Language="DocId" Value="P:System.Windows.FigureLength.Value" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Value { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -429,14 +472,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.FigureLength" />.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

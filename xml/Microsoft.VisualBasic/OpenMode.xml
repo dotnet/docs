@@ -1,7 +1,9 @@
-<Type Name="OpenMode" FullName="Microsoft.VisualBasic.OpenMode">
+﻿<Type Name="OpenMode" FullName="Microsoft.VisualBasic.OpenMode">
   <TypeSignature Language="C#" Value="public enum OpenMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed OpenMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.OpenMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum OpenMode" />
+  <TypeSignature Language="C++ CLI" Value="public enum class OpenMode" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -35,6 +37,8 @@
       <MemberSignature Language="C#" Value="Append" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.OpenMode Append = int32(8)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.OpenMode.Append" />
+      <MemberSignature Language="VB.NET" Value="Append" />
+      <MemberSignature Language="C++ CLI" Value="Append" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -43,6 +47,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.OpenMode</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>File opened to append to it. Default.</summary>
       </Docs>
@@ -51,6 +56,8 @@
       <MemberSignature Language="C#" Value="Binary" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.OpenMode Binary = int32(32)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.OpenMode.Binary" />
+      <MemberSignature Language="VB.NET" Value="Binary" />
+      <MemberSignature Language="C++ CLI" Value="Binary" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -59,6 +66,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.OpenMode</ReturnType>
       </ReturnValue>
+      <MemberValue>32</MemberValue>
       <Docs>
         <summary>File opened for binary access.</summary>
       </Docs>
@@ -67,6 +75,8 @@
       <MemberSignature Language="C#" Value="Input" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.OpenMode Input = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.OpenMode.Input" />
+      <MemberSignature Language="VB.NET" Value="Input" />
+      <MemberSignature Language="C++ CLI" Value="Input" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -75,6 +85,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.OpenMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>File opened for read access.</summary>
       </Docs>
@@ -83,6 +94,8 @@
       <MemberSignature Language="C#" Value="Output" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.OpenMode Output = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.OpenMode.Output" />
+      <MemberSignature Language="VB.NET" Value="Output" />
+      <MemberSignature Language="C++ CLI" Value="Output" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -91,6 +104,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.OpenMode</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>File opened for write access.</summary>
       </Docs>
@@ -99,6 +113,8 @@
       <MemberSignature Language="C#" Value="Random" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.OpenMode Random = int32(4)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.OpenMode.Random" />
+      <MemberSignature Language="VB.NET" Value="Random" />
+      <MemberSignature Language="C++ CLI" Value="Random" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -107,6 +123,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.OpenMode</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>File opened for random access.</summary>
       </Docs>

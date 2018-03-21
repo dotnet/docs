@@ -1,7 +1,9 @@
-<Type Name="PageOrientation" FullName="System.Printing.PageOrientation">
+﻿<Type Name="PageOrientation" FullName="System.Printing.PageOrientation">
   <TypeSignature Language="C#" Value="public enum PageOrientation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PageOrientation extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Printing.PageOrientation" />
+  <TypeSignature Language="VB.NET" Value="Public Enum PageOrientation" />
+  <TypeSignature Language="C++ CLI" Value="public enum class PageOrientation" />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +47,8 @@
       <MemberSignature Language="C#" Value="Landscape" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageOrientation Landscape = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.PageOrientation.Landscape" />
+      <MemberSignature Language="VB.NET" Value="Landscape" />
+      <MemberSignature Language="C++ CLI" Value="Landscape" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -53,6 +57,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.PageOrientation</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Content of the imageable area is rotated on the page 90 degrees counterclockwise from standard (portrait) orientation.</summary>
       </Docs>
@@ -61,6 +66,8 @@
       <MemberSignature Language="C#" Value="Portrait" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageOrientation Portrait = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.PageOrientation.Portrait" />
+      <MemberSignature Language="VB.NET" Value="Portrait" />
+      <MemberSignature Language="C++ CLI" Value="Portrait" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -69,6 +76,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.PageOrientation</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Standard orientation.</summary>
       </Docs>
@@ -77,6 +85,8 @@
       <MemberSignature Language="C#" Value="ReverseLandscape" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageOrientation ReverseLandscape = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.PageOrientation.ReverseLandscape" />
+      <MemberSignature Language="VB.NET" Value="ReverseLandscape" />
+      <MemberSignature Language="C++ CLI" Value="ReverseLandscape" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -85,6 +95,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.PageOrientation</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Content of the imageable area is rotated on the page 90 degrees clockwise from standard (portrait) orientation.</summary>
       </Docs>
@@ -93,6 +104,8 @@
       <MemberSignature Language="C#" Value="ReversePortrait" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageOrientation ReversePortrait = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.PageOrientation.ReversePortrait" />
+      <MemberSignature Language="VB.NET" Value="ReversePortrait" />
+      <MemberSignature Language="C++ CLI" Value="ReversePortrait" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -101,6 +114,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.PageOrientation</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Content of the imageable area is upside down relative to standard (portrait) orientation.</summary>
       </Docs>
@@ -109,6 +123,8 @@
       <MemberSignature Language="C#" Value="Unknown" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageOrientation Unknown = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.PageOrientation.Unknown" />
+      <MemberSignature Language="VB.NET" Value="Unknown" />
+      <MemberSignature Language="C++ CLI" Value="Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -117,6 +133,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.PageOrientation</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The feature (whose options are represented by this enumeration) is set to an option not defined in the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397).</summary>
       </Docs>

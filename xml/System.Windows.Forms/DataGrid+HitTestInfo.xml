@@ -1,7 +1,9 @@
-<Type Name="DataGrid+HitTestInfo" FullName="System.Windows.Forms.DataGrid+HitTestInfo">
+﻿<Type Name="DataGrid+HitTestInfo" FullName="System.Windows.Forms.DataGrid+HitTestInfo">
   <TypeSignature Language="C#" Value="public sealed class DataGrid.HitTestInfo" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed beforefieldinit DataGrid/HitTestInfo extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGrid.HitTestInfo" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DataGrid.HitTestInfo" />
+  <TypeSignature Language="C++ CLI" Value="public: ref class DataGrid::HitTestInfo sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +43,8 @@
       <MemberSignature Language="C#" Value="public int Column { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Column" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGrid.HitTestInfo.Column" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Column As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Column { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -78,6 +82,8 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.HitTestInfo.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (value As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -115,6 +121,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.HitTestInfo.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -153,6 +161,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Forms.DataGrid.HitTestInfo Nowhere;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Forms.DataGrid/HitTestInfo Nowhere" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGrid.HitTestInfo.Nowhere" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Nowhere As DataGrid.HitTestInfo " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Forms::DataGrid::HitTestInfo ^ Nowhere;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -190,6 +200,8 @@
       <MemberSignature Language="C#" Value="public int Row { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Row" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGrid.HitTestInfo.Row" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Row As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Row { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -227,6 +239,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.HitTestInfo.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -260,6 +274,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DataGrid.HitTestType Type { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataGrid/HitTestType Type" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGrid.HitTestInfo.Type" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As DataGrid.HitTestType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataGrid::HitTestType Type { System::Windows::Forms::DataGrid::HitTestType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

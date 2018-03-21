@@ -1,7 +1,9 @@
-<Type Name="CorrelationDataDescription" FullName="System.ServiceModel.Channels.CorrelationDataDescription">
+﻿<Type Name="CorrelationDataDescription" FullName="System.ServiceModel.Channels.CorrelationDataDescription">
   <TypeSignature Language="C#" Value="public abstract class CorrelationDataDescription" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit CorrelationDataDescription extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.CorrelationDataDescription" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class CorrelationDataDescription" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CorrelationDataDescription abstract" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="protected CorrelationDataDescription ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CorrelationDataDescription.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; CorrelationDataDescription();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -34,6 +38,8 @@
       <MemberSignature Language="C#" Value="public abstract bool IsDefault { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsDefault" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.CorrelationDataDescription.IsDefault" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property IsDefault As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool IsDefault { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -53,6 +59,8 @@
       <MemberSignature Language="C#" Value="public abstract bool IsOptional { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsOptional" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.CorrelationDataDescription.IsOptional" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property IsOptional As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool IsOptional { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -79,6 +87,8 @@
       <MemberSignature Language="C#" Value="public abstract bool KnownBeforeSend { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool KnownBeforeSend" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.CorrelationDataDescription.KnownBeforeSend" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property KnownBeforeSend As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool KnownBeforeSend { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -98,6 +108,8 @@
       <MemberSignature Language="C#" Value="public abstract string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.CorrelationDataDescription.Name" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -116,6 +128,8 @@
       <MemberSignature Language="C#" Value="public abstract bool ReceiveValue { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ReceiveValue" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.CorrelationDataDescription.ReceiveValue" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ReceiveValue As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool ReceiveValue { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -135,6 +149,8 @@
       <MemberSignature Language="C#" Value="public abstract bool SendValue { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SendValue" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.CorrelationDataDescription.SendValue" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property SendValue As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool SendValue { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

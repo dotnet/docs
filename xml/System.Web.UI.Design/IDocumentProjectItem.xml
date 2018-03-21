@@ -1,7 +1,9 @@
-<Type Name="IDocumentProjectItem" FullName="System.Web.UI.Design.IDocumentProjectItem">
+﻿<Type Name="IDocumentProjectItem" FullName="System.Web.UI.Design.IDocumentProjectItem">
   <TypeSignature Language="C#" Value="public interface IDocumentProjectItem" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDocumentProjectItem" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.IDocumentProjectItem" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IDocumentProjectItem" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IDocumentProjectItem" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -17,6 +19,8 @@
       <MemberSignature Language="C#" Value="public System.IO.Stream GetContents ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IO.Stream GetContents() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IDocumentProjectItem.GetContents" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetContents () As Stream" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Stream ^ GetContents();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -37,6 +41,8 @@
       <MemberSignature Language="C#" Value="public void Open ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Open() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IDocumentProjectItem.Open" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Open ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Open();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

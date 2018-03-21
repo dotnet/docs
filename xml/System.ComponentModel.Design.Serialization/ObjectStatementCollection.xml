@@ -1,7 +1,9 @@
-<Type Name="ObjectStatementCollection" FullName="System.ComponentModel.Design.Serialization.ObjectStatementCollection">
+﻿<Type Name="ObjectStatementCollection" FullName="System.ComponentModel.Design.Serialization.ObjectStatementCollection">
   <TypeSignature Language="C#" Value="public sealed class ObjectStatementCollection : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ObjectStatementCollection extends System.Object implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Serialization.ObjectStatementCollection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ObjectStatementCollection&#xA;Implements IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ObjectStatementCollection sealed : System::Collections::IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +27,8 @@
       <MemberSignature Language="C#" Value="public bool ContainsKey (object statementOwner);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ContainsKey(object statementOwner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.ObjectStatementCollection.ContainsKey(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ContainsKey (statementOwner As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ContainsKey(System::Object ^ statementOwner);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -52,6 +56,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.IDictionaryEnumerator GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.IDictionaryEnumerator GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.ObjectStatementCollection.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IDictionaryEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IDictionaryEnumerator ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -71,6 +77,8 @@
       <MemberSignature Language="C#" Value="public System.CodeDom.CodeStatementCollection this[object statementOwner] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeStatementCollection Item(object)" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Serialization.ObjectStatementCollection.Item(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(statementOwner As Object) As CodeStatementCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeStatementCollection ^ default[System::Object ^] { System::CodeDom::CodeStatementCollection ^ get(System::Object ^ statementOwner); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -93,10 +101,21 @@
         <altmember cref="T:System.ComponentModel.Design.Serialization.CodeDomSerializer" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Populate">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Populates the statement table with a statement owner or a collection of statement owners.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Populate">
       <MemberSignature Language="C#" Value="public void Populate (System.Collections.ICollection statementOwners);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Populate(class System.Collections.ICollection statementOwners) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.ObjectStatementCollection.Populate(System.Collections.ICollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Populate (statementOwners As ICollection)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Populate(System::Collections::ICollection ^ statementOwners);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -129,6 +148,8 @@
       <MemberSignature Language="C#" Value="public void Populate (object owner);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Populate(object owner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.ObjectStatementCollection.Populate(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Populate (owner As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Populate(System::Object ^ owner);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -161,7 +182,12 @@
       <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.ObjectStatementCollection.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator Implements IEnumerable.GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IEnumerator ^ System.Collections.IEnumerable.GetEnumerator() = System::Collections::IEnumerable::GetEnumerator;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -183,14 +209,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Populate">
-      <AssemblyInfo>
-        <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Populates the statement table with a statement owner or a collection of statement owners.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

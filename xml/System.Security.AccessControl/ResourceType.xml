@@ -1,7 +1,9 @@
-<Type Name="ResourceType" FullName="System.Security.AccessControl.ResourceType">
+﻿<Type Name="ResourceType" FullName="System.Security.AccessControl.ResourceType">
   <TypeSignature Language="C#" Value="public enum ResourceType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ResourceType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.ResourceType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ResourceType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class ResourceType" />
   <AssemblyInfo>
     <AssemblyName>System.Security.AccessControl</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +26,8 @@
       <MemberSignature Language="C#" Value="DSObject" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.ResourceType DSObject = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.ResourceType.DSObject" />
+      <MemberSignature Language="VB.NET" Value="DSObject" />
+      <MemberSignature Language="C++ CLI" Value="DSObject" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -38,6 +42,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.ResourceType</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>A directory service (DS) object or a property set or property of a directory service object.</summary>
       </Docs>
@@ -46,6 +51,8 @@
       <MemberSignature Language="C#" Value="DSObjectAll" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.ResourceType DSObjectAll = int32(9)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.ResourceType.DSObjectAll" />
+      <MemberSignature Language="VB.NET" Value="DSObjectAll" />
+      <MemberSignature Language="C++ CLI" Value="DSObjectAll" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -60,6 +67,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.ResourceType</ReturnType>
       </ReturnValue>
+      <MemberValue>9</MemberValue>
       <Docs>
         <summary>A directory service object and all of its property sets and properties.</summary>
       </Docs>
@@ -68,6 +76,8 @@
       <MemberSignature Language="C#" Value="FileObject" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.ResourceType FileObject = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.ResourceType.FileObject" />
+      <MemberSignature Language="VB.NET" Value="FileObject" />
+      <MemberSignature Language="C++ CLI" Value="FileObject" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -82,6 +92,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.ResourceType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>A file or directory.</summary>
       </Docs>
@@ -90,6 +101,8 @@
       <MemberSignature Language="C#" Value="KernelObject" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.ResourceType KernelObject = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.ResourceType.KernelObject" />
+      <MemberSignature Language="VB.NET" Value="KernelObject" />
+      <MemberSignature Language="C++ CLI" Value="KernelObject" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -104,6 +117,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.ResourceType</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>A local kernel object.</summary>
       </Docs>
@@ -112,6 +126,8 @@
       <MemberSignature Language="C#" Value="LMShare" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.ResourceType LMShare = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.ResourceType.LMShare" />
+      <MemberSignature Language="VB.NET" Value="LMShare" />
+      <MemberSignature Language="C++ CLI" Value="LMShare" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -126,6 +142,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.ResourceType</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>A network share.</summary>
       </Docs>
@@ -134,6 +151,8 @@
       <MemberSignature Language="C#" Value="Printer" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.ResourceType Printer = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.ResourceType.Printer" />
+      <MemberSignature Language="VB.NET" Value="Printer" />
+      <MemberSignature Language="C++ CLI" Value="Printer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -148,6 +167,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.ResourceType</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>A printer.</summary>
       </Docs>
@@ -156,6 +176,8 @@
       <MemberSignature Language="C#" Value="ProviderDefined" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.ResourceType ProviderDefined = int32(10)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.ResourceType.ProviderDefined" />
+      <MemberSignature Language="VB.NET" Value="ProviderDefined" />
+      <MemberSignature Language="C++ CLI" Value="ProviderDefined" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -170,6 +192,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.ResourceType</ReturnType>
       </ReturnValue>
+      <MemberValue>10</MemberValue>
       <Docs>
         <summary>An object defined by a provider.</summary>
       </Docs>
@@ -178,6 +201,8 @@
       <MemberSignature Language="C#" Value="RegistryKey" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.ResourceType RegistryKey = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.ResourceType.RegistryKey" />
+      <MemberSignature Language="VB.NET" Value="RegistryKey" />
+      <MemberSignature Language="C++ CLI" Value="RegistryKey" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -192,6 +217,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.ResourceType</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>A registry key.</summary>
       </Docs>
@@ -200,6 +226,8 @@
       <MemberSignature Language="C#" Value="RegistryWow6432Key" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.ResourceType RegistryWow6432Key = int32(12)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.ResourceType.RegistryWow6432Key" />
+      <MemberSignature Language="VB.NET" Value="RegistryWow6432Key" />
+      <MemberSignature Language="C++ CLI" Value="RegistryWow6432Key" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -214,6 +242,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.ResourceType</ReturnType>
       </ReturnValue>
+      <MemberValue>12</MemberValue>
       <Docs>
         <summary>An object for a registry entry under WOW64.</summary>
       </Docs>
@@ -222,6 +251,8 @@
       <MemberSignature Language="C#" Value="Service" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.ResourceType Service = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.ResourceType.Service" />
+      <MemberSignature Language="VB.NET" Value="Service" />
+      <MemberSignature Language="C++ CLI" Value="Service" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -236,6 +267,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.ResourceType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>A Windows service.</summary>
       </Docs>
@@ -244,6 +276,8 @@
       <MemberSignature Language="C#" Value="Unknown" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.ResourceType Unknown = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.ResourceType.Unknown" />
+      <MemberSignature Language="VB.NET" Value="Unknown" />
+      <MemberSignature Language="C++ CLI" Value="Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -258,6 +292,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.ResourceType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>An unknown object type.</summary>
       </Docs>
@@ -266,6 +301,8 @@
       <MemberSignature Language="C#" Value="WindowObject" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.ResourceType WindowObject = int32(7)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.ResourceType.WindowObject" />
+      <MemberSignature Language="VB.NET" Value="WindowObject" />
+      <MemberSignature Language="C++ CLI" Value="WindowObject" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -280,6 +317,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.ResourceType</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>A window station or desktop object on the local computer.</summary>
       </Docs>
@@ -288,6 +326,8 @@
       <MemberSignature Language="C#" Value="WmiGuidObject" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.ResourceType WmiGuidObject = int32(11)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.ResourceType.WmiGuidObject" />
+      <MemberSignature Language="VB.NET" Value="WmiGuidObject" />
+      <MemberSignature Language="C++ CLI" Value="WmiGuidObject" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -302,6 +342,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.ResourceType</ReturnType>
       </ReturnValue>
+      <MemberValue>11</MemberValue>
       <Docs>
         <summary>A Windows Management Instrumentation (WMI) object.</summary>
       </Docs>

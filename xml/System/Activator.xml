@@ -1,7 +1,9 @@
-<Type Name="Activator" FullName="System.Activator">
+﻿<Type Name="Activator" FullName="System.Activator">
   <TypeSignature Language="C#" Value="public sealed class Activator : System.Runtime.InteropServices._Activator" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Activator extends System.Object implements class System.Runtime.InteropServices._Activator" />
   <TypeSignature Language="DocId" Value="T:System.Activator" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Activator&#xA;Implements _Activator" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Activator sealed : System::Runtime::InteropServices::_Activator" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -73,10 +75,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName="CreateComInstanceFrom">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an instance of the COM object whose name is specified.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateComInstanceFrom">
       <MemberSignature Language="C#" Value="public static System.Runtime.Remoting.ObjectHandle CreateComInstanceFrom (string assemblyName, string typeName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Runtime.Remoting.ObjectHandle CreateComInstanceFrom(string assemblyName, string typeName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activator.CreateComInstanceFrom(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateComInstanceFrom (assemblyName As String, typeName As String) As ObjectHandle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Remoting::ObjectHandle ^ CreateComInstanceFrom(System::String ^ assemblyName, System::String ^ typeName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -137,6 +151,8 @@
       <MemberSignature Language="C#" Value="public static System.Runtime.Remoting.ObjectHandle CreateComInstanceFrom (string assemblyName, string typeName, byte[] hashValue, System.Configuration.Assemblies.AssemblyHashAlgorithm hashAlgorithm);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Runtime.Remoting.ObjectHandle CreateComInstanceFrom(string assemblyName, string typeName, unsigned int8[] hashValue, valuetype System.Configuration.Assemblies.AssemblyHashAlgorithm hashAlgorithm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activator.CreateComInstanceFrom(System.String,System.String,System.Byte[],System.Configuration.Assemblies.AssemblyHashAlgorithm)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateComInstanceFrom (assemblyName As String, typeName As String, hashValue As Byte(), hashAlgorithm As AssemblyHashAlgorithm) As ObjectHandle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Remoting::ObjectHandle ^ CreateComInstanceFrom(System::String ^ assemblyName, System::String ^ typeName, cli::array &lt;System::Byte&gt; ^ hashValue, System::Configuration::Assemblies::AssemblyHashAlgorithm hashAlgorithm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -205,10 +221,21 @@
         <permission cref="T:System.Net.WebPermission">for reading a URI that does not begin with "file://".</permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateInstance">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an instance of the specified type using the constructor that best matches the specified parameters.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateInstance">
       <MemberSignature Language="C#" Value="public static System.Runtime.Remoting.ObjectHandle CreateInstance (ActivationContext activationContext);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Runtime.Remoting.ObjectHandle CreateInstance(class System.ActivationContext activationContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activator.CreateInstance(System.ActivationContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Remoting::ObjectHandle ^ CreateInstance(ActivationContext ^ activationContext);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -249,6 +276,7 @@
       <MemberSignature Language="C#" Value="public static object CreateInstance (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object CreateInstance(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activator.CreateInstance(System.Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ CreateInstance(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -350,6 +378,7 @@
       <MemberSignature Language="C#" Value="public static System.Runtime.Remoting.ObjectHandle CreateInstance (ActivationContext activationContext, string[] activationCustomData);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Runtime.Remoting.ObjectHandle CreateInstance(class System.ActivationContext activationContext, string[] activationCustomData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activator.CreateInstance(System.ActivationContext,System.String[])" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Remoting::ObjectHandle ^ CreateInstance(ActivationContext ^ activationContext, cli::array &lt;System::String ^&gt; ^ activationCustomData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -392,6 +421,8 @@
       <MemberSignature Language="C#" Value="public static System.Runtime.Remoting.ObjectHandle CreateInstance (string assemblyName, string typeName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Runtime.Remoting.ObjectHandle CreateInstance(string assemblyName, string typeName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activator.CreateInstance(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateInstance (assemblyName As String, typeName As String) As ObjectHandle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Remoting::ObjectHandle ^ CreateInstance(System::String ^ assemblyName, System::String ^ typeName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -485,6 +516,7 @@
       <MemberSignature Language="C#" Value="public static object CreateInstance (Type type, bool nonPublic);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object CreateInstance(class System.Type type, bool nonPublic) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activator.CreateInstance(System.Type,System.Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ CreateInstance(Type ^ type, bool nonPublic);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -560,6 +592,7 @@
       <MemberSignature Language="C#" Value="public static object CreateInstance (Type type, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object CreateInstance(class System.Type type, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activator.CreateInstance(System.Type,System.Object[])" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ CreateInstance(Type ^ type, ... cli::array &lt;System::Object ^&gt; ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -677,6 +710,8 @@
       <MemberSignature Language="C#" Value="public static System.Runtime.Remoting.ObjectHandle CreateInstance (AppDomain domain, string assemblyName, string typeName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Runtime.Remoting.ObjectHandle CreateInstance(class System.AppDomain domain, string assemblyName, string typeName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activator.CreateInstance(System.AppDomain,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateInstance (domain As AppDomain, assemblyName As String, typeName As String) As ObjectHandle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Remoting::ObjectHandle ^ CreateInstance(AppDomain ^ domain, System::String ^ assemblyName, System::String ^ typeName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -751,6 +786,8 @@
       <MemberSignature Language="C#" Value="public static System.Runtime.Remoting.ObjectHandle CreateInstance (string assemblyName, string typeName, object[] activationAttributes);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Runtime.Remoting.ObjectHandle CreateInstance(string assemblyName, string typeName, object[] activationAttributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activator.CreateInstance(System.String,System.String,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateInstance (assemblyName As String, typeName As String, activationAttributes As Object()) As ObjectHandle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Remoting::ObjectHandle ^ CreateInstance(System::String ^ assemblyName, System::String ^ typeName, cli::array &lt;System::Object ^&gt; ^ activationAttributes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -832,6 +869,7 @@
       <MemberSignature Language="C#" Value="public static object CreateInstance (Type type, object[] args, object[] activationAttributes);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object CreateInstance(class System.Type type, object[] args, object[] activationAttributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activator.CreateInstance(System.Type,System.Object[],System.Object[])" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ CreateInstance(Type ^ type, cli::array &lt;System::Object ^&gt; ^ args, cli::array &lt;System::Object ^&gt; ^ activationAttributes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -918,6 +956,7 @@
       <MemberSignature Language="C#" Value="public static object CreateInstance (Type type, System.Reflection.BindingFlags bindingAttr, System.Reflection.Binder binder, object[] args, System.Globalization.CultureInfo culture);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object CreateInstance(class System.Type type, valuetype System.Reflection.BindingFlags bindingAttr, class System.Reflection.Binder binder, object[] args, class System.Globalization.CultureInfo culture) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activator.CreateInstance(System.Type,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ CreateInstance(Type ^ type, System::Reflection::BindingFlags bindingAttr, System::Reflection::Binder ^ binder, cli::array &lt;System::Object ^&gt; ^ args, System::Globalization::CultureInfo ^ culture);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1002,6 +1041,7 @@
       <MemberSignature Language="C#" Value="public static object CreateInstance (Type type, System.Reflection.BindingFlags bindingAttr, System.Reflection.Binder binder, object[] args, System.Globalization.CultureInfo culture, object[] activationAttributes);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object CreateInstance(class System.Type type, valuetype System.Reflection.BindingFlags bindingAttr, class System.Reflection.Binder binder, object[] args, class System.Globalization.CultureInfo culture, object[] activationAttributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activator.CreateInstance(System.Type,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo,System.Object[])" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ CreateInstance(Type ^ type, System::Reflection::BindingFlags bindingAttr, System::Reflection::Binder ^ binder, cli::array &lt;System::Object ^&gt; ^ args, System::Globalization::CultureInfo ^ culture, cli::array &lt;System::Object ^&gt; ^ activationAttributes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1099,6 +1139,7 @@
       <MemberSignature Language="C#" Value="public static System.Runtime.Remoting.ObjectHandle CreateInstance (string assemblyName, string typeName, bool ignoreCase, System.Reflection.BindingFlags bindingAttr, System.Reflection.Binder binder, object[] args, System.Globalization.CultureInfo culture, object[] activationAttributes);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Runtime.Remoting.ObjectHandle CreateInstance(string assemblyName, string typeName, bool ignoreCase, valuetype System.Reflection.BindingFlags bindingAttr, class System.Reflection.Binder binder, object[] args, class System.Globalization.CultureInfo culture, object[] activationAttributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activator.CreateInstance(System.String,System.String,System.Boolean,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo,System.Object[])" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Remoting::ObjectHandle ^ CreateInstance(System::String ^ assemblyName, System::String ^ typeName, bool ignoreCase, System::Reflection::BindingFlags bindingAttr, System::Reflection::Binder ^ binder, cli::array &lt;System::Object ^&gt; ^ args, System::Globalization::CultureInfo ^ culture, cli::array &lt;System::Object ^&gt; ^ activationAttributes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1189,6 +1230,7 @@
       <MemberSignature Language="C#" Value="public static System.Runtime.Remoting.ObjectHandle CreateInstance (AppDomain domain, string assemblyName, string typeName, bool ignoreCase, System.Reflection.BindingFlags bindingAttr, System.Reflection.Binder binder, object[] args, System.Globalization.CultureInfo culture, object[] activationAttributes);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Runtime.Remoting.ObjectHandle CreateInstance(class System.AppDomain domain, string assemblyName, string typeName, bool ignoreCase, valuetype System.Reflection.BindingFlags bindingAttr, class System.Reflection.Binder binder, object[] args, class System.Globalization.CultureInfo culture, object[] activationAttributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activator.CreateInstance(System.AppDomain,System.String,System.String,System.Boolean,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo,System.Object[])" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Remoting::ObjectHandle ^ CreateInstance(AppDomain ^ domain, System::String ^ assemblyName, System::String ^ typeName, bool ignoreCase, System::Reflection::BindingFlags bindingAttr, System::Reflection::Binder ^ binder, cli::array &lt;System::Object ^&gt; ^ args, System::Globalization::CultureInfo ^ culture, cli::array &lt;System::Object ^&gt; ^ activationAttributes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1282,6 +1324,7 @@
       <MemberSignature Language="C#" Value="public static System.Runtime.Remoting.ObjectHandle CreateInstance (string assemblyName, string typeName, bool ignoreCase, System.Reflection.BindingFlags bindingAttr, System.Reflection.Binder binder, object[] args, System.Globalization.CultureInfo culture, object[] activationAttributes, System.Security.Policy.Evidence securityInfo);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Runtime.Remoting.ObjectHandle CreateInstance(string assemblyName, string typeName, bool ignoreCase, valuetype System.Reflection.BindingFlags bindingAttr, class System.Reflection.Binder binder, object[] args, class System.Globalization.CultureInfo culture, object[] activationAttributes, class System.Security.Policy.Evidence securityInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activator.CreateInstance(System.String,System.String,System.Boolean,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo,System.Object[],System.Security.Policy.Evidence)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Remoting::ObjectHandle ^ CreateInstance(System::String ^ assemblyName, System::String ^ typeName, bool ignoreCase, System::Reflection::BindingFlags bindingAttr, System::Reflection::Binder ^ binder, cli::array &lt;System::Object ^&gt; ^ args, System::Globalization::CultureInfo ^ culture, cli::array &lt;System::Object ^&gt; ^ activationAttributes, System::Security::Policy::Evidence ^ securityInfo);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1377,6 +1420,7 @@
       <MemberSignature Language="C#" Value="public static System.Runtime.Remoting.ObjectHandle CreateInstance (AppDomain domain, string assemblyName, string typeName, bool ignoreCase, System.Reflection.BindingFlags bindingAttr, System.Reflection.Binder binder, object[] args, System.Globalization.CultureInfo culture, object[] activationAttributes, System.Security.Policy.Evidence securityAttributes);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Runtime.Remoting.ObjectHandle CreateInstance(class System.AppDomain domain, string assemblyName, string typeName, bool ignoreCase, valuetype System.Reflection.BindingFlags bindingAttr, class System.Reflection.Binder binder, object[] args, class System.Globalization.CultureInfo culture, object[] activationAttributes, class System.Security.Policy.Evidence securityAttributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activator.CreateInstance(System.AppDomain,System.String,System.String,System.Boolean,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo,System.Object[],System.Security.Policy.Evidence)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Remoting::ObjectHandle ^ CreateInstance(AppDomain ^ domain, System::String ^ assemblyName, System::String ^ typeName, bool ignoreCase, System::Reflection::BindingFlags bindingAttr, System::Reflection::Binder ^ binder, cli::array &lt;System::Object ^&gt; ^ args, System::Globalization::CultureInfo ^ culture, cli::array &lt;System::Object ^&gt; ^ activationAttributes, System::Security::Policy::Evidence ^ securityAttributes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1473,6 +1517,8 @@
       <MemberSignature Language="C#" Value="public static T CreateInstance&lt;T&gt; ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T CreateInstance&lt;T&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activator.CreateInstance``1" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateInstance(Of T) () As T" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static T CreateInstance();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1529,10 +1575,22 @@
  The type that is specified for <paramref name="T" /> does not have a parameterless constructor.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateInstanceFrom">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an instance of the type whose name is specified, using the named assembly file and the constructor that best matches the specified parameters.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateInstanceFrom">
       <MemberSignature Language="C#" Value="public static System.Runtime.Remoting.ObjectHandle CreateInstanceFrom (string assemblyFile, string typeName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Runtime.Remoting.ObjectHandle CreateInstanceFrom(string assemblyFile, string typeName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activator.CreateInstanceFrom(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateInstanceFrom (assemblyFile As String, typeName As String) As ObjectHandle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Remoting::ObjectHandle ^ CreateInstanceFrom(System::String ^ assemblyFile, System::String ^ typeName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1596,6 +1654,8 @@
       <MemberSignature Language="C#" Value="public static System.Runtime.Remoting.ObjectHandle CreateInstanceFrom (AppDomain domain, string assemblyFile, string typeName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Runtime.Remoting.ObjectHandle CreateInstanceFrom(class System.AppDomain domain, string assemblyFile, string typeName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activator.CreateInstanceFrom(System.AppDomain,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateInstanceFrom (domain As AppDomain, assemblyFile As String, typeName As String) As ObjectHandle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Remoting::ObjectHandle ^ CreateInstanceFrom(AppDomain ^ domain, System::String ^ assemblyFile, System::String ^ typeName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1662,6 +1722,8 @@
       <MemberSignature Language="C#" Value="public static System.Runtime.Remoting.ObjectHandle CreateInstanceFrom (string assemblyFile, string typeName, object[] activationAttributes);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Runtime.Remoting.ObjectHandle CreateInstanceFrom(string assemblyFile, string typeName, object[] activationAttributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activator.CreateInstanceFrom(System.String,System.String,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateInstanceFrom (assemblyFile As String, typeName As String, activationAttributes As Object()) As ObjectHandle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Remoting::ObjectHandle ^ CreateInstanceFrom(System::String ^ assemblyFile, System::String ^ typeName, cli::array &lt;System::Object ^&gt; ^ activationAttributes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1722,6 +1784,7 @@
       <MemberSignature Language="C#" Value="public static System.Runtime.Remoting.ObjectHandle CreateInstanceFrom (string assemblyFile, string typeName, bool ignoreCase, System.Reflection.BindingFlags bindingAttr, System.Reflection.Binder binder, object[] args, System.Globalization.CultureInfo culture, object[] activationAttributes);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Runtime.Remoting.ObjectHandle CreateInstanceFrom(string assemblyFile, string typeName, bool ignoreCase, valuetype System.Reflection.BindingFlags bindingAttr, class System.Reflection.Binder binder, object[] args, class System.Globalization.CultureInfo culture, object[] activationAttributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activator.CreateInstanceFrom(System.String,System.String,System.Boolean,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo,System.Object[])" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Remoting::ObjectHandle ^ CreateInstanceFrom(System::String ^ assemblyFile, System::String ^ typeName, bool ignoreCase, System::Reflection::BindingFlags bindingAttr, System::Reflection::Binder ^ binder, cli::array &lt;System::Object ^&gt; ^ args, System::Globalization::CultureInfo ^ culture, cli::array &lt;System::Object ^&gt; ^ activationAttributes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1793,6 +1856,7 @@
       <MemberSignature Language="C#" Value="public static System.Runtime.Remoting.ObjectHandle CreateInstanceFrom (AppDomain domain, string assemblyFile, string typeName, bool ignoreCase, System.Reflection.BindingFlags bindingAttr, System.Reflection.Binder binder, object[] args, System.Globalization.CultureInfo culture, object[] activationAttributes);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Runtime.Remoting.ObjectHandle CreateInstanceFrom(class System.AppDomain domain, string assemblyFile, string typeName, bool ignoreCase, valuetype System.Reflection.BindingFlags bindingAttr, class System.Reflection.Binder binder, object[] args, class System.Globalization.CultureInfo culture, object[] activationAttributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activator.CreateInstanceFrom(System.AppDomain,System.String,System.String,System.Boolean,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo,System.Object[])" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Remoting::ObjectHandle ^ CreateInstanceFrom(AppDomain ^ domain, System::String ^ assemblyFile, System::String ^ typeName, bool ignoreCase, System::Reflection::BindingFlags bindingAttr, System::Reflection::Binder ^ binder, cli::array &lt;System::Object ^&gt; ^ args, System::Globalization::CultureInfo ^ culture, cli::array &lt;System::Object ^&gt; ^ activationAttributes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1874,6 +1938,7 @@
       <MemberSignature Language="C#" Value="public static System.Runtime.Remoting.ObjectHandle CreateInstanceFrom (string assemblyFile, string typeName, bool ignoreCase, System.Reflection.BindingFlags bindingAttr, System.Reflection.Binder binder, object[] args, System.Globalization.CultureInfo culture, object[] activationAttributes, System.Security.Policy.Evidence securityInfo);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Runtime.Remoting.ObjectHandle CreateInstanceFrom(string assemblyFile, string typeName, bool ignoreCase, valuetype System.Reflection.BindingFlags bindingAttr, class System.Reflection.Binder binder, object[] args, class System.Globalization.CultureInfo culture, object[] activationAttributes, class System.Security.Policy.Evidence securityInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activator.CreateInstanceFrom(System.String,System.String,System.Boolean,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo,System.Object[],System.Security.Policy.Evidence)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Remoting::ObjectHandle ^ CreateInstanceFrom(System::String ^ assemblyFile, System::String ^ typeName, bool ignoreCase, System::Reflection::BindingFlags bindingAttr, System::Reflection::Binder ^ binder, cli::array &lt;System::Object ^&gt; ^ args, System::Globalization::CultureInfo ^ culture, cli::array &lt;System::Object ^&gt; ^ activationAttributes, System::Security::Policy::Evidence ^ securityInfo);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1952,6 +2017,7 @@
       <MemberSignature Language="C#" Value="public static System.Runtime.Remoting.ObjectHandle CreateInstanceFrom (AppDomain domain, string assemblyFile, string typeName, bool ignoreCase, System.Reflection.BindingFlags bindingAttr, System.Reflection.Binder binder, object[] args, System.Globalization.CultureInfo culture, object[] activationAttributes, System.Security.Policy.Evidence securityAttributes);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Runtime.Remoting.ObjectHandle CreateInstanceFrom(class System.AppDomain domain, string assemblyFile, string typeName, bool ignoreCase, valuetype System.Reflection.BindingFlags bindingAttr, class System.Reflection.Binder binder, object[] args, class System.Globalization.CultureInfo culture, object[] activationAttributes, class System.Security.Policy.Evidence securityAttributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activator.CreateInstanceFrom(System.AppDomain,System.String,System.String,System.Boolean,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo,System.Object[],System.Security.Policy.Evidence)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Remoting::ObjectHandle ^ CreateInstanceFrom(AppDomain ^ domain, System::String ^ assemblyFile, System::String ^ typeName, bool ignoreCase, System::Reflection::BindingFlags bindingAttr, System::Reflection::Binder ^ binder, cli::array &lt;System::Object ^&gt; ^ args, System::Globalization::CultureInfo ^ culture, cli::array &lt;System::Object ^&gt; ^ activationAttributes, System::Security::Policy::Evidence ^ securityAttributes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2037,10 +2103,21 @@
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetObject">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a proxy for a well-known object or XML Web service.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetObject">
       <MemberSignature Language="C#" Value="public static object GetObject (Type type, string url);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetObject(class System.Type type, string url) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activator.GetObject(System.Type,System.String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetObject(Type ^ type, System::String ^ url);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2086,6 +2163,7 @@
       <MemberSignature Language="C#" Value="public static object GetObject (Type type, string url, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetObject(class System.Type type, string url, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activator.GetObject(System.Type,System.String,System.Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetObject(Type ^ type, System::String ^ url, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2135,7 +2213,12 @@
       <MemberSignature Language="C#" Value="void _Activator.GetIDsOfNames (ref Guid riid, IntPtr rgszNames, uint cNames, uint lcid, IntPtr rgDispId);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._Activator.GetIDsOfNames([in]valuetype System.Guid&amp; riid, native int rgszNames, unsigned int32 cNames, unsigned int32 lcid, native int rgDispId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activator.System#Runtime#InteropServices#_Activator#GetIDsOfNames(System.Guid@,System.IntPtr,System.UInt32,System.UInt32,System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Sub GetIDsOfNames (ByRef riid As Guid, rgszNames As IntPtr, cNames As UInteger, lcid As UInteger, rgDispId As IntPtr) Implements _Activator.GetIDsOfNames" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.InteropServices._Activator.GetIDsOfNames(Guid % riid, IntPtr rgszNames, System::UInt32 cNames, System::UInt32 lcid, IntPtr rgDispId) = System::Runtime::InteropServices::_Activator::GetIDsOfNames;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.InteropServices._Activator.GetIDsOfNames(System.Guid@,System.IntPtr,System.UInt32,System.UInt32,System.IntPtr)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -2173,7 +2256,12 @@
       <MemberSignature Language="C#" Value="void _Activator.GetTypeInfo (uint iTInfo, uint lcid, IntPtr ppTInfo);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._Activator.GetTypeInfo(unsigned int32 iTInfo, unsigned int32 lcid, native int ppTInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activator.System#Runtime#InteropServices#_Activator#GetTypeInfo(System.UInt32,System.UInt32,System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Sub GetTypeInfo (iTInfo As UInteger, lcid As UInteger, ppTInfo As IntPtr) Implements _Activator.GetTypeInfo" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.InteropServices._Activator.GetTypeInfo(System::UInt32 iTInfo, System::UInt32 lcid, IntPtr ppTInfo) = System::Runtime::InteropServices::_Activator::GetTypeInfo;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.InteropServices._Activator.GetTypeInfo(System.UInt32,System.UInt32,System.IntPtr)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -2207,7 +2295,12 @@
       <MemberSignature Language="C#" Value="void _Activator.GetTypeInfoCount (out uint pcTInfo);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._Activator.GetTypeInfoCount([out] unsigned int32&amp; pcTInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activator.System#Runtime#InteropServices#_Activator#GetTypeInfoCount(System.UInt32@)" />
+      <MemberSignature Language="VB.NET" Value="Sub GetTypeInfoCount (ByRef pcTInfo As UInteger) Implements _Activator.GetTypeInfoCount" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.InteropServices._Activator.GetTypeInfoCount([Runtime::InteropServices::Out] System::UInt32 % pcTInfo) = System::Runtime::InteropServices::_Activator::GetTypeInfoCount;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.InteropServices._Activator.GetTypeInfoCount(System.UInt32@)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -2237,7 +2330,12 @@
       <MemberSignature Language="C#" Value="void _Activator.Invoke (uint dispIdMember, ref Guid riid, uint lcid, short wFlags, IntPtr pDispParams, IntPtr pVarResult, IntPtr pExcepInfo, IntPtr puArgErr);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._Activator.Invoke(unsigned int32 dispIdMember, [in]valuetype System.Guid&amp; riid, unsigned int32 lcid, int16 wFlags, native int pDispParams, native int pVarResult, native int pExcepInfo, native int puArgErr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activator.System#Runtime#InteropServices#_Activator#Invoke(System.UInt32,System.Guid@,System.UInt32,System.Int16,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Sub Invoke (dispIdMember As UInteger, ByRef riid As Guid, lcid As UInteger, wFlags As Short, pDispParams As IntPtr, pVarResult As IntPtr, pExcepInfo As IntPtr, puArgErr As IntPtr) Implements _Activator.Invoke" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.InteropServices._Activator.Invoke(System::UInt32 dispIdMember, Guid % riid, System::UInt32 lcid, short wFlags, IntPtr pDispParams, IntPtr pVarResult, IntPtr pExcepInfo, IntPtr puArgErr) = System::Runtime::InteropServices::_Activator::Invoke;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.InteropServices._Activator.Invoke(System.UInt32,System.Guid@,System.UInt32,System.Int16,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -2277,45 +2375,5 @@
         <exception cref="T:System.NotImplementedException">Late-bound access using the COM <c>IDispatch</c> interface is not supported.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="CreateComInstanceFrom">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates an instance of the COM object whose name is specified.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="CreateInstance">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates an instance of the specified type using the constructor that best matches the specified parameters.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="CreateInstanceFrom">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates an instance of the type whose name is specified, using the named assembly file and the constructor that best matches the specified parameters.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetObject">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a proxy for a well-known object or XML Web service.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,9 @@
-<Type Name="EncoderFallbackBuffer" FullName="System.Text.EncoderFallbackBuffer">
+﻿<Type Name="EncoderFallbackBuffer" FullName="System.Text.EncoderFallbackBuffer">
   <TypeSignature Language="C#" Value="public abstract class EncoderFallbackBuffer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit EncoderFallbackBuffer extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Text.EncoderFallbackBuffer" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class EncoderFallbackBuffer" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EncoderFallbackBuffer abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Text.Encoding</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -64,6 +66,8 @@
       <MemberSignature Language="C#" Value="protected EncoderFallbackBuffer ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.EncoderFallbackBuffer.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; EncoderFallbackBuffer();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -88,10 +92,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Fallback">
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encoding</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Indicates whether a substitute string is available when the original input cannot be encoded, or whether the original input should be ignored.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Fallback">
       <MemberSignature Language="C#" Value="public abstract bool Fallback (char charUnknown, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Fallback(char charUnknown, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.EncoderFallbackBuffer.Fallback(System.Char,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function Fallback (charUnknown As Char, index As Integer) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool Fallback(char charUnknown, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -137,6 +152,8 @@
       <MemberSignature Language="C#" Value="public abstract bool Fallback (char charUnknownHigh, char charUnknownLow, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Fallback(char charUnknownHigh, char charUnknownLow, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.EncoderFallbackBuffer.Fallback(System.Char,System.Char,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function Fallback (charUnknownHigh As Char, charUnknownLow As Char, index As Integer) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool Fallback(char charUnknownHigh, char charUnknownLow, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -184,6 +201,8 @@
       <MemberSignature Language="C#" Value="public abstract char GetNextChar ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance char GetNextChar() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.EncoderFallbackBuffer.GetNextChar" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetNextChar () As Char" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract char GetNextChar();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -225,6 +244,8 @@
       <MemberSignature Language="C#" Value="public abstract bool MovePrevious ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool MovePrevious() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.EncoderFallbackBuffer.MovePrevious" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function MovePrevious () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool MovePrevious();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -265,6 +286,8 @@
       <MemberSignature Language="C#" Value="public abstract int Remaining { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Remaining" />
       <MemberSignature Language="DocId" Value="P:System.Text.EncoderFallbackBuffer.Remaining" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Remaining As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property int Remaining { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -305,6 +328,8 @@
       <MemberSignature Language="C#" Value="public virtual void Reset ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Reset() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.EncoderFallbackBuffer.Reset" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Reset ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Reset();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -335,14 +360,5 @@
         </block>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Fallback">
-      <AssemblyInfo>
-        <AssemblyName>System.Text.Encoding</AssemblyName>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Indicates whether a substitute string is available when the original input cannot be encoded, or whether the original input should be ignored.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

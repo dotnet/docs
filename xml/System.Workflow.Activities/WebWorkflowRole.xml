@@ -1,7 +1,9 @@
-<Type Name="WebWorkflowRole" FullName="System.Workflow.Activities.WebWorkflowRole">
+﻿<Type Name="WebWorkflowRole" FullName="System.Workflow.Activities.WebWorkflowRole">
   <TypeSignature Language="C#" Value="public class WebWorkflowRole : System.Workflow.Activities.WorkflowRole" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit WebWorkflowRole extends System.Workflow.Activities.WorkflowRole" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.WebWorkflowRole" />
+  <TypeSignature Language="VB.NET" Value="Public Class WebWorkflowRole&#xA;Inherits WorkflowRole" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WebWorkflowRole : System::Workflow::Activities::WorkflowRole" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,10 +33,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.WebWorkflowRole" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public WebWorkflowRole (string roleName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string roleName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.WebWorkflowRole.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (roleName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebWorkflowRole(System::String ^ roleName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -55,6 +68,8 @@
       <MemberSignature Language="C#" Value="public WebWorkflowRole (string roleName, string provider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string roleName, string provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.WebWorkflowRole.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (roleName As String, provider As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebWorkflowRole(System::String ^ roleName, System::String ^ provider);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -84,6 +99,8 @@
       <MemberSignature Language="C#" Value="public override System.Collections.Generic.IList&lt;string&gt; GetIdentities ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Collections.Generic.IList`1&lt;string&gt; GetIdentities() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.WebWorkflowRole.GetIdentities" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetIdentities () As IList(Of String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Collections::Generic::IList&lt;System::String ^&gt; ^ GetIdentities();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -112,6 +129,8 @@
       <MemberSignature Language="C#" Value="public override bool IncludesIdentity (string identity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IncludesIdentity(string identity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.WebWorkflowRole.IncludesIdentity(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function IncludesIdentity (identity As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IncludesIdentity(System::String ^ identity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -135,6 +154,8 @@
       <MemberSignature Language="C#" Value="public override string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.WebWorkflowRole.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -155,6 +176,8 @@
       <MemberSignature Language="C#" Value="public string RoleProvider { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string RoleProvider" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.WebWorkflowRole.RoleProvider" />
+      <MemberSignature Language="VB.NET" Value="Public Property RoleProvider As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RoleProvider { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -176,14 +199,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.WebWorkflowRole" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,9 @@
-<Type Name="VerifyResult" FullName="System.IO.Packaging.VerifyResult">
+﻿<Type Name="VerifyResult" FullName="System.IO.Packaging.VerifyResult">
   <TypeSignature Language="C#" Value="public enum VerifyResult" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed VerifyResult extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.IO.Packaging.VerifyResult" />
+  <TypeSignature Language="VB.NET" Value="Public Enum VerifyResult" />
+  <TypeSignature Language="C++ CLI" Value="public enum class VerifyResult" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +38,8 @@
       <MemberSignature Language="C#" Value="CertificateRequired" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Packaging.VerifyResult CertificateRequired = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.IO.Packaging.VerifyResult.CertificateRequired" />
+      <MemberSignature Language="VB.NET" Value="CertificateRequired" />
+      <MemberSignature Language="C++ CLI" Value="CertificateRequired" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -44,6 +48,7 @@
       <ReturnValue>
         <ReturnType>System.IO.Packaging.VerifyResult</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The X.509 certificate is not available to verify the signature.</summary>
       </Docs>
@@ -52,6 +57,8 @@
       <MemberSignature Language="C#" Value="InvalidCertificate" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Packaging.VerifyResult InvalidCertificate = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.IO.Packaging.VerifyResult.InvalidCertificate" />
+      <MemberSignature Language="VB.NET" Value="InvalidCertificate" />
+      <MemberSignature Language="C++ CLI" Value="InvalidCertificate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -60,6 +67,7 @@
       <ReturnValue>
         <ReturnType>System.IO.Packaging.VerifyResult</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The X.509 certificate is not valid.</summary>
       </Docs>
@@ -68,6 +76,8 @@
       <MemberSignature Language="C#" Value="InvalidSignature" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Packaging.VerifyResult InvalidSignature = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.IO.Packaging.VerifyResult.InvalidSignature" />
+      <MemberSignature Language="VB.NET" Value="InvalidSignature" />
+      <MemberSignature Language="C++ CLI" Value="InvalidSignature" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -76,6 +86,7 @@
       <ReturnValue>
         <ReturnType>System.IO.Packaging.VerifyResult</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The signature is not valid.</summary>
       </Docs>
@@ -84,6 +95,8 @@
       <MemberSignature Language="C#" Value="NotSigned" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Packaging.VerifyResult NotSigned = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.IO.Packaging.VerifyResult.NotSigned" />
+      <MemberSignature Language="VB.NET" Value="NotSigned" />
+      <MemberSignature Language="C++ CLI" Value="NotSigned" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -92,6 +105,7 @@
       <ReturnValue>
         <ReturnType>System.IO.Packaging.VerifyResult</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>The specified package or part has no signature.</summary>
       </Docs>
@@ -100,6 +114,8 @@
       <MemberSignature Language="C#" Value="ReferenceNotFound" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Packaging.VerifyResult ReferenceNotFound = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.IO.Packaging.VerifyResult.ReferenceNotFound" />
+      <MemberSignature Language="VB.NET" Value="ReferenceNotFound" />
+      <MemberSignature Language="C++ CLI" Value="ReferenceNotFound" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -108,6 +124,7 @@
       <ReturnValue>
         <ReturnType>System.IO.Packaging.VerifyResult</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>A reference relationship to the signature was not found.</summary>
       </Docs>
@@ -116,6 +133,8 @@
       <MemberSignature Language="C#" Value="Success" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Packaging.VerifyResult Success = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.IO.Packaging.VerifyResult.Success" />
+      <MemberSignature Language="VB.NET" Value="Success" />
+      <MemberSignature Language="C++ CLI" Value="Success" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -124,6 +143,7 @@
       <ReturnValue>
         <ReturnType>System.IO.Packaging.VerifyResult</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The verification was successful.</summary>
       </Docs>

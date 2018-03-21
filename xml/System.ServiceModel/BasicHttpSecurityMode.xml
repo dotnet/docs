@@ -1,7 +1,9 @@
-<Type Name="BasicHttpSecurityMode" FullName="System.ServiceModel.BasicHttpSecurityMode">
+﻿<Type Name="BasicHttpSecurityMode" FullName="System.ServiceModel.BasicHttpSecurityMode">
   <TypeSignature Language="C#" Value="public enum BasicHttpSecurityMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BasicHttpSecurityMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.BasicHttpSecurityMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum BasicHttpSecurityMode" />
+  <TypeSignature Language="C++ CLI" Value="public enum class BasicHttpSecurityMode" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -36,6 +38,8 @@
       <MemberSignature Language="C#" Value="Message" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.BasicHttpSecurityMode Message = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.BasicHttpSecurityMode.Message" />
+      <MemberSignature Language="VB.NET" Value="Message" />
+      <MemberSignature Language="C++ CLI" Value="Message" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -51,6 +55,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.BasicHttpSecurityMode</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Security is provided using SOAP message security. For the <see cref="T:System.ServiceModel.BasicHttpBinding" />, the system requires that the server certificate be provided to the client separately. The valid client credential types for this binding are <see langword="UserName" /> and <see langword="Certificate" />.</summary>
       </Docs>
@@ -59,6 +64,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.BasicHttpSecurityMode None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.BasicHttpSecurityMode.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -74,6 +81,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.BasicHttpSecurityMode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The SOAP message is not secured during transfer. This is the default behavior.</summary>
       </Docs>
@@ -82,6 +90,8 @@
       <MemberSignature Language="C#" Value="Transport" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.BasicHttpSecurityMode Transport = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.BasicHttpSecurityMode.Transport" />
+      <MemberSignature Language="VB.NET" Value="Transport" />
+      <MemberSignature Language="C++ CLI" Value="Transport" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -97,6 +107,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.BasicHttpSecurityMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Security is provided using HTTPS. The service must be configured with SSL certificates. The SOAP message is protected as a whole using HTTPS. The service is authenticated by the client using the service’s SSL certificate. The client authentication is controlled through the <see cref="P:System.ServiceModel.HttpTransportSecurity.ClientCredentialType" />.</summary>
       </Docs>
@@ -105,6 +116,8 @@
       <MemberSignature Language="C#" Value="TransportCredentialOnly" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.BasicHttpSecurityMode TransportCredentialOnly = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.BasicHttpSecurityMode.TransportCredentialOnly" />
+      <MemberSignature Language="VB.NET" Value="TransportCredentialOnly" />
+      <MemberSignature Language="C++ CLI" Value="TransportCredentialOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -120,6 +133,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.BasicHttpSecurityMode</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>This mode does not provide message integrity and confidentiality. It provides only HTTP-based client authentication. Use this mode with caution. It should be used in environments where the transfer security is being provided by other means (such as IPSec) and only client authentication is provided by the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] infrastructure.</summary>
       </Docs>
@@ -128,6 +142,8 @@
       <MemberSignature Language="C#" Value="TransportWithMessageCredential" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.BasicHttpSecurityMode TransportWithMessageCredential = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.BasicHttpSecurityMode.TransportWithMessageCredential" />
+      <MemberSignature Language="VB.NET" Value="TransportWithMessageCredential" />
+      <MemberSignature Language="C++ CLI" Value="TransportWithMessageCredential" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -143,6 +159,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.BasicHttpSecurityMode</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Integrity, confidentiality and server authentication are provided by HTTPS. The service must be configured with a certificate. Client authentication is provided by means of SOAP message security. This mode is applicable when the user is authenticating with a UserName or Certificate credential and there is an existing HTTPS deployment for securing message transfer.</summary>
       </Docs>

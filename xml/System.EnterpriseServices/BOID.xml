@@ -1,7 +1,9 @@
-<Type Name="BOID" FullName="System.EnterpriseServices.BOID">
+﻿<Type Name="BOID" FullName="System.EnterpriseServices.BOID">
   <TypeSignature Language="C#" Value="public struct BOID" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit BOID extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.BOID" />
+  <TypeSignature Language="VB.NET" Value="Public Structure BOID" />
+  <TypeSignature Language="C++ CLI" Value="public value class BOID" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +26,8 @@
       <MemberSignature Language="C#" Value="public byte[] rgb;" />
       <MemberSignature Language="ILAsm" Value=".field public unsigned int8[] rgb" />
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.BOID.rgb" />
+      <MemberSignature Language="VB.NET" Value="Public rgb As Byte() " />
+      <MemberSignature Language="C++ CLI" Value="public: cli::array &lt;System::Byte&gt; ^ rgb;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

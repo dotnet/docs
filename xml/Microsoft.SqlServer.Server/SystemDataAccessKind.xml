@@ -1,7 +1,9 @@
-<Type Name="SystemDataAccessKind" FullName="Microsoft.SqlServer.Server.SystemDataAccessKind">
+﻿<Type Name="SystemDataAccessKind" FullName="Microsoft.SqlServer.Server.SystemDataAccessKind">
   <TypeSignature Language="C#" Value="public enum SystemDataAccessKind" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed SystemDataAccessKind extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Server.SystemDataAccessKind" />
+  <TypeSignature Language="VB.NET" Value="Public Enum SystemDataAccessKind" />
+  <TypeSignature Language="C++ CLI" Value="public enum class SystemDataAccessKind" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -30,6 +32,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.SystemDataAccessKind None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.SystemDataAccessKind.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -39,6 +43,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.SystemDataAccessKind</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The method or function does not access system data.</summary>
       </Docs>
@@ -47,6 +52,8 @@
       <MemberSignature Language="C#" Value="Read" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.SystemDataAccessKind Read = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.SystemDataAccessKind.Read" />
+      <MemberSignature Language="VB.NET" Value="Read" />
+      <MemberSignature Language="C++ CLI" Value="Read" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -56,6 +63,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.SystemDataAccessKind</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The method or function reads system data.</summary>
       </Docs>

@@ -1,7 +1,9 @@
-<Type Name="WorkflowCreationContext" FullName="System.ServiceModel.Activities.WorkflowCreationContext">
+﻿<Type Name="WorkflowCreationContext" FullName="System.ServiceModel.Activities.WorkflowCreationContext">
   <TypeSignature Language="C#" Value="public class WorkflowCreationContext" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WorkflowCreationContext extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.WorkflowCreationContext" />
+  <TypeSignature Language="VB.NET" Value="Public Class WorkflowCreationContext" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WorkflowCreationContext" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +26,8 @@
       <MemberSignature Language="C#" Value="public WorkflowCreationContext ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowCreationContext.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowCreationContext();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -39,6 +43,8 @@
       <MemberSignature Language="C#" Value="public bool CreateOnly { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CreateOnly" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.WorkflowCreationContext.CreateOnly" />
+      <MemberSignature Language="VB.NET" Value="Public Property CreateOnly As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CreateOnly { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -63,6 +69,8 @@
       <MemberSignature Language="C#" Value="public bool IsCompletionTransactionRequired { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsCompletionTransactionRequired" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.WorkflowCreationContext.IsCompletionTransactionRequired" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsCompletionTransactionRequired As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCompletionTransactionRequired { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -84,9 +92,11 @@
       </Docs>
     </Member>
     <Member MemberName="OnAbort">
-      <MemberSignature Language="C#" Value="protected virtual void OnAbort ();" />
+      <MemberSignature Language="C#" Value="protected internal virtual void OnAbort ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void OnAbort() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowCreationContext.OnAbort" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub OnAbort ()" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void OnAbort();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -111,9 +121,11 @@
       </Docs>
     </Member>
     <Member MemberName="OnBeginWorkflowCompleted">
-      <MemberSignature Language="C#" Value="protected virtual IAsyncResult OnBeginWorkflowCompleted (System.Activities.ActivityInstanceState completionState, System.Collections.Generic.IDictionary&lt;string,object&gt; workflowOutputs, Exception terminationException, TimeSpan timeout, AsyncCallback callback, object state);" />
+      <MemberSignature Language="C#" Value="protected internal virtual IAsyncResult OnBeginWorkflowCompleted (System.Activities.ActivityInstanceState completionState, System.Collections.Generic.IDictionary&lt;string,object&gt; workflowOutputs, Exception terminationException, TimeSpan timeout, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.IAsyncResult OnBeginWorkflowCompleted(valuetype System.Activities.ActivityInstanceState completionState, class System.Collections.Generic.IDictionary`2&lt;string, object&gt; workflowOutputs, class System.Exception terminationException, valuetype System.TimeSpan timeout, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowCreationContext.OnBeginWorkflowCompleted(System.Activities.ActivityInstanceState,System.Collections.Generic.IDictionary{System.String,System.Object},System.Exception,System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function OnBeginWorkflowCompleted (completionState As ActivityInstanceState, workflowOutputs As IDictionary(Of String, Object), terminationException As Exception, timeout As TimeSpan, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual IAsyncResult ^ OnBeginWorkflowCompleted(System::Activities::ActivityInstanceState completionState, System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ workflowOutputs, Exception ^ terminationException, TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -152,9 +164,11 @@
       </Docs>
     </Member>
     <Member MemberName="OnEndWorkflowCompleted">
-      <MemberSignature Language="C#" Value="protected virtual void OnEndWorkflowCompleted (IAsyncResult result);" />
+      <MemberSignature Language="C#" Value="protected internal virtual void OnEndWorkflowCompleted (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void OnEndWorkflowCompleted(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowCreationContext.OnEndWorkflowCompleted(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub OnEndWorkflowCompleted (result As IAsyncResult)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void OnEndWorkflowCompleted(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -185,6 +199,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,object&gt; WorkflowArguments { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, object&gt; WorkflowArguments" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.WorkflowCreationContext.WorkflowArguments" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WorkflowArguments As IDictionary(Of String, Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ WorkflowArguments { System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>

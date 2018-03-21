@@ -1,7 +1,9 @@
-<Type Name="IPersonalizable" FullName="System.Web.UI.WebControls.WebParts.IPersonalizable">
+﻿<Type Name="IPersonalizable" FullName="System.Web.UI.WebControls.WebParts.IPersonalizable">
   <TypeSignature Language="C#" Value="public interface IPersonalizable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IPersonalizable" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.IPersonalizable" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IPersonalizable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IPersonalizable" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +43,8 @@
       <MemberSignature Language="C#" Value="public bool IsDirty { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsDirty" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.IPersonalizable.IsDirty" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsDirty As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDirty { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -87,6 +91,8 @@
       <MemberSignature Language="C#" Value="public void Load (System.Web.UI.WebControls.WebParts.PersonalizationDictionary state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Load(class System.Web.UI.WebControls.WebParts.PersonalizationDictionary state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.IPersonalizable.Load(System.Web.UI.WebControls.WebParts.PersonalizationDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Load (state As PersonalizationDictionary)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Load(System::Web::UI::WebControls::WebParts::PersonalizationDictionary ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -125,6 +131,8 @@
       <MemberSignature Language="C#" Value="public void Save (System.Web.UI.WebControls.WebParts.PersonalizationDictionary state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Save(class System.Web.UI.WebControls.WebParts.PersonalizationDictionary state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.IPersonalizable.Save(System.Web.UI.WebControls.WebParts.PersonalizationDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Save (state As PersonalizationDictionary)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save(System::Web::UI::WebControls::WebParts::PersonalizationDictionary ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="RuntimeInformation" FullName="System.Runtime.InteropServices.RuntimeInformation">
+﻿<Type Name="RuntimeInformation" FullName="System.Runtime.InteropServices.RuntimeInformation">
   <TypeSignature Language="C#" Value="public static class RuntimeInformation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit RuntimeInformation extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.RuntimeInformation" />
+  <TypeSignature Language="VB.NET" Value="Public Class RuntimeInformation" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RuntimeInformation abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices.RuntimeInformation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +31,8 @@
       <MemberSignature Language="C#" Value="public static string FrameworkDescription { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string FrameworkDescription" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.RuntimeInformation.FrameworkDescription" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property FrameworkDescription As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ FrameworkDescription { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices.RuntimeInformation</AssemblyName>
@@ -70,6 +74,7 @@
       <MemberSignature Language="C#" Value="public static bool IsOSPlatform (System.Runtime.InteropServices.OSPlatform osPlatform);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsOSPlatform(valuetype System.Runtime.InteropServices.OSPlatform osPlatform) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.RuntimeInformation.IsOSPlatform(System.Runtime.InteropServices.OSPlatform)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsOSPlatform(System::Runtime::InteropServices::OSPlatform osPlatform);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices.RuntimeInformation</AssemblyName>
@@ -103,6 +108,8 @@
       <MemberSignature Language="C#" Value="public static System.Runtime.InteropServices.Architecture OSArchitecture { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Runtime.InteropServices.Architecture OSArchitecture" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.RuntimeInformation.OSArchitecture" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property OSArchitecture As Architecture" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Runtime::InteropServices::Architecture OSArchitecture { System::Runtime::InteropServices::Architecture get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices.RuntimeInformation</AssemblyName>
@@ -131,6 +138,8 @@
       <MemberSignature Language="C#" Value="public static string OSDescription { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string OSDescription" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.RuntimeInformation.OSDescription" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property OSDescription As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ OSDescription { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices.RuntimeInformation</AssemblyName>
@@ -159,6 +168,8 @@
       <MemberSignature Language="C#" Value="public static System.Runtime.InteropServices.Architecture ProcessArchitecture { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Runtime.InteropServices.Architecture ProcessArchitecture" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.RuntimeInformation.ProcessArchitecture" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ProcessArchitecture As Architecture" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Runtime::InteropServices::Architecture ProcessArchitecture { System::Runtime::InteropServices::Architecture get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices.RuntimeInformation</AssemblyName>

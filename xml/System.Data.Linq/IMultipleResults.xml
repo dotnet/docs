@@ -1,7 +1,9 @@
-<Type Name="IMultipleResults" FullName="System.Data.Linq.IMultipleResults">
+﻿<Type Name="IMultipleResults" FullName="System.Data.Linq.IMultipleResults">
   <TypeSignature Language="C#" Value="public interface IMultipleResults : IDisposable, System.Data.Linq.IFunctionResult" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IMultipleResults implements class System.Data.Linq.IFunctionResult, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Data.Linq.IMultipleResults" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IMultipleResults&#xA;Implements IDisposable, IFunctionResult" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IMultipleResults : IDisposable, System::Data::Linq::IFunctionResult" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Linq</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +48,8 @@ else if(@shape = 2)
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;TElement&gt; GetResult&lt;TElement&gt; ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;!!TElement&gt; GetResult&lt;TElement&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.IMultipleResults.GetResult``1" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetResult(Of TElement) () As IEnumerable(Of TElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TElement&gt;&#xA; System::Collections::Generic::IEnumerable&lt;TElement&gt; ^ GetResult();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="EncoderFallbackException" FullName="System.Text.EncoderFallbackException">
+﻿<Type Name="EncoderFallbackException" FullName="System.Text.EncoderFallbackException">
   <TypeSignature Language="C#" Value="public sealed class EncoderFallbackException : ArgumentException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit EncoderFallbackException extends System.ArgumentException" />
   <TypeSignature Language="DocId" Value="T:System.Text.EncoderFallbackException" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EncoderFallbackException&#xA;Inherits ArgumentException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EncoderFallbackException sealed : ArgumentException" />
   <AssemblyInfo>
     <AssemblyName>System.Text.Encoding</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,10 +44,22 @@
     <altmember cref="T:System.Text.EncoderExceptionFallback" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encoding</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Text.EncoderFallbackException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public EncoderFallbackException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.EncoderFallbackException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EncoderFallbackException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -82,6 +96,8 @@
       <MemberSignature Language="C#" Value="public EncoderFallbackException (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.EncoderFallbackException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EncoderFallbackException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -121,6 +137,8 @@
       <MemberSignature Language="C#" Value="public EncoderFallbackException (string message, Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.EncoderFallbackException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EncoderFallbackException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -162,6 +180,8 @@
       <MemberSignature Language="C#" Value="public char CharUnknown { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance char CharUnknown" />
       <MemberSignature Language="DocId" Value="P:System.Text.EncoderFallbackException.CharUnknown" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CharUnknown As Char" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property char CharUnknown { char get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -194,6 +214,8 @@
       <MemberSignature Language="C#" Value="public char CharUnknownHigh { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance char CharUnknownHigh" />
       <MemberSignature Language="DocId" Value="P:System.Text.EncoderFallbackException.CharUnknownHigh" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CharUnknownHigh As Char" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property char CharUnknownHigh { char get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -226,6 +248,8 @@
       <MemberSignature Language="C#" Value="public char CharUnknownLow { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance char CharUnknownLow" />
       <MemberSignature Language="DocId" Value="P:System.Text.EncoderFallbackException.CharUnknownLow" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CharUnknownLow As Char" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property char CharUnknownLow { char get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -258,6 +282,8 @@
       <MemberSignature Language="C#" Value="public int Index { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Index" />
       <MemberSignature Language="DocId" Value="P:System.Text.EncoderFallbackException.Index" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Index As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Index { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -297,6 +323,8 @@
       <MemberSignature Language="C#" Value="public bool IsUnknownSurrogate ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsUnknownSurrogate() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.EncoderFallbackException.IsUnknownSurrogate" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsUnknownSurrogate () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsUnknownSurrogate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -326,15 +354,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Text.Encoding</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Text.EncoderFallbackException" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

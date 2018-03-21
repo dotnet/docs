@@ -1,7 +1,9 @@
-<Type Name="ButtonBaseAutomationPeer" FullName="System.Windows.Automation.Peers.ButtonBaseAutomationPeer">
+﻿<Type Name="ButtonBaseAutomationPeer" FullName="System.Windows.Automation.Peers.ButtonBaseAutomationPeer">
   <TypeSignature Language="C#" Value="public abstract class ButtonBaseAutomationPeer : System.Windows.Automation.Peers.FrameworkElementAutomationPeer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ButtonBaseAutomationPeer extends System.Windows.Automation.Peers.FrameworkElementAutomationPeer" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.ButtonBaseAutomationPeer" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ButtonBaseAutomationPeer&#xA;Inherits FrameworkElementAutomationPeer" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ButtonBaseAutomationPeer abstract : System::Windows::Automation::Peers::FrameworkElementAutomationPeer" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="protected ButtonBaseAutomationPeer (System.Windows.Controls.Primitives.ButtonBase owner);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Windows.Controls.Primitives.ButtonBase owner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ButtonBaseAutomationPeer.#ctor(System.Windows.Controls.Primitives.ButtonBase)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (owner As ButtonBase)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ButtonBaseAutomationPeer(System::Windows::Controls::Primitives::ButtonBase ^ owner);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -37,6 +41,8 @@
       <MemberSignature Language="C#" Value="protected override string GetAcceleratorKeyCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetAcceleratorKeyCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ButtonBaseAutomationPeer.GetAcceleratorKeyCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetAcceleratorKeyCore () As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetAcceleratorKeyCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -56,6 +62,8 @@
       <MemberSignature Language="C#" Value="protected override string GetAutomationIdCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetAutomationIdCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ButtonBaseAutomationPeer.GetAutomationIdCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetAutomationIdCore () As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetAutomationIdCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -82,6 +90,8 @@
       <MemberSignature Language="C#" Value="protected override string GetNameCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetNameCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ButtonBaseAutomationPeer.GetNameCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetNameCore () As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetNameCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

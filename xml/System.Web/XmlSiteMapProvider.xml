@@ -1,7 +1,9 @@
-<Type Name="XmlSiteMapProvider" FullName="System.Web.XmlSiteMapProvider">
+﻿<Type Name="XmlSiteMapProvider" FullName="System.Web.XmlSiteMapProvider">
   <TypeSignature Language="C#" Value="public class XmlSiteMapProvider : System.Web.StaticSiteMapProvider, IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlSiteMapProvider extends System.Web.StaticSiteMapProvider implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Web.XmlSiteMapProvider" />
+  <TypeSignature Language="VB.NET" Value="Public Class XmlSiteMapProvider&#xA;Inherits StaticSiteMapProvider&#xA;Implements IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlSiteMapProvider : System::Web::StaticSiteMapProvider, IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -67,6 +69,8 @@
       <MemberSignature Language="C#" Value="public XmlSiteMapProvider ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.XmlSiteMapProvider.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlSiteMapProvider();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -79,9 +83,11 @@
       </Docs>
     </Member>
     <Member MemberName="AddNode">
-      <MemberSignature Language="C#" Value="protected override void AddNode (System.Web.SiteMapNode node, System.Web.SiteMapNode parentNode);" />
+      <MemberSignature Language="C#" Value="protected internal override void AddNode (System.Web.SiteMapNode node, System.Web.SiteMapNode parentNode);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void AddNode(class System.Web.SiteMapNode node, class System.Web.SiteMapNode parentNode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.XmlSiteMapProvider.AddNode(System.Web.SiteMapNode,System.Web.SiteMapNode)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub AddNode (node As SiteMapNode, parentNode As SiteMapNode)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void AddNode(System::Web::SiteMapNode ^ node, System::Web::SiteMapNode ^ parentNode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -125,6 +131,8 @@
       <MemberSignature Language="C#" Value="protected virtual void AddProvider (string providerName, System.Web.SiteMapNode parentNode);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void AddProvider(string providerName, class System.Web.SiteMapNode parentNode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.XmlSiteMapProvider.AddProvider(System.String,System.Web.SiteMapNode)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub AddProvider (providerName As String, parentNode As SiteMapNode)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void AddProvider(System::String ^ providerName, System::Web::SiteMapNode ^ parentNode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -170,6 +178,8 @@
       <MemberSignature Language="C#" Value="public override System.Web.SiteMapNode BuildSiteMap ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.SiteMapNode BuildSiteMap() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.XmlSiteMapProvider.BuildSiteMap" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function BuildSiteMap () As SiteMapNode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::SiteMapNode ^ BuildSiteMap();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -312,6 +322,8 @@
       <MemberSignature Language="C#" Value="protected override void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.XmlSiteMapProvider.Clear" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Clear ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -339,6 +351,8 @@
       <MemberSignature Language="C#" Value="public override System.Web.SiteMapNode CurrentNode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.SiteMapNode CurrentNode" />
       <MemberSignature Language="DocId" Value="P:System.Web.XmlSiteMapProvider.CurrentNode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CurrentNode As SiteMapNode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::SiteMapNode ^ CurrentNode { System::Web::SiteMapNode ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -353,11 +367,25 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Notifies the file monitor of the Web.sitemap file that the <see cref="T:System.Web.XmlSiteMapProvider" /> object no longer requires the file to be monitored.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Dispose">
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.XmlSiteMapProvider.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -382,6 +410,8 @@
       <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.XmlSiteMapProvider.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -412,6 +442,8 @@
       <MemberSignature Language="C#" Value="public override System.Web.SiteMapNode FindSiteMapNode (string rawUrl);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.SiteMapNode FindSiteMapNode(string rawUrl) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.XmlSiteMapProvider.FindSiteMapNode(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function FindSiteMapNode (rawUrl As String) As SiteMapNode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::SiteMapNode ^ FindSiteMapNode(System::String ^ rawUrl);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -450,6 +482,8 @@
       <MemberSignature Language="C#" Value="public override System.Web.SiteMapNode FindSiteMapNodeFromKey (string key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.SiteMapNode FindSiteMapNodeFromKey(string key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.XmlSiteMapProvider.FindSiteMapNodeFromKey(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function FindSiteMapNodeFromKey (key As String) As SiteMapNode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::SiteMapNode ^ FindSiteMapNodeFromKey(System::String ^ key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -485,6 +519,8 @@
       <MemberSignature Language="C#" Value="public override System.Web.SiteMapNodeCollection GetChildNodes (System.Web.SiteMapNode node);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.SiteMapNodeCollection GetChildNodes(class System.Web.SiteMapNode node) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.XmlSiteMapProvider.GetChildNodes(System.Web.SiteMapNode)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetChildNodes (node As SiteMapNode) As SiteMapNodeCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::SiteMapNodeCollection ^ GetChildNodes(System::Web::SiteMapNode ^ node);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -507,6 +543,8 @@
       <MemberSignature Language="C#" Value="public override System.Web.SiteMapNode GetParentNode (System.Web.SiteMapNode node);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.SiteMapNode GetParentNode(class System.Web.SiteMapNode node) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.XmlSiteMapProvider.GetParentNode(System.Web.SiteMapNode)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetParentNode (node As SiteMapNode) As SiteMapNode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::SiteMapNode ^ GetParentNode(System::Web::SiteMapNode ^ node);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -526,9 +564,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetRootNodeCore">
-      <MemberSignature Language="C#" Value="protected override System.Web.SiteMapNode GetRootNodeCore ();" />
+      <MemberSignature Language="C#" Value="protected internal override System.Web.SiteMapNode GetRootNodeCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance class System.Web.SiteMapNode GetRootNodeCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.XmlSiteMapProvider.GetRootNodeCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function GetRootNodeCore () As SiteMapNode" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Web::SiteMapNode ^ GetRootNodeCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -557,6 +597,8 @@
       <MemberSignature Language="C#" Value="public override void Initialize (string name, System.Collections.Specialized.NameValueCollection attributes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Initialize(string name, class System.Collections.Specialized.NameValueCollection attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.XmlSiteMapProvider.Initialize(System.String,System.Collections.Specialized.NameValueCollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize (name As String, attributes As NameValueCollection)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize(System::String ^ name, System::Collections::Specialized::NameValueCollection ^ attributes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -631,9 +673,11 @@
       </Docs>
     </Member>
     <Member MemberName="RemoveNode">
-      <MemberSignature Language="C#" Value="protected override void RemoveNode (System.Web.SiteMapNode node);" />
+      <MemberSignature Language="C#" Value="protected internal override void RemoveNode (System.Web.SiteMapNode node);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void RemoveNode(class System.Web.SiteMapNode node) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.XmlSiteMapProvider.RemoveNode(System.Web.SiteMapNode)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub RemoveNode (node As SiteMapNode)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void RemoveNode(System::Web::SiteMapNode ^ node);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -664,6 +708,8 @@
       <MemberSignature Language="C#" Value="protected virtual void RemoveProvider (string providerName);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RemoveProvider(string providerName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.XmlSiteMapProvider.RemoveProvider(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RemoveProvider (providerName As String)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RemoveProvider(System::String ^ providerName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -699,6 +745,8 @@
       <MemberSignature Language="C#" Value="public override System.Web.SiteMapNode RootNode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.SiteMapNode RootNode" />
       <MemberSignature Language="DocId" Value="P:System.Web.XmlSiteMapProvider.RootNode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property RootNode As SiteMapNode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::SiteMapNode ^ RootNode { System::Web::SiteMapNode ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -725,14 +773,5 @@
         <altmember cref="P:System.Web.SiteMapProvider.RootNode" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="Dispose">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Notifies the file monitor of the Web.sitemap file that the <see cref="T:System.Web.XmlSiteMapProvider" /> object no longer requires the file to be monitored.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

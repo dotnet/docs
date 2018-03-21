@@ -1,7 +1,9 @@
-<Type Name="FILETIME" FullName="System.Runtime.InteropServices.FILETIME">
+﻿<Type Name="FILETIME" FullName="System.Runtime.InteropServices.FILETIME">
   <TypeSignature Language="C#" Value="public struct FILETIME" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit FILETIME extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.FILETIME" />
+  <TypeSignature Language="VB.NET" Value="Public Structure FILETIME" />
+  <TypeSignature Language="C++ CLI" Value="public value class FILETIME" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -32,6 +34,8 @@
       <MemberSignature Language="C#" Value="public int dwHighDateTime;" />
       <MemberSignature Language="ILAsm" Value=".field public int32 dwHighDateTime" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.FILETIME.dwHighDateTime" />
+      <MemberSignature Language="VB.NET" Value="Public dwHighDateTime As Integer " />
+      <MemberSignature Language="C++ CLI" Value="public: int dwHighDateTime;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -50,6 +54,8 @@
       <MemberSignature Language="C#" Value="public int dwLowDateTime;" />
       <MemberSignature Language="ILAsm" Value=".field public int32 dwLowDateTime" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.FILETIME.dwLowDateTime" />
+      <MemberSignature Language="VB.NET" Value="Public dwLowDateTime As Integer " />
+      <MemberSignature Language="C++ CLI" Value="public: int dwLowDateTime;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

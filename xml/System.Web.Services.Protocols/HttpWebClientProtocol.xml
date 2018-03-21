@@ -1,7 +1,9 @@
-<Type Name="HttpWebClientProtocol" FullName="System.Web.Services.Protocols.HttpWebClientProtocol">
+﻿<Type Name="HttpWebClientProtocol" FullName="System.Web.Services.Protocols.HttpWebClientProtocol">
   <TypeSignature Language="C#" Value="public abstract class HttpWebClientProtocol : System.Web.Services.Protocols.WebClientProtocol" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit HttpWebClientProtocol extends System.Web.Services.Protocols.WebClientProtocol" />
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Protocols.HttpWebClientProtocol" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class HttpWebClientProtocol&#xA;Inherits WebClientProtocol" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HttpWebClientProtocol abstract : System::Web::Services::Protocols::WebClientProtocol" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -52,6 +54,8 @@
       <MemberSignature Language="C#" Value="protected HttpWebClientProtocol ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.HttpWebClientProtocol.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; HttpWebClientProtocol();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -68,6 +72,8 @@
       <MemberSignature Language="C#" Value="public bool AllowAutoRedirect { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AllowAutoRedirect" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.HttpWebClientProtocol.AllowAutoRedirect" />
+      <MemberSignature Language="VB.NET" Value="Public Property AllowAutoRedirect As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowAutoRedirect { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -104,6 +110,8 @@
       <MemberSignature Language="C#" Value="protected void CancelAsync (object userState);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void CancelAsync(object userState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.HttpWebClientProtocol.CancelAsync(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub CancelAsync (userState As Object)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void CancelAsync(System::Object ^ userState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -126,6 +134,8 @@
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.X509Certificates.X509CertificateCollection ClientCertificates { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.X509Certificates.X509CertificateCollection ClientCertificates" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.HttpWebClientProtocol.ClientCertificates" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClientCertificates As X509CertificateCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::X509Certificates::X509CertificateCollection ^ ClientCertificates { System::Security::Cryptography::X509Certificates::X509CertificateCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -137,7 +147,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -169,6 +179,8 @@
       <MemberSignature Language="C#" Value="public System.Net.CookieContainer CookieContainer { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.CookieContainer CookieContainer" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.HttpWebClientProtocol.CookieContainer" />
+      <MemberSignature Language="VB.NET" Value="Public Property CookieContainer As CookieContainer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::CookieContainer ^ CookieContainer { System::Net::CookieContainer ^ get(); void set(System::Net::CookieContainer ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -210,6 +222,8 @@
       <MemberSignature Language="C#" Value="public bool EnableDecompression { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool EnableDecompression" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.HttpWebClientProtocol.EnableDecompression" />
+      <MemberSignature Language="VB.NET" Value="Public Property EnableDecompression As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableDecompression { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -231,10 +245,25 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GenerateXmlMappings">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Xml.Serialization.XmlMembersMapping" /> for each XML Web service method exposed by the specified type(s).</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GenerateXmlMappings">
-      <MemberSignature Language="C#" Value="public static bool GenerateXmlMappings (Type type, System.Collections.ArrayList mapping);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GenerateXmlMappings(class System.Type type, class System.Collections.ArrayList mapping) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.HttpWebClientProtocol.GenerateXmlMappings(System.Type,System.Collections.ArrayList)" />
+      <MemberSignature Language="C#" Value="public static bool GenerateXmlMappings (Type type, System.Collections.ArrayList mappings);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GenerateXmlMappings(class System.Type type, class System.Collections.ArrayList mappings) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.HttpWebClientProtocol.GenerateXmlMappings(System.Type,System.Collections.ArrayList)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GenerateXmlMappings(Type ^ type, System::Collections::ArrayList ^ mappings);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public static bool GenerateXmlMappings (Type type, System.Collections.ArrayList mapping);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GenerateXmlMappings(class System.Type type, class System.Collections.ArrayList mapping) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.HttpWebClientProtocol.GenerateXmlMappings(System.Type,System.Collections.ArrayList)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GenerateXmlMappings(Type ^ type, System::Collections::ArrayList ^ mapping);" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -245,11 +274,13 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="type" Type="System.Type" />
-        <Parameter Name="mappings" Type="System.Collections.ArrayList" />
+        <Parameter Name="type" Type="System.Type" Index="0" />
+        <Parameter Name="mappings" Type="System.Collections.ArrayList" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="mapping" Type="System.Collections.ArrayList" Index="1" FrameworkAlternate="xamarinandroid-7.1" />
       </Parameters>
       <Docs>
         <param name="type">The <see cref="T:System.Type" /> that exposes the XML Web service methods.</param>
+        <param name="mappings">To be added.</param>
         <param name="mapping">To be added.</param>
         <summary>Gets the <see cref="T:System.Xml.Serialization.XmlMembersMapping" /> for each XML Web service method exposed by the specified type, and stores the mappings in the specified <see cref="T:System.Collections.ArrayList" />.</summary>
         <returns>
@@ -258,9 +289,16 @@
       </Docs>
     </Member>
     <Member MemberName="GenerateXmlMappings">
-      <MemberSignature Language="C#" Value="public static System.Collections.Hashtable GenerateXmlMappings (Type[] types, System.Collections.ArrayList mapping);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Hashtable GenerateXmlMappings(class System.Type[] types, class System.Collections.ArrayList mapping) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.HttpWebClientProtocol.GenerateXmlMappings(System.Type[],System.Collections.ArrayList)" />
+      <MemberSignature Language="C#" Value="public static System.Collections.Hashtable GenerateXmlMappings (Type[] types, System.Collections.ArrayList mappings);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Hashtable GenerateXmlMappings(class System.Type[] types, class System.Collections.ArrayList mappings) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.HttpWebClientProtocol.GenerateXmlMappings(System.Type[],System.Collections.ArrayList)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GenerateXmlMappings (types As Type(), mappings As ArrayList) As Hashtable" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Hashtable ^ GenerateXmlMappings(cli::array &lt;Type ^&gt; ^ types, System::Collections::ArrayList ^ mappings);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public static System.Collections.Hashtable GenerateXmlMappings (Type[] types, System.Collections.ArrayList mapping);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Hashtable GenerateXmlMappings(class System.Type[] types, class System.Collections.ArrayList mapping) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.HttpWebClientProtocol.GenerateXmlMappings(System.Type[],System.Collections.ArrayList)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GenerateXmlMappings (types As Type(), mapping As ArrayList) As Hashtable" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Hashtable ^ GenerateXmlMappings(cli::array &lt;Type ^&gt; ^ types, System::Collections::ArrayList ^ mapping);" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -271,11 +309,13 @@
         <ReturnType>System.Collections.Hashtable</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="types" Type="System.Type[]" />
-        <Parameter Name="mappings" Type="System.Collections.ArrayList" />
+        <Parameter Name="types" Type="System.Type[]" Index="0" />
+        <Parameter Name="mappings" Type="System.Collections.ArrayList" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="mapping" Type="System.Collections.ArrayList" Index="1" FrameworkAlternate="xamarinandroid-7.1" />
       </Parameters>
       <Docs>
         <param name="types">An array of type <see cref="T:System.Type" /> that contains the types that expose the XML Web service methods.</param>
+        <param name="mappings">To be added.</param>
         <param name="mapping">To be added.</param>
         <summary>Gets the <see cref="T:System.Xml.Serialization.XmlMembersMapping" /> for each XML Web service method exposed by the specified types, and stores the mappings in the specified <see cref="T:System.Collections.ArrayList" />, as well as in a <see cref="T:System.Collections.Hashtable" /> that this method returns.</summary>
         <returns>A <see cref="T:System.Collections.Hashtable" /> that contains the <see cref="T:System.Xml.Serialization.XmlMembersMapping" /> for each XML Web service method exposed by the specified types. The types contained in <paramref name="types" /> are used as keys.</returns>
@@ -286,6 +326,7 @@
       <MemberSignature Language="C#" Value="protected override System.Net.WebRequest GetWebRequest (Uri uri);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Net.WebRequest GetWebRequest(class System.Uri uri) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.HttpWebClientProtocol.GetWebRequest(System.Uri)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Net::WebRequest ^ GetWebRequest(Uri ^ uri);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -306,10 +347,22 @@
         <exception cref="T:System.InvalidOperationException">The <paramref name="uri" /> parameter is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetWebResponse">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a response from a request to an XML Web service method.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetWebResponse">
       <MemberSignature Language="C#" Value="protected override System.Net.WebResponse GetWebResponse (System.Net.WebRequest request);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Net.WebResponse GetWebResponse(class System.Net.WebRequest request) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.HttpWebClientProtocol.GetWebResponse(System.Net.WebRequest)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetWebResponse (request As WebRequest) As WebResponse" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Net::WebResponse ^ GetWebResponse(System::Net::WebRequest ^ request);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -333,6 +386,8 @@
       <MemberSignature Language="C#" Value="protected override System.Net.WebResponse GetWebResponse (System.Net.WebRequest request, IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Net.WebResponse GetWebResponse(class System.Net.WebRequest request, class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.HttpWebClientProtocol.GetWebResponse(System.Net.WebRequest,System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetWebResponse (request As WebRequest, result As IAsyncResult) As WebResponse" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Net::WebResponse ^ GetWebResponse(System::Net::WebRequest ^ request, IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -358,6 +413,8 @@
       <MemberSignature Language="C#" Value="public System.Net.IWebProxy Proxy { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.IWebProxy Proxy" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.HttpWebClientProtocol.Proxy" />
+      <MemberSignature Language="VB.NET" Value="Public Property Proxy As IWebProxy" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::IWebProxy ^ Proxy { System::Net::IWebProxy ^ get(); void set(System::Net::IWebProxy ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -369,7 +426,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -405,6 +462,8 @@
       <MemberSignature Language="C#" Value="public bool UnsafeAuthenticatedConnectionSharing { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UnsafeAuthenticatedConnectionSharing" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.HttpWebClientProtocol.UnsafeAuthenticatedConnectionSharing" />
+      <MemberSignature Language="VB.NET" Value="Public Property UnsafeAuthenticatedConnectionSharing As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UnsafeAuthenticatedConnectionSharing { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -416,7 +475,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -442,6 +501,8 @@
       <MemberSignature Language="C#" Value="public string UserAgent { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string UserAgent" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.HttpWebClientProtocol.UserAgent" />
+      <MemberSignature Language="VB.NET" Value="Public Property UserAgent As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ UserAgent { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -453,7 +514,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -480,25 +541,5 @@
         <altmember cref="P:System.Net.HttpWebRequest.UserAgent" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetWebResponse">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a response from a request to an XML Web service method.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GenerateXmlMappings">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets the <see cref="T:System.Xml.Serialization.XmlMembersMapping" /> for each XML Web service method exposed by the specified type(s).</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

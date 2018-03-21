@@ -1,7 +1,9 @@
-<Type Name="DllImportAttribute" FullName="System.Runtime.InteropServices.DllImportAttribute">
+﻿<Type Name="DllImportAttribute" FullName="System.Runtime.InteropServices.DllImportAttribute">
   <TypeSignature Language="C#" Value="public sealed class DllImportAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DllImportAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.DllImportAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DllImportAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DllImportAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -71,6 +73,8 @@
       <MemberSignature Language="C#" Value="public DllImportAttribute (string dllName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string dllName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.DllImportAttribute.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (dllName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DllImportAttribute(System::String ^ dllName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -122,6 +126,8 @@
       <MemberSignature Language="C#" Value="public bool BestFitMapping;" />
       <MemberSignature Language="ILAsm" Value=".field public bool BestFitMapping" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.DllImportAttribute.BestFitMapping" />
+      <MemberSignature Language="VB.NET" Value="Public BestFitMapping As Boolean " />
+      <MemberSignature Language="C++ CLI" Value="public: bool BestFitMapping;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -179,6 +185,8 @@
       <MemberSignature Language="C#" Value="public System.Runtime.InteropServices.CallingConvention CallingConvention;" />
       <MemberSignature Language="ILAsm" Value=".field public valuetype System.Runtime.InteropServices.CallingConvention CallingConvention" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.DllImportAttribute.CallingConvention" />
+      <MemberSignature Language="VB.NET" Value="Public CallingConvention As CallingConvention " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Runtime::InteropServices::CallingConvention CallingConvention;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -227,6 +235,8 @@
       <MemberSignature Language="C#" Value="public System.Runtime.InteropServices.CharSet CharSet;" />
       <MemberSignature Language="ILAsm" Value=".field public valuetype System.Runtime.InteropServices.CharSet CharSet" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.DllImportAttribute.CharSet" />
+      <MemberSignature Language="VB.NET" Value="Public CharSet As CharSet " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Runtime::InteropServices::CharSet CharSet;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -276,6 +286,8 @@
       <MemberSignature Language="C#" Value="public string EntryPoint;" />
       <MemberSignature Language="ILAsm" Value=".field public string EntryPoint" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.DllImportAttribute.EntryPoint" />
+      <MemberSignature Language="VB.NET" Value="Public EntryPoint As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ EntryPoint;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -325,6 +337,8 @@
       <MemberSignature Language="C#" Value="public bool ExactSpelling;" />
       <MemberSignature Language="ILAsm" Value=".field public bool ExactSpelling" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.DllImportAttribute.ExactSpelling" />
+      <MemberSignature Language="VB.NET" Value="Public ExactSpelling As Boolean " />
+      <MemberSignature Language="C++ CLI" Value="public: bool ExactSpelling;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -380,6 +394,8 @@
       <MemberSignature Language="C#" Value="public bool PreserveSig;" />
       <MemberSignature Language="ILAsm" Value=".field public bool PreserveSig" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.DllImportAttribute.PreserveSig" />
+      <MemberSignature Language="VB.NET" Value="Public PreserveSig As Boolean " />
+      <MemberSignature Language="C++ CLI" Value="public: bool PreserveSig;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -437,6 +453,8 @@
       <MemberSignature Language="C#" Value="public bool SetLastError;" />
       <MemberSignature Language="ILAsm" Value=".field public bool SetLastError" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.DllImportAttribute.SetLastError" />
+      <MemberSignature Language="VB.NET" Value="Public SetLastError As Boolean " />
+      <MemberSignature Language="C++ CLI" Value="public: bool SetLastError;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -487,6 +505,8 @@
       <MemberSignature Language="C#" Value="public bool ThrowOnUnmappableChar;" />
       <MemberSignature Language="ILAsm" Value=".field public bool ThrowOnUnmappableChar" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.DllImportAttribute.ThrowOnUnmappableChar" />
+      <MemberSignature Language="VB.NET" Value="Public ThrowOnUnmappableChar As Boolean " />
+      <MemberSignature Language="C++ CLI" Value="public: bool ThrowOnUnmappableChar;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -544,6 +564,8 @@
       <MemberSignature Language="C#" Value="public string Value { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Value" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.DllImportAttribute.Value" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Value { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

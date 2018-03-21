@@ -1,7 +1,9 @@
-<Type Name="SqlCacheDependencySection" FullName="System.Web.Configuration.SqlCacheDependencySection">
+﻿<Type Name="SqlCacheDependencySection" FullName="System.Web.Configuration.SqlCacheDependencySection">
   <TypeSignature Language="C#" Value="public sealed class SqlCacheDependencySection : System.Configuration.ConfigurationSection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SqlCacheDependencySection extends System.Configuration.ConfigurationSection" />
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.SqlCacheDependencySection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SqlCacheDependencySection&#xA;Inherits ConfigurationSection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SqlCacheDependencySection sealed : System::Configuration::ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +46,8 @@
       <MemberSignature Language="C#" Value="public SqlCacheDependencySection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.SqlCacheDependencySection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlCacheDependencySection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -66,6 +70,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Configuration.SqlCacheDependencyDatabaseCollection Databases { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.SqlCacheDependencyDatabaseCollection Databases" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SqlCacheDependencySection.Databases" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Databases As SqlCacheDependencyDatabaseCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::SqlCacheDependencyDatabaseCollection ^ Databases { System::Web::Configuration::SqlCacheDependencyDatabaseCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -105,6 +111,8 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationElementProperty ElementProperty { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationElementProperty ElementProperty" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SqlCacheDependencySection.ElementProperty" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ElementProperty As ConfigurationElementProperty" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationElementProperty ^ ElementProperty { System::Configuration::ConfigurationElementProperty ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -123,6 +131,8 @@
       <MemberSignature Language="C#" Value="public bool Enabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Enabled" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SqlCacheDependencySection.Enabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property Enabled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Enabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -169,6 +179,8 @@
       <MemberSignature Language="C#" Value="public int PollTime { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 PollTime" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SqlCacheDependencySection.PollTime" />
+      <MemberSignature Language="VB.NET" Value="Public Property PollTime As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PollTime { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -211,6 +223,8 @@
       <MemberSignature Language="C#" Value="protected override void PostDeserialize ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void PostDeserialize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.SqlCacheDependencySection.PostDeserialize" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PostDeserialize ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PostDeserialize();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -229,6 +243,8 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SqlCacheDependencySection.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

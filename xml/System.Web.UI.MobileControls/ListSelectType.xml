@@ -1,7 +1,9 @@
-<Type Name="ListSelectType" FullName="System.Web.UI.MobileControls.ListSelectType">
+﻿<Type Name="ListSelectType" FullName="System.Web.UI.MobileControls.ListSelectType">
   <TypeSignature Language="C#" Value="public enum ListSelectType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ListSelectType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.ListSelectType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ListSelectType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class ListSelectType" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +32,8 @@
       <MemberSignature Language="C#" Value="CheckBox" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.MobileControls.ListSelectType CheckBox = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.ListSelectType.CheckBox" />
+      <MemberSignature Language="VB.NET" Value="CheckBox" />
+      <MemberSignature Language="C++ CLI" Value="CheckBox" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -38,6 +42,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.MobileControls.ListSelectType</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Renders list items with check boxes and multiple selection capability. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
       </Docs>
@@ -46,6 +51,8 @@
       <MemberSignature Language="C#" Value="DropDown" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.MobileControls.ListSelectType DropDown = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.ListSelectType.DropDown" />
+      <MemberSignature Language="VB.NET" Value="DropDown" />
+      <MemberSignature Language="C++ CLI" Value="DropDown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -54,6 +61,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.MobileControls.ListSelectType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Renders list items in a drop-down list box. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
       </Docs>
@@ -62,6 +70,8 @@
       <MemberSignature Language="C#" Value="ListBox" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.MobileControls.ListSelectType ListBox = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.ListSelectType.ListBox" />
+      <MemberSignature Language="VB.NET" Value="ListBox" />
+      <MemberSignature Language="C++ CLI" Value="ListBox" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -70,6 +80,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.MobileControls.ListSelectType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Renders list items in a list box. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
       </Docs>
@@ -78,6 +89,8 @@
       <MemberSignature Language="C#" Value="MultiSelectListBox" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.MobileControls.ListSelectType MultiSelectListBox = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.ListSelectType.MultiSelectListBox" />
+      <MemberSignature Language="VB.NET" Value="MultiSelectListBox" />
+      <MemberSignature Language="C++ CLI" Value="MultiSelectListBox" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -86,6 +99,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.MobileControls.ListSelectType</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Renders list items in a list box with multiple selection capability. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
       </Docs>
@@ -94,6 +108,8 @@
       <MemberSignature Language="C#" Value="Radio" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.MobileControls.ListSelectType Radio = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.ListSelectType.Radio" />
+      <MemberSignature Language="VB.NET" Value="Radio" />
+      <MemberSignature Language="C++ CLI" Value="Radio" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -102,6 +118,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.MobileControls.ListSelectType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Renders list items as options. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
       </Docs>

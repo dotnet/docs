@@ -1,7 +1,9 @@
-<Type Name="SpotLight" FullName="System.Windows.Media.Media3D.SpotLight">
+﻿<Type Name="SpotLight" FullName="System.Windows.Media.Media3D.SpotLight">
   <TypeSignature Language="C#" Value="public sealed class SpotLight : System.Windows.Media.Media3D.PointLightBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SpotLight extends System.Windows.Media.Media3D.PointLightBase" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Media3D.SpotLight" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SpotLight&#xA;Inherits PointLightBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SpotLight sealed : System::Windows::Media::Media3D::PointLightBase" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,10 +41,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Media3D.SpotLight" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SpotLight ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.SpotLight.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SpotLight();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -58,6 +71,8 @@
       <MemberSignature Language="C#" Value="public SpotLight (System.Windows.Media.Color diffuseColor, System.Windows.Media.Media3D.Point3D position, System.Windows.Media.Media3D.Vector3D direction, double outerConeAngle, double innerConeAngle);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Media.Color diffuseColor, valuetype System.Windows.Media.Media3D.Point3D position, valuetype System.Windows.Media.Media3D.Vector3D direction, float64 outerConeAngle, float64 innerConeAngle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.SpotLight.#ctor(System.Windows.Media.Color,System.Windows.Media.Media3D.Point3D,System.Windows.Media.Media3D.Vector3D,System.Double,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (diffuseColor As Color, position As Point3D, direction As Vector3D, outerConeAngle As Double, innerConeAngle As Double)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SpotLight(System::Windows::Media::Color diffuseColor, System::Windows::Media::Media3D::Point3D position, System::Windows::Media::Media3D::Vector3D direction, double outerConeAngle, double innerConeAngle);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -84,6 +99,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Media3D.SpotLight Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.Media3D.SpotLight Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.SpotLight.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As SpotLight" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Media3D::SpotLight ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -112,6 +129,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Media3D.SpotLight CloneCurrentValue ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.Media3D.SpotLight CloneCurrentValue() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.SpotLight.CloneCurrentValue" />
+      <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As SpotLight" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Media3D::SpotLight ^ CloneCurrentValue();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -140,6 +159,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.SpotLight.CreateInstanceCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -159,6 +180,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Media3D.Vector3D Direction { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Media.Media3D.Vector3D Direction" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.SpotLight.Direction" />
+      <MemberSignature Language="VB.NET" Value="Public Property Direction As Vector3D" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Media3D::Vector3D Direction { System::Windows::Media::Media3D::Vector3D get(); void set(System::Windows::Media::Media3D::Vector3D value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -203,6 +226,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty DirectionProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty DirectionProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Media3D.SpotLight.DirectionProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DirectionProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ DirectionProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -220,6 +245,8 @@
       <MemberSignature Language="C#" Value="public double InnerConeAngle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 InnerConeAngle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.SpotLight.InnerConeAngle" />
+      <MemberSignature Language="VB.NET" Value="Public Property InnerConeAngle As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double InnerConeAngle { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -266,6 +293,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty InnerConeAngleProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty InnerConeAngleProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Media3D.SpotLight.InnerConeAngleProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly InnerConeAngleProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ InnerConeAngleProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -283,6 +312,8 @@
       <MemberSignature Language="C#" Value="public double OuterConeAngle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 OuterConeAngle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.SpotLight.OuterConeAngle" />
+      <MemberSignature Language="VB.NET" Value="Public Property OuterConeAngle As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double OuterConeAngle { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -329,6 +360,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty OuterConeAngleProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty OuterConeAngleProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Media3D.SpotLight.OuterConeAngleProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly OuterConeAngleProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ OuterConeAngleProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -342,14 +375,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Media3D.SpotLight" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

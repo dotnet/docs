@@ -1,7 +1,9 @@
-<Type Name="MessageEventSubscription" FullName="System.Workflow.Activities.MessageEventSubscription">
+﻿<Type Name="MessageEventSubscription" FullName="System.Workflow.Activities.MessageEventSubscription">
   <TypeSignature Language="C#" Value="public class MessageEventSubscription" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit MessageEventSubscription extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.MessageEventSubscription" />
+  <TypeSignature Language="VB.NET" Value="Public Class MessageEventSubscription" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MessageEventSubscription" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,10 +31,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.MessageEventSubscription" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected MessageEventSubscription ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.MessageEventSubscription.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; MessageEventSubscription();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -48,6 +61,8 @@
       <MemberSignature Language="C#" Value="public MessageEventSubscription (IComparable queueName, Guid instanceId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IComparable queueName, valuetype System.Guid instanceId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.MessageEventSubscription.#ctor(System.IComparable,System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (queueName As IComparable, instanceId As Guid)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MessageEventSubscription(IComparable ^ queueName, Guid instanceId);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -68,6 +83,8 @@
       <MemberSignature Language="C#" Value="public MessageEventSubscription (IComparable queueName, Guid instanceId, Guid subscriptionId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IComparable queueName, valuetype System.Guid instanceId, valuetype System.Guid subscriptionId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.MessageEventSubscription.#ctor(System.IComparable,System.Guid,System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (queueName As IComparable, instanceId As Guid, subscriptionId As Guid)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MessageEventSubscription(IComparable ^ queueName, Guid instanceId, Guid subscriptionId);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -90,6 +107,8 @@
       <MemberSignature Language="C#" Value="public MessageEventSubscription (IComparable queueName, Guid subscriptionId, Type interfaceType, string operation);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IComparable queueName, valuetype System.Guid subscriptionId, class System.Type interfaceType, string operation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.MessageEventSubscription.#ctor(System.IComparable,System.Guid,System.Type,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (queueName As IComparable, subscriptionId As Guid, interfaceType As Type, operation As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MessageEventSubscription(IComparable ^ queueName, Guid subscriptionId, Type ^ interfaceType, System::String ^ operation);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -114,6 +133,8 @@
       <MemberSignature Language="C#" Value="public MessageEventSubscription (IComparable queueName, Guid instanceId, Type interfaceType, string operation, Guid subscriptionId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IComparable queueName, valuetype System.Guid instanceId, class System.Type interfaceType, string operation, valuetype System.Guid subscriptionId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.MessageEventSubscription.#ctor(System.IComparable,System.Guid,System.Type,System.String,System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (queueName As IComparable, instanceId As Guid, interfaceType As Type, operation As String, subscriptionId As Guid)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MessageEventSubscription(IComparable ^ queueName, Guid instanceId, Type ^ interfaceType, System::String ^ operation, Guid subscriptionId);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -140,6 +161,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.ICollection&lt;System.Workflow.Runtime.CorrelationProperty&gt; CorrelationProperties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;class System.Workflow.Runtime.CorrelationProperty&gt; CorrelationProperties" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.MessageEventSubscription.CorrelationProperties" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CorrelationProperties As ICollection(Of CorrelationProperty)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::Generic::ICollection&lt;System::Workflow::Runtime::CorrelationProperty ^&gt; ^ CorrelationProperties { System::Collections::Generic::ICollection&lt;System::Workflow::Runtime::CorrelationProperty ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -158,6 +181,8 @@
       <MemberSignature Language="C#" Value="public virtual Type InterfaceType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type InterfaceType" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.MessageEventSubscription.InterfaceType" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property InterfaceType As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ InterfaceType { Type ^ get(); void set(Type ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -176,6 +201,8 @@
       <MemberSignature Language="C#" Value="public virtual string MethodName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MethodName" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.MessageEventSubscription.MethodName" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property MethodName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ MethodName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -194,6 +221,8 @@
       <MemberSignature Language="C#" Value="public virtual IComparable QueueName { get; protected set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IComparable QueueName" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.MessageEventSubscription.QueueName" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property QueueName As IComparable" />
+      <MemberSignature Language="C++ CLI" Value="public:  virtual property IComparable ^ QueueName {  public:&#xA;IComparable ^ get(); protected:&#xA; void set(IComparable ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -212,6 +241,8 @@
       <MemberSignature Language="C#" Value="public virtual Guid SubscriptionId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid SubscriptionId" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.MessageEventSubscription.SubscriptionId" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SubscriptionId As Guid" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Guid SubscriptionId { Guid get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -230,6 +261,8 @@
       <MemberSignature Language="C#" Value="public virtual Guid WorkflowInstanceId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid WorkflowInstanceId" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.MessageEventSubscription.WorkflowInstanceId" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property WorkflowInstanceId As Guid" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Guid WorkflowInstanceId { Guid get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -244,14 +277,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.MessageEventSubscription" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

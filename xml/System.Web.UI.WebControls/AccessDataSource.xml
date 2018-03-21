@@ -1,7 +1,9 @@
-<Type Name="AccessDataSource" FullName="System.Web.UI.WebControls.AccessDataSource">
+﻿<Type Name="AccessDataSource" FullName="System.Web.UI.WebControls.AccessDataSource">
   <TypeSignature Language="C#" Value="public class AccessDataSource : System.Web.UI.WebControls.SqlDataSource" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AccessDataSource extends System.Web.UI.WebControls.SqlDataSource" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.AccessDataSource" />
+  <TypeSignature Language="VB.NET" Value="Public Class AccessDataSource&#xA;Inherits SqlDataSource" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AccessDataSource : System::Web::UI::WebControls::SqlDataSource" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -513,10 +515,21 @@
     <altmember cref="N:System.Data.OleDb" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.AccessDataSource" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public AccessDataSource ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.AccessDataSource.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AccessDataSource();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -542,6 +555,8 @@
       <MemberSignature Language="C#" Value="public AccessDataSource (string dataFile, string selectCommand);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string dataFile, string selectCommand) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.AccessDataSource.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (dataFile As String, selectCommand As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AccessDataSource(System::String ^ dataFile, System::String ^ selectCommand);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -577,6 +592,8 @@
       <MemberSignature Language="C#" Value="public override string ConnectionString { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ConnectionString" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.AccessDataSource.ConnectionString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property ConnectionString As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ConnectionString { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -587,7 +604,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -620,6 +637,8 @@
       <MemberSignature Language="C#" Value="protected override System.Web.UI.WebControls.SqlDataSourceView CreateDataSourceView (string viewName);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Web.UI.WebControls.SqlDataSourceView CreateDataSourceView(string viewName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.AccessDataSource.CreateDataSourceView(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateDataSourceView (viewName As String) As SqlDataSourceView" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Web::UI::WebControls::SqlDataSourceView ^ CreateDataSourceView(System::String ^ viewName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -651,6 +670,8 @@
       <MemberSignature Language="C#" Value="public string DataFile { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DataFile" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.AccessDataSource.DataFile" />
+      <MemberSignature Language="VB.NET" Value="Public Property DataFile As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DataFile { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -721,6 +742,8 @@
       <MemberSignature Language="C#" Value="protected override System.Data.Common.DbProviderFactory GetDbProviderFactory ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Data.Common.DbProviderFactory GetDbProviderFactory() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.AccessDataSource.GetDbProviderFactory" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetDbProviderFactory () As DbProviderFactory" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Data::Common::DbProviderFactory ^ GetDbProviderFactory();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -741,6 +764,8 @@
       <MemberSignature Language="C#" Value="public override string ProviderName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ProviderName" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.AccessDataSource.ProviderName" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property ProviderName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ProviderName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -751,7 +776,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -785,6 +810,8 @@
       <MemberSignature Language="C#" Value="public override string SqlCacheDependency { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SqlCacheDependency" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.AccessDataSource.SqlCacheDependency" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property SqlCacheDependency As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ SqlCacheDependency { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -795,7 +822,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -815,14 +842,5 @@
         <exception cref="T:System.NotSupportedException">An attempt was made to get or set the <see cref="P:System.Web.UI.WebControls.AccessDataSource.SqlCacheDependency" /> property.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.AccessDataSource" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

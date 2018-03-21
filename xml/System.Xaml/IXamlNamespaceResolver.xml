@@ -1,7 +1,9 @@
-<Type Name="IXamlNamespaceResolver" FullName="System.Xaml.IXamlNamespaceResolver">
+﻿<Type Name="IXamlNamespaceResolver" FullName="System.Xaml.IXamlNamespaceResolver">
   <TypeSignature Language="C#" Value="public interface IXamlNamespaceResolver" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IXamlNamespaceResolver" />
   <TypeSignature Language="DocId" Value="T:System.Xaml.IXamlNamespaceResolver" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IXamlNamespaceResolver" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IXamlNamespaceResolver" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +28,8 @@
       <MemberSignature Language="C#" Value="public string GetNamespace (string prefix);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetNamespace(string prefix) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.IXamlNamespaceResolver.GetNamespace(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetNamespace (prefix As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetNamespace(System::String ^ prefix);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -48,6 +52,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;System.Xaml.NamespaceDeclaration&gt; GetNamespacePrefixes ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class System.Xaml.NamespaceDeclaration&gt; GetNamespacePrefixes() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.IXamlNamespaceResolver.GetNamespacePrefixes" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetNamespacePrefixes () As IEnumerable(Of NamespaceDeclaration)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::Xaml::NamespaceDeclaration ^&gt; ^ GetNamespacePrefixes();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>

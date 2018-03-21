@@ -1,7 +1,9 @@
-<Type Name="DistributedFileLogger" FullName="Microsoft.Build.BuildEngine.DistributedFileLogger">
+﻿<Type Name="DistributedFileLogger" FullName="Microsoft.Build.BuildEngine.DistributedFileLogger">
   <TypeSignature Language="C#" Value="public class DistributedFileLogger : Microsoft.Build.Framework.IForwardingLogger" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DistributedFileLogger extends System.Object implements class Microsoft.Build.Framework.IForwardingLogger, class Microsoft.Build.Framework.ILogger, class Microsoft.Build.Framework.INodeLogger" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.BuildEngine.DistributedFileLogger" />
+  <TypeSignature Language="VB.NET" Value="Public Class DistributedFileLogger&#xA;Implements IForwardingLogger" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DistributedFileLogger : Microsoft::Build::Framework::IForwardingLogger" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Engine</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +25,8 @@
       <MemberSignature Language="C#" Value="public DistributedFileLogger ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.DistributedFileLogger.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DistributedFileLogger();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -38,7 +42,12 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.IEventRedirector BuildEventRedirector { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.IEventRedirector BuildEventRedirector" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.DistributedFileLogger.BuildEventRedirector" />
+      <MemberSignature Language="VB.NET" Value="Public Property BuildEventRedirector As IEventRedirector" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Framework::IEventRedirector ^ BuildEventRedirector { Microsoft::Build::Framework::IEventRedirector ^ get(); void set(Microsoft::Build::Framework::IEventRedirector ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Build.Framework.IForwardingLogger.BuildEventRedirector</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,11 +61,25 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Initialize">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initialize the Forwarding Table with the default values.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Initialize">
       <MemberSignature Language="C#" Value="public void Initialize (Microsoft.Build.Framework.IEventSource eventSource);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Initialize(class Microsoft.Build.Framework.IEventSource eventSource) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.DistributedFileLogger.Initialize(Microsoft.Build.Framework.IEventSource)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Initialize (eventSource As IEventSource)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Initialize(Microsoft::Build::Framework::IEventSource ^ eventSource);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Build.Framework.ILogger.Initialize(Microsoft.Build.Framework.IEventSource)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -77,7 +100,12 @@
       <MemberSignature Language="C#" Value="public void Initialize (Microsoft.Build.Framework.IEventSource eventSource, int nodeCount);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Initialize(class Microsoft.Build.Framework.IEventSource eventSource, int32 nodeCount) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.DistributedFileLogger.Initialize(Microsoft.Build.Framework.IEventSource,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Initialize (eventSource As IEventSource, nodeCount As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Initialize(Microsoft::Build::Framework::IEventSource ^ eventSource, int nodeCount);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Build.Framework.INodeLogger.Initialize(Microsoft.Build.Framework.IEventSource,System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -100,7 +128,12 @@
       <MemberSignature Language="C#" Value="public int NodeId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 NodeId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.DistributedFileLogger.NodeId" />
+      <MemberSignature Language="VB.NET" Value="Public Property NodeId As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int NodeId { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Build.Framework.IForwardingLogger.NodeId</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -118,7 +151,12 @@
       <MemberSignature Language="C#" Value="public string Parameters { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Parameters" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.DistributedFileLogger.Parameters" />
+      <MemberSignature Language="VB.NET" Value="Public Property Parameters As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Parameters { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Build.Framework.ILogger.Parameters</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -136,7 +174,12 @@
       <MemberSignature Language="C#" Value="public void Shutdown ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Shutdown() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.DistributedFileLogger.Shutdown" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Shutdown ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Shutdown();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Build.Framework.ILogger.Shutdown</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -154,7 +197,12 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.LoggerVerbosity Verbosity { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Build.Framework.LoggerVerbosity Verbosity" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.DistributedFileLogger.Verbosity" />
+      <MemberSignature Language="VB.NET" Value="Public Property Verbosity As LoggerVerbosity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Framework::LoggerVerbosity Verbosity { Microsoft::Build::Framework::LoggerVerbosity get(); void set(Microsoft::Build::Framework::LoggerVerbosity value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Build.Framework.ILogger.Verbosity</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -175,14 +223,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Initialize">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initialize the Forwarding Table with the default values.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

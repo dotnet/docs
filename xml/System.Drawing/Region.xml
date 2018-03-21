@@ -1,7 +1,9 @@
-<Type Name="Region" FullName="System.Drawing.Region">
+﻿<Type Name="Region" FullName="System.Drawing.Region">
   <TypeSignature Language="C#" Value="public sealed class Region : MarshalByRefObject, IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Region extends System.MarshalByRefObject implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Region" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Region&#xA;Inherits MarshalByRefObject&#xA;Implements IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Region sealed : MarshalByRefObject, IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,10 +43,21 @@
     <altmember cref="T:System.Drawing.Drawing2D.GraphicsPath" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new <see cref="T:System.Drawing.Region" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public Region ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Region.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Region();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -67,6 +80,8 @@
       <MemberSignature Language="C#" Value="public Region (System.Drawing.Drawing2D.GraphicsPath path);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Drawing2D.GraphicsPath path) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Region.#ctor(System.Drawing.Drawing2D.GraphicsPath)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (path As GraphicsPath)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Region(System::Drawing::Drawing2D::GraphicsPath ^ path);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -94,6 +109,8 @@
       <MemberSignature Language="C#" Value="public Region (System.Drawing.Drawing2D.RegionData rgnData);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Drawing2D.RegionData rgnData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Region.#ctor(System.Drawing.Drawing2D.RegionData)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (rgnData As RegionData)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Region(System::Drawing::Drawing2D::RegionData ^ rgnData);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -121,6 +138,8 @@
       <MemberSignature Language="C#" Value="public Region (System.Drawing.Rectangle rect);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Drawing.Rectangle rect) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Region.#ctor(System.Drawing.Rectangle)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (rect As Rectangle)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Region(System::Drawing::Rectangle rect);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -155,6 +174,8 @@
       <MemberSignature Language="C#" Value="public Region (System.Drawing.RectangleF rect);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Drawing.RectangleF rect) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Region.#ctor(System.Drawing.RectangleF)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (rect As RectangleF)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Region(System::Drawing::RectangleF rect);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -180,6 +201,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Region Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Drawing.Region Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Region.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As Region" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::Region ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -195,10 +218,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Complement">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Updates this <see cref="T:System.Drawing.Region" /> to the portion of the specified <see cref="T:System.Drawing.RectangleF" /> structure that does not intersect with this <see cref="T:System.Drawing.Region" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Complement">
       <MemberSignature Language="C#" Value="public void Complement (System.Drawing.Drawing2D.GraphicsPath path);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Complement(class System.Drawing.Drawing2D.GraphicsPath path) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Region.Complement(System.Drawing.Drawing2D.GraphicsPath)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Complement (path As GraphicsPath)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Complement(System::Drawing::Drawing2D::GraphicsPath ^ path);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -247,6 +281,8 @@
       <MemberSignature Language="C#" Value="public void Complement (System.Drawing.Rectangle rect);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Complement(valuetype System.Drawing.Rectangle rect) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Region.Complement(System.Drawing.Rectangle)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Complement (rect As Rectangle)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Complement(System::Drawing::Rectangle rect);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -275,6 +311,8 @@
       <MemberSignature Language="C#" Value="public void Complement (System.Drawing.RectangleF rect);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Complement(valuetype System.Drawing.RectangleF rect) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Region.Complement(System.Drawing.RectangleF)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Complement (rect As RectangleF)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Complement(System::Drawing::RectangleF rect);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -319,6 +357,7 @@
       <MemberSignature Language="C#" Value="public void Complement (System.Drawing.Region region);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Complement(class System.Drawing.Region region) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Region.Complement(System.Drawing.Region)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Complement(System::Drawing::Region ^ region);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -365,7 +404,12 @@
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Region.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -406,6 +450,7 @@
       <MemberSignature Language="C#" Value="public bool Equals (System.Drawing.Region region, System.Drawing.Graphics g);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Equals(class System.Drawing.Region region, class System.Drawing.Graphics g) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Region.Equals(System.Drawing.Region,System.Drawing.Graphics)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(System::Drawing::Region ^ region, System::Drawing::Graphics ^ g);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -436,10 +481,21 @@
           <paramref name="g" /> or <paramref name="region" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Exclude">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Updates this <see cref="T:System.Drawing.Region" /> to the portion of its interior that does not intersect with the specified <see cref="T:System.Drawing.Rectangle" /> structure.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Exclude">
       <MemberSignature Language="C#" Value="public void Exclude (System.Drawing.Drawing2D.GraphicsPath path);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Exclude(class System.Drawing.Drawing2D.GraphicsPath path) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Region.Exclude(System.Drawing.Drawing2D.GraphicsPath)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Exclude (path As GraphicsPath)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Exclude(System::Drawing::Drawing2D::GraphicsPath ^ path);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -476,6 +532,8 @@
       <MemberSignature Language="C#" Value="public void Exclude (System.Drawing.Rectangle rect);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Exclude(valuetype System.Drawing.Rectangle rect) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Region.Exclude(System.Drawing.Rectangle)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Exclude (rect As Rectangle)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Exclude(System::Drawing::Rectangle rect);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -504,6 +562,8 @@
       <MemberSignature Language="C#" Value="public void Exclude (System.Drawing.RectangleF rect);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Exclude(valuetype System.Drawing.RectangleF rect) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Region.Exclude(System.Drawing.RectangleF)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Exclude (rect As RectangleF)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Exclude(System::Drawing::RectangleF rect);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -548,6 +608,7 @@
       <MemberSignature Language="C#" Value="public void Exclude (System.Drawing.Region region);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Exclude(class System.Drawing.Region region) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Region.Exclude(System.Drawing.Region)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Exclude(System::Drawing::Region ^ region);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -578,6 +639,8 @@
       <MemberSignature Language="C#" Value="~Region ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Region.Finalize" />
+      <MemberSignature Language="VB.NET" Value="Finalize ()" />
+      <MemberSignature Language="C++ CLI" Value="!Region ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -596,6 +659,8 @@
       <MemberSignature Language="C#" Value="public static System.Drawing.Region FromHrgn (IntPtr hrgn);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Drawing.Region FromHrgn(native int hrgn) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Region.FromHrgn(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromHrgn (hrgn As IntPtr) As Region" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Region ^ FromHrgn(IntPtr hrgn);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -626,6 +691,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.RectangleF GetBounds (System.Drawing.Graphics g);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Drawing.RectangleF GetBounds(class System.Drawing.Graphics g) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Region.GetBounds(System.Drawing.Graphics)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetBounds (g As Graphics) As RectangleF" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::RectangleF GetBounds(System::Drawing::Graphics ^ g);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -676,6 +743,8 @@
       <MemberSignature Language="C#" Value="public IntPtr GetHrgn (System.Drawing.Graphics g);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance native int GetHrgn(class System.Drawing.Graphics g) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Region.GetHrgn(System.Drawing.Graphics)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetHrgn (g As Graphics) As IntPtr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IntPtr GetHrgn(System::Drawing::Graphics ^ g);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -700,6 +769,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Drawing2D.RegionData GetRegionData ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Drawing.Drawing2D.RegionData GetRegionData() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Region.GetRegionData" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetRegionData () As RegionData" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::Drawing2D::RegionData ^ GetRegionData();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -735,6 +806,7 @@
       <MemberSignature Language="C#" Value="public System.Drawing.RectangleF[] GetRegionScans (System.Drawing.Drawing2D.Matrix matrix);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Drawing.RectangleF[] GetRegionScans(class System.Drawing.Drawing2D.Matrix matrix) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Region.GetRegionScans(System.Drawing.Drawing2D.Matrix)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Drawing::RectangleF&gt; ^ GetRegionScans(System::Drawing::Drawing2D::Matrix ^ matrix);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -755,10 +827,21 @@
           <paramref name="matrix" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Intersect">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Updates this <see cref="T:System.Drawing.Region" /> to the intersection of itself with the specified <see cref="T:System.Drawing.Region" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Intersect">
       <MemberSignature Language="C#" Value="public void Intersect (System.Drawing.Drawing2D.GraphicsPath path);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Intersect(class System.Drawing.Drawing2D.GraphicsPath path) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Region.Intersect(System.Drawing.Drawing2D.GraphicsPath)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Intersect (path As GraphicsPath)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Intersect(System::Drawing::Drawing2D::GraphicsPath ^ path);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -787,6 +870,8 @@
       <MemberSignature Language="C#" Value="public void Intersect (System.Drawing.Rectangle rect);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Intersect(valuetype System.Drawing.Rectangle rect) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Region.Intersect(System.Drawing.Rectangle)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Intersect (rect As Rectangle)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Intersect(System::Drawing::Rectangle rect);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -815,6 +900,8 @@
       <MemberSignature Language="C#" Value="public void Intersect (System.Drawing.RectangleF rect);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Intersect(valuetype System.Drawing.RectangleF rect) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Region.Intersect(System.Drawing.RectangleF)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Intersect (rect As RectangleF)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Intersect(System::Drawing::RectangleF rect);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -859,6 +946,7 @@
       <MemberSignature Language="C#" Value="public void Intersect (System.Drawing.Region region);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Intersect(class System.Drawing.Region region) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Region.Intersect(System.Drawing.Region)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Intersect(System::Drawing::Region ^ region);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -887,6 +975,8 @@
       <MemberSignature Language="C#" Value="public bool IsEmpty (System.Drawing.Graphics g);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsEmpty(class System.Drawing.Graphics g) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Region.IsEmpty(System.Drawing.Graphics)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsEmpty (g As Graphics) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsEmpty(System::Drawing::Graphics ^ g);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -919,6 +1009,8 @@
       <MemberSignature Language="C#" Value="public bool IsInfinite (System.Drawing.Graphics g);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsInfinite(class System.Drawing.Graphics g) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Region.IsInfinite(System.Drawing.Graphics)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsInfinite (g As Graphics) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsInfinite(System::Drawing::Graphics ^ g);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -947,10 +1039,20 @@
           <paramref name="g" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="IsVisible">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Tests whether the specified rectangle is contained within this <see cref="T:System.Drawing.Region" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="IsVisible">
       <MemberSignature Language="C#" Value="public bool IsVisible (System.Drawing.Point point);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsVisible(valuetype System.Drawing.Point point) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Region.IsVisible(System.Drawing.Point)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsVisible(System::Drawing::Point point);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -981,6 +1083,8 @@
       <MemberSignature Language="C#" Value="public bool IsVisible (System.Drawing.PointF point);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsVisible(valuetype System.Drawing.PointF point) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Region.IsVisible(System.Drawing.PointF)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsVisible (point As PointF) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsVisible(System::Drawing::PointF point);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1011,6 +1115,8 @@
       <MemberSignature Language="C#" Value="public bool IsVisible (System.Drawing.Rectangle rect);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsVisible(valuetype System.Drawing.Rectangle rect) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Region.IsVisible(System.Drawing.Rectangle)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsVisible (rect As Rectangle) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsVisible(System::Drawing::Rectangle rect);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1040,6 +1146,8 @@
       <MemberSignature Language="C#" Value="public bool IsVisible (System.Drawing.RectangleF rect);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsVisible(valuetype System.Drawing.RectangleF rect) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Region.IsVisible(System.Drawing.RectangleF)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsVisible (rect As RectangleF) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsVisible(System::Drawing::RectangleF rect);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1086,6 +1194,7 @@
       <MemberSignature Language="C#" Value="public bool IsVisible (System.Drawing.Point point, System.Drawing.Graphics g);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsVisible(valuetype System.Drawing.Point point, class System.Drawing.Graphics g) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Region.IsVisible(System.Drawing.Point,System.Drawing.Graphics)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsVisible(System::Drawing::Point point, System::Drawing::Graphics ^ g);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1123,6 +1232,8 @@
       <MemberSignature Language="C#" Value="public bool IsVisible (System.Drawing.PointF point, System.Drawing.Graphics g);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsVisible(valuetype System.Drawing.PointF point, class System.Drawing.Graphics g) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Region.IsVisible(System.Drawing.PointF,System.Drawing.Graphics)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsVisible (point As PointF, g As Graphics) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsVisible(System::Drawing::PointF point, System::Drawing::Graphics ^ g);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1160,6 +1271,8 @@
       <MemberSignature Language="C#" Value="public bool IsVisible (System.Drawing.Rectangle rect, System.Drawing.Graphics g);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsVisible(valuetype System.Drawing.Rectangle rect, class System.Drawing.Graphics g) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Region.IsVisible(System.Drawing.Rectangle,System.Drawing.Graphics)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsVisible (rect As Rectangle, g As Graphics) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsVisible(System::Drawing::Rectangle rect, System::Drawing::Graphics ^ g);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1197,6 +1310,8 @@
       <MemberSignature Language="C#" Value="public bool IsVisible (System.Drawing.RectangleF rect, System.Drawing.Graphics g);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsVisible(valuetype System.Drawing.RectangleF rect, class System.Drawing.Graphics g) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Region.IsVisible(System.Drawing.RectangleF,System.Drawing.Graphics)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsVisible (rect As RectangleF, g As Graphics) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsVisible(System::Drawing::RectangleF rect, System::Drawing::Graphics ^ g);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1234,6 +1349,8 @@
       <MemberSignature Language="C#" Value="public bool IsVisible (float x, float y);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsVisible(float32 x, float32 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Region.IsVisible(System.Single,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsVisible (x As Single, y As Single) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsVisible(float x, float y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1266,6 +1383,8 @@
       <MemberSignature Language="C#" Value="public bool IsVisible (int x, int y, System.Drawing.Graphics g);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsVisible(int32 x, int32 y, class System.Drawing.Graphics g) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Region.IsVisible(System.Int32,System.Int32,System.Drawing.Graphics)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsVisible (x As Integer, y As Integer, g As Graphics) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsVisible(int x, int y, System::Drawing::Graphics ^ g);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1305,6 +1424,8 @@
       <MemberSignature Language="C#" Value="public bool IsVisible (float x, float y, System.Drawing.Graphics g);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsVisible(float32 x, float32 y, class System.Drawing.Graphics g) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Region.IsVisible(System.Single,System.Single,System.Drawing.Graphics)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsVisible (x As Single, y As Single, g As Graphics) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsVisible(float x, float y, System::Drawing::Graphics ^ g);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1344,6 +1465,8 @@
       <MemberSignature Language="C#" Value="public bool IsVisible (int x, int y, int width, int height);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsVisible(int32 x, int32 y, int32 width, int32 height) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Region.IsVisible(System.Int32,System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsVisible (x As Integer, y As Integer, width As Integer, height As Integer) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsVisible(int x, int y, int width, int height);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1380,6 +1503,8 @@
       <MemberSignature Language="C#" Value="public bool IsVisible (float x, float y, float width, float height);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsVisible(float32 x, float32 y, float32 width, float32 height) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Region.IsVisible(System.Single,System.Single,System.Single,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsVisible (x As Single, y As Single, width As Single, height As Single) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsVisible(float x, float y, float width, float height);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1416,6 +1541,8 @@
       <MemberSignature Language="C#" Value="public bool IsVisible (int x, int y, int width, int height, System.Drawing.Graphics g);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsVisible(int32 x, int32 y, int32 width, int32 height, class System.Drawing.Graphics g) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Region.IsVisible(System.Int32,System.Int32,System.Int32,System.Int32,System.Drawing.Graphics)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsVisible (x As Integer, y As Integer, width As Integer, height As Integer, g As Graphics) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsVisible(int x, int y, int width, int height, System::Drawing::Graphics ^ g);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1459,6 +1586,8 @@
       <MemberSignature Language="C#" Value="public bool IsVisible (float x, float y, float width, float height, System.Drawing.Graphics g);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsVisible(float32 x, float32 y, float32 width, float32 height, class System.Drawing.Graphics g) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Region.IsVisible(System.Single,System.Single,System.Single,System.Single,System.Drawing.Graphics)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsVisible (x As Single, y As Single, width As Single, height As Single, g As Graphics) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsVisible(float x, float y, float width, float height, System::Drawing::Graphics ^ g);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1502,6 +1631,8 @@
       <MemberSignature Language="C#" Value="public void MakeEmpty ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void MakeEmpty() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Region.MakeEmpty" />
+      <MemberSignature Language="VB.NET" Value="Public Sub MakeEmpty ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void MakeEmpty();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1531,6 +1662,8 @@
       <MemberSignature Language="C#" Value="public void MakeInfinite ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void MakeInfinite() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Region.MakeInfinite" />
+      <MemberSignature Language="VB.NET" Value="Public Sub MakeInfinite ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void MakeInfinite();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1560,6 +1693,8 @@
       <MemberSignature Language="C#" Value="public void ReleaseHrgn (IntPtr regionHandle);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ReleaseHrgn(native int regionHandle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Region.ReleaseHrgn(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ReleaseHrgn (regionHandle As IntPtr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReleaseHrgn(IntPtr regionHandle);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1584,6 +1719,7 @@
       <MemberSignature Language="C#" Value="public void Transform (System.Drawing.Drawing2D.Matrix matrix);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Transform(class System.Drawing.Drawing2D.Matrix matrix) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Region.Transform(System.Drawing.Drawing2D.Matrix)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Transform(System::Drawing::Drawing2D::Matrix ^ matrix);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1626,10 +1762,21 @@
           <paramref name="matrix" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Translate">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Offsets the coordinates of this <see cref="T:System.Drawing.Region" /> by the specified amount.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Translate">
       <MemberSignature Language="C#" Value="public void Translate (int dx, int dy);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Translate(int32 dx, int32 dy) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Region.Translate(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Translate (dx As Integer, dy As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Translate(int dx, int dy);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1674,6 +1821,8 @@
       <MemberSignature Language="C#" Value="public void Translate (float dx, float dy);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Translate(float32 dx, float32 dy) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Region.Translate(System.Single,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Translate (dx As Single, dy As Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Translate(float dx, float dy);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1700,10 +1849,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Union">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Updates this <see cref="T:System.Drawing.Region" /> to the union of itself and the specified <see cref="T:System.Drawing.Drawing2D.GraphicsPath" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Union">
       <MemberSignature Language="C#" Value="public void Union (System.Drawing.Drawing2D.GraphicsPath path);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Union(class System.Drawing.Drawing2D.GraphicsPath path) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Region.Union(System.Drawing.Drawing2D.GraphicsPath)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Union (path As GraphicsPath)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Union(System::Drawing::Drawing2D::GraphicsPath ^ path);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1734,6 +1894,8 @@
       <MemberSignature Language="C#" Value="public void Union (System.Drawing.Rectangle rect);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Union(valuetype System.Drawing.Rectangle rect) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Region.Union(System.Drawing.Rectangle)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Union (rect As Rectangle)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Union(System::Drawing::Rectangle rect);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1762,6 +1924,8 @@
       <MemberSignature Language="C#" Value="public void Union (System.Drawing.RectangleF rect);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Union(valuetype System.Drawing.RectangleF rect) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Region.Union(System.Drawing.RectangleF)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Union (rect As RectangleF)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Union(System::Drawing::RectangleF rect);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1806,6 +1970,7 @@
       <MemberSignature Language="C#" Value="public void Union (System.Drawing.Region region);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Union(class System.Drawing.Region region) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Region.Union(System.Drawing.Region)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Union(System::Drawing::Region ^ region);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1832,10 +1997,21 @@
           <paramref name="region" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Xor">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Updates this <see cref="T:System.Drawing.Region" /> object to the union minus the intersection of itself with the specified <see cref="T:System.Drawing.Drawing2D.GraphicsPath" /> object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Xor">
       <MemberSignature Language="C#" Value="public void Xor (System.Drawing.Drawing2D.GraphicsPath path);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Xor(class System.Drawing.Drawing2D.GraphicsPath path) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Region.Xor(System.Drawing.Drawing2D.GraphicsPath)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Xor (path As GraphicsPath)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Xor(System::Drawing::Drawing2D::GraphicsPath ^ path);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1866,6 +2042,8 @@
       <MemberSignature Language="C#" Value="public void Xor (System.Drawing.Rectangle rect);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Xor(valuetype System.Drawing.Rectangle rect) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Region.Xor(System.Drawing.Rectangle)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Xor (rect As Rectangle)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Xor(System::Drawing::Rectangle rect);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1894,6 +2072,8 @@
       <MemberSignature Language="C#" Value="public void Xor (System.Drawing.RectangleF rect);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Xor(valuetype System.Drawing.RectangleF rect) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Region.Xor(System.Drawing.RectangleF)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Xor (rect As RectangleF)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Xor(System::Drawing::RectangleF rect);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1938,6 +2118,7 @@
       <MemberSignature Language="C#" Value="public void Xor (System.Drawing.Region region);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Xor(class System.Drawing.Region region) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Region.Xor(System.Drawing.Region)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Xor(System::Drawing::Region ^ region);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1964,77 +2145,5 @@
           <paramref name="region" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Xor">
-      <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Updates this <see cref="T:System.Drawing.Region" /> object to the union minus the intersection of itself with the specified <see cref="T:System.Drawing.Drawing2D.GraphicsPath" /> object.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new <see cref="T:System.Drawing.Region" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Translate">
-      <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Offsets the coordinates of this <see cref="T:System.Drawing.Region" /> by the specified amount.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="IsVisible">
-      <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Tests whether the specified rectangle is contained within this <see cref="T:System.Drawing.Region" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Intersect">
-      <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Updates this <see cref="T:System.Drawing.Region" /> to the intersection of itself with the specified <see cref="T:System.Drawing.Region" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Union">
-      <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Updates this <see cref="T:System.Drawing.Region" /> to the union of itself and the specified <see cref="T:System.Drawing.Drawing2D.GraphicsPath" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Complement">
-      <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Updates this <see cref="T:System.Drawing.Region" /> to the portion of the specified <see cref="T:System.Drawing.RectangleF" /> structure that does not intersect with this <see cref="T:System.Drawing.Region" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Exclude">
-      <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Updates this <see cref="T:System.Drawing.Region" /> to the portion of its interior that does not intersect with the specified <see cref="T:System.Drawing.Rectangle" /> structure.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

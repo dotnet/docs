@@ -1,7 +1,9 @@
-<Type Name="CalendarButton" FullName="System.Windows.Controls.Primitives.CalendarButton">
+﻿<Type Name="CalendarButton" FullName="System.Windows.Controls.Primitives.CalendarButton">
   <TypeSignature Language="C#" Value="public sealed class CalendarButton : System.Windows.Controls.Button" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CalendarButton extends System.Windows.Controls.Button" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Primitives.CalendarButton" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CalendarButton&#xA;Inherits Button" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CalendarButton sealed : System::Windows::Controls::Button" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public CalendarButton ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.CalendarButton.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CalendarButton();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -34,6 +38,8 @@
       <MemberSignature Language="C#" Value="public bool HasSelectedDays { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasSelectedDays" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.CalendarButton.HasSelectedDays" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasSelectedDays As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasSelectedDays { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -53,6 +59,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty HasSelectedDaysProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty HasSelectedDaysProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.CalendarButton.HasSelectedDaysProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HasSelectedDaysProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ HasSelectedDaysProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -70,6 +78,8 @@
       <MemberSignature Language="C#" Value="public bool IsInactive { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsInactive" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.CalendarButton.IsInactive" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsInactive As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsInactive { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -96,6 +106,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty IsInactiveProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty IsInactiveProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.CalendarButton.IsInactiveProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsInactiveProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsInactiveProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -113,6 +125,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.CalendarButton.OnCreateAutomationPeer" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnCreateAutomationPeer () As AutomationPeer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationPeer ^ OnCreateAutomationPeer();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="DiscreteStringKeyFrame" FullName="System.Windows.Media.Animation.DiscreteStringKeyFrame">
+﻿<Type Name="DiscreteStringKeyFrame" FullName="System.Windows.Media.Animation.DiscreteStringKeyFrame">
   <TypeSignature Language="C#" Value="public class DiscreteStringKeyFrame : System.Windows.Media.Animation.StringKeyFrame" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DiscreteStringKeyFrame extends System.Windows.Media.Animation.StringKeyFrame" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.DiscreteStringKeyFrame" />
+  <TypeSignature Language="VB.NET" Value="Public Class DiscreteStringKeyFrame&#xA;Inherits StringKeyFrame" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DiscreteStringKeyFrame : System::Windows::Media::Animation::StringKeyFrame" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,10 +30,21 @@
     <altmember cref="T:System.Windows.Media.Animation.StringKeyFrameCollection" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.DiscreteStringKeyFrame" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DiscreteStringKeyFrame ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DiscreteStringKeyFrame.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DiscreteStringKeyFrame();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -47,6 +60,8 @@
       <MemberSignature Language="C#" Value="public DiscreteStringKeyFrame (string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DiscreteStringKeyFrame.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DiscreteStringKeyFrame(System::String ^ value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -65,6 +80,7 @@
       <MemberSignature Language="C#" Value="public DiscreteStringKeyFrame (string value, System.Windows.Media.Animation.KeyTime keyTime);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string value, valuetype System.Windows.Media.Animation.KeyTime keyTime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DiscreteStringKeyFrame.#ctor(System.String,System.Windows.Media.Animation.KeyTime)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DiscreteStringKeyFrame(System::String ^ value, System::Windows::Media::Animation::KeyTime keyTime);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -85,6 +101,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DiscreteStringKeyFrame.CreateInstanceCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -105,6 +123,8 @@
       <MemberSignature Language="C#" Value="protected override string InterpolateValueCore (string baseValue, double keyFrameProgress);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string InterpolateValueCore(string baseValue, float64 keyFrameProgress) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DiscreteStringKeyFrame.InterpolateValueCore(System.String,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function InterpolateValueCore (baseValue As String, keyFrameProgress As Double) As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ InterpolateValueCore(System::String ^ baseValue, double keyFrameProgress);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -125,14 +145,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.DiscreteStringKeyFrame" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

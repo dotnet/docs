@@ -1,7 +1,9 @@
-<Type Name="CustomAttributeNamedArgument" FullName="System.Reflection.CustomAttributeNamedArgument">
+﻿<Type Name="CustomAttributeNamedArgument" FullName="System.Reflection.CustomAttributeNamedArgument">
   <TypeSignature Language="C#" Value="public struct CustomAttributeNamedArgument" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable sealed beforefieldinit CustomAttributeNamedArgument extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.CustomAttributeNamedArgument" />
+  <TypeSignature Language="VB.NET" Value="Public Structure CustomAttributeNamedArgument" />
+  <TypeSignature Language="C++ CLI" Value="public value class CustomAttributeNamedArgument" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -65,10 +67,21 @@
     <altmember cref="Overload:System.Reflection.Assembly.ReflectionOnlyLoad" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Reflection.CustomAttributeNamedArgument" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public CustomAttributeNamedArgument (System.Reflection.MemberInfo memberInfo, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Reflection.MemberInfo memberInfo, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.CustomAttributeNamedArgument.#ctor(System.Reflection.MemberInfo,System.Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CustomAttributeNamedArgument(System::Reflection::MemberInfo ^ memberInfo, System::Object ^ value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -109,6 +122,7 @@
       <MemberSignature Language="C#" Value="public CustomAttributeNamedArgument (System.Reflection.MemberInfo memberInfo, System.Reflection.CustomAttributeTypedArgument typedArgument);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Reflection.MemberInfo memberInfo, valuetype System.Reflection.CustomAttributeTypedArgument typedArgument) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.CustomAttributeNamedArgument.#ctor(System.Reflection.MemberInfo,System.Reflection.CustomAttributeTypedArgument)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CustomAttributeNamedArgument(System::Reflection::MemberInfo ^ memberInfo, System::Reflection::CustomAttributeTypedArgument typedArgument);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -147,6 +161,8 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.CustomAttributeNamedArgument.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -183,6 +199,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.CustomAttributeNamedArgument.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -215,6 +233,8 @@
       <MemberSignature Language="C#" Value="public bool IsField { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsField" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.CustomAttributeNamedArgument.IsField" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsField As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsField { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -249,6 +269,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.MemberInfo MemberInfo { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Reflection.MemberInfo MemberInfo" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.CustomAttributeNamedArgument.MemberInfo" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MemberInfo As MemberInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::MemberInfo ^ MemberInfo { System::Reflection::MemberInfo ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -283,6 +305,8 @@
       <MemberSignature Language="C#" Value="public string MemberName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MemberName" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.CustomAttributeNamedArgument.MemberName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MemberName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MemberName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -316,6 +340,8 @@
       <MemberSignature Language="C#" Value="public static bool operator == (System.Reflection.CustomAttributeNamedArgument left, System.Reflection.CustomAttributeNamedArgument right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Reflection.CustomAttributeNamedArgument left, valuetype System.Reflection.CustomAttributeNamedArgument right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.CustomAttributeNamedArgument.op_Equality(System.Reflection.CustomAttributeNamedArgument,System.Reflection.CustomAttributeNamedArgument)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As CustomAttributeNamedArgument, right As CustomAttributeNamedArgument) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Reflection::CustomAttributeNamedArgument left, System::Reflection::CustomAttributeNamedArgument right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -356,6 +382,8 @@
       <MemberSignature Language="C#" Value="public static bool operator != (System.Reflection.CustomAttributeNamedArgument left, System.Reflection.CustomAttributeNamedArgument right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Reflection.CustomAttributeNamedArgument left, valuetype System.Reflection.CustomAttributeNamedArgument right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.CustomAttributeNamedArgument.op_Inequality(System.Reflection.CustomAttributeNamedArgument,System.Reflection.CustomAttributeNamedArgument)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As CustomAttributeNamedArgument, right As CustomAttributeNamedArgument) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Reflection::CustomAttributeNamedArgument left, System::Reflection::CustomAttributeNamedArgument right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -396,6 +424,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.CustomAttributeNamedArgument.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -428,6 +458,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.CustomAttributeTypedArgument TypedValue { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.CustomAttributeTypedArgument TypedValue" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.CustomAttributeNamedArgument.TypedValue" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TypedValue As CustomAttributeTypedArgument" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::CustomAttributeTypedArgument TypedValue { System::Reflection::CustomAttributeTypedArgument get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -482,15 +514,5 @@
         <altmember cref="Overload:System.Reflection.Assembly.ReflectionOnlyLoad" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Reflection.CustomAttributeNamedArgument" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,9 @@
-<Type Name="IHasXmlNode" FullName="System.Xml.IHasXmlNode">
+﻿<Type Name="IHasXmlNode" FullName="System.Xml.IHasXmlNode">
   <TypeSignature Language="C#" Value="public interface IHasXmlNode" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IHasXmlNode" />
   <TypeSignature Language="DocId" Value="T:System.Xml.IHasXmlNode" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IHasXmlNode" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IHasXmlNode" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -45,6 +47,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.XmlNode GetNode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Xml.XmlNode GetNode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.IHasXmlNode.GetNode" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetNode () As XmlNode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::XmlNode ^ GetNode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="KeyedHashAlgorithm" FullName="System.Security.Cryptography.KeyedHashAlgorithm">
+﻿<Type Name="KeyedHashAlgorithm" FullName="System.Security.Cryptography.KeyedHashAlgorithm">
   <TypeSignature Language="C#" Value="public abstract class KeyedHashAlgorithm : System.Security.Cryptography.HashAlgorithm" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit KeyedHashAlgorithm extends System.Security.Cryptography.HashAlgorithm" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.KeyedHashAlgorithm" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class KeyedHashAlgorithm&#xA;Inherits HashAlgorithm" />
+  <TypeSignature Language="C++ CLI" Value="public ref class KeyedHashAlgorithm abstract : System::Security::Cryptography::HashAlgorithm" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,6 +55,8 @@
       <MemberSignature Language="C#" Value="protected KeyedHashAlgorithm ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.KeyedHashAlgorithm.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; KeyedHashAlgorithm();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -81,10 +85,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Create">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an instance of an implementation of a keyed hash algorithm.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Create">
       <MemberSignature Language="C#" Value="public static System.Security.Cryptography.KeyedHashAlgorithm Create ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Cryptography.KeyedHashAlgorithm Create() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.KeyedHashAlgorithm.Create" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create () As KeyedHashAlgorithm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::KeyedHashAlgorithm ^ Create();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -120,6 +136,8 @@
       <MemberSignature Language="C#" Value="public static System.Security.Cryptography.KeyedHashAlgorithm Create (string algName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Cryptography.KeyedHashAlgorithm Create(string algName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.KeyedHashAlgorithm.Create(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (algName As String) As KeyedHashAlgorithm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::KeyedHashAlgorithm ^ Create(System::String ^ algName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -196,6 +214,8 @@
       <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.KeyedHashAlgorithm.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -243,6 +263,8 @@
       <MemberSignature Language="C#" Value="public virtual byte[] Key { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] Key" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.KeyedHashAlgorithm.Key" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Key As Byte()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property cli::array &lt;System::Byte&gt; ^ Key { cli::array &lt;System::Byte&gt; ^ get(); void set(cli::array &lt;System::Byte&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -288,6 +310,8 @@
       <MemberSignature Language="C#" Value="protected byte[] KeyValue;" />
       <MemberSignature Language="ILAsm" Value=".field family unsigned int8[] KeyValue" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.KeyedHashAlgorithm.KeyValue" />
+      <MemberSignature Language="VB.NET" Value="Protected KeyValue As Byte() " />
+      <MemberSignature Language="C++ CLI" Value="protected: cli::array &lt;System::Byte&gt; ^ KeyValue;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -317,15 +341,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Create">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates an instance of an implementation of a keyed hash algorithm.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,9 @@
-<Type Name="IdentityType" FullName="System.DirectoryServices.AccountManagement.IdentityType">
+﻿<Type Name="IdentityType" FullName="System.DirectoryServices.AccountManagement.IdentityType">
   <TypeSignature Language="C#" Value="public enum IdentityType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed IdentityType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.AccountManagement.IdentityType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum IdentityType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class IdentityType" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +22,8 @@
       <MemberSignature Language="C#" Value="DistinguishedName" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.AccountManagement.IdentityType DistinguishedName = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.AccountManagement.IdentityType.DistinguishedName" />
+      <MemberSignature Language="VB.NET" Value="DistinguishedName" />
+      <MemberSignature Language="C++ CLI" Value="DistinguishedName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -29,6 +33,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.AccountManagement.IdentityType</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The identity is a Distinguished Name (DN).</summary>
       </Docs>
@@ -37,6 +42,8 @@
       <MemberSignature Language="C#" Value="Guid" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.AccountManagement.IdentityType Guid = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.AccountManagement.IdentityType.Guid" />
+      <MemberSignature Language="VB.NET" Value="Guid" />
+      <MemberSignature Language="C++ CLI" Value="Guid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -46,6 +53,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.AccountManagement.IdentityType</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>The identity is a Globally Unique Identifier (GUID).</summary>
       </Docs>
@@ -54,6 +62,8 @@
       <MemberSignature Language="C#" Value="Name" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.AccountManagement.IdentityType Name = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.AccountManagement.IdentityType.Name" />
+      <MemberSignature Language="VB.NET" Value="Name" />
+      <MemberSignature Language="C++ CLI" Value="Name" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -63,6 +73,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.AccountManagement.IdentityType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The identity is a name.</summary>
       </Docs>
@@ -71,6 +82,8 @@
       <MemberSignature Language="C#" Value="SamAccountName" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.AccountManagement.IdentityType SamAccountName = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.AccountManagement.IdentityType.SamAccountName" />
+      <MemberSignature Language="VB.NET" Value="SamAccountName" />
+      <MemberSignature Language="C++ CLI" Value="SamAccountName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -80,6 +93,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.AccountManagement.IdentityType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The identity is a Security Account Manager (SAM) name.</summary>
       </Docs>
@@ -88,6 +102,8 @@
       <MemberSignature Language="C#" Value="Sid" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.AccountManagement.IdentityType Sid = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.AccountManagement.IdentityType.Sid" />
+      <MemberSignature Language="VB.NET" Value="Sid" />
+      <MemberSignature Language="C++ CLI" Value="Sid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -97,6 +113,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.AccountManagement.IdentityType</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The identity is a Security Identifier (SID) in Security Descriptor Definition Language (SDDL) format.</summary>
       </Docs>
@@ -105,6 +122,8 @@
       <MemberSignature Language="C#" Value="UserPrincipalName" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.AccountManagement.IdentityType UserPrincipalName = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.AccountManagement.IdentityType.UserPrincipalName" />
+      <MemberSignature Language="VB.NET" Value="UserPrincipalName" />
+      <MemberSignature Language="C++ CLI" Value="UserPrincipalName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -114,6 +133,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.AccountManagement.IdentityType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The identity is a User Principal Name (UPN).</summary>
       </Docs>

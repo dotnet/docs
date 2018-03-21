@@ -1,7 +1,9 @@
-<Type Name="DesignerDataColumn" FullName="System.ComponentModel.Design.Data.DesignerDataColumn">
+﻿<Type Name="DesignerDataColumn" FullName="System.ComponentModel.Design.Data.DesignerDataColumn">
   <TypeSignature Language="C#" Value="public sealed class DesignerDataColumn" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DesignerDataColumn extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Data.DesignerDataColumn" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DesignerDataColumn" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DesignerDataColumn sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,10 +24,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.Data.DesignerDataColumn" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DesignerDataColumn (string name, System.Data.DbType dataType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, valuetype System.Data.DbType dataType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Data.DesignerDataColumn.#ctor(System.String,System.Data.DbType)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, dataType As DbType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DesignerDataColumn(System::String ^ name, System::Data::DbType dataType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -53,6 +66,8 @@
       <MemberSignature Language="C#" Value="public DesignerDataColumn (string name, System.Data.DbType dataType, object defaultValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, valuetype System.Data.DbType dataType, object defaultValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Data.DesignerDataColumn.#ctor(System.String,System.Data.DbType,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, dataType As DbType, defaultValue As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DesignerDataColumn(System::String ^ name, System::Data::DbType dataType, System::Object ^ defaultValue);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -82,6 +97,8 @@
       <MemberSignature Language="C#" Value="public DesignerDataColumn (string name, System.Data.DbType dataType, object defaultValue, bool identity, bool nullable, bool primaryKey, int precision, int scale, int length);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, valuetype System.Data.DbType dataType, object defaultValue, bool identity, bool nullable, bool primaryKey, int32 precision, int32 scale, int32 length) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Data.DesignerDataColumn.#ctor(System.String,System.Data.DbType,System.Object,System.Boolean,System.Boolean,System.Boolean,System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, dataType As DbType, defaultValue As Object, identity As Boolean, nullable As Boolean, primaryKey As Boolean, precision As Integer, scale As Integer, length As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DesignerDataColumn(System::String ^ name, System::Data::DbType dataType, System::Object ^ defaultValue, bool identity, bool nullable, bool primaryKey, int precision, int scale, int length);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -126,6 +143,8 @@
       <MemberSignature Language="C#" Value="public System.Data.DbType DataType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.DbType DataType" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Data.DesignerDataColumn.DataType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataType As DbType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::DbType DataType { System::Data::DbType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -144,6 +163,8 @@
       <MemberSignature Language="C#" Value="public object DefaultValue { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object DefaultValue" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Data.DesignerDataColumn.DefaultValue" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DefaultValue As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ DefaultValue { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -162,6 +183,8 @@
       <MemberSignature Language="C#" Value="public bool Identity { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Identity" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Data.DesignerDataColumn.Identity" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Identity As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Identity { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -181,6 +204,8 @@
       <MemberSignature Language="C#" Value="public int Length { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Length" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Data.DesignerDataColumn.Length" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Length As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Length { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -199,6 +224,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Data.DesignerDataColumn.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -217,6 +244,8 @@
       <MemberSignature Language="C#" Value="public bool Nullable { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Nullable" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Data.DesignerDataColumn.Nullable" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Nullable As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Nullable { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -236,6 +265,8 @@
       <MemberSignature Language="C#" Value="public int Precision { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Precision" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Data.DesignerDataColumn.Precision" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Precision As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Precision { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -254,6 +285,8 @@
       <MemberSignature Language="C#" Value="public bool PrimaryKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool PrimaryKey" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Data.DesignerDataColumn.PrimaryKey" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PrimaryKey As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PrimaryKey { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -273,6 +306,8 @@
       <MemberSignature Language="C#" Value="public int Scale { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Scale" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Data.DesignerDataColumn.Scale" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Scale As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Scale { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -287,14 +322,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.Data.DesignerDataColumn" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

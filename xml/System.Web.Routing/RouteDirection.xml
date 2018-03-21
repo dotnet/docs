@@ -1,7 +1,9 @@
-<Type Name="RouteDirection" FullName="System.Web.Routing.RouteDirection">
+﻿<Type Name="RouteDirection" FullName="System.Web.Routing.RouteDirection">
   <TypeSignature Language="C#" Value="public enum RouteDirection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RouteDirection extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.Routing.RouteDirection" />
+  <TypeSignature Language="VB.NET" Value="Public Enum RouteDirection" />
+  <TypeSignature Language="C++ CLI" Value="public enum class RouteDirection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +32,8 @@
       <MemberSignature Language="C#" Value="IncomingRequest" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Routing.RouteDirection IncomingRequest = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Routing.RouteDirection.IncomingRequest" />
+      <MemberSignature Language="VB.NET" Value="IncomingRequest" />
+      <MemberSignature Language="C++ CLI" Value="IncomingRequest" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -38,6 +42,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Routing.RouteDirection</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>A URL from a client is being processed.</summary>
       </Docs>
@@ -46,6 +51,8 @@
       <MemberSignature Language="C#" Value="UrlGeneration" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Routing.RouteDirection UrlGeneration = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Routing.RouteDirection.UrlGeneration" />
+      <MemberSignature Language="VB.NET" Value="UrlGeneration" />
+      <MemberSignature Language="C++ CLI" Value="UrlGeneration" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -54,6 +61,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Routing.RouteDirection</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>A URL is being created based on the route definition.</summary>
       </Docs>

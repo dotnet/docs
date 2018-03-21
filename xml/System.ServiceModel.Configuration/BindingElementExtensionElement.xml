@@ -1,7 +1,9 @@
-<Type Name="BindingElementExtensionElement" FullName="System.ServiceModel.Configuration.BindingElementExtensionElement">
+﻿<Type Name="BindingElementExtensionElement" FullName="System.ServiceModel.Configuration.BindingElementExtensionElement">
   <TypeSignature Language="C#" Value="public abstract class BindingElementExtensionElement : System.ServiceModel.Configuration.ServiceModelExtensionElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit BindingElementExtensionElement extends System.ServiceModel.Configuration.ServiceModelExtensionElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.BindingElementExtensionElement" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class BindingElementExtensionElement&#xA;Inherits ServiceModelExtensionElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BindingElementExtensionElement abstract : System::ServiceModel::Configuration::ServiceModelExtensionElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +30,8 @@
       <MemberSignature Language="C#" Value="protected BindingElementExtensionElement ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.BindingElementExtensionElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; BindingElementExtensionElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -43,6 +47,7 @@
       <MemberSignature Language="C#" Value="public virtual void ApplyConfiguration (System.ServiceModel.Channels.BindingElement bindingElement);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ApplyConfiguration(class System.ServiceModel.Channels.BindingElement bindingElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.BindingElementExtensionElement.ApplyConfiguration(System.ServiceModel.Channels.BindingElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ApplyConfiguration(System::ServiceModel::Channels::BindingElement ^ bindingElement);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -66,6 +71,8 @@
       <MemberSignature Language="C#" Value="public abstract Type BindingElementType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type BindingElementType" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.BindingElementExtensionElement.BindingElementType" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property BindingElementType As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property Type ^ BindingElementType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -88,9 +95,11 @@
       </Docs>
     </Member>
     <Member MemberName="CreateBindingElement">
-      <MemberSignature Language="C#" Value="protected abstract System.ServiceModel.Channels.BindingElement CreateBindingElement ();" />
+      <MemberSignature Language="C#" Value="protected internal abstract System.ServiceModel.Channels.BindingElement CreateBindingElement ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.ServiceModel.Channels.BindingElement CreateBindingElement() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.BindingElementExtensionElement.CreateBindingElement" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride Function CreateBindingElement () As BindingElement" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract System::ServiceModel::Channels::BindingElement ^ CreateBindingElement();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -107,9 +116,10 @@
       </Docs>
     </Member>
     <Member MemberName="InitializeFrom">
-      <MemberSignature Language="C#" Value="protected virtual void InitializeFrom (System.ServiceModel.Channels.BindingElement bindingElement);" />
+      <MemberSignature Language="C#" Value="protected internal virtual void InitializeFrom (System.ServiceModel.Channels.BindingElement bindingElement);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void InitializeFrom(class System.ServiceModel.Channels.BindingElement bindingElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.BindingElementExtensionElement.InitializeFrom(System.ServiceModel.Channels.BindingElement)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void InitializeFrom(System::ServiceModel::Channels::BindingElement ^ bindingElement);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

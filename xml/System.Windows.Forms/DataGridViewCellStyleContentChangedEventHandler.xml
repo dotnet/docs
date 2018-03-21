@@ -1,7 +1,9 @@
-<Type Name="DataGridViewCellStyleContentChangedEventHandler" FullName="System.Windows.Forms.DataGridViewCellStyleContentChangedEventHandler">
+﻿<Type Name="DataGridViewCellStyleContentChangedEventHandler" FullName="System.Windows.Forms.DataGridViewCellStyleContentChangedEventHandler">
   <TypeSignature Language="C#" Value="public delegate void DataGridViewCellStyleContentChangedEventHandler(object sender, DataGridViewCellStyleContentChangedEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataGridViewCellStyleContentChangedEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewCellStyleContentChangedEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub DataGridViewCellStyleContentChangedEventHandler(sender As Object, e As DataGridViewCellStyleContentChangedEventArgs)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void DataGridViewCellStyleContentChangedEventHandler(System::Object ^ sender, DataGridViewCellStyleContentChangedEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

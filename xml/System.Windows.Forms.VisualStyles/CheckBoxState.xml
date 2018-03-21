@@ -1,7 +1,9 @@
-<Type Name="CheckBoxState" FullName="System.Windows.Forms.VisualStyles.CheckBoxState">
+﻿<Type Name="CheckBoxState" FullName="System.Windows.Forms.VisualStyles.CheckBoxState">
   <TypeSignature Language="C#" Value="public enum CheckBoxState" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CheckBoxState extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.CheckBoxState" />
+  <TypeSignature Language="VB.NET" Value="Public Enum CheckBoxState" />
+  <TypeSignature Language="C++ CLI" Value="public enum class CheckBoxState" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +27,8 @@
       <MemberSignature Language="C#" Value="CheckedDisabled" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.CheckBoxState CheckedDisabled = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.CheckBoxState.CheckedDisabled" />
+      <MemberSignature Language="VB.NET" Value="CheckedDisabled" />
+      <MemberSignature Language="C++ CLI" Value="CheckedDisabled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -33,6 +37,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.CheckBoxState</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>The check box is checked and disabled.</summary>
       </Docs>
@@ -41,6 +46,8 @@
       <MemberSignature Language="C#" Value="CheckedHot" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.CheckBoxState CheckedHot = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.CheckBoxState.CheckedHot" />
+      <MemberSignature Language="VB.NET" Value="CheckedHot" />
+      <MemberSignature Language="C++ CLI" Value="CheckedHot" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -49,6 +56,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.CheckBoxState</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>The check box is checked and hot.</summary>
       </Docs>
@@ -57,6 +65,8 @@
       <MemberSignature Language="C#" Value="CheckedNormal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.CheckBoxState CheckedNormal = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.CheckBoxState.CheckedNormal" />
+      <MemberSignature Language="VB.NET" Value="CheckedNormal" />
+      <MemberSignature Language="C++ CLI" Value="CheckedNormal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -65,6 +75,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.CheckBoxState</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>The check box is checked.</summary>
       </Docs>
@@ -73,6 +84,8 @@
       <MemberSignature Language="C#" Value="CheckedPressed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.CheckBoxState CheckedPressed = int32(7)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.CheckBoxState.CheckedPressed" />
+      <MemberSignature Language="VB.NET" Value="CheckedPressed" />
+      <MemberSignature Language="C++ CLI" Value="CheckedPressed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -81,6 +94,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.CheckBoxState</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>The check box is checked and pressed.</summary>
       </Docs>
@@ -89,6 +103,8 @@
       <MemberSignature Language="C#" Value="MixedDisabled" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.CheckBoxState MixedDisabled = int32(12)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.CheckBoxState.MixedDisabled" />
+      <MemberSignature Language="VB.NET" Value="MixedDisabled" />
+      <MemberSignature Language="C++ CLI" Value="MixedDisabled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -97,6 +113,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.CheckBoxState</ReturnType>
       </ReturnValue>
+      <MemberValue>12</MemberValue>
       <Docs>
         <summary>The check box is three-state and disabled.</summary>
       </Docs>
@@ -105,6 +122,8 @@
       <MemberSignature Language="C#" Value="MixedHot" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.CheckBoxState MixedHot = int32(10)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.CheckBoxState.MixedHot" />
+      <MemberSignature Language="VB.NET" Value="MixedHot" />
+      <MemberSignature Language="C++ CLI" Value="MixedHot" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -113,6 +132,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.CheckBoxState</ReturnType>
       </ReturnValue>
+      <MemberValue>10</MemberValue>
       <Docs>
         <summary>The check box is three-state and hot.</summary>
       </Docs>
@@ -121,6 +141,8 @@
       <MemberSignature Language="C#" Value="MixedNormal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.CheckBoxState MixedNormal = int32(9)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.CheckBoxState.MixedNormal" />
+      <MemberSignature Language="VB.NET" Value="MixedNormal" />
+      <MemberSignature Language="C++ CLI" Value="MixedNormal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -129,6 +151,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.CheckBoxState</ReturnType>
       </ReturnValue>
+      <MemberValue>9</MemberValue>
       <Docs>
         <summary>The check box is three-state.</summary>
       </Docs>
@@ -137,6 +160,8 @@
       <MemberSignature Language="C#" Value="MixedPressed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.CheckBoxState MixedPressed = int32(11)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.CheckBoxState.MixedPressed" />
+      <MemberSignature Language="VB.NET" Value="MixedPressed" />
+      <MemberSignature Language="C++ CLI" Value="MixedPressed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -145,6 +170,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.CheckBoxState</ReturnType>
       </ReturnValue>
+      <MemberValue>11</MemberValue>
       <Docs>
         <summary>The check box is three-state and pressed.</summary>
       </Docs>
@@ -153,6 +179,8 @@
       <MemberSignature Language="C#" Value="UncheckedDisabled" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.CheckBoxState UncheckedDisabled = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.CheckBoxState.UncheckedDisabled" />
+      <MemberSignature Language="VB.NET" Value="UncheckedDisabled" />
+      <MemberSignature Language="C++ CLI" Value="UncheckedDisabled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -161,6 +189,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.CheckBoxState</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The check box is unchecked and disabled.</summary>
       </Docs>
@@ -169,6 +198,8 @@
       <MemberSignature Language="C#" Value="UncheckedHot" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.CheckBoxState UncheckedHot = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.CheckBoxState.UncheckedHot" />
+      <MemberSignature Language="VB.NET" Value="UncheckedHot" />
+      <MemberSignature Language="C++ CLI" Value="UncheckedHot" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -177,6 +208,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.CheckBoxState</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The check box is unchecked and hot.</summary>
       </Docs>
@@ -185,6 +217,8 @@
       <MemberSignature Language="C#" Value="UncheckedNormal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.CheckBoxState UncheckedNormal = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.CheckBoxState.UncheckedNormal" />
+      <MemberSignature Language="VB.NET" Value="UncheckedNormal" />
+      <MemberSignature Language="C++ CLI" Value="UncheckedNormal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -193,6 +227,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.CheckBoxState</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The check box is unchecked.</summary>
       </Docs>
@@ -201,6 +236,8 @@
       <MemberSignature Language="C#" Value="UncheckedPressed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.CheckBoxState UncheckedPressed = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.CheckBoxState.UncheckedPressed" />
+      <MemberSignature Language="VB.NET" Value="UncheckedPressed" />
+      <MemberSignature Language="C++ CLI" Value="UncheckedPressed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -209,6 +246,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.CheckBoxState</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The check box is unchecked and pressed.</summary>
       </Docs>

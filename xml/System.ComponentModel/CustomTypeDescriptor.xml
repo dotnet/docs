@@ -1,7 +1,9 @@
-<Type Name="CustomTypeDescriptor" FullName="System.ComponentModel.CustomTypeDescriptor">
+﻿<Type Name="CustomTypeDescriptor" FullName="System.ComponentModel.CustomTypeDescriptor">
   <TypeSignature Language="C#" Value="public abstract class CustomTypeDescriptor : System.ComponentModel.ICustomTypeDescriptor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit CustomTypeDescriptor extends System.Object implements class System.ComponentModel.ICustomTypeDescriptor" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.CustomTypeDescriptor" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class CustomTypeDescriptor&#xA;Implements ICustomTypeDescriptor" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CustomTypeDescriptor abstract : System::ComponentModel::ICustomTypeDescriptor" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -39,10 +41,22 @@
     <altmember cref="T:System.ComponentModel.TypeDescriptor" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.CustomTypeDescriptor" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected CustomTypeDescriptor ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.CustomTypeDescriptor.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; CustomTypeDescriptor();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -78,6 +92,8 @@
       <MemberSignature Language="C#" Value="protected CustomTypeDescriptor (System.ComponentModel.ICustomTypeDescriptor parent);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ComponentModel.ICustomTypeDescriptor parent) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.CustomTypeDescriptor.#ctor(System.ComponentModel.ICustomTypeDescriptor)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (parent As ICustomTypeDescriptor)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; CustomTypeDescriptor(System::ComponentModel::ICustomTypeDescriptor ^ parent);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -123,7 +139,12 @@
       <MemberSignature Language="C#" Value="public virtual System.ComponentModel.AttributeCollection GetAttributes ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ComponentModel.AttributeCollection GetAttributes() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.CustomTypeDescriptor.GetAttributes" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAttributes () As AttributeCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ComponentModel::AttributeCollection ^ GetAttributes();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.ICustomTypeDescriptor.GetAttributes</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -164,7 +185,12 @@
       <MemberSignature Language="C#" Value="public virtual string GetClassName ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetClassName() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.CustomTypeDescriptor.GetClassName" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetClassName () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetClassName();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.ICustomTypeDescriptor.GetClassName</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -206,7 +232,12 @@
       <MemberSignature Language="C#" Value="public virtual string GetComponentName ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetComponentName() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.CustomTypeDescriptor.GetComponentName" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetComponentName () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetComponentName();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.ICustomTypeDescriptor.GetComponentName</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -244,7 +275,12 @@
       <MemberSignature Language="C#" Value="public virtual System.ComponentModel.TypeConverter GetConverter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ComponentModel.TypeConverter GetConverter() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.CustomTypeDescriptor.GetConverter" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetConverter () As TypeConverter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ComponentModel::TypeConverter ^ GetConverter();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.ICustomTypeDescriptor.GetConverter</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -283,7 +319,12 @@
       <MemberSignature Language="C#" Value="public virtual System.ComponentModel.EventDescriptor GetDefaultEvent ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ComponentModel.EventDescriptor GetDefaultEvent() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.CustomTypeDescriptor.GetDefaultEvent" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDefaultEvent () As EventDescriptor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ComponentModel::EventDescriptor ^ GetDefaultEvent();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.ICustomTypeDescriptor.GetDefaultEvent</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -322,7 +363,12 @@
       <MemberSignature Language="C#" Value="public virtual System.ComponentModel.PropertyDescriptor GetDefaultProperty ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ComponentModel.PropertyDescriptor GetDefaultProperty() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.CustomTypeDescriptor.GetDefaultProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDefaultProperty () As PropertyDescriptor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ComponentModel::PropertyDescriptor ^ GetDefaultProperty();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.ICustomTypeDescriptor.GetDefaultProperty</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -361,7 +407,12 @@
       <MemberSignature Language="C#" Value="public virtual object GetEditor (Type editorBaseType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetEditor(class System.Type editorBaseType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.CustomTypeDescriptor.GetEditor(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEditor (editorBaseType As Type) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ GetEditor(Type ^ editorBaseType);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.ICustomTypeDescriptor.GetEditor(System.Type)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -419,7 +470,12 @@
       <MemberSignature Language="C#" Value="public virtual System.ComponentModel.EventDescriptorCollection GetEvents ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ComponentModel.EventDescriptorCollection GetEvents() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.CustomTypeDescriptor.GetEvents" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEvents () As EventDescriptorCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ComponentModel::EventDescriptorCollection ^ GetEvents();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.ICustomTypeDescriptor.GetEvents</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -459,7 +515,12 @@
       <MemberSignature Language="C#" Value="public virtual System.ComponentModel.EventDescriptorCollection GetEvents (Attribute[] attributes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ComponentModel.EventDescriptorCollection GetEvents(class System.Attribute[] attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.CustomTypeDescriptor.GetEvents(System.Attribute[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEvents (attributes As Attribute()) As EventDescriptorCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ComponentModel::EventDescriptorCollection ^ GetEvents(cli::array &lt;Attribute ^&gt; ^ attributes);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.ICustomTypeDescriptor.GetEvents(System.Attribute[])</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -521,7 +582,12 @@
       <MemberSignature Language="C#" Value="public virtual System.ComponentModel.PropertyDescriptorCollection GetProperties ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ComponentModel.PropertyDescriptorCollection GetProperties() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.CustomTypeDescriptor.GetProperties" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetProperties () As PropertyDescriptorCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ComponentModel::PropertyDescriptorCollection ^ GetProperties();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.ICustomTypeDescriptor.GetProperties</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -562,7 +628,12 @@
       <MemberSignature Language="C#" Value="public virtual System.ComponentModel.PropertyDescriptorCollection GetProperties (Attribute[] attributes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ComponentModel.PropertyDescriptorCollection GetProperties(class System.Attribute[] attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.CustomTypeDescriptor.GetProperties(System.Attribute[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetProperties (attributes As Attribute()) As PropertyDescriptorCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ComponentModel::PropertyDescriptorCollection ^ GetProperties(cli::array &lt;Attribute ^&gt; ^ attributes);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.ICustomTypeDescriptor.GetProperties(System.Attribute[])</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -609,7 +680,12 @@
       <MemberSignature Language="C#" Value="public virtual object GetPropertyOwner (System.ComponentModel.PropertyDescriptor pd);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetPropertyOwner(class System.ComponentModel.PropertyDescriptor pd) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.CustomTypeDescriptor.GetPropertyOwner(System.ComponentModel.PropertyDescriptor)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetPropertyOwner (pd As PropertyDescriptor) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ GetPropertyOwner(System::ComponentModel::PropertyDescriptor ^ pd);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.ICustomTypeDescriptor.GetPropertyOwner(System.ComponentModel.PropertyDescriptor)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -646,15 +722,5 @@
         <altmember cref="Overload:System.ComponentModel.CustomTypeDescriptor.GetProperties" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.CustomTypeDescriptor" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

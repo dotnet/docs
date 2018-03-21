@@ -1,7 +1,9 @@
-<Type Name="EventMappingSettings" FullName="System.Web.Configuration.EventMappingSettings">
+﻿<Type Name="EventMappingSettings" FullName="System.Web.Configuration.EventMappingSettings">
   <TypeSignature Language="C#" Value="public sealed class EventMappingSettings : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed EventMappingSettings extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.EventMappingSettings" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EventMappingSettings&#xA;Inherits ConfigurationElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EventMappingSettings sealed : System::Configuration::ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -71,10 +73,23 @@
     <altmember cref="T:System.Web.Configuration.HealthMonitoringSection" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.EventMappingSettings" /> class.</summary>
+        <altmember cref="T:System.Web.Configuration.HealthMonitoringSection" />
+        <altmember cref="T:System.Web.Configuration.EventMappingSettings" />
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public EventMappingSettings (string name, string type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, string type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.EventMappingSettings.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, type As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EventMappingSettings(System::String ^ name, System::String ^ type);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -116,6 +131,8 @@
       <MemberSignature Language="C#" Value="public EventMappingSettings (string name, string type, int startEventCode, int endEventCode);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, string type, int32 startEventCode, int32 endEventCode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.EventMappingSettings.#ctor(System.String,System.String,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, type As String, startEventCode As Integer, endEventCode As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EventMappingSettings(System::String ^ name, System::String ^ type, int startEventCode, int endEventCode);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -151,6 +168,8 @@
       <MemberSignature Language="C#" Value="public int EndEventCode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 EndEventCode" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.EventMappingSettings.EndEventCode" />
+      <MemberSignature Language="VB.NET" Value="Public Property EndEventCode As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int EndEventCode { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -194,6 +213,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.EventMappingSettings.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -233,6 +254,8 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.EventMappingSettings.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -251,6 +274,8 @@
       <MemberSignature Language="C#" Value="public int StartEventCode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 StartEventCode" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.EventMappingSettings.StartEventCode" />
+      <MemberSignature Language="VB.NET" Value="Public Property StartEventCode As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int StartEventCode { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -294,6 +319,8 @@
       <MemberSignature Language="C#" Value="public string Type { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Type" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.EventMappingSettings.Type" />
+      <MemberSignature Language="VB.NET" Value="Public Property Type As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Type { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -331,16 +358,5 @@
         <altmember cref="T:System.Web.Configuration.HealthMonitoringSection" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.EventMappingSettings" /> class.</summary>
-        <altmember cref="T:System.Web.Configuration.HealthMonitoringSection" />
-        <altmember cref="T:System.Web.Configuration.EventMappingSettings" />
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

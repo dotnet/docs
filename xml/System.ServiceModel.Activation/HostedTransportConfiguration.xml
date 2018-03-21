@@ -1,7 +1,9 @@
-<Type Name="HostedTransportConfiguration" FullName="System.ServiceModel.Activation.HostedTransportConfiguration">
+﻿<Type Name="HostedTransportConfiguration" FullName="System.ServiceModel.Activation.HostedTransportConfiguration">
   <TypeSignature Language="C#" Value="public abstract class HostedTransportConfiguration" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit HostedTransportConfiguration extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activation.HostedTransportConfiguration" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class HostedTransportConfiguration" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HostedTransportConfiguration abstract" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +33,8 @@
       <MemberSignature Language="C#" Value="protected HostedTransportConfiguration ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activation.HostedTransportConfiguration.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; HostedTransportConfiguration();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activation</AssemblyName>
@@ -46,6 +50,8 @@
       <MemberSignature Language="C#" Value="public abstract Uri[] GetBaseAddresses (string virtualPath);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Uri[] GetBaseAddresses(string virtualPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activation.HostedTransportConfiguration.GetBaseAddresses(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetBaseAddresses (virtualPath As String) As Uri()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract cli::array &lt;Uri ^&gt; ^ GetBaseAddresses(System::String ^ virtualPath);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activation</AssemblyName>

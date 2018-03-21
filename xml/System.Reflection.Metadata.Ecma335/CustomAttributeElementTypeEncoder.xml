@@ -1,7 +1,9 @@
-<Type Name="CustomAttributeElementTypeEncoder" FullName="System.Reflection.Metadata.Ecma335.CustomAttributeElementTypeEncoder">
+﻿<Type Name="CustomAttributeElementTypeEncoder" FullName="System.Reflection.Metadata.Ecma335.CustomAttributeElementTypeEncoder">
   <TypeSignature Language="C#" Value="public struct CustomAttributeElementTypeEncoder" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit CustomAttributeElementTypeEncoder extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.Ecma335.CustomAttributeElementTypeEncoder" />
+  <TypeSignature Language="VB.NET" Value="Public Structure CustomAttributeElementTypeEncoder" />
+  <TypeSignature Language="C++ CLI" Value="public value class CustomAttributeElementTypeEncoder" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.4.1.0</AssemblyVersion>
@@ -20,6 +22,8 @@
       <MemberSignature Language="C#" Value="public CustomAttributeElementTypeEncoder (System.Reflection.Metadata.BlobBuilder builder);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Reflection.Metadata.BlobBuilder builder) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.CustomAttributeElementTypeEncoder.#ctor(System.Reflection.Metadata.BlobBuilder)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (builder As BlobBuilder)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CustomAttributeElementTypeEncoder(System::Reflection::Metadata::BlobBuilder ^ builder);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -39,6 +43,8 @@
       <MemberSignature Language="C#" Value="public void Boolean ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Boolean() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.CustomAttributeElementTypeEncoder.Boolean" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Boolean ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Boolean();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -58,6 +64,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Metadata.BlobBuilder Builder { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Reflection.Metadata.BlobBuilder Builder" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.Ecma335.CustomAttributeElementTypeEncoder.Builder" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Builder As BlobBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::BlobBuilder ^ Builder { System::Reflection::Metadata::BlobBuilder ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -77,6 +85,8 @@
       <MemberSignature Language="C#" Value="public void Byte ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Byte() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.CustomAttributeElementTypeEncoder.Byte" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Byte ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Byte();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -96,6 +106,8 @@
       <MemberSignature Language="C#" Value="public void Char ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Char() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.CustomAttributeElementTypeEncoder.Char" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Char ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Char();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -115,6 +127,8 @@
       <MemberSignature Language="C#" Value="public void Double ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Double() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.CustomAttributeElementTypeEncoder.Double" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Double ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Double();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -134,6 +148,8 @@
       <MemberSignature Language="C#" Value="public void Enum (string enumTypeName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Enum(string enumTypeName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.CustomAttributeElementTypeEncoder.Enum(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Enum (enumTypeName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Enum(System::String ^ enumTypeName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -156,6 +172,8 @@
       <MemberSignature Language="C#" Value="public void Int16 ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Int16() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.CustomAttributeElementTypeEncoder.Int16" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Int16 ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Int16();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -175,6 +193,8 @@
       <MemberSignature Language="C#" Value="public void Int32 ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Int32() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.CustomAttributeElementTypeEncoder.Int32" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Int32 ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Int32();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -194,6 +214,8 @@
       <MemberSignature Language="C#" Value="public void Int64 ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Int64() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.CustomAttributeElementTypeEncoder.Int64" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Int64 ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Int64();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -213,6 +235,8 @@
       <MemberSignature Language="C#" Value="public void PrimitiveType (System.Reflection.Metadata.PrimitiveSerializationTypeCode type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void PrimitiveType(valuetype System.Reflection.Metadata.PrimitiveSerializationTypeCode type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.CustomAttributeElementTypeEncoder.PrimitiveType(System.Reflection.Metadata.PrimitiveSerializationTypeCode)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub PrimitiveType (type As PrimitiveSerializationTypeCode)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void PrimitiveType(System::Reflection::Metadata::PrimitiveSerializationTypeCode type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -235,6 +259,8 @@
       <MemberSignature Language="C#" Value="public void SByte ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SByte() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.CustomAttributeElementTypeEncoder.SByte" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SByte ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SByte();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -254,6 +280,8 @@
       <MemberSignature Language="C#" Value="public void Single ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Single() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.CustomAttributeElementTypeEncoder.Single" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Single ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Single();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -273,6 +301,8 @@
       <MemberSignature Language="C#" Value="public void String ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void String() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.CustomAttributeElementTypeEncoder.String" />
+      <MemberSignature Language="VB.NET" Value="Public Sub String ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void String();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -292,6 +322,8 @@
       <MemberSignature Language="C#" Value="public void SystemType ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SystemType() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.CustomAttributeElementTypeEncoder.SystemType" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SystemType ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SystemType();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -311,6 +343,8 @@
       <MemberSignature Language="C#" Value="public void UInt16 ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void UInt16() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.CustomAttributeElementTypeEncoder.UInt16" />
+      <MemberSignature Language="VB.NET" Value="Public Sub UInt16 ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void UInt16();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -330,6 +364,8 @@
       <MemberSignature Language="C#" Value="public void UInt32 ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void UInt32() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.CustomAttributeElementTypeEncoder.UInt32" />
+      <MemberSignature Language="VB.NET" Value="Public Sub UInt32 ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void UInt32();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -349,6 +385,8 @@
       <MemberSignature Language="C#" Value="public void UInt64 ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void UInt64() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.CustomAttributeElementTypeEncoder.UInt64" />
+      <MemberSignature Language="VB.NET" Value="Public Sub UInt64 ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void UInt64();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

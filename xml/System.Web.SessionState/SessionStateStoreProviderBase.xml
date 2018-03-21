@@ -1,7 +1,9 @@
-<Type Name="SessionStateStoreProviderBase" FullName="System.Web.SessionState.SessionStateStoreProviderBase">
+﻿<Type Name="SessionStateStoreProviderBase" FullName="System.Web.SessionState.SessionStateStoreProviderBase">
   <TypeSignature Language="C#" Value="public abstract class SessionStateStoreProviderBase : System.Configuration.Provider.ProviderBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit SessionStateStoreProviderBase extends System.Configuration.Provider.ProviderBase" />
   <TypeSignature Language="DocId" Value="T:System.Web.SessionState.SessionStateStoreProviderBase" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class SessionStateStoreProviderBase&#xA;Inherits ProviderBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SessionStateStoreProviderBase abstract : System::Configuration::Provider::ProviderBase" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -71,6 +73,8 @@
       <MemberSignature Language="C#" Value="protected SessionStateStoreProviderBase ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.SessionStateStoreProviderBase.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; SessionStateStoreProviderBase();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -98,6 +102,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Web.SessionState.SessionStateStoreData CreateNewStoreData (System.Web.HttpContext context, int timeout);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.SessionState.SessionStateStoreData CreateNewStoreData(class System.Web.HttpContext context, int32 timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.SessionStateStoreProviderBase.CreateNewStoreData(System.Web.HttpContext,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function CreateNewStoreData (context As HttpContext, timeout As Integer) As SessionStateStoreData" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Web::SessionState::SessionStateStoreData ^ CreateNewStoreData(System::Web::HttpContext ^ context, int timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -140,6 +146,8 @@
       <MemberSignature Language="C#" Value="public abstract void CreateUninitializedItem (System.Web.HttpContext context, string id, int timeout);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CreateUninitializedItem(class System.Web.HttpContext context, string id, int32 timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.SessionStateStoreProviderBase.CreateUninitializedItem(System.Web.HttpContext,System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub CreateUninitializedItem (context As HttpContext, id As String, timeout As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void CreateUninitializedItem(System::Web::HttpContext ^ context, System::String ^ id, int timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -183,6 +191,8 @@
       <MemberSignature Language="C#" Value="public abstract void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.SessionStateStoreProviderBase.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Dispose ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Dispose();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -213,6 +223,8 @@
       <MemberSignature Language="C#" Value="public abstract void EndRequest (System.Web.HttpContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndRequest(class System.Web.HttpContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.SessionStateStoreProviderBase.EndRequest(System.Web.HttpContext)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub EndRequest (context As HttpContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void EndRequest(System::Web::HttpContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -246,6 +258,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Web.SessionState.SessionStateStoreData GetItem (System.Web.HttpContext context, string id, out bool locked, out TimeSpan lockAge, out object lockId, out System.Web.SessionState.SessionStateActions actions);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.SessionState.SessionStateStoreData GetItem(class System.Web.HttpContext context, string id, [out] bool&amp; locked, [out] valuetype System.TimeSpan&amp; lockAge, [out] object&amp; lockId, [out] valuetype System.Web.SessionState.SessionStateActions&amp; actions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.SessionStateStoreProviderBase.GetItem(System.Web.HttpContext,System.String,System.Boolean@,System.TimeSpan@,System.Object@,System.Web.SessionState.SessionStateActions@)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetItem (context As HttpContext, id As String, ByRef locked As Boolean, ByRef lockAge As TimeSpan, ByRef lockId As Object, ByRef actions As SessionStateActions) As SessionStateStoreData" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Web::SessionState::SessionStateStoreData ^ GetItem(System::Web::HttpContext ^ context, System::String ^ id, [Runtime::InteropServices::Out] bool % locked, [Runtime::InteropServices::Out] TimeSpan % lockAge, [Runtime::InteropServices::Out] System::Object ^ % lockId, [Runtime::InteropServices::Out] System::Web::SessionState::SessionStateActions % actions);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -300,6 +314,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Web.SessionState.SessionStateStoreData GetItemExclusive (System.Web.HttpContext context, string id, out bool locked, out TimeSpan lockAge, out object lockId, out System.Web.SessionState.SessionStateActions actions);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.SessionState.SessionStateStoreData GetItemExclusive(class System.Web.HttpContext context, string id, [out] bool&amp; locked, [out] valuetype System.TimeSpan&amp; lockAge, [out] object&amp; lockId, [out] valuetype System.Web.SessionState.SessionStateActions&amp; actions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.SessionStateStoreProviderBase.GetItemExclusive(System.Web.HttpContext,System.String,System.Boolean@,System.TimeSpan@,System.Object@,System.Web.SessionState.SessionStateActions@)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetItemExclusive (context As HttpContext, id As String, ByRef locked As Boolean, ByRef lockAge As TimeSpan, ByRef lockId As Object, ByRef actions As SessionStateActions) As SessionStateStoreData" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Web::SessionState::SessionStateStoreData ^ GetItemExclusive(System::Web::HttpContext ^ context, System::String ^ id, [Runtime::InteropServices::Out] bool % locked, [Runtime::InteropServices::Out] TimeSpan % lockAge, [Runtime::InteropServices::Out] System::Object ^ % lockId, [Runtime::InteropServices::Out] System::Web::SessionState::SessionStateActions % actions);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -350,6 +366,8 @@
       <MemberSignature Language="C#" Value="public abstract void InitializeRequest (System.Web.HttpContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void InitializeRequest(class System.Web.HttpContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.SessionStateStoreProviderBase.InitializeRequest(System.Web.HttpContext)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub InitializeRequest (context As HttpContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void InitializeRequest(System::Web::HttpContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -383,6 +401,8 @@
       <MemberSignature Language="C#" Value="public abstract void ReleaseItemExclusive (System.Web.HttpContext context, string id, object lockId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ReleaseItemExclusive(class System.Web.HttpContext context, string id, object lockId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.SessionStateStoreProviderBase.ReleaseItemExclusive(System.Web.HttpContext,System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub ReleaseItemExclusive (context As HttpContext, id As String, lockId As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void ReleaseItemExclusive(System::Web::HttpContext ^ context, System::String ^ id, System::Object ^ lockId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -424,6 +444,8 @@
       <MemberSignature Language="C#" Value="public abstract void RemoveItem (System.Web.HttpContext context, string id, object lockId, System.Web.SessionState.SessionStateStoreData item);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveItem(class System.Web.HttpContext context, string id, object lockId, class System.Web.SessionState.SessionStateStoreData item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.SessionStateStoreProviderBase.RemoveItem(System.Web.HttpContext,System.String,System.Object,System.Web.SessionState.SessionStateStoreData)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub RemoveItem (context As HttpContext, id As String, lockId As Object, item As SessionStateStoreData)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void RemoveItem(System::Web::HttpContext ^ context, System::String ^ id, System::Object ^ lockId, System::Web::SessionState::SessionStateStoreData ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -463,6 +485,8 @@
       <MemberSignature Language="C#" Value="public abstract void ResetItemTimeout (System.Web.HttpContext context, string id);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ResetItemTimeout(class System.Web.HttpContext context, string id) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.SessionStateStoreProviderBase.ResetItemTimeout(System.Web.HttpContext,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub ResetItemTimeout (context As HttpContext, id As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void ResetItemTimeout(System::Web::HttpContext ^ context, System::String ^ id);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -504,6 +528,8 @@
       <MemberSignature Language="C#" Value="public abstract void SetAndReleaseItemExclusive (System.Web.HttpContext context, string id, System.Web.SessionState.SessionStateStoreData item, object lockId, bool newItem);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetAndReleaseItemExclusive(class System.Web.HttpContext context, string id, class System.Web.SessionState.SessionStateStoreData item, object lockId, bool newItem) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.SessionStateStoreProviderBase.SetAndReleaseItemExclusive(System.Web.HttpContext,System.String,System.Web.SessionState.SessionStateStoreData,System.Object,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub SetAndReleaseItemExclusive (context As HttpContext, id As String, item As SessionStateStoreData, lockId As Object, newItem As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void SetAndReleaseItemExclusive(System::Web::HttpContext ^ context, System::String ^ id, System::Web::SessionState::SessionStateStoreData ^ item, System::Object ^ lockId, bool newItem);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -550,6 +576,8 @@
       <MemberSignature Language="C#" Value="public abstract bool SetItemExpireCallback (System.Web.SessionState.SessionStateItemExpireCallback expireCallback);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SetItemExpireCallback(class System.Web.SessionState.SessionStateItemExpireCallback expireCallback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.SessionStateStoreProviderBase.SetItemExpireCallback(System.Web.SessionState.SessionStateItemExpireCallback)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function SetItemExpireCallback (expireCallback As SessionStateItemExpireCallback) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool SetItemExpireCallback(System::Web::SessionState::SessionStateItemExpireCallback ^ expireCallback);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

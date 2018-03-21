@@ -1,7 +1,9 @@
-<Type Name="PagesPerSheetDirection" FullName="System.Printing.PagesPerSheetDirection">
+﻿<Type Name="PagesPerSheetDirection" FullName="System.Printing.PagesPerSheetDirection">
   <TypeSignature Language="C#" Value="public enum PagesPerSheetDirection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PagesPerSheetDirection extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Printing.PagesPerSheetDirection" />
+  <TypeSignature Language="VB.NET" Value="Public Enum PagesPerSheetDirection" />
+  <TypeSignature Language="C++ CLI" Value="public enum class PagesPerSheetDirection" />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +48,8 @@
       <MemberSignature Language="C#" Value="BottomLeft" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PagesPerSheetDirection BottomLeft = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.PagesPerSheetDirection.BottomLeft" />
+      <MemberSignature Language="VB.NET" Value="BottomLeft" />
+      <MemberSignature Language="C++ CLI" Value="BottomLeft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -54,6 +58,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.PagesPerSheetDirection</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Pages appear in columns, from top to bottom and right to left relative to page orientation.</summary>
       </Docs>
@@ -62,6 +67,8 @@
       <MemberSignature Language="C#" Value="BottomRight" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PagesPerSheetDirection BottomRight = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.PagesPerSheetDirection.BottomRight" />
+      <MemberSignature Language="VB.NET" Value="BottomRight" />
+      <MemberSignature Language="C++ CLI" Value="BottomRight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -70,6 +77,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.PagesPerSheetDirection</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Pages appear in columns, from top to bottom and left to right relative to page orientation.</summary>
       </Docs>
@@ -78,6 +86,8 @@
       <MemberSignature Language="C#" Value="LeftBottom" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PagesPerSheetDirection LeftBottom = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.PagesPerSheetDirection.LeftBottom" />
+      <MemberSignature Language="VB.NET" Value="LeftBottom" />
+      <MemberSignature Language="C++ CLI" Value="LeftBottom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -86,6 +96,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.PagesPerSheetDirection</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Pages appear in rows, from right to left and top to bottom relative to page orientation.</summary>
       </Docs>
@@ -94,6 +105,8 @@
       <MemberSignature Language="C#" Value="LeftTop" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PagesPerSheetDirection LeftTop = int32(7)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.PagesPerSheetDirection.LeftTop" />
+      <MemberSignature Language="VB.NET" Value="LeftTop" />
+      <MemberSignature Language="C++ CLI" Value="LeftTop" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -102,6 +115,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.PagesPerSheetDirection</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>Pages appear in rows, from right to left and bottom to top relative to page orientation.</summary>
       </Docs>
@@ -110,6 +124,8 @@
       <MemberSignature Language="C#" Value="RightBottom" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PagesPerSheetDirection RightBottom = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.PagesPerSheetDirection.RightBottom" />
+      <MemberSignature Language="VB.NET" Value="RightBottom" />
+      <MemberSignature Language="C++ CLI" Value="RightBottom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -118,6 +134,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.PagesPerSheetDirection</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Pages appear in rows, from left to right and top to bottom relative to page orientation.</summary>
       </Docs>
@@ -126,6 +143,8 @@
       <MemberSignature Language="C#" Value="RightTop" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PagesPerSheetDirection RightTop = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.PagesPerSheetDirection.RightTop" />
+      <MemberSignature Language="VB.NET" Value="RightTop" />
+      <MemberSignature Language="C++ CLI" Value="RightTop" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -134,6 +153,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.PagesPerSheetDirection</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>Pages appear in rows, from left to right and bottom to top relative to page orientation.</summary>
       </Docs>
@@ -142,6 +162,8 @@
       <MemberSignature Language="C#" Value="TopLeft" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PagesPerSheetDirection TopLeft = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.PagesPerSheetDirection.TopLeft" />
+      <MemberSignature Language="VB.NET" Value="TopLeft" />
+      <MemberSignature Language="C++ CLI" Value="TopLeft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -150,6 +172,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.PagesPerSheetDirection</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>Pages appear in columns, from bottom to top and right to left relative to page orientation.</summary>
       </Docs>
@@ -158,6 +181,8 @@
       <MemberSignature Language="C#" Value="TopRight" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PagesPerSheetDirection TopRight = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.PagesPerSheetDirection.TopRight" />
+      <MemberSignature Language="VB.NET" Value="TopRight" />
+      <MemberSignature Language="C++ CLI" Value="TopRight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -166,6 +191,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.PagesPerSheetDirection</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>Pages appear in columns, from bottom to top and left to right relative to page orientation.</summary>
       </Docs>
@@ -174,6 +200,8 @@
       <MemberSignature Language="C#" Value="Unknown" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PagesPerSheetDirection Unknown = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.PagesPerSheetDirection.Unknown" />
+      <MemberSignature Language="VB.NET" Value="Unknown" />
+      <MemberSignature Language="C++ CLI" Value="Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -182,6 +210,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.PagesPerSheetDirection</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The feature (whose options are represented by this enumeration) is set to an option not defined in the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397).</summary>
       </Docs>

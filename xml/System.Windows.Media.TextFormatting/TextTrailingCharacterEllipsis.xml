@@ -1,7 +1,9 @@
-<Type Name="TextTrailingCharacterEllipsis" FullName="System.Windows.Media.TextFormatting.TextTrailingCharacterEllipsis">
+﻿<Type Name="TextTrailingCharacterEllipsis" FullName="System.Windows.Media.TextFormatting.TextTrailingCharacterEllipsis">
   <TypeSignature Language="C#" Value="public class TextTrailingCharacterEllipsis : System.Windows.Media.TextFormatting.TextCollapsingProperties" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TextTrailingCharacterEllipsis extends System.Windows.Media.TextFormatting.TextCollapsingProperties" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.TextFormatting.TextTrailingCharacterEllipsis" />
+  <TypeSignature Language="VB.NET" Value="Public Class TextTrailingCharacterEllipsis&#xA;Inherits TextCollapsingProperties" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TextTrailingCharacterEllipsis : System::Windows::Media::TextFormatting::TextCollapsingProperties" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +28,7 @@
       <MemberSignature Language="C#" Value="public TextTrailingCharacterEllipsis (double width, System.Windows.Media.TextFormatting.TextRunProperties textRunProperties);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 width, class System.Windows.Media.TextFormatting.TextRunProperties textRunProperties) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextTrailingCharacterEllipsis.#ctor(System.Double,System.Windows.Media.TextFormatting.TextRunProperties)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TextTrailingCharacterEllipsis(double width, System::Windows::Media::TextFormatting::TextRunProperties ^ textRunProperties);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -46,6 +49,8 @@
       <MemberSignature Language="C#" Value="public override sealed System.Windows.Media.TextFormatting.TextCollapsingStyle Style { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Media.TextFormatting.TextCollapsingStyle Style" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextTrailingCharacterEllipsis.Style" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable ReadOnly Property Style As TextCollapsingStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::TextFormatting::TextCollapsingStyle Style { System::Windows::Media::TextFormatting::TextCollapsingStyle get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -64,6 +69,8 @@
       <MemberSignature Language="C#" Value="public override sealed System.Windows.Media.TextFormatting.TextRun Symbol { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.TextFormatting.TextRun Symbol" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextTrailingCharacterEllipsis.Symbol" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable ReadOnly Property Symbol As TextRun" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::TextFormatting::TextRun ^ Symbol { System::Windows::Media::TextFormatting::TextRun ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -82,6 +89,8 @@
       <MemberSignature Language="C#" Value="public override sealed double Width { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 Width" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextTrailingCharacterEllipsis.Width" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable ReadOnly Property Width As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Width { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

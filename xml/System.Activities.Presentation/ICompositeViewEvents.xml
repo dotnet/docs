@@ -1,7 +1,9 @@
-<Type Name="ICompositeViewEvents" FullName="System.Activities.Presentation.ICompositeViewEvents">
+﻿<Type Name="ICompositeViewEvents" FullName="System.Activities.Presentation.ICompositeViewEvents">
   <TypeSignature Language="C#" Value="public interface ICompositeViewEvents" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ICompositeViewEvents" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.ICompositeViewEvents" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ICompositeViewEvents" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ICompositeViewEvents" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +25,8 @@
       <MemberSignature Language="C#" Value="public void RegisterCompositeView (System.Activities.Presentation.ICompositeView container);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RegisterCompositeView(class System.Activities.Presentation.ICompositeView container) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.ICompositeViewEvents.RegisterCompositeView(System.Activities.Presentation.ICompositeView)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RegisterCompositeView (container As ICompositeView)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RegisterCompositeView(System::Activities::Presentation::ICompositeView ^ container);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -51,6 +55,8 @@
       <MemberSignature Language="C#" Value="public void RegisterDefaultCompositeView (System.Activities.Presentation.ICompositeView container);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RegisterDefaultCompositeView(class System.Activities.Presentation.ICompositeView container) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.ICompositeViewEvents.RegisterDefaultCompositeView(System.Activities.Presentation.ICompositeView)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RegisterDefaultCompositeView (container As ICompositeView)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RegisterDefaultCompositeView(System::Activities::Presentation::ICompositeView ^ container);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -72,6 +78,8 @@
       <MemberSignature Language="C#" Value="public void UnregisterCompositeView (System.Activities.Presentation.ICompositeView container);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void UnregisterCompositeView(class System.Activities.Presentation.ICompositeView container) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.ICompositeViewEvents.UnregisterCompositeView(System.Activities.Presentation.ICompositeView)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub UnregisterCompositeView (container As ICompositeView)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void UnregisterCompositeView(System::Activities::Presentation::ICompositeView ^ container);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -93,6 +101,8 @@
       <MemberSignature Language="C#" Value="public void UnregisterDefaultCompositeView (System.Activities.Presentation.ICompositeView container);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void UnregisterDefaultCompositeView(class System.Activities.Presentation.ICompositeView container) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.ICompositeViewEvents.UnregisterDefaultCompositeView(System.Activities.Presentation.ICompositeView)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub UnregisterDefaultCompositeView (container As ICompositeView)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void UnregisterDefaultCompositeView(System::Activities::Presentation::ICompositeView ^ container);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

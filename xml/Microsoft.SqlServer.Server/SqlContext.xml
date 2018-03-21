@@ -1,7 +1,9 @@
-<Type Name="SqlContext" FullName="Microsoft.SqlServer.Server.SqlContext">
+﻿<Type Name="SqlContext" FullName="Microsoft.SqlServer.Server.SqlContext">
   <TypeSignature Language="C#" Value="public sealed class SqlContext" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SqlContext extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Server.SqlContext" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SqlContext" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SqlContext sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +36,8 @@
       <MemberSignature Language="C#" Value="public static bool IsAvailable { get; }" />
       <MemberSignature Language="ILAsm" Value=".property bool IsAvailable" />
       <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Server.SqlContext.IsAvailable" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsAvailable As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool IsAvailable { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -66,6 +70,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Server.SqlPipe Pipe { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class Microsoft.SqlServer.Server.SqlPipe Pipe" />
       <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Server.SqlContext.Pipe" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Pipe As SqlPipe" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Microsoft::SqlServer::Server::SqlPipe ^ Pipe { Microsoft::SqlServer::Server::SqlPipe ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -93,6 +99,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Server.SqlTriggerContext TriggerContext { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class Microsoft.SqlServer.Server.SqlTriggerContext TriggerContext" />
       <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Server.SqlContext.TriggerContext" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TriggerContext As SqlTriggerContext" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Microsoft::SqlServer::Server::SqlTriggerContext ^ TriggerContext { Microsoft::SqlServer::Server::SqlTriggerContext ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -122,6 +130,8 @@
       <MemberSignature Language="C#" Value="public static System.Security.Principal.WindowsIdentity WindowsIdentity { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Security.Principal.WindowsIdentity WindowsIdentity" />
       <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Server.SqlContext.WindowsIdentity" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property WindowsIdentity As WindowsIdentity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Security::Principal::WindowsIdentity ^ WindowsIdentity { System::Security::Principal::WindowsIdentity ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

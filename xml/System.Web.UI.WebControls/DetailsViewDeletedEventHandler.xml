@@ -1,7 +1,9 @@
-<Type Name="DetailsViewDeletedEventHandler" FullName="System.Web.UI.WebControls.DetailsViewDeletedEventHandler">
+﻿<Type Name="DetailsViewDeletedEventHandler" FullName="System.Web.UI.WebControls.DetailsViewDeletedEventHandler">
   <TypeSignature Language="C#" Value="public delegate void DetailsViewDeletedEventHandler(object sender, DetailsViewDeletedEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DetailsViewDeletedEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DetailsViewDeletedEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub DetailsViewDeletedEventHandler(sender As Object, e As DetailsViewDeletedEventArgs)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void DetailsViewDeletedEventHandler(System::Object ^ sender, DetailsViewDeletedEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

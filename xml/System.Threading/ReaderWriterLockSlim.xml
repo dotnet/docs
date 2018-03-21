@@ -1,7 +1,9 @@
-<Type Name="ReaderWriterLockSlim" FullName="System.Threading.ReaderWriterLockSlim">
+﻿<Type Name="ReaderWriterLockSlim" FullName="System.Threading.ReaderWriterLockSlim">
   <TypeSignature Language="C#" Value="public class ReaderWriterLockSlim : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ReaderWriterLockSlim extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Threading.ReaderWriterLockSlim" />
+  <TypeSignature Language="VB.NET" Value="Public Class ReaderWriterLockSlim&#xA;Implements IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ReaderWriterLockSlim : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Threading</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -161,10 +163,23 @@
     <threadsafe>This type is thread safe.</threadsafe>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Threading.ReaderWriterLockSlim" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ReaderWriterLockSlim ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ReaderWriterLockSlim.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ReaderWriterLockSlim();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -226,6 +241,8 @@
       <MemberSignature Language="C#" Value="public ReaderWriterLockSlim (System.Threading.LockRecursionPolicy recursionPolicy);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Threading.LockRecursionPolicy recursionPolicy) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ReaderWriterLockSlim.#ctor(System.Threading.LockRecursionPolicy)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (recursionPolicy As LockRecursionPolicy)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ReaderWriterLockSlim(System::Threading::LockRecursionPolicy recursionPolicy);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -292,6 +309,8 @@
       <MemberSignature Language="C#" Value="public int CurrentReadCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 CurrentReadCount" />
       <MemberSignature Language="DocId" Value="P:System.Threading.ReaderWriterLockSlim.CurrentReadCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentReadCount As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int CurrentReadCount { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -342,7 +361,12 @@
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ReaderWriterLockSlim.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -391,6 +415,8 @@
       <MemberSignature Language="C#" Value="public void EnterReadLock ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EnterReadLock() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ReaderWriterLockSlim.EnterReadLock" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnterReadLock ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EnterReadLock();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -462,6 +488,8 @@
       <MemberSignature Language="C#" Value="public void EnterUpgradeableReadLock ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EnterUpgradeableReadLock() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ReaderWriterLockSlim.EnterUpgradeableReadLock" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnterUpgradeableReadLock ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EnterUpgradeableReadLock();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -535,6 +563,8 @@
       <MemberSignature Language="C#" Value="public void EnterWriteLock ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EnterWriteLock() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ReaderWriterLockSlim.EnterWriteLock" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnterWriteLock ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EnterWriteLock();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -598,6 +628,8 @@
       <MemberSignature Language="C#" Value="public void ExitReadLock ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ExitReadLock() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ReaderWriterLockSlim.ExitReadLock" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ExitReadLock ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ExitReadLock();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -649,6 +681,8 @@
       <MemberSignature Language="C#" Value="public void ExitUpgradeableReadLock ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ExitUpgradeableReadLock() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ReaderWriterLockSlim.ExitUpgradeableReadLock" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ExitUpgradeableReadLock ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ExitUpgradeableReadLock();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -706,6 +740,8 @@
       <MemberSignature Language="C#" Value="public void ExitWriteLock ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ExitWriteLock() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ReaderWriterLockSlim.ExitWriteLock" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ExitWriteLock ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ExitWriteLock();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -757,6 +793,8 @@
       <MemberSignature Language="C#" Value="public bool IsReadLockHeld { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsReadLockHeld" />
       <MemberSignature Language="DocId" Value="P:System.Threading.ReaderWriterLockSlim.IsReadLockHeld" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadLockHeld As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadLockHeld { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -804,6 +842,8 @@
       <MemberSignature Language="C#" Value="public bool IsUpgradeableReadLockHeld { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsUpgradeableReadLockHeld" />
       <MemberSignature Language="DocId" Value="P:System.Threading.ReaderWriterLockSlim.IsUpgradeableReadLockHeld" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsUpgradeableReadLockHeld As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsUpgradeableReadLockHeld { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -851,6 +891,8 @@
       <MemberSignature Language="C#" Value="public bool IsWriteLockHeld { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsWriteLockHeld" />
       <MemberSignature Language="DocId" Value="P:System.Threading.ReaderWriterLockSlim.IsWriteLockHeld" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsWriteLockHeld As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsWriteLockHeld { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -898,6 +940,8 @@
       <MemberSignature Language="C#" Value="public System.Threading.LockRecursionPolicy RecursionPolicy { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Threading.LockRecursionPolicy RecursionPolicy" />
       <MemberSignature Language="DocId" Value="P:System.Threading.ReaderWriterLockSlim.RecursionPolicy" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RecursionPolicy As LockRecursionPolicy" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Threading::LockRecursionPolicy RecursionPolicy { System::Threading::LockRecursionPolicy get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -942,6 +986,8 @@
       <MemberSignature Language="C#" Value="public int RecursiveReadCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 RecursiveReadCount" />
       <MemberSignature Language="DocId" Value="P:System.Threading.ReaderWriterLockSlim.RecursiveReadCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RecursiveReadCount As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int RecursiveReadCount { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -978,6 +1024,8 @@
       <MemberSignature Language="C#" Value="public int RecursiveUpgradeCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 RecursiveUpgradeCount" />
       <MemberSignature Language="DocId" Value="P:System.Threading.ReaderWriterLockSlim.RecursiveUpgradeCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RecursiveUpgradeCount As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int RecursiveUpgradeCount { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -1014,6 +1062,8 @@
       <MemberSignature Language="C#" Value="public int RecursiveWriteCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 RecursiveWriteCount" />
       <MemberSignature Language="DocId" Value="P:System.Threading.ReaderWriterLockSlim.RecursiveWriteCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RecursiveWriteCount As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int RecursiveWriteCount { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -1046,10 +1096,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="TryEnterReadLock">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Tries to enter the lock in read mode, with an optional time-out.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="TryEnterReadLock">
       <MemberSignature Language="C#" Value="public bool TryEnterReadLock (int millisecondsTimeout);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryEnterReadLock(int32 millisecondsTimeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ReaderWriterLockSlim.TryEnterReadLock(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryEnterReadLock (millisecondsTimeout As Integer) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryEnterReadLock(int millisecondsTimeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -1107,6 +1170,8 @@
       <MemberSignature Language="C#" Value="public bool TryEnterReadLock (TimeSpan timeout);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryEnterReadLock(valuetype System.TimeSpan timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ReaderWriterLockSlim.TryEnterReadLock(System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryEnterReadLock (timeout As TimeSpan) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryEnterReadLock(TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -1164,10 +1229,23 @@
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Threading.ReaderWriterLockSlim" /> object has been disposed.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="TryEnterUpgradeableReadLock">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Tries to enter the lock in upgradeable mode, with an optional time-out.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="TryEnterUpgradeableReadLock">
       <MemberSignature Language="C#" Value="public bool TryEnterUpgradeableReadLock (int millisecondsTimeout);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryEnterUpgradeableReadLock(int32 millisecondsTimeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ReaderWriterLockSlim.TryEnterUpgradeableReadLock(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryEnterUpgradeableReadLock (millisecondsTimeout As Integer) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryEnterUpgradeableReadLock(int millisecondsTimeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -1229,6 +1307,8 @@
       <MemberSignature Language="C#" Value="public bool TryEnterUpgradeableReadLock (TimeSpan timeout);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryEnterUpgradeableReadLock(valuetype System.TimeSpan timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ReaderWriterLockSlim.TryEnterUpgradeableReadLock(System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryEnterUpgradeableReadLock (timeout As TimeSpan) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryEnterUpgradeableReadLock(TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -1290,10 +1370,23 @@
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Threading.ReaderWriterLockSlim" /> object has been disposed.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="TryEnterWriteLock">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Tries to enter the lock in write mode, with an optional time-out.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="TryEnterWriteLock">
       <MemberSignature Language="C#" Value="public bool TryEnterWriteLock (int millisecondsTimeout);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryEnterWriteLock(int32 millisecondsTimeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ReaderWriterLockSlim.TryEnterWriteLock(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryEnterWriteLock (millisecondsTimeout As Integer) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryEnterWriteLock(int millisecondsTimeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -1365,6 +1458,8 @@
       <MemberSignature Language="C#" Value="public bool TryEnterWriteLock (TimeSpan timeout);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryEnterWriteLock(valuetype System.TimeSpan timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ReaderWriterLockSlim.TryEnterWriteLock(System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryEnterWriteLock (timeout As TimeSpan) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryEnterWriteLock(TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -1426,6 +1521,8 @@
       <MemberSignature Language="C#" Value="public int WaitingReadCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 WaitingReadCount" />
       <MemberSignature Language="DocId" Value="P:System.Threading.ReaderWriterLockSlim.WaitingReadCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WaitingReadCount As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int WaitingReadCount { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -1472,6 +1569,8 @@
       <MemberSignature Language="C#" Value="public int WaitingUpgradeCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 WaitingUpgradeCount" />
       <MemberSignature Language="DocId" Value="P:System.Threading.ReaderWriterLockSlim.WaitingUpgradeCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WaitingUpgradeCount As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int WaitingUpgradeCount { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -1518,6 +1617,8 @@
       <MemberSignature Language="C#" Value="public int WaitingWriteCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 WaitingWriteCount" />
       <MemberSignature Language="DocId" Value="P:System.Threading.ReaderWriterLockSlim.WaitingWriteCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WaitingWriteCount As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int WaitingWriteCount { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -1560,49 +1661,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="TryEnterWriteLock">
-      <AssemblyInfo>
-        <AssemblyName>System.Threading</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Tries to enter the lock in write mode, with an optional time-out.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="TryEnterUpgradeableReadLock">
-      <AssemblyInfo>
-        <AssemblyName>System.Threading</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Tries to enter the lock in upgradeable mode, with an optional time-out.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="TryEnterReadLock">
-      <AssemblyInfo>
-        <AssemblyName>System.Threading</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Tries to enter the lock in read mode, with an optional time-out.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Threading</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Threading.ReaderWriterLockSlim" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

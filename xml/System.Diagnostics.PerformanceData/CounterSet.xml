@@ -1,7 +1,9 @@
-<Type Name="CounterSet" FullName="System.Diagnostics.PerformanceData.CounterSet">
+﻿<Type Name="CounterSet" FullName="System.Diagnostics.PerformanceData.CounterSet">
   <TypeSignature Language="C#" Value="public class CounterSet : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CounterSet extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.PerformanceData.CounterSet" />
+  <TypeSignature Language="VB.NET" Value="Public Class CounterSet&#xA;Implements IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CounterSet : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +37,8 @@
       <MemberSignature Language="C#" Value="public CounterSet (Guid providerGuid, Guid counterSetGuid, System.Diagnostics.PerformanceData.CounterSetInstanceType instanceType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Guid providerGuid, valuetype System.Guid counterSetGuid, valuetype System.Diagnostics.PerformanceData.CounterSetInstanceType instanceType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceData.CounterSet.#ctor(System.Guid,System.Guid,System.Diagnostics.PerformanceData.CounterSetInstanceType)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (providerGuid As Guid, counterSetGuid As Guid, instanceType As CounterSetInstanceType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CounterSet(Guid providerGuid, Guid counterSetGuid, System::Diagnostics::PerformanceData::CounterSetInstanceType instanceType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -74,10 +78,20 @@
         <exception cref="T:System.ComponentModel.Win32Exception">An underlying Win32 function call failed.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddCounter">
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a counter to the counter set.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AddCounter">
       <MemberSignature Language="C#" Value="public void AddCounter (int counterId, System.Diagnostics.PerformanceData.CounterType counterType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddCounter(int32 counterId, valuetype System.Diagnostics.PerformanceData.CounterType counterType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceData.CounterSet.AddCounter(System.Int32,System.Diagnostics.PerformanceData.CounterType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddCounter(int counterId, System::Diagnostics::PerformanceData::CounterType counterType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -110,6 +124,7 @@
       <MemberSignature Language="C#" Value="public void AddCounter (int counterId, System.Diagnostics.PerformanceData.CounterType counterType, string counterName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddCounter(int32 counterId, valuetype System.Diagnostics.PerformanceData.CounterType counterType, string counterName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceData.CounterSet.AddCounter(System.Int32,System.Diagnostics.PerformanceData.CounterType,System.String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddCounter(int counterId, System::Diagnostics::PerformanceData::CounterType counterType, System::String ^ counterName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -149,6 +164,8 @@
       <MemberSignature Language="C#" Value="public System.Diagnostics.PerformanceData.CounterSetInstance CreateCounterSetInstance (string instanceName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Diagnostics.PerformanceData.CounterSetInstance CreateCounterSetInstance(string instanceName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceData.CounterSet.CreateCounterSetInstance(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateCounterSetInstance (instanceName As String) As CounterSetInstance" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Diagnostics::PerformanceData::CounterSetInstance ^ CreateCounterSetInstance(System::String ^ instanceName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -190,11 +207,25 @@
         <exception cref="T:System.InvalidOperationException">You must add counters to the counter set before creating an instance of the counter set.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases resources used by this object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Dispose">
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceData.CounterSet.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -212,6 +243,8 @@
       <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceData.CounterSet.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -239,6 +272,8 @@
       <MemberSignature Language="C#" Value="~CounterSet ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceData.CounterSet.Finalize" />
+      <MemberSignature Language="VB.NET" Value="Finalize ()" />
+      <MemberSignature Language="C++ CLI" Value="!CounterSet ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -260,23 +295,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="AddCounter">
-      <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds a counter to the counter set.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Dispose">
-      <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Releases resources used by this object.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

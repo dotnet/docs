@@ -1,7 +1,9 @@
-<Type Name="ActivityFunc&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,TResult&gt;" FullName="System.Activities.ActivityFunc&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,TResult&gt;">
+﻿<Type Name="ActivityFunc&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,TResult&gt;" FullName="System.Activities.ActivityFunc&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,TResult&gt;">
   <TypeSignature Language="C#" Value="public sealed class ActivityFunc&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,TResult&gt; : System.Activities.ActivityDelegate" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ActivityFunc`17&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, TResult&gt; extends System.Activities.ActivityDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Activities.ActivityFunc`17" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ActivityFunc(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, TResult)&#xA;Inherits ActivityDelegate" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T1, typename T2, typename T3, typename T4, typename T5, typename T6, typename T7, typename T8, typename T9, typename T10, typename T11, typename T12, typename T13, typename T14, typename T15, typename T16, typename TResult&gt;&#xA;public ref class ActivityFunc sealed : System::Activities::ActivityDelegate" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -80,6 +82,8 @@
       <MemberSignature Language="C#" Value="public ActivityFunc ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.ActivityFunc`17.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ActivityFunc();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -95,6 +99,8 @@
       <MemberSignature Language="C#" Value="public System.Activities.DelegateInArgument&lt;T1&gt; Argument1 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.DelegateInArgument`1&lt;!T1&gt; Argument1" />
       <MemberSignature Language="DocId" Value="P:System.Activities.ActivityFunc`17.Argument1" />
+      <MemberSignature Language="VB.NET" Value="Public Property Argument1 As DelegateInArgument(Of T1)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::DelegateInArgument&lt;T1&gt; ^ Argument1 { System::Activities::DelegateInArgument&lt;T1&gt; ^ get(); void set(System::Activities::DelegateInArgument&lt;T1&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -118,6 +124,8 @@
       <MemberSignature Language="C#" Value="public System.Activities.DelegateInArgument&lt;T10&gt; Argument10 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.DelegateInArgument`1&lt;!T10&gt; Argument10" />
       <MemberSignature Language="DocId" Value="P:System.Activities.ActivityFunc`17.Argument10" />
+      <MemberSignature Language="VB.NET" Value="Public Property Argument10 As DelegateInArgument(Of T10)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::DelegateInArgument&lt;T10&gt; ^ Argument10 { System::Activities::DelegateInArgument&lt;T10&gt; ^ get(); void set(System::Activities::DelegateInArgument&lt;T10&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -141,6 +149,8 @@
       <MemberSignature Language="C#" Value="public System.Activities.DelegateInArgument&lt;T11&gt; Argument11 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.DelegateInArgument`1&lt;!T11&gt; Argument11" />
       <MemberSignature Language="DocId" Value="P:System.Activities.ActivityFunc`17.Argument11" />
+      <MemberSignature Language="VB.NET" Value="Public Property Argument11 As DelegateInArgument(Of T11)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::DelegateInArgument&lt;T11&gt; ^ Argument11 { System::Activities::DelegateInArgument&lt;T11&gt; ^ get(); void set(System::Activities::DelegateInArgument&lt;T11&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -164,6 +174,8 @@
       <MemberSignature Language="C#" Value="public System.Activities.DelegateInArgument&lt;T12&gt; Argument12 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.DelegateInArgument`1&lt;!T12&gt; Argument12" />
       <MemberSignature Language="DocId" Value="P:System.Activities.ActivityFunc`17.Argument12" />
+      <MemberSignature Language="VB.NET" Value="Public Property Argument12 As DelegateInArgument(Of T12)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::DelegateInArgument&lt;T12&gt; ^ Argument12 { System::Activities::DelegateInArgument&lt;T12&gt; ^ get(); void set(System::Activities::DelegateInArgument&lt;T12&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -187,6 +199,8 @@
       <MemberSignature Language="C#" Value="public System.Activities.DelegateInArgument&lt;T13&gt; Argument13 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.DelegateInArgument`1&lt;!T13&gt; Argument13" />
       <MemberSignature Language="DocId" Value="P:System.Activities.ActivityFunc`17.Argument13" />
+      <MemberSignature Language="VB.NET" Value="Public Property Argument13 As DelegateInArgument(Of T13)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::DelegateInArgument&lt;T13&gt; ^ Argument13 { System::Activities::DelegateInArgument&lt;T13&gt; ^ get(); void set(System::Activities::DelegateInArgument&lt;T13&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -210,6 +224,8 @@
       <MemberSignature Language="C#" Value="public System.Activities.DelegateInArgument&lt;T14&gt; Argument14 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.DelegateInArgument`1&lt;!T14&gt; Argument14" />
       <MemberSignature Language="DocId" Value="P:System.Activities.ActivityFunc`17.Argument14" />
+      <MemberSignature Language="VB.NET" Value="Public Property Argument14 As DelegateInArgument(Of T14)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::DelegateInArgument&lt;T14&gt; ^ Argument14 { System::Activities::DelegateInArgument&lt;T14&gt; ^ get(); void set(System::Activities::DelegateInArgument&lt;T14&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -233,6 +249,8 @@
       <MemberSignature Language="C#" Value="public System.Activities.DelegateInArgument&lt;T15&gt; Argument15 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.DelegateInArgument`1&lt;!T15&gt; Argument15" />
       <MemberSignature Language="DocId" Value="P:System.Activities.ActivityFunc`17.Argument15" />
+      <MemberSignature Language="VB.NET" Value="Public Property Argument15 As DelegateInArgument(Of T15)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::DelegateInArgument&lt;T15&gt; ^ Argument15 { System::Activities::DelegateInArgument&lt;T15&gt; ^ get(); void set(System::Activities::DelegateInArgument&lt;T15&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -256,6 +274,8 @@
       <MemberSignature Language="C#" Value="public System.Activities.DelegateInArgument&lt;T16&gt; Argument16 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.DelegateInArgument`1&lt;!T16&gt; Argument16" />
       <MemberSignature Language="DocId" Value="P:System.Activities.ActivityFunc`17.Argument16" />
+      <MemberSignature Language="VB.NET" Value="Public Property Argument16 As DelegateInArgument(Of T16)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::DelegateInArgument&lt;T16&gt; ^ Argument16 { System::Activities::DelegateInArgument&lt;T16&gt; ^ get(); void set(System::Activities::DelegateInArgument&lt;T16&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -279,6 +299,8 @@
       <MemberSignature Language="C#" Value="public System.Activities.DelegateInArgument&lt;T2&gt; Argument2 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.DelegateInArgument`1&lt;!T2&gt; Argument2" />
       <MemberSignature Language="DocId" Value="P:System.Activities.ActivityFunc`17.Argument2" />
+      <MemberSignature Language="VB.NET" Value="Public Property Argument2 As DelegateInArgument(Of T2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::DelegateInArgument&lt;T2&gt; ^ Argument2 { System::Activities::DelegateInArgument&lt;T2&gt; ^ get(); void set(System::Activities::DelegateInArgument&lt;T2&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -302,6 +324,8 @@
       <MemberSignature Language="C#" Value="public System.Activities.DelegateInArgument&lt;T3&gt; Argument3 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.DelegateInArgument`1&lt;!T3&gt; Argument3" />
       <MemberSignature Language="DocId" Value="P:System.Activities.ActivityFunc`17.Argument3" />
+      <MemberSignature Language="VB.NET" Value="Public Property Argument3 As DelegateInArgument(Of T3)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::DelegateInArgument&lt;T3&gt; ^ Argument3 { System::Activities::DelegateInArgument&lt;T3&gt; ^ get(); void set(System::Activities::DelegateInArgument&lt;T3&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -325,6 +349,8 @@
       <MemberSignature Language="C#" Value="public System.Activities.DelegateInArgument&lt;T4&gt; Argument4 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.DelegateInArgument`1&lt;!T4&gt; Argument4" />
       <MemberSignature Language="DocId" Value="P:System.Activities.ActivityFunc`17.Argument4" />
+      <MemberSignature Language="VB.NET" Value="Public Property Argument4 As DelegateInArgument(Of T4)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::DelegateInArgument&lt;T4&gt; ^ Argument4 { System::Activities::DelegateInArgument&lt;T4&gt; ^ get(); void set(System::Activities::DelegateInArgument&lt;T4&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -348,6 +374,8 @@
       <MemberSignature Language="C#" Value="public System.Activities.DelegateInArgument&lt;T5&gt; Argument5 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.DelegateInArgument`1&lt;!T5&gt; Argument5" />
       <MemberSignature Language="DocId" Value="P:System.Activities.ActivityFunc`17.Argument5" />
+      <MemberSignature Language="VB.NET" Value="Public Property Argument5 As DelegateInArgument(Of T5)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::DelegateInArgument&lt;T5&gt; ^ Argument5 { System::Activities::DelegateInArgument&lt;T5&gt; ^ get(); void set(System::Activities::DelegateInArgument&lt;T5&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -371,6 +399,8 @@
       <MemberSignature Language="C#" Value="public System.Activities.DelegateInArgument&lt;T6&gt; Argument6 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.DelegateInArgument`1&lt;!T6&gt; Argument6" />
       <MemberSignature Language="DocId" Value="P:System.Activities.ActivityFunc`17.Argument6" />
+      <MemberSignature Language="VB.NET" Value="Public Property Argument6 As DelegateInArgument(Of T6)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::DelegateInArgument&lt;T6&gt; ^ Argument6 { System::Activities::DelegateInArgument&lt;T6&gt; ^ get(); void set(System::Activities::DelegateInArgument&lt;T6&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -394,6 +424,8 @@
       <MemberSignature Language="C#" Value="public System.Activities.DelegateInArgument&lt;T7&gt; Argument7 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.DelegateInArgument`1&lt;!T7&gt; Argument7" />
       <MemberSignature Language="DocId" Value="P:System.Activities.ActivityFunc`17.Argument7" />
+      <MemberSignature Language="VB.NET" Value="Public Property Argument7 As DelegateInArgument(Of T7)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::DelegateInArgument&lt;T7&gt; ^ Argument7 { System::Activities::DelegateInArgument&lt;T7&gt; ^ get(); void set(System::Activities::DelegateInArgument&lt;T7&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -417,6 +449,8 @@
       <MemberSignature Language="C#" Value="public System.Activities.DelegateInArgument&lt;T8&gt; Argument8 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.DelegateInArgument`1&lt;!T8&gt; Argument8" />
       <MemberSignature Language="DocId" Value="P:System.Activities.ActivityFunc`17.Argument8" />
+      <MemberSignature Language="VB.NET" Value="Public Property Argument8 As DelegateInArgument(Of T8)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::DelegateInArgument&lt;T8&gt; ^ Argument8 { System::Activities::DelegateInArgument&lt;T8&gt; ^ get(); void set(System::Activities::DelegateInArgument&lt;T8&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -440,6 +474,8 @@
       <MemberSignature Language="C#" Value="public System.Activities.DelegateInArgument&lt;T9&gt; Argument9 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.DelegateInArgument`1&lt;!T9&gt; Argument9" />
       <MemberSignature Language="DocId" Value="P:System.Activities.ActivityFunc`17.Argument9" />
+      <MemberSignature Language="VB.NET" Value="Public Property Argument9 As DelegateInArgument(Of T9)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::DelegateInArgument&lt;T9&gt; ^ Argument9 { System::Activities::DelegateInArgument&lt;T9&gt; ^ get(); void set(System::Activities::DelegateInArgument&lt;T9&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -460,9 +496,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetResultArgument">
-      <MemberSignature Language="C#" Value="protected override System.Activities.DelegateOutArgument GetResultArgument ();" />
+      <MemberSignature Language="C#" Value="protected internal override System.Activities.DelegateOutArgument GetResultArgument ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance class System.Activities.DelegateOutArgument GetResultArgument() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.ActivityFunc`17.GetResultArgument" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function GetResultArgument () As DelegateOutArgument" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Activities::DelegateOutArgument ^ GetResultArgument();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -482,6 +520,8 @@
       <MemberSignature Language="C#" Value="public System.Activities.DelegateOutArgument&lt;TResult&gt; Result { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.DelegateOutArgument`1&lt;!TResult&gt; Result" />
       <MemberSignature Language="DocId" Value="P:System.Activities.ActivityFunc`17.Result" />
+      <MemberSignature Language="VB.NET" Value="Public Property Result As DelegateOutArgument(Of TResult)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::DelegateOutArgument&lt;TResult&gt; ^ Result { System::Activities::DelegateOutArgument&lt;TResult&gt; ^ get(); void set(System::Activities::DelegateOutArgument&lt;TResult&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

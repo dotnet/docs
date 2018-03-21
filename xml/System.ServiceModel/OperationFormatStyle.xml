@@ -1,7 +1,9 @@
-<Type Name="OperationFormatStyle" FullName="System.ServiceModel.OperationFormatStyle">
+﻿<Type Name="OperationFormatStyle" FullName="System.ServiceModel.OperationFormatStyle">
   <TypeSignature Language="C#" Value="public enum OperationFormatStyle" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed OperationFormatStyle extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.OperationFormatStyle" />
+  <TypeSignature Language="VB.NET" Value="Public Enum OperationFormatStyle" />
+  <TypeSignature Language="C++ CLI" Value="public enum class OperationFormatStyle" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -58,6 +60,8 @@
       <MemberSignature Language="C#" Value="Document" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.OperationFormatStyle Document = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.OperationFormatStyle.Document" />
+      <MemberSignature Language="VB.NET" Value="Document" />
+      <MemberSignature Language="C++ CLI" Value="Document" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -73,6 +77,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.OperationFormatStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Causes the WSDL representation to contain a single element that represents the document that is exchanged for the operation.</summary>
       </Docs>
@@ -81,6 +86,8 @@
       <MemberSignature Language="C#" Value="Rpc" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.OperationFormatStyle Rpc = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.OperationFormatStyle.Rpc" />
+      <MemberSignature Language="VB.NET" Value="Rpc" />
+      <MemberSignature Language="C++ CLI" Value="Rpc" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -96,6 +103,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.OperationFormatStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Causes the WSDL representation of messages exchanged for an operation and contains parameters as if it were a remote procedure call.</summary>
       </Docs>

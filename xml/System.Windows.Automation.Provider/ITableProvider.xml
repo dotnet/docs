@@ -1,7 +1,9 @@
-<Type Name="ITableProvider" FullName="System.Windows.Automation.Provider.ITableProvider">
+﻿<Type Name="ITableProvider" FullName="System.Windows.Automation.Provider.ITableProvider">
   <TypeSignature Language="C#" Value="public interface ITableProvider : System.Windows.Automation.Provider.IGridProvider" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITableProvider implements class System.Windows.Automation.Provider.IGridProvider" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Provider.ITableProvider" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ITableProvider&#xA;Implements IGridProvider" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ITableProvider : System::Windows::Automation::Provider::IGridProvider" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationProvider</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,7 +21,7 @@
       <AttributeName>System.Runtime.InteropServices.Guid("9c860395-97b3-490a-b52a-858cc22af166")</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -44,6 +46,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Automation.Provider.IRawElementProviderSimple[] GetColumnHeaders ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Automation.Provider.IRawElementProviderSimple[] GetColumnHeaders() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.ITableProvider.GetColumnHeaders" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetColumnHeaders () As IRawElementProviderSimple()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Windows::Automation::Provider::IRawElementProviderSimple ^&gt; ^ GetColumnHeaders();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -63,6 +67,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Automation.Provider.IRawElementProviderSimple[] GetRowHeaders ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Automation.Provider.IRawElementProviderSimple[] GetRowHeaders() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.ITableProvider.GetRowHeaders" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetRowHeaders () As IRawElementProviderSimple()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Windows::Automation::Provider::IRawElementProviderSimple ^&gt; ^ GetRowHeaders();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -82,6 +88,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Automation.RowOrColumnMajor RowOrColumnMajor { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Automation.RowOrColumnMajor RowOrColumnMajor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Provider.ITableProvider.RowOrColumnMajor" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RowOrColumnMajor As RowOrColumnMajor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Automation::RowOrColumnMajor RowOrColumnMajor { System::Windows::Automation::RowOrColumnMajor get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>

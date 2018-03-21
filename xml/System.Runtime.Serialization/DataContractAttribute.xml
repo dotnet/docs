@@ -1,7 +1,9 @@
-<Type Name="DataContractAttribute" FullName="System.Runtime.Serialization.DataContractAttribute">
+﻿<Type Name="DataContractAttribute" FullName="System.Runtime.Serialization.DataContractAttribute">
   <TypeSignature Language="C#" Value="public sealed class DataContractAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DataContractAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.DataContractAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DataContractAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataContractAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
@@ -22,7 +24,7 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class | System.AttributeTargets.Struct | System.AttributeTargets.Enum, AllowMultiple=false, Inherited=false)</AttributeName>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class | System.AttributeTargets.Enum | System.AttributeTargets.Struct, AllowMultiple=false, Inherited=false)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -86,6 +88,8 @@
       <MemberSignature Language="C#" Value="public DataContractAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.DataContractAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataContractAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>
@@ -111,6 +115,8 @@
       <MemberSignature Language="C#" Value="public bool IsNameSetExplicitly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsNameSetExplicitly" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.DataContractAttribute.IsNameSetExplicitly" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNameSetExplicitly As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNameSetExplicitly { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>
@@ -139,6 +145,8 @@
       <MemberSignature Language="C#" Value="public bool IsNamespaceSetExplicitly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsNamespaceSetExplicitly" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.DataContractAttribute.IsNamespaceSetExplicitly" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNamespaceSetExplicitly As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNamespaceSetExplicitly { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>
@@ -167,6 +175,8 @@
       <MemberSignature Language="C#" Value="public bool IsReference { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsReference" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.DataContractAttribute.IsReference" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsReference As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReference { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>
@@ -204,6 +214,8 @@
       <MemberSignature Language="C#" Value="public bool IsReferenceSetExplicitly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsReferenceSetExplicitly" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.DataContractAttribute.IsReferenceSetExplicitly" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReferenceSetExplicitly As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReferenceSetExplicitly { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>
@@ -233,6 +245,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.DataContractAttribute.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>
@@ -272,6 +286,8 @@
       <MemberSignature Language="C#" Value="public string Namespace { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Namespace" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.DataContractAttribute.Namespace" />
+      <MemberSignature Language="VB.NET" Value="Public Property Namespace As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Namespace { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>

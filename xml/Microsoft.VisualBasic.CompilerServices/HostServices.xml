@@ -1,7 +1,9 @@
-<Type Name="HostServices" FullName="Microsoft.VisualBasic.CompilerServices.HostServices">
+﻿<Type Name="HostServices" FullName="Microsoft.VisualBasic.CompilerServices.HostServices">
   <TypeSignature Language="C#" Value="public sealed class HostServices" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HostServices extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.CompilerServices.HostServices" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HostServices" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HostServices sealed" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -32,6 +34,8 @@
       <MemberSignature Language="C#" Value="public HostServices ();" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.HostServices.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HostServices();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -55,6 +59,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.VisualBasic.CompilerServices.IVbHost VBHost { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property class Microsoft.VisualBasic.CompilerServices.IVbHost VBHost" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.CompilerServices.HostServices.VBHost" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property VBHost As IVbHost" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Microsoft::VisualBasic::CompilerServices::IVbHost ^ VBHost { Microsoft::VisualBasic::CompilerServices::IVbHost ^ get(); void set(Microsoft::VisualBasic::CompilerServices::IVbHost ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="WmlControlAdapter" FullName="System.Web.UI.MobileControls.Adapters.WmlControlAdapter">
+﻿<Type Name="WmlControlAdapter" FullName="System.Web.UI.MobileControls.Adapters.WmlControlAdapter">
   <TypeSignature Language="C#" Value="public class WmlControlAdapter : System.Web.UI.MobileControls.Adapters.ControlAdapter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WmlControlAdapter extends System.Web.UI.MobileControls.Adapters.ControlAdapter" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.Adapters.WmlControlAdapter" />
+  <TypeSignature Language="VB.NET" Value="Public Class WmlControlAdapter&#xA;Inherits ControlAdapter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WmlControlAdapter : System::Web::UI::MobileControls::Adapters::ControlAdapter" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +27,8 @@
       <MemberSignature Language="C#" Value="public WmlControlAdapter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlControlAdapter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WmlControlAdapter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -40,6 +44,8 @@
       <MemberSignature Language="C#" Value="protected string DeterminePostBack (string target);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance string DeterminePostBack(string target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlControlAdapter.DeterminePostBack(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function DeterminePostBack (target As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::String ^ DeterminePostBack(System::String ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -62,6 +68,8 @@
       <MemberSignature Language="C#" Value="protected void ExitSecondaryUIMode ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ExitSecondaryUIMode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlControlAdapter.ExitSecondaryUIMode" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub ExitSecondaryUIMode ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void ExitSecondaryUIMode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -87,6 +95,8 @@
       <MemberSignature Language="C#" Value="protected System.Web.UI.MobileControls.Adapters.WmlFormAdapter FormAdapter { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.MobileControls.Adapters.WmlFormAdapter FormAdapter" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.WmlControlAdapter.FormAdapter" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property FormAdapter As WmlFormAdapter" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Web::UI::MobileControls::Adapters::WmlFormAdapter ^ FormAdapter { System::Web::UI::MobileControls::Adapters::WmlFormAdapter ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -105,6 +115,8 @@
       <MemberSignature Language="C#" Value="protected virtual string GetPostBackValue ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance string GetPostBackValue() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlControlAdapter.GetPostBackValue" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetPostBackValue () As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::String ^ GetPostBackValue();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -133,6 +145,8 @@
       <MemberSignature Language="C#" Value="public override void LoadAdapterState (object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void LoadAdapterState(object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlControlAdapter.LoadAdapterState(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub LoadAdapterState (state As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void LoadAdapterState(System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -155,6 +169,8 @@
       <MemberSignature Language="C#" Value="protected static readonly int NotSecondaryUI;" />
       <MemberSignature Language="ILAsm" Value=".field family static initonly int32 NotSecondaryUI" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Adapters.WmlControlAdapter.NotSecondaryUI" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared ReadOnly NotSecondaryUI As Integer " />
+      <MemberSignature Language="C++ CLI" Value="protected: static initonly int NotSecondaryUI;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -181,6 +197,8 @@
       <MemberSignature Language="C#" Value="protected System.Web.UI.MobileControls.Adapters.WmlPageAdapter PageAdapter { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.MobileControls.Adapters.WmlPageAdapter PageAdapter" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.WmlControlAdapter.PageAdapter" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property PageAdapter As WmlPageAdapter" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Web::UI::MobileControls::Adapters::WmlPageAdapter ^ PageAdapter { System::Web::UI::MobileControls::Adapters::WmlPageAdapter ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -195,10 +213,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Render">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Generates the target-specific markup for the control to which the control adapter is attached. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Render">
       <MemberSignature Language="C#" Value="public override void Render (System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Render(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlControlAdapter.Render(System.Web.UI.HtmlTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Render (writer As HtmlTextWriter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Render(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -221,6 +250,8 @@
       <MemberSignature Language="C#" Value="public virtual void Render (System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Render(class System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlControlAdapter.Render(System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Render (writer As WmlMobileTextWriter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Render(System::Web::UI::MobileControls::Adapters::WmlMobileTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -249,6 +280,8 @@
       <MemberSignature Language="C#" Value="protected void RenderBeginLink (System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter writer, string targetUrl, string softkeyLabel, bool implicitSoftkeyLabel, bool mapToSoftkey);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void RenderBeginLink(class System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter writer, string targetUrl, string softkeyLabel, bool implicitSoftkeyLabel, bool mapToSoftkey) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlControlAdapter.RenderBeginLink(System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter,System.String,System.String,System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub RenderBeginLink (writer As WmlMobileTextWriter, targetUrl As String, softkeyLabel As String, implicitSoftkeyLabel As Boolean, mapToSoftkey As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RenderBeginLink(System::Web::UI::MobileControls::Adapters::WmlMobileTextWriter ^ writer, System::String ^ targetUrl, System::String ^ softkeyLabel, bool implicitSoftkeyLabel, bool mapToSoftkey);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -285,6 +318,8 @@
       <MemberSignature Language="C#" Value="protected void RenderEndLink (System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter writer, string targetUrl, bool breakAfter);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void RenderEndLink(class System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter writer, string targetUrl, bool breakAfter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlControlAdapter.RenderEndLink(System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub RenderEndLink (writer As WmlMobileTextWriter, targetUrl As String, breakAfter As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RenderEndLink(System::Web::UI::MobileControls::Adapters::WmlMobileTextWriter ^ writer, System::String ^ targetUrl, bool breakAfter);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -317,6 +352,8 @@
       <MemberSignature Language="C#" Value="protected void RenderLink (System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter writer, string targetUrl, string softkeyLabel, bool implicitSoftkeyLabel, bool mapToSoftkey, string text, bool breakAfter);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void RenderLink(class System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter writer, string targetUrl, string softkeyLabel, bool implicitSoftkeyLabel, bool mapToSoftkey, string text, bool breakAfter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlControlAdapter.RenderLink(System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter,System.String,System.String,System.Boolean,System.Boolean,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub RenderLink (writer As WmlMobileTextWriter, targetUrl As String, softkeyLabel As String, implicitSoftkeyLabel As Boolean, mapToSoftkey As Boolean, text As String, breakAfter As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RenderLink(System::Web::UI::MobileControls::Adapters::WmlMobileTextWriter ^ writer, System::String ^ targetUrl, System::String ^ softkeyLabel, bool implicitSoftkeyLabel, bool mapToSoftkey, System::String ^ text, bool breakAfter);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -355,10 +392,21 @@
         <altmember cref="M:System.Web.UI.MobileControls.Adapters.WmlControlAdapter.RenderEndLink(System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter,System.String,System.Boolean)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="RenderPostBackEvent">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Renders a postback event with the control as a target. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="RenderPostBackEvent">
       <MemberSignature Language="C#" Value="protected void RenderPostBackEvent (System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter writer, string argument, string softkeyLabel, bool mapToSoftkey, string text, bool breakAfter);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void RenderPostBackEvent(class System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter writer, string argument, string softkeyLabel, bool mapToSoftkey, string text, bool breakAfter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlControlAdapter.RenderPostBackEvent(System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter,System.String,System.String,System.Boolean,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub RenderPostBackEvent (writer As WmlMobileTextWriter, argument As String, softkeyLabel As String, mapToSoftkey As Boolean, text As String, breakAfter As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RenderPostBackEvent(System::Web::UI::MobileControls::Adapters::WmlMobileTextWriter ^ writer, System::String ^ argument, System::String ^ softkeyLabel, bool mapToSoftkey, System::String ^ text, bool breakAfter);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -397,6 +445,8 @@
       <MemberSignature Language="C#" Value="protected void RenderPostBackEvent (System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter writer, string argument, string softkeyLabel, bool mapToSoftkey, string text, bool breakAfter, System.Web.UI.MobileControls.Adapters.WmlPostFieldType postBackType);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void RenderPostBackEvent(class System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter writer, string argument, string softkeyLabel, bool mapToSoftkey, string text, bool breakAfter, valuetype System.Web.UI.MobileControls.Adapters.WmlPostFieldType postBackType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlControlAdapter.RenderPostBackEvent(System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter,System.String,System.String,System.Boolean,System.String,System.Boolean,System.Web.UI.MobileControls.Adapters.WmlPostFieldType)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub RenderPostBackEvent (writer As WmlMobileTextWriter, argument As String, softkeyLabel As String, mapToSoftkey As Boolean, text As String, breakAfter As Boolean, postBackType As WmlPostFieldType)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RenderPostBackEvent(System::Web::UI::MobileControls::Adapters::WmlMobileTextWriter ^ writer, System::String ^ argument, System::String ^ softkeyLabel, bool mapToSoftkey, System::String ^ text, bool breakAfter, System::Web::UI::MobileControls::Adapters::WmlPostFieldType postBackType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -444,6 +494,8 @@
       <MemberSignature Language="C#" Value="protected void RenderSubmitEvent (System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter writer, string softkeyLabel, string text, bool breakAfter);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void RenderSubmitEvent(class System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter writer, string softkeyLabel, string text, bool breakAfter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlControlAdapter.RenderSubmitEvent(System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter,System.String,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub RenderSubmitEvent (writer As WmlMobileTextWriter, softkeyLabel As String, text As String, breakAfter As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RenderSubmitEvent(System::Web::UI::MobileControls::Adapters::WmlMobileTextWriter ^ writer, System::String ^ softkeyLabel, System::String ^ text, bool breakAfter);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -471,6 +523,8 @@
       <MemberSignature Language="C#" Value="public override object SaveAdapterState ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object SaveAdapterState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlControlAdapter.SaveAdapterState" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function SaveAdapterState () As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ SaveAdapterState();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -492,6 +546,8 @@
       <MemberSignature Language="C#" Value="protected int SecondaryUIMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 SecondaryUIMode" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.WmlControlAdapter.SecondaryUIMode" />
+      <MemberSignature Language="VB.NET" Value="Protected Property SecondaryUIMode As Integer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property int SecondaryUIMode { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -515,23 +571,5 @@
         <altmember cref="T:System.Web.UI.MobileControls.Adapters.WmlControlAdapter" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="RenderPostBackEvent">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Renders a postback event with the control as a target. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Render">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Generates the target-specific markup for the control to which the control adapter is attached. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

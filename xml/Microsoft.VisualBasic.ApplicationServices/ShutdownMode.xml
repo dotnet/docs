@@ -1,7 +1,9 @@
-<Type Name="ShutdownMode" FullName="Microsoft.VisualBasic.ApplicationServices.ShutdownMode">
+﻿<Type Name="ShutdownMode" FullName="Microsoft.VisualBasic.ApplicationServices.ShutdownMode">
   <TypeSignature Language="C#" Value="public enum ShutdownMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ShutdownMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.ApplicationServices.ShutdownMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ShutdownMode" />
+  <TypeSignature Language="C++ CLI" Value="public enum class ShutdownMode" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -27,6 +29,8 @@
       <MemberSignature Language="C#" Value="AfterAllFormsClose" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.ApplicationServices.ShutdownMode AfterAllFormsClose = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.ApplicationServices.ShutdownMode.AfterAllFormsClose" />
+      <MemberSignature Language="VB.NET" Value="AfterAllFormsClose" />
+      <MemberSignature Language="C++ CLI" Value="AfterAllFormsClose" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -35,6 +39,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.ApplicationServices.ShutdownMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Shut down only after the last form closes.</summary>
       </Docs>
@@ -43,6 +48,8 @@
       <MemberSignature Language="C#" Value="AfterMainFormCloses" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.ApplicationServices.ShutdownMode AfterMainFormCloses = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.ApplicationServices.ShutdownMode.AfterMainFormCloses" />
+      <MemberSignature Language="VB.NET" Value="AfterMainFormCloses" />
+      <MemberSignature Language="C++ CLI" Value="AfterMainFormCloses" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -51,6 +58,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.ApplicationServices.ShutdownMode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Shut down when the main form closes.</summary>
       </Docs>

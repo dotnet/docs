@@ -1,7 +1,9 @@
-<Type Name="IsolatedStorageFilePermissionAttribute" FullName="System.Security.Permissions.IsolatedStorageFilePermissionAttribute">
+﻿<Type Name="IsolatedStorageFilePermissionAttribute" FullName="System.Security.Permissions.IsolatedStorageFilePermissionAttribute">
   <TypeSignature Language="C#" Value="public sealed class IsolatedStorageFilePermissionAttribute : System.Security.Permissions.IsolatedStoragePermissionAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit IsolatedStorageFilePermissionAttribute extends System.Security.Permissions.IsolatedStoragePermissionAttribute" />
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.IsolatedStorageFilePermissionAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class IsolatedStorageFilePermissionAttribute&#xA;Inherits IsolatedStoragePermissionAttribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class IsolatedStorageFilePermissionAttribute sealed : System::Security::Permissions::IsolatedStoragePermissionAttribute" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -45,6 +47,8 @@
       <MemberSignature Language="C#" Value="public IsolatedStorageFilePermissionAttribute (System.Security.Permissions.SecurityAction action);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Permissions.SecurityAction action) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.IsolatedStorageFilePermissionAttribute.#ctor(System.Security.Permissions.SecurityAction)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (action As SecurityAction)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IsolatedStorageFilePermissionAttribute(System::Security::Permissions::SecurityAction action);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -68,6 +72,8 @@
       <MemberSignature Language="C#" Value="public override System.Security.IPermission CreatePermission ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission CreatePermission() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.IsolatedStorageFilePermissionAttribute.CreatePermission" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreatePermission () As IPermission" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ CreatePermission();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="MailMessageEventArgs" FullName="System.Web.UI.WebControls.MailMessageEventArgs">
+﻿<Type Name="MailMessageEventArgs" FullName="System.Web.UI.WebControls.MailMessageEventArgs">
   <TypeSignature Language="C#" Value="public class MailMessageEventArgs : System.Web.UI.WebControls.LoginCancelEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MailMessageEventArgs extends System.Web.UI.WebControls.LoginCancelEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.MailMessageEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class MailMessageEventArgs&#xA;Inherits LoginCancelEventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MailMessageEventArgs : System::Web::UI::WebControls::LoginCancelEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +39,8 @@
       <MemberSignature Language="C#" Value="public MailMessageEventArgs (System.Net.Mail.MailMessage message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Net.Mail.MailMessage message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MailMessageEventArgs.#ctor(System.Net.Mail.MailMessage)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As MailMessage)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MailMessageEventArgs(System::Net::Mail::MailMessage ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -65,6 +69,8 @@
       <MemberSignature Language="C#" Value="public System.Net.Mail.MailMessage Message { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Mail.MailMessage Message" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.MailMessageEventArgs.Message" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Message As MailMessage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Mail::MailMessage ^ Message { System::Net::Mail::MailMessage ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

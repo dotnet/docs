@@ -1,7 +1,9 @@
-<Type Name="VisualStyleElement+MenuBand+NewApplicationButton" FullName="System.Windows.Forms.VisualStyles.VisualStyleElement+MenuBand+NewApplicationButton">
+﻿<Type Name="VisualStyleElement+MenuBand+NewApplicationButton" FullName="System.Windows.Forms.VisualStyles.VisualStyleElement+MenuBand+NewApplicationButton">
   <TypeSignature Language="C#" Value="public static class VisualStyleElement.MenuBand.NewApplicationButton" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi abstract sealed beforefieldinit VisualStyleElement/MenuBand/NewApplicationButton extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.VisualStyleElement.MenuBand.NewApplicationButton" />
+  <TypeSignature Language="VB.NET" Value="Public Class VisualStyleElement.MenuBand.NewApplicationButton" />
+  <TypeSignature Language="C++ CLI" Value="public: ref class VisualStyleElement::MenuBand::NewApplicationButton abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +38,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Forms.VisualStyles.VisualStyleElement Checked { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.VisualStyles.VisualStyleElement Checked" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.VisualStyleElement.MenuBand.NewApplicationButton.Checked" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Checked As VisualStyleElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::VisualStyles::VisualStyleElement ^ Checked { System::Windows::Forms::VisualStyles::VisualStyleElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -69,6 +73,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Forms.VisualStyles.VisualStyleElement Disabled { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.VisualStyles.VisualStyleElement Disabled" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.VisualStyleElement.MenuBand.NewApplicationButton.Disabled" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Disabled As VisualStyleElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::VisualStyles::VisualStyleElement ^ Disabled { System::Windows::Forms::VisualStyles::VisualStyleElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -102,6 +108,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Forms.VisualStyles.VisualStyleElement Hot { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.VisualStyles.VisualStyleElement Hot" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.VisualStyleElement.MenuBand.NewApplicationButton.Hot" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Hot As VisualStyleElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::VisualStyles::VisualStyleElement ^ Hot { System::Windows::Forms::VisualStyles::VisualStyleElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -135,6 +143,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Forms.VisualStyles.VisualStyleElement HotChecked { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.VisualStyles.VisualStyleElement HotChecked" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.VisualStyleElement.MenuBand.NewApplicationButton.HotChecked" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property HotChecked As VisualStyleElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::VisualStyles::VisualStyleElement ^ HotChecked { System::Windows::Forms::VisualStyles::VisualStyleElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -168,6 +178,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Forms.VisualStyles.VisualStyleElement Normal { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.VisualStyles.VisualStyleElement Normal" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.VisualStyleElement.MenuBand.NewApplicationButton.Normal" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Normal As VisualStyleElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::VisualStyles::VisualStyleElement ^ Normal { System::Windows::Forms::VisualStyles::VisualStyleElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -201,6 +213,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Forms.VisualStyles.VisualStyleElement Pressed { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.VisualStyles.VisualStyleElement Pressed" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.VisualStyleElement.MenuBand.NewApplicationButton.Pressed" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Pressed As VisualStyleElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::VisualStyles::VisualStyleElement ^ Pressed { System::Windows::Forms::VisualStyles::VisualStyleElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

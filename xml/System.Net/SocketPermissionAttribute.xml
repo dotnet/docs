@@ -1,7 +1,9 @@
-<Type Name="SocketPermissionAttribute" FullName="System.Net.SocketPermissionAttribute">
+﻿<Type Name="SocketPermissionAttribute" FullName="System.Net.SocketPermissionAttribute">
   <TypeSignature Language="C#" Value="public sealed class SocketPermissionAttribute : System.Security.Permissions.CodeAccessSecurityAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit SocketPermissionAttribute extends System.Security.Permissions.CodeAccessSecurityAttribute" />
   <TypeSignature Language="DocId" Value="T:System.Net.SocketPermissionAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SocketPermissionAttribute&#xA;Inherits CodeAccessSecurityAttribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SocketPermissionAttribute sealed : System::Security::Permissions::CodeAccessSecurityAttribute" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -17,7 +19,7 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.AttributeUsage(System.AttributeTargets.Assembly | System.AttributeTargets.Class | System.AttributeTargets.Struct | System.AttributeTargets.Constructor | System.AttributeTargets.Method, AllowMultiple=true, Inherited=false)</AttributeName>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Assembly | System.AttributeTargets.Class | System.AttributeTargets.Constructor | System.AttributeTargets.Method | System.AttributeTargets.Struct, AllowMultiple=true, Inherited=false)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -43,6 +45,8 @@
       <MemberSignature Language="C#" Value="public SocketPermissionAttribute (System.Security.Permissions.SecurityAction action);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Permissions.SecurityAction action) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.SocketPermissionAttribute.#ctor(System.Security.Permissions.SecurityAction)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (action As SecurityAction)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SocketPermissionAttribute(System::Security::Permissions::SecurityAction action);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -75,6 +79,8 @@
       <MemberSignature Language="C#" Value="public string Access { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Access" />
       <MemberSignature Language="DocId" Value="P:System.Net.SocketPermissionAttribute.Access" />
+      <MemberSignature Language="VB.NET" Value="Public Property Access As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Access { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -106,6 +112,8 @@
       <MemberSignature Language="C#" Value="public override System.Security.IPermission CreatePermission ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission CreatePermission() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.SocketPermissionAttribute.CreatePermission" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreatePermission () As IPermission" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ CreatePermission();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -139,6 +147,8 @@
       <MemberSignature Language="C#" Value="public string Host { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Host" />
       <MemberSignature Language="DocId" Value="P:System.Net.SocketPermissionAttribute.Host" />
+      <MemberSignature Language="VB.NET" Value="Public Property Host As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Host { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -171,6 +181,8 @@
       <MemberSignature Language="C#" Value="public string Port { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Port" />
       <MemberSignature Language="DocId" Value="P:System.Net.SocketPermissionAttribute.Port" />
+      <MemberSignature Language="VB.NET" Value="Public Property Port As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Port { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -202,6 +214,8 @@
       <MemberSignature Language="C#" Value="public string Transport { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Transport" />
       <MemberSignature Language="DocId" Value="P:System.Net.SocketPermissionAttribute.Transport" />
+      <MemberSignature Language="VB.NET" Value="Public Property Transport As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Transport { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

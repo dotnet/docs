@@ -1,7 +1,9 @@
-<Type Name="SynthesisTextFormat" FullName="System.Speech.Synthesis.SynthesisTextFormat">
+﻿<Type Name="SynthesisTextFormat" FullName="System.Speech.Synthesis.SynthesisTextFormat">
   <TypeSignature Language="C#" Value="public enum SynthesisTextFormat" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SynthesisTextFormat extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Speech.Synthesis.SynthesisTextFormat" />
+  <TypeSignature Language="VB.NET" Value="Public Enum SynthesisTextFormat" />
+  <TypeSignature Language="C++ CLI" Value="public enum class SynthesisTextFormat" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +28,8 @@
       <MemberSignature Language="C#" Value="Ssml" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Synthesis.SynthesisTextFormat Ssml = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.SynthesisTextFormat.Ssml" />
+      <MemberSignature Language="VB.NET" Value="Ssml" />
+      <MemberSignature Language="C++ CLI" Value="Ssml" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -34,6 +38,7 @@
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.SynthesisTextFormat</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Indicates that the text format is SSML.</summary>
         <remarks>
@@ -50,6 +55,8 @@
       <MemberSignature Language="C#" Value="Text" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Synthesis.SynthesisTextFormat Text = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.SynthesisTextFormat.Text" />
+      <MemberSignature Language="VB.NET" Value="Text" />
+      <MemberSignature Language="C++ CLI" Value="Text" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -58,6 +65,7 @@
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.SynthesisTextFormat</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Indicates that the text format is Text.</summary>
       </Docs>

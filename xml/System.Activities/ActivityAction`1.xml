@@ -1,7 +1,9 @@
-<Type Name="ActivityAction&lt;T&gt;" FullName="System.Activities.ActivityAction&lt;T&gt;">
+﻿<Type Name="ActivityAction&lt;T&gt;" FullName="System.Activities.ActivityAction&lt;T&gt;">
   <TypeSignature Language="C#" Value="public sealed class ActivityAction&lt;T&gt; : System.Activities.ActivityDelegate" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ActivityAction`1&lt;T&gt; extends System.Activities.ActivityDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Activities.ActivityAction`1" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ActivityAction(Of T)&#xA;Inherits ActivityDelegate" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class ActivityAction sealed : System::Activities::ActivityDelegate" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +49,8 @@
       <MemberSignature Language="C#" Value="public ActivityAction ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.ActivityAction`1.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ActivityAction();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -62,6 +66,8 @@
       <MemberSignature Language="C#" Value="public System.Activities.DelegateInArgument&lt;T&gt; Argument { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.DelegateInArgument`1&lt;!T&gt; Argument" />
       <MemberSignature Language="DocId" Value="P:System.Activities.ActivityAction`1.Argument" />
+      <MemberSignature Language="VB.NET" Value="Public Property Argument As DelegateInArgument(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::DelegateInArgument&lt;T&gt; ^ Argument { System::Activities::DelegateInArgument&lt;T&gt; ^ get(); void set(System::Activities::DelegateInArgument&lt;T&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="ValidationSummaryDisplayMode" FullName="System.Web.UI.WebControls.ValidationSummaryDisplayMode">
+﻿<Type Name="ValidationSummaryDisplayMode" FullName="System.Web.UI.WebControls.ValidationSummaryDisplayMode">
   <TypeSignature Language="C#" Value="public enum ValidationSummaryDisplayMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ValidationSummaryDisplayMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ValidationSummaryDisplayMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ValidationSummaryDisplayMode" />
+  <TypeSignature Language="C++ CLI" Value="public enum class ValidationSummaryDisplayMode" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +40,8 @@
       <MemberSignature Language="C#" Value="BulletList" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.ValidationSummaryDisplayMode BulletList = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ValidationSummaryDisplayMode.BulletList" />
+      <MemberSignature Language="VB.NET" Value="BulletList" />
+      <MemberSignature Language="C++ CLI" Value="BulletList" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -46,6 +50,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.ValidationSummaryDisplayMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Validation summary displayed in a bulleted list.</summary>
       </Docs>
@@ -54,6 +59,8 @@
       <MemberSignature Language="C#" Value="List" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.ValidationSummaryDisplayMode List = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ValidationSummaryDisplayMode.List" />
+      <MemberSignature Language="VB.NET" Value="List" />
+      <MemberSignature Language="C++ CLI" Value="List" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -62,6 +69,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.ValidationSummaryDisplayMode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Validation summary displayed in a list.</summary>
       </Docs>
@@ -70,6 +78,8 @@
       <MemberSignature Language="C#" Value="SingleParagraph" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.ValidationSummaryDisplayMode SingleParagraph = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ValidationSummaryDisplayMode.SingleParagraph" />
+      <MemberSignature Language="VB.NET" Value="SingleParagraph" />
+      <MemberSignature Language="C++ CLI" Value="SingleParagraph" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -78,6 +88,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.ValidationSummaryDisplayMode</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Validation summary displayed in a single paragraph.</summary>
       </Docs>

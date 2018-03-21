@@ -1,7 +1,9 @@
-<Type Name="ThenBy" FullName="System.Web.UI.WebControls.Expressions.ThenBy">
+﻿<Type Name="ThenBy" FullName="System.Web.UI.WebControls.Expressions.ThenBy">
   <TypeSignature Language="C#" Value="public class ThenBy" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ThenBy extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.Expressions.ThenBy" />
+  <TypeSignature Language="VB.NET" Value="Public Class ThenBy" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ThenBy" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +40,8 @@
       <MemberSignature Language="C#" Value="public ThenBy ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Expressions.ThenBy.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ThenBy();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -53,6 +57,8 @@
       <MemberSignature Language="C#" Value="public string DataField { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DataField" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Expressions.ThenBy.DataField" />
+      <MemberSignature Language="VB.NET" Value="Public Property DataField As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DataField { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -90,6 +96,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.SortDirection Direction { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.SortDirection Direction" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Expressions.ThenBy.Direction" />
+      <MemberSignature Language="VB.NET" Value="Public Property Direction As SortDirection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::SortDirection Direction { System::Web::UI::WebControls::SortDirection get(); void set(System::Web::UI::WebControls::SortDirection value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

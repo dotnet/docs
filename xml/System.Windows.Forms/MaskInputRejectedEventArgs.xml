@@ -1,7 +1,9 @@
-<Type Name="MaskInputRejectedEventArgs" FullName="System.Windows.Forms.MaskInputRejectedEventArgs">
+﻿<Type Name="MaskInputRejectedEventArgs" FullName="System.Windows.Forms.MaskInputRejectedEventArgs">
   <TypeSignature Language="C#" Value="public class MaskInputRejectedEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MaskInputRejectedEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.MaskInputRejectedEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class MaskInputRejectedEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MaskInputRejectedEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +40,8 @@
       <MemberSignature Language="C#" Value="public MaskInputRejectedEventArgs (int position, System.ComponentModel.MaskedTextResultHint rejectionHint);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 position, valuetype System.ComponentModel.MaskedTextResultHint rejectionHint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MaskInputRejectedEventArgs.#ctor(System.Int32,System.ComponentModel.MaskedTextResultHint)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (position As Integer, rejectionHint As MaskedTextResultHint)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MaskInputRejectedEventArgs(int position, System::ComponentModel::MaskedTextResultHint rejectionHint);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -67,6 +71,8 @@
       <MemberSignature Language="C#" Value="public int Position { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Position" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MaskInputRejectedEventArgs.Position" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Position As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Position { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -103,6 +109,8 @@
       <MemberSignature Language="C#" Value="public System.ComponentModel.MaskedTextResultHint RejectionHint { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ComponentModel.MaskedTextResultHint RejectionHint" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MaskInputRejectedEventArgs.RejectionHint" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RejectionHint As MaskedTextResultHint" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::MaskedTextResultHint RejectionHint { System::ComponentModel::MaskedTextResultHint get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

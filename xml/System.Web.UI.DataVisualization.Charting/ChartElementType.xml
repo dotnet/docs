@@ -1,7 +1,9 @@
-<Type Name="ChartElementType" FullName="System.Web.UI.DataVisualization.Charting.ChartElementType">
+﻿<Type Name="ChartElementType" FullName="System.Web.UI.DataVisualization.Charting.ChartElementType">
   <TypeSignature Language="C#" Value="public enum ChartElementType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ChartElementType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.ChartElementType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ChartElementType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class ChartElementType" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -18,6 +20,8 @@
       <MemberSignature Language="C#" Value="Annotation" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.ChartElementType Annotation = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ChartElementType.Annotation" />
+      <MemberSignature Language="VB.NET" Value="Annotation" />
+      <MemberSignature Language="C++ CLI" Value="Annotation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -26,6 +30,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.ChartElementType</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>Any object derived from the <see cref="T:System.Web.UI.DataVisualization.Charting.Annotation" /> class.</summary>
       </Docs>
@@ -34,6 +39,8 @@
       <MemberSignature Language="C#" Value="Axis" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.ChartElementType Axis = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ChartElementType.Axis" />
+      <MemberSignature Language="VB.NET" Value="Axis" />
+      <MemberSignature Language="C++ CLI" Value="Axis" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -42,6 +49,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.ChartElementType</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>An <see cref="T:System.Web.UI.DataVisualization.Charting.Axis" /> object.</summary>
       </Docs>
@@ -50,6 +58,8 @@
       <MemberSignature Language="C#" Value="AxisLabelImage" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.ChartElementType AxisLabelImage = int32(7)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ChartElementType.AxisLabelImage" />
+      <MemberSignature Language="VB.NET" Value="AxisLabelImage" />
+      <MemberSignature Language="C++ CLI" Value="AxisLabelImage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -58,6 +68,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.ChartElementType</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>An <see cref="T:System.Web.UI.DataVisualization.Charting.Axis" /> label image.</summary>
       </Docs>
@@ -66,6 +77,8 @@
       <MemberSignature Language="C#" Value="AxisLabels" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.ChartElementType AxisLabels = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ChartElementType.AxisLabels" />
+      <MemberSignature Language="VB.NET" Value="AxisLabels" />
+      <MemberSignature Language="C++ CLI" Value="AxisLabels" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -74,6 +87,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.ChartElementType</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>An <see cref="T:System.Web.UI.DataVisualization.Charting.Axis" /> label.</summary>
       </Docs>
@@ -82,6 +96,8 @@
       <MemberSignature Language="C#" Value="AxisTitle" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.ChartElementType AxisTitle = int32(9)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ChartElementType.AxisTitle" />
+      <MemberSignature Language="VB.NET" Value="AxisTitle" />
+      <MemberSignature Language="C++ CLI" Value="AxisTitle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -90,6 +106,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.ChartElementType</ReturnType>
       </ReturnValue>
+      <MemberValue>9</MemberValue>
       <Docs>
         <summary>An <see cref="T:System.Web.UI.DataVisualization.Charting.Axis" /> title.</summary>
       </Docs>
@@ -98,6 +115,8 @@
       <MemberSignature Language="C#" Value="DataPoint" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.ChartElementType DataPoint = int32(10)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ChartElementType.DataPoint" />
+      <MemberSignature Language="VB.NET" Value="DataPoint" />
+      <MemberSignature Language="C++ CLI" Value="DataPoint" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -106,6 +125,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.ChartElementType</ReturnType>
       </ReturnValue>
+      <MemberValue>10</MemberValue>
       <Docs>
         <summary>A <see cref="T:System.Web.UI.DataVisualization.Charting.DataPoint" /> object.</summary>
       </Docs>
@@ -114,6 +134,8 @@
       <MemberSignature Language="C#" Value="DataPointLabel" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.ChartElementType DataPointLabel = int32(11)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ChartElementType.DataPointLabel" />
+      <MemberSignature Language="VB.NET" Value="DataPointLabel" />
+      <MemberSignature Language="C++ CLI" Value="DataPointLabel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -122,6 +144,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.ChartElementType</ReturnType>
       </ReturnValue>
+      <MemberValue>11</MemberValue>
       <Docs>
         <summary>A series <see cref="T:System.Web.UI.DataVisualization.Charting.DataPoint" /> label.</summary>
       </Docs>
@@ -130,6 +153,8 @@
       <MemberSignature Language="C#" Value="Gridlines" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.ChartElementType Gridlines = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ChartElementType.Gridlines" />
+      <MemberSignature Language="VB.NET" Value="Gridlines" />
+      <MemberSignature Language="C++ CLI" Value="Gridlines" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -138,6 +163,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.ChartElementType</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>Any major or minor grid line, either vertical or horizontal.</summary>
       </Docs>
@@ -146,6 +172,8 @@
       <MemberSignature Language="C#" Value="LegendArea" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.ChartElementType LegendArea = int32(12)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ChartElementType.LegendArea" />
+      <MemberSignature Language="VB.NET" Value="LegendArea" />
+      <MemberSignature Language="C++ CLI" Value="LegendArea" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -154,6 +182,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.ChartElementType</ReturnType>
       </ReturnValue>
+      <MemberValue>12</MemberValue>
       <Docs>
         <summary>The area inside a <see cref="T:System.Web.UI.DataVisualization.Charting.Legend" /> object. Does not include the space occupied by legend items.</summary>
       </Docs>
@@ -162,6 +191,8 @@
       <MemberSignature Language="C#" Value="LegendHeader" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.ChartElementType LegendHeader = int32(14)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ChartElementType.LegendHeader" />
+      <MemberSignature Language="VB.NET" Value="LegendHeader" />
+      <MemberSignature Language="C++ CLI" Value="LegendHeader" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -170,6 +201,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.ChartElementType</ReturnType>
       </ReturnValue>
+      <MemberValue>14</MemberValue>
       <Docs>
         <summary>A <see cref="T:System.Web.UI.DataVisualization.Charting.Legend" /> header.</summary>
       </Docs>
@@ -178,6 +210,8 @@
       <MemberSignature Language="C#" Value="LegendItem" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.ChartElementType LegendItem = int32(15)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ChartElementType.LegendItem" />
+      <MemberSignature Language="VB.NET" Value="LegendItem" />
+      <MemberSignature Language="C++ CLI" Value="LegendItem" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -186,6 +220,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.ChartElementType</ReturnType>
       </ReturnValue>
+      <MemberValue>15</MemberValue>
       <Docs>
         <summary>A <see cref="T:System.Web.UI.DataVisualization.Charting.LegendItem" /> object.</summary>
       </Docs>
@@ -194,6 +229,8 @@
       <MemberSignature Language="C#" Value="LegendTitle" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.ChartElementType LegendTitle = int32(13)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ChartElementType.LegendTitle" />
+      <MemberSignature Language="VB.NET" Value="LegendTitle" />
+      <MemberSignature Language="C++ CLI" Value="LegendTitle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -202,6 +239,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.ChartElementType</ReturnType>
       </ReturnValue>
+      <MemberValue>13</MemberValue>
       <Docs>
         <summary>A <see cref="T:System.Web.UI.DataVisualization.Charting.Legend" /> title.</summary>
       </Docs>
@@ -210,6 +248,8 @@
       <MemberSignature Language="C#" Value="Nothing" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.ChartElementType Nothing = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ChartElementType.Nothing" />
+      <MemberSignature Language="VB.NET" Value="Nothing" />
+      <MemberSignature Language="C++ CLI" Value="Nothing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -218,6 +258,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.ChartElementType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>No chart element.</summary>
       </Docs>
@@ -226,6 +267,8 @@
       <MemberSignature Language="C#" Value="PlottingArea" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.ChartElementType PlottingArea = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ChartElementType.PlottingArea" />
+      <MemberSignature Language="VB.NET" Value="PlottingArea" />
+      <MemberSignature Language="C++ CLI" Value="PlottingArea" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -234,6 +277,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.ChartElementType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The plotting area, which is the chart area excluding axes, labels, and so on. Also excludes the regions that data points might occupy.</summary>
       </Docs>
@@ -242,6 +286,8 @@
       <MemberSignature Language="C#" Value="StripLines" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.ChartElementType StripLines = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ChartElementType.StripLines" />
+      <MemberSignature Language="VB.NET" Value="StripLines" />
+      <MemberSignature Language="C++ CLI" Value="StripLines" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -250,6 +296,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.ChartElementType</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>A <see cref="T:System.Web.UI.DataVisualization.Charting.StripLine" /> object.</summary>
       </Docs>
@@ -258,6 +305,8 @@
       <MemberSignature Language="C#" Value="TickMarks" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.ChartElementType TickMarks = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ChartElementType.TickMarks" />
+      <MemberSignature Language="VB.NET" Value="TickMarks" />
+      <MemberSignature Language="C++ CLI" Value="TickMarks" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -266,6 +315,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.ChartElementType</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Any major or minor <see cref="T:System.Web.UI.DataVisualization.Charting.TickMark" /> object.</summary>
       </Docs>
@@ -274,6 +324,8 @@
       <MemberSignature Language="C#" Value="Title" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.ChartElementType Title = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ChartElementType.Title" />
+      <MemberSignature Language="VB.NET" Value="Title" />
+      <MemberSignature Language="C++ CLI" Value="Title" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -282,6 +334,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.ChartElementType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The title of a <see cref="T:System.Web.UI.DataVisualization.Charting.Chart" />.</summary>
       </Docs>

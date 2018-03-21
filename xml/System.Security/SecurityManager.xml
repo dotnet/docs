@@ -1,7 +1,9 @@
-<Type Name="SecurityManager" FullName="System.Security.SecurityManager">
+﻿<Type Name="SecurityManager" FullName="System.Security.SecurityManager">
   <TypeSignature Language="C#" Value="public static class SecurityManager" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed SecurityManager extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Security.SecurityManager" />
+  <TypeSignature Language="VB.NET" Value="Public Class SecurityManager" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SecurityManager abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -36,6 +38,8 @@
       <MemberSignature Language="C#" Value="public static bool CheckExecutionRights { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property bool CheckExecutionRights" />
       <MemberSignature Language="DocId" Value="P:System.Security.SecurityManager.CheckExecutionRights" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property CheckExecutionRights As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool CheckExecutionRights { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -76,6 +80,8 @@
       <MemberSignature Language="C#" Value="public static bool CurrentThreadRequiresSecurityContextCapture ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool CurrentThreadRequiresSecurityContextCapture() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.SecurityManager.CurrentThreadRequiresSecurityContextCapture" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CurrentThreadRequiresSecurityContextCapture () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool CurrentThreadRequiresSecurityContextCapture();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -116,6 +122,7 @@
       <MemberSignature Language="C#" Value="public static System.Security.PermissionSet GetStandardSandbox (System.Security.Policy.Evidence evidence);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.PermissionSet GetStandardSandbox(class System.Security.Policy.Evidence evidence) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.SecurityManager.GetStandardSandbox(System.Security.Policy.Evidence)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::PermissionSet ^ GetStandardSandbox(System::Security::Policy::Evidence ^ evidence);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -177,6 +184,8 @@
       <MemberSignature Language="C#" Value="public static void GetZoneAndOrigin (out System.Collections.ArrayList zone, out System.Collections.ArrayList origin);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void GetZoneAndOrigin([out] class System.Collections.ArrayList&amp; zone, [out] class System.Collections.ArrayList&amp; origin) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.SecurityManager.GetZoneAndOrigin(System.Collections.ArrayList@,System.Collections.ArrayList@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub GetZoneAndOrigin (ByRef zone As ArrayList, ByRef origin As ArrayList)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void GetZoneAndOrigin([Runtime::InteropServices::Out] System::Collections::ArrayList ^ % zone, [Runtime::InteropServices::Out] System::Collections::ArrayList ^ % origin);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -217,6 +226,8 @@
       <MemberSignature Language="C#" Value="public static bool IsGranted (System.Security.IPermission perm);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsGranted(class System.Security.IPermission perm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.SecurityManager.IsGranted(System.Security.IPermission)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsGranted (perm As IPermission) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsGranted(System::Security::IPermission ^ perm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -257,6 +268,8 @@
       <MemberSignature Language="C#" Value="public static System.Security.Policy.PolicyLevel LoadPolicyLevelFromFile (string path, System.Security.PolicyLevelType type);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Policy.PolicyLevel LoadPolicyLevelFromFile(string path, valuetype System.Security.PolicyLevelType type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.SecurityManager.LoadPolicyLevelFromFile(System.String,System.Security.PolicyLevelType)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function LoadPolicyLevelFromFile (path As String, type As PolicyLevelType) As PolicyLevel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Policy::PolicyLevel ^ LoadPolicyLevelFromFile(System::String ^ path, System::Security::PolicyLevelType type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -309,6 +322,8 @@
       <MemberSignature Language="C#" Value="public static System.Security.Policy.PolicyLevel LoadPolicyLevelFromString (string str, System.Security.PolicyLevelType type);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Policy.PolicyLevel LoadPolicyLevelFromString(string str, valuetype System.Security.PolicyLevelType type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.SecurityManager.LoadPolicyLevelFromString(System.String,System.Security.PolicyLevelType)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function LoadPolicyLevelFromString (str As String, type As PolicyLevelType) As PolicyLevel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Policy::PolicyLevel ^ LoadPolicyLevelFromString(System::String ^ str, System::Security::PolicyLevelType type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -347,6 +362,8 @@
       <MemberSignature Language="C#" Value="public static System.Collections.IEnumerator PolicyHierarchy ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.IEnumerator PolicyHierarchy() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.SecurityManager.PolicyHierarchy" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PolicyHierarchy () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::IEnumerator ^ PolicyHierarchy();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -384,10 +401,21 @@
         <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to view and modify policy. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlPolicy" /></permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ResolvePolicy">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines what permissions to grant to code.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ResolvePolicy">
       <MemberSignature Language="C#" Value="public static System.Security.PermissionSet ResolvePolicy (System.Security.Policy.Evidence evidence);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.PermissionSet ResolvePolicy(class System.Security.Policy.Evidence evidence) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.SecurityManager.ResolvePolicy(System.Security.Policy.Evidence)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::PermissionSet ^ ResolvePolicy(System::Security::Policy::Evidence ^ evidence);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -428,6 +456,8 @@
       <MemberSignature Language="C#" Value="public static System.Security.PermissionSet ResolvePolicy (System.Security.Policy.Evidence[] evidences);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.PermissionSet ResolvePolicy(class System.Security.Policy.Evidence[] evidences) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.SecurityManager.ResolvePolicy(System.Security.Policy.Evidence[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ResolvePolicy (evidences As Evidence()) As PermissionSet" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::PermissionSet ^ ResolvePolicy(cli::array &lt;System::Security::Policy::Evidence ^&gt; ^ evidences);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -468,6 +498,7 @@
       <MemberSignature Language="C#" Value="public static System.Security.PermissionSet ResolvePolicy (System.Security.Policy.Evidence evidence, System.Security.PermissionSet reqdPset, System.Security.PermissionSet optPset, System.Security.PermissionSet denyPset, out System.Security.PermissionSet denied);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.PermissionSet ResolvePolicy(class System.Security.Policy.Evidence evidence, class System.Security.PermissionSet reqdPset, class System.Security.PermissionSet optPset, class System.Security.PermissionSet denyPset, [out] class System.Security.PermissionSet&amp; denied) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.SecurityManager.ResolvePolicy(System.Security.Policy.Evidence,System.Security.PermissionSet,System.Security.PermissionSet,System.Security.PermissionSet,System.Security.PermissionSet@)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::PermissionSet ^ ResolvePolicy(System::Security::Policy::Evidence ^ evidence, System::Security::PermissionSet ^ reqdPset, System::Security::PermissionSet ^ optPset, System::Security::PermissionSet ^ denyPset, [Runtime::InteropServices::Out] System::Security::PermissionSet ^ % denied);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -517,6 +548,7 @@
       <MemberSignature Language="C#" Value="public static System.Collections.IEnumerator ResolvePolicyGroups (System.Security.Policy.Evidence evidence);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.IEnumerator ResolvePolicyGroups(class System.Security.Policy.Evidence evidence) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.SecurityManager.ResolvePolicyGroups(System.Security.Policy.Evidence)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::IEnumerator ^ ResolvePolicyGroups(System::Security::Policy::Evidence ^ evidence);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -559,6 +591,7 @@
       <MemberSignature Language="C#" Value="public static System.Security.PermissionSet ResolveSystemPolicy (System.Security.Policy.Evidence evidence);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.PermissionSet ResolveSystemPolicy(class System.Security.Policy.Evidence evidence) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.SecurityManager.ResolveSystemPolicy(System.Security.Policy.Evidence)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::PermissionSet ^ ResolveSystemPolicy(System::Security::Policy::Evidence ^ evidence);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -599,6 +632,8 @@
       <MemberSignature Language="C#" Value="public static void SavePolicy ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SavePolicy() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.SecurityManager.SavePolicy" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SavePolicy ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SavePolicy();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -637,6 +672,8 @@
       <MemberSignature Language="C#" Value="public static void SavePolicyLevel (System.Security.Policy.PolicyLevel level);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SavePolicyLevel(class System.Security.Policy.PolicyLevel level) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.SecurityManager.SavePolicyLevel(System.Security.Policy.PolicyLevel)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SavePolicyLevel (level As PolicyLevel)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SavePolicyLevel(System::Security::Policy::PolicyLevel ^ level);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -678,6 +715,8 @@
       <MemberSignature Language="C#" Value="public static bool SecurityEnabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property bool SecurityEnabled" />
       <MemberSignature Language="DocId" Value="P:System.Security.SecurityManager.SecurityEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property SecurityEnabled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool SecurityEnabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -721,15 +760,5 @@
         <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to modify policy. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlPolicy" /></permission>
       </Docs>
     </Member>
-    <MemberGroup MemberName="ResolvePolicy">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Determines what permissions to grant to code.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

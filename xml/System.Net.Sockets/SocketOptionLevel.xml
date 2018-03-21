@@ -1,7 +1,9 @@
-<Type Name="SocketOptionLevel" FullName="System.Net.Sockets.SocketOptionLevel">
+﻿<Type Name="SocketOptionLevel" FullName="System.Net.Sockets.SocketOptionLevel">
   <TypeSignature Language="C#" Value="public enum SocketOptionLevel" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SocketOptionLevel extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Net.Sockets.SocketOptionLevel" />
+  <TypeSignature Language="VB.NET" Value="Public Enum SocketOptionLevel" />
+  <TypeSignature Language="C++ CLI" Value="public enum class SocketOptionLevel" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Sockets</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -48,6 +50,8 @@
       <MemberSignature Language="C#" Value="IP" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketOptionLevel IP = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketOptionLevel.IP" />
+      <MemberSignature Language="VB.NET" Value="IP" />
+      <MemberSignature Language="C++ CLI" Value="IP" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -66,6 +70,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SocketOptionLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>
           <see cref="T:System.Net.Sockets.Socket" /> options apply only to IP sockets.</summary>
@@ -75,6 +80,8 @@
       <MemberSignature Language="C#" Value="IPv6" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketOptionLevel IPv6 = int32(41)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketOptionLevel.IPv6" />
+      <MemberSignature Language="VB.NET" Value="IPv6" />
+      <MemberSignature Language="C++ CLI" Value="IPv6" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -93,6 +100,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SocketOptionLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>41</MemberValue>
       <Docs>
         <summary>
           <see cref="T:System.Net.Sockets.Socket" /> options apply only to IPv6 sockets.</summary>
@@ -102,6 +110,8 @@
       <MemberSignature Language="C#" Value="Socket" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketOptionLevel Socket = int32(65535)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketOptionLevel.Socket" />
+      <MemberSignature Language="VB.NET" Value="Socket" />
+      <MemberSignature Language="C++ CLI" Value="Socket" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -120,6 +130,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SocketOptionLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>65535</MemberValue>
       <Docs>
         <summary>
           <see cref="T:System.Net.Sockets.Socket" /> options apply to all sockets.</summary>
@@ -129,6 +140,8 @@
       <MemberSignature Language="C#" Value="Tcp" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketOptionLevel Tcp = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketOptionLevel.Tcp" />
+      <MemberSignature Language="VB.NET" Value="Tcp" />
+      <MemberSignature Language="C++ CLI" Value="Tcp" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -147,6 +160,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SocketOptionLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>
           <see cref="T:System.Net.Sockets.Socket" /> options apply only to TCP sockets.</summary>
@@ -156,6 +170,8 @@
       <MemberSignature Language="C#" Value="Udp" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketOptionLevel Udp = int32(17)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketOptionLevel.Udp" />
+      <MemberSignature Language="VB.NET" Value="Udp" />
+      <MemberSignature Language="C++ CLI" Value="Udp" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -174,6 +190,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SocketOptionLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>17</MemberValue>
       <Docs>
         <summary>
           <see cref="T:System.Net.Sockets.Socket" /> options apply only to UDP sockets.</summary>

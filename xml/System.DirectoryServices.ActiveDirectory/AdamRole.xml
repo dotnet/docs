@@ -1,7 +1,9 @@
-<Type Name="AdamRole" FullName="System.DirectoryServices.ActiveDirectory.AdamRole">
+﻿<Type Name="AdamRole" FullName="System.DirectoryServices.ActiveDirectory.AdamRole">
   <TypeSignature Language="C#" Value="public enum AdamRole" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AdamRole extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.AdamRole" />
+  <TypeSignature Language="VB.NET" Value="Public Enum AdamRole" />
+  <TypeSignature Language="C++ CLI" Value="public enum class AdamRole" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +32,8 @@
       <MemberSignature Language="C#" Value="NamingRole" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.AdamRole NamingRole = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.AdamRole.NamingRole" />
+      <MemberSignature Language="VB.NET" Value="NamingRole" />
+      <MemberSignature Language="C++ CLI" Value="NamingRole" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -39,6 +43,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.AdamRole</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The AD LDS server holds the domain naming master role.</summary>
       </Docs>
@@ -47,6 +52,8 @@
       <MemberSignature Language="C#" Value="SchemaRole" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.AdamRole SchemaRole = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.AdamRole.SchemaRole" />
+      <MemberSignature Language="VB.NET" Value="SchemaRole" />
+      <MemberSignature Language="C++ CLI" Value="SchemaRole" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -56,6 +63,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.AdamRole</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The AD LDS server holds the schema operations master role.</summary>
       </Docs>

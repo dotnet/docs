@@ -1,7 +1,9 @@
-<Type Name="IWorkflowChangeDiff" FullName="System.Workflow.ComponentModel.IWorkflowChangeDiff">
+﻿<Type Name="IWorkflowChangeDiff" FullName="System.Workflow.ComponentModel.IWorkflowChangeDiff">
   <TypeSignature Language="C#" Value="public interface IWorkflowChangeDiff" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWorkflowChangeDiff" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.IWorkflowChangeDiff" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IWorkflowChangeDiff" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IWorkflowChangeDiff" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +35,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;System.Workflow.ComponentModel.WorkflowChangeAction&gt; Diff (object originalDefinition, object changedDefinition);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IList`1&lt;class System.Workflow.ComponentModel.WorkflowChangeAction&gt; Diff(object originalDefinition, object changedDefinition) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.IWorkflowChangeDiff.Diff(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Diff (originalDefinition As Object, changedDefinition As Object) As IList(Of WorkflowChangeAction)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IList&lt;System::Workflow::ComponentModel::WorkflowChangeAction ^&gt; ^ Diff(System::Object ^ originalDefinition, System::Object ^ changedDefinition);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="NumericUpDownAcceleration" FullName="System.Windows.Forms.NumericUpDownAcceleration">
+﻿<Type Name="NumericUpDownAcceleration" FullName="System.Windows.Forms.NumericUpDownAcceleration">
   <TypeSignature Language="C#" Value="public class NumericUpDownAcceleration" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NumericUpDownAcceleration extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.NumericUpDownAcceleration" />
+  <TypeSignature Language="VB.NET" Value="Public Class NumericUpDownAcceleration" />
+  <TypeSignature Language="C++ CLI" Value="public ref class NumericUpDownAcceleration" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +38,8 @@
       <MemberSignature Language="C#" Value="public NumericUpDownAcceleration (int seconds, decimal increment);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 seconds, valuetype System.Decimal increment) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.NumericUpDownAcceleration.#ctor(System.Int32,System.Decimal)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (seconds As Integer, increment As Decimal)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NumericUpDownAcceleration(int seconds, System::Decimal increment);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -58,6 +62,8 @@
       <MemberSignature Language="C#" Value="public decimal Increment { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Decimal Increment" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.NumericUpDownAcceleration.Increment" />
+      <MemberSignature Language="VB.NET" Value="Public Property Increment As Decimal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Decimal Increment { System::Decimal get(); void set(System::Decimal value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -77,6 +83,8 @@
       <MemberSignature Language="C#" Value="public int Seconds { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Seconds" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.NumericUpDownAcceleration.Seconds" />
+      <MemberSignature Language="VB.NET" Value="Public Property Seconds As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Seconds { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="AssemblyInformationalVersionAttribute" FullName="System.Reflection.AssemblyInformationalVersionAttribute">
+﻿<Type Name="AssemblyInformationalVersionAttribute" FullName="System.Reflection.AssemblyInformationalVersionAttribute">
   <TypeSignature Language="C#" Value="public sealed class AssemblyInformationalVersionAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AssemblyInformationalVersionAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.AssemblyInformationalVersionAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AssemblyInformationalVersionAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AssemblyInformationalVersionAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +51,8 @@
       <MemberSignature Language="C#" Value="public AssemblyInformationalVersionAttribute (string informationalVersion);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string informationalVersion) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.AssemblyInformationalVersionAttribute.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (informationalVersion As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AssemblyInformationalVersionAttribute(System::String ^ informationalVersion);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -87,6 +91,8 @@
       <MemberSignature Language="C#" Value="public string InformationalVersion { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string InformationalVersion" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.AssemblyInformationalVersionAttribute.InformationalVersion" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InformationalVersion As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ InformationalVersion { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

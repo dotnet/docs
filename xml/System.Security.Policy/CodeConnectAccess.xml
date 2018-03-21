@@ -1,7 +1,9 @@
-<Type Name="CodeConnectAccess" FullName="System.Security.Policy.CodeConnectAccess">
+﻿<Type Name="CodeConnectAccess" FullName="System.Security.Policy.CodeConnectAccess">
   <TypeSignature Language="C#" Value="public class CodeConnectAccess" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CodeConnectAccess extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Security.Policy.CodeConnectAccess" />
+  <TypeSignature Language="VB.NET" Value="Public Class CodeConnectAccess" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CodeConnectAccess" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -48,6 +50,8 @@
       <MemberSignature Language="C#" Value="public CodeConnectAccess (string allowScheme, int allowPort);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string allowScheme, int32 allowPort) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.CodeConnectAccess.#ctor(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (allowScheme As String, allowPort As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeConnectAccess(System::String ^ allowScheme, int allowPort);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -108,6 +112,8 @@
       <MemberSignature Language="C#" Value="public static readonly string AnyScheme;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string AnyScheme" />
       <MemberSignature Language="DocId" Value="F:System.Security.Policy.CodeConnectAccess.AnyScheme" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly AnyScheme As String " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ AnyScheme;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -147,6 +153,8 @@
       <MemberSignature Language="C#" Value="public static System.Security.Policy.CodeConnectAccess CreateAnySchemeAccess (int allowPort);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Policy.CodeConnectAccess CreateAnySchemeAccess(int32 allowPort) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.CodeConnectAccess.CreateAnySchemeAccess(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateAnySchemeAccess (allowPort As Integer) As CodeConnectAccess" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Policy::CodeConnectAccess ^ CreateAnySchemeAccess(int allowPort);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -195,6 +203,8 @@
       <MemberSignature Language="C#" Value="public static System.Security.Policy.CodeConnectAccess CreateOriginSchemeAccess (int allowPort);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Policy.CodeConnectAccess CreateOriginSchemeAccess(int32 allowPort) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.CodeConnectAccess.CreateOriginSchemeAccess(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateOriginSchemeAccess (allowPort As Integer) As CodeConnectAccess" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Policy::CodeConnectAccess ^ CreateOriginSchemeAccess(int allowPort);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -243,6 +253,8 @@
       <MemberSignature Language="C#" Value="public static readonly int DefaultPort;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly int32 DefaultPort" />
       <MemberSignature Language="DocId" Value="F:System.Security.Policy.CodeConnectAccess.DefaultPort" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DefaultPort As Integer " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly int DefaultPort;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -282,6 +294,8 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object o);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object o) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.CodeConnectAccess.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (o As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -317,6 +331,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.CodeConnectAccess.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -342,6 +358,8 @@
       <MemberSignature Language="C#" Value="public static readonly int OriginPort;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly int32 OriginPort" />
       <MemberSignature Language="DocId" Value="F:System.Security.Policy.CodeConnectAccess.OriginPort" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly OriginPort As Integer " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly int OriginPort;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -381,6 +399,8 @@
       <MemberSignature Language="C#" Value="public static readonly string OriginScheme;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string OriginScheme" />
       <MemberSignature Language="DocId" Value="F:System.Security.Policy.CodeConnectAccess.OriginScheme" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly OriginScheme As String " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ OriginScheme;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -420,6 +440,8 @@
       <MemberSignature Language="C#" Value="public int Port { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Port" />
       <MemberSignature Language="DocId" Value="P:System.Security.Policy.CodeConnectAccess.Port" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Port As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Port { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -458,6 +480,8 @@
       <MemberSignature Language="C#" Value="public string Scheme { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Scheme" />
       <MemberSignature Language="DocId" Value="P:System.Security.Policy.CodeConnectAccess.Scheme" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Scheme As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Scheme { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

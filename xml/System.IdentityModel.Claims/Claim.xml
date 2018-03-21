@@ -1,7 +1,9 @@
-<Type Name="Claim" FullName="System.IdentityModel.Claims.Claim">
+﻿<Type Name="Claim" FullName="System.IdentityModel.Claims.Claim">
   <TypeSignature Language="C#" Value="public class Claim" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Claim extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Claims.Claim" />
+  <TypeSignature Language="VB.NET" Value="Public Class Claim" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Claim" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +43,8 @@
       <MemberSignature Language="C#" Value="public Claim (string claimType, object resource, string right);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string claimType, object resource, string right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Claims.Claim.#ctor(System.String,System.Object,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (claimType As String, resource As Object, right As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Claim(System::String ^ claimType, System::Object ^ resource, System::String ^ right);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -82,6 +86,8 @@
       <MemberSignature Language="C#" Value="public string ClaimType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ClaimType" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Claims.Claim.ClaimType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClaimType As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ClaimType { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -112,9 +118,16 @@
       </Docs>
     </Member>
     <Member MemberName="CreateDenyOnlyWindowsSidClaim">
-      <MemberSignature Language="C#" Value="public static System.IdentityModel.Claims.Claim CreateDenyOnlyWindowsSidClaim (System.Security.Principal.SecurityIdentifier identifier);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IdentityModel.Claims.Claim CreateDenyOnlyWindowsSidClaim(class System.Security.Principal.SecurityIdentifier identifier) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Claims.Claim.CreateDenyOnlyWindowsSidClaim(System.Security.Principal.SecurityIdentifier)" />
+      <MemberSignature Language="C#" Value="public static System.IdentityModel.Claims.Claim CreateDenyOnlyWindowsSidClaim (System.Security.Principal.SecurityIdentifier sid);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IdentityModel.Claims.Claim CreateDenyOnlyWindowsSidClaim(class System.Security.Principal.SecurityIdentifier sid) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Claims.Claim.CreateDenyOnlyWindowsSidClaim(System.Security.Principal.SecurityIdentifier)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateDenyOnlyWindowsSidClaim (sid As SecurityIdentifier) As Claim" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IdentityModel::Claims::Claim ^ CreateDenyOnlyWindowsSidClaim(System::Security::Principal::SecurityIdentifier ^ sid);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public static System.IdentityModel.Claims.Claim CreateDenyOnlyWindowsSidClaim (System.Security.Principal.SecurityIdentifier identifier);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IdentityModel.Claims.Claim CreateDenyOnlyWindowsSidClaim(class System.Security.Principal.SecurityIdentifier identifier) cil managed" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Claims.Claim.CreateDenyOnlyWindowsSidClaim(System.Security.Principal.SecurityIdentifier)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateDenyOnlyWindowsSidClaim (identifier As SecurityIdentifier) As Claim" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IdentityModel::Claims::Claim ^ CreateDenyOnlyWindowsSidClaim(System::Security::Principal::SecurityIdentifier ^ identifier);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -124,7 +137,8 @@
         <ReturnType>System.IdentityModel.Claims.Claim</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="sid" Type="System.Security.Principal.SecurityIdentifier" />
+        <Parameter Name="sid" Type="System.Security.Principal.SecurityIdentifier" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="identifier" Type="System.Security.Principal.SecurityIdentifier" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="identifier">To be added.</param>
@@ -154,6 +168,8 @@
       <MemberSignature Language="C#" Value="public static System.IdentityModel.Claims.Claim CreateDnsClaim (string dns);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IdentityModel.Claims.Claim CreateDnsClaim(string dns) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Claims.Claim.CreateDnsClaim(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateDnsClaim (dns As String) As Claim" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IdentityModel::Claims::Claim ^ CreateDnsClaim(System::String ^ dns);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -190,6 +206,8 @@
       <MemberSignature Language="C#" Value="public static System.IdentityModel.Claims.Claim CreateHashClaim (byte[] hash);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IdentityModel.Claims.Claim CreateHashClaim(unsigned int8[] hash) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Claims.Claim.CreateHashClaim(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateHashClaim (hash As Byte()) As Claim" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IdentityModel::Claims::Claim ^ CreateHashClaim(cli::array &lt;System::Byte&gt; ^ hash);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -226,6 +244,7 @@
       <MemberSignature Language="C#" Value="public static System.IdentityModel.Claims.Claim CreateMailAddressClaim (System.Net.Mail.MailAddress mailAddress);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IdentityModel.Claims.Claim CreateMailAddressClaim(class System.Net.Mail.MailAddress mailAddress) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Claims.Claim.CreateMailAddressClaim(System.Net.Mail.MailAddress)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IdentityModel::Claims::Claim ^ CreateMailAddressClaim(System::Net::Mail::MailAddress ^ mailAddress);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -262,6 +281,8 @@
       <MemberSignature Language="C#" Value="public static System.IdentityModel.Claims.Claim CreateNameClaim (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IdentityModel.Claims.Claim CreateNameClaim(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Claims.Claim.CreateNameClaim(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateNameClaim (name As String) As Claim" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IdentityModel::Claims::Claim ^ CreateNameClaim(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -298,6 +319,7 @@
       <MemberSignature Language="C#" Value="public static System.IdentityModel.Claims.Claim CreateRsaClaim (System.Security.Cryptography.RSA rsa);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IdentityModel.Claims.Claim CreateRsaClaim(class System.Security.Cryptography.RSA rsa) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Claims.Claim.CreateRsaClaim(System.Security.Cryptography.RSA)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IdentityModel::Claims::Claim ^ CreateRsaClaim(System::Security::Cryptography::RSA ^ rsa);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -334,6 +356,8 @@
       <MemberSignature Language="C#" Value="public static System.IdentityModel.Claims.Claim CreateSpnClaim (string spn);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IdentityModel.Claims.Claim CreateSpnClaim(string spn) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Claims.Claim.CreateSpnClaim(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateSpnClaim (spn As String) As Claim" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IdentityModel::Claims::Claim ^ CreateSpnClaim(System::String ^ spn);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -370,6 +394,8 @@
       <MemberSignature Language="C#" Value="public static System.IdentityModel.Claims.Claim CreateThumbprintClaim (byte[] thumbprint);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IdentityModel.Claims.Claim CreateThumbprintClaim(unsigned int8[] thumbprint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Claims.Claim.CreateThumbprintClaim(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateThumbprintClaim (thumbprint As Byte()) As Claim" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IdentityModel::Claims::Claim ^ CreateThumbprintClaim(cli::array &lt;System::Byte&gt; ^ thumbprint);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -406,6 +432,8 @@
       <MemberSignature Language="C#" Value="public static System.IdentityModel.Claims.Claim CreateUpnClaim (string upn);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IdentityModel.Claims.Claim CreateUpnClaim(string upn) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Claims.Claim.CreateUpnClaim(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateUpnClaim (upn As String) As Claim" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IdentityModel::Claims::Claim ^ CreateUpnClaim(System::String ^ upn);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -442,6 +470,7 @@
       <MemberSignature Language="C#" Value="public static System.IdentityModel.Claims.Claim CreateUriClaim (Uri uri);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IdentityModel.Claims.Claim CreateUriClaim(class System.Uri uri) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Claims.Claim.CreateUriClaim(System.Uri)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IdentityModel::Claims::Claim ^ CreateUriClaim(Uri ^ uri);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -478,6 +507,8 @@
       <MemberSignature Language="C#" Value="public static System.IdentityModel.Claims.Claim CreateWindowsSidClaim (System.Security.Principal.SecurityIdentifier sid);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IdentityModel.Claims.Claim CreateWindowsSidClaim(class System.Security.Principal.SecurityIdentifier sid) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Claims.Claim.CreateWindowsSidClaim(System.Security.Principal.SecurityIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateWindowsSidClaim (sid As SecurityIdentifier) As Claim" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IdentityModel::Claims::Claim ^ CreateWindowsSidClaim(System::Security::Principal::SecurityIdentifier ^ sid);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -515,6 +546,7 @@
       <MemberSignature Language="C#" Value="public static System.IdentityModel.Claims.Claim CreateX500DistinguishedNameClaim (System.Security.Cryptography.X509Certificates.X500DistinguishedName x500DistinguishedName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IdentityModel.Claims.Claim CreateX500DistinguishedNameClaim(class System.Security.Cryptography.X509Certificates.X500DistinguishedName x500DistinguishedName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Claims.Claim.CreateX500DistinguishedNameClaim(System.Security.Cryptography.X509Certificates.X500DistinguishedName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IdentityModel::Claims::Claim ^ CreateX500DistinguishedNameClaim(System::Security::Cryptography::X509Certificates::X500DistinguishedName ^ x500DistinguishedName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -554,6 +586,8 @@
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEqualityComparer&lt;System.IdentityModel.Claims.Claim&gt; DefaultComparer { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Collections.Generic.IEqualityComparer`1&lt;class System.IdentityModel.Claims.Claim&gt; DefaultComparer" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Claims.Claim.DefaultComparer" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DefaultComparer As IEqualityComparer(Of Claim)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Collections::Generic::IEqualityComparer&lt;System::IdentityModel::Claims::Claim ^&gt; ^ DefaultComparer { System::Collections::Generic::IEqualityComparer&lt;System::IdentityModel::Claims::Claim ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -579,6 +613,8 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Claims.Claim.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -618,6 +654,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Claims.Claim.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -644,6 +682,8 @@
       <MemberSignature Language="C#" Value="public object Resource { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Resource" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Claims.Claim.Resource" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Resource As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Resource { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -670,6 +710,8 @@
       <MemberSignature Language="C#" Value="public string Right { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Right" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Claims.Claim.Right" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Right As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Right { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -701,6 +743,8 @@
       <MemberSignature Language="C#" Value="public static System.IdentityModel.Claims.Claim System { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.IdentityModel.Claims.Claim System" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Claims.Claim.System" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property System As Claim" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::IdentityModel::Claims::Claim ^ System { System::IdentityModel::Claims::Claim ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -725,6 +769,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Claims.Claim.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

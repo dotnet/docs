@@ -1,7 +1,9 @@
-<Type Name="TagPrefixInfo" FullName="System.Web.Configuration.TagPrefixInfo">
+﻿<Type Name="TagPrefixInfo" FullName="System.Web.Configuration.TagPrefixInfo">
   <TypeSignature Language="C#" Value="public sealed class TagPrefixInfo : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TagPrefixInfo extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.TagPrefixInfo" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TagPrefixInfo&#xA;Inherits ConfigurationElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TagPrefixInfo sealed : System::Configuration::ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -66,6 +68,8 @@
       <MemberSignature Language="C#" Value="public TagPrefixInfo (string tagPrefix, string nameSpace, string assembly, string tagName, string source);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string tagPrefix, string nameSpace, string assembly, string tagName, string source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.TagPrefixInfo.#ctor(System.String,System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (tagPrefix As String, nameSpace As String, assembly As String, tagName As String, source As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TagPrefixInfo(System::String ^ tagPrefix, System::String ^ nameSpace, System::String ^ assembly, System::String ^ tagName, System::String ^ source);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -112,6 +116,8 @@
       <MemberSignature Language="C#" Value="public string Assembly { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Assembly" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.TagPrefixInfo.Assembly" />
+      <MemberSignature Language="VB.NET" Value="Public Property Assembly As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Assembly { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -152,6 +158,8 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationElementProperty ElementProperty { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationElementProperty ElementProperty" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.TagPrefixInfo.ElementProperty" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ElementProperty As ConfigurationElementProperty" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationElementProperty ^ ElementProperty { System::Configuration::ConfigurationElementProperty ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -170,6 +178,8 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object prefix);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object prefix) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.TagPrefixInfo.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (prefix As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ prefix);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -194,6 +204,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.TagPrefixInfo.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -214,6 +226,8 @@
       <MemberSignature Language="C#" Value="public string Namespace { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Namespace" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.TagPrefixInfo.Namespace" />
+      <MemberSignature Language="VB.NET" Value="Public Property Namespace As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Namespace { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -254,6 +268,8 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.TagPrefixInfo.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -272,6 +288,8 @@
       <MemberSignature Language="C#" Value="public string Source { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Source" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.TagPrefixInfo.Source" />
+      <MemberSignature Language="VB.NET" Value="Public Property Source As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Source { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -315,6 +333,8 @@
       <MemberSignature Language="C#" Value="public string TagName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TagName" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.TagPrefixInfo.TagName" />
+      <MemberSignature Language="VB.NET" Value="Public Property TagName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TagName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -355,6 +375,8 @@
       <MemberSignature Language="C#" Value="public string TagPrefix { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TagPrefix" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.TagPrefixInfo.TagPrefix" />
+      <MemberSignature Language="VB.NET" Value="Public Property TagPrefix As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TagPrefix { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="StatusBarDrawItemEventHandler" FullName="System.Windows.Forms.StatusBarDrawItemEventHandler">
+﻿<Type Name="StatusBarDrawItemEventHandler" FullName="System.Windows.Forms.StatusBarDrawItemEventHandler">
   <TypeSignature Language="C#" Value="public delegate void StatusBarDrawItemEventHandler(object sender, StatusBarDrawItemEventArgs sbdevent);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed StatusBarDrawItemEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.StatusBarDrawItemEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub StatusBarDrawItemEventHandler(sender As Object, sbdevent As StatusBarDrawItemEventArgs)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void StatusBarDrawItemEventHandler(System::Object ^ sender, StatusBarDrawItemEventArgs ^ sbdevent);" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

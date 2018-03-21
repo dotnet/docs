@@ -1,7 +1,9 @@
-<Type Name="AudienceUriMode" FullName="System.IdentityModel.Selectors.AudienceUriMode">
+﻿<Type Name="AudienceUriMode" FullName="System.IdentityModel.Selectors.AudienceUriMode">
   <TypeSignature Language="C#" Value="public enum AudienceUriMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AudienceUriMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Selectors.AudienceUriMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum AudienceUriMode" />
+  <TypeSignature Language="C++ CLI" Value="public enum class AudienceUriMode" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +35,8 @@
       <MemberSignature Language="C#" Value="Always" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IdentityModel.Selectors.AudienceUriMode Always = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Selectors.AudienceUriMode.Always" />
+      <MemberSignature Language="VB.NET" Value="Always" />
+      <MemberSignature Language="C++ CLI" Value="Always" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -41,6 +45,7 @@
       <ReturnValue>
         <ReturnType>System.IdentityModel.Selectors.AudienceUriMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Always.</summary>
       </Docs>
@@ -49,6 +54,8 @@
       <MemberSignature Language="C#" Value="BearerKeyOnly" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IdentityModel.Selectors.AudienceUriMode BearerKeyOnly = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Selectors.AudienceUriMode.BearerKeyOnly" />
+      <MemberSignature Language="VB.NET" Value="BearerKeyOnly" />
+      <MemberSignature Language="C++ CLI" Value="BearerKeyOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -57,6 +64,7 @@
       <ReturnValue>
         <ReturnType>System.IdentityModel.Selectors.AudienceUriMode</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Only when the security token's key is of type BearerKey and there are no proof of possession keys in the security token.</summary>
       </Docs>
@@ -65,6 +73,8 @@
       <MemberSignature Language="C#" Value="Never" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IdentityModel.Selectors.AudienceUriMode Never = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Selectors.AudienceUriMode.Never" />
+      <MemberSignature Language="VB.NET" Value="Never" />
+      <MemberSignature Language="C++ CLI" Value="Never" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -73,6 +83,7 @@
       <ReturnValue>
         <ReturnType>System.IdentityModel.Selectors.AudienceUriMode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Never.</summary>
       </Docs>

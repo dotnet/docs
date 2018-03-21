@@ -1,7 +1,9 @@
-<Type Name="MetadataStore" FullName="System.Activities.Presentation.Metadata.MetadataStore">
+﻿<Type Name="MetadataStore" FullName="System.Activities.Presentation.Metadata.MetadataStore">
   <TypeSignature Language="C#" Value="public static class MetadataStore" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed MetadataStore extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Metadata.MetadataStore" />
+  <TypeSignature Language="VB.NET" Value="Public Class MetadataStore" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MetadataStore abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +54,8 @@ internal class Metadata : IRegisterMetadata
       <MemberSignature Language="C#" Value="public static void AddAttributeTable (System.Activities.Presentation.Metadata.AttributeTable table);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AddAttributeTable(class System.Activities.Presentation.Metadata.AttributeTable table) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Metadata.MetadataStore.AddAttributeTable(System.Activities.Presentation.Metadata.AttributeTable)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub AddAttributeTable (table As AttributeTable)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddAttributeTable(System::Activities::Presentation::Metadata::AttributeTable ^ table);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

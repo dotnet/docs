@@ -1,7 +1,9 @@
-<Type Name="CodeActivityContext" FullName="System.Activities.CodeActivityContext">
+﻿<Type Name="CodeActivityContext" FullName="System.Activities.CodeActivityContext">
   <TypeSignature Language="C#" Value="public class CodeActivityContext : System.Activities.ActivityContext" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CodeActivityContext extends System.Activities.ActivityContext" />
   <TypeSignature Language="DocId" Value="T:System.Activities.CodeActivityContext" />
+  <TypeSignature Language="VB.NET" Value="Public Class CodeActivityContext&#xA;Inherits ActivityContext" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CodeActivityContext : System::Activities::ActivityContext" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public THandle GetProperty&lt;THandle&gt; () where THandle : System.Activities.Handle;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!THandle GetProperty&lt;(class System.Activities.Handle) THandle&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.CodeActivityContext.GetProperty``1" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetProperty(Of THandle As Handle) () As THandle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename THandle&gt;&#xA; where THandle : System::Activities::Handle THandle GetProperty();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -46,6 +50,8 @@
       <MemberSignature Language="C#" Value="public void Track (System.Activities.Tracking.CustomTrackingRecord record);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Track(class System.Activities.Tracking.CustomTrackingRecord record) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.CodeActivityContext.Track(System.Activities.Tracking.CustomTrackingRecord)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Track (record As CustomTrackingRecord)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Track(System::Activities::Tracking::CustomTrackingRecord ^ record);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="ISourceBlock&lt;TOutput&gt;" FullName="System.Threading.Tasks.Dataflow.ISourceBlock&lt;TOutput&gt;">
+﻿<Type Name="ISourceBlock&lt;TOutput&gt;" FullName="System.Threading.Tasks.Dataflow.ISourceBlock&lt;TOutput&gt;">
   <TypeSignature Language="C#" Value="public interface ISourceBlock&lt;out TOutput&gt; : System.Threading.Tasks.Dataflow.IDataflowBlock" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISourceBlock`1&lt;+ TOutput&gt; implements class System.Threading.Tasks.Dataflow.IDataflowBlock" />
   <TypeSignature Language="DocId" Value="T:System.Threading.Tasks.Dataflow.ISourceBlock`1" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ISourceBlock(Of Out TOutput)&#xA;Implements IDataflowBlock" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename TOutput&gt;&#xA;public interface class ISourceBlock : System::Threading::Tasks::Dataflow::IDataflowBlock" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
     <AssemblyVersion>4.6.0.0</AssemblyVersion>
@@ -38,6 +40,7 @@
       <MemberSignature Language="C#" Value="public TOutput ConsumeMessage (System.Threading.Tasks.Dataflow.DataflowMessageHeader messageHeader, System.Threading.Tasks.Dataflow.ITargetBlock&lt;out TOutput&gt; target, out bool messageConsumed);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !TOutput ConsumeMessage(valuetype System.Threading.Tasks.Dataflow.DataflowMessageHeader messageHeader, class System.Threading.Tasks.Dataflow.ITargetBlock`1&lt;!TOutput&gt; target, [out] bool&amp; messageConsumed) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.ISourceBlock`1.ConsumeMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{`0},System.Boolean@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ConsumeMessage (messageHeader As DataflowMessageHeader, target As ITargetBlock(Of Out TOutput), ByRef messageConsumed As Boolean) As TOutput" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -78,6 +81,8 @@
       <MemberSignature Language="C#" Value="public IDisposable LinkTo (System.Threading.Tasks.Dataflow.ITargetBlock&lt;out TOutput&gt; target, System.Threading.Tasks.Dataflow.DataflowLinkOptions linkOptions);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IDisposable LinkTo(class System.Threading.Tasks.Dataflow.ITargetBlock`1&lt;!TOutput&gt; target, class System.Threading.Tasks.Dataflow.DataflowLinkOptions linkOptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.ISourceBlock`1.LinkTo(System.Threading.Tasks.Dataflow.ITargetBlock{`0},System.Threading.Tasks.Dataflow.DataflowLinkOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Function LinkTo (target As ITargetBlock(Of Out TOutput), linkOptions As DataflowLinkOptions) As IDisposable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IDisposable ^ LinkTo(System::Threading::Tasks::Dataflow::ITargetBlock&lt;TOutput&gt; ^ target, System::Threading::Tasks::Dataflow::DataflowLinkOptions ^ linkOptions);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -106,6 +111,8 @@
       <MemberSignature Language="C#" Value="public void ReleaseReservation (System.Threading.Tasks.Dataflow.DataflowMessageHeader messageHeader, System.Threading.Tasks.Dataflow.ITargetBlock&lt;out TOutput&gt; target);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ReleaseReservation(valuetype System.Threading.Tasks.Dataflow.DataflowMessageHeader messageHeader, class System.Threading.Tasks.Dataflow.ITargetBlock`1&lt;!TOutput&gt; target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.ISourceBlock`1.ReleaseReservation(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ReleaseReservation (messageHeader As DataflowMessageHeader, target As ITargetBlock(Of Out TOutput))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReleaseReservation(System::Threading::Tasks::Dataflow::DataflowMessageHeader messageHeader, System::Threading::Tasks::Dataflow::ITargetBlock&lt;TOutput&gt; ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -141,6 +148,8 @@
       <MemberSignature Language="C#" Value="public bool ReserveMessage (System.Threading.Tasks.Dataflow.DataflowMessageHeader messageHeader, System.Threading.Tasks.Dataflow.ITargetBlock&lt;out TOutput&gt; target);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ReserveMessage(valuetype System.Threading.Tasks.Dataflow.DataflowMessageHeader messageHeader, class System.Threading.Tasks.Dataflow.ITargetBlock`1&lt;!TOutput&gt; target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.ISourceBlock`1.ReserveMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Function ReserveMessage (messageHeader As DataflowMessageHeader, target As ITargetBlock(Of Out TOutput)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ReserveMessage(System::Threading::Tasks::Dataflow::DataflowMessageHeader messageHeader, System::Threading::Tasks::Dataflow::ITargetBlock&lt;TOutput&gt; ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>

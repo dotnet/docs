@@ -1,7 +1,9 @@
-<Type Name="XmlTextWriter" FullName="System.Xml.XmlTextWriter">
+﻿<Type Name="XmlTextWriter" FullName="System.Xml.XmlTextWriter">
   <TypeSignature Language="C#" Value="public class XmlTextWriter : System.Xml.XmlWriter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlTextWriter extends System.Xml.XmlWriter" />
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlTextWriter" />
+  <TypeSignature Language="VB.NET" Value="Public Class XmlTextWriter&#xA;Inherits XmlWriter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlTextWriter : System::Xml::XmlWriter" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -163,6 +165,8 @@ writer.WriteElementString("price", XmlConvert.ToString(price));
       <MemberSignature Language="C#" Value="public XmlTextWriter (System.IO.TextWriter w);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.TextWriter w) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlTextWriter.#ctor(System.IO.TextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (w As TextWriter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlTextWriter(System::IO::TextWriter ^ w);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -199,6 +203,7 @@ writer.WriteElementString("price", XmlConvert.ToString(price));
       <MemberSignature Language="C#" Value="public XmlTextWriter (System.IO.Stream w, System.Text.Encoding encoding);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream w, class System.Text.Encoding encoding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlTextWriter.#ctor(System.IO.Stream,System.Text.Encoding)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlTextWriter(System::IO::Stream ^ w, System::Text::Encoding ^ encoding);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -240,6 +245,7 @@ writer.WriteElementString("price", XmlConvert.ToString(price));
       <MemberSignature Language="C#" Value="public XmlTextWriter (string filename, System.Text.Encoding encoding);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string filename, class System.Text.Encoding encoding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlTextWriter.#ctor(System.String,System.Text.Encoding)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlTextWriter(System::String ^ filename, System::Text::Encoding ^ encoding);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -284,6 +290,8 @@ writer.WriteElementString("price", XmlConvert.ToString(price));
       <MemberSignature Language="C#" Value="public System.IO.Stream BaseStream { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IO.Stream BaseStream" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlTextWriter.BaseStream" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BaseStream As Stream" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::Stream ^ BaseStream { System::IO::Stream ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -322,6 +330,8 @@ writer.WriteElementString("price", XmlConvert.ToString(price));
       <MemberSignature Language="C#" Value="public override void Close ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Close() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlTextWriter.Close" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Close ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Close();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -371,6 +381,8 @@ writer.WriteElementString("price", XmlConvert.ToString(price));
       <MemberSignature Language="C#" Value="public override void Flush ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Flush() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlTextWriter.Flush" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Flush ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Flush();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -418,6 +430,8 @@ writer.WriteElementString("price", XmlConvert.ToString(price));
       <MemberSignature Language="C#" Value="public System.Xml.Formatting Formatting { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Xml.Formatting Formatting" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlTextWriter.Formatting" />
+      <MemberSignature Language="VB.NET" Value="Public Property Formatting As Formatting" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Formatting Formatting { System::Xml::Formatting get(); void set(System::Xml::Formatting value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -492,6 +506,8 @@ XmlTextWriter w = new XmlTextWriter(Console.Out);
       <MemberSignature Language="C#" Value="public int Indentation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Indentation" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlTextWriter.Indentation" />
+      <MemberSignature Language="VB.NET" Value="Public Property Indentation As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Indentation { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -557,6 +573,8 @@ tw.WriteDocType(name, pubid, sysid, subset);
       <MemberSignature Language="C#" Value="public char IndentChar { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance char IndentChar" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlTextWriter.IndentChar" />
+      <MemberSignature Language="VB.NET" Value="Public Property IndentChar As Char" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property char IndentChar { char get(); void set(char value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -600,6 +618,8 @@ tw.WriteDocType(name, pubid, sysid, subset);
       <MemberSignature Language="C#" Value="public override string LookupPrefix (string ns);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string LookupPrefix(string ns) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlTextWriter.LookupPrefix(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function LookupPrefix (ns As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ LookupPrefix(System::String ^ ns);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -651,6 +671,8 @@ tw.WriteDocType(name, pubid, sysid, subset);
       <MemberSignature Language="C#" Value="public bool Namespaces { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Namespaces" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlTextWriter.Namespaces" />
+      <MemberSignature Language="VB.NET" Value="Public Property Namespaces As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Namespaces { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -693,6 +715,8 @@ tw.WriteDocType(name, pubid, sysid, subset);
       <MemberSignature Language="C#" Value="public char QuoteChar { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance char QuoteChar" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlTextWriter.QuoteChar" />
+      <MemberSignature Language="VB.NET" Value="Public Property QuoteChar As Char" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property char QuoteChar { char get(); void set(char value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -730,6 +754,8 @@ tw.WriteDocType(name, pubid, sysid, subset);
       <MemberSignature Language="C#" Value="public override void WriteBase64 (byte[] buffer, int index, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteBase64(unsigned int8[] buffer, int32 index, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlTextWriter.WriteBase64(System.Byte[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteBase64 (buffer As Byte(), index As Integer, count As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteBase64(cli::array &lt;System::Byte&gt; ^ buffer, int index, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -788,6 +814,8 @@ tw.WriteDocType(name, pubid, sysid, subset);
       <MemberSignature Language="C#" Value="public override void WriteBinHex (byte[] buffer, int index, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteBinHex(unsigned int8[] buffer, int32 index, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlTextWriter.WriteBinHex(System.Byte[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteBinHex (buffer As Byte(), index As Integer, count As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteBinHex(cli::array &lt;System::Byte&gt; ^ buffer, int index, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -837,6 +865,8 @@ tw.WriteDocType(name, pubid, sysid, subset);
       <MemberSignature Language="C#" Value="public override void WriteCData (string text);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteCData(string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlTextWriter.WriteCData(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteCData (text As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteCData(System::String ^ text);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -889,6 +919,8 @@ tw.WriteDocType(name, pubid, sysid, subset);
       <MemberSignature Language="C#" Value="public override void WriteCharEntity (char ch);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteCharEntity(char ch) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlTextWriter.WriteCharEntity(System.Char)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteCharEntity (ch As Char)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteCharEntity(char ch);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -941,6 +973,8 @@ tw.WriteDocType(name, pubid, sysid, subset);
       <MemberSignature Language="C#" Value="public override void WriteChars (char[] buffer, int index, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteChars(char[] buffer, int32 index, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlTextWriter.WriteChars(System.Char[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteChars (buffer As Char(), index As Integer, count As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteChars(cli::array &lt;char&gt; ^ buffer, int index, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1004,6 +1038,8 @@ tw.WriteDocType(name, pubid, sysid, subset);
       <MemberSignature Language="C#" Value="public override void WriteComment (string text);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteComment(string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlTextWriter.WriteComment(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteComment (text As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteComment(System::String ^ text);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1056,6 +1092,8 @@ tw.WriteDocType(name, pubid, sysid, subset);
       <MemberSignature Language="C#" Value="public override void WriteDocType (string name, string pubid, string sysid, string subset);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteDocType(string name, string pubid, string sysid, string subset) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlTextWriter.WriteDocType(System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteDocType (name As String, pubid As String, sysid As String, subset As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteDocType(System::String ^ name, System::String ^ pubid, System::String ^ sysid, System::String ^ subset);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1122,6 +1160,8 @@ tw.WriteDocType(name, pubid, sysid, subset);
       <MemberSignature Language="C#" Value="public override void WriteEndAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteEndAttribute() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlTextWriter.WriteEndAttribute" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteEndAttribute ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteEndAttribute();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1171,6 +1211,8 @@ tw.WriteDocType(name, pubid, sysid, subset);
       <MemberSignature Language="C#" Value="public override void WriteEndDocument ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteEndDocument() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlTextWriter.WriteEndDocument" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteEndDocument ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteEndDocument();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1217,6 +1259,8 @@ tw.WriteDocType(name, pubid, sysid, subset);
       <MemberSignature Language="C#" Value="public override void WriteEndElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteEndElement() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlTextWriter.WriteEndElement" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteEndElement ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteEndElement();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1264,6 +1308,8 @@ tw.WriteDocType(name, pubid, sysid, subset);
       <MemberSignature Language="C#" Value="public override void WriteEntityRef (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteEntityRef(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlTextWriter.WriteEntityRef(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteEntityRef (name As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteEntityRef(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1313,6 +1359,8 @@ tw.WriteDocType(name, pubid, sysid, subset);
       <MemberSignature Language="C#" Value="public override void WriteFullEndElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteFullEndElement() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlTextWriter.WriteFullEndElement" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteFullEndElement ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteFullEndElement();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1360,6 +1408,8 @@ tw.WriteDocType(name, pubid, sysid, subset);
       <MemberSignature Language="C#" Value="public override void WriteName (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteName(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlTextWriter.WriteName(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteName (name As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteName(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1403,6 +1453,8 @@ tw.WriteDocType(name, pubid, sysid, subset);
       <MemberSignature Language="C#" Value="public override void WriteNmToken (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteNmToken(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlTextWriter.WriteNmToken(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteNmToken (name As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteNmToken(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1444,6 +1496,8 @@ tw.WriteDocType(name, pubid, sysid, subset);
       <MemberSignature Language="C#" Value="public override void WriteProcessingInstruction (string name, string text);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteProcessingInstruction(string name, string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlTextWriter.WriteProcessingInstruction(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteProcessingInstruction (name As String, text As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteProcessingInstruction(System::String ^ name, System::String ^ text);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1501,6 +1555,8 @@ tw.WriteDocType(name, pubid, sysid, subset);
       <MemberSignature Language="C#" Value="public override void WriteQualifiedName (string localName, string ns);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteQualifiedName(string localName, string ns) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlTextWriter.WriteQualifiedName(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteQualifiedName (localName As String, ns As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteQualifiedName(System::String ^ localName, System::String ^ ns);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1605,6 +1661,8 @@ writer.WriteStartElement("root");
       <MemberSignature Language="C#" Value="public override void WriteRaw (string data);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteRaw(string data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlTextWriter.WriteRaw(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteRaw (data As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteRaw(System::String ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1658,6 +1716,8 @@ writer.WriteStartElement("root");
       <MemberSignature Language="C#" Value="public override void WriteRaw (char[] buffer, int index, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteRaw(char[] buffer, int32 index, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlTextWriter.WriteRaw(System.Char[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteRaw (buffer As Char(), index As Integer, count As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteRaw(cli::array &lt;char&gt; ^ buffer, int index, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1714,6 +1774,8 @@ writer.WriteStartElement("root");
       <MemberSignature Language="C#" Value="public override void WriteStartAttribute (string prefix, string localName, string ns);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteStartAttribute(string prefix, string localName, string ns) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlTextWriter.WriteStartAttribute(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteStartAttribute (prefix As String, localName As String, ns As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteStartAttribute(System::String ^ prefix, System::String ^ localName, System::String ^ ns);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1794,6 +1856,8 @@ writer.WriteStartElement("root");
       <MemberSignature Language="C#" Value="public override void WriteStartDocument ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteStartDocument() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlTextWriter.WriteStartDocument" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteStartDocument ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteStartDocument();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1846,6 +1910,8 @@ writer.WriteStartElement("root");
       <MemberSignature Language="C#" Value="public override void WriteStartDocument (bool standalone);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteStartDocument(bool standalone) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlTextWriter.WriteStartDocument(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteStartDocument (standalone As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteStartDocument(bool standalone);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1892,6 +1958,8 @@ writer.WriteStartElement("root");
       <MemberSignature Language="C#" Value="public override void WriteStartElement (string prefix, string localName, string ns);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteStartElement(string prefix, string localName, string ns) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlTextWriter.WriteStartElement(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteStartElement (prefix As String, localName As String, ns As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteStartElement(System::String ^ prefix, System::String ^ localName, System::String ^ ns);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1947,6 +2015,8 @@ writer.WriteStartElement("root");
       <MemberSignature Language="C#" Value="public override System.Xml.WriteState WriteState { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Xml.WriteState WriteState" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlTextWriter.WriteState" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property WriteState As WriteState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xml::WriteState WriteState { System::Xml::WriteState get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1983,6 +2053,8 @@ writer.WriteStartElement("root");
       <MemberSignature Language="C#" Value="public override void WriteString (string text);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteString(string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlTextWriter.WriteString(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteString (text As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteString(System::String ^ text);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -2048,6 +2120,8 @@ test&lt;item&gt;test
       <MemberSignature Language="C#" Value="public override void WriteSurrogateCharEntity (char lowChar, char highChar);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteSurrogateCharEntity(char lowChar, char highChar) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlTextWriter.WriteSurrogateCharEntity(System.Char,System.Char)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteSurrogateCharEntity (lowChar As Char, highChar As Char)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteSurrogateCharEntity(char lowChar, char highChar);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -2098,6 +2172,8 @@ test&lt;item&gt;test
       <MemberSignature Language="C#" Value="public override void WriteWhitespace (string ws);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteWhitespace(string ws) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlTextWriter.WriteWhitespace(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteWhitespace (ws As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteWhitespace(System::String ^ ws);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -2150,6 +2226,8 @@ test&lt;item&gt;test
       <MemberSignature Language="C#" Value="public override string XmlLang { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XmlLang" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlTextWriter.XmlLang" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property XmlLang As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ XmlLang { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -2188,6 +2266,8 @@ test&lt;item&gt;test
       <MemberSignature Language="C#" Value="public override System.Xml.XmlSpace XmlSpace { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Xml.XmlSpace XmlSpace" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlTextWriter.XmlSpace" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property XmlSpace As XmlSpace" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xml::XmlSpace XmlSpace { System::Xml::XmlSpace get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

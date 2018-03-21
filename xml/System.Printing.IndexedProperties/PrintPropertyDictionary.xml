@@ -1,7 +1,9 @@
-<Type Name="PrintPropertyDictionary" FullName="System.Printing.IndexedProperties.PrintPropertyDictionary">
-  <TypeSignature Language="C#" Value="public class PrintPropertyDictionary : System.Collections.Hashtable, IDisposable" />
+﻿<Type Name="PrintPropertyDictionary" FullName="System.Printing.IndexedProperties.PrintPropertyDictionary">
+  <TypeSignature Language="C#" Value="public class PrintPropertyDictionary : System.Collections.Hashtable, IDisposable, System.Runtime.Serialization.IDeserializationCallback, System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit PrintPropertyDictionary extends System.Collections.Hashtable implements class System.IDisposable, class System.Runtime.Serialization.IDeserializationCallback, class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.Printing.IndexedProperties.PrintPropertyDictionary" />
+  <TypeSignature Language="VB.NET" Value="Public Class PrintPropertyDictionary&#xA;Inherits Hashtable&#xA;Implements IDeserializationCallback, IDisposable, ISerializable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PrintPropertyDictionary : System::Collections::Hashtable, IDisposable, System::Runtime::Serialization::IDeserializationCallback, System::Runtime::Serialization::ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.Printing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -12,6 +14,12 @@
   <Interfaces>
     <Interface>
       <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Runtime.Serialization.IDeserializationCallback</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Runtime.Serialization.ISerializable</InterfaceName>
     </Interface>
   </Interfaces>
   <Docs>
@@ -39,10 +47,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Printing.IndexedProperties.PrintPropertyDictionary" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public PrintPropertyDictionary ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintPropertyDictionary.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PrintPropertyDictionary();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -58,6 +77,8 @@
       <MemberSignature Language="C#" Value="protected PrintPropertyDictionary (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintPropertyDictionary.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; PrintPropertyDictionary(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -78,6 +99,8 @@
       <MemberSignature Language="C#" Value="public void Add (System.Printing.IndexedProperties.PrintProperty attributeValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Printing.IndexedProperties.PrintProperty attributeValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintPropertyDictionary.Add(System.Printing.IndexedProperties.PrintProperty)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (attributeValue As PrintProperty)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Printing::IndexedProperties::PrintProperty ^ attributeValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -113,11 +136,25 @@
         <altmember cref="M:System.Printing.IndexedProperties.PrintPropertyDictionary.SetProperty(System.String,System.Printing.IndexedProperties.PrintProperty)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the resources that are being used by the <see cref="T:System.Printing.IndexedProperties.PrintPropertyDictionary" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Dispose">
       <MemberSignature Language="C#" Value="public override sealed void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintPropertyDictionary.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Sub Dispose ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -145,6 +182,8 @@
       <MemberSignature Language="C#" Value="protected virtual void Dispose (bool A_0);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool A_0) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintPropertyDictionary.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (A_0 As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool A_0);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -181,7 +220,12 @@
       <MemberSignature Language="C#" Value="public override void GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintPropertyDictionary.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -209,6 +253,8 @@
       <MemberSignature Language="C#" Value="public System.Printing.IndexedProperties.PrintProperty GetProperty (string attribName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Printing.IndexedProperties.PrintProperty GetProperty(string attribName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintPropertyDictionary.GetProperty(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetProperty (attribName As String) As PrintProperty" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Printing::IndexedProperties::PrintProperty ^ GetProperty(System::String ^ attribName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -238,7 +284,12 @@
       <MemberSignature Language="C#" Value="public override void OnDeserialization (object sender);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void OnDeserialization(object sender) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintPropertyDictionary.OnDeserialization(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnDeserialization (sender As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnDeserialization(System::Object ^ sender);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Serialization.IDeserializationCallback.OnDeserialization(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -259,6 +310,8 @@
       <MemberSignature Language="C#" Value="public void SetProperty (string attribName, System.Printing.IndexedProperties.PrintProperty attribValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetProperty(string attribName, class System.Printing.IndexedProperties.PrintProperty attribValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintPropertyDictionary.SetProperty(System.String,System.Printing.IndexedProperties.PrintProperty)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetProperty (attribName As String, attribValue As PrintProperty)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetProperty(System::String ^ attribName, System::Printing::IndexedProperties::PrintProperty ^ attribValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -295,23 +348,5 @@
           <paramref name="attribName" /> is already in the dictionary and it already has the value <paramref name="attribValue" />.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Dispose">
-      <AssemblyInfo>
-        <AssemblyName>System.Printing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Releases the resources that are being used by the <see cref="T:System.Printing.IndexedProperties.PrintPropertyDictionary" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Printing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Printing.IndexedProperties.PrintPropertyDictionary" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

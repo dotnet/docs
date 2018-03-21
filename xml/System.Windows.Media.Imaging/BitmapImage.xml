@@ -1,7 +1,9 @@
-<Type Name="BitmapImage" FullName="System.Windows.Media.Imaging.BitmapImage">
+﻿<Type Name="BitmapImage" FullName="System.Windows.Media.Imaging.BitmapImage">
   <TypeSignature Language="C#" Value="public sealed class BitmapImage : System.Windows.Media.Imaging.BitmapSource, System.ComponentModel.ISupportInitialize, System.Windows.Markup.IUriContext" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BitmapImage extends System.Windows.Media.Imaging.BitmapSource implements class System.ComponentModel.ISupportInitialize, class System.Windows.Markup.IUriContext" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Imaging.BitmapImage" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BitmapImage&#xA;Inherits BitmapSource&#xA;Implements ISupportInitialize, IUriContext" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BitmapImage sealed : System::Windows::Media::Imaging::BitmapSource, System::ComponentModel::ISupportInitialize, System::Windows::Markup::IUriContext" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,10 +48,21 @@
     <altmember cref="T:System.ComponentModel.ISupportInitialize" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Imaging.BitmapImage" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public BitmapImage ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapImage.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BitmapImage();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -72,6 +85,8 @@
       <MemberSignature Language="C#" Value="public BitmapImage (Uri uriSource);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri uriSource) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapImage.#ctor(System.Uri)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (uriSource As Uri)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BitmapImage(Uri ^ uriSource);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -100,6 +115,8 @@
       <MemberSignature Language="C#" Value="public BitmapImage (Uri uriSource, System.Net.Cache.RequestCachePolicy uriCachePolicy);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri uriSource, class System.Net.Cache.RequestCachePolicy uriCachePolicy) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapImage.#ctor(System.Uri,System.Net.Cache.RequestCachePolicy)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (uriSource As Uri, uriCachePolicy As RequestCachePolicy)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BitmapImage(Uri ^ uriSource, System::Net::Cache::RequestCachePolicy ^ uriCachePolicy);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -133,7 +150,12 @@
       <MemberSignature Language="C#" Value="public Uri BaseUri { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri BaseUri" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapImage.BaseUri" />
+      <MemberSignature Language="VB.NET" Value="Public Property BaseUri As Uri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ BaseUri { Uri ^ get(); void set(Uri ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Windows.Markup.IUriContext.BaseUri</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -152,6 +174,8 @@
       <MemberSignature Language="C#" Value="public void BeginInit ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void BeginInit() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapImage.BeginInit" />
+      <MemberSignature Language="VB.NET" Value="Public Sub BeginInit ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void BeginInit();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -192,6 +216,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Imaging.BitmapCacheOption CacheOption { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Media.Imaging.BitmapCacheOption CacheOption" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapImage.CacheOption" />
+      <MemberSignature Language="VB.NET" Value="Public Property CacheOption As BitmapCacheOption" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Imaging::BitmapCacheOption CacheOption { System::Windows::Media::Imaging::BitmapCacheOption get(); void set(System::Windows::Media::Imaging::BitmapCacheOption value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -234,6 +260,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty CacheOptionProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty CacheOptionProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Imaging.BitmapImage.CacheOptionProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CacheOptionProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CacheOptionProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -251,6 +279,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Imaging.BitmapImage Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.Imaging.BitmapImage Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapImage.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As BitmapImage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Imaging::BitmapImage ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -282,6 +312,8 @@
       <MemberSignature Language="C#" Value="protected override void CloneCore (System.Windows.Freezable source);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CloneCore(class System.Windows.Freezable source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapImage.CloneCore(System.Windows.Freezable)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CloneCore (source As Freezable)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CloneCore(System::Windows::Freezable ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -303,6 +335,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Imaging.BitmapImage CloneCurrentValue ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.Imaging.BitmapImage CloneCurrentValue() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapImage.CloneCurrentValue" />
+      <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As BitmapImage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Imaging::BitmapImage ^ CloneCurrentValue();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -332,6 +366,8 @@
       <MemberSignature Language="C#" Value="protected override void CloneCurrentValueCore (System.Windows.Freezable source);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CloneCurrentValueCore(class System.Windows.Freezable source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapImage.CloneCurrentValueCore(System.Windows.Freezable)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CloneCurrentValueCore (source As Freezable)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CloneCurrentValueCore(System::Windows::Freezable ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -353,6 +389,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapImage.CreateInstanceCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -372,6 +410,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Imaging.BitmapCreateOptions CreateOptions { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Media.Imaging.BitmapCreateOptions CreateOptions" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapImage.CreateOptions" />
+      <MemberSignature Language="VB.NET" Value="Public Property CreateOptions As BitmapCreateOptions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Imaging::BitmapCreateOptions CreateOptions { System::Windows::Media::Imaging::BitmapCreateOptions get(); void set(System::Windows::Media::Imaging::BitmapCreateOptions value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -413,6 +453,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty CreateOptionsProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty CreateOptionsProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Imaging.BitmapImage.CreateOptionsProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CreateOptionsProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CreateOptionsProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -430,6 +472,8 @@
       <MemberSignature Language="C#" Value="public int DecodePixelHeight { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 DecodePixelHeight" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapImage.DecodePixelHeight" />
+      <MemberSignature Language="VB.NET" Value="Public Property DecodePixelHeight As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int DecodePixelHeight { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -474,6 +518,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty DecodePixelHeightProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty DecodePixelHeightProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Imaging.BitmapImage.DecodePixelHeightProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DecodePixelHeightProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ DecodePixelHeightProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -491,6 +537,8 @@
       <MemberSignature Language="C#" Value="public int DecodePixelWidth { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 DecodePixelWidth" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapImage.DecodePixelWidth" />
+      <MemberSignature Language="VB.NET" Value="Public Property DecodePixelWidth As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int DecodePixelWidth { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -535,6 +583,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty DecodePixelWidthProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty DecodePixelWidthProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Imaging.BitmapImage.DecodePixelWidthProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DecodePixelWidthProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ DecodePixelWidthProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -552,6 +602,8 @@
       <MemberSignature Language="C#" Value="public void EndInit ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndInit() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapImage.EndInit" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EndInit ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EndInit();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -592,6 +644,8 @@
       <MemberSignature Language="C#" Value="protected override void GetAsFrozenCore (System.Windows.Freezable source);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void GetAsFrozenCore(class System.Windows.Freezable source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapImage.GetAsFrozenCore(System.Windows.Freezable)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetAsFrozenCore (source As Freezable)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetAsFrozenCore(System::Windows::Freezable ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -613,6 +667,8 @@
       <MemberSignature Language="C#" Value="protected override void GetCurrentValueAsFrozenCore (System.Windows.Freezable source);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void GetCurrentValueAsFrozenCore(class System.Windows.Freezable source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapImage.GetCurrentValueAsFrozenCore(System.Windows.Freezable)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetCurrentValueAsFrozenCore (source As Freezable)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetCurrentValueAsFrozenCore(System::Windows::Freezable ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -634,6 +690,8 @@
       <MemberSignature Language="C#" Value="public override bool IsDownloading { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsDownloading" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapImage.IsDownloading" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsDownloading As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsDownloading { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -663,6 +721,8 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Media.ImageMetadata Metadata { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.ImageMetadata Metadata" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapImage.Metadata" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Metadata As ImageMetadata" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Media::ImageMetadata ^ Metadata { System::Windows::Media::ImageMetadata ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -685,6 +745,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Imaging.Rotation Rotation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Media.Imaging.Rotation Rotation" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapImage.Rotation" />
+      <MemberSignature Language="VB.NET" Value="Public Property Rotation As Rotation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Imaging::Rotation Rotation { System::Windows::Media::Imaging::Rotation get(); void set(System::Windows::Media::Imaging::Rotation value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -729,6 +791,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty RotationProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty RotationProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Imaging.BitmapImage.RotationProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly RotationProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ RotationProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -746,6 +810,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Int32Rect SourceRect { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Int32Rect SourceRect" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapImage.SourceRect" />
+      <MemberSignature Language="VB.NET" Value="Public Property SourceRect As Int32Rect" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Int32Rect SourceRect { System::Windows::Int32Rect get(); void set(System::Windows::Int32Rect value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -778,6 +844,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty SourceRectProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty SourceRectProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Imaging.BitmapImage.SourceRectProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SourceRectProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ SourceRectProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -795,6 +863,8 @@
       <MemberSignature Language="C#" Value="public System.IO.Stream StreamSource { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IO.Stream StreamSource" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapImage.StreamSource" />
+      <MemberSignature Language="VB.NET" Value="Public Property StreamSource As Stream" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::Stream ^ StreamSource { System::IO::Stream ^ get(); void set(System::IO::Stream ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -802,7 +872,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -836,6 +906,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty StreamSourceProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty StreamSourceProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Imaging.BitmapImage.StreamSourceProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StreamSourceProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ StreamSourceProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -853,6 +925,8 @@
       <MemberSignature Language="C#" Value="public System.Net.Cache.RequestCachePolicy UriCachePolicy { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Cache.RequestCachePolicy UriCachePolicy" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapImage.UriCachePolicy" />
+      <MemberSignature Language="VB.NET" Value="Public Property UriCachePolicy As RequestCachePolicy" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Cache::RequestCachePolicy ^ UriCachePolicy { System::Net::Cache::RequestCachePolicy ^ get(); void set(System::Net::Cache::RequestCachePolicy ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -885,6 +959,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty UriCachePolicyProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty UriCachePolicyProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Imaging.BitmapImage.UriCachePolicyProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly UriCachePolicyProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ UriCachePolicyProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -909,6 +985,8 @@
       <MemberSignature Language="C#" Value="public Uri UriSource { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri UriSource" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapImage.UriSource" />
+      <MemberSignature Language="VB.NET" Value="Public Property UriSource As Uri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ UriSource { Uri ^ get(); void set(Uri ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -954,6 +1032,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty UriSourceProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty UriSourceProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Imaging.BitmapImage.UriSourceProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly UriSourceProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ UriSourceProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -967,14 +1047,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Imaging.BitmapImage" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

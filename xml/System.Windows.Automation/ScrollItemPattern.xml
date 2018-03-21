@@ -1,7 +1,9 @@
-<Type Name="ScrollItemPattern" FullName="System.Windows.Automation.ScrollItemPattern">
+﻿<Type Name="ScrollItemPattern" FullName="System.Windows.Automation.ScrollItemPattern">
   <TypeSignature Language="C#" Value="public class ScrollItemPattern : System.Windows.Automation.BasePattern" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ScrollItemPattern extends System.Windows.Automation.BasePattern" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.ScrollItemPattern" />
+  <TypeSignature Language="VB.NET" Value="Public Class ScrollItemPattern&#xA;Inherits BasePattern" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ScrollItemPattern : System::Windows::Automation::BasePattern" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationClient</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +29,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationPattern Pattern;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationPattern Pattern" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ScrollItemPattern.Pattern" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Pattern As AutomationPattern " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationPattern ^ Pattern;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -61,6 +65,8 @@
       <MemberSignature Language="C#" Value="public void ScrollIntoView ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ScrollIntoView() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.ScrollItemPattern.ScrollIntoView" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ScrollIntoView ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ScrollIntoView();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>

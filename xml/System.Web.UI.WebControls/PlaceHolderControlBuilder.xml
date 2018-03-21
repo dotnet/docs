@@ -1,7 +1,9 @@
-<Type Name="PlaceHolderControlBuilder" FullName="System.Web.UI.WebControls.PlaceHolderControlBuilder">
+﻿<Type Name="PlaceHolderControlBuilder" FullName="System.Web.UI.WebControls.PlaceHolderControlBuilder">
   <TypeSignature Language="C#" Value="public class PlaceHolderControlBuilder : System.Web.UI.ControlBuilder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PlaceHolderControlBuilder extends System.Web.UI.ControlBuilder" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.PlaceHolderControlBuilder" />
+  <TypeSignature Language="VB.NET" Value="Public Class PlaceHolderControlBuilder&#xA;Inherits ControlBuilder" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PlaceHolderControlBuilder : System::Web::UI::ControlBuilder" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +26,8 @@
       <MemberSignature Language="C#" Value="public PlaceHolderControlBuilder ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.PlaceHolderControlBuilder.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PlaceHolderControlBuilder();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -39,6 +43,8 @@
       <MemberSignature Language="C#" Value="public override bool AllowWhitespaceLiterals ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool AllowWhitespaceLiterals() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.PlaceHolderControlBuilder.AllowWhitespaceLiterals" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function AllowWhitespaceLiterals () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool AllowWhitespaceLiterals();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

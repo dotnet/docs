@@ -1,7 +1,9 @@
-<Type Name="CodeBinaryOperatorExpression" FullName="System.CodeDom.CodeBinaryOperatorExpression">
+﻿<Type Name="CodeBinaryOperatorExpression" FullName="System.CodeDom.CodeBinaryOperatorExpression">
   <TypeSignature Language="C#" Value="public class CodeBinaryOperatorExpression : System.CodeDom.CodeExpression" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CodeBinaryOperatorExpression extends System.CodeDom.CodeExpression" />
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeBinaryOperatorExpression" />
+  <TypeSignature Language="VB.NET" Value="Public Class CodeBinaryOperatorExpression&#xA;Inherits CodeExpression" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CodeBinaryOperatorExpression : System::CodeDom::CodeExpression" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -16,7 +18,7 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
@@ -45,10 +47,21 @@
     <altmember cref="T:System.CodeDom.CodeBinaryOperatorType" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeBinaryOperatorExpression" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public CodeBinaryOperatorExpression ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeBinaryOperatorExpression.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeBinaryOperatorExpression();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -70,6 +83,8 @@
       <MemberSignature Language="C#" Value="public CodeBinaryOperatorExpression (System.CodeDom.CodeExpression left, System.CodeDom.CodeBinaryOperatorType op, System.CodeDom.CodeExpression right);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.CodeDom.CodeExpression left, valuetype System.CodeDom.CodeBinaryOperatorType op, class System.CodeDom.CodeExpression right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeBinaryOperatorExpression.#ctor(System.CodeDom.CodeExpression,System.CodeDom.CodeBinaryOperatorType,System.CodeDom.CodeExpression)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (left As CodeExpression, op As CodeBinaryOperatorType, right As CodeExpression)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeBinaryOperatorExpression(System::CodeDom::CodeExpression ^ left, System::CodeDom::CodeBinaryOperatorType op, System::CodeDom::CodeExpression ^ right);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -97,6 +112,8 @@
       <MemberSignature Language="C#" Value="public System.CodeDom.CodeExpression Left { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeExpression Left" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeBinaryOperatorExpression.Left" />
+      <MemberSignature Language="VB.NET" Value="Public Property Left As CodeExpression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeExpression ^ Left { System::CodeDom::CodeExpression ^ get(); void set(System::CodeDom::CodeExpression ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -120,6 +137,8 @@
       <MemberSignature Language="C#" Value="public System.CodeDom.CodeBinaryOperatorType Operator { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.CodeDom.CodeBinaryOperatorType Operator" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeBinaryOperatorExpression.Operator" />
+      <MemberSignature Language="VB.NET" Value="Public Property Operator As CodeBinaryOperatorType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeBinaryOperatorType Operator { System::CodeDom::CodeBinaryOperatorType get(); void set(System::CodeDom::CodeBinaryOperatorType value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -150,6 +169,8 @@
       <MemberSignature Language="C#" Value="public System.CodeDom.CodeExpression Right { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeExpression Right" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeBinaryOperatorExpression.Right" />
+      <MemberSignature Language="VB.NET" Value="Public Property Right As CodeExpression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeExpression ^ Right { System::CodeDom::CodeExpression ^ get(); void set(System::CodeDom::CodeExpression ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -169,14 +190,5 @@
         <altmember cref="T:System.CodeDom.CodeExpression" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeBinaryOperatorExpression" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

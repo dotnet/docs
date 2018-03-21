@@ -1,7 +1,9 @@
-<Type Name="RectangleStylusShape" FullName="System.Windows.Ink.RectangleStylusShape">
+﻿<Type Name="RectangleStylusShape" FullName="System.Windows.Ink.RectangleStylusShape">
   <TypeSignature Language="C#" Value="public sealed class RectangleStylusShape : System.Windows.Ink.StylusShape" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RectangleStylusShape extends System.Windows.Ink.StylusShape" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Ink.RectangleStylusShape" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RectangleStylusShape&#xA;Inherits StylusShape" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RectangleStylusShape sealed : System::Windows::Ink::StylusShape" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,10 +27,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Ink.RectangleStylusShape" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public RectangleStylusShape (double width, double height);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 width, float64 height) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Ink.RectangleStylusShape.#ctor(System.Double,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (width As Double, height As Double)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RectangleStylusShape(double width, double height);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -59,6 +72,8 @@
       <MemberSignature Language="C#" Value="public RectangleStylusShape (double width, double height, double rotation);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 width, float64 height, float64 rotation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Ink.RectangleStylusShape.#ctor(System.Double,System.Double,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (width As Double, height As Double, rotation As Double)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RectangleStylusShape(double width, double height, double rotation);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -87,14 +102,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Ink.RectangleStylusShape" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

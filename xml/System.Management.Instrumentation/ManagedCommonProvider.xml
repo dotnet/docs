@@ -1,7 +1,9 @@
-<Type Name="ManagedCommonProvider" FullName="System.Management.Instrumentation.ManagedCommonProvider">
+﻿<Type Name="ManagedCommonProvider" FullName="System.Management.Instrumentation.ManagedCommonProvider">
   <TypeSignature Language="C#" Value="public class ManagedCommonProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ManagedCommonProvider extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Management.Instrumentation.ManagedCommonProvider" />
+  <TypeSignature Language="VB.NET" Value="Public Class ManagedCommonProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ManagedCommonProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Management.Instrumentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -12,7 +14,7 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.None)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
@@ -35,6 +37,8 @@
       <MemberSignature Language="C#" Value="public ManagedCommonProvider ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.Instrumentation.ManagedCommonProvider.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ManagedCommonProvider();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management.Instrumentation</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="TypeDescriptorPermission" FullName="System.Security.Permissions.TypeDescriptorPermission">
+﻿<Type Name="TypeDescriptorPermission" FullName="System.Security.Permissions.TypeDescriptorPermission">
   <TypeSignature Language="C#" Value="public sealed class TypeDescriptorPermission : System.Security.CodeAccessPermission, System.Security.Permissions.IUnrestrictedPermission" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit TypeDescriptorPermission extends System.Security.CodeAccessPermission implements class System.Security.Permissions.IUnrestrictedPermission" />
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.TypeDescriptorPermission" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TypeDescriptorPermission&#xA;Inherits CodeAccessPermission&#xA;Implements IUnrestrictedPermission" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TypeDescriptorPermission sealed : System::Security::CodeAccessPermission, System::Security::Permissions::IUnrestrictedPermission" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -40,10 +42,22 @@
     <altmember cref="T:System.ComponentModel.TypeDescriptor" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Permissions.TypeDescriptorPermission" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public TypeDescriptorPermission (System.Security.Permissions.PermissionState state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Permissions.PermissionState state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.TypeDescriptorPermission.#ctor(System.Security.Permissions.PermissionState)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (state As PermissionState)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TypeDescriptorPermission(System::Security::Permissions::PermissionState state);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -70,6 +84,8 @@
       <MemberSignature Language="C#" Value="public TypeDescriptorPermission (System.Security.Permissions.TypeDescriptorPermissionFlags flag);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Permissions.TypeDescriptorPermissionFlags flag) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.TypeDescriptorPermission.#ctor(System.Security.Permissions.TypeDescriptorPermissionFlags)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (flag As TypeDescriptorPermissionFlags)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TypeDescriptorPermission(System::Security::Permissions::TypeDescriptorPermissionFlags flag);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -94,6 +110,8 @@
       <MemberSignature Language="C#" Value="public override System.Security.IPermission Copy ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission Copy() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.TypeDescriptorPermission.Copy" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Copy () As IPermission" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Copy();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -120,6 +138,8 @@
       <MemberSignature Language="C#" Value="public System.Security.Permissions.TypeDescriptorPermissionFlags Flags { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.Permissions.TypeDescriptorPermissionFlags Flags" />
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.TypeDescriptorPermission.Flags" />
+      <MemberSignature Language="VB.NET" Value="Public Property Flags As TypeDescriptorPermissionFlags" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Permissions::TypeDescriptorPermissionFlags Flags { System::Security::Permissions::TypeDescriptorPermissionFlags get(); void set(System::Security::Permissions::TypeDescriptorPermissionFlags value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -144,6 +164,7 @@
       <MemberSignature Language="C#" Value="public override void FromXml (System.Security.SecurityElement securityElement);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void FromXml(class System.Security.SecurityElement securityElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.TypeDescriptorPermission.FromXml(System.Security.SecurityElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void FromXml(System::Security::SecurityElement ^ securityElement);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -172,6 +193,8 @@
       <MemberSignature Language="C#" Value="public override System.Security.IPermission Intersect (System.Security.IPermission target);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission Intersect(class System.Security.IPermission target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.TypeDescriptorPermission.Intersect(System.Security.IPermission)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Intersect (target As IPermission) As IPermission" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Intersect(System::Security::IPermission ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -201,6 +224,8 @@
       <MemberSignature Language="C#" Value="public override bool IsSubsetOf (System.Security.IPermission target);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsSubsetOf(class System.Security.IPermission target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.TypeDescriptorPermission.IsSubsetOf(System.Security.IPermission)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function IsSubsetOf (target As IPermission) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsSubsetOf(System::Security::IPermission ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -231,6 +256,8 @@
       <MemberSignature Language="C#" Value="public bool IsUnrestricted ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsUnrestricted() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.TypeDescriptorPermission.IsUnrestricted" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsUnrestricted () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsUnrestricted();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -257,6 +284,8 @@
       <MemberSignature Language="C#" Value="public override System.Security.SecurityElement ToXml ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.SecurityElement ToXml() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.TypeDescriptorPermission.ToXml" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToXml () As SecurityElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::SecurityElement ^ ToXml();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -282,6 +311,8 @@
       <MemberSignature Language="C#" Value="public override System.Security.IPermission Union (System.Security.IPermission target);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission Union(class System.Security.IPermission target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.TypeDescriptorPermission.Union(System.Security.IPermission)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Union (target As IPermission) As IPermission" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Union(System::Security::IPermission ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -306,15 +337,5 @@
         <altmember cref="M:System.Security.CodeAccessPermission.Union(System.Security.IPermission)" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.Permissions.TypeDescriptorPermission" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

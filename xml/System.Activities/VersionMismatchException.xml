@@ -1,7 +1,9 @@
-<Type Name="VersionMismatchException" FullName="System.Activities.VersionMismatchException">
+﻿<Type Name="VersionMismatchException" FullName="System.Activities.VersionMismatchException">
   <TypeSignature Language="C#" Value="public class VersionMismatchException : Exception" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit VersionMismatchException extends System.Exception" />
   <TypeSignature Language="DocId" Value="T:System.Activities.VersionMismatchException" />
+  <TypeSignature Language="VB.NET" Value="Public Class VersionMismatchException&#xA;Inherits Exception" />
+  <TypeSignature Language="C++ CLI" Value="public ref class VersionMismatchException : Exception" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,10 +42,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.VersionMismatchException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public VersionMismatchException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.VersionMismatchException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; VersionMismatchException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -59,6 +72,8 @@
       <MemberSignature Language="C#" Value="public VersionMismatchException (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.VersionMismatchException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; VersionMismatchException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -77,6 +92,8 @@
       <MemberSignature Language="C#" Value="public VersionMismatchException (System.Activities.WorkflowIdentity expectedVersion, System.Activities.WorkflowIdentity actualVersion);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Activities.WorkflowIdentity expectedVersion, class System.Activities.WorkflowIdentity actualVersion) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.VersionMismatchException.#ctor(System.Activities.WorkflowIdentity,System.Activities.WorkflowIdentity)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (expectedVersion As WorkflowIdentity, actualVersion As WorkflowIdentity)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; VersionMismatchException(System::Activities::WorkflowIdentity ^ expectedVersion, System::Activities::WorkflowIdentity ^ actualVersion);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -97,6 +114,8 @@
       <MemberSignature Language="C#" Value="protected VersionMismatchException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.VersionMismatchException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; VersionMismatchException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -117,6 +136,8 @@
       <MemberSignature Language="C#" Value="public VersionMismatchException (string message, Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.VersionMismatchException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; VersionMismatchException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -137,6 +158,8 @@
       <MemberSignature Language="C#" Value="public VersionMismatchException (string message, System.Activities.WorkflowIdentity expectedVersion, System.Activities.WorkflowIdentity actualVersion);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Activities.WorkflowIdentity expectedVersion, class System.Activities.WorkflowIdentity actualVersion) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.VersionMismatchException.#ctor(System.String,System.Activities.WorkflowIdentity,System.Activities.WorkflowIdentity)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, expectedVersion As WorkflowIdentity, actualVersion As WorkflowIdentity)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; VersionMismatchException(System::String ^ message, System::Activities::WorkflowIdentity ^ expectedVersion, System::Activities::WorkflowIdentity ^ actualVersion);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -159,6 +182,8 @@
       <MemberSignature Language="C#" Value="public VersionMismatchException (string message, System.Activities.WorkflowIdentity expectedVersion, System.Activities.WorkflowIdentity actualVersion, Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Activities.WorkflowIdentity expectedVersion, class System.Activities.WorkflowIdentity actualVersion, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.VersionMismatchException.#ctor(System.String,System.Activities.WorkflowIdentity,System.Activities.WorkflowIdentity,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, expectedVersion As WorkflowIdentity, actualVersion As WorkflowIdentity, innerException As Exception)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; VersionMismatchException(System::String ^ message, System::Activities::WorkflowIdentity ^ expectedVersion, System::Activities::WorkflowIdentity ^ actualVersion, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -183,6 +208,8 @@
       <MemberSignature Language="C#" Value="public System.Activities.WorkflowIdentity ActualVersion { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.WorkflowIdentity ActualVersion" />
       <MemberSignature Language="DocId" Value="P:System.Activities.VersionMismatchException.ActualVersion" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActualVersion As WorkflowIdentity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::WorkflowIdentity ^ ActualVersion { System::Activities::WorkflowIdentity ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -201,6 +228,8 @@
       <MemberSignature Language="C#" Value="public System.Activities.WorkflowIdentity ExpectedVersion { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.WorkflowIdentity ExpectedVersion" />
       <MemberSignature Language="DocId" Value="P:System.Activities.VersionMismatchException.ExpectedVersion" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExpectedVersion As WorkflowIdentity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::WorkflowIdentity ^ ExpectedVersion { System::Activities::WorkflowIdentity ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -219,6 +248,8 @@
       <MemberSignature Language="C#" Value="public override void GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.VersionMismatchException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -243,14 +274,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Activities.VersionMismatchException" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

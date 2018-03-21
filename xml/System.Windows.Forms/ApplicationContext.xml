@@ -1,7 +1,9 @@
-<Type Name="ApplicationContext" FullName="System.Windows.Forms.ApplicationContext">
+﻿<Type Name="ApplicationContext" FullName="System.Windows.Forms.ApplicationContext">
   <TypeSignature Language="C#" Value="public class ApplicationContext : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ApplicationContext extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ApplicationContext" />
+  <TypeSignature Language="VB.NET" Value="Public Class ApplicationContext&#xA;Implements IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ApplicationContext : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,10 +41,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ApplicationContext" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ApplicationContext ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ApplicationContext.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ApplicationContext();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -58,6 +71,8 @@
       <MemberSignature Language="C#" Value="public ApplicationContext (System.Windows.Forms.Form mainForm);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.Form mainForm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ApplicationContext.#ctor(System.Windows.Forms.Form)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (mainForm As Form)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ApplicationContext(System::Windows::Forms::Form ^ mainForm);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -79,11 +94,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the resources used by the <see cref="T:System.Windows.Forms.ApplicationContext" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Dispose">
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ApplicationContext.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -111,6 +140,8 @@
       <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ApplicationContext.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -148,6 +179,8 @@
       <MemberSignature Language="C#" Value="public void ExitThread ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ExitThread() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ApplicationContext.ExitThread" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ExitThread ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ExitThread();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -187,6 +220,8 @@
       <MemberSignature Language="C#" Value="protected virtual void ExitThreadCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ExitThreadCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ApplicationContext.ExitThreadCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ExitThreadCore ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ExitThreadCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -215,6 +250,8 @@
       <MemberSignature Language="C#" Value="~ApplicationContext ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ApplicationContext.Finalize" />
+      <MemberSignature Language="VB.NET" Value="Finalize ()" />
+      <MemberSignature Language="C++ CLI" Value="!ApplicationContext ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -244,6 +281,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.Form MainForm { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.Form MainForm" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ApplicationContext.MainForm" />
+      <MemberSignature Language="VB.NET" Value="Public Property MainForm As Form" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Form ^ MainForm { System::Windows::Forms::Form ^ get(); void set(System::Windows::Forms::Form ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -269,6 +308,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnMainFormClosed (object sender, EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnMainFormClosed(object sender, class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ApplicationContext.OnMainFormClosed(System.Object,System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnMainFormClosed (sender As Object, e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnMainFormClosed(System::Object ^ sender, EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -299,6 +340,8 @@
       <MemberSignature Language="C#" Value="public object Tag { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Tag" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ApplicationContext.Tag" />
+      <MemberSignature Language="VB.NET" Value="Public Property Tag As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Tag { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -340,6 +383,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler ThreadExit;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ThreadExit" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ApplicationContext.ThreadExit" />
+      <MemberSignature Language="VB.NET" Value="Public Event ThreadExit As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ThreadExit;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -365,23 +410,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ApplicationContext" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Dispose">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Releases the resources used by the <see cref="T:System.Windows.Forms.ApplicationContext" />.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

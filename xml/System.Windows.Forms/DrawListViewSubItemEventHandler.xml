@@ -1,7 +1,9 @@
-<Type Name="DrawListViewSubItemEventHandler" FullName="System.Windows.Forms.DrawListViewSubItemEventHandler">
+﻿<Type Name="DrawListViewSubItemEventHandler" FullName="System.Windows.Forms.DrawListViewSubItemEventHandler">
   <TypeSignature Language="C#" Value="public delegate void DrawListViewSubItemEventHandler(object sender, DrawListViewSubItemEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DrawListViewSubItemEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DrawListViewSubItemEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub DrawListViewSubItemEventHandler(sender As Object, e As DrawListViewSubItemEventArgs)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void DrawListViewSubItemEventHandler(System::Object ^ sender, DrawListViewSubItemEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

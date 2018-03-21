@@ -1,7 +1,9 @@
-<Type Name="DataColumnChangeEventArgs" FullName="System.Data.DataColumnChangeEventArgs">
+﻿<Type Name="DataColumnChangeEventArgs" FullName="System.Data.DataColumnChangeEventArgs">
   <TypeSignature Language="C#" Value="public class DataColumnChangeEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataColumnChangeEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Data.DataColumnChangeEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class DataColumnChangeEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataColumnChangeEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -39,6 +41,8 @@
       <MemberSignature Language="C#" Value="public DataColumnChangeEventArgs (System.Data.DataRow row, System.Data.DataColumn column, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Data.DataRow row, class System.Data.DataColumn column, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataColumnChangeEventArgs.#ctor(System.Data.DataRow,System.Data.DataColumn,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (row As DataRow, column As DataColumn, value As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataColumnChangeEventArgs(System::Data::DataRow ^ row, System::Data::DataColumn ^ column, System::Object ^ value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -74,6 +78,8 @@
       <MemberSignature Language="C#" Value="public System.Data.DataColumn Column { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.DataColumn Column" />
       <MemberSignature Language="DocId" Value="P:System.Data.DataColumnChangeEventArgs.Column" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Column As DataColumn" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::DataColumn ^ Column { System::Data::DataColumn ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -105,6 +111,8 @@
       <MemberSignature Language="C#" Value="public object ProposedValue { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object ProposedValue" />
       <MemberSignature Language="DocId" Value="P:System.Data.DataColumnChangeEventArgs.ProposedValue" />
+      <MemberSignature Language="VB.NET" Value="Public Property ProposedValue As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ProposedValue { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -136,6 +144,8 @@
       <MemberSignature Language="C#" Value="public System.Data.DataRow Row { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.DataRow Row" />
       <MemberSignature Language="DocId" Value="P:System.Data.DataColumnChangeEventArgs.Row" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Row As DataRow" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::DataRow ^ Row { System::Data::DataRow ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

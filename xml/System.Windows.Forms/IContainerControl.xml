@@ -1,7 +1,9 @@
-<Type Name="IContainerControl" FullName="System.Windows.Forms.IContainerControl">
+﻿<Type Name="IContainerControl" FullName="System.Windows.Forms.IContainerControl">
   <TypeSignature Language="C#" Value="public interface IContainerControl" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IContainerControl" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.IContainerControl" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IContainerControl" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IContainerControl" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +36,8 @@
       <MemberSignature Language="C#" Value="public bool ActivateControl (System.Windows.Forms.Control active);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ActivateControl(class System.Windows.Forms.Control active) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.IContainerControl.ActivateControl(System.Windows.Forms.Control)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ActivateControl (active As Control) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ActivateControl(System::Windows::Forms::Control ^ active);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -73,6 +77,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.Control ActiveControl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.Control ActiveControl" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.IContainerControl.ActiveControl" />
+      <MemberSignature Language="VB.NET" Value="Public Property ActiveControl As Control" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Control ^ ActiveControl { System::Windows::Forms::Control ^ get(); void set(System::Windows::Forms::Control ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="SimplePropertyEntry" FullName="System.Web.UI.SimplePropertyEntry">
+﻿<Type Name="SimplePropertyEntry" FullName="System.Web.UI.SimplePropertyEntry">
   <TypeSignature Language="C#" Value="public class SimplePropertyEntry : System.Web.UI.PropertyEntry" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SimplePropertyEntry extends System.Web.UI.PropertyEntry" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.SimplePropertyEntry" />
+  <TypeSignature Language="VB.NET" Value="Public Class SimplePropertyEntry&#xA;Inherits PropertyEntry" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SimplePropertyEntry : System::Web::UI::PropertyEntry" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +29,8 @@
       <MemberSignature Language="C#" Value="public string PersistedValue { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PersistedValue" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.SimplePropertyEntry.PersistedValue" />
+      <MemberSignature Language="VB.NET" Value="Public Property PersistedValue As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PersistedValue { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -46,6 +50,8 @@
       <MemberSignature Language="C#" Value="public bool UseSetAttribute { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UseSetAttribute" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.SimplePropertyEntry.UseSetAttribute" />
+      <MemberSignature Language="VB.NET" Value="Public Property UseSetAttribute As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseSetAttribute { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -67,6 +73,8 @@
       <MemberSignature Language="C#" Value="public object Value { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Value" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.SimplePropertyEntry.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Property Value As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Value { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

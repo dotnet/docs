@@ -1,7 +1,9 @@
-<Type Name="ApplicationIDAttribute" FullName="System.EnterpriseServices.ApplicationIDAttribute">
+﻿<Type Name="ApplicationIDAttribute" FullName="System.EnterpriseServices.ApplicationIDAttribute">
   <TypeSignature Language="C#" Value="public sealed class ApplicationIDAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ApplicationIDAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.ApplicationIDAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ApplicationIDAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ApplicationIDAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +44,8 @@
       <MemberSignature Language="C#" Value="public ApplicationIDAttribute (string guid);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string guid) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ApplicationIDAttribute.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (guid As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ApplicationIDAttribute(System::String ^ guid);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -70,6 +74,8 @@
       <MemberSignature Language="C#" Value="public Guid Value { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid Value" />
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ApplicationIDAttribute.Value" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As Guid" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid Value { Guid get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

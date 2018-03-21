@@ -1,7 +1,9 @@
-<Type Name="HttpRuntimeSection" FullName="System.Web.Configuration.HttpRuntimeSection">
+﻿<Type Name="HttpRuntimeSection" FullName="System.Web.Configuration.HttpRuntimeSection">
   <TypeSignature Language="C#" Value="public sealed class HttpRuntimeSection : System.Configuration.ConfigurationSection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HttpRuntimeSection extends System.Configuration.ConfigurationSection" />
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.HttpRuntimeSection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HttpRuntimeSection&#xA;Inherits ConfigurationSection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HttpRuntimeSection sealed : System::Configuration::ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +42,8 @@
       <MemberSignature Language="C#" Value="public HttpRuntimeSection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.HttpRuntimeSection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpRuntimeSection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -66,6 +70,8 @@
       <MemberSignature Language="C#" Value="public bool AllowDynamicModuleRegistration { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AllowDynamicModuleRegistration" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpRuntimeSection.AllowDynamicModuleRegistration" />
+      <MemberSignature Language="VB.NET" Value="Public Property AllowDynamicModuleRegistration As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowDynamicModuleRegistration { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -90,6 +96,8 @@
       <MemberSignature Language="C#" Value="public bool ApartmentThreading { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ApartmentThreading" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpRuntimeSection.ApartmentThreading" />
+      <MemberSignature Language="VB.NET" Value="Public Property ApartmentThreading As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ApartmentThreading { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -121,6 +129,8 @@
       <MemberSignature Language="C#" Value="public int AppRequestQueueLimit { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 AppRequestQueueLimit" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpRuntimeSection.AppRequestQueueLimit" />
+      <MemberSignature Language="VB.NET" Value="Public Property AppRequestQueueLimit As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int AppRequestQueueLimit { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -165,6 +175,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Configuration.AsyncPreloadModeFlags AsyncPreloadMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.Configuration.AsyncPreloadModeFlags AsyncPreloadMode" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpRuntimeSection.AsyncPreloadMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property AsyncPreloadMode As AsyncPreloadModeFlags" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::AsyncPreloadModeFlags AsyncPreloadMode { System::Web::Configuration::AsyncPreloadModeFlags get(); void set(System::Web::Configuration::AsyncPreloadModeFlags value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -195,6 +207,8 @@
       <MemberSignature Language="C#" Value="public TimeSpan DefaultRegexMatchTimeout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan DefaultRegexMatchTimeout" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpRuntimeSection.DefaultRegexMatchTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public Property DefaultRegexMatchTimeout As TimeSpan" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan DefaultRegexMatchTimeout { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -218,6 +232,8 @@
       <MemberSignature Language="C#" Value="public TimeSpan DelayNotificationTimeout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan DelayNotificationTimeout" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpRuntimeSection.DelayNotificationTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public Property DelayNotificationTimeout As TimeSpan" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan DelayNotificationTimeout { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -262,6 +278,8 @@
       <MemberSignature Language="C#" Value="public bool Enable { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Enable" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpRuntimeSection.Enable" />
+      <MemberSignature Language="VB.NET" Value="Public Property Enable As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Enable { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -301,6 +319,8 @@
       <MemberSignature Language="C#" Value="public bool EnableHeaderChecking { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool EnableHeaderChecking" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpRuntimeSection.EnableHeaderChecking" />
+      <MemberSignature Language="VB.NET" Value="Public Property EnableHeaderChecking As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableHeaderChecking { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -352,6 +372,8 @@
       <MemberSignature Language="C#" Value="public bool EnableKernelOutputCache { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool EnableKernelOutputCache" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpRuntimeSection.EnableKernelOutputCache" />
+      <MemberSignature Language="VB.NET" Value="Public Property EnableKernelOutputCache As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableKernelOutputCache { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -402,6 +424,8 @@
       <MemberSignature Language="C#" Value="public bool EnableVersionHeader { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool EnableVersionHeader" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpRuntimeSection.EnableVersionHeader" />
+      <MemberSignature Language="VB.NET" Value="Public Property EnableVersionHeader As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableVersionHeader { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -441,6 +465,8 @@
       <MemberSignature Language="C#" Value="public string EncoderType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string EncoderType" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpRuntimeSection.EncoderType" />
+      <MemberSignature Language="VB.NET" Value="Public Property EncoderType As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ EncoderType { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -476,6 +502,8 @@
       <MemberSignature Language="C#" Value="public TimeSpan ExecutionTimeout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan ExecutionTimeout" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpRuntimeSection.ExecutionTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public Property ExecutionTimeout As TimeSpan" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan ExecutionTimeout { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -523,6 +551,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Configuration.FcnMode FcnMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.Configuration.FcnMode FcnMode" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpRuntimeSection.FcnMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property FcnMode As FcnMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::FcnMode FcnMode { System::Web::Configuration::FcnMode get(); void set(System::Web::Configuration::FcnMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -546,6 +576,8 @@
       <MemberSignature Language="C#" Value="public int MaxQueryStringLength { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxQueryStringLength" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpRuntimeSection.MaxQueryStringLength" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxQueryStringLength As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxQueryStringLength { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -587,6 +619,8 @@
       <MemberSignature Language="C#" Value="public int MaxRequestLength { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxRequestLength" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpRuntimeSection.MaxRequestLength" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxRequestLength As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxRequestLength { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -631,6 +665,8 @@
       <MemberSignature Language="C#" Value="public int MaxUrlLength { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxUrlLength" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpRuntimeSection.MaxUrlLength" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxUrlLength As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxUrlLength { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -671,6 +707,8 @@
       <MemberSignature Language="C#" Value="public int MaxWaitChangeNotification { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxWaitChangeNotification" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpRuntimeSection.MaxWaitChangeNotification" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxWaitChangeNotification As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxWaitChangeNotification { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -715,6 +753,8 @@
       <MemberSignature Language="C#" Value="public int MinFreeThreads { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MinFreeThreads" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpRuntimeSection.MinFreeThreads" />
+      <MemberSignature Language="VB.NET" Value="Public Property MinFreeThreads As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MinFreeThreads { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -759,6 +799,8 @@
       <MemberSignature Language="C#" Value="public int MinLocalRequestFreeThreads { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MinLocalRequestFreeThreads" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpRuntimeSection.MinLocalRequestFreeThreads" />
+      <MemberSignature Language="VB.NET" Value="Public Property MinLocalRequestFreeThreads As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MinLocalRequestFreeThreads { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -800,6 +842,8 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpRuntimeSection.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -818,6 +862,8 @@
       <MemberSignature Language="C#" Value="public bool RelaxedUrlToFileSystemMapping { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool RelaxedUrlToFileSystemMapping" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpRuntimeSection.RelaxedUrlToFileSystemMapping" />
+      <MemberSignature Language="VB.NET" Value="Public Property RelaxedUrlToFileSystemMapping As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RelaxedUrlToFileSystemMapping { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -851,6 +897,8 @@
       <MemberSignature Language="C#" Value="public int RequestLengthDiskThreshold { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 RequestLengthDiskThreshold" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpRuntimeSection.RequestLengthDiskThreshold" />
+      <MemberSignature Language="VB.NET" Value="Public Property RequestLengthDiskThreshold As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int RequestLengthDiskThreshold { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -893,6 +941,8 @@
       <MemberSignature Language="C#" Value="public string RequestPathInvalidCharacters { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string RequestPathInvalidCharacters" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpRuntimeSection.RequestPathInvalidCharacters" />
+      <MemberSignature Language="VB.NET" Value="Public Property RequestPathInvalidCharacters As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RequestPathInvalidCharacters { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -925,6 +975,8 @@
       <MemberSignature Language="C#" Value="public Version RequestValidationMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Version RequestValidationMode" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpRuntimeSection.RequestValidationMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property RequestValidationMode As Version" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Version ^ RequestValidationMode { Version ^ get(); void set(Version ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -968,6 +1020,8 @@
       <MemberSignature Language="C#" Value="public string RequestValidationType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string RequestValidationType" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpRuntimeSection.RequestValidationType" />
+      <MemberSignature Language="VB.NET" Value="Public Property RequestValidationType As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RequestValidationType { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1001,6 +1055,8 @@
       <MemberSignature Language="C#" Value="public bool RequireRootedSaveAsPath { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool RequireRootedSaveAsPath" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpRuntimeSection.RequireRootedSaveAsPath" />
+      <MemberSignature Language="VB.NET" Value="Public Property RequireRootedSaveAsPath As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RequireRootedSaveAsPath { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1042,6 +1098,8 @@
       <MemberSignature Language="C#" Value="public bool SendCacheControlHeader { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SendCacheControlHeader" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpRuntimeSection.SendCacheControlHeader" />
+      <MemberSignature Language="VB.NET" Value="Public Property SendCacheControlHeader As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SendCacheControlHeader { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1075,6 +1133,8 @@
       <MemberSignature Language="C#" Value="protected override void SetReadOnly ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetReadOnly() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.HttpRuntimeSection.SetReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetReadOnly ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetReadOnly();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1093,6 +1153,8 @@
       <MemberSignature Language="C#" Value="public TimeSpan ShutdownTimeout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan ShutdownTimeout" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpRuntimeSection.ShutdownTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public Property ShutdownTimeout As TimeSpan" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan ShutdownTimeout { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1134,6 +1196,8 @@
       <MemberSignature Language="C#" Value="public string TargetFramework { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TargetFramework" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpRuntimeSection.TargetFramework" />
+      <MemberSignature Language="VB.NET" Value="Public Property TargetFramework As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TargetFramework { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1157,6 +1221,8 @@
       <MemberSignature Language="C#" Value="public bool UseFullyQualifiedRedirectUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UseFullyQualifiedRedirectUrl" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpRuntimeSection.UseFullyQualifiedRedirectUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Property UseFullyQualifiedRedirectUrl As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseFullyQualifiedRedirectUrl { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1199,6 +1265,8 @@
       <MemberSignature Language="C#" Value="public int WaitChangeNotification { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 WaitChangeNotification" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpRuntimeSection.WaitChangeNotification" />
+      <MemberSignature Language="VB.NET" Value="Public Property WaitChangeNotification As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int WaitChangeNotification { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="Argument" FullName="System.Activities.Argument">
+﻿<Type Name="Argument" FullName="System.Activities.Argument">
   <TypeSignature Language="C#" Value="public abstract class Argument" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Argument extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Argument" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class Argument" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Argument abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public Type ArgumentType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type ArgumentType" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Argument.ArgumentType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ArgumentType As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ArgumentType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -37,6 +41,7 @@
       <MemberSignature Language="C#" Value="public static System.Activities.Argument Create (Type type, System.Activities.ArgumentDirection direction);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Activities.Argument Create(class System.Type type, valuetype System.Activities.ArgumentDirection direction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Argument.Create(System.Type,System.Activities.ArgumentDirection)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Activities::Argument ^ Create(Type ^ type, System::Activities::ArgumentDirection direction);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -61,6 +66,8 @@
       <MemberSignature Language="C#" Value="public static System.Activities.Argument CreateReference (System.Activities.Argument argumentToReference, string referencedArgumentName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Activities.Argument CreateReference(class System.Activities.Argument argumentToReference, string referencedArgumentName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Argument.CreateReference(System.Activities.Argument,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateReference (argumentToReference As Argument, referencedArgumentName As String) As Argument" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Activities::Argument ^ CreateReference(System::Activities::Argument ^ argumentToReference, System::String ^ referencedArgumentName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -85,6 +92,8 @@
       <MemberSignature Language="C#" Value="public System.Activities.ArgumentDirection Direction { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Activities.ArgumentDirection Direction" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Argument.Direction" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Direction As ArgumentDirection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::ArgumentDirection Direction { System::Activities::ArgumentDirection get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -103,6 +112,8 @@
       <MemberSignature Language="C#" Value="public int EvaluationOrder { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 EvaluationOrder" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Argument.EvaluationOrder" />
+      <MemberSignature Language="VB.NET" Value="Public Property EvaluationOrder As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int EvaluationOrder { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -134,6 +145,8 @@
       <MemberSignature Language="C#" Value="public System.Activities.ActivityWithResult Expression { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.ActivityWithResult Expression" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Argument.Expression" />
+      <MemberSignature Language="VB.NET" Value="Public Property Expression As ActivityWithResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::ActivityWithResult ^ Expression { System::Activities::ActivityWithResult ^ get(); void set(System::Activities::ActivityWithResult ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -160,6 +173,8 @@
       <MemberSignature Language="C#" Value="public object Get (System.Activities.ActivityContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object Get(class System.Activities.ActivityContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Argument.Get(System.Activities.ActivityContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Get (context As ActivityContext) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Get(System::Activities::ActivityContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -182,6 +197,8 @@
       <MemberSignature Language="C#" Value="public T Get&lt;T&gt; (System.Activities.ActivityContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T Get&lt;T&gt;(class System.Activities.ActivityContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Argument.Get``1(System.Activities.ActivityContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Get(Of T) (context As ActivityContext) As T" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; T Get(System::Activities::ActivityContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -208,6 +225,8 @@
       <MemberSignature Language="C#" Value="public System.Activities.Location GetLocation (System.Activities.ActivityContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Activities.Location GetLocation(class System.Activities.ActivityContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Argument.GetLocation(System.Activities.ActivityContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetLocation (context As ActivityContext) As Location" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Activities::Location ^ GetLocation(System::Activities::ActivityContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -230,6 +249,8 @@
       <MemberSignature Language="C#" Value="public const string ResultValue;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string ResultValue" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Argument.ResultValue" />
+      <MemberSignature Language="VB.NET" Value="Public Const ResultValue As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ ResultValue;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -254,6 +275,8 @@
       <MemberSignature Language="C#" Value="public void Set (System.Activities.ActivityContext context, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Set(class System.Activities.ActivityContext context, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Argument.Set(System.Activities.ActivityContext,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Set (context As ActivityContext, value As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Set(System::Activities::ActivityContext ^ context, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -277,6 +300,8 @@
       <MemberSignature Language="C#" Value="public static readonly int UnspecifiedEvaluationOrder;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly int32 UnspecifiedEvaluationOrder" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Argument.UnspecifiedEvaluationOrder" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly UnspecifiedEvaluationOrder As Integer " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly int UnspecifiedEvaluationOrder;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

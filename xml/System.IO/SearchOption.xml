@@ -1,7 +1,9 @@
-<Type Name="SearchOption" FullName="System.IO.SearchOption">
+﻿<Type Name="SearchOption" FullName="System.IO.SearchOption">
   <TypeSignature Language="C#" Value="public enum SearchOption" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed SearchOption extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.IO.SearchOption" />
+  <TypeSignature Language="VB.NET" Value="Public Enum SearchOption" />
+  <TypeSignature Language="C++ CLI" Value="public enum class SearchOption" />
   <AssemblyInfo>
     <AssemblyName>System.IO.FileSystem</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -49,6 +51,8 @@
       <MemberSignature Language="C#" Value="AllDirectories" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.SearchOption AllDirectories = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.IO.SearchOption.AllDirectories" />
+      <MemberSignature Language="VB.NET" Value="AllDirectories" />
+      <MemberSignature Language="C++ CLI" Value="AllDirectories" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -67,6 +71,7 @@
       <ReturnValue>
         <ReturnType>System.IO.SearchOption</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Includes the current directory and all its subdirectories in a search operation. This option includes reparse points such as mounted drives and symbolic links in the search.</summary>
       </Docs>
@@ -75,6 +80,8 @@
       <MemberSignature Language="C#" Value="TopDirectoryOnly" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.SearchOption TopDirectoryOnly = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.IO.SearchOption.TopDirectoryOnly" />
+      <MemberSignature Language="VB.NET" Value="TopDirectoryOnly" />
+      <MemberSignature Language="C++ CLI" Value="TopDirectoryOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -93,6 +100,7 @@
       <ReturnValue>
         <ReturnType>System.IO.SearchOption</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Includes only the current directory in a search operation.</summary>
       </Docs>

@@ -1,7 +1,9 @@
-<Type Name="BuildStartedEventArgs" FullName="Microsoft.Build.Framework.BuildStartedEventArgs">
+﻿<Type Name="BuildStartedEventArgs" FullName="Microsoft.Build.Framework.BuildStartedEventArgs">
   <TypeSignature Language="C#" Value="public class BuildStartedEventArgs : Microsoft.Build.Framework.BuildStatusEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit BuildStartedEventArgs extends Microsoft.Build.Framework.BuildStatusEventArgs" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.BuildStartedEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class BuildStartedEventArgs&#xA;Inherits BuildStatusEventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BuildStartedEventArgs : Microsoft::Build::Framework::BuildStatusEventArgs" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,10 +24,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.BuildStartedEventArgs" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected BuildStartedEventArgs ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.BuildStartedEventArgs.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; BuildStartedEventArgs();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -41,6 +54,8 @@
       <MemberSignature Language="C#" Value="public BuildStartedEventArgs (string message, string helpKeyword);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, string helpKeyword) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.BuildStartedEventArgs.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, helpKeyword As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BuildStartedEventArgs(System::String ^ message, System::String ^ helpKeyword);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -61,6 +76,8 @@
       <MemberSignature Language="C#" Value="public BuildStartedEventArgs (string message, string helpKeyword, System.Collections.Generic.IDictionary&lt;string,string&gt; environmentOfBuild);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, string helpKeyword, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; environmentOfBuild) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.BuildStartedEventArgs.#ctor(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, helpKeyword As String, environmentOfBuild As IDictionary(Of String, String))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BuildStartedEventArgs(System::String ^ message, System::String ^ helpKeyword, System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ environmentOfBuild);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -90,6 +107,8 @@
       <MemberSignature Language="C#" Value="public BuildStartedEventArgs (string message, string helpKeyword, DateTime eventTimestamp);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, string helpKeyword, valuetype System.DateTime eventTimestamp) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.BuildStartedEventArgs.#ctor(System.String,System.String,System.DateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, helpKeyword As String, eventTimestamp As DateTime)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BuildStartedEventArgs(System::String ^ message, System::String ^ helpKeyword, DateTime eventTimestamp);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -112,6 +131,8 @@
       <MemberSignature Language="C#" Value="public BuildStartedEventArgs (string message, string helpKeyword, DateTime eventTimestamp, params object[] messageArgs);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, string helpKeyword, valuetype System.DateTime eventTimestamp, object[] messageArgs) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.BuildStartedEventArgs.#ctor(System.String,System.String,System.DateTime,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, helpKeyword As String, eventTimestamp As DateTime, ParamArray messageArgs As Object())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BuildStartedEventArgs(System::String ^ message, System::String ^ helpKeyword, DateTime eventTimestamp, ... cli::array &lt;System::Object ^&gt; ^ messageArgs);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -142,6 +163,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,string&gt; BuildEnvironment { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, string&gt; BuildEnvironment" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.BuildStartedEventArgs.BuildEnvironment" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BuildEnvironment As IDictionary(Of String, String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ BuildEnvironment { System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -156,14 +179,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.BuildStartedEventArgs" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,9 @@
-<Type Name="LocalVariableTypeEncoder" FullName="System.Reflection.Metadata.Ecma335.LocalVariableTypeEncoder">
+﻿<Type Name="LocalVariableTypeEncoder" FullName="System.Reflection.Metadata.Ecma335.LocalVariableTypeEncoder">
   <TypeSignature Language="C#" Value="public struct LocalVariableTypeEncoder" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit LocalVariableTypeEncoder extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.Ecma335.LocalVariableTypeEncoder" />
+  <TypeSignature Language="VB.NET" Value="Public Structure LocalVariableTypeEncoder" />
+  <TypeSignature Language="C++ CLI" Value="public value class LocalVariableTypeEncoder" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.4.1.0</AssemblyVersion>
@@ -20,6 +22,8 @@
       <MemberSignature Language="C#" Value="public LocalVariableTypeEncoder (System.Reflection.Metadata.BlobBuilder builder);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Reflection.Metadata.BlobBuilder builder) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.LocalVariableTypeEncoder.#ctor(System.Reflection.Metadata.BlobBuilder)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (builder As BlobBuilder)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LocalVariableTypeEncoder(System::Reflection::Metadata::BlobBuilder ^ builder);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -39,6 +43,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Metadata.BlobBuilder Builder { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Reflection.Metadata.BlobBuilder Builder" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.Ecma335.LocalVariableTypeEncoder.Builder" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Builder As BlobBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::BlobBuilder ^ Builder { System::Reflection::Metadata::BlobBuilder ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -58,6 +64,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Metadata.Ecma335.CustomModifiersEncoder CustomModifiers ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.Ecma335.CustomModifiersEncoder CustomModifiers() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.LocalVariableTypeEncoder.CustomModifiers" />
+      <MemberSignature Language="VB.NET" Value="Public Function CustomModifiers () As CustomModifiersEncoder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::Ecma335::CustomModifiersEncoder CustomModifiers();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -78,6 +86,7 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Metadata.Ecma335.SignatureTypeEncoder Type (bool isByRef = false, bool isPinned = false);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.Ecma335.SignatureTypeEncoder Type(bool isByRef, bool isPinned) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.LocalVariableTypeEncoder.Type(System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Type (Optional isByRef As Boolean = false, Optional isPinned As Boolean = false) As SignatureTypeEncoder" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -103,6 +112,8 @@
       <MemberSignature Language="C#" Value="public void TypedReference ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void TypedReference() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.LocalVariableTypeEncoder.TypedReference" />
+      <MemberSignature Language="VB.NET" Value="Public Sub TypedReference ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void TypedReference();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

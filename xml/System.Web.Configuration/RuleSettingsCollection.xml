@@ -1,7 +1,9 @@
-<Type Name="RuleSettingsCollection" FullName="System.Web.Configuration.RuleSettingsCollection">
+﻿<Type Name="RuleSettingsCollection" FullName="System.Web.Configuration.RuleSettingsCollection">
   <TypeSignature Language="C#" Value="public sealed class RuleSettingsCollection : System.Configuration.ConfigurationElementCollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RuleSettingsCollection extends System.Configuration.ConfigurationElementCollection" />
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.RuleSettingsCollection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RuleSettingsCollection&#xA;Inherits ConfigurationElementCollection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RuleSettingsCollection sealed : System::Configuration::ConfigurationElementCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +43,8 @@
       <MemberSignature Language="C#" Value="public RuleSettingsCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.RuleSettingsCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RuleSettingsCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -65,6 +69,7 @@
       <MemberSignature Language="C#" Value="public void Add (System.Web.Configuration.RuleSettings ruleSettings);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Web.Configuration.RuleSettings ruleSettings) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.RuleSettingsCollection.Add(System.Web.Configuration.RuleSettings)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Web::Configuration::RuleSettings ^ ruleSettings);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -104,6 +109,8 @@
       <MemberSignature Language="C#" Value="public void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.RuleSettingsCollection.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -139,6 +146,8 @@
       <MemberSignature Language="C#" Value="public bool Contains (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.RuleSettingsCollection.Contains(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (name As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -179,6 +188,8 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationElement CreateNewElement ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Configuration.ConfigurationElement CreateNewElement() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.RuleSettingsCollection.CreateNewElement" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateNewElement () As ConfigurationElement" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Configuration::ConfigurationElement ^ CreateNewElement();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -198,6 +209,8 @@
       <MemberSignature Language="C#" Value="protected override object GetElementKey (System.Configuration.ConfigurationElement element);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object GetElementKey(class System.Configuration.ConfigurationElement element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.RuleSettingsCollection.GetElementKey(System.Configuration.ConfigurationElement)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetElementKey (element As ConfigurationElement) As Object" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetElementKey(System::Configuration::ConfigurationElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -220,6 +233,8 @@
       <MemberSignature Language="C#" Value="public int IndexOf (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.RuleSettingsCollection.IndexOf(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOf (name As String) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -259,6 +274,8 @@
       <MemberSignature Language="C#" Value="public void Insert (int index, System.Web.Configuration.RuleSettings eventSettings);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(int32 index, class System.Web.Configuration.RuleSettings eventSettings) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.RuleSettingsCollection.Insert(System.Int32,System.Web.Configuration.RuleSettings)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, eventSettings As RuleSettings)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::Web::Configuration::RuleSettings ^ eventSettings);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -296,10 +313,23 @@
         <altmember cref="T:System.Web.Configuration.RuleSettings" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Web.Configuration.BufferModeSettings" /> object.</summary>
+        <altmember cref="T:System.Web.Configuration.HealthMonitoringSection" />
+        <altmember cref="T:System.Web.Configuration.RuleSettings" />
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Item">
       <MemberSignature Language="C#" Value="public System.Web.Configuration.RuleSettings this[int index] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.RuleSettings Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.RuleSettingsCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As RuleSettings" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::RuleSettings ^ default[int] { System::Web::Configuration::RuleSettings ^ get(int index); void set(int index, System::Web::Configuration::RuleSettings ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -340,6 +370,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Configuration.RuleSettings this[string key] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.RuleSettings Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.RuleSettingsCollection.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(key As String) As RuleSettings" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::RuleSettings ^ default[System::String ^] { System::Web::Configuration::RuleSettings ^ get(System::String ^ key); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -362,6 +394,8 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.RuleSettingsCollection.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -380,6 +414,8 @@
       <MemberSignature Language="C#" Value="public void Remove (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.RuleSettingsCollection.Remove(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (name As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -419,6 +455,8 @@
       <MemberSignature Language="C#" Value="public void RemoveAt (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAt(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.RuleSettingsCollection.RemoveAt(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -454,16 +492,5 @@
         <altmember cref="T:System.Web.Configuration.RuleSettings" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="Item">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets a <see cref="T:System.Web.Configuration.BufferModeSettings" /> object.</summary>
-        <altmember cref="T:System.Web.Configuration.HealthMonitoringSection" />
-        <altmember cref="T:System.Web.Configuration.RuleSettings" />
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

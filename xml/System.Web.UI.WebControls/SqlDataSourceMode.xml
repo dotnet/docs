@@ -1,7 +1,9 @@
-<Type Name="SqlDataSourceMode" FullName="System.Web.UI.WebControls.SqlDataSourceMode">
+﻿<Type Name="SqlDataSourceMode" FullName="System.Web.UI.WebControls.SqlDataSourceMode">
   <TypeSignature Language="C#" Value="public enum SqlDataSourceMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SqlDataSourceMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.SqlDataSourceMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum SqlDataSourceMode" />
+  <TypeSignature Language="C++ CLI" Value="public enum class SqlDataSourceMode" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +44,8 @@
       <MemberSignature Language="C#" Value="DataReader" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.SqlDataSourceMode DataReader = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.SqlDataSourceMode.DataReader" />
+      <MemberSignature Language="VB.NET" Value="DataReader" />
+      <MemberSignature Language="C++ CLI" Value="DataReader" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -50,6 +54,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.SqlDataSourceMode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Retrieves data from the underlying data storage as an <see cref="T:System.Data.IDataReader" /></summary>
       </Docs>
@@ -58,6 +63,8 @@
       <MemberSignature Language="C#" Value="DataSet" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.SqlDataSourceMode DataSet = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.SqlDataSourceMode.DataSet" />
+      <MemberSignature Language="VB.NET" Value="DataSet" />
+      <MemberSignature Language="C++ CLI" Value="DataSet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -66,6 +73,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.SqlDataSourceMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Retrieves data from the underlying data storage into a <see cref="T:System.Data.DataSet" /> structure.</summary>
       </Docs>

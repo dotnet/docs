@@ -1,7 +1,9 @@
-<Type Name="OptionTextAttribute" FullName="Microsoft.VisualBasic.CompilerServices.OptionTextAttribute">
+﻿<Type Name="OptionTextAttribute" FullName="Microsoft.VisualBasic.CompilerServices.OptionTextAttribute">
   <TypeSignature Language="C#" Value="public sealed class OptionTextAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed OptionTextAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.CompilerServices.OptionTextAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OptionTextAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class OptionTextAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -35,6 +37,8 @@
       <MemberSignature Language="C#" Value="public OptionTextAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.OptionTextAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OptionTextAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

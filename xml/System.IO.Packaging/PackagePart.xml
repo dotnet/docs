@@ -1,7 +1,9 @@
-<Type Name="PackagePart" FullName="System.IO.Packaging.PackagePart">
+﻿<Type Name="PackagePart" FullName="System.IO.Packaging.PackagePart">
   <TypeSignature Language="C#" Value="public abstract class PackagePart" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit PackagePart extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.IO.Packaging.PackagePart" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class PackagePart" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PackagePart abstract" />
   <AssemblyInfo>
     <AssemblyName>System.IO.Packaging</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +58,7 @@
       <MemberSignature Language="C#" Value="protected PackagePart (System.IO.Packaging.Package package, Uri partUri);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.IO.Packaging.Package package, class System.Uri partUri) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackagePart.#ctor(System.IO.Packaging.Package,System.Uri)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; PackagePart(System::IO::Packaging::Package ^ package, Uri ^ partUri);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -96,6 +99,7 @@
       <MemberSignature Language="C#" Value="protected PackagePart (System.IO.Packaging.Package package, Uri partUri, string contentType);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.IO.Packaging.Package package, class System.Uri partUri, string contentType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackagePart.#ctor(System.IO.Packaging.Package,System.Uri,System.String)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; PackagePart(System::IO::Packaging::Package ^ package, Uri ^ partUri, System::String ^ contentType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -151,6 +155,7 @@
       <MemberSignature Language="C#" Value="protected PackagePart (System.IO.Packaging.Package package, Uri partUri, string contentType, System.IO.Packaging.CompressionOption compressionOption);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.IO.Packaging.Package package, class System.Uri partUri, string contentType, valuetype System.IO.Packaging.CompressionOption compressionOption) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackagePart.#ctor(System.IO.Packaging.Package,System.Uri,System.String,System.IO.Packaging.CompressionOption)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; PackagePart(System::IO::Packaging::Package ^ package, Uri ^ partUri, System::String ^ contentType, System::IO::Packaging::CompressionOption compressionOption);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -207,6 +212,8 @@
       <MemberSignature Language="C#" Value="public System.IO.Packaging.CompressionOption CompressionOption { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.IO.Packaging.CompressionOption CompressionOption" />
       <MemberSignature Language="DocId" Value="P:System.IO.Packaging.PackagePart.CompressionOption" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CompressionOption As CompressionOption" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::Packaging::CompressionOption CompressionOption { System::IO::Packaging::CompressionOption get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -245,6 +252,8 @@
       <MemberSignature Language="C#" Value="public string ContentType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ContentType" />
       <MemberSignature Language="DocId" Value="P:System.IO.Packaging.PackagePart.ContentType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContentType As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ContentType { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -331,6 +340,7 @@
       <MemberSignature Language="C#" Value="public System.IO.Packaging.PackageRelationship CreateRelationship (Uri targetUri, System.IO.Packaging.TargetMode targetMode, string relationshipType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.Packaging.PackageRelationship CreateRelationship(class System.Uri targetUri, valuetype System.IO.Packaging.TargetMode targetMode, string relationshipType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackagePart.CreateRelationship(System.Uri,System.IO.Packaging.TargetMode,System.String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Packaging::PackageRelationship ^ CreateRelationship(Uri ^ targetUri, System::IO::Packaging::TargetMode targetMode, System::String ^ relationshipType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -419,6 +429,7 @@
       <MemberSignature Language="C#" Value="public System.IO.Packaging.PackageRelationship CreateRelationship (Uri targetUri, System.IO.Packaging.TargetMode targetMode, string relationshipType, string id);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.Packaging.PackageRelationship CreateRelationship(class System.Uri targetUri, valuetype System.IO.Packaging.TargetMode targetMode, string relationshipType, string id) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackagePart.CreateRelationship(System.Uri,System.IO.Packaging.TargetMode,System.String,System.String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Packaging::PackageRelationship ^ CreateRelationship(Uri ^ targetUri, System::IO::Packaging::TargetMode targetMode, System::String ^ relationshipType, System::String ^ id);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -517,6 +528,8 @@
       <MemberSignature Language="C#" Value="public void DeleteRelationship (string id);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DeleteRelationship(string id) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackagePart.DeleteRelationship(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DeleteRelationship (id As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DeleteRelationship(System::String ^ id);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -569,6 +582,8 @@
       <MemberSignature Language="C#" Value="protected virtual string GetContentTypeCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance string GetContentTypeCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackagePart.GetContentTypeCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetContentTypeCore () As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::String ^ GetContentTypeCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -603,6 +618,8 @@
       <MemberSignature Language="C#" Value="public System.IO.Packaging.PackageRelationship GetRelationship (string id);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.Packaging.PackageRelationship GetRelationship(string id) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackagePart.GetRelationship(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetRelationship (id As String) As PackageRelationship" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Packaging::PackageRelationship ^ GetRelationship(System::String ^ id);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -660,6 +677,8 @@
       <MemberSignature Language="C#" Value="public System.IO.Packaging.PackageRelationshipCollection GetRelationships ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.Packaging.PackageRelationshipCollection GetRelationships() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackagePart.GetRelationships" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetRelationships () As PackageRelationshipCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Packaging::PackageRelationshipCollection ^ GetRelationships();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -701,6 +720,8 @@
       <MemberSignature Language="C#" Value="public System.IO.Packaging.PackageRelationshipCollection GetRelationshipsByType (string relationshipType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.Packaging.PackageRelationshipCollection GetRelationshipsByType(string relationshipType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackagePart.GetRelationshipsByType(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetRelationshipsByType (relationshipType As String) As PackageRelationshipCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Packaging::PackageRelationshipCollection ^ GetRelationshipsByType(System::String ^ relationshipType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -743,10 +764,28 @@
         <exception cref="T:System.IO.IOException">The package is write-only (relationship information cannot be read).</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetStream">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Packaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the part content data stream.</summary>
+        <block subset="none" type="usage">
+          <para>
+            <see cref="Overload:System.IO.Packaging.PackagePart.GetStream" /> internally calls the derived <see cref="M:System.IO.Packaging.PackagePart.GetStreamCore(System.IO.FileMode,System.IO.FileAccess)" /> method to actually open and return the part data stream based on the physical format implemented in the derived class.  
+  
+ By default, the <see cref="T:System.IO.Packaging.ZipPackagePart" /> subclass implementation of the abstract <see cref="T:System.IO.Packaging.PackagePart" /> class is provided and used.  In the default operation, <see cref="Overload:System.IO.Packaging.PackagePart.GetStream" /> internally calls <see cref="M:System.IO.Packaging.PackagePart.GetStreamCore(System.IO.FileMode,System.IO.FileAccess)" /> of the <see cref="T:System.IO.Packaging.ZipPackagePart" /> class to open and return the part data stream from a ZIP file.</para>
+        </block>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetStream">
       <MemberSignature Language="C#" Value="public System.IO.Stream GetStream ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.Stream GetStream() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackagePart.GetStream" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetStream () As Stream" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Stream ^ GetStream();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -792,6 +831,8 @@
       <MemberSignature Language="C#" Value="public System.IO.Stream GetStream (System.IO.FileMode mode);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.Stream GetStream(valuetype System.IO.FileMode mode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackagePart.GetStream(System.IO.FileMode)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetStream (mode As FileMode) As Stream" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Stream ^ GetStream(System::IO::FileMode mode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -843,6 +884,8 @@
       <MemberSignature Language="C#" Value="public System.IO.Stream GetStream (System.IO.FileMode mode, System.IO.FileAccess access);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.Stream GetStream(valuetype System.IO.FileMode mode, valuetype System.IO.FileAccess access) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackagePart.GetStream(System.IO.FileMode,System.IO.FileAccess)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetStream (mode As FileMode, access As FileAccess) As Stream" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Stream ^ GetStream(System::IO::FileMode mode, System::IO::FileAccess access);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -898,6 +941,8 @@
       <MemberSignature Language="C#" Value="protected abstract System.IO.Stream GetStreamCore (System.IO.FileMode mode, System.IO.FileAccess access);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IO.Stream GetStreamCore(valuetype System.IO.FileMode mode, valuetype System.IO.FileAccess access) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackagePart.GetStreamCore(System.IO.FileMode,System.IO.FileAccess)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Function GetStreamCore (mode As FileMode, access As FileAccess) As Stream" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::IO::Stream ^ GetStreamCore(System::IO::FileMode mode, System::IO::FileAccess access);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -942,6 +987,8 @@
       <MemberSignature Language="C#" Value="public System.IO.Packaging.Package Package { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IO.Packaging.Package Package" />
       <MemberSignature Language="DocId" Value="P:System.IO.Packaging.PackagePart.Package" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Package As Package" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::Packaging::Package ^ Package { System::IO::Packaging::Package ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -979,6 +1026,8 @@
       <MemberSignature Language="C#" Value="public bool RelationshipExists (string id);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool RelationshipExists(string id) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackagePart.RelationshipExists(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RelationshipExists (id As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool RelationshipExists(System::String ^ id);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -1029,6 +1078,8 @@
       <MemberSignature Language="C#" Value="public Uri Uri { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri Uri" />
       <MemberSignature Language="DocId" Value="P:System.IO.Packaging.PackagePart.Uri" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Uri As Uri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Uri { Uri ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -1064,21 +1115,5 @@
         <altmember cref="M:System.IO.Packaging.PackUriHelper.ComparePartUri(System.Uri,System.Uri)" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetStream">
-      <AssemblyInfo>
-        <AssemblyName>System.IO.Packaging</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.2.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns the part content data stream.</summary>
-        <block subset="none" type="usage">
-          <para>
-            <see cref="Overload:System.IO.Packaging.PackagePart.GetStream" /> internally calls the derived <see cref="M:System.IO.Packaging.PackagePart.GetStreamCore(System.IO.FileMode,System.IO.FileAccess)" /> method to actually open and return the part data stream based on the physical format implemented in the derived class.  
-  
- By default, the <see cref="T:System.IO.Packaging.ZipPackagePart" /> subclass implementation of the abstract <see cref="T:System.IO.Packaging.PackagePart" /> class is provided and used.  In the default operation, <see cref="Overload:System.IO.Packaging.PackagePart.GetStream" /> internally calls <see cref="M:System.IO.Packaging.PackagePart.GetStreamCore(System.IO.FileMode,System.IO.FileAccess)" /> of the <see cref="T:System.IO.Packaging.ZipPackagePart" /> class to open and return the part data stream from a ZIP file.</para>
-        </block>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

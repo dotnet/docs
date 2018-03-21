@@ -1,7 +1,9 @@
-<Type Name="IProcessPingCallback" FullName="System.Web.Hosting.IProcessPingCallback">
+﻿<Type Name="IProcessPingCallback" FullName="System.Web.Hosting.IProcessPingCallback">
   <TypeSignature Language="C#" Value="public interface IProcessPingCallback" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IProcessPingCallback" />
   <TypeSignature Language="DocId" Value="T:System.Web.Hosting.IProcessPingCallback" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IProcessPingCallback" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IProcessPingCallback" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -12,7 +14,7 @@
       <AttributeName>System.Runtime.InteropServices.Guid("f11dc4c9-ddd1-4566-ad53-cf6f3a28fefe")</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -32,6 +34,8 @@
       <MemberSignature Language="C#" Value="public void Respond ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Respond() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IProcessPingCallback.Respond" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Respond ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Respond();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

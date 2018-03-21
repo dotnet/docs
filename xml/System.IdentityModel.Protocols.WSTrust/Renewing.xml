@@ -1,7 +1,9 @@
-<Type Name="Renewing" FullName="System.IdentityModel.Protocols.WSTrust.Renewing">
+﻿<Type Name="Renewing" FullName="System.IdentityModel.Protocols.WSTrust.Renewing">
   <TypeSignature Language="C#" Value="public class Renewing" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Renewing extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Protocols.WSTrust.Renewing" />
+  <TypeSignature Language="VB.NET" Value="Public Class Renewing" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Renewing" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,10 +26,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Protocols.WSTrust.Renewing" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public Renewing ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Protocols.WSTrust.Renewing.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Renewing();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -55,6 +68,8 @@
       <MemberSignature Language="C#" Value="public Renewing (bool allowRenewal, bool okForRenewalAfterExpiration);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool allowRenewal, bool okForRenewalAfterExpiration) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Protocols.WSTrust.Renewing.#ctor(System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (allowRenewal As Boolean, okForRenewalAfterExpiration As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Renewing(bool allowRenewal, bool okForRenewalAfterExpiration);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -84,6 +99,8 @@
       <MemberSignature Language="C#" Value="public bool AllowRenewal { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AllowRenewal" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.Renewing.AllowRenewal" />
+      <MemberSignature Language="VB.NET" Value="Public Property AllowRenewal As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowRenewal { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -110,6 +127,8 @@
       <MemberSignature Language="C#" Value="public bool OkForRenewalAfterExpiration { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool OkForRenewalAfterExpiration" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.Renewing.OkForRenewalAfterExpiration" />
+      <MemberSignature Language="VB.NET" Value="Public Property OkForRenewalAfterExpiration As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool OkForRenewalAfterExpiration { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -132,14 +151,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Protocols.WSTrust.Renewing" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,9 @@
-<Type Name="OverflowMode" FullName="System.Windows.Controls.OverflowMode">
+﻿<Type Name="OverflowMode" FullName="System.Windows.Controls.OverflowMode">
   <TypeSignature Language="C#" Value="public enum OverflowMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed OverflowMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.OverflowMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum OverflowMode" />
+  <TypeSignature Language="C++ CLI" Value="public enum class OverflowMode" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -18,6 +20,8 @@
       <MemberSignature Language="C#" Value="Always" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.OverflowMode Always = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.OverflowMode.Always" />
+      <MemberSignature Language="VB.NET" Value="Always" />
+      <MemberSignature Language="C++ CLI" Value="Always" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -26,6 +30,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.OverflowMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Item is permanently placed in the overflow panel.</summary>
       </Docs>
@@ -34,6 +39,8 @@
       <MemberSignature Language="C#" Value="AsNeeded" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.OverflowMode AsNeeded = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.OverflowMode.AsNeeded" />
+      <MemberSignature Language="VB.NET" Value="AsNeeded" />
+      <MemberSignature Language="C++ CLI" Value="AsNeeded" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -42,6 +49,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.OverflowMode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Item moves between the main panel and overflow panel, depending on the available space.</summary>
       </Docs>
@@ -50,6 +58,8 @@
       <MemberSignature Language="C#" Value="Never" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.OverflowMode Never = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.OverflowMode.Never" />
+      <MemberSignature Language="VB.NET" Value="Never" />
+      <MemberSignature Language="C++ CLI" Value="Never" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -58,6 +68,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.OverflowMode</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Item is never allowed to overflow.</summary>
       </Docs>

@@ -1,7 +1,9 @@
-<Type Name="ManipulationDeltaEventArgs" FullName="System.Windows.Input.ManipulationDeltaEventArgs">
+﻿<Type Name="ManipulationDeltaEventArgs" FullName="System.Windows.Input.ManipulationDeltaEventArgs">
   <TypeSignature Language="C#" Value="public sealed class ManipulationDeltaEventArgs : System.Windows.Input.InputEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ManipulationDeltaEventArgs extends System.Windows.Input.InputEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.ManipulationDeltaEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ManipulationDeltaEventArgs&#xA;Inherits InputEventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ManipulationDeltaEventArgs sealed : System::Windows::Input::InputEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +38,8 @@
       <MemberSignature Language="C#" Value="public bool Cancel ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Cancel() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.ManipulationDeltaEventArgs.Cancel" />
+      <MemberSignature Language="VB.NET" Value="Public Function Cancel () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Cancel();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -63,6 +67,8 @@
       <MemberSignature Language="C#" Value="public void Complete ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Complete() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.ManipulationDeltaEventArgs.Complete" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Complete ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Complete();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -96,6 +102,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Input.ManipulationDelta CumulativeManipulation { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Input.ManipulationDelta CumulativeManipulation" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.ManipulationDeltaEventArgs.CumulativeManipulation" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CumulativeManipulation As ManipulationDelta" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::ManipulationDelta ^ CumulativeManipulation { System::Windows::Input::ManipulationDelta ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -121,6 +129,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Input.ManipulationDelta DeltaManipulation { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Input.ManipulationDelta DeltaManipulation" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.ManipulationDeltaEventArgs.DeltaManipulation" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DeltaManipulation As ManipulationDelta" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::ManipulationDelta ^ DeltaManipulation { System::Windows::Input::ManipulationDelta ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -154,6 +164,8 @@
       <MemberSignature Language="C#" Value="protected override void InvokeEventHandler (Delegate genericHandler, object genericTarget);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InvokeEventHandler(class System.Delegate genericHandler, object genericTarget) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.ManipulationDeltaEventArgs.InvokeEventHandler(System.Delegate,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InvokeEventHandler (genericHandler As Delegate, genericTarget As Object)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InvokeEventHandler(Delegate ^ genericHandler, System::Object ^ genericTarget);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -177,6 +189,8 @@
       <MemberSignature Language="C#" Value="public bool IsInertial { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsInertial" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.ManipulationDeltaEventArgs.IsInertial" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsInertial As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsInertial { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -211,6 +225,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.IInputElement ManipulationContainer { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.IInputElement ManipulationContainer" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.ManipulationDeltaEventArgs.ManipulationContainer" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ManipulationContainer As IInputElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::IInputElement ^ ManipulationContainer { System::Windows::IInputElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -229,6 +245,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Point ManipulationOrigin { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Point ManipulationOrigin" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.ManipulationDeltaEventArgs.ManipulationOrigin" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ManipulationOrigin As Point" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Point ManipulationOrigin { System::Windows::Point get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -247,6 +265,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;System.Windows.Input.IManipulator&gt; Manipulators { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;class System.Windows.Input.IManipulator&gt; Manipulators" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.ManipulationDeltaEventArgs.Manipulators" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Manipulators As IEnumerable(Of IManipulator)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IEnumerable&lt;System::Windows::Input::IManipulator ^&gt; ^ Manipulators { System::Collections::Generic::IEnumerable&lt;System::Windows::Input::IManipulator ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -265,6 +285,8 @@
       <MemberSignature Language="C#" Value="public void ReportBoundaryFeedback (System.Windows.Input.ManipulationDelta unusedManipulation);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ReportBoundaryFeedback(class System.Windows.Input.ManipulationDelta unusedManipulation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.ManipulationDeltaEventArgs.ReportBoundaryFeedback(System.Windows.Input.ManipulationDelta)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ReportBoundaryFeedback (unusedManipulation As ManipulationDelta)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReportBoundaryFeedback(System::Windows::Input::ManipulationDelta ^ unusedManipulation);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -303,6 +325,8 @@
       <MemberSignature Language="C#" Value="public void StartInertia ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void StartInertia() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.ManipulationDeltaEventArgs.StartInertia" />
+      <MemberSignature Language="VB.NET" Value="Public Sub StartInertia ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void StartInertia();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -321,6 +345,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Input.ManipulationVelocities Velocities { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Input.ManipulationVelocities Velocities" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.ManipulationDeltaEventArgs.Velocities" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Velocities As ManipulationVelocities" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::ManipulationVelocities ^ Velocities { System::Windows::Input::ManipulationVelocities ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

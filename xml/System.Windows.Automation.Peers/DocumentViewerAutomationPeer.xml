@@ -1,7 +1,9 @@
-<Type Name="DocumentViewerAutomationPeer" FullName="System.Windows.Automation.Peers.DocumentViewerAutomationPeer">
+﻿<Type Name="DocumentViewerAutomationPeer" FullName="System.Windows.Automation.Peers.DocumentViewerAutomationPeer">
   <TypeSignature Language="C#" Value="public class DocumentViewerAutomationPeer : System.Windows.Automation.Peers.DocumentViewerBaseAutomationPeer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DocumentViewerAutomationPeer extends System.Windows.Automation.Peers.DocumentViewerBaseAutomationPeer" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.DocumentViewerAutomationPeer" />
+  <TypeSignature Language="VB.NET" Value="Public Class DocumentViewerAutomationPeer&#xA;Inherits DocumentViewerBaseAutomationPeer" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DocumentViewerAutomationPeer : System::Windows::Automation::Peers::DocumentViewerBaseAutomationPeer" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public DocumentViewerAutomationPeer (System.Windows.Controls.DocumentViewer owner);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Controls.DocumentViewer owner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DocumentViewerAutomationPeer.#ctor(System.Windows.Controls.DocumentViewer)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (owner As DocumentViewer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DocumentViewerAutomationPeer(System::Windows::Controls::DocumentViewer ^ owner);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -37,6 +41,8 @@
       <MemberSignature Language="C#" Value="protected override string GetClassNameCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetClassNameCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DocumentViewerAutomationPeer.GetClassNameCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetClassNameCore () As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetClassNameCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -56,6 +62,7 @@
       <MemberSignature Language="C#" Value="public override object GetPattern (System.Windows.Automation.Peers.PatternInterface patternInterface);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetPattern(valuetype System.Windows.Automation.Peers.PatternInterface patternInterface) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DocumentViewerAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetPattern(System::Windows::Automation::Peers::PatternInterface patternInterface);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

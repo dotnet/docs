@@ -1,7 +1,9 @@
-<Type Name="CreateExpressionFromStringCallback" FullName="System.Activities.Presentation.Expressions.CreateExpressionFromStringCallback">
+﻿<Type Name="CreateExpressionFromStringCallback" FullName="System.Activities.Presentation.Expressions.CreateExpressionFromStringCallback">
   <TypeSignature Language="C#" Value="public delegate System.Activities.ActivityWithResult CreateExpressionFromStringCallback(string expressionText, bool useLocationExpression, Type expressionType);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CreateExpressionFromStringCallback extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Expressions.CreateExpressionFromStringCallback" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Function CreateExpressionFromStringCallback(expressionText As String, useLocationExpression As Boolean, expressionType As Type) As ActivityWithResult " />
+  <TypeSignature Language="C++ CLI" Value="public delegate System::Activities::ActivityWithResult ^ CreateExpressionFromStringCallback(System::String ^ expressionText, bool useLocationExpression, Type ^ expressionType);" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

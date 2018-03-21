@@ -1,7 +1,9 @@
-<Type Name="CustomQueryInterfaceMode" FullName="System.Runtime.InteropServices.CustomQueryInterfaceMode">
+﻿<Type Name="CustomQueryInterfaceMode" FullName="System.Runtime.InteropServices.CustomQueryInterfaceMode">
   <TypeSignature Language="C#" Value="public enum CustomQueryInterfaceMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CustomQueryInterfaceMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.CustomQueryInterfaceMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum CustomQueryInterfaceMode" />
+  <TypeSignature Language="C++ CLI" Value="public enum class CustomQueryInterfaceMode" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +34,8 @@
       <MemberSignature Language="C#" Value="Allow" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.CustomQueryInterfaceMode Allow = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.CustomQueryInterfaceMode.Allow" />
+      <MemberSignature Language="VB.NET" Value="Allow" />
+      <MemberSignature Language="C++ CLI" Value="Allow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -54,6 +58,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.CustomQueryInterfaceMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>[IUnknown::QueryInterface](http://go.microsoft.com/fwlink/?LinkID=144867) method calls can use the <see cref="T:System.Runtime.InteropServices.ICustomQueryInterface" /> interface. When you use this value, the <see cref="M:System.Runtime.InteropServices.Marshal.GetComInterfaceForObject(System.Object,System.Type,System.Runtime.InteropServices.CustomQueryInterfaceMode)" /> method overload functions like the <see cref="M:System.Runtime.InteropServices.Marshal.GetComInterfaceForObject(System.Object,System.Type)" /> overload.</summary>
       </Docs>
@@ -62,6 +67,8 @@
       <MemberSignature Language="C#" Value="Ignore" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.CustomQueryInterfaceMode Ignore = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.CustomQueryInterfaceMode.Ignore" />
+      <MemberSignature Language="VB.NET" Value="Ignore" />
+      <MemberSignature Language="C++ CLI" Value="Ignore" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -84,6 +91,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.CustomQueryInterfaceMode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>[IUnknown::QueryInterface](http://go.microsoft.com/fwlink/?LinkID=144867) method calls should ignore the <see cref="T:System.Runtime.InteropServices.ICustomQueryInterface" /> interface.</summary>
       </Docs>

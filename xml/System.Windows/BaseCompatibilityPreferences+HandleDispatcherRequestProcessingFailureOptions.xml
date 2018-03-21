@@ -1,7 +1,9 @@
-<Type Name="BaseCompatibilityPreferences+HandleDispatcherRequestProcessingFailureOptions" FullName="System.Windows.BaseCompatibilityPreferences+HandleDispatcherRequestProcessingFailureOptions">
+﻿<Type Name="BaseCompatibilityPreferences+HandleDispatcherRequestProcessingFailureOptions" FullName="System.Windows.BaseCompatibilityPreferences+HandleDispatcherRequestProcessingFailureOptions">
   <TypeSignature Language="C#" Value="public enum BaseCompatibilityPreferences.HandleDispatcherRequestProcessingFailureOptions" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed BaseCompatibilityPreferences/HandleDispatcherRequestProcessingFailureOptions extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.BaseCompatibilityPreferences.HandleDispatcherRequestProcessingFailureOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Enum BaseCompatibilityPreferences.HandleDispatcherRequestProcessingFailureOptions" />
+  <TypeSignature Language="C++ CLI" Value="public: enum class BaseCompatibilityPreferences::HandleDispatcherRequestProcessingFailureOptions" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +28,8 @@
       <MemberSignature Language="C#" Value="Continue" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.BaseCompatibilityPreferences/HandleDispatcherRequestProcessingFailureOptions Continue = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.BaseCompatibilityPreferences.HandleDispatcherRequestProcessingFailureOptions.Continue" />
+      <MemberSignature Language="VB.NET" Value="Continue" />
+      <MemberSignature Language="C++ CLI" Value="Continue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -34,6 +38,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.BaseCompatibilityPreferences+HandleDispatcherRequestProcessingFailureOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Continue after the failure.  
   
@@ -44,6 +49,8 @@
       <MemberSignature Language="C#" Value="Reset" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.BaseCompatibilityPreferences/HandleDispatcherRequestProcessingFailureOptions Reset = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.BaseCompatibilityPreferences.HandleDispatcherRequestProcessingFailureOptions.Reset" />
+      <MemberSignature Language="VB.NET" Value="Reset" />
+      <MemberSignature Language="C++ CLI" Value="Reset" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -52,6 +59,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.BaseCompatibilityPreferences+HandleDispatcherRequestProcessingFailureOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Reset the dispatcher's state to try another request the next time one is needed.  
   
@@ -62,6 +70,8 @@
       <MemberSignature Language="C#" Value="Throw" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.BaseCompatibilityPreferences/HandleDispatcherRequestProcessingFailureOptions Throw = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.BaseCompatibilityPreferences.HandleDispatcherRequestProcessingFailureOptions.Throw" />
+      <MemberSignature Language="VB.NET" Value="Throw" />
+      <MemberSignature Language="C++ CLI" Value="Throw" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -70,6 +80,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.BaseCompatibilityPreferences+HandleDispatcherRequestProcessingFailureOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Throw an exception.  
   

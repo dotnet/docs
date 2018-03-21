@@ -1,7 +1,9 @@
-<Type Name="GridViewUpdatedEventHandler" FullName="System.Web.UI.WebControls.GridViewUpdatedEventHandler">
+﻿<Type Name="GridViewUpdatedEventHandler" FullName="System.Web.UI.WebControls.GridViewUpdatedEventHandler">
   <TypeSignature Language="C#" Value="public delegate void GridViewUpdatedEventHandler(object sender, GridViewUpdatedEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed GridViewUpdatedEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.GridViewUpdatedEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub GridViewUpdatedEventHandler(sender As Object, e As GridViewUpdatedEventArgs)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void GridViewUpdatedEventHandler(System::Object ^ sender, GridViewUpdatedEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

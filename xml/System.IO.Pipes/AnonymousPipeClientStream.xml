@@ -1,7 +1,9 @@
-<Type Name="AnonymousPipeClientStream" FullName="System.IO.Pipes.AnonymousPipeClientStream">
+﻿<Type Name="AnonymousPipeClientStream" FullName="System.IO.Pipes.AnonymousPipeClientStream">
   <TypeSignature Language="C#" Value="public sealed class AnonymousPipeClientStream : System.IO.Pipes.PipeStream" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AnonymousPipeClientStream extends System.IO.Pipes.PipeStream" />
   <TypeSignature Language="DocId" Value="T:System.IO.Pipes.AnonymousPipeClientStream" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AnonymousPipeClientStream&#xA;Inherits PipeStream" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AnonymousPipeClientStream sealed : System::IO::Pipes::PipeStream" />
   <AssemblyInfo>
     <AssemblyName>System.IO.Pipes</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,10 +54,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IO.Pipes.AnonymousPipeClientStream" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public AnonymousPipeClientStream (string pipeHandleAsString);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string pipeHandleAsString) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.AnonymousPipeClientStream.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (pipeHandleAsString As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AnonymousPipeClientStream(System::String ^ pipeHandleAsString);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -102,6 +116,7 @@
       <MemberSignature Language="C#" Value="public AnonymousPipeClientStream (System.IO.Pipes.PipeDirection direction, Microsoft.Win32.SafeHandles.SafePipeHandle safePipeHandle);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.IO.Pipes.PipeDirection direction, class Microsoft.Win32.SafeHandles.SafePipeHandle safePipeHandle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.AnonymousPipeClientStream.#ctor(System.IO.Pipes.PipeDirection,Microsoft.Win32.SafeHandles.SafePipeHandle)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AnonymousPipeClientStream(System::IO::Pipes::PipeDirection direction, Microsoft::Win32::SafeHandles::SafePipeHandle ^ safePipeHandle);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -161,6 +176,8 @@
       <MemberSignature Language="C#" Value="public AnonymousPipeClientStream (System.IO.Pipes.PipeDirection direction, string pipeHandleAsString);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.IO.Pipes.PipeDirection direction, string pipeHandleAsString) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.AnonymousPipeClientStream.#ctor(System.IO.Pipes.PipeDirection,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (direction As PipeDirection, pipeHandleAsString As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AnonymousPipeClientStream(System::IO::Pipes::PipeDirection direction, System::String ^ pipeHandleAsString);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -216,6 +233,8 @@
       <MemberSignature Language="C#" Value="~AnonymousPipeClientStream ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.AnonymousPipeClientStream.Finalize" />
+      <MemberSignature Language="VB.NET" Value="Finalize ()" />
+      <MemberSignature Language="C++ CLI" Value="!AnonymousPipeClientStream ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -240,6 +259,8 @@
       <MemberSignature Language="C#" Value="public override System.IO.Pipes.PipeTransmissionMode ReadMode { set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.IO.Pipes.PipeTransmissionMode ReadMode" />
       <MemberSignature Language="DocId" Value="P:System.IO.Pipes.AnonymousPipeClientStream.ReadMode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property ReadMode As PipeTransmissionMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::IO::Pipes::PipeTransmissionMode ReadMode {  void set(System::IO::Pipes::PipeTransmissionMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -288,6 +309,8 @@
       <MemberSignature Language="C#" Value="public override System.IO.Pipes.PipeTransmissionMode TransmissionMode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.IO.Pipes.PipeTransmissionMode TransmissionMode" />
       <MemberSignature Language="DocId" Value="P:System.IO.Pipes.AnonymousPipeClientStream.TransmissionMode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property TransmissionMode As PipeTransmissionMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::IO::Pipes::PipeTransmissionMode TransmissionMode { System::IO::Pipes::PipeTransmissionMode get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -328,15 +351,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.IO.Pipes</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IO.Pipes.AnonymousPipeClientStream" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

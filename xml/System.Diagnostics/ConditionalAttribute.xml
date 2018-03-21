@@ -1,7 +1,9 @@
-<Type Name="ConditionalAttribute" FullName="System.Diagnostics.ConditionalAttribute">
+﻿<Type Name="ConditionalAttribute" FullName="System.Diagnostics.ConditionalAttribute">
   <TypeSignature Language="C#" Value="public sealed class ConditionalAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit ConditionalAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.ConditionalAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ConditionalAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ConditionalAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -92,6 +94,8 @@
       <MemberSignature Language="C#" Value="public ConditionalAttribute (string conditionString);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string conditionString) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.ConditionalAttribute.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (conditionString As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ConditionalAttribute(System::String ^ conditionString);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -133,6 +137,8 @@
       <MemberSignature Language="C#" Value="public string ConditionString { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ConditionString" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.ConditionalAttribute.ConditionString" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ConditionString As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ConditionString { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

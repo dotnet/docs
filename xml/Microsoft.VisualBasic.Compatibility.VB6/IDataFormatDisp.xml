@@ -1,7 +1,9 @@
-<Type Name="IDataFormatDisp" FullName="Microsoft.VisualBasic.Compatibility.VB6.IDataFormatDisp">
+﻿<Type Name="IDataFormatDisp" FullName="Microsoft.VisualBasic.Compatibility.VB6.IDataFormatDisp">
   <TypeSignature Language="C#" Value="public interface IDataFormatDisp" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDataFormatDisp" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.IDataFormatDisp" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IDataFormatDisp" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IDataFormatDisp" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -15,7 +17,7 @@
       <AttributeName>System.Runtime.InteropServices.Guid("E675F3F0-91B5-11D0-9484-00A0C91110ED")</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsDual)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>

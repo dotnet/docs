@@ -1,7 +1,9 @@
-<Type Name="IMembershipCondition" FullName="System.Security.Policy.IMembershipCondition">
+﻿<Type Name="IMembershipCondition" FullName="System.Security.Policy.IMembershipCondition">
   <TypeSignature Language="C#" Value="public interface IMembershipCondition : System.Security.ISecurityEncodable, System.Security.ISecurityPolicyEncodable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IMembershipCondition implements class System.Security.ISecurityEncodable, class System.Security.ISecurityPolicyEncodable" />
   <TypeSignature Language="DocId" Value="T:System.Security.Policy.IMembershipCondition" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IMembershipCondition&#xA;Implements ISecurityEncodable, ISecurityPolicyEncodable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IMembershipCondition : System::Security::ISecurityEncodable, System::Security::ISecurityPolicyEncodable" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -33,6 +35,7 @@
       <MemberSignature Language="C#" Value="public bool Check (System.Security.Policy.Evidence evidence);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Check(class System.Security.Policy.Evidence evidence) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.IMembershipCondition.Check(System.Security.Policy.Evidence)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Check(System::Security::Policy::Evidence ^ evidence);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -61,6 +64,8 @@
       <MemberSignature Language="C#" Value="public System.Security.Policy.IMembershipCondition Copy ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Security.Policy.IMembershipCondition Copy() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.IMembershipCondition.Copy" />
+      <MemberSignature Language="VB.NET" Value="Public Function Copy () As IMembershipCondition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::Policy::IMembershipCondition ^ Copy();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -85,6 +90,8 @@
       <MemberSignature Language="C#" Value="public bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.IMembershipCondition.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -113,6 +120,8 @@
       <MemberSignature Language="C#" Value="public string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.IMembershipCondition.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

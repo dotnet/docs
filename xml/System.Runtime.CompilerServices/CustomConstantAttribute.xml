@@ -1,7 +1,9 @@
-<Type Name="CustomConstantAttribute" FullName="System.Runtime.CompilerServices.CustomConstantAttribute">
+﻿<Type Name="CustomConstantAttribute" FullName="System.Runtime.CompilerServices.CustomConstantAttribute">
   <TypeSignature Language="C#" Value="public abstract class CustomConstantAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit CustomConstantAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.CustomConstantAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class CustomConstantAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CustomConstantAttribute abstract : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,6 +55,8 @@
       <MemberSignature Language="C#" Value="protected CustomConstantAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.CustomConstantAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; CustomConstantAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -88,6 +92,8 @@
       <MemberSignature Language="C#" Value="public abstract object Value { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Value" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.CompilerServices.CustomConstantAttribute.Value" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Value As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Object ^ Value { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="ClientSideProviderFactoryCallback" FullName="System.Windows.Automation.ClientSideProviderFactoryCallback">
+﻿<Type Name="ClientSideProviderFactoryCallback" FullName="System.Windows.Automation.ClientSideProviderFactoryCallback">
   <TypeSignature Language="C#" Value="public delegate System.Windows.Automation.Provider.IRawElementProviderSimple ClientSideProviderFactoryCallback(IntPtr hwnd, int idChild, int idObject);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ClientSideProviderFactoryCallback extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.ClientSideProviderFactoryCallback" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Function ClientSideProviderFactoryCallback(hwnd As IntPtr, idChild As Integer, idObject As Integer) As IRawElementProviderSimple " />
+  <TypeSignature Language="C++ CLI" Value="public delegate System::Windows::Automation::Provider::IRawElementProviderSimple ^ ClientSideProviderFactoryCallback(IntPtr hwnd, int idChild, int idObject);" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationClient</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

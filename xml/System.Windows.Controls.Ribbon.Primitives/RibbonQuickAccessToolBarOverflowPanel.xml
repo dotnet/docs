@@ -1,7 +1,9 @@
-<Type Name="RibbonQuickAccessToolBarOverflowPanel" FullName="System.Windows.Controls.Ribbon.Primitives.RibbonQuickAccessToolBarOverflowPanel">
+﻿<Type Name="RibbonQuickAccessToolBarOverflowPanel" FullName="System.Windows.Controls.Ribbon.Primitives.RibbonQuickAccessToolBarOverflowPanel">
   <TypeSignature Language="C#" Value="public class RibbonQuickAccessToolBarOverflowPanel : System.Windows.Controls.Panel" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RibbonQuickAccessToolBarOverflowPanel extends System.Windows.Controls.Panel" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Ribbon.Primitives.RibbonQuickAccessToolBarOverflowPanel" />
+  <TypeSignature Language="VB.NET" Value="Public Class RibbonQuickAccessToolBarOverflowPanel&#xA;Inherits Panel" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RibbonQuickAccessToolBarOverflowPanel : System::Windows::Controls::Panel" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +28,8 @@
       <MemberSignature Language="C#" Value="public RibbonQuickAccessToolBarOverflowPanel ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.Primitives.RibbonQuickAccessToolBarOverflowPanel.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RibbonQuickAccessToolBarOverflowPanel();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -41,6 +45,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Size ArrangeOverride (System.Windows.Size finalSize);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Size ArrangeOverride(valuetype System.Windows.Size finalSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.Primitives.RibbonQuickAccessToolBarOverflowPanel.ArrangeOverride(System.Windows.Size)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function ArrangeOverride (finalSize As Size) As Size" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size ArrangeOverride(System::Windows::Size finalSize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -63,6 +69,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Size MeasureOverride (System.Windows.Size availableSize);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Size MeasureOverride(valuetype System.Windows.Size availableSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.Primitives.RibbonQuickAccessToolBarOverflowPanel.MeasureOverride(System.Windows.Size)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function MeasureOverride (availableSize As Size) As Size" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size MeasureOverride(System::Windows::Size availableSize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="XamlTypeName" FullName="System.Xaml.Schema.XamlTypeName">
+﻿<Type Name="XamlTypeName" FullName="System.Xaml.Schema.XamlTypeName">
   <TypeSignature Language="C#" Value="public class XamlTypeName" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XamlTypeName extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Xaml.Schema.XamlTypeName" />
+  <TypeSignature Language="VB.NET" Value="Public Class XamlTypeName" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XamlTypeName" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,10 +29,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.Schema.XamlTypeName" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public XamlTypeName ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.Schema.XamlTypeName.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlTypeName();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -46,6 +59,7 @@
       <MemberSignature Language="C#" Value="public XamlTypeName (System.Xaml.XamlType xamlType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xaml.XamlType xamlType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.Schema.XamlTypeName.#ctor(System.Xaml.XamlType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlTypeName(System::Xaml::XamlType ^ xamlType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -66,6 +80,8 @@
       <MemberSignature Language="C#" Value="public XamlTypeName (string xamlNamespace, string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string xamlNamespace, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.Schema.XamlTypeName.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (xamlNamespace As String, name As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlTypeName(System::String ^ xamlNamespace, System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -86,6 +102,8 @@
       <MemberSignature Language="C#" Value="public XamlTypeName (string xamlNamespace, string name, System.Collections.Generic.IEnumerable&lt;System.Xaml.Schema.XamlTypeName&gt; typeArguments);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string xamlNamespace, string name, class System.Collections.Generic.IEnumerable`1&lt;class System.Xaml.Schema.XamlTypeName&gt; typeArguments) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.Schema.XamlTypeName.#ctor(System.String,System.String,System.Collections.Generic.IEnumerable{System.Xaml.Schema.XamlTypeName})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (xamlNamespace As String, name As String, typeArguments As IEnumerable(Of XamlTypeName))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlTypeName(System::String ^ xamlNamespace, System::String ^ name, System::Collections::Generic::IEnumerable&lt;System::Xaml::Schema::XamlTypeName ^&gt; ^ typeArguments);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -115,6 +133,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Xaml.Schema.XamlTypeName.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -140,6 +160,8 @@
       <MemberSignature Language="C#" Value="public string Namespace { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Namespace" />
       <MemberSignature Language="DocId" Value="P:System.Xaml.Schema.XamlTypeName.Namespace" />
+      <MemberSignature Language="VB.NET" Value="Public Property Namespace As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Namespace { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -165,6 +187,8 @@
       <MemberSignature Language="C#" Value="public static System.Xaml.Schema.XamlTypeName Parse (string typeName, System.Xaml.IXamlNamespaceResolver namespaceResolver);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xaml.Schema.XamlTypeName Parse(string typeName, class System.Xaml.IXamlNamespaceResolver namespaceResolver) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.Schema.XamlTypeName.Parse(System.String,System.Xaml.IXamlNamespaceResolver)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (typeName As String, namespaceResolver As IXamlNamespaceResolver) As XamlTypeName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xaml::Schema::XamlTypeName ^ Parse(System::String ^ typeName, System::Xaml::IXamlNamespaceResolver ^ namespaceResolver);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -192,6 +216,8 @@
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IList&lt;System.Xaml.Schema.XamlTypeName&gt; ParseList (string typeNameList, System.Xaml.IXamlNamespaceResolver namespaceResolver);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IList`1&lt;class System.Xaml.Schema.XamlTypeName&gt; ParseList(string typeNameList, class System.Xaml.IXamlNamespaceResolver namespaceResolver) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.Schema.XamlTypeName.ParseList(System.String,System.Xaml.IXamlNamespaceResolver)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ParseList (typeNameList As String, namespaceResolver As IXamlNamespaceResolver) As IList(Of XamlTypeName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Generic::IList&lt;System::Xaml::Schema::XamlTypeName ^&gt; ^ ParseList(System::String ^ typeNameList, System::Xaml::IXamlNamespaceResolver ^ namespaceResolver);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -231,10 +257,21 @@ XamlTypeNameList1 = empty | ‘,’ XamlTypeNameList
         <exception cref="T:System.FormatException">String cannot be parsed.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the value of this <see cref="T:System.Xaml.Schema.XamlTypeName" /> to its equivalent string representation.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ToString">
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.Schema.XamlTypeName.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -261,6 +298,8 @@ XamlTypeNameList1 = empty | ‘,’ XamlTypeNameList
       <MemberSignature Language="C#" Value="public string ToString (System.Xaml.INamespacePrefixLookup prefixLookup);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string ToString(class System.Xaml.INamespacePrefixLookup prefixLookup) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.Schema.XamlTypeName.ToString(System.Xaml.INamespacePrefixLookup)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToString (prefixLookup As INamespacePrefixLookup) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToString(System::Xaml::INamespacePrefixLookup ^ prefixLookup);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -293,6 +332,8 @@ XamlTypeNameList1 = empty | ‘,’ XamlTypeNameList
       <MemberSignature Language="C#" Value="public static string ToString (System.Collections.Generic.IList&lt;System.Xaml.Schema.XamlTypeName&gt; typeNameList, System.Xaml.INamespacePrefixLookup prefixLookup);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string ToString(class System.Collections.Generic.IList`1&lt;class System.Xaml.Schema.XamlTypeName&gt; typeNameList, class System.Xaml.INamespacePrefixLookup prefixLookup) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.Schema.XamlTypeName.ToString(System.Collections.Generic.IList{System.Xaml.Schema.XamlTypeName},System.Xaml.INamespacePrefixLookup)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (typeNameList As IList(Of XamlTypeName), prefixLookup As INamespacePrefixLookup) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(System::Collections::Generic::IList&lt;System::Xaml::Schema::XamlTypeName ^&gt; ^ typeNameList, System::Xaml::INamespacePrefixLookup ^ prefixLookup);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -319,6 +360,8 @@ XamlTypeNameList1 = empty | ‘,’ XamlTypeNameList
       <MemberSignature Language="C#" Value="public static bool TryParse (string typeName, System.Xaml.IXamlNamespaceResolver namespaceResolver, out System.Xaml.Schema.XamlTypeName result);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string typeName, class System.Xaml.IXamlNamespaceResolver namespaceResolver, [out] class System.Xaml.Schema.XamlTypeName&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.Schema.XamlTypeName.TryParse(System.String,System.Xaml.IXamlNamespaceResolver,System.Xaml.Schema.XamlTypeName@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryParse (typeName As String, namespaceResolver As IXamlNamespaceResolver, ByRef result As XamlTypeName) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryParse(System::String ^ typeName, System::Xaml::IXamlNamespaceResolver ^ namespaceResolver, [Runtime::InteropServices::Out] System::Xaml::Schema::XamlTypeName ^ % result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -348,6 +391,8 @@ XamlTypeNameList1 = empty | ‘,’ XamlTypeNameList
       <MemberSignature Language="C#" Value="public static bool TryParseList (string typeNameList, System.Xaml.IXamlNamespaceResolver namespaceResolver, out System.Collections.Generic.IList&lt;System.Xaml.Schema.XamlTypeName&gt; result);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParseList(string typeNameList, class System.Xaml.IXamlNamespaceResolver namespaceResolver, [out] class System.Collections.Generic.IList`1&lt;class System.Xaml.Schema.XamlTypeName&gt;&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.Schema.XamlTypeName.TryParseList(System.String,System.Xaml.IXamlNamespaceResolver,System.Collections.Generic.IList{System.Xaml.Schema.XamlTypeName}@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryParseList (typeNameList As String, namespaceResolver As IXamlNamespaceResolver, ByRef result As IList(Of XamlTypeName)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryParseList(System::String ^ typeNameList, System::Xaml::IXamlNamespaceResolver ^ namespaceResolver, [Runtime::InteropServices::Out] System::Collections::Generic::IList&lt;System::Xaml::Schema::XamlTypeName ^&gt; ^ % result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -377,6 +422,8 @@ XamlTypeNameList1 = empty | ‘,’ XamlTypeNameList
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;System.Xaml.Schema.XamlTypeName&gt; TypeArguments { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class System.Xaml.Schema.XamlTypeName&gt; TypeArguments" />
       <MemberSignature Language="DocId" Value="P:System.Xaml.Schema.XamlTypeName.TypeArguments" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TypeArguments As IList(Of XamlTypeName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::Xaml::Schema::XamlTypeName ^&gt; ^ TypeArguments { System::Collections::Generic::IList&lt;System::Xaml::Schema::XamlTypeName ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -398,23 +445,5 @@ XamlTypeNameList1 = empty | ‘,’ XamlTypeNameList
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Xaml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Xaml.Schema.XamlTypeName" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ToString">
-      <AssemblyInfo>
-        <AssemblyName>System.Xaml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Converts the value of this <see cref="T:System.Xaml.Schema.XamlTypeName" /> to its equivalent string representation.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

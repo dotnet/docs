@@ -1,7 +1,9 @@
-<Type Name="WebPartVerbsEventArgs" FullName="System.Web.UI.WebControls.WebParts.WebPartVerbsEventArgs">
+﻿<Type Name="WebPartVerbsEventArgs" FullName="System.Web.UI.WebControls.WebParts.WebPartVerbsEventArgs">
   <TypeSignature Language="C#" Value="public class WebPartVerbsEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WebPartVerbsEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.WebPartVerbsEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class WebPartVerbsEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WebPartVerbsEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,10 +33,21 @@
     <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartZoneBase.OnCreateVerbs(System.Web.UI.WebControls.WebParts.WebPartVerbsEventArgs)" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartVerbsEventArgs" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public WebPartVerbsEventArgs ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartVerbsEventArgs.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebPartVerbsEventArgs();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -57,6 +70,8 @@
       <MemberSignature Language="C#" Value="public WebPartVerbsEventArgs (System.Web.UI.WebControls.WebParts.WebPartVerbCollection verbs);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.WebControls.WebParts.WebPartVerbCollection verbs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartVerbsEventArgs.#ctor(System.Web.UI.WebControls.WebParts.WebPartVerbCollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (verbs As WebPartVerbCollection)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebPartVerbsEventArgs(System::Web::UI::WebControls::WebParts::WebPartVerbCollection ^ verbs);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -82,6 +97,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.WebParts.WebPartVerbCollection Verbs { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.WebParts.WebPartVerbCollection Verbs" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartVerbsEventArgs.Verbs" />
+      <MemberSignature Language="VB.NET" Value="Public Property Verbs As WebPartVerbCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::WebParts::WebPartVerbCollection ^ Verbs { System::Web::UI::WebControls::WebParts::WebPartVerbCollection ^ get(); void set(System::Web::UI::WebControls::WebParts::WebPartVerbCollection ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -104,14 +121,5 @@
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartZoneBase.OnCreateVerbs(System.Web.UI.WebControls.WebParts.WebPartVerbsEventArgs)" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartVerbsEventArgs" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

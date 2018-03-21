@@ -1,7 +1,9 @@
-<Type Name="SocketInformationOptions" FullName="System.Net.Sockets.SocketInformationOptions">
+﻿<Type Name="SocketInformationOptions" FullName="System.Net.Sockets.SocketInformationOptions">
   <TypeSignature Language="C#" Value="public enum SocketInformationOptions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SocketInformationOptions extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Net.Sockets.SocketInformationOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Enum SocketInformationOptions" />
+  <TypeSignature Language="C++ CLI" Value="public enum class SocketInformationOptions" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -32,6 +34,8 @@
       <MemberSignature Language="C#" Value="Connected" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketInformationOptions Connected = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketInformationOptions.Connected" />
+      <MemberSignature Language="VB.NET" Value="Connected" />
+      <MemberSignature Language="C++ CLI" Value="Connected" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -49,6 +53,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SocketInformationOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Net.Sockets.Socket" /> is connected.</summary>
       </Docs>
@@ -57,6 +62,8 @@
       <MemberSignature Language="C#" Value="Listening" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketInformationOptions Listening = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketInformationOptions.Listening" />
+      <MemberSignature Language="VB.NET" Value="Listening" />
+      <MemberSignature Language="C++ CLI" Value="Listening" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -74,6 +81,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SocketInformationOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Net.Sockets.Socket" /> is listening for new connections.</summary>
       </Docs>
@@ -82,6 +90,8 @@
       <MemberSignature Language="C#" Value="NonBlocking" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketInformationOptions NonBlocking = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketInformationOptions.NonBlocking" />
+      <MemberSignature Language="VB.NET" Value="NonBlocking" />
+      <MemberSignature Language="C++ CLI" Value="NonBlocking" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -99,6 +109,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SocketInformationOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Net.Sockets.Socket" /> is nonblocking.</summary>
       </Docs>
@@ -107,6 +118,8 @@
       <MemberSignature Language="C#" Value="UseOnlyOverlappedIO" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketInformationOptions UseOnlyOverlappedIO = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketInformationOptions.UseOnlyOverlappedIO" />
+      <MemberSignature Language="VB.NET" Value="UseOnlyOverlappedIO" />
+      <MemberSignature Language="C++ CLI" Value="UseOnlyOverlappedIO" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -124,6 +137,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SocketInformationOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Net.Sockets.Socket" /> uses overlapped I/O.</summary>
       </Docs>

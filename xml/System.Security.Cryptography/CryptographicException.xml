@@ -1,7 +1,9 @@
-<Type Name="CryptographicException" FullName="System.Security.Cryptography.CryptographicException">
+﻿<Type Name="CryptographicException" FullName="System.Security.Cryptography.CryptographicException">
   <TypeSignature Language="C#" Value="public class CryptographicException : SystemException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CryptographicException extends System.SystemException" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.CryptographicException" />
+  <TypeSignature Language="VB.NET" Value="Public Class CryptographicException&#xA;Inherits SystemException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CryptographicException : SystemException" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,10 +55,21 @@
     <altmember cref="T:System.Exception" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.CryptographicException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public CryptographicException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CryptographicException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CryptographicException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -106,6 +119,8 @@
       <MemberSignature Language="C#" Value="public CryptographicException (int hr);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 hr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CryptographicException.#ctor(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (hr As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CryptographicException(int hr);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -165,6 +180,8 @@
       <MemberSignature Language="C#" Value="public CryptographicException (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CryptographicException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CryptographicException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -217,6 +234,8 @@
       <MemberSignature Language="C#" Value="protected CryptographicException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CryptographicException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; CryptographicException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -253,6 +272,8 @@
       <MemberSignature Language="C#" Value="public CryptographicException (string message, Exception inner);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception inner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CryptographicException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, inner As Exception)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CryptographicException(System::String ^ message, Exception ^ inner);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -310,6 +331,8 @@
       <MemberSignature Language="C#" Value="public CryptographicException (string format, string insert);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string format, string insert) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CryptographicException.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (format As String, insert As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CryptographicException(System::String ^ format, System::String ^ insert);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -360,14 +383,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.CryptographicException" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

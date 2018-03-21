@@ -1,7 +1,9 @@
-<Type Name="UpWmlPageAdapter" FullName="System.Web.UI.MobileControls.Adapters.UpWmlPageAdapter">
+﻿<Type Name="UpWmlPageAdapter" FullName="System.Web.UI.MobileControls.Adapters.UpWmlPageAdapter">
   <TypeSignature Language="C#" Value="public class UpWmlPageAdapter : System.Web.UI.MobileControls.Adapters.WmlPageAdapter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit UpWmlPageAdapter extends System.Web.UI.MobileControls.Adapters.WmlPageAdapter" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.Adapters.UpWmlPageAdapter" />
+  <TypeSignature Language="VB.NET" Value="Public Class UpWmlPageAdapter&#xA;Inherits WmlPageAdapter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class UpWmlPageAdapter : System::Web::UI::MobileControls::Adapters::WmlPageAdapter" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +27,8 @@
       <MemberSignature Language="C#" Value="public UpWmlPageAdapter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.UpWmlPageAdapter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UpWmlPageAdapter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -40,6 +44,8 @@
       <MemberSignature Language="C#" Value="public override System.Web.UI.HtmlTextWriter CreateTextWriter (System.IO.TextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.UI.HtmlTextWriter CreateTextWriter(class System.IO.TextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.UpWmlPageAdapter.CreateTextWriter(System.IO.TextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateTextWriter (writer As TextWriter) As HtmlTextWriter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::UI::HtmlTextWriter ^ CreateTextWriter(System::IO::TextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -63,6 +69,8 @@
       <MemberSignature Language="C#" Value="public static bool DeviceQualifies (System.Web.HttpContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool DeviceQualifies(class System.Web.HttpContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.UpWmlPageAdapter.DeviceQualifies(System.Web.HttpContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DeviceQualifies (context As HttpContext) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool DeviceQualifies(System::Web::HttpContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

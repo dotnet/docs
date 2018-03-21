@@ -1,7 +1,9 @@
-<Type Name="RegularExpressionAttributeAdapter" FullName="System.Web.ModelBinding.RegularExpressionAttributeAdapter">
+﻿<Type Name="RegularExpressionAttributeAdapter" FullName="System.Web.ModelBinding.RegularExpressionAttributeAdapter">
   <TypeSignature Language="C#" Value="public sealed class RegularExpressionAttributeAdapter : System.Web.ModelBinding.DataAnnotationsModelValidator&lt;System.ComponentModel.DataAnnotations.RegularExpressionAttribute&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RegularExpressionAttributeAdapter extends System.Web.ModelBinding.DataAnnotationsModelValidator`1&lt;class System.ComponentModel.DataAnnotations.RegularExpressionAttribute&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.RegularExpressionAttributeAdapter" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RegularExpressionAttributeAdapter&#xA;Inherits DataAnnotationsModelValidator(Of RegularExpressionAttribute)" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RegularExpressionAttributeAdapter sealed : System::Web::ModelBinding::DataAnnotationsModelValidator&lt;System::ComponentModel::DataAnnotations::RegularExpressionAttribute ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +24,8 @@
       <MemberSignature Language="C#" Value="public RegularExpressionAttributeAdapter (System.Web.ModelBinding.ModelMetadata metadata, System.Web.ModelBinding.ModelBindingExecutionContext context, System.ComponentModel.DataAnnotations.RegularExpressionAttribute attribute);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.ModelBinding.ModelMetadata metadata, class System.Web.ModelBinding.ModelBindingExecutionContext context, class System.ComponentModel.DataAnnotations.RegularExpressionAttribute attribute) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.RegularExpressionAttributeAdapter.#ctor(System.Web.ModelBinding.ModelMetadata,System.Web.ModelBinding.ModelBindingExecutionContext,System.ComponentModel.DataAnnotations.RegularExpressionAttribute)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (metadata As ModelMetadata, context As ModelBindingExecutionContext, attribute As RegularExpressionAttribute)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RegularExpressionAttributeAdapter(System::Web::ModelBinding::ModelMetadata ^ metadata, System::Web::ModelBinding::ModelBindingExecutionContext ^ context, System::ComponentModel::DataAnnotations::RegularExpressionAttribute ^ attribute);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -44,6 +48,8 @@
       <MemberSignature Language="C#" Value="protected override string GetLocalizedErrorMessage (string errorMessage);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetLocalizedErrorMessage(string errorMessage) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.RegularExpressionAttributeAdapter.GetLocalizedErrorMessage(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetLocalizedErrorMessage (errorMessage As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetLocalizedErrorMessage(System::String ^ errorMessage);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

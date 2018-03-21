@@ -1,7 +1,9 @@
-<Type Name="BindingContext" FullName="System.ServiceModel.Channels.BindingContext">
+﻿<Type Name="BindingContext" FullName="System.ServiceModel.Channels.BindingContext">
   <TypeSignature Language="C#" Value="public class BindingContext" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BindingContext extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.BindingContext" />
+  <TypeSignature Language="VB.NET" Value="Public Class BindingContext" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BindingContext" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -29,10 +31,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.BindingContext" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public BindingContext (System.ServiceModel.Channels.CustomBinding binding, System.ServiceModel.Channels.BindingParameterCollection parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Channels.CustomBinding binding, class System.ServiceModel.Channels.BindingParameterCollection parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BindingContext.#ctor(System.ServiceModel.Channels.CustomBinding,System.ServiceModel.Channels.BindingParameterCollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (binding As CustomBinding, parameters As BindingParameterCollection)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BindingContext(System::ServiceModel::Channels::CustomBinding ^ binding, System::ServiceModel::Channels::BindingParameterCollection ^ parameters);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -75,6 +89,7 @@
       <MemberSignature Language="C#" Value="public BindingContext (System.ServiceModel.Channels.CustomBinding binding, System.ServiceModel.Channels.BindingParameterCollection parameters, Uri listenUriBaseAddress, string listenUriRelativeAddress, System.ServiceModel.Description.ListenUriMode listenUriMode);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Channels.CustomBinding binding, class System.ServiceModel.Channels.BindingParameterCollection parameters, class System.Uri listenUriBaseAddress, string listenUriRelativeAddress, valuetype System.ServiceModel.Description.ListenUriMode listenUriMode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BindingContext.#ctor(System.ServiceModel.Channels.CustomBinding,System.ServiceModel.Channels.BindingParameterCollection,System.Uri,System.String,System.ServiceModel.Description.ListenUriMode)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BindingContext(System::ServiceModel::Channels::CustomBinding ^ binding, System::ServiceModel::Channels::BindingParameterCollection ^ parameters, Uri ^ listenUriBaseAddress, System::String ^ listenUriRelativeAddress, System::ServiceModel::Description::ListenUriMode listenUriMode);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -113,6 +128,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.CustomBinding Binding { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Channels.CustomBinding Binding" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.BindingContext.Binding" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Binding As CustomBinding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Channels::CustomBinding ^ Binding { System::ServiceModel::Channels::CustomBinding ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -146,6 +163,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.BindingParameterCollection BindingParameters { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Channels.BindingParameterCollection BindingParameters" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.BindingContext.BindingParameters" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BindingParameters As BindingParameterCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Channels::BindingParameterCollection ^ BindingParameters { System::ServiceModel::Channels::BindingParameterCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -184,6 +203,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.IChannelFactory&lt;TChannel&gt; BuildInnerChannelFactory&lt;TChannel&gt; ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ServiceModel.Channels.IChannelFactory`1&lt;!!TChannel&gt; BuildInnerChannelFactory&lt;TChannel&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BindingContext.BuildInnerChannelFactory``1" />
+      <MemberSignature Language="VB.NET" Value="Public Function BuildInnerChannelFactory(Of TChannel) () As IChannelFactory(Of TChannel)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; System::ServiceModel::Channels::IChannelFactory&lt;TChannel&gt; ^ BuildInnerChannelFactory();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -222,6 +243,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.IChannelListener&lt;TChannel&gt; BuildInnerChannelListener&lt;TChannel&gt; () where TChannel : class, System.ServiceModel.Channels.IChannel;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ServiceModel.Channels.IChannelListener`1&lt;!!TChannel&gt; BuildInnerChannelListener&lt;class (class System.ServiceModel.Channels.IChannel) TChannel&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BindingContext.BuildInnerChannelListener``1" />
+      <MemberSignature Language="VB.NET" Value="Public Function BuildInnerChannelListener(Of TChannel As {Class, IChannel}) () As IChannelListener(Of TChannel)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; where TChannel : class, System::ServiceModel::Channels::IChannel System::ServiceModel::Channels::IChannelListener&lt;TChannel&gt; ^ BuildInnerChannelListener();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -258,6 +281,8 @@
       <MemberSignature Language="C#" Value="public bool CanBuildInnerChannelFactory&lt;TChannel&gt; ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool CanBuildInnerChannelFactory&lt;TChannel&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BindingContext.CanBuildInnerChannelFactory``1" />
+      <MemberSignature Language="VB.NET" Value="Public Function CanBuildInnerChannelFactory(Of TChannel) () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; bool CanBuildInnerChannelFactory();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -297,6 +322,8 @@
       <MemberSignature Language="C#" Value="public bool CanBuildInnerChannelListener&lt;TChannel&gt; () where TChannel : class, System.ServiceModel.Channels.IChannel;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool CanBuildInnerChannelListener&lt;class (class System.ServiceModel.Channels.IChannel) TChannel&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BindingContext.CanBuildInnerChannelListener``1" />
+      <MemberSignature Language="VB.NET" Value="Public Function CanBuildInnerChannelListener(Of TChannel As {Class, IChannel}) () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; where TChannel : class, System::ServiceModel::Channels::IChannel bool CanBuildInnerChannelListener();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -334,6 +361,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.BindingContext Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ServiceModel.Channels.BindingContext Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BindingContext.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As BindingContext" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Channels::BindingContext ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -373,6 +402,8 @@
       <MemberSignature Language="C#" Value="public T GetInnerProperty&lt;T&gt; () where T : class;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T GetInnerProperty&lt;class T&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BindingContext.GetInnerProperty``1" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetInnerProperty(Of T As Class) () As T" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : class T GetInnerProperty();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -420,6 +451,8 @@
       <MemberSignature Language="C#" Value="public Uri ListenUriBaseAddress { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri ListenUriBaseAddress" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.BindingContext.ListenUriBaseAddress" />
+      <MemberSignature Language="VB.NET" Value="Public Property ListenUriBaseAddress As Uri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ ListenUriBaseAddress { Uri ^ get(); void set(Uri ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -452,6 +485,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Description.ListenUriMode ListenUriMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.Description.ListenUriMode ListenUriMode" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.BindingContext.ListenUriMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property ListenUriMode As ListenUriMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Description::ListenUriMode ListenUriMode { System::ServiceModel::Description::ListenUriMode get(); void set(System::ServiceModel::Description::ListenUriMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -479,6 +514,8 @@
       <MemberSignature Language="C#" Value="public string ListenUriRelativeAddress { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ListenUriRelativeAddress" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.BindingContext.ListenUriRelativeAddress" />
+      <MemberSignature Language="VB.NET" Value="Public Property ListenUriRelativeAddress As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ListenUriRelativeAddress { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -511,6 +548,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.BindingElementCollection RemainingBindingElements { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Channels.BindingElementCollection RemainingBindingElements" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.BindingContext.RemainingBindingElements" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RemainingBindingElements As BindingElementCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Channels::BindingElementCollection ^ RemainingBindingElements { System::ServiceModel::Channels::BindingElementCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -545,15 +584,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.BindingContext" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

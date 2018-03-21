@@ -1,7 +1,9 @@
-<Type Name="XsltConfigSection" FullName="System.Xml.XmlConfiguration.XsltConfigSection">
+﻿<Type Name="XsltConfigSection" FullName="System.Xml.XmlConfiguration.XsltConfigSection">
   <TypeSignature Language="C#" Value="public sealed class XsltConfigSection : System.Configuration.ConfigurationSection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit XsltConfigSection extends System.Configuration.ConfigurationSection" />
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlConfiguration.XsltConfigSection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XsltConfigSection&#xA;Inherits ConfigurationSection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XsltConfigSection sealed : System::Configuration::ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -26,6 +28,8 @@
       <MemberSignature Language="C#" Value="public XsltConfigSection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlConfiguration.XsltConfigSection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XsltConfigSection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -42,6 +46,8 @@
       <MemberSignature Language="C#" Value="public string ProhibitDefaultResolverString { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ProhibitDefaultResolverString" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlConfiguration.XsltConfigSection.ProhibitDefaultResolverString" />
+      <MemberSignature Language="VB.NET" Value="Public Property ProhibitDefaultResolverString As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ProhibitDefaultResolverString { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

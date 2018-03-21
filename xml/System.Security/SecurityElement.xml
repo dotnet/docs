@@ -1,7 +1,9 @@
-<Type Name="SecurityElement" FullName="System.Security.SecurityElement">
+﻿<Type Name="SecurityElement" FullName="System.Security.SecurityElement">
   <TypeSignature Language="C#" Value="public sealed class SecurityElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit SecurityElement extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Security.SecurityElement" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SecurityElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SecurityElement sealed" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -62,10 +64,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.SecurityElement" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SecurityElement (string tag);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string tag) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.SecurityElement.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (tag As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SecurityElement(System::String ^ tag);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -111,6 +125,8 @@
       <MemberSignature Language="C#" Value="public SecurityElement (string tag, string text);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string tag, string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.SecurityElement.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (tag As String, text As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SecurityElement(System::String ^ tag, System::String ^ text);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -149,6 +165,8 @@
       <MemberSignature Language="C#" Value="public void AddAttribute (string name, string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddAttribute(string name, string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.SecurityElement.AddAttribute(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddAttribute (name As String, value As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddAttribute(System::String ^ name, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -205,6 +223,8 @@
       <MemberSignature Language="C#" Value="public void AddChild (System.Security.SecurityElement child);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddChild(class System.Security.SecurityElement child) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.SecurityElement.AddChild(System.Security.SecurityElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddChild (child As SecurityElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddChild(System::Security::SecurityElement ^ child);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -252,6 +272,8 @@
       <MemberSignature Language="C#" Value="public string Attribute (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string Attribute(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.SecurityElement.Attribute(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Attribute (name As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ Attribute(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -304,6 +326,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Hashtable Attributes { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Hashtable Attributes" />
       <MemberSignature Language="DocId" Value="P:System.Security.SecurityElement.Attributes" />
+      <MemberSignature Language="VB.NET" Value="Public Property Attributes As Hashtable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Hashtable ^ Attributes { System::Collections::Hashtable ^ get(); void set(System::Collections::Hashtable ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -353,6 +377,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.ArrayList Children { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ArrayList Children" />
       <MemberSignature Language="DocId" Value="P:System.Security.SecurityElement.Children" />
+      <MemberSignature Language="VB.NET" Value="Public Property Children As ArrayList" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ArrayList ^ Children { System::Collections::ArrayList ^ get(); void set(System::Collections::ArrayList ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -397,6 +423,8 @@
       <MemberSignature Language="C#" Value="public System.Security.SecurityElement Copy ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Security.SecurityElement Copy() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.SecurityElement.Copy" />
+      <MemberSignature Language="VB.NET" Value="Public Function Copy () As SecurityElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::SecurityElement ^ Copy();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -437,6 +465,8 @@
       <MemberSignature Language="C#" Value="public bool Equal (System.Security.SecurityElement other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Equal(class System.Security.SecurityElement other) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.SecurityElement.Equal(System.Security.SecurityElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equal (other As SecurityElement) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equal(System::Security::SecurityElement ^ other);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -487,6 +517,8 @@
       <MemberSignature Language="C#" Value="public static string Escape (string str);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Escape(string str) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.SecurityElement.Escape(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Escape (str As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Escape(System::String ^ str);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -544,6 +576,8 @@
       <MemberSignature Language="C#" Value="public static System.Security.SecurityElement FromString (string xml);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.SecurityElement FromString(string xml) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.SecurityElement.FromString(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromString (xml As String) As SecurityElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::SecurityElement ^ FromString(System::String ^ xml);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -588,6 +622,8 @@
       <MemberSignature Language="C#" Value="public static bool IsValidAttributeName (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsValidAttributeName(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.SecurityElement.IsValidAttributeName(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsValidAttributeName (name As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsValidAttributeName(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -636,6 +672,8 @@
       <MemberSignature Language="C#" Value="public static bool IsValidAttributeValue (string value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsValidAttributeValue(string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.SecurityElement.IsValidAttributeValue(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsValidAttributeValue (value As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsValidAttributeValue(System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -684,6 +722,8 @@
       <MemberSignature Language="C#" Value="public static bool IsValidTag (string tag);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsValidTag(string tag) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.SecurityElement.IsValidTag(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsValidTag (tag As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsValidTag(System::String ^ tag);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -732,6 +772,8 @@
       <MemberSignature Language="C#" Value="public static bool IsValidText (string text);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsValidText(string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.SecurityElement.IsValidText(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsValidText (text As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsValidText(System::String ^ text);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -780,6 +822,8 @@
       <MemberSignature Language="C#" Value="public System.Security.SecurityElement SearchForChildByTag (string tag);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Security.SecurityElement SearchForChildByTag(string tag) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.SecurityElement.SearchForChildByTag(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SearchForChildByTag (tag As String) As SecurityElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::SecurityElement ^ SearchForChildByTag(System::String ^ tag);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -833,6 +877,8 @@
       <MemberSignature Language="C#" Value="public string SearchForTextOfTag (string tag);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string SearchForTextOfTag(string tag) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.SecurityElement.SearchForTextOfTag(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SearchForTextOfTag (tag As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ SearchForTextOfTag(System::String ^ tag);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -893,6 +939,8 @@
       <MemberSignature Language="C#" Value="public string Tag { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Tag" />
       <MemberSignature Language="DocId" Value="P:System.Security.SecurityElement.Tag" />
+      <MemberSignature Language="VB.NET" Value="Public Property Tag As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Tag { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -946,6 +994,8 @@
       <MemberSignature Language="C#" Value="public string Text { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Text" />
       <MemberSignature Language="DocId" Value="P:System.Security.SecurityElement.Text" />
+      <MemberSignature Language="VB.NET" Value="Public Property Text As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -992,6 +1042,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.SecurityElement.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1023,15 +1075,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.SecurityElement" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

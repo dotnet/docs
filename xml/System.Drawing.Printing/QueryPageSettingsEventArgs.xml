@@ -1,7 +1,9 @@
-<Type Name="QueryPageSettingsEventArgs" FullName="System.Drawing.Printing.QueryPageSettingsEventArgs">
+﻿<Type Name="QueryPageSettingsEventArgs" FullName="System.Drawing.Printing.QueryPageSettingsEventArgs">
   <TypeSignature Language="C#" Value="public class QueryPageSettingsEventArgs : System.Drawing.Printing.PrintEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit QueryPageSettingsEventArgs extends System.Drawing.Printing.PrintEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Printing.QueryPageSettingsEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class QueryPageSettingsEventArgs&#xA;Inherits PrintEventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class QueryPageSettingsEventArgs : System::Drawing::Printing::PrintEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +43,7 @@
       <MemberSignature Language="C#" Value="public QueryPageSettingsEventArgs (System.Drawing.Printing.PageSettings pageSettings);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Printing.PageSettings pageSettings) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.QueryPageSettingsEventArgs.#ctor(System.Drawing.Printing.PageSettings)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; QueryPageSettingsEventArgs(System::Drawing::Printing::PageSettings ^ pageSettings);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -59,6 +62,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Printing.PageSettings PageSettings { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Printing.PageSettings PageSettings" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.QueryPageSettingsEventArgs.PageSettings" />
+      <MemberSignature Language="VB.NET" Value="Public Property PageSettings As PageSettings" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Printing::PageSettings ^ PageSettings { System::Drawing::Printing::PageSettings ^ get(); void set(System::Drawing::Printing::PageSettings ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

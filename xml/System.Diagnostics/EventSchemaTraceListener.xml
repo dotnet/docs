@@ -1,7 +1,9 @@
-<Type Name="EventSchemaTraceListener" FullName="System.Diagnostics.EventSchemaTraceListener">
+﻿<Type Name="EventSchemaTraceListener" FullName="System.Diagnostics.EventSchemaTraceListener">
   <TypeSignature Language="C#" Value="public class EventSchemaTraceListener : System.Diagnostics.TextWriterTraceListener" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EventSchemaTraceListener extends System.Diagnostics.TextWriterTraceListener" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.EventSchemaTraceListener" />
+  <TypeSignature Language="VB.NET" Value="Public Class EventSchemaTraceListener&#xA;Inherits TextWriterTraceListener" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EventSchemaTraceListener : System::Diagnostics::TextWriterTraceListener" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -107,10 +109,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.EventSchemaTraceListener" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public EventSchemaTraceListener (string fileName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string fileName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventSchemaTraceListener.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (fileName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EventSchemaTraceListener(System::String ^ fileName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -144,6 +157,8 @@
       <MemberSignature Language="C#" Value="public EventSchemaTraceListener (string fileName, string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string fileName, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventSchemaTraceListener.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (fileName As String, name As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EventSchemaTraceListener(System::String ^ fileName, System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -174,6 +189,8 @@
       <MemberSignature Language="C#" Value="public EventSchemaTraceListener (string fileName, string name, int bufferSize);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string fileName, string name, int32 bufferSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventSchemaTraceListener.#ctor(System.String,System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (fileName As String, name As String, bufferSize As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EventSchemaTraceListener(System::String ^ fileName, System::String ^ name, int bufferSize);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -211,6 +228,8 @@
       <MemberSignature Language="C#" Value="public EventSchemaTraceListener (string fileName, string name, int bufferSize, System.Diagnostics.TraceLogRetentionOption logRetentionOption);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string fileName, string name, int32 bufferSize, valuetype System.Diagnostics.TraceLogRetentionOption logRetentionOption) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventSchemaTraceListener.#ctor(System.String,System.String,System.Int32,System.Diagnostics.TraceLogRetentionOption)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (fileName As String, name As String, bufferSize As Integer, logRetentionOption As TraceLogRetentionOption)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EventSchemaTraceListener(System::String ^ fileName, System::String ^ name, int bufferSize, System::Diagnostics::TraceLogRetentionOption logRetentionOption);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -250,6 +269,8 @@
       <MemberSignature Language="C#" Value="public EventSchemaTraceListener (string fileName, string name, int bufferSize, System.Diagnostics.TraceLogRetentionOption logRetentionOption, long maximumFileSize);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string fileName, string name, int32 bufferSize, valuetype System.Diagnostics.TraceLogRetentionOption logRetentionOption, int64 maximumFileSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventSchemaTraceListener.#ctor(System.String,System.String,System.Int32,System.Diagnostics.TraceLogRetentionOption,System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (fileName As String, name As String, bufferSize As Integer, logRetentionOption As TraceLogRetentionOption, maximumFileSize As Long)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EventSchemaTraceListener(System::String ^ fileName, System::String ^ name, int bufferSize, System::Diagnostics::TraceLogRetentionOption logRetentionOption, long maximumFileSize);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -293,6 +314,8 @@
       <MemberSignature Language="C#" Value="public EventSchemaTraceListener (string fileName, string name, int bufferSize, System.Diagnostics.TraceLogRetentionOption logRetentionOption, long maximumFileSize, int maximumNumberOfFiles);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string fileName, string name, int32 bufferSize, valuetype System.Diagnostics.TraceLogRetentionOption logRetentionOption, int64 maximumFileSize, int32 maximumNumberOfFiles) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventSchemaTraceListener.#ctor(System.String,System.String,System.Int32,System.Diagnostics.TraceLogRetentionOption,System.Int64,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (fileName As String, name As String, bufferSize As Integer, logRetentionOption As TraceLogRetentionOption, maximumFileSize As Long, maximumNumberOfFiles As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EventSchemaTraceListener(System::String ^ fileName, System::String ^ name, int bufferSize, System::Diagnostics::TraceLogRetentionOption logRetentionOption, long maximumFileSize, int maximumNumberOfFiles);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -338,6 +361,8 @@
       <MemberSignature Language="C#" Value="public int BufferSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 BufferSize" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventSchemaTraceListener.BufferSize" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BufferSize As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int BufferSize { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -371,6 +396,8 @@
       <MemberSignature Language="C#" Value="public override void Close ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Close() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventSchemaTraceListener.Close" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Close ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Close();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -389,6 +416,8 @@
       <MemberSignature Language="C#" Value="public override void Fail (string message, string detailMessage);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Fail(string message, string detailMessage) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventSchemaTraceListener.Fail(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Fail (message As String, detailMessage As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Fail(System::String ^ message, System::String ^ detailMessage);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -412,6 +441,8 @@
       <MemberSignature Language="C#" Value="public override void Flush ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Flush() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventSchemaTraceListener.Flush" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Flush ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Flush();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -435,6 +466,8 @@
       <MemberSignature Language="C#" Value="protected override string[] GetSupportedAttributes ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string[] GetSupportedAttributes() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventSchemaTraceListener.GetSupportedAttributes" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetSupportedAttributes () As String()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override cli::array &lt;System::String ^&gt; ^ GetSupportedAttributes();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -461,6 +494,8 @@
       <MemberSignature Language="C#" Value="public override bool IsThreadSafe { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsThreadSafe" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventSchemaTraceListener.IsThreadSafe" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsThreadSafe As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsThreadSafe { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -489,6 +524,8 @@
       <MemberSignature Language="C#" Value="public long MaximumFileSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 MaximumFileSize" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventSchemaTraceListener.MaximumFileSize" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MaximumFileSize As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long MaximumFileSize { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -532,6 +569,8 @@
       <MemberSignature Language="C#" Value="public int MaximumNumberOfFiles { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaximumNumberOfFiles" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventSchemaTraceListener.MaximumNumberOfFiles" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MaximumNumberOfFiles As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaximumNumberOfFiles { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -571,10 +610,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="TraceData">
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes trace data to the log file.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="TraceData">
       <MemberSignature Language="C#" Value="public override void TraceData (System.Diagnostics.TraceEventCache eventCache, string source, System.Diagnostics.TraceEventType eventType, int id, object data);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void TraceData(class System.Diagnostics.TraceEventCache eventCache, string source, valuetype System.Diagnostics.TraceEventType eventType, int32 id, object data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventSchemaTraceListener.TraceData(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub TraceData (eventCache As TraceEventCache, source As String, eventType As TraceEventType, id As Integer, data As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void TraceData(System::Diagnostics::TraceEventCache ^ eventCache, System::String ^ source, System::Diagnostics::TraceEventType eventType, int id, System::Object ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -619,6 +669,8 @@
       <MemberSignature Language="C#" Value="public override void TraceData (System.Diagnostics.TraceEventCache eventCache, string source, System.Diagnostics.TraceEventType eventType, int id, params object[] data);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void TraceData(class System.Diagnostics.TraceEventCache eventCache, string source, valuetype System.Diagnostics.TraceEventType eventType, int32 id, object[] data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventSchemaTraceListener.TraceData(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub TraceData (eventCache As TraceEventCache, source As String, eventType As TraceEventType, id As Integer, ParamArray data As Object())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void TraceData(System::Diagnostics::TraceEventCache ^ eventCache, System::String ^ source, System::Diagnostics::TraceEventType eventType, int id, ... cli::array &lt;System::Object ^&gt; ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -665,10 +717,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="TraceEvent">
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes event trace information to the log file.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="TraceEvent">
       <MemberSignature Language="C#" Value="public override void TraceEvent (System.Diagnostics.TraceEventCache eventCache, string source, System.Diagnostics.TraceEventType eventType, int id, string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void TraceEvent(class System.Diagnostics.TraceEventCache eventCache, string source, valuetype System.Diagnostics.TraceEventType eventType, int32 id, string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventSchemaTraceListener.TraceEvent(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub TraceEvent (eventCache As TraceEventCache, source As String, eventType As TraceEventType, id As Integer, message As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void TraceEvent(System::Diagnostics::TraceEventCache ^ eventCache, System::String ^ source, System::Diagnostics::TraceEventType eventType, int id, System::String ^ message);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -713,6 +776,8 @@
       <MemberSignature Language="C#" Value="public override void TraceEvent (System.Diagnostics.TraceEventCache eventCache, string source, System.Diagnostics.TraceEventType eventType, int id, string format, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void TraceEvent(class System.Diagnostics.TraceEventCache eventCache, string source, valuetype System.Diagnostics.TraceEventType eventType, int32 id, string format, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventSchemaTraceListener.TraceEvent(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.String,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub TraceEvent (eventCache As TraceEventCache, source As String, eventType As TraceEventType, id As Integer, format As String, ParamArray args As Object())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void TraceEvent(System::Diagnostics::TraceEventCache ^ eventCache, System::String ^ source, System::Diagnostics::TraceEventType eventType, int id, System::String ^ format, ... cli::array &lt;System::Object ^&gt; ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -765,6 +830,8 @@
       <MemberSignature Language="C#" Value="public System.Diagnostics.TraceLogRetentionOption TraceLogRetentionOption { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Diagnostics.TraceLogRetentionOption TraceLogRetentionOption" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventSchemaTraceListener.TraceLogRetentionOption" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TraceLogRetentionOption As TraceLogRetentionOption" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::TraceLogRetentionOption TraceLogRetentionOption { System::Diagnostics::TraceLogRetentionOption get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -793,6 +860,8 @@
       <MemberSignature Language="C#" Value="public override void TraceTransfer (System.Diagnostics.TraceEventCache eventCache, string source, int id, string message, Guid relatedActivityId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void TraceTransfer(class System.Diagnostics.TraceEventCache eventCache, string source, int32 id, string message, valuetype System.Guid relatedActivityId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventSchemaTraceListener.TraceTransfer(System.Diagnostics.TraceEventCache,System.String,System.Int32,System.String,System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub TraceTransfer (eventCache As TraceEventCache, source As String, id As Integer, message As String, relatedActivityId As Guid)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void TraceTransfer(System::Diagnostics::TraceEventCache ^ eventCache, System::String ^ source, int id, System::String ^ message, Guid relatedActivityId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -837,6 +906,8 @@
       <MemberSignature Language="C#" Value="public override void Write (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventSchemaTraceListener.Write(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (message As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::String ^ message);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -868,6 +939,8 @@
       <MemberSignature Language="C#" Value="public override void WriteLine (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteLine(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventSchemaTraceListener.WriteLine(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (message As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(System::String ^ message);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -899,6 +972,8 @@
       <MemberSignature Language="C#" Value="public System.IO.TextWriter Writer { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IO.TextWriter Writer" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventSchemaTraceListener.Writer" />
+      <MemberSignature Language="VB.NET" Value="Public Property Writer As TextWriter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::TextWriter ^ Writer { System::IO::TextWriter ^ get(); void set(System::IO::TextWriter ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -926,32 +1001,5 @@
         <exception cref="T:System.NotSupportedException">An attempt was made to assign a value to the <see cref="P:System.Diagnostics.EventSchemaTraceListener.Writer" /> property.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.EventSchemaTraceListener" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="TraceData">
-      <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes trace data to the log file.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="TraceEvent">
-      <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes event trace information to the log file.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

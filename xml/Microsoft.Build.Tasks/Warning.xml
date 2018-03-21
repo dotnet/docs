@@ -1,7 +1,9 @@
-<Type Name="Warning" FullName="Microsoft.Build.Tasks.Warning">
+﻿<Type Name="Warning" FullName="Microsoft.Build.Tasks.Warning">
   <TypeSignature Language="C#" Value="public sealed class Warning : Microsoft.Build.Tasks.TaskExtension" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Warning extends Microsoft.Build.Tasks.TaskExtension" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Warning" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Warning&#xA;Inherits TaskExtension" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Warning sealed : Microsoft::Build::Tasks::TaskExtension" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +22,8 @@
       <MemberSignature Language="C#" Value="public Warning ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Warning.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Warning();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -36,6 +40,8 @@
       <MemberSignature Language="C#" Value="public string Code { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Code" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Warning.Code" />
+      <MemberSignature Language="VB.NET" Value="Public Property Code As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Code { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -55,6 +61,8 @@
       <MemberSignature Language="C#" Value="public override bool Execute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Execute() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Warning.Execute" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Execute () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Execute();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -76,6 +84,8 @@
       <MemberSignature Language="C#" Value="public string File { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string File" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Warning.File" />
+      <MemberSignature Language="VB.NET" Value="Public Property File As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ File { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -95,6 +105,8 @@
       <MemberSignature Language="C#" Value="public string HelpKeyword { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string HelpKeyword" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Warning.HelpKeyword" />
+      <MemberSignature Language="VB.NET" Value="Public Property HelpKeyword As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ HelpKeyword { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -114,6 +126,8 @@
       <MemberSignature Language="C#" Value="public string Text { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Text" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Warning.Text" />
+      <MemberSignature Language="VB.NET" Value="Public Property Text As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

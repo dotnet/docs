@@ -1,7 +1,9 @@
-<Type Name="IRelDecryptor" FullName="System.Security.Cryptography.Xml.IRelDecryptor">
+﻿<Type Name="IRelDecryptor" FullName="System.Security.Cryptography.Xml.IRelDecryptor">
   <TypeSignature Language="C#" Value="public interface IRelDecryptor" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRelDecryptor" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Xml.IRelDecryptor" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IRelDecryptor" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IRelDecryptor" />
   <AssemblyInfo>
     <AssemblyName>System.Security</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +38,7 @@
       <MemberSignature Language="C#" Value="public System.IO.Stream Decrypt (System.Security.Cryptography.Xml.EncryptionMethod encryptionMethod, System.Security.Cryptography.Xml.KeyInfo keyInfo, System.IO.Stream toDecrypt);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IO.Stream Decrypt(class System.Security.Cryptography.Xml.EncryptionMethod encryptionMethod, class System.Security.Cryptography.Xml.KeyInfo keyInfo, class System.IO.Stream toDecrypt) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.IRelDecryptor.Decrypt(System.Security.Cryptography.Xml.EncryptionMethod,System.Security.Cryptography.Xml.KeyInfo,System.IO.Stream)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Stream ^ Decrypt(System::Security::Cryptography::Xml::EncryptionMethod ^ encryptionMethod, System::Security::Cryptography::Xml::KeyInfo ^ keyInfo, System::IO::Stream ^ toDecrypt);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>

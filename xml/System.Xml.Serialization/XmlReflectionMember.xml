@@ -1,7 +1,9 @@
-<Type Name="XmlReflectionMember" FullName="System.Xml.Serialization.XmlReflectionMember">
+﻿<Type Name="XmlReflectionMember" FullName="System.Xml.Serialization.XmlReflectionMember">
   <TypeSignature Language="C#" Value="public class XmlReflectionMember" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlReflectionMember extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.XmlReflectionMember" />
+  <TypeSignature Language="VB.NET" Value="Public Class XmlReflectionMember" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlReflectionMember" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -56,6 +58,8 @@
       <MemberSignature Language="C#" Value="public XmlReflectionMember ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlReflectionMember.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlReflectionMember();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -81,6 +85,8 @@
       <MemberSignature Language="C#" Value="public bool IsReturnValue { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsReturnValue" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlReflectionMember.IsReturnValue" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsReturnValue As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReturnValue { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -117,6 +123,8 @@
       <MemberSignature Language="C#" Value="public string MemberName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MemberName" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlReflectionMember.MemberName" />
+      <MemberSignature Language="VB.NET" Value="Public Property MemberName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MemberName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -158,6 +166,8 @@
       <MemberSignature Language="C#" Value="public Type MemberType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type MemberType" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlReflectionMember.MemberType" />
+      <MemberSignature Language="VB.NET" Value="Public Property MemberType As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ MemberType { Type ^ get(); void set(Type ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -197,6 +207,8 @@
       <MemberSignature Language="C#" Value="public bool OverrideIsNullable { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool OverrideIsNullable" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlReflectionMember.OverrideIsNullable" />
+      <MemberSignature Language="VB.NET" Value="Public Property OverrideIsNullable As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool OverrideIsNullable { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -235,6 +247,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.Serialization.SoapAttributes SoapAttributes { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Serialization.SoapAttributes SoapAttributes" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlReflectionMember.SoapAttributes" />
+      <MemberSignature Language="VB.NET" Value="Public Property SoapAttributes As SoapAttributes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Serialization::SoapAttributes ^ SoapAttributes { System::Xml::Serialization::SoapAttributes ^ get(); void set(System::Xml::Serialization::SoapAttributes ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -272,6 +286,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.Serialization.XmlAttributes XmlAttributes { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Serialization.XmlAttributes XmlAttributes" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlReflectionMember.XmlAttributes" />
+      <MemberSignature Language="VB.NET" Value="Public Property XmlAttributes As XmlAttributes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Serialization::XmlAttributes ^ XmlAttributes { System::Xml::Serialization::XmlAttributes ^ get(); void set(System::Xml::Serialization::XmlAttributes ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

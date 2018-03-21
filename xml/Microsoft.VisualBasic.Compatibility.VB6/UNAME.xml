@@ -1,7 +1,9 @@
-<Type Name="UNAME" FullName="Microsoft.VisualBasic.Compatibility.VB6.UNAME">
+﻿<Type Name="UNAME" FullName="Microsoft.VisualBasic.Compatibility.VB6.UNAME">
   <TypeSignature Language="C#" Value="public struct UNAME" />
   <TypeSignature Language="ILAsm" Value=".class public ansi sealed UNAME extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.UNAME" />
+  <TypeSignature Language="VB.NET" Value="Public Structure UNAME" />
+  <TypeSignature Language="C++ CLI" Value="public value class UNAME" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -37,6 +39,8 @@
       <MemberSignature Language="C#" Value="public IntPtr name;" />
       <MemberSignature Language="ILAsm" Value=".field public native int name" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.UNAME.name" />
+      <MemberSignature Language="VB.NET" Value="Public name As IntPtr " />
+      <MemberSignature Language="C++ CLI" Value="public: IntPtr name;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="CodeGroup" FullName="System.Security.Policy.CodeGroup">
+﻿<Type Name="CodeGroup" FullName="System.Security.Policy.CodeGroup">
   <TypeSignature Language="C#" Value="public abstract class CodeGroup" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit CodeGroup extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Security.Policy.CodeGroup" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class CodeGroup" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CodeGroup abstract" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -38,6 +40,8 @@
       <MemberSignature Language="C#" Value="protected CodeGroup (System.Security.Policy.IMembershipCondition membershipCondition, System.Security.Policy.PolicyStatement policy);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Security.Policy.IMembershipCondition membershipCondition, class System.Security.Policy.PolicyStatement policy) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.CodeGroup.#ctor(System.Security.Policy.IMembershipCondition,System.Security.Policy.PolicyStatement)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (membershipCondition As IMembershipCondition, policy As PolicyStatement)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; CodeGroup(System::Security::Policy::IMembershipCondition ^ membershipCondition, System::Security::Policy::PolicyStatement ^ policy);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -76,6 +80,8 @@
       <MemberSignature Language="C#" Value="public void AddChild (System.Security.Policy.CodeGroup group);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddChild(class System.Security.Policy.CodeGroup group) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.CodeGroup.AddChild(System.Security.Policy.CodeGroup)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddChild (group As CodeGroup)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddChild(System::Security::Policy::CodeGroup ^ group);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -104,6 +110,8 @@
       <MemberSignature Language="C#" Value="public virtual string AttributeString { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string AttributeString" />
       <MemberSignature Language="DocId" Value="P:System.Security.Policy.CodeGroup.AttributeString" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property AttributeString As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ AttributeString { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -134,6 +142,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.IList Children { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IList Children" />
       <MemberSignature Language="DocId" Value="P:System.Security.Policy.CodeGroup.Children" />
+      <MemberSignature Language="VB.NET" Value="Public Property Children As IList" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IList ^ Children { System::Collections::IList ^ get(); void set(System::Collections::IList ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -169,6 +179,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Security.Policy.CodeGroup Copy ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Security.Policy.CodeGroup Copy() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.CodeGroup.Copy" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function Copy () As CodeGroup" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Security::Policy::CodeGroup ^ Copy();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -200,6 +212,8 @@
       <MemberSignature Language="C#" Value="protected virtual void CreateXml (System.Security.SecurityElement element, System.Security.Policy.PolicyLevel level);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void CreateXml(class System.Security.SecurityElement element, class System.Security.Policy.PolicyLevel level) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.CodeGroup.CreateXml(System.Security.SecurityElement,System.Security.Policy.PolicyLevel)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub CreateXml (element As SecurityElement, level As PolicyLevel)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void CreateXml(System::Security::SecurityElement ^ element, System::Security::Policy::PolicyLevel ^ level);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -241,6 +255,8 @@
       <MemberSignature Language="C#" Value="public string Description { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Description" />
       <MemberSignature Language="DocId" Value="P:System.Security.Policy.CodeGroup.Description" />
+      <MemberSignature Language="VB.NET" Value="Public Property Description As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Description { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -260,10 +276,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether two code groups are equivalent.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Equals">
       <MemberSignature Language="C#" Value="public override bool Equals (object o);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object o) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.CodeGroup.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (o As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -301,6 +329,8 @@
       <MemberSignature Language="C#" Value="public bool Equals (System.Security.Policy.CodeGroup cg, bool compareChildren);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Equals(class System.Security.Policy.CodeGroup cg, bool compareChildren) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.CodeGroup.Equals(System.Security.Policy.CodeGroup,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (cg As CodeGroup, compareChildren As Boolean) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(System::Security::Policy::CodeGroup ^ cg, bool compareChildren);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -337,10 +367,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="FromXml">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reconstructs a security object with a given state from an XML encoding.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="FromXml">
       <MemberSignature Language="C#" Value="public void FromXml (System.Security.SecurityElement e);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void FromXml(class System.Security.SecurityElement e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.CodeGroup.FromXml(System.Security.SecurityElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub FromXml (e As SecurityElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void FromXml(System::Security::SecurityElement ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -372,6 +414,8 @@
       <MemberSignature Language="C#" Value="public void FromXml (System.Security.SecurityElement e, System.Security.Policy.PolicyLevel level);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void FromXml(class System.Security.SecurityElement e, class System.Security.Policy.PolicyLevel level) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.CodeGroup.FromXml(System.Security.SecurityElement,System.Security.Policy.PolicyLevel)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub FromXml (e As SecurityElement, level As PolicyLevel)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void FromXml(System::Security::SecurityElement ^ e, System::Security::Policy::PolicyLevel ^ level);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -412,6 +456,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.CodeGroup.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -436,6 +482,8 @@
       <MemberSignature Language="C#" Value="public System.Security.Policy.IMembershipCondition MembershipCondition { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Policy.IMembershipCondition MembershipCondition" />
       <MemberSignature Language="DocId" Value="P:System.Security.Policy.CodeGroup.MembershipCondition" />
+      <MemberSignature Language="VB.NET" Value="Public Property MembershipCondition As IMembershipCondition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Policy::IMembershipCondition ^ MembershipCondition { System::Security::Policy::IMembershipCondition ^ get(); void set(System::Security::Policy::IMembershipCondition ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -467,6 +515,8 @@
       <MemberSignature Language="C#" Value="public abstract string MergeLogic { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MergeLogic" />
       <MemberSignature Language="DocId" Value="P:System.Security.Policy.CodeGroup.MergeLogic" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property MergeLogic As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ MergeLogic { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -493,6 +543,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Security.Policy.CodeGroup.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -516,6 +568,8 @@
       <MemberSignature Language="C#" Value="protected virtual void ParseXml (System.Security.SecurityElement e, System.Security.Policy.PolicyLevel level);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ParseXml(class System.Security.SecurityElement e, class System.Security.Policy.PolicyLevel level) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.CodeGroup.ParseXml(System.Security.SecurityElement,System.Security.Policy.PolicyLevel)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ParseXml (e As SecurityElement, level As PolicyLevel)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ParseXml(System::Security::SecurityElement ^ e, System::Security::Policy::PolicyLevel ^ level);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -557,6 +611,8 @@
       <MemberSignature Language="C#" Value="public virtual string PermissionSetName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PermissionSetName" />
       <MemberSignature Language="DocId" Value="P:System.Security.Policy.CodeGroup.PermissionSetName" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property PermissionSetName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ PermissionSetName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -587,6 +643,8 @@
       <MemberSignature Language="C#" Value="public System.Security.Policy.PolicyStatement PolicyStatement { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Policy.PolicyStatement PolicyStatement" />
       <MemberSignature Language="DocId" Value="P:System.Security.Policy.CodeGroup.PolicyStatement" />
+      <MemberSignature Language="VB.NET" Value="Public Property PolicyStatement As PolicyStatement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Policy::PolicyStatement ^ PolicyStatement { System::Security::Policy::PolicyStatement ^ get(); void set(System::Security::Policy::PolicyStatement ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -628,6 +686,8 @@
       <MemberSignature Language="C#" Value="public void RemoveChild (System.Security.Policy.CodeGroup group);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveChild(class System.Security.Policy.CodeGroup group) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.CodeGroup.RemoveChild(System.Security.Policy.CodeGroup)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveChild (group As CodeGroup)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveChild(System::Security::Policy::CodeGroup ^ group);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -662,6 +722,7 @@
       <MemberSignature Language="C#" Value="public abstract System.Security.Policy.PolicyStatement Resolve (System.Security.Policy.Evidence evidence);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Security.Policy.PolicyStatement Resolve(class System.Security.Policy.Evidence evidence) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.CodeGroup.Resolve(System.Security.Policy.Evidence)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Security::Policy::PolicyStatement ^ Resolve(System::Security::Policy::Evidence ^ evidence);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -700,6 +761,7 @@
       <MemberSignature Language="C#" Value="public abstract System.Security.Policy.CodeGroup ResolveMatchingCodeGroups (System.Security.Policy.Evidence evidence);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Security.Policy.CodeGroup ResolveMatchingCodeGroups(class System.Security.Policy.Evidence evidence) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.CodeGroup.ResolveMatchingCodeGroups(System.Security.Policy.Evidence)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Security::Policy::CodeGroup ^ ResolveMatchingCodeGroups(System::Security::Policy::Evidence ^ evidence);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -730,10 +792,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ToXml">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an XML encoding of the security object and its current state.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ToXml">
       <MemberSignature Language="C#" Value="public System.Security.SecurityElement ToXml ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Security.SecurityElement ToXml() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.CodeGroup.ToXml" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToXml () As SecurityElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::SecurityElement ^ ToXml();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -762,6 +836,8 @@
       <MemberSignature Language="C#" Value="public System.Security.SecurityElement ToXml (System.Security.Policy.PolicyLevel level);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Security.SecurityElement ToXml(class System.Security.Policy.PolicyLevel level) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.CodeGroup.ToXml(System.Security.Policy.PolicyLevel)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToXml (level As PolicyLevel) As SecurityElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::SecurityElement ^ ToXml(System::Security::Policy::PolicyLevel ^ level);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -796,35 +872,5 @@
         </block>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Equals">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Determines whether two code groups are equivalent.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ToXml">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates an XML encoding of the security object and its current state.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="FromXml">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Reconstructs a security object with a given state from an XML encoding.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

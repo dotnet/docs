@@ -1,7 +1,9 @@
-<Type Name="NetHttpMessageEncoding" FullName="System.ServiceModel.NetHttpMessageEncoding">
+﻿<Type Name="NetHttpMessageEncoding" FullName="System.ServiceModel.NetHttpMessageEncoding">
   <TypeSignature Language="C#" Value="public enum NetHttpMessageEncoding" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed NetHttpMessageEncoding extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.NetHttpMessageEncoding" />
+  <TypeSignature Language="VB.NET" Value="Public Enum NetHttpMessageEncoding" />
+  <TypeSignature Language="C++ CLI" Value="public enum class NetHttpMessageEncoding" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -25,6 +27,8 @@
       <MemberSignature Language="C#" Value="Binary" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.NetHttpMessageEncoding Binary = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.NetHttpMessageEncoding.Binary" />
+      <MemberSignature Language="VB.NET" Value="Binary" />
+      <MemberSignature Language="C++ CLI" Value="Binary" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -40,6 +44,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.NetHttpMessageEncoding</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The Binary message encoding.</summary>
       </Docs>
@@ -48,6 +53,8 @@
       <MemberSignature Language="C#" Value="Mtom" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.NetHttpMessageEncoding Mtom = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.NetHttpMessageEncoding.Mtom" />
+      <MemberSignature Language="VB.NET" Value="Mtom" />
+      <MemberSignature Language="C++ CLI" Value="Mtom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -63,6 +70,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.NetHttpMessageEncoding</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The Mtom message encoding.</summary>
       </Docs>
@@ -71,6 +79,8 @@
       <MemberSignature Language="C#" Value="Text" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.NetHttpMessageEncoding Text = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.NetHttpMessageEncoding.Text" />
+      <MemberSignature Language="VB.NET" Value="Text" />
+      <MemberSignature Language="C++ CLI" Value="Text" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -86,6 +96,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.NetHttpMessageEncoding</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The Text message encoding.</summary>
       </Docs>

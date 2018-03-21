@@ -1,7 +1,9 @@
-<Type Name="ThemeColor" FullName="Microsoft.Windows.Themes.ThemeColor">
+﻿<Type Name="ThemeColor" FullName="Microsoft.Windows.Themes.ThemeColor">
   <TypeSignature Language="C#" Value="public enum ThemeColor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ThemeColor extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Windows.Themes.ThemeColor" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ThemeColor" />
+  <TypeSignature Language="C++ CLI" Value="public enum class ThemeColor" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework.Luna</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +29,8 @@
       <MemberSignature Language="C#" Value="Homestead" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Windows.Themes.ThemeColor Homestead = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ThemeColor.Homestead" />
+      <MemberSignature Language="VB.NET" Value="Homestead" />
+      <MemberSignature Language="C++ CLI" Value="Homestead" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Luna</AssemblyName>
@@ -35,6 +39,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Windows.Themes.ThemeColor</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Used by the Luna theme; the localized color name is Olive.</summary>
       </Docs>
@@ -43,6 +48,8 @@
       <MemberSignature Language="C#" Value="Metallic" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Windows.Themes.ThemeColor Metallic = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ThemeColor.Metallic" />
+      <MemberSignature Language="VB.NET" Value="Metallic" />
+      <MemberSignature Language="C++ CLI" Value="Metallic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Luna</AssemblyName>
@@ -51,6 +58,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Windows.Themes.ThemeColor</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Used by the Luna theme; the localized color name is Sliver.</summary>
       </Docs>
@@ -59,6 +67,8 @@
       <MemberSignature Language="C#" Value="NormalColor" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Windows.Themes.ThemeColor NormalColor = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ThemeColor.NormalColor" />
+      <MemberSignature Language="VB.NET" Value="NormalColor" />
+      <MemberSignature Language="C++ CLI" Value="NormalColor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Luna</AssemblyName>
@@ -67,6 +77,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Windows.Themes.ThemeColor</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Used by the Luna, Aero, and Classic themes; the localized color name is Blue.</summary>
       </Docs>

@@ -1,7 +1,9 @@
-<Type Name="DataGridParentRowsLabelStyle" FullName="System.Windows.Forms.DataGridParentRowsLabelStyle">
+﻿<Type Name="DataGridParentRowsLabelStyle" FullName="System.Windows.Forms.DataGridParentRowsLabelStyle">
   <TypeSignature Language="C#" Value="public enum DataGridParentRowsLabelStyle" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataGridParentRowsLabelStyle extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridParentRowsLabelStyle" />
+  <TypeSignature Language="VB.NET" Value="Public Enum DataGridParentRowsLabelStyle" />
+  <TypeSignature Language="C++ CLI" Value="public enum class DataGridParentRowsLabelStyle" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +44,8 @@
       <MemberSignature Language="C#" Value="Both" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridParentRowsLabelStyle Both = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridParentRowsLabelStyle.Both" />
+      <MemberSignature Language="VB.NET" Value="Both" />
+      <MemberSignature Language="C++ CLI" Value="Both" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -50,6 +54,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridParentRowsLabelStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Displays both the parent table and column names.</summary>
       </Docs>
@@ -58,6 +63,8 @@
       <MemberSignature Language="C#" Value="ColumnName" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridParentRowsLabelStyle ColumnName = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridParentRowsLabelStyle.ColumnName" />
+      <MemberSignature Language="VB.NET" Value="ColumnName" />
+      <MemberSignature Language="C++ CLI" Value="ColumnName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -66,6 +73,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridParentRowsLabelStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Displays the parent column name.</summary>
       </Docs>
@@ -74,6 +82,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridParentRowsLabelStyle None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridParentRowsLabelStyle.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -82,6 +92,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridParentRowsLabelStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Display no parent row labels.</summary>
       </Docs>
@@ -90,6 +101,8 @@
       <MemberSignature Language="C#" Value="TableName" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridParentRowsLabelStyle TableName = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridParentRowsLabelStyle.TableName" />
+      <MemberSignature Language="VB.NET" Value="TableName" />
+      <MemberSignature Language="C++ CLI" Value="TableName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -98,6 +111,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridParentRowsLabelStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Displays the parent table name.</summary>
       </Docs>

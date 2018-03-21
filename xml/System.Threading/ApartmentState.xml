@@ -1,7 +1,9 @@
-<Type Name="ApartmentState" FullName="System.Threading.ApartmentState">
+﻿<Type Name="ApartmentState" FullName="System.Threading.ApartmentState">
   <TypeSignature Language="C#" Value="public enum ApartmentState" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed ApartmentState extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Threading.ApartmentState" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ApartmentState" />
+  <TypeSignature Language="C++ CLI" Value="public enum class ApartmentState" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -53,6 +55,8 @@
       <MemberSignature Language="C#" Value="MTA" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Threading.ApartmentState MTA = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Threading.ApartmentState.MTA" />
+      <MemberSignature Language="VB.NET" Value="MTA" />
+      <MemberSignature Language="C++ CLI" Value="MTA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -70,6 +74,7 @@
       <ReturnValue>
         <ReturnType>System.Threading.ApartmentState</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Threading.Thread" /> will create and enter a multithreaded apartment.</summary>
       </Docs>
@@ -78,6 +83,8 @@
       <MemberSignature Language="C#" Value="STA" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Threading.ApartmentState STA = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Threading.ApartmentState.STA" />
+      <MemberSignature Language="VB.NET" Value="STA" />
+      <MemberSignature Language="C++ CLI" Value="STA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -95,6 +102,7 @@
       <ReturnValue>
         <ReturnType>System.Threading.ApartmentState</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Threading.Thread" /> will create and enter a single-threaded apartment.</summary>
       </Docs>
@@ -103,6 +111,8 @@
       <MemberSignature Language="C#" Value="Unknown" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Threading.ApartmentState Unknown = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Threading.ApartmentState.Unknown" />
+      <MemberSignature Language="VB.NET" Value="Unknown" />
+      <MemberSignature Language="C++ CLI" Value="Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -120,6 +130,7 @@
       <ReturnValue>
         <ReturnType>System.Threading.ApartmentState</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The <see cref="P:System.Threading.Thread.ApartmentState" /> property has not been set.</summary>
       </Docs>

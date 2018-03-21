@@ -1,7 +1,9 @@
-<Type Name="BinaryOp" FullName="Microsoft.JScript.BinaryOp">
+﻿<Type Name="BinaryOp" FullName="Microsoft.JScript.BinaryOp">
   <TypeSignature Language="C#" Value="public abstract class BinaryOp : Microsoft.JScript.AST" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit BinaryOp extends Microsoft.JScript.AST" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.BinaryOp" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class BinaryOp&#xA;Inherits AST" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BinaryOp abstract : Microsoft::JScript::AST" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -20,6 +22,8 @@
       <MemberSignature Language="C#" Value="protected System.Reflection.MethodInfo GetOperator (System.Reflection.IReflect ir1, System.Reflection.IReflect ir2);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Reflection.MethodInfo GetOperator(class System.Reflection.IReflect ir1, class System.Reflection.IReflect ir2) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.BinaryOp.GetOperator(System.Reflection.IReflect,System.Reflection.IReflect)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function GetOperator (ir1 As IReflect, ir2 As IReflect) As MethodInfo" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Reflection::MethodInfo ^ GetOperator(System::Reflection::IReflect ^ ir1, System::Reflection::IReflect ^ ir2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -47,6 +51,8 @@
       <MemberSignature Language="C#" Value="protected Microsoft.JScript.AST operand1;" />
       <MemberSignature Language="ILAsm" Value=".field family class Microsoft.JScript.AST operand1" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.BinaryOp.operand1" />
+      <MemberSignature Language="VB.NET" Value="Protected operand1 As AST " />
+      <MemberSignature Language="C++ CLI" Value="protected: Microsoft::JScript::AST ^ operand1;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -65,6 +71,8 @@
       <MemberSignature Language="C#" Value="protected Microsoft.JScript.AST operand2;" />
       <MemberSignature Language="ILAsm" Value=".field family class Microsoft.JScript.AST operand2" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.BinaryOp.operand2" />
+      <MemberSignature Language="VB.NET" Value="Protected operand2 As AST " />
+      <MemberSignature Language="C++ CLI" Value="protected: Microsoft::JScript::AST ^ operand2;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -83,6 +91,8 @@
       <MemberSignature Language="C#" Value="protected System.Reflection.MethodInfo operatorMeth;" />
       <MemberSignature Language="ILAsm" Value=".field family class System.Reflection.MethodInfo operatorMeth" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.BinaryOp.operatorMeth" />
+      <MemberSignature Language="VB.NET" Value="Protected operatorMeth As MethodInfo " />
+      <MemberSignature Language="C++ CLI" Value="protected: System::Reflection::MethodInfo ^ operatorMeth;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -102,6 +112,8 @@
       <MemberSignature Language="C#" Value="protected Microsoft.JScript.JSToken operatorTok;" />
       <MemberSignature Language="ILAsm" Value=".field family valuetype Microsoft.JScript.JSToken operatorTok" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.BinaryOp.operatorTok" />
+      <MemberSignature Language="VB.NET" Value="Protected operatorTok As JSToken " />
+      <MemberSignature Language="C++ CLI" Value="protected: Microsoft::JScript::JSToken operatorTok;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -121,6 +133,8 @@
       <MemberSignature Language="C#" Value="protected Type type1;" />
       <MemberSignature Language="ILAsm" Value=".field family class System.Type type1" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.BinaryOp.type1" />
+      <MemberSignature Language="VB.NET" Value="Protected type1 As Type " />
+      <MemberSignature Language="C++ CLI" Value="protected: Type ^ type1;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -139,6 +153,8 @@
       <MemberSignature Language="C#" Value="protected Type type2;" />
       <MemberSignature Language="ILAsm" Value=".field family class System.Type type2" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.BinaryOp.type2" />
+      <MemberSignature Language="VB.NET" Value="Protected type2 As Type " />
+      <MemberSignature Language="C++ CLI" Value="protected: Type ^ type2;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

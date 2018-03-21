@@ -1,7 +1,9 @@
-<Type Name="CustomAttributeData" FullName="System.Reflection.CustomAttributeData">
+﻿<Type Name="CustomAttributeData" FullName="System.Reflection.CustomAttributeData">
   <TypeSignature Language="C#" Value="public class CustomAttributeData" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CustomAttributeData extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.CustomAttributeData" />
+  <TypeSignature Language="VB.NET" Value="Public Class CustomAttributeData" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CustomAttributeData" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -79,6 +81,8 @@
       <MemberSignature Language="C#" Value="protected CustomAttributeData ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.CustomAttributeData.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; CustomAttributeData();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -111,6 +115,8 @@
       <MemberSignature Language="C#" Value="public Type AttributeType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type AttributeType" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.CustomAttributeData.AttributeType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AttributeType As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ AttributeType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -144,6 +150,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Reflection.ConstructorInfo Constructor { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Reflection.ConstructorInfo Constructor" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.CustomAttributeData.Constructor" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Constructor As ConstructorInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Reflection::ConstructorInfo ^ Constructor { System::Reflection::ConstructorInfo ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -204,6 +212,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IList&lt;System.Reflection.CustomAttributeTypedArgument&gt; ConstructorArguments { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;valuetype System.Reflection.CustomAttributeTypedArgument&gt; ConstructorArguments" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.CustomAttributeData.ConstructorArguments" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ConstructorArguments As IList(Of CustomAttributeTypedArgument)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::Generic::IList&lt;System::Reflection::CustomAttributeTypedArgument&gt; ^ ConstructorArguments { System::Collections::Generic::IList&lt;System::Reflection::CustomAttributeTypedArgument&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -269,6 +279,8 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.CustomAttributeData.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -297,10 +309,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetCustomAttributes">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a list of <see cref="T:System.Reflection.CustomAttributeData" /> objects representing data about the attributes that have been applied to the target.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetCustomAttributes">
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IList&lt;System.Reflection.CustomAttributeData&gt; GetCustomAttributes (System.Reflection.Assembly target);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IList`1&lt;class System.Reflection.CustomAttributeData&gt; GetCustomAttributes(class System.Reflection.Assembly target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.CustomAttributeData.GetCustomAttributes(System.Reflection.Assembly)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetCustomAttributes (target As Assembly) As IList(Of CustomAttributeData)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Generic::IList&lt;System::Reflection::CustomAttributeData ^&gt; ^ GetCustomAttributes(System::Reflection::Assembly ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -362,6 +385,8 @@
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IList&lt;System.Reflection.CustomAttributeData&gt; GetCustomAttributes (System.Reflection.MemberInfo target);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IList`1&lt;class System.Reflection.CustomAttributeData&gt; GetCustomAttributes(class System.Reflection.MemberInfo target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.CustomAttributeData.GetCustomAttributes(System.Reflection.MemberInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetCustomAttributes (target As MemberInfo) As IList(Of CustomAttributeData)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Generic::IList&lt;System::Reflection::CustomAttributeData ^&gt; ^ GetCustomAttributes(System::Reflection::MemberInfo ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -424,6 +449,8 @@
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IList&lt;System.Reflection.CustomAttributeData&gt; GetCustomAttributes (System.Reflection.Module target);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IList`1&lt;class System.Reflection.CustomAttributeData&gt; GetCustomAttributes(class System.Reflection.Module target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.CustomAttributeData.GetCustomAttributes(System.Reflection.Module)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetCustomAttributes (target As Module) As IList(Of CustomAttributeData)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Generic::IList&lt;System::Reflection::CustomAttributeData ^&gt; ^ GetCustomAttributes(System::Reflection::Module ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -461,6 +488,8 @@
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IList&lt;System.Reflection.CustomAttributeData&gt; GetCustomAttributes (System.Reflection.ParameterInfo target);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IList`1&lt;class System.Reflection.CustomAttributeData&gt; GetCustomAttributes(class System.Reflection.ParameterInfo target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.CustomAttributeData.GetCustomAttributes(System.Reflection.ParameterInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetCustomAttributes (target As ParameterInfo) As IList(Of CustomAttributeData)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Generic::IList&lt;System::Reflection::CustomAttributeData ^&gt; ^ GetCustomAttributes(System::Reflection::ParameterInfo ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -522,6 +551,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.CustomAttributeData.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -551,6 +582,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IList&lt;System.Reflection.CustomAttributeNamedArgument&gt; NamedArguments { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;valuetype System.Reflection.CustomAttributeNamedArgument&gt; NamedArguments" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.CustomAttributeData.NamedArguments" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property NamedArguments As IList(Of CustomAttributeNamedArgument)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::Generic::IList&lt;System::Reflection::CustomAttributeNamedArgument&gt; ^ NamedArguments { System::Collections::Generic::IList&lt;System::Reflection::CustomAttributeNamedArgument&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -613,6 +646,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.CustomAttributeData.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -659,14 +694,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetCustomAttributes">
-      <AssemblyInfo>
-        <AssemblyName>System.Reflection</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a list of <see cref="T:System.Reflection.CustomAttributeData" /> objects representing data about the attributes that have been applied to the target.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

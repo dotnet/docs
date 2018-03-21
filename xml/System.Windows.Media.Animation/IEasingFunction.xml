@@ -1,7 +1,9 @@
-<Type Name="IEasingFunction" FullName="System.Windows.Media.Animation.IEasingFunction">
+﻿<Type Name="IEasingFunction" FullName="System.Windows.Media.Animation.IEasingFunction">
   <TypeSignature Language="C#" Value="public interface IEasingFunction" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IEasingFunction" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.IEasingFunction" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IEasingFunction" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IEasingFunction" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +43,8 @@
       <MemberSignature Language="C#" Value="public double Ease (double normalizedTime);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance float64 Ease(float64 normalizedTime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.IEasingFunction.Ease(System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Ease (normalizedTime As Double) As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; double Ease(double normalizedTime);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="IDataParameter" FullName="System.Data.IDataParameter">
+﻿<Type Name="IDataParameter" FullName="System.Data.IDataParameter">
   <TypeSignature Language="C#" Value="public interface IDataParameter" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDataParameter" />
   <TypeSignature Language="DocId" Value="T:System.Data.IDataParameter" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IDataParameter" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IDataParameter" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Common</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -80,6 +82,8 @@
       <MemberSignature Language="C#" Value="public System.Data.DbType DbType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.DbType DbType" />
       <MemberSignature Language="DocId" Value="P:System.Data.IDataParameter.DbType" />
+      <MemberSignature Language="VB.NET" Value="Public Property DbType As DbType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::DbType DbType { System::Data::DbType get(); void set(System::Data::DbType value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -118,6 +122,8 @@
       <MemberSignature Language="C#" Value="public System.Data.ParameterDirection Direction { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.ParameterDirection Direction" />
       <MemberSignature Language="DocId" Value="P:System.Data.IDataParameter.Direction" />
+      <MemberSignature Language="VB.NET" Value="Public Property Direction As ParameterDirection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::ParameterDirection Direction { System::Data::ParameterDirection get(); void set(System::Data::ParameterDirection value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -164,6 +170,8 @@
       <MemberSignature Language="C#" Value="public bool IsNullable { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsNullable" />
       <MemberSignature Language="DocId" Value="P:System.Data.IDataParameter.IsNullable" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNullable As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNullable { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -208,6 +216,8 @@
       <MemberSignature Language="C#" Value="public string ParameterName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ParameterName" />
       <MemberSignature Language="DocId" Value="P:System.Data.IDataParameter.ParameterName" />
+      <MemberSignature Language="VB.NET" Value="Public Property ParameterName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ParameterName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -251,6 +261,8 @@
       <MemberSignature Language="C#" Value="public string SourceColumn { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SourceColumn" />
       <MemberSignature Language="DocId" Value="P:System.Data.IDataParameter.SourceColumn" />
+      <MemberSignature Language="VB.NET" Value="Public Property SourceColumn As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SourceColumn { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -294,6 +306,8 @@
       <MemberSignature Language="C#" Value="public System.Data.DataRowVersion SourceVersion { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.DataRowVersion SourceVersion" />
       <MemberSignature Language="DocId" Value="P:System.Data.IDataParameter.SourceVersion" />
+      <MemberSignature Language="VB.NET" Value="Public Property SourceVersion As DataRowVersion" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::DataRowVersion SourceVersion { System::Data::DataRowVersion get(); void set(System::Data::DataRowVersion value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -338,6 +352,8 @@
       <MemberSignature Language="C#" Value="public object Value { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Value" />
       <MemberSignature Language="DocId" Value="P:System.Data.IDataParameter.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Property Value As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Value { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>

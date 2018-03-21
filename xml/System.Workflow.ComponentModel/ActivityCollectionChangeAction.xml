@@ -1,7 +1,9 @@
-<Type Name="ActivityCollectionChangeAction" FullName="System.Workflow.ComponentModel.ActivityCollectionChangeAction">
+﻿<Type Name="ActivityCollectionChangeAction" FullName="System.Workflow.ComponentModel.ActivityCollectionChangeAction">
   <TypeSignature Language="C#" Value="public enum ActivityCollectionChangeAction" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ActivityCollectionChangeAction extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.ActivityCollectionChangeAction" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ActivityCollectionChangeAction" />
+  <TypeSignature Language="C++ CLI" Value="public enum class ActivityCollectionChangeAction" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +34,8 @@
       <MemberSignature Language="C#" Value="Add" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.ComponentModel.ActivityCollectionChangeAction Add = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.ActivityCollectionChangeAction.Add" />
+      <MemberSignature Language="VB.NET" Value="Add" />
+      <MemberSignature Language="C++ CLI" Value="Add" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -40,6 +44,7 @@
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.ActivityCollectionChangeAction</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The enumerator corresponding to adding a new <see cref="T:System.Workflow.ComponentModel.Activity" /> to the <see cref="T:System.Workflow.ComponentModel.ActivityCollection" />.</summary>
       </Docs>
@@ -48,6 +53,8 @@
       <MemberSignature Language="C#" Value="Remove" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.ComponentModel.ActivityCollectionChangeAction Remove = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.ActivityCollectionChangeAction.Remove" />
+      <MemberSignature Language="VB.NET" Value="Remove" />
+      <MemberSignature Language="C++ CLI" Value="Remove" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -56,6 +63,7 @@
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.ActivityCollectionChangeAction</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The enumerator corresponding to removing an <see cref="T:System.Workflow.ComponentModel.Activity" /> from the <see cref="T:System.Workflow.ComponentModel.ActivityCollection" />.</summary>
       </Docs>
@@ -64,6 +72,8 @@
       <MemberSignature Language="C#" Value="Replace" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.ComponentModel.ActivityCollectionChangeAction Replace = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.ActivityCollectionChangeAction.Replace" />
+      <MemberSignature Language="VB.NET" Value="Replace" />
+      <MemberSignature Language="C++ CLI" Value="Replace" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -72,6 +82,7 @@
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.ActivityCollectionChangeAction</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The enumerator corresponding to replacing an <see cref="T:System.Workflow.ComponentModel.Activity" /> in the <see cref="T:System.Workflow.ComponentModel.ActivityCollection" />.</summary>
       </Docs>

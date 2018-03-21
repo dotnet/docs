@@ -1,7 +1,9 @@
-<Type Name="SqlCacheDependencyDatabase" FullName="System.Web.Configuration.SqlCacheDependencyDatabase">
+﻿<Type Name="SqlCacheDependencyDatabase" FullName="System.Web.Configuration.SqlCacheDependencyDatabase">
   <TypeSignature Language="C#" Value="public sealed class SqlCacheDependencyDatabase : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SqlCacheDependencyDatabase extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.SqlCacheDependencyDatabase" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SqlCacheDependencyDatabase&#xA;Inherits ConfigurationElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SqlCacheDependencyDatabase sealed : System::Configuration::ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,10 +37,21 @@
     <altmember cref="T:System.Web.Caching.SqlCacheDependency" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.SqlCacheDependencyDatabase" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SqlCacheDependencyDatabase (string name, string connectionStringName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, string connectionStringName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.SqlCacheDependencyDatabase.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, connectionStringName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlCacheDependencyDatabase(System::String ^ name, System::String ^ connectionStringName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -69,6 +82,8 @@
       <MemberSignature Language="C#" Value="public SqlCacheDependencyDatabase (string name, string connectionStringName, int pollTime);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, string connectionStringName, int32 pollTime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.SqlCacheDependencyDatabase.#ctor(System.String,System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, connectionStringName As String, pollTime As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlCacheDependencyDatabase(System::String ^ name, System::String ^ connectionStringName, int pollTime);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -101,6 +116,8 @@
       <MemberSignature Language="C#" Value="public string ConnectionStringName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ConnectionStringName" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SqlCacheDependencyDatabase.ConnectionStringName" />
+      <MemberSignature Language="VB.NET" Value="Public Property ConnectionStringName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ConnectionStringName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -143,6 +160,8 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationElementProperty ElementProperty { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationElementProperty ElementProperty" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SqlCacheDependencyDatabase.ElementProperty" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ElementProperty As ConfigurationElementProperty" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationElementProperty ^ ElementProperty { System::Configuration::ConfigurationElementProperty ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -161,6 +180,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SqlCacheDependencyDatabase.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -205,6 +226,8 @@
       <MemberSignature Language="C#" Value="public int PollTime { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 PollTime" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SqlCacheDependencyDatabase.PollTime" />
+      <MemberSignature Language="VB.NET" Value="Public Property PollTime As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PollTime { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -246,6 +269,8 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SqlCacheDependencyDatabase.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -260,14 +285,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.SqlCacheDependencyDatabase" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

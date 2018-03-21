@@ -1,7 +1,9 @@
-<Type Name="Acknowledgment" FullName="System.Messaging.Acknowledgment">
+﻿<Type Name="Acknowledgment" FullName="System.Messaging.Acknowledgment">
   <TypeSignature Language="C#" Value="public enum Acknowledgment" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed Acknowledgment extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Messaging.Acknowledgment" />
+  <TypeSignature Language="VB.NET" Value="Public Enum Acknowledgment" />
+  <TypeSignature Language="C++ CLI" Value="public enum class Acknowledgment" />
   <AssemblyInfo>
     <AssemblyName>System.Messaging</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +42,8 @@
       <MemberSignature Language="C#" Value="AccessDenied" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.Acknowledgment AccessDenied = int32(32772)" />
       <MemberSignature Language="DocId" Value="F:System.Messaging.Acknowledgment.AccessDenied" />
+      <MemberSignature Language="VB.NET" Value="AccessDenied" />
+      <MemberSignature Language="C++ CLI" Value="AccessDenied" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -48,6 +52,7 @@
       <ReturnValue>
         <ReturnType>System.Messaging.Acknowledgment</ReturnType>
       </ReturnValue>
+      <MemberValue>32772</MemberValue>
       <Docs>
         <summary>A negative arrival acknowledgment indicating that the sending application does not have the necessary rights to send a message to the destination queue.</summary>
       </Docs>
@@ -56,6 +61,8 @@
       <MemberSignature Language="C#" Value="BadDestinationQueue" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.Acknowledgment BadDestinationQueue = int32(32768)" />
       <MemberSignature Language="DocId" Value="F:System.Messaging.Acknowledgment.BadDestinationQueue" />
+      <MemberSignature Language="VB.NET" Value="BadDestinationQueue" />
+      <MemberSignature Language="C++ CLI" Value="BadDestinationQueue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -64,6 +71,7 @@
       <ReturnValue>
         <ReturnType>System.Messaging.Acknowledgment</ReturnType>
       </ReturnValue>
+      <MemberValue>32768</MemberValue>
       <Docs>
         <summary>A negative arrival acknowledgment indicating that the destination queue is not available to the sending application.</summary>
       </Docs>
@@ -72,6 +80,8 @@
       <MemberSignature Language="C#" Value="BadEncryption" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.Acknowledgment BadEncryption = int32(32775)" />
       <MemberSignature Language="DocId" Value="F:System.Messaging.Acknowledgment.BadEncryption" />
+      <MemberSignature Language="VB.NET" Value="BadEncryption" />
+      <MemberSignature Language="C++ CLI" Value="BadEncryption" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -80,6 +90,7 @@
       <ReturnValue>
         <ReturnType>System.Messaging.Acknowledgment</ReturnType>
       </ReturnValue>
+      <MemberValue>32775</MemberValue>
       <Docs>
         <summary>A negative arrival acknowledgment indicating that the destination queue manager could not decrypt a private message.</summary>
       </Docs>
@@ -88,6 +99,8 @@
       <MemberSignature Language="C#" Value="BadSignature" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.Acknowledgment BadSignature = int32(32774)" />
       <MemberSignature Language="DocId" Value="F:System.Messaging.Acknowledgment.BadSignature" />
+      <MemberSignature Language="VB.NET" Value="BadSignature" />
+      <MemberSignature Language="C++ CLI" Value="BadSignature" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -96,6 +109,7 @@
       <ReturnValue>
         <ReturnType>System.Messaging.Acknowledgment</ReturnType>
       </ReturnValue>
+      <MemberValue>32774</MemberValue>
       <Docs>
         <summary>A negative arrival acknowledgment indicating that the original message's digital signature is not valid and could not be authenticated by Message Queuing.</summary>
       </Docs>
@@ -104,6 +118,8 @@
       <MemberSignature Language="C#" Value="CouldNotEncrypt" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.Acknowledgment CouldNotEncrypt = int32(32776)" />
       <MemberSignature Language="DocId" Value="F:System.Messaging.Acknowledgment.CouldNotEncrypt" />
+      <MemberSignature Language="VB.NET" Value="CouldNotEncrypt" />
+      <MemberSignature Language="C++ CLI" Value="CouldNotEncrypt" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -112,6 +128,7 @@
       <ReturnValue>
         <ReturnType>System.Messaging.Acknowledgment</ReturnType>
       </ReturnValue>
+      <MemberValue>32776</MemberValue>
       <Docs>
         <summary>A negative arrival acknowledgment indicating that the source queue manager could not encrypt a private message.</summary>
       </Docs>
@@ -120,6 +137,8 @@
       <MemberSignature Language="C#" Value="HopCountExceeded" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.Acknowledgment HopCountExceeded = int32(32773)" />
       <MemberSignature Language="DocId" Value="F:System.Messaging.Acknowledgment.HopCountExceeded" />
+      <MemberSignature Language="VB.NET" Value="HopCountExceeded" />
+      <MemberSignature Language="C++ CLI" Value="HopCountExceeded" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -128,6 +147,7 @@
       <ReturnValue>
         <ReturnType>System.Messaging.Acknowledgment</ReturnType>
       </ReturnValue>
+      <MemberValue>32773</MemberValue>
       <Docs>
         <summary>A negative arrival acknowledgment indicating that the original message's hop count (which indicates the number of intermediate servers) was exceeded.</summary>
         <remarks>
@@ -144,6 +164,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.Acknowledgment None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Messaging.Acknowledgment.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -152,6 +174,7 @@
       <ReturnValue>
         <ReturnType>System.Messaging.Acknowledgment</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The message is not an acknowledgment message.</summary>
       </Docs>
@@ -160,6 +183,8 @@
       <MemberSignature Language="C#" Value="NotTransactionalMessage" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.Acknowledgment NotTransactionalMessage = int32(32778)" />
       <MemberSignature Language="DocId" Value="F:System.Messaging.Acknowledgment.NotTransactionalMessage" />
+      <MemberSignature Language="VB.NET" Value="NotTransactionalMessage" />
+      <MemberSignature Language="C++ CLI" Value="NotTransactionalMessage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -168,6 +193,7 @@
       <ReturnValue>
         <ReturnType>System.Messaging.Acknowledgment</ReturnType>
       </ReturnValue>
+      <MemberValue>32778</MemberValue>
       <Docs>
         <summary>A negative arrival acknowledgment indicating that a non-transactional message was sent to a transactional queue.</summary>
       </Docs>
@@ -176,6 +202,8 @@
       <MemberSignature Language="C#" Value="NotTransactionalQueue" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.Acknowledgment NotTransactionalQueue = int32(32777)" />
       <MemberSignature Language="DocId" Value="F:System.Messaging.Acknowledgment.NotTransactionalQueue" />
+      <MemberSignature Language="VB.NET" Value="NotTransactionalQueue" />
+      <MemberSignature Language="C++ CLI" Value="NotTransactionalQueue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -184,6 +212,7 @@
       <ReturnValue>
         <ReturnType>System.Messaging.Acknowledgment</ReturnType>
       </ReturnValue>
+      <MemberValue>32777</MemberValue>
       <Docs>
         <summary>A negative arrival acknowledgment indicating that a transactional message was sent to a non-transactional queue.</summary>
       </Docs>
@@ -192,6 +221,8 @@
       <MemberSignature Language="C#" Value="Purged" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.Acknowledgment Purged = int32(32769)" />
       <MemberSignature Language="DocId" Value="F:System.Messaging.Acknowledgment.Purged" />
+      <MemberSignature Language="VB.NET" Value="Purged" />
+      <MemberSignature Language="C++ CLI" Value="Purged" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -200,6 +231,7 @@
       <ReturnValue>
         <ReturnType>System.Messaging.Acknowledgment</ReturnType>
       </ReturnValue>
+      <MemberValue>32769</MemberValue>
       <Docs>
         <summary>A negative arrival acknowledgment indicating that the message was purged before reaching its destination queue.</summary>
       </Docs>
@@ -208,6 +240,8 @@
       <MemberSignature Language="C#" Value="QueueDeleted" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.Acknowledgment QueueDeleted = int32(49152)" />
       <MemberSignature Language="DocId" Value="F:System.Messaging.Acknowledgment.QueueDeleted" />
+      <MemberSignature Language="VB.NET" Value="QueueDeleted" />
+      <MemberSignature Language="C++ CLI" Value="QueueDeleted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -216,6 +250,7 @@
       <ReturnValue>
         <ReturnType>System.Messaging.Acknowledgment</ReturnType>
       </ReturnValue>
+      <MemberValue>49152</MemberValue>
       <Docs>
         <summary>A negative read acknowledgment indicating that the queue was deleted before the message could be read.</summary>
       </Docs>
@@ -224,6 +259,8 @@
       <MemberSignature Language="C#" Value="QueueExceedMaximumSize" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.Acknowledgment QueueExceedMaximumSize = int32(32771)" />
       <MemberSignature Language="DocId" Value="F:System.Messaging.Acknowledgment.QueueExceedMaximumSize" />
+      <MemberSignature Language="VB.NET" Value="QueueExceedMaximumSize" />
+      <MemberSignature Language="C++ CLI" Value="QueueExceedMaximumSize" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -232,6 +269,7 @@
       <ReturnValue>
         <ReturnType>System.Messaging.Acknowledgment</ReturnType>
       </ReturnValue>
+      <MemberValue>32771</MemberValue>
       <Docs>
         <summary>A negative arrival acknowledgment indicating that the original message was not delivered because its destination queue is full.</summary>
       </Docs>
@@ -240,6 +278,8 @@
       <MemberSignature Language="C#" Value="QueuePurged" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.Acknowledgment QueuePurged = int32(49153)" />
       <MemberSignature Language="DocId" Value="F:System.Messaging.Acknowledgment.QueuePurged" />
+      <MemberSignature Language="VB.NET" Value="QueuePurged" />
+      <MemberSignature Language="C++ CLI" Value="QueuePurged" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -248,6 +288,7 @@
       <ReturnValue>
         <ReturnType>System.Messaging.Acknowledgment</ReturnType>
       </ReturnValue>
+      <MemberValue>49153</MemberValue>
       <Docs>
         <summary>A negative read acknowledgment indicating that the queue was purged before the message could be read.</summary>
       </Docs>
@@ -256,6 +297,8 @@
       <MemberSignature Language="C#" Value="ReachQueue" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.Acknowledgment ReachQueue = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Messaging.Acknowledgment.ReachQueue" />
+      <MemberSignature Language="VB.NET" Value="ReachQueue" />
+      <MemberSignature Language="C++ CLI" Value="ReachQueue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -264,6 +307,7 @@
       <ReturnValue>
         <ReturnType>System.Messaging.Acknowledgment</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>A positive arrival acknowledgment indicating that the original message reached its destination queue.</summary>
       </Docs>
@@ -272,6 +316,8 @@
       <MemberSignature Language="C#" Value="ReachQueueTimeout" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.Acknowledgment ReachQueueTimeout = int32(32770)" />
       <MemberSignature Language="DocId" Value="F:System.Messaging.Acknowledgment.ReachQueueTimeout" />
+      <MemberSignature Language="VB.NET" Value="ReachQueueTimeout" />
+      <MemberSignature Language="C++ CLI" Value="ReachQueueTimeout" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -280,6 +326,7 @@
       <ReturnValue>
         <ReturnType>System.Messaging.Acknowledgment</ReturnType>
       </ReturnValue>
+      <MemberValue>32770</MemberValue>
       <Docs>
         <summary>A negative arrival acknowledgment indicating that the time-to-reach-queue or time-to-be-received timer expired before the original message could reach the destination queue.</summary>
       </Docs>
@@ -288,6 +335,8 @@
       <MemberSignature Language="C#" Value="Receive" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.Acknowledgment Receive = int32(16384)" />
       <MemberSignature Language="DocId" Value="F:System.Messaging.Acknowledgment.Receive" />
+      <MemberSignature Language="VB.NET" Value="Receive" />
+      <MemberSignature Language="C++ CLI" Value="Receive" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -296,6 +345,7 @@
       <ReturnValue>
         <ReturnType>System.Messaging.Acknowledgment</ReturnType>
       </ReturnValue>
+      <MemberValue>16384</MemberValue>
       <Docs>
         <summary>A positive read acknowledgment indicating that the original message was received by the receiving application.</summary>
       </Docs>
@@ -304,6 +354,8 @@
       <MemberSignature Language="C#" Value="ReceiveTimeout" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.Acknowledgment ReceiveTimeout = int32(49154)" />
       <MemberSignature Language="DocId" Value="F:System.Messaging.Acknowledgment.ReceiveTimeout" />
+      <MemberSignature Language="VB.NET" Value="ReceiveTimeout" />
+      <MemberSignature Language="C++ CLI" Value="ReceiveTimeout" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -312,6 +364,7 @@
       <ReturnValue>
         <ReturnType>System.Messaging.Acknowledgment</ReturnType>
       </ReturnValue>
+      <MemberValue>49154</MemberValue>
       <Docs>
         <summary>A negative read acknowledgment indicating that the original message was not received from the queue before its time-to-be-received timer expired.</summary>
       </Docs>

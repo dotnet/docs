@@ -1,7 +1,9 @@
-<Type Name="ApplicationHost" FullName="System.Web.Hosting.ApplicationHost">
+﻿<Type Name="ApplicationHost" FullName="System.Web.Hosting.ApplicationHost">
   <TypeSignature Language="C#" Value="public sealed class ApplicationHost" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ApplicationHost extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.Hosting.ApplicationHost" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ApplicationHost" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ApplicationHost sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +28,8 @@
       <MemberSignature Language="C#" Value="public static object CreateApplicationHost (Type hostType, string virtualDir, string physicalDir);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object CreateApplicationHost(class System.Type hostType, string virtualDir, string physicalDir) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.ApplicationHost.CreateApplicationHost(System.Type,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateApplicationHost (hostType As Type, virtualDir As String, physicalDir As String) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ CreateApplicationHost(Type ^ hostType, System::String ^ virtualDir, System::String ^ physicalDir);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

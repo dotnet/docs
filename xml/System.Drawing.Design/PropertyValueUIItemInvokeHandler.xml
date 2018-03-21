@@ -1,7 +1,9 @@
-<Type Name="PropertyValueUIItemInvokeHandler" FullName="System.Drawing.Design.PropertyValueUIItemInvokeHandler">
+﻿<Type Name="PropertyValueUIItemInvokeHandler" FullName="System.Drawing.Design.PropertyValueUIItemInvokeHandler">
   <TypeSignature Language="C#" Value="public delegate void PropertyValueUIItemInvokeHandler(ITypeDescriptorContext context, PropertyDescriptor descriptor, PropertyValueUIItem invokedItem);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PropertyValueUIItemInvokeHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Design.PropertyValueUIItemInvokeHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub PropertyValueUIItemInvokeHandler(context As ITypeDescriptorContext, descriptor As PropertyDescriptor, invokedItem As PropertyValueUIItem)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void PropertyValueUIItemInvokeHandler(ITypeDescriptorContext ^ context, PropertyDescriptor ^ descriptor, PropertyValueUIItem ^ invokedItem);" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

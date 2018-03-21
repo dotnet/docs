@@ -1,7 +1,9 @@
-<Type Name="TextWrapping" FullName="System.Windows.TextWrapping">
+﻿<Type Name="TextWrapping" FullName="System.Windows.TextWrapping">
   <TypeSignature Language="C#" Value="public enum TextWrapping" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TextWrapping extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.TextWrapping" />
+  <TypeSignature Language="VB.NET" Value="Public Enum TextWrapping" />
+  <TypeSignature Language="C++ CLI" Value="public enum class TextWrapping" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +35,8 @@
       <MemberSignature Language="C#" Value="NoWrap" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.TextWrapping NoWrap = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.TextWrapping.NoWrap" />
+      <MemberSignature Language="VB.NET" Value="NoWrap" />
+      <MemberSignature Language="C++ CLI" Value="NoWrap" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -41,6 +45,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.TextWrapping</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>No line wrapping is performed.</summary>
       </Docs>
@@ -49,6 +54,8 @@
       <MemberSignature Language="C#" Value="Wrap" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.TextWrapping Wrap = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.TextWrapping.Wrap" />
+      <MemberSignature Language="VB.NET" Value="Wrap" />
+      <MemberSignature Language="C++ CLI" Value="Wrap" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -57,6 +64,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.TextWrapping</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Line-breaking occurs if the line overflows beyond the available block width, even if the standard line breaking algorithm cannot determine any line break opportunity, as in the case of a very long word constrained in a fixed-width container with no scrolling allowed.</summary>
       </Docs>
@@ -65,6 +73,8 @@
       <MemberSignature Language="C#" Value="WrapWithOverflow" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.TextWrapping WrapWithOverflow = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.TextWrapping.WrapWithOverflow" />
+      <MemberSignature Language="VB.NET" Value="WrapWithOverflow" />
+      <MemberSignature Language="C++ CLI" Value="WrapWithOverflow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -73,6 +83,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.TextWrapping</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Line-breaking occurs if the line overflows beyond the available block width. However, a line may overflow beyond the block width if the line breaking algorithm cannot determine a line break opportunity, as in the case of a very long word constrained in a fixed-width container with no scrolling allowed.</summary>
       </Docs>

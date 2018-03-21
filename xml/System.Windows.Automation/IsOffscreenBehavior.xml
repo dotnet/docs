@@ -1,7 +1,9 @@
-<Type Name="IsOffscreenBehavior" FullName="System.Windows.Automation.IsOffscreenBehavior">
+﻿<Type Name="IsOffscreenBehavior" FullName="System.Windows.Automation.IsOffscreenBehavior">
   <TypeSignature Language="C#" Value="public enum IsOffscreenBehavior" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed IsOffscreenBehavior extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.IsOffscreenBehavior" />
+  <TypeSignature Language="VB.NET" Value="Public Enum IsOffscreenBehavior" />
+  <TypeSignature Language="C++ CLI" Value="public enum class IsOffscreenBehavior" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -18,6 +20,8 @@
       <MemberSignature Language="C#" Value="Default" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.IsOffscreenBehavior Default = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.IsOffscreenBehavior.Default" />
+      <MemberSignature Language="VB.NET" Value="Default" />
+      <MemberSignature Language="C++ CLI" Value="Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -26,6 +30,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Automation.IsOffscreenBehavior</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>
           <see cref="M:System.Windows.Automation.Peers.AutomationPeer.IsOffscreen" /> is calculated based on the <see cref="P:System.Windows.UIElement.IsVisible" /> property.</summary>
@@ -35,6 +40,8 @@
       <MemberSignature Language="C#" Value="FromClip" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.IsOffscreenBehavior FromClip = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.IsOffscreenBehavior.FromClip" />
+      <MemberSignature Language="VB.NET" Value="FromClip" />
+      <MemberSignature Language="C++ CLI" Value="FromClip" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -43,6 +50,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Automation.IsOffscreenBehavior</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>
           <see cref="M:System.Windows.Automation.Peers.AutomationPeer.IsOffscreen" /> is calculated based on clip regions.</summary>
@@ -52,6 +60,8 @@
       <MemberSignature Language="C#" Value="Offscreen" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.IsOffscreenBehavior Offscreen = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.IsOffscreenBehavior.Offscreen" />
+      <MemberSignature Language="VB.NET" Value="Offscreen" />
+      <MemberSignature Language="C++ CLI" Value="Offscreen" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -60,6 +70,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Automation.IsOffscreenBehavior</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>
           <see cref="M:System.Windows.Automation.Peers.AutomationPeer.IsOffscreen" /> is <see langword="true" />.</summary>
@@ -69,6 +80,8 @@
       <MemberSignature Language="C#" Value="Onscreen" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.IsOffscreenBehavior Onscreen = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.IsOffscreenBehavior.Onscreen" />
+      <MemberSignature Language="VB.NET" Value="Onscreen" />
+      <MemberSignature Language="C++ CLI" Value="Onscreen" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -77,6 +90,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Automation.IsOffscreenBehavior</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>
           <see cref="M:System.Windows.Automation.Peers.AutomationPeer.IsOffscreen" /> is <see langword="false" />.</summary>

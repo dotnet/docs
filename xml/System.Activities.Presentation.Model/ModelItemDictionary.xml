@@ -1,7 +1,9 @@
-<Type Name="ModelItemDictionary" FullName="System.Activities.Presentation.Model.ModelItemDictionary">
+﻿<Type Name="ModelItemDictionary" FullName="System.Activities.Presentation.Model.ModelItemDictionary">
   <TypeSignature Language="C#" Value="public abstract class ModelItemDictionary : System.Activities.Presentation.Model.ModelItem, System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;System.Activities.Presentation.Model.ModelItem,System.Activities.Presentation.Model.ModelItem&gt;&gt;, System.Collections.Generic.IDictionary&lt;System.Activities.Presentation.Model.ModelItem,System.Activities.Presentation.Model.ModelItem&gt;, System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;System.Activities.Presentation.Model.ModelItem,System.Activities.Presentation.Model.ModelItem&gt;&gt;, System.Collections.IDictionary, System.Collections.Specialized.INotifyCollectionChanged" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ModelItemDictionary extends System.Activities.Presentation.Model.ModelItem implements class System.Collections.Generic.ICollection`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;class System.Activities.Presentation.Model.ModelItem, class System.Activities.Presentation.Model.ModelItem&gt;&gt;, class System.Collections.Generic.IDictionary`2&lt;class System.Activities.Presentation.Model.ModelItem, class System.Activities.Presentation.Model.ModelItem&gt;, class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;class System.Activities.Presentation.Model.ModelItem, class System.Activities.Presentation.Model.ModelItem&gt;&gt;, class System.Collections.ICollection, class System.Collections.IDictionary, class System.Collections.IEnumerable, class System.Collections.Specialized.INotifyCollectionChanged" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Model.ModelItemDictionary" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ModelItemDictionary&#xA;Inherits ModelItem&#xA;Implements ICollection(Of KeyValuePair(Of ModelItem, ModelItem)), IDictionary, IDictionary(Of ModelItem, ModelItem), IEnumerable(Of KeyValuePair(Of ModelItem, ModelItem)), INotifyCollectionChanged" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ModelItemDictionary abstract : System::Activities::Presentation::Model::ModelItem, System::Collections::Generic::ICollection&lt;System::Collections::Generic::KeyValuePair&lt;System::Activities::Presentation::Model::ModelItem ^, System::Activities::Presentation::Model::ModelItem ^&gt;&gt;, System::Collections::Generic::IDictionary&lt;System::Activities::Presentation::Model::ModelItem ^, System::Activities::Presentation::Model::ModelItem ^&gt;, System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;System::Activities::Presentation::Model::ModelItem ^, System::Activities::Presentation::Model::ModelItem ^&gt;&gt;, System::Collections::IDictionary, System::Collections::Specialized::INotifyCollectionChanged" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +37,8 @@
       <MemberSignature Language="C#" Value="protected ModelItemDictionary ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelItemDictionary.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ModelItemDictionary();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -46,11 +50,25 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds the value to the dictionary under the given key.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Add">
       <MemberSignature Language="C#" Value="public abstract void Add (System.Activities.Presentation.Model.ModelItem key, System.Activities.Presentation.Model.ModelItem value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Add(class System.Activities.Presentation.Model.ModelItem key, class System.Activities.Presentation.Model.ModelItem value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelItemDictionary.Add(System.Activities.Presentation.Model.ModelItem,System.Activities.Presentation.Model.ModelItem)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Add (key As ModelItem, value As ModelItem)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Add(System::Activities::Presentation::Model::ModelItem ^ key, System::Activities::Presentation::Model::ModelItem ^ value);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IDictionary`2.Add(`0,`1)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -74,6 +92,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Activities.Presentation.Model.ModelItem Add (object key, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Activities.Presentation.Model.ModelItem Add(object key, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelItemDictionary.Add(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function Add (key As Object, value As Object) As ModelItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Activities::Presentation::Model::ModelItem ^ Add(System::Object ^ key, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -100,7 +120,13 @@
       <MemberSignature Language="C#" Value="public abstract void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelItemDictionary.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Clear ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Clear();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Clear</InterfaceMember>
+        <InterfaceMember>M:System.Collections.IDictionary.Clear</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -118,6 +144,8 @@
       <MemberSignature Language="C#" Value="public abstract event System.Collections.Specialized.NotifyCollectionChangedEventHandler CollectionChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Collections.Specialized.NotifyCollectionChangedEventHandler CollectionChanged" />
       <MemberSignature Language="DocId" Value="E:System.Activities.Presentation.Model.ModelItemDictionary.CollectionChanged" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Event CollectionChanged As NotifyCollectionChangedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract event System::Collections::Specialized::NotifyCollectionChangedEventHandler ^ CollectionChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -135,7 +163,12 @@
       <MemberSignature Language="C#" Value="protected virtual bool Contains (System.Collections.Generic.KeyValuePair&lt;System.Activities.Presentation.Model.ModelItem,System.Activities.Presentation.Model.ModelItem&gt; item);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool Contains(valuetype System.Collections.Generic.KeyValuePair`2&lt;class System.Activities.Presentation.Model.ModelItem, class System.Activities.Presentation.Model.ModelItem&gt; item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelItemDictionary.Contains(System.Collections.Generic.KeyValuePair{System.Activities.Presentation.Model.ModelItem,System.Activities.Presentation.Model.ModelItem})" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function Contains (item As KeyValuePair(Of ModelItem, ModelItem)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool Contains(System::Collections::Generic::KeyValuePair&lt;System::Activities::Presentation::Model::ModelItem ^, System::Activities::Presentation::Model::ModelItem ^&gt; item);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Contains(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -154,11 +187,25 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ContainsKey">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether the dictionary contains the given key.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ContainsKey">
       <MemberSignature Language="C#" Value="public abstract bool ContainsKey (System.Activities.Presentation.Model.ModelItem key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ContainsKey(class System.Activities.Presentation.Model.ModelItem key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelItemDictionary.ContainsKey(System.Activities.Presentation.Model.ModelItem)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function ContainsKey (key As ModelItem) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool ContainsKey(System::Activities::Presentation::Model::ModelItem ^ key);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IDictionary`2.ContainsKey(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -182,6 +229,8 @@
       <MemberSignature Language="C#" Value="public abstract bool ContainsKey (object key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ContainsKey(object key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelItemDictionary.ContainsKey(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function ContainsKey (key As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool ContainsKey(System::Object ^ key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -206,6 +255,8 @@
       <MemberSignature Language="C#" Value="protected virtual void CopyTo (System.Collections.Generic.KeyValuePair&lt;System.Activities.Presentation.Model.ModelItem,System.Activities.Presentation.Model.ModelItem&gt;[] array, int arrayIndex);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void CopyTo(valuetype System.Collections.Generic.KeyValuePair`2&lt;class System.Activities.Presentation.Model.ModelItem, class System.Activities.Presentation.Model.ModelItem&gt;[] array, int32 arrayIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelItemDictionary.CopyTo(System.Collections.Generic.KeyValuePair{System.Activities.Presentation.Model.ModelItem,System.Activities.Presentation.Model.ModelItem}[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub CopyTo (array As KeyValuePair(Of ModelItem, ModelItem)(), arrayIndex As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void CopyTo(cli::array &lt;System::Collections::Generic::KeyValuePair&lt;System::Activities::Presentation::Model::ModelItem ^, System::Activities::Presentation::Model::ModelItem ^&gt;&gt; ^ array, int arrayIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -229,7 +280,12 @@
       <MemberSignature Language="C#" Value="public abstract int Count { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.ModelItemDictionary.Count" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property int Count { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.Generic.ICollection`1.Count</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -247,7 +303,12 @@
       <MemberSignature Language="C#" Value="public abstract System.Collections.Generic.IEnumerator&lt;System.Collections.Generic.KeyValuePair&lt;System.Activities.Presentation.Model.ModelItem,System.Activities.Presentation.Model.ModelItem&gt;&gt; GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerator`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;class System.Activities.Presentation.Model.ModelItem, class System.Activities.Presentation.Model.ModelItem&gt;&gt; GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelItemDictionary.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetEnumerator () As IEnumerator(Of KeyValuePair(Of ModelItem, ModelItem))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Collections::Generic::IEnumerator&lt;System::Collections::Generic::KeyValuePair&lt;System::Activities::Presentation::Model::ModelItem ^, System::Activities::Presentation::Model::ModelItem ^&gt;&gt; ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -266,7 +327,12 @@
       <MemberSignature Language="C#" Value="protected virtual bool IsFixedSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsFixedSize" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.ModelItemDictionary.IsFixedSize" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property IsFixedSize As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool IsFixedSize { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.IDictionary.IsFixedSize</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -285,7 +351,13 @@
       <MemberSignature Language="C#" Value="public abstract bool IsReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.ModelItemDictionary.IsReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property IsReadOnly As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.Generic.ICollection`1.IsReadOnly</InterfaceMember>
+        <InterfaceMember>P:System.Collections.IDictionary.IsReadOnly</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -304,7 +376,12 @@
       <MemberSignature Language="C#" Value="protected virtual bool IsSynchronized { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsSynchronized" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.ModelItemDictionary.IsSynchronized" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property IsSynchronized As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool IsSynchronized { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -319,11 +396,25 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets or sets the item at the specified key.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Item">
       <MemberSignature Language="C#" Value="public abstract System.Activities.Presentation.Model.ModelItem this[System.Activities.Presentation.Model.ModelItem key] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Presentation.Model.ModelItem Item(class System.Activities.Presentation.Model.ModelItem)" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.ModelItemDictionary.Item(System.Activities.Presentation.Model.ModelItem)" />
+      <MemberSignature Language="VB.NET" Value="Default Public MustOverride Property Item(key As ModelItem) As ModelItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Activities::Presentation::Model::ModelItem ^ default[System::Activities::Presentation::Model::ModelItem ^] { System::Activities::Presentation::Model::ModelItem ^ get(System::Activities::Presentation::Model::ModelItem ^ key); void set(System::Activities::Presentation::Model::ModelItem ^ key, System::Activities::Presentation::Model::ModelItem ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.Generic.IDictionary`2.Item(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -355,6 +446,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Activities.Presentation.Model.ModelItem this[object key] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Presentation.Model.ModelItem Item(object)" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.ModelItemDictionary.Item(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Default Public MustOverride Property Item(key As Object) As ModelItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Activities::Presentation::Model::ModelItem ^ default[System::Object ^] { System::Activities::Presentation::Model::ModelItem ^ get(System::Object ^ key); void set(System::Object ^ key, System::Activities::Presentation::Model::ModelItem ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -387,6 +480,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty KeyProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty KeyProperty" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.Model.ModelItemDictionary.KeyProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly KeyProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ KeyProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -404,7 +499,12 @@
       <MemberSignature Language="C#" Value="public abstract System.Collections.Generic.ICollection&lt;System.Activities.Presentation.Model.ModelItem&gt; Keys { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;class System.Activities.Presentation.Model.ModelItem&gt; Keys" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.ModelItemDictionary.Keys" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Keys As ICollection(Of ModelItem)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Collections::Generic::ICollection&lt;System::Activities::Presentation::Model::ModelItem ^&gt; ^ Keys { System::Collections::Generic::ICollection&lt;System::Activities::Presentation::Model::ModelItem ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.Generic.IDictionary`2.Keys</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -418,11 +518,25 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Remove">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes the item from the dictionary.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Remove">
       <MemberSignature Language="C#" Value="public abstract bool Remove (System.Activities.Presentation.Model.ModelItem key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Remove(class System.Activities.Presentation.Model.ModelItem key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelItemDictionary.Remove(System.Activities.Presentation.Model.ModelItem)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function Remove (key As ModelItem) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool Remove(System::Activities::Presentation::Model::ModelItem ^ key);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IDictionary`2.Remove(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -454,6 +568,8 @@
       <MemberSignature Language="C#" Value="public abstract bool Remove (object key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Remove(object key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelItemDictionary.Remove(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function Remove (key As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool Remove(System::Object ^ key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -486,7 +602,12 @@
       <MemberSignature Language="C#" Value="protected virtual object SyncRoot { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object SyncRoot" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.ModelItemDictionary.SyncRoot" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property SyncRoot As Object" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Object ^ SyncRoot { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -511,7 +632,12 @@
       <MemberSignature Language="C#" Value="void ICollection&lt;KeyValuePair&lt;ModelItem,ModelItem&gt;&gt;.Add (System.Collections.Generic.KeyValuePair&lt;System.Activities.Presentation.Model.ModelItem,System.Activities.Presentation.Model.ModelItem&gt; item);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;System.Activities.Presentation.Model.ModelItem,System.Activities.Presentation.Model.ModelItem&gt;&gt;.Add(valuetype System.Collections.Generic.KeyValuePair`2&lt;class System.Activities.Presentation.Model.ModelItem, class System.Activities.Presentation.Model.ModelItem&gt; item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelItemDictionary.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;System#Activities#Presentation#Model#ModelItem,System#Activities#Presentation#Model#ModelItem&gt;&gt;#Add(System.Collections.Generic.KeyValuePair{System.Activities.Presentation.Model.ModelItem,System.Activities.Presentation.Model.ModelItem})" />
+      <MemberSignature Language="VB.NET" Value="Sub Add (item As KeyValuePair(Of ModelItem, ModelItem)) Implements ICollection(Of KeyValuePair(Of ModelItem, ModelItem)).Add" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;System.Activities.Presentation.Model.ModelItem,System.Activities.Presentation.Model.ModelItem&gt;&gt;.Add(System::Collections::Generic::KeyValuePair&lt;System::Activities::Presentation::Model::ModelItem ^, System::Activities::Presentation::Model::ModelItem ^&gt; item) = System::Collections::Generic::ICollection&lt;System::Collections::Generic::KeyValuePair&lt;System::Activities::Presentation::Model::ModelItem ^, System::Activities::Presentation::Model::ModelItem ^&gt;&gt;::Add;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Add(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -532,7 +658,12 @@
       <MemberSignature Language="C#" Value="bool ICollection&lt;KeyValuePair&lt;ModelItem,ModelItem&gt;&gt;.Contains (System.Collections.Generic.KeyValuePair&lt;System.Activities.Presentation.Model.ModelItem,System.Activities.Presentation.Model.ModelItem&gt; item);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;System.Activities.Presentation.Model.ModelItem,System.Activities.Presentation.Model.ModelItem&gt;&gt;.Contains(valuetype System.Collections.Generic.KeyValuePair`2&lt;class System.Activities.Presentation.Model.ModelItem, class System.Activities.Presentation.Model.ModelItem&gt; item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelItemDictionary.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;System#Activities#Presentation#Model#ModelItem,System#Activities#Presentation#Model#ModelItem&gt;&gt;#Contains(System.Collections.Generic.KeyValuePair{System.Activities.Presentation.Model.ModelItem,System.Activities.Presentation.Model.ModelItem})" />
+      <MemberSignature Language="VB.NET" Value="Function Contains (item As KeyValuePair(Of ModelItem, ModelItem)) As Boolean Implements ICollection(Of KeyValuePair(Of ModelItem, ModelItem)).Contains" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;System.Activities.Presentation.Model.ModelItem,System.Activities.Presentation.Model.ModelItem&gt;&gt;.Contains(System::Collections::Generic::KeyValuePair&lt;System::Activities::Presentation::Model::ModelItem ^, System::Activities::Presentation::Model::ModelItem ^&gt; item) = System::Collections::Generic::ICollection&lt;System::Collections::Generic::KeyValuePair&lt;System::Activities::Presentation::Model::ModelItem ^, System::Activities::Presentation::Model::ModelItem ^&gt;&gt;::Contains;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Contains(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -554,6 +685,8 @@
       <MemberSignature Language="C#" Value="void ICollection&lt;KeyValuePair&lt;ModelItem,ModelItem&gt;&gt;.CopyTo (System.Collections.Generic.KeyValuePair&lt;System.Activities.Presentation.Model.ModelItem,System.Activities.Presentation.Model.ModelItem&gt;[] array, int arrayIndex);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;System.Activities.Presentation.Model.ModelItem,System.Activities.Presentation.Model.ModelItem&gt;&gt;.CopyTo(valuetype System.Collections.Generic.KeyValuePair`2&lt;class System.Activities.Presentation.Model.ModelItem, class System.Activities.Presentation.Model.ModelItem&gt;[] array, int32 arrayIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelItemDictionary.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;System#Activities#Presentation#Model#ModelItem,System#Activities#Presentation#Model#ModelItem&gt;&gt;#CopyTo(System.Collections.Generic.KeyValuePair{System.Activities.Presentation.Model.ModelItem,System.Activities.Presentation.Model.ModelItem}[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Sub CopyTo (array As KeyValuePair(Of ModelItem, ModelItem)(), arrayIndex As Integer) Implements ICollection(Of KeyValuePair(Of ModelItem, ModelItem)).CopyTo" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;System.Activities.Presentation.Model.ModelItem,System.Activities.Presentation.Model.ModelItem&gt;&gt;.CopyTo(cli::array &lt;System::Collections::Generic::KeyValuePair&lt;System::Activities::Presentation::Model::ModelItem ^, System::Activities::Presentation::Model::ModelItem ^&gt;&gt; ^ array, int arrayIndex) = System::Collections::Generic::ICollection&lt;System::Collections::Generic::KeyValuePair&lt;System::Activities::Presentation::Model::ModelItem ^, System::Activities::Presentation::Model::ModelItem ^&gt;&gt;::CopyTo;" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -577,7 +710,12 @@
       <MemberSignature Language="C#" Value="bool ICollection&lt;KeyValuePair&lt;ModelItem,ModelItem&gt;&gt;.Remove (System.Collections.Generic.KeyValuePair&lt;System.Activities.Presentation.Model.ModelItem,System.Activities.Presentation.Model.ModelItem&gt; item);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;System.Activities.Presentation.Model.ModelItem,System.Activities.Presentation.Model.ModelItem&gt;&gt;.Remove(valuetype System.Collections.Generic.KeyValuePair`2&lt;class System.Activities.Presentation.Model.ModelItem, class System.Activities.Presentation.Model.ModelItem&gt; item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelItemDictionary.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;System#Activities#Presentation#Model#ModelItem,System#Activities#Presentation#Model#ModelItem&gt;&gt;#Remove(System.Collections.Generic.KeyValuePair{System.Activities.Presentation.Model.ModelItem,System.Activities.Presentation.Model.ModelItem})" />
+      <MemberSignature Language="VB.NET" Value="Function Remove (item As KeyValuePair(Of ModelItem, ModelItem)) As Boolean Implements ICollection(Of KeyValuePair(Of ModelItem, ModelItem)).Remove" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;System.Activities.Presentation.Model.ModelItem,System.Activities.Presentation.Model.ModelItem&gt;&gt;.Remove(System::Collections::Generic::KeyValuePair&lt;System::Activities::Presentation::Model::ModelItem ^, System::Activities::Presentation::Model::ModelItem ^&gt; item) = System::Collections::Generic::ICollection&lt;System::Collections::Generic::KeyValuePair&lt;System::Activities::Presentation::Model::ModelItem ^, System::Activities::Presentation::Model::ModelItem ^&gt;&gt;::Remove;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Remove(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -599,7 +737,11 @@
       <MemberSignature Language="C#" Value="void ICollection.CopyTo (Array array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.ICollection.CopyTo(class System.Array array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelItemDictionary.System#Collections#ICollection#CopyTo(System.Array,System.Int32)" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.ICollection.CopyTo(Array ^ array, int index) = System::Collections::ICollection::CopyTo;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -622,7 +764,12 @@
       <MemberSignature Language="C#" Value="int System.Collections.ICollection.Count { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 System.Collections.ICollection.Count" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.ModelItemDictionary.System#Collections#ICollection#Count" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property Count As Integer Implements ICollection.Count" />
+      <MemberSignature Language="C++ CLI" Value="property int System.Collections.ICollection.Count { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.Generic.ICollection`1.Count</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -640,7 +787,12 @@
       <MemberSignature Language="C#" Value="bool System.Collections.ICollection.IsSynchronized { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.ICollection.IsSynchronized" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.ModelItemDictionary.System#Collections#ICollection#IsSynchronized" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -659,7 +811,12 @@
       <MemberSignature Language="C#" Value="object System.Collections.ICollection.SyncRoot { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.ICollection.SyncRoot" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.ModelItemDictionary.System#Collections#ICollection#SyncRoot" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -677,7 +834,12 @@
       <MemberSignature Language="C#" Value="void IDictionary.Add (object key, object value);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IDictionary.Add(object key, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelItemDictionary.System#Collections#IDictionary#Add(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Sub Add (key As Object, value As Object) Implements IDictionary.Add" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.IDictionary.Add(System::Object ^ key, System::Object ^ value) = System::Collections::IDictionary::Add;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IDictionary.Add(System.Object,System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -700,7 +862,12 @@
       <MemberSignature Language="C#" Value="void IDictionary.Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IDictionary.Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelItemDictionary.System#Collections#IDictionary#Clear" />
+      <MemberSignature Language="VB.NET" Value="Sub Clear () Implements IDictionary.Clear" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.IDictionary.Clear() = System::Collections::IDictionary::Clear;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IDictionary.Clear</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -718,7 +885,12 @@
       <MemberSignature Language="C#" Value="bool IDictionary.Contains (object key);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.IDictionary.Contains(object key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelItemDictionary.System#Collections#IDictionary#Contains(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Function Contains (key As Object) As Boolean Implements IDictionary.Contains" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.Collections.IDictionary.Contains(System::Object ^ key) = System::Collections::IDictionary::Contains;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IDictionary.Contains(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -741,7 +913,12 @@
       <MemberSignature Language="C#" Value="System.Collections.IDictionaryEnumerator IDictionary.GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IDictionaryEnumerator System.Collections.IDictionary.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelItemDictionary.System#Collections#IDictionary#GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IDictionaryEnumerator Implements IDictionary.GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IDictionaryEnumerator ^ System.Collections.IDictionary.GetEnumerator() = System::Collections::IDictionary::GetEnumerator;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IDictionary.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -760,7 +937,12 @@
       <MemberSignature Language="C#" Value="bool System.Collections.IDictionary.IsFixedSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.IDictionary.IsFixedSize" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.ModelItemDictionary.System#Collections#IDictionary#IsFixedSize" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsFixedSize As Boolean Implements IDictionary.IsFixedSize" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IDictionary.IsFixedSize { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.IDictionary.IsFixedSize</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -779,7 +961,12 @@
       <MemberSignature Language="C#" Value="bool System.Collections.IDictionary.IsReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.IDictionary.IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.ModelItemDictionary.System#Collections#IDictionary#IsReadOnly" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements IDictionary.IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IDictionary.IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.IDictionary.IsReadOnly</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -798,7 +985,12 @@
       <MemberSignature Language="C#" Value="object System.Collections.IDictionary.Item[object key] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.IDictionary.Item(object)" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.ModelItemDictionary.System#Collections#IDictionary#Item(System.Object)" />
+      <MemberSignature Language="VB.NET" Value=" Property Item(key As Object) As Object Implements IDictionary.Item" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IDictionary.Item[System::Object ^] { System::Object ^ get(System::Object ^ key); void set(System::Object ^ key, System::Object ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.IDictionary.Item(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -820,7 +1012,12 @@
       <MemberSignature Language="C#" Value="System.Collections.ICollection System.Collections.IDictionary.Keys { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ICollection System.Collections.IDictionary.Keys" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.ModelItemDictionary.System#Collections#IDictionary#Keys" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property Keys As ICollection Implements IDictionary.Keys" />
+      <MemberSignature Language="C++ CLI" Value="property System::Collections::ICollection ^ System.Collections.IDictionary.Keys { System::Collections::ICollection ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.IDictionary.Keys</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -838,7 +1035,12 @@
       <MemberSignature Language="C#" Value="void IDictionary.Remove (object key);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IDictionary.Remove(object key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelItemDictionary.System#Collections#IDictionary#Remove(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Sub Remove (key As Object) Implements IDictionary.Remove" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.IDictionary.Remove(System::Object ^ key) = System::Collections::IDictionary::Remove;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IDictionary.Remove(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -866,7 +1068,12 @@
       <MemberSignature Language="C#" Value="System.Collections.ICollection System.Collections.IDictionary.Values { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ICollection System.Collections.IDictionary.Values" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.ModelItemDictionary.System#Collections#IDictionary#Values" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property Values As ICollection Implements IDictionary.Values" />
+      <MemberSignature Language="C++ CLI" Value="property System::Collections::ICollection ^ System.Collections.IDictionary.Values { System::Collections::ICollection ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.IDictionary.Values</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -884,7 +1091,12 @@
       <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelItemDictionary.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value=" Iterator Overridable NotOverridable Function GetEnumerator () As IEnumerator Implements IEnumerable.GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IEnumerator ^ System.Collections.IEnumerable.GetEnumerator() = System::Collections::IEnumerable::GetEnumerator;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -904,10 +1116,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="TryGetValue">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the value for the given key, if possible.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="TryGetValue">
       <MemberSignature Language="C#" Value="public abstract bool TryGetValue (System.Activities.Presentation.Model.ModelItem key, out System.Activities.Presentation.Model.ModelItem value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetValue(class System.Activities.Presentation.Model.ModelItem key, [out] class System.Activities.Presentation.Model.ModelItem&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelItemDictionary.TryGetValue(System.Activities.Presentation.Model.ModelItem,System.Activities.Presentation.Model.ModelItem@)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function TryGetValue (key As ModelItem, ByRef value As ModelItem) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool TryGetValue(System::Activities::Presentation::Model::ModelItem ^ key, [Runtime::InteropServices::Out] System::Activities::Presentation::Model::ModelItem ^ % value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -934,6 +1157,8 @@
       <MemberSignature Language="C#" Value="public abstract bool TryGetValue (object key, out System.Activities.Presentation.Model.ModelItem value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetValue(object key, [out] class System.Activities.Presentation.Model.ModelItem&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelItemDictionary.TryGetValue(System.Object,System.Activities.Presentation.Model.ModelItem@)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function TryGetValue (key As Object, ByRef value As ModelItem) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool TryGetValue(System::Object ^ key, [Runtime::InteropServices::Out] System::Activities::Presentation::Model::ModelItem ^ % value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -960,7 +1185,12 @@
       <MemberSignature Language="C#" Value="public abstract System.Collections.Generic.ICollection&lt;System.Activities.Presentation.Model.ModelItem&gt; Values { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;class System.Activities.Presentation.Model.ModelItem&gt; Values" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.ModelItemDictionary.Values" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Values As ICollection(Of ModelItem)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Collections::Generic::ICollection&lt;System::Activities::Presentation::Model::ModelItem ^&gt; ^ Values { System::Collections::Generic::ICollection&lt;System::Activities::Presentation::Model::ModelItem ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.Generic.IDictionary`2.Values</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -981,50 +1211,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="TryGetValue">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities.Presentation</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Retrieves the value for the given key, if possible.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ContainsKey">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities.Presentation</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Determines whether the dictionary contains the given key.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Add">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities.Presentation</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds the value to the dictionary under the given key.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Remove">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities.Presentation</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Removes the item from the dictionary.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Item">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities.Presentation</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets or sets the item at the specified key.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

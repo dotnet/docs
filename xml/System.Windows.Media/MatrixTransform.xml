@@ -1,7 +1,9 @@
-<Type Name="MatrixTransform" FullName="System.Windows.Media.MatrixTransform">
+﻿<Type Name="MatrixTransform" FullName="System.Windows.Media.MatrixTransform">
   <TypeSignature Language="C#" Value="public sealed class MatrixTransform : System.Windows.Media.Transform" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MatrixTransform extends System.Windows.Media.Transform" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.MatrixTransform" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MatrixTransform&#xA;Inherits Transform" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MatrixTransform sealed : System::Windows::Media::Transform" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -81,10 +83,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.MatrixTransform" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public MatrixTransform ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.MatrixTransform.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MatrixTransform();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -100,6 +113,7 @@
       <MemberSignature Language="C#" Value="public MatrixTransform (System.Windows.Media.Matrix matrix);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Media.Matrix matrix) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.MatrixTransform.#ctor(System.Windows.Media.Matrix)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MatrixTransform(System::Windows::Media::Matrix matrix);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -118,6 +132,8 @@
       <MemberSignature Language="C#" Value="public MatrixTransform (double m11, double m12, double m21, double m22, double offsetX, double offsetY);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 m11, float64 m12, float64 m21, float64 m22, float64 offsetX, float64 offsetY) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.MatrixTransform.#ctor(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (m11 As Double, m12 As Double, m21 As Double, m22 As Double, offsetX As Double, offsetY As Double)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MatrixTransform(double m11, double m12, double m21, double m22, double offsetX, double offsetY);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -146,6 +162,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.MatrixTransform Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.MatrixTransform Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.MatrixTransform.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As MatrixTransform" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::MatrixTransform ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -176,6 +194,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.MatrixTransform CloneCurrentValue ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.MatrixTransform CloneCurrentValue() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.MatrixTransform.CloneCurrentValue" />
+      <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As MatrixTransform" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::MatrixTransform ^ CloneCurrentValue();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -204,6 +224,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.MatrixTransform.CreateInstanceCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -223,6 +245,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Matrix Matrix { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Media.Matrix Matrix" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.MatrixTransform.Matrix" />
+      <MemberSignature Language="VB.NET" Value="Public Property Matrix As Matrix" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Matrix Matrix { System::Windows::Media::Matrix get(); void set(System::Windows::Media::Matrix value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -255,6 +279,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty MatrixProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty MatrixProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.MatrixTransform.MatrixProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MatrixProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ MatrixProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -272,6 +298,8 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Media.Matrix Value { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Media.Matrix Value" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.MatrixTransform.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Value As Matrix" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Media::Matrix Value { System::Windows::Media::Matrix get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -293,14 +321,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.MatrixTransform" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

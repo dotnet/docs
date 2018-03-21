@@ -1,7 +1,9 @@
-<Type Name="MaterialGroup" FullName="System.Windows.Media.Media3D.MaterialGroup">
+﻿<Type Name="MaterialGroup" FullName="System.Windows.Media.Media3D.MaterialGroup">
   <TypeSignature Language="C#" Value="public sealed class MaterialGroup : System.Windows.Media.Media3D.Material" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MaterialGroup extends System.Windows.Media.Media3D.Material" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Media3D.MaterialGroup" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MaterialGroup&#xA;Inherits Material" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MaterialGroup sealed : System::Windows::Media::Media3D::Material" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +40,8 @@
       <MemberSignature Language="C#" Value="public MaterialGroup ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.MaterialGroup.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MaterialGroup();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -62,6 +66,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Media3D.MaterialCollection Children { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Media3D.MaterialCollection Children" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.MaterialGroup.Children" />
+      <MemberSignature Language="VB.NET" Value="Public Property Children As MaterialCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Media3D::MaterialCollection ^ Children { System::Windows::Media::Media3D::MaterialCollection ^ get(); void set(System::Windows::Media::Media3D::MaterialCollection ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -103,6 +109,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ChildrenProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ChildrenProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Media3D.MaterialGroup.ChildrenProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ChildrenProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ChildrenProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -120,6 +128,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Media3D.MaterialGroup Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.Media3D.MaterialGroup Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.MaterialGroup.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As MaterialGroup" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Media3D::MaterialGroup ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -139,6 +149,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Media3D.MaterialGroup CloneCurrentValue ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.Media3D.MaterialGroup CloneCurrentValue() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.MaterialGroup.CloneCurrentValue" />
+      <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As MaterialGroup" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Media3D::MaterialGroup ^ CloneCurrentValue();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -158,6 +170,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.MaterialGroup.CreateInstanceCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

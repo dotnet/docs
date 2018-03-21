@@ -1,7 +1,9 @@
-<Type Name="Dns" FullName="System.Net.Dns">
+﻿<Type Name="Dns" FullName="System.Net.Dns">
   <TypeSignature Language="C#" Value="public static class Dns" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed Dns extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Net.Dns" />
+  <TypeSignature Language="VB.NET" Value="Public Class Dns" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Dns abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Net.NameResolution</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +49,8 @@
       <MemberSignature Language="C#" Value="public static IAsyncResult BeginGetHostAddresses (string hostNameOrAddress, AsyncCallback requestCallback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IAsyncResult BeginGetHostAddresses(string hostNameOrAddress, class System.AsyncCallback requestCallback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Dns.BeginGetHostAddresses(System.String,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function BeginGetHostAddresses (hostNameOrAddress As String, requestCallback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static IAsyncResult ^ BeginGetHostAddresses(System::String ^ hostNameOrAddress, AsyncCallback ^ requestCallback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -107,6 +111,8 @@
       <MemberSignature Language="C#" Value="public static IAsyncResult BeginGetHostByName (string hostName, AsyncCallback requestCallback, object stateObject);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IAsyncResult BeginGetHostByName(string hostName, class System.AsyncCallback requestCallback, object stateObject) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Dns.BeginGetHostByName(System.String,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function BeginGetHostByName (hostName As String, requestCallback As AsyncCallback, stateObject As Object) As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static IAsyncResult ^ BeginGetHostByName(System::String ^ hostName, AsyncCallback ^ requestCallback, System::Object ^ stateObject);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -161,10 +167,22 @@
         <permission cref="T:System.Net.DnsPermission">for accessing DNS information. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="BeginGetHostEntry">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Asynchronously resolves a host name or IP address to an <see cref="T:System.Net.IPHostEntry" /> instance.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="BeginGetHostEntry">
       <MemberSignature Language="C#" Value="public static IAsyncResult BeginGetHostEntry (System.Net.IPAddress address, AsyncCallback requestCallback, object stateObject);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IAsyncResult BeginGetHostEntry(class System.Net.IPAddress address, class System.AsyncCallback requestCallback, object stateObject) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Dns.BeginGetHostEntry(System.Net.IPAddress,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function BeginGetHostEntry (address As IPAddress, requestCallback As AsyncCallback, stateObject As Object) As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static IAsyncResult ^ BeginGetHostEntry(System::Net::IPAddress ^ address, AsyncCallback ^ requestCallback, System::Object ^ stateObject);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -230,6 +248,8 @@
       <MemberSignature Language="C#" Value="public static IAsyncResult BeginGetHostEntry (string hostNameOrAddress, AsyncCallback requestCallback, object stateObject);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IAsyncResult BeginGetHostEntry(string hostNameOrAddress, class System.AsyncCallback requestCallback, object stateObject) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Dns.BeginGetHostEntry(System.String,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function BeginGetHostEntry (hostNameOrAddress As String, requestCallback As AsyncCallback, stateObject As Object) As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static IAsyncResult ^ BeginGetHostEntry(System::String ^ hostNameOrAddress, AsyncCallback ^ requestCallback, System::Object ^ stateObject);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -296,6 +316,8 @@
       <MemberSignature Language="C#" Value="public static IAsyncResult BeginResolve (string hostName, AsyncCallback requestCallback, object stateObject);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IAsyncResult BeginResolve(string hostName, class System.AsyncCallback requestCallback, object stateObject) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Dns.BeginResolve(System.String,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function BeginResolve (hostName As String, requestCallback As AsyncCallback, stateObject As Object) As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static IAsyncResult ^ BeginResolve(System::String ^ hostName, AsyncCallback ^ requestCallback, System::Object ^ stateObject);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -363,6 +385,8 @@
       <MemberSignature Language="C#" Value="public static System.Net.IPAddress[] EndGetHostAddresses (IAsyncResult asyncResult);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Net.IPAddress[] EndGetHostAddresses(class System.IAsyncResult asyncResult) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Dns.EndGetHostAddresses(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function EndGetHostAddresses (asyncResult As IAsyncResult) As IPAddress()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Net::IPAddress ^&gt; ^ EndGetHostAddresses(IAsyncResult ^ asyncResult);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -406,6 +430,8 @@
       <MemberSignature Language="C#" Value="public static System.Net.IPHostEntry EndGetHostByName (IAsyncResult asyncResult);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Net.IPHostEntry EndGetHostByName(class System.IAsyncResult asyncResult) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Dns.EndGetHostByName(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function EndGetHostByName (asyncResult As IAsyncResult) As IPHostEntry" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Net::IPHostEntry ^ EndGetHostByName(IAsyncResult ^ asyncResult);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -458,6 +484,8 @@
       <MemberSignature Language="C#" Value="public static System.Net.IPHostEntry EndGetHostEntry (IAsyncResult asyncResult);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Net.IPHostEntry EndGetHostEntry(class System.IAsyncResult asyncResult) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Dns.EndGetHostEntry(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function EndGetHostEntry (asyncResult As IAsyncResult) As IPHostEntry" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Net::IPHostEntry ^ EndGetHostEntry(IAsyncResult ^ asyncResult);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -505,6 +533,8 @@
       <MemberSignature Language="C#" Value="public static System.Net.IPHostEntry EndResolve (IAsyncResult asyncResult);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Net.IPHostEntry EndResolve(class System.IAsyncResult asyncResult) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Dns.EndResolve(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function EndResolve (asyncResult As IAsyncResult) As IPHostEntry" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Net::IPHostEntry ^ EndResolve(IAsyncResult ^ asyncResult);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -566,6 +596,8 @@
       <MemberSignature Language="C#" Value="public static System.Net.IPAddress[] GetHostAddresses (string hostNameOrAddress);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Net.IPAddress[] GetHostAddresses(string hostNameOrAddress) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Dns.GetHostAddresses(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetHostAddresses (hostNameOrAddress As String) As IPAddress()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Net::IPAddress ^&gt; ^ GetHostAddresses(System::String ^ hostNameOrAddress);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -627,6 +659,8 @@
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.Net.IPAddress[]&gt; GetHostAddressesAsync (string hostNameOrAddress);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.Net.IPAddress[]&gt; GetHostAddressesAsync(string hostNameOrAddress) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Dns.GetHostAddressesAsync(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetHostAddressesAsync (hostNameOrAddress As String) As Task(Of IPAddress())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::Tasks::Task&lt;cli::array &lt;System::Net::IPAddress ^&gt; ^&gt; ^ GetHostAddressesAsync(System::String ^ hostNameOrAddress);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NameResolution</AssemblyName>
@@ -672,10 +706,22 @@
           <paramref name="hostNameOrAddress" /> is an invalid IP address.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetHostByAddress">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets DNS host information for an IP address. These methods are now obsolete.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetHostByAddress">
       <MemberSignature Language="C#" Value="public static System.Net.IPHostEntry GetHostByAddress (System.Net.IPAddress address);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Net.IPHostEntry GetHostByAddress(class System.Net.IPAddress address) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Dns.GetHostByAddress(System.Net.IPAddress)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetHostByAddress (address As IPAddress) As IPHostEntry" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Net::IPHostEntry ^ GetHostByAddress(System::Net::IPAddress ^ address);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -736,6 +782,8 @@
       <MemberSignature Language="C#" Value="public static System.Net.IPHostEntry GetHostByAddress (string address);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Net.IPHostEntry GetHostByAddress(string address) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Dns.GetHostByAddress(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetHostByAddress (address As String) As IPHostEntry" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Net::IPHostEntry ^ GetHostByAddress(System::String ^ address);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -787,6 +835,8 @@
       <MemberSignature Language="C#" Value="public static System.Net.IPHostEntry GetHostByName (string hostName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Net.IPHostEntry GetHostByName(string hostName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Dns.GetHostByName(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetHostByName (hostName As String) As IPHostEntry" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Net::IPHostEntry ^ GetHostByName(System::String ^ hostName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -847,10 +897,22 @@
         <permission cref="T:System.Net.DnsPermission">for accessing DNS information. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetHostEntry">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Resolves a host name or IP address to an <see cref="T:System.Net.IPHostEntry" /> instance.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetHostEntry">
       <MemberSignature Language="C#" Value="public static System.Net.IPHostEntry GetHostEntry (System.Net.IPAddress address);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Net.IPHostEntry GetHostEntry(class System.Net.IPAddress address) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Dns.GetHostEntry(System.Net.IPAddress)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetHostEntry (address As IPAddress) As IPHostEntry" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Net::IPHostEntry ^ GetHostEntry(System::Net::IPAddress ^ address);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -909,6 +971,8 @@
       <MemberSignature Language="C#" Value="public static System.Net.IPHostEntry GetHostEntry (string hostNameOrAddress);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Net.IPHostEntry GetHostEntry(string hostNameOrAddress) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Dns.GetHostEntry(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetHostEntry (hostNameOrAddress As String) As IPHostEntry" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Net::IPHostEntry ^ GetHostEntry(System::String ^ hostNameOrAddress);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -984,10 +1048,22 @@
         <permission cref="T:System.Net.DnsPermission">for accessing DNS information. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetHostEntryAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.NameResolution</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Resolves a host name or IP address to an <see cref="T:System.Net.IPHostEntry" /> instance as an asynchronous operation.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetHostEntryAsync">
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.Net.IPHostEntry&gt; GetHostEntryAsync (System.Net.IPAddress address);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.Net.IPHostEntry&gt; GetHostEntryAsync(class System.Net.IPAddress address) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Dns.GetHostEntryAsync(System.Net.IPAddress)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetHostEntryAsync (address As IPAddress) As Task(Of IPHostEntry)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::Tasks::Task&lt;System::Net::IPHostEntry ^&gt; ^ GetHostEntryAsync(System::Net::IPAddress ^ address);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NameResolution</AssemblyName>
@@ -1043,6 +1119,8 @@
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.Net.IPHostEntry&gt; GetHostEntryAsync (string hostNameOrAddress);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.Net.IPHostEntry&gt; GetHostEntryAsync(string hostNameOrAddress) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Dns.GetHostEntryAsync(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetHostEntryAsync (hostNameOrAddress As String) As Task(Of IPHostEntry)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::Tasks::Task&lt;System::Net::IPHostEntry ^&gt; ^ GetHostEntryAsync(System::String ^ hostNameOrAddress);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NameResolution</AssemblyName>
@@ -1117,6 +1195,8 @@
       <MemberSignature Language="C#" Value="public static string GetHostName ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetHostName() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Dns.GetHostName" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetHostName () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetHostName();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NameResolution</AssemblyName>
@@ -1159,6 +1239,8 @@
       <MemberSignature Language="C#" Value="public static System.Net.IPHostEntry Resolve (string hostName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Net.IPHostEntry Resolve(string hostName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Dns.Resolve(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Resolve (hostName As String) As IPHostEntry" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Net::IPHostEntry ^ Resolve(System::String ^ hostName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1219,45 +1301,5 @@
         <permission cref="T:System.Net.DnsPermission">for accessing DNS information. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetHostEntry">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Resolves a host name or IP address to an <see cref="T:System.Net.IPHostEntry" /> instance.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetHostByAddress">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets DNS host information for an IP address. These methods are now obsolete.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetHostEntryAsync">
-      <AssemblyInfo>
-        <AssemblyName>System.Net.NameResolution</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Resolves a host name or IP address to an <see cref="T:System.Net.IPHostEntry" /> instance as an asynchronous operation.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="BeginGetHostEntry">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Asynchronously resolves a host name or IP address to an <see cref="T:System.Net.IPHostEntry" /> instance.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

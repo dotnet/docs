@@ -1,7 +1,9 @@
-<Type Name="Track" FullName="System.Windows.Controls.Primitives.Track">
+﻿<Type Name="Track" FullName="System.Windows.Controls.Primitives.Track">
   <TypeSignature Language="C#" Value="public class Track : System.Windows.FrameworkElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi Track extends System.Windows.FrameworkElement" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Primitives.Track" />
+  <TypeSignature Language="VB.NET" Value="Public Class Track&#xA;Inherits FrameworkElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Track : System::Windows::FrameworkElement" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -86,6 +88,8 @@
       <MemberSignature Language="C#" Value="public Track ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.Track.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Track();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -101,6 +105,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Size ArrangeOverride (System.Windows.Size arrangeSize);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Size ArrangeOverride(valuetype System.Windows.Size arrangeSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.Track.ArrangeOverride(System.Windows.Size)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function ArrangeOverride (arrangeSize As Size) As Size" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size ArrangeOverride(System::Windows::Size arrangeSize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -123,6 +129,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Controls.Primitives.RepeatButton DecreaseRepeatButton { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Controls.Primitives.RepeatButton DecreaseRepeatButton" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.Track.DecreaseRepeatButton" />
+      <MemberSignature Language="VB.NET" Value="Public Property DecreaseRepeatButton As RepeatButton" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::Primitives::RepeatButton ^ DecreaseRepeatButton { System::Windows::Controls::Primitives::RepeatButton ^ get(); void set(System::Windows::Controls::Primitives::RepeatButton ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -157,6 +165,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Media.Visual GetVisualChild (int index);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Media.Visual GetVisualChild(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.Track.GetVisualChild(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetVisualChild (index As Integer) As Visual" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Media::Visual ^ GetVisualChild(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -187,6 +197,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Controls.Primitives.RepeatButton IncreaseRepeatButton { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Controls.Primitives.RepeatButton IncreaseRepeatButton" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.Track.IncreaseRepeatButton" />
+      <MemberSignature Language="VB.NET" Value="Public Property IncreaseRepeatButton As RepeatButton" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::Primitives::RepeatButton ^ IncreaseRepeatButton { System::Windows::Controls::Primitives::RepeatButton ^ get(); void set(System::Windows::Controls::Primitives::RepeatButton ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -221,6 +233,8 @@
       <MemberSignature Language="C#" Value="public bool IsDirectionReversed { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsDirectionReversed" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.Track.IsDirectionReversed" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsDirectionReversed As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDirectionReversed { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -268,6 +282,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty IsDirectionReversedProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty IsDirectionReversedProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.Track.IsDirectionReversedProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsDirectionReversedProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsDirectionReversedProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -292,6 +308,8 @@
       <MemberSignature Language="C#" Value="public double Maximum { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 Maximum" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.Track.Maximum" />
+      <MemberSignature Language="VB.NET" Value="Public Property Maximum As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Maximum { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -340,6 +358,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty MaximumProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty MaximumProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.Track.MaximumProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MaximumProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ MaximumProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -364,6 +384,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Size MeasureOverride (System.Windows.Size availableSize);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Size MeasureOverride(valuetype System.Windows.Size availableSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.Track.MeasureOverride(System.Windows.Size)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function MeasureOverride (availableSize As Size) As Size" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size MeasureOverride(System::Windows::Size availableSize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -386,6 +408,8 @@
       <MemberSignature Language="C#" Value="public double Minimum { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 Minimum" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.Track.Minimum" />
+      <MemberSignature Language="VB.NET" Value="Public Property Minimum As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Minimum { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -426,6 +450,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty MinimumProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty MinimumProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.Track.MinimumProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MinimumProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ MinimumProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -450,6 +476,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Controls.Orientation Orientation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Controls.Orientation Orientation" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.Track.Orientation" />
+      <MemberSignature Language="VB.NET" Value="Public Property Orientation As Orientation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::Orientation Orientation { System::Windows::Controls::Orientation get(); void set(System::Windows::Controls::Orientation value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -486,6 +514,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty OrientationProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty OrientationProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.Track.OrientationProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly OrientationProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ OrientationProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -510,6 +540,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Controls.Primitives.Thumb Thumb { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Controls.Primitives.Thumb Thumb" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.Track.Thumb" />
+      <MemberSignature Language="VB.NET" Value="Public Property Thumb As Thumb" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::Primitives::Thumb ^ Thumb { System::Windows::Controls::Primitives::Thumb ^ get(); void set(System::Windows::Controls::Primitives::Thumb ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -567,6 +599,8 @@
       <MemberSignature Language="C#" Value="public double Value { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 Value" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.Track.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Property Value As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Value { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -604,6 +638,8 @@
       <MemberSignature Language="C#" Value="public virtual double ValueFromDistance (double horizontal, double vertical);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance float64 ValueFromDistance(float64 horizontal, float64 vertical) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.Track.ValueFromDistance(System.Double,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ValueFromDistance (horizontal As Double, vertical As Double) As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual double ValueFromDistance(double horizontal, double vertical);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -628,6 +664,8 @@
       <MemberSignature Language="C#" Value="public virtual double ValueFromPoint (System.Windows.Point pt);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance float64 ValueFromPoint(valuetype System.Windows.Point pt) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.Track.ValueFromPoint(System.Windows.Point)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ValueFromPoint (pt As Point) As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual double ValueFromPoint(System::Windows::Point pt);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -650,6 +688,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ValueProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ValueProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.Track.ValueProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ValueProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ValueProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -674,6 +714,8 @@
       <MemberSignature Language="C#" Value="public double ViewportSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 ViewportSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.Track.ViewportSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property ViewportSize As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double ViewportSize { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -714,6 +756,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ViewportSizeProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ViewportSizeProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.Track.ViewportSizeProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ViewportSizeProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ViewportSizeProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -738,6 +782,8 @@
       <MemberSignature Language="C#" Value="protected override int VisualChildrenCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 VisualChildrenCount" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.Track.VisualChildrenCount" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property VisualChildrenCount As Integer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property int VisualChildrenCount { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

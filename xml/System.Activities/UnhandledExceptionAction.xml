@@ -1,7 +1,9 @@
-<Type Name="UnhandledExceptionAction" FullName="System.Activities.UnhandledExceptionAction">
+﻿<Type Name="UnhandledExceptionAction" FullName="System.Activities.UnhandledExceptionAction">
   <TypeSignature Language="C#" Value="public enum UnhandledExceptionAction" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed UnhandledExceptionAction extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Activities.UnhandledExceptionAction" />
+  <TypeSignature Language="VB.NET" Value="Public Enum UnhandledExceptionAction" />
+  <TypeSignature Language="C++ CLI" Value="public enum class UnhandledExceptionAction" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +34,8 @@
       <MemberSignature Language="C#" Value="Abort" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.UnhandledExceptionAction Abort = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Activities.UnhandledExceptionAction.Abort" />
+      <MemberSignature Language="VB.NET" Value="Abort" />
+      <MemberSignature Language="C++ CLI" Value="Abort" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -40,6 +44,7 @@
       <ReturnValue>
         <ReturnType>System.Activities.UnhandledExceptionAction</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Specifies that the <see cref="T:System.Activities.WorkflowApplication" /> should abort the workflow.</summary>
         <remarks>
@@ -63,6 +68,8 @@
       <MemberSignature Language="C#" Value="Cancel" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.UnhandledExceptionAction Cancel = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Activities.UnhandledExceptionAction.Cancel" />
+      <MemberSignature Language="VB.NET" Value="Cancel" />
+      <MemberSignature Language="C++ CLI" Value="Cancel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -71,6 +78,7 @@
       <ReturnValue>
         <ReturnType>System.Activities.UnhandledExceptionAction</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Specifies that the <see cref="T:System.Activities.WorkflowApplication" /> should schedule the cancellation of the root activity and resume execution.</summary>
         <remarks>
@@ -94,6 +102,8 @@
       <MemberSignature Language="C#" Value="Terminate" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.UnhandledExceptionAction Terminate = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Activities.UnhandledExceptionAction.Terminate" />
+      <MemberSignature Language="VB.NET" Value="Terminate" />
+      <MemberSignature Language="C++ CLI" Value="Terminate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -102,6 +112,7 @@
       <ReturnValue>
         <ReturnType>System.Activities.UnhandledExceptionAction</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Specifies that the <see cref="T:System.Activities.WorkflowApplication" /> should schedule termination of the root activity and resume execution.</summary>
         <remarks>

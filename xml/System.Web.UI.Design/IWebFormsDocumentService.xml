@@ -1,7 +1,9 @@
-<Type Name="IWebFormsDocumentService" FullName="System.Web.UI.Design.IWebFormsDocumentService">
+﻿<Type Name="IWebFormsDocumentService" FullName="System.Web.UI.Design.IWebFormsDocumentService">
   <TypeSignature Language="C#" Value="public interface IWebFormsDocumentService" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWebFormsDocumentService" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.IWebFormsDocumentService" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IWebFormsDocumentService" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IWebFormsDocumentService" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +33,8 @@
       <MemberSignature Language="C#" Value="public object CreateDiscardableUndoUnit ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object CreateDiscardableUndoUnit() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IWebFormsDocumentService.CreateDiscardableUndoUnit" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateDiscardableUndoUnit () As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ CreateDiscardableUndoUnit();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -57,6 +61,8 @@
       <MemberSignature Language="C#" Value="public void DiscardUndoUnit (object discardableUndoUnit);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DiscardUndoUnit(object discardableUndoUnit) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IWebFormsDocumentService.DiscardUndoUnit(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DiscardUndoUnit (discardableUndoUnit As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DiscardUndoUnit(System::Object ^ discardableUndoUnit);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -85,6 +91,8 @@
       <MemberSignature Language="C#" Value="public string DocumentUrl { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DocumentUrl" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.IWebFormsDocumentService.DocumentUrl" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DocumentUrl As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DocumentUrl { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -112,6 +120,8 @@
       <MemberSignature Language="C#" Value="public void EnableUndo (bool enable);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnableUndo(bool enable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IWebFormsDocumentService.EnableUndo(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnableUndo (enable As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EnableUndo(bool enable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -141,6 +151,8 @@
       <MemberSignature Language="C#" Value="public bool IsLoading { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsLoading" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.IWebFormsDocumentService.IsLoading" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsLoading As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsLoading { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -166,9 +178,11 @@
       </Docs>
     </Member>
     <Member MemberName="LoadComplete">
-      <MemberSignature Language="C#" Value="public event EventHandler LoadComplete;" />
+      <MemberSignature Language="C#" Value="event EventHandler LoadComplete;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler LoadComplete" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.Design.IWebFormsDocumentService.LoadComplete" />
+      <MemberSignature Language="VB.NET" Value="Event LoadComplete As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ LoadComplete;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -197,6 +211,8 @@
       <MemberSignature Language="C#" Value="public void UpdateSelection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void UpdateSelection() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IWebFormsDocumentService.UpdateSelection" />
+      <MemberSignature Language="VB.NET" Value="Public Sub UpdateSelection ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void UpdateSelection();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

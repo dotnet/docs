@@ -1,7 +1,9 @@
-<Type Name="DataSourceExpressionCollection" FullName="System.Web.UI.WebControls.Expressions.DataSourceExpressionCollection">
+﻿<Type Name="DataSourceExpressionCollection" FullName="System.Web.UI.WebControls.Expressions.DataSourceExpressionCollection">
   <TypeSignature Language="C#" Value="public class DataSourceExpressionCollection : System.Web.UI.StateManagedCollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataSourceExpressionCollection extends System.Web.UI.StateManagedCollection" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.Expressions.DataSourceExpressionCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class DataSourceExpressionCollection&#xA;Inherits StateManagedCollection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataSourceExpressionCollection : System::Web::UI::StateManagedCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public DataSourceExpressionCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Expressions.DataSourceExpressionCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataSourceExpressionCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -34,6 +38,8 @@
       <MemberSignature Language="C#" Value="public void Add (System.Web.UI.WebControls.Expressions.DataSourceExpression expression);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Web.UI.WebControls.Expressions.DataSourceExpression expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Expressions.DataSourceExpressionCollection.Add(System.Web.UI.WebControls.Expressions.DataSourceExpression)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (expression As DataSourceExpression)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Web::UI::WebControls::Expressions::DataSourceExpression ^ expression);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -55,6 +61,8 @@
       <MemberSignature Language="C#" Value="public void Contains (System.Web.UI.WebControls.Expressions.DataSourceExpression expression);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Contains(class System.Web.UI.WebControls.Expressions.DataSourceExpression expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Expressions.DataSourceExpressionCollection.Contains(System.Web.UI.WebControls.Expressions.DataSourceExpression)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Contains (expression As DataSourceExpression)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Contains(System::Web::UI::WebControls::Expressions::DataSourceExpression ^ expression);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -76,6 +84,8 @@
       <MemberSignature Language="C#" Value="public System.Web.HttpContext Context { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.HttpContext Context" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Expressions.DataSourceExpressionCollection.Context" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Context As HttpContext" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::HttpContext ^ Context { System::Web::HttpContext ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -94,6 +104,8 @@
       <MemberSignature Language="C#" Value="public void CopyTo (System.Web.UI.WebControls.Expressions.DataSourceExpression[] expressionArray, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.Web.UI.WebControls.Expressions.DataSourceExpression[] expressionArray, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Expressions.DataSourceExpressionCollection.CopyTo(System.Web.UI.WebControls.Expressions.DataSourceExpression[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (expressionArray As DataSourceExpression(), index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Web::UI::WebControls::Expressions::DataSourceExpression ^&gt; ^ expressionArray, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -124,6 +136,8 @@
       <MemberSignature Language="C#" Value="protected override object CreateKnownType (int index);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object CreateKnownType(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Expressions.DataSourceExpressionCollection.CreateKnownType(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateKnownType (index As Integer) As Object" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ CreateKnownType(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -146,6 +160,8 @@
       <MemberSignature Language="C#" Value="protected override Type[] GetKnownTypes ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Type[] GetKnownTypes() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Expressions.DataSourceExpressionCollection.GetKnownTypes" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetKnownTypes () As Type()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override cli::array &lt;Type ^&gt; ^ GetKnownTypes();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -165,6 +181,8 @@
       <MemberSignature Language="C#" Value="public int IndexOf (System.Web.UI.WebControls.Expressions.DataSourceExpression expression);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.Web.UI.WebControls.Expressions.DataSourceExpression expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Expressions.DataSourceExpressionCollection.IndexOf(System.Web.UI.WebControls.Expressions.DataSourceExpression)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOf (expression As DataSourceExpression) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Web::UI::WebControls::Expressions::DataSourceExpression ^ expression);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -187,6 +205,8 @@
       <MemberSignature Language="C#" Value="public void Insert (int index, System.Web.UI.WebControls.Expressions.DataSourceExpression expression);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(int32 index, class System.Web.UI.WebControls.Expressions.DataSourceExpression expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Expressions.DataSourceExpressionCollection.Insert(System.Int32,System.Web.UI.WebControls.Expressions.DataSourceExpression)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, expression As DataSourceExpression)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::Web::UI::WebControls::Expressions::DataSourceExpression ^ expression);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -210,6 +230,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.Expressions.DataSourceExpression this[int index] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.Expressions.DataSourceExpression Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Expressions.DataSourceExpressionCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As DataSourceExpression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::Expressions::DataSourceExpression ^ default[int] { System::Web::UI::WebControls::Expressions::DataSourceExpression ^ get(int index); void set(int index, System::Web::UI::WebControls::Expressions::DataSourceExpression ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -232,6 +254,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.Control Owner { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.Control Owner" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Expressions.DataSourceExpressionCollection.Owner" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Owner As Control" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::Control ^ Owner { System::Web::UI::Control ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -250,6 +274,8 @@
       <MemberSignature Language="C#" Value="public void Remove (System.Web.UI.WebControls.Expressions.DataSourceExpression expression);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Web.UI.WebControls.Expressions.DataSourceExpression expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Expressions.DataSourceExpressionCollection.Remove(System.Web.UI.WebControls.Expressions.DataSourceExpression)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (expression As DataSourceExpression)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Web::UI::WebControls::Expressions::DataSourceExpression ^ expression);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -271,6 +297,8 @@
       <MemberSignature Language="C#" Value="public void RemoveAt (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAt(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Expressions.DataSourceExpressionCollection.RemoveAt(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -292,6 +320,8 @@
       <MemberSignature Language="C#" Value="protected override void SetDirtyObject (object o);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetDirtyObject(object o) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Expressions.DataSourceExpressionCollection.SetDirtyObject(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetDirtyObject (o As Object)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetDirtyObject(System::Object ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

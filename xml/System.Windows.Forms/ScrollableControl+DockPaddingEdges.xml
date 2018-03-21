@@ -1,7 +1,9 @@
-<Type Name="ScrollableControl+DockPaddingEdges" FullName="System.Windows.Forms.ScrollableControl+DockPaddingEdges">
+﻿<Type Name="ScrollableControl+DockPaddingEdges" FullName="System.Windows.Forms.ScrollableControl+DockPaddingEdges">
   <TypeSignature Language="C#" Value="public class ScrollableControl.DockPaddingEdges : ICloneable" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi beforefieldinit ScrollableControl/DockPaddingEdges extends System.Object implements class System.ICloneable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ScrollableControl.DockPaddingEdges" />
+  <TypeSignature Language="VB.NET" Value="Public Class ScrollableControl.DockPaddingEdges&#xA;Implements ICloneable" />
+  <TypeSignature Language="C++ CLI" Value="public: ref class ScrollableControl::DockPaddingEdges : ICloneable" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +47,8 @@
       <MemberSignature Language="C#" Value="public int All { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 All" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ScrollableControl.DockPaddingEdges.All" />
+      <MemberSignature Language="VB.NET" Value="Public Property All As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int All { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -52,7 +56,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -88,6 +92,8 @@
       <MemberSignature Language="C#" Value="public int Bottom { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Bottom" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ScrollableControl.DockPaddingEdges.Bottom" />
+      <MemberSignature Language="VB.NET" Value="Public Property Bottom As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Bottom { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -95,7 +101,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -131,6 +137,8 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object other) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollableControl.DockPaddingEdges.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (other As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ other);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -154,6 +162,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollableControl.DockPaddingEdges.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -174,6 +184,8 @@
       <MemberSignature Language="C#" Value="public int Left { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Left" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ScrollableControl.DockPaddingEdges.Left" />
+      <MemberSignature Language="VB.NET" Value="Public Property Left As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Left { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -181,7 +193,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -217,6 +229,8 @@
       <MemberSignature Language="C#" Value="public int Right { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Right" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ScrollableControl.DockPaddingEdges.Right" />
+      <MemberSignature Language="VB.NET" Value="Public Property Right As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Right { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -224,7 +238,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -260,7 +274,12 @@
       <MemberSignature Language="C#" Value="object ICloneable.Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.ICloneable.Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollableControl.DockPaddingEdges.System#ICloneable#Clone" />
+      <MemberSignature Language="VB.NET" Value="Function Clone () As Object Implements ICloneable.Clone" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.ICloneable.Clone() = ICloneable::Clone;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -279,6 +298,8 @@
       <MemberSignature Language="C#" Value="public int Top { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Top" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ScrollableControl.DockPaddingEdges.Top" />
+      <MemberSignature Language="VB.NET" Value="Public Property Top As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Top { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -286,7 +307,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -322,6 +343,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollableControl.DockPaddingEdges.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

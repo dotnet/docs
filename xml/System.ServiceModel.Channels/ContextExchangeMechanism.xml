@@ -1,7 +1,9 @@
-<Type Name="ContextExchangeMechanism" FullName="System.ServiceModel.Channels.ContextExchangeMechanism">
+﻿<Type Name="ContextExchangeMechanism" FullName="System.ServiceModel.Channels.ContextExchangeMechanism">
   <TypeSignature Language="C#" Value="public enum ContextExchangeMechanism" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ContextExchangeMechanism extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.ContextExchangeMechanism" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ContextExchangeMechanism" />
+  <TypeSignature Language="C++ CLI" Value="public enum class ContextExchangeMechanism" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +54,8 @@
       <MemberSignature Language="C#" Value="ContextSoapHeader" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Channels.ContextExchangeMechanism ContextSoapHeader = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.ContextExchangeMechanism.ContextSoapHeader" />
+      <MemberSignature Language="VB.NET" Value="ContextSoapHeader" />
+      <MemberSignature Language="C++ CLI" Value="ContextSoapHeader" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -60,6 +64,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.ContextExchangeMechanism</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>A SOAP header is used to exchange context. This is the default exchange mechanism.</summary>
       </Docs>
@@ -68,6 +73,8 @@
       <MemberSignature Language="C#" Value="HttpCookie" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Channels.ContextExchangeMechanism HttpCookie = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.ContextExchangeMechanism.HttpCookie" />
+      <MemberSignature Language="VB.NET" Value="HttpCookie" />
+      <MemberSignature Language="C++ CLI" Value="HttpCookie" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -76,6 +83,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.ContextExchangeMechanism</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>An HTTP cookie is used to exchange context.</summary>
       </Docs>

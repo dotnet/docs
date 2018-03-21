@@ -1,7 +1,9 @@
-<Type Name="QueryableFilterUserControl" FullName="System.Web.DynamicData.QueryableFilterUserControl">
+﻿<Type Name="QueryableFilterUserControl" FullName="System.Web.DynamicData.QueryableFilterUserControl">
   <TypeSignature Language="C#" Value="public abstract class QueryableFilterUserControl : System.Web.UI.UserControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit QueryableFilterUserControl extends System.Web.UI.UserControl" />
   <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.QueryableFilterUserControl" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class QueryableFilterUserControl&#xA;Inherits UserControl" />
+  <TypeSignature Language="C++ CLI" Value="public ref class QueryableFilterUserControl abstract : System::Web::UI::UserControl" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DynamicData</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +36,8 @@
       <MemberSignature Language="C#" Value="protected QueryableFilterUserControl ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.QueryableFilterUserControl.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; QueryableFilterUserControl();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -49,6 +53,8 @@
       <MemberSignature Language="C#" Value="public static System.Linq.IQueryable ApplyEqualityFilter (System.Linq.IQueryable source, string propertyName, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.IQueryable ApplyEqualityFilter(class System.Linq.IQueryable source, string propertyName, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.QueryableFilterUserControl.ApplyEqualityFilter(System.Linq.IQueryable,System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ApplyEqualityFilter (source As IQueryable, propertyName As String, value As Object) As IQueryable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Linq::IQueryable ^ ApplyEqualityFilter(System::Linq::IQueryable ^ source, System::String ^ propertyName, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -72,9 +78,11 @@
       </Docs>
     </Member>
     <Member MemberName="Column">
-      <MemberSignature Language="C#" Value="protected System.Web.DynamicData.MetaColumn Column { get; }" />
+      <MemberSignature Language="C#" Value="protected internal System.Web.DynamicData.MetaColumn Column { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.DynamicData.MetaColumn Column" />
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.QueryableFilterUserControl.Column" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend ReadOnly Property Column As MetaColumn" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property System::Web::DynamicData::MetaColumn ^ Column { System::Web::DynamicData::MetaColumn ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -93,6 +101,8 @@
       <MemberSignature Language="C#" Value="public string DefaultValue { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DefaultValue" />
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.QueryableFilterUserControl.DefaultValue" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DefaultValue As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DefaultValue { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -118,6 +128,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,object&gt; DefaultValues { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, object&gt; DefaultValues" />
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.QueryableFilterUserControl.DefaultValues" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DefaultValues As IDictionary(Of String, Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ DefaultValues { System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -136,6 +148,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler FilterChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler FilterChanged" />
       <MemberSignature Language="DocId" Value="E:System.Web.DynamicData.QueryableFilterUserControl.FilterChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event FilterChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ FilterChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -153,6 +167,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.Control FilterControl { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.Control FilterControl" />
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.QueryableFilterUserControl.FilterControl" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property FilterControl As Control" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::Control ^ FilterControl { System::Web::UI::Control ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -178,6 +194,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Linq.IQueryable GetQueryable (System.Linq.IQueryable source);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Linq.IQueryable GetQueryable(class System.Linq.IQueryable source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.QueryableFilterUserControl.GetQueryable(System.Linq.IQueryable)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetQueryable (source As IQueryable) As IQueryable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Linq::IQueryable ^ GetQueryable(System::Linq::IQueryable ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -256,6 +274,8 @@ End Function
       <MemberSignature Language="C#" Value="protected void OnFilterChanged ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void OnFilterChanged() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.QueryableFilterUserControl.OnFilterChanged" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub OnFilterChanged ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void OnFilterChanged();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -281,6 +301,7 @@ End Function
       <MemberSignature Language="C#" Value="public void PopulateListControl (System.Web.UI.WebControls.ListControl listControl);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void PopulateListControl(class System.Web.UI.WebControls.ListControl listControl) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.QueryableFilterUserControl.PopulateListControl(System.Web.UI.WebControls.ListControl)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void PopulateListControl(System::Web::UI::WebControls::ListControl ^ listControl);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>

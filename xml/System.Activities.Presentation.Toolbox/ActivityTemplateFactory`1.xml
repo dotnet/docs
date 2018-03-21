@@ -1,7 +1,9 @@
-<Type Name="ActivityTemplateFactory&lt;T&gt;" FullName="System.Activities.Presentation.Toolbox.ActivityTemplateFactory&lt;T&gt;">
+﻿<Type Name="ActivityTemplateFactory&lt;T&gt;" FullName="System.Activities.Presentation.Toolbox.ActivityTemplateFactory&lt;T&gt;">
   <TypeSignature Language="C#" Value="public abstract class ActivityTemplateFactory&lt;T&gt; : System.Activities.Presentation.IActivityTemplateFactory&lt;T&gt; where T : class" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ActivityTemplateFactory`1&lt;class T&gt; extends System.Object implements class System.Activities.Presentation.IActivityTemplateFactory`1&lt;!T&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Toolbox.ActivityTemplateFactory`1" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ActivityTemplateFactory(Of T)&#xA;Implements IActivityTemplateFactory(Of T)" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA; where T : classpublic ref class ActivityTemplateFactory abstract : System::Activities::Presentation::IActivityTemplateFactory&lt;T&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +38,8 @@
       <MemberSignature Language="C#" Value="protected ActivityTemplateFactory ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Toolbox.ActivityTemplateFactory`1.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ActivityTemplateFactory();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -51,7 +55,12 @@
       <MemberSignature Language="C#" Value="public T Create (System.Windows.DependencyObject target, System.Windows.IDataObject dataObject);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !T Create(class System.Windows.DependencyObject target, class System.Windows.IDataObject dataObject) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Toolbox.ActivityTemplateFactory`1.Create(System.Windows.DependencyObject,System.Windows.IDataObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Create (target As DependencyObject, dataObject As IDataObject) As T" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual T Create(System::Windows::DependencyObject ^ target, System::Windows::IDataObject ^ dataObject);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Activities.Presentation.IActivityTemplateFactory`1.Create(System.Windows.DependencyObject,System.Windows.IDataObject)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -75,6 +84,8 @@
       <MemberSignature Language="C#" Value="protected virtual Func&lt;T&gt; Implementation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Func`1&lt;!T&gt; Implementation" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Toolbox.ActivityTemplateFactory`1.Implementation" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Property Implementation As Func(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property Func&lt;T&gt; ^ Implementation { Func&lt;T&gt; ^ get(); void set(Func&lt;T&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

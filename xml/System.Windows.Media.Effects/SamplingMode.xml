@@ -1,7 +1,9 @@
-<Type Name="SamplingMode" FullName="System.Windows.Media.Effects.SamplingMode">
+﻿<Type Name="SamplingMode" FullName="System.Windows.Media.Effects.SamplingMode">
   <TypeSignature Language="C#" Value="public enum SamplingMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SamplingMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Effects.SamplingMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum SamplingMode" />
+  <TypeSignature Language="C++ CLI" Value="public enum class SamplingMode" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +30,8 @@
       <MemberSignature Language="C#" Value="Auto" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.Effects.SamplingMode Auto = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Effects.SamplingMode.Auto" />
+      <MemberSignature Language="VB.NET" Value="Auto" />
+      <MemberSignature Language="C++ CLI" Value="Auto" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -36,6 +40,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Media.Effects.SamplingMode</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The system selects the most appropriate sampling mode.</summary>
       </Docs>
@@ -44,6 +49,8 @@
       <MemberSignature Language="C#" Value="Bilinear" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.Effects.SamplingMode Bilinear = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Effects.SamplingMode.Bilinear" />
+      <MemberSignature Language="VB.NET" Value="Bilinear" />
+      <MemberSignature Language="C++ CLI" Value="Bilinear" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -52,6 +59,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Media.Effects.SamplingMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Use bilinear sampling.</summary>
       </Docs>
@@ -60,6 +68,8 @@
       <MemberSignature Language="C#" Value="NearestNeighbor" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.Effects.SamplingMode NearestNeighbor = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Effects.SamplingMode.NearestNeighbor" />
+      <MemberSignature Language="VB.NET" Value="NearestNeighbor" />
+      <MemberSignature Language="C++ CLI" Value="NearestNeighbor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -68,6 +78,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Media.Effects.SamplingMode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Use nearest neighbor sampling.</summary>
       </Docs>

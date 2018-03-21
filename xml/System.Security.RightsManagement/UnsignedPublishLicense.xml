@@ -1,7 +1,9 @@
-<Type Name="UnsignedPublishLicense" FullName="System.Security.RightsManagement.UnsignedPublishLicense">
+﻿<Type Name="UnsignedPublishLicense" FullName="System.Security.RightsManagement.UnsignedPublishLicense">
   <TypeSignature Language="C#" Value="public class UnsignedPublishLicense" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit UnsignedPublishLicense extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Security.RightsManagement.UnsignedPublishLicense" />
+  <TypeSignature Language="VB.NET" Value="Public Class UnsignedPublishLicense" />
+  <TypeSignature Language="C++ CLI" Value="public ref class UnsignedPublishLicense" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,10 +39,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.RightsManagement.UnsignedPublishLicense" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public UnsignedPublishLicense ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.RightsManagement.UnsignedPublishLicense.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UnsignedPublishLicense();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -63,6 +76,8 @@
       <MemberSignature Language="C#" Value="public UnsignedPublishLicense (string publishLicenseTemplate);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string publishLicenseTemplate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.RightsManagement.UnsignedPublishLicense.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (publishLicenseTemplate As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UnsignedPublishLicense(System::String ^ publishLicenseTemplate);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -99,6 +114,8 @@
       <MemberSignature Language="C#" Value="public Guid ContentId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid ContentId" />
       <MemberSignature Language="DocId" Value="P:System.Security.RightsManagement.UnsignedPublishLicense.ContentId" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContentId As Guid" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid ContentId { Guid get(); void set(Guid value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -124,6 +141,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.ICollection&lt;System.Security.RightsManagement.ContentGrant&gt; Grants { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;class System.Security.RightsManagement.ContentGrant&gt; Grants" />
       <MemberSignature Language="DocId" Value="P:System.Security.RightsManagement.UnsignedPublishLicense.Grants" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Grants As ICollection(Of ContentGrant)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;System::Security::RightsManagement::ContentGrant ^&gt; ^ Grants { System::Collections::Generic::ICollection&lt;System::Security::RightsManagement::ContentGrant ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -142,6 +161,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;int,System.Security.RightsManagement.LocalizedNameDescriptionPair&gt; LocalizedNameDescriptionDictionary { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;int32, class System.Security.RightsManagement.LocalizedNameDescriptionPair&gt; LocalizedNameDescriptionDictionary" />
       <MemberSignature Language="DocId" Value="P:System.Security.RightsManagement.UnsignedPublishLicense.LocalizedNameDescriptionDictionary" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LocalizedNameDescriptionDictionary As IDictionary(Of Integer, LocalizedNameDescriptionPair)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;int, System::Security::RightsManagement::LocalizedNameDescriptionPair ^&gt; ^ LocalizedNameDescriptionDictionary { System::Collections::Generic::IDictionary&lt;int, System::Security::RightsManagement::LocalizedNameDescriptionPair ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -160,6 +181,8 @@
       <MemberSignature Language="C#" Value="public System.Security.RightsManagement.ContentUser Owner { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.RightsManagement.ContentUser Owner" />
       <MemberSignature Language="DocId" Value="P:System.Security.RightsManagement.UnsignedPublishLicense.Owner" />
+      <MemberSignature Language="VB.NET" Value="Public Property Owner As ContentUser" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::RightsManagement::ContentUser ^ Owner { System::Security::RightsManagement::ContentUser ^ get(); void set(System::Security::RightsManagement::ContentUser ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -197,6 +220,8 @@
       <MemberSignature Language="C#" Value="public string ReferralInfoName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ReferralInfoName" />
       <MemberSignature Language="DocId" Value="P:System.Security.RightsManagement.UnsignedPublishLicense.ReferralInfoName" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReferralInfoName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ReferralInfoName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -227,6 +252,8 @@
       <MemberSignature Language="C#" Value="public Uri ReferralInfoUri { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri ReferralInfoUri" />
       <MemberSignature Language="DocId" Value="P:System.Security.RightsManagement.UnsignedPublishLicense.ReferralInfoUri" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReferralInfoUri As Uri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ ReferralInfoUri { Uri ^ get(); void set(Uri ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -257,6 +284,7 @@
       <MemberSignature Language="C#" Value="public System.Security.RightsManagement.PublishLicense Sign (System.Security.RightsManagement.SecureEnvironment secureEnvironment, out System.Security.RightsManagement.UseLicense authorUseLicense);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Security.RightsManagement.PublishLicense Sign(class System.Security.RightsManagement.SecureEnvironment secureEnvironment, [out] class System.Security.RightsManagement.UseLicense&amp; authorUseLicense) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.RightsManagement.UnsignedPublishLicense.Sign(System.Security.RightsManagement.SecureEnvironment,System.Security.RightsManagement.UseLicense@)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::RightsManagement::PublishLicense ^ Sign(System::Security::RightsManagement::SecureEnvironment ^ secureEnvironment, [Runtime::InteropServices::Out] System::Security::RightsManagement::UseLicense ^ % authorUseLicense);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -291,6 +319,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.RightsManagement.UnsignedPublishLicense.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -307,14 +337,5 @@
         <altmember cref="M:System.Security.RightsManagement.UnsignedPublishLicense.#ctor(System.String)" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.RightsManagement.UnsignedPublishLicense" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

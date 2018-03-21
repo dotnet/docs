@@ -1,7 +1,9 @@
-<Type Name="IPreviewCommand" FullName="Microsoft.Windows.Input.IPreviewCommand">
+﻿<Type Name="IPreviewCommand" FullName="Microsoft.Windows.Input.IPreviewCommand">
   <TypeSignature Language="C#" Value="public interface IPreviewCommand : System.Windows.Input.ICommand" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IPreviewCommand implements class System.Windows.Input.ICommand" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Windows.Input.IPreviewCommand" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IPreviewCommand&#xA;Implements ICommand" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IPreviewCommand : System::Windows::Input::ICommand" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +22,8 @@
       <MemberSignature Language="C#" Value="public void CancelPreview ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CancelPreview() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Windows.Input.IPreviewCommand.CancelPreview" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CancelPreview ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CancelPreview();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -38,6 +42,8 @@
       <MemberSignature Language="C#" Value="public void Preview (object parameter);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Preview(object parameter) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Windows.Input.IPreviewCommand.Preview(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Preview (parameter As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Preview(System::Object ^ parameter);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>

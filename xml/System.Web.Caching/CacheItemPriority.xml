@@ -1,7 +1,9 @@
-<Type Name="CacheItemPriority" FullName="System.Web.Caching.CacheItemPriority">
+﻿<Type Name="CacheItemPriority" FullName="System.Web.Caching.CacheItemPriority">
   <TypeSignature Language="C#" Value="public enum CacheItemPriority" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CacheItemPriority extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.Caching.CacheItemPriority" />
+  <TypeSignature Language="VB.NET" Value="Public Enum CacheItemPriority" />
+  <TypeSignature Language="C++ CLI" Value="public enum class CacheItemPriority" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +39,8 @@
       <MemberSignature Language="C#" Value="AboveNormal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Caching.CacheItemPriority AboveNormal = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Caching.CacheItemPriority.AboveNormal" />
+      <MemberSignature Language="VB.NET" Value="AboveNormal" />
+      <MemberSignature Language="C++ CLI" Value="AboveNormal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -45,6 +49,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Caching.CacheItemPriority</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Cache items with this priority level are less likely to be deleted as the server frees system memory than those assigned a <see cref="F:System.Web.Caching.CacheItemPriority.Normal" /> priority.</summary>
       </Docs>
@@ -53,6 +58,8 @@
       <MemberSignature Language="C#" Value="BelowNormal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Caching.CacheItemPriority BelowNormal = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Caching.CacheItemPriority.BelowNormal" />
+      <MemberSignature Language="VB.NET" Value="BelowNormal" />
+      <MemberSignature Language="C++ CLI" Value="BelowNormal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -61,6 +68,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Caching.CacheItemPriority</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Cache items with this priority level are more likely to be deleted from the cache as the server frees system memory than items assigned a <see cref="F:System.Web.Caching.CacheItemPriority.Normal" /> priority.</summary>
       </Docs>
@@ -69,6 +77,8 @@
       <MemberSignature Language="C#" Value="Default" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Caching.CacheItemPriority Default = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Caching.CacheItemPriority.Default" />
+      <MemberSignature Language="VB.NET" Value="Default" />
+      <MemberSignature Language="C++ CLI" Value="Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -77,6 +87,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Caching.CacheItemPriority</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The default value for a cached item's priority is <see cref="F:System.Web.Caching.CacheItemPriority.Normal" />.</summary>
       </Docs>
@@ -85,6 +96,8 @@
       <MemberSignature Language="C#" Value="High" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Caching.CacheItemPriority High = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Caching.CacheItemPriority.High" />
+      <MemberSignature Language="VB.NET" Value="High" />
+      <MemberSignature Language="C++ CLI" Value="High" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -93,6 +106,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Caching.CacheItemPriority</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>Cache items with this priority level are the least likely to be deleted from the cache as the server frees system memory.</summary>
       </Docs>
@@ -101,6 +115,8 @@
       <MemberSignature Language="C#" Value="Low" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Caching.CacheItemPriority Low = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Caching.CacheItemPriority.Low" />
+      <MemberSignature Language="VB.NET" Value="Low" />
+      <MemberSignature Language="C++ CLI" Value="Low" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -109,6 +125,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Caching.CacheItemPriority</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Cache items with this priority level are the most likely to be deleted from the cache as the server frees system memory.</summary>
       </Docs>
@@ -117,6 +134,8 @@
       <MemberSignature Language="C#" Value="Normal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Caching.CacheItemPriority Normal = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Caching.CacheItemPriority.Normal" />
+      <MemberSignature Language="VB.NET" Value="Normal" />
+      <MemberSignature Language="C++ CLI" Value="Normal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -125,6 +144,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Caching.CacheItemPriority</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Cache items with this priority level are likely to be deleted from the cache as the server frees system memory only after those items with <see cref="F:System.Web.Caching.CacheItemPriority.Low" /> or <see cref="F:System.Web.Caching.CacheItemPriority.BelowNormal" /> priority. This is the default.</summary>
       </Docs>
@@ -133,6 +153,8 @@
       <MemberSignature Language="C#" Value="NotRemovable" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Caching.CacheItemPriority NotRemovable = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Caching.CacheItemPriority.NotRemovable" />
+      <MemberSignature Language="VB.NET" Value="NotRemovable" />
+      <MemberSignature Language="C++ CLI" Value="NotRemovable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -141,6 +163,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Caching.CacheItemPriority</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>The cache items with this priority level will not be automatically deleted from the cache as the server frees system memory. However, items with this priority level are removed along with other items according to the item's absolute or sliding expiration time.</summary>
       </Docs>

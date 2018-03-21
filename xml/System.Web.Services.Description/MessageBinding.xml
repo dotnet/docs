@@ -1,7 +1,9 @@
-<Type Name="MessageBinding" FullName="System.Web.Services.Description.MessageBinding">
+﻿<Type Name="MessageBinding" FullName="System.Web.Services.Description.MessageBinding">
   <TypeSignature Language="C#" Value="public abstract class MessageBinding : System.Web.Services.Description.NamedItem" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit MessageBinding extends System.Web.Services.Description.NamedItem" />
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.MessageBinding" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class MessageBinding&#xA;Inherits NamedItem" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MessageBinding abstract : System::Web::Services::Description::NamedItem" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -42,6 +44,8 @@
       <MemberSignature Language="C#" Value="protected MessageBinding ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.MessageBinding.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; MessageBinding();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -58,6 +62,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Services.Description.OperationBinding OperationBinding { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Description.OperationBinding OperationBinding" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.MessageBinding.OperationBinding" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OperationBinding As OperationBinding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Description::OperationBinding ^ OperationBinding { System::Web::Services::Description::OperationBinding ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

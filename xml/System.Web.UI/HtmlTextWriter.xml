@@ -1,7 +1,9 @@
-<Type Name="HtmlTextWriter" FullName="System.Web.UI.HtmlTextWriter">
+﻿<Type Name="HtmlTextWriter" FullName="System.Web.UI.HtmlTextWriter">
   <TypeSignature Language="C#" Value="public class HtmlTextWriter : System.IO.TextWriter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi HtmlTextWriter extends System.IO.TextWriter" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.HtmlTextWriter" />
+  <TypeSignature Language="VB.NET" Value="Public Class HtmlTextWriter&#xA;Inherits TextWriter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HtmlTextWriter : System::IO::TextWriter" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,10 +43,23 @@
     <altmember cref="M:System.Web.UI.Control.Render(System.Web.UI.HtmlTextWriter)" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.HtmlTextWriter" /> class.</summary>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="F:System.Web.UI.HtmlTextWriter.DefaultTabString" />
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public HtmlTextWriter (System.IO.TextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.TextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.#ctor(System.IO.TextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (writer As TextWriter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HtmlTextWriter(System::IO::TextWriter ^ writer);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -81,6 +96,8 @@
       <MemberSignature Language="C#" Value="public HtmlTextWriter (System.IO.TextWriter writer, string tabString);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.TextWriter writer, string tabString) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.#ctor(System.IO.TextWriter,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (writer As TextWriter, tabString As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HtmlTextWriter(System::IO::TextWriter ^ writer, System::String ^ tabString);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -114,10 +131,21 @@
         <altmember cref="T:System.IO.TextWriter" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddAttribute">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds the specified markup attribute and value to the opening tag of the element that the <see cref="T:System.Web.UI.HtmlTextWriter" /> object creates with a subsequent call to the <see cref="Overload:System.Web.UI.HtmlTextWriter.RenderBeginTag" /> method.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AddAttribute">
       <MemberSignature Language="C#" Value="public virtual void AddAttribute (string name, string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddAttribute(string name, string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.AddAttribute(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub AddAttribute (name As String, value As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddAttribute(System::String ^ name, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -172,6 +200,8 @@
       <MemberSignature Language="C#" Value="public virtual void AddAttribute (System.Web.UI.HtmlTextWriterAttribute key, string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddAttribute(valuetype System.Web.UI.HtmlTextWriterAttribute key, string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.AddAttribute(System.Web.UI.HtmlTextWriterAttribute,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub AddAttribute (key As HtmlTextWriterAttribute, value As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddAttribute(System::Web::UI::HtmlTextWriterAttribute key, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -230,6 +260,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="public virtual void AddAttribute (string name, string value, bool fEndode);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddAttribute(string name, string value, bool fEndode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.AddAttribute(System.String,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub AddAttribute (name As String, value As String, fEndode As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddAttribute(System::String ^ name, System::String ^ value, bool fEndode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -291,6 +323,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="protected virtual void AddAttribute (string name, string value, System.Web.UI.HtmlTextWriterAttribute key);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void AddAttribute(string name, string value, valuetype System.Web.UI.HtmlTextWriterAttribute key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.AddAttribute(System.String,System.String,System.Web.UI.HtmlTextWriterAttribute)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub AddAttribute (name As String, value As String, key As HtmlTextWriterAttribute)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void AddAttribute(System::String ^ name, System::String ^ value, System::Web::UI::HtmlTextWriterAttribute key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -326,6 +360,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="public virtual void AddAttribute (System.Web.UI.HtmlTextWriterAttribute key, string value, bool fEncode);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddAttribute(valuetype System.Web.UI.HtmlTextWriterAttribute key, string value, bool fEncode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.AddAttribute(System.Web.UI.HtmlTextWriterAttribute,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub AddAttribute (key As HtmlTextWriterAttribute, value As String, fEncode As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddAttribute(System::Web::UI::HtmlTextWriterAttribute key, System::String ^ value, bool fEncode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -383,10 +419,24 @@ alert('Hello');
         <altmember cref="M:System.Web.HttpUtility.HtmlAttributeEncode(System.String,System.IO.TextWriter)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddStyleAttribute">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a markup style attribute to the opening tag of the element that the <see cref="T:System.Web.UI.HtmlTextWriter" /> object creates with a subsequent call to the <see cref="Overload:System.Web.UI.HtmlTextWriter.RenderBeginTag" /> method.</summary>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="T:System.Web.UI.HtmlTextWriterStyle" />
+        <altmember cref="Overload:System.Web.UI.HtmlTextWriter.RenderBeginTag" />
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AddStyleAttribute">
       <MemberSignature Language="C#" Value="public virtual void AddStyleAttribute (string name, string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddStyleAttribute(string name, string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.AddStyleAttribute(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub AddStyleAttribute (name As String, value As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddStyleAttribute(System::String ^ name, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -441,6 +491,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="public virtual void AddStyleAttribute (System.Web.UI.HtmlTextWriterStyle key, string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddStyleAttribute(valuetype System.Web.UI.HtmlTextWriterStyle key, string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.AddStyleAttribute(System.Web.UI.HtmlTextWriterStyle,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub AddStyleAttribute (key As HtmlTextWriterStyle, value As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddStyleAttribute(System::Web::UI::HtmlTextWriterStyle key, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -495,6 +547,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="protected virtual void AddStyleAttribute (string name, string value, System.Web.UI.HtmlTextWriterStyle key);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void AddStyleAttribute(string name, string value, valuetype System.Web.UI.HtmlTextWriterStyle key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.AddStyleAttribute(System.String,System.String,System.Web.UI.HtmlTextWriterStyle)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub AddStyleAttribute (name As String, value As String, key As HtmlTextWriterStyle)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void AddStyleAttribute(System::String ^ name, System::String ^ value, System::Web::UI::HtmlTextWriterStyle key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -530,6 +584,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="public virtual void BeginRender ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void BeginRender() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.BeginRender" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub BeginRender ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void BeginRender();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -557,6 +613,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="public override void Close ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Close() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.Close" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Close ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Close();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -587,6 +645,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="public const string DefaultTabString;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string DefaultTabString" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriter.DefaultTabString" />
+      <MemberSignature Language="VB.NET" Value="Public Const DefaultTabString As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ DefaultTabString;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -620,6 +680,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="public const char DoubleQuoteChar;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal char DoubleQuoteChar" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriter.DoubleQuoteChar" />
+      <MemberSignature Language="VB.NET" Value="Public Const DoubleQuoteChar As Char " />
+      <MemberSignature Language="C++ CLI" Value="public: char DoubleQuoteChar;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -656,10 +718,21 @@ alert('Hello');
         <altmember cref="M:System.Web.UI.HtmlTextWriter.WriteAttribute(System.String,System.String,System.Boolean)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="EncodeAttributeValue">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Encodes the value of the specified markup attribute based on the requirements of the <see cref="T:System.Web.HttpRequest" /> object of the current context.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="EncodeAttributeValue">
       <MemberSignature Language="C#" Value="protected string EncodeAttributeValue (string value, bool fEncode);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance string EncodeAttributeValue(string value, bool fEncode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.EncodeAttributeValue(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function EncodeAttributeValue (value As String, fEncode As Boolean) As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::String ^ EncodeAttributeValue(System::String ^ value, bool fEncode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -707,6 +780,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="protected virtual string EncodeAttributeValue (System.Web.UI.HtmlTextWriterAttribute attrKey, string value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance string EncodeAttributeValue(valuetype System.Web.UI.HtmlTextWriterAttribute attrKey, string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.EncodeAttributeValue(System.Web.UI.HtmlTextWriterAttribute,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function EncodeAttributeValue (attrKey As HtmlTextWriterAttribute, value As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::String ^ EncodeAttributeValue(System::Web::UI::HtmlTextWriterAttribute attrKey, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -742,6 +817,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="protected string EncodeUrl (string url);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance string EncodeUrl(string url) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.EncodeUrl(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function EncodeUrl (url As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::String ^ EncodeUrl(System::String ^ url);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -784,6 +861,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="public override System.Text.Encoding Encoding { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Text.Encoding Encoding" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlTextWriter.Encoding" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Encoding As Encoding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Text::Encoding ^ Encoding { System::Text::Encoding ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -820,6 +899,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="public virtual void EndRender ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndRender() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.EndRender" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub EndRender ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EndRender();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -849,6 +930,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="public const string EndTagLeftChars;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string EndTagLeftChars" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriter.EndTagLeftChars" />
+      <MemberSignature Language="VB.NET" Value="Public Const EndTagLeftChars As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ EndTagLeftChars;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -883,10 +966,20 @@ alert('Hello');
         <altmember cref="Overload:System.Web.UI.HtmlTextWriter.RenderBeginTag" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="EnterStyle">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes the opening tag of a markup element that contains attributes that implement the layout and character formatting of the specified style.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="EnterStyle">
       <MemberSignature Language="C#" Value="public virtual void EnterStyle (System.Web.UI.WebControls.Style style);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnterStyle(class System.Web.UI.WebControls.Style style) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.EnterStyle(System.Web.UI.WebControls.Style)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EnterStyle(System::Web::UI::WebControls::Style ^ style);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -931,6 +1024,7 @@ alert('Hello');
       <MemberSignature Language="C#" Value="public virtual void EnterStyle (System.Web.UI.WebControls.Style style, System.Web.UI.HtmlTextWriterTag tag);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnterStyle(class System.Web.UI.WebControls.Style style, valuetype System.Web.UI.HtmlTextWriterTag tag) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.EnterStyle(System.Web.UI.WebControls.Style,System.Web.UI.HtmlTextWriterTag)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EnterStyle(System::Web::UI::WebControls::Style ^ style, System::Web::UI::HtmlTextWriterTag tag);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -977,6 +1071,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="public const char EqualsChar;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal char EqualsChar" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriter.EqualsChar" />
+      <MemberSignature Language="VB.NET" Value="Public Const EqualsChar As Char " />
+      <MemberSignature Language="C++ CLI" Value="public: char EqualsChar;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1015,6 +1111,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="public const string EqualsDoubleQuoteString;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string EqualsDoubleQuoteString" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriter.EqualsDoubleQuoteString" />
+      <MemberSignature Language="VB.NET" Value="Public Const EqualsDoubleQuoteString As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ EqualsDoubleQuoteString;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1050,10 +1148,20 @@ alert('Hello');
         <altmember cref="Overload:System.Web.UI.HtmlTextWriter.WriteAttribute" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ExitStyle">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes the closing tag of a markup element to end the specified layout and character formatting.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ExitStyle">
       <MemberSignature Language="C#" Value="public virtual void ExitStyle (System.Web.UI.WebControls.Style style);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExitStyle(class System.Web.UI.WebControls.Style style) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.ExitStyle(System.Web.UI.WebControls.Style)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ExitStyle(System::Web::UI::WebControls::Style ^ style);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1096,6 +1204,7 @@ alert('Hello');
       <MemberSignature Language="C#" Value="public virtual void ExitStyle (System.Web.UI.WebControls.Style style, System.Web.UI.HtmlTextWriterTag tag);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExitStyle(class System.Web.UI.WebControls.Style style, valuetype System.Web.UI.HtmlTextWriterTag tag) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.ExitStyle(System.Web.UI.WebControls.Style,System.Web.UI.HtmlTextWriterTag)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ExitStyle(System::Web::UI::WebControls::Style ^ style, System::Web::UI::HtmlTextWriterTag tag);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1140,6 +1249,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="protected virtual void FilterAttributes ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void FilterAttributes() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.FilterAttributes" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub FilterAttributes ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void FilterAttributes();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1181,6 +1292,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="public override void Flush ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Flush() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.Flush" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Flush ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Flush();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1207,6 +1320,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="protected System.Web.UI.HtmlTextWriterAttribute GetAttributeKey (string attrName);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance valuetype System.Web.UI.HtmlTextWriterAttribute GetAttributeKey(string attrName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.GetAttributeKey(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function GetAttributeKey (attrName As String) As HtmlTextWriterAttribute" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Web::UI::HtmlTextWriterAttribute GetAttributeKey(System::String ^ attrName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1250,6 +1365,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="protected string GetAttributeName (System.Web.UI.HtmlTextWriterAttribute attrKey);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance string GetAttributeName(valuetype System.Web.UI.HtmlTextWriterAttribute attrKey) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.GetAttributeName(System.Web.UI.HtmlTextWriterAttribute)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function GetAttributeName (attrKey As HtmlTextWriterAttribute) As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::String ^ GetAttributeName(System::Web::UI::HtmlTextWriterAttribute attrKey);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1290,6 +1407,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="protected System.Web.UI.HtmlTextWriterStyle GetStyleKey (string styleName);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance valuetype System.Web.UI.HtmlTextWriterStyle GetStyleKey(string styleName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.GetStyleKey(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function GetStyleKey (styleName As String) As HtmlTextWriterStyle" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Web::UI::HtmlTextWriterStyle GetStyleKey(System::String ^ styleName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1331,6 +1450,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="protected string GetStyleName (System.Web.UI.HtmlTextWriterStyle styleKey);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance string GetStyleName(valuetype System.Web.UI.HtmlTextWriterStyle styleKey) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.GetStyleName(System.Web.UI.HtmlTextWriterStyle)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function GetStyleName (styleKey As HtmlTextWriterStyle) As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::String ^ GetStyleName(System::Web::UI::HtmlTextWriterStyle styleKey);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1372,6 +1493,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="protected virtual System.Web.UI.HtmlTextWriterTag GetTagKey (string tagName);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance valuetype System.Web.UI.HtmlTextWriterTag GetTagKey(string tagName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.GetTagKey(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetTagKey (tagName As String) As HtmlTextWriterTag" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Web::UI::HtmlTextWriterTag GetTagKey(System::String ^ tagName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1412,6 +1535,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="protected virtual string GetTagName (System.Web.UI.HtmlTextWriterTag tagKey);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance string GetTagName(valuetype System.Web.UI.HtmlTextWriterTag tagKey) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.GetTagName(System.Web.UI.HtmlTextWriterTag)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetTagName (tagKey As HtmlTextWriterTag) As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::String ^ GetTagName(System::Web::UI::HtmlTextWriterTag tagKey);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1452,6 +1577,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="public int Indent { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Indent" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlTextWriter.Indent" />
+      <MemberSignature Language="VB.NET" Value="Public Property Indent As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Indent { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1489,6 +1616,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="public System.IO.TextWriter InnerWriter { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IO.TextWriter InnerWriter" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlTextWriter.InnerWriter" />
+      <MemberSignature Language="VB.NET" Value="Public Property InnerWriter As TextWriter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::TextWriter ^ InnerWriter { System::IO::TextWriter ^ get(); void set(System::IO::TextWriter ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1524,10 +1653,21 @@ alert('Hello');
         <altmember cref="T:System.Web.UI.WebControls.WebControl" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="IsAttributeDefined">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether the specified markup attribute and its value are rendered during the next call to the <see cref="Overload:System.Web.UI.HtmlTextWriter.RenderBeginTag" /> method.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="IsAttributeDefined">
       <MemberSignature Language="C#" Value="protected bool IsAttributeDefined (System.Web.UI.HtmlTextWriterAttribute key);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool IsAttributeDefined(valuetype System.Web.UI.HtmlTextWriterAttribute key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.IsAttributeDefined(System.Web.UI.HtmlTextWriterAttribute)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function IsAttributeDefined (key As HtmlTextWriterAttribute) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; bool IsAttributeDefined(System::Web::UI::HtmlTextWriterAttribute key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1570,6 +1710,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="protected bool IsAttributeDefined (System.Web.UI.HtmlTextWriterAttribute key, out string value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool IsAttributeDefined(valuetype System.Web.UI.HtmlTextWriterAttribute key, [out] string&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.IsAttributeDefined(System.Web.UI.HtmlTextWriterAttribute,System.String@)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function IsAttributeDefined (key As HtmlTextWriterAttribute, ByRef value As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; bool IsAttributeDefined(System::Web::UI::HtmlTextWriterAttribute key, [Runtime::InteropServices::Out] System::String ^ % value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1601,10 +1743,21 @@ alert('Hello');
         <altmember cref="Overload:System.Web.UI.HtmlTextWriter.RenderBeginTag" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="IsStyleAttributeDefined">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether a markup style attribute is rendered during the next call to the <see cref="Overload:System.Web.UI.HtmlTextWriter.RenderBeginTag" /> method.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="IsStyleAttributeDefined">
       <MemberSignature Language="C#" Value="protected bool IsStyleAttributeDefined (System.Web.UI.HtmlTextWriterStyle key);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool IsStyleAttributeDefined(valuetype System.Web.UI.HtmlTextWriterStyle key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.IsStyleAttributeDefined(System.Web.UI.HtmlTextWriterStyle)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function IsStyleAttributeDefined (key As HtmlTextWriterStyle) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; bool IsStyleAttributeDefined(System::Web::UI::HtmlTextWriterStyle key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1647,6 +1800,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="protected bool IsStyleAttributeDefined (System.Web.UI.HtmlTextWriterStyle key, out string value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool IsStyleAttributeDefined(valuetype System.Web.UI.HtmlTextWriterStyle key, [out] string&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.IsStyleAttributeDefined(System.Web.UI.HtmlTextWriterStyle,System.String@)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function IsStyleAttributeDefined (key As HtmlTextWriterStyle, ByRef value As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; bool IsStyleAttributeDefined(System::Web::UI::HtmlTextWriterStyle key, [Runtime::InteropServices::Out] System::String ^ % value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1682,6 +1837,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="public virtual bool IsValidFormAttribute (string attribute);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsValidFormAttribute(string attribute) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.IsValidFormAttribute(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function IsValidFormAttribute (attribute As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsValidFormAttribute(System::String ^ attribute);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1715,6 +1872,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="public override string NewLine { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string NewLine" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlTextWriter.NewLine" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property NewLine As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ NewLine { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1754,6 +1913,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="protected virtual bool OnAttributeRender (string name, string value, System.Web.UI.HtmlTextWriterAttribute key);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnAttributeRender(string name, string value, valuetype System.Web.UI.HtmlTextWriterAttribute key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.OnAttributeRender(System.String,System.String,System.Web.UI.HtmlTextWriterAttribute)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnAttributeRender (name As String, value As String, key As HtmlTextWriterAttribute) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool OnAttributeRender(System::String ^ name, System::String ^ value, System::Web::UI::HtmlTextWriterAttribute key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1800,6 +1961,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="protected virtual bool OnStyleAttributeRender (string name, string value, System.Web.UI.HtmlTextWriterStyle key);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnStyleAttributeRender(string name, string value, valuetype System.Web.UI.HtmlTextWriterStyle key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.OnStyleAttributeRender(System.String,System.String,System.Web.UI.HtmlTextWriterStyle)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnStyleAttributeRender (name As String, value As String, key As HtmlTextWriterStyle) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool OnStyleAttributeRender(System::String ^ name, System::String ^ value, System::Web::UI::HtmlTextWriterStyle key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1846,6 +2009,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="protected virtual bool OnTagRender (string name, System.Web.UI.HtmlTextWriterTag key);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnTagRender(string name, valuetype System.Web.UI.HtmlTextWriterTag key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.OnTagRender(System.String,System.Web.UI.HtmlTextWriterTag)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnTagRender (name As String, key As HtmlTextWriterTag) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool OnTagRender(System::String ^ name, System::Web::UI::HtmlTextWriterTag key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1890,6 +2055,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="protected virtual void OutputTabs ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OutputTabs() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.OutputTabs" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OutputTabs ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OutputTabs();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1929,6 +2096,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="protected string PopEndTag ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance string PopEndTag() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.PopEndTag" />
+      <MemberSignature Language="VB.NET" Value="Protected Function PopEndTag () As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::String ^ PopEndTag();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1960,6 +2129,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="protected void PushEndTag (string endTag);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void PushEndTag(string endTag) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.PushEndTag(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub PushEndTag (endTag As String)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void PushEndTag(System::String ^ endTag);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1992,6 +2163,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="protected static void RegisterAttribute (string name, System.Web.UI.HtmlTextWriterAttribute key);" />
       <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig void RegisterAttribute(string name, valuetype System.Web.UI.HtmlTextWriterAttribute key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.RegisterAttribute(System.String,System.Web.UI.HtmlTextWriterAttribute)" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared Sub RegisterAttribute (name As String, key As HtmlTextWriterAttribute)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; static void RegisterAttribute(System::String ^ name, System::Web::UI::HtmlTextWriterAttribute key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2026,6 +2199,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="protected static void RegisterStyle (string name, System.Web.UI.HtmlTextWriterStyle key);" />
       <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig void RegisterStyle(string name, valuetype System.Web.UI.HtmlTextWriterStyle key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.RegisterStyle(System.String,System.Web.UI.HtmlTextWriterStyle)" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared Sub RegisterStyle (name As String, key As HtmlTextWriterStyle)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; static void RegisterStyle(System::String ^ name, System::Web::UI::HtmlTextWriterStyle key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2060,6 +2235,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="protected static void RegisterTag (string name, System.Web.UI.HtmlTextWriterTag key);" />
       <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig void RegisterTag(string name, valuetype System.Web.UI.HtmlTextWriterTag key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.RegisterTag(System.String,System.Web.UI.HtmlTextWriterTag)" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared Sub RegisterTag (name As String, key As HtmlTextWriterTag)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; static void RegisterTag(System::String ^ name, System::Web::UI::HtmlTextWriterTag key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2094,6 +2271,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="protected virtual string RenderAfterContent ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance string RenderAfterContent() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.RenderAfterContent" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function RenderAfterContent () As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::String ^ RenderAfterContent();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2133,6 +2312,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="protected virtual string RenderAfterTag ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance string RenderAfterTag() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.RenderAfterTag" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function RenderAfterTag () As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::String ^ RenderAfterTag();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2172,6 +2353,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="protected virtual string RenderBeforeContent ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance string RenderBeforeContent() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.RenderBeforeContent" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function RenderBeforeContent () As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::String ^ RenderBeforeContent();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2211,6 +2394,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="protected virtual string RenderBeforeTag ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance string RenderBeforeTag() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.RenderBeforeTag" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function RenderBeforeTag () As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::String ^ RenderBeforeTag();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2246,10 +2431,21 @@ alert('Hello');
         <altmember cref="T:System.IO.TextWriter" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="RenderBeginTag">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes the opening tag of a markup element to the output stream.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="RenderBeginTag">
       <MemberSignature Language="C#" Value="public virtual void RenderBeginTag (string tagName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RenderBeginTag(string tagName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.RenderBeginTag(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub RenderBeginTag (tagName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RenderBeginTag(System::String ^ tagName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2301,6 +2497,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="public virtual void RenderBeginTag (System.Web.UI.HtmlTextWriterTag tagKey);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RenderBeginTag(valuetype System.Web.UI.HtmlTextWriterTag tagKey) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.RenderBeginTag(System.Web.UI.HtmlTextWriterTag)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub RenderBeginTag (tagKey As HtmlTextWriterTag)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RenderBeginTag(System::Web::UI::HtmlTextWriterTag tagKey);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2350,6 +2548,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="public virtual void RenderEndTag ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RenderEndTag() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.RenderEndTag" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub RenderEndTag ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RenderEndTag();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2394,6 +2594,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="public const string SelfClosingChars;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string SelfClosingChars" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriter.SelfClosingChars" />
+      <MemberSignature Language="VB.NET" Value="Public Const SelfClosingChars As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ SelfClosingChars;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2421,6 +2623,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="public const string SelfClosingTagEnd;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string SelfClosingTagEnd" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriter.SelfClosingTagEnd" />
+      <MemberSignature Language="VB.NET" Value="Public Const SelfClosingTagEnd As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ SelfClosingTagEnd;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2459,6 +2663,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="public const char SemicolonChar;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal char SemicolonChar" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriter.SemicolonChar" />
+      <MemberSignature Language="VB.NET" Value="Public Const SemicolonChar As Char " />
+      <MemberSignature Language="C++ CLI" Value="public: char SemicolonChar;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2497,6 +2703,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="public const char SingleQuoteChar;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal char SingleQuoteChar" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriter.SingleQuoteChar" />
+      <MemberSignature Language="VB.NET" Value="Public Const SingleQuoteChar As Char " />
+      <MemberSignature Language="C++ CLI" Value="public: char SingleQuoteChar;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2522,6 +2730,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="public const char SlashChar;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal char SlashChar" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriter.SlashChar" />
+      <MemberSignature Language="VB.NET" Value="Public Const SlashChar As Char " />
+      <MemberSignature Language="C++ CLI" Value="public: char SlashChar;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2560,6 +2770,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="public const char SpaceChar;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal char SpaceChar" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriter.SpaceChar" />
+      <MemberSignature Language="VB.NET" Value="Public Const SpaceChar As Char " />
+      <MemberSignature Language="C++ CLI" Value="public: char SpaceChar;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2610,6 +2822,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="public const char StyleEqualsChar;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal char StyleEqualsChar" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriter.StyleEqualsChar" />
+      <MemberSignature Language="VB.NET" Value="Public Const StyleEqualsChar As Char " />
+      <MemberSignature Language="C++ CLI" Value="public: char StyleEqualsChar;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2648,6 +2862,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="protected System.Web.UI.HtmlTextWriterTag TagKey { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.HtmlTextWriterTag TagKey" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlTextWriter.TagKey" />
+      <MemberSignature Language="VB.NET" Value="Protected Property TagKey As HtmlTextWriterTag" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Web::UI::HtmlTextWriterTag TagKey { System::Web::UI::HtmlTextWriterTag get(); void set(System::Web::UI::HtmlTextWriterTag value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2687,6 +2903,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="public const char TagLeftChar;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal char TagLeftChar" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriter.TagLeftChar" />
+      <MemberSignature Language="VB.NET" Value="Public Const TagLeftChar As Char " />
+      <MemberSignature Language="C++ CLI" Value="public: char TagLeftChar;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2728,6 +2946,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="protected string TagName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TagName" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlTextWriter.TagName" />
+      <MemberSignature Language="VB.NET" Value="Protected Property TagName As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::String ^ TagName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2766,6 +2986,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="public const char TagRightChar;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal char TagRightChar" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriter.TagRightChar" />
+      <MemberSignature Language="VB.NET" Value="Public Const TagRightChar As Char " />
+      <MemberSignature Language="C++ CLI" Value="public: char TagRightChar;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2802,10 +3024,21 @@ alert('Hello');
         <altmember cref="M:System.Web.UI.HtmlTextWriter.WriteEndTag(System.String)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Write">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes the specified data type to the output stream, along with any pending tab spacing.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Write">
       <MemberSignature Language="C#" Value="public override void Write (bool value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(bool value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.Write(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (value As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2835,6 +3068,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="public override void Write (char value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(char value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.Write(System.Char)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (value As Char)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(char value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2878,6 +3113,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="public override void Write (char[] buffer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(char[] buffer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.Write(System.Char[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (buffer As Char())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(cli::array &lt;char&gt; ^ buffer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2930,6 +3167,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="public override void Write (double value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(float64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.Write(System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (value As Double)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(double value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2975,6 +3214,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="public override void Write (int value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(int32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.Write(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (value As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(int value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3004,6 +3245,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="public override void Write (long value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(int64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.Write(System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (value As Long)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(long value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3033,6 +3276,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="public override void Write (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.Write(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (value As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3081,6 +3326,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="public override void Write (float value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(float32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.Write(System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (value As Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(float value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3126,6 +3373,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="public override void Write (string s);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(string s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.Write(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (s As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::String ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3172,6 +3421,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="public override void Write (string format, object arg0);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(string format, object arg0) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.Write(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (format As String, arg0 As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::String ^ format, System::Object ^ arg0);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3213,6 +3464,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="public override void Write (string format, params object[] arg);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(string format, object[] arg) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.Write(System.String,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (format As String, ParamArray arg As Object())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::String ^ format, ... cli::array &lt;System::Object ^&gt; ^ arg);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3266,6 +3519,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="public override void Write (char[] buffer, int index, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(char[] buffer, int32 index, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.Write(System.Char[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (buffer As Char(), index As Integer, count As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(cli::array &lt;char&gt; ^ buffer, int index, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3322,6 +3577,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="public override void Write (string format, object arg0, object arg1);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(string format, object arg0, object arg1) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.Write(System.String,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (format As String, arg0 As Object, arg1 As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::String ^ format, System::Object ^ arg0, System::Object ^ arg1);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3361,10 +3618,21 @@ alert('Hello');
         <altmember cref="P:System.Globalization.CultureInfo.CurrentCulture" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteAttribute">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes a markup attribute and its value to the output stream.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="WriteAttribute">
       <MemberSignature Language="C#" Value="public virtual void WriteAttribute (string name, string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteAttribute(string name, string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.WriteAttribute(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub WriteAttribute (name As String, value As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void WriteAttribute(System::String ^ name, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3422,6 +3690,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="public virtual void WriteAttribute (string name, string value, bool fEncode);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteAttribute(string name, string value, bool fEncode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.WriteAttribute(System.String,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub WriteAttribute (name As String, value As String, fEncode As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void WriteAttribute(System::String ^ name, System::String ^ value, bool fEncode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3485,6 +3755,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="public virtual void WriteBeginTag (string tagName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteBeginTag(string tagName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.WriteBeginTag(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub WriteBeginTag (tagName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void WriteBeginTag(System::String ^ tagName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3543,6 +3815,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="public virtual void WriteBreak ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteBreak() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.WriteBreak" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub WriteBreak ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void WriteBreak();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3578,6 +3852,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="public virtual void WriteEncodedText (string text);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteEncodedText(string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.WriteEncodedText(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub WriteEncodedText (text As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void WriteEncodedText(System::String ^ text);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3621,6 +3897,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="public virtual void WriteEncodedUrl (string url);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteEncodedUrl(string url) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.WriteEncodedUrl(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub WriteEncodedUrl (url As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void WriteEncodedUrl(System::String ^ url);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3660,6 +3938,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="public virtual void WriteEncodedUrlParameter (string urlText);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteEncodedUrlParameter(string urlText) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.WriteEncodedUrlParameter(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub WriteEncodedUrlParameter (urlText As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void WriteEncodedUrlParameter(System::String ^ urlText);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3700,6 +3980,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="public virtual void WriteEndTag (string tagName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteEndTag(string tagName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.WriteEndTag(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub WriteEndTag (tagName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void WriteEndTag(System::String ^ tagName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3746,6 +4028,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="public virtual void WriteFullBeginTag (string tagName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteFullBeginTag(string tagName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.WriteFullBeginTag(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub WriteFullBeginTag (tagName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void WriteFullBeginTag(System::String ^ tagName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3796,6 +4080,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="public override void WriteLine ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteLine() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.WriteLine" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3833,6 +4119,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="public override void WriteLine (bool value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteLine(bool value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.WriteLine(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (value As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3864,6 +4152,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="public override void WriteLine (char value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteLine(char value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.WriteLine(System.Char)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (value As Char)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(char value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3895,6 +4185,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="public override void WriteLine (char[] buffer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteLine(char[] buffer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.WriteLine(System.Char[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (buffer As Char())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(cli::array &lt;char&gt; ^ buffer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3949,6 +4241,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="public override void WriteLine (double value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteLine(float64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.WriteLine(System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (value As Double)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(double value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3996,6 +4290,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="public override void WriteLine (int value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteLine(int32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.WriteLine(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (value As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(int value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4027,6 +4323,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="public override void WriteLine (long value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteLine(int64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.WriteLine(System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (value As Long)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(long value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4058,6 +4356,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="public override void WriteLine (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteLine(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.WriteLine(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (value As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4097,6 +4397,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="public override void WriteLine (float value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteLine(float32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.WriteLine(System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (value As Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(float value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4144,6 +4446,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="public override void WriteLine (string s);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteLine(string s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.WriteLine(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (s As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(System::String ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4175,6 +4479,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="public override void WriteLine (uint value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteLine(unsigned int32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.WriteLine(System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (value As UInteger)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(System::UInt32 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4212,6 +4518,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="public override void WriteLine (string format, object arg0);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteLine(string format, object arg0) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.WriteLine(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (format As String, arg0 As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(System::String ^ format, System::Object ^ arg0);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4253,6 +4561,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="public override void WriteLine (string format, params object[] arg);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteLine(string format, object[] arg) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.WriteLine(System.String,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (format As String, ParamArray arg As Object())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(System::String ^ format, ... cli::array &lt;System::Object ^&gt; ^ arg);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4307,6 +4617,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="public override void WriteLine (char[] buffer, int index, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteLine(char[] buffer, int32 index, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.WriteLine(System.Char[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (buffer As Char(), index As Integer, count As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(cli::array &lt;char&gt; ^ buffer, int index, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4365,6 +4677,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="public override void WriteLine (string format, object arg0, object arg1);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteLine(string format, object arg0, object arg1) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.WriteLine(System.String,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (format As String, arg0 As Object, arg1 As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(System::String ^ format, System::Object ^ arg0, System::Object ^ arg1);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4408,6 +4722,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="public void WriteLineNoTabs (string s);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteLineNoTabs(string s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.WriteLineNoTabs(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteLineNoTabs (s As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteLineNoTabs(System::String ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4437,10 +4753,21 @@ alert('Hello');
         <altmember cref="Overload:System.IO.TextWriter.WriteLine" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteStyleAttribute">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes a style attribute and its value to the output stream.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="WriteStyleAttribute">
       <MemberSignature Language="C#" Value="public virtual void WriteStyleAttribute (string name, string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteStyleAttribute(string name, string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.WriteStyleAttribute(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub WriteStyleAttribute (name As String, value As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void WriteStyleAttribute(System::String ^ name, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4475,6 +4802,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="public virtual void WriteStyleAttribute (string name, string value, bool fEncode);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteStyleAttribute(string name, string value, bool fEncode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.WriteStyleAttribute(System.String,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub WriteStyleAttribute (name As String, value As String, fEncode As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void WriteStyleAttribute(System::String ^ name, System::String ^ value, bool fEncode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4515,6 +4844,8 @@ alert('Hello');
       <MemberSignature Language="C#" Value="protected void WriteUrlEncodedString (string text, bool argument);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteUrlEncodedString(string text, bool argument) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.WriteUrlEncodedString(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub WriteUrlEncodedString (text As String, argument As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteUrlEncodedString(System::String ^ text, bool argument);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4547,118 +4878,5 @@ alert('Hello');
         <altmember cref="M:System.Web.UI.HtmlTextWriter.WriteEncodedUrlParameter(System.String)" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.HtmlTextWriter" /> class.</summary>
-        <altmember cref="T:System.IO.TextWriter" />
-        <altmember cref="F:System.Web.UI.HtmlTextWriter.DefaultTabString" />
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="WriteStyleAttribute">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes a style attribute and its value to the output stream.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="AddAttribute">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds the specified markup attribute and value to the opening tag of the element that the <see cref="T:System.Web.UI.HtmlTextWriter" /> object creates with a subsequent call to the <see cref="Overload:System.Web.UI.HtmlTextWriter.RenderBeginTag" /> method.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="IsStyleAttributeDefined">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Determines whether a markup style attribute is rendered during the next call to the <see cref="Overload:System.Web.UI.HtmlTextWriter.RenderBeginTag" /> method.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ExitStyle">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes the closing tag of a markup element to end the specified layout and character formatting.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="RenderBeginTag">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes the opening tag of a markup element to the output stream.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="WriteAttribute">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes a markup attribute and its value to the output stream.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="AddStyleAttribute">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds a markup style attribute to the opening tag of the element that the <see cref="T:System.Web.UI.HtmlTextWriter" /> object creates with a subsequent call to the <see cref="Overload:System.Web.UI.HtmlTextWriter.RenderBeginTag" /> method.</summary>
-        <altmember cref="T:System.IO.TextWriter" />
-        <altmember cref="T:System.Web.UI.HtmlTextWriterStyle" />
-        <altmember cref="Overload:System.Web.UI.HtmlTextWriter.RenderBeginTag" />
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="IsAttributeDefined">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Determines whether the specified markup attribute and its value are rendered during the next call to the <see cref="Overload:System.Web.UI.HtmlTextWriter.RenderBeginTag" /> method.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Write">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes the specified data type to the output stream, along with any pending tab spacing.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="EnterStyle">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes the opening tag of a markup element that contains attributes that implement the layout and character formatting of the specified style.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="EncodeAttributeValue">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Encodes the value of the specified markup attribute based on the requirements of the <see cref="T:System.Web.HttpRequest" /> object of the current context.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

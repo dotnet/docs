@@ -1,7 +1,9 @@
-<Type Name="SoapAnyUri" FullName="System.Runtime.Remoting.Metadata.W3cXsd2001.SoapAnyUri">
+﻿<Type Name="SoapAnyUri" FullName="System.Runtime.Remoting.Metadata.W3cXsd2001.SoapAnyUri">
   <TypeSignature Language="C#" Value="public sealed class SoapAnyUri : System.Runtime.Remoting.Metadata.W3cXsd2001.ISoapXsd" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit SoapAnyUri extends System.Object implements class System.Runtime.Remoting.Metadata.W3cXsd2001.ISoapXsd" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapAnyUri" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SoapAnyUri&#xA;Implements ISoapXsd" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SoapAnyUri sealed : System::Runtime::Remoting::Metadata::W3cXsd2001::ISoapXsd" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -40,10 +42,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapAnyUri" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SoapAnyUri ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapAnyUri.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SoapAnyUri();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -70,6 +84,8 @@
       <MemberSignature Language="C#" Value="public SoapAnyUri (string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapAnyUri.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SoapAnyUri(System::String ^ value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -99,7 +115,12 @@
       <MemberSignature Language="C#" Value="public string GetXsdType ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetXsdType() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapAnyUri.GetXsdType" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetXsdType () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetXsdType();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Remoting.Metadata.W3cXsd2001.ISoapXsd.GetXsdType</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -129,6 +150,8 @@
       <MemberSignature Language="C#" Value="public static System.Runtime.Remoting.Metadata.W3cXsd2001.SoapAnyUri Parse (string value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Runtime.Remoting.Metadata.W3cXsd2001.SoapAnyUri Parse(string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapAnyUri.Parse(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (value As String) As SoapAnyUri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Remoting::Metadata::W3cXsd2001::SoapAnyUri ^ Parse(System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -162,6 +185,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapAnyUri.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -192,6 +217,8 @@
       <MemberSignature Language="C#" Value="public string Value { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Value" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapAnyUri.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Property Value As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Value { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -221,6 +248,8 @@
       <MemberSignature Language="C#" Value="public static string XsdType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string XsdType" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapAnyUri.XsdType" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property XsdType As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ XsdType { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -246,15 +275,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapAnyUri" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

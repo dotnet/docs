@@ -1,7 +1,9 @@
-<Type Name="AnyReturnReader" FullName="System.Web.Services.Protocols.AnyReturnReader">
+﻿<Type Name="AnyReturnReader" FullName="System.Web.Services.Protocols.AnyReturnReader">
   <TypeSignature Language="C#" Value="public class AnyReturnReader : System.Web.Services.Protocols.MimeReturnReader" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AnyReturnReader extends System.Web.Services.Protocols.MimeReturnReader" />
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Protocols.AnyReturnReader" />
+  <TypeSignature Language="VB.NET" Value="Public Class AnyReturnReader&#xA;Inherits MimeReturnReader" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AnyReturnReader : System::Web::Services::Protocols::MimeReturnReader" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +32,8 @@
       <MemberSignature Language="C#" Value="public AnyReturnReader ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.AnyReturnReader.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AnyReturnReader();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -45,6 +49,8 @@
       <MemberSignature Language="C#" Value="public override object GetInitializer (System.Web.Services.Protocols.LogicalMethodInfo methodInfo);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetInitializer(class System.Web.Services.Protocols.LogicalMethodInfo methodInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.AnyReturnReader.GetInitializer(System.Web.Services.Protocols.LogicalMethodInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetInitializer (methodInfo As LogicalMethodInfo) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetInitializer(System::Web::Services::Protocols::LogicalMethodInfo ^ methodInfo);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -76,6 +82,8 @@
       <MemberSignature Language="C#" Value="public override void Initialize (object o);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Initialize(object o) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.AnyReturnReader.Initialize(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize (o As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize(System::Object ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -106,6 +114,8 @@
       <MemberSignature Language="C#" Value="public override object Read (System.Net.WebResponse response, System.IO.Stream responseStream);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object Read(class System.Net.WebResponse response, class System.IO.Stream responseStream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.AnyReturnReader.Read(System.Net.WebResponse,System.IO.Stream)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Read (response As WebResponse, responseStream As Stream) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ Read(System::Net::WebResponse ^ response, System::IO::Stream ^ responseStream);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

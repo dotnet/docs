@@ -1,7 +1,9 @@
-<Type Name="SessionParameter" FullName="System.Web.UI.WebControls.SessionParameter">
+﻿<Type Name="SessionParameter" FullName="System.Web.UI.WebControls.SessionParameter">
   <TypeSignature Language="C#" Value="public class SessionParameter : System.Web.UI.WebControls.Parameter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SessionParameter extends System.Web.UI.WebControls.Parameter" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.SessionParameter" />
+  <TypeSignature Language="VB.NET" Value="Public Class SessionParameter&#xA;Inherits Parameter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SessionParameter : System::Web::UI::WebControls::Parameter" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,10 +45,21 @@
     <altmember cref="T:System.Web.UI.WebControls.QueryStringParameter" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.SessionParameter" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SessionParameter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SessionParameter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SessionParameter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -77,6 +90,8 @@
       <MemberSignature Language="C#" Value="protected SessionParameter (System.Web.UI.WebControls.SessionParameter original);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.WebControls.SessionParameter original) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SessionParameter.#ctor(System.Web.UI.WebControls.SessionParameter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (original As SessionParameter)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; SessionParameter(System::Web::UI::WebControls::SessionParameter ^ original);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -103,6 +118,8 @@
       <MemberSignature Language="C#" Value="public SessionParameter (string name, string sessionField);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, string sessionField) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SessionParameter.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, sessionField As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SessionParameter(System::String ^ name, System::String ^ sessionField);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -132,6 +149,7 @@
       <MemberSignature Language="C#" Value="public SessionParameter (string name, System.Data.DbType dbType, string sessionField);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, valuetype System.Data.DbType dbType, string sessionField) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SessionParameter.#ctor(System.String,System.Data.DbType,System.String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SessionParameter(System::String ^ name, System::Data::DbType dbType, System::String ^ sessionField);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -161,6 +179,8 @@
       <MemberSignature Language="C#" Value="public SessionParameter (string name, TypeCode type, string sessionField);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, valuetype System.TypeCode type, string sessionField) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SessionParameter.#ctor(System.String,System.TypeCode,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, type As TypeCode, sessionField As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SessionParameter(System::String ^ name, TypeCode type, System::String ^ sessionField);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -200,6 +220,8 @@
       <MemberSignature Language="C#" Value="protected override System.Web.UI.WebControls.Parameter Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Web.UI.WebControls.Parameter Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SessionParameter.Clone" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function Clone () As Parameter" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Web::UI::WebControls::Parameter ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -224,9 +246,10 @@
       </Docs>
     </Member>
     <Member MemberName="Evaluate">
-      <MemberSignature Language="C#" Value="protected override object Evaluate (System.Web.HttpContext context, System.Web.UI.Control control);" />
+      <MemberSignature Language="C#" Value="protected internal override object Evaluate (System.Web.HttpContext context, System.Web.UI.Control control);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance object Evaluate(class System.Web.HttpContext context, class System.Web.UI.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SessionParameter.Evaluate(System.Web.HttpContext,System.Web.UI.Control)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Object ^ Evaluate(System::Web::HttpContext ^ context, System::Web::UI::Control ^ control);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -261,6 +284,8 @@
       <MemberSignature Language="C#" Value="public string SessionField { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SessionField" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SessionParameter.SessionField" />
+      <MemberSignature Language="VB.NET" Value="Public Property SessionField As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SessionField { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -300,14 +325,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.SessionParameter" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,9 @@
-<Type Name="IApplicationSettingsProvider" FullName="System.Configuration.IApplicationSettingsProvider">
+﻿<Type Name="IApplicationSettingsProvider" FullName="System.Configuration.IApplicationSettingsProvider">
   <TypeSignature Language="C#" Value="public interface IApplicationSettingsProvider" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IApplicationSettingsProvider" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.IApplicationSettingsProvider" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IApplicationSettingsProvider" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IApplicationSettingsProvider" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +42,8 @@
       <MemberSignature Language="C#" Value="public System.Configuration.SettingsPropertyValue GetPreviousVersion (System.Configuration.SettingsContext context, System.Configuration.SettingsProperty property);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Configuration.SettingsPropertyValue GetPreviousVersion(class System.Configuration.SettingsContext context, class System.Configuration.SettingsProperty property) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.IApplicationSettingsProvider.GetPreviousVersion(System.Configuration.SettingsContext,System.Configuration.SettingsProperty)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetPreviousVersion (context As SettingsContext, property As SettingsProperty) As SettingsPropertyValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Configuration::SettingsPropertyValue ^ GetPreviousVersion(System::Configuration::SettingsContext ^ context, System::Configuration::SettingsProperty ^ property);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -78,6 +82,8 @@
       <MemberSignature Language="C#" Value="public void Reset (System.Configuration.SettingsContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Reset(class System.Configuration.SettingsContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.IApplicationSettingsProvider.Reset(System.Configuration.SettingsContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Reset (context As SettingsContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Reset(System::Configuration::SettingsContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -115,6 +121,8 @@
       <MemberSignature Language="C#" Value="public void Upgrade (System.Configuration.SettingsContext context, System.Configuration.SettingsPropertyCollection properties);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Upgrade(class System.Configuration.SettingsContext context, class System.Configuration.SettingsPropertyCollection properties) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.IApplicationSettingsProvider.Upgrade(System.Configuration.SettingsContext,System.Configuration.SettingsPropertyCollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Upgrade (context As SettingsContext, properties As SettingsPropertyCollection)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Upgrade(System::Configuration::SettingsContext ^ context, System::Configuration::SettingsPropertyCollection ^ properties);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

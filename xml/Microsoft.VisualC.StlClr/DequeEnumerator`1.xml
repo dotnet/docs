@@ -1,7 +1,9 @@
-<Type Name="DequeEnumerator&lt;TValue&gt;" FullName="Microsoft.VisualC.StlClr.DequeEnumerator&lt;TValue&gt;">
+﻿<Type Name="DequeEnumerator&lt;TValue&gt;" FullName="Microsoft.VisualC.StlClr.DequeEnumerator&lt;TValue&gt;">
   <TypeSignature Language="C#" Value="public class DequeEnumerator&lt;TValue&gt; : Microsoft.VisualC.StlClr.DequeEnumeratorBase&lt;TValue&gt;, System.Collections.Generic.IEnumerator&lt;TValue&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DequeEnumerator`1&lt;TValue&gt; extends Microsoft.VisualC.StlClr.DequeEnumeratorBase`1&lt;!TValue&gt; implements class System.Collections.Generic.IEnumerator`1&lt;!TValue&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualC.StlClr.DequeEnumerator`1" />
+  <TypeSignature Language="VB.NET" Value="Public Class DequeEnumerator(Of TValue)&#xA;Inherits DequeEnumeratorBase(Of TValue)&#xA;Implements IEnumerator(Of TValue)" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename TValue&gt;&#xA;public ref class DequeEnumerator : Microsoft::VisualC::StlClr::DequeEnumeratorBase&lt;TValue&gt;, System::Collections::Generic::IEnumerator&lt;TValue&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -37,6 +39,8 @@
       <MemberSignature Language="C#" Value="public DequeEnumerator (Microsoft.VisualC.StlClr.IDeque&lt;TValue&gt; _Cont, int _First);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.VisualC.StlClr.IDeque`1&lt;!TValue&gt; _Cont, int32 _First) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.DequeEnumerator`1.#ctor(Microsoft.VisualC.StlClr.IDeque{`0},System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (_Cont As IDeque(Of TValue), _First As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DequeEnumerator(Microsoft::VisualC::StlClr::IDeque&lt;TValue&gt; ^ _Cont, int _First);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -62,6 +66,8 @@
       <MemberSignature Language="C#" Value="public virtual TValue Current { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance !TValue Current" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualC.StlClr.DequeEnumerator`1.Current" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Current As TValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property TValue Current { TValue get(); void set(TValue value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -76,10 +82,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Frees, releases, or resets unmanaged resources that are used by the <see cref="T:Microsoft.VisualC.StlClr.DequeEnumerator`1" /> object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Dispose">
       <MemberSignature Language="C#" Value="public override sealed void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.DequeEnumerator`1.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Sub Dispose ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Dispose();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -98,6 +115,8 @@
       <MemberSignature Language="C#" Value="protected virtual void Dispose (bool A_0);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool A_0) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.DequeEnumerator`1.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (A_0 As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool A_0);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -120,6 +139,8 @@
       <MemberSignature Language="C#" Value="public override bool MoveNext ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool MoveNext() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.DequeEnumerator`1.MoveNext" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function MoveNext () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool MoveNext();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -140,6 +161,8 @@
       <MemberSignature Language="C#" Value="public override void Reset ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Reset() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.DequeEnumerator`1.Reset" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Reset ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Reset();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -154,14 +177,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Dispose">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Frees, releases, or resets unmanaged resources that are used by the <see cref="T:Microsoft.VisualC.StlClr.DequeEnumerator`1" /> object.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

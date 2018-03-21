@@ -1,7 +1,9 @@
-<Type Name="OleDbRowUpdatingEventHandler" FullName="System.Data.OleDb.OleDbRowUpdatingEventHandler">
+﻿<Type Name="OleDbRowUpdatingEventHandler" FullName="System.Data.OleDb.OleDbRowUpdatingEventHandler">
   <TypeSignature Language="C#" Value="public delegate void OleDbRowUpdatingEventHandler(object sender, OleDbRowUpdatingEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed OleDbRowUpdatingEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Data.OleDb.OleDbRowUpdatingEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub OleDbRowUpdatingEventHandler(sender As Object, e As OleDbRowUpdatingEventArgs)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void OleDbRowUpdatingEventHandler(System::Object ^ sender, OleDbRowUpdatingEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

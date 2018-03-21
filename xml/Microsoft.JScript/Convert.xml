@@ -1,7 +1,9 @@
-<Type Name="Convert" FullName="Microsoft.JScript.Convert">
+﻿<Type Name="Convert" FullName="Microsoft.JScript.Convert">
   <TypeSignature Language="C#" Value="public sealed class Convert" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Convert extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.Convert" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Convert" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Convert sealed" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -20,6 +22,8 @@
       <MemberSignature Language="C#" Value="public Convert ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Convert.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Convert();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -36,6 +40,8 @@
       <MemberSignature Language="C#" Value="public static double CheckIfDoubleIsInteger (double d);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 CheckIfDoubleIsInteger(float64 d) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Convert.CheckIfDoubleIsInteger(System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CheckIfDoubleIsInteger (d As Double) As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double CheckIfDoubleIsInteger(double d);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -59,6 +65,8 @@
       <MemberSignature Language="C#" Value="public static float CheckIfSingleIsInteger (float s);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float32 CheckIfSingleIsInteger(float32 s) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Convert.CheckIfSingleIsInteger(System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CheckIfSingleIsInteger (s As Single) As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static float CheckIfSingleIsInteger(float s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -82,6 +90,8 @@
       <MemberSignature Language="C#" Value="public static object Coerce (object value, object type);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object Coerce(object value, object type) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Convert.Coerce(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Coerce (value As Object, type As Object) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ Coerce(System::Object ^ value, System::Object ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -115,6 +125,8 @@
       <MemberSignature Language="C#" Value="public static object Coerce2 (object value, TypeCode target, bool truncationPermitted);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object Coerce2(object value, valuetype System.TypeCode target, bool truncationPermitted) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Convert.Coerce2(System.Object,System.TypeCode,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Coerce2 (value As Object, target As TypeCode, truncationPermitted As Boolean) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ Coerce2(System::Object ^ value, TypeCode target, bool truncationPermitted);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -144,6 +156,8 @@
       <MemberSignature Language="C#" Value="public static object CoerceT (object value, Type t, bool explicitOK);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object CoerceT(object value, class System.Type t, bool explicitOK) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Convert.CoerceT(System.Object,System.Type,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CoerceT (value As Object, t As Type, explicitOK As Boolean) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ CoerceT(System::Object ^ value, Type ^ t, bool explicitOK);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -173,6 +187,7 @@
       <MemberSignature Language="C#" Value="public static bool IsBadIndex (Microsoft.JScript.AST ast);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsBadIndex(class Microsoft.JScript.AST ast) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Convert.IsBadIndex(Microsoft.JScript.AST)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsBadIndex(Microsoft::JScript::AST ^ ast);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -197,6 +212,8 @@
       <MemberSignature Language="C#" Value="public static void ThrowTypeMismatch (object val);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ThrowTypeMismatch(object val) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Convert.ThrowTypeMismatch(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub ThrowTypeMismatch (val As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ThrowTypeMismatch(System::Object ^ val);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -221,10 +238,21 @@
         <altmember cref="F:Microsoft.JScript.JSError.TypeMismatch" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ToBoolean">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts values to <see cref="T:System.Boolean" /> structures.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ToBoolean">
       <MemberSignature Language="C#" Value="public static bool ToBoolean (double d);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool ToBoolean(float64 d) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Convert.ToBoolean(System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToBoolean (d As Double) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool ToBoolean(double d);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -249,6 +277,8 @@
       <MemberSignature Language="C#" Value="public static bool ToBoolean (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool ToBoolean(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Convert.ToBoolean(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToBoolean (value As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool ToBoolean(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -278,6 +308,8 @@
       <MemberSignature Language="C#" Value="public static bool ToBoolean (object value, bool explicitConversion);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool ToBoolean(object value, bool explicitConversion) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Convert.ToBoolean(System.Object,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToBoolean (value As Object, explicitConversion As Boolean) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool ToBoolean(System::Object ^ value, bool explicitConversion);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -310,6 +342,8 @@
       <MemberSignature Language="C#" Value="public static object ToForInObject (object value, Microsoft.JScript.Vsa.VsaEngine engine);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object ToForInObject(object value, class Microsoft.JScript.Vsa.VsaEngine engine) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Convert.ToForInObject(System.Object,Microsoft.JScript.Vsa.VsaEngine)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToForInObject (value As Object, engine As VsaEngine) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ ToForInObject(System::Object ^ value, Microsoft::JScript::Vsa::VsaEngine ^ engine);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -336,6 +370,8 @@
       <MemberSignature Language="C#" Value="public static int ToInt32 (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 ToInt32(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Convert.ToInt32(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt32 (value As Object) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int ToInt32(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -360,6 +396,8 @@
       <MemberSignature Language="C#" Value="public static object ToNativeArray (object value, RuntimeTypeHandle handle);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object ToNativeArray(object value, valuetype System.RuntimeTypeHandle handle) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Convert.ToNativeArray(System.Object,System.RuntimeTypeHandle)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToNativeArray (value As Object, handle As RuntimeTypeHandle) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ ToNativeArray(System::Object ^ value, RuntimeTypeHandle handle);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -382,10 +420,21 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ToNumber">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts values to <see cref="T:System.Double" /> structures.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ToNumber">
       <MemberSignature Language="C#" Value="public static double ToNumber (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 ToNumber(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Convert.ToNumber(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToNumber (value As Object) As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double ToNumber(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -410,6 +459,8 @@
       <MemberSignature Language="C#" Value="public static double ToNumber (string str);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 ToNumber(string str) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Convert.ToNumber(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToNumber (str As String) As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double ToNumber(System::String ^ str);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -434,6 +485,8 @@
       <MemberSignature Language="C#" Value="public static object ToObject (object value, Microsoft.JScript.Vsa.VsaEngine engine);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object ToObject(object value, class Microsoft.JScript.Vsa.VsaEngine engine) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Convert.ToObject(System.Object,Microsoft.JScript.Vsa.VsaEngine)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToObject (value As Object, engine As VsaEngine) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ ToObject(System::Object ^ value, Microsoft::JScript::Vsa::VsaEngine ^ engine);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -460,6 +513,8 @@
       <MemberSignature Language="C#" Value="public static object ToObject2 (object value, Microsoft.JScript.Vsa.VsaEngine engine);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object ToObject2(object value, class Microsoft.JScript.Vsa.VsaEngine engine) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Convert.ToObject2(System.Object,Microsoft.JScript.Vsa.VsaEngine)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToObject2 (value As Object, engine As VsaEngine) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ ToObject2(System::Object ^ value, Microsoft::JScript::Vsa::VsaEngine ^ engine);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -482,10 +537,21 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts values to <see cref="T:System.String" /> objects.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ToString">
       <MemberSignature Language="C#" Value="public static string ToString (bool b);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string ToString(bool b) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Convert.ToString(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (b As Boolean) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(bool b);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -510,6 +576,8 @@
       <MemberSignature Language="C#" Value="public static string ToString (double d);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string ToString(float64 d) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Convert.ToString(System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (d As Double) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(double d);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -534,6 +602,8 @@
       <MemberSignature Language="C#" Value="public static string ToString (object value, bool explicitOK);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string ToString(object value, bool explicitOK) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Convert.ToString(System.Object,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (value As Object, explicitOK As Boolean) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(System::Object ^ value, bool explicitOK);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -562,32 +632,5 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
-    <MemberGroup MemberName="ToNumber">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Converts values to <see cref="T:System.Double" /> structures.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ToBoolean">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Converts values to <see cref="T:System.Boolean" /> structures.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ToString">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Converts values to <see cref="T:System.String" /> objects.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

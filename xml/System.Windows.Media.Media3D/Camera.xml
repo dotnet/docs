@@ -1,7 +1,9 @@
-<Type Name="Camera" FullName="System.Windows.Media.Media3D.Camera">
+﻿<Type Name="Camera" FullName="System.Windows.Media.Media3D.Camera">
   <TypeSignature Language="C#" Value="public abstract class Camera : System.Windows.Media.Animation.Animatable, IFormattable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract Camera extends System.Windows.Media.Animation.Animatable implements class System.IFormattable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Media3D.Camera" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class Camera&#xA;Inherits Animatable&#xA;Implements IFormattable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Camera abstract : System::Windows::Media::Animation::Animatable, IFormattable" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +39,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Media3D.Camera Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.Media3D.Camera Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Camera.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As Camera" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Media3D::Camera ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -65,6 +69,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Media3D.Camera CloneCurrentValue ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.Media3D.Camera CloneCurrentValue() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Camera.CloneCurrentValue" />
+      <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As Camera" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Media3D::Camera ^ CloneCurrentValue();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -93,7 +99,12 @@
       <MemberSignature Language="C#" Value="string IFormattable.ToString (string format, IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string System.IFormattable.ToString(string format, class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Camera.System#IFormattable#ToString(System.String,System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToString (format As String, provider As IFormatProvider) As String Implements IFormattable.ToString" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::String ^ System.IFormattable.ToString(System::String ^ format, IFormatProvider ^ provider) = IFormattable::ToString;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IFormattable.ToString(System.String,System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -121,10 +132,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a string representation of the Camera.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ToString">
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Camera.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -144,6 +166,8 @@
       <MemberSignature Language="C#" Value="public string ToString (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string ToString(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Camera.ToString(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToString (provider As IFormatProvider) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToString(IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -166,6 +190,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Media3D.Transform3D Transform { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Media3D.Transform3D Transform" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Camera.Transform" />
+      <MemberSignature Language="VB.NET" Value="Public Property Transform As Transform3D" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Media3D::Transform3D ^ Transform { System::Windows::Media::Media3D::Transform3D ^ get(); void set(System::Windows::Media::Media3D::Transform3D ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -199,6 +225,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty TransformProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty TransformProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Media3D.Camera.TransformProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TransformProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ TransformProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -226,14 +254,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="ToString">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a string representation of the Camera.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

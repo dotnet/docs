@@ -1,7 +1,9 @@
-<Type Name="EncryptedType" FullName="System.Security.Cryptography.Xml.EncryptedType">
+﻿<Type Name="EncryptedType" FullName="System.Security.Cryptography.Xml.EncryptedType">
   <TypeSignature Language="C#" Value="public abstract class EncryptedType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit EncryptedType extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Xml.EncryptedType" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class EncryptedType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EncryptedType abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Security</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +42,8 @@
       <MemberSignature Language="C#" Value="protected EncryptedType ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptedType.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; EncryptedType();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -74,6 +78,8 @@
       <MemberSignature Language="C#" Value="public void AddProperty (System.Security.Cryptography.Xml.EncryptionProperty ep);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddProperty(class System.Security.Cryptography.Xml.EncryptionProperty ep) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptedType.AddProperty(System.Security.Cryptography.Xml.EncryptionProperty)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddProperty (ep As EncryptionProperty)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddProperty(System::Security::Cryptography::Xml::EncryptionProperty ^ ep);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -106,6 +112,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Security.Cryptography.Xml.CipherData CipherData { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.Xml.CipherData CipherData" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.EncryptedType.CipherData" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property CipherData As CipherData" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Security::Cryptography::Xml::CipherData ^ CipherData { System::Security::Cryptography::Xml::CipherData ^ get(); void set(System::Security::Cryptography::Xml::CipherData ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -146,6 +154,8 @@
       <MemberSignature Language="C#" Value="public virtual string Encoding { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Encoding" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.EncryptedType.Encoding" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Encoding As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Encoding { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -183,6 +193,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Security.Cryptography.Xml.EncryptionMethod EncryptionMethod { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.Xml.EncryptionMethod EncryptionMethod" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.EncryptedType.EncryptionMethod" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property EncryptionMethod As EncryptionMethod" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Security::Cryptography::Xml::EncryptionMethod ^ EncryptionMethod { System::Security::Cryptography::Xml::EncryptionMethod ^ get(); void set(System::Security::Cryptography::Xml::EncryptionMethod ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -220,6 +232,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Security.Cryptography.Xml.EncryptionPropertyCollection EncryptionProperties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.Xml.EncryptionPropertyCollection EncryptionProperties" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.EncryptedType.EncryptionProperties" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property EncryptionProperties As EncryptionPropertyCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Security::Cryptography::Xml::EncryptionPropertyCollection ^ EncryptionProperties { System::Security::Cryptography::Xml::EncryptionPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -257,6 +271,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Xml.XmlElement GetXml ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Xml.XmlElement GetXml() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptedType.GetXml" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetXml () As XmlElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Xml::XmlElement ^ GetXml();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -287,6 +303,8 @@
       <MemberSignature Language="C#" Value="public virtual string Id { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Id" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.EncryptedType.Id" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Id As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Id { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -324,6 +342,8 @@
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.Xml.KeyInfo KeyInfo { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.Xml.KeyInfo KeyInfo" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.EncryptedType.KeyInfo" />
+      <MemberSignature Language="VB.NET" Value="Public Property KeyInfo As KeyInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::Xml::KeyInfo ^ KeyInfo { System::Security::Cryptography::Xml::KeyInfo ^ get(); void set(System::Security::Cryptography::Xml::KeyInfo ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -361,6 +381,8 @@
       <MemberSignature Language="C#" Value="public abstract void LoadXml (System.Xml.XmlElement value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void LoadXml(class System.Xml.XmlElement value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptedType.LoadXml(System.Xml.XmlElement)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub LoadXml (value As XmlElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void LoadXml(System::Xml::XmlElement ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -402,6 +424,8 @@
       <MemberSignature Language="C#" Value="public virtual string MimeType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MimeType" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.EncryptedType.MimeType" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property MimeType As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ MimeType { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -439,6 +463,8 @@
       <MemberSignature Language="C#" Value="public virtual string Type { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Type" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.EncryptedType.Type" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Type As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Type { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>

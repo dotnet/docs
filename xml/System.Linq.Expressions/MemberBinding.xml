@@ -1,7 +1,9 @@
-<Type Name="MemberBinding" FullName="System.Linq.Expressions.MemberBinding">
+﻿<Type Name="MemberBinding" FullName="System.Linq.Expressions.MemberBinding">
   <TypeSignature Language="C#" Value="public abstract class MemberBinding" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit MemberBinding extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Linq.Expressions.MemberBinding" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class MemberBinding" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MemberBinding abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Linq.Expressions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +33,8 @@
       <MemberSignature Language="C#" Value="protected MemberBinding (System.Linq.Expressions.MemberBindingType type, System.Reflection.MemberInfo member);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(valuetype System.Linq.Expressions.MemberBindingType type, class System.Reflection.MemberInfo member) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.MemberBinding.#ctor(System.Linq.Expressions.MemberBindingType,System.Reflection.MemberInfo)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (type As MemberBindingType, member As MemberInfo)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; MemberBinding(System::Linq::Expressions::MemberBindingType type, System::Reflection::MemberInfo ^ member);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -65,6 +69,8 @@
       <MemberSignature Language="C#" Value="public System.Linq.Expressions.MemberBindingType BindingType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Linq.Expressions.MemberBindingType BindingType" />
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.MemberBinding.BindingType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BindingType As MemberBindingType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Linq::Expressions::MemberBindingType BindingType { System::Linq::Expressions::MemberBindingType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -95,6 +101,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.MemberInfo Member { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Reflection.MemberInfo Member" />
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.MemberBinding.Member" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Member As MemberInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::MemberInfo ^ Member { System::Reflection::MemberInfo ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -125,6 +133,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.MemberBinding.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="StringConverter" FullName="System.ComponentModel.StringConverter">
+﻿<Type Name="StringConverter" FullName="System.ComponentModel.StringConverter">
   <TypeSignature Language="C#" Value="public class StringConverter : System.ComponentModel.TypeConverter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StringConverter extends System.ComponentModel.TypeConverter" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.StringConverter" />
+  <TypeSignature Language="VB.NET" Value="Public Class StringConverter&#xA;Inherits TypeConverter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StringConverter : System::ComponentModel::TypeConverter" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -41,6 +43,8 @@
       <MemberSignature Language="C#" Value="public StringConverter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.StringConverter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StringConverter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -66,6 +70,8 @@
       <MemberSignature Language="C#" Value="public override bool CanConvertFrom (System.ComponentModel.ITypeDescriptorContext context, Type sourceType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanConvertFrom(class System.ComponentModel.ITypeDescriptorContext context, class System.Type sourceType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.StringConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CanConvertFrom (context As ITypeDescriptorContext, sourceType As Type) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool CanConvertFrom(System::ComponentModel::ITypeDescriptorContext ^ context, Type ^ sourceType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -109,6 +115,8 @@
       <MemberSignature Language="C#" Value="public override object ConvertFrom (System.ComponentModel.ITypeDescriptorContext context, System.Globalization.CultureInfo culture, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ConvertFrom(class System.ComponentModel.ITypeDescriptorContext context, class System.Globalization.CultureInfo culture, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.StringConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ConvertFrom (context As ITypeDescriptorContext, culture As CultureInfo, value As Object) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ ConvertFrom(System::ComponentModel::ITypeDescriptorContext ^ context, System::Globalization::CultureInfo ^ culture, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>

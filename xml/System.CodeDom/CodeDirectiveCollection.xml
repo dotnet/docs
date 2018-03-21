@@ -1,7 +1,9 @@
-<Type Name="CodeDirectiveCollection" FullName="System.CodeDom.CodeDirectiveCollection">
+﻿<Type Name="CodeDirectiveCollection" FullName="System.CodeDom.CodeDirectiveCollection">
   <TypeSignature Language="C#" Value="public class CodeDirectiveCollection : System.Collections.CollectionBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CodeDirectiveCollection extends System.Collections.CollectionBase" />
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeDirectiveCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class CodeDirectiveCollection&#xA;Inherits CollectionBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CodeDirectiveCollection : System::Collections::CollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -16,7 +18,7 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
@@ -43,10 +45,21 @@
     <altmember cref="T:System.CodeDom.CodeDirective" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeDirectiveCollection" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public CodeDirectiveCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeDirectiveCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeDirectiveCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -76,6 +89,8 @@
       <MemberSignature Language="C#" Value="public CodeDirectiveCollection (System.CodeDom.CodeDirective[] value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.CodeDom.CodeDirective[] value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeDirectiveCollection.#ctor(System.CodeDom.CodeDirective[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As CodeDirective())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeDirectiveCollection(cli::array &lt;System::CodeDom::CodeDirective ^&gt; ^ value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -100,6 +115,8 @@
       <MemberSignature Language="C#" Value="public CodeDirectiveCollection (System.CodeDom.CodeDirectiveCollection value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.CodeDom.CodeDirectiveCollection value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeDirectiveCollection.#ctor(System.CodeDom.CodeDirectiveCollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As CodeDirectiveCollection)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeDirectiveCollection(System::CodeDom::CodeDirectiveCollection ^ value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -124,6 +141,8 @@
       <MemberSignature Language="C#" Value="public int Add (System.CodeDom.CodeDirective value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Add(class System.CodeDom.CodeDirective value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeDirectiveCollection.Add(System.CodeDom.CodeDirective)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (value As CodeDirective) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::CodeDom::CodeDirective ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -157,10 +176,21 @@
         <altmember cref="T:System.CodeDom.CodeDirective" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddRange">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a set of <see cref="T:System.CodeDom.CodeDirective" /> objects to the collection.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AddRange">
       <MemberSignature Language="C#" Value="public void AddRange (System.CodeDom.CodeDirective[] value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddRange(class System.CodeDom.CodeDirective[] value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeDirectiveCollection.AddRange(System.CodeDom.CodeDirective[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddRange (value As CodeDirective())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(cli::array &lt;System::CodeDom::CodeDirective ^&gt; ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -199,6 +229,8 @@
       <MemberSignature Language="C#" Value="public void AddRange (System.CodeDom.CodeDirectiveCollection value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddRange(class System.CodeDom.CodeDirectiveCollection value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeDirectiveCollection.AddRange(System.CodeDom.CodeDirectiveCollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddRange (value As CodeDirectiveCollection)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(System::CodeDom::CodeDirectiveCollection ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -236,6 +268,8 @@
       <MemberSignature Language="C#" Value="public bool Contains (System.CodeDom.CodeDirective value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.CodeDom.CodeDirective value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeDirectiveCollection.Contains(System.CodeDom.CodeDirective)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (value As CodeDirective) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::CodeDom::CodeDirective ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -273,6 +307,8 @@
       <MemberSignature Language="C#" Value="public void CopyTo (System.CodeDom.CodeDirective[] array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.CodeDom.CodeDirective[] array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeDirectiveCollection.CopyTo(System.CodeDom.CodeDirective[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As CodeDirective(), index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::CodeDom::CodeDirective ^&gt; ^ array, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -319,6 +355,8 @@
       <MemberSignature Language="C#" Value="public int IndexOf (System.CodeDom.CodeDirective value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.CodeDom.CodeDirective value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeDirectiveCollection.IndexOf(System.CodeDom.CodeDirective)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As CodeDirective) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::CodeDom::CodeDirective ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -355,6 +393,8 @@
       <MemberSignature Language="C#" Value="public void Insert (int index, System.CodeDom.CodeDirective value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(int32 index, class System.CodeDom.CodeDirective value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeDirectiveCollection.Insert(System.Int32,System.CodeDom.CodeDirective)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, value As CodeDirective)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::CodeDom::CodeDirective ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -398,6 +438,8 @@
       <MemberSignature Language="C#" Value="public System.CodeDom.CodeDirective this[int index] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeDirective Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeDirectiveCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As CodeDirective" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeDirective ^ default[int] { System::CodeDom::CodeDirective ^ get(int index); void set(int index, System::CodeDom::CodeDirective ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -433,6 +475,8 @@
       <MemberSignature Language="C#" Value="public void Remove (System.CodeDom.CodeDirective value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.CodeDom.CodeDirective value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeDirectiveCollection.Remove(System.CodeDom.CodeDirective)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (value As CodeDirective)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::CodeDom::CodeDirective ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -465,23 +509,5 @@
         <exception cref="T:System.ArgumentException">The specified object is not found in the collection.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeDirectiveCollection" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="AddRange">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds a set of <see cref="T:System.CodeDom.CodeDirective" /> objects to the collection.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,9 @@
-<Type Name="SerializationSectionGroup" FullName="System.Xml.Serialization.Configuration.SerializationSectionGroup">
+﻿<Type Name="SerializationSectionGroup" FullName="System.Xml.Serialization.Configuration.SerializationSectionGroup">
   <TypeSignature Language="C#" Value="public sealed class SerializationSectionGroup : System.Configuration.ConfigurationSectionGroup" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SerializationSectionGroup extends System.Configuration.ConfigurationSectionGroup" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.Configuration.SerializationSectionGroup" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SerializationSectionGroup&#xA;Inherits ConfigurationSectionGroup" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SerializationSectionGroup sealed : System::Configuration::ConfigurationSectionGroup" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +29,8 @@
       <MemberSignature Language="C#" Value="public SerializationSectionGroup ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.Configuration.SerializationSectionGroup.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SerializationSectionGroup();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -43,6 +47,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.Serialization.Configuration.DateTimeSerializationSection DateTimeSerialization { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Serialization.Configuration.DateTimeSerializationSection DateTimeSerialization" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.Configuration.SerializationSectionGroup.DateTimeSerialization" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DateTimeSerialization As DateTimeSerializationSection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Serialization::Configuration::DateTimeSerializationSection ^ DateTimeSerialization { System::Xml::Serialization::Configuration::DateTimeSerializationSection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -67,6 +73,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.Serialization.Configuration.SchemaImporterExtensionsSection SchemaImporterExtensions { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Serialization.Configuration.SchemaImporterExtensionsSection SchemaImporterExtensions" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.Configuration.SerializationSectionGroup.SchemaImporterExtensions" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SchemaImporterExtensions As SchemaImporterExtensionsSection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Serialization::Configuration::SchemaImporterExtensionsSection ^ SchemaImporterExtensions { System::Xml::Serialization::Configuration::SchemaImporterExtensionsSection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -91,6 +99,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.Serialization.Configuration.XmlSerializerSection XmlSerializer { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Serialization.Configuration.XmlSerializerSection XmlSerializer" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.Configuration.SerializationSectionGroup.XmlSerializer" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XmlSerializer As XmlSerializerSection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Serialization::Configuration::XmlSerializerSection ^ XmlSerializer { System::Xml::Serialization::Configuration::XmlSerializerSection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

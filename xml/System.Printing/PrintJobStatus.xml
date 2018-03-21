@@ -1,7 +1,9 @@
-<Type Name="PrintJobStatus" FullName="System.Printing.PrintJobStatus">
+﻿<Type Name="PrintJobStatus" FullName="System.Printing.PrintJobStatus">
   <TypeSignature Language="C#" Value="public enum PrintJobStatus" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PrintJobStatus extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Printing.PrintJobStatus" />
+  <TypeSignature Language="VB.NET" Value="Public Enum PrintJobStatus" />
+  <TypeSignature Language="C++ CLI" Value="public enum class PrintJobStatus" />
   <AssemblyInfo>
     <AssemblyName>System.Printing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +43,8 @@
       <MemberSignature Language="C#" Value="Blocked" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintJobStatus Blocked = int32(512)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintJobStatus.Blocked" />
+      <MemberSignature Language="VB.NET" Value="Blocked" />
+      <MemberSignature Language="C++ CLI" Value="Blocked" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -49,6 +53,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.PrintJobStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>512</MemberValue>
       <Docs>
         <summary>An error condition, possibly on a print job that precedes this one in the queue, blocked the print job.</summary>
       </Docs>
@@ -57,6 +62,8 @@
       <MemberSignature Language="C#" Value="Completed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintJobStatus Completed = int32(4096)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintJobStatus.Completed" />
+      <MemberSignature Language="VB.NET" Value="Completed" />
+      <MemberSignature Language="C++ CLI" Value="Completed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -65,6 +72,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.PrintJobStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>4096</MemberValue>
       <Docs>
         <summary>The print job is complete, including any post-printing processing.</summary>
       </Docs>
@@ -73,6 +81,8 @@
       <MemberSignature Language="C#" Value="Deleted" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintJobStatus Deleted = int32(256)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintJobStatus.Deleted" />
+      <MemberSignature Language="VB.NET" Value="Deleted" />
+      <MemberSignature Language="C++ CLI" Value="Deleted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -81,6 +91,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.PrintJobStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>256</MemberValue>
       <Docs>
         <summary>The print job was deleted from the queue, typically after printing.</summary>
       </Docs>
@@ -89,6 +100,8 @@
       <MemberSignature Language="C#" Value="Deleting" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintJobStatus Deleting = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintJobStatus.Deleting" />
+      <MemberSignature Language="VB.NET" Value="Deleting" />
+      <MemberSignature Language="C++ CLI" Value="Deleting" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -97,6 +110,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.PrintJobStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The print job is in the process of being deleted.</summary>
       </Docs>
@@ -105,6 +119,8 @@
       <MemberSignature Language="C#" Value="Error" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintJobStatus Error = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintJobStatus.Error" />
+      <MemberSignature Language="VB.NET" Value="Error" />
+      <MemberSignature Language="C++ CLI" Value="Error" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -113,6 +129,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.PrintJobStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The print job is in an error state.</summary>
       </Docs>
@@ -121,6 +138,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintJobStatus None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintJobStatus.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -129,6 +148,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.PrintJobStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The print job has no specified state.</summary>
       </Docs>
@@ -137,6 +157,8 @@
       <MemberSignature Language="C#" Value="Offline" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintJobStatus Offline = int32(32)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintJobStatus.Offline" />
+      <MemberSignature Language="VB.NET" Value="Offline" />
+      <MemberSignature Language="C++ CLI" Value="Offline" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -145,6 +167,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.PrintJobStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>32</MemberValue>
       <Docs>
         <summary>The printer is offline.</summary>
       </Docs>
@@ -153,6 +176,8 @@
       <MemberSignature Language="C#" Value="PaperOut" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintJobStatus PaperOut = int32(64)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintJobStatus.PaperOut" />
+      <MemberSignature Language="VB.NET" Value="PaperOut" />
+      <MemberSignature Language="C++ CLI" Value="PaperOut" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -161,6 +186,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.PrintJobStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>64</MemberValue>
       <Docs>
         <summary>The printer is out of the required paper size.</summary>
       </Docs>
@@ -169,6 +195,8 @@
       <MemberSignature Language="C#" Value="Paused" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintJobStatus Paused = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintJobStatus.Paused" />
+      <MemberSignature Language="VB.NET" Value="Paused" />
+      <MemberSignature Language="C++ CLI" Value="Paused" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -177,6 +205,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.PrintJobStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The print job is paused.</summary>
       </Docs>
@@ -185,6 +214,8 @@
       <MemberSignature Language="C#" Value="Printed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintJobStatus Printed = int32(128)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintJobStatus.Printed" />
+      <MemberSignature Language="VB.NET" Value="Printed" />
+      <MemberSignature Language="C++ CLI" Value="Printed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -193,6 +224,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.PrintJobStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>128</MemberValue>
       <Docs>
         <summary>The print job printed.</summary>
       </Docs>
@@ -201,6 +233,8 @@
       <MemberSignature Language="C#" Value="Printing" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintJobStatus Printing = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintJobStatus.Printing" />
+      <MemberSignature Language="VB.NET" Value="Printing" />
+      <MemberSignature Language="C++ CLI" Value="Printing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -209,6 +243,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.PrintJobStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>The print job is now printing.</summary>
       </Docs>
@@ -217,6 +252,8 @@
       <MemberSignature Language="C#" Value="Restarted" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintJobStatus Restarted = int32(2048)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintJobStatus.Restarted" />
+      <MemberSignature Language="VB.NET" Value="Restarted" />
+      <MemberSignature Language="C++ CLI" Value="Restarted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -225,6 +262,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.PrintJobStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>2048</MemberValue>
       <Docs>
         <summary>The print job was blocked but has restarted.</summary>
       </Docs>
@@ -233,6 +271,8 @@
       <MemberSignature Language="C#" Value="Retained" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintJobStatus Retained = int32(8192)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintJobStatus.Retained" />
+      <MemberSignature Language="VB.NET" Value="Retained" />
+      <MemberSignature Language="C++ CLI" Value="Retained" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -241,6 +281,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.PrintJobStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>8192</MemberValue>
       <Docs>
         <summary>The print job is retained in the print queue after printing.</summary>
       </Docs>
@@ -249,6 +290,8 @@
       <MemberSignature Language="C#" Value="Spooling" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintJobStatus Spooling = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintJobStatus.Spooling" />
+      <MemberSignature Language="VB.NET" Value="Spooling" />
+      <MemberSignature Language="C++ CLI" Value="Spooling" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -257,6 +300,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.PrintJobStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>The print job is spooling.</summary>
       </Docs>
@@ -265,6 +309,8 @@
       <MemberSignature Language="C#" Value="UserIntervention" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintJobStatus UserIntervention = int32(1024)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintJobStatus.UserIntervention" />
+      <MemberSignature Language="VB.NET" Value="UserIntervention" />
+      <MemberSignature Language="C++ CLI" Value="UserIntervention" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -273,6 +319,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.PrintJobStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>1024</MemberValue>
       <Docs>
         <summary>The printer requires user action to fix an error condition.</summary>
       </Docs>

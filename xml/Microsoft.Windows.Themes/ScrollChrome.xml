@@ -1,7 +1,9 @@
-<Type Name="ScrollChrome" FullName="Microsoft.Windows.Themes.ScrollChrome">
+﻿<Type Name="ScrollChrome" FullName="Microsoft.Windows.Themes.ScrollChrome">
   <TypeSignature Language="C#" Value="public sealed class ScrollChrome : System.Windows.FrameworkElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ScrollChrome extends System.Windows.FrameworkElement" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Windows.Themes.ScrollChrome" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ScrollChrome&#xA;Inherits FrameworkElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ScrollChrome sealed : System::Windows::FrameworkElement" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework.Aero</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,6 +55,8 @@
       <MemberSignature Language="C#" Value="public ScrollChrome ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Windows.Themes.ScrollChrome.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ScrollChrome();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Aero</AssemblyName>
@@ -84,6 +88,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Size ArrangeOverride (System.Windows.Size finalSize);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Size ArrangeOverride(valuetype System.Windows.Size finalSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Windows.Themes.ScrollChrome.ArrangeOverride(System.Windows.Size)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function ArrangeOverride (finalSize As Size) As Size" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size ArrangeOverride(System::Windows::Size finalSize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Aero</AssemblyName>
@@ -122,6 +128,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Windows.Themes.ScrollGlyph GetScrollGlyph (System.Windows.DependencyObject element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Microsoft.Windows.Themes.ScrollGlyph GetScrollGlyph(class System.Windows.DependencyObject element) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Windows.Themes.ScrollChrome.GetScrollGlyph(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetScrollGlyph (element As DependencyObject) As ScrollGlyph" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Microsoft::Windows::Themes::ScrollGlyph GetScrollGlyph(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Aero</AssemblyName>
@@ -160,6 +168,8 @@
       <MemberSignature Language="C#" Value="public bool HasOuterBorder { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasOuterBorder" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Windows.Themes.ScrollChrome.HasOuterBorder" />
+      <MemberSignature Language="VB.NET" Value="Public Property HasOuterBorder As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasOuterBorder { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Luna</AssemblyName>
@@ -198,6 +208,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty HasOuterBorderProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty HasOuterBorderProperty" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ScrollChrome.HasOuterBorderProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HasOuterBorderProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ HasOuterBorderProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Luna</AssemblyName>
@@ -219,6 +231,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Size MeasureOverride (System.Windows.Size availableSize);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Size MeasureOverride(valuetype System.Windows.Size availableSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Windows.Themes.ScrollChrome.MeasureOverride(System.Windows.Size)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function MeasureOverride (availableSize As Size) As Size" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size MeasureOverride(System::Windows::Size availableSize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Aero</AssemblyName>
@@ -257,6 +271,7 @@
       <MemberSignature Language="C#" Value="protected override void OnRender (System.Windows.Media.DrawingContext drawingContext);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnRender(class System.Windows.Media.DrawingContext drawingContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Windows.Themes.ScrollChrome.OnRender(System.Windows.Media.DrawingContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnRender(System::Windows::Media::DrawingContext ^ drawingContext);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Aero</AssemblyName>
@@ -294,6 +309,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Thickness Padding { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Thickness Padding" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Windows.Themes.ScrollChrome.Padding" />
+      <MemberSignature Language="VB.NET" Value="Public Property Padding As Thickness" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Thickness Padding { System::Windows::Thickness get(); void set(System::Windows::Thickness value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Luna</AssemblyName>
@@ -331,6 +348,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty PaddingProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty PaddingProperty" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ScrollChrome.PaddingProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PaddingProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ PaddingProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Luna</AssemblyName>
@@ -352,6 +371,8 @@
       <MemberSignature Language="C#" Value="public bool RenderMouseOver { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool RenderMouseOver" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Windows.Themes.ScrollChrome.RenderMouseOver" />
+      <MemberSignature Language="VB.NET" Value="Public Property RenderMouseOver As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RenderMouseOver { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Aero</AssemblyName>
@@ -401,6 +422,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty RenderMouseOverProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty RenderMouseOverProperty" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ScrollChrome.RenderMouseOverProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly RenderMouseOverProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ RenderMouseOverProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Aero</AssemblyName>
@@ -434,6 +457,8 @@
       <MemberSignature Language="C#" Value="public bool RenderPressed { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool RenderPressed" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Windows.Themes.ScrollChrome.RenderPressed" />
+      <MemberSignature Language="VB.NET" Value="Public Property RenderPressed As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RenderPressed { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Aero</AssemblyName>
@@ -483,6 +508,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty RenderPressedProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty RenderPressedProperty" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ScrollChrome.RenderPressedProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly RenderPressedProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ RenderPressedProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Aero</AssemblyName>
@@ -512,10 +539,43 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="ScrollGlyph">
+      <MemberSignature Language="C#" Value="see GetScrollGlyph, and SetScrollGlyph" />
+      <MemberSignature Language="ILAsm" Value="see GetScrollGlyph, and SetScrollGlyph" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Windows.Themes.ScrollChrome.ScrollGlyph" />
+      <MemberSignature Language="VB.NET" Value="see GetScrollGlyph, and SetScrollGlyph" />
+      <MemberType>AttachedProperty</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework.Aero</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework.Aero2</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework.AeroLite</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework.Luna</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework.Royale</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="ScrollGlyphProperty">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ScrollGlyphProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ScrollGlyphProperty" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ScrollChrome.ScrollGlyphProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ScrollGlyphProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ScrollGlyphProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Aero</AssemblyName>
@@ -549,6 +609,8 @@
       <MemberSignature Language="C#" Value="public static void SetScrollGlyph (System.Windows.DependencyObject element, Microsoft.Windows.Themes.ScrollGlyph value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetScrollGlyph(class System.Windows.DependencyObject element, valuetype Microsoft.Windows.Themes.ScrollGlyph value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Windows.Themes.ScrollChrome.SetScrollGlyph(System.Windows.DependencyObject,Microsoft.Windows.Themes.ScrollGlyph)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetScrollGlyph (element As DependencyObject, value As ScrollGlyph)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetScrollGlyph(System::Windows::DependencyObject ^ element, Microsoft::Windows::Themes::ScrollGlyph value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Aero</AssemblyName>
@@ -588,6 +650,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Windows.Themes.ThemeColor ThemeColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Windows.Themes.ThemeColor ThemeColor" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Windows.Themes.ScrollChrome.ThemeColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property ThemeColor As ThemeColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Windows::Themes::ThemeColor ThemeColor { Microsoft::Windows::Themes::ThemeColor get(); void set(Microsoft::Windows::Themes::ThemeColor value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Luna</AssemblyName>
@@ -620,6 +684,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ThemeColorProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ThemeColorProperty" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ScrollChrome.ThemeColorProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ThemeColorProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ThemeColorProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Luna</AssemblyName>

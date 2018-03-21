@@ -1,7 +1,9 @@
-<Type Name="WebHttpSecurityMode" FullName="System.ServiceModel.WebHttpSecurityMode">
+﻿<Type Name="WebHttpSecurityMode" FullName="System.ServiceModel.WebHttpSecurityMode">
   <TypeSignature Language="C#" Value="public enum WebHttpSecurityMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WebHttpSecurityMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.WebHttpSecurityMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum WebHttpSecurityMode" />
+  <TypeSignature Language="C++ CLI" Value="public enum class WebHttpSecurityMode" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Web</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -30,6 +32,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.WebHttpSecurityMode None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.WebHttpSecurityMode.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -39,6 +43,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.WebHttpSecurityMode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Indicates no security is used with HTTP requests.</summary>
       </Docs>
@@ -47,6 +52,8 @@
       <MemberSignature Language="C#" Value="Transport" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.WebHttpSecurityMode Transport = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.WebHttpSecurityMode.Transport" />
+      <MemberSignature Language="VB.NET" Value="Transport" />
+      <MemberSignature Language="C++ CLI" Value="Transport" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -56,6 +63,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.WebHttpSecurityMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Indicates that transport-level security is used with HTTP requests.</summary>
       </Docs>
@@ -64,6 +72,8 @@
       <MemberSignature Language="C#" Value="TransportCredentialOnly" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.WebHttpSecurityMode TransportCredentialOnly = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.WebHttpSecurityMode.TransportCredentialOnly" />
+      <MemberSignature Language="VB.NET" Value="TransportCredentialOnly" />
+      <MemberSignature Language="C++ CLI" Value="TransportCredentialOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -73,6 +83,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.WebHttpSecurityMode</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Indicates that only HTTP-based client authentication is provided.</summary>
       </Docs>

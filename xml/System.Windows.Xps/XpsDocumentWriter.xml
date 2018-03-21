@@ -1,7 +1,9 @@
-<Type Name="XpsDocumentWriter" FullName="System.Windows.Xps.XpsDocumentWriter">
+﻿<Type Name="XpsDocumentWriter" FullName="System.Windows.Xps.XpsDocumentWriter">
   <TypeSignature Language="C#" Value="public class XpsDocumentWriter : System.Windows.Documents.Serialization.SerializerWriter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XpsDocumentWriter extends System.Windows.Documents.Serialization.SerializerWriter" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Xps.XpsDocumentWriter" />
+  <TypeSignature Language="VB.NET" Value="Public Class XpsDocumentWriter&#xA;Inherits SerializerWriter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XpsDocumentWriter : System::Windows::Documents::Serialization::SerializerWriter" />
   <AssemblyInfo>
     <AssemblyName>System.Printing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +36,8 @@
       <MemberSignature Language="C#" Value="public override void CancelAsync ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void CancelAsync() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.XpsDocumentWriter.CancelAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub CancelAsync ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void CancelAsync();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -83,6 +87,8 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Documents.Serialization.SerializerWriterCollator CreateVisualsCollator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Windows.Documents.Serialization.SerializerWriterCollator CreateVisualsCollator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.XpsDocumentWriter.CreateVisualsCollator" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateVisualsCollator () As SerializerWriterCollator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Windows::Documents::Serialization::SerializerWriterCollator ^ CreateVisualsCollator();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -122,6 +128,8 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Documents.Serialization.SerializerWriterCollator CreateVisualsCollator (System.Printing.PrintTicket documentSequencePrintTicket, System.Printing.PrintTicket documentPrintTicket);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Windows.Documents.Serialization.SerializerWriterCollator CreateVisualsCollator(class System.Printing.PrintTicket documentSequencePrintTicket, class System.Printing.PrintTicket documentPrintTicket) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.XpsDocumentWriter.CreateVisualsCollator(System.Printing.PrintTicket,System.Printing.PrintTicket)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateVisualsCollator (documentSequencePrintTicket As PrintTicket, documentPrintTicket As PrintTicket) As SerializerWriterCollator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Windows::Documents::Serialization::SerializerWriterCollator ^ CreateVisualsCollator(System::Printing::PrintTicket ^ documentSequencePrintTicket, System::Printing::PrintTicket ^ documentPrintTicket);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -156,10 +164,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Write">
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes synchronously to an XPS document or print queue.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Write">
       <MemberSignature Language="C#" Value="public void Write (string documentPath);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Write(string documentPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.XpsDocumentWriter.Write(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Write (documentPath As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Write(System::String ^ documentPath);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -197,6 +216,7 @@
       <MemberSignature Language="C#" Value="public override void Write (System.Windows.Documents.DocumentPaginator documentPaginator);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(class System.Windows.Documents.DocumentPaginator documentPaginator) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.XpsDocumentWriter.Write(System.Windows.Documents.DocumentPaginator)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::Windows::Documents::DocumentPaginator ^ documentPaginator);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -233,6 +253,7 @@
       <MemberSignature Language="C#" Value="public override void Write (System.Windows.Documents.FixedDocument fixedDocument);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(class System.Windows.Documents.FixedDocument fixedDocument) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.XpsDocumentWriter.Write(System.Windows.Documents.FixedDocument)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::Windows::Documents::FixedDocument ^ fixedDocument);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -274,6 +295,7 @@
       <MemberSignature Language="C#" Value="public override void Write (System.Windows.Documents.FixedDocumentSequence fixedDocumentSequence);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(class System.Windows.Documents.FixedDocumentSequence fixedDocumentSequence) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.XpsDocumentWriter.Write(System.Windows.Documents.FixedDocumentSequence)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::Windows::Documents::FixedDocumentSequence ^ fixedDocumentSequence);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -315,6 +337,7 @@
       <MemberSignature Language="C#" Value="public override void Write (System.Windows.Documents.FixedPage fixedPage);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(class System.Windows.Documents.FixedPage fixedPage) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.XpsDocumentWriter.Write(System.Windows.Documents.FixedPage)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::Windows::Documents::FixedPage ^ fixedPage);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -341,6 +364,7 @@
       <MemberSignature Language="C#" Value="public override void Write (System.Windows.Media.Visual visual);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(class System.Windows.Media.Visual visual) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.XpsDocumentWriter.Write(System.Windows.Media.Visual)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::Windows::Media::Visual ^ visual);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -382,6 +406,8 @@
       <MemberSignature Language="C#" Value="public void Write (string documentPath, System.Windows.Xps.XpsDocumentNotificationLevel notificationLevel);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Write(string documentPath, valuetype System.Windows.Xps.XpsDocumentNotificationLevel notificationLevel) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.XpsDocumentWriter.Write(System.String,System.Windows.Xps.XpsDocumentNotificationLevel)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Write (documentPath As String, notificationLevel As XpsDocumentNotificationLevel)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Write(System::String ^ documentPath, System::Windows::Xps::XpsDocumentNotificationLevel notificationLevel);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -425,6 +451,7 @@
       <MemberSignature Language="C#" Value="public override void Write (System.Windows.Documents.DocumentPaginator documentPaginator, System.Printing.PrintTicket printTicket);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(class System.Windows.Documents.DocumentPaginator documentPaginator, class System.Printing.PrintTicket printTicket) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.XpsDocumentWriter.Write(System.Windows.Documents.DocumentPaginator,System.Printing.PrintTicket)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::Windows::Documents::DocumentPaginator ^ documentPaginator, System::Printing::PrintTicket ^ printTicket);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -460,6 +487,7 @@
       <MemberSignature Language="C#" Value="public override void Write (System.Windows.Documents.FixedDocument fixedDocument, System.Printing.PrintTicket printTicket);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(class System.Windows.Documents.FixedDocument fixedDocument, class System.Printing.PrintTicket printTicket) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.XpsDocumentWriter.Write(System.Windows.Documents.FixedDocument,System.Printing.PrintTicket)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::Windows::Documents::FixedDocument ^ fixedDocument, System::Printing::PrintTicket ^ printTicket);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -497,6 +525,7 @@
       <MemberSignature Language="C#" Value="public override void Write (System.Windows.Documents.FixedDocumentSequence fixedDocumentSequence, System.Printing.PrintTicket printTicket);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(class System.Windows.Documents.FixedDocumentSequence fixedDocumentSequence, class System.Printing.PrintTicket printTicket) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.XpsDocumentWriter.Write(System.Windows.Documents.FixedDocumentSequence,System.Printing.PrintTicket)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::Windows::Documents::FixedDocumentSequence ^ fixedDocumentSequence, System::Printing::PrintTicket ^ printTicket);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -534,6 +563,7 @@
       <MemberSignature Language="C#" Value="public override void Write (System.Windows.Documents.FixedPage fixedPage, System.Printing.PrintTicket printTicket);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(class System.Windows.Documents.FixedPage fixedPage, class System.Printing.PrintTicket printTicket) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.XpsDocumentWriter.Write(System.Windows.Documents.FixedPage,System.Printing.PrintTicket)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::Windows::Documents::FixedPage ^ fixedPage, System::Printing::PrintTicket ^ printTicket);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -569,6 +599,7 @@
       <MemberSignature Language="C#" Value="public override void Write (System.Windows.Media.Visual visual, System.Printing.PrintTicket printTicket);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(class System.Windows.Media.Visual visual, class System.Printing.PrintTicket printTicket) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.XpsDocumentWriter.Write(System.Windows.Media.Visual,System.Printing.PrintTicket)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::Windows::Media::Visual ^ visual, System::Printing::PrintTicket ^ printTicket);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -602,10 +633,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes asynchronously to the <see cref="T:System.Windows.Xps.Packaging.XpsDocument" /> or <see cref="T:System.Printing.PrintQueue" /> that created the <see cref="T:System.Windows.Xps.XpsDocumentWriter" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="WriteAsync">
       <MemberSignature Language="C#" Value="public void WriteAsync (string documentPath);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteAsync(string documentPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.XpsDocumentWriter.WriteAsync(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteAsync (documentPath As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteAsync(System::String ^ documentPath);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -643,6 +685,7 @@
       <MemberSignature Language="C#" Value="public override void WriteAsync (System.Windows.Documents.DocumentPaginator documentPaginator);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteAsync(class System.Windows.Documents.DocumentPaginator documentPaginator) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.XpsDocumentWriter.WriteAsync(System.Windows.Documents.DocumentPaginator)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteAsync(System::Windows::Documents::DocumentPaginator ^ documentPaginator);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -679,6 +722,7 @@
       <MemberSignature Language="C#" Value="public override void WriteAsync (System.Windows.Documents.FixedDocument fixedDocument);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteAsync(class System.Windows.Documents.FixedDocument fixedDocument) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.XpsDocumentWriter.WriteAsync(System.Windows.Documents.FixedDocument)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteAsync(System::Windows::Documents::FixedDocument ^ fixedDocument);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -720,6 +764,7 @@
       <MemberSignature Language="C#" Value="public override void WriteAsync (System.Windows.Documents.FixedDocumentSequence fixedDocumentSequence);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteAsync(class System.Windows.Documents.FixedDocumentSequence fixedDocumentSequence) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.XpsDocumentWriter.WriteAsync(System.Windows.Documents.FixedDocumentSequence)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteAsync(System::Windows::Documents::FixedDocumentSequence ^ fixedDocumentSequence);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -761,6 +806,7 @@
       <MemberSignature Language="C#" Value="public override void WriteAsync (System.Windows.Documents.FixedPage fixedPage);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteAsync(class System.Windows.Documents.FixedPage fixedPage) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.XpsDocumentWriter.WriteAsync(System.Windows.Documents.FixedPage)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteAsync(System::Windows::Documents::FixedPage ^ fixedPage);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -787,6 +833,7 @@
       <MemberSignature Language="C#" Value="public override void WriteAsync (System.Windows.Media.Visual visual);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteAsync(class System.Windows.Media.Visual visual) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.XpsDocumentWriter.WriteAsync(System.Windows.Media.Visual)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteAsync(System::Windows::Media::Visual ^ visual);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -828,6 +875,8 @@
       <MemberSignature Language="C#" Value="public void WriteAsync (string documentPath, System.Windows.Xps.XpsDocumentNotificationLevel notificationLevel);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteAsync(string documentPath, valuetype System.Windows.Xps.XpsDocumentNotificationLevel notificationLevel) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.XpsDocumentWriter.WriteAsync(System.String,System.Windows.Xps.XpsDocumentNotificationLevel)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteAsync (documentPath As String, notificationLevel As XpsDocumentNotificationLevel)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteAsync(System::String ^ documentPath, System::Windows::Xps::XpsDocumentNotificationLevel notificationLevel);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -871,6 +920,7 @@
       <MemberSignature Language="C#" Value="public override void WriteAsync (System.Windows.Documents.DocumentPaginator documentPaginator, object userSuppliedState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteAsync(class System.Windows.Documents.DocumentPaginator documentPaginator, object userSuppliedState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.XpsDocumentWriter.WriteAsync(System.Windows.Documents.DocumentPaginator,System.Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteAsync(System::Windows::Documents::DocumentPaginator ^ documentPaginator, System::Object ^ userSuppliedState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -899,6 +949,7 @@
       <MemberSignature Language="C#" Value="public override void WriteAsync (System.Windows.Documents.DocumentPaginator documentPaginator, System.Printing.PrintTicket printTicket);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteAsync(class System.Windows.Documents.DocumentPaginator documentPaginator, class System.Printing.PrintTicket printTicket) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.XpsDocumentWriter.WriteAsync(System.Windows.Documents.DocumentPaginator,System.Printing.PrintTicket)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteAsync(System::Windows::Documents::DocumentPaginator ^ documentPaginator, System::Printing::PrintTicket ^ printTicket);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -934,6 +985,7 @@
       <MemberSignature Language="C#" Value="public override void WriteAsync (System.Windows.Documents.FixedDocument fixedDocument, object userSuppliedState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteAsync(class System.Windows.Documents.FixedDocument fixedDocument, object userSuppliedState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.XpsDocumentWriter.WriteAsync(System.Windows.Documents.FixedDocument,System.Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteAsync(System::Windows::Documents::FixedDocument ^ fixedDocument, System::Object ^ userSuppliedState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -969,6 +1021,7 @@
       <MemberSignature Language="C#" Value="public override void WriteAsync (System.Windows.Documents.FixedDocument fixedDocument, System.Printing.PrintTicket printTicket);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteAsync(class System.Windows.Documents.FixedDocument fixedDocument, class System.Printing.PrintTicket printTicket) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.XpsDocumentWriter.WriteAsync(System.Windows.Documents.FixedDocument,System.Printing.PrintTicket)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteAsync(System::Windows::Documents::FixedDocument ^ fixedDocument, System::Printing::PrintTicket ^ printTicket);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -1006,6 +1059,7 @@
       <MemberSignature Language="C#" Value="public override void WriteAsync (System.Windows.Documents.FixedDocumentSequence fixedDocumentSequence, object userSuppliedState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteAsync(class System.Windows.Documents.FixedDocumentSequence fixedDocumentSequence, object userSuppliedState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.XpsDocumentWriter.WriteAsync(System.Windows.Documents.FixedDocumentSequence,System.Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteAsync(System::Windows::Documents::FixedDocumentSequence ^ fixedDocumentSequence, System::Object ^ userSuppliedState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -1041,6 +1095,7 @@
       <MemberSignature Language="C#" Value="public override void WriteAsync (System.Windows.Documents.FixedDocumentSequence fixedDocumentSequence, System.Printing.PrintTicket printTicket);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteAsync(class System.Windows.Documents.FixedDocumentSequence fixedDocumentSequence, class System.Printing.PrintTicket printTicket) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.XpsDocumentWriter.WriteAsync(System.Windows.Documents.FixedDocumentSequence,System.Printing.PrintTicket)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteAsync(System::Windows::Documents::FixedDocumentSequence ^ fixedDocumentSequence, System::Printing::PrintTicket ^ printTicket);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -1078,6 +1133,7 @@
       <MemberSignature Language="C#" Value="public override void WriteAsync (System.Windows.Documents.FixedPage fixedPage, object userSuppliedState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteAsync(class System.Windows.Documents.FixedPage fixedPage, object userSuppliedState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.XpsDocumentWriter.WriteAsync(System.Windows.Documents.FixedPage,System.Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteAsync(System::Windows::Documents::FixedPage ^ fixedPage, System::Object ^ userSuppliedState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -1106,6 +1162,7 @@
       <MemberSignature Language="C#" Value="public override void WriteAsync (System.Windows.Documents.FixedPage fixedPage, System.Printing.PrintTicket printTicket);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteAsync(class System.Windows.Documents.FixedPage fixedPage, class System.Printing.PrintTicket printTicket) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.XpsDocumentWriter.WriteAsync(System.Windows.Documents.FixedPage,System.Printing.PrintTicket)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteAsync(System::Windows::Documents::FixedPage ^ fixedPage, System::Printing::PrintTicket ^ printTicket);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -1141,6 +1198,7 @@
       <MemberSignature Language="C#" Value="public override void WriteAsync (System.Windows.Media.Visual visual, object userSuppliedState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteAsync(class System.Windows.Media.Visual visual, object userSuppliedState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.XpsDocumentWriter.WriteAsync(System.Windows.Media.Visual,System.Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteAsync(System::Windows::Media::Visual ^ visual, System::Object ^ userSuppliedState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -1176,6 +1234,7 @@
       <MemberSignature Language="C#" Value="public override void WriteAsync (System.Windows.Media.Visual visual, System.Printing.PrintTicket printTicket);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteAsync(class System.Windows.Media.Visual visual, class System.Printing.PrintTicket printTicket) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.XpsDocumentWriter.WriteAsync(System.Windows.Media.Visual,System.Printing.PrintTicket)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteAsync(System::Windows::Media::Visual ^ visual, System::Printing::PrintTicket ^ printTicket);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -1213,6 +1272,7 @@
       <MemberSignature Language="C#" Value="public override void WriteAsync (System.Windows.Documents.DocumentPaginator documentPaginator, System.Printing.PrintTicket printTicket, object userSuppliedState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteAsync(class System.Windows.Documents.DocumentPaginator documentPaginator, class System.Printing.PrintTicket printTicket, object userSuppliedState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.XpsDocumentWriter.WriteAsync(System.Windows.Documents.DocumentPaginator,System.Printing.PrintTicket,System.Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteAsync(System::Windows::Documents::DocumentPaginator ^ documentPaginator, System::Printing::PrintTicket ^ printTicket, System::Object ^ userSuppliedState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -1250,6 +1310,7 @@
       <MemberSignature Language="C#" Value="public override void WriteAsync (System.Windows.Documents.FixedDocument fixedDocument, System.Printing.PrintTicket printTicket, object userSuppliedState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteAsync(class System.Windows.Documents.FixedDocument fixedDocument, class System.Printing.PrintTicket printTicket, object userSuppliedState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.XpsDocumentWriter.WriteAsync(System.Windows.Documents.FixedDocument,System.Printing.PrintTicket,System.Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteAsync(System::Windows::Documents::FixedDocument ^ fixedDocument, System::Printing::PrintTicket ^ printTicket, System::Object ^ userSuppliedState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -1289,6 +1350,7 @@
       <MemberSignature Language="C#" Value="public override void WriteAsync (System.Windows.Documents.FixedDocumentSequence fixedDocumentSequence, System.Printing.PrintTicket printTicket, object userSuppliedState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteAsync(class System.Windows.Documents.FixedDocumentSequence fixedDocumentSequence, class System.Printing.PrintTicket printTicket, object userSuppliedState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.XpsDocumentWriter.WriteAsync(System.Windows.Documents.FixedDocumentSequence,System.Printing.PrintTicket,System.Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteAsync(System::Windows::Documents::FixedDocumentSequence ^ fixedDocumentSequence, System::Printing::PrintTicket ^ printTicket, System::Object ^ userSuppliedState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -1330,6 +1392,7 @@
       <MemberSignature Language="C#" Value="public override void WriteAsync (System.Windows.Documents.FixedPage fixedPage, System.Printing.PrintTicket printTicket, object userSuppliedState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteAsync(class System.Windows.Documents.FixedPage fixedPage, class System.Printing.PrintTicket printTicket, object userSuppliedState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.XpsDocumentWriter.WriteAsync(System.Windows.Documents.FixedPage,System.Printing.PrintTicket,System.Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteAsync(System::Windows::Documents::FixedPage ^ fixedPage, System::Printing::PrintTicket ^ printTicket, System::Object ^ userSuppliedState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -1367,6 +1430,7 @@
       <MemberSignature Language="C#" Value="public override void WriteAsync (System.Windows.Media.Visual visual, System.Printing.PrintTicket printTicket, object userSuppliedState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteAsync(class System.Windows.Media.Visual visual, class System.Printing.PrintTicket printTicket, object userSuppliedState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.XpsDocumentWriter.WriteAsync(System.Windows.Media.Visual,System.Printing.PrintTicket,System.Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteAsync(System::Windows::Media::Visual ^ visual, System::Printing::PrintTicket ^ printTicket, System::Object ^ userSuppliedState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -1406,6 +1470,8 @@
       <MemberSignature Language="C#" Value="public override event System.Windows.Documents.Serialization.WritingCancelledEventHandler WritingCancelled;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Documents.Serialization.WritingCancelledEventHandler WritingCancelled" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Xps.XpsDocumentWriter.WritingCancelled" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Custom Event WritingCancelled As WritingCancelledEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override event System::Windows::Documents::Serialization::WritingCancelledEventHandler ^ WritingCancelled;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -1423,6 +1489,8 @@
       <MemberSignature Language="C#" Value="public override event System.Windows.Documents.Serialization.WritingCompletedEventHandler WritingCompleted;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Documents.Serialization.WritingCompletedEventHandler WritingCompleted" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Xps.XpsDocumentWriter.WritingCompleted" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Custom Event WritingCompleted As WritingCompletedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override event System::Windows::Documents::Serialization::WritingCompletedEventHandler ^ WritingCompleted;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -1451,6 +1519,8 @@
       <MemberSignature Language="C#" Value="public override event System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventHandler WritingPrintTicketRequired;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventHandler WritingPrintTicketRequired" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Xps.XpsDocumentWriter.WritingPrintTicketRequired" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Custom Event WritingPrintTicketRequired As WritingPrintTicketRequiredEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override event System::Windows::Documents::Serialization::WritingPrintTicketRequiredEventHandler ^ WritingPrintTicketRequired;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -1499,6 +1569,8 @@
       <MemberSignature Language="C#" Value="public override event System.Windows.Documents.Serialization.WritingProgressChangedEventHandler WritingProgressChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Documents.Serialization.WritingProgressChangedEventHandler WritingProgressChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Xps.XpsDocumentWriter.WritingProgressChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Custom Event WritingProgressChanged As WritingProgressChangedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override event System::Windows::Documents::Serialization::WritingProgressChangedEventHandler ^ WritingProgressChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -1523,23 +1595,5 @@
         <altmember cref="M:System.Windows.Xps.XpsDocumentWriter.raise_WritingProgressChanged(System.Object,System.Windows.Documents.Serialization.WritingProgressChangedEventArgs)" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="WriteAsync">
-      <AssemblyInfo>
-        <AssemblyName>System.Printing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes asynchronously to the <see cref="T:System.Windows.Xps.Packaging.XpsDocument" /> or <see cref="T:System.Printing.PrintQueue" /> that created the <see cref="T:System.Windows.Xps.XpsDocumentWriter" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Write">
-      <AssemblyInfo>
-        <AssemblyName>System.Printing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes synchronously to an XPS document or print queue.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

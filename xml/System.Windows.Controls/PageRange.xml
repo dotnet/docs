@@ -1,7 +1,9 @@
-<Type Name="PageRange" FullName="System.Windows.Controls.PageRange">
+﻿<Type Name="PageRange" FullName="System.Windows.Controls.PageRange">
   <TypeSignature Language="C#" Value="public struct PageRange" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit PageRange extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.PageRange" />
+  <TypeSignature Language="VB.NET" Value="Public Structure PageRange" />
+  <TypeSignature Language="C++ CLI" Value="public value class PageRange" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,10 +24,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.PageRange" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public PageRange (int page);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 page) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.PageRange.#ctor(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (page As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PageRange(int page);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -53,6 +66,8 @@
       <MemberSignature Language="C#" Value="public PageRange (int pageFrom, int pageTo);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 pageFrom, int32 pageTo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.PageRange.#ctor(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (pageFrom As Integer, pageTo As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PageRange(int pageFrom, int pageTo);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -80,10 +95,21 @@
         <altmember cref="P:System.Windows.Controls.PageRange.PageTo" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Tests for equality with a <see cref="T:System.Windows.Controls.PageRange" /> object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Equals">
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.PageRange.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -107,6 +133,7 @@
       <MemberSignature Language="C#" Value="public bool Equals (System.Windows.Controls.PageRange pageRange);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Equals(valuetype System.Windows.Controls.PageRange pageRange) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.PageRange.Equals(System.Windows.Controls.PageRange)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(System::Windows::Controls::PageRange pageRange);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -131,6 +158,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.PageRange.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -150,6 +179,8 @@
       <MemberSignature Language="C#" Value="public static bool operator == (System.Windows.Controls.PageRange pr1, System.Windows.Controls.PageRange pr2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Windows.Controls.PageRange pr1, valuetype System.Windows.Controls.PageRange pr2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.PageRange.op_Equality(System.Windows.Controls.PageRange,System.Windows.Controls.PageRange)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (pr1 As PageRange, pr2 As PageRange) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Windows::Controls::PageRange pr1, System::Windows::Controls::PageRange pr2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -179,6 +210,8 @@
       <MemberSignature Language="C#" Value="public static bool operator != (System.Windows.Controls.PageRange pr1, System.Windows.Controls.PageRange pr2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Windows.Controls.PageRange pr1, valuetype System.Windows.Controls.PageRange pr2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.PageRange.op_Inequality(System.Windows.Controls.PageRange,System.Windows.Controls.PageRange)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (pr1 As PageRange, pr2 As PageRange) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Windows::Controls::PageRange pr1, System::Windows::Controls::PageRange pr2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -208,6 +241,8 @@
       <MemberSignature Language="C#" Value="public int PageFrom { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 PageFrom" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.PageRange.PageFrom" />
+      <MemberSignature Language="VB.NET" Value="Public Property PageFrom As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PageFrom { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -234,6 +269,8 @@
       <MemberSignature Language="C#" Value="public int PageTo { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 PageTo" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.PageRange.PageTo" />
+      <MemberSignature Language="VB.NET" Value="Public Property PageTo As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PageTo { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -260,6 +297,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.PageRange.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -275,23 +314,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Equals">
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Tests for equality with a <see cref="T:System.Windows.Controls.PageRange" /> object.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.PageRange" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

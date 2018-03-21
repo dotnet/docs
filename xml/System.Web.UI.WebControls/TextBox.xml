@@ -1,7 +1,9 @@
-<Type Name="TextBox" FullName="System.Web.UI.WebControls.TextBox">
+﻿<Type Name="TextBox" FullName="System.Web.UI.WebControls.TextBox">
   <TypeSignature Language="C#" Value="public class TextBox : System.Web.UI.WebControls.WebControl, System.Web.UI.IEditableTextControl, System.Web.UI.IPostBackDataHandler" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TextBox extends System.Web.UI.WebControls.WebControl implements class System.Web.UI.IEditableTextControl, class System.Web.UI.IPostBackDataHandler, class System.Web.UI.ITextControl" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.TextBox" />
+  <TypeSignature Language="VB.NET" Value="Public Class TextBox&#xA;Inherits WebControl&#xA;Implements IEditableTextControl, IPostBackDataHandler" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TextBox : System::Web::UI::WebControls::WebControl, System::Web::UI::IEditableTextControl, System::Web::UI::IPostBackDataHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -257,6 +259,8 @@
       <MemberSignature Language="C#" Value="public TextBox ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TextBox.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TextBox();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -297,6 +301,8 @@
       <MemberSignature Language="C#" Value="protected override void AddAttributesToRender (System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void AddAttributesToRender(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TextBox.AddAttributesToRender(System.Web.UI.HtmlTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub AddAttributesToRender (writer As HtmlTextWriter)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void AddAttributesToRender(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -339,6 +345,8 @@
       <MemberSignature Language="C#" Value="protected override void AddParsedSubObject (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void AddParsedSubObject(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TextBox.AddParsedSubObject(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub AddParsedSubObject (obj As Object)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void AddParsedSubObject(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -379,6 +387,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.AutoCompleteType AutoCompleteType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.AutoCompleteType AutoCompleteType" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TextBox.AutoCompleteType" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property AutoCompleteType As AutoCompleteType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::AutoCompleteType AutoCompleteType { System::Web::UI::WebControls::AutoCompleteType get(); void set(System::Web::UI::WebControls::AutoCompleteType value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -436,6 +446,8 @@
       <MemberSignature Language="C#" Value="public virtual bool AutoPostBack { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AutoPostBack" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TextBox.AutoPostBack" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property AutoPostBack As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AutoPostBack { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -488,6 +500,8 @@
       <MemberSignature Language="C#" Value="public virtual bool CausesValidation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CausesValidation" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TextBox.CausesValidation" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property CausesValidation As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CausesValidation { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -530,6 +544,8 @@
       <MemberSignature Language="C#" Value="public virtual int Columns { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Columns" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TextBox.Columns" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Columns As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Columns { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -569,7 +585,12 @@
       <MemberSignature Language="C#" Value="protected virtual bool LoadPostData (string postDataKey, System.Collections.Specialized.NameValueCollection postCollection);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool LoadPostData(string postDataKey, class System.Collections.Specialized.NameValueCollection postCollection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TextBox.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function LoadPostData (postDataKey As String, postCollection As NameValueCollection) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool LoadPostData(System::String ^ postDataKey, System::Collections::Specialized::NameValueCollection ^ postCollection);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IPostBackDataHandler.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -603,6 +624,8 @@
       <MemberSignature Language="C#" Value="public virtual int MaxLength { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxLength" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TextBox.MaxLength" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property MaxLength As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int MaxLength { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -751,9 +774,11 @@
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
-      <MemberSignature Language="C#" Value="protected override void OnPreRender (EventArgs e);" />
+      <MemberSignature Language="C#" Value="protected internal override void OnPreRender (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnPreRender(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TextBox.OnPreRender(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnPreRender (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnPreRender(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -791,6 +816,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnTextChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnTextChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TextBox.OnTextChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnTextChanged (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnTextChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -845,7 +872,12 @@
       <MemberSignature Language="C#" Value="protected virtual void RaisePostDataChangedEvent ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RaisePostDataChangedEvent() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TextBox.RaisePostDataChangedEvent" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RaisePostDataChangedEvent ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RaisePostDataChangedEvent();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -875,6 +907,8 @@
       <MemberSignature Language="C#" Value="public virtual bool ReadOnly { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TextBox.ReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property ReadOnly As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool ReadOnly { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -926,9 +960,11 @@
       </Docs>
     </Member>
     <Member MemberName="Render">
-      <MemberSignature Language="C#" Value="protected override void Render (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="C#" Value="protected internal override void Render (System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void Render(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TextBox.Render(System.Web.UI.HtmlTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Render (writer As HtmlTextWriter)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Render(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -976,6 +1012,8 @@
       <MemberSignature Language="C#" Value="public virtual int Rows { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Rows" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TextBox.Rows" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Rows As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Rows { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1028,6 +1066,8 @@
       <MemberSignature Language="C#" Value="protected override object SaveViewState ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object SaveViewState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TextBox.SaveViewState" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function SaveViewState () As Object" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ SaveViewState();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1059,7 +1099,12 @@
       <MemberSignature Language="C#" Value="bool IPostBackDataHandler.LoadPostData (string postDataKey, System.Collections.Specialized.NameValueCollection postCollection);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Web.UI.IPostBackDataHandler.LoadPostData(string postDataKey, class System.Collections.Specialized.NameValueCollection postCollection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TextBox.System#Web#UI#IPostBackDataHandler#LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" />
+      <MemberSignature Language="VB.NET" Value="Function LoadPostData (postDataKey As String, postCollection As NameValueCollection) As Boolean Implements IPostBackDataHandler.LoadPostData" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.Web.UI.IPostBackDataHandler.LoadPostData(System::String ^ postDataKey, System::Collections::Specialized::NameValueCollection ^ postCollection) = System::Web::UI::IPostBackDataHandler::LoadPostData;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IPostBackDataHandler.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1093,7 +1138,12 @@
       <MemberSignature Language="C#" Value="void IPostBackDataHandler.RaisePostDataChangedEvent ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TextBox.System#Web#UI#IPostBackDataHandler#RaisePostDataChangedEvent" />
+      <MemberSignature Language="VB.NET" Value="Sub RaisePostDataChangedEvent () Implements IPostBackDataHandler.RaisePostDataChangedEvent" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent() = System::Web::UI::IPostBackDataHandler::RaisePostDataChangedEvent;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1120,6 +1170,8 @@
       <MemberSignature Language="C#" Value="protected override System.Web.UI.HtmlTextWriterTag TagKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.HtmlTextWriterTag TagKey" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TextBox.TagKey" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property TagKey As HtmlTextWriterTag" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Web::UI::HtmlTextWriterTag TagKey { System::Web::UI::HtmlTextWriterTag get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1155,14 +1207,19 @@
       <MemberSignature Language="C#" Value="public virtual string Text { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Text" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TextBox.Text" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Text As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.UI.ITextControl.Text</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Bindable(true, System.ComponentModel.BindingDirection.TwoWay)</AttributeName>
+          <AttributeName>System.ComponentModel.Bindable</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
@@ -1312,7 +1369,12 @@
       <MemberSignature Language="C#" Value="public event EventHandler TextChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler TextChanged" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.TextBox.TextChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event TextChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler ^ TextChanged;" />
       <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:System.Web.UI.IEditableTextControl.TextChanged</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1364,6 +1426,8 @@ protected void TextBox1_TextChanged(object sender, EventArgs e)
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.TextBoxMode TextMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.TextBoxMode TextMode" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TextBox.TextMode" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property TextMode As TextBoxMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::TextBoxMode TextMode { System::Web::UI::WebControls::TextBoxMode get(); void set(System::Web::UI::WebControls::TextBoxMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1418,6 +1482,8 @@ protected void TextBox1_TextChanged(object sender, EventArgs e)
       <MemberSignature Language="C#" Value="public virtual string ValidationGroup { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ValidationGroup" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TextBox.ValidationGroup" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property ValidationGroup As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ValidationGroup { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1458,6 +1524,8 @@ protected void TextBox1_TextChanged(object sender, EventArgs e)
       <MemberSignature Language="C#" Value="public virtual bool Wrap { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Wrap" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TextBox.Wrap" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Wrap As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Wrap { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

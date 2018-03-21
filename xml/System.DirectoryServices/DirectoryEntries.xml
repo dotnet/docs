@@ -1,7 +1,9 @@
-<Type Name="DirectoryEntries" FullName="System.DirectoryServices.DirectoryEntries">
+﻿<Type Name="DirectoryEntries" FullName="System.DirectoryServices.DirectoryEntries">
   <TypeSignature Language="C#" Value="public class DirectoryEntries : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DirectoryEntries extends System.Object implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.DirectoryEntries" />
+  <TypeSignature Language="VB.NET" Value="Public Class DirectoryEntries&#xA;Implements IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DirectoryEntries : System::Collections::IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +31,8 @@
       <MemberSignature Language="C#" Value="public System.DirectoryServices.DirectoryEntry Add (string name, string schemaClassName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.DirectoryServices.DirectoryEntry Add(string name, string schemaClassName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectoryEntries.Add(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (name As String, schemaClassName As String) As DirectoryEntry" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::DirectoryEntry ^ Add(System::String ^ name, System::String ^ schemaClassName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -109,10 +113,22 @@ Console::WriteLine("{0} entry is created in container.", myDirectoryEntry->Name)
         <exception cref="T:System.Runtime.InteropServices.COMException">An error occurred during the call to the underlying interface.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Find">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a member of this collection.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Find">
       <MemberSignature Language="C#" Value="public System.DirectoryServices.DirectoryEntry Find (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.DirectoryServices.DirectoryEntry Find(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectoryEntries.Find(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Find (name As String) As DirectoryEntry" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::DirectoryEntry ^ Find(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -150,6 +166,8 @@ Console::WriteLine("{0} entry is created in container.", myDirectoryEntry->Name)
       <MemberSignature Language="C#" Value="public System.DirectoryServices.DirectoryEntry Find (string name, string schemaClassName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.DirectoryServices.DirectoryEntry Find(string name, string schemaClassName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectoryEntries.Find(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Find (name As String, schemaClassName As String) As DirectoryEntry" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::DirectoryEntry ^ Find(System::String ^ name, System::String ^ schemaClassName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -290,7 +308,12 @@ int main() {
       <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectoryEntries.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -310,6 +333,8 @@ int main() {
       <MemberSignature Language="C#" Value="public void Remove (System.DirectoryServices.DirectoryEntry entry);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.DirectoryServices.DirectoryEntry entry) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectoryEntries.Remove(System.DirectoryServices.DirectoryEntry)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (entry As DirectoryEntry)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::DirectoryServices::DirectoryEntry ^ entry);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -466,6 +491,8 @@ int main() {
       <MemberSignature Language="C#" Value="public System.DirectoryServices.SchemaNameCollection SchemaFilter { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.DirectoryServices.SchemaNameCollection SchemaFilter" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.DirectoryEntries.SchemaFilter" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SchemaFilter As SchemaNameCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::SchemaNameCollection ^ SchemaFilter { System::DirectoryServices::SchemaNameCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -488,15 +515,5 @@ int main() {
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Find">
-      <AssemblyInfo>
-        <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a member of this collection.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

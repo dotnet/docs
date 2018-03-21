@@ -1,7 +1,9 @@
-<Type Name="EventMetadata" FullName="System.Diagnostics.Eventing.Reader.EventMetadata">
+﻿<Type Name="EventMetadata" FullName="System.Diagnostics.Eventing.Reader.EventMetadata">
   <TypeSignature Language="C#" Value="public sealed class EventMetadata" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EventMetadata extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Eventing.Reader.EventMetadata" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EventMetadata" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EventMetadata sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +28,8 @@
       <MemberSignature Language="C#" Value="public string Description { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Description" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventMetadata.Description" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Description As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Description { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -44,6 +48,8 @@
       <MemberSignature Language="C#" Value="public long Id { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 Id" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventMetadata.Id" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Id As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long Id { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -62,6 +68,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;System.Diagnostics.Eventing.Reader.EventKeyword&gt; Keywords { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;class System.Diagnostics.Eventing.Reader.EventKeyword&gt; Keywords" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventMetadata.Keywords" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Keywords As IEnumerable(Of EventKeyword)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IEnumerable&lt;System::Diagnostics::Eventing::Reader::EventKeyword ^&gt; ^ Keywords { System::Collections::Generic::IEnumerable&lt;System::Diagnostics::Eventing::Reader::EventKeyword ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -89,6 +97,8 @@
       <MemberSignature Language="C#" Value="public System.Diagnostics.Eventing.Reader.EventLevel Level { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Diagnostics.Eventing.Reader.EventLevel Level" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventMetadata.Level" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Level As EventLevel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::Eventing::Reader::EventLevel ^ Level { System::Diagnostics::Eventing::Reader::EventLevel ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -114,6 +124,8 @@
       <MemberSignature Language="C#" Value="public System.Diagnostics.Eventing.Reader.EventLogLink LogLink { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Diagnostics.Eventing.Reader.EventLogLink LogLink" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventMetadata.LogLink" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LogLink As EventLogLink" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::Eventing::Reader::EventLogLink ^ LogLink { System::Diagnostics::Eventing::Reader::EventLogLink ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -132,6 +144,8 @@
       <MemberSignature Language="C#" Value="public System.Diagnostics.Eventing.Reader.EventOpcode Opcode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Diagnostics.Eventing.Reader.EventOpcode Opcode" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventMetadata.Opcode" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Opcode As EventOpcode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::Eventing::Reader::EventOpcode ^ Opcode { System::Diagnostics::Eventing::Reader::EventOpcode ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -157,6 +171,8 @@
       <MemberSignature Language="C#" Value="public System.Diagnostics.Eventing.Reader.EventTask Task { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Diagnostics.Eventing.Reader.EventTask Task" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventMetadata.Task" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Task As EventTask" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::Eventing::Reader::EventTask ^ Task { System::Diagnostics::Eventing::Reader::EventTask ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -184,6 +200,8 @@
       <MemberSignature Language="C#" Value="public string Template { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Template" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventMetadata.Template" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Template As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Template { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -202,6 +220,8 @@
       <MemberSignature Language="C#" Value="public byte Version { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int8 Version" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventMetadata.Version" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Version As Byte" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Byte Version { System::Byte get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>

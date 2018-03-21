@@ -1,7 +1,9 @@
-<Type Name="ManagementException" FullName="System.Management.ManagementException">
+﻿<Type Name="ManagementException" FullName="System.Management.ManagementException">
   <TypeSignature Language="C#" Value="public class ManagementException : SystemException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ManagementException extends System.SystemException" />
   <TypeSignature Language="DocId" Value="T:System.Management.ManagementException" />
+  <TypeSignature Language="VB.NET" Value="Public Class ManagementException&#xA;Inherits SystemException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ManagementException : SystemException" />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,10 +17,21 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ManagementException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ManagementException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -43,6 +56,8 @@
       <MemberSignature Language="C#" Value="public ManagementException (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ManagementException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -61,6 +76,8 @@
       <MemberSignature Language="C#" Value="protected ManagementException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ManagementException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -90,6 +107,8 @@
       <MemberSignature Language="C#" Value="public ManagementException (string message, Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ManagementException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -119,6 +138,8 @@
       <MemberSignature Language="C#" Value="public System.Management.ManagementStatus ErrorCode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Management.ManagementStatus ErrorCode" />
       <MemberSignature Language="DocId" Value="P:System.Management.ManagementException.ErrorCode" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ErrorCode As ManagementStatus" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Management::ManagementStatus ErrorCode { System::Management::ManagementStatus get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -149,6 +170,8 @@
       <MemberSignature Language="C#" Value="public System.Management.ManagementBaseObject ErrorInformation { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Management.ManagementBaseObject ErrorInformation" />
       <MemberSignature Language="DocId" Value="P:System.Management.ManagementException.ErrorInformation" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ErrorInformation As ManagementBaseObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Management::ManagementBaseObject ^ ErrorInformation { System::Management::ManagementBaseObject ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -179,6 +202,8 @@
       <MemberSignature Language="C#" Value="public override void GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -208,14 +233,5 @@
         <altmember cref="M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementException" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

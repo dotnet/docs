@@ -1,7 +1,9 @@
-<Type Name="CodeDirective" FullName="System.CodeDom.CodeDirective">
+﻿<Type Name="CodeDirective" FullName="System.CodeDom.CodeDirective">
   <TypeSignature Language="C#" Value="public class CodeDirective : System.CodeDom.CodeObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CodeDirective extends System.CodeDom.CodeObject" />
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeDirective" />
+  <TypeSignature Language="VB.NET" Value="Public Class CodeDirective&#xA;Inherits CodeObject" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CodeDirective : System::CodeDom::CodeObject" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -16,7 +18,7 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
@@ -38,6 +40,8 @@
       <MemberSignature Language="C#" Value="public CodeDirective ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeDirective.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeDirective();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="ValidationSummary" FullName="System.Web.UI.MobileControls.ValidationSummary">
+﻿<Type Name="ValidationSummary" FullName="System.Web.UI.MobileControls.ValidationSummary">
   <TypeSignature Language="C#" Value="public class ValidationSummary : System.Web.UI.MobileControls.MobileControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ValidationSummary extends System.Web.UI.MobileControls.MobileControl" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.ValidationSummary" />
+  <TypeSignature Language="VB.NET" Value="Public Class ValidationSummary&#xA;Inherits MobileControl" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ValidationSummary : System::Web::UI::MobileControls::MobileControl" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -60,6 +62,8 @@
       <MemberSignature Language="C#" Value="public ValidationSummary ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ValidationSummary.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ValidationSummary();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -75,6 +79,8 @@
       <MemberSignature Language="C#" Value="public string BackLabel { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string BackLabel" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.ValidationSummary.BackLabel" />
+      <MemberSignature Language="VB.NET" Value="Public Property BackLabel As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ BackLabel { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -116,6 +122,8 @@
       <MemberSignature Language="C#" Value="public string FormToValidate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string FormToValidate" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.ValidationSummary.FormToValidate" />
+      <MemberSignature Language="VB.NET" Value="Public Property FormToValidate As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FormToValidate { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -152,6 +160,8 @@
       <MemberSignature Language="C#" Value="public string[] GetErrorMessages ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string[] GetErrorMessages() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ValidationSummary.GetErrorMessages" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetErrorMessages () As String()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::String ^&gt; ^ GetErrorMessages();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -172,6 +182,8 @@
       <MemberSignature Language="C#" Value="public string HeaderText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string HeaderText" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.ValidationSummary.HeaderText" />
+      <MemberSignature Language="VB.NET" Value="Public Property HeaderText As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ HeaderText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -207,6 +219,8 @@
       <MemberSignature Language="C#" Value="protected override void OnLoad (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnLoad(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ValidationSummary.OnLoad(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnLoad (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnLoad(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -229,6 +243,8 @@
       <MemberSignature Language="C#" Value="public override string StyleReference { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string StyleReference" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.ValidationSummary.StyleReference" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property StyleReference As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ StyleReference { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

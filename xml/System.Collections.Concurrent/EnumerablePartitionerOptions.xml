@@ -1,7 +1,9 @@
-<Type Name="EnumerablePartitionerOptions" FullName="System.Collections.Concurrent.EnumerablePartitionerOptions">
+﻿<Type Name="EnumerablePartitionerOptions" FullName="System.Collections.Concurrent.EnumerablePartitionerOptions">
   <TypeSignature Language="C#" Value="public enum EnumerablePartitionerOptions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed EnumerablePartitionerOptions extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Collections.Concurrent.EnumerablePartitionerOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Enum EnumerablePartitionerOptions" />
+  <TypeSignature Language="C++ CLI" Value="public enum class EnumerablePartitionerOptions" />
   <AssemblyInfo>
     <AssemblyName>System.Collections.Concurrent</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +43,8 @@
       <MemberSignature Language="C#" Value="NoBuffering" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Collections.Concurrent.EnumerablePartitionerOptions NoBuffering = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Collections.Concurrent.EnumerablePartitionerOptions.NoBuffering" />
+      <MemberSignature Language="VB.NET" Value="NoBuffering" />
+      <MemberSignature Language="C++ CLI" Value="NoBuffering" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -60,6 +64,7 @@
       <ReturnValue>
         <ReturnType>System.Collections.Concurrent.EnumerablePartitionerOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Create a partitioner that takes items from the source enumerable one at a time and does not use intermediate storage that can be accessed more efficiently by multiple threads. This option provides support for low latency (items will be processed as soon as they are available from the source) and provides partial support for dependencies between items (a thread cannot deadlock waiting for an item that the thread itself is responsible for processing).</summary>
       </Docs>
@@ -68,6 +73,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Collections.Concurrent.EnumerablePartitionerOptions None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Collections.Concurrent.EnumerablePartitionerOptions.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -87,6 +94,7 @@
       <ReturnValue>
         <ReturnType>System.Collections.Concurrent.EnumerablePartitionerOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Use the default behavior, which is to use buffering to achieve optimal performance.</summary>
       </Docs>

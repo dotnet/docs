@@ -1,7 +1,9 @@
-<Type Name="MetadataAttributeAttribute" FullName="System.ComponentModel.Composition.MetadataAttributeAttribute">
+﻿<Type Name="MetadataAttributeAttribute" FullName="System.ComponentModel.Composition.MetadataAttributeAttribute">
   <TypeSignature Language="C#" Value="public sealed class MetadataAttributeAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MetadataAttributeAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Composition.MetadataAttributeAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MetadataAttributeAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MetadataAttributeAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Composition</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -25,6 +27,8 @@
       <MemberSignature Language="C#" Value="public MetadataAttributeAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.MetadataAttributeAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MetadataAttributeAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>

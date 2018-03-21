@@ -1,7 +1,9 @@
-<Type Name="ManagementMemberAttribute" FullName="System.Management.Instrumentation.ManagementMemberAttribute">
+﻿<Type Name="ManagementMemberAttribute" FullName="System.Management.Instrumentation.ManagementMemberAttribute">
   <TypeSignature Language="C#" Value="public abstract class ManagementMemberAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ManagementMemberAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Management.Instrumentation.ManagementMemberAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ManagementMemberAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ManagementMemberAttribute abstract : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +35,8 @@
       <MemberSignature Language="C#" Value="protected ManagementMemberAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.Instrumentation.ManagementMemberAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ManagementMemberAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -48,6 +52,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Management.Instrumentation.ManagementMemberAttribute.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>

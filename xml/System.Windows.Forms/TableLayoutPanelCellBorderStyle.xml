@@ -1,7 +1,9 @@
-<Type Name="TableLayoutPanelCellBorderStyle" FullName="System.Windows.Forms.TableLayoutPanelCellBorderStyle">
+﻿<Type Name="TableLayoutPanelCellBorderStyle" FullName="System.Windows.Forms.TableLayoutPanelCellBorderStyle">
   <TypeSignature Language="C#" Value="public enum TableLayoutPanelCellBorderStyle" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TableLayoutPanelCellBorderStyle extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TableLayoutPanelCellBorderStyle" />
+  <TypeSignature Language="VB.NET" Value="Public Enum TableLayoutPanelCellBorderStyle" />
+  <TypeSignature Language="C++ CLI" Value="public enum class TableLayoutPanelCellBorderStyle" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +39,8 @@
       <MemberSignature Language="C#" Value="Inset" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TableLayoutPanelCellBorderStyle Inset = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TableLayoutPanelCellBorderStyle.Inset" />
+      <MemberSignature Language="VB.NET" Value="Inset" />
+      <MemberSignature Language="C++ CLI" Value="Inset" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -45,6 +49,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TableLayoutPanelCellBorderStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>A single-line sunken border.</summary>
       </Docs>
@@ -53,6 +58,8 @@
       <MemberSignature Language="C#" Value="InsetDouble" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TableLayoutPanelCellBorderStyle InsetDouble = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TableLayoutPanelCellBorderStyle.InsetDouble" />
+      <MemberSignature Language="VB.NET" Value="InsetDouble" />
+      <MemberSignature Language="C++ CLI" Value="InsetDouble" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -61,6 +68,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TableLayoutPanelCellBorderStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>A double-line sunken border.</summary>
       </Docs>
@@ -69,6 +77,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TableLayoutPanelCellBorderStyle None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TableLayoutPanelCellBorderStyle.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -77,6 +87,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TableLayoutPanelCellBorderStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>No borders.</summary>
       </Docs>
@@ -85,6 +96,8 @@
       <MemberSignature Language="C#" Value="Outset" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TableLayoutPanelCellBorderStyle Outset = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TableLayoutPanelCellBorderStyle.Outset" />
+      <MemberSignature Language="VB.NET" Value="Outset" />
+      <MemberSignature Language="C++ CLI" Value="Outset" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -93,6 +106,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TableLayoutPanelCellBorderStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>A single-line raised border.</summary>
       </Docs>
@@ -101,6 +115,8 @@
       <MemberSignature Language="C#" Value="OutsetDouble" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TableLayoutPanelCellBorderStyle OutsetDouble = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TableLayoutPanelCellBorderStyle.OutsetDouble" />
+      <MemberSignature Language="VB.NET" Value="OutsetDouble" />
+      <MemberSignature Language="C++ CLI" Value="OutsetDouble" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -109,6 +125,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TableLayoutPanelCellBorderStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>A double-line raised border.</summary>
       </Docs>
@@ -117,6 +134,8 @@
       <MemberSignature Language="C#" Value="OutsetPartial" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TableLayoutPanelCellBorderStyle OutsetPartial = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TableLayoutPanelCellBorderStyle.OutsetPartial" />
+      <MemberSignature Language="VB.NET" Value="OutsetPartial" />
+      <MemberSignature Language="C++ CLI" Value="OutsetPartial" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -125,6 +144,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TableLayoutPanelCellBorderStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>A single-line border containing a raised portion.</summary>
       </Docs>
@@ -133,6 +153,8 @@
       <MemberSignature Language="C#" Value="Single" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TableLayoutPanelCellBorderStyle Single = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single" />
+      <MemberSignature Language="VB.NET" Value="Single" />
+      <MemberSignature Language="C++ CLI" Value="Single" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -141,6 +163,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TableLayoutPanelCellBorderStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>A single-line border.</summary>
       </Docs>

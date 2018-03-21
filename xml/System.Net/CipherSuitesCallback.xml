@@ -1,7 +1,9 @@
-<Type Name="CipherSuitesCallback" FullName="System.Net.CipherSuitesCallback">
+﻿<Type Name="CipherSuitesCallback" FullName="System.Net.CipherSuitesCallback">
   <TypeSignature Language="C#" Value="public delegate System.Collections.Generic.IEnumerable&lt;string&gt; CipherSuitesCallback(SecurityProtocolType protocol, IEnumerable&lt;string&gt; allCiphers);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CipherSuitesCallback extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Net.CipherSuitesCallback" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Function CipherSuitesCallback(protocol As SecurityProtocolType, allCiphers As IEnumerable(Of String)) As IEnumerable(Of String) " />
+  <TypeSignature Language="C++ CLI" Value="public delegate System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ CipherSuitesCallback(SecurityProtocolType protocol, IEnumerable&lt;System::String ^&gt; ^ allCiphers);" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>

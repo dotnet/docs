@@ -1,7 +1,9 @@
-<Type Name="EnumerationOptions" FullName="System.Management.EnumerationOptions">
+﻿<Type Name="EnumerationOptions" FullName="System.Management.EnumerationOptions">
   <TypeSignature Language="C#" Value="public class EnumerationOptions : System.Management.ManagementOptions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EnumerationOptions extends System.Management.ManagementOptions" />
   <TypeSignature Language="DocId" Value="T:System.Management.EnumerationOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Class EnumerationOptions&#xA;Inherits ManagementOptions" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EnumerationOptions : System::Management::ManagementOptions" />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,10 +27,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.EnumerationOptions" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public EnumerationOptions ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.EnumerationOptions.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EnumerationOptions();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -61,6 +74,8 @@
       <MemberSignature Language="C#" Value="public EnumerationOptions (System.Management.ManagementNamedValueCollection context, TimeSpan timeout, int blockSize, bool rewindable, bool returnImmediatley, bool useAmendedQualifiers, bool ensureLocatable, bool prototypeOnly, bool directRead, bool enumerateDeep);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Management.ManagementNamedValueCollection context, valuetype System.TimeSpan timeout, int32 blockSize, bool rewindable, bool returnImmediatley, bool useAmendedQualifiers, bool ensureLocatable, bool prototypeOnly, bool directRead, bool enumerateDeep) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.EnumerationOptions.#ctor(System.Management.ManagementNamedValueCollection,System.TimeSpan,System.Int32,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (context As ManagementNamedValueCollection, timeout As TimeSpan, blockSize As Integer, rewindable As Boolean, returnImmediatley As Boolean, useAmendedQualifiers As Boolean, ensureLocatable As Boolean, prototypeOnly As Boolean, directRead As Boolean, enumerateDeep As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EnumerationOptions(System::Management::ManagementNamedValueCollection ^ context, TimeSpan timeout, int blockSize, bool rewindable, bool returnImmediatley, bool useAmendedQualifiers, bool ensureLocatable, bool prototypeOnly, bool directRead, bool enumerateDeep);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -121,6 +136,8 @@
       <MemberSignature Language="C#" Value="public int BlockSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 BlockSize" />
       <MemberSignature Language="DocId" Value="P:System.Management.EnumerationOptions.BlockSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property BlockSize As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int BlockSize { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -159,6 +176,8 @@
       <MemberSignature Language="C#" Value="public override object Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.EnumerationOptions.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Clone () As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -188,6 +207,8 @@
       <MemberSignature Language="C#" Value="public bool DirectRead { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool DirectRead" />
       <MemberSignature Language="DocId" Value="P:System.Management.EnumerationOptions.DirectRead" />
+      <MemberSignature Language="VB.NET" Value="Public Property DirectRead As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DirectRead { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -226,6 +247,8 @@
       <MemberSignature Language="C#" Value="public bool EnsureLocatable { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool EnsureLocatable" />
       <MemberSignature Language="DocId" Value="P:System.Management.EnumerationOptions.EnsureLocatable" />
+      <MemberSignature Language="VB.NET" Value="Public Property EnsureLocatable As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnsureLocatable { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -256,6 +279,8 @@
       <MemberSignature Language="C#" Value="public bool EnumerateDeep { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool EnumerateDeep" />
       <MemberSignature Language="DocId" Value="P:System.Management.EnumerationOptions.EnumerateDeep" />
+      <MemberSignature Language="VB.NET" Value="Public Property EnumerateDeep As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnumerateDeep { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -294,6 +319,8 @@
       <MemberSignature Language="C#" Value="public bool PrototypeOnly { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool PrototypeOnly" />
       <MemberSignature Language="DocId" Value="P:System.Management.EnumerationOptions.PrototypeOnly" />
+      <MemberSignature Language="VB.NET" Value="Public Property PrototypeOnly As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PrototypeOnly { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -324,6 +351,8 @@
       <MemberSignature Language="C#" Value="public bool ReturnImmediately { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ReturnImmediately" />
       <MemberSignature Language="DocId" Value="P:System.Management.EnumerationOptions.ReturnImmediately" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReturnImmediately As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ReturnImmediately { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -354,6 +383,8 @@
       <MemberSignature Language="C#" Value="public bool Rewindable { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Rewindable" />
       <MemberSignature Language="DocId" Value="P:System.Management.EnumerationOptions.Rewindable" />
+      <MemberSignature Language="VB.NET" Value="Public Property Rewindable As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Rewindable { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -384,6 +415,8 @@
       <MemberSignature Language="C#" Value="public bool UseAmendedQualifiers { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UseAmendedQualifiers" />
       <MemberSignature Language="DocId" Value="P:System.Management.EnumerationOptions.UseAmendedQualifiers" />
+      <MemberSignature Language="VB.NET" Value="Public Property UseAmendedQualifiers As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseAmendedQualifiers { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -411,14 +444,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Management.EnumerationOptions" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

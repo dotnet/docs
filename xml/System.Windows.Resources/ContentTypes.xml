@@ -1,7 +1,9 @@
-<Type Name="ContentTypes" FullName="System.Windows.Resources.ContentTypes">
+﻿<Type Name="ContentTypes" FullName="System.Windows.Resources.ContentTypes">
   <TypeSignature Language="C#" Value="public sealed class ContentTypes" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ContentTypes extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Resources.ContentTypes" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ContentTypes" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ContentTypes sealed" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +28,8 @@
       <MemberSignature Language="C#" Value="public ContentTypes ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Resources.ContentTypes.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ContentTypes();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -41,6 +45,8 @@
       <MemberSignature Language="C#" Value="public const string XamlContentType;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string XamlContentType" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Resources.ContentTypes.XamlContentType" />
+      <MemberSignature Language="VB.NET" Value="Public Const XamlContentType As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ XamlContentType;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

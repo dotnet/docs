@@ -1,7 +1,9 @@
-<Type Name="ContractBasedImportDefinition" FullName="System.ComponentModel.Composition.Primitives.ContractBasedImportDefinition">
+﻿<Type Name="ContractBasedImportDefinition" FullName="System.ComponentModel.Composition.Primitives.ContractBasedImportDefinition">
   <TypeSignature Language="C#" Value="public class ContractBasedImportDefinition : System.ComponentModel.Composition.Primitives.ImportDefinition" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ContractBasedImportDefinition extends System.ComponentModel.Composition.Primitives.ImportDefinition" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Composition.Primitives.ContractBasedImportDefinition" />
+  <TypeSignature Language="VB.NET" Value="Public Class ContractBasedImportDefinition&#xA;Inherits ImportDefinition" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ContractBasedImportDefinition : System::ComponentModel::Composition::Primitives::ImportDefinition" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Composition</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -16,10 +18,22 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.Primitives.ContractBasedImportDefinition" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected ContractBasedImportDefinition ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Primitives.ContractBasedImportDefinition.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ContractBasedImportDefinition();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -36,6 +50,8 @@
       <MemberSignature Language="C#" Value="public ContractBasedImportDefinition (string contractName, string requiredTypeIdentity, System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;string,Type&gt;&gt; requiredMetadata, System.ComponentModel.Composition.Primitives.ImportCardinality cardinality, bool isRecomposable, bool isPrerequisite, System.ComponentModel.Composition.CreationPolicy requiredCreationPolicy);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string contractName, string requiredTypeIdentity, class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, class System.Type&gt;&gt; requiredMetadata, valuetype System.ComponentModel.Composition.Primitives.ImportCardinality cardinality, bool isRecomposable, bool isPrerequisite, valuetype System.ComponentModel.Composition.CreationPolicy requiredCreationPolicy) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Primitives.ContractBasedImportDefinition.#ctor(System.String,System.String,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Type}},System.ComponentModel.Composition.Primitives.ImportCardinality,System.Boolean,System.Boolean,System.ComponentModel.Composition.CreationPolicy)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (contractName As String, requiredTypeIdentity As String, requiredMetadata As IEnumerable(Of KeyValuePair(Of String, Type)), cardinality As ImportCardinality, isRecomposable As Boolean, isPrerequisite As Boolean, requiredCreationPolicy As CreationPolicy)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ContractBasedImportDefinition(System::String ^ contractName, System::String ^ requiredTypeIdentity, System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;System::String ^, Type ^&gt;&gt; ^ requiredMetadata, System::ComponentModel::Composition::Primitives::ImportCardinality cardinality, bool isRecomposable, bool isPrerequisite, System::ComponentModel::Composition::CreationPolicy requiredCreationPolicy);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -81,6 +97,8 @@
       <MemberSignature Language="C#" Value="public ContractBasedImportDefinition (string contractName, string requiredTypeIdentity, System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;string,Type&gt;&gt; requiredMetadata, System.ComponentModel.Composition.Primitives.ImportCardinality cardinality, bool isRecomposable, bool isPrerequisite, System.ComponentModel.Composition.CreationPolicy requiredCreationPolicy, System.Collections.Generic.IDictionary&lt;string,object&gt; metadata);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string contractName, string requiredTypeIdentity, class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, class System.Type&gt;&gt; requiredMetadata, valuetype System.ComponentModel.Composition.Primitives.ImportCardinality cardinality, bool isRecomposable, bool isPrerequisite, valuetype System.ComponentModel.Composition.CreationPolicy requiredCreationPolicy, class System.Collections.Generic.IDictionary`2&lt;string, object&gt; metadata) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Primitives.ContractBasedImportDefinition.#ctor(System.String,System.String,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Type}},System.ComponentModel.Composition.Primitives.ImportCardinality,System.Boolean,System.Boolean,System.ComponentModel.Composition.CreationPolicy,System.Collections.Generic.IDictionary{System.String,System.Object})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (contractName As String, requiredTypeIdentity As String, requiredMetadata As IEnumerable(Of KeyValuePair(Of String, Type)), cardinality As ImportCardinality, isRecomposable As Boolean, isPrerequisite As Boolean, requiredCreationPolicy As CreationPolicy, metadata As IDictionary(Of String, Object))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ContractBasedImportDefinition(System::String ^ contractName, System::String ^ requiredTypeIdentity, System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;System::String ^, Type ^&gt;&gt; ^ requiredMetadata, System::ComponentModel::Composition::Primitives::ImportCardinality cardinality, bool isRecomposable, bool isPrerequisite, System::ComponentModel::Composition::CreationPolicy requiredCreationPolicy, System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ metadata);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -128,6 +146,8 @@
       <MemberSignature Language="C#" Value="public override System.Linq.Expressions.Expression&lt;Func&lt;System.ComponentModel.Composition.Primitives.ExportDefinition,bool&gt;&gt; Constraint { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Linq.Expressions.Expression`1&lt;class System.Func`2&lt;class System.ComponentModel.Composition.Primitives.ExportDefinition, bool&gt;&gt; Constraint" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Composition.Primitives.ContractBasedImportDefinition.Constraint" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Constraint As Expression(Of Func(Of ExportDefinition, Boolean))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Linq::Expressions::Expression&lt;Func&lt;System::ComponentModel::Composition::Primitives::ExportDefinition ^, bool&gt; ^&gt; ^ Constraint { System::Linq::Expressions::Expression&lt;Func&lt;System::ComponentModel::Composition::Primitives::ExportDefinition ^, bool&gt; ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -147,6 +167,7 @@
       <MemberSignature Language="C#" Value="public override bool IsConstraintSatisfiedBy (System.ComponentModel.Composition.Primitives.ExportDefinition exportDefinition);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsConstraintSatisfiedBy(class System.ComponentModel.Composition.Primitives.ExportDefinition exportDefinition) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Primitives.ContractBasedImportDefinition.IsConstraintSatisfiedBy(System.ComponentModel.Composition.Primitives.ExportDefinition)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsConstraintSatisfiedBy(System::ComponentModel::Composition::Primitives::ExportDefinition ^ exportDefinition);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -171,6 +192,8 @@
       <MemberSignature Language="C#" Value="public virtual System.ComponentModel.Composition.CreationPolicy RequiredCreationPolicy { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ComponentModel.Composition.CreationPolicy RequiredCreationPolicy" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Composition.Primitives.ContractBasedImportDefinition.RequiredCreationPolicy" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property RequiredCreationPolicy As CreationPolicy" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::Composition::CreationPolicy RequiredCreationPolicy { System::ComponentModel::Composition::CreationPolicy get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -196,6 +219,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;string,Type&gt;&gt; RequiredMetadata { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, class System.Type&gt;&gt; RequiredMetadata" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Composition.Primitives.ContractBasedImportDefinition.RequiredMetadata" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property RequiredMetadata As IEnumerable(Of KeyValuePair(Of String, Type))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;System::String ^, Type ^&gt;&gt; ^ RequiredMetadata { System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;System::String ^, Type ^&gt;&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -222,6 +247,8 @@
       <MemberSignature Language="C#" Value="public virtual string RequiredTypeIdentity { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string RequiredTypeIdentity" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Composition.Primitives.ContractBasedImportDefinition.RequiredTypeIdentity" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property RequiredTypeIdentity As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ RequiredTypeIdentity { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -241,6 +268,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Primitives.ContractBasedImportDefinition.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -257,15 +286,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.Primitives.ContractBasedImportDefinition" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

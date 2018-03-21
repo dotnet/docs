@@ -1,7 +1,9 @@
-<Type Name="WorkflowInspectionServices" FullName="System.Activities.WorkflowInspectionServices">
+﻿<Type Name="WorkflowInspectionServices" FullName="System.Activities.WorkflowInspectionServices">
   <TypeSignature Language="C#" Value="public static class WorkflowInspectionServices" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit WorkflowInspectionServices extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Activities.WorkflowInspectionServices" />
+  <TypeSignature Language="VB.NET" Value="Public Class WorkflowInspectionServices" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WorkflowInspectionServices abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,10 +17,21 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName="CacheMetadata">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Caches the runtime metadata for an activity tree.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CacheMetadata">
       <MemberSignature Language="C#" Value="public static void CacheMetadata (System.Activities.Activity rootActivity);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void CacheMetadata(class System.Activities.Activity rootActivity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowInspectionServices.CacheMetadata(System.Activities.Activity)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub CacheMetadata (rootActivity As Activity)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void CacheMetadata(System::Activities::Activity ^ rootActivity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -40,6 +53,8 @@
       <MemberSignature Language="C#" Value="public static void CacheMetadata (System.Activities.Activity rootActivity, System.Activities.LocationReferenceEnvironment hostEnvironment);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void CacheMetadata(class System.Activities.Activity rootActivity, class System.Activities.LocationReferenceEnvironment hostEnvironment) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowInspectionServices.CacheMetadata(System.Activities.Activity,System.Activities.LocationReferenceEnvironment)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub CacheMetadata (rootActivity As Activity, hostEnvironment As LocationReferenceEnvironment)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void CacheMetadata(System::Activities::Activity ^ rootActivity, System::Activities::LocationReferenceEnvironment ^ hostEnvironment);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -63,6 +78,7 @@
       <MemberSignature Language="C#" Value="public static bool CanInduceIdle (System.Activities.Activity activity);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool CanInduceIdle(class System.Activities.Activity activity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowInspectionServices.CanInduceIdle(System.Activities.Activity)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool CanInduceIdle(System::Activities::Activity ^ activity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -86,6 +102,7 @@
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;System.Activities.Activity&gt; GetActivities (System.Activities.Activity activity);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;class System.Activities.Activity&gt; GetActivities(class System.Activities.Activity activity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowInspectionServices.GetActivities(System.Activities.Activity)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Generic::IEnumerable&lt;System::Activities::Activity ^&gt; ^ GetActivities(System::Activities::Activity ^ activity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -122,6 +139,7 @@
       <MemberSignature Language="C#" Value="public static Version GetImplementationVersion (System.Activities.Activity activity);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Version GetImplementationVersion(class System.Activities.Activity activity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowInspectionServices.GetImplementationVersion(System.Activities.Activity)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Version ^ GetImplementationVersion(System::Activities::Activity ^ activity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -144,6 +162,8 @@
       <MemberSignature Language="C#" Value="public static System.Activities.Activity Resolve (System.Activities.Activity root, string id);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Activities.Activity Resolve(class System.Activities.Activity root, string id) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowInspectionServices.Resolve(System.Activities.Activity,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Resolve (root As Activity, id As String) As Activity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Activities::Activity ^ Resolve(System::Activities::Activity ^ root, System::String ^ id);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -164,14 +184,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="CacheMetadata">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Caches the runtime metadata for an activity tree.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

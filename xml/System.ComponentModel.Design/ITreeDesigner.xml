@@ -1,7 +1,9 @@
-<Type Name="ITreeDesigner" FullName="System.ComponentModel.Design.ITreeDesigner">
+﻿<Type Name="ITreeDesigner" FullName="System.ComponentModel.Design.ITreeDesigner">
   <TypeSignature Language="C#" Value="public interface ITreeDesigner : IDisposable, System.ComponentModel.Design.IDesigner" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITreeDesigner implements class System.ComponentModel.Design.IDesigner, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.ITreeDesigner" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ITreeDesigner&#xA;Implements IDesigner, IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ITreeDesigner : IDisposable, System::ComponentModel::Design::IDesigner" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -47,6 +49,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.ICollection Children { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ICollection Children" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.ITreeDesigner.Children" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Children As ICollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ICollection ^ Children { System::Collections::ICollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -82,6 +86,8 @@
       <MemberSignature Language="C#" Value="public System.ComponentModel.Design.IDesigner Parent { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.Design.IDesigner Parent" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.ITreeDesigner.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As IDesigner" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::Design::IDesigner ^ Parent { System::ComponentModel::Design::IDesigner ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

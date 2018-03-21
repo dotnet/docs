@@ -1,7 +1,9 @@
-<Type Name="ClientViaElement" FullName="System.ServiceModel.Configuration.ClientViaElement">
+﻿<Type Name="ClientViaElement" FullName="System.ServiceModel.Configuration.ClientViaElement">
   <TypeSignature Language="C#" Value="public sealed class ClientViaElement : System.ServiceModel.Configuration.BehaviorExtensionElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ClientViaElement extends System.ServiceModel.Configuration.BehaviorExtensionElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.ClientViaElement" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ClientViaElement&#xA;Inherits BehaviorExtensionElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ClientViaElement sealed : System::ServiceModel::Configuration::BehaviorExtensionElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public ClientViaElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ClientViaElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ClientViaElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -34,6 +38,8 @@
       <MemberSignature Language="C#" Value="public override Type BehaviorType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type BehaviorType" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ClientViaElement.BehaviorType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property BehaviorType As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ BehaviorType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -52,6 +58,8 @@
       <MemberSignature Language="C#" Value="public override void CopyFrom (System.ServiceModel.Configuration.ServiceModelExtensionElement from);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void CopyFrom(class System.ServiceModel.Configuration.ServiceModelExtensionElement from) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ClientViaElement.CopyFrom(System.ServiceModel.Configuration.ServiceModelExtensionElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub CopyFrom (from As ServiceModelExtensionElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void CopyFrom(System::ServiceModel::Configuration::ServiceModelExtensionElement ^ from);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -70,9 +78,11 @@
       </Docs>
     </Member>
     <Member MemberName="CreateBehavior">
-      <MemberSignature Language="C#" Value="protected override object CreateBehavior ();" />
+      <MemberSignature Language="C#" Value="protected internal override object CreateBehavior ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance object CreateBehavior() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ClientViaElement.CreateBehavior" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function CreateBehavior () As Object" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Object ^ CreateBehavior();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -92,6 +102,8 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ClientViaElement.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -110,6 +122,8 @@
       <MemberSignature Language="C#" Value="public Uri ViaUri { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri ViaUri" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ClientViaElement.ViaUri" />
+      <MemberSignature Language="VB.NET" Value="Public Property ViaUri As Uri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ ViaUri { Uri ^ get(); void set(Uri ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

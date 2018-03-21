@@ -1,7 +1,9 @@
-<Type Name="MetaAccessor&lt;TEntity,TMember&gt;" FullName="System.Data.Linq.Mapping.MetaAccessor&lt;TEntity,TMember&gt;">
+﻿<Type Name="MetaAccessor&lt;TEntity,TMember&gt;" FullName="System.Data.Linq.Mapping.MetaAccessor&lt;TEntity,TMember&gt;">
   <TypeSignature Language="C#" Value="public abstract class MetaAccessor&lt;TEntity,TMember&gt; : System.Data.Linq.Mapping.MetaAccessor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit MetaAccessor`2&lt;TEntity, TMember&gt; extends System.Data.Linq.Mapping.MetaAccessor" />
   <TypeSignature Language="DocId" Value="T:System.Data.Linq.Mapping.MetaAccessor`2" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class MetaAccessor(Of TEntity, TMember)&#xA;Inherits MetaAccessor" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename TEntity, typename TMember&gt;&#xA;public ref class MetaAccessor abstract : System::Data::Linq::Mapping::MetaAccessor" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Linq</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +28,8 @@
       <MemberSignature Language="C#" Value="protected MetaAccessor ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.Mapping.MetaAccessor`2.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; MetaAccessor();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -41,6 +45,8 @@
       <MemberSignature Language="C#" Value="public override object GetBoxedValue (object instance);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetBoxedValue(object instance) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.Mapping.MetaAccessor`2.GetBoxedValue(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetBoxedValue (instance As Object) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetBoxedValue(System::Object ^ instance);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -63,6 +69,8 @@
       <MemberSignature Language="C#" Value="public abstract TMember GetValue (TEntity instance);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !TMember GetValue(!TEntity instance) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.Mapping.MetaAccessor`2.GetValue(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetValue (instance As TEntity) As TMember" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract TMember GetValue(TEntity instance);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -85,6 +93,8 @@
       <MemberSignature Language="C#" Value="public override void SetBoxedValue (ref object instance, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetBoxedValue(object&amp; instance, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.Mapping.MetaAccessor`2.SetBoxedValue(System.Object@,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetBoxedValue (ByRef instance As Object, value As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SetBoxedValue(System::Object ^ % instance, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -108,6 +118,8 @@
       <MemberSignature Language="C#" Value="public abstract void SetValue (ref TEntity instance, TMember value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetValue(!TEntity&amp; instance, !TMember value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.Mapping.MetaAccessor`2.SetValue(`0@,`1)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub SetValue (ByRef instance As TEntity, value As TMember)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void SetValue(TEntity % instance, TMember value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -131,6 +143,8 @@
       <MemberSignature Language="C#" Value="public override Type Type { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type Type" />
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.MetaAccessor`2.Type" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Type As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ Type { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>

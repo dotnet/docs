@@ -1,7 +1,9 @@
-<Type Name="PipeSecurity" FullName="System.IO.Pipes.PipeSecurity">
+﻿<Type Name="PipeSecurity" FullName="System.IO.Pipes.PipeSecurity">
   <TypeSignature Language="C#" Value="public class PipeSecurity : System.Security.AccessControl.NativeObjectSecurity" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PipeSecurity extends System.Security.AccessControl.NativeObjectSecurity" />
   <TypeSignature Language="DocId" Value="T:System.IO.Pipes.PipeSecurity" />
+  <TypeSignature Language="VB.NET" Value="Public Class PipeSecurity&#xA;Inherits NativeObjectSecurity" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PipeSecurity : System::Security::AccessControl::NativeObjectSecurity" />
   <AssemblyInfo>
     <AssemblyName>System.IO.Pipes.AccessControl</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -40,6 +42,8 @@
       <MemberSignature Language="C#" Value="public PipeSecurity ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.PipeSecurity.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PipeSecurity();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes.AccessControl</AssemblyName>
@@ -72,6 +76,8 @@
       <MemberSignature Language="C#" Value="public override Type AccessRightType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type AccessRightType" />
       <MemberSignature Language="DocId" Value="P:System.IO.Pipes.PipeSecurity.AccessRightType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property AccessRightType As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ AccessRightType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes.AccessControl</AssemblyName>
@@ -103,6 +109,7 @@
       <MemberSignature Language="C#" Value="public override System.Security.AccessControl.AccessRule AccessRuleFactory (System.Security.Principal.IdentityReference identityReference, int accessMask, bool isInherited, System.Security.AccessControl.InheritanceFlags inheritanceFlags, System.Security.AccessControl.PropagationFlags propagationFlags, System.Security.AccessControl.AccessControlType type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.AccessControl.AccessRule AccessRuleFactory(class System.Security.Principal.IdentityReference identityReference, int32 accessMask, bool isInherited, valuetype System.Security.AccessControl.InheritanceFlags inheritanceFlags, valuetype System.Security.AccessControl.PropagationFlags propagationFlags, valuetype System.Security.AccessControl.AccessControlType type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.PipeSecurity.AccessRuleFactory(System.Security.Principal.IdentityReference,System.Int32,System.Boolean,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AccessControlType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::AccessControl::AccessRule ^ AccessRuleFactory(System::Security::Principal::IdentityReference ^ identityReference, int accessMask, bool isInherited, System::Security::AccessControl::InheritanceFlags inheritanceFlags, System::Security::AccessControl::PropagationFlags propagationFlags, System::Security::AccessControl::AccessControlType type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes.AccessControl</AssemblyName>
@@ -159,6 +166,8 @@
       <MemberSignature Language="C#" Value="public override Type AccessRuleType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type AccessRuleType" />
       <MemberSignature Language="DocId" Value="P:System.IO.Pipes.PipeSecurity.AccessRuleType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property AccessRuleType As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ AccessRuleType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes.AccessControl</AssemblyName>
@@ -190,6 +199,8 @@
       <MemberSignature Language="C#" Value="public void AddAccessRule (System.IO.Pipes.PipeAccessRule rule);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddAccessRule(class System.IO.Pipes.PipeAccessRule rule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.PipeSecurity.AddAccessRule(System.IO.Pipes.PipeAccessRule)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddAccessRule (rule As PipeAccessRule)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddAccessRule(System::IO::Pipes::PipeAccessRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes.AccessControl</AssemblyName>
@@ -225,6 +236,8 @@
       <MemberSignature Language="C#" Value="public void AddAuditRule (System.IO.Pipes.PipeAuditRule rule);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddAuditRule(class System.IO.Pipes.PipeAuditRule rule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.PipeSecurity.AddAuditRule(System.IO.Pipes.PipeAuditRule)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddAuditRule (rule As PipeAuditRule)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddAuditRule(System::IO::Pipes::PipeAuditRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes.AccessControl</AssemblyName>
@@ -262,6 +275,7 @@
       <MemberSignature Language="C#" Value="public override sealed System.Security.AccessControl.AuditRule AuditRuleFactory (System.Security.Principal.IdentityReference identityReference, int accessMask, bool isInherited, System.Security.AccessControl.InheritanceFlags inheritanceFlags, System.Security.AccessControl.PropagationFlags propagationFlags, System.Security.AccessControl.AuditFlags flags);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.AccessControl.AuditRule AuditRuleFactory(class System.Security.Principal.IdentityReference identityReference, int32 accessMask, bool isInherited, valuetype System.Security.AccessControl.InheritanceFlags inheritanceFlags, valuetype System.Security.AccessControl.PropagationFlags propagationFlags, valuetype System.Security.AccessControl.AuditFlags flags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.PipeSecurity.AuditRuleFactory(System.Security.Principal.IdentityReference,System.Int32,System.Boolean,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AuditFlags)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::AccessControl::AuditRule ^ AuditRuleFactory(System::Security::Principal::IdentityReference ^ identityReference, int accessMask, bool isInherited, System::Security::AccessControl::InheritanceFlags inheritanceFlags, System::Security::AccessControl::PropagationFlags propagationFlags, System::Security::AccessControl::AuditFlags flags);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes.AccessControl</AssemblyName>
@@ -315,6 +329,8 @@
       <MemberSignature Language="C#" Value="public override Type AuditRuleType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type AuditRuleType" />
       <MemberSignature Language="DocId" Value="P:System.IO.Pipes.PipeSecurity.AuditRuleType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property AuditRuleType As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ AuditRuleType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes.AccessControl</AssemblyName>
@@ -342,10 +358,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Persist">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipes.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Saves the specified sections of the security descriptor that is associated with the current <see cref="T:System.IO.Pipes.PipeSecurity" /> object to permanent storage.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Persist">
-      <MemberSignature Language="C#" Value="protected void Persist (System.Runtime.InteropServices.SafeHandle handle);" />
+      <MemberSignature Language="C#" Value="protected internal void Persist (System.Runtime.InteropServices.SafeHandle handle);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance void Persist(class System.Runtime.InteropServices.SafeHandle handle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.PipeSecurity.Persist(System.Runtime.InteropServices.SafeHandle)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Sub Persist (handle As SafeHandle)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; void Persist(System::Runtime::InteropServices::SafeHandle ^ handle);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes.AccessControl</AssemblyName>
@@ -370,9 +398,11 @@
       </Docs>
     </Member>
     <Member MemberName="Persist">
-      <MemberSignature Language="C#" Value="protected void Persist (string name);" />
+      <MemberSignature Language="C#" Value="protected internal void Persist (string name);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance void Persist(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.PipeSecurity.Persist(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Sub Persist (name As String)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; void Persist(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes.AccessControl</AssemblyName>
@@ -400,6 +430,8 @@
       <MemberSignature Language="C#" Value="public bool RemoveAccessRule (System.IO.Pipes.PipeAccessRule rule);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool RemoveAccessRule(class System.IO.Pipes.PipeAccessRule rule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.PipeSecurity.RemoveAccessRule(System.IO.Pipes.PipeAccessRule)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RemoveAccessRule (rule As PipeAccessRule) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool RemoveAccessRule(System::IO::Pipes::PipeAccessRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes.AccessControl</AssemblyName>
@@ -437,6 +469,8 @@
       <MemberSignature Language="C#" Value="public void RemoveAccessRuleSpecific (System.IO.Pipes.PipeAccessRule rule);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAccessRuleSpecific(class System.IO.Pipes.PipeAccessRule rule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.PipeSecurity.RemoveAccessRuleSpecific(System.IO.Pipes.PipeAccessRule)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveAccessRuleSpecific (rule As PipeAccessRule)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAccessRuleSpecific(System::IO::Pipes::PipeAccessRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes.AccessControl</AssemblyName>
@@ -472,6 +506,8 @@
       <MemberSignature Language="C#" Value="public bool RemoveAuditRule (System.IO.Pipes.PipeAuditRule rule);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool RemoveAuditRule(class System.IO.Pipes.PipeAuditRule rule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.PipeSecurity.RemoveAuditRule(System.IO.Pipes.PipeAuditRule)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RemoveAuditRule (rule As PipeAuditRule) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool RemoveAuditRule(System::IO::Pipes::PipeAuditRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes.AccessControl</AssemblyName>
@@ -509,6 +545,8 @@
       <MemberSignature Language="C#" Value="public void RemoveAuditRuleAll (System.IO.Pipes.PipeAuditRule rule);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAuditRuleAll(class System.IO.Pipes.PipeAuditRule rule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.PipeSecurity.RemoveAuditRuleAll(System.IO.Pipes.PipeAuditRule)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveAuditRuleAll (rule As PipeAuditRule)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAuditRuleAll(System::IO::Pipes::PipeAuditRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes.AccessControl</AssemblyName>
@@ -544,6 +582,8 @@
       <MemberSignature Language="C#" Value="public void RemoveAuditRuleSpecific (System.IO.Pipes.PipeAuditRule rule);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAuditRuleSpecific(class System.IO.Pipes.PipeAuditRule rule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.PipeSecurity.RemoveAuditRuleSpecific(System.IO.Pipes.PipeAuditRule)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveAuditRuleSpecific (rule As PipeAuditRule)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAuditRuleSpecific(System::IO::Pipes::PipeAuditRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes.AccessControl</AssemblyName>
@@ -579,6 +619,8 @@
       <MemberSignature Language="C#" Value="public void ResetAccessRule (System.IO.Pipes.PipeAccessRule rule);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ResetAccessRule(class System.IO.Pipes.PipeAccessRule rule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.PipeSecurity.ResetAccessRule(System.IO.Pipes.PipeAccessRule)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ResetAccessRule (rule As PipeAccessRule)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetAccessRule(System::IO::Pipes::PipeAccessRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes.AccessControl</AssemblyName>
@@ -614,6 +656,8 @@
       <MemberSignature Language="C#" Value="public void SetAccessRule (System.IO.Pipes.PipeAccessRule rule);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetAccessRule(class System.IO.Pipes.PipeAccessRule rule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.PipeSecurity.SetAccessRule(System.IO.Pipes.PipeAccessRule)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetAccessRule (rule As PipeAccessRule)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetAccessRule(System::IO::Pipes::PipeAccessRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes.AccessControl</AssemblyName>
@@ -649,6 +693,8 @@
       <MemberSignature Language="C#" Value="public void SetAuditRule (System.IO.Pipes.PipeAuditRule rule);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetAuditRule(class System.IO.Pipes.PipeAuditRule rule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.PipeSecurity.SetAuditRule(System.IO.Pipes.PipeAuditRule)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetAuditRule (rule As PipeAuditRule)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetAuditRule(System::IO::Pipes::PipeAuditRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes.AccessControl</AssemblyName>
@@ -680,15 +726,5 @@
         <exception cref="T:System.ArgumentNullException">The <paramref name="rule" /> parameter is <see langword="null" />.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Persist">
-      <AssemblyInfo>
-        <AssemblyName>System.IO.Pipes.AccessControl</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-        <AssemblyVersion>4.0.2.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Saves the specified sections of the security descriptor that is associated with the current <see cref="T:System.IO.Pipes.PipeSecurity" /> object to permanent storage.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

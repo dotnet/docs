@@ -1,7 +1,9 @@
-<Type Name="StatusBarPanelClickEventArgs" FullName="System.Windows.Forms.StatusBarPanelClickEventArgs">
+﻿<Type Name="StatusBarPanelClickEventArgs" FullName="System.Windows.Forms.StatusBarPanelClickEventArgs">
   <TypeSignature Language="C#" Value="public class StatusBarPanelClickEventArgs : System.Windows.Forms.MouseEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StatusBarPanelClickEventArgs extends System.Windows.Forms.MouseEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.StatusBarPanelClickEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class StatusBarPanelClickEventArgs&#xA;Inherits MouseEventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StatusBarPanelClickEventArgs : System::Windows::Forms::MouseEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +42,7 @@
       <MemberSignature Language="C#" Value="public StatusBarPanelClickEventArgs (System.Windows.Forms.StatusBarPanel statusBarPanel, System.Windows.Forms.MouseButtons button, int clicks, int x, int y);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.StatusBarPanel statusBarPanel, valuetype System.Windows.Forms.MouseButtons button, int32 clicks, int32 x, int32 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.StatusBarPanelClickEventArgs.#ctor(System.Windows.Forms.StatusBarPanel,System.Windows.Forms.MouseButtons,System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StatusBarPanelClickEventArgs(System::Windows::Forms::StatusBarPanel ^ statusBarPanel, System::Windows::Forms::MouseButtons button, int clicks, int x, int y);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -68,6 +71,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.StatusBarPanel StatusBarPanel { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.StatusBarPanel StatusBarPanel" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.StatusBarPanelClickEventArgs.StatusBarPanel" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StatusBarPanel As StatusBarPanel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::StatusBarPanel ^ StatusBarPanel { System::Windows::Forms::StatusBarPanel ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="MemberAttributes" FullName="System.CodeDom.MemberAttributes">
+﻿<Type Name="MemberAttributes" FullName="System.CodeDom.MemberAttributes">
   <TypeSignature Language="C#" Value="public enum MemberAttributes" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed MemberAttributes extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.CodeDom.MemberAttributes" />
+  <TypeSignature Language="VB.NET" Value="Public Enum MemberAttributes" />
+  <TypeSignature Language="C++ CLI" Value="public enum class MemberAttributes" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,6 +55,8 @@
       <MemberSignature Language="C#" Value="Abstract" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.MemberAttributes Abstract = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.CodeDom.MemberAttributes.Abstract" />
+      <MemberSignature Language="VB.NET" Value="Abstract" />
+      <MemberSignature Language="C++ CLI" Value="Abstract" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -65,6 +69,7 @@
       <ReturnValue>
         <ReturnType>System.CodeDom.MemberAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>An abstract member.</summary>
       </Docs>
@@ -73,6 +78,8 @@
       <MemberSignature Language="C#" Value="AccessMask" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.MemberAttributes AccessMask = int32(61440)" />
       <MemberSignature Language="DocId" Value="F:System.CodeDom.MemberAttributes.AccessMask" />
+      <MemberSignature Language="VB.NET" Value="AccessMask" />
+      <MemberSignature Language="C++ CLI" Value="AccessMask" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -85,6 +92,7 @@
       <ReturnValue>
         <ReturnType>System.CodeDom.MemberAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>61440</MemberValue>
       <Docs>
         <summary>An access mask.</summary>
       </Docs>
@@ -93,6 +101,8 @@
       <MemberSignature Language="C#" Value="Assembly" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.MemberAttributes Assembly = int32(4096)" />
       <MemberSignature Language="DocId" Value="F:System.CodeDom.MemberAttributes.Assembly" />
+      <MemberSignature Language="VB.NET" Value="Assembly" />
+      <MemberSignature Language="C++ CLI" Value="Assembly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -105,6 +115,7 @@
       <ReturnValue>
         <ReturnType>System.CodeDom.MemberAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>4096</MemberValue>
       <Docs>
         <summary>A member that is accessible to any class within the same assembly.</summary>
       </Docs>
@@ -113,6 +124,8 @@
       <MemberSignature Language="C#" Value="Const" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.MemberAttributes Const = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.CodeDom.MemberAttributes.Const" />
+      <MemberSignature Language="VB.NET" Value="Const" />
+      <MemberSignature Language="C++ CLI" Value="Const" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -125,6 +138,7 @@
       <ReturnValue>
         <ReturnType>System.CodeDom.MemberAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>A constant member.</summary>
       </Docs>
@@ -133,6 +147,8 @@
       <MemberSignature Language="C#" Value="Family" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.MemberAttributes Family = int32(12288)" />
       <MemberSignature Language="DocId" Value="F:System.CodeDom.MemberAttributes.Family" />
+      <MemberSignature Language="VB.NET" Value="Family" />
+      <MemberSignature Language="C++ CLI" Value="Family" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -145,6 +161,7 @@
       <ReturnValue>
         <ReturnType>System.CodeDom.MemberAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>12288</MemberValue>
       <Docs>
         <summary>A member that is accessible within the family of its class and derived classes.</summary>
       </Docs>
@@ -153,6 +170,8 @@
       <MemberSignature Language="C#" Value="FamilyAndAssembly" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.MemberAttributes FamilyAndAssembly = int32(8192)" />
       <MemberSignature Language="DocId" Value="F:System.CodeDom.MemberAttributes.FamilyAndAssembly" />
+      <MemberSignature Language="VB.NET" Value="FamilyAndAssembly" />
+      <MemberSignature Language="C++ CLI" Value="FamilyAndAssembly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -165,6 +184,7 @@
       <ReturnValue>
         <ReturnType>System.CodeDom.MemberAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>8192</MemberValue>
       <Docs>
         <summary>A member that is accessible within its class, and derived classes in the same assembly.</summary>
       </Docs>
@@ -173,6 +193,8 @@
       <MemberSignature Language="C#" Value="FamilyOrAssembly" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.MemberAttributes FamilyOrAssembly = int32(16384)" />
       <MemberSignature Language="DocId" Value="F:System.CodeDom.MemberAttributes.FamilyOrAssembly" />
+      <MemberSignature Language="VB.NET" Value="FamilyOrAssembly" />
+      <MemberSignature Language="C++ CLI" Value="FamilyOrAssembly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -185,6 +207,7 @@
       <ReturnValue>
         <ReturnType>System.CodeDom.MemberAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>16384</MemberValue>
       <Docs>
         <summary>A member that is accessible within its class, its derived classes in any assembly, and any class in the same assembly.</summary>
       </Docs>
@@ -193,6 +216,8 @@
       <MemberSignature Language="C#" Value="Final" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.MemberAttributes Final = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.CodeDom.MemberAttributes.Final" />
+      <MemberSignature Language="VB.NET" Value="Final" />
+      <MemberSignature Language="C++ CLI" Value="Final" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -205,6 +230,7 @@
       <ReturnValue>
         <ReturnType>System.CodeDom.MemberAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>A member that cannot be overridden in a derived class.</summary>
       </Docs>
@@ -213,6 +239,8 @@
       <MemberSignature Language="C#" Value="New" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.MemberAttributes New = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.CodeDom.MemberAttributes.New" />
+      <MemberSignature Language="VB.NET" Value="New" />
+      <MemberSignature Language="C++ CLI" Value="New" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -225,6 +253,7 @@
       <ReturnValue>
         <ReturnType>System.CodeDom.MemberAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>A new member.</summary>
       </Docs>
@@ -233,6 +262,8 @@
       <MemberSignature Language="C#" Value="Overloaded" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.MemberAttributes Overloaded = int32(256)" />
       <MemberSignature Language="DocId" Value="F:System.CodeDom.MemberAttributes.Overloaded" />
+      <MemberSignature Language="VB.NET" Value="Overloaded" />
+      <MemberSignature Language="C++ CLI" Value="Overloaded" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -245,6 +276,7 @@
       <ReturnValue>
         <ReturnType>System.CodeDom.MemberAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>256</MemberValue>
       <Docs>
         <summary>An overloaded member. Some languages, such as Visual Basic, require overloaded members to be explicitly indicated.</summary>
       </Docs>
@@ -253,6 +285,8 @@
       <MemberSignature Language="C#" Value="Override" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.MemberAttributes Override = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.CodeDom.MemberAttributes.Override" />
+      <MemberSignature Language="VB.NET" Value="Override" />
+      <MemberSignature Language="C++ CLI" Value="Override" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -265,6 +299,7 @@
       <ReturnValue>
         <ReturnType>System.CodeDom.MemberAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>A member that overrides a base class member.</summary>
       </Docs>
@@ -273,6 +308,8 @@
       <MemberSignature Language="C#" Value="Private" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.MemberAttributes Private = int32(20480)" />
       <MemberSignature Language="DocId" Value="F:System.CodeDom.MemberAttributes.Private" />
+      <MemberSignature Language="VB.NET" Value="Private" />
+      <MemberSignature Language="C++ CLI" Value="Private" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -285,6 +322,7 @@
       <ReturnValue>
         <ReturnType>System.CodeDom.MemberAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>20480</MemberValue>
       <Docs>
         <summary>A private member.</summary>
       </Docs>
@@ -293,6 +331,8 @@
       <MemberSignature Language="C#" Value="Public" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.MemberAttributes Public = int32(24576)" />
       <MemberSignature Language="DocId" Value="F:System.CodeDom.MemberAttributes.Public" />
+      <MemberSignature Language="VB.NET" Value="Public" />
+      <MemberSignature Language="C++ CLI" Value="Public" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -305,6 +345,7 @@
       <ReturnValue>
         <ReturnType>System.CodeDom.MemberAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>24576</MemberValue>
       <Docs>
         <summary>A public member.</summary>
       </Docs>
@@ -313,6 +354,8 @@
       <MemberSignature Language="C#" Value="ScopeMask" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.MemberAttributes ScopeMask = int32(15)" />
       <MemberSignature Language="DocId" Value="F:System.CodeDom.MemberAttributes.ScopeMask" />
+      <MemberSignature Language="VB.NET" Value="ScopeMask" />
+      <MemberSignature Language="C++ CLI" Value="ScopeMask" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -325,6 +368,7 @@
       <ReturnValue>
         <ReturnType>System.CodeDom.MemberAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>15</MemberValue>
       <Docs>
         <summary>A scope mask.</summary>
       </Docs>
@@ -333,6 +377,8 @@
       <MemberSignature Language="C#" Value="Static" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.MemberAttributes Static = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.CodeDom.MemberAttributes.Static" />
+      <MemberSignature Language="VB.NET" Value="Static" />
+      <MemberSignature Language="C++ CLI" Value="Static" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -345,6 +391,7 @@
       <ReturnValue>
         <ReturnType>System.CodeDom.MemberAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>A static member. In Visual Basic, this is equivalent to the <see langword="Shared" /> keyword.</summary>
       </Docs>
@@ -353,6 +400,8 @@
       <MemberSignature Language="C#" Value="VTableMask" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.MemberAttributes VTableMask = int32(240)" />
       <MemberSignature Language="DocId" Value="F:System.CodeDom.MemberAttributes.VTableMask" />
+      <MemberSignature Language="VB.NET" Value="VTableMask" />
+      <MemberSignature Language="C++ CLI" Value="VTableMask" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -365,6 +414,7 @@
       <ReturnValue>
         <ReturnType>System.CodeDom.MemberAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>240</MemberValue>
       <Docs>
         <summary>A VTable mask.</summary>
       </Docs>

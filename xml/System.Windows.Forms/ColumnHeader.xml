@@ -1,7 +1,9 @@
-<Type Name="ColumnHeader" FullName="System.Windows.Forms.ColumnHeader">
+﻿<Type Name="ColumnHeader" FullName="System.Windows.Forms.ColumnHeader">
   <TypeSignature Language="C#" Value="public class ColumnHeader : System.ComponentModel.Component, ICloneable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ColumnHeader extends System.ComponentModel.Component implements class System.ICloneable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ColumnHeader" />
+  <TypeSignature Language="VB.NET" Value="Public Class ColumnHeader&#xA;Inherits Component&#xA;Implements ICloneable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ColumnHeader : System::ComponentModel::Component, ICloneable" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,10 +55,21 @@
     <altmember cref="T:System.Windows.Forms.ListView.ColumnHeaderCollection" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ColumnHeader" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ColumnHeader ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ColumnHeader.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ColumnHeader();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -83,6 +96,8 @@
       <MemberSignature Language="C#" Value="public ColumnHeader (int imageIndex);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 imageIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ColumnHeader.#ctor(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (imageIndex As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ColumnHeader(int imageIndex);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -101,6 +116,8 @@
       <MemberSignature Language="C#" Value="public ColumnHeader (string imageKey);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string imageKey) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ColumnHeader.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (imageKey As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ColumnHeader(System::String ^ imageKey);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -119,6 +136,8 @@
       <MemberSignature Language="C#" Value="public void AutoResize (System.Windows.Forms.ColumnHeaderAutoResizeStyle headerAutoResize);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AutoResize(valuetype System.Windows.Forms.ColumnHeaderAutoResizeStyle headerAutoResize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ColumnHeader.AutoResize(System.Windows.Forms.ColumnHeaderAutoResizeStyle)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AutoResize (headerAutoResize As ColumnHeaderAutoResizeStyle)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AutoResize(System::Windows::Forms::ColumnHeaderAutoResizeStyle headerAutoResize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -148,7 +167,12 @@
       <MemberSignature Language="C#" Value="public object Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ColumnHeader.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Clone();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -174,6 +198,8 @@
       <MemberSignature Language="C#" Value="public int DisplayIndex { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 DisplayIndex" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ColumnHeader.DisplayIndex" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisplayIndex As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int DisplayIndex { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -184,7 +210,7 @@
           <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -200,6 +226,8 @@
       <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ColumnHeader.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -232,6 +260,8 @@
       <MemberSignature Language="C#" Value="public int ImageIndex { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ImageIndex" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ColumnHeader.ImageIndex" />
+      <MemberSignature Language="VB.NET" Value="Public Property ImageIndex As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ImageIndex { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -242,13 +272,13 @@
           <AttributeName>System.ComponentModel.DefaultValue(-1)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.ImageIndexEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Forms.ImageIndexConverter))</AttributeName>
@@ -280,6 +310,8 @@
       <MemberSignature Language="C#" Value="public string ImageKey { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ImageKey" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ColumnHeader.ImageKey" />
+      <MemberSignature Language="VB.NET" Value="Public Property ImageKey As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ImageKey { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -290,13 +322,13 @@
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.ImageIndexEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Forms.ImageKeyConverter))</AttributeName>
@@ -326,6 +358,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ImageList ImageList { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ImageList ImageList" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ColumnHeader.ImageList" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ImageList As ImageList" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ImageList ^ ImageList { System::Windows::Forms::ImageList ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -356,6 +390,8 @@
       <MemberSignature Language="C#" Value="public int Index { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Index" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ColumnHeader.Index" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Index As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Index { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -387,6 +423,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ListView ListView { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ListView ListView" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ColumnHeader.ListView" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ListView As ListView" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ListView ^ ListView { System::Windows::Forms::ListView ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -417,6 +455,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ColumnHeader.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -440,6 +480,8 @@
       <MemberSignature Language="C#" Value="public object Tag { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Tag" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ColumnHeader.Tag" />
+      <MemberSignature Language="VB.NET" Value="Public Property Tag As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Tag { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -472,6 +514,8 @@
       <MemberSignature Language="C#" Value="public string Text { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Text" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ColumnHeader.Text" />
+      <MemberSignature Language="VB.NET" Value="Public Property Text As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -506,6 +550,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.HorizontalAlignment TextAlign { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.HorizontalAlignment TextAlign" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ColumnHeader.TextAlign" />
+      <MemberSignature Language="VB.NET" Value="Public Property TextAlign As HorizontalAlignment" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::HorizontalAlignment TextAlign { System::Windows::Forms::HorizontalAlignment get(); void set(System::Windows::Forms::HorizontalAlignment value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -553,6 +599,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ColumnHeader.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -572,6 +620,8 @@
       <MemberSignature Language="C#" Value="public int Width { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Width" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ColumnHeader.Width" />
+      <MemberSignature Language="VB.NET" Value="Public Property Width As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Width { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -613,14 +663,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ColumnHeader" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,9 @@
-<Type Name="CommonAce" FullName="System.Security.AccessControl.CommonAce">
+﻿<Type Name="CommonAce" FullName="System.Security.AccessControl.CommonAce">
   <TypeSignature Language="C#" Value="public sealed class CommonAce : System.Security.AccessControl.QualifiedAce" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CommonAce extends System.Security.AccessControl.QualifiedAce" />
   <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.CommonAce" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CommonAce&#xA;Inherits QualifiedAce" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CommonAce sealed : System::Security::AccessControl::QualifiedAce" />
   <AssemblyInfo>
     <AssemblyName>System.Security.AccessControl</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +50,8 @@
       <MemberSignature Language="C#" Value="public CommonAce (System.Security.AccessControl.AceFlags flags, System.Security.AccessControl.AceQualifier qualifier, int accessMask, System.Security.Principal.SecurityIdentifier sid, bool isCallback, byte[] opaque);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.AccessControl.AceFlags flags, valuetype System.Security.AccessControl.AceQualifier qualifier, int32 accessMask, class System.Security.Principal.SecurityIdentifier sid, bool isCallback, unsigned int8[] opaque) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.CommonAce.#ctor(System.Security.AccessControl.AceFlags,System.Security.AccessControl.AceQualifier,System.Int32,System.Security.Principal.SecurityIdentifier,System.Boolean,System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (flags As AceFlags, qualifier As AceQualifier, accessMask As Integer, sid As SecurityIdentifier, isCallback As Boolean, opaque As Byte())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CommonAce(System::Security::AccessControl::AceFlags flags, System::Security::AccessControl::AceQualifier qualifier, int accessMask, System::Security::Principal::SecurityIdentifier ^ sid, bool isCallback, cli::array &lt;System::Byte&gt; ^ opaque);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -83,6 +87,8 @@
       <MemberSignature Language="C#" Value="public override int BinaryLength { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 BinaryLength" />
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.CommonAce.BinaryLength" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property BinaryLength As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int BinaryLength { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -107,6 +113,8 @@
       <MemberSignature Language="C#" Value="public override void GetBinaryForm (byte[] binaryForm, int offset);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GetBinaryForm(unsigned int8[] binaryForm, int32 offset) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.CommonAce.GetBinaryForm(System.Byte[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetBinaryForm (binaryForm As Byte(), offset As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetBinaryForm(cli::array &lt;System::Byte&gt; ^ binaryForm, int offset);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -138,6 +146,8 @@
       <MemberSignature Language="C#" Value="public static int MaxOpaqueLength (bool isCallback);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 MaxOpaqueLength(bool isCallback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.CommonAce.MaxOpaqueLength(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MaxOpaqueLength (isCallback As Boolean) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int MaxOpaqueLength(bool isCallback);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="StringSplitOptions" FullName="System.StringSplitOptions">
+﻿<Type Name="StringSplitOptions" FullName="System.StringSplitOptions">
   <TypeSignature Language="C#" Value="public enum StringSplitOptions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed StringSplitOptions extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.StringSplitOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Enum StringSplitOptions" />
+  <TypeSignature Language="C++ CLI" Value="public enum class StringSplitOptions" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -58,6 +60,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.StringSplitOptions None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.StringSplitOptions.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -79,6 +83,7 @@
       <ReturnValue>
         <ReturnType>System.StringSplitOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The return value includes array elements that contain an empty string</summary>
       </Docs>
@@ -87,6 +92,8 @@
       <MemberSignature Language="C#" Value="RemoveEmptyEntries" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.StringSplitOptions RemoveEmptyEntries = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.StringSplitOptions.RemoveEmptyEntries" />
+      <MemberSignature Language="VB.NET" Value="RemoveEmptyEntries" />
+      <MemberSignature Language="C++ CLI" Value="RemoveEmptyEntries" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -108,6 +115,7 @@
       <ReturnValue>
         <ReturnType>System.StringSplitOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The return value does not include array elements that contain an empty string</summary>
       </Docs>

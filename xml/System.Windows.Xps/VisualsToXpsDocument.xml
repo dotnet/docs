@@ -1,7 +1,9 @@
-<Type Name="VisualsToXpsDocument" FullName="System.Windows.Xps.VisualsToXpsDocument">
+﻿<Type Name="VisualsToXpsDocument" FullName="System.Windows.Xps.VisualsToXpsDocument">
   <TypeSignature Language="C#" Value="public class VisualsToXpsDocument : System.Windows.Documents.Serialization.SerializerWriterCollator" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VisualsToXpsDocument extends System.Windows.Documents.Serialization.SerializerWriterCollator" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Xps.VisualsToXpsDocument" />
+  <TypeSignature Language="VB.NET" Value="Public Class VisualsToXpsDocument&#xA;Inherits SerializerWriterCollator" />
+  <TypeSignature Language="C++ CLI" Value="public ref class VisualsToXpsDocument : System::Windows::Documents::Serialization::SerializerWriterCollator" />
   <AssemblyInfo>
     <AssemblyName>System.Printing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +40,8 @@
       <MemberSignature Language="C#" Value="public override void BeginBatchWrite ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void BeginBatchWrite() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.VisualsToXpsDocument.BeginBatchWrite" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub BeginBatchWrite ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void BeginBatchWrite();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -65,6 +69,8 @@
       <MemberSignature Language="C#" Value="public override void Cancel ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Cancel() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.VisualsToXpsDocument.Cancel" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Cancel ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Cancel();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -96,6 +102,8 @@
       <MemberSignature Language="C#" Value="public override void CancelAsync ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void CancelAsync() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.VisualsToXpsDocument.CancelAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub CancelAsync ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void CancelAsync();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -127,6 +135,8 @@
       <MemberSignature Language="C#" Value="public override void EndBatchWrite ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void EndBatchWrite() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.VisualsToXpsDocument.EndBatchWrite" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub EndBatchWrite ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void EndBatchWrite();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -155,10 +165,20 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Write">
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes a <see cref="T:System.Windows.Media.Visual" />synchronously to an <see cref="T:System.Windows.Xps.Packaging.XpsDocument" /> or a <see cref="T:System.Printing.PrintQueue" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Write">
       <MemberSignature Language="C#" Value="public override void Write (System.Windows.Media.Visual visual);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(class System.Windows.Media.Visual visual) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.VisualsToXpsDocument.Write(System.Windows.Media.Visual)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::Windows::Media::Visual ^ visual);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -190,6 +210,7 @@
       <MemberSignature Language="C#" Value="public override void Write (System.Windows.Media.Visual visual, System.Printing.PrintTicket printTicket);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(class System.Windows.Media.Visual visual, class System.Printing.PrintTicket printTicket) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.VisualsToXpsDocument.Write(System.Windows.Media.Visual,System.Printing.PrintTicket)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::Windows::Media::Visual ^ visual, System::Printing::PrintTicket ^ printTicket);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -221,10 +242,20 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes a <see cref="T:System.Windows.Media.Visual" />asynchronously to an <see cref="T:System.Windows.Xps.Packaging.XpsDocument" /> or a <see cref="T:System.Printing.PrintQueue" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="WriteAsync">
       <MemberSignature Language="C#" Value="public override void WriteAsync (System.Windows.Media.Visual visual);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteAsync(class System.Windows.Media.Visual visual) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.VisualsToXpsDocument.WriteAsync(System.Windows.Media.Visual)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteAsync(System::Windows::Media::Visual ^ visual);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -246,6 +277,7 @@
       <MemberSignature Language="C#" Value="public override void WriteAsync (System.Windows.Media.Visual visual, object userSuppliedState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteAsync(class System.Windows.Media.Visual visual, object userSuppliedState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.VisualsToXpsDocument.WriteAsync(System.Windows.Media.Visual,System.Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteAsync(System::Windows::Media::Visual ^ visual, System::Object ^ userSuppliedState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -269,6 +301,7 @@
       <MemberSignature Language="C#" Value="public override void WriteAsync (System.Windows.Media.Visual visual, System.Printing.PrintTicket printTicket);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteAsync(class System.Windows.Media.Visual visual, class System.Printing.PrintTicket printTicket) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.VisualsToXpsDocument.WriteAsync(System.Windows.Media.Visual,System.Printing.PrintTicket)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteAsync(System::Windows::Media::Visual ^ visual, System::Printing::PrintTicket ^ printTicket);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -304,6 +337,7 @@
       <MemberSignature Language="C#" Value="public override void WriteAsync (System.Windows.Media.Visual visual, System.Printing.PrintTicket printTicket, object userSuppliedState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteAsync(class System.Windows.Media.Visual visual, class System.Printing.PrintTicket printTicket, object userSuppliedState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.VisualsToXpsDocument.WriteAsync(System.Windows.Media.Visual,System.Printing.PrintTicket,System.Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteAsync(System::Windows::Media::Visual ^ visual, System::Printing::PrintTicket ^ printTicket, System::Object ^ userSuppliedState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -337,23 +371,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="WriteAsync">
-      <AssemblyInfo>
-        <AssemblyName>System.Printing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes a <see cref="T:System.Windows.Media.Visual" />asynchronously to an <see cref="T:System.Windows.Xps.Packaging.XpsDocument" /> or a <see cref="T:System.Printing.PrintQueue" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Write">
-      <AssemblyInfo>
-        <AssemblyName>System.Printing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes a <see cref="T:System.Windows.Media.Visual" />synchronously to an <see cref="T:System.Windows.Xps.Packaging.XpsDocument" /> or a <see cref="T:System.Printing.PrintQueue" />.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

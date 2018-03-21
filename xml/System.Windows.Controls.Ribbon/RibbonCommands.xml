@@ -1,7 +1,9 @@
-<Type Name="RibbonCommands" FullName="System.Windows.Controls.Ribbon.RibbonCommands">
+﻿<Type Name="RibbonCommands" FullName="System.Windows.Controls.Ribbon.RibbonCommands">
   <TypeSignature Language="C#" Value="public static class RibbonCommands" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed RibbonCommands extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Ribbon.RibbonCommands" />
+  <TypeSignature Language="VB.NET" Value="Public Class RibbonCommands" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RibbonCommands abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand AddToQuickAccessToolBarCommand { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand AddToQuickAccessToolBarCommand" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonCommands.AddToQuickAccessToolBarCommand" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property AddToQuickAccessToolBarCommand As RoutedUICommand" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ AddToQuickAccessToolBarCommand { System::Windows::Input::RoutedUICommand ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -37,6 +41,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand MaximizeRibbonCommand { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand MaximizeRibbonCommand" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonCommands.MaximizeRibbonCommand" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MaximizeRibbonCommand As RoutedUICommand" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ MaximizeRibbonCommand { System::Windows::Input::RoutedUICommand ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -55,6 +61,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand MinimizeRibbonCommand { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand MinimizeRibbonCommand" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonCommands.MinimizeRibbonCommand" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MinimizeRibbonCommand As RoutedUICommand" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ MinimizeRibbonCommand { System::Windows::Input::RoutedUICommand ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -73,6 +81,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand RemoveFromQuickAccessToolBarCommand { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand RemoveFromQuickAccessToolBarCommand" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonCommands.RemoveFromQuickAccessToolBarCommand" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property RemoveFromQuickAccessToolBarCommand As RoutedUICommand" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ RemoveFromQuickAccessToolBarCommand { System::Windows::Input::RoutedUICommand ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -91,6 +101,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand ShowQuickAccessToolBarAboveRibbonCommand { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand ShowQuickAccessToolBarAboveRibbonCommand" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonCommands.ShowQuickAccessToolBarAboveRibbonCommand" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ShowQuickAccessToolBarAboveRibbonCommand As RoutedUICommand" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ ShowQuickAccessToolBarAboveRibbonCommand { System::Windows::Input::RoutedUICommand ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -109,6 +121,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand ShowQuickAccessToolBarBelowRibbonCommand { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand ShowQuickAccessToolBarBelowRibbonCommand" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonCommands.ShowQuickAccessToolBarBelowRibbonCommand" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ShowQuickAccessToolBarBelowRibbonCommand As RoutedUICommand" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedUICommand ^ ShowQuickAccessToolBarBelowRibbonCommand { System::Windows::Input::RoutedUICommand ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>

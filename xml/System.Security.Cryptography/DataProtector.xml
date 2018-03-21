@@ -1,7 +1,9 @@
-<Type Name="DataProtector" FullName="System.Security.Cryptography.DataProtector">
+﻿<Type Name="DataProtector" FullName="System.Security.Cryptography.DataProtector">
   <TypeSignature Language="C#" Value="public abstract class DataProtector" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DataProtector extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.DataProtector" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class DataProtector" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataProtector abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Security</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +43,8 @@
       <MemberSignature Language="C#" Value="protected DataProtector (string applicationName, string primaryPurpose, string[] specificPurposes);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(string applicationName, string primaryPurpose, string[] specificPurposes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DataProtector.#ctor(System.String,System.String,System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (applicationName As String, primaryPurpose As String, specificPurposes As String())" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; DataProtector(System::String ^ applicationName, System::String ^ primaryPurpose, cli::array &lt;System::String ^&gt; ^ specificPurposes);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -80,6 +84,8 @@
       <MemberSignature Language="C#" Value="protected string ApplicationName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ApplicationName" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.DataProtector.ApplicationName" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property ApplicationName As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::String ^ ApplicationName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -98,6 +104,8 @@
       <MemberSignature Language="C#" Value="public static System.Security.Cryptography.DataProtector Create (string providerClass, string applicationName, string primaryPurpose, params string[] specificPurposes);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Cryptography.DataProtector Create(string providerClass, string applicationName, string primaryPurpose, string[] specificPurposes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DataProtector.Create(System.String,System.String,System.String,System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (providerClass As String, applicationName As String, primaryPurpose As String, ParamArray specificPurposes As String()) As DataProtector" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::DataProtector ^ Create(System::String ^ providerClass, System::String ^ applicationName, System::String ^ primaryPurpose, ... cli::array &lt;System::String ^&gt; ^ specificPurposes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -134,6 +142,8 @@
       <MemberSignature Language="C#" Value="protected virtual byte[] GetHashedPurpose ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance unsigned int8[] GetHashedPurpose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DataProtector.GetHashedPurpose" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetHashedPurpose () As Byte()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual cli::array &lt;System::Byte&gt; ^ GetHashedPurpose();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -168,6 +178,8 @@
       <MemberSignature Language="C#" Value="public abstract bool IsReprotectRequired (byte[] encryptedData);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsReprotectRequired(unsigned int8[] encryptedData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DataProtector.IsReprotectRequired(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function IsReprotectRequired (encryptedData As Byte()) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool IsReprotectRequired(cli::array &lt;System::Byte&gt; ^ encryptedData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -191,6 +203,8 @@
       <MemberSignature Language="C#" Value="protected virtual bool PrependHashedPurposeToPlaintext { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool PrependHashedPurposeToPlaintext" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.DataProtector.PrependHashedPurposeToPlaintext" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property PrependHashedPurposeToPlaintext As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool PrependHashedPurposeToPlaintext { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -216,6 +230,8 @@
       <MemberSignature Language="C#" Value="protected string PrimaryPurpose { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PrimaryPurpose" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.DataProtector.PrimaryPurpose" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property PrimaryPurpose As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::String ^ PrimaryPurpose { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -234,6 +250,8 @@
       <MemberSignature Language="C#" Value="public byte[] Protect (byte[] userData);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] Protect(unsigned int8[] userData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DataProtector.Protect(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function Protect (userData As Byte()) As Byte()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ Protect(cli::array &lt;System::Byte&gt; ^ userData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -258,6 +276,8 @@
       <MemberSignature Language="C#" Value="protected abstract byte[] ProviderProtect (byte[] userData);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance unsigned int8[] ProviderProtect(unsigned int8[] userData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DataProtector.ProviderProtect(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Function ProviderProtect (userData As Byte()) As Byte()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract cli::array &lt;System::Byte&gt; ^ ProviderProtect(cli::array &lt;System::Byte&gt; ^ userData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -290,6 +310,8 @@
       <MemberSignature Language="C#" Value="protected abstract byte[] ProviderUnprotect (byte[] encryptedData);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance unsigned int8[] ProviderUnprotect(unsigned int8[] encryptedData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DataProtector.ProviderUnprotect(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Function ProviderUnprotect (encryptedData As Byte()) As Byte()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract cli::array &lt;System::Byte&gt; ^ ProviderUnprotect(cli::array &lt;System::Byte&gt; ^ encryptedData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -322,6 +344,8 @@
       <MemberSignature Language="C#" Value="protected System.Collections.Generic.IEnumerable&lt;string&gt; SpecificPurposes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;string&gt; SpecificPurposes" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.DataProtector.SpecificPurposes" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property SpecificPurposes As IEnumerable(Of String)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ SpecificPurposes { System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -340,6 +364,8 @@
       <MemberSignature Language="C#" Value="public byte[] Unprotect (byte[] encryptedData);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] Unprotect(unsigned int8[] encryptedData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DataProtector.Unprotect(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function Unprotect (encryptedData As Byte()) As Byte()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ Unprotect(cli::array &lt;System::Byte&gt; ^ encryptedData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="MeasureItemEventArgs" FullName="System.Windows.Forms.MeasureItemEventArgs">
+﻿<Type Name="MeasureItemEventArgs" FullName="System.Windows.Forms.MeasureItemEventArgs">
   <TypeSignature Language="C#" Value="public class MeasureItemEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MeasureItemEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.MeasureItemEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class MeasureItemEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MeasureItemEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,10 +40,20 @@
     <altmember cref="T:System.Windows.Forms.MeasureItemEventHandler" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.MeasureItemEventArgs" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public MeasureItemEventArgs (System.Drawing.Graphics graphics, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Graphics graphics, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MeasureItemEventArgs.#ctor(System.Drawing.Graphics,System.Int32)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MeasureItemEventArgs(System::Drawing::Graphics ^ graphics, int index);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -62,6 +74,7 @@
       <MemberSignature Language="C#" Value="public MeasureItemEventArgs (System.Drawing.Graphics graphics, int index, int itemHeight);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Graphics graphics, int32 index, int32 itemHeight) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MeasureItemEventArgs.#ctor(System.Drawing.Graphics,System.Int32,System.Int32)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MeasureItemEventArgs(System::Drawing::Graphics ^ graphics, int index, int itemHeight);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -84,6 +97,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Graphics Graphics { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Graphics Graphics" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MeasureItemEventArgs.Graphics" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Graphics As Graphics" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Graphics ^ Graphics { System::Drawing::Graphics ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -118,6 +133,8 @@
       <MemberSignature Language="C#" Value="public int Index { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Index" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MeasureItemEventArgs.Index" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Index As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Index { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -147,6 +164,8 @@
       <MemberSignature Language="C#" Value="public int ItemHeight { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ItemHeight" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MeasureItemEventArgs.ItemHeight" />
+      <MemberSignature Language="VB.NET" Value="Public Property ItemHeight As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ItemHeight { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -178,6 +197,8 @@
       <MemberSignature Language="C#" Value="public int ItemWidth { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ItemWidth" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MeasureItemEventArgs.ItemWidth" />
+      <MemberSignature Language="VB.NET" Value="Public Property ItemWidth As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ItemWidth { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -211,14 +232,5 @@
         <altmember cref="T:System.Windows.Forms.MenuItem" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.MeasureItemEventArgs" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

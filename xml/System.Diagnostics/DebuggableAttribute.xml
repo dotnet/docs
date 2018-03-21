@@ -1,7 +1,9 @@
-<Type Name="DebuggableAttribute" FullName="System.Diagnostics.DebuggableAttribute">
+﻿<Type Name="DebuggableAttribute" FullName="System.Diagnostics.DebuggableAttribute">
   <TypeSignature Language="C#" Value="public sealed class DebuggableAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DebuggableAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.DebuggableAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DebuggableAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DebuggableAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,10 +51,25 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.DebuggableAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DebuggableAttribute (System.Diagnostics.DebuggableAttribute.DebuggingModes modes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Diagnostics.DebuggableAttribute/DebuggingModes modes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.DebuggableAttribute.#ctor(System.Diagnostics.DebuggableAttribute.DebuggingModes)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (modes As DebuggableAttribute.DebuggingModes)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DebuggableAttribute(System::Diagnostics::DebuggableAttribute::DebuggingModes modes);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -91,6 +108,8 @@
       <MemberSignature Language="C#" Value="public DebuggableAttribute (bool isJITTrackingEnabled, bool isJITOptimizerDisabled);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool isJITTrackingEnabled, bool isJITOptimizerDisabled) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.DebuggableAttribute.#ctor(System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (isJITTrackingEnabled As Boolean, isJITOptimizerDisabled As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DebuggableAttribute(bool isJITTrackingEnabled, bool isJITOptimizerDisabled);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -133,6 +152,8 @@
       <MemberSignature Language="C#" Value="public System.Diagnostics.DebuggableAttribute.DebuggingModes DebuggingFlags { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Diagnostics.DebuggableAttribute/DebuggingModes DebuggingFlags" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.DebuggableAttribute.DebuggingFlags" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DebuggingFlags As DebuggableAttribute.DebuggingModes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::DebuggableAttribute::DebuggingModes DebuggingFlags { System::Diagnostics::DebuggableAttribute::DebuggingModes get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -167,6 +188,8 @@
       <MemberSignature Language="C#" Value="public bool IsJITOptimizerDisabled { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsJITOptimizerDisabled" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.DebuggableAttribute.IsJITOptimizerDisabled" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsJITOptimizerDisabled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsJITOptimizerDisabled { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -202,6 +225,8 @@
       <MemberSignature Language="C#" Value="public bool IsJITTrackingEnabled { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsJITTrackingEnabled" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.DebuggableAttribute.IsJITTrackingEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsJITTrackingEnabled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsJITTrackingEnabled { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -238,18 +263,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.DebuggableAttribute" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

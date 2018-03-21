@@ -1,7 +1,9 @@
-<Type Name="WebBrowserBase" FullName="System.Windows.Forms.WebBrowserBase">
+﻿<Type Name="WebBrowserBase" FullName="System.Windows.Forms.WebBrowserBase">
   <TypeSignature Language="C#" Value="public class WebBrowserBase : System.Windows.Forms.Control" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WebBrowserBase extends System.Windows.Forms.Control" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.WebBrowserBase" />
+  <TypeSignature Language="VB.NET" Value="Public Class WebBrowserBase&#xA;Inherits Control" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WebBrowserBase : System::Windows::Forms::Control" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -21,7 +23,7 @@
       <AttributeName>System.ComponentModel.Designer("System.Windows.Forms.Design.AxDesigner, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
@@ -38,6 +40,8 @@
       <MemberSignature Language="C#" Value="public object ActiveXInstance { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object ActiveXInstance" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.WebBrowserBase.ActiveXInstance" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActiveXInstance As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ActiveXInstance { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -48,7 +52,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -73,6 +77,8 @@
       <MemberSignature Language="C#" Value="public override bool AllowDrop { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AllowDrop" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.WebBrowserBase.AllowDrop" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property AllowDrop As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AllowDrop { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -83,7 +89,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -106,6 +112,8 @@
       <MemberSignature Language="C#" Value="protected virtual void AttachInterfaces (object nativeActiveXObject);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void AttachInterfaces(object nativeActiveXObject) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WebBrowserBase.AttachInterfaces(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub AttachInterfaces (nativeActiveXObject As Object)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void AttachInterfaces(System::Object ^ nativeActiveXObject);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -139,6 +147,8 @@
       <MemberSignature Language="C#" Value="public override System.Drawing.Color BackColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BackColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.WebBrowserBase.BackColor" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property BackColor As Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color BackColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -149,7 +159,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -170,6 +180,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler BackColorChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler BackColorChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.WebBrowserBase.BackColorChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event BackColorChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ BackColorChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -198,6 +210,8 @@
       <MemberSignature Language="C#" Value="public override System.Drawing.Image BackgroundImage { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Image BackgroundImage" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.WebBrowserBase.BackgroundImage" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property BackgroundImage As Image" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Image ^ BackgroundImage { System::Drawing::Image ^ get(); void set(System::Drawing::Image ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -208,7 +222,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -231,6 +245,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler BackgroundImageChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler BackgroundImageChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.WebBrowserBase.BackgroundImageChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event BackgroundImageChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ BackgroundImageChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -259,6 +275,8 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.ImageLayout BackgroundImageLayout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.ImageLayout BackgroundImageLayout" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.WebBrowserBase.BackgroundImageLayout" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property BackgroundImageLayout As ImageLayout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::ImageLayout BackgroundImageLayout { System::Windows::Forms::ImageLayout get(); void set(System::Windows::Forms::ImageLayout value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -269,7 +287,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -291,6 +309,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler BackgroundImageLayoutChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler BackgroundImageLayoutChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.WebBrowserBase.BackgroundImageLayoutChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event BackgroundImageLayoutChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ BackgroundImageLayoutChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -319,6 +339,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler BindingContextChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler BindingContextChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.WebBrowserBase.BindingContextChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event BindingContextChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ BindingContextChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -347,6 +369,8 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.UICuesEventHandler ChangeUICues;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.UICuesEventHandler ChangeUICues" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.WebBrowserBase.ChangeUICues" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ChangeUICues As UICuesEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::UICuesEventHandler ^ ChangeUICues;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -375,6 +399,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler Click;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Click" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.WebBrowserBase.Click" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Click As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Click;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -403,6 +429,8 @@
       <MemberSignature Language="C#" Value="protected virtual void CreateSink ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void CreateSink() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WebBrowserBase.CreateSink" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub CreateSink ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void CreateSink();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -433,6 +461,8 @@
       <MemberSignature Language="C#" Value="protected virtual System.Windows.Forms.WebBrowserSiteBase CreateWebBrowserSiteBase ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Windows.Forms.WebBrowserSiteBase CreateWebBrowserSiteBase() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WebBrowserBase.CreateWebBrowserSiteBase" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateWebBrowserSiteBase () As WebBrowserSiteBase" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Windows::Forms::WebBrowserSiteBase ^ CreateWebBrowserSiteBase();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -454,6 +484,8 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.Cursor Cursor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.Cursor Cursor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.WebBrowserBase.Cursor" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Cursor As Cursor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::Cursor ^ Cursor { System::Windows::Forms::Cursor ^ get(); void set(System::Windows::Forms::Cursor ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -464,7 +496,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -486,6 +518,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler CursorChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler CursorChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.WebBrowserBase.CursorChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event CursorChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ CursorChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -514,6 +548,8 @@
       <MemberSignature Language="C#" Value="protected override System.Drawing.Size DefaultSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Size DefaultSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.WebBrowserBase.DefaultSize" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DefaultSize As Size" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Drawing::Size DefaultSize { System::Drawing::Size get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -533,6 +569,8 @@
       <MemberSignature Language="C#" Value="protected virtual void DetachInterfaces ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void DetachInterfaces() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WebBrowserBase.DetachInterfaces" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub DetachInterfaces ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void DetachInterfaces();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -563,6 +601,8 @@
       <MemberSignature Language="C#" Value="protected virtual void DetachSink ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void DetachSink() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WebBrowserBase.DetachSink" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub DetachSink ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void DetachSink();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -593,6 +633,8 @@
       <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WebBrowserBase.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -616,6 +658,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler DoubleClick;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler DoubleClick" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.WebBrowserBase.DoubleClick" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event DoubleClick As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ DoubleClick;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -644,6 +688,8 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.DragEventHandler DragDrop;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.DragEventHandler DragDrop" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.WebBrowserBase.DragDrop" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event DragDrop As DragEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::DragEventHandler ^ DragDrop;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -672,6 +718,8 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.DragEventHandler DragEnter;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.DragEventHandler DragEnter" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.WebBrowserBase.DragEnter" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event DragEnter As DragEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::DragEventHandler ^ DragEnter;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -700,6 +748,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler DragLeave;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler DragLeave" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.WebBrowserBase.DragLeave" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event DragLeave As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ DragLeave;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -728,6 +778,8 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.DragEventHandler DragOver;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.DragEventHandler DragOver" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.WebBrowserBase.DragOver" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event DragOver As DragEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::DragEventHandler ^ DragOver;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -756,6 +808,7 @@
       <MemberSignature Language="C#" Value="public void DrawToBitmap (System.Drawing.Bitmap bitmap, System.Drawing.Rectangle targetBounds);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DrawToBitmap(class System.Drawing.Bitmap bitmap, valuetype System.Drawing.Rectangle targetBounds) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WebBrowserBase.DrawToBitmap(System.Drawing.Bitmap,System.Drawing.Rectangle)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DrawToBitmap(System::Drawing::Bitmap ^ bitmap, System::Drawing::Rectangle targetBounds);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -786,6 +839,8 @@
       <MemberSignature Language="C#" Value="public bool Enabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Enabled" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.WebBrowserBase.Enabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property Enabled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Enabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -796,7 +851,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -819,6 +874,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler EnabledChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler EnabledChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.WebBrowserBase.EnabledChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event EnabledChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ EnabledChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -847,6 +904,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler Enter;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Enter" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.WebBrowserBase.Enter" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Enter As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Enter;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -875,6 +934,8 @@
       <MemberSignature Language="C#" Value="public override System.Drawing.Font Font { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Font Font" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.WebBrowserBase.Font" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Font As Font" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Font ^ Font { System::Drawing::Font ^ get(); void set(System::Drawing::Font ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -885,7 +946,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -906,6 +967,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler FontChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler FontChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.WebBrowserBase.FontChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event FontChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ FontChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -934,6 +997,8 @@
       <MemberSignature Language="C#" Value="public override System.Drawing.Color ForeColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ForeColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.WebBrowserBase.ForeColor" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property ForeColor As Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color ForeColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -944,7 +1009,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -965,6 +1030,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler ForeColorChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ForeColorChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.WebBrowserBase.ForeColorChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ForeColorChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ForeColorChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -993,6 +1060,8 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.GiveFeedbackEventHandler GiveFeedback;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.GiveFeedbackEventHandler GiveFeedback" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.WebBrowserBase.GiveFeedback" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event GiveFeedback As GiveFeedbackEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::GiveFeedbackEventHandler ^ GiveFeedback;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1021,6 +1090,8 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.HelpEventHandler HelpRequested;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.HelpEventHandler HelpRequested" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.WebBrowserBase.HelpRequested" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event HelpRequested As HelpEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::HelpEventHandler ^ HelpRequested;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1049,6 +1120,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ImeMode ImeMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.ImeMode ImeMode" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.WebBrowserBase.ImeMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property ImeMode As ImeMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ImeMode ImeMode { System::Windows::Forms::ImeMode get(); void set(System::Windows::Forms::ImeMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1059,7 +1132,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -1080,6 +1153,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler ImeModeChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ImeModeChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.WebBrowserBase.ImeModeChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ImeModeChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ImeModeChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1108,6 +1183,8 @@
       <MemberSignature Language="C#" Value="protected override bool IsInputChar (char charCode);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool IsInputChar(char charCode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WebBrowserBase.IsInputChar(System.Char)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsInputChar (charCode As Char) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool IsInputChar(char charCode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1132,6 +1209,8 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.KeyEventHandler KeyDown;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.KeyEventHandler KeyDown" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.WebBrowserBase.KeyDown" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event KeyDown As KeyEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::KeyEventHandler ^ KeyDown;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1160,6 +1239,8 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.KeyPressEventHandler KeyPress;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.KeyPressEventHandler KeyPress" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.WebBrowserBase.KeyPress" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event KeyPress As KeyPressEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::KeyPressEventHandler ^ KeyPress;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1188,6 +1269,8 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.KeyEventHandler KeyUp;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.KeyEventHandler KeyUp" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.WebBrowserBase.KeyUp" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event KeyUp As KeyEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::KeyEventHandler ^ KeyUp;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1216,6 +1299,8 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.LayoutEventHandler Layout;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.LayoutEventHandler Layout" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.WebBrowserBase.Layout" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Layout As LayoutEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::LayoutEventHandler ^ Layout;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1244,6 +1329,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler Leave;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Leave" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.WebBrowserBase.Leave" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Leave As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Leave;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1272,6 +1359,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler MouseCaptureChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler MouseCaptureChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.WebBrowserBase.MouseCaptureChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event MouseCaptureChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ MouseCaptureChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1300,6 +1389,8 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.MouseEventHandler MouseClick;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.MouseEventHandler MouseClick" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.WebBrowserBase.MouseClick" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event MouseClick As MouseEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::MouseEventHandler ^ MouseClick;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1328,6 +1419,8 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.MouseEventHandler MouseDoubleClick;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.MouseEventHandler MouseDoubleClick" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.WebBrowserBase.MouseDoubleClick" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event MouseDoubleClick As MouseEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::MouseEventHandler ^ MouseDoubleClick;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1356,6 +1449,8 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.MouseEventHandler MouseDown;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.MouseEventHandler MouseDown" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.WebBrowserBase.MouseDown" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event MouseDown As MouseEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::MouseEventHandler ^ MouseDown;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1384,6 +1479,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler MouseEnter;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler MouseEnter" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.WebBrowserBase.MouseEnter" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event MouseEnter As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ MouseEnter;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1412,6 +1509,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler MouseHover;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler MouseHover" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.WebBrowserBase.MouseHover" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event MouseHover As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ MouseHover;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1440,6 +1539,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler MouseLeave;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler MouseLeave" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.WebBrowserBase.MouseLeave" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event MouseLeave As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ MouseLeave;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1468,6 +1569,8 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.MouseEventHandler MouseMove;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.MouseEventHandler MouseMove" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.WebBrowserBase.MouseMove" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event MouseMove As MouseEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::MouseEventHandler ^ MouseMove;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1496,6 +1599,8 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.MouseEventHandler MouseUp;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.MouseEventHandler MouseUp" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.WebBrowserBase.MouseUp" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event MouseUp As MouseEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::MouseEventHandler ^ MouseUp;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1524,6 +1629,8 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.MouseEventHandler MouseWheel;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.MouseEventHandler MouseWheel" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.WebBrowserBase.MouseWheel" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event MouseWheel As MouseEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::MouseEventHandler ^ MouseWheel;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1552,6 +1659,8 @@
       <MemberSignature Language="C#" Value="protected override void OnBackColorChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnBackColorChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WebBrowserBase.OnBackColorChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnBackColorChanged (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnBackColorChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1574,6 +1683,8 @@
       <MemberSignature Language="C#" Value="protected override void OnFontChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnFontChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WebBrowserBase.OnFontChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnFontChanged (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnFontChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1596,6 +1707,8 @@
       <MemberSignature Language="C#" Value="protected override void OnForeColorChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnForeColorChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WebBrowserBase.OnForeColorChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnForeColorChanged (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnForeColorChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1618,6 +1731,8 @@
       <MemberSignature Language="C#" Value="protected override void OnGotFocus (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnGotFocus(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WebBrowserBase.OnGotFocus(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnGotFocus (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnGotFocus(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1640,6 +1755,8 @@
       <MemberSignature Language="C#" Value="protected override void OnHandleCreated (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnHandleCreated(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WebBrowserBase.OnHandleCreated(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnHandleCreated (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnHandleCreated(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1683,6 +1800,8 @@
       <MemberSignature Language="C#" Value="protected override void OnLostFocus (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnLostFocus(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WebBrowserBase.OnLostFocus(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnLostFocus (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnLostFocus(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1705,6 +1824,8 @@
       <MemberSignature Language="C#" Value="protected override void OnParentChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnParentChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WebBrowserBase.OnParentChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnParentChanged (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnParentChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1728,6 +1849,8 @@
       <MemberSignature Language="C#" Value="protected override void OnRightToLeftChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnRightToLeftChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WebBrowserBase.OnRightToLeftChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnRightToLeftChanged (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnRightToLeftChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1751,6 +1874,8 @@
       <MemberSignature Language="C#" Value="protected override void OnVisibleChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnVisibleChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WebBrowserBase.OnVisibleChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnVisibleChanged (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnVisibleChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1774,6 +1899,8 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.PaintEventHandler Paint;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.PaintEventHandler Paint" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.WebBrowserBase.Paint" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Paint As PaintEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::PaintEventHandler ^ Paint;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1802,6 +1929,8 @@
       <MemberSignature Language="C#" Value="public override bool PreProcessMessage (ref System.Windows.Forms.Message msg);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool PreProcessMessage(valuetype System.Windows.Forms.Message&amp; msg) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WebBrowserBase.PreProcessMessage(System.Windows.Forms.Message@)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function PreProcessMessage (ByRef msg As Message) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool PreProcessMessage(System::Windows::Forms::Message % msg);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1826,6 +1955,8 @@
       <MemberSignature Language="C#" Value="protected override bool ProcessDialogKey (System.Windows.Forms.Keys keyData);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ProcessDialogKey(valuetype System.Windows.Forms.Keys keyData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WebBrowserBase.ProcessDialogKey(System.Windows.Forms.Keys)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function ProcessDialogKey (keyData As Keys) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool ProcessDialogKey(System::Windows::Forms::Keys keyData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1858,9 +1989,11 @@
       </Docs>
     </Member>
     <Member MemberName="ProcessMnemonic">
-      <MemberSignature Language="C#" Value="protected override bool ProcessMnemonic (char charCode);" />
+      <MemberSignature Language="C#" Value="protected internal override bool ProcessMnemonic (char charCode);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance bool ProcessMnemonic(char charCode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WebBrowserBase.ProcessMnemonic(System.Char)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function ProcessMnemonic (charCode As Char) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override bool ProcessMnemonic(char charCode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1885,6 +2018,8 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.QueryAccessibilityHelpEventHandler QueryAccessibilityHelp;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.QueryAccessibilityHelpEventHandler QueryAccessibilityHelp" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.WebBrowserBase.QueryAccessibilityHelp" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event QueryAccessibilityHelp As QueryAccessibilityHelpEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::QueryAccessibilityHelpEventHandler ^ QueryAccessibilityHelp;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1913,6 +2048,8 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.QueryContinueDragEventHandler QueryContinueDrag;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.QueryContinueDragEventHandler QueryContinueDrag" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.WebBrowserBase.QueryContinueDrag" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event QueryContinueDrag As QueryContinueDragEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::QueryContinueDragEventHandler ^ QueryContinueDrag;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1941,6 +2078,8 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.RightToLeft RightToLeft { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.RightToLeft RightToLeft" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.WebBrowserBase.RightToLeft" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property RightToLeft As RightToLeft" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::RightToLeft RightToLeft { System::Windows::Forms::RightToLeft get(); void set(System::Windows::Forms::RightToLeft value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1973,6 +2112,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler RightToLeftChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler RightToLeftChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.WebBrowserBase.RightToLeftChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event RightToLeftChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ RightToLeftChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2001,6 +2142,8 @@
       <MemberSignature Language="C#" Value="public override System.ComponentModel.ISite Site { set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.ISite Site" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.WebBrowserBase.Site" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Site As ISite" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::ISite ^ Site {  void set(System::ComponentModel::ISite ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2020,6 +2163,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler StyleChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler StyleChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.WebBrowserBase.StyleChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event StyleChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ StyleChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2048,6 +2193,8 @@
       <MemberSignature Language="C#" Value="public override string Text { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Text" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.WebBrowserBase.Text" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Text As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2061,7 +2208,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -2083,6 +2230,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler TextChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler TextChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.WebBrowserBase.TextChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event TextChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ TextChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2111,6 +2260,8 @@
       <MemberSignature Language="C#" Value="public bool UseWaitCursor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UseWaitCursor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.WebBrowserBase.UseWaitCursor" />
+      <MemberSignature Language="VB.NET" Value="Public Property UseWaitCursor As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseWaitCursor { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2121,7 +2272,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -2144,6 +2295,8 @@
       <MemberSignature Language="C#" Value="protected override void WndProc (ref System.Windows.Forms.Message m);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void WndProc(valuetype System.Windows.Forms.Message&amp; m) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WebBrowserBase.WndProc(System.Windows.Forms.Message@)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub WndProc (ByRef m As Message)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void WndProc(System::Windows::Forms::Message % m);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

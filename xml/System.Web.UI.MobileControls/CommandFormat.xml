@@ -1,7 +1,9 @@
-<Type Name="CommandFormat" FullName="System.Web.UI.MobileControls.CommandFormat">
+﻿<Type Name="CommandFormat" FullName="System.Web.UI.MobileControls.CommandFormat">
   <TypeSignature Language="C#" Value="public enum CommandFormat" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CommandFormat extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.CommandFormat" />
+  <TypeSignature Language="VB.NET" Value="Public Enum CommandFormat" />
+  <TypeSignature Language="C++ CLI" Value="public enum class CommandFormat" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +34,8 @@
       <MemberSignature Language="C#" Value="Button" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.MobileControls.CommandFormat Button = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.CommandFormat.Button" />
+      <MemberSignature Language="VB.NET" Value="Button" />
+      <MemberSignature Language="C++ CLI" Value="Button" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -40,6 +44,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.MobileControls.CommandFormat</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Renders the <see cref="T:System.Web.UI.MobileControls.Command" /> control as a button. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
       </Docs>
@@ -48,6 +53,8 @@
       <MemberSignature Language="C#" Value="Link" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.MobileControls.CommandFormat Link = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.CommandFormat.Link" />
+      <MemberSignature Language="VB.NET" Value="Link" />
+      <MemberSignature Language="C++ CLI" Value="Link" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -56,6 +63,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.MobileControls.CommandFormat</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Renders the <see cref="T:System.Web.UI.MobileControls.Command" /> control as a hyperlink. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
       </Docs>

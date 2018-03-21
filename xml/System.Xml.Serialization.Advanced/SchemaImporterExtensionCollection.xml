@@ -1,7 +1,9 @@
-<Type Name="SchemaImporterExtensionCollection" FullName="System.Xml.Serialization.Advanced.SchemaImporterExtensionCollection">
+﻿<Type Name="SchemaImporterExtensionCollection" FullName="System.Xml.Serialization.Advanced.SchemaImporterExtensionCollection">
   <TypeSignature Language="C#" Value="public class SchemaImporterExtensionCollection : System.Collections.CollectionBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SchemaImporterExtensionCollection extends System.Collections.CollectionBase" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.Advanced.SchemaImporterExtensionCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class SchemaImporterExtensionCollection&#xA;Inherits CollectionBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SchemaImporterExtensionCollection : System::Collections::CollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +28,8 @@
       <MemberSignature Language="C#" Value="public SchemaImporterExtensionCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.Advanced.SchemaImporterExtensionCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SchemaImporterExtensionCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -37,10 +41,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds the specified importer extension to the collection.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Add">
       <MemberSignature Language="C#" Value="public int Add (System.Xml.Serialization.Advanced.SchemaImporterExtension extension);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Add(class System.Xml.Serialization.Advanced.SchemaImporterExtension extension) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.Advanced.SchemaImporterExtensionCollection.Add(System.Xml.Serialization.Advanced.SchemaImporterExtension)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (extension As SchemaImporterExtension) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::Xml::Serialization::Advanced::SchemaImporterExtension ^ extension);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -63,6 +78,7 @@
       <MemberSignature Language="C#" Value="public int Add (string name, Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Add(string name, class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.Advanced.SchemaImporterExtensionCollection.Add(System.String,System.Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::String ^ name, Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -88,6 +104,8 @@
       <MemberSignature Language="C#" Value="public void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.Advanced.SchemaImporterExtensionCollection.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -106,6 +124,8 @@
       <MemberSignature Language="C#" Value="public bool Contains (System.Xml.Serialization.Advanced.SchemaImporterExtension extension);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.Xml.Serialization.Advanced.SchemaImporterExtension extension) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.Advanced.SchemaImporterExtensionCollection.Contains(System.Xml.Serialization.Advanced.SchemaImporterExtension)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (extension As SchemaImporterExtension) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Xml::Serialization::Advanced::SchemaImporterExtension ^ extension);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -129,6 +149,8 @@
       <MemberSignature Language="C#" Value="public void CopyTo (System.Xml.Serialization.Advanced.SchemaImporterExtension[] array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.Xml.Serialization.Advanced.SchemaImporterExtension[] array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.Advanced.SchemaImporterExtensionCollection.CopyTo(System.Xml.Serialization.Advanced.SchemaImporterExtension[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As SchemaImporterExtension(), index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Xml::Serialization::Advanced::SchemaImporterExtension ^&gt; ^ array, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -152,6 +174,8 @@
       <MemberSignature Language="C#" Value="public int IndexOf (System.Xml.Serialization.Advanced.SchemaImporterExtension extension);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.Xml.Serialization.Advanced.SchemaImporterExtension extension) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.Advanced.SchemaImporterExtensionCollection.IndexOf(System.Xml.Serialization.Advanced.SchemaImporterExtension)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOf (extension As SchemaImporterExtension) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Xml::Serialization::Advanced::SchemaImporterExtension ^ extension);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -174,6 +198,8 @@
       <MemberSignature Language="C#" Value="public void Insert (int index, System.Xml.Serialization.Advanced.SchemaImporterExtension extension);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(int32 index, class System.Xml.Serialization.Advanced.SchemaImporterExtension extension) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.Advanced.SchemaImporterExtensionCollection.Insert(System.Int32,System.Xml.Serialization.Advanced.SchemaImporterExtension)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, extension As SchemaImporterExtension)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::Xml::Serialization::Advanced::SchemaImporterExtension ^ extension);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -197,6 +223,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.Serialization.Advanced.SchemaImporterExtension this[int index] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Serialization.Advanced.SchemaImporterExtension Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.Advanced.SchemaImporterExtensionCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As SchemaImporterExtension" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Serialization::Advanced::SchemaImporterExtension ^ default[int] { System::Xml::Serialization::Advanced::SchemaImporterExtension ^ get(int index); void set(int index, System::Xml::Serialization::Advanced::SchemaImporterExtension ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -215,10 +243,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Remove">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes an object from the collection.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Remove">
       <MemberSignature Language="C#" Value="public void Remove (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.Advanced.SchemaImporterExtensionCollection.Remove(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (name As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -240,6 +279,8 @@
       <MemberSignature Language="C#" Value="public void Remove (System.Xml.Serialization.Advanced.SchemaImporterExtension extension);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Xml.Serialization.Advanced.SchemaImporterExtension extension) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.Advanced.SchemaImporterExtensionCollection.Remove(System.Xml.Serialization.Advanced.SchemaImporterExtension)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (extension As SchemaImporterExtension)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Xml::Serialization::Advanced::SchemaImporterExtension ^ extension);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -257,23 +298,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Remove">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Removes an object from the collection.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Add">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds the specified importer extension to the collection.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

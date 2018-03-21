@@ -1,7 +1,9 @@
-<Type Name="WsiProfilesElement" FullName="System.Web.Services.Configuration.WsiProfilesElement">
+﻿<Type Name="WsiProfilesElement" FullName="System.Web.Services.Configuration.WsiProfilesElement">
   <TypeSignature Language="C#" Value="public sealed class WsiProfilesElement : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WsiProfilesElement extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Configuration.WsiProfilesElement" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WsiProfilesElement&#xA;Inherits ConfigurationElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WsiProfilesElement sealed : System::Configuration::ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,10 +24,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes and instance of the <see cref="T:System.Web.Services.Configuration.WsiProfilesElement" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public WsiProfilesElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.WsiProfilesElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WsiProfilesElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -41,6 +54,8 @@
       <MemberSignature Language="C#" Value="public WsiProfilesElement (System.Web.Services.WsiProfiles name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Web.Services.WsiProfiles name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.WsiProfilesElement.#ctor(System.Web.Services.WsiProfiles)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As WsiProfiles)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WsiProfilesElement(System::Web::Services::WsiProfiles name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -59,6 +74,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Services.WsiProfiles Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.Services.WsiProfiles Name" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Configuration.WsiProfilesElement.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As WsiProfiles" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::WsiProfiles Name { System::Web::Services::WsiProfiles get(); void set(System::Web::Services::WsiProfiles value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -82,6 +99,8 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Configuration.WsiProfilesElement.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -96,14 +115,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes and instance of the <see cref="T:System.Web.Services.Configuration.WsiProfilesElement" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

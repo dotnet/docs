@@ -1,7 +1,9 @@
-<Type Name="EntityCollection&lt;TEntity&gt;" FullName="System.Data.Objects.DataClasses.EntityCollection&lt;TEntity&gt;">
+﻿<Type Name="EntityCollection&lt;TEntity&gt;" FullName="System.Data.Objects.DataClasses.EntityCollection&lt;TEntity&gt;">
   <TypeSignature Language="C#" Value="public sealed class EntityCollection&lt;TEntity&gt; : System.Data.Objects.DataClasses.RelatedEnd, System.Collections.Generic.ICollection&lt;TEntity&gt;, System.Collections.Generic.IEnumerable&lt;TEntity&gt;, System.ComponentModel.IListSource where TEntity : class" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit EntityCollection`1&lt;class TEntity&gt; extends System.Data.Objects.DataClasses.RelatedEnd implements class System.Collections.Generic.ICollection`1&lt;!TEntity&gt;, class System.Collections.Generic.IEnumerable`1&lt;!TEntity&gt;, class System.Collections.IEnumerable, class System.ComponentModel.IListSource" />
   <TypeSignature Language="DocId" Value="T:System.Data.Objects.DataClasses.EntityCollection`1" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EntityCollection(Of TEntity)&#xA;Inherits RelatedEnd&#xA;Implements ICollection(Of TEntity), IEnumerable(Of TEntity), IListSource" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename TEntity&gt;&#xA; where TEntity : classpublic ref class EntityCollection sealed : System::Data::Objects::DataClasses::RelatedEnd, System::Collections::Generic::ICollection&lt;TEntity&gt;, System::Collections::Generic::IEnumerable&lt;TEntity&gt;, System::ComponentModel::IListSource" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -74,6 +76,8 @@
       <MemberSignature Language="C#" Value="public EntityCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.EntityCollection`1.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EntityCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -98,7 +102,12 @@
       <MemberSignature Language="C#" Value="public void Add (TEntity entity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Add(!TEntity entity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.EntityCollection`1.Add(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (entity As TEntity)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Add(TEntity entity);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Add(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -136,10 +145,21 @@
           <paramref name="entity" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Attach">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Defines a relationship between two attached objects in an object context.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Attach">
       <MemberSignature Language="C#" Value="public void Attach (System.Collections.Generic.IEnumerable&lt;TEntity&gt; entities);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Attach(class System.Collections.Generic.IEnumerable`1&lt;!TEntity&gt; entities) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.EntityCollection`1.Attach(System.Collections.Generic.IEnumerable{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Attach (entities As IEnumerable(Of TEntity))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Attach(System::Collections::Generic::IEnumerable&lt;TEntity&gt; ^ entities);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -179,6 +199,8 @@
       <MemberSignature Language="C#" Value="public void Attach (TEntity entity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Attach(!TEntity entity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.EntityCollection`1.Attach(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Attach (entity As TEntity)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Attach(TEntity entity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -231,7 +253,12 @@
       <MemberSignature Language="C#" Value="public void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.EntityCollection`1.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Clear</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -264,7 +291,12 @@
       <MemberSignature Language="C#" Value="public bool Contains (TEntity entity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Contains(!TEntity entity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.EntityCollection`1.Contains(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (entity As TEntity) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Contains(TEntity entity);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Contains(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -318,6 +350,8 @@
       <MemberSignature Language="C#" Value="public void CopyTo (TEntity[] array, int arrayIndex);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(!TEntity[] array, int32 arrayIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.EntityCollection`1.CopyTo(`0[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As TEntity(), arrayIndex As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(cli::array &lt;TEntity&gt; ^ array, int arrayIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -341,7 +375,12 @@
       <MemberSignature Language="C#" Value="public int Count { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
       <MemberSignature Language="DocId" Value="P:System.Data.Objects.DataClasses.EntityCollection`1.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.Generic.ICollection`1.Count</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -366,6 +405,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Objects.ObjectQuery&lt;TEntity&gt; CreateSourceQuery ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Objects.ObjectQuery`1&lt;!TEntity&gt; CreateSourceQuery() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.EntityCollection`1.CreateSourceQuery" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateSourceQuery () As ObjectQuery(Of TEntity)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Objects::ObjectQuery&lt;TEntity&gt; ^ CreateSourceQuery();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -408,7 +449,12 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerator&lt;TEntity&gt; GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerator`1&lt;!TEntity&gt; GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.EntityCollection`1.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator(Of TEntity)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IEnumerator&lt;TEntity&gt; ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -427,7 +473,12 @@
       <MemberSignature Language="C#" Value="public bool IsReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Data.Objects.DataClasses.EntityCollection`1.IsReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.Generic.ICollection`1.IsReadOnly</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -445,6 +496,7 @@
       <MemberSignature Language="C#" Value="public override void Load (System.Data.Objects.MergeOption mergeOption);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Load(valuetype System.Data.Objects.MergeOption mergeOption) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.EntityCollection`1.Load(System.Data.Objects.MergeOption)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Load(System::Data::Objects::MergeOption mergeOption);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -499,6 +551,8 @@ This method calls the internal `RelatedEnd.ValidateLoad` method before loading t
       <MemberSignature Language="C#" Value="public void OnCollectionDeserialized (System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void OnCollectionDeserialized(valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.EntityCollection`1.OnCollectionDeserialized(System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub OnCollectionDeserialized (context As StreamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void OnCollectionDeserialized(System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -531,6 +585,8 @@ This method calls the internal `RelatedEnd.ValidateLoad` method before loading t
       <MemberSignature Language="C#" Value="public void OnSerializing (System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void OnSerializing(valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.EntityCollection`1.OnSerializing(System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub OnSerializing (context As StreamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void OnSerializing(System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -563,7 +619,12 @@ This method calls the internal `RelatedEnd.ValidateLoad` method before loading t
       <MemberSignature Language="C#" Value="public bool Remove (TEntity entity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Remove(!TEntity entity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.EntityCollection`1.Remove(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Remove (entity As TEntity) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Remove(TEntity entity);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Remove(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -612,7 +673,12 @@ This method calls the internal `RelatedEnd.ValidateLoad` method before loading t
       <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.EntityCollection`1.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator Implements IEnumerable.GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IEnumerator ^ System.Collections.IEnumerable.GetEnumerator() = System::Collections::IEnumerable::GetEnumerator;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -631,6 +697,8 @@ This method calls the internal `RelatedEnd.ValidateLoad` method before loading t
       <MemberSignature Language="C#" Value="bool System.ComponentModel.IListSource.ContainsListCollection { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.ComponentModel.IListSource.ContainsListCollection" />
       <MemberSignature Language="DocId" Value="P:System.Data.Objects.DataClasses.EntityCollection`1.System#ComponentModel#IListSource#ContainsListCollection" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property ContainsListCollection As Boolean Implements IListSource.ContainsListCollection" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.ComponentModel.IListSource.ContainsListCollection { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -656,6 +724,8 @@ This method calls the internal `RelatedEnd.ValidateLoad` method before loading t
       <MemberSignature Language="C#" Value="System.Collections.IList IListSource.GetList ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IList System.ComponentModel.IListSource.GetList() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.EntityCollection`1.System#ComponentModel#IListSource#GetList" />
+      <MemberSignature Language="VB.NET" Value="Function GetList () As IList Implements IListSource.GetList" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IList ^ System.ComponentModel.IListSource.GetList() = System::ComponentModel::IListSource::GetList;" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -680,14 +750,5 @@ This method calls the internal `RelatedEnd.ValidateLoad` method before loading t
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Attach">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Defines a relationship between two attached objects in an object context.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

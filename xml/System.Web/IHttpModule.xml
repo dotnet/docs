@@ -1,7 +1,9 @@
-<Type Name="IHttpModule" FullName="System.Web.IHttpModule">
+﻿<Type Name="IHttpModule" FullName="System.Web.IHttpModule">
   <TypeSignature Language="C#" Value="public interface IHttpModule" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IHttpModule" />
   <TypeSignature Language="DocId" Value="T:System.Web.IHttpModule" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IHttpModule" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IHttpModule" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +25,8 @@
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.IHttpModule.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Dispose();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -48,6 +52,8 @@
       <MemberSignature Language="C#" Value="public void Init (System.Web.HttpApplication context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Init(class System.Web.HttpApplication context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.IHttpModule.Init(System.Web.HttpApplication)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Init (context As HttpApplication)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Init(System::Web::HttpApplication ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="X509ContentType" FullName="System.Security.Cryptography.X509Certificates.X509ContentType">
+﻿<Type Name="X509ContentType" FullName="System.Security.Cryptography.X509Certificates.X509ContentType">
   <TypeSignature Language="C#" Value="public enum X509ContentType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed X509ContentType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.X509Certificates.X509ContentType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum X509ContentType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class X509ContentType" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +43,8 @@
       <MemberSignature Language="C#" Value="Authenticode" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.X509Certificates.X509ContentType Authenticode = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509ContentType.Authenticode" />
+      <MemberSignature Language="VB.NET" Value="Authenticode" />
+      <MemberSignature Language="C++ CLI" Value="Authenticode" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -60,6 +64,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509ContentType</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>An Authenticode X.509 certificate.</summary>
       </Docs>
@@ -68,6 +73,8 @@
       <MemberSignature Language="C#" Value="Cert" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.X509Certificates.X509ContentType Cert = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509ContentType.Cert" />
+      <MemberSignature Language="VB.NET" Value="Cert" />
+      <MemberSignature Language="C++ CLI" Value="Cert" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -87,6 +94,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509ContentType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>A single X.509 certificate.</summary>
       </Docs>
@@ -95,6 +103,8 @@
       <MemberSignature Language="C#" Value="Pfx" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.X509Certificates.X509ContentType Pfx = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509ContentType.Pfx" />
+      <MemberSignature Language="VB.NET" Value="Pfx" />
+      <MemberSignature Language="C++ CLI" Value="Pfx" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -114,6 +124,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509ContentType</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>A PFX-formatted certificate. The <see langword="Pfx" /> value is identical to the <see langword="Pkcs12" /> value.</summary>
       </Docs>
@@ -122,6 +133,8 @@
       <MemberSignature Language="C#" Value="Pkcs12" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.X509Certificates.X509ContentType Pkcs12 = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509ContentType.Pkcs12" />
+      <MemberSignature Language="VB.NET" Value="Pkcs12" />
+      <MemberSignature Language="C++ CLI" Value="Pkcs12" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -141,6 +154,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509ContentType</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>A PKCS #12–formatted certificate. The <see langword="Pkcs12" /> value is identical to the <see langword="Pfx" /> value.</summary>
       </Docs>
@@ -149,6 +163,8 @@
       <MemberSignature Language="C#" Value="Pkcs7" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.X509Certificates.X509ContentType Pkcs7 = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509ContentType.Pkcs7" />
+      <MemberSignature Language="VB.NET" Value="Pkcs7" />
+      <MemberSignature Language="C++ CLI" Value="Pkcs7" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -168,6 +184,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509ContentType</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>A PKCS #7–formatted certificate.</summary>
       </Docs>
@@ -176,6 +193,8 @@
       <MemberSignature Language="C#" Value="SerializedCert" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.X509Certificates.X509ContentType SerializedCert = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509ContentType.SerializedCert" />
+      <MemberSignature Language="VB.NET" Value="SerializedCert" />
+      <MemberSignature Language="C++ CLI" Value="SerializedCert" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -195,6 +214,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509ContentType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>A single serialized X.509 certificate.</summary>
       </Docs>
@@ -203,6 +223,8 @@
       <MemberSignature Language="C#" Value="SerializedStore" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.X509Certificates.X509ContentType SerializedStore = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509ContentType.SerializedStore" />
+      <MemberSignature Language="VB.NET" Value="SerializedStore" />
+      <MemberSignature Language="C++ CLI" Value="SerializedStore" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -222,6 +244,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509ContentType</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>A serialized store.</summary>
       </Docs>
@@ -230,6 +253,8 @@
       <MemberSignature Language="C#" Value="Unknown" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.X509Certificates.X509ContentType Unknown = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509ContentType.Unknown" />
+      <MemberSignature Language="VB.NET" Value="Unknown" />
+      <MemberSignature Language="C++ CLI" Value="Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -249,6 +274,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509ContentType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>An unknown X.509 certificate.</summary>
       </Docs>

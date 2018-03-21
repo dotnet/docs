@@ -1,7 +1,9 @@
-<Type Name="OutputCacheProviderCollection" FullName="System.Web.Caching.OutputCacheProviderCollection">
+﻿<Type Name="OutputCacheProviderCollection" FullName="System.Web.Caching.OutputCacheProviderCollection">
   <TypeSignature Language="C#" Value="public sealed class OutputCacheProviderCollection : System.Configuration.Provider.ProviderCollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit OutputCacheProviderCollection extends System.Configuration.Provider.ProviderCollection" />
   <TypeSignature Language="DocId" Value="T:System.Web.Caching.OutputCacheProviderCollection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OutputCacheProviderCollection&#xA;Inherits ProviderCollection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class OutputCacheProviderCollection sealed : System::Configuration::Provider::ProviderCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +28,8 @@
       <MemberSignature Language="C#" Value="public OutputCacheProviderCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.OutputCacheProviderCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OutputCacheProviderCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -48,6 +52,8 @@
       <MemberSignature Language="C#" Value="public override void Add (System.Configuration.Provider.ProviderBase provider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Add(class System.Configuration.Provider.ProviderBase provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.OutputCacheProviderCollection.Add(System.Configuration.Provider.ProviderBase)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Add (provider As ProviderBase)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Add(System::Configuration::Provider::ProviderBase ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -82,6 +88,8 @@
       <MemberSignature Language="C#" Value="public void CopyTo (System.Web.Caching.OutputCacheProvider[] array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.Web.Caching.OutputCacheProvider[] array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.OutputCacheProviderCollection.CopyTo(System.Web.Caching.OutputCacheProvider[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As OutputCacheProvider(), index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Web::Caching::OutputCacheProvider ^&gt; ^ array, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -112,6 +120,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Caching.OutputCacheProvider this[string name] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Caching.OutputCacheProvider Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.Web.Caching.OutputCacheProviderCollection.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(name As String) As OutputCacheProvider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Caching::OutputCacheProvider ^ default[System::String ^] { System::Web::Caching::OutputCacheProvider ^ get(System::String ^ name); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

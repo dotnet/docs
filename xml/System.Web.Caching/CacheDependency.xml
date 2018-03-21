@@ -1,7 +1,9 @@
-<Type Name="CacheDependency" FullName="System.Web.Caching.CacheDependency">
+﻿<Type Name="CacheDependency" FullName="System.Web.Caching.CacheDependency">
   <TypeSignature Language="C#" Value="public class CacheDependency : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi CacheDependency extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Web.Caching.CacheDependency" />
+  <TypeSignature Language="VB.NET" Value="Public Class CacheDependency&#xA;Implements IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CacheDependency : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,10 +42,23 @@
     <altmember cref="M:System.Web.Caching.Cache.Insert(System.String,System.Object,System.Web.Caching.CacheDependency)" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Caching.CacheDependency" /> class.</summary>
+        <altmember cref="T:System.Web.Caching.Cache" />
+        <altmember cref="M:System.Web.Caching.Cache.Insert(System.String,System.Object,System.Web.Caching.CacheDependency)" />
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected CacheDependency ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.CacheDependency.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; CacheDependency();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -75,6 +90,8 @@
       <MemberSignature Language="C#" Value="public CacheDependency (string filename);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string filename) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.CacheDependency.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (filename As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CacheDependency(System::String ^ filename);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -116,6 +133,8 @@
       <MemberSignature Language="C#" Value="public CacheDependency (string[] filenames);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string[] filenames) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.CacheDependency.#ctor(System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (filenames As String())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CacheDependency(cli::array &lt;System::String ^&gt; ^ filenames);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -157,6 +176,8 @@
       <MemberSignature Language="C#" Value="public CacheDependency (string filename, DateTime start);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string filename, valuetype System.DateTime start) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.CacheDependency.#ctor(System.String,System.DateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (filename As String, start As DateTime)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CacheDependency(System::String ^ filename, DateTime start);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -199,6 +220,8 @@
       <MemberSignature Language="C#" Value="public CacheDependency (string[] filenames, DateTime start);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string[] filenames, valuetype System.DateTime start) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.CacheDependency.#ctor(System.String[],System.DateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (filenames As String(), start As DateTime)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CacheDependency(cli::array &lt;System::String ^&gt; ^ filenames, DateTime start);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -240,6 +263,8 @@
       <MemberSignature Language="C#" Value="public CacheDependency (string[] filenames, string[] cachekeys);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string[] filenames, string[] cachekeys) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.CacheDependency.#ctor(System.String[],System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (filenames As String(), cachekeys As String())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CacheDependency(cli::array &lt;System::String ^&gt; ^ filenames, cli::array &lt;System::String ^&gt; ^ cachekeys);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -278,6 +303,8 @@
       <MemberSignature Language="C#" Value="public CacheDependency (string[] filenames, string[] cachekeys, DateTime start);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string[] filenames, string[] cachekeys, valuetype System.DateTime start) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.CacheDependency.#ctor(System.String[],System.String[],System.DateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (filenames As String(), cachekeys As String(), start As DateTime)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CacheDependency(cli::array &lt;System::String ^&gt; ^ filenames, cli::array &lt;System::String ^&gt; ^ cachekeys, DateTime start);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -324,6 +351,8 @@
       <MemberSignature Language="C#" Value="public CacheDependency (string[] filenames, string[] cachekeys, System.Web.Caching.CacheDependency dependency);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string[] filenames, string[] cachekeys, class System.Web.Caching.CacheDependency dependency) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.CacheDependency.#ctor(System.String[],System.String[],System.Web.Caching.CacheDependency)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (filenames As String(), cachekeys As String(), dependency As CacheDependency)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CacheDependency(cli::array &lt;System::String ^&gt; ^ filenames, cli::array &lt;System::String ^&gt; ^ cachekeys, System::Web::Caching::CacheDependency ^ dependency);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -363,6 +392,8 @@
       <MemberSignature Language="C#" Value="public CacheDependency (string[] filenames, string[] cachekeys, System.Web.Caching.CacheDependency dependency, DateTime start);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string[] filenames, string[] cachekeys, class System.Web.Caching.CacheDependency dependency, valuetype System.DateTime start) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.CacheDependency.#ctor(System.String[],System.String[],System.Web.Caching.CacheDependency,System.DateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (filenames As String(), cachekeys As String(), dependency As CacheDependency, start As DateTime)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CacheDependency(cli::array &lt;System::String ^&gt; ^ filenames, cli::array &lt;System::String ^&gt; ^ cachekeys, System::Web::Caching::CacheDependency ^ dependency, DateTime start);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -411,6 +442,8 @@
       <MemberSignature Language="C#" Value="protected virtual void DependencyDispose ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void DependencyDispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.CacheDependency.DependencyDispose" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub DependencyDispose ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void DependencyDispose();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -445,7 +478,12 @@
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.CacheDependency.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -460,9 +498,11 @@
       </Docs>
     </Member>
     <Member MemberName="FinishInit">
-      <MemberSignature Language="C#" Value="protected void FinishInit ();" />
+      <MemberSignature Language="C#" Value="protected internal void FinishInit ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance void FinishInit() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.CacheDependency.FinishInit" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Sub FinishInit ()" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; void FinishInit();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -493,6 +533,8 @@
       <MemberSignature Language="C#" Value="public virtual string[] GetFileDependencies ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string[] GetFileDependencies() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.CacheDependency.GetFileDependencies" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetFileDependencies () As String()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::String ^&gt; ^ GetFileDependencies();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -512,6 +554,8 @@
       <MemberSignature Language="C#" Value="public virtual string GetUniqueID ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetUniqueID() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.CacheDependency.GetUniqueID" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetUniqueID () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetUniqueID();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -548,6 +592,8 @@
       <MemberSignature Language="C#" Value="public bool HasChanged { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasChanged" />
       <MemberSignature Language="DocId" Value="P:System.Web.Caching.CacheDependency.HasChanged" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasChanged As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasChanged { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -584,6 +630,8 @@
       <MemberSignature Language="C#" Value="public void ItemRemoved ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ItemRemoved() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.CacheDependency.ItemRemoved" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ItemRemoved ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ItemRemoved();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -602,6 +650,8 @@
       <MemberSignature Language="C#" Value="public void KeepDependenciesAlive ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void KeepDependenciesAlive() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.CacheDependency.KeepDependenciesAlive" />
+      <MemberSignature Language="VB.NET" Value="Public Sub KeepDependenciesAlive ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void KeepDependenciesAlive();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -620,6 +670,8 @@
       <MemberSignature Language="C#" Value="protected void NotifyDependencyChanged (object sender, EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void NotifyDependencyChanged(object sender, class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.CacheDependency.NotifyDependencyChanged(System.Object,System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub NotifyDependencyChanged (sender As Object, e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void NotifyDependencyChanged(System::Object ^ sender, EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -661,6 +713,8 @@
       <MemberSignature Language="C#" Value="public void SetCacheDependencyChanged (Action&lt;object,EventArgs&gt; dependencyChangedAction);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetCacheDependencyChanged(class System.Action`2&lt;object, class System.EventArgs&gt; dependencyChangedAction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.CacheDependency.SetCacheDependencyChanged(System.Action{System.Object,System.EventArgs})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetCacheDependencyChanged (dependencyChangedAction As Action(Of Object, EventArgs))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetCacheDependencyChanged(Action&lt;System::Object ^, EventArgs ^&gt; ^ dependencyChangedAction);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -682,6 +736,8 @@
       <MemberSignature Language="C#" Value="protected void SetUtcLastModified (DateTime utcLastModified);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void SetUtcLastModified(valuetype System.DateTime utcLastModified) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.CacheDependency.SetUtcLastModified(System.DateTime)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub SetUtcLastModified (utcLastModified As DateTime)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void SetUtcLastModified(DateTime utcLastModified);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -714,6 +770,8 @@
       <MemberSignature Language="C#" Value="public bool TakeOwnership ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TakeOwnership() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.CacheDependency.TakeOwnership" />
+      <MemberSignature Language="VB.NET" Value="Public Function TakeOwnership () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TakeOwnership();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -742,6 +800,8 @@
       <MemberSignature Language="C#" Value="public DateTime UtcLastModified { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime UtcLastModified" />
       <MemberSignature Language="DocId" Value="P:System.Web.Caching.CacheDependency.UtcLastModified" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UtcLastModified As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime UtcLastModified { DateTime get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -772,16 +832,5 @@
         <altmember cref="M:System.Web.Caching.Cache.Insert(System.String,System.Object,System.Web.Caching.CacheDependency)" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Caching.CacheDependency" /> class.</summary>
-        <altmember cref="T:System.Web.Caching.Cache" />
-        <altmember cref="M:System.Web.Caching.Cache.Insert(System.String,System.Object,System.Web.Caching.CacheDependency)" />
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

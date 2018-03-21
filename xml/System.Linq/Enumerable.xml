@@ -1683,7 +1683,7 @@
   
  The <xref:System.Linq.Enumerable.Cast%60%601%28System.Collections.IEnumerable%29> method enables the standard query operators to be invoked on non-generic collections by supplying the necessary type information. For example, <xref:System.Collections.ArrayList> does not implement <xref:System.Collections.Generic.IEnumerable%601>, but by calling <xref:System.Linq.Enumerable.Cast%60%601%28System.Collections.IEnumerable%29> on the <xref:System.Collections.ArrayList> object, the standard query operators can then be used to query the sequence.  
   
- If an element cannot be cast to type `TResult`, this method will throw an exception.
+ If an element cannot be converted to type `TResult`, this method will throw an exception.
  
  Only certain types of implicit conversions are performed by this method:
 
@@ -1707,7 +1707,7 @@
 Implicit numeric conversions are never performed using this method. No user defined conversions, either implicit or explicit, will be performed by this method. If you need other categories of conversions performed, consider performing those conversions in the `select` clause of your LINQ query.
 
 
- To obtain only those elements that can be cast to type `TResult`, use the <xref:System.Linq.Enumerable.OfType%2A> method instead of <xref:System.Linq.Enumerable.Cast%60%601%28System.Collections.IEnumerable%29>.  
+ To obtain only those elements that can be converted to type `TResult`, use the <xref:System.Linq.Enumerable.OfType%2A> method instead of <xref:System.Linq.Enumerable.Cast%60%601%28System.Collections.IEnumerable%29>.  
   
  In a query expression, an explicitly typed iteration variable translates to an invocation of <xref:System.Linq.Enumerable.Cast%60%601%28System.Collections.IEnumerable%29>. This example shows the syntax for an explicitly typed range variable.  
   

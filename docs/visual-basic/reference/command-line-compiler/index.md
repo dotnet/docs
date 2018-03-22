@@ -19,7 +19,7 @@ ms.author: mairaw
 
 The Visual Basic command-line compiler provides an alternative to compiling programs from within the Visual Studio integrated development environment (IDE). This section contains descriptions for the Visual Basic compiler options.
 
-Every compiler option is available in two forms: -option and /option. The Visual Basic documentation only shows the /option form.
+[!INCLUDE[compiler-options](~/includes/compiler-options.md)]
   
 ## In this section
 

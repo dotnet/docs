@@ -1,4 +1,3 @@
-
 ---
 title: ".NET Performance Tips"
 ms.custom: ""

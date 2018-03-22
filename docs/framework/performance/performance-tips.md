@@ -1,3 +1,4 @@
+
 ---
 title: ".NET Performance Tips"
 ms.custom: ""
@@ -45,6 +46,8 @@ The term *performance* generally refers to the execution speed of a program. You
 -   [Performance Tips and Tricks in .NET Applications](http://go.microsoft.com/fwlink/?LinkId=99297)  
 
 -   [Rico Mariani's Performance Tidbits](http://go.microsoft.com/fwlink/?LinkId=115679)  
+
+-   [Vance Morrison's Weblog](https://blogs.msdn.microsoft.com/vancem/)
   
 ## See Also  
  [Performance](../../../docs/framework/performance/index.md)  

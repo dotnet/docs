@@ -30,6 +30,9 @@ For new features, see [Visual Basic 15.5](#visual-basic-155)
 Visual Basic 15.3   
 For new features, see [Visual Basic 15.3](#visual-basic-153)
 
+Visual Basic 2017 
+For new features, see [Visual Basic 2017](#visual-basic-2017)
+
 Visual Basic / Visual Studio .NET 2015   
 For new features, see [Visual Basic 14](#visual-basic-14)
 
@@ -89,6 +92,10 @@ score character as a leading separator, you must add the following element to yo
 When you assign the value of tuple elements from variables, Visual Basic infers the name of tuple elements from the corresponding variable names; you do not have to explicitly name a tuple element. The following example uses inference to create a tuple with three named elements, `state`, `stateName`, and `capital`.
 
 [!code-vb[Inferred tuple names](../../../samples/snippets/visualbasic/programming-guide/language-features/data-types/named-tuples/program.vb#2)]
+
+### Additional compiler switches
+
+The Visual Basic command-line compiler now supports the [**-refout**](../reference/command-line-compiler/refout-compiler-option.md) and [**-refonly**](../reference/command-line-compiler/refonly-compiler-option.md) compiler options to control the output of reference assemblies. **-refout** defines the output directory of the reference assembly, and **-refonly** specifies that only a reference assembly is to be output by compilation.
 
 ## Visual Basic 2017
 

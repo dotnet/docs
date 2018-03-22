@@ -40,6 +40,8 @@ The [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] command-line compiler is provide
 |[-doc](../../../visual-basic/reference/command-line-compiler/doc.md)|Process documentation comments to an XML file.|  
 |[-netcf](../../../visual-basic/reference/command-line-compiler/netcf.md)|Sets the compiler to target the [!INCLUDE[Compact](~/includes/compact-md.md)].|  
 |[-out](../../../visual-basic/reference/command-line-compiler/out.md)|Specifies an output file.|  
+|[-refonly](refonly-compiler-option.md)|Outputs only a reference assembly.|
+|[-refout](refout-compiler-option.md)|Specifies the output path of a reference assembly.|
 |[-target](../../../visual-basic/reference/command-line-compiler/target.md)|Specifies the format of the output.|  
   
 ## .NET assemblies  

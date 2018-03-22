@@ -1090,6 +1090,8 @@
 ##### [-quiet](visual-basic/reference/command-line-compiler/quiet.md)
 ##### [-recurse](visual-basic/reference/command-line-compiler/recurse.md)
 ##### [-reference](visual-basic/reference/command-line-compiler/reference.md)
+##### [-refonly](visual-basic/reference/command-line-compiler/refonly-compiler-option.md)
+##### [-refout](visual-basic/reference/command-line-compiler/refout-compiler-option.md)
 ##### [-removeintchecks](visual-basic/reference/command-line-compiler/removeintchecks.md)
 ##### [-resource](visual-basic/reference/command-line-compiler/resource.md)
 ##### [-rootnamespace](visual-basic/reference/command-line-compiler/rootnamespace.md)

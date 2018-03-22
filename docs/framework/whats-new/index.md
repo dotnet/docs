@@ -188,7 +188,7 @@ Starting with the .NET Framework 4.7, ASP.NET adds a new set of APIs that allow 
 <a name="wcf47" />
 #### Windows Communication Foundation (WCF)
 
-Windows Communication Foundation (WFC) adds the following features and changes:
+Windows Communication Foundation (WCF) adds the following features and changes:
 
 **Ability to configure the default message security settings to TLS 1.1 or TLS 1.2**
 

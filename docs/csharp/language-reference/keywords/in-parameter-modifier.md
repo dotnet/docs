@@ -59,7 +59,7 @@ You can't use the `in`, `ref`, and `out` keywords for the following kinds of met
 You typically declare `in` arguments to avoid the copy operations necessary for passing arguments by value. This is most useful when arguments are value types such as structures where copy operations are more expensive than passing by reference.
 
 > [!WARNING]
->  `in` parameters can be even more expensive if misused. The compiler cannot know if any member method modifies the state of the struct. To ensure that the object is not modified, the compiler creates a copy and calls member references using that copy. Any modifications are to that defensive copy. Given this, you should consider defining structures as `readonly struct`.
+>  `in` parameters can be even more expensive if misused. The compiler may not know if member methods modify the state of the struct. Whenever the compiler cannot ensure that the object is not modified, it defensively creates a copy and calls member references using that copy. Any possible modifications are to that defensive copy. The two ways to avoid these copies are to pass `in` parameters as `in` arguments or to define structures as `readonly struct`.
 
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  

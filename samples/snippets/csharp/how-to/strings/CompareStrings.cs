@@ -8,9 +8,10 @@ namespace HowToStrings
     {
         public static void Examples()
         {
-            OrdinalEquality();
-            OrdinalStaticComparison();
-            ReferenceEqualAndInterning();
+            OrdinalDefaultComparisons();
+            OrdinalIgnoreCaseComparisons();
+            WordSortOrderInvariantCulture();
+            LinguisticComparisons();
 
             SortArrayOfStrings();
             SearchSortedArray();
@@ -18,10 +19,10 @@ namespace HowToStrings
             SortListOfStrings();
             SearchSortedList();
 
-            CompareAcrossCultures();
+            ReferenceEqualAndInterning();
         }
 
-        private static void OrdinalEquality()
+        private static void OrdinalDefaultComparisons()
         {
             // <Snippet1>
             string root = @"C:\users";
@@ -44,38 +45,89 @@ namespace HowToStrings
             // </Snippet1>
         }
 
-        private static void OrdinalStaticComparison()
+        private static void OrdinalIgnoreCaseComparisons()
         {
             // <Snippet2>
             string root = @"C:\users";
             string root2 = @"C:\Users";
 
             bool result = root.Equals(root2, StringComparison.OrdinalIgnoreCase);
-            Console.WriteLine($"Ordinal static: <{root}> and <{root2}> are {(result ? "equal." : "not equal.")}");
             bool areEqual = String.Equals(root, root2, StringComparison.OrdinalIgnoreCase);
-            Console.WriteLine($"Ordinal static: <{root}> and <{root2}> are {(areEqual ? "equal." : "not equal.")}");
-            areEqual = String.Equals(root, root2, StringComparison.OrdinalIgnoreCase);
+            int comparison = String.Compare(root, root2, ignoreCase: true);
+
+            Console.WriteLine($"Ordinal ignore case: <{root}> and <{root2}> are {(result ? "equal." : "not equal.")}");
             Console.WriteLine($"Ordinal static ignore case: <{root}> and <{root2}> are {(areEqual ? "equal." : "not equal.")}");
+            if (comparison < 0)
+                Console.WriteLine($"<{root}> is less than <{root2}>");
+            else if (comparison > 0)
+                Console.WriteLine($"<{root}> is greater than <{root2}>");
+            else
+                Console.WriteLine($"<{root}> and <{root2}> are equivalent in order");
             // </Snippet2>
         }
-        private static void ReferenceEqualAndInterning()
+
+        private static void WordSortOrderInvariantCulture()
         {
-            // <Snippet4>
-            string a = "The computer ate my source code.";
-            string b = "The computer ate my source code.";
+            //<snippet3>  
+            string first = "Sie tanzen auf der Straße.";
+            string second = "Sie tanzen auf der Strasse.";
 
-            if (String.ReferenceEquals(a, b))
-                Console.WriteLine("a and b are interned.");
-            else
-                Console.WriteLine("a and b are not interned.");
+            Console.WriteLine($"First sentence is <{first}>");
+            Console.WriteLine($"Second sentence is <{second}>");
 
-            string c = String.Copy(a);
+            bool equal = String.Equals(first, second, StringComparison.InvariantCulture);
+            Console.WriteLine($"The two strings {(equal == true ? "are" : "are not")} equal.");
+            showComparison(first, second);
 
-            if (String.ReferenceEquals(a, c))
-                Console.WriteLine("a and c are interned.");
-            else
-                Console.WriteLine("a and c are not interned.");
-            // </Snippet4>
+            string word = "coop";
+            string words = "co-op";
+            string other = "cop";
+
+            showComparison(word, words);
+            showComparison(word, other);
+            showComparison(words, other);
+            void showComparison(string one, string two)
+            {
+                int compareLinguistic = String.Compare(one, two, StringComparison.InvariantCulture);
+                int compareOrdinal = String.Compare(one, two, StringComparison.Ordinal);
+                if (compareLinguistic < 0)
+                    Console.WriteLine($"<{one}> is less than <{two}>");
+                else if (compareLinguistic > 0)
+                    Console.WriteLine($"<{one}> is greater than <{two}>");
+                else
+                    Console.WriteLine($"<{one}> and <{two}> are equivalent in order");
+                if (compareOrdinal < 0)
+                    Console.WriteLine($"<{one}> is less than <{two}>");
+                else if (compareOrdinal > 0)
+                    Console.WriteLine($"<{one}> is greater than <{two}>");
+                else
+                    Console.WriteLine($"<{one}> and <{two}> are equivalent in order");
+            }
+            //</snippet3>
+        }
+        private static void LinguisticComparisons()
+        {
+            //<snippet4>  
+            string first = "Sie tanzen auf der Straße.";
+            string second = "Sie tanzen auf der Strasse.";
+
+            Console.WriteLine($"First sentence is <{first}>");
+            Console.WriteLine($"Second sentence is <{second}>");
+
+            var en = new System.Globalization.CultureInfo("en-US");
+
+            // For culture-sensitive comparisons, use the String.Compare 
+            // overload that takes a StringComparison value.
+            int i = String.Compare(first, second, en, System.Globalization.CompareOptions.IgnoreNonSpace);
+            Console.WriteLine($"Comparing in {en.Name} returns {i}.");
+
+            var de = new System.Globalization.CultureInfo("de-DE");
+            i = String.Compare(first, second, de, System.Globalization.CompareOptions.IgnoreNonSpace);
+            Console.WriteLine($"Comparing in {de.Name} returns {i}.");
+
+            bool b = String.Equals(first, second, StringComparison.CurrentCulture);
+            Console.WriteLine($"The two strings {(b == true ? "are" : "are not")} equal.");
+            //</snippet4>
         }
 
         private static void SortArrayOfStrings()
@@ -98,7 +150,7 @@ namespace HowToStrings
             Console.WriteLine("\n\rSorted order:");
 
             // Specify Ordinal to demonstrate the different behavior.
-            Array.Sort(lines, StringComparer.Ordinal);
+            Array.Sort(lines, StringComparer.CurrentCulture);
 
             foreach (string s in lines)
             {
@@ -117,11 +169,11 @@ namespace HowToStrings
                 @"c:\public\Text.txt",
                 @"c:\public\testfile2.txt"
             };
-            Array.Sort(lines, StringComparer.Ordinal);
+            Array.Sort(lines, StringComparer.CurrentCulture);
 
             string searchString = @"c:\public\TEXTFILE.TXT";
             Console.WriteLine($"Binary search for <{searchString}>");
-            int result = Array.BinarySearch(lines, searchString, StringComparer.OrdinalIgnoreCase);
+            int result = Array.BinarySearch(lines, searchString, StringComparer.CurrentCulture);
             ShowWhere<string>(lines, result);
 
             Console.WriteLine($"{(result > 0 ? "Found" : "Did not find")} {searchString}");
@@ -171,7 +223,7 @@ namespace HowToStrings
 
             Console.WriteLine("\n\rSorted order:");
 
-            lines.Sort((left, right) => left.CompareTo(right));
+            lines.Sort((left, right) => left.CompareTo(right)); 
             foreach (string s in lines)
             {
                 Console.WriteLine($"   {s}");
@@ -190,10 +242,10 @@ namespace HowToStrings
                 @"c:\public\testfile2.txt"
             };
             lines.Sort((left, right) => left.CompareTo(right));
- 
+
             string searchString = @"c:\public\TEXTFILE.TXT";
             Console.WriteLine($"Binary search for <{searchString}>");
-            int result = lines.BinarySearch(searchString, null);
+            int result = lines.BinarySearch(searchString);
             ShowWhere<string>(lines, result);
 
             Console.WriteLine($"{(result > 0 ? "Found" : "Did not find")} {searchString}");
@@ -224,29 +276,26 @@ namespace HowToStrings
             //</snippet8>
         }
 
-        private static void CompareAcrossCultures()
+        private static void ReferenceEqualAndInterning()
         {
-            //<snippet9>  
-            string first = "Sie tanzen auf der Straße.";
-            string second = "Sie tanzen auf der Strasse.";
+            // <Snippet9>
+            string a = "The computer ate my source code.";
+            string b = "The computer ate my source code.";
 
-            Console.WriteLine($"First sentence is <{first}>");
-            Console.WriteLine($"Second sentence is <{second}>");
+            if (String.ReferenceEquals(a, b))
+                Console.WriteLine("a and b are interned.");
+            else
+                Console.WriteLine("a and b are not interned.");
 
-            var en = new System.Globalization.CultureInfo("en-US");
+            string c = String.Copy(a);
 
-            // For culture-sensitive comparisons, use the String.Compare 
-            // overload that takes a StringComparison value.
-            int i = String.Compare(first, second, en, System.Globalization.CompareOptions.IgnoreNonSpace);
-            Console.WriteLine($"Comparing in {en.Name} returns {i}.");
-
-            var de = new System.Globalization.CultureInfo("de-DE");
-            i = String.Compare(first, second, de, System.Globalization.CompareOptions.IgnoreNonSpace);
-            Console.WriteLine($"Comparing in {de.Name} returns {i}.");
-
-            bool b = String.Equals(first, second, StringComparison.CurrentCulture);
-            Console.WriteLine($"The two strings {(b == true ? "are" : "are not")} equal.");
-            //</snippet9>
+            if (String.ReferenceEquals(a, c))
+                Console.WriteLine("a and c are interned.");
+            else
+                Console.WriteLine("a and c are not interned.");
+            // </Snippet9>
         }
+
+
     }
 }

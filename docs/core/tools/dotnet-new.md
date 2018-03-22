@@ -1,15 +1,12 @@
 ---
 title: dotnet new command - .NET Core CLI
 description: The dotnet new command creates new .NET Core projects based on the specified template.
-keywords: dotnet-new, CLI, CLI command, .NET Core
 author: mairaw
 ms.author: mairaw
-ms.date: 08/13/2017
+ms.date: 03/21/2018
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
-ms.devlang: dotnet
-ms.assetid: fcc3ed2e-9265-4d50-b59e-dc2e5c190b34
 ms.workload: 
   - dotnetcore
 ---
@@ -23,7 +20,7 @@ ms.workload:
 
 ## Synopsis
 
-# [.NET Core 2.x](#tab/netcore2x)
+# [.NET Core 2.0](#tab/netcore2x)
 ```
 dotnet new <TEMPLATE> [--force] [-i|--install] [-lang|--language] [-n|--name] [-o|--output] [-u|--uninstall] [Template options]
 dotnet new <TEMPLATE> [-l|--list] [--type]
@@ -50,7 +47,7 @@ The command calls the [template engine](https://github.com/dotnet/templating) to
 
 The template to instantiate when the command is invoked. Each template might have specific options you can pass. For more information, see [Template options](#template-options).
 
-# [.NET Core 2.x](#tab/netcore2x)
+# [.NET Core 2.0](#tab/netcore2x)
 
 The command contains a default list of templates. Use `dotnet new -l` to obtain a list of the available templates. The following table shows the templates that come pre-installed with the .NET Core 2.0 SDK. The default language for the template is shown inside the brackets.
 
@@ -96,7 +93,7 @@ The command contains a default list of templates. Use `dotnet new -all` to obtai
 
 ## Options
 
-# [.NET Core 2.x](#tab/netcore2x)
+# [.NET Core 2.0](#tab/netcore2x)
 
 `--force`
 
@@ -108,7 +105,9 @@ Prints out help for the command. It can be invoked for the `dotnet new` command 
 
 `-i|--install <PATH|NUGET_ID>`
 
-Installs a source or template pack from the `PATH` or `NUGET_ID` provided. For information on creating custom templates, see [Custom templates for dotnet new](custom-templates.md).
+Installs a source or template pack from the `PATH` or `NUGET_ID` provided. If you want to install a prerelease version of a template package, you need to specify the version in the format of `<package-name>::<package-version>`. By default, `dotnet new` passes \* for the version, which represents the last stable package version. See an example at the [Examples](#examples) section.
+
+For information on creating custom templates, see [Custom templates for dotnet new](custom-templates.md).
 
 `-l|--list`
 
@@ -170,11 +169,11 @@ Location to place the generated output. The default is the current directory.
 
 Each project template may have additional options available. The core templates have the following additional options:
 
-# [.NET Core 2.x](#tab/netcore2x)
+# [.NET Core 2.0](#tab/netcore2x)
 
 **console, angular, react, reactredux**
 
-`--no-restore` - Doesn't perform an implicit restore during project creation.
+  `--no-restore` - Doesn't perform an implicit restore during project creation.
 
 **classlib**
 
@@ -317,6 +316,10 @@ Create a new xUnit application targeting .NET Core 2.0:
 List all templates available for MVC:
 
 `dotnet new mvc -l`
+
+Install version 2.0 of the Single Page Application templates for ASP.NET Core (command option available for .NET Core SDK 1.1 and later versions only):
+
+`dotnet new -i Microsoft.DotNet.Web.Spa.ProjectTemplates::2.0.0`
 
 ## See also
 

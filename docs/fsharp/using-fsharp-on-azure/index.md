@@ -66,7 +66,7 @@ Azure Storage can also be used in conjunction with Azure Functions through decla
 * [Implementing Spark Apps in F# using Mobius](https://github.com/Microsoft/Mobius/blob/master/notes/spark-fsharp-mobius.md)
 * [Example F# Spark Apps using Mobius](https://github.com/Microsoft/Mobius/tree/master/examples/fsharp)
 
-## Using Azure Azure Cosmos DB with F# #
+## Using Azure Cosmos DB with F# #
 
 [Azure Cosmos DB](https://azure.microsoft.com/services/cosmos-db) is a NoSQL service for highly available, globally distributed apps.
 

@@ -80,7 +80,15 @@ ref Person p = ref contacts.GetContactInformation("Brandie", "Best");
 
 Subsequent usage of `p` is the same as using the variable returned by `GetContactInformation` because `p` is an alias for that variable. Changes to `p` also change the variable returned from `GetContactInformation`.
 
-Note that the `ref` keyword is used both before the local variable declaration *and* before the method call. Failure to include both `ref` keywords in the variable declaration and assignment results in compiler error CS8172, "Cannot initialize a by-reference variable with a value." 
+Note that the `ref` keyword is used both before the local variable declaration *and* before the method call. 
+
+You can access a value by reference in the same way. In some cases, accessing a value by reference increases performance by avoiding a potentially expensive copy operation. For example, the following statement shows how one can define a ref local value that is used to reference a value.
+
+```csharp
+ref VeryLargeStruct reflocal = ref veryLargeStruct;
+```
+
+Note that the `ref` keyword is used both before the local variable declaration *and* before the value in the second example. Failure to include both `ref` keywords in the variable declaration and assignment in both examples results in compiler error CS8172, "Cannot initialize a by-reference variable with a value." 
  
 ## Ref returns and ref locals: an example
 
@@ -96,4 +104,5 @@ Without support for reference return values, such an operation is usually perfor
  
 ## See also
 
-[ref keyword](../../language-reference/keywords/ref.md)
+[ref keyword](../../language-reference/keywords/ref.md)  
+[Reference Semantics with Value Types](../../../csharp/reference-semantics-with-value-types.md)

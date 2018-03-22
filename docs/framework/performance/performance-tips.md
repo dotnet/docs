@@ -43,10 +43,10 @@ The term *performance* generally refers to the execution speed of a program. You
 -   [Garbage Collector Basics and Performance Hints](http://go.microsoft.com/fwlink/?LinkId=99296)  
   
 -   [Performance Tips and Tricks in .NET Applications](http://go.microsoft.com/fwlink/?LinkId=99297)  
-  
--   [Inside Diagnostic Tools for .NET](http://go.microsoft.com/fwlink/?LinkId=112407)  
-  
+
 -   [Rico Mariani's Performance Tidbits](http://go.microsoft.com/fwlink/?LinkId=115679)  
+
+-   [Vance Morrison's Blog](https://blogs.msdn.microsoft.com/vancem/)
   
 ## See Also  
  [Performance](../../../docs/framework/performance/index.md)  

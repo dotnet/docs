@@ -109,7 +109,7 @@ If you're **not** using a custom binding **and** you're setting your WCF binding
 
 Audit your code to verify you're not setting a specific TLS or SSL version using the following sections:
 
-### For .NET Framework 4.6 - 4.6.2 and not WFC
+### For .NET Framework 4.6 - 4.6.2 and not WCF
 
 Set the `DontEnableSystemDefaultTlsVersions` `AppContext` switch to `false`. See [Configuring security via AppContext switches](#configuring-security-via-appcontext-switches).
 

@@ -86,19 +86,19 @@ To use the underscore character as a leading separator, you must add the followi
 
 ## Visual Basic 15.3
 
-[Named tuple inference](../programming-guide/language-features/data-types/tuples.md#inferred-tuple-element-names)
+[**Named tuple inference**](../programming-guide/language-features/data-types/tuples.md#inferred-tuple-element-names)
 
 When you assign the value of tuple elements from variables, Visual Basic infers the name of tuple elements from the corresponding variable names; you do not have to explicitly name a tuple element. The following example uses inference to create a tuple with three named elements, `state`, `stateName`, and `capital`.
 
 [!code-vb[Inferred tuple names](../../../samples/snippets/visualbasic/programming-guide/language-features/data-types/named-tuples/program.vb#2)]
 
-### Additional compiler switches
+**Additional compiler switches**  
 
 The Visual Basic command-line compiler now supports the [**-refout**](../reference/command-line-compiler/refout-compiler-option.md) and [**-refonly**](../reference/command-line-compiler/refonly-compiler-option.md) compiler options to control the output of reference assemblies. **-refout** defines the output directory of the reference assembly, and **-refonly** specifies that only a reference assembly is to be output by compilation.
 
 ## Visual Basic 2017
 
-[Tuples](../programming-guide/language-features/data-types/tuples.md)
+[**Tuples**](../programming-guide/language-features/data-types/tuples.md)
 
 Tuples are a lightweight data structure that most commonly is used to return multiple values from a single method call. Ordinarily, to return multiple values from a method, you have to do one of the following:
 

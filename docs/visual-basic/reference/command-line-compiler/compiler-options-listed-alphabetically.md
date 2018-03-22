@@ -35,7 +35,7 @@ The Visual Basic command-line compiler is provided as an alternative to compilin
 |[-doc](../../../visual-basic/reference/command-line-compiler/doc.md)|Processes documentation comments to an XML file.|  
 |[-errorreport](../../../visual-basic/reference/command-line-compiler/errorreport.md)|Specifies how the Visual Basic compiler should report internal compiler errors.|  
 |[-filealign](../../../visual-basic/reference/command-line-compiler/filealign.md)|Specifies where to align the sections of the output file.|  
-|[-help](../../../visual-basic-reference/command-line-compiler/help.md)|Displays compiler options. This command is the same as specifying the `-?` option. No compilation occurs.|  
+|[-help](../../../visual-basic/reference/command-line-compiler/help.md)|Displays compiler options. This command is the same as specifying the `-?` option. No compilation occurs.|  
 |[-highentropyva](../../../visual-basic/reference/command-line-compiler/highentropyva.md)|Indicates whether a particular executable supports high entropy Address Space Layout Randomization (ASLR).|  
 |[-imports](../../../visual-basic/reference/command-line-compiler/imports.md)|Imports a namespace from a specified assembly.|  
 |[-keycontainer](../../../visual-basic/reference/command-line-compiler/keycontainer.md)|Specifies a key container name for a key pair to give an assembly a strong name.|  

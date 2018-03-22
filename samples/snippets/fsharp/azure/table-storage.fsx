@@ -71,7 +71,7 @@ batchOp.Insert(customer2)
 table.ExecuteBatch(batchOp)
 
 //
-// Retrieve all entities in a partition.
+// Retreive all entities in a partition.
 //
 
 let query =
@@ -97,7 +97,7 @@ let range =
             TableQuery.GenerateFilterCondition(
                 "RowKey", QueryComparisons.LessThan, "M")))
 
-let rangeResult = table.ExecuteQuery(query)
+let rangeResult = table.ExecuteQuery(range)
 
 for customer in rangeResult do 
     printfn "customer: %A %A" customer.RowKey customer.PartitionKey
@@ -106,7 +106,7 @@ for customer in rangeResult do
 // Retrieve a single entity.
 //
 
-let retrieveOp = TableOperation.Retrieve<Customer>("Smith", "Ben")
+let retrieveOp = TableOperation.Retrieve<Customer>("Smith", "Jeff")
 
 let retrieveResult = table.Execute(retrieveOp)
 
@@ -120,7 +120,7 @@ printfn "customer: %A %A" retrieveCustomer.RowKey retrieveCustomer.PartitionKey
 
 try
     let customer = retrieveResult.Result :?> Customer
-    customer.PhoneNumber <- "425-555-0103"
+    customer.PhoneNumber <- "425-555-0000"
     let replaceOp = TableOperation.Replace(customer)
     table.Execute(replaceOp) |> ignore
     Console.WriteLine("Update succeeeded")
@@ -132,6 +132,7 @@ with e ->
 //
 
 try
+    let customer = retrieveResult.Result :?> Customer
     customer.PhoneNumber <- "425-555-0104"
     let replaceOp = TableOperation.InsertOrReplace(customer)
     table.Execute(replaceOp) |> ignore

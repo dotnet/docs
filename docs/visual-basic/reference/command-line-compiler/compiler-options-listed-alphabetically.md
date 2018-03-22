@@ -14,7 +14,9 @@ author: rpetrusha
 ms.author: ronpet
 ---
 # Visual Basic compiler options listed alphabetically
-The [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] command-line compiler is provided as an alternative to compiling programs from the [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] integrated development environment (IDE). The following is a list of the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] command-line compiler options sorted alphabetically.  
+The Visual Basic command-line compiler is provided as an alternative to compiling programs from the [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] integrated development environment (IDE). The following is a list of the Visual Basic command-line compiler options sorted alphabetically.  
+
+[!INCLUDE[compiler-options](~/includes/compiler-options.md)]
   
 |Option|Purpose|  
 |------------|-------------|  
@@ -31,9 +33,9 @@ The [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] command-line compiler is provide
 |[-define](../../../visual-basic/reference/command-line-compiler/define.md)|Defines symbols for conditional compilation.|  
 |[-delaysign](../../../visual-basic/reference/command-line-compiler/delaysign.md)|Specifies whether the assembly will be fully or partially signed.|  
 |[-doc](../../../visual-basic/reference/command-line-compiler/doc.md)|Processes documentation comments to an XML file.|  
-|[-errorreport](../../../visual-basic/reference/command-line-compiler/errorreport.md)|Specifies how the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] compiler should report internal compiler errors.|  
+|[-errorreport](../../../visual-basic/reference/command-line-compiler/errorreport.md)|Specifies how the Visual Basic compiler should report internal compiler errors.|  
 |[-filealign](../../../visual-basic/reference/command-line-compiler/filealign.md)|Specifies where to align the sections of the output file.|  
-|[-help](../../../visual-basic-reference/command-line-compiler/help.md)|Displays compiler options. This command is the same as specifying the `-?` option. No compilation occurs.|  
+|[-help](../../../visual-basic/reference/command-line-compiler/help.md)|Displays compiler options. This command is the same as specifying the `-?` option. No compilation occurs.|  
 |[-highentropyva](../../../visual-basic/reference/command-line-compiler/highentropyva.md)|Indicates whether a particular executable supports high entropy Address Space Layout Randomization (ASLR).|  
 |[-imports](../../../visual-basic/reference/command-line-compiler/imports.md)|Imports a namespace from a specified assembly.|  
 |[-keycontainer](../../../visual-basic/reference/command-line-compiler/keycontainer.md)|Specifies a key container name for a key pair to give an assembly a strong name.|  
@@ -62,6 +64,8 @@ The [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] command-line compiler is provide
 |[-quiet](../../../visual-basic/reference/command-line-compiler/quiet.md)|Prevents the compiler from displaying code for syntax-related errors and warnings.|  
 |[-recurse](../../../visual-basic/reference/command-line-compiler/recurse.md)|Searches subdirectories for source files to compile.|  
 |[-reference](../../../visual-basic/reference/command-line-compiler/reference.md)|Imports metadata from an assembly.|  
+|[-refonly](refonly-compiler-option.md)|Outputs only a reference assembly.|
+|[-refout](refout-compiler-option.md)|Specifies the output path of a reference assembly.|
 |[-removeintchecks](../../../visual-basic/reference/command-line-compiler/removeintchecks.md)|Disables integer overflow checking.|  
 |[-resource](../../../visual-basic/reference/command-line-compiler/resource.md)|Embeds a managed resource in an assembly.|  
 |[-rootnamespace](../../../visual-basic/reference/command-line-compiler/rootnamespace.md)|Specifies a namespace for all type declarations.|  

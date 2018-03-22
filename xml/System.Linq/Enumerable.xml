@@ -1,4 +1,4 @@
-<Type Name="Enumerable" FullName="System.Linq.Enumerable">
+﻿<Type Name="Enumerable" FullName="System.Linq.Enumerable">
   <TypeSignature Language="C#" Value="public static class Enumerable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Enumerable extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Linq.Enumerable" />
@@ -1684,29 +1684,9 @@
  The <xref:System.Linq.Enumerable.Cast%60%601%28System.Collections.IEnumerable%29> method enables the standard query operators to be invoked on non-generic collections by supplying the necessary type information. For example, <xref:System.Collections.ArrayList> does not implement <xref:System.Collections.Generic.IEnumerable%601>, but by calling <xref:System.Linq.Enumerable.Cast%60%601%28System.Collections.IEnumerable%29> on the <xref:System.Collections.ArrayList> object, the standard query operators can then be used to query the sequence.  
   
  If an element cannot be converted to type `TResult`, this method will throw an exception.
+
+ The source sequence for this method is `System.Collections.IEnumerable`, which means the elements have the compile time static type of `object`. The only conversion types that are performed by this method are reference conversions and unboxing conversions. The runtime type of the elements in the collection must match the target type, or in the case of value types, the runtime type of elements must be the result of a boxing conversion of the target type. In practice, other conversion types, such as those between different numeric types are not allowed. 
  
- Only certain types of implicit conversions are performed by this method:
-
- - **Identity conversions**: from a type to the same type.
- - **Implicit enumeration conversions** to the enum type: conversions from a numeric type to an enum type. 
- - **Implicit reference conversions**: There are several sub-types in this category that can be applied:
-     - from any reference type to `object` or `dynamic`
-     - from any reference type to any of its base types
-     - from any reference type to any interface type it implements
- - **Boxing conversions**: from a value type to `object`, `dynamic` or an interface it implements.
-
- In addition, the following explicit conversions are performed by this method:
-
- - **Explicit reference conversions**: There are several sub-types in this category that can be applied:
-     - from `object` to `dynamic` to any other reference type.
-     - from any base class type to a derived class type.
-     - from any unsealed class to any interface it does not implement.
-     - from any interface to a class that is not sealed, or implemments that interface.
- - **Explicit unboxing conversions**: from `object`, `dynamic`, `System.ValueType`, or any interface type to any value type or enum type.
-
-Implicit numeric conversions are never performed using this method. No user defined conversions, either implicit or explicit, will be performed by this method. If you need other categories of conversions performed, consider performing those conversions in the `select` clause of your LINQ query.
-
-
  To obtain only those elements that can be converted to type `TResult`, use the <xref:System.Linq.Enumerable.OfType%2A> method instead of <xref:System.Linq.Enumerable.Cast%60%601%28System.Collections.IEnumerable%29>.  
   
  In a query expression, an explicitly typed iteration variable translates to an invocation of <xref:System.Linq.Enumerable.Cast%60%601%28System.Collections.IEnumerable%29>. This example shows the syntax for an explicitly typed range variable.  
@@ -1718,9 +1698,21 @@ from int i in objects
 ```vb  
 From i As Integer In objects  
 ```  
-  
-   
-  
+
+The `select` clause of a query enables other conversion types, like the implicit numeric conversions. The following example shows using both the `Cast` method and a `select` statement to convert a sequence of boxed integers to a sequence of doubles.
+
+```csharp
+IEnumerable sequence = Enumerable.Range(0, 10);
+var doubles = from int item in sequence
+                select (double)item;
+``` 
+
+```vb
+Dim sequence As IEnumerable = Enumerable.Range(0, 10)
+Dim doubles = From item As Integer In sequence
+                Select CType(item, Double)
+```
+
 ## Examples  
  The following code example demonstrates how to use <xref:System.Linq.Enumerable.Cast%60%601%28System.Collections.IEnumerable%29> to enable the use of the standard query operators on an <xref:System.Collections.ArrayList>.  
   

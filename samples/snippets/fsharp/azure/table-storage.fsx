@@ -97,7 +97,7 @@ let range =
             TableQuery.GenerateFilterCondition(
                 "RowKey", QueryComparisons.LessThan, "M")))
 
-let rangeResult = table.ExecuteQuery(query)
+let rangeResult = table.ExecuteQuery(range)
 
 for customer in rangeResult do 
     printfn "customer: %A %A" customer.RowKey customer.PartitionKey

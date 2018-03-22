@@ -46,7 +46,7 @@ The term *performance* generally refers to the execution speed of a program. You
 
 -   [Rico Mariani's Performance Tidbits](http://go.microsoft.com/fwlink/?LinkId=115679)  
 
--   [Vance Morrison's Weblog](https://blogs.msdn.microsoft.com/vancem/)
+-   [Vance Morrison's Blog](https://blogs.msdn.microsoft.com/vancem/)
   
 ## See Also  
  [Performance](../../../docs/framework/performance/index.md)  

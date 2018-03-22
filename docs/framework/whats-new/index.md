@@ -1062,7 +1062,7 @@ For more information on the <xref:System.TimeZoneInfo> structure and time zone a
 
         - **Using a connection group name prefix**
 
-             Users can specify a string that WCF will use as a prefix achieve for the connection group name. Two messages with different prefixes are sent using different underlying HTTP connections. You set the prefix by adding a key/value pair to the message's <xref:System.ServiceModel.Channels.Message.Properties%2A?displayProperty=nameWithType> property. The key is "HttpTransportConnectionGroupNamePrefix"; the value is the desired prefix.
+             Users can specify a string that WCF will use as a prefix for the connection group name. Two messages with different prefixes are sent using different underlying HTTP connections. You set the prefix by adding a key/value pair to the message's <xref:System.ServiceModel.Channels.Message.Properties%2A?displayProperty=nameWithType> property. The key is "HttpTransportConnectionGroupNamePrefix"; the value is the desired prefix.
 
         - **Using different channel factories**
 

@@ -30,7 +30,7 @@ For new features, see [Visual Basic 15.5](#visual-basic-155)
 Visual Basic 15.3   
 For new features, see [Visual Basic 15.3](#visual-basic-153)
 
-Visual Basic 2017 
+Visual Basic 2017   
 For new features, see [Visual Basic 2017](#visual-basic-2017)
 
 Visual Basic / Visual Studio .NET 2015   
@@ -76,8 +76,7 @@ Visual Basic 2017 added support for the underscore character (`_`) as a digit se
 ```vb
 Dim number As Integer = &H_C305_F860
 ``` 
-To use the under
-score character as a leading separator, you must add the following element to your Visual Basic project (*.vbproj) file:
+To use the underscore character as a leading separator, you must add the following element to your Visual Basic project (\*.vbproj) file:
 
 ```xml
 <PropertyGroup>

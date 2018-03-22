@@ -93,9 +93,9 @@ an `in` parameter to any method using the `ref` or `out` modifier.
 These rules apply to any field of an `in` parameter, provided the
 field is a `struct` type and the parameter is also a `struct` type. In fact, these rules
 apply for multiple layers of member access provided the types at all levels
-of member access are `structs`.
+of member access are `structs`. 
 The compiler enforces that `struct` types passed as  `in` arguments and their
-`struct` members are read only variables.
+`struct` members are read only variables when used as arguments to other methods.
 
 The use of `in` parameters avoids the potential performance costs
 of making copies. It does not change the semantics of any method call. Therefore,
@@ -122,6 +122,12 @@ on the arguments at the call site, as shown in the following code:
 
 [!code-csharp[UseInArgument](../../samples/csharp/reference-semantics/Program.cs#ExplicitInArgument "Specifying an In argument")]
 
+This behavior makes it easier to adopt `in` parameters over time in large
+codebases where performance gains are possible. You add the `in` modifier
+to method signatures first. Then, you can add the `in` modifier at callsites
+and create `readonly struct` types to enable the compiler to avoid creating
+defensive copies of `in` parameters in more locations.
+
 The `in` parameter designation can also be used with reference types or numeric values. However, the benefits in both cases are minimal, if any.
 
 ## `ref readonly` returns
@@ -133,10 +139,11 @@ that you are returning a reference to existing data, but not allowing
 modification. 
 
 The compiler enforces that the caller cannot modify the reference. Attempts
-to assign the value directly generate a compile-time error. However, the compiler cannot know if any member method modifies the state of the struct.
+to assign the value directly generate a compile-time error. However, the compiler
+cannot know if any member method modifies the state of the struct.
 To ensure that the object is not modified, the compiler creates a copy and
 calls member references using that copy. Any modifications are to that
-defensive copy. <<Review this based on Ron's comment "This contradicts line 90 and following" after merging #4770>>
+defensive copy. 
 
 It's likely that the library using `Point3D` would often use the origin
 throughout the code. Every instance creates a new object on the stack. It may

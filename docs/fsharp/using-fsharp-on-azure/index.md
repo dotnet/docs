@@ -73,7 +73,7 @@ Azure Storage can also be used in conjunction with Azure Functions through decla
 Azure Cosmos DB can be used with F# in two ways:
 
 1. Through the creation of F# Azure Functions which react to or cause changes to Azure Cosmos DB collections. See [Azure Cosmos DB bindings for Azure Functions](/azure/azure-functions/functions-bindings-cosmosdb), or
-2. By using the [Azure Cosmos DB .NET SDK for SQL API](cosmos-db/sql-api-sdk-dotnet). The related samples are in C#.
+2. By using the [Azure Cosmos DB .NET SDK for SQL API](/azure/cosmos-db/sql-api-sdk-dotnet). The related samples are in C#.
 
 ## Using Azure Event Hubs with F# #
 

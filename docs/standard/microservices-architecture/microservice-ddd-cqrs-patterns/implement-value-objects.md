@@ -103,11 +103,11 @@ You can use this class when implementing your actual value object, as with the A
 ```csharp
 public class Address : ValueObject
 {
-    public String Street { get; private set; }
-    public String City { get; private set; }
-    public String State { get; private set; }
-    public String Country { get; private set; }
-    public String ZipCode { get; private set; }
+    public String Street { get; }
+    public String City { get; }
+    public String State { get; }
+    public String Country { get; }
+    public String ZipCode { get; }
 
     private Address() { }
 

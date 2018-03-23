@@ -81,7 +81,12 @@ linguistic and ordinal comparisons produce the same results. If you
 ran this same sample on a Windows host, you would see the following output:
 
 ```console
-Text here
+<coop> is less than <co-op> using invariant culture
+<coop> is greater than <co-op> using ordinal comparison
+<coop> is less than <cop> using invariant culture
+<coop> is less than <cop> using ordinal comparison
+<co-op> is less than <cop> using invariant culture
+<co-op> is less than <cop> using ordinal comparison
 ```
 
 On Windows, the sort order of "cop", "coop", and "co-op" change when you
@@ -101,7 +106,18 @@ and the "de-DE" culture:
 
 [!code-csharp-interactive[Comparing strings across cultures](../../../samples/snippets/csharp/how-to/strings/CompareStrings.cs#4)]
 
-Culture-sensitive comparisons are typically used to compare and sort strings input by users with other strings input by users. The characters and sorting conventions of these strings might vary depending on the locale of the user's computer. Even strings that contain identical characters might sort differently depending on the culture of the current thread. In addition, try this sample code locally on a Windows machien, and you will get different results than on the interactive window, which runs on a Linux host machine.
+Culture-sensitive comparisons are typically used to compare and sort strings input by users with other strings input by users. The characters and sorting conventions of these strings might vary depending on the locale of the user's computer. Even strings that contain identical characters might sort differently depending on the culture of the current thread. In addition, try this sample code locally on a Windows machine, and you will the following results:
+
+```console
+<coop> is less than <co-op> using en-US culture
+<coop> is greater than <co-op> using ordinal comparison
+<coop> is less than <cop> using en-US culture
+<coop> is less than <cop> using ordinal comparison
+<co-op> is less than <cop> using en-US culture
+<co-op> is less than <cop> using ordinal comparison
+```
+
+Linguistic comparisions are dependent on the current culture, and are OS dependent. You must take that into account when you work with string comparisons.
 
 ## Linguistic sorting and searching strings in arrays
 

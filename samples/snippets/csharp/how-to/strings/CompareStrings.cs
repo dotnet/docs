@@ -91,17 +91,17 @@ namespace HowToStrings
                 int compareLinguistic = String.Compare(one, two, StringComparison.InvariantCulture);
                 int compareOrdinal = String.Compare(one, two, StringComparison.Ordinal);
                 if (compareLinguistic < 0)
-                    Console.WriteLine($"<{one}> is less than <{two}>");
+                    Console.WriteLine($"<{one}> is less than <{two}> using invariant culture");
                 else if (compareLinguistic > 0)
-                    Console.WriteLine($"<{one}> is greater than <{two}>");
+                    Console.WriteLine($"<{one}> is greater than <{two}> using invariant culture");
                 else
-                    Console.WriteLine($"<{one}> and <{two}> are equivalent in order");
+                    Console.WriteLine($"<{one}> and <{two}> are equivalent in order using invariant culture");
                 if (compareOrdinal < 0)
-                    Console.WriteLine($"<{one}> is less than <{two}>");
+                    Console.WriteLine($"<{one}> is less than <{two}> using ordinal comparison");
                 else if (compareOrdinal > 0)
-                    Console.WriteLine($"<{one}> is greater than <{two}>");
+                    Console.WriteLine($"<{one}> is greater than <{two}> using ordinal comparison");
                 else
-                    Console.WriteLine($"<{one}> and <{two}> are equivalent in order");
+                    Console.WriteLine($"<{one}> and <{two}> are equivalent in order using ordinal comparison");
             }
             //</snippet3>
         }
@@ -140,19 +140,18 @@ namespace HowToStrings
                 int compareLinguistic = String.Compare(one, two, en, System.Globalization.CompareOptions.IgnoreNonSpace);
                 int compareOrdinal = String.Compare(one, two, StringComparison.Ordinal);
                 if (compareLinguistic < 0)
-                    Console.WriteLine($"<{one}> is less than <{two}>");
+                    Console.WriteLine($"<{one}> is less than <{two}> using en-US culture");
                 else if (compareLinguistic > 0)
-                    Console.WriteLine($"<{one}> is greater than <{two}>");
+                    Console.WriteLine($"<{one}> is greater than <{two}> using en-US culture");
                 else
-                    Console.WriteLine($"<{one}> and <{two}> are equivalent in order");
+                    Console.WriteLine($"<{one}> and <{two}> are equivalent in order using en-US culture");
                 if (compareOrdinal < 0)
-                    Console.WriteLine($"<{one}> is less than <{two}>");
+                    Console.WriteLine($"<{one}> is less than <{two}> using ordinal comparison");
                 else if (compareOrdinal > 0)
-                    Console.WriteLine($"<{one}> is greater than <{two}>");
+                    Console.WriteLine($"<{one}> is greater than <{two}> using ordinal comparison");
                 else
-                    Console.WriteLine($"<{one}> and <{two}> are equivalent in order");
+                    Console.WriteLine($"<{one}> and <{two}> are equivalent in order using ordinal comparison");
             }
-
             //</snippet4>
         }
 

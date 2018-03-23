@@ -1765,7 +1765,11 @@
   
  The <xref:System.Linq.Enumerable.Cast%60%601%28System.Collections.IEnumerable%29> method enables the standard query operators to be invoked on non-generic collections by supplying the necessary type information. For example, <xref:System.Collections.ArrayList> does not implement <xref:System.Collections.Generic.IEnumerable%601>, but by calling <xref:System.Linq.Enumerable.Cast%60%601%28System.Collections.IEnumerable%29> on the <xref:System.Collections.ArrayList> object, the standard query operators can then be used to query the sequence.  
   
- If an element cannot be cast to type `TResult`, this method will throw an exception. To obtain only those elements that can be cast to type `TResult`, use the <xref:System.Linq.Enumerable.OfType%2A> method instead of <xref:System.Linq.Enumerable.Cast%60%601%28System.Collections.IEnumerable%29>.  
+ If an element cannot be converted to type `TResult`, this method throws a <xref:System.InvalidCastException>.
+
+ The source sequence for this method is <xref:System.Collections.IEnumerable>, which means the elements have the compile-time static type of `object`. The only type conversions that are performed by this method are reference conversions and unboxing conversions. The runtime type of the elements in the collection must match the target type, or in the case of value types, the runtime type of elements must be the result of a boxing conversion of the target type. Other conversion types, such as those between different numeric types, are not allowed. 
+ 
+ To obtain only those elements that can be converted to type `TResult`, use the <xref:System.Linq.Enumerable.OfType%2A> method instead of <xref:System.Linq.Enumerable.Cast%60%601%28System.Collections.IEnumerable%29>.  
   
  In a query expression, an explicitly typed iteration variable translates to an invocation of <xref:System.Linq.Enumerable.Cast%60%601%28System.Collections.IEnumerable%29>. This example shows the syntax for an explicitly typed range variable.  
   
@@ -1776,9 +1780,21 @@ from int i in objects
 ```vb  
 From i As Integer In objects  
 ```  
-  
-   
-  
+
+Use the `select` clause of a query to perform other conversion types, like the implicit numeric conversions. The following example uses both the `Cast` method and a `select` statement to convert a sequence of boxed integers to a sequence of doubles.
+
+```csharp
+IEnumerable sequence = Enumerable.Range(0, 10);
+var doubles = from int item in sequence
+                select (double)item;
+``` 
+
+```vb
+Dim sequence As IEnumerable = Enumerable.Range(0, 10)
+Dim doubles = From item As Integer In sequence
+                Select CType(item, Double)
+```
+
 ## Examples  
  The following code example demonstrates how to use <xref:System.Linq.Enumerable.Cast%60%601%28System.Collections.IEnumerable%29> to enable the use of the standard query operators on an <xref:System.Collections.ArrayList>.  
   

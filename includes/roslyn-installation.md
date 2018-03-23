@@ -8,6 +8,7 @@ The .NET Compiler Platform SDK is not automatically selected as part of the Visu
 
 1. Run **Visual Studio Installer** 
 1. Select **Modify** 
+1. Check the **Visual Studio extension development** workload.
 1. Open the **Visual Studio extension development** node in the summary tree.
 1. Check the box for **.NET Compiler Platform SDK**. You'll find it last under the optional components.
 

@@ -50,11 +50,14 @@ F# is about productivity at its heart. The tooling support for F# is ubiquitous 
 
 [Get started with F# with the .NET Core CLI](get-started/get-started-command-line.md) if you want to use command-line tools.
 
+[Get started with F# and Xamarin](https://docs.microsoft.com/en-gb/xamarin/cross-platform/platform/fsharp/) for mobile programming with F#.
+
 ## References
 
 [F# Language Reference](language-reference/index.md) is the official, comprehensive reference for all F# language features. Each article explains the syntax and shows code samples. You can use the filter bar in the table of contents to find specific articles.
 
 [F# Core Library Reference](https://msdn.microsoft.com/visualfsharpdocs/conceptual/fsharp-core-library-reference) is the API reference for the F# Core Library.
+
 
 ## Additional guides
 

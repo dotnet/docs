@@ -17,7 +17,7 @@ author: "BillWagner"
 ms.author: "wiwagn"
 ---
 # out (C# Reference)
-You can use the `out` contextual keyword in two contexts:
+You can use the `out` keyword in two contexts:
 
 - As a [parameter modifier](../../../csharp/language-reference/keywords/out-parameter-modifier.md), which lets you pass an argument to a method by reference rather than by value.
 

@@ -84,7 +84,6 @@ let result = table.ExecuteQuery(query)
 for customer in result do 
     printfn "customer: %A %A" customer.RowKey customer.PartitionKey
 
-
 //
 // Retrieve a range of entities in a partition.
 //

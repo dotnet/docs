@@ -86,7 +86,7 @@ public class PriceChangeEventArgs : EventArgs
         }  
   
         //Clients call this service operation to unsubscribe.  
-        //The previous price change event handler is deregistered.  
+        //The previous price change event handler is unregistered.  
   
         public void Unsubscribe()  
         {  

@@ -27,8 +27,8 @@ The ordering microservice in eShopOnContainers provides a sample Enumeration bas
 ```csharp
 public abstract class Enumeration : IComparable
 {
-    public string Name { get; private set; }
-    public int Id { get; private set; }
+    public string Name { get; }
+    public int Id { get; }
 
     protected Enumeration()
     {

@@ -40,7 +40,7 @@ You can use either "7.2" or "latest" for the value.
 C# 7.2 adds the `in` keyword to complement the existing `ref`
 and `out` keywords to pass arguments
 by reference. The `in` keyword specifies passing
-the argument by reference but, the called method does not modify
+the argument by reference, but the called method does not modify
 the value. 
 
 This addition provides a full vocabulary to express your design intent. 
@@ -95,7 +95,7 @@ field is a `struct` type and the parameter is also a `struct` type. In fact, the
 apply for multiple layers of member access provided the types at all levels
 of member access are `structs`. 
 The compiler enforces that `struct` types passed as  `in` arguments and their
-`struct` members are read only variables when used as arguments to other methods.
+`struct` members are read-only variables when used as arguments to other methods.
 
 The use of `in` parameters avoids the potential performance costs
 of making copies. It does not change the semantics of any method call. Therefore,
@@ -107,7 +107,7 @@ allowed to make a copy of the argument for the following reasons:
 - The argument is an expression but does not have a known storage variable.
 - An overload exists that differs by the presence or absence of `in`. In that case, the by value overload is a better match.
 
-These rules are useful as you update existing code to use read only
+These rules are useful as you update existing code to use read-only
 reference arguments. Inside the called method, you can call any instance
 method that uses by value parameters. In
 those instances, a copy of the `in` parameter is created. Because the compiler
@@ -160,7 +160,7 @@ not declared with the `ref readonly` modifier. The compiler generates code
 to copy the object as part of the assignment. 
 
 When you assign a variable to a `ref readonly return`, you can specify either a `ref readonly`
-variable, or a by-value copy of the read only reference:
+variable, or a by-value copy of the read-only reference:
 
 [!code-csharp[AssignRefReadonly](../../samples/csharp/reference-semantics/Program.cs#AssignRefReadonly "Assigning a ref readonly")]
 
@@ -173,7 +173,7 @@ can't be modified. Attempts to do so result in a compile-time error.
 
 Applying `ref readonly` to high-traffic uses of a struct may be sufficient.
 Other times, you may want to create an immutable struct. Then you can
-always pass by read only reference. That practice 
+always pass by read-only reference. That practice 
 removes the defensive copies
 that take place when you access methods of a struct used as an `in` parameter.
 

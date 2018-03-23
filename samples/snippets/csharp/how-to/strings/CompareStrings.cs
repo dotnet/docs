@@ -127,6 +127,32 @@ namespace HowToStrings
 
             bool b = String.Equals(first, second, StringComparison.CurrentCulture);
             Console.WriteLine($"The two strings {(b == true ? "are" : "are not")} equal.");
+
+            string word = "coop";
+            string words = "co-op";
+            string other = "cop";
+
+            showComparison(word, words, en);
+            showComparison(word, other, en);
+            showComparison(words, other, en);
+            void showComparison(string one, string two, System.Globalization.CultureInfo culture)
+            {
+                int compareLinguistic = String.Compare(one, two, en, System.Globalization.CompareOptions.IgnoreNonSpace);
+                int compareOrdinal = String.Compare(one, two, StringComparison.Ordinal);
+                if (compareLinguistic < 0)
+                    Console.WriteLine($"<{one}> is less than <{two}>");
+                else if (compareLinguistic > 0)
+                    Console.WriteLine($"<{one}> is greater than <{two}>");
+                else
+                    Console.WriteLine($"<{one}> and <{two}> are equivalent in order");
+                if (compareOrdinal < 0)
+                    Console.WriteLine($"<{one}> is less than <{two}>");
+                else if (compareOrdinal > 0)
+                    Console.WriteLine($"<{one}> is greater than <{two}>");
+                else
+                    Console.WriteLine($"<{one}> and <{two}> are equivalent in order");
+            }
+
             //</snippet4>
         }
 

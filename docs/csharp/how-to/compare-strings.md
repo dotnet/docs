@@ -21,11 +21,8 @@ Those two questions are complicated by factors that affect string
 comparisons: 
 - You can choose an ordinal or linguistic comparison.
 - You can choose if case matters.
-- You can choose to compare string values, or the references to the string storage.
 - You can choose culture specific comparisons.
-- Culture sensitive comparisons are platform-dependent.
-
-<< Insert table when done>>
+- Linguistic comparisions are culture and platform dependent.
 
 [!INCLUDE[interactive-note](~/includes/csharp-interactive-note.md)]
 
@@ -38,7 +35,7 @@ equality, but some differences, such as case differences, may be ignored.
 ## Default ordinal comparisons
 
 The most common operations, <xref:System.String.CompareTo%2A?displayProperty=nameWithType> and
-<xref:System.String.Equals%2A?displayProperty=nameWithType> or <xref:System.String.op_equality?displayProperty=nameWithType> use
+<xref:System.String.Equals%2A?displayProperty=nameWithType> or <xref:System.String.op_Equality%2A?displayProperty=nameWithType> use
 an ordinal comparison, a case-sensitive comparison, and use the current
 culture. The results are shown in the following example.
 
@@ -58,7 +55,7 @@ The <xref:System.String.Equals%2A?displayProperty=nameWithType> method
 enables you to specify a <xref:System.StringComparison> value of
 <xref:System.StringComparison.OrdinalIgnoreCase?displayProperty=nameWithType>
 to specify a case-insensitive comparison. There is also a static
-<xref:System.String.Compare%2A> method that adds a boolean argument to
+<xref:System.String.Compare%2A> method that includes a boolean argument to
 specify case-insensitive comparisons. These are shown in the following code:
 
 [!code-csharp-interactive[Comparing strings ignoring case](../../../samples/snippets/csharp/how-to/strings/CompareStrings.cs#2)]
@@ -78,7 +75,16 @@ and "de-DE" cultures.
 
 [!code-csharp-interactive[Comparing strings using linguistic rules](../../../samples/snippets/csharp/how-to/strings/CompareStrings.cs#3)]
 
-The sort order of "cop", "coop", and "co-op" change when you
+This sample demonstrates the operating system dependent nature of linguistic
+comparisons. The host for the interactive window is a Linux host. The
+linguistic and ordinal comparisons produce the same results. If you
+ran this same sample on a Windows host, you would see the following output:
+
+```console
+Text here
+```
+
+On Windows, the sort order of "cop", "coop", and "co-op" change when you
 change from a linguistic comparison to an ordinal comparison. The two
 German sentences also compare differently using the different comparison types.
 
@@ -95,29 +101,31 @@ and the "de-DE" culture:
 
 [!code-csharp-interactive[Comparing strings across cultures](../../../samples/snippets/csharp/how-to/strings/CompareStrings.cs#4)]
 
-Culture-sensitive comparisons are typically used to compare and sort strings input by users with other strings input by users. The characters and sorting conventions of these strings might vary depending on the locale of the user's computer. Even strings that contain identical characters might sort differently depending on the culture of the current thread.
+Culture-sensitive comparisons are typically used to compare and sort strings input by users with other strings input by users. The characters and sorting conventions of these strings might vary depending on the locale of the user's computer. Even strings that contain identical characters might sort differently depending on the culture of the current thread. In addition, try this sample code locally on a Windows machien, and you will get different results than on the interactive window, which runs on a Linux host machine.
 
-## Ordinal sorting and searching strings in arrays
+## Linguistic sorting and searching strings in arrays
 
-The following examples show how to sort and search for strings in an array in a culture-sensitive manner by using the static <xref:System.Array> methods that take a <xref:System.StringComparer?displayProperty=nameWithType> parameter.
+The following examples show how to sort and search for strings in an array using a linguistic comparison dependent on the curren cultuer. You use the static <xref:System.Array> methods that take a <xref:System.StringComparer?displayProperty=nameWithType> parameter.
 
 This example shows how to sort an array of strings using the current culture: 
 
 [!code-csharp-interactive[Sorting an array of strings](../../../samples/snippets/csharp/how-to/strings/CompareStrings.cs#5)]
 
-Once the array is sorted, you can search for entries using a binary search. A binary search starts in the middle of the collection to determine which half of the collection would contain the sought string. Each subsequent comparison subdivides the remaining part of the collection in half. The following sample demonstrates the importance of using the same comparison rules for both sorting and searching. The array is sorted using <xref:System.StringComparer.CurrentCulture?displayProperty=nameWithType>. The local function `ShowWhere` displays information about where the string was found. If the string was not found, the returned value indicates where it would be if it were found.
+Once the array is sorted, you can search for entries using a binary search. A binary search starts in the middle of the collection to determine which half of the collection would contain the sought string. Each subsequent comparison subdivides the remaining part of the collection in half.  The array is sorted using <xref:System.StringComparer.CurrentCulture?displayProperty=nameWithType>. The local function `ShowWhere` displays information about where the string was found. If the string was not found, the returned value indicates where it would be if it were found.
 
 [!code-csharp-interactive[Searching in a sorted array](../../../samples/snippets/csharp/how-to/strings/CompareStrings.cs#6)]
 
-## Case sensitive and culture sensitive sorting and searching in collections
+## Ordinal sorting and searching in collections
 
-The following code uses the <xref:System.Collections.Generic.List%601?displayProperty=nameWithType> collection class to store strings. The strings are sorted using the <xref:System.Collections.Generic.List%601.Sort%2A?displayProperty=nameWithType> method. This method needs a delegate that compares and orders two strings. The <xref:System.String.CompareTo%2A?displayProperty=nameWithType> method provides that comparison function. Run the sample and observe the order. This sort operation is an ordinal case sensitive sort. You would use the static <xref:System.String.Compare%2A?displayProperty=nameWithType> methods to specify different comparison rules.
+The following code uses the <xref:System.Collections.Generic.List%601?displayProperty=nameWithType> collection class to store strings. The strings are sorted using the <xref:System.Collections.Generic.List%601.Sort%2A?displayProperty=nameWithType> method. This method needs a delegate that compares and orders two strings. The <xref:System.String.CompareTo%2A?displayProperty=nameWithType> method provides that comparison function. Run the sample and observe the order. This sort operation uses an ordinal case sensitive sort. You would use the static <xref:System.String.Compare%2A?displayProperty=nameWithType> methods to specify different comparison rules.
 
 [!code-csharp-interactive[Sorting a list of strings](../../../samples/snippets/csharp/how-to/strings/CompareStrings.cs#7)]
 
 Once sorted, the list of strings can be searched using a binary search. The following sample shows how to search the sorted listed using the same comparison function. The local function `ShowWhere` shows where the sought text is or would be:
 
 [!code-csharp-interactive[csProgGuideStrings#11](../../../samples/snippets/csharp/how-to/strings/CompareStrings.cs#8)]
+
+Always make sure to use the same type of comparison for sorting and searching. Using different comparison types for sorting and searching produces unexpected results. 
 
 Collection classes such as <xref:System.Collections.Hashtable?displayProperty=nameWithType>, <xref:System.Collections.Generic.Dictionary%602?displayProperty=nameWithType>, and <xref:System.Collections.Generic.List%601?displayProperty=nameWithType> have constructors that take a <xref:System.StringComparer?displayProperty=nameWithType> parameter when the type of the elements or keys is `string`. In general, you should use these constructors whenever possible, and specify either <xref:System.StringComparer.Ordinal?displayProperty=nameWithType> or <xref:System.StringComparer.OrdinalIgnoreCase?displayProperty=nameWithType>.
 
@@ -126,7 +134,7 @@ Collection classes such as <xref:System.Collections.Hashtable?displayProperty=na
 None of the samples have used <xref:System.Object.ReferenceEquals%2A>. This method determines if two strings
 are the same object. This can lead to inconsistent results in string comparisons. The following example demonstrates the *string interning* feature of C#. When a program declares two or more identical string variables, the compiler stores them all in the same location. By calling the <xref:System.Object.ReferenceEquals%2A> method, you can see that the two strings actually refer to the same object in memory. Use the <xref:System.String.Copy%2A?displayProperty=nameWithType> method to avoid interning. After the copy has been made, the two strings have different storage locations, even though they have the same value. Run the following sample to show that strings `a` and `b` are *interned* meaning they share the same storage. The strings `a` and `c` are not.
 
-[!code-csharp-interactive[Demonstrating string interning](../../../samples/snippets/csharp/how-to/strings/CompareStrings.cs#4)]
+[!code-csharp-interactive[Demonstrating string interning](../../../samples/snippets/csharp/how-to/strings/CompareStrings.cs#9)]
 
 > [!NOTE]
 > When you test for equality of strings, you should use the methods that explicitly specify what kind of comparison you intend to perform. Your code is much more maintainable and readable. Use the overloads of the methods of the <xref:System.String?displayProperty=nameWithType> and <xref:System.Array?displayProperty=nameWithType> classes that take a <xref:System.StringComparison> enumeration parameter. You specify which type of comparison to perform. Avoid using the `==` and `!=` operators when you test for equality. The <xref:System.String.CompareTo%2A?displayProperty=nameWithType> instance methods always perform an ordinal case-sensitive comparison. They are primarily suited for ordering strings alphabetically.
